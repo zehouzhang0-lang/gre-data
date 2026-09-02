@@ -1,50 +1,27 @@
 schema_version: 1
 date: "2026-09-02"
 timezone: Asia/Shanghai
-strategy_id: gre-30d-325-20260902-v1
+strategy_id: gre-30d-adaptive-20260902-v2
 source_day: 1
 generated_at: "2026-09-02T13:00:00+08:00"
-status: active_with_material_gaps
+revised_at: "2026-09-02T23:41:32+08:00"
+revision: 2
+revision_reason: "用户根据 list1 的真实用时要求下调任务量；Day1 只完成 list1。"
+status: completed
 tasks:
   - id: 2026-09-02-01-vocab
     order: 1
     key: vocab
-    target: 300词
+    target: 102词
     material_id: core3000_random_2026
-    units: [list1, list2, list3]
+    units: [list1]
     material_status: available
     evidence_required: [实际学习数量, 主动回忆测试结果, 难词列表]
-  - id: 2026-09-02-02-equivalent
-    order: 2
-    key: equivalent_words
-    target: 1个Day
-    material_id: equivalent_words_2026
-    units: [day1]
-    material_status: available
-    evidence_required: [完成行数, 抽测结果, 易混等价组]
-  - id: 2026-09-02-03-beginner
-    order: 3
-    key: gre_beginner_intro
-    target: 完成当日入门内容
-    material_id: gre_beginner_intro
-    material_status: missing
-    evidence_required: [课程范围, 自写摘要]
-  - id: 2026-09-02-04-quant-foundation
-    order: 4
-    key: quant_full_score_guide
-    target: 50页
-    material_id: quant_full_score_guide
-    page_range: "1-50"
-    material_status: missing
-    evidence_required: [完成页码, 知识缺口]
-  - id: 2026-09-02-05-reading
-    order: 5
-    key: reading
-    target: 4篇
-    material_id: reading_440
-    passage_range: "1-4"
-    material_status: available_without_answers
-    evidence_required: [每篇用时, 用户答案, 不确定点, 错题分析]
+superseded_tasks:
+  - {id: 2026-09-02-02-equivalent, disposition: removed_by_user_requested_revision}
+  - {id: 2026-09-02-03-beginner, disposition: removed_by_user_requested_revision}
+  - {id: 2026-09-02-04-quant-foundation, disposition: removed_by_user_requested_revision}
+  - {id: 2026-09-02-05-reading, disposition: removed_by_user_requested_revision}
 notes:
-  - GRE小白入门和数学满分宝典尚未提供。
-  - 阅读题库答案文件尚未提供；未核对答案前不得记录正确率。
+  - 原快照的其余任务因当日计划正式改版而取消，不记为 debt。
+  - list1 完成后当天停止新增任务；次日先进行延迟回忆。

@@ -1,0 +1,90 @@
+schema_version: 1
+id: gre-30d-adaptive-20260902-v2
+title: 30天GRE冲325自适应计划
+source_kind: evidence_based_revision
+derived_from: planning/30-day-plan.yaml
+created_at: "2026-09-02T23:41:32+08:00"
+timezone: Asia/Shanghai
+starts_on: "2026-09-02"
+ends_on: "2026-10-01"
+target_combined_vq: 325
+status: active_pending_baseline_and_time_budget
+assumptions:
+  - 考试预计在2026年10月初，具体日期未定。
+  - 尚未确认每周可用时长；标准日按190分钟设计，最低可执行版本150分钟，上限210分钟。
+  - 尚无GRE模考分数；Day2的官方完整模考用于建立基线，完成后再调整Verbal与Quant比例。
+day1_evidence:
+  material: core3000_random_2026
+  unit: list1
+  reviewed_count: 102
+  duration_min: 120
+  fully_correct: 78
+  partial: 10
+  wrong: 14
+  fully_correct_accuracy: 0.7647
+  difficult_rate: 0.2353
+  projected_300_first_pass_min: 353
+evidence_sources:
+  ets_test_structure: https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html
+  ets_powerprep: https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html
+  retrieval_practice: https://doi.org/10.1126/science.1152408
+  spacing_effect: https://doi.org/10.1111/j.1467-9280.2008.02209.x
+principles:
+  - 新词按时间和次日回忆率控制，不以刷完页数或列表为成功标准。
+  - 标准日新词45至55个，最多65分钟；到点即停，剩余内容顺延但不形成惩罚性debt。
+  - 新词次日、三日后、七日后主动回忆；连续3次正确才进入mastered。
+  - 次日完全正确率大于等于85%时下一次最多55词，70%至84%时40至50词，低于70%时30至40词。
+  - 每日保留Verbal题目应用、Quant训练和错因记录，词汇不得吞掉整天。
+  - 完整模考不连续安排；每套约118分钟，下一日优先深度复盘。
+  - Day24后原则上不追求大规模新词，只补题目中暴露的高频缺口。
+daily_budget_min:
+  standard: 190
+  minimum_viable: 150
+  ceiling: 210
+standard_day:
+  vocabulary_new: {minutes: 60, count: "45-55"}
+  vocabulary_review: {minutes: 25, method: active_recall}
+  verbal_application: {minutes: 40}
+  quantitative: {minutes: 50}
+  error_analysis: {minutes: 15}
+mock_policy:
+  baseline: "Day2，优先官方POWERPREP完整计时模考"
+  midpoint: "Day22，第二套官方或可比完整计时模考"
+  final_optional: "Day26，仅在来源确认且前两套已完成复盘时执行"
+  rule: "完整模考后必须留出复盘日；最后48小时不做完整模考"
+days:
+  - {day: 1, date: "2026-09-02", phase: baseline, total_min: 120, vocabulary: "list1全部102词主动回忆", status: completed}
+  - {day: 2, date: "2026-09-03", phase: baseline, total_min: 178, vocabulary: "list1次日复测25分钟", mock: "官方POWERPREP完整计时118分钟", quick_log_min: 35}
+  - {day: 3, date: "2026-09-04", phase: baseline, total_min: 185, vocabulary: "到期词复测25分钟，不学新词", mock_review_min: 75, verbal_diagnostic_min: 35, quant_diagnostic_min: 35, error_plan_min: 15}
+  - {day: 4, date: "2026-09-05", phase: build, vocabulary: "list2前半，45-55新词+25分钟复习", verbal: "TC/SE 10-12题，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 5, date: "2026-09-06", phase: build, vocabulary: "list2后半，45-55新词+25分钟复习", verbal: "RC 2篇，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 6, date: "2026-09-07", phase: build, vocabulary: "list3前半，45-55新词+25分钟复习", verbal: "TC/SE 10-12题，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 7, date: "2026-09-08", phase: build, vocabulary: "list3后半，45-55新词+25分钟复习", verbal: "RC 2篇，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 8, date: "2026-09-09", phase: build, vocabulary: "list4前半，45-55新词+25分钟复习", verbal: "TC/SE 10-12题，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 9, date: "2026-09-10", phase: build, vocabulary: "list4后半，45-55新词+25分钟复习", verbal: "RC 2篇，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 10, date: "2026-09-11", phase: build, vocabulary: "list5前半，45-55新词+25分钟复习", verbal: "TC/SE 10-12题，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 11, date: "2026-09-12", phase: build, vocabulary: "list5后半，45-55新词+25分钟复习", verbal: "RC 2篇，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 12, date: "2026-09-13", phase: build, vocabulary: "list6前半，45-55新词+25分钟复习", verbal: "TC/SE 10-12题，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 13, date: "2026-09-14", phase: build, vocabulary: "list6后半，45-55新词+25分钟复习", verbal: "RC 2篇，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 14, date: "2026-09-15", phase: build, vocabulary: "list7前半，45-55新词+25分钟复习", verbal: "TC/SE 10-12题，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 15, date: "2026-09-16", phase: build, vocabulary: "list7后半，45-55新词+25分钟复习", verbal: "RC 2篇，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 16, date: "2026-09-17", phase: build, vocabulary: "list8前半，45-55新词+25分钟复习", verbal: "TC/SE 10-12题，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 17, date: "2026-09-18", phase: build, vocabulary: "list8后半，45-55新词+25分钟复习", verbal: "RC 2篇，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 18, date: "2026-09-19", phase: build, vocabulary: "list9前半，45-55新词+25分钟复习", verbal: "TC/SE 10-12题，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 19, date: "2026-09-20", phase: build, vocabulary: "list9后半，45-55新词+25分钟复习", verbal: "RC 2篇，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 20, date: "2026-09-21", phase: build, vocabulary: "list10前半，45-55新词+25分钟复习", verbal: "TC/SE 10-12题，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 21, date: "2026-09-22", phase: build, vocabulary: "list10后半，45-55新词+25分钟复习", verbal: "RC 2篇，40分钟", quant: "12-15题，50分钟", error_analysis_min: 15}
+  - {day: 22, date: "2026-09-23", phase: transfer, total_min: 178, vocabulary: "到期词复测25分钟", mock: "第二套完整计时模考118分钟", quick_log_min: 35}
+  - {day: 23, date: "2026-09-24", phase: transfer, total_min: 200, vocabulary: "到期词复测20分钟", mock_review_min: 90, targeted_verbal_min: 45, targeted_quant_min: 45}
+  - {day: 24, date: "2026-09-25", phase: transfer, vocabulary: "机经高频非重复词30个以内+到期复习30分钟", verbal: "TC/SE 12题，45分钟", quant: "15题，55分钟", error_analysis_min: 15}
+  - {day: 25, date: "2026-09-26", phase: transfer, vocabulary: "机经高频非重复词30个以内+到期复习30分钟", verbal: "RC 2篇，45分钟", quant: "15题，55分钟", writing: "Issue提纲30分钟", error_analysis_min: 15}
+  - {day: 26, date: "2026-09-27", phase: transfer, vocabulary: "到期词复测20分钟", mock: "可选第三套完整计时模考；仅在来源已确认且前两套已复盘时执行", fallback: "V/Q各一节计时+复盘"}
+  - {day: 27, date: "2026-09-28", phase: transfer, total_min: 200, vocabulary: "到期词复测20分钟", mock_review_min: 90, targeted_verbal_min: 45, targeted_quant_min: 45}
+  - {day: 28, date: "2026-09-29", phase: taper, total_min: 179, vocabulary: "只复习到期难词30分钟", verbal: "计时一节+复盘58分钟", quant: "计时一节+复盘61分钟", writing: "Issue提纲30分钟"}
+  - {day: 29, date: "2026-09-30", phase: taper, total_min: 175, vocabulary: "只复习高频难词25分钟", error_review_min: 60, light_verbal_min: 30, light_quant_min: 30, writing_min: 30}
+  - {day: 30, date: "2026-10-01", phase: taper, total_min: "60-90", vocabulary: "难词20分钟", verbal: "逻辑与错因清单20分钟", quant: "公式与陷阱清单20分钟", rule: "不做完整模考，不突击大量新词"}
+revision_triggers:
+  - "确认每天和每周可用时间后，按时间预算整体缩放。"
+  - "Day2模考后，根据V/Q差距重新分配每日40至60分钟。"
+  - "连续两次次日词汇回忆低于70%时，新词上限降至30。"
+  - "连续两次次日词汇回忆高于85%且总时长未超标时，新词上限可升至55。"

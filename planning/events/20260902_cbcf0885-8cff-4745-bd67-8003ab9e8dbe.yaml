@@ -1,0 +1,10 @@
+schema_version: 1
+event_id: cbcf0885-8cff-4745-bd67-8003ab9e8dbe
+plan_date: "2026-09-02"
+task_id: 2026-09-02-01-vocab
+status: done
+recorded_at: "2026-09-02T23:41:32+08:00"
+actual_min: 120
+note: "完成乱序词表 list1 全部102词；首次主动回忆78词完全正确、10词部分正确、14词错误，24词进入难词池。"
+evidence_records:
+  - vocab/days/day01.md

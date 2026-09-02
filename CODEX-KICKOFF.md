@@ -11,7 +11,7 @@
 你要实际完成接入和验收，不只是复述命令：
 
 1. 把公开 GRE 数据仓库安全克隆到 `%USERPROFILE%\.gre`，已有目标仓库则安全更新。
-2. 验证档案、30 天主计划、资料索引、技巧库和记录目录完整。
+2. 验证档案、当前 30 天主计划、原始参考计划、资料索引、技巧库和记录目录完整。
 3. 配置 GitHub 写权限，使训练数据可以推送。
 4. 完整读取 `AGENTS.md`、`profile.md`、`scores.md` 和当天计划，接管 GRE 教练角色。
 5. 检查本机是否已复制外置 PDF 资料并校验哈希；不得把 PDF 放进 Git。
@@ -98,6 +98,7 @@ $Required = @(
   'materials\catalog.yaml',
   'planning\strategy.yaml',
   'planning\30-day-plan.yaml',
+  'planning\adaptive-30-day-plan.yaml',
   'techniques\mastery.yaml',
   'sync.ps1',
   'sync.sh'
@@ -172,7 +173,7 @@ $MaterialsRoot = Join-Path $env:USERPROFILE '.gre-media\materials'
 3. 在仓库根目录新建 `.gre-materials.local.yaml`，只写本机路径与校验日期；该文件已被 `.gitignore` 排除。
 4. 任一哈希不符时报告具体文件，禁止覆盖或假装通过。
 
-当前计划仍缺少两类材料：`GRE 小白入门` 与 `GRE 数学满分宝典`。阅读、填空、数学 900 和数学 170 的独立答案/解析文件也未收录。若用户尚未补齐，按计划保留任务并标记 `blocked` 或 `answer_source: unavailable`。
+原图计划曾依赖但用户尚未提供的 `GRE 小白入门` 与 `GRE 数学满分宝典` 仍记录在资料缺口中；当前自适应计划不再把它们设为每日硬性任务。阅读、填空、数学 900 和数学 170 的独立答案/解析文件仍未收录；使用这些题库时必须标记 `blocked` 或 `answer_source: unavailable`，不得伪造正确率。
 
 ## 第六阶段：接管 GRE 教练规则
 
@@ -184,6 +185,7 @@ Get-Content -Raw (Join-Path $Repo 'profile.md')
 Get-Content -Raw (Join-Path $Repo 'scores.md')
 Get-Content -Raw (Join-Path $Repo 'planning\strategy.yaml')
 Get-Content -Raw (Join-Path $Repo 'planning\30-day-plan.yaml')
+Get-Content -Raw (Join-Path $Repo 'planning\adaptive-30-day-plan.yaml')
 ```
 
 首次写入任何训练数据前，必须再完整读取：
@@ -196,13 +198,13 @@ Get-Content -Raw (Join-Path $Repo 'SCHEMA.md')
 
 ## 第七阶段：恢复 30 天执行进度
 
-主计划固定从 2026-09-02（Day 1）到 2026-10-01（Day 30）。不要仅凭日历把任务视为完成：
+计划周期固定从 2026-09-02（Day 1）到 2026-10-01（Day 30）。`planning/30-day-plan.yaml` 是用户图片的规范化历史参考，当前计划必须读取 `planning/strategy.yaml` 的 `plan_file`；目前是 `planning/adaptive-30-day-plan.yaml`。不要仅凭日历把任务视为完成：
 
-1. 根据真实日期找到 `planning/30-day-plan.yaml` 的对应 Day。
+1. 读取 `planning/strategy.yaml`，再根据真实日期找到其 `plan_file` 中的对应 Day。
 2. 读取 `planning/days/` 当日快照。
 3. 聚合 `planning/events/`，按每项任务最后一个事件确定状态。
 4. 过去日期没有 `done` 证据的任务记为 debt，不回填假记录。
-5. 当天任务按主计划继续；如何处理 debt 需要明确列出，不能悄悄降低当天数量。
+5. 当天任务按当前计划继续；用户明确修订的旧任务不算 debt，其他未完成任务的处理必须明确，不能静默改写。
 6. 每个 `done` 必须引用实际训练记录。
 
 当前计划目标是 Verbal + Quantitative 合计 325，但具体分科目标、正式考试日期、摸底成绩、每周时间和申请方向尚待用户补充。不得用 IELTS 数据填充这些字段。
@@ -240,7 +242,7 @@ Get-Content -Raw (Join-Path $Repo 'SCHEMA.md')
 4. 外置资料齐全数、哈希通过数和本机路径。
 5. 缺失的入门/数学宝典/答案/模考材料。
 6. 从 profile/scores 读取的目标、考期、基线与弱项；未知项明确写未知。
-7. 30 天计划的当前 Day、当天任务、历史 debt 和阻塞项。
+7. 当前策略与 `plan_file`、30 天计划的当前 Day、当天任务、历史 debt 和阻塞项。
 8. Dashboard 是“尚未建立”，不得编造 URL。
 
 不要空洞鼓励，不得编造仓库中不存在的数据。

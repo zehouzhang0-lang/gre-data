@@ -362,7 +362,7 @@ evidence:
 
 ## 30 天主计划
 
-`planning/30-day-plan.yaml` 是用户提供计划的规范化版本。每个 day 至少包含：
+`planning/30-day-plan.yaml` 是用户提供图片计划的规范化原始版本，需保留以便审计。当前实际执行的计划由 `planning/strategy.yaml.plan_file` 指向；若基于训练证据改版，可以使用新的计划文件（例如 `planning/adaptive-30-day-plan.yaml`），不得覆盖或删除原始版本。每个活动计划的 day 至少包含：
 
 - `day`：1–30，唯一。
 - `date`：与 `starts_on` 连续对应。
@@ -393,7 +393,7 @@ tasks:
 notes: []
 ```
 
-快照生成后不得静默漂移。缺失材料仍保留任务，并写 `material_status: missing`。
+快照生成后不得静默漂移。用户明确要求改版时可以修订，但必须增加 `revision`、`revised_at` 和 `revision_reason`，并保留被替代任务及其 disposition。缺失材料仍保留任务，并写 `material_status: missing`；若任务因用户要求正式退出计划，则记录为 superseded，不算 debt。
 
 ## 完成事件
 
