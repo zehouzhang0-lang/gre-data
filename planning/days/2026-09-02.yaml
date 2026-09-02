@@ -1,12 +1,12 @@
 schema_version: 1
 date: "2026-09-02"
 timezone: Asia/Shanghai
-strategy_id: gre-30d-adaptive-20260902-v2
+strategy_id: gre-30d-adaptive-20260902-v3
 source_day: 1
 generated_at: "2026-09-02T13:00:00+08:00"
-revised_at: "2026-09-02T23:41:32+08:00"
-revision: 2
-revision_reason: "用户根据 list1 的真实用时要求下调任务量；Day1 只完成 list1。"
+revised_at: "2026-09-03T00:06:42+08:00"
+revision: 3
+revision_reason: "用户根据 list1 的真实用时要求下调任务量；Day1 只完成 list1。后续确认目标320、每日6小时及普通日120新词，不改变Day1完成证据。"
 status: completed
 tasks:
   - id: 2026-09-02-01-vocab

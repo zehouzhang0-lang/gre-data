@@ -1,10 +1,10 @@
 schema_version: 1
-id: gre-30d-adaptive-20260902-v2
-status: active_pending_baseline_and_time_budget
+id: gre-30d-adaptive-20260902-v3
+status: active_pending_baseline
 timezone: Asia/Shanghai
 week_starts_on: monday
 exam_date: null
-weekly_budget_min: null
+weekly_budget_min: 2520
 observed_vocab_session:
   date: "2026-09-02"
   reviewed_count: 102
@@ -13,31 +13,34 @@ observed_vocab_session:
   partial: 10
   wrong: 14
 target_scores:
-  combined_vq: 325
+  combined_vq: 320
   verbal: null
   quantitative: null
   analytical_writing: null
 starts_on: "2026-09-02"
 ends_on: "2026-10-01"
-plan_file: planning/adaptive-30-day-plan.yaml
+plan_file: planning/adaptive-30-day-plan-v3.yaml
 source_plan_file: planning/30-day-plan.yaml
 phases:
   - {id: baseline, starts_on: "2026-09-02", ends_on: "2026-09-04", days: "1-3"}
-  - {id: build, starts_on: "2026-09-05", ends_on: "2026-09-22", days: "4-21"}
-  - {id: transfer, starts_on: "2026-09-23", ends_on: "2026-09-28", days: "22-27"}
+  - {id: build, starts_on: "2026-09-05", ends_on: "2026-09-21", days: "4-20"}
+  - {id: transfer, starts_on: "2026-09-22", ends_on: "2026-09-28", days: "21-27"}
   - {id: taper, starts_on: "2026-09-29", ends_on: "2026-10-01", days: "28-30"}
 weekly_schedule:
-  standard_day_min: 190
-  minimum_viable_day_min: 150
-  ceiling_day_min: 210
+  standard_day_min: 360
+  focused_work_min: 330
+  planned_breaks_min: 30
+  minimum_viable_day_min: 240
+  ceiling_day_min: 390
 weekly_template:
-  vocabulary_new_min: 60
-  vocabulary_review_min: 25
-  verbal_application_min: 40
-  quantitative_min: 50
+  vocabulary_new_min: 140
+  vocabulary_review_min: 35
+  verbal_application_min: 70
+  quantitative_min: 70
   error_analysis_min: 15
+  planned_breaks_min: 30
 task_catalog:
-  - {id: vocab_new, success: "次日主动回忆完全正确率至少80%", adjustment: "按复测结果在30至55词间调整"}
+  - {id: vocab_new, success: "完成当日配额且次日主动回忆完全正确率至少75%", adjustment: "普通日120词；模考日60词；模考复盘日80词；连续两次低于70%则普通日降至100词"}
   - {id: vocab_review, success: "连续3次主动回忆正确后才进入mastered"}
   - {id: verbal_application, success: "记录正确率、用时和错因，不以刷完数量代替掌握"}
   - {id: quantitative, success: "记录正确率、用时和稳定错因标签"}

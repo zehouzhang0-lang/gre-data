@@ -1,0 +1,123 @@
+schema_version: 1
+id: gre-30d-adaptive-20260902-v3
+title: 30天GRE冲320六小时自适应计划
+source_kind: evidence_and_time_budget_revision
+derived_from:
+  - planning/30-day-plan.yaml
+  - planning/adaptive-30-day-plan.yaml
+created_at: "2026-09-02T23:57:27+08:00"
+timezone: Asia/Shanghai
+starts_on: "2026-09-02"
+ends_on: "2026-10-01"
+target_combined_vq: 320
+status: active_pending_baseline
+assumptions:
+  - 考试预计在2026年10月初，具体日期未定；最后48小时减量规则应在日期确认后平移到真正考前。
+  - 暑假每天可投入约6小时，即每周约42小时；标准日含330分钟专注学习和30分钟计划休息。
+  - 尚无GRE模考分数；Day2的官方完整模考用于建立基线，完成后再设置分科目标并调整Verbal与Quant比例。
+day1_evidence:
+  material: core3000_random_2026
+  unit: list1
+  reviewed_count: 102
+  duration_min: 120
+  fully_correct: 78
+  partial: 10
+  wrong: 14
+  fully_correct_accuracy: 0.7647
+  difficult_rate: 0.2353
+  projected_120_first_pass_min: 141
+  projected_300_first_pass_min: 353
+evidence_sources:
+  ets_test_structure: https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html
+  ets_powerprep: https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html
+  retrieval_practice: https://doi.org/10.1126/science.1152408
+  spacing_effect: https://doi.org/10.1111/j.1467-9280.2008.02209.x
+principles:
+  - 普通学习日的新词配额为120个，预计约140分钟；它是上限也是计划值，不因前一天欠量而翻倍。
+  - 完整模考日降至60个新词，模考深度复盘日降至80个；Day28至Day30默认不再新增。
+  - 新词必须在次日、三日后和七日后主动回忆；连续3次正确才进入mastered。
+  - 连续两次次日完全正确率低于70%时，普通日新词降至100；连续两次达到85%且新词块未超过145分钟，才维持120。
+  - 每日保留Verbal、Quant和错因记录；写作每5天左右一次，以替换当日部分V/Q训练的方式加入，不额外加时。
+  - 题库没有独立答案时只做过程训练，正确率保持null；正式基线优先使用官方POWERPREP。
+  - 默认Day27完成核心3000词；实际按连续未学词推进，遇到重复词时顺延到下一个未学词，最后一日到全书末词即停。
+daily_budget_min:
+  standard_clock: 360
+  focused_work: 330
+  planned_breaks: 30
+  minimum_viable: 240
+  ceiling: 390
+templates:
+  standard_tc:
+    vocabulary_new: {minutes: 140, count: 120, material: core3000_random_2026}
+    vocabulary_review: {minutes: 35, method: active_recall}
+    verbal: {minutes: 70, work: "TC/SE 12-15题 + RC 1篇"}
+    quantitative: {minutes: 70, work: "15-20题，优先限时组"}
+    error_analysis: {minutes: 15}
+    planned_breaks: {minutes: 30}
+  standard_rc:
+    vocabulary_new: {minutes: 140, count: 120, material: core3000_random_2026}
+    vocabulary_review: {minutes: 35, method: active_recall}
+    verbal: {minutes: 70, work: "RC 3篇 + TC/SE 5题"}
+    quantitative: {minutes: 70, work: "15-20题，优先限时组"}
+    error_analysis: {minutes: 15}
+    planned_breaks: {minutes: 30}
+  standard_writing:
+    vocabulary_new: {minutes: 140, count: 120, material: core3000_random_2026}
+    vocabulary_review: {minutes: 35, method: active_recall}
+    verbal: {minutes: 50, work: "弱项定向训练"}
+    quantitative: {minutes: 60, work: "12-16题，弱项优先"}
+    writing: {minutes: 30, work: "官方Issue题库：限时成文或完整提纲"}
+    error_analysis: {minutes: 15}
+    planned_breaks: {minutes: 30}
+mock_policy:
+  baseline: "Day2，官方POWERPREP完整计时模考"
+  midpoint: "Day21，第二套官方POWERPREP或同等可信来源完整计时模考"
+  final_default: "Day26做V/Q分节计时，不默认增加第三套完整模考"
+  rule: "完整模考日新词60，次日新词80并深度复盘；最后48小时不做完整模考"
+vocabulary_completion_math:
+  day1_completed: 102
+  day2_new: 60
+  day3_new: 80
+  days4_to_20_new: 2040
+  day21_new: 60
+  day22_new: 80
+  days23_to_26_new: 480
+  day27_cap: 100
+  planned_total_cap: 3002
+  instruction: "全书约3000词；到最后一个未学词立即停止，不机械补足3002。"
+days:
+  - {day: 1, date: "2026-09-02", phase: baseline, vocabulary_new: 102, vocabulary_unit: "list1全部", total_min: 120, status: completed}
+  - {day: 2, date: "2026-09-03", phase: baseline, vocabulary_new: 60, vocabulary_source_position: "list1之后连续60个未学词", vocabulary_review_min: 35, mock: "官方POWERPREP完整计时118分钟", quick_log_min: 35, planned_breaks_min: 30, total_clock_min: 288}
+  - {day: 3, date: "2026-09-04", phase: baseline, vocabulary_new: 80, vocabulary_source_position: "继续连续80个未学词", vocabulary_review_min: 35, mock_review_min: 100, targeted_verbal_min: 40, targeted_quant_min: 40, error_plan_min: 15, planned_breaks_min: 30, total_clock_min: 355}
+  - {day: 4, date: "2026-09-05", phase: build, template: standard_tc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 5, date: "2026-09-06", phase: build, template: standard_rc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 6, date: "2026-09-07", phase: build, template: standard_tc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 7, date: "2026-09-08", phase: build, template: standard_writing, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 8, date: "2026-09-09", phase: build, template: standard_rc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 9, date: "2026-09-10", phase: build, template: standard_tc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 10, date: "2026-09-11", phase: build, template: standard_rc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 11, date: "2026-09-12", phase: build, template: standard_tc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 12, date: "2026-09-13", phase: build, template: standard_writing, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 13, date: "2026-09-14", phase: build, template: standard_rc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 14, date: "2026-09-15", phase: build, template: standard_tc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 15, date: "2026-09-16", phase: build, template: standard_rc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 16, date: "2026-09-17", phase: build, template: standard_tc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 17, date: "2026-09-18", phase: build, template: standard_writing, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 18, date: "2026-09-19", phase: build, template: standard_rc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 19, date: "2026-09-20", phase: build, template: standard_tc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 20, date: "2026-09-21", phase: build, template: standard_rc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 21, date: "2026-09-22", phase: transfer, vocabulary_new: 60, vocabulary_source_position: "继续连续60个未学词", vocabulary_review_min: 35, mock: "第二套完整计时模考118分钟", quick_log_min: 35, planned_breaks_min: 30, total_clock_min: 288}
+  - {day: 22, date: "2026-09-23", phase: transfer, vocabulary_new: 80, vocabulary_source_position: "继续连续80个未学词", vocabulary_review_min: 35, mock_review_min: 100, targeted_verbal_min: 40, targeted_quant_min: 40, error_plan_min: 15, planned_breaks_min: 30, total_clock_min: 355}
+  - {day: 23, date: "2026-09-24", phase: transfer, template: standard_tc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 24, date: "2026-09-25", phase: transfer, template: standard_writing, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 25, date: "2026-09-26", phase: transfer, template: standard_rc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词"}
+  - {day: 26, date: "2026-09-27", phase: transfer, template: standard_tc, vocabulary_new: 120, vocabulary_source_position: "继续连续120个未学词", timing_rule: "Verbal与Quant训练均按正式分节时间执行并复盘"}
+  - {day: 27, date: "2026-09-28", phase: transfer, vocabulary_new: "最多100，到核心3000末词即停", vocabulary_review_min: 35, verbal_min: 70, quantitative_min: 70, error_analysis_min: 15, planned_breaks_min: 30, total_clock_min: 338}
+  - {day: 28, date: "2026-09-29", phase: taper, vocabulary_new: 0, vocabulary_review_min: 45, verbal_timed_and_review_min: 80, quant_timed_and_review_min: 80, writing_min: 30, error_review_min: 35, planned_breaks_min: 30, total_clock_min: 300}
+  - {day: 29, date: "2026-09-30", phase: taper, vocabulary_new: 0, vocabulary_review_min: 40, error_review_min: 80, light_verbal_min: 45, light_quant_min: 45, writing_outline_min: 30, planned_breaks_min: 30, total_clock_min: 270}
+  - {day: 30, date: "2026-10-01", phase: taper, vocabulary_new: 0, vocabulary_review_min: 25, verbal_logic_and_error_list_min: 25, quant_formula_and_trap_list_min: 25, writing_framework_min: 15, total_clock_min: 90, rule: "不做完整模考；若实际考试晚于10月3日，本日改为巩固日并另排真正考前48小时减量。"}
+revision_triggers:
+  - "Day2模考后，根据V/Q差距在每日140分钟的V/Q总预算内重新分配，单科不得低于45分钟。"
+  - "连续两次次日词汇回忆低于70%时，普通日新词由120降至100，释放的约25分钟用于复习。"
+  - "连续两天总学习超过390分钟或睡眠明显受影响时，次日使用240分钟最低版本，不产生惩罚性debt。"
+  - "正式考试日期确认后，重新定位最后一次完整模考与考前48小时减量。"

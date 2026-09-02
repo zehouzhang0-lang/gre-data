@@ -8,7 +8,9 @@ timezone: Asia/Shanghai
 starts_on: "2026-09-02"
 ends_on: "2026-10-01"
 target_combined_vq: 325
-status: active_pending_baseline_and_time_budget
+status: superseded
+superseded_on: "2026-09-02"
+superseded_by: planning/adaptive-30-day-plan-v3.yaml
 assumptions:
   - 考试预计在2026年10月初，具体日期未定。
   - 尚未确认每周可用时长；标准日按190分钟设计，最低可执行版本150分钟，上限210分钟。

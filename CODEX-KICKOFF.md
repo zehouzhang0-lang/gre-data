@@ -99,6 +99,7 @@ $Required = @(
   'planning\strategy.yaml',
   'planning\30-day-plan.yaml',
   'planning\adaptive-30-day-plan.yaml',
+  'planning\adaptive-30-day-plan-v3.yaml',
   'techniques\mastery.yaml',
   'sync.ps1',
   'sync.sh'
@@ -186,6 +187,7 @@ Get-Content -Raw (Join-Path $Repo 'scores.md')
 Get-Content -Raw (Join-Path $Repo 'planning\strategy.yaml')
 Get-Content -Raw (Join-Path $Repo 'planning\30-day-plan.yaml')
 Get-Content -Raw (Join-Path $Repo 'planning\adaptive-30-day-plan.yaml')
+Get-Content -Raw (Join-Path $Repo 'planning\adaptive-30-day-plan-v3.yaml')
 ```
 
 首次写入任何训练数据前，必须再完整读取：
@@ -198,7 +200,7 @@ Get-Content -Raw (Join-Path $Repo 'SCHEMA.md')
 
 ## 第七阶段：恢复 30 天执行进度
 
-计划周期固定从 2026-09-02（Day 1）到 2026-10-01（Day 30）。`planning/30-day-plan.yaml` 是用户图片的规范化历史参考，当前计划必须读取 `planning/strategy.yaml` 的 `plan_file`；目前是 `planning/adaptive-30-day-plan.yaml`。不要仅凭日历把任务视为完成：
+计划周期固定从 2026-09-02（Day 1）到 2026-10-01（Day 30）。`planning/30-day-plan.yaml` 是用户图片的规范化历史参考，`planning/adaptive-30-day-plan.yaml` 是历史修订；当前计划必须读取 `planning/strategy.yaml` 的 `plan_file`，目前是 `planning/adaptive-30-day-plan-v3.yaml`。不要仅凭日历把任务视为完成：
 
 1. 读取 `planning/strategy.yaml`，再根据真实日期找到其 `plan_file` 中的对应 Day。
 2. 读取 `planning/days/` 当日快照。
@@ -207,7 +209,7 @@ Get-Content -Raw (Join-Path $Repo 'SCHEMA.md')
 5. 当天任务按当前计划继续；用户明确修订的旧任务不算 debt，其他未完成任务的处理必须明确，不能静默改写。
 6. 每个 `done` 必须引用实际训练记录。
 
-当前计划目标是 Verbal + Quantitative 合计 325，但具体分科目标、正式考试日期、摸底成绩、每周时间和申请方向尚待用户补充。不得用 IELTS 数据填充这些字段。
+当前计划目标是 Verbal + Quantitative 合计 320；暑假每天可投入约 6 小时、每周约 42 小时。具体分科目标、正式考试日期、摸底成绩和申请方向尚待用户补充。不得用 IELTS 数据填充这些字段。
 
 ## 第八阶段：每次训练的同步流程
 

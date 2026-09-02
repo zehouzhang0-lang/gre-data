@@ -9,7 +9,7 @@ ends_on: "2026-10-01"
 target_combined_vq: 325
 status: superseded_as_active_plan
 superseded_on: "2026-09-02"
-superseded_by: planning/adaptive-30-day-plan.yaml
+superseded_by: planning/adaptive-30-day-plan-v3.yaml
 supersession_reason: "Day1 实测 102 词约 120 分钟；原计划 300 新词/日会挤占复习、题目训练和模考复盘。原文件保留为用户图片的规范化参考。"
 execution_rules:
   - 每个数量都是当日目标；未完成要记录为 debt，不得静默标成完成。
