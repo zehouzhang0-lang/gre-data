@@ -1,0 +1,106 @@
+schema_version: 1
+verified_at: "2026-09-02T13:00:00+08:00"
+storage_policy: external_local_only
+primary_machine_path_hint: "C:/Users/Administrator/.gre-media/materials"
+plan_source:
+  title: 30天GRE冲325超全计划表
+  kind: user_provided_image
+  sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
+  tracked_in_git: false
+materials:
+  - id: equivalent_words_2026
+    filename: 真经GRE等价词汇总（2026年版 ）.pdf
+    pages: 29
+    size_mb: 15.12
+    sha256: 19FEEC02CB3F8DB7EFF90EB3BCC6D5631BCD2092D2F3DBA137DBA5EDB50992B0
+    role: primary_equivalent_word_drill
+    structure: 5_day_units
+    answer_status: not_applicable
+  - id: core3000_random_2026
+    filename: 张巍GRE镇考3000词-乱序（2026年）.pdf
+    pages: 288
+    size_mb: 17.08
+    sha256: 8270D259F3457711A16C9F7A7D79F2D95F89FA83228A1B89E656546882F303A0
+    role: primary_vocab_sequence
+    structure: 30_lists_plus_2_supplement_lists
+    answer_status: not_applicable
+  - id: core3000_ordered_2026
+    filename: 张巍GRE镇考3000词-正序（2026年）.pdf
+    pages: 371
+    size_mb: 14.42
+    sha256: C520433905182996D4CCA47AD20FE78DA44185B0135619B5BEF0468341C27A66
+    role: lookup_only
+    duplicate_content_group: core3000_2026
+    answer_status: not_applicable
+  - id: machine_vocab_random_7_0_2026
+    filename: GRE镇考机经词7.0-乱序版（2026年最新版）.pdf
+    pages: 157
+    size_mb: 18.15
+    sha256: C9CB48F283867770C5B0A737BABBD4D3EB3C2057D456A8485DF7E1D097C884C1
+    role: primary_vocab_sequence
+    structure: 7_day_units
+    answer_status: not_applicable
+  - id: machine_vocab_ordered_7_0_2026
+    filename: GRE镇考机经词7.0-正序（2026年版）.pdf
+    pages: 98
+    size_mb: 16.54
+    sha256: E6052DCA026D2731C2DC3287A09AFB7B55205CB4C8F96D553A8CECC6EAD7D164
+    role: lookup_only
+    duplicate_content_group: machine_vocab_7_0_2026
+    answer_status: not_applicable
+  - id: reading_440
+    filename: 张巍GRE阅读机经440篇.pdf
+    pages: 397
+    size_mb: 8.68
+    sha256: 7802A91A9B58AF1C2A71323050CF3825BA403C146A343D7E8A8424EAC0E2F34C
+    role: primary_reading_drill
+    structure: 440_passages
+    answer_status: external_not_present
+  - id: text_completion_2000
+    filename: 张巍GRE填空机经2000题.pdf
+    pages: 385
+    size_mb: 15.27
+    sha256: 08AF079FFF905E997673C6B6037CA9A56D0BC7634CF7B83039AC2D9B9909FB23
+    role: primary_text_completion_drill
+    structure: tests_with_easy_medium_hard_sections
+    answer_status: external_not_present
+  - id: quant_900
+    filename: 张巍GRE最新数学机经900题 .pdf
+    pages: 229
+    size_mb: 18.57
+    sha256: 81789D49DAF72BA23927158C94CC86293103FB9FAD994B1AFE700D7699E4EECE
+    role: primary_quant_drill
+    structure: difficulty_sections
+    answer_status: external_not_present
+  - id: reading_core_vocab
+    filename: GRE阅读机经核心词汇 .pdf
+    pages: 8
+    size_mb: 0.36
+    sha256: BF0D24B9BFA0383FD965E2E3215B3A85C0DE2804F886584446B14B6B315E1663
+    role: supplemental_reading_vocab
+    cover_note: file title says 440 context while cover describes 390篇核心390词
+    answer_status: not_applicable
+  - id: quant_170_hard_4_0
+    filename: 巍哥GRE数学170难题4.0（2026年）.pdf
+    pages: 46
+    size_mb: 19.66
+    sha256: EAC1F71A3E40A55DA5C5558BEBB86C9337B1C0DFF9EB90CD122582B616870544
+    role: quant_high_frequency_hard_drill
+    cover_version: "4.0"
+    metadata_title_version: "3.0"
+    answer_status: external_not_present
+missing_for_plan:
+  - id: gre_beginner_intro
+    title: GRE小白入门
+    required_days: [1, 2, 3, 4, 5, 6]
+    status: not_provided
+  - id: quant_full_score_guide
+    title: GRE数学满分宝典
+    required_days: [1, 2, 3, 4, 5, 6]
+    requirement: 50_pages_per_day
+    status: not_provided
+missing_answer_sets:
+  - for_material: reading_440
+  - for_material: text_completion_2000
+  - for_material: quant_900
+  - for_material: quant_170_hard_4_0

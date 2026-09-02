@@ -1,0 +1,22 @@
+schema_version: 1
+updated_at: "2026-09-02"
+states: [unknown, learned, applied, reliable]
+items:
+  - {id: v_tc_logic_map, area: verbal, status: unknown, evidence: []}
+  - {id: v_tc_multi_blank_consistency, area: verbal, status: unknown, evidence: []}
+  - {id: v_se_dual_equivalence, area: verbal, status: unknown, evidence: []}
+  - {id: v_rc_scope_evidence, area: verbal, status: unknown, evidence: []}
+  - {id: v_rc_author_function, area: verbal, status: unknown, evidence: []}
+  - {id: v_rc_inference_minimum, area: verbal, status: unknown, evidence: []}
+  - {id: v_pacing_two_pass, area: verbal, status: unknown, evidence: []}
+  - {id: q_translate_constraints, area: quantitative, status: unknown, evidence: []}
+  - {id: q_qc_counterexample, area: quantitative, status: unknown, evidence: []}
+  - {id: q_choose_representation, area: quantitative, status: unknown, evidence: []}
+  - {id: q_di_units_base, area: quantitative, status: unknown, evidence: []}
+  - {id: q_estimate_verify, area: quantitative, status: unknown, evidence: []}
+  - {id: q_error_checklist, area: quantitative, status: unknown, evidence: []}
+  - {id: q_pacing_two_pass, area: quantitative, status: unknown, evidence: []}
+  - {id: aw_issue_position, area: analytical_writing, status: unknown, evidence: []}
+  - {id: aw_paragraph_reasoning, area: analytical_writing, status: unknown, evidence: []}
+  - {id: aw_counterargument, area: analytical_writing, status: unknown, evidence: []}
+  - {id: aw_timed_revision, area: analytical_writing, status: unknown, evidence: []}

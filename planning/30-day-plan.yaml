@@ -1,0 +1,301 @@
+schema_version: 1
+id: gre-30d-325-20260902-v1
+title: 30天GRE冲325超全计划表
+source_kind: user_provided_image
+source_sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
+timezone: Asia/Shanghai
+starts_on: "2026-09-02"
+ends_on: "2026-10-01"
+target_combined_vq: 325
+status: active_with_material_gaps
+execution_rules:
+  - 每个数量都是当日目标；未完成要记录为 debt，不得静默标成完成。
+  - 原图范围 30-40 题固定取 35，6-8 篇固定取 7；20-30 题固定取 25，6-7 篇固定取 6。
+  - 原图模考 1-2 套固定取下限 1 套；必须完整计时并记录来源。
+  - 正序词表只查词；每日学习使用乱序词表。
+  - text_completion 与 quant 的 question_range 指从 PDF 正文起按阅读顺序计数的全局序号，不等于各 test 或 section 内重复出现的印刷题号；执行记录必须补充实际 test、section 与页码。
+  - 题库答案缺失时标记 answer_source: unavailable，不得伪造判分。
+  - 每次题目训练后都要写原子记录并完成错题分析。
+resource_mapping:
+  vocabulary_sequence:
+    - {days: "1-6", material: core3000_random_2026, units: "list1-list18", count_per_day: 300}
+    - {days: "7-12", material: core3000_random_2026, units: "list19-list30", count_per_day: 200}
+    - {day: 13, material: core3000_random_2026, units: "supplement-list1-supplement-list2", count: 200}
+    - {days: "14-20", material: machine_vocab_random_7_0_2026, units: "DAY1-DAY7", count_per_day: 200}
+    - {days: "21-26", material: difficult_and_due_words, count_per_day: 200}
+  equivalent_cycle:
+    material: equivalent_words_2026
+    available_units: [day1, day2, day3, day4, day5]
+    note: 原资料只有 5 个单元；Day6 起按计划进入滚动复习。
+  official_writing_pool: https://www.ets.org/pdfs/gre/issue-pool.pdf
+  official_mock_reference: https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html
+material_gaps:
+  - {task: gre_beginner_intro, days: "1-6", status: missing}
+  - {task: quant_full_score_guide_50_pages, days: "1-6", status: missing}
+  - {task: answer_sets_for_question_banks, days: "7-30", status: missing}
+  - {task: complete_mock_sets, days: "27-30", status: not_confirmed}
+days:
+  - day: 1
+    date: "2026-09-02"
+    phase: foundation
+    vocabulary: {count: 300, material: core3000_random_2026, units: [list1, list2, list3]}
+    equivalent_words: {mode: learn, units: [day1]}
+    beginner_intro: {required: true, material_status: missing}
+    quant_foundation: {pages: 50, material: quant_full_score_guide, material_status: missing}
+    reading: {passage_count: 4, material: reading_440, passage_range: "1-4"}
+  - day: 2
+    date: "2026-09-03"
+    phase: foundation
+    vocabulary: {count: 300, material: core3000_random_2026, units: [list4, list5, list6]}
+    equivalent_words: {mode: learn, units: [day2]}
+    beginner_intro: {required: true, material_status: missing}
+    quant_foundation: {pages: 50, material: quant_full_score_guide, material_status: missing}
+    reading: {passage_count: 4, material: reading_440, passage_range: "5-8"}
+  - day: 3
+    date: "2026-09-04"
+    phase: foundation
+    vocabulary: {count: 300, material: core3000_random_2026, units: [list7, list8, list9]}
+    equivalent_words: {mode: learn, units: [day3]}
+    beginner_intro: {required: true, material_status: missing}
+    quant_foundation: {pages: 50, material: quant_full_score_guide, material_status: missing}
+    reading: {passage_count: 4, material: reading_440, passage_range: "9-12"}
+  - day: 4
+    date: "2026-09-05"
+    phase: foundation
+    vocabulary: {count: 300, material: core3000_random_2026, units: [list10, list11, list12]}
+    equivalent_words: {mode: learn, units: [day4]}
+    beginner_intro: {required: true, material_status: missing}
+    quant_foundation: {pages: 50, material: quant_full_score_guide, material_status: missing}
+    reading: {passage_count: 4, material: reading_440, passage_range: "13-16"}
+  - day: 5
+    date: "2026-09-06"
+    phase: foundation
+    vocabulary: {count: 300, material: core3000_random_2026, units: [list13, list14, list15]}
+    equivalent_words: {mode: learn, units: [day5]}
+    beginner_intro: {required: true, material_status: missing}
+    quant_foundation: {pages: 50, material: quant_full_score_guide, material_status: missing}
+    reading: {passage_count: 4, material: reading_440, passage_range: "17-20"}
+  - day: 6
+    date: "2026-09-07"
+    phase: foundation
+    vocabulary: {count: 300, material: core3000_random_2026, units: [list16, list17, list18]}
+    equivalent_words: {mode: review, units: [day1]}
+    beginner_intro: {required: true, material_status: missing}
+    quant_foundation: {pages: 50, material: quant_full_score_guide, material_status: missing}
+    reading: {passage_count: 4, material: reading_440, passage_range: "21-24"}
+  - day: 7
+    date: "2026-09-08"
+    phase: volume
+    vocabulary: {count: 200, material: core3000_random_2026, units: [list19, list20]}
+    equivalent_words: {mode: review, units: [day2, day3]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "1-35"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "25-31"}
+    quant: {count: 35, material: quant_900, question_range: "1-35"}
+    error_analysis: required
+  - day: 8
+    date: "2026-09-09"
+    phase: volume
+    vocabulary: {count: 200, material: core3000_random_2026, units: [list21, list22]}
+    equivalent_words: {mode: review, units: [day4, day5]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "36-70"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "32-38"}
+    quant: {count: 35, material: quant_900, question_range: "36-70"}
+    error_analysis: required
+  - day: 9
+    date: "2026-09-10"
+    phase: volume
+    vocabulary: {count: 200, material: core3000_random_2026, units: [list23, list24]}
+    equivalent_words: {mode: review, units: [day1, day2]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "71-105"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "39-45"}
+    quant: {count: 35, material: quant_900, question_range: "71-105"}
+    error_analysis: required
+  - day: 10
+    date: "2026-09-11"
+    phase: volume
+    vocabulary: {count: 200, material: core3000_random_2026, units: [list25, list26]}
+    equivalent_words: {mode: review, units: [day3, day4]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "106-140"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "46-52"}
+    quant: {count: 35, material: quant_900, question_range: "106-140"}
+    error_analysis: required
+  - day: 11
+    date: "2026-09-12"
+    phase: volume
+    vocabulary: {count: 200, material: core3000_random_2026, units: [list27, list28]}
+    equivalent_words: {mode: review, units: [day5, day1]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "141-175"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "53-59"}
+    quant: {count: 35, material: quant_900, question_range: "141-175"}
+    error_analysis: required
+  - day: 12
+    date: "2026-09-13"
+    phase: volume
+    vocabulary: {count: 200, material: core3000_random_2026, units: [list29, list30]}
+    equivalent_words: {mode: review, units: [day2, day3]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "176-210"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "60-66"}
+    quant: {count: 35, material: quant_900, question_range: "176-210"}
+    error_analysis: required
+  - day: 13
+    date: "2026-09-14"
+    phase: volume
+    vocabulary: {count: 200, material: core3000_random_2026, units: [supplement_list1, supplement_list2]}
+    equivalent_words: {mode: review, units: [day4, day5]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "211-245"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "67-73"}
+    quant: {count: 35, material: quant_900, question_range: "211-245"}
+    error_analysis: required
+  - day: 14
+    date: "2026-09-15"
+    phase: volume
+    vocabulary: {count: 200, material: machine_vocab_random_7_0_2026, units: [day1]}
+    equivalent_words: {mode: review, units: [day1, day2]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "246-280"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "74-80"}
+    quant: {count: 35, material: quant_900, question_range: "246-280"}
+    error_analysis: required
+  - day: 15
+    date: "2026-09-16"
+    phase: volume
+    vocabulary: {count: 200, material: machine_vocab_random_7_0_2026, units: [day2]}
+    equivalent_words: {mode: review, units: [day3, day4]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "281-315"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "81-87"}
+    quant: {count: 35, material: quant_900, question_range: "281-315"}
+    error_analysis: required
+  - day: 16
+    date: "2026-09-17"
+    phase: volume
+    vocabulary: {count: 200, material: machine_vocab_random_7_0_2026, units: [day3]}
+    equivalent_words: {mode: review, units: [day5, day1]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "316-350"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "88-94"}
+    quant: {count: 35, material: quant_900, question_range: "316-350"}
+    error_analysis: required
+  - day: 17
+    date: "2026-09-18"
+    phase: volume
+    vocabulary: {count: 200, material: machine_vocab_random_7_0_2026, units: [day4]}
+    equivalent_words: {mode: review, units: [day2, day3]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "351-385"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "95-101"}
+    quant: {count: 35, material: quant_900, question_range: "351-385"}
+    error_analysis: required
+  - day: 18
+    date: "2026-09-19"
+    phase: volume
+    vocabulary: {count: 200, material: machine_vocab_random_7_0_2026, units: [day5]}
+    equivalent_words: {mode: review, units: [day4, day5]}
+    text_completion: {count: 35, material: text_completion_2000, question_range: "386-420"}
+    reading: {passage_count: 7, material: reading_440, passage_range: "102-108"}
+    quant: {count: 35, material: quant_900, question_range: "386-420"}
+    error_analysis: required
+  - day: 19
+    date: "2026-09-20"
+    phase: high_frequency
+    vocabulary: {count: 200, material: machine_vocab_random_7_0_2026, units: [day6]}
+    equivalent_words: {mode: review, units: [day1]}
+    text_completion: {count: 25, material: text_completion_2000, question_range: "421-445"}
+    reading: {passage_count: 6, material: reading_440, passage_range: "109-114"}
+    quant: {count: 25, material: quant_900, question_range: "421-445"}
+    high_frequency: {text_completion_questions: 10, reading_questions: 10, quant_questions: 10, quant_material: quant_170_hard_4_0, quant_range: "1-10", selection: prior_error_tags}
+    error_analysis: required
+  - day: 20
+    date: "2026-09-21"
+    phase: high_frequency
+    vocabulary: {count: 200, material: machine_vocab_random_7_0_2026, units: [day7]}
+    equivalent_words: {mode: review, units: [day2]}
+    text_completion: {count: 25, material: text_completion_2000, question_range: "446-470"}
+    reading: {passage_count: 6, material: reading_440, passage_range: "115-120"}
+    quant: {count: 25, material: quant_900, question_range: "446-470"}
+    high_frequency: {text_completion_questions: 10, reading_questions: 10, quant_questions: 10, quant_material: quant_170_hard_4_0, quant_range: "11-20", selection: prior_error_tags}
+    error_analysis: required
+  - day: 21
+    date: "2026-09-22"
+    phase: high_frequency
+    vocabulary: {count: 200, material: difficult_and_due_words, units: [review_due]}
+    equivalent_words: {mode: review, units: [day3]}
+    text_completion: {count: 25, material: text_completion_2000, question_range: "471-495"}
+    reading: {passage_count: 6, material: reading_440, passage_range: "121-126"}
+    quant: {count: 25, material: quant_900, question_range: "471-495"}
+    high_frequency: {text_completion_questions: 10, reading_questions: 10, quant_questions: 10, quant_material: quant_170_hard_4_0, quant_range: "21-30", selection: prior_error_tags}
+    error_analysis: required
+  - day: 22
+    date: "2026-09-23"
+    phase: high_frequency
+    vocabulary: {count: 200, material: difficult_and_due_words, units: [review_due]}
+    equivalent_words: {mode: review, units: [day4]}
+    text_completion: {count: 25, material: text_completion_2000, question_range: "496-520"}
+    reading: {passage_count: 6, material: reading_440, passage_range: "127-132"}
+    quant: {count: 25, material: quant_900, question_range: "496-520"}
+    high_frequency: {text_completion_questions: 10, reading_questions: 10, quant_questions: 10, quant_material: quant_170_hard_4_0, quant_range: "31-40", selection: prior_error_tags}
+    error_analysis: required
+  - day: 23
+    date: "2026-09-24"
+    phase: high_frequency
+    vocabulary: {count: 200, material: difficult_and_due_words, units: [review_due]}
+    equivalent_words: {mode: review, units: [day5]}
+    text_completion: {count: 25, material: text_completion_2000, question_range: "521-545"}
+    reading: {passage_count: 6, material: reading_440, passage_range: "133-138"}
+    quant: {count: 25, material: quant_900, question_range: "521-545"}
+    high_frequency: {text_completion_questions: 10, reading_questions: 10, quant_questions: 10, quant_material: quant_170_hard_4_0, quant_range: "41-50", selection: prior_error_tags}
+    error_analysis: required
+  - day: 24
+    date: "2026-09-25"
+    phase: high_frequency
+    vocabulary: {count: 200, material: difficult_and_due_words, units: [review_due]}
+    equivalent_words: {mode: review, units: [day1]}
+    text_completion: {count: 25, material: text_completion_2000, question_range: "546-570"}
+    reading: {passage_count: 6, material: reading_440, passage_range: "139-144"}
+    quant: {count: 25, material: quant_900, question_range: "546-570"}
+    high_frequency: {text_completion_questions: 10, reading_questions: 10, quant_questions: 10, quant_material: quant_170_hard_4_0, quant_range: "51-60", selection: prior_error_tags}
+    error_analysis: required
+  - day: 25
+    date: "2026-09-26"
+    phase: high_frequency
+    vocabulary: {count: 200, material: difficult_and_due_words, units: [review_due]}
+    equivalent_words: {mode: review, units: [day2]}
+    text_completion: {count: 25, material: text_completion_2000, question_range: "571-595"}
+    reading: {passage_count: 6, material: reading_440, passage_range: "145-150"}
+    quant: {count: 25, material: quant_900, question_range: "571-595"}
+    high_frequency: {text_completion_questions: 10, reading_questions: 10, quant_questions: 10, quant_material: quant_170_hard_4_0, quant_range: "61-70", selection: prior_error_tags}
+    error_analysis: required
+  - day: 26
+    date: "2026-09-27"
+    phase: high_frequency
+    vocabulary: {count: 200, material: difficult_and_due_words, units: [review_due]}
+    equivalent_words: {mode: review, units: [day3]}
+    text_completion: {count: 25, material: text_completion_2000, question_range: "596-620"}
+    reading: {passage_count: 6, material: reading_440, passage_range: "151-156"}
+    quant: {count: 25, material: quant_900, question_range: "596-620"}
+    high_frequency: {text_completion_questions: 10, reading_questions: 10, quant_questions: 10, quant_material: quant_170_hard_4_0, quant_range: "71-80", selection: prior_error_tags}
+    error_analysis: required
+  - day: 27
+    date: "2026-09-28"
+    phase: simulation
+    vocabulary: {mode: review, source: difficult_and_due_words}
+    mock: {count: 1, allowed_range: "1-2", mode: full_timed, source_status: not_confirmed}
+    error_review: required
+    writing: {mode: issue_preparation_and_outline, topic_source: official_writing_pool}
+  - day: 28
+    date: "2026-09-29"
+    phase: simulation
+    vocabulary: {mode: review, source: difficult_and_due_words}
+    mock: {count: 1, allowed_range: "1-2", mode: full_timed, source_status: not_confirmed}
+    error_review: required
+    writing: {mode: issue_preparation_and_outline, topic_source: official_writing_pool}
+  - day: 29
+    date: "2026-09-30"
+    phase: simulation
+    vocabulary: {mode: review, source: difficult_and_due_words}
+    mock: {count: 1, allowed_range: "1-2", mode: full_timed, source_status: not_confirmed}
+    error_review: required
+    writing: {mode: issue_preparation_and_outline, topic_source: official_writing_pool}
+  - day: 30
+    date: "2026-10-01"
+    phase: simulation
+    vocabulary: {mode: review, source: difficult_and_due_words}
+    mock: {count: 1, allowed_range: "1-2", mode: full_timed, source_status: not_confirmed}
+    error_review: required
+    writing: {mode: issue_preparation_and_outline, topic_source: official_writing_pool}

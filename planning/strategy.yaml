@@ -1,0 +1,23 @@
+schema_version: 1
+id: gre-30d-325-20260902-v1
+status: active_with_material_gaps
+timezone: Asia/Shanghai
+week_starts_on: monday
+exam_date: null
+weekly_budget_min: null
+target_scores:
+  combined_vq: 325
+  verbal: null
+  quantitative: null
+  analytical_writing: null
+starts_on: "2026-09-02"
+ends_on: "2026-10-01"
+plan_file: planning/30-day-plan.yaml
+phases:
+  - {id: foundation, starts_on: "2026-09-02", ends_on: "2026-09-07", days: "1-6"}
+  - {id: volume, starts_on: "2026-09-08", ends_on: "2026-09-19", days: "7-18"}
+  - {id: high_frequency, starts_on: "2026-09-20", ends_on: "2026-09-27", days: "19-26"}
+  - {id: simulation, starts_on: "2026-09-28", ends_on: "2026-10-01", days: "27-30"}
+weekly_schedule: {}
+weekly_template: {}
+task_catalog: []
