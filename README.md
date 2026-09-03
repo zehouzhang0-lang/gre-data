@@ -6,7 +6,7 @@
 
 ## 当前状态
 
-基础设施和 30 天计划已经建立。当前目标为 Verbal + Quantitative 合计 320，暑假每天可投入约 6 小时，计划从 2026-09-02 的 Day 1 执行到 2026-10-01 的 Day 30。Day 1 实测 102 词约需 120 分钟后，原图的高负荷计划已降级为来源参考；当前执行 `planning/adaptive-30-day-plan-v3.yaml`。个人档案仍需补充：
+基础设施和 30 天计划已经建立。当前目标为 Verbal + Quantitative 合计 320，暑假每天可投入约 6 小时，计划从 2026-09-02 的 Day 1 执行到 2026-10-01 的 Day 30。Day 1 实测 102 词约需 120 分钟后，原图的高负荷计划已降级为来源参考；当前执行 `planning/adaptive-30-day-plan-v4.yaml`。个人档案仍需补充：
 
 - 目标 Verbal / Quantitative / Analytical Writing 分数
 - 计划考试日期
@@ -53,7 +53,7 @@ gre-data/
 
 ## 30 天计划
 
-`planning/30-day-plan.yaml` 保留用户图片的规范化原计划，`planning/adaptive-30-day-plan.yaml` 保留第一次减量修订，两者都只用于追溯。当前主计划是 `planning/adaptive-30-day-plan-v3.yaml`：标准日为 330 分钟专注学习加 30 分钟休息；普通日 120 个新词，模考日 60 个，复盘日 80 个，同时保留主动回忆、Verbal、Quant、错题和周期性写作训练。完整模考不连续安排，每套之后预留复盘日。
+`planning/30-day-plan.yaml`、`planning/adaptive-30-day-plan.yaml` 和 `planning/adaptive-30-day-plan-v3.yaml` 均保留为历史版本。当前主计划是 `planning/adaptive-30-day-plan-v4.yaml`：标准日为 330 分钟专注学习加 30 分钟休息；普通日 120 个新词，模考日 60 个，复盘日 80 个，同时保留主动回忆、Verbal、Quant、错题和周期性写作训练。第一次完整模考已按用户要求顺延至 Day 7，次日预留复盘。
 
 `planning/strategy.yaml` 的 `plan_file` 是跨设备接管时唯一的当前计划入口；不得仅凭文件名重新启用旧计划。
 

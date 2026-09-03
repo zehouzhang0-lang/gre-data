@@ -10,7 +10,9 @@ timezone: Asia/Shanghai
 starts_on: "2026-09-02"
 ends_on: "2026-10-01"
 target_combined_vq: 320
-status: active_pending_baseline
+status: superseded
+superseded_on: "2026-09-03"
+superseded_by: planning/adaptive-30-day-plan-v4.yaml
 assumptions:
   - 考试预计在2026年10月初，具体日期未定；最后48小时减量规则应在日期确认后平移到真正考前。
   - 暑假每天可投入约6小时，即每周约42小时；标准日含330分钟专注学习和30分钟计划休息。

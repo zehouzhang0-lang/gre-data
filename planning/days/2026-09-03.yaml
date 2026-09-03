@@ -1,0 +1,57 @@
+schema_version: 1
+date: "2026-09-03"
+timezone: Asia/Shanghai
+strategy_id: gre-30d-adaptive-20260903-v4
+source_day: 2
+generated_at: "2026-09-03T14:55:17+08:00"
+revision: 1
+revision_reason: "用户明确将Day2设为普通日，并要求将第一次模考往后顺延。"
+status: active
+tasks:
+  - id: 2026-09-03-01-vocab-review
+    order: 1
+    key: vocab_review
+    target: "Day1的24个难词无提示主动回忆"
+    duration_min: 35
+    material_id: core3000_random_2026
+    units: [list1]
+    material_status: available
+    evidence_required: [逐词复测结果, 正确连续次数]
+  - id: 2026-09-03-02-vocab-new
+    order: 2
+    key: vocab_new
+    target: "从list2起连续120个未学词"
+    duration_min: 140
+    material_id: core3000_random_2026
+    units: [list2, next_unit_if_needed]
+    material_status: available
+    evidence_required: [实际学习数量, 主动回忆测试结果, 难词列表]
+  - id: 2026-09-03-03-verbal
+    order: 3
+    key: verbal_application
+    target: "TC/SE 12-15题 + RC 1篇"
+    duration_min: 70
+    material_id: text_completion_2000
+    material_status: available_answer_external_not_present
+    evidence_required: [题目定位, 用户答案, 可验证答案来源, 错因]
+  - id: 2026-09-03-04-quant
+    order: 4
+    key: quantitative
+    target: "15-20题，优先限时组"
+    duration_min: 70
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    evidence_required: [题目定位, 用户答案, 可验证答案来源, 错因]
+  - id: 2026-09-03-05-error-analysis
+    order: 5
+    key: error_analysis
+    target: "记录今日错因与下一次检验动作"
+    duration_min: 15
+    material_id: null
+    material_status: not_applicable
+    evidence_required: [错因标签, 下一次动作, 成功标准]
+superseded_tasks:
+  - {id: 2026-09-03-full-mock, disposition: deferred_to_2026-09-08_by_user_request}
+notes:
+  - 今天按普通日执行，计划专注学习330分钟并休息30分钟。
+  - 第一次完整模考顺延至Day7；在模考完成前不写入V/Q量表基线。

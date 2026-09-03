@@ -1,5 +1,5 @@
 schema_version: 1
-id: gre-30d-adaptive-20260902-v3
+id: gre-30d-adaptive-20260903-v4
 status: active_pending_baseline
 timezone: Asia/Shanghai
 week_starts_on: monday
@@ -19,7 +19,7 @@ target_scores:
   analytical_writing: null
 starts_on: "2026-09-02"
 ends_on: "2026-10-01"
-plan_file: planning/adaptive-30-day-plan-v3.yaml
+plan_file: planning/adaptive-30-day-plan-v4.yaml
 source_plan_file: planning/30-day-plan.yaml
 phases:
   - {id: baseline, starts_on: "2026-09-02", ends_on: "2026-09-04", days: "1-3"}

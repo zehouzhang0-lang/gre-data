@@ -100,6 +100,7 @@ $Required = @(
   'planning\30-day-plan.yaml',
   'planning\adaptive-30-day-plan.yaml',
   'planning\adaptive-30-day-plan-v3.yaml',
+  'planning\adaptive-30-day-plan-v4.yaml',
   'techniques\mastery.yaml',
   'sync.ps1',
   'sync.sh'
@@ -188,6 +189,7 @@ Get-Content -Raw (Join-Path $Repo 'planning\strategy.yaml')
 Get-Content -Raw (Join-Path $Repo 'planning\30-day-plan.yaml')
 Get-Content -Raw (Join-Path $Repo 'planning\adaptive-30-day-plan.yaml')
 Get-Content -Raw (Join-Path $Repo 'planning\adaptive-30-day-plan-v3.yaml')
+Get-Content -Raw (Join-Path $Repo 'planning\adaptive-30-day-plan-v4.yaml')
 ```
 
 首次写入任何训练数据前，必须再完整读取：
@@ -200,7 +202,7 @@ Get-Content -Raw (Join-Path $Repo 'SCHEMA.md')
 
 ## 第七阶段：恢复 30 天执行进度
 
-计划周期固定从 2026-09-02（Day 1）到 2026-10-01（Day 30）。`planning/30-day-plan.yaml` 是用户图片的规范化历史参考，`planning/adaptive-30-day-plan.yaml` 是历史修订；当前计划必须读取 `planning/strategy.yaml` 的 `plan_file`，目前是 `planning/adaptive-30-day-plan-v3.yaml`。不要仅凭日历把任务视为完成：
+计划周期固定从 2026-09-02（Day 1）到 2026-10-01（Day 30）。旧计划文件均作为历史参考保留；当前计划必须读取 `planning/strategy.yaml` 的 `plan_file`，目前是 `planning/adaptive-30-day-plan-v4.yaml`。不要仅凭日历把任务视为完成：
 
 1. 读取 `planning/strategy.yaml`，再根据真实日期找到其 `plan_file` 中的对应 Day。
 2. 读取 `planning/days/` 当日快照。
