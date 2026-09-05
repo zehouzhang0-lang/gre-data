@@ -7,16 +7,16 @@ status: in_progress
 source:
   material_id: core3000_random_2026
   units: [list2]
-  item_range: "1-70"
+  item_range: "1-80"
 target_count: 120
-reviewed_count: 70
+reviewed_count: 80
 recall_test:
-  total: 70
-  correct: 55
-  partial: 7
-  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent]
-partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent]
+  total: 80
+  correct: 60
+  partial: 10
+  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore]
+partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -50,11 +50,17 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/impudent
   - https://www.merriam-webster.com/dictionary/quench
   - https://www.merriam-webster.com/dictionary/discharge
+  - https://www.merriam-webster.com/dictionary/daredevil
+  - https://www.merriam-webster.com/dictionary/hackneyed
+  - https://www.merriam-webster.com/dictionary/flinch
+  - https://www.merriam-webster.com/dictionary/eyesore
+  - https://www.merriam-webster.com/dictionary/approbation
+  - https://www.merriam-webster.com/dictionary/chagrin
 ---
 
 # Day 2 词汇记录（进行中）
 
-目前完成 list2 第 1–70 词的主动回忆：55 词完全正确、7 词部分正确、8 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
+目前完成 list2 第 1–80 词的主动回忆：60 词完全正确、10 词部分正确、10 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
 
 ## 部分正确
 
@@ -65,6 +71,9 @@ verification_sources:
 - `artifact`：回答“手工饰品”抓到人工制作，但范围过窄；核心是“人工制品，尤指历史或文化遗物”，也可指实验或图像中的人为假象。
 - `untoward`：回答“不理想的回复？”抓到“不利、不理想”的方向，但“回复”不是词义。核心是“不利的、不幸的、麻烦的；不得体的”，也可形容人“难以管束的”。
 - `felony`：回答“罪行”方向正确但范围过宽。核心是“重罪”，需与较轻的 `misdemeanor` 区分。
+- `daredevil`：回答“无畏的”抓到大胆方向，但缺少关键贬义色彩。核心是“鲁莽大胆的、爱冒险的；冒险家”，强调不顾后果，常还带炫耀意味。
+- `flinch`：回答“畏缩的”语义方向正确但词性错位。`flinch` 主要作动词“因疼痛或恐惧而退缩、畏缩”，也可作名词；不是形容词。
+- `chagrin`：回答“失望”接近诱因，但情绪强度和成分不足。核心是“因失败、受辱或失望而产生的懊恼、羞恼”，常见搭配 `to one's chagrin`。
 
 ## 错误
 
@@ -76,6 +85,8 @@ verification_sources:
 - `accrete`：回答“允许、认可”错误，是与 `accede` 混淆。`accrete` 的核心是“逐渐附着、积聚或增长”；`accede` 才可表示“同意、加入、就任”。
 - `exile`：回答“消逝”错误。名词是“流放、流亡；流亡者”，动词是“流放、放逐”；不要与 `expire` 或 `vanish` 混淆。
 - `impudent`：未回忆出。核心是“无礼的、放肆的、厚颜的”，强调傲慢或轻蔑地不尊重他人。
+- `hackneyed`：未回忆出。核心是“陈腐的、老生常谈的、因过度使用而失去新意的”。
+- `eyesore`：回答“眼中钉”错误。核心是“碍眼的东西、难看的景物”，强调视觉上令人不悦；“眼中钉”更接近 `a thorn in one's side`。
 
 ## 正确但需固定搭配
 
@@ -98,7 +109,10 @@ verification_sources:
 - `quench`：回答“结束”可由权威词典中的“使某事终止、消除”义项支持，判为正确；还需固定高频义“熄灭、解渴、压制”。
 - `discharge`：回答“解雇”是有效义项，判为正确；另有“释放、卸下、排放、履行职责”等常见义，需依宾语判断。
 - `apprentice`：回答“学徒；成为学徒”正确，可作名词或动词。
+- `stalwart`：回答“健壮的”正确；另有“忠诚坚定的”义，可形容坚定的支持者。
+- `approbation`：回答“允许、批准”中的“批准”可由“正式认可”义支持，判为正确；更稳妥记作名词“赞同、认可、赞扬”，不等同于一般许可。
+- `concise`：回答“精确的、简明的”因“简明的”判为正确；核心是“简洁而内容完整的”，不必然等于精确。
 
 ## 下一次检验
 
-对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
+对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`chagrin` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
