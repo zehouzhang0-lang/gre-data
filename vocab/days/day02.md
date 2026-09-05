@@ -7,16 +7,16 @@ status: in_progress
 source:
   material_id: core3000_random_2026
   units: [list2]
-  item_range: "1-60"
+  item_range: "1-70"
 target_count: 120
-reviewed_count: 60
+reviewed_count: 70
 recall_test:
-  total: 60
-  correct: 48
-  partial: 6
-  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete]
-partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward]
+  total: 70
+  correct: 55
+  partial: 7
+  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent]
+partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -45,11 +45,16 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/apropos
   - https://www.merriam-webster.com/dictionary/coterie
   - https://www.merriam-webster.com/dictionary/dichotomous
+  - https://www.merriam-webster.com/dictionary/felony
+  - https://www.merriam-webster.com/dictionary/exile
+  - https://www.merriam-webster.com/dictionary/impudent
+  - https://www.merriam-webster.com/dictionary/quench
+  - https://www.merriam-webster.com/dictionary/discharge
 ---
 
 # Day 2 词汇记录（进行中）
 
-目前完成 list2 第 1–60 词的主动回忆：48 词完全正确、6 词部分正确、6 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
+目前完成 list2 第 1–70 词的主动回忆：55 词完全正确、7 词部分正确、8 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
 
 ## 部分正确
 
@@ -59,6 +64,7 @@ verification_sources:
 - `envisage`：回答“愿景、联想”接近形成心中图景，但词性是动词，核心是“设想、想象，尤其指尚未实现的情形”。
 - `artifact`：回答“手工饰品”抓到人工制作，但范围过窄；核心是“人工制品，尤指历史或文化遗物”，也可指实验或图像中的人为假象。
 - `untoward`：回答“不理想的回复？”抓到“不利、不理想”的方向，但“回复”不是词义。核心是“不利的、不幸的、麻烦的；不得体的”，也可形容人“难以管束的”。
+- `felony`：回答“罪行”方向正确但范围过宽。核心是“重罪”，需与较轻的 `misdemeanor` 区分。
 
 ## 错误
 
@@ -68,6 +74,8 @@ verification_sources:
 - `bathetic`：回答“中庸的”错误。核心是“陈腐煽情的；由崇高突降为平庸可笑的”，带贬义；词源关联 `bathos`，不要与“适度、中庸”联想。
 - `vagary`：回答“天马行空的”错误，且词性错位。它是名词，核心是“反复无常的念头或行为；难以预测的变化”，常见复数搭配 `the vagaries of ...`。
 - `accrete`：回答“允许、认可”错误，是与 `accede` 混淆。`accrete` 的核心是“逐渐附着、积聚或增长”；`accede` 才可表示“同意、加入、就任”。
+- `exile`：回答“消逝”错误。名词是“流放、流亡；流亡者”，动词是“流放、放逐”；不要与 `expire` 或 `vanish` 混淆。
+- `impudent`：未回忆出。核心是“无礼的、放肆的、厚颜的”，强调傲慢或轻蔑地不尊重他人。
 
 ## 正确但需固定搭配
 
@@ -87,7 +95,10 @@ verification_sources:
 - `apropos`：回答“合适的；至于”正确；形容词指“相关且合时宜的”，`apropos (of)` 指“关于、就……而言”。
 - `coterie`：回答“小群体”正确；通常指有共同兴趣、带一定排他性的“小圈子”。
 - `dichotomous`：回答“二分的、矛盾的”因“二分的”判为正确；核心是“分成两个部分的”，两个部分常形成鲜明对立，但不必然逻辑矛盾。
+- `quench`：回答“结束”可由权威词典中的“使某事终止、消除”义项支持，判为正确；还需固定高频义“熄灭、解渴、压制”。
+- `discharge`：回答“解雇”是有效义项，判为正确；另有“释放、卸下、排放、履行职责”等常见义，需依宾语判断。
+- `apprentice`：回答“学徒；成为学徒”正确，可作名词或动词。
 
 ## 下一次检验
 
-对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
+对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
