@@ -7,16 +7,16 @@ status: in_progress
 source:
   material_id: core3000_random_2026
   units: [list2]
-  item_range: "1-50"
+  item_range: "1-60"
 target_count: 120
-reviewed_count: 50
+reviewed_count: 60
 recall_test:
-  total: 50
-  correct: 40
-  partial: 5
-  wrong: [vicarious, contumacious, obscure, bathetic, vagary]
-partial_words: [antiquity, symbiosis, vilify, envisage, artifact]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary]
+  total: 60
+  correct: 48
+  partial: 6
+  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete]
+partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -40,11 +40,16 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/vagary
   - https://www.merriam-webster.com/dictionary/definite
   - https://www.merriam-webster.com/dictionary/eloquent
+  - https://www.merriam-webster.com/dictionary/accrete
+  - https://www.merriam-webster.com/dictionary/untoward
+  - https://www.merriam-webster.com/dictionary/apropos
+  - https://www.merriam-webster.com/dictionary/coterie
+  - https://www.merriam-webster.com/dictionary/dichotomous
 ---
 
 # Day 2 词汇记录（进行中）
 
-目前完成 list2 第 1–50 词的主动回忆：40 词完全正确、5 词部分正确、5 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
+目前完成 list2 第 1–60 词的主动回忆：48 词完全正确、6 词部分正确、6 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
 
 ## 部分正确
 
@@ -53,6 +58,7 @@ verification_sources:
 - `vilify`：回答“诬陷”接近损害名誉，但核心是“公开诋毁、中伤”；不要求一定捏造具体罪名。
 - `envisage`：回答“愿景、联想”接近形成心中图景，但词性是动词，核心是“设想、想象，尤其指尚未实现的情形”。
 - `artifact`：回答“手工饰品”抓到人工制作，但范围过窄；核心是“人工制品，尤指历史或文化遗物”，也可指实验或图像中的人为假象。
+- `untoward`：回答“不理想的回复？”抓到“不利、不理想”的方向，但“回复”不是词义。核心是“不利的、不幸的、麻烦的；不得体的”，也可形容人“难以管束的”。
 
 ## 错误
 
@@ -61,6 +67,7 @@ verification_sources:
 - `obscure`：未回忆出。形容词为“不出名的；晦涩难懂的；模糊的”，动词为“遮蔽；使难以理解”。
 - `bathetic`：回答“中庸的”错误。核心是“陈腐煽情的；由崇高突降为平庸可笑的”，带贬义；词源关联 `bathos`，不要与“适度、中庸”联想。
 - `vagary`：回答“天马行空的”错误，且词性错位。它是名词，核心是“反复无常的念头或行为；难以预测的变化”，常见复数搭配 `the vagaries of ...`。
+- `accrete`：回答“允许、认可”错误，是与 `accede` 混淆。`accrete` 的核心是“逐渐附着、积聚或增长”；`accede` 才可表示“同意、加入、就任”。
 
 ## 正确但需固定搭配
 
@@ -77,7 +84,10 @@ verification_sources:
 - `definite`：回答“肯定的、绝对的”判为正确；更稳妥的核心义是“明确的、确定的、界限清楚的”，不能在所有语境中与 `absolute` 互换。
 - `eloquent`：回答“雄辩的、能辩的”正确；也可形容表情、行动或事实“富有表现力、具有说服力”。
 - `conviction`：回答“信念、定罪”正确；需依语境区分坚定信念与法院定罪。
+- `apropos`：回答“合适的；至于”正确；形容词指“相关且合时宜的”，`apropos (of)` 指“关于、就……而言”。
+- `coterie`：回答“小群体”正确；通常指有共同兴趣、带一定排他性的“小圈子”。
+- `dichotomous`：回答“二分的、矛盾的”因“二分的”判为正确；核心是“分成两个部分的”，两个部分常形成鲜明对立，但不必然逻辑矛盾。
 
 ## 下一次检验
 
-对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
+对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
