@@ -7,16 +7,16 @@ status: in_progress
 source:
   material_id: core3000_random_2026
   units: [list2]
-  item_range: "1-30"
+  item_range: "1-40"
 target_count: 120
-reviewed_count: 30
+reviewed_count: 40
 recall_test:
-  total: 30
-  correct: 24
-  partial: 3
+  total: 40
+  correct: 32
+  partial: 5
   wrong: [vicarious, contumacious, obscure]
-partial_words: [antiquity, symbiosis, vilify]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure]
+partial_words: [antiquity, symbiosis, vilify, envisage, artifact]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -32,17 +32,23 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/impolitic
   - https://www.merriam-webster.com/dictionary/contumacious
   - https://www.merriam-webster.com/dictionary/obscure
+  - https://www.merriam-webster.com/dictionary/envisage
+  - https://www.merriam-webster.com/dictionary/artifact
+  - https://www.merriam-webster.com/dictionary/catholic
+  - https://www.merriam-webster.com/dictionary/last-ditch
 ---
 
 # Day 2 词汇记录（进行中）
 
-目前完成 list2 第 1–30 词的主动回忆：24 词完全正确、3 词部分正确、3 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
+目前完成 list2 第 1–40 词的主动回忆：32 词完全正确、5 词部分正确、3 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
 
 ## 部分正确
 
 - `antiquity`：回答“古董”抓到了古代事物的方向，但单数核心义优先是“古代；古老”。“古代遗物”通常用复数 `antiquities`；普通“古董”更常用 `antique`。
 - `symbiosis`：概念方向正确，但它是名词“共生（关系）”；形容词“共生的”是 `symbiotic`。
 - `vilify`：回答“诬陷”接近损害名誉，但核心是“公开诋毁、中伤”；不要求一定捏造具体罪名。
+- `envisage`：回答“愿景、联想”接近形成心中图景，但词性是动词，核心是“设想、想象，尤其指尚未实现的情形”。
+- `artifact`：回答“手工饰品”抓到人工制作，但范围过窄；核心是“人工制品，尤指历史或文化遗物”，也可指实验或图像中的人为假象。
 
 ## 错误
 
@@ -59,7 +65,10 @@ verification_sources:
 - `skulduggery/skullduggery`：回答“诈骗行为”可接受；更完整是“欺诈、不正当勾当、诡计”。
 - `impolitic`：回答“不理智的”可接受；考试首选译法是“不明智的、不策略的”。
 - `exonerate`：回答“使无罪”正确；更通用是“免除罪责、过失或责任”。
+- `last-ditch`：回答“最后一试”正确；通常修饰绝境中的最后努力或办法。
+- `catholic`：小写形容词“广泛的、包罗万象的”正确；大写 `Catholic` 才表示“天主教的”或名词“天主教徒”。
+- `mask`：回答“遮掩”正确；作动词常指掩盖气味、声音、事实或情感。
 
 ## 下一次检验
 
-对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
+对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
