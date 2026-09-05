@@ -7,16 +7,16 @@ status: in_progress
 source:
   material_id: core3000_random_2026
   units: [list2]
-  item_range: "1-20"
+  item_range: "1-30"
 target_count: 120
-reviewed_count: 20
+reviewed_count: 30
 recall_test:
-  total: 20
-  correct: 16
+  total: 30
+  correct: 24
   partial: 3
-  wrong: [vicarious]
+  wrong: [vicarious, contumacious, obscure]
 partial_words: [antiquity, symbiosis, vilify]
-difficult_added: [antiquity, symbiosis, vicarious, vilify]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -28,11 +28,15 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/vilify
   - https://www.merriam-webster.com/dictionary/accede
   - https://www.merriam-webster.com/dictionary/embody
+  - https://www.merriam-webster.com/dictionary/skulduggery
+  - https://www.merriam-webster.com/dictionary/impolitic
+  - https://www.merriam-webster.com/dictionary/contumacious
+  - https://www.merriam-webster.com/dictionary/obscure
 ---
 
 # Day 2 词汇记录（进行中）
 
-目前完成 list2 第 1–20 词的主动回忆：16 词完全正确、3 词部分正确、1 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
+目前完成 list2 第 1–30 词的主动回忆：24 词完全正确、3 词部分正确、3 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
 
 ## 部分正确
 
@@ -43,6 +47,8 @@ verification_sources:
 ## 错误
 
 - `vicarious`：未回忆出。GRE 常见核心义为“通过想象或同感间接体验他人经历的”；另有“替代的、代位的”。
+- `contumacious`：未回忆出。核心义为“顽固抗命的、拒不服从权威的”，常见于法律或正式语境。
+- `obscure`：未回忆出。形容词为“不出名的；晦涩难懂的；模糊的”，动词为“遮蔽；使难以理解”。
 
 ## 正确但需固定搭配
 
@@ -50,7 +56,10 @@ verification_sources:
 - `potent`：回答“有权势的”正确；还需保留常见核心义“强有力的、有效力的”。
 - `accede`：回答“认可、加入”正确；常见结构是 `accede to a demand/agreement`，另可表示“就任、继位”。
 - `embody`：回答“象征”可由权威词典中的“以可见形式代表”义项支持，判为正确；为适应更多GRE语境，首选记忆“体现、使具体化；包含”。
+- `skulduggery/skullduggery`：回答“诈骗行为”可接受；更完整是“欺诈、不正当勾当、诡计”。
+- `impolitic`：回答“不理智的”可接受；考试首选译法是“不明智的、不策略的”。
+- `exonerate`：回答“使无罪”正确；更通用是“免除罪责、过失或责任”。
 
 ## 下一次检验
 
-对 `antiquity`、`symbiosis`、`vicarious`、`vilify` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
+对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
