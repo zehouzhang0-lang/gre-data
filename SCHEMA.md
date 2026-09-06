@@ -339,6 +339,14 @@ items:
 
 - 连续 3 次在主动回忆测试中正确后移至 `vocab/mastered.yaml`。
 
+## 手机词汇作业
+
+路径：`vocab/homework/YYYYMMDD_HHMM_来源简述.{md,json,html}`。Markdown 保存任务范围、操作与验证；JSON 保存 `schema_version`、`assignment_id`、含时区的 `generated_at`、`scope`、`counts`、`items`、`instructions`；HTML 为用户请求的可离线使用文本页面。
+
+每个词条保留 `word`、`pos`、`meaning`、`collocation`、`note`、`source_records`、`evidence`、`category`、`priority`、`dictionary_url` 与释义来源说明。原记录没有的复测证据为 `null`，新增与旧词再暴露分开计数。
+
+页面导出的结果包含作业 ID、导出时间及每项回忆与 `self_rating`（`remembered | partial | forgotten | null`）。自评只作复盘线索；生成作业不记为完成训练，不自动更新掌握度。
+
 ## 技巧掌握度
 
 `techniques/mastery.yaml` 状态：

@@ -1,0 +1,2541 @@
+{
+  "schema_version": 1,
+  "assignment_id": "20260907_0022_fill_vocab",
+  "title": "今晚填空词汇 · 手机复习作业",
+  "generated_at": "2026-09-07T00:22:36+08:00",
+  "timezone": "Asia/Shanghai",
+  "scope": {
+    "start": "2026-09-06",
+    "end": "2026-09-07",
+    "cutoff": "Test 2 Section 1 第5题复盘",
+    "description": "跨零点的同一学习轮次；TC与SE，以及直接衍生的迁移词；不含单独词表学习词，robust作为旧词再暴露单列"
+  },
+  "counts": {
+    "total": 101,
+    "pool_new": 98,
+    "supplemental": 2,
+    "old_reexposed": 1,
+    "priority": 35
+  },
+  "items": [
+    {
+      "word": "beetle",
+      "pos": "n.",
+      "meaning": "甲虫",
+      "collocation": "a beetle",
+      "note": "题干 beetles 规范为单数词元。",
+      "id": "beetle",
+      "group": "test1_section1_easy",
+      "question_range": "1-3",
+      "source_records": [
+        "verbal/submissions/20260906_1627_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/beetle",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "capricious",
+      "pos": "adj.",
+      "meaning": "反复无常的、任性的",
+      "collocation": "capricious behavior",
+      "note": "描述变化无常，不是见识狭隘。",
+      "id": "capricious",
+      "group": "test1_section1_easy",
+      "question_range": "1-3",
+      "source_records": [
+        "verbal/submissions/20260906_1627_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/capricious",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "cosmopolitan",
+      "pos": "adj.",
+      "meaning": "世界性的、见多识广的",
+      "collocation": "a cosmopolitan outlook",
+      "note": "本题强调接触不同文化；训练记录有纠正证据。",
+      "id": "cosmopolitan",
+      "group": "test1_section1_easy",
+      "question_range": "1-3",
+      "source_records": [
+        "verbal/submissions/20260906_1627_text_completion.md"
+      ],
+      "evidence": null,
+      "category": "记录补充",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/cosmopolitan",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "dearth",
+      "pos": "n.",
+      "meaning": "缺乏、短缺",
+      "collocation": "a dearth of evidence",
+      "note": "常接 of；不要与存在或发现混淆。",
+      "id": "dearth",
+      "group": "test1_section1_easy",
+      "question_range": "1-3",
+      "source_records": [
+        "verbal/submissions/20260906_1627_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/dearth",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "idealistic",
+      "pos": "adj.",
+      "meaning": "理想主义的、以理想为导向的",
+      "collocation": "idealistic goals",
+      "note": "可含不切实际，不能直接等同狭隘。",
+      "id": "idealistic",
+      "group": "test1_section1_easy",
+      "question_range": "1-3",
+      "source_records": [
+        "verbal/submissions/20260906_1627_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/idealistic",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "insular",
+      "pos": "adj.",
+      "meaning": "封闭的、狭隘的；岛屿的",
+      "collocation": "an insular outlook",
+      "note": "本题与 cosmopolitan 的开放眼界对立。",
+      "id": "insular",
+      "group": "test1_section1_easy",
+      "question_range": "1-3",
+      "source_records": [
+        "verbal/submissions/20260906_1627_text_completion.md"
+      ],
+      "evidence": null,
+      "category": "记录补充",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/insular",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "intransigent",
+      "pos": "adj.",
+      "meaning": "不肯妥协的、顽固的",
+      "collocation": "an intransigent position",
+      "note": "强调立场不退让，不等于见识狭窄。",
+      "id": "intransigent",
+      "group": "test1_section1_easy",
+      "question_range": "1-3",
+      "source_records": [
+        "verbal/submissions/20260906_1627_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/intransigent",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "mercenary",
+      "pos": "adj./n.",
+      "meaning": "唯利是图的；雇佣兵",
+      "collocation": "mercenary motives",
+      "note": "形容词强调金钱动机，常贬义。",
+      "id": "mercenary",
+      "group": "test1_section1_easy",
+      "question_range": "1-3",
+      "source_records": [
+        "verbal/submissions/20260906_1627_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/mercenary",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "presumption",
+      "pos": "n.",
+      "meaning": "推定、假设；放肆、自以为是",
+      "collocation": "presumption of innocence",
+      "note": "褒贬和义项依搭配；假设不等于已观测事实。",
+      "id": "presumption",
+      "group": "test1_section1_easy",
+      "question_range": "1-3",
+      "source_records": [
+        "verbal/submissions/20260906_1627_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/presumption",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "apathetic",
+      "pos": "adj.",
+      "meaning": "冷漠的、缺乏兴趣的",
+      "collocation": "an apathetic response",
+      "note": "描述缺少兴趣或情感，常负向。",
+      "id": "apathetic",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/apathetic",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "archaic",
+      "pos": "adj.",
+      "meaning": "古老的、过时的、现已少用的",
+      "collocation": "archaic language",
+      "note": "古老题材本身不证明语言过时。",
+      "id": "archaic",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/archaic",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "bias",
+      "pos": "n./v.",
+      "meaning": "偏见、偏向；使有偏见",
+      "collocation": "succumb to bias",
+      "note": "此题为不公正偏向；与公平性有关。",
+      "id": "bias",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/bias",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "calm",
+      "pos": "adj.",
+      "meaning": "平静的、不激动的",
+      "collocation": "remain calm",
+      "note": "迁移题中与 composed 等价。",
+      "id": "calm",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "coach_transfer_se"
+      },
+      "category": "迁移补充",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/calm",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "composed",
+      "pos": "adj.",
+      "meaning": "镇静自若的、沉着的",
+      "collocation": "remain composed",
+      "note": "描述情绪控制，非有偏见。",
+      "id": "composed",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "coach_transfer_se"
+      },
+      "category": "迁移补充",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/composed",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "counterfeit",
+      "pos": "adj./n./v.",
+      "meaning": "伪造的；赝品；伪造",
+      "collocation": "counterfeit money",
+      "note": "涉及真伪，不等于没有价值。",
+      "id": "counterfeit",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/counterfeit",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "deviate",
+      "pos": "v.",
+      "meaning": "偏离、背离",
+      "collocation": "deviate from a rule",
+      "note": "deviate from bias 方向不同于屈从偏见。",
+      "id": "deviate",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/deviate",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "furious",
+      "pos": "adj.",
+      "meaning": "极其愤怒的；猛烈的",
+      "collocation": "a furious response",
+      "note": "与 calm/composed 方向相反。",
+      "id": "furious",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "coach_transfer_se"
+      },
+      "category": "迁移补充",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/furious",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "hyperbole",
+      "pos": "n.",
+      "meaning": "夸张法、极度夸大的说法",
+      "collocation": "use hyperbole",
+      "note": "与 exaggeration 接近，对应 overstatement。",
+      "id": "hyperbole",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/hyperbole",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "imminent",
+      "pos": "adj.",
+      "meaning": "即将发生的、迫在眉睫的",
+      "collocation": "imminent danger",
+      "note": "描述时间接近，不等于已经发生。",
+      "id": "imminent",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/imminent",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "imprecision",
+      "pos": "n.",
+      "meaning": "不精确、不严密",
+      "collocation": "imprecision in wording",
+      "note": "范围较宽，不等于言过其实。",
+      "id": "imprecision",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/imprecision",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "indifferent",
+      "pos": "adj.",
+      "meaning": "漠不关心的；一般的、平庸的",
+      "collocation": "indifferent to criticism",
+      "note": "取义须看语境，不必永远译冷漠。",
+      "id": "indifferent",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/indifferent",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "misinterpretation",
+      "pos": "n.",
+      "meaning": "误解、错误解释",
+      "collocation": "a misinterpretation of evidence",
+      "note": "错误理解不一定是夸大。",
+      "id": "misinterpretation",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/misinterpretation",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "partiality",
+      "pos": "n.",
+      "meaning": "偏袒、偏心；偏爱",
+      "collocation": "show partiality",
+      "note": "本题与 bias 并列；不是局部性。",
+      "id": "partiality",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/partiality",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "pessimism",
+      "pos": "n.",
+      "meaning": "悲观、悲观主义",
+      "collocation": "pessimism about the future",
+      "note": "悲观态度不等于夸张表达。",
+      "id": "pessimism",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/pessimism",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "prescient",
+      "pos": "adj.",
+      "meaning": "有先见之明的、预见准确的",
+      "collocation": "a prescient warning",
+      "note": "注意拼写 prescient，曾写成 precient。",
+      "id": "prescient",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/prescient",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "prophetic",
+      "pos": "adj.",
+      "meaning": "预言性的、预示后事的",
+      "collocation": "a prophetic warning",
+      "note": "本题与 prescient 等价。",
+      "id": "prophetic",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/prophetic",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "recoil",
+      "pos": "v.",
+      "meaning": "因恐惧或厌恶退缩、回避",
+      "collocation": "recoil from violence",
+      "note": "常接 from；方向是远离。",
+      "id": "recoil",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/recoil",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "repeated",
+      "pos": "adj.",
+      "meaning": "反复的、多次的",
+      "collocation": "repeated warnings",
+      "note": "多次警告不必预见准确。",
+      "id": "repeated",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/repeated",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "shrink",
+      "pos": "v.",
+      "meaning": "收缩；退缩、回避",
+      "collocation": "shrink from a task",
+      "note": "本题取回避义，不是屈服偏见。",
+      "id": "shrink",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/shrink",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "singular",
+      "pos": "adj.",
+      "meaning": "独特的、非凡的；单数的",
+      "collocation": "a singular work",
+      "note": "本题对应 only，意为独一无二。",
+      "id": "singular",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/singular",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "stern",
+      "pos": "adj.",
+      "meaning": "严厉的、严格的、严肃的",
+      "collocation": "a stern warning",
+      "note": "严厉不等于预见准确。",
+      "id": "stern",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/stern",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "succumb",
+      "pos": "v.",
+      "meaning": "屈服、经不住",
+      "collocation": "succumb to pressure",
+      "note": "常接 to；不要译为回避。",
+      "id": "succumb",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/succumb",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "upheaval",
+      "pos": "n.",
+      "meaning": "剧变、动荡",
+      "collocation": "political upheaval",
+      "note": "程度强，不是一般小变化。",
+      "id": "upheaval",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/upheaval",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "vagueness",
+      "pos": "n.",
+      "meaning": "模糊、不明确",
+      "collocation": "vagueness of meaning",
+      "note": "不明确与夸大是不同维度。",
+      "id": "vagueness",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/vagueness",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "valuable",
+      "pos": "adj.",
+      "meaning": "有价值的、有用的、重要的",
+      "collocation": "valuable evidence",
+      "note": "与 valueless 相反；注意 invaluable 常指极其珍贵。",
+      "id": "valuable",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/valuable",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "valueless",
+      "pos": "adj.",
+      "meaning": "无价值的",
+      "collocation": "a valueless item",
+      "note": "value + less，不要与 valuable 混淆。",
+      "id": "valueless",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/valueless",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "yield",
+      "pos": "v.",
+      "meaning": "让步、屈服；产生",
+      "collocation": "yield to pressure",
+      "note": "本题取屈服义；另可指产出。",
+      "id": "yield",
+      "group": "test1_section1_easy",
+      "question_range": "4-7",
+      "source_records": [
+        "verbal/submissions/20260906_2031_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/yield",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "clamorous",
+      "pos": "adj.",
+      "meaning": "喧闹的；吵嚷着坚持的",
+      "collocation": "clamorous demands",
+      "note": "常含吵闹、不满，不只声音响亮。",
+      "id": "clamorous",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/clamorous",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "didactic",
+      "pos": "adj.",
+      "meaning": "旨在教导的；说教的",
+      "collocation": "a didactic novel",
+      "note": "教导为中性核心，负面语境才突出说教。",
+      "id": "didactic",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/didactic",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "empirical",
+      "pos": "adj.",
+      "meaning": "基于观察、经验或实验的",
+      "collocation": "empirical evidence",
+      "note": "不必然说明结论已被证明。",
+      "id": "empirical",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/empirical",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "immutable",
+      "pos": "adj.",
+      "meaning": "不可改变的",
+      "collocation": "an immutable rule",
+      "note": "与 impenetrable 的难以理解区分。",
+      "id": "immutable",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/immutable",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "impenetrable",
+      "pos": "adj.",
+      "meaning": "无法穿透的；难以理解的",
+      "collocation": "impenetrable prose",
+      "note": "GRE 也考费解的引申义。",
+      "id": "impenetrable",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/impenetrable",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "invidious",
+      "pos": "adj.",
+      "meaning": "令人反感的；易招怨恨或嫉妒的",
+      "collocation": "an invidious comparison",
+      "note": "负向；不限于任务。",
+      "id": "invidious",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/invidious",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "numinous",
+      "pos": "adj.",
+      "meaning": "神秘灵性的、超自然的、令人感到神圣存在的",
+      "collocation": "a numinous presence",
+      "note": "本题由 haunted 指向超自然。",
+      "id": "numinous",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/numinous",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "proprietary",
+      "pos": "adj.",
+      "meaning": "专有的、所有者的、受独占权控制的",
+      "collocation": "proprietary information",
+      "note": "所有者可为个人或组织，不限个人。",
+      "id": "proprietary",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/proprietary",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "self-perpetuating",
+      "pos": "adj.",
+      "meaning": "能使自身持续或不断再生的",
+      "collocation": "a self-perpetuating cycle",
+      "note": "需有自我维持机制，不只是发生一次。",
+      "id": "self-perpetuating",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/self-perpetuating",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "sonorous",
+      "pos": "adj.",
+      "meaning": "声音洪亮浑厚的；庄严有力的",
+      "collocation": "a sonorous voice",
+      "note": "强调声音质感，区别 clamorous 的喧闹。",
+      "id": "sonorous",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/sonorous",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "ad hoc",
+      "pos": "adj./adv.",
+      "meaning": "为当前特定目的而设的、专门的",
+      "collocation": "an ad hoc committee",
+      "note": "常临时，但特定目的比临时更核心。",
+      "id": "ad_hoc",
+      "group": "test1_section2_easy",
+      "question_range": "3",
+      "source_records": [
+        "verbal/submissions/20260906_2134_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/ad%20hoc",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "sterling",
+      "pos": "adj.",
+      "meaning": "极佳的、过硬的",
+      "collocation": "a sterling reputation",
+      "note": "本题评价声誉，不取银制品相关义。",
+      "id": "sterling",
+      "group": "test1_section2_easy",
+      "question_range": "3",
+      "source_records": [
+        "verbal/submissions/20260906_2134_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/sterling",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "antiquarian",
+      "pos": "adj./n.",
+      "meaning": "古物研究或收藏相关的；旧书珍本相关的；古物研究者",
+      "collocation": "an antiquarian bookseller",
+      "note": "旧书商、珍本书商，不是泛指古典艺术。",
+      "id": "antiquarian",
+      "group": "test1_section2_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2145_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 4,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/antiquarian",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "auction",
+      "pos": "n./v.",
+      "meaning": "拍卖；拍卖出售",
+      "collocation": "an art auction",
+      "note": "卖给最高出价者；本题竞拍者增多。",
+      "id": "auction",
+      "group": "test1_section2_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2145_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/auction",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "classical",
+      "pos": "adj.",
+      "meaning": "古典的；古希腊罗马文化相关的",
+      "collocation": "classical music",
+      "note": "古典音乐；区别 antiquarian 旧书古物相关。",
+      "id": "classical",
+      "group": "test1_section2_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2145_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "coach_transfer_vocab"
+      },
+      "category": "迁移补充",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/classical",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "fickle",
+      "pos": "adj.",
+      "meaning": "反复无常的、不稳定可靠的",
+      "collocation": "fickle tastes",
+      "note": "兴趣范围扩大不等于反复无常。",
+      "id": "fickle",
+      "group": "test1_section2_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2145_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/fickle",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "intensification",
+      "pos": "n.",
+      "meaning": "加强、加剧",
+      "collocation": "intensification of competition",
+      "note": "名词；表示程度增强，不等于无聊。",
+      "id": "intensification",
+      "group": "test1_section2_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2145_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/intensification",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "legitimate",
+      "pos": "adj.",
+      "meaning": "合法的；真实的；正当合理的",
+      "collocation": "a legitimate concern",
+      "note": "合法性、真伪、合理性随语境区分。",
+      "id": "legitimate",
+      "group": "test1_section2_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2145_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/legitimate",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "tedious",
+      "pos": "adj.",
+      "meaning": "冗长乏味的、令人厌烦的",
+      "collocation": "a tedious task",
+      "note": "强调枯燥或冗长，不是竞争激烈。",
+      "id": "tedious",
+      "group": "test1_section2_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2145_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/tedious",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "brook",
+      "pos": "v./n.",
+      "meaning": "容忍、容许；小溪",
+      "collocation": "brook no interference",
+      "note": "本题取动词义；brook no compromise 是不容妥协。",
+      "id": "brook",
+      "group": "test1_section2_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260906_2209_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/brook",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "compromise",
+      "pos": "n./v.",
+      "meaning": "妥协、折中；妥协；损害、危及",
+      "collocation": "brook no compromise",
+      "note": "本题为名词妥协；compromise safety 是危及安全。",
+      "id": "compromise",
+      "group": "test1_section2_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260906_2209_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/compromise",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "disclose",
+      "pos": "v.",
+      "meaning": "公开、透露、揭露",
+      "collocation": "disclose information",
+      "note": "侧重使原本未知的信息被知晓。",
+      "id": "disclose",
+      "group": "test1_section2_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260906_2209_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/disclose",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "repudiate",
+      "pos": "v.",
+      "meaning": "拒绝接受、否认；与之断绝关系",
+      "collocation": "repudiate a claim",
+      "note": "否定态度较强；与 reject 接近。",
+      "id": "repudiate",
+      "group": "test1_section2_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260906_2209_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/repudiate",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "tolerate",
+      "pos": "v.",
+      "meaning": "容忍、允许",
+      "collocation": "tolerate criticism",
+      "note": "容忍不必表示赞同；可与 brook 同义。",
+      "id": "tolerate",
+      "group": "test1_section2_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260906_2209_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/tolerate",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "weigh",
+      "pos": "v.",
+      "meaning": "称重；权衡、仔细考虑",
+      "collocation": "weigh the options",
+      "note": "抽象语境常取权衡义。",
+      "id": "weigh",
+      "group": "test1_section2_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260906_2209_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/weigh",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "altruism",
+      "pos": "n.",
+      "meaning": "利他主义、无私；利他行为",
+      "collocation": "acts of altruism",
+      "note": "动物语境中指个体付出而使其他个体受益。",
+      "id": "altruism",
+      "group": "test1_section2_easy",
+      "question_range": "6",
+      "source_records": [
+        "verbal/submissions/20260906_2231_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/altruism",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "beneficence",
+      "pos": "n.",
+      "meaning": "行善、仁慈、善行",
+      "collocation": "acts of beneficence",
+      "note": "通常褒义，强调使他者受益。",
+      "id": "beneficence",
+      "group": "test1_section2_easy",
+      "question_range": "6",
+      "source_records": [
+        "verbal/submissions/20260906_2231_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/beneficence",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "fecundity",
+      "pos": "n.",
+      "meaning": "生育力、繁殖力；创造力、丰产性",
+      "collocation": "high fecundity",
+      "note": "本题未讨论繁殖能力；注意与 fertility 的近义关系。",
+      "id": "fecundity",
+      "group": "test1_section2_easy",
+      "question_range": "6",
+      "source_records": [
+        "verbal/submissions/20260906_2231_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/fecundity",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "fertility",
+      "pos": "n.",
+      "meaning": "生育力、繁殖力；肥沃性",
+      "collocation": "soil fertility",
+      "note": "帮助同伴存活不等于繁殖力高。",
+      "id": "fertility",
+      "group": "test1_section2_easy",
+      "question_range": "6",
+      "source_records": [
+        "verbal/submissions/20260906_2231_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/fertility",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "regurgitate",
+      "pos": "v.",
+      "meaning": "将吞下的食物返吐到口中；机械复述",
+      "collocation": "regurgitate liquid food",
+      "note": "本题是返吐食物，不要求再次咀嚼；机械复述义常含批评。",
+      "id": "regurgitate",
+      "group": "test1_section2_easy",
+      "question_range": "6",
+      "source_records": [
+        "verbal/submissions/20260906_2231_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/regurgitate",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "depict",
+      "pos": "v.",
+      "meaning": "描绘、刻画、描述",
+      "collocation": "depict the external world",
+      "note": "可以用图画或语言表现。",
+      "id": "depict",
+      "group": "test1_section2_easy",
+      "question_range": "7",
+      "source_records": [
+        "verbal/submissions/20260906_2253_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/depict",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "instrumental",
+      "pos": "adj.",
+      "meaning": "起重要作用的；器乐的",
+      "collocation": "be instrumental in doing",
+      "note": "本题表示发挥重要作用；instrumental music 才是器乐。",
+      "id": "instrumental",
+      "group": "test1_section2_easy",
+      "question_range": "7",
+      "source_records": [
+        "verbal/submissions/20260906_2253_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/instrumental",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "lens",
+      "pos": "n.",
+      "meaning": "透镜、镜片",
+      "collocation": "optical lenses",
+      "note": "lenses 是复数；本题为光学透镜。",
+      "id": "lens",
+      "group": "test1_section2_easy",
+      "question_range": "7",
+      "source_records": [
+        "verbal/submissions/20260906_2253_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/lens",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "sanguinity",
+      "pos": "n.",
+      "meaning": "乐观、充满希望的状态",
+      "collocation": "a mood of sanguinity",
+      "note": "名词；sanguine 是乐观的。",
+      "id": "sanguinity",
+      "group": "test1_section2_easy",
+      "question_range": "7",
+      "source_records": [
+        "verbal/submissions/20260906_2253_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/sanguinity",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "verisimilitude",
+      "pos": "n.",
+      "meaning": "逼真性、貌似真实",
+      "collocation": "the verisimilitude of a painting",
+      "note": "看起来真实，不要求描绘对象实际存在。",
+      "id": "verisimilitude",
+      "group": "test1_section2_easy",
+      "question_range": "7",
+      "source_records": [
+        "verbal/submissions/20260906_2253_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/verisimilitude",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "span",
+      "pos": "n./v.",
+      "meaning": "跨度、一段时间；跨越",
+      "collocation": "short time spans",
+      "note": "本题 spans 是复数名词，指短时间段。",
+      "id": "span",
+      "group": "test2_section1_easy",
+      "question_range": "1",
+      "source_records": [
+        "verbal/submissions/20260906_2313_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/span",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "feeble",
+      "pos": "adj.",
+      "meaning": "虚弱的、无力的",
+      "collocation": "a feeble recovery",
+      "note": "复苏乏力；与 robust 构成强弱对比。",
+      "id": "feeble",
+      "group": "test2_section1_easy",
+      "question_range": "2",
+      "source_records": [
+        "verbal/submissions/20260906_2323_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/feeble",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "lopsided",
+      "pos": "adj.",
+      "meaning": "不均衡的、不对称的；偏向一边的",
+      "collocation": "a lopsided recovery",
+      "note": "复苏不均衡：一些弱、一些强。",
+      "id": "lopsided",
+      "group": "test2_section1_easy",
+      "question_range": "2",
+      "source_records": [
+        "verbal/submissions/20260906_2323_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/lopsided",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "robust",
+      "pos": "adj.",
+      "meaning": "强壮的、强劲的",
+      "collocation": "a robust recovery",
+      "note": "旧词再暴露；强劲是 robust，复苏是 recovery。",
+      "id": "robust",
+      "group": "test2_section1_easy",
+      "question_range": "2",
+      "source_records": [
+        "verbal/submissions/20260906_2323_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 3,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "core3000_random_2026"
+      },
+      "category": "旧词再暴露",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/robust",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "swift",
+      "pos": "adj.",
+      "meaning": "迅速的、敏捷的",
+      "collocation": "a swift recovery",
+      "note": "描述速度，不是放松。",
+      "id": "swift",
+      "group": "test2_section1_easy",
+      "question_range": "2",
+      "source_records": [
+        "verbal/submissions/20260906_2323_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/swift",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "turbulent",
+      "pos": "adj.",
+      "meaning": "动荡的、混乱的；湍急的",
+      "collocation": "turbulent times",
+      "note": "常描述不稳定局面；水流气流也可用。",
+      "id": "turbulent",
+      "group": "test2_section1_easy",
+      "question_range": "2",
+      "source_records": [
+        "verbal/submissions/20260906_2323_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/turbulent",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "ameliorate",
+      "pos": "v.",
+      "meaning": "改善、缓解不良情况",
+      "collocation": "ameliorate a problem",
+      "note": "表示向好变化，与加重问题方向相反。",
+      "id": "ameliorate",
+      "group": "test2_section1_easy",
+      "question_range": "3",
+      "source_records": [
+        "verbal/submissions/20260906_2333_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/ameliorate",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "anticipate",
+      "pos": "v.",
+      "meaning": "预料、预见；预先应对",
+      "collocation": "anticipate difficulties",
+      "note": "被预料到不等于被加重。",
+      "id": "anticipate",
+      "group": "test2_section1_easy",
+      "question_range": "3",
+      "source_records": [
+        "verbal/submissions/20260906_2333_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/anticipate",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "augment",
+      "pos": "v.",
+      "meaning": "增加、增强",
+      "collocation": "augment income",
+      "note": "问题增强可译加重；词本身不固定褒贬。",
+      "id": "augment",
+      "group": "test2_section1_easy",
+      "question_range": "3",
+      "source_records": [
+        "verbal/submissions/20260906_2333_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/augment",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "capuchin",
+      "pos": "n.",
+      "meaning": "卷尾猴",
+      "collocation": "capuchin monkey",
+      "note": "物种名；作题知道是某种猴即可，不决定逻辑。",
+      "id": "capuchin",
+      "group": "test2_section1_easy",
+      "question_range": "3",
+      "source_records": [
+        "verbal/submissions/20260906_2333_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/capuchin",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "repertoire",
+      "pos": "n.",
+      "meaning": "可使用的一套技能、行为或表达；保留曲目",
+      "collocation": "a repertoire of signals",
+      "note": "本题是一套信号；不表示永远固定不变。",
+      "id": "repertoire",
+      "group": "test2_section1_easy",
+      "question_range": "3",
+      "source_records": [
+        "verbal/submissions/20260906_2333_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/repertoire",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "tease apart",
+      "pos": "phr.v.",
+      "meaning": "仔细拆分、辨析、区分",
+      "collocation": "tease apart the meanings",
+      "note": "在题中辨析信号含义，不能套用取笑义。",
+      "id": "tease_apart",
+      "group": "test2_section1_easy",
+      "question_range": "3",
+      "source_records": [
+        "verbal/submissions/20260906_2333_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/tease",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "air",
+      "pos": "n.",
+      "meaning": "神态、样子；空气",
+      "collocation": "an air of confidence",
+      "note": "本题是人的神态，不是气氛。",
+      "id": "air",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/air",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "commitment",
+      "pos": "n.",
+      "meaning": "承诺；投入、奉献、坚定致力",
+      "collocation": "commitment to teaching",
+      "note": "本题是对学生学习的投入，不只是口头承诺。",
+      "id": "commitment",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/commitment",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "conceal",
+      "pos": "v.",
+      "meaning": "隐藏、掩盖",
+      "collocation": "conceal the truth",
+      "note": "是把已有事物遮住，不是造就或产生。",
+      "id": "conceal",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/conceal",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "conviviality",
+      "pos": "n.",
+      "meaning": "欢乐友好的气氛、欢聚之乐",
+      "collocation": "an evening of conviviality",
+      "note": "通常正向，强调愉快交往。",
+      "id": "conviviality",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/conviviality",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "cordiality",
+      "pos": "n.",
+      "meaning": "热诚、友善",
+      "collocation": "greet with cordiality",
+      "note": "通常正向；与友好有关，不是暴躁。",
+      "id": "cordiality",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/cordiality",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "diffidence",
+      "pos": "n.",
+      "meaning": "缺乏自信、羞怯",
+      "collocation": "speak with diffidence",
+      "note": "名词；diffident 才是形容词。",
+      "id": "diffidence",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/diffidence",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "disorganization",
+      "pos": "n.",
+      "meaning": "混乱、缺乏条理",
+      "collocation": "disorganization at work",
+      "note": "无条理不等于没耐心。",
+      "id": "disorganization",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/disorganization",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "exasperation",
+      "pos": "n.",
+      "meaning": "恼怒、烦躁",
+      "collocation": "in exasperation",
+      "note": "偏被烦得恼火的状态；与易怒倾向区分。",
+      "id": "exasperation",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/exasperation",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "front",
+      "pos": "n.",
+      "meaning": "表象、掩饰；前部",
+      "collocation": "a misleading front",
+      "note": "本题是让人误判的表象，不是故事开头。",
+      "id": "front",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 3,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/front",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "habitual",
+      "pos": "adj.",
+      "meaning": "惯常的、习惯性的",
+      "collocation": "habitual behavior",
+      "note": "habitual air 指惯常呈现的神态。",
+      "id": "habitual",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/habitual",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "irascibility",
+      "pos": "n.",
+      "meaning": "易怒、暴躁",
+      "collocation": "a reputation for irascibility",
+      "note": "强调容易发怒的倾向，不只一次暴怒。",
+      "id": "irascibility",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 3,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/irascibility",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "reserve",
+      "pos": "n./v.",
+      "meaning": "储备；保留、预订",
+      "collocation": "reserves of patience",
+      "note": "本题复数 reserves 比喻深厚的耐心储备。",
+      "id": "reserve",
+      "group": "test2_section1_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2354_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 1,
+        "correct_streak": 0,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "优先复测",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/reserve",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "neophyte",
+      "pos": "n.",
+      "meaning": "新手、初学者；新皈依者",
+      "collocation": "a neophyte in art",
+      "note": "与 novice 可近义；没有经验不足证据就不能选。",
+      "id": "neophyte",
+      "group": "test2_section1_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260907_0010_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-07",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/neophyte",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "novice",
+      "pos": "n.",
+      "meaning": "新手、初学者",
+      "collocation": "a novice collector",
+      "note": "通常描述经验，不必带贬义。",
+      "id": "novice",
+      "group": "test2_section1_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260907_0010_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-07",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/novice",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "patron",
+      "pos": "n.",
+      "meaning": "赞助人、支持者；顾客",
+      "collocation": "a patron of the arts",
+      "note": "本题 art patron 是艺术赞助人，不是普通顾客。",
+      "id": "patron",
+      "group": "test2_section1_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260907_0010_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-07",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/patron",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "pragmatist",
+      "pos": "n.",
+      "meaning": "务实者、实用主义者",
+      "collocation": "a practical pragmatist",
+      "note": "重实际效果和可行性，不等于追求极致。",
+      "id": "pragmatist",
+      "group": "test2_section1_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260907_0010_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-07",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/pragmatist",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    },
+    {
+      "word": "zealot",
+      "pos": "n.",
+      "meaning": "狂热者、狂热拥护者",
+      "collocation": "a zealot for a cause",
+      "note": "保留狂热程度，常含过度热衷的意味。",
+      "id": "zealot",
+      "group": "test2_section1_easy",
+      "question_range": "5",
+      "source_records": [
+        "verbal/submissions/20260907_0010_sentence_equivalence.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-07",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-07",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/zealot",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定"
+    }
+  ],
+  "instructions": [
+    "每次做10–15词，约10–15分钟；看英文，先口述或输入词性与中文核心义，再揭晓。",
+    "按语义自评，不机械匹配中文原句。只记得大概意思或词性不稳选模糊。",
+    "忘记和模糊的词稍后再测；休息一段时间后，再做反向回忆。",
+    "导出结果JSON交回教练。自评结果不自动写入掌握度，不自动将新词标为掌握。"
+  ]
+}
