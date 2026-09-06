@@ -3,7 +3,7 @@ schema_version: 1
 day: 2
 date: "2026-09-06"
 plan_date: "2026-09-03"
-status: in_progress
+status: complete
 source:
   material_id: core3000_random_2026
   units: [list2, list3]
@@ -77,9 +77,9 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/spiral
 ---
 
-# Day 2 词汇记录（进行中）
+# Day 2 词汇记录
 
-目前完成 list2 第 1–105 词和 list3 第 1–5 词，共 110 词的主动回忆：78 词完全正确、11 词部分正确、21 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
+完成 list2 第 1–105 词和 list3 第 1–5 词，共 110 词的主动回忆：78 词完全正确、11 词部分正确、21 词错误。用户决定 Day 2 的新词学习在 110 词处结束，转入 Day 1 + Day 2 综合复习；尚未作答的后续 10 词不计入 Day 2。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
 
 ## 部分正确
 
