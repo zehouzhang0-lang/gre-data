@@ -75,6 +75,14 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/devolve
   - https://www.merriam-webster.com/dictionary/instantiate
   - https://www.merriam-webster.com/dictionary/spiral
+  - https://www.merriam-webster.com/dictionary/preclude
+  - https://www.merriam-webster.com/dictionary/fungible
+  - https://www.merriam-webster.com/dictionary/poignant
+  - https://www.merriam-webster.com/dictionary/nonchalant
+  - https://www.merriam-webster.com/dictionary/valorize
+  - https://www.merriam-webster.com/dictionary/deferential
+  - https://www.merriam-webster.com/dictionary/confront
+  - https://www.merriam-webster.com/dictionary/rescind
 ---
 
 # Day 2 词汇记录
@@ -151,6 +159,15 @@ verification_sources:
 - `long`：回答“渴望”正确，此处是动词，常见结构为 `long for + 名词` 或 `long to do`，表示强烈渴望。
 - `sociable`：回答“社交的”判为正确；用于人时更精确是“好交际的、爱与人相处的、友善随和的”，不要泛化成所有 `social` 的“社会的”义项。
 
+## Day 1 + Day 2 综合复习
+
+### 弱词第 1 轮（20 词）
+
+- 完全正确 7：`tacit`、`heresy`、`apprehend`、`antiquity`、`haphazard`、`commonplace`、`lachrymose`。
+- 部分正确 2：`chagrin` 回答“失望”，仍缺少“因失败、受辱或失望产生的懊恼、羞恼”；`deferential` 回答“顺从的”，仍缺少核心的“表示尊敬、恭敬的”。
+- 错误 11：`preclude`、`fungible`、`bathetic`、`poignant`、`accrete`、`nonchalant`、`instantiate`、`valorize`、`vicarious`、`confront`、`rescind`。
+- 形近误连：`instantiate` 回答“使立刻”，实际是“用具体实例体现或例证、实例化”；`rescind` 回答“憎恶”，实际是“撤销、废除、取消”，而“憎恶”可对应 `execrate`。
+
 ## 下一次检验
 
-对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`chagrin`、`designate`、`burdensome`、`lachrymose`、`disgorge`、`somnolent`、`commonplace`、`tacit`、`apprehend`、`shortcoming`、`devolve`、`instantiate`、`spiral` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
+综合复习弱词第 2 轮测试 `proselytize`、`exceptional`、`harrow`、`regimen`、`allegiance`、`divisive`、`lament`、`furtive`、`fluctuate`、`inadvertent`、`symbiosis`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`vagary`、`untoward`、`felony`、`exile`。本轮未完全正确的 13 词继续保留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
