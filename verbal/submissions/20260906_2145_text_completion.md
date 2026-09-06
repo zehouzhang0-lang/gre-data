@@ -114,3 +114,15 @@ Test 1 Section 2（easy）第 4 题，三空，未计时。用户选择 B/E/G；
 - `antiquarian` 回忆为“古典相关的”，方向接近但范围过宽；它特指“古物、古代遗存的研究或收藏相关”，也常指旧书、珍本书相关。它不同于泛指古希腊罗马或传统经典风格的 `classical`，本次不累计正确连续次数。
 
 本轮只验证词义，不改变填空技巧状态。
+
+# 近义易混词迁移复测
+
+用户完成 `antiquarian / classical / antique` 三空搭配辨析，作答为 `classical / antiquarian / antique`；正确顺序为 `antiquarian / classical / antique`，结果 1/3。
+
+- `an antiquarian bookseller`：经营旧书、珍本书的书商。`antiquarian` 强调古物、古代遗存的研究、收藏或交易。
+- `classical music`：古典音乐。`classical` 可指古希腊罗马文化，也可指传统、经典的艺术风格或特定古典时期。
+- `an antique desk`：一张古董桌。`antique` 作名词指有收藏价值的古物，作形容词指古老且常有收藏价值的。
+
+前两空正好互换，说明用户尚未稳定区分“与古物/珍本交易有关”和“古典艺术传统”；`antiquarian` 的正确连续次数维持 0，并把 `classical` 纳入易混词复测。第三空 `antique` 正确，暂不加入生词表。
+
+下一步要求用户不看释义复述固定搭配 `antiquarian bookseller / classical music / antique desk`，并分别给出中文义；三项全对才记为本轮纠正成功。
