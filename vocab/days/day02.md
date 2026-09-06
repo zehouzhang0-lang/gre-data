@@ -7,16 +7,16 @@ status: in_progress
 source:
   material_id: core3000_random_2026
   units: [list2]
-  item_range: "1-90"
+  item_range: "1-100"
 target_count: 120
-reviewed_count: 90
+reviewed_count: 100
 recall_test:
-  total: 90
-  correct: 69
-  partial: 10
-  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate]
-partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate]
+  total: 100
+  correct: 74
+  partial: 11
+  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate, lachrymose, disgorge, somnolent, commonplace]
+partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin, burdensome]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -60,11 +60,18 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/designate
   - https://www.merriam-webster.com/dictionary/invertebrate
   - https://www.merriam-webster.com/dictionary/execrate
+  - https://www.merriam-webster.com/dictionary/burdensome
+  - https://www.merriam-webster.com/dictionary/lachrymose
+  - https://www.merriam-webster.com/dictionary/disgorge
+  - https://www.merriam-webster.com/dictionary/somnolent
+  - https://www.merriam-webster.com/dictionary/commonplace
+  - https://www.merriam-webster.com/dictionary/glean
+  - https://www.merriam-webster.com/dictionary/substantial
 ---
 
 # Day 2 词汇记录（进行中）
 
-目前完成 list2 第 1–90 词的主动回忆：69 词完全正确、10 词部分正确、11 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
+目前完成 list2 第 1–100 词的主动回忆：74 词完全正确、11 词部分正确、15 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
 
 ## 部分正确
 
@@ -78,6 +85,7 @@ verification_sources:
 - `daredevil`：回答“无畏的”抓到大胆方向，但缺少关键贬义色彩。核心是“鲁莽大胆的、爱冒险的；冒险家”，强调不顾后果，常还带炫耀意味。
 - `flinch`：回答“畏缩的”语义方向正确但词性错位。`flinch` 主要作动词“因疼痛或恐惧而退缩、畏缩”，也可作名词；不是形容词。
 - `chagrin`：回答“失望”接近诱因，但情绪强度和成分不足。核心是“因失败、受辱或失望而产生的懊恼、羞恼”，常见搭配 `to one's chagrin`。
+- `burdensome`：回答“有负担的”方向接近，但容易理解成“自己背负负担”。核心是“造成负担的、繁重难办的、令人难以承受的”，描述某事给人施加负担。
 
 ## 错误
 
@@ -92,6 +100,10 @@ verification_sources:
 - `hackneyed`：未回忆出。核心是“陈腐的、老生常谈的、因过度使用而失去新意的”。
 - `eyesore`：回答“眼中钉”错误。核心是“碍眼的东西、难看的景物”，强调视觉上令人不悦；“眼中钉”更接近 `a thorn in one's side`。
 - `designate`：回答“分工”错误。动词核心是“指定、任命；标明、指示”，可把人指定到某项职责，但不等于名词“分工”。
+- `lachrymose`：未回忆出。核心义为“爱哭的、泪汪汪的；催人泪下的”，带有眼泪或哭泣倾向。
+- `disgorge`：未回忆出。核心义为“吐出、喷出、涌出”；也常指在压力下“交出（非法所得等）”。
+- `somnolent`：未回忆出。核心义为“困倦的、昏昏欲睡的”；也可指“催眠的、使人困倦的”。
+- `commonplace`：回答“一致的”错误。形容词核心是“平常的、普通的”；作名词可指“司空见惯的事物”或“陈词滥调”。
 
 ## 正确但需固定搭配
 
@@ -120,7 +132,9 @@ verification_sources:
 - `studied`：回答“设计的、谋划的”正确；形容词常指“经过仔细考虑或准备的；有意的、刻意的”。
 - `invertebrate`：回答“没骨气的；无脊椎生物”正确；既可比喻“软弱的、无骨气的”，也可作生物学名词或形容词。
 - `execrate`：回答“憎恶”正确；它是程度很强的动词，也可表示“痛骂、诅咒”。
+- `glean`：回答“收集”正确；更精确是“零星搜集、逐步获取（信息等）”，常含从分散来源中一点点提取之意。
+- `substantial`：回答“大量的”是有效义项，指数量、规模或程度“相当大的”；另需识别“实质性的、真实的、坚固的”等语境义。
 
 ## 下一次检验
 
-对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`chagrin`、`designate` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
+对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`chagrin`、`designate`、`burdensome`、`lachrymose`、`disgorge`、`somnolent`、`commonplace` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
