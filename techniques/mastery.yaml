@@ -25,6 +25,7 @@ items:
     area: verbal
     status: learned
     evidence:
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2253_sentence_equivalence.md, result: failure, note: "Test1 Section2第7题选E/F，正确D/F；题干词与E/F存在词汇缺口，询问instrumental音乐义。未提交语义预测，E/F不等价，尚无in other words重述应用证据，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2231_sentence_equivalence.md, result: success, note: "第6题纠正后正确概括例子共同点为帮助同伴、使其他个体受益；五词此前回忆5/5。仅即时非计时证据复述，未单独复述排除D理由，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2231_sentence_equivalence.md, result: failure, note: "Test1 Section2第6题选B/D，正确A/B；除C/D外选项及regurgitate自报陌生，未识别beneficence/altruism语境等价，D缺少例子支持。未提供具体推理，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2209_sentence_equivalence.md, result: success, note: "纠正后将They would brook no compromise译为‘他们不会接受任何妥协’，整句含义正确；仅即时非计时复述，保持learned，等待新题迁移。"}

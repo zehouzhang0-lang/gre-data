@@ -1,5 +1,10 @@
 schema_version: 1
 items:
+  - {word: lens, added_on: "2026-09-06", initial_result: partial, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
+  - {word: depict, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
+  - {word: instrumental, added_on: "2026-09-06", initial_result: partial, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
+  - {word: sanguinity, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
+  - {word: verisimilitude, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
   - {word: beneficence, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
   - {word: altruism, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
   - {word: fecundity, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
