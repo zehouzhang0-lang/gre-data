@@ -6,6 +6,7 @@ items:
     area: verbal
     status: learned
     evidence:
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2333_text_completion.md, result: mixed, note: "Test2 Section1第3题B/D/G全对，并复述信号难分清主线；自报六个词不认识，第三空理由未说明。未计时，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2323_text_completion.md, result: mixed, note: "Test2 Section1第2题选A/F，正确B/D；用户明确识别对比，但不认识lopsided等词，未定位复苏强弱维度。未计时，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2313_text_completion.md, result: success, note: "答案讲解后补全‘可预测可分析’，其中可预测准确回应unpredictable；可分析范围过宽已提醒。仅即时非计时核心预测通过，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2313_text_completion.md, result: failure, note: "Test2 Section1第1题在although从句释义及转折提示后选B，正确A；未提交预测，diversity未满足与unpredictable的反差约束，具体选择理由未知。保持learned。"}
@@ -19,6 +20,7 @@ items:
     area: verbal
     status: learned
     evidence:
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2333_text_completion.md, result: mixed, note: "三空正确，但未完整复述信号丰富、辨义困难、条件变化加重困难的一致链；不能据此认定稳定应用，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2323_text_completion.md, result: failure, note: "A/F预期维度相对但未共同解释lopsided recovery；应使用feeble/robust表达复苏强弱不均衡。未计时，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: failure, note: "第3题前两空正确但第三空颠倒因果方向；多空题整题计错。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: success, note: "纠错通过：能用来源链说明第三空应为 eaten 而非 poisoned；属非计时、已提示后的复述，故仅升至 learned。"}
