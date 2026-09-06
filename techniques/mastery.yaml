@@ -8,6 +8,7 @@ items:
     evidence:
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: failure, note: "第1题遇到生词后未提取 paradox 反差信号；第2题猜中但无推理；第3题未完成因果链。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: success, note: "纠错通过：能独立复述甲虫携带同种毒素、青蛙吃甲虫、青蛙获得毒素的因果方向；表述中的‘产生’经纠正为‘获得/积累’。尚无计时应用证据。"}
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2117_text_completion.md, result: mixed, note: "Test 1 Section 2 第1-2题均自报能理解题意，但第1题未把 haunted 转写为 supernatural 后再匹配，因五个选项均不认识而猜错；第2题识别到正确候选 proprietary，但未明确提交答案。状态保持 learned。"}
   - id: v_tc_multi_blank_consistency
     area: verbal
     status: learned
