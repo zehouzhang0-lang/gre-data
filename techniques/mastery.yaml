@@ -11,6 +11,7 @@ items:
       - {date: "2026-09-06", record: verbal/submissions/20260906_2117_text_completion.md, result: mixed, note: "Test 1 Section 2 第1-2题均自报能理解题意，但第1题未把 haunted 转写为 supernatural 后再匹配，因五个选项均不认识而猜错；第2题识别到正确候选 proprietary，但未明确提交答案。状态保持 learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2134_text_completion.md, result: failure, note: "Test 1 Section 2 第3题选择B/D；两项均削弱委员会，却与 unreasonable to gainsay conclusions 所要求的正向支持相反。自报理解题意，但未完成主句方向预测与全句回代。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2134_text_completion.md, result: success, note: "纠错后的原创双空迁移题正确选择B/E（respected/thorough），两空与‘很少有人拒绝建议’方向一致；未写中文预测且未计时，状态保持 learned。"}
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2145_text_completion.md, result: mixed, note: "Test 1 Section 2 第4题选择B/E/G，后两空正确；能从末句抓住‘兴趣范围扩大 -> 收藏全面’，但因 auction/intensification 等词汇缺口，未由新收藏者进入推出竞争加剧。"}
   - id: v_tc_multi_blank_consistency
     area: verbal
     status: learned
@@ -19,6 +20,7 @@ items:
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: success, note: "纠错通过：能用来源链说明第三空应为 eaten 而非 poisoned；属非计时、已提示后的复述，故仅升至 learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2134_text_completion.md, result: failure, note: "双空选择B/D虽同为负面，但没有检验它们与主句‘不应否定结论’的一致性；正确组合A/F提供两个正向理由。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2134_text_completion.md, result: success, note: "纠错后的原创双空迁移题正确选择B/E，两空共同提供正向理由并与主句一致；未写预测且未计时，状态保持 learned。"}
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2145_text_completion.md, result: mixed, note: "三空题后两空E/G形成‘兴趣广泛 -> 收藏全面’一致链；第一空B与新收藏者导致的 intensification 不符。多空题整题0/1，状态保持 learned。"}
   - id: v_se_dual_equivalence
     area: verbal
     status: learned
