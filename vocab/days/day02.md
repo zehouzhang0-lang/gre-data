@@ -7,16 +7,16 @@ status: in_progress
 source:
   material_id: core3000_random_2026
   units: [list2]
-  item_range: "1-80"
+  item_range: "1-90"
 target_count: 120
-reviewed_count: 80
+reviewed_count: 90
 recall_test:
-  total: 80
-  correct: 60
+  total: 90
+  correct: 69
   partial: 10
-  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore]
+  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate]
 partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -56,11 +56,15 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/eyesore
   - https://www.merriam-webster.com/dictionary/approbation
   - https://www.merriam-webster.com/dictionary/chagrin
+  - https://www.merriam-webster.com/dictionary/studied
+  - https://www.merriam-webster.com/dictionary/designate
+  - https://www.merriam-webster.com/dictionary/invertebrate
+  - https://www.merriam-webster.com/dictionary/execrate
 ---
 
 # Day 2 词汇记录（进行中）
 
-目前完成 list2 第 1–80 词的主动回忆：60 词完全正确、10 词部分正确、10 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
+目前完成 list2 第 1–90 词的主动回忆：69 词完全正确、10 词部分正确、11 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
 
 ## 部分正确
 
@@ -87,6 +91,7 @@ verification_sources:
 - `impudent`：未回忆出。核心是“无礼的、放肆的、厚颜的”，强调傲慢或轻蔑地不尊重他人。
 - `hackneyed`：未回忆出。核心是“陈腐的、老生常谈的、因过度使用而失去新意的”。
 - `eyesore`：回答“眼中钉”错误。核心是“碍眼的东西、难看的景物”，强调视觉上令人不悦；“眼中钉”更接近 `a thorn in one's side`。
+- `designate`：回答“分工”错误。动词核心是“指定、任命；标明、指示”，可把人指定到某项职责，但不等于名词“分工”。
 
 ## 正确但需固定搭配
 
@@ -112,7 +117,10 @@ verification_sources:
 - `stalwart`：回答“健壮的”正确；另有“忠诚坚定的”义，可形容坚定的支持者。
 - `approbation`：回答“允许、批准”中的“批准”可由“正式认可”义支持，判为正确；更稳妥记作名词“赞同、认可、赞扬”，不等同于一般许可。
 - `concise`：回答“精确的、简明的”因“简明的”判为正确；核心是“简洁而内容完整的”，不必然等于精确。
+- `studied`：回答“设计的、谋划的”正确；形容词常指“经过仔细考虑或准备的；有意的、刻意的”。
+- `invertebrate`：回答“没骨气的；无脊椎生物”正确；既可比喻“软弱的、无骨气的”，也可作生物学名词或形容词。
+- `execrate`：回答“憎恶”正确；它是程度很强的动词，也可表示“痛骂、诅咒”。
 
 ## 下一次检验
 
-对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`chagrin` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
+对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`chagrin`、`designate` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
