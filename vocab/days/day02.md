@@ -16,7 +16,7 @@ recall_test:
   partial: 11
   wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral]
 partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin, burdensome]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -97,6 +97,26 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/atomize
   - https://www.merriam-webster.com/dictionary/blandish
   - https://www.merriam-webster.com/dictionary/stagger
+  - https://www.merriam-webster.com/dictionary/querulous
+  - https://www.merriam-webster.com/dictionary/rote
+  - https://www.merriam-webster.com/dictionary/contrive
+  - https://www.merriam-webster.com/dictionary/wide-ranging
+  - https://www.merriam-webster.com/dictionary/baffle
+  - https://www.merriam-webster.com/dictionary/allegory
+  - https://www.merriam-webster.com/dictionary/forthright
+  - https://www.merriam-webster.com/dictionary/aver
+  - https://www.merriam-webster.com/dictionary/nefarious
+  - https://www.merriam-webster.com/dictionary/resent
+  - https://www.merriam-webster.com/dictionary/enhance
+  - https://www.merriam-webster.com/dictionary/spontaneous
+  - https://www.merriam-webster.com/dictionary/impersonal
+  - https://www.merriam-webster.com/dictionary/tempestuous
+  - https://www.merriam-webster.com/dictionary/finicky
+  - https://www.merriam-webster.com/dictionary/amass
+  - https://www.merriam-webster.com/dictionary/patronize
+  - https://www.merriam-webster.com/dictionary/avert
+  - https://www.merriam-webster.com/dictionary/compile
+  - https://www.merriam-webster.com/dictionary/ritualize
 ---
 
 # Day 2 词汇记录
@@ -198,6 +218,17 @@ verification_sources:
 - 对齐说明：本轮收到 15 段答案而题目有 16 词。依语义将“昏昏欲睡的”起的后四项对齐到 `somnolent`、`shortcoming`、`devolve`、`spiral`，因此把中间漏掉的 `disgorge` 记为未作答；如用户说明原意不同，再更正原子记录。
 - 三轮累计：弱词池首次覆盖 56 词；完全正确 18、部分正确 12、错误 26。当前只是本轮表现，不代表 56 词已掌握；仍按连续 3 次主动回忆正确的标准累计证据。
 
+### 此前答对词抽查第 1 轮（20 词）
+
+- 完全正确 12：`rote`、`wide-ranging`、`baffle`、`resent`、`enhance`、`spontaneous`、`impersonal`、`tempestuous`、`finicky`、`amass`、`compile`、`ritualize`。
+- 部分正确 0。
+- 错误 8：`querulous`、`contrive`、`allegory`、`forthright`、`aver`、`nefarious`、`patronize`、`avert`。这 8 词由此前答对池转入弱词池。
+- `resent` 的“憎恶”是可接受方向，权威释义核心为“对某人或某事感到或表达恼怒、怨恨”，通常含认为自己受到冒犯或不公平对待的语感；不要与单纯厌恶混为一谈。
+- `tempestuous` 的“暴雨狂风的”属于有效字面义，核心为“暴风雨般的”；GRE 还常用其比喻义“激烈动荡的、情绪强烈的”，如 `a tempestuous relationship`。
+- `compile` 的“编译”是正式计算机义项，判为正确；同时固定更广的高频义“汇编、收集并整理”。`ritualize` 应按动词记作“使仪式化、使成为惯例仪式”。
+- 关键纠错：`allegory` 是名词“寓言式作品、寓意表达；象征”，不是“属性类别”；`aver` 是动词“断言、坚称”，不是“翻转”；`avert` 是动词“转移目光；防止、避免”，不是“反转”。`patronize` 的常见 GRE 义为“以高人一等的态度对待”，另有“资助、惠顾”。
+- 综合复习累计覆盖 76/212 词：完全正确 30、部分正确 12、错误 34。当前弱词池由 56 词增至 64 词；尚无证据表明整个 212 词已经稳定掌握。
+
 ## 下一次检验
 
-弱词池首轮覆盖已经完成。下一批开始从此前答对词中抽查 20 词：`querulous`、`rote`、`contrive`、`wide-ranging`、`baffle`、`allegory`、`forthright`、`aver`、`nefarious`、`resent`、`enhance`、`spontaneous`、`impersonal`、`tempestuous`、`finicky`、`amass`、`patronize`、`avert`、`compile`、`ritualize`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
+继续抽查此前答对词 20 词：`arboreal`、`satire`、`volition`、`innate`、`loathe`、`exhaustive`、`captivate`、`don`、`milieu`、`portend`、`vacuous`、`external`、`tractable`、`ponderous`、`condemn`、`forsake`、`simultaneous`、`millstone`、`sacrosanct`、`restrain`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
