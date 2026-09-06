@@ -163,3 +163,10 @@ Test 1 Section 1（easy）第 4-7 题 Sentence Equivalence，未计时。用户�
 # 下次检验
 
 先完成四组等价对的主动回忆，再做 2 道不依赖生词的最小 Sentence Equivalence 迁移题。成功标准：每题明确给出两个答案，并说明两词为何等价、为何符合句意。
+
+# 即时纠错复测
+
+- 用户准确回忆：`yield to / succumb to`、`unique / singular`、`exaggeration / hyperbole`。
+- 第四组语义配对正确：`prescient / prophetic`；但将 `prescient` 拼成 `precient`。可用 `pre-`（提前）+ `sci`（知道）固定拼写。
+- 弱词池复测：`yield`、`succumb`、`singular`、`hyperbole`、`prophetic` 各累计 1 次正确；`prescient` 记为部分正确，连续正确仍为 0。
+- 本次只证明已记住讲解过的四组配对，尚未证明能在新句子里执行 Sentence Equivalence 双重检验；`v_se_dual_equivalence` 暂时保持 `unknown`。
