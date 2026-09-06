@@ -16,7 +16,7 @@ recall_test:
   partial: 11
   wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral]
 partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin, burdensome]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert, arboreal, satire, volition, innate, ponderous, forsake, unconscionable, indiscriminate, bristle, prosecute, paraphernalia, plummet, robust, ooze]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert, arboreal, satire, volition, innate, ponderous, forsake, unconscionable, indiscriminate, bristle, prosecute, paraphernalia, plummet, robust, ooze, bulwark]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -177,6 +177,26 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/ruthless
   - https://www.merriam-webster.com/dictionary/potent
   - https://www.merriam-webster.com/dictionary/aplomb
+  - https://www.merriam-webster.com/dictionary/accede
+  - https://www.merriam-webster.com/dictionary/embody
+  - https://www.merriam-webster.com/dictionary/bulwark
+  - https://www.merriam-webster.com/dictionary/disgruntle
+  - https://www.merriam-webster.com/dictionary/disperse
+  - https://www.merriam-webster.com/dictionary/subordinate
+  - https://www.merriam-webster.com/dictionary/philistine
+  - https://www.merriam-webster.com/dictionary/nonconformist
+  - https://www.merriam-webster.com/dictionary/skulduggery
+  - https://www.merriam-webster.com/dictionary/exclusive
+  - https://www.merriam-webster.com/dictionary/monitor
+  - https://www.merriam-webster.com/dictionary/helter-skelter
+  - https://www.merriam-webster.com/dictionary/impolitic
+  - https://www.merriam-webster.com/dictionary/exonerate
+  - https://www.merriam-webster.com/dictionary/unceasing
+  - https://www.merriam-webster.com/dictionary/last-ditch
+  - https://www.merriam-webster.com/dictionary/perpendicular
+  - https://www.merriam-webster.com/dictionary/surrogate
+  - https://www.merriam-webster.com/dictionary/coruscate
+  - https://www.merriam-webster.com/dictionary/ecstasy
 ---
 
 # Day 2 词汇记录
@@ -320,6 +340,16 @@ verification_sources:
 - `brainchild` 回答“智慧结晶”判为正确，更准确是“某人创造性努力产生的构想、发明或作品”。`assent` 因包含“认可、批准”而判为正确，核心是“经考虑后同意、赞成”，通常接 `assent to`；不泛指所有“允许”。`potent` 的“有权势的”是有效义项，另需识别“强效的、强有力的”。
 - 综合复习累计覆盖 136/212 词：完全正确 76、部分正确 15、错误 45。当前弱词池由 74 词增至 78 词；尚无证据表明整个 212 词已经稳定掌握。
 
+### 此前答对词抽查第 5 轮（20 词）
+
+- 完全正确 19：`accede`、`embody`、`disgruntle`、`disperse`、`subordinate`、`philistine`、`nonconformist`、`skulduggery`、`exclusive`、`monitor`、`helter-skelter`、`impolitic`、`exonerate`、`unceasing`、`last-ditch`、`perpendicular`、`surrogate`、`coruscate`、`ecstasy`。
+- 部分正确 1：`bulwark`。
+- 错误 0。`bulwark` 由此前答对池转入弱词池。
+- `bulwark` 回答“城堡”抓到了防御建筑的方向，但词义不是整座 castle。名词核心为“用于防御的墙状结构、壁垒”，比喻义为“强有力的保障、支柱”，如 `a bulwark against tyranny`；也可作动词“保护、加固”。
+- `accede` 回答“认可、加入”判为正确；更精确是“同意请求或要求；加入协议；就任”，通常接 `to`。`embody` 回答“象征”判为正确，其核心是“使具体化、体现；包含”，强调以具体可感知形式代表抽象品质。
+- `exclusive` 因同时回答“互斥的、排他的”而判为正确；需依语境区分“只限特定对象的、排他的”和“互不相容的”。`exonerate` 的“使无罪”判为正确，更广义是“免除罪责、过失或责任”。
+- 综合复习累计覆盖 156/212 词：完全正确 95、部分正确 16、错误 45。当前弱词池由 78 词增至 79 词；尚无证据表明整个 212 词已经稳定掌握。
+
 ## 下一次检验
 
-继续抽查此前答对词 20 词：`accede`、`embody`、`bulwark`、`disgruntle`、`disperse`、`subordinate`、`philistine`、`nonconformist`、`skulduggery`、`exclusive`、`monitor`、`helter-skelter`、`impolitic`、`exonerate`、`unceasing`、`last-ditch`、`perpendicular`、`surrogate`、`coruscate`、`ecstasy`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
+继续抽查此前答对词 20 词：`paean`、`quench`、`roost`、`discharge`、`apprentice`、`stalwart`、`meld`、`incorporate`、`concise`、`approbation`、`fraudulent`、`captious`、`callow`、`abate`、`rebuff`、`studied`、`invertebrate`、`impermanent`、`execrate`、`restorative`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
