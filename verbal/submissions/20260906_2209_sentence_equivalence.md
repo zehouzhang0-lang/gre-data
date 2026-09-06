@@ -68,3 +68,7 @@ verification_sources:
 compromise 加入难词池。用户在说明错因时提到“妥协”，不当作独立主动回忆证据。Merriam-Webster 于2026-09-06核验：本题作名词，指妥协、让步或折中；核心涉及相互让步解决分歧，通常中性，涉及原则退让时可负面。搭配 reach a compromise（达成妥协）；作动词可指妥协，也可指损害、危及，如 compromise safety（危及安全）。注意与 promise（承诺）区分。
 
 下次检验：独立翻译 brook no compromise，确认“容忍 + no + 妥协”的完整含义，再继续新题。
+
+# 22:26 整句复述通过
+
+用户将 They would brook no compromise 译为“他们不会接受任何妥协”，含义正确，本题纠正后的整句复述通过。属于刚讲解后的即时复述，不另计一次间隔词汇复测，不升级为稳定掌握或计时应用。用户要求继续第6题。
