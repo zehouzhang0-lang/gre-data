@@ -77,3 +77,11 @@ irascibility偏易怒倾向，exasperation偏烦恼状态，二者不是所有�
 用户将a misleading front复述为“让人误判的表象”，正确。front记首次连续正确，review_count=3，last_review按真实日期更新为2026-09-07。虽跨日历日期，仍为同一连续会话内的即时纠正，不能算间隔复测或稳定掌握；未计时，是否回看释义未知。
 
 下一步继续本题六个选项名词的词义复述：cordiality、irascibility、disorganization、conviviality、diffidence、exasperation。原题仍未独立作答，不将本次搭配翻译计入题目正确率。
+
+# 2026-09-07 00:05 六选项复测
+
+用户依次回答“友好热情／暴怒／混乱／友好氛围，欢聚之乐／不自信，害羞的／恼怒”。最终判定5项正确，irascibility部分正确。“暴怒”抓住发怒方向，但未体现proneness to anger，即易怒倾向，并额外强调强烈发作；准确应记易怒、暴躁。
+
+diffidence已提供“不自信”，足以覆盖核心义，不能仅因补充“害羞的”有形容词形式就扣错；提示规范名词译法为缺乏自信、羞怯。教练最初进度说明拟记4正确2部分，复核原话后纠正为5正确1部分，文件采用最终判定。
+
+除irascibility外五项各记首次连续正确；irascibility连续正确维持0；六项复测次数均更新为2，last_review为真实日期2026-09-07。同一连续学习会话内的即时复述，未计时，是否回看释义未知，不构成间隔稳定证据。下一步辨析irascibility的易怒倾向与exasperation的恼怒状态。
