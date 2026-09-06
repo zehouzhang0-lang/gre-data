@@ -1,9 +1,17 @@
 schema_version: 1
-updated_at: "2026-09-02"
+updated_at: "2026-09-06"
 states: [unknown, learned, applied, reliable]
 items:
-  - {id: v_tc_logic_map, area: verbal, status: unknown, evidence: []}
-  - {id: v_tc_multi_blank_consistency, area: verbal, status: unknown, evidence: []}
+  - id: v_tc_logic_map
+    area: verbal
+    status: unknown
+    evidence:
+      - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: failure, note: "第1题遇到生词后未提取 paradox 反差信号；第2题猜中但无推理；第3题未完成因果链。"}
+  - id: v_tc_multi_blank_consistency
+    area: verbal
+    status: unknown
+    evidence:
+      - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: failure, note: "第3题前两空正确但第三空颠倒因果方向；多空题整题计错。"}
   - {id: v_se_dual_equivalence, area: verbal, status: unknown, evidence: []}
   - {id: v_rc_scope_evidence, area: verbal, status: unknown, evidence: []}
   - {id: v_rc_author_function, area: verbal, status: unknown, evidence: []}
