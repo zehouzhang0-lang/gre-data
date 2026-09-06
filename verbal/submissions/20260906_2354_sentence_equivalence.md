@@ -65,3 +65,9 @@ irascibility偏易怒倾向，exasperation偏烦恼状态，二者不是所有�
 # 后续检验
 
 用户明确陌生的九项加上复述显露语境误解的air、front、reserve，共12项记录在难词池；未知词性条件不额外推断。先小组复述habitual、conceal、commitment、front，再复述选项。成功标准为核心义正确及能说明表面烦躁、实际耐心的反差。尚未复测，不升级技巧。
+
+# 23:59 第一组复测
+
+用户依次回答“习惯的／掩盖着／奉献／开头”，3/4。habitual、conceal、commitment在本轮所教义项下正确，各累计首次连续正确；front仍未回忆本题的表象、掩饰义，正确连续次数维持0，复测次数更新为2。不是断言front在所有语境均不能表示前部，而是此题的misleading front不能译成开头。
+
+下一步用短搭配a misleading front（误导性的表象）和put on a brave front（装出勇敢的样子）聚焦这一义项，让用户复述前者。此为讲解后即时词义练习，未计时，是否回看释义未知；本题仍未有独立选项提交，保持不计对错。
