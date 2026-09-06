@@ -16,7 +16,7 @@ recall_test:
   partial: 11
   wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral]
 partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin, burdensome]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert, arboreal, satire, volition, innate, ponderous, forsake]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -117,6 +117,26 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/avert
   - https://www.merriam-webster.com/dictionary/compile
   - https://www.merriam-webster.com/dictionary/ritualize
+  - https://www.merriam-webster.com/dictionary/arboreal
+  - https://www.merriam-webster.com/dictionary/satire
+  - https://www.merriam-webster.com/dictionary/volition
+  - https://www.merriam-webster.com/dictionary/innate
+  - https://www.merriam-webster.com/dictionary/loathe
+  - https://www.merriam-webster.com/dictionary/exhaustive
+  - https://www.merriam-webster.com/dictionary/captivate
+  - https://www.merriam-webster.com/dictionary/don
+  - https://www.merriam-webster.com/dictionary/milieu
+  - https://www.merriam-webster.com/dictionary/portend
+  - https://www.merriam-webster.com/dictionary/vacuous
+  - https://www.merriam-webster.com/dictionary/external
+  - https://www.merriam-webster.com/dictionary/tractable
+  - https://www.merriam-webster.com/dictionary/ponderous
+  - https://www.merriam-webster.com/dictionary/condemn
+  - https://www.merriam-webster.com/dictionary/forsake
+  - https://www.merriam-webster.com/dictionary/simultaneous
+  - https://www.merriam-webster.com/dictionary/millstone
+  - https://www.merriam-webster.com/dictionary/sacrosanct
+  - https://www.merriam-webster.com/dictionary/restrain
 ---
 
 # Day 2 词汇记录
@@ -229,6 +249,16 @@ verification_sources:
 - 关键纠错：`allegory` 是名词“寓言式作品、寓意表达；象征”，不是“属性类别”；`aver` 是动词“断言、坚称”，不是“翻转”；`avert` 是动词“转移目光；防止、避免”，不是“反转”。`patronize` 的常见 GRE 义为“以高人一等的态度对待”，另有“资助、惠顾”。
 - 综合复习累计覆盖 76/212 词：完全正确 30、部分正确 12、错误 34。当前弱词池由 56 词增至 64 词；尚无证据表明整个 212 词已经稳定掌握。
 
+### 此前答对词抽查第 2 轮（20 词）
+
+- 完全正确 14：`loathe`、`exhaustive`、`captivate`、`don`、`milieu`、`portend`、`vacuous`、`external`、`tractable`、`condemn`、`simultaneous`、`millstone`、`sacrosanct`、`restrain`。
+- 部分正确 0。
+- 错误 6：`arboreal`、`satire`、`volition`、`innate`、`ponderous`、`forsake`。这 6 词由此前答对池转入弱词池。
+- 核心义：`arboreal` 是“树木的；栖息于树上的”；`satire` 是“讽刺；讽刺作品”；`volition` 是名词“意志、意愿；自主选择”；`innate` 是“天生的、固有的”；`forsake` 是“彻底抛弃、离弃”。
+- `ponderous` 回答“多疑的”错误。它的核心是“沉重笨拙的、笨重的”，也可形容文章或表达“沉闷冗长的”；不要受 `ponder`“思索”干扰。
+- `milieu` 回答“社会背景”判为正确；更准确是“人所处的社会或文化环境、周围环境”。`portend` 是动词“预示、预兆”，回答“预言征兆”方向正确。`simultaneous` 的“同步的”判为正确，但首选固定为“同时发生的”，它不要求像 `synchronous` 那样具有周期上的严格同步。
+- 综合复习累计覆盖 96/212 词：完全正确 44、部分正确 12、错误 40。当前弱词池由 64 词增至 70 词；尚无证据表明整个 212 词已经稳定掌握。
+
 ## 下一次检验
 
-继续抽查此前答对词 20 词：`arboreal`、`satire`、`volition`、`innate`、`loathe`、`exhaustive`、`captivate`、`don`、`milieu`、`portend`、`vacuous`、`external`、`tractable`、`ponderous`、`condemn`、`forsake`、`simultaneous`、`millstone`、`sacrosanct`、`restrain`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
+继续抽查此前答对词 20 词：`unconscionable`、`serendipity`、`indiscriminate`、`bristle`、`onset`、`cardinal`、`prosecute`、`occasion`、`morbid`、`scintillating`、`medley`、`passive`、`inhibit`、`outdo`、`polarize`、`disjunction`、`indecorous`、`abolish`、`triumph`、`negotiable`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
