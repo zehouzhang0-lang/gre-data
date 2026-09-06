@@ -6,17 +6,17 @@ plan_date: "2026-09-03"
 status: in_progress
 source:
   material_id: core3000_random_2026
-  units: [list2]
-  item_range: "1-100"
+  units: [list2, list3]
+  item_range: "list2:1-105; list3:1-5"
 target_count: 120
-reviewed_count: 100
+reviewed_count: 110
 recall_test:
-  total: 100
-  correct: 74
+  total: 110
+  correct: 78
   partial: 11
-  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate, lachrymose, disgorge, somnolent, commonplace]
+  wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral]
 partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin, burdensome]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -67,11 +67,19 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/commonplace
   - https://www.merriam-webster.com/dictionary/glean
   - https://www.merriam-webster.com/dictionary/substantial
+  - https://www.merriam-webster.com/dictionary/long
+  - https://www.merriam-webster.com/dictionary/sociable
+  - https://www.merriam-webster.com/dictionary/tacit
+  - https://www.merriam-webster.com/dictionary/apprehend
+  - https://www.merriam-webster.com/dictionary/shortcoming
+  - https://www.merriam-webster.com/dictionary/devolve
+  - https://www.merriam-webster.com/dictionary/instantiate
+  - https://www.merriam-webster.com/dictionary/spiral
 ---
 
 # Day 2 词汇记录（进行中）
 
-目前完成 list2 第 1–100 词的主动回忆：74 词完全正确、11 词部分正确、15 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
+目前完成 list2 第 1–105 词和 list3 第 1–5 词，共 110 词的主动回忆：78 词完全正确、11 词部分正确、21 词错误。记录日期采用真实作答日期 2026-09-06；`plan_date` 保留原 Day 2 日期，不回填 9 月 3–5 日的虚假完成记录。
 
 ## 部分正确
 
@@ -104,6 +112,12 @@ verification_sources:
 - `disgorge`：未回忆出。核心义为“吐出、喷出、涌出”；也常指在压力下“交出（非法所得等）”。
 - `somnolent`：未回忆出。核心义为“困倦的、昏昏欲睡的”；也可指“催眠的、使人困倦的”。
 - `commonplace`：回答“一致的”错误。形容词核心是“平常的、普通的”；作名词可指“司空见惯的事物”或“陈词滥调”。
+- `tacit`：未回忆出。形容词核心是“心照不宣的、默示的、未言明的”，常见搭配 `tacit agreement/approval/consent`。
+- `apprehend`：未回忆出。动词可表示“理解、领会；察觉”，也可表示“逮捕、抓获”，另有“忧惧地预料”义，需依宾语判断。
+- `shortcoming`：未回忆出。名词核心是“缺点、短处、不足”，指影响整体的缺陷或欠缺。
+- `devolve`：未回忆出。核心是“下放、移交（权力或责任）”；`devolve into` 还常表示“逐渐恶化、退化成”。
+- `instantiate`：未回忆出。动词核心是“以具体实例体现或例证某个抽象概念”，可记作“实例化、具体体现”。
+- `spiral`：回答“精神的”错误，是与 `spiritual` 混淆。`spiral` 可指“螺旋（的）、盘旋”，作动词还可指数量或局势“持续加速上升或下降、失控恶化”。
 
 ## 正确但需固定搭配
 
@@ -134,7 +148,9 @@ verification_sources:
 - `execrate`：回答“憎恶”正确；它是程度很强的动词，也可表示“痛骂、诅咒”。
 - `glean`：回答“收集”正确；更精确是“零星搜集、逐步获取（信息等）”，常含从分散来源中一点点提取之意。
 - `substantial`：回答“大量的”是有效义项，指数量、规模或程度“相当大的”；另需识别“实质性的、真实的、坚固的”等语境义。
+- `long`：回答“渴望”正确，此处是动词，常见结构为 `long for + 名词` 或 `long to do`，表示强烈渴望。
+- `sociable`：回答“社交的”判为正确；用于人时更精确是“好交际的、爱与人相处的、友善随和的”，不要泛化成所有 `social` 的“社会的”义项。
 
 ## 下一次检验
 
-对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`chagrin`、`designate`、`burdensome`、`lachrymose`、`disgorge`、`somnolent`、`commonplace` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
+对 `antiquity`、`symbiosis`、`vicarious`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`bathetic`、`vagary`、`accrete`、`untoward`、`felony`、`exile`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`chagrin`、`designate`、`burdensome`、`lachrymose`、`disgorge`、`somnolent`、`commonplace`、`tacit`、`apprehend`、`shortcoming`、`devolve`、`instantiate`、`spiral` 做无提示复测；连续 3 次主动回忆正确后才进入 mastered。
