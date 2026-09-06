@@ -16,7 +16,7 @@ recall_test:
   partial: 11
   wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral]
 partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin, burdensome]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert, arboreal, satire, volition, innate, ponderous, forsake, unconscionable, indiscriminate, bristle, prosecute, paraphernalia, plummet, robust, ooze, bulwark]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert, arboreal, satire, volition, innate, ponderous, forsake, unconscionable, indiscriminate, bristle, prosecute, paraphernalia, plummet, robust, ooze, bulwark, gigantic, esteem, admirable]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -211,6 +211,17 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/rebuff
   - https://www.merriam-webster.com/dictionary/impermanent
   - https://www.merriam-webster.com/dictionary/restorative
+  - https://www.merriam-webster.com/dictionary/vault
+  - https://www.merriam-webster.com/dictionary/collective
+  - https://www.merriam-webster.com/dictionary/innovative
+  - https://www.merriam-webster.com/dictionary/gigantic
+  - https://www.merriam-webster.com/dictionary/deduce
+  - https://www.merriam-webster.com/dictionary/esteem
+  - https://www.merriam-webster.com/dictionary/unflinching
+  - https://www.merriam-webster.com/dictionary/mixed
+  - https://www.merriam-webster.com/dictionary/conviction
+  - https://www.merriam-webster.com/dictionary/admirable
+  - https://www.merriam-webster.com/dictionary/discordance
 ---
 
 # Day 2 词汇记录
@@ -374,6 +385,16 @@ verification_sources:
 - `approbation` 是名词“赞同、认可、赞扬”，可指正式认可，但不等同于一般“允许”。`studied` 作形容词是“经过仔细考虑或准备的；有意的、刻意的”，回答“计划的”可接受。
 - 综合复习累计覆盖 176/212 词：完全正确 115、部分正确 16、错误 45。当前弱词池仍为 79 词；本轮正确是一次复测证据，尚未满足连续 3 次主动回忆正确的 mastered 标准。
 
+### 此前答对词抽查第 7 轮（20 词）
+
+- 完全正确 17：`vault`、`collective`、`glean`、`substantial`、`long`、`innovative`、`sociable`、`definite`、`eloquent`、`deduce`、`ponder`、`unflinching`、`mixed`、`conviction`、`apropos`、`coterie`、`discordance`。
+- 部分正确 1：`admirable`。
+- 错误 2：`gigantic`、`esteem`。上述 3 词由此前答对池转入弱词池。
+- `gigantic` 未回忆出，核心义是“巨大的、庞大的”，强调尺寸、力量或重要性明显超出通常或预期。`esteem` 回答“尊严”错误；名词核心为“尊重、敬重、高度评价”，动词为“尊重、看重”，而“尊严”通常是 `dignity`。
+- `admirable` 回答“敬佩的”抓到词根和褒义方向，但施受关系不够明确：它形容值得别人敬佩的人、品质或行为，核心是“令人钦佩的、值得赞赏的”；描述“对别人怀有敬佩”的通常是 `admiring`。
+- `collective` 因包含“集体的”判为正确；它表示由群体共同组成、共同实施或作为整体的，不天然等于“一致的”。`sociable` 因“社交的”判为正确，用于人时更准确是“好交际的、友善随和的”。
+- 综合复习累计覆盖 196/212 词：完全正确 132、部分正确 17、错误 47。当前弱词池由 79 词增至 82 词；尚未抽查的 16 词仍需完成首次综合复习。
+
 ## 下一次检验
 
-继续抽查此前答对词 20 词：`vault`、`collective`、`glean`、`substantial`、`long`、`innovative`、`sociable`、`gigantic`、`definite`、`eloquent`、`deduce`、`esteem`、`ponder`、`unflinching`、`mixed`、`conviction`、`apropos`、`admirable`、`coterie`、`discordance`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
+先对本轮新增弱词做即时纠正测试：`gigantic`、`esteem`、`admirable`。即时答对只记为纠正证据，不计入跨日连续正确；随后继续完成尚未抽查的 16 词。连续 3 次主动回忆正确后才进入 mastered。
