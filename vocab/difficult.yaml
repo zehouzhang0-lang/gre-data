@@ -1,5 +1,10 @@
 schema_version: 1
 items:
+  - {word: patron, added_on: "2026-09-07", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-07", source: text_completion_2000}
+  - {word: neophyte, added_on: "2026-09-07", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-07", source: text_completion_2000}
+  - {word: novice, added_on: "2026-09-07", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-07", source: text_completion_2000}
+  - {word: pragmatist, added_on: "2026-09-07", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-07", source: text_completion_2000}
+  - {word: zealot, added_on: "2026-09-07", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-07", source: text_completion_2000}
   - {word: habitual, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
   - {word: conceal, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
   - {word: commitment, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
