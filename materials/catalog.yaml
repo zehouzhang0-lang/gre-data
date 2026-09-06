@@ -1,7 +1,16 @@
 schema_version: 1
 verified_at: "2026-09-02T13:00:00+08:00"
-storage_policy: external_local_only
-primary_machine_path_hint: "C:/Users/Administrator/.gre-media/materials"
+storage_policy: private_cloud_sync
+primary_machine_path_hint: "%OneDrive%/GRE-Study-Materials"
+cloud_storage:
+  provider: onedrive
+  visibility: private
+  folder_name: GRE-Study-Materials
+  tracked_in_git: false
+  file_count: 11
+  contents: 10_pdfs_plus_plan_image
+  verified_at: "2026-09-06T22:00:33+08:00"
+  integrity: sha256_matches_local_sources
 plan_source:
   title: 30天GRE冲325超全计划表
   kind: user_provided_image
