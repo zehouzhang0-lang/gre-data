@@ -159,9 +159,9 @@ verification_sources:
 
 # 技巧映射
 
-- `v_tc_logic_map`：保持 `unknown`。尚不能在有生词时稳定标出反差、因果并预测空格。
-- `v_tc_multi_blank_consistency`：保持 `unknown`。第 3 题未用完整因果链核验三空；第 2 题正确但来自猜测。
+- `v_tc_logic_map`：更新为 `learned`。用户已能独立复述“甲虫携带同种毒素 → 青蛙吃甲虫 → 青蛙获得毒素”的因果方向；尚无计时应用证据。
+- `v_tc_multi_blank_consistency`：更新为 `learned`。用户已解释第三空为什么是 `eaten` 而非 `poisoned`；原表述“才产生毒素”需校准为“获得/积累毒素”，以免与第二空 `does not produce them` 冲突。
 
 # 下次检验
 
-第 1 题词义纠错已通过；第 3 题的因果链尚未由用户独立复述，因此两个技巧状态仍保持 `unknown`。下一步先用一句话说明“为什么第三空是 `eaten` 而不是 `poisoned`”，通过后进入 test 1 section 1 第 4–7 题的 Sentence Equivalence 训练。
+第 1 题词义纠错已通过；第 3 题因果链纠错也已通过。进入 test 1 section 1 第 4–7 题的 Sentence Equivalence 训练；首次检验 `v_se_dual_equivalence`。
