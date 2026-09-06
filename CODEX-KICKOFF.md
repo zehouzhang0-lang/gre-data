@@ -14,7 +14,7 @@
 2. 验证档案、当前 30 天主计划、原始参考计划、资料索引、技巧库和记录目录完整。
 3. 配置 GitHub 写权限，使训练数据可以推送。
 4. 完整读取 `AGENTS.md`、`profile.md`、`scores.md` 和当天计划，接管 GRE 教练角色。
-5. 不再检查本机是否已复制外置 PDF 资料并校验哈希；允许把 PDF 放进 Git。
+5. 从 `materials/files/` 读取随 Git 同步的 10 份 PDF 和 1 张计划图，按 catalog 核验完整性。
 6. 按真实日期和计划事件恢复进度，给出当天任务、未完成 debt 和材料缺口。
 
 全程使用 PowerShell。安全范围内直接执行；只有安装软件、浏览器授权、目录冲突、Git 冲突或覆盖风险时才暂停询问。
@@ -153,26 +153,11 @@ git -C $Repo push --dry-run origin main
 
 ## 第五阶段：本机资料接入
 
-PDF 不在 Git 中时。读取：
+10 份 PDF 和 1 张计划图已纳入 `materials/files/`。读取 `materials/README.md` 和 `materials/catalog.yaml`，按每项 `repo_path`（相对于仓库根目录）检查文件、`size_bytes` 与 SHA-256；计划图使用 `plan_source` 中的同名字段。正常 clone / pull 后无需复制外置资料或配置 OneDrive。
 
-```powershell
-Get-Content -Raw (Join-Path $Repo 'materials\README.md')
-Get-Content -Raw (Join-Path $Repo 'materials\catalog.yaml')
-```
+《张巍GRE填空机经2000题.pdf》位于 `materials/files/张巍GRE填空机经2000题.pdf`，新任务可以直接读取原件。任一缺失或哈希不符时报告具体文件，禁止覆盖未知文件或假装通过。
 
-推荐本机资料目录：
-
-```powershell
-$MaterialsRoot = Join-Path $env:USERPROFILE '.gre-media\materials'
-```
-
-
-无论目录是否存在：
-
-1. 按 `materials/catalog.yaml` 的 filename 检查文件是否齐全。
-2. 用 `Get-FileHash -Algorithm SHA256` 与 catalog 逐项核对。
-3. 在仓库根目录新建 `.gre-materials.local.yaml`，只写本机路径与校验日期；该文件已被 `.gitignore` 排除。
-4. 任一哈希不符时报告具体文件，禁止覆盖或假装通过。
+OneDrive 和旧本地目录保留为备份；仅在使用其他外置资料时，才需要被忽略的 `.gre-materials.local.yaml`。日常同步脚本仍只接收文本变更；经明确授权的资料更新按 `materials/README.md` 的核验和普通提交流程执行。
 
 原图计划曾依赖但用户尚未提供的 `GRE 小白入门` 与 `GRE 数学满分宝典` 仍记录在资料缺口中；当前自适应计划不再把它们设为每日硬性任务。阅读、填空、数学 900 和数学 170 的独立答案/解析文件仍未收录；使用这些题库时必须标记 `blocked` 或 `answer_source: unavailable`，不得伪造正确率。
 
@@ -242,7 +227,7 @@ Get-Content -Raw (Join-Path $Repo 'SCHEMA.md')
 1. 系统时间与时区。
 2. Git 版本。
 3. 仓库路径、remote、branch、短 commit、是否 clean、是否具备 push 权限。
-4. 外置资料齐全数、哈希通过数和本机路径。
+4. 仓库资料齐全数（预期 11）、哈希通过数和资料目录；另列需要的外置资料。
 5. 缺失的入门/数学宝典/答案/模考材料。
 6. 从 profile/scores 读取的目标、考期、基线与弱项；未知项明确写未知。
 7. 当前策略与 `plan_file`、30 天计划的当前 Day、当天任务、历史 debt 和阻塞项。

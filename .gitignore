@@ -24,7 +24,7 @@ __pycache__/
 *.pyc
 tmp/
 
-# Private or copyrighted study materials stay local
+# Study materials stay local unless explicitly allowlisted below
 .gre-media/
 private/
 *.pdf
@@ -53,3 +53,16 @@ private/
 *.gif
 *.webp
 *.heic
+
+# User-authorized public study materials (2026-09-06), exact files only
+!/materials/files/30天GRE冲325超全计划表.jpg
+!/materials/files/GRE镇考机经词7.0-乱序版（2026年最新版）.pdf
+!/materials/files/GRE镇考机经词7.0-正序（2026年版）.pdf
+!/materials/files/GRE阅读机经核心词汇 .pdf
+!/materials/files/巍哥GRE数学170难题4.0（2026年）.pdf
+!/materials/files/张巍GRE填空机经2000题.pdf
+!/materials/files/张巍GRE最新数学机经900题 .pdf
+!/materials/files/张巍GRE镇考3000词-乱序（2026年）.pdf
+!/materials/files/张巍GRE镇考3000词-正序（2026年）.pdf
+!/materials/files/张巍GRE阅读机经440篇.pdf
+!/materials/files/真经GRE等价词汇总（2026年版 ）.pdf

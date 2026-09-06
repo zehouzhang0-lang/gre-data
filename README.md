@@ -2,7 +2,7 @@
 
 这是一个独立的 GRE General Test AI 教练与学习数据仓库。它与 [`ielts-data`](https://github.com/zehouzhang0-lang/ielts-data) 完全分离，只借鉴其“文本数据 + 明确规范 + Git 多设备同步”的工作模式。
 
-仓库保存可审计的学习记录，不保存受版权保护的整本资料、PDF、截图、音视频、账号信息或密钥。
+仓库保存可审计的学习记录，以及用户明确要求公开同步的 11 份 GRE 资料；不保存账号信息或密钥。
 
 ## 当前状态
 
@@ -13,7 +13,7 @@
 - 最近一次正式或完整模考成绩
 - 申请方向和优先弱项
 
-未知信息在 `profile.md` 中保持 `null`，不会从雅思项目推断或复制。用户提供的 10 份 PDF 已建立哈希索引，原件保存在仓库外的 `.gre-media` 目录。
+未知信息在 `profile.md` 中保持 `null`，不会从雅思项目推断或复制。用户提供的 10 份 PDF 和 1 张计划图位于 `materials/files/`，随 Git 克隆和拉取直接取得。文件路径、精确字节数与 SHA-256 见 `materials/catalog.yaml`；OneDrive 和原本地副本保留。
 
 ## 目录结构
 
@@ -24,7 +24,7 @@ gre-data/
 ├── SCHEMA.md                         # 所有学习记录的数据规范
 ├── profile.md                        # 目标、考期、基线和时间预算
 ├── scores.md                         # 正式考试与模考分数历史
-├── materials/                        # 外置 PDF 的文件名、哈希和可用性
+├── materials/                        # 资料原件 files/、路径、哈希和可用性
 ├── verbal/submissions/               # Verbal 分节练习与错题分析
 ├── quant/submissions/                # Quant 分节练习与错题分析
 ├── analytical-writing/submissions/   # Analyze an Issue 写作记录

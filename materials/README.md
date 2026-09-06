@@ -1,18 +1,20 @@
 # 学习资料索引
 
-`catalog.yaml` 是可同步的资料目录，只记录文件名、版本、页数、SHA-256、用途与答案状态，不包含 PDF 内容。
+`catalog.yaml` 记录文件名、仓库相对路径 `repo_path`、精确字节数 `size_bytes`、页数、SHA-256、用途与答案状态。10 份 PDF 和 1 张计划图保存在 `materials/files/`，随仓库克隆或拉取直接取得，无需另行复制 OneDrive 资料。
 
-PDF 原件存放在仓库外。当前主力机的稳定目录是：
+《张巍GRE填空机经2000题.pdf》的入口为 `materials/files/张巍GRE填空机经2000题.pdf`（材料 ID：`text_completion_2000`）。新任务从仓库根目录解析 `repo_path` 即可读取。
 
-```text
-C:\Users\Administrator\.gre-media\materials
-```
+用户于 2026-09-06 明确要求公开上传这 11 份资料，并声明全部公开免费；本次据此同步，未为材料推定或新增许可证。OneDrive 和原本地副本保留为备份。需要外置资料时，仍可使用被忽略的 `.gre-materials.local.yaml` 保存本机路径。
 
-本机路径写在仓库根目录的 `.gre-materials.local.yaml`，该文件被 Git 忽略。新设备复制资料后，从 `.gre-materials.local.example.yaml` 新建本机配置并校验哈希。
+## 校验与更新
+
+- 按 catalog 的 `repo_path`、`size_bytes` 和 `sha256` 核验文件。原有 `size_mb` 实际采用 MiB（字节数除以 1,048,576，保留两位小数）。
+- `.gitignore` 仅对本次 11 个确切路径开放例外；其他媒体仍默认忽略。
+- `sync.ps1` / `sync.sh` 用于日常文本训练记录，仍会拒绝暂存的媒体变更。本次资料通过核对暂存清单后正常 `git commit`、`git push origin main` 发布；日后资料更新同样需明确授权、完整性检查与人工可审阅的普通 Git 提交。不要用强推或关闭安全检查。
 
 ## 使用规则
 
 - 乱序词表用于按日学习；正序词表只作查词索引。
-- 阅读、填空和数学题库的答案/解析不在现有 PDF 中。补齐独立答案文件前，记录必须标记 `answer_source: unavailable` 或由教练逐题独立求解，不能假装已对照官方/出版方答案。
-- `GRE 小白入门` 与 `GRE 数学满分宝典` 尚未提供。30 天计划保留对应任务，但不能用其他文件冒充。
-- 不把 PDF、截图、答案原件或长段题目文本提交到公开仓库。
+- 阅读、填空和数学题库的独立答案/解析仍未提供。补齐前，记录必须标记 `answer_source: unavailable` 或由教练逐题独立求解，不能假装已对照官方/出版方答案。
+- `GRE 小白入门` 与 `GRE 数学满分宝典` 尚未提供，不能用其他文件冒充。
+- 训练记录只保留必要题目片段、定位和自己的推理。
