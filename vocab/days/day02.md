@@ -427,6 +427,12 @@ verification_sources:
 - `catholic` 因回答包含“包罗万象的”而判为正确；小写形容词表示“广泛的、包容的”，大写 `Catholic` 才表示“天主教的”或名词“天主教徒”。`dichotomous` 的核心是“分成两部分的、二分的”，回答“一分为二的”正确，不要求两部分必然逻辑矛盾。
 - Day 1 + Day 2 综合复习已覆盖全部 212 词：完全正确 145、部分正确 17、错误 50。本轮结果只描述这次主动回忆；弱词池由 82 词增至 85 词，尚无词满足稳定掌握标准。
 
+### 新增弱词即时纠正（第 2 组，3 词）
+
+- 完全正确 3：`ill-advised`、`trenchant`、`abet`。
+- `ill-advised` 已纠正为“考虑不周的、不明智的”；`trenchant` 已纠正为“尖锐有洞察力的”；`abet` 已纠正为“教唆、指使”，并需保留“协助、支持”义及搭配 `aid and abet`。
+- 本轮发生在首次失误后同一天，只作为即时纠正证据。三词的连续正确计数从 0 更新为 1，但尚无跨日证据，继续留在弱词池。
+
 ## 下一次检验
 
-先对本轮新增弱词做即时纠正测试：`ill-advised`、`trenchant`、`abet`。即时答对只作为纠正证据；之后从 85 词弱词池中按错因和遗忘次数分批复测，连续 3 次主动回忆正确且包含跨日证据后才进入 mastered。
+下一次优先做跨日弱词抽查 20 词：`querulous`、`contrive`、`allegory`、`forthright`、`aver`、`nefarious`、`patronize`、`avert`、`arboreal`、`satire`、`volition`、`innate`、`ponderous`、`forsake`、`unconscionable`、`indiscriminate`、`bristle`、`prosecute`、`paraphernalia`、`plummet`。连续 3 次主动回忆正确且包含跨日证据后才进入 mastered。
