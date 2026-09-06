@@ -7,14 +7,18 @@ items:
     status: learned
     evidence:
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: failure, note: "第1题遇到生词后未提取 paradox 反差信号；第2题猜中但无推理；第3题未完成因果链。"}
-      - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: correction_pass, note: "能独立复述甲虫携带同种毒素、青蛙吃甲虫、青蛙获得毒素的因果方向；表述中的‘产生’经纠正为‘获得/积累’。尚无计时应用证据。"}
+      - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: success, note: "纠错通过：能独立复述甲虫携带同种毒素、青蛙吃甲虫、青蛙获得毒素的因果方向；表述中的‘产生’经纠正为‘获得/积累’。尚无计时应用证据。"}
   - id: v_tc_multi_blank_consistency
     area: verbal
     status: learned
     evidence:
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: failure, note: "第3题前两空正确但第三空颠倒因果方向；多空题整题计错。"}
-      - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: correction_pass, note: "纠错时能用来源链说明第三空应为 eaten 而非 poisoned；属非计时、已提示后的复述，故仅升至 learned。"}
-  - {id: v_se_dual_equivalence, area: verbal, status: unknown, evidence: []}
+      - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: success, note: "纠错通过：能用来源链说明第三空应为 eaten 而非 poisoned；属非计时、已提示后的复述，故仅升至 learned。"}
+  - id: v_se_dual_equivalence
+    area: verbal
+    status: unknown
+    evidence:
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2031_sentence_equivalence.md, result: failure, note: "第4-7题均只提交一个选项；第5、6题各命中一个正确词但未找到等价搭档。大量选项词汇缺口使双重检验无法执行，未计时样本0/4。"}
   - {id: v_rc_scope_evidence, area: verbal, status: unknown, evidence: []}
   - {id: v_rc_author_function, area: verbal, status: unknown, evidence: []}
   - {id: v_rc_inference_minimum, area: verbal, status: unknown, evidence: []}
