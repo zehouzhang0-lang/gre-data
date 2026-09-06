@@ -96,3 +96,13 @@ Test 1 Section 2（easy）第 1-2 题，未计时。用户明确作答第 1 题 
 1. 主动回忆 `numinous = supernatural / spiritual`、`proprietary = owner-controlled / exclusive`。
 2. 在两个新句子中先写中文预测，再选词；不得只凭“眼熟”选择。
 3. 当前训练仍未计时，不能把技巧状态升级为 `applied`。
+
+# 第一轮主动回忆
+
+用户依次回忆 `numinous / empirical / proprietary / immutable / didactic`，五词核心义均可接受，记 5/5；全部进入首次正确连续记录。精确性修正：
+
+- `empirical` 是“基于观察、经验或实验的”，不必然表示结论已经被证明。
+- `proprietary` 是“所有者专有或受独占权控制的”，所有者可以是个人或组织，不能只限于“个人专有”。
+- `didactic` 的中性核心义是“旨在教导的”；在负面语境中才常译为“说教的”。
+
+这一轮只证明五个词的脱离语境主动回忆成功，不改变填空技巧状态。
