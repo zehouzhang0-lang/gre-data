@@ -71,3 +71,9 @@ irascibility偏易怒倾向，exasperation偏烦恼状态，二者不是所有�
 用户依次回答“习惯的／掩盖着／奉献／开头”，3/4。habitual、conceal、commitment在本轮所教义项下正确，各累计首次连续正确；front仍未回忆本题的表象、掩饰义，正确连续次数维持0，复测次数更新为2。不是断言front在所有语境均不能表示前部，而是此题的misleading front不能译成开头。
 
 下一步用短搭配a misleading front（误导性的表象）和put on a brave front（装出勇敢的样子）聚焦这一义项，让用户复述前者。此为讲解后即时词义练习，未计时，是否回看释义未知；本题仍未有独立选项提交，保持不计对错。
+
+# 2026-09-07 00:01 front纠正
+
+用户将a misleading front复述为“让人误判的表象”，正确。front记首次连续正确，review_count=3，last_review按真实日期更新为2026-09-07。虽跨日历日期，仍为同一连续会话内的即时纠正，不能算间隔复测或稳定掌握；未计时，是否回看释义未知。
+
+下一步继续本题六个选项名词的词义复述：cordiality、irascibility、disorganization、conviviality、diffidence、exasperation。原题仍未独立作答，不将本次搭配翻译计入题目正确率。
