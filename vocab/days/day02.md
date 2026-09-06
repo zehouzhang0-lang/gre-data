@@ -197,6 +197,20 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/surrogate
   - https://www.merriam-webster.com/dictionary/coruscate
   - https://www.merriam-webster.com/dictionary/ecstasy
+  - https://www.merriam-webster.com/dictionary/paean
+  - https://www.merriam-webster.com/dictionary/roost
+  - https://www.merriam-webster.com/dictionary/apprentice
+  - https://www.merriam-webster.com/dictionary/stalwart
+  - https://www.merriam-webster.com/dictionary/meld
+  - https://www.merriam-webster.com/dictionary/incorporate
+  - https://www.merriam-webster.com/dictionary/concise
+  - https://www.merriam-webster.com/dictionary/fraudulent
+  - https://www.merriam-webster.com/dictionary/captious
+  - https://www.merriam-webster.com/dictionary/callow
+  - https://www.merriam-webster.com/dictionary/abate
+  - https://www.merriam-webster.com/dictionary/rebuff
+  - https://www.merriam-webster.com/dictionary/impermanent
+  - https://www.merriam-webster.com/dictionary/restorative
 ---
 
 # Day 2 词汇记录
@@ -350,6 +364,16 @@ verification_sources:
 - `exclusive` 因同时回答“互斥的、排他的”而判为正确；需依语境区分“只限特定对象的、排他的”和“互不相容的”。`exonerate` 的“使无罪”判为正确，更广义是“免除罪责、过失或责任”。
 - 综合复习累计覆盖 156/212 词：完全正确 95、部分正确 16、错误 45。当前弱词池由 78 词增至 79 词；尚无证据表明整个 212 词已经稳定掌握。
 
+### 此前答对词抽查第 6 轮（20 词）
+
+- 完全正确 20：`paean`、`quench`、`roost`、`discharge`、`apprentice`、`stalwart`、`meld`、`incorporate`、`concise`、`approbation`、`fraudulent`、`captious`、`callow`、`abate`、`rebuff`、`studied`、`invertebrate`、`impermanent`、`execrate`、`restorative`。
+- 部分正确 0。
+- 错误 0。没有词转入弱词池。
+- `paean` 回答“赞美诗”正确；它也可泛指赞颂某人或某事的作品、言论或表达。`quench` 回答“结束、终止”是有效义项，同时需保留高频义“熄灭、解渴、压制”。
+- `rebuff` 将“一口气拒绝”按“一口拒绝、断然拒绝”的原意判为正确；核心是“拒绝、回绝”，通常带生硬或不客气的语感。`concise` 因“简明的”判为正确，核心是“简洁而内容完整”，不天然包含“精确”。
+- `approbation` 是名词“赞同、认可、赞扬”，可指正式认可，但不等同于一般“允许”。`studied` 作形容词是“经过仔细考虑或准备的；有意的、刻意的”，回答“计划的”可接受。
+- 综合复习累计覆盖 176/212 词：完全正确 115、部分正确 16、错误 45。当前弱词池仍为 79 词；本轮正确是一次复测证据，尚未满足连续 3 次主动回忆正确的 mastered 标准。
+
 ## 下一次检验
 
-继续抽查此前答对词 20 词：`paean`、`quench`、`roost`、`discharge`、`apprentice`、`stalwart`、`meld`、`incorporate`、`concise`、`approbation`、`fraudulent`、`captious`、`callow`、`abate`、`rebuff`、`studied`、`invertebrate`、`impermanent`、`execrate`、`restorative`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
+继续抽查此前答对词 20 词：`vault`、`collective`、`glean`、`substantial`、`long`、`innovative`、`sociable`、`gigantic`、`definite`、`eloquent`、`deduce`、`esteem`、`ponder`、`unflinching`、`mixed`、`conviction`、`apropos`、`admirable`、`coterie`、`discordance`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
