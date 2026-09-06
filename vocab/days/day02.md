@@ -16,7 +16,7 @@ recall_test:
   partial: 11
   wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral]
 partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin, burdensome]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert, arboreal, satire, volition, innate, ponderous, forsake, unconscionable, indiscriminate, bristle, prosecute]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert, arboreal, satire, volition, innate, ponderous, forsake, unconscionable, indiscriminate, bristle, prosecute, paraphernalia, plummet, robust, ooze]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -157,6 +157,26 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/abolish
   - https://www.merriam-webster.com/dictionary/triumph
   - https://www.merriam-webster.com/dictionary/negotiable
+  - https://www.merriam-webster.com/dictionary/renegade
+  - https://www.merriam-webster.com/dictionary/paraphernalia
+  - https://www.merriam-webster.com/dictionary/disdain
+  - https://www.merriam-webster.com/dictionary/encroach
+  - https://www.merriam-webster.com/dictionary/ennoble
+  - https://www.merriam-webster.com/dictionary/plummet
+  - https://www.merriam-webster.com/dictionary/ambiguous
+  - https://www.merriam-webster.com/dictionary/menace
+  - https://www.merriam-webster.com/dictionary/robust
+  - https://www.merriam-webster.com/dictionary/ooze
+  - https://www.merriam-webster.com/dictionary/energize
+  - https://www.merriam-webster.com/dictionary/occult
+  - https://www.merriam-webster.com/dictionary/comestible
+  - https://www.merriam-webster.com/dictionary/embed
+  - https://www.merriam-webster.com/dictionary/guardian
+  - https://www.merriam-webster.com/dictionary/brainchild
+  - https://www.merriam-webster.com/dictionary/assent
+  - https://www.merriam-webster.com/dictionary/ruthless
+  - https://www.merriam-webster.com/dictionary/potent
+  - https://www.merriam-webster.com/dictionary/aplomb
 ---
 
 # Day 2 词汇记录
@@ -290,6 +310,16 @@ verification_sources:
 - `cardinal` 因回答包含“主要的”而判为正确，GRE 核心为“首要的、基本的、极重要的”；红色、红衣主教和红雀属于其他词性或语境。`scintillating` 可表示“才气横溢、妙趣横生的”，也关联“闪烁”；`inhibit` 的“禁止”是正式义项，另需识别“抑制、阻碍”。
 - 综合复习累计覆盖 116/212 词：完全正确 60、部分正确 14、错误 42。当前弱词池由 70 词增至 74 词；尚无证据表明整个 212 词已经稳定掌握。
 
+### 此前答对词抽查第 4 轮（20 词）
+
+- 完全正确 16：`renegade`、`disdain`、`encroach`、`ennoble`、`ambiguous`、`menace`、`energize`、`occult`、`comestible`、`embed`、`guardian`、`brainchild`、`assent`、`ruthless`、`potent`、`aplomb`。
+- 部分正确 1：`ooze`。
+- 错误 3：`paraphernalia`、`plummet`、`robust`。上述 4 词由此前答对池转入弱词池。
+- `paraphernalia` 是集合名词“某项活动所需的全套装备、用具；随身物品”，常见 `drug/fishing/sports paraphernalia`。`plummet` 是动词“垂直坠落；突然大幅下跌”。`robust` 是“强健的、强有力的、坚固可靠的”，也可形容论证、经济或系统稳健。
+- `ooze` 回答“溢出”只保留了“流出”方向。它强调“从细小缝隙缓慢渗出、流出；缓慢移动”，还可表示“流露、散发某种特质”，如 `ooze confidence`；普通“溢出”未保留缓慢渗流的方式信息。
+- `brainchild` 回答“智慧结晶”判为正确，更准确是“某人创造性努力产生的构想、发明或作品”。`assent` 因包含“认可、批准”而判为正确，核心是“经考虑后同意、赞成”，通常接 `assent to`；不泛指所有“允许”。`potent` 的“有权势的”是有效义项，另需识别“强效的、强有力的”。
+- 综合复习累计覆盖 136/212 词：完全正确 76、部分正确 15、错误 45。当前弱词池由 74 词增至 78 词；尚无证据表明整个 212 词已经稳定掌握。
+
 ## 下一次检验
 
-继续抽查此前答对词 20 词：`renegade`、`paraphernalia`、`disdain`、`encroach`、`ennoble`、`plummet`、`ambiguous`、`menace`、`robust`、`ooze`、`energize`、`occult`、`comestible`、`embed`、`guardian`、`brainchild`、`assent`、`ruthless`、`potent`、`aplomb`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
+继续抽查此前答对词 20 词：`accede`、`embody`、`bulwark`、`disgruntle`、`disperse`、`subordinate`、`philistine`、`nonconformist`、`skulduggery`、`exclusive`、`monitor`、`helter-skelter`、`impolitic`、`exonerate`、`unceasing`、`last-ditch`、`perpendicular`、`surrogate`、`coruscate`、`ecstasy`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
