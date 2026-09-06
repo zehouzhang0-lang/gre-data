@@ -1,5 +1,10 @@
 schema_version: 1
 items:
+  - {word: disclose, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
+  - {word: brook, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
+  - {word: tolerate, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
+  - {word: repudiate, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
+  - {word: weigh, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: text_completion_2000}
   - {word: proselytize, added_on: "2026-09-02", initial_result: wrong, review_count: 2, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: heresy, added_on: "2026-09-02", initial_result: partial, review_count: 1, correct_streak: 1, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: exceptional, added_on: "2026-09-02", initial_result: partial, review_count: 1, correct_streak: 1, last_review: "2026-09-06", source: core3000_random_2026}

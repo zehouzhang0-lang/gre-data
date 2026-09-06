@@ -25,6 +25,7 @@ items:
     area: verbal
     status: learned
     evidence:
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2209_sentence_equivalence.md, result: failure, note: "Test 1 Section 2 第5题选A/F，正确C/D；自报除B外基本不认识选项，未找到brook/tolerate等价对。具体推理未提供，不推断读题错误；未计时，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2031_sentence_equivalence.md, result: failure, note: "第4-7题均只提交一个选项；第5、6题各命中一个正确词但未找到等价搭档。大量选项词汇缺口使双重检验无法执行，未计时样本0/4。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2031_sentence_equivalence.md, result: mixed, note: "讲解后能主动回忆四组等价答案；前三组拼写正确，prescient 写成 precient。仅证明已记住本组配对，尚未在新句子中完成双重检验，状态暂不升级。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2031_sentence_equivalence.md, result: failure, note: "教练原创迁移题选择C/D，正确为A/C；识别 despite 转折，但未识别 calm/composed 等价对，并误选无句内证据的 biased。状态保持 unknown。"}
