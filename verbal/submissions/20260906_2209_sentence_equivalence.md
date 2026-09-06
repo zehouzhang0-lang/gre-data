@@ -25,6 +25,7 @@ errors:
     technique_ids: [v_se_dual_equivalence]
 technique_ids: [v_se_dual_equivalence]
 verification_sources:
+  - https://www.merriam-webster.com/dictionary/compromise
   - https://www.merriam-webster.com/dictionary/disclose
   - https://www.merriam-webster.com/dictionary/reject
   - https://www.merriam-webster.com/dictionary/brook
@@ -57,3 +58,13 @@ verification_sources:
 已知词汇缺口阻碍选项映射；A/F 既不等价，A 也缺少句内支持。没有证据断言用户读反 no 或不理解题干。首次明确自报陌生的 disclose、brook、tolerate、repudiate、weigh 加入难词池，尚未主动回忆复测。
 
 技巧保持 learned，追加失败证据。下次先圈出 no，预测动词“容忍”，再分别代入两项检查整句等价。先主动回忆5个生词及 brook no compromise 的中文义，全部正确后记录本轮纠正成功；之后需新题迁移验证。
+
+# 22:20 补充错因与复测
+
+用户澄清：最初不知道 compromise 是“妥协”，认为这是选错的原因。故此前“题意明白”仅是当时自报，现将诊断修正为题干关键词 compromise 的词义缺口叠加选项词汇缺口；没有证据归因为读反 no。
+
+五词主动回忆：disclose“公开”、brook“容忍”、tolerate“容忍”、repudiate“否认拒绝接受”、weigh“称重，权衡”，5/5。各累计首次连续正确，尚非稳定掌握。未提交整句翻译，不能记录完整逻辑复述通过。
+
+compromise 加入难词池。用户在说明错因时提到“妥协”，不当作独立主动回忆证据。Merriam-Webster 于2026-09-06核验：本题作名词，指妥协、让步或折中；核心涉及相互让步解决分歧，通常中性，涉及原则退让时可负面。搭配 reach a compromise（达成妥协）；作动词可指妥协，也可指损害、危及，如 compromise safety（危及安全）。注意与 promise（承诺）区分。
+
+下次检验：独立翻译 brook no compromise，确认“容忍 + no + 妥协”的完整含义，再继续新题。
