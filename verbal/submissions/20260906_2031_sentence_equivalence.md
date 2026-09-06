@@ -70,6 +70,10 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/indifferent
   - https://www.merriam-webster.com/dictionary/repeated
   - https://www.merriam-webster.com/dictionary/apathetic
+  - https://www.merriam-webster.com/dictionary/calm
+  - https://www.merriam-webster.com/dictionary/composed
+  - https://www.merriam-webster.com/dictionary/furious
+  - https://www.merriam-webster.com/dictionary/biased
 ---
 
 # 训练概览
@@ -170,3 +174,24 @@ Test 1 Section 1（easy）第 4-7 题 Sentence Equivalence，未计时。用户�
 - 第四组语义配对正确：`prescient / prophetic`；但将 `prescient` 拼成 `precient`。可用 `pre-`（提前）+ `sci`（知道）固定拼写。
 - 弱词池复测：`yield`、`succumb`、`singular`、`hyperbole`、`prophetic` 各累计 1 次正确；`prescient` 记为部分正确，连续正确仍为 0。
 - 本次只证明已记住讲解过的四组配对，尚未证明能在新句子里执行 Sentence Equivalence 双重检验；`v_se_dual_equivalence` 暂时保持 `unknown`。
+
+# 教练原创迁移题 1
+
+本题不计入题库第 4-7 题的原始 0/4，仅作为技巧迁移证据。
+
+- 题意骨架：尽管讨论激烈，主持人仍然 ___。
+- 用户答案：C `composed` / D `biased`。
+- 正确答案：A `calm` / C `composed`。
+- 结果：0/1；命中一个正确词，但答案对不完整。
+- 正确信号：`Despite the heated debate` 与 `remained` 要求“在激烈环境中仍保持平静”。
+
+| 选项 | 核心义 | 判断 |
+| --- | --- | --- |
+| A `calm` | 平静的，不激动或不受扰乱的 | 符合转折预测；与 C 等价。 |
+| B `furious` | 极其愤怒的；猛烈的 | 与“仍保持平静”的方向相反。 |
+| C `composed` | 镇静自若的、沉着的 | 用户命中；与 A 等价。 |
+| D `biased` | 有偏见的、不公正偏向一方的 | 用户误选；题干没有公平性证据，且不与 C 等价。 |
+| E `unclear` | 不清楚的、含糊的 | 与情绪状态无关。 |
+| F `careless` | 粗心的、不谨慎的 | 与情绪状态无关。 |
+
+错因：能看到 `despite` 的转折，但没有把空格先预测成“平静”，也没有强制寻找 `composed` 的等价搭档。`bias` 在上一组已讲为“偏见”，本次仍误选 `biased`，故作为一次失败复测；`calm`、`composed`、`furious` 加入弱词池。
