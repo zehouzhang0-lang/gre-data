@@ -63,3 +63,9 @@ verification_sources:
 词汇缺口覆盖题干和选项，尚无证据证明用户已用in other words完成语义预测。不能把命中F记为掌握该词，也不臆测选E的原因。SE保持learned，追加失败证据。
 
 先圈出in other words，将前文压缩为“准确描绘现实”，再找两项均表示写实/逼真的词，并排除虽近义但无文本依据的B/E。下次回忆lens、depict、be instrumental in、sanguinity、verisimilitude五项；核心义5/5且能复述“准确描绘 -> 写实/逼真”才算本轮纠正通过。尚未复测。
+
+# 23:01 主动回忆复测
+
+用户依次回答“透镜／描绘／在。。发挥重要作用／乐天的，乐观的／逼真性”。4项完全正确，sanguinity部分正确：乐观方向正确，但用形容词释义，需纠正为名词“乐观、乐观状态”；相应形容词为sanguine。不把该词判为语义完全错误。
+
+lens、depict、instrumental、verisimilitude各累计首次连续正确；sanguinity复测次数增加但正确连续次数维持0。未提交句内逻辑复述，不升级SE技巧。下一步区分sanguinity的名词义与sanguine的形容词义，后续再间隔复测。
