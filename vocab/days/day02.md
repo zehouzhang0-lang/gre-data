@@ -397,4 +397,6 @@ verification_sources:
 
 ## 下一次检验
 
-先对本轮新增弱词做即时纠正测试：`gigantic`、`esteem`、`admirable`。即时答对只记为纠正证据，不计入跨日连续正确；随后继续完成尚未抽查的 16 词。连续 3 次主动回忆正确后才进入 mastered。
+先对本轮新增弱词做即时纠正测试：`gigantic`、`esteem`、`admirable`。即时答对只记为纠正证据，不计入跨日连续正确。
+
+随后完成此前答对池中尚未抽查的最后 16 词：`ill-advised`、`masculine`、`routine`、`trenchant`、`calamity`、`forage`、`abet`、`euphoria`、`catholic`、`mask`、`explicable`、`avian`、`perforce`、`dichotomous`、`enliven`、`stanch`。这 16 词已依据原 PDF 中 list1/list2 的实际顺序，与 56 个首次未完全正确词及前 7 轮共 140 个此前答对词取差集确认；`complimentary`、`conjecture`、`adhere` 当时未进入实际作答的 212 词，故不计入本轮。连续 3 次主动回忆正确后才进入 mastered。
