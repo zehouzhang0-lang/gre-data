@@ -128,3 +128,7 @@ Test 1 Section 2（easy）第 4 题，三空，未计时。用户选择 B/E/G；
 下一步要求用户不看释义复述固定搭配 `antiquarian bookseller / classical music / antique desk`，并分别给出中文义；三项全对才记为本轮纠正成功。
 
 权威核验（2026-09-06）：Merriam-Webster 分别将 `antiquarian` 的形容词义列为“与古物有关”及“经营旧书或珍本书”，将 `classical` 用于欧洲艺术音乐传统，将 `antique` 的名词义用于早期制作的艺术品、家具或装饰物。来源：https://www.merriam-webster.com/dictionary/antiquarian 、https://www.merriam-webster.com/dictionary/classical 、https://www.merriam-webster.com/dictionary/antique 。
+
+## 纠正后复述
+
+用户不看释义复述为“旧书书商／古典乐／古董桌子”，三项语义均正确，结果 3/3。为使中文表达更自然，`antiquarian bookseller` 建议简化为“旧书商”或在强调稀有书籍时译为“珍本书商”。`antiquarian` 与 `classical` 本轮各累计 1 次正确连续记录；仍需以后再次间隔复测，不能据一次纠正判为稳定掌握。
