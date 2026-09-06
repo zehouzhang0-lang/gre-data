@@ -83,6 +83,16 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/deferential
   - https://www.merriam-webster.com/dictionary/confront
   - https://www.merriam-webster.com/dictionary/rescind
+  - https://www.merriam-webster.com/dictionary/proselytize
+  - https://www.merriam-webster.com/dictionary/exceptional
+  - https://www.merriam-webster.com/dictionary/harrow
+  - https://www.merriam-webster.com/dictionary/regimen
+  - https://www.merriam-webster.com/dictionary/allegiance
+  - https://www.merriam-webster.com/dictionary/divisive
+  - https://www.merriam-webster.com/dictionary/lament
+  - https://www.merriam-webster.com/dictionary/furtive
+  - https://www.merriam-webster.com/dictionary/fluctuate
+  - https://www.merriam-webster.com/dictionary/inadvertent
 ---
 
 # Day 2 词汇记录
@@ -168,6 +178,13 @@ verification_sources:
 - 错误 11：`preclude`、`fungible`、`bathetic`、`poignant`、`accrete`、`nonchalant`、`instantiate`、`valorize`、`vicarious`、`confront`、`rescind`。
 - 形近误连：`instantiate` 回答“使立刻”，实际是“用具体实例体现或例证、实例化”；`rescind` 回答“憎恶”，实际是“撤销、废除、取消”，而“憎恶”可对应 `execrate`。
 
+### 弱词第 2 轮（20 词）
+
+- 完全正确 4：`exceptional`、`allegiance`、`symbiosis`、`vilify`。
+- 部分正确 6：`harrow` 回答“悲伤的”，抓到痛苦方向但词性和施受关系不准，核心为动词“折磨、使痛苦”，另可作名词“耙”；`regimen` 回答“养生之道”，方向接近但应固定为“系统性的饮食、治疗、用药或训练方案”；`divisive` 回答“分裂的”，应为“引起分裂或分歧的”；`envisage` 回答“联想展开”，应固定为动词“设想、想象，尤其是预想尚未实现的情形”；`artifact` 回答“手工艺品”，范围过窄，核心为“人工制品，尤指历史文化遗物”，另可指人为假象；`felony` 回答“罪行”，范围过宽，核心为“重罪”。
+- 错误 10：`proselytize`、`lament`、`furtive`、`fluctuate`、`inadvertent`、`contumacious`、`obscure`、`vagary`、`untoward`、`exile`。
+- 易混提醒：`inadvertent` 不是“不动摇的”，而是“无意的、疏忽造成的”；`vagary` 不是褒义的“奇思妙想”，而是“反复无常的念头、行为或难以预测的变化”；`exile` 是“流放、流亡”，不是“消逝”。
+
 ## 下一次检验
 
-综合复习弱词第 2 轮测试 `proselytize`、`exceptional`、`harrow`、`regimen`、`allegiance`、`divisive`、`lament`、`furtive`、`fluctuate`、`inadvertent`、`symbiosis`、`vilify`、`contumacious`、`obscure`、`envisage`、`artifact`、`vagary`、`untoward`、`felony`、`exile`。本轮未完全正确的 13 词继续保留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
+综合复习弱词第 3 轮测试 `depressing`、`atomize`、`blandish`、`stagger`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`designate`、`burdensome`、`disgorge`、`somnolent`、`shortcoming`、`devolve`、`spiral`。前两轮未完全正确的词继续保留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
