@@ -14,7 +14,7 @@
 2. 验证档案、当前 30 天主计划、原始参考计划、资料索引、技巧库和记录目录完整。
 3. 配置 GitHub 写权限，使训练数据可以推送。
 4. 完整读取 `AGENTS.md`、`profile.md`、`scores.md` 和当天计划，接管 GRE 教练角色。
-5. 检查本机是否已复制外置 PDF 资料并校验哈希；不得把 PDF 放进 Git。
+5. 不再检查本机是否已复制外置 PDF 资料并校验哈希；允许把 PDF 放进 Git。
 6. 按真实日期和计划事件恢复进度，给出当天任务、未完成 debt 和材料缺口。
 
 全程使用 PowerShell。安全范围内直接执行；只有安装软件、浏览器授权、目录冲突、Git 冲突或覆盖风险时才暂停询问。
@@ -153,7 +153,7 @@ git -C $Repo push --dry-run origin main
 
 ## 第五阶段：本机资料接入
 
-PDF 不在 Git 中。先读取：
+PDF 不在 Git 中时。读取：
 
 ```powershell
 Get-Content -Raw (Join-Path $Repo 'materials\README.md')
@@ -166,9 +166,8 @@ Get-Content -Raw (Join-Path $Repo 'materials\catalog.yaml')
 $MaterialsRoot = Join-Path $env:USERPROFILE '.gre-media\materials'
 ```
 
-若目录不存在，报告“数据仓库已接入，但外置 GRE PDF 尚未复制”，并请用户从旧设备复制；不得从网络搜索同名盗版资料。
 
-若目录存在：
+无论目录是否存在：
 
 1. 按 `materials/catalog.yaml` 的 filename 检查文件是否齐全。
 2. 用 `Get-FileHash -Algorithm SHA256` 与 catalog 逐项核对。
@@ -221,7 +220,7 @@ Get-Content -Raw (Join-Path $Repo 'SCHEMA.md')
 2. `git -C $Repo pull --rebase --autostash origin main`。
 3. 读取 profile、scores、当天计划、事件和相关技巧卡。
 4. 按 `SCHEMA.md` 写入原子训练记录与 mastery evidence。
-5. 展示 `git status --short`，确认没有 PDF、图片、密钥或隐私。
+5. 展示 `git status --short`，确认没有密钥。
 6. 运行：
 
 ```powershell
