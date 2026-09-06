@@ -195,3 +195,14 @@ Test 1 Section 1（easy）第 4-7 题 Sentence Equivalence，未计时。用户�
 | F `careless` | 粗心的、不谨慎的 | 与情绪状态无关。 |
 
 错因：能看到 `despite` 的转折，但没有把空格先预测成“平静”，也没有强制寻找 `composed` 的等价搭档。`bias` 在上一组已讲为“偏见”，本次仍误选 `biased`，故作为一次失败复测；`calm`、`composed`、`furious` 加入弱词池。
+
+# 教练原创迁移题 2
+
+本题不计入题库第 4-7 题的原始 0/4，仅作为技巧迁移证据。
+
+- 题意骨架：说明用简单语言写成，所以即使初学者也觉得 ___。
+- 用户答案：A `clear` / C `understandable`。
+- 正确答案：A `clear` / C `understandable`。
+- 结果：1/1，完整选择两个答案；`plain language` 直接预测“清楚、容易理解”。
+- 两项关系：`clear` 与 `understandable` 在此均表示“容易理解的”，代回后产生等价整体含义。
+- 掌握判断：这是非计时的新句迁移成功证据，`v_se_dual_equivalence` 升为 `learned`；用户未口述预测和关系，且尚无计时证据，因此不升为 `applied`。
