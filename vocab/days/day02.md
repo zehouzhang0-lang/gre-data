@@ -16,7 +16,7 @@ recall_test:
   partial: 11
   wrong: [vicarious, contumacious, obscure, bathetic, vagary, accrete, exile, impudent, hackneyed, eyesore, designate, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral]
 partial_words: [antiquity, symbiosis, vilify, envisage, artifact, untoward, felony, daredevil, flinch, chagrin, burdensome]
-difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert, arboreal, satire, volition, innate, ponderous, forsake, unconscionable, indiscriminate, bristle, prosecute, paraphernalia, plummet, robust, ooze, bulwark, gigantic, esteem, admirable]
+difficult_added: [antiquity, symbiosis, vicarious, vilify, contumacious, obscure, envisage, artifact, bathetic, vagary, accrete, untoward, felony, exile, impudent, daredevil, hackneyed, flinch, eyesore, chagrin, designate, burdensome, lachrymose, disgorge, somnolent, commonplace, tacit, apprehend, shortcoming, devolve, instantiate, spiral, querulous, contrive, allegory, forthright, aver, nefarious, patronize, avert, arboreal, satire, volition, innate, ponderous, forsake, unconscionable, indiscriminate, bristle, prosecute, paraphernalia, plummet, robust, ooze, bulwark, gigantic, esteem, admirable, ill-advised, trenchant, abet]
 mastered_today: []
 duration_min: null
 verification_sources:
@@ -222,6 +222,20 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/conviction
   - https://www.merriam-webster.com/dictionary/admirable
   - https://www.merriam-webster.com/dictionary/discordance
+  - https://www.merriam-webster.com/dictionary/ill-advised
+  - https://www.merriam-webster.com/dictionary/masculine
+  - https://www.merriam-webster.com/dictionary/routine
+  - https://www.merriam-webster.com/dictionary/trenchant
+  - https://www.merriam-webster.com/dictionary/calamity
+  - https://www.merriam-webster.com/dictionary/forage
+  - https://www.merriam-webster.com/dictionary/abet
+  - https://www.merriam-webster.com/dictionary/euphoria
+  - https://www.merriam-webster.com/dictionary/mask
+  - https://www.merriam-webster.com/dictionary/explicable
+  - https://www.merriam-webster.com/dictionary/avian
+  - https://www.merriam-webster.com/dictionary/perforce
+  - https://www.merriam-webster.com/dictionary/enliven
+  - https://www.merriam-webster.com/dictionary/stanch
 ---
 
 # Day 2 词汇记录
@@ -395,8 +409,24 @@ verification_sources:
 - `collective` 因包含“集体的”判为正确；它表示由群体共同组成、共同实施或作为整体的，不天然等于“一致的”。`sociable` 因“社交的”判为正确，用于人时更准确是“好交际的、友善随和的”。
 - 综合复习累计覆盖 196/212 词：完全正确 132、部分正确 17、错误 47。当前弱词池由 79 词增至 82 词；尚未抽查的 16 词仍需完成首次综合复习。
 
+### 新增弱词即时纠正（3 词）
+
+- 完全正确 3：`gigantic`、`esteem`、`admirable`。
+- `gigantic` 已纠正为“巨大的、庞大的”；`esteem` 已纠正为“尊重、敬重；尊重、看重”；`admirable` 已纠正为“令人钦佩的、值得赞赏的”。“倾佩”按“钦佩”的笔误处理，不影响判分。
+- 本轮发生在首次失误后同一天，只作为即时纠正证据，不移出弱词池，也不视为跨日稳定掌握。
+
+### 此前答对词抽查第 8 轮（16 词）
+
+- 作答对齐：用户提交 18 段答案，对应 19 个待测词；第 4 个 `ill-advised` 漏答，从“男子气概的、有阳气的”起依次对应 `masculine` 及后续词。
+- 完全正确 13：`masculine`、`routine`、`calamity`、`forage`、`euphoria`、`catholic`、`mask`、`explicable`、`avian`、`perforce`、`dichotomous`、`enliven`、`stanch`。
+- 部分正确 0。
+- 错误 3：`ill-advised`、`trenchant`、`abet`。这 3 词由此前答对池转入弱词池。
+- `ill-advised` 未作答，核心是“考虑不周的、不明智的”。`trenchant` 未回忆出，核心是“尖锐有洞察力的；表达有力、清晰、有效的”，也可表示“尖刻的”。
+- `abet` 回答“减弱”错误，是与 `abate` 串词。`abet` 是“教唆、怂恿；协助、支持”，常暗含帮助实施坏事，固定搭配 `aid and abet`；`abate` 才是“减弱、减轻”。
+- `forage` 回答“觅食；草料”完全正确，可作动词或名词。`perforce` 是副词“由于情势所迫、不得不、必然”，回答“必须、一定”正确。`stanch` 回答“止血”正确，也可泛指“止住流动、遏止趋势”。
+- `catholic` 因回答包含“包罗万象的”而判为正确；小写形容词表示“广泛的、包容的”，大写 `Catholic` 才表示“天主教的”或名词“天主教徒”。`dichotomous` 的核心是“分成两部分的、二分的”，回答“一分为二的”正确，不要求两部分必然逻辑矛盾。
+- Day 1 + Day 2 综合复习已覆盖全部 212 词：完全正确 145、部分正确 17、错误 50。本轮结果只描述这次主动回忆；弱词池由 82 词增至 85 词，尚无词满足稳定掌握标准。
+
 ## 下一次检验
 
-先对本轮新增弱词做即时纠正测试：`gigantic`、`esteem`、`admirable`。即时答对只记为纠正证据，不计入跨日连续正确。
-
-随后完成此前答对池中尚未抽查的最后 16 词：`ill-advised`、`masculine`、`routine`、`trenchant`、`calamity`、`forage`、`abet`、`euphoria`、`catholic`、`mask`、`explicable`、`avian`、`perforce`、`dichotomous`、`enliven`、`stanch`。这 16 词已依据原 PDF 中 list1/list2 的实际顺序，与 56 个首次未完全正确词及前 7 轮共 140 个此前答对词取差集确认；`complimentary`、`conjecture`、`adhere` 当时未进入实际作答的 212 词，故不计入本轮。连续 3 次主动回忆正确后才进入 mastered。
+先对本轮新增弱词做即时纠正测试：`ill-advised`、`trenchant`、`abet`。即时答对只作为纠正证据；之后从 85 词弱词池中按错因和遗忘次数分批复测，连续 3 次主动回忆正确且包含跨日证据后才进入 mastered。
