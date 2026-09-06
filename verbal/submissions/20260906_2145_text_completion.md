@@ -105,3 +105,12 @@ Test 1 Section 2（easy）第 4 题，三空，未计时。用户选择 B/E/G；
 1. 主动回忆本题 6 个生词。
 2. 复述三段链：`新竞拍者增加 -> 竞争加剧；兴趣范围扩大 -> 收藏更全面`。
 3. 再做一道三空迁移题，并显式写出三个中文预测。
+
+# 主动回忆复测
+
+用户依次回忆 `auction / tedious / fickle / antiquarian / legitimate / intensification`：5 个正确，`antiquarian` 部分正确。
+
+- `auction`、`tedious`、`fickle`、`legitimate`、`intensification` 的核心义正确，进入首次正确连续记录。
+- `antiquarian` 回忆为“古典相关的”，方向接近但范围过宽；它特指“古物、古代遗存的研究或收藏相关”，也常指旧书、珍本书相关。它不同于泛指古希腊罗马或传统经典风格的 `classical`，本次不累计正确连续次数。
+
+本轮只验证词义，不改变填空技巧状态。
