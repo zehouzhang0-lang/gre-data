@@ -64,6 +64,12 @@ materials:
     role: primary_text_completion_drill
     structure: tests_with_easy_medium_hard_sections
     answer_status: external_not_present
+    answer_retrieval:
+      channel: wechat_official_account
+      account: 张巍GRE
+      answer_command: 填空机经2000题答案
+      explanation_command_pattern: "jjtest{n}"
+      verified_location: cover_page_1
   - id: quant_900
     filename: 张巍GRE最新数学机经900题 .pdf
     pages: 229
