@@ -9,12 +9,14 @@ items:
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: failure, note: "第1题遇到生词后未提取 paradox 反差信号；第2题猜中但无推理；第3题未完成因果链。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: success, note: "纠错通过：能独立复述甲虫携带同种毒素、青蛙吃甲虫、青蛙获得毒素的因果方向；表述中的‘产生’经纠正为‘获得/积累’。尚无计时应用证据。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2117_text_completion.md, result: mixed, note: "Test 1 Section 2 第1-2题均自报能理解题意，但第1题未把 haunted 转写为 supernatural 后再匹配，因五个选项均不认识而猜错；第2题识别到正确候选 proprietary，但未明确提交答案。状态保持 learned。"}
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2134_text_completion.md, result: failure, note: "Test 1 Section 2 第3题选择B/D；两项均削弱委员会，却与 unreasonable to gainsay conclusions 所要求的正向支持相反。自报理解题意，但未完成主句方向预测与全句回代。"}
   - id: v_tc_multi_blank_consistency
     area: verbal
     status: learned
     evidence:
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: failure, note: "第3题前两空正确但第三空颠倒因果方向；多空题整题计错。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_1627_text_completion.md, result: success, note: "纠错通过：能用来源链说明第三空应为 eaten 而非 poisoned；属非计时、已提示后的复述，故仅升至 learned。"}
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2134_text_completion.md, result: failure, note: "双空选择B/D虽同为负面，但没有检验它们与主句‘不应否定结论’的一致性；正确组合A/F提供两个正向理由。"}
   - id: v_se_dual_equivalence
     area: verbal
     status: learned
