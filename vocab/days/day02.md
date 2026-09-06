@@ -93,6 +93,10 @@ verification_sources:
   - https://www.merriam-webster.com/dictionary/furtive
   - https://www.merriam-webster.com/dictionary/fluctuate
   - https://www.merriam-webster.com/dictionary/inadvertent
+  - https://www.merriam-webster.com/dictionary/depressing
+  - https://www.merriam-webster.com/dictionary/atomize
+  - https://www.merriam-webster.com/dictionary/blandish
+  - https://www.merriam-webster.com/dictionary/stagger
 ---
 
 # Day 2 词汇记录
@@ -185,6 +189,15 @@ verification_sources:
 - 错误 10：`proselytize`、`lament`、`furtive`、`fluctuate`、`inadvertent`、`contumacious`、`obscure`、`vagary`、`untoward`、`exile`。
 - 易混提醒：`inadvertent` 不是“不动摇的”，而是“无意的、疏忽造成的”；`vagary` 不是褒义的“奇思妙想”，而是“反复无常的念头、行为或难以预测的变化”；`exile` 是“流放、流亡”，不是“消逝”。
 
+### 弱词第 3 轮（16 词）
+
+- 完全正确 7：`stagger`、`daredevil`、`flinch`、`somnolent`、`shortcoming`、`devolve`、`spiral`。
+- 部分正确 4：`depressing` 回答“抑郁的”，语义方向接近但容易与描述人的 `depressed` 混淆，核心为“令人沮丧的、使人抑郁的”；`atomize` 回答“分裂的”，抓到拆分方向但词性错误，核心为动词“使成为微粒、雾化；彻底拆分”；`eyesore` 回答“眼中钉、不顺眼的”，抓到视觉上令人不悦，但它是名词“碍眼的东西、难看的景物”，“眼中钉”不是等义；`burdensome` 回答“造成麻烦的”，接近结果但应固定为“造成负担的、繁重难办的、令人难以承受的”。
+- 错误 5：`blandish`、`impudent`、`hackneyed`、`designate`、`disgorge`。
+- 核心义：`blandish` 是“用奉承话哄劝、劝诱”；`impudent` 是“无礼放肆的、厚颜的”；`hackneyed` 是“陈腐的、因滥用而失去新意的”；`designate` 是“指定、任命；标明”；`disgorge` 是“吐出、喷出、涌出；被迫交出”。
+- 对齐说明：本轮收到 15 段答案而题目有 16 词。依语义将“昏昏欲睡的”起的后四项对齐到 `somnolent`、`shortcoming`、`devolve`、`spiral`，因此把中间漏掉的 `disgorge` 记为未作答；如用户说明原意不同，再更正原子记录。
+- 三轮累计：弱词池首次覆盖 56 词；完全正确 18、部分正确 12、错误 26。当前只是本轮表现，不代表 56 词已掌握；仍按连续 3 次主动回忆正确的标准累计证据。
+
 ## 下一次检验
 
-综合复习弱词第 3 轮测试 `depressing`、`atomize`、`blandish`、`stagger`、`impudent`、`daredevil`、`hackneyed`、`flinch`、`eyesore`、`designate`、`burdensome`、`disgorge`、`somnolent`、`shortcoming`、`devolve`、`spiral`。前两轮未完全正确的词继续保留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
+弱词池首轮覆盖已经完成。下一批开始从此前答对词中抽查 20 词：`querulous`、`rote`、`contrive`、`wide-ranging`、`baffle`、`allegory`、`forthright`、`aver`、`nefarious`、`resent`、`enhance`、`spontaneous`、`impersonal`、`tempestuous`、`finicky`、`amass`、`patronize`、`avert`、`compile`、`ritualize`。未完全正确的词继续留在弱词池；连续 3 次主动回忆正确后才进入 mastered。
