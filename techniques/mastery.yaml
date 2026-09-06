@@ -25,6 +25,7 @@ items:
     area: verbal
     status: learned
     evidence:
+      - {date: "2026-09-06", record: verbal/submissions/20260906_2231_sentence_equivalence.md, result: failure, note: "Test1 Section2第6题选B/D，正确A/B；除C/D外选项及regurgitate自报陌生，未识别beneficence/altruism语境等价，D缺少例子支持。未提供具体推理，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2209_sentence_equivalence.md, result: success, note: "纠正后将They would brook no compromise译为‘他们不会接受任何妥协’，整句含义正确；仅即时非计时复述，保持learned，等待新题迁移。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2209_sentence_equivalence.md, result: mixed, note: "用户补充第5题起初不认识compromise，修正为题干关键词及选项词汇缺口；五词回忆5/5，但未提交整句翻译或新题计时证据，保持learned。"}
       - {date: "2026-09-06", record: verbal/submissions/20260906_2209_sentence_equivalence.md, result: failure, note: "Test 1 Section 2 第5题选A/F，正确C/D；自报除B外基本不认识选项，未找到brook/tolerate等价对。具体推理未提供，不推断读题错误；未计时，保持learned。"}
