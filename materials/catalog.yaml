@@ -29,6 +29,15 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: youdao_handwritten_20260908
+    filename: null
+    sha256: null
+    role: user_vocabulary_notes
+    answer_status: not_applicable
+    description: "用户学习机经3000词并查有道例句时积累的六页手写词；词表词与例句扩展词混合，单词级来源未逐一标注。"
+    record: vocab/imports/20260908_1603_youdao_handwritten.json
+    image_count: 6
+    original_storage: user_supplied_chat_attachments_not_committed
   - id: equivalent_words_2026
     filename: 真经GRE等价词汇总（2026年版 ）.pdf
     repo_path: materials/files/真经GRE等价词汇总（2026年版 ）.pdf

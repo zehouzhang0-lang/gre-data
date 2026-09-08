@@ -1,0 +1,1070 @@
+{
+  "schema_version": 1,
+  "batch_id": "20260908_1603_youdao_handwritten",
+  "received_at": "2026-09-08T16:03:03+08:00",
+  "material_id": "youdao_handwritten_20260908",
+  "source_type": "user_handwritten_photos",
+  "image_count": 6,
+  "study_date": null,
+  "original_context": null,
+  "counts": {
+    "recognized_entries": 145,
+    "added_to_difficult": 145,
+    "already_present": 0,
+    "pending_transcriptions": 3
+  },
+  "new_words": [
+    "anathema",
+    "vulgar",
+    "prominent",
+    "deteriorate",
+    "pliable",
+    "bark",
+    "trunk",
+    "sensation",
+    "colonel",
+    "wary",
+    "take with a grain of salt",
+    "pandemonium",
+    "ram",
+    "dumper",
+    "prejudice",
+    "indulge",
+    "invective",
+    "polemic",
+    "birch",
+    "eulogize",
+    "kinship",
+    "martinet",
+    "lieutenant",
+    "savvy",
+    "retractable",
+    "inert",
+    "transitory",
+    "amour",
+    "xenophobic",
+    "temperament",
+    "ramshackle",
+    "rebel",
+    "dull",
+    "profound",
+    "tetanus",
+    "malaria",
+    "participatory",
+    "unfettered",
+    "fetter",
+    "gallop",
+    "neon",
+    "argon",
+    "moundsman",
+    "bellicose",
+    "pugnacious",
+    "patrimony",
+    "alliance",
+    "vapid",
+    "humility",
+    "eradicate",
+    "discursive",
+    "rivulet",
+    "champagne",
+    "champaign",
+    "run-of-the-mill",
+    "toothsome",
+    "retrench",
+    "herbivorous",
+    "purveyor",
+    "overt",
+    "toddler",
+    "plod",
+    "plodding",
+    "musty",
+    "grease",
+    "tangy",
+    "noxious",
+    "deleterious",
+    "archetype",
+    "archetypal",
+    "autonomy",
+    "insentient",
+    "sentient",
+    "latent",
+    "unruly",
+    "ruly",
+    "cork",
+    "wooden",
+    "brassy",
+    "offset",
+    "evanescent",
+    "unorthodox",
+    "betoken",
+    "myopic",
+    "mandate",
+    "unprecedented",
+    "precedent",
+    "materialize",
+    "reform",
+    "overhaul",
+    "overlook",
+    "artery",
+    "tonic",
+    "convivial",
+    "recession",
+    "meddle",
+    "medal",
+    "proficient",
+    "interweave",
+    "overlap",
+    "advent",
+    "vaunt",
+    "rebellion",
+    "radical",
+    "constrict",
+    "trademark",
+    "implement",
+    "recess",
+    "patchwork",
+    "cushion",
+    "wrench",
+    "wench",
+    "diffuse",
+    "indubitable",
+    "doubt",
+    "expectancy",
+    "rear",
+    "rear up",
+    "discredit",
+    "improvise",
+    "improvisation",
+    "pan",
+    "effluvium",
+    "unkempt",
+    "stubbly",
+    "scrape",
+    "peasant",
+    "clamp",
+    "pedigree",
+    "mutation",
+    "countermand",
+    "provocateur",
+    "wanting",
+    "vague",
+    "anagen",
+    "telogen",
+    "shabby",
+    "filthy",
+    "abrade",
+    "soothsayer",
+    "theatrical",
+    "acquaintance",
+    "cinch",
+    "aversion",
+    "suppress"
+  ],
+  "existing_words": [],
+  "pending_transcriptions": [
+    {
+      "image": 3,
+      "location": "autonomy 下方",
+      "candidates": [
+        "incentive"
+      ],
+      "status": "awaiting_user_confirmation"
+    },
+    {
+      "image": 3,
+      "location": "左下 noxious 上方",
+      "candidates": [
+        "defining",
+        "define"
+      ],
+      "status": "awaiting_user_confirmation"
+    },
+    {
+      "image": 6,
+      "location": "pedigree 右方",
+      "candidates": [
+        "flag",
+        "flay"
+      ],
+      "status": "awaiting_user_confirmation"
+    }
+  ],
+  "items": [
+    {
+      "word": "anathema",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "vulgar",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "prominent",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "deteriorate",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "pliable",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "bark",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "trunk",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "sensation",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "colonel",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "wary",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "take with a grain of salt",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "pandemonium",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "ram",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "dumper",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "prejudice",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "indulge",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "invective",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "polemic",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "birch",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "eulogize",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "kinship",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "martinet",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "lieutenant",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "savvy",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "retractable",
+      "image": 1,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "inert",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "transitory",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "amour",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "xenophobic",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "temperament",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "ramshackle",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "rebel",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "dull",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "profound",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "tetanus",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "malaria",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "participatory",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "unfettered",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "fetter",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "gallop",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "neon",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "argon",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "moundsman",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "bellicose",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "pugnacious",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "patrimony",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "alliance",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "vapid",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "humility",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "eradicate",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "discursive",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "rivulet",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "champagne",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "champaign",
+      "image": 2,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "run-of-the-mill",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "toothsome",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "retrench",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "herbivorous",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "purveyor",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "overt",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "toddler",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "plod",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "plodding",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "musty",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "grease",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "tangy",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "noxious",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "deleterious",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "archetype",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "archetypal",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "autonomy",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "insentient",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "sentient",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "latent",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "unruly",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "ruly",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "cork",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "wooden",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "brassy",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "offset",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "evanescent",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "unorthodox",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "betoken",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "myopic",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "mandate",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "unprecedented",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "precedent",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "materialize",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "reform",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "overhaul",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "overlook",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "artery",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "tonic",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "convivial",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "recession",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "meddle",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "medal",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "proficient",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "interweave",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "overlap",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "advent",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "vaunt",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "rebellion",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "radical",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "constrict",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "trademark",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "implement",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "recess",
+      "image": 4,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "patchwork",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "cushion",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "wrench",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "wench",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "diffuse",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "indubitable",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "doubt",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "expectancy",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "rear",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "rear up",
+      "image": 5,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "discredit",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "improvise",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "improvisation",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "pan",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "effluvium",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "unkempt",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "stubbly",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "scrape",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "peasant",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "clamp",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "pedigree",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "mutation",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "countermand",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "provocateur",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "wanting",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "vague",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "anagen",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "telogen",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "shabby",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "filthy",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "abrade",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "soothsayer",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "theatrical",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "acquaintance",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "cinch",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "aversion",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "suppress",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    }
+  ],
+  "notes": [
+    "照片序号按本次上传顺序；只识别主体页的英文，边缘露出的其他页不重复录入。",
+    "可辨认的最终写法保留；划去的草稿词不另记，词形规范与派生展开单独注明。",
+    "这批为词表及有道例句扩展混合来源；没有证据逐词分配来源，也不假定148项均为当天新学。",
+    "本次导入无主动回忆测试，不增加正确连胜，不移入掌握池。"
+  ]
+}

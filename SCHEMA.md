@@ -339,6 +339,12 @@ items:
 
 - 连续 3 次在主动回忆测试中正确后移至 `vocab/mastered.yaml`。
 
+## 词汇导入与释义库
+
+`vocab/imports/YYYYMMDD_HHMM_来源.{json,md}` 保存手写或其他材料的原子导入记录；`vocab/lexicon.json` 按规范词形去重，保存词性、中文核心义、例搭配、语体或褒贬说明、词典核验 URL 与日期、来源批次与图片序号、词形修订说明及复测证据。没有原例句时 `original_context` 为 `null`，核心义不冒充原句语境义。图片本身不随文本导入自动上传。
+
+手写不清的条目放在导入文件的 `pending_transcriptions`，确认前不进入正式抽测池。复数或屈折变化归到词元；有独立用法的派生词可以单列并保存关联。已有词保留原复测历史，只追加来源；新接触而未测试的词 `initial_result: null`、`review_count: 0`、`correct_streak: 0`、`last_review: null`。新增与复现分开计数。
+
 ## 手机词汇作业
 
 路径：`vocab/homework/YYYYMMDD_HHMM_来源简述.{md,json,html}`。Markdown 保存任务范围、操作与验证；JSON 保存 `schema_version`、`assignment_id`、含时区的 `generated_at`、`scope`、`counts`、`items`、`instructions`；HTML 为用户请求的可离线使用文本页面。
