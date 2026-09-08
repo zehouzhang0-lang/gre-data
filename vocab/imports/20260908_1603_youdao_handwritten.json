@@ -8,10 +8,10 @@
   "study_date": null,
   "original_context": null,
   "counts": {
-    "recognized_entries": 145,
-    "added_to_difficult": 145,
+    "recognized_entries": 148,
+    "added_to_difficult": 148,
     "already_present": 0,
-    "pending_transcriptions": 3
+    "pending_transcriptions": 0
   },
   "new_words": [
     "anathema",
@@ -158,37 +158,13 @@
     "acquaintance",
     "cinch",
     "aversion",
-    "suppress"
+    "suppress",
+    "incentive",
+    "defining",
+    "flag"
   ],
   "existing_words": [],
-  "pending_transcriptions": [
-    {
-      "image": 3,
-      "location": "autonomy 下方",
-      "candidates": [
-        "incentive"
-      ],
-      "status": "awaiting_user_confirmation"
-    },
-    {
-      "image": 3,
-      "location": "左下 noxious 上方",
-      "candidates": [
-        "defining",
-        "define"
-      ],
-      "status": "awaiting_user_confirmation"
-    },
-    {
-      "image": 6,
-      "location": "pedigree 右方",
-      "candidates": [
-        "flag",
-        "flay"
-      ],
-      "status": "awaiting_user_confirmation"
-    }
-  ],
+  "pending_transcriptions": [],
   "items": [
     {
       "word": "anathema",
@@ -1059,6 +1035,24 @@
       "image": 6,
       "lexicon": "vocab/lexicon.json",
       "status": "new"
+    },
+    {
+      "word": "incentive",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "defining",
+      "image": 3,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "flag",
+      "image": 6,
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
     }
   ],
   "notes": [
@@ -1066,5 +1060,41 @@
     "可辨认的最终写法保留；划去的草稿词不另记，词形规范与派生展开单独注明。",
     "这批为词表及有道例句扩展混合来源；没有证据逐词分配来源，也不假定148项均为当天新学。",
     "本次导入无主动回忆测试，不增加正确连胜，不移入掌握池。"
-  ]
+  ],
+  "transcription_resolutions": [
+    {
+      "image": 3,
+      "location": "autonomy 下方",
+      "candidates": [
+        "incentive"
+      ],
+      "status": "confirmed",
+      "confirmed_word": "incentive",
+      "confirmed_at": "2026-09-08T16:41:56+08:00"
+    },
+    {
+      "image": 3,
+      "location": "左下 noxious 上方",
+      "candidates": [
+        "defining",
+        "define"
+      ],
+      "status": "confirmed",
+      "confirmed_word": "defining",
+      "confirmed_at": "2026-09-08T16:41:56+08:00"
+    },
+    {
+      "image": 6,
+      "location": "pedigree 右方",
+      "candidates": [
+        "flag",
+        "flay"
+      ],
+      "status": "confirmed",
+      "confirmed_word": "flag",
+      "confirmed_at": "2026-09-08T16:41:56+08:00"
+    }
+  ],
+  "revised_at": "2026-09-08T16:41:56+08:00",
+  "revision_reason": "用户确认三处待定英文：对 defining flag。"
 }

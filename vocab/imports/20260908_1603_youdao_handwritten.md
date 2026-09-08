@@ -10,17 +10,15 @@ recall_test: null
 
 # 六页手写词导入
 
-识别并核验 145 个词／短语：难词池新增 145，已有词复现 0，另有 3 处待确认。词性、释义、搭配、语体、易混词及逐词词典来源保存在 `vocab/lexicon.json`。
+识别并核验 148 个词／短语：难词池新增 148，已有词复现 0，待确认 0。词性、释义、搭配、语体、易混词及逐词词典来源保存在 `vocab/lexicon.json`。
 
 用户自报学习方法：机经3000词每天约50–100词，同时查询有道例句里的额外生词，手写积累后反复查看。没有逐日准确数量、时长或无提示复测结果，不更新能力结论；本批也不计为完成当天配额。
 
 后续复习：先选本批10–15词，用10–15分钟遮住释义回忆词性与核心义；记录原始回答，核对后将错误项再测。成功标准是每项均先回忆再揭晓、漏记或混淆均留痕；掌握仍需后续独立回忆证据。
 
-## 待确认英文
+## 手写确认
 
-- 图片3，autonomy 下方：incentive
-- 图片3，左下 noxious 上方：defining / define
-- 图片6，pedigree 右方：flag / flay
+2026-09-08 16:41 用户确认三处依次为 incentive、defining、flag，已补齐释义并入库。原候选与确认历史保留在配套 JSON。确认拼写不增加复测计数。
 
 ## 完整词表
 
@@ -171,6 +169,10 @@ recall_test: null
 | 6 | [cinch](https://www.merriam-webster.com/dictionary/cinch) | n./v. | 轻而易举的事；稳操胜券的事；确保；系紧 | cinch the victory |
 | 6 | [aversion](https://www.merriam-webster.com/dictionary/aversion) | n. | 厌恶；反感 | an aversion to risk |
 | 6 | [suppress](https://www.merriam-webster.com/dictionary/suppress) | v. | 镇压；抑制；隐瞒；阻止发表 | suppress evidence |
+
+| 3 | [incentive](https://www.merriam-webster.com/dictionary/incentive) | n./adj. | 激励因素；诱因；刺激性的、激励性的 | an incentive to study |
+| 3 | [defining](https://www.oxfordlearnersdictionaries.com/definition/english/defining) | adj.; define 的现在分词 | 决定性的；体现本质特征的；作为分词可表示界定、定义 | a defining feature |
+| 6 | [flag](https://www.merriam-webster.com/dictionary/flag) | v./n. | 变弱；衰退；精神不振；标记、示意；旗帜 | enthusiasm begins to flag |
 
 ## 复现记录
 

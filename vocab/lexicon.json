@@ -880,6 +880,39 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "defining",
+      "pos": "adj.; define 的现在分词",
+      "meaning": "决定性的；体现本质特征的；作为分词可表示界定、定义",
+      "original_context": null,
+      "collocation": "a defining feature",
+      "collocation_source": "coach_composed",
+      "connotation": "强调某事物的本质特征或关键作用；不是泛指明显的。",
+      "related_words": [
+        "define"
+      ],
+      "normalization_note": "用户确认原词为 defining；确认仅涉及英文转录，不是词义复测。",
+      "sources": [
+        {
+          "material_id": "youdao_handwritten_20260908",
+          "record": "vocab/imports/20260908_1603_youdao_handwritten.json",
+          "image": 3,
+          "kind": "wordlist_and_dictionary_example_mixed",
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/defining",
+          "checked_at": "2026-09-08",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest"
+    },
+    {
       "word": "deleterious",
       "pos": "adj.",
       "meaning": "有害的；造成损害的",
@@ -1347,6 +1380,37 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "flag",
+      "pos": "v./n.",
+      "meaning": "变弱；衰退；精神不振；标记、示意；旗帜",
+      "original_context": null,
+      "collocation": "enthusiasm begins to flag",
+      "collocation_source": "coach_composed",
+      "connotation": "衰退义常描述精力或热情减弱；标记义与旗帜义依语境区分。",
+      "related_words": [],
+      "normalization_note": "用户确认原词为 flag；确认仅涉及英文转录，不是词义复测。",
+      "sources": [
+        {
+          "material_id": "youdao_handwritten_20260908",
+          "record": "vocab/imports/20260908_1603_youdao_handwritten.json",
+          "image": 6,
+          "kind": "wordlist_and_dictionary_example_mixed",
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flag",
+          "checked_at": "2026-09-08",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest"
+    },
+    {
       "word": "gallop",
       "pos": "v./n.",
       "meaning": "马飞奔；迅速发展；疾驰",
@@ -1562,6 +1626,37 @@
           "checked_at": "2026-09-08",
           "status": "checked",
           "note": "中文核心义由教练依据词典归纳；不是手写中文的转录。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "incentive",
+      "pos": "n./adj.",
+      "meaning": "激励因素；诱因；刺激性的、激励性的",
+      "original_context": null,
+      "collocation": "an incentive to study",
+      "collocation_source": "coach_composed",
+      "connotation": "通常中性；常指促使行动的外部奖励或条件。",
+      "related_words": [],
+      "normalization_note": "用户确认原词为 incentive；确认仅涉及英文转录，不是词义复测。",
+      "sources": [
+        {
+          "material_id": "youdao_handwritten_20260908",
+          "record": "vocab/imports/20260908_1603_youdao_handwritten.json",
+          "image": 3,
+          "kind": "wordlist_and_dictionary_example_mixed",
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/incentive",
+          "checked_at": "2026-09-08",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳。"
         }
       ],
       "review_evidence": [],
