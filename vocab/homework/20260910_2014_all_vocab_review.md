@@ -6,7 +6,7 @@ recorded_at: "2026-09-10T20:14:46+08:00"
 
 # 全量词汇复习
 
-去重后共640词／短语，共32组，每组20词，末组20词。第1组已答：12正确、4部分正确、2错误、2忘记；覆盖20/640。第2组已发，待答。
+去重后共640词／短语，共32组，每组20词，末组20词。第1组已答：12正确、4部分正确、2错误、2忘记；覆盖20/640。第2组已答：17正确、1错误、2忘记；累计覆盖40/640。20词补测已发，主序第3组待发。
 
 范围：Day1–Day2实际复习名单、生词池、已掌握池、填空词汇作业及两批手抄词。保留全部来源。Day4仅为约数，不补造未知词表。1处待确认手写词单独保留，确认后追加。
 
@@ -141,3 +141,5 @@ overt、avian、acquaintance、lament、impermanent、rapacious、disgruntle、w
 furious、savvy、champagne、stern、noxious、temptation、pliable、conviviality、emblem、divisive、catholic、allegory、gallop、unkempt、medley、numinous、disclose、bristle、gallant、compress
 
 第1组原始回答与判定见 `vocab/homework/20260910_2020_all_vocab_round01.md`；8词待第2组后间隔复测。
+
+第2组详见 `vocab/homework/20260910_2025_all_vocab_round02.md`；补测序列保存在JSON的retests字段，重复不增加覆盖数。

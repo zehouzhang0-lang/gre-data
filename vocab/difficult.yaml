@@ -36,7 +36,7 @@ items:
   - {word: beneficence, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
   - {word: altruism, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
   - {word: fecundity, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
-  - {word: fertility, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
+  - {word: fertility, added_on: "2026-09-06", initial_result: wrong, review_count: 3, correct_streak: 2, last_review: "2026-09-10", source: text_completion_2000}
   - {word: regurgitate, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
   - {word: compromise, added_on: "2026-09-06", initial_result: wrong, review_count: 3, correct_streak: 2, last_review: "2026-09-10", source: text_completion_2000}
   - {word: disclose, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
@@ -60,7 +60,7 @@ items:
   - {word: depressing, added_on: "2026-09-02", initial_result: partial, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: confront, added_on: "2026-09-02", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: fluctuate, added_on: "2026-09-02", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
-  - {word: inadvertent, added_on: "2026-09-02", initial_result: wrong, review_count: 3, correct_streak: 1, last_review: "2026-09-10", source: core3000_random_2026}
+  - {word: inadvertent, added_on: "2026-09-02", initial_result: wrong, review_count: 4, correct_streak: 2, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: deferential, added_on: "2026-09-02", initial_result: partial, review_count: 4, correct_streak: 2, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: nonchalant, added_on: "2026-09-02", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: fungible, added_on: "2026-09-02", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-10", source: core3000_random_2026}
@@ -77,7 +77,7 @@ items:
   - {word: envisage, added_on: "2026-09-06", initial_result: partial, review_count: 3, correct_streak: 1, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: artifact, added_on: "2026-09-06", initial_result: partial, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: bathetic, added_on: "2026-09-06", initial_result: wrong, review_count: 3, correct_streak: 1, last_review: "2026-09-10", source: core3000_random_2026}
-  - {word: vagary, added_on: "2026-09-06", initial_result: wrong, review_count: 3, correct_streak: 1, last_review: "2026-09-10", source: core3000_random_2026}
+  - {word: vagary, added_on: "2026-09-06", initial_result: wrong, review_count: 4, correct_streak: 2, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: accrete, added_on: "2026-09-06", initial_result: wrong, review_count: 4, correct_streak: 2, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: untoward, added_on: "2026-09-06", initial_result: partial, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: felony, added_on: "2026-09-06", initial_result: partial, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
@@ -92,7 +92,7 @@ items:
   - {word: burdensome, added_on: "2026-09-06", initial_result: partial, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: lachrymose, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 2, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: disgorge, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
-  - {word: somnolent, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 1, last_review: "2026-09-06", source: core3000_random_2026}
+  - {word: somnolent, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 2, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: commonplace, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 2, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: tacit, added_on: "2026-09-06", initial_result: wrong, review_count: 3, correct_streak: 1, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: apprehend, added_on: "2026-09-06", initial_result: wrong, review_count: 3, correct_streak: 1, last_review: "2026-09-10", source: core3000_random_2026}
@@ -117,7 +117,7 @@ items:
   - {word: unconscionable, added_on: "2026-09-06", initial_result: partial, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: indiscriminate, added_on: "2026-09-06", initial_result: partial, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: bristle, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
-  - {word: prosecute, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
+  - {word: prosecute, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-10", source: core3000_random_2026}
   - {word: paraphernalia, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: plummet, added_on: "2026-09-06", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-06", source: core3000_random_2026}
   - {word: robust, added_on: "2026-09-06", initial_result: wrong, review_count: 3, correct_streak: 1, last_review: "2026-09-06", source: core3000_random_2026}
@@ -182,7 +182,7 @@ items:
   - {word: antiquarian, added_on: "2026-09-06", initial_result: wrong, review_count: 4, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
   - {word: legitimate, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
   - {word: intensification, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: text_completion_2000}
-  - {word: classical, added_on: "2026-09-06", initial_result: wrong, review_count: 2, correct_streak: 1, last_review: "2026-09-06", source: coach_transfer_vocab}
+  - {word: classical, added_on: "2026-09-06", initial_result: wrong, review_count: 3, correct_streak: 2, last_review: "2026-09-10", source: coach_transfer_vocab}
   - {word: anathema, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: vulgar, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: prominent, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
@@ -210,7 +210,7 @@ items:
   - {word: retractable, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: inert, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: transitory, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
-  - {word: amour, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
+  - {word: amour, added_on: "2026-09-08", initial_result: correct, review_count: 1, correct_streak: 1, last_review: "2026-09-10", source: youdao_handwritten_20260908}
   - {word: xenophobic, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: temperament, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: ramshackle, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
@@ -244,7 +244,7 @@ items:
   - {word: purveyor, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: overt, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: toddler, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
-  - {word: plod, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
+  - {word: plod, added_on: "2026-09-08", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-10", source: youdao_handwritten_20260908}
   - {word: plodding, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: musty, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: grease, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
@@ -252,7 +252,7 @@ items:
   - {word: noxious, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: deleterious, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: archetype, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
-  - {word: archetypal, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
+  - {word: archetypal, added_on: "2026-09-08", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-10", source: youdao_handwritten_20260908}
   - {word: autonomy, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: insentient, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: sentient, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
@@ -271,7 +271,7 @@ items:
   - {word: unprecedented, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: precedent, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: materialize, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
-  - {word: reform, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
+  - {word: reform, added_on: "2026-09-08", initial_result: correct, review_count: 1, correct_streak: 1, last_review: "2026-09-10", source: youdao_handwritten_20260908}
   - {word: overhaul, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: overlook, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: artery, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
@@ -303,7 +303,7 @@ items:
   - {word: rear up, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: discredit, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: improvise, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
-  - {word: improvisation, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
+  - {word: improvisation, added_on: "2026-09-08", initial_result: wrong, review_count: 1, correct_streak: 0, last_review: "2026-09-10", source: youdao_handwritten_20260908}
   - {word: pan, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: effluvium, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
   - {word: unkempt, added_on: "2026-09-08", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260908}
@@ -337,7 +337,7 @@ items:
   - {word: peal, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: feast, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: arduous, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
-  - {word: prodigious, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
+  - {word: prodigious, added_on: "2026-09-10", initial_result: correct, review_count: 1, correct_streak: 1, last_review: "2026-09-10", source: youdao_handwritten_20260910}
   - {word: colossal, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: proofread, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: temptation, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
@@ -358,7 +358,7 @@ items:
   - {word: crocodilian, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: retail, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: retaliate, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
-  - {word: levelheaded, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
+  - {word: levelheaded, added_on: "2026-09-10", initial_result: correct, review_count: 1, correct_streak: 1, last_review: "2026-09-10", source: youdao_handwritten_20260910}
   - {word: incompetent, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: reign, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: reinvent, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
@@ -409,7 +409,7 @@ items:
   - {word: tumultuous, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: predecessor, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: civic, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
-  - {word: surrender, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
+  - {word: surrender, added_on: "2026-09-10", initial_result: correct, review_count: 1, correct_streak: 1, last_review: "2026-09-10", source: youdao_handwritten_20260910}
   - {word: frenzy, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: emblem, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: abreast, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
@@ -476,7 +476,7 @@ items:
   - {word: impair, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: undermine, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: byword, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
-  - {word: speak ill of, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
+  - {word: speak ill of, added_on: "2026-09-10", initial_result: correct, review_count: 1, correct_streak: 1, last_review: "2026-09-10", source: youdao_handwritten_20260910}
   - {word: defame, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: rosy, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: unravel, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
@@ -493,7 +493,7 @@ items:
   - {word: predicament, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: allude, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: identical, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
-  - {word: forswear, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
+  - {word: forswear, added_on: "2026-09-10", initial_result: correct, review_count: 1, correct_streak: 1, last_review: "2026-09-10", source: youdao_handwritten_20260910}
   - {word: eschew, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: garish, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}
   - {word: evocative, added_on: "2026-09-10", initial_result: null, review_count: 0, correct_streak: 0, last_review: null, source: youdao_handwritten_20260910}

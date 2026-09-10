@@ -7,7 +7,7 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 20
+    "answered": 40
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -5196,8 +5196,130 @@
         "negotiable",
         "classical"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "surrender",
+          "user_answer": "投降",
+          "result": "correct",
+          "note": "投降、交出。"
+        },
+        {
+          "word": "improvisation",
+          "user_answer": "联想，预想",
+          "result": "wrong",
+          "note": "即兴创作、即兴表演；临时应变。没有预先准备是关键，联想或预想未覆盖。"
+        },
+        {
+          "word": "archetypal",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "典型的、原型的；作为范例的。"
+        },
+        {
+          "word": "fertility",
+          "user_answer": "生育力",
+          "result": "correct",
+          "note": "生育力、生殖能力。"
+        },
+        {
+          "word": "vagary",
+          "user_answer": "反复无常的千变万化的",
+          "result": "correct",
+          "note": "接受反复无常这一核心方向，不因中文形容词式措辞扣分。标准名词表述为反复无常的念头或行为、难以预测的变化。"
+        },
+        {
+          "word": "speak ill of",
+          "user_answer": "诋毁",
+          "result": "correct",
+          "note": "说坏话、诋毁。"
+        },
+        {
+          "word": "prodigious",
+          "user_answer": "大量的（规模）",
+          "result": "correct",
+          "note": "接受规模巨大、大量的方向；另有惊人、非凡义。"
+        },
+        {
+          "word": "exonerate",
+          "user_answer": "使免罪",
+          "result": "correct",
+          "note": "免除罪责、过失或责任。"
+        },
+        {
+          "word": "abolish",
+          "user_answer": "废除",
+          "result": "correct",
+          "note": "废除。"
+        },
+        {
+          "word": "inadvertent",
+          "user_answer": "无心的，非故意的",
+          "result": "correct",
+          "note": "无意的、非故意的。"
+        },
+        {
+          "word": "amour",
+          "user_answer": "奸情，恋情",
+          "result": "correct",
+          "note": "恋情，尤指秘密或不正当的恋情。"
+        },
+        {
+          "word": "prosecute",
+          "user_answer": "起诉",
+          "result": "correct",
+          "note": "起诉；另有继续进行义。"
+        },
+        {
+          "word": "levelheaded",
+          "user_answer": "冷静镇静的",
+          "result": "correct",
+          "note": "冷静理智的、头脑清醒的。"
+        },
+        {
+          "word": "reform",
+          "user_answer": "改革",
+          "result": "correct",
+          "note": "改革、改良。"
+        },
+        {
+          "word": "forswear",
+          "user_answer": "抛弃，伪誓",
+          "result": "correct",
+          "note": "放弃为有效方向；作伪誓也是词典收录义。常用义为坚决或发誓放弃。"
+        },
+        {
+          "word": "onset",
+          "user_answer": "开始",
+          "result": "correct",
+          "note": "开始、开端。"
+        },
+        {
+          "word": "somnolent",
+          "user_answer": "昏昏欲睡的",
+          "result": "correct",
+          "note": "昏昏欲睡的。"
+        },
+        {
+          "word": "plod",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "沉重缓慢地走；埋头苦干；缓慢费力地进行。"
+        },
+        {
+          "word": "negotiable",
+          "user_answer": "可谈判的",
+          "result": "correct",
+          "note": "可协商、可谈判的。"
+        },
+        {
+          "word": "classical",
+          "user_answer": "经典的，古典的",
+          "result": "correct",
+          "note": "接受古典的；不将所有经典的用法与classic混同。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2025_all_vocab_round02.md"
     },
     {
       "group": 3,
@@ -6058,6 +6180,54 @@
       "reason": "wrong",
       "status": "pending",
       "after_group": 2
+    },
+    {
+      "word": "improvisation",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 2
+    },
+    {
+      "word": "archetypal",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 2
+    },
+    {
+      "word": "plod",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 2
+    }
+  ],
+  "retests": [
+    {
+      "id": "after_group02",
+      "status": "issued",
+      "words": [
+        "intransigent",
+        "heresy",
+        "improvisation",
+        "reserve",
+        "chagrin",
+        "archetypal",
+        "compromise",
+        "fickle",
+        "regimen",
+        "poignant",
+        "valorize",
+        "symbiosis",
+        "plod",
+        "antiquity",
+        "accrete",
+        "capricious",
+        "harrow",
+        "misinterpretation",
+        "forswear",
+        "vagary"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ]
 }
