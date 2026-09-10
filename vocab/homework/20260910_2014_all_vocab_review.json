@@ -7,8 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 280,
-    "issued_main_words": 280
+    "answered": 298,
+    "issued_main_words": 300
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -7137,8 +7137,130 @@
         "ponderous",
         "novice"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered_with_omissions",
+      "responses": [
+        {
+          "word": "skulduggery",
+          "user_answer": "诈骗的",
+          "result": "correct",
+          "note": "诈骗方向正确；n. 欺诈、阴谋诡计，不因中文的字扣分。"
+        },
+        {
+          "word": "glean",
+          "user_answer": "搜寻",
+          "result": "correct",
+          "note": "搜寻接受MW中pick over in search of relevant material义；常见为零星搜集、逐步获取信息，glean information from…。"
+        },
+        {
+          "word": "insular",
+          "user_answer": null,
+          "result": "omitted",
+          "note": "推定漏答，不判遗忘；adj. 岛屿的、与外界隔绝的；思想狭隘保守的。"
+        },
+        {
+          "word": "ad hoc",
+          "user_answer": "临时的",
+          "result": "correct",
+          "note": "临时的接受；更准为针对特定问题或目的而设。"
+        },
+        {
+          "word": "flag",
+          "user_answer": "旗帜",
+          "result": "correct",
+          "note": "旗帜为有效名词义；另v. 衰退、减弱。"
+        },
+        {
+          "word": "feast",
+          "user_answer": "盛宴",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "breakaway",
+          "user_answer": "分离，防守反击",
+          "result": "correct",
+          "note": "分离/脱离正确；体育义侧重突破脱离防守后的进攻机会，并非所有防守反击。"
+        },
+        {
+          "word": "thrifty",
+          "user_answer": "破烂不堪的",
+          "result": "wrong",
+          "note": "adj. 节俭的、善于节约的（通常褒义）；不是破烂。"
+        },
+        {
+          "word": "singular",
+          "user_answer": "独一无二的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "priest",
+          "user_answer": "牧师",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "awry",
+          "user_answer": "歪的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "enhance",
+          "user_answer": "提升",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "restorative",
+          "user_answer": "有助恢复的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "apathetic",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 冷漠的、无动于衷的。"
+        },
+        {
+          "word": "assuage",
+          "user_answer": null,
+          "result": "omitted",
+          "note": "推定漏答，不判遗忘；v. 缓解、减轻、平息；assuage fears。"
+        },
+        {
+          "word": "innovative",
+          "user_answer": "创新的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "impostor",
+          "user_answer": "反抗者",
+          "result": "wrong",
+          "note": "n. 冒名顶替者、骗子；不是反抗者。"
+        },
+        {
+          "word": "valuable",
+          "user_answer": "有价值的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "ponderous",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 笨重的、沉重的；沉闷冗长的。"
+        },
+        {
+          "word": "novice",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "n. 新手、初学者。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2330_all_vocab_round15.md"
     },
     {
       "group": 16,
@@ -8319,6 +8441,48 @@
       "reason": "wrong",
       "status": "corrected_once",
       "after_group": 14
+    },
+    {
+      "word": "insular",
+      "reason": "omitted",
+      "status": "pending",
+      "after_group": 15
+    },
+    {
+      "word": "thrifty",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 15
+    },
+    {
+      "word": "apathetic",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 15
+    },
+    {
+      "word": "assuage",
+      "reason": "omitted",
+      "status": "pending",
+      "after_group": 15
+    },
+    {
+      "word": "impostor",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 15
+    },
+    {
+      "word": "ponderous",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 15
+    },
+    {
+      "word": "novice",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 15
     }
   ],
   "retests": [
@@ -10125,6 +10289,34 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2326_all_vocab_retest12.md"
+    },
+    {
+      "id": "after_group15",
+      "status": "issued",
+      "words": [
+        "esteem",
+        "thrifty",
+        "insular",
+        "impostor",
+        "bathetic",
+        "assuage",
+        "apathetic",
+        "ponderous",
+        "novice",
+        "implement",
+        "glean",
+        "breakaway",
+        "skulduggery",
+        "ad hoc",
+        "flag",
+        "feast",
+        "singular",
+        "restorative",
+        "innovative",
+        "valuable"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 15
