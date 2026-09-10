@@ -6094,7 +6094,7 @@
         "robust",
         "unperturbed"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -6911,13 +6911,13 @@
     {
       "word": "artifact",
       "reason": "partial",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
       "word": "wary",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
@@ -6995,13 +6995,13 @@
     {
       "word": "incentive",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 7
     },
     {
       "word": "transcend",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 7
     },
     {
@@ -7013,26 +7013,38 @@
     {
       "word": "collected",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 7
     },
     {
       "word": "fetter",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 7
     },
     {
       "word": "cosmopolitan",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 7
     },
     {
       "word": "xenophobic",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 7
+    },
+    {
+      "word": "virtuoso",
+      "reason": "omitted",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "plodding",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 8
     }
   ],
   "retests": [
@@ -7642,7 +7654,7 @@
     },
     {
       "id": "after_group07",
-      "status": "issued",
+      "status": "answered_with_omissions",
       "words": [
         "incentive",
         "wary",
@@ -7665,9 +7677,131 @@
         "impolitic",
         "subordinate"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "incentive",
+          "user_answer": "刺激，诱因",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "wary",
+          "user_answer": "小心翼翼的",
+          "result": "correct",
+          "note": "小心翼翼方向准确，接受谨慎警惕核心义。"
+        },
+        {
+          "word": "transcend",
+          "user_answer": "超越超出",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "virtuoso",
+          "user_answer": null,
+          "result": "omitted",
+          "note": "根据后续人工制品对应artifact而推定漏答，未视为遗忘。"
+        },
+        {
+          "word": "artifact",
+          "user_answer": "人工制品",
+          "result": "correct",
+          "note": "人工制品准确，接受。"
+        },
+        {
+          "word": "collected",
+          "user_answer": "镇静的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "pneumonia",
+          "user_answer": "肺炎",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "xenophobic",
+          "user_answer": "排外的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "antiquarian",
+          "user_answer": "古文物研究的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "fetter",
+          "user_answer": "约束，束缚，限制",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "dull",
+          "user_answer": "枯燥无聊的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "cosmopolitan",
+          "user_answer": "国际化的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "plodding",
+          "user_answer": "脏活累活",
+          "result": "partial",
+          "note": "累活抓到费力，但不必脏；核心为缓慢费力地走或工作，形容词可指缓慢费力、单调乏味。"
+        },
+        {
+          "word": "unorthodox",
+          "user_answer": "不正宗的",
+          "result": "partial",
+          "note": "非传统、不正统；不正宗偏向真假、地道程度，不等同不守惯例。"
+        },
+        {
+          "word": "restrain",
+          "user_answer": "制止，阻止",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "forthwith",
+          "user_answer": "立刻",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "inert",
+          "user_answer": "惰性的不活泼的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "revel",
+          "user_answer": "狂欢",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "impolitic",
+          "user_answer": "不明智的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "subordinate",
+          "user_answer": "下属的，随从的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2129_all_vocab_retest05.md"
     }
   ],
-  "next_retest_after_group": 7
+  "next_retest_after_group": 8
 }
