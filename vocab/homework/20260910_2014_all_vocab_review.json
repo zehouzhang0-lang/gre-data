@@ -7,7 +7,7 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 60
+    "answered": 80
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -5494,8 +5494,130 @@
         "ennoble",
         "argon"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "provocateur",
+          "user_answer": "提议者",
+          "result": "wrong",
+          "note": "挑衅者、煽动者；不等于提议者。"
+        },
+        {
+          "word": "guardian",
+          "user_answer": "护卫",
+          "result": "correct",
+          "note": "守卫者、保护者。"
+        },
+        {
+          "word": "retaliate",
+          "user_answer": "反击，报复",
+          "result": "correct",
+          "note": "反击、报复。"
+        },
+        {
+          "word": "toothsome",
+          "user_answer": "十分美味的",
+          "result": "correct",
+          "note": "美味可口的。"
+        },
+        {
+          "word": "occasion",
+          "user_answer": "引起",
+          "result": "correct",
+          "note": "引起、导致为有效动词义。"
+        },
+        {
+          "word": "peal",
+          "user_answer": "去皮",
+          "result": "wrong",
+          "note": "响亮的钟声、笑声等；鸣响。去皮是peel。"
+        },
+        {
+          "word": "captious",
+          "user_answer": "过分谨慎的",
+          "result": "wrong",
+          "note": "爱挑剔的、吹毛求疵的；不是谨慎。"
+        },
+        {
+          "word": "exasperation",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "恼怒、愤怒、不胜其烦。"
+        },
+        {
+          "word": "trunk",
+          "user_answer": "行旅箱，后背箱",
+          "result": "correct",
+          "note": "行旅箱、后背箱分别按行李箱、后备箱理解，接受有效名词义。"
+        },
+        {
+          "word": "verisimilitude",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "逼真性、似真性；看起来真实可信。"
+        },
+        {
+          "word": "execrate",
+          "user_answer": "去除，彻底消除",
+          "result": "wrong",
+          "note": "憎恶、痛恨；咒骂、谴责。不是去除。"
+        },
+        {
+          "word": "precede",
+          "user_answer": "在。。之前",
+          "result": "correct",
+          "note": "在某事之前、先于。"
+        },
+        {
+          "word": "clamp",
+          "user_answer": "夹紧",
+          "result": "correct",
+          "note": "夹紧、钳住。"
+        },
+        {
+          "word": "artifact",
+          "user_answer": "手工工艺品",
+          "result": "partial",
+          "note": "人工制品，尤指历史文化遗物；手工工艺品方向接近但缩窄为工艺品。"
+        },
+        {
+          "word": "wary",
+          "user_answer": "歪的",
+          "result": "wrong",
+          "note": "谨慎的、警惕的；歪的可用awry，不是wary。"
+        },
+        {
+          "word": "civic",
+          "user_answer": "公民的",
+          "result": "correct",
+          "note": "公民的、城市的。"
+        },
+        {
+          "word": "stanch",
+          "user_answer": "止血",
+          "result": "correct",
+          "note": "止血；止住流动。"
+        },
+        {
+          "word": "comestible",
+          "user_answer": "可食用的",
+          "result": "correct",
+          "note": "可食用的。"
+        },
+        {
+          "word": "ennoble",
+          "user_answer": "使高贵，授予爵位",
+          "result": "correct",
+          "note": "使高贵、使成为贵族。"
+        },
+        {
+          "word": "argon",
+          "user_answer": "氩",
+          "result": "correct",
+          "note": "氩。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2049_all_vocab_round04.md"
     },
     {
       "group": 5,
@@ -5521,7 +5643,7 @@
         "kinship",
         "truculent"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -6379,6 +6501,54 @@
       "reason": "wrong",
       "status": "corrected_once",
       "after_group": 3
+    },
+    {
+      "word": "provocateur",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "peal",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "captious",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "exasperation",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "verisimilitude",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "execrate",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "artifact",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "wary",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 5
     }
   ],
   "retests": [
@@ -6683,5 +6853,5 @@
       "record": "vocab/homework/20260910_2044_all_vocab_retest02.md"
     }
   ],
-  "next_retest_after_group": 4
+  "next_retest_after_group": 5
 }
