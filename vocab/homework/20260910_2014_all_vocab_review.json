@@ -7,7 +7,7 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 40
+    "answered": 60
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -5345,8 +5345,130 @@
         "querulous",
         "compelling"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "tempestuous",
+          "user_answer": "狂风暴雨的",
+          "result": "correct",
+          "note": "狂风暴雨的；另可指情绪激烈、局势动荡。"
+        },
+        {
+          "word": "disperse",
+          "user_answer": "反刍",
+          "result": "wrong",
+          "note": "分散、驱散、散布；不是反刍。"
+        },
+        {
+          "word": "pandemonium",
+          "user_answer": "一片狼藉",
+          "result": "correct",
+          "note": "混乱、喧闹骚乱；一片狼藉接受混乱方向。"
+        },
+        {
+          "word": "purveyor",
+          "user_answer": "供应商，支持者",
+          "result": "correct",
+          "note": "供应商、提供者；接受供应商，但不泛指支持者。"
+        },
+        {
+          "word": "scintillating",
+          "user_answer": "闪闪发光的，熠熠生辉的，才气横溢的",
+          "result": "correct",
+          "note": "闪耀的；才气横溢的。"
+        },
+        {
+          "word": "frugal",
+          "user_answer": "朴素的",
+          "result": "correct",
+          "note": "接受朴素、俭朴义，词典支持简朴生活；补充节俭、不浪费的中心意思。"
+        },
+        {
+          "word": "byword",
+          "user_answer": "代名词",
+          "result": "correct",
+          "note": "某种特点的典型、代名词。"
+        },
+        {
+          "word": "betoken",
+          "user_answer": "显现",
+          "result": "partial",
+          "note": "表明、预示、是某事的征兆；显现接近show方向，但需明确是表明某事而不是自己出现。"
+        },
+        {
+          "word": "don",
+          "user_answer": "穿上",
+          "result": "correct",
+          "note": "穿上。"
+        },
+        {
+          "word": "gawky",
+          "user_answer": "笨拙的（尤其指高瘦的）",
+          "result": "correct",
+          "note": "笨拙的、动作不协调的，常形容高瘦者。"
+        },
+        {
+          "word": "retail",
+          "user_answer": "零售",
+          "result": "correct",
+          "note": "零售。"
+        },
+        {
+          "word": "trenchant",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "犀利的、尖锐有洞察力的；清晰有力的。"
+        },
+        {
+          "word": "mandate",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "命令；授权；动词可指命令、强制要求。"
+        },
+        {
+          "word": "augment",
+          "user_answer": "拍卖",
+          "result": "wrong",
+          "note": "增加、增强、扩大；不是拍卖。"
+        },
+        {
+          "word": "anagen",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "毛发生长期。"
+        },
+        {
+          "word": "attune",
+          "user_answer": "使协调一致",
+          "result": "correct",
+          "note": "使协调、使适应；调音。"
+        },
+        {
+          "word": "deviate",
+          "user_answer": "破坏？",
+          "result": "wrong",
+          "note": "偏离、背离（路线、标准等）；不是破坏。"
+        },
+        {
+          "word": "incompetent",
+          "user_answer": "不合格的，不称职的",
+          "result": "correct",
+          "note": "不称职的、无能力的。"
+        },
+        {
+          "word": "querulous",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "爱抱怨的、发牢骚的。"
+        },
+        {
+          "word": "compelling",
+          "user_answer": "编译",
+          "result": "wrong",
+          "note": "令人信服的；引人入胜的；不可忽视的。不是编译。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2038_all_vocab_round03.md"
     },
     {
       "group": 4,
@@ -6203,6 +6325,60 @@
       "word": "accrete",
       "reason": "partial",
       "status": "pending"
+    },
+    {
+      "word": "disperse",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 3
+    },
+    {
+      "word": "betoken",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 3
+    },
+    {
+      "word": "trenchant",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 3
+    },
+    {
+      "word": "mandate",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 3
+    },
+    {
+      "word": "augment",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 3
+    },
+    {
+      "word": "anagen",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 3
+    },
+    {
+      "word": "deviate",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 3
+    },
+    {
+      "word": "querulous",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 3
+    },
+    {
+      "word": "compelling",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 3
     }
   ],
   "retests": [
@@ -6355,6 +6531,34 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2032_all_vocab_retest01.md"
+    },
+    {
+      "id": "after_group03",
+      "status": "issued",
+      "words": [
+        "disperse",
+        "chagrin",
+        "frugal",
+        "augment",
+        "anagen",
+        "byword",
+        "regimen",
+        "trenchant",
+        "attune",
+        "deviate",
+        "purveyor",
+        "mandate",
+        "accrete",
+        "betoken",
+        "retail",
+        "querulous",
+        "compelling",
+        "scintillating",
+        "don",
+        "incompetent"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 3
