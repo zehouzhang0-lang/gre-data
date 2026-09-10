@@ -7,8 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 220,
-    "issued_main_words": 220
+    "answered": 240,
+    "issued_main_words": 240
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -6690,8 +6690,130 @@
         "underpin",
         "kingfisher"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "explicable",
+          "user_answer": "可预见的",
+          "result": "wrong",
+          "note": "adj. 可解释的、能说明的（explainable）；可预见的是foreseeable/predictable。"
+        },
+        {
+          "word": "anathema",
+          "user_answer": "令人极度厌恶的",
+          "result": "correct",
+          "note": "极度厌恶方向正确；n. 极其厌恶的人或事物；be anathema to…。"
+        },
+        {
+          "word": "toddler",
+          "user_answer": "刚学会走路的小孩",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "herbivorous",
+          "user_answer": "草食性的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "patronize",
+          "user_answer": "高高在上的",
+          "result": "correct",
+          "note": "高高在上覆盖居高临下待人的核心态度，接受；v. 以屈尊俯就的态度对待，也可指资助或光顾。"
+        },
+        {
+          "word": "cinch",
+          "user_answer": "小菜一碟的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "tacit",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 默示的、心照不宣的、不明说的；tacit agreement。"
+        },
+        {
+          "word": "tender",
+          "user_answer": "温柔的，炸鸡块",
+          "result": "correct",
+          "note": "温柔正确；鸡肉用法有依据，chicken tenders通常指鸡柳/鸡肉条，非所有炸鸡块；另v. 提交、提出。"
+        },
+        {
+          "word": "prophetic",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 预言的、有预见性的；prophetic warning。"
+        },
+        {
+          "word": "humility",
+          "user_answer": "谦虚",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "doubt",
+          "user_answer": "疑问",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "implement",
+          "user_answer": "实施，安装",
+          "result": "correct",
+          "note": "实施正确；安装不是通常直接同义，安装为install；另n. 工具、器具。"
+        },
+        {
+          "word": "purposefulness",
+          "user_answer": "目的性",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "ramshackle",
+          "user_answer": "摇摇欲坠的，不稳的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "fatal",
+          "user_answer": "致命性的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "inevitable",
+          "user_answer": "不可避免的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "ruthless",
+          "user_answer": "无情的残忍的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "disorganization",
+          "user_answer": "无组织的，分离的",
+          "result": "correct",
+          "note": "无组织方向正确；n. 缺乏条理、混乱；分离并非同义。"
+        },
+        {
+          "word": "underpin",
+          "user_answer": "巩固，作。。的基础",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "kingfisher",
+          "user_answer": "翠鱼",
+          "result": "correct",
+          "note": "翠鱼按翠鸟的中文笔误接受，指鸟而非鱼。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2246_all_vocab_round12.md"
     },
     {
       "group": 13,
@@ -7794,6 +7916,36 @@
     },
     {
       "word": "paraphernalia",
+      "reason": "correct_core_with_incorrect_extra_sense",
+      "status": "pending",
+      "after_group": 12
+    },
+    {
+      "word": "explicable",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 12
+    },
+    {
+      "word": "tacit",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 12
+    },
+    {
+      "word": "prophetic",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 12
+    },
+    {
+      "word": "implement",
+      "reason": "correct_core_with_incorrect_extra_sense",
+      "status": "pending",
+      "after_group": 12
+    },
+    {
+      "word": "disorganization",
       "reason": "correct_core_with_incorrect_extra_sense",
       "status": "pending",
       "after_group": 12
@@ -9153,6 +9305,34 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2241_all_vocab_retest09.md"
+    },
+    {
+      "id": "after_group12",
+      "status": "issued",
+      "words": [
+        "explicable",
+        "bugle",
+        "tacit",
+        "paraphernalia",
+        "prophetic",
+        "self-serving",
+        "implement",
+        "disorganization",
+        "patronize",
+        "anathema",
+        "tender",
+        "cinch",
+        "humility",
+        "ramshackle",
+        "fatal",
+        "inevitable",
+        "underpin",
+        "kingfisher",
+        "herbivorous",
+        "toddler"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 12
