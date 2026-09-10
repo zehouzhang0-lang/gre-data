@@ -7,7 +7,7 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 80
+    "answered": 100
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -5643,8 +5643,130 @@
         "kinship",
         "truculent"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "calm",
+          "user_answer": "冷静的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "forsake",
+          "user_answer": "抛弃",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "composed",
+          "user_answer": "镇静的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "mawkish",
+          "user_answer": "多愁善感的；矫揉造作的",
+          "result": "correct",
+          "note": "接受过度伤感、矫揉造作方向；常带贬义。"
+        },
+        {
+          "word": "identical",
+          "user_answer": "完全一致的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "stubbly",
+          "user_answer": "蹒跚的",
+          "result": "wrong",
+          "note": "长着短硬胡茬的；布满茬的；不是蹒跚。"
+        },
+        {
+          "word": "collegial",
+          "user_answer": "学院的，大学的",
+          "result": "correct",
+          "note": "学院的为Merriam-Webster收录义，参见collegiate sense 2，接受；另有同事友好合作、共同掌权义。"
+        },
+        {
+          "word": "fatalism",
+          "user_answer": "宿命论",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "prominent",
+          "user_answer": "显著的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "passive",
+          "user_answer": "被动的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "gigantic",
+          "user_answer": "巨大的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "bellicose",
+          "user_answer": "好斗的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "wayward",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "任性的、不听管束的；不规则的。"
+        },
+        {
+          "word": "medal",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "奖章、勋章。"
+        },
+        {
+          "word": "perforce",
+          "user_answer": "必须，一定",
+          "result": "correct",
+          "note": "接受必须、一定，补准由于情势所迫而不得不。"
+        },
+        {
+          "word": "wanting",
+          "user_answer": "有缺陷的，不完整的",
+          "result": "correct",
+          "note": "形容词有缺陷的、不足的，接受。"
+        },
+        {
+          "word": "precedent",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "先例、前例；形容词为在先的。"
+        },
+        {
+          "word": "husk",
+          "user_answer": "壳",
+          "result": "correct",
+          "note": "接受壳，尤指谷物、果实等外壳。"
+        },
+        {
+          "word": "kinship",
+          "user_answer": "翠鱼",
+          "result": "wrong",
+          "note": "亲属关系；亲近感、相似性。不是翠鱼。可能联想到kingfisher（翠鸟），未确认。"
+        },
+        {
+          "word": "truculent",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "好斗的、凶狠的、咄咄逼人的。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2055_all_vocab_round05.md"
     },
     {
       "group": 6,
@@ -6549,6 +6671,42 @@
       "reason": "wrong",
       "status": "pending",
       "after_group": 5
+    },
+    {
+      "word": "stubbly",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "wayward",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "medal",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "precedent",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "kinship",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 5
+    },
+    {
+      "word": "truculent",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 5
     }
   ],
   "retests": [
@@ -6851,6 +7009,34 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2044_all_vocab_retest02.md"
+    },
+    {
+      "id": "after_group05",
+      "status": "issued",
+      "words": [
+        "peal",
+        "kinship",
+        "regimen",
+        "captious",
+        "precedent",
+        "occasion",
+        "stubbly",
+        "verisimilitude",
+        "collegial",
+        "wary",
+        "medal",
+        "execrate",
+        "wanting",
+        "artifact",
+        "wayward",
+        "exasperation",
+        "bellicose",
+        "provocateur",
+        "truculent",
+        "trunk"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 5
