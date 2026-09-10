@@ -7,7 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 100
+    "answered": 119,
+    "issued_main_words": 120
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -5792,8 +5793,130 @@
         "invective",
         "transitory"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered_with_omissions",
+      "responses": [
+        {
+          "word": "energize",
+          "user_answer": "使有活力",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "yield",
+          "user_answer": "产出",
+          "result": "correct",
+          "note": "产出为有效动词或名词义。"
+        },
+        {
+          "word": "rebel",
+          "user_answer": null,
+          "result": "omitted",
+          "note": "19段回答对齐20词：沉思对应contemplation，推定rebel漏答，未判断为忘记。"
+        },
+        {
+          "word": "contemplation",
+          "user_answer": "沉思，冥想",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "trademark",
+          "user_answer": "商标",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "swift",
+          "user_answer": "迅速",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "improvise",
+          "user_answer": "即兴创作",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "unceasing",
+          "user_answer": "不停止的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "feeble",
+          "user_answer": "虚弱的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "enfeeble",
+          "user_answer": "使虚弱",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "partiality",
+          "user_answer": "偏见",
+          "result": "correct",
+          "note": "偏见为合法核心义；另有偏爱。"
+        },
+        {
+          "word": "envisage",
+          "user_answer": "设想，预想",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "philistine",
+          "user_answer": "中庸之人",
+          "result": "wrong",
+          "note": "鄙视文化艺术、看重物质的庸俗之人；不是中庸、不偏不倚之人。"
+        },
+        {
+          "word": "inhibit",
+          "user_answer": "遗产",
+          "result": "wrong",
+          "note": "抑制、阻止、约束；不是遗产。"
+        },
+        {
+          "word": "teleology",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "目的论：用目的或终极原因解释事物。"
+        },
+        {
+          "word": "peerless",
+          "user_answer": "举世无双的，出类拔萃的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "evocative",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "唤起情感、回忆或联想的。"
+        },
+        {
+          "word": "conviction",
+          "user_answer": "信念，定罪",
+          "result": "correct",
+          "note": "信念、定罪均为有效名词义。"
+        },
+        {
+          "word": "invective",
+          "user_answer": "邪恶的",
+          "result": "wrong",
+          "note": "辱骂、谩骂；形容词为辱骂的、攻击性的；不等于邪恶。"
+        },
+        {
+          "word": "transitory",
+          "user_answer": "短暂的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2109_all_vocab_round06.md"
     },
     {
       "group": 7,
@@ -6707,6 +6830,42 @@
       "reason": "forgotten",
       "status": "corrected_once",
       "after_group": 5
+    },
+    {
+      "word": "rebel",
+      "reason": "omitted",
+      "status": "pending",
+      "after_group": 6
+    },
+    {
+      "word": "philistine",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 6
+    },
+    {
+      "word": "inhibit",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 6
+    },
+    {
+      "word": "teleology",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 6
+    },
+    {
+      "word": "evocative",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 6
+    },
+    {
+      "word": "invective",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 6
     }
   ],
   "retests": [
@@ -7159,6 +7318,38 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2101_all_vocab_retest03.md"
+    },
+    {
+      "id": "after_group06",
+      "status": "issued",
+      "words": [
+        "rebel",
+        "regimen",
+        "invective",
+        "yield",
+        "medal",
+        "evocative",
+        "enfeeble",
+        "artifact",
+        "philistine",
+        "trademark",
+        "wary",
+        "teleology",
+        "conviction",
+        "inhibit",
+        "envisage",
+        "feeble",
+        "contemplation",
+        "partiality",
+        "peerless",
+        "transitory"
+      ],
+      "responses": null,
+      "adds_to_coverage": true,
+      "coverage_additions_only": [
+        "rebel"
+      ],
+      "note": "除rebel为主序首次补答，其余重复不增加覆盖。"
     }
   ],
   "next_retest_after_group": 6
