@@ -7,8 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 200,
-    "issued_main_words": 200
+    "answered": 220,
+    "issued_main_words": 220
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -6541,8 +6541,130 @@
         "sterling",
         "indecorous"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "accede",
+          "user_answer": "认可后加入",
+          "result": "correct",
+          "note": "认可后加入覆盖同意、加入协议方向，接受；同意/答应不要求随后加入。常用accede to demands。"
+        },
+        {
+          "word": "paraphernalia",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "n. 某活动所需的全套装备、用具；随身物品。sports paraphernalia。"
+        },
+        {
+          "word": "allegiance",
+          "user_answer": "忠诚",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "astringent",
+          "user_answer": "涩的，收敛的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "conceal",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "v. 隐藏、隐瞒；conceal the truth。"
+        },
+        {
+          "word": "morbid",
+          "user_answer": "病态的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "menace",
+          "user_answer": "威胁",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "discursive",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 离题的、东拉西扯的；discursive speech；另有论述的、推理的义项。"
+        },
+        {
+          "word": "contumacious",
+          "user_answer": "反抗权威的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "rear",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "n./adj. 后部、后面的；v. 抚养、饲养；rear children。"
+        },
+        {
+          "word": "indubitable",
+          "user_answer": "不容置疑的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "condemn",
+          "user_answer": "谴责",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "meddle",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "v. 干涉、管闲事（贬义）；meddle in others’ affairs。"
+        },
+        {
+          "word": "self-serving",
+          "user_answer": "自私的，自助的",
+          "result": "correct",
+          "note": "adj. 自私自利的；自私正确，附加自助错误，自助服务为self-service。"
+        },
+        {
+          "word": "bugle",
+          "user_answer": "警徽",
+          "result": "wrong",
+          "note": "n. 军号、号角；警徽为police badge，非bugle。"
+        },
+        {
+          "word": "vacuous",
+          "user_answer": "空虚的，空洞的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "immutable",
+          "user_answer": "可交换的",
+          "result": "wrong",
+          "note": "adj. 不可改变的、恒定的；immutable laws。遗漏否定方向且误连可交换。"
+        },
+        {
+          "word": "polemical",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 论战的、争辩性的、好争辩的；polemical writing。"
+        },
+        {
+          "word": "sterling",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 极好的、优秀的（褒义）；sterling performance；另有标准纯度银制的，n. 英国货币等义。"
+        },
+        {
+          "word": "indecorous",
+          "user_answer": "不礼貌的，粗鲁无礼的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2235_all_vocab_round11.md"
     },
     {
       "group": 12,
@@ -7609,6 +7731,60 @@
       "reason": "forgotten",
       "status": "corrected_once",
       "after_group": 10
+    },
+    {
+      "word": "paraphernalia",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 11
+    },
+    {
+      "word": "conceal",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 11
+    },
+    {
+      "word": "discursive",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 11
+    },
+    {
+      "word": "rear",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 11
+    },
+    {
+      "word": "meddle",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 11
+    },
+    {
+      "word": "bugle",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 11
+    },
+    {
+      "word": "immutable",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 11
+    },
+    {
+      "word": "polemical",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 11
+    },
+    {
+      "word": "sterling",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 11
     }
   ],
   "retests": [
@@ -8815,6 +8991,34 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2230_all_vocab_retest08.md"
+    },
+    {
+      "id": "after_group11",
+      "status": "issued",
+      "words": [
+        "immutable",
+        "paraphernalia",
+        "contumacious",
+        "meddle",
+        "sterling",
+        "rear",
+        "indubitable",
+        "discursive",
+        "bugle",
+        "accede",
+        "conceal",
+        "self-serving",
+        "polemical",
+        "menace",
+        "astringent",
+        "morbid",
+        "vacuous",
+        "condemn",
+        "indecorous",
+        "nefarious"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 11
