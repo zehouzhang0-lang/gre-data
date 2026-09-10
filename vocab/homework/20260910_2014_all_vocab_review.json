@@ -5345,7 +5345,7 @@
         "querulous",
         "compelling"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -6136,7 +6136,7 @@
     {
       "word": "antiquity",
       "reason": "partial",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
@@ -6148,7 +6148,7 @@
     {
       "word": "valorize",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
@@ -6160,50 +6160,55 @@
     {
       "word": "misinterpretation",
       "reason": "partial",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
       "word": "intransigent",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
       "word": "capricious",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
       "word": "fickle",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
       "word": "improvisation",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
       "word": "archetypal",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
       "word": "plod",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
+    },
+    {
+      "word": "accrete",
+      "reason": "partial",
+      "status": "pending"
     }
   ],
   "retests": [
     {
       "id": "after_group02",
-      "status": "issued",
+      "status": "answered",
       "words": [
         "intransigent",
         "heresy",
@@ -6226,8 +6231,131 @@
         "forswear",
         "vagary"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "intransigent",
+          "user_answer": "不妥协的，不肯让步的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "heresy",
+          "user_answer": "异端的",
+          "result": "correct",
+          "note": "接受异端核心方向，不因的字扣分；名词是异端思想。"
+        },
+        {
+          "word": "improvisation",
+          "user_answer": "即兴创作",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "reserve",
+          "user_answer": "预定",
+          "result": "correct",
+          "note": "预定按预订理解，合法动词义；矜持寡言义尚未检验。"
+        },
+        {
+          "word": "chagrin",
+          "user_answer": "失望",
+          "result": "partial",
+          "note": "失望方向接近，但核心是由失败、失望或受辱而产生的懊恼、羞恼。"
+        },
+        {
+          "word": "archetypal",
+          "user_answer": "典型的原型的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "compromise",
+          "user_answer": "妥协",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "fickle",
+          "user_answer": "反复无常的变化多样的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "regimen",
+          "user_answer": "养生之道，生活之道",
+          "result": "partial",
+          "note": "养生或生活方向接近，需明确系统性的饮食、治疗或训练方案。"
+        },
+        {
+          "word": "poignant",
+          "user_answer": "深深打动人的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "valorize",
+          "user_answer": "赋予价值，提高价值",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "symbiosis",
+          "user_answer": "共生",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "plod",
+          "user_answer": "沉重缓慢地走",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "antiquity",
+          "user_answer": "古代古典",
+          "result": "correct",
+          "note": "接受古代；古典风格与古代不同。"
+        },
+        {
+          "word": "accrete",
+          "user_answer": "共生，增长",
+          "result": "partial",
+          "note": "增长方向接近；强调逐渐附着、积聚，不含共生。"
+        },
+        {
+          "word": "capricious",
+          "user_answer": "反复无常的易变的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "harrow",
+          "user_answer": "耙",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "misinterpretation",
+          "user_answer": "错误理解，引领",
+          "result": "correct",
+          "note": "接受错误理解；引领不是该词义。"
+        },
+        {
+          "word": "forswear",
+          "user_answer": "抛弃，伪誓",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "vagary",
+          "user_answer": "变化无常的",
+          "result": "correct",
+          "note": "接受变化无常核心方向，标准名词表述为无常的变化、念头或行为。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2032_all_vocab_retest01.md"
     }
-  ]
+  ],
+  "next_retest_after_group": 3
 }
