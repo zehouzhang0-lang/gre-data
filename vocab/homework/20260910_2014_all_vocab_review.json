@@ -7,8 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 160,
-    "issued_main_words": 160
+    "answered": 180,
+    "issued_main_words": 180
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -6243,8 +6243,130 @@
         "dearth",
         "sentient"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "mingle",
+          "user_answer": "混合，融合，应酬",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "serendipity",
+          "user_answer": "捡到珠宝的好运气",
+          "result": "correct",
+          "note": "捡到珠宝的好运气体现意外发现有价值事物，接受；不限于珠宝。"
+        },
+        {
+          "word": "accuse",
+          "user_answer": "起诉，指控",
+          "result": "correct",
+          "note": "接受指控，不要求穷举；起诉更直接为prosecute。"
+        },
+        {
+          "word": "diffidence",
+          "user_answer": "缺乏自信的，害羞的",
+          "result": "correct",
+          "note": "接受缺乏自信、羞怯的核心方向，不因中文形容词措辞扣分。"
+        },
+        {
+          "word": "apprehend",
+          "user_answer": "理解",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "filbert",
+          "user_answer": "漫不经心的",
+          "result": "wrong",
+          "note": "榛子；榛树；不是漫不经心。"
+        },
+        {
+          "word": "nonconformist",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "不墨守成规的人、不随俗者。"
+        },
+        {
+          "word": "autonomy",
+          "user_answer": "自治",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "helter-skelter",
+          "user_answer": "混乱的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "insentient",
+          "user_answer": "感觉的",
+          "result": "wrong",
+          "note": "无知觉的、无意识的；方向与有感觉相反。"
+        },
+        {
+          "word": "brassy",
+          "user_answer": "刺耳的，厚脸皮的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "volatile",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "易变的、不稳定的；情绪易激动的；易挥发的。"
+        },
+        {
+          "word": "indulge",
+          "user_answer": "使沉溺，使沉迷",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "untoward",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "不利的、麻烦的、不幸的；不得体的。"
+        },
+        {
+          "word": "vexation",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "烦恼、恼怒；令人烦恼的事。"
+        },
+        {
+          "word": "rigid",
+          "user_answer": "固执的古板的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "definite",
+          "user_answer": "明确的，一定的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "tease apart",
+          "user_answer": "查清，分明",
+          "result": "correct",
+          "note": "查清分明按分辨清楚理解，接受；更准为把交织的因素拆分、区分开。"
+        },
+        {
+          "word": "dearth",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "缺乏、不足。"
+        },
+        {
+          "word": "sentient",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "有知觉的、能感受的。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2146_all_vocab_round09.md"
     },
     {
       "group": 10,
@@ -7233,6 +7355,54 @@
       "reason": "forgotten",
       "status": "corrected_once",
       "after_group": 8
+    },
+    {
+      "word": "filbert",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 9
+    },
+    {
+      "word": "nonconformist",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 9
+    },
+    {
+      "word": "insentient",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 9
+    },
+    {
+      "word": "volatile",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 9
+    },
+    {
+      "word": "untoward",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 9
+    },
+    {
+      "word": "vexation",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 9
+    },
+    {
+      "word": "dearth",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 9
+    },
+    {
+      "word": "sentient",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 9
     }
   ],
   "retests": [
@@ -8139,6 +8309,35 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2137_all_vocab_retest06.md"
+    },
+    {
+      "id": "after_group09",
+      "status": "issued",
+      "words": [
+        "sentient",
+        "filbert",
+        "plodding",
+        "vexation",
+        "autonomy",
+        "volatile",
+        "insentient",
+        "serendipity",
+        "untoward",
+        "nonconformist",
+        "brassy",
+        "dearth",
+        "unorthodox",
+        "mingle",
+        "apprehend",
+        "indulge",
+        "rigid",
+        "definite",
+        "accuse",
+        "tease",
+        "apart"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 9
