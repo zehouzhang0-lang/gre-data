@@ -6690,7 +6690,7 @@
         "underpin",
         "kingfisher"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -7735,31 +7735,31 @@
     {
       "word": "paraphernalia",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 11
     },
     {
       "word": "conceal",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 11
     },
     {
       "word": "discursive",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 11
     },
     {
       "word": "rear",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 11
     },
     {
       "word": "meddle",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 11
     },
     {
@@ -7771,20 +7771,32 @@
     {
       "word": "immutable",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 11
     },
     {
       "word": "polemical",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 11
     },
     {
       "word": "sterling",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 11
+    },
+    {
+      "word": "self-serving",
+      "reason": "correct_core_with_incorrect_extra_sense",
+      "status": "pending",
+      "after_group": 12
+    },
+    {
+      "word": "paraphernalia",
+      "reason": "correct_core_with_incorrect_extra_sense",
+      "status": "pending",
+      "after_group": 12
     }
   ],
   "retests": [
@@ -8994,7 +9006,7 @@
     },
     {
       "id": "after_group11",
-      "status": "issued",
+      "status": "answered",
       "words": [
         "immutable",
         "paraphernalia",
@@ -9017,9 +9029,131 @@
         "indecorous",
         "nefarious"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "immutable",
+          "user_answer": "不可改变的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "paraphernalia",
+          "user_answer": "全套用具/技能（为。。活动）",
+          "result": "correct",
+          "note": "全套用具正确；技能不属于此词核心义，删除附加误义。"
+        },
+        {
+          "word": "contumacious",
+          "user_answer": "反抗权威的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "meddle",
+          "user_answer": "干涉",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "sterling",
+          "user_answer": "极好的，优秀的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "rear",
+          "user_answer": "后面的，喂养",
+          "result": "correct",
+          "note": "后面的正确；抚养、饲养通常比单纯喂养更完整。"
+        },
+        {
+          "word": "indubitable",
+          "user_answer": "不容置疑的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "discursive",
+          "user_answer": "离题的，东拉西扯的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "bugle",
+          "user_answer": "警徽",
+          "result": "wrong",
+          "note": "再次答警徽，错误；n. 军号、号角。police badge才是警徽。"
+        },
+        {
+          "word": "accede",
+          "user_answer": "认可后加入",
+          "result": "correct",
+          "note": "接受同意、加入协议方向，但不要求先认可再加入两个步骤。"
+        },
+        {
+          "word": "conceal",
+          "user_answer": "遮盖",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "self-serving",
+          "user_answer": "自助的，自私的",
+          "result": "correct",
+          "note": "自私的正确；自助的再次出现，须删除；自助服务为self-service。"
+        },
+        {
+          "word": "polemical",
+          "user_answer": "论战的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "menace",
+          "user_answer": "威胁",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "astringent",
+          "user_answer": "涩的，收敛的，止血",
+          "result": "correct",
+          "note": "涩的、收敛的正确；不将止血泛化为所有语境中的直接同义。"
+        },
+        {
+          "word": "morbid",
+          "user_answer": "病态的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "vacuous",
+          "user_answer": "空虚的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "condemn",
+          "user_answer": "谴责",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "indecorous",
+          "user_answer": "无礼的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "nefarious",
+          "user_answer": "恶毒的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2241_all_vocab_retest09.md"
     }
   ],
-  "next_retest_after_group": 11
+  "next_retest_after_group": 12
 }
