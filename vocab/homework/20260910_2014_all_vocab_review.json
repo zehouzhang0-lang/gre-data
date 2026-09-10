@@ -5792,7 +5792,7 @@
         "invective",
         "transitory"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -6627,37 +6627,37 @@
     {
       "word": "provocateur",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
       "word": "peal",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
       "word": "captious",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
       "word": "exasperation",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
       "word": "verisimilitude",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
       "word": "execrate",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
@@ -6675,13 +6675,13 @@
     {
       "word": "stubbly",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
       "word": "wayward",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
@@ -6693,19 +6693,19 @@
     {
       "word": "precedent",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
       "word": "kinship",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
       "word": "truculent",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     }
   ],
@@ -7012,7 +7012,7 @@
     },
     {
       "id": "after_group05",
-      "status": "issued",
+      "status": "answered_with_omissions",
       "words": [
         "peal",
         "kinship",
@@ -7035,9 +7035,131 @@
         "truculent",
         "trunk"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "peal",
+          "user_answer": "洪亮的钟声",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "kinship",
+          "user_answer": "亲属关系，亲近感",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "regimen",
+          "user_answer": "科学的生活之道",
+          "result": "partial",
+          "note": "科学不是定义必要条件；核心为成体系、按规律执行的饮食、用药或训练方案。科学的生活之道仍未表达方案。"
+        },
+        {
+          "word": "captious",
+          "user_answer": "过分挑剔的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "precedent",
+          "user_answer": "先例",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "occasion",
+          "user_answer": "场合，机会，引起",
+          "result": "correct",
+          "note": "接受引起这一有效动词义；场合亦有效。"
+        },
+        {
+          "word": "stubbly",
+          "user_answer": "胡子拉碴的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "verisimilitude",
+          "user_answer": "逼真性",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "collegial",
+          "user_answer": "学院的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "wary",
+          "user_answer": null,
+          "result": "omitted",
+          "note": "根据语义对齐推定漏答，未判断遗忘。"
+        },
+        {
+          "word": "medal",
+          "user_answer": null,
+          "result": "omitted",
+          "note": "根据语义对齐推定漏答，未判断遗忘。"
+        },
+        {
+          "word": "execrate",
+          "user_answer": "憎恶，怨恨",
+          "result": "correct",
+          "note": "憎恶为有效义。"
+        },
+        {
+          "word": "wanting",
+          "user_answer": "有缺陷的不完整的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "artifact",
+          "user_answer": "手工饰品",
+          "result": "partial",
+          "note": "人工制品；可包括工具、器物、饰品，尤其历史遗物；手工饰品范围过窄。"
+        },
+        {
+          "word": "wayward",
+          "user_answer": "任性的，不听管束的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "exasperation",
+          "user_answer": "烦怒，恼怒",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "bellicose",
+          "user_answer": "好斗的，好战的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "provocateur",
+          "user_answer": "挑唆者，煽动者",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "truculent",
+          "user_answer": "好斗的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "trunk",
+          "user_answer": "行旅箱",
+          "result": "correct",
+          "note": "行旅箱按行李箱理解。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2101_all_vocab_retest03.md"
     }
   ],
-  "next_retest_after_group": 5
+  "next_retest_after_group": 6
 }
