@@ -6243,7 +6243,7 @@
         "dearth",
         "sentient"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -7159,7 +7159,7 @@
     {
       "word": "virtuoso",
       "reason": "omitted",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
@@ -7171,67 +7171,67 @@
     {
       "word": "regurgitate",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "parsimonious",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "polemic",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "ill-advised",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "cork",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "plummet",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "eulogize",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "scrape",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "colonel",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "engender",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
       "word": "unperturbed",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     }
   ],
@@ -7992,7 +7992,7 @@
     },
     {
       "id": "after_group08",
-      "status": "issued",
+      "status": "answered",
       "words": [
         "regurgitate",
         "parsimonious",
@@ -8015,9 +8015,131 @@
         "presumption",
         "robust"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "regurgitate",
+          "user_answer": "反刍",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "parsimonious",
+          "user_answer": "吝啬的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "virtuoso",
+          "user_answer": "艺术大师",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "cork",
+          "user_answer": "软木塞",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "ill-advised",
+          "user_answer": "不明智的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "weigh",
+          "user_answer": "权衡",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "polemic",
+          "user_answer": "论战",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "engender",
+          "user_answer": "引起",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "unorthodox",
+          "user_answer": "不正宗的",
+          "result": "partial",
+          "note": "非传统的、不正统的，偏离惯例；不是不正宗、伪劣。"
+        },
+        {
+          "word": "colonel",
+          "user_answer": "上校",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "eulogize",
+          "user_answer": "高度称赞",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "commute",
+          "user_answer": "通勤",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "scrape",
+          "user_answer": "刮",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "plodding",
+          "user_answer": "苦差活",
+          "result": "partial",
+          "note": "苦差活接近费力劳动，但需保留缓慢、单调或沉重费力这一方式；不是所有苦差活。"
+        },
+        {
+          "word": "unperturbed",
+          "user_answer": "镇定不慌的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "garish",
+          "user_answer": "过分鲜艳花俏的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "plummet",
+          "user_answer": "骤跌",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "detached",
+          "user_answer": "拆分",
+          "result": "correct",
+          "note": "拆分按已分离方向接受；准确形容词为分离的、独立的，另有客观超然义。"
+        },
+        {
+          "word": "presumption",
+          "user_answer": "假设预设",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "robust",
+          "user_answer": "强劲的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2137_all_vocab_retest06.md"
     }
   ],
-  "next_retest_after_group": 8
+  "next_retest_after_group": 9
 }
