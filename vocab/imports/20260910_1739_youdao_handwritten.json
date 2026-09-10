@@ -1,0 +1,1705 @@
+{
+  "schema_version": 1,
+  "batch_id": "20260910_1739_youdao_handwritten",
+  "received_at": "2026-09-10T17:39:03+08:00",
+  "material_id": "youdao_handwritten_20260910",
+  "source_type": "user_handwritten_photos",
+  "image_count": 6,
+  "study_date": null,
+  "counts": {
+    "recognized_occurrences": 185,
+    "recognized_entries": 184,
+    "within_batch_repeats": 1,
+    "added_to_difficult": 180,
+    "already_present": 4,
+    "pending_transcriptions": 1
+  },
+  "new_words": [
+    "agrarian",
+    "gratify",
+    "revel",
+    "peal",
+    "feast",
+    "arduous",
+    "prodigious",
+    "colossal",
+    "proofread",
+    "temptation",
+    "utter",
+    "gallant",
+    "suffice",
+    "commiserate",
+    "commiserative",
+    "commiseration",
+    "vanity",
+    "christen",
+    "jubilant",
+    "bugle",
+    "forthwith",
+    "onerous",
+    "annotate",
+    "voracious",
+    "crocodilian",
+    "retail",
+    "retaliate",
+    "levelheaded",
+    "incompetent",
+    "reign",
+    "reinvent",
+    "virtuoso",
+    "mishandle",
+    "invoke",
+    "criterion",
+    "mawkish",
+    "demonize",
+    "embolden",
+    "stance",
+    "vexation",
+    "reproach",
+    "mingle",
+    "compelling",
+    "compel",
+    "breakaway",
+    "foresee",
+    "underpin",
+    "contemplation",
+    "introspection",
+    "irritate",
+    "attune",
+    "inevitable",
+    "evitable",
+    "expedition",
+    "expedite",
+    "austere",
+    "spartan",
+    "comparatively",
+    "troop",
+    "compress",
+    "precede",
+    "antedate",
+    "sabotage",
+    "accuse",
+    "covet",
+    "drudgery",
+    "tortuous",
+    "intergranular",
+    "fluid",
+    "purpose",
+    "purposefulness",
+    "teleology",
+    "totality",
+    "transcend",
+    "polemical",
+    "tumultuous",
+    "predecessor",
+    "civic",
+    "surrender",
+    "frenzy",
+    "emblem",
+    "abreast",
+    "antipathy",
+    "balk",
+    "emancipate",
+    "expunge",
+    "parsimonious",
+    "illiberal",
+    "proximity",
+    "truculent",
+    "combative",
+    "self-serving",
+    "license",
+    "astringent",
+    "sawdust",
+    "filbert",
+    "husk",
+    "dogmatic",
+    "rigid",
+    "doctrinaire",
+    "receptive",
+    "intoxicate",
+    "inebriate",
+    "apt",
+    "champion",
+    "espouse",
+    "propound",
+    "absurd",
+    "impostor",
+    "masquerade",
+    "gawky",
+    "shamble",
+    "detach",
+    "detached",
+    "engender",
+    "exacting",
+    "implicitly",
+    "explicitly",
+    "rigorous",
+    "purview",
+    "reluctant",
+    "humiliate",
+    "collected",
+    "unperturbed",
+    "brusque",
+    "collegiality",
+    "collegial",
+    "enfeeble",
+    "bout",
+    "pneumonia",
+    "evince",
+    "distress",
+    "quotidian",
+    "commute",
+    "ramification",
+    "wayward",
+    "errant",
+    "zenith",
+    "culminate",
+    "facetious",
+    "undercut",
+    "subvert",
+    "impair",
+    "undermine",
+    "byword",
+    "speak ill of",
+    "defame",
+    "rosy",
+    "unravel",
+    "anecdote",
+    "lure",
+    "anthropocentrism",
+    "assuage",
+    "awry",
+    "grief",
+    "staunch",
+    "amateur",
+    "amateurism",
+    "intercollegiate",
+    "predicament",
+    "allude",
+    "identical",
+    "forswear",
+    "eschew",
+    "garish",
+    "evocative",
+    "priest",
+    "peerless",
+    "prefigure",
+    "fatal",
+    "superior",
+    "fatalism",
+    "volatile",
+    "tender",
+    "decimate",
+    "kingfisher",
+    "avaricious",
+    "frugal",
+    "thrifty",
+    "rapacious"
+  ],
+  "existing_words": [
+    "anticipate",
+    "pugnacious",
+    "bellicose",
+    "composed"
+  ],
+  "pending_transcriptions": [
+    {
+      "image": 4,
+      "location": "左下 implicitly 下方",
+      "candidates": [
+        "precipitive",
+        "precipitate"
+      ],
+      "status": "awaiting_user_confirmation"
+    }
+  ],
+  "items": [
+    {
+      "word": "agrarian",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "gratify",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "revel",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "peal",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "feast",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "arduous",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "prodigious",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "colossal",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "proofread",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "temptation",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "utter",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "gallant",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "suffice",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "commiserate",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "commiserative",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "commiseration",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "vanity",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "christen",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "jubilant",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "bugle",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "forthwith",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "onerous",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "annotate",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "voracious",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "crocodilian",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "retail",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "retaliate",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "levelheaded",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "incompetent",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "reign",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "reinvent",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "virtuoso",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "mishandle",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "invoke",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "criterion",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "mawkish",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "demonize",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "embolden",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "stance",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "vexation",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "reproach",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "mingle",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "compelling",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "compel",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "breakaway",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "foresee",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "anticipate",
+      "images": [
+        2,
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "existing"
+    },
+    {
+      "word": "underpin",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "contemplation",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "introspection",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "irritate",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "attune",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "inevitable",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "evitable",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "expedition",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "expedite",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "austere",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "spartan",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "comparatively",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "troop",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "compress",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "precede",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "antedate",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "sabotage",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "accuse",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "covet",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "drudgery",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "tortuous",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "intergranular",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "fluid",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "purpose",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "purposefulness",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "teleology",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "totality",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "transcend",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "polemical",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "tumultuous",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "predecessor",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "civic",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "surrender",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "frenzy",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "emblem",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "abreast",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "antipathy",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "balk",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "emancipate",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "expunge",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "parsimonious",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "illiberal",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "proximity",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "truculent",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "pugnacious",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "existing"
+    },
+    {
+      "word": "bellicose",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "existing"
+    },
+    {
+      "word": "combative",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "self-serving",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "license",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "astringent",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "sawdust",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "filbert",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "husk",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "dogmatic",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "rigid",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "doctrinaire",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "receptive",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "intoxicate",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "inebriate",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "apt",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "champion",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "espouse",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "propound",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "absurd",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "impostor",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "masquerade",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "gawky",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "shamble",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "detach",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "detached",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "engender",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "exacting",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "implicitly",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "explicitly",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "rigorous",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "purview",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "reluctant",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "humiliate",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "composed",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "existing"
+    },
+    {
+      "word": "collected",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "unperturbed",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "brusque",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "collegiality",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "collegial",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "enfeeble",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "bout",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "pneumonia",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "evince",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "distress",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "quotidian",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "commute",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "ramification",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "wayward",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "errant",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "zenith",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "culminate",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "facetious",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "undercut",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "subvert",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "impair",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "undermine",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "byword",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "speak ill of",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "defame",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "rosy",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "unravel",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "anecdote",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "lure",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "anthropocentrism",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "assuage",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "awry",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "grief",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "staunch",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "amateur",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "amateurism",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "intercollegiate",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "predicament",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "allude",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "identical",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "forswear",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "eschew",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "garish",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "evocative",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "priest",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "peerless",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "prefigure",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "fatal",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "superior",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "fatalism",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "volatile",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "tender",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "decimate",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "kingfisher",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "avaricious",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "frugal",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "thrifty",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    },
+    {
+      "word": "rapacious",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new"
+    }
+  ],
+  "reported_progress": {
+    "raw": "我们目前的进度是单词背到day4快要左右了。",
+    "approximate_day": 4,
+    "exact_position": null,
+    "day_completed": null,
+    "evidence_kind": "user_report"
+  },
+  "notes": [
+    "本批是9月10日提交的六页笔记，未推定每词初学日期。",
+    "词表与例句扩展来源混合，未按图片顺序映射Day3或Day4。",
+    "没有主动回忆测试；保留既有词条复测计数、正确连胜与最近复测日期。",
+    "原图不随文本入库自动上传；只保存用户手写英文的词汇转录和自写释义。",
+    "拉取39ca978后的最新复习结果保留；下一组10词尚未作答。"
+  ]
+}

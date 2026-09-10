@@ -29,6 +29,15 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: youdao_handwritten_20260910
+    filename: null
+    sha256: null
+    role: user_vocabulary_notes
+    answer_status: not_applicable
+    description: "9月10日提交的六页手抄英文词；延续词表与有道例句扩展学习方式，未逐词确认来源及初学日期。"
+    record: vocab/imports/20260910_1739_youdao_handwritten.json
+    image_count: 6
+    original_storage: user_supplied_chat_attachments_not_committed
   - id: youdao_handwritten_20260908
     filename: null
     sha256: null
