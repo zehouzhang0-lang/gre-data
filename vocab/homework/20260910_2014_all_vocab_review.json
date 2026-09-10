@@ -7137,7 +7137,7 @@
         "ponderous",
         "novice"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -8197,7 +8197,7 @@
     {
       "word": "ramshackle",
       "reason": "correct_core_with_incorrect_extra_sense",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 13
     },
     {
@@ -8239,43 +8239,43 @@
     {
       "word": "confront",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "admirable",
       "reason": "partial",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "filthy",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "totality",
       "reason": "correct_core_with_incorrect_extra_sense",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "deleterious",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "recession",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "subvert",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
@@ -8287,37 +8287,37 @@
     {
       "word": "neophyte",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "brusque",
       "reason": "correct_core_with_incorrect_extra_sense",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "inebriate",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "cordiality",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "perpendicular",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     },
     {
       "word": "dumper",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 14
     }
   ],
@@ -9978,7 +9978,7 @@
     },
     {
       "id": "after_group14",
-      "status": "issued",
+      "status": "answered",
       "words": [
         "confront",
         "esteem",
@@ -10001,9 +10001,131 @@
         "arboreal",
         "spontaneous"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "confront",
+          "user_answer": "面对",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "esteem",
+          "user_answer": "尊严",
+          "result": "wrong",
+          "note": "仍误记尊严；n./v. 尊敬、敬重；dignity才是尊严。"
+        },
+        {
+          "word": "filthy",
+          "user_answer": "污秽不堪的，下流的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "recession",
+          "user_answer": "衰退",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "neophyte",
+          "user_answer": "新教徒，新信徒",
+          "result": "correct",
+          "note": "新信徒正确；若新教徒指Protestant则不等义，核心是新近皈依者，不限宗派。"
+        },
+        {
+          "word": "cordiality",
+          "user_answer": "热情的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "dumper",
+          "user_answer": "倾泄车",
+          "result": "correct",
+          "note": "倾泄车按倾卸车/翻斗车理解，正确。"
+        },
+        {
+          "word": "admirable",
+          "user_answer": "令人尊敬的",
+          "result": "correct",
+          "note": "令人尊敬明确被钦佩方向，正确。"
+        },
+        {
+          "word": "deleterious",
+          "user_answer": "破坏，损害的",
+          "result": "correct",
+          "note": "损害的覆盖有害方向，接受。"
+        },
+        {
+          "word": "subvert",
+          "user_answer": "颠覆",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "inebriate",
+          "user_answer": "令人沉醉",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "perpendicular",
+          "user_answer": "垂直的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "implement",
+          "user_answer": "实施，安装",
+          "result": "correct",
+          "note": "实施正确，安装仍为错误附加义；安装用install。"
+        },
+        {
+          "word": "ramshackle",
+          "user_answer": "摇摇欲坠的",
+          "result": "correct",
+          "note": "摇摇欲坠正确，已去掉蹒跚。"
+        },
+        {
+          "word": "totality",
+          "user_answer": "全部",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "brusque",
+          "user_answer": "简短的，不客气的",
+          "result": "correct",
+          "note": "不客气正确；简短只适用于话语简短生硬，不表示一般时间短。"
+        },
+        {
+          "word": "bathetic",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "明确忘记；adj. 矫情的、过分感伤的。"
+        },
+        {
+          "word": "christen",
+          "user_answer": "命名洗礼",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "arboreal",
+          "user_answer": "树栖的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "spontaneous",
+          "user_answer": "自发的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2326_all_vocab_retest12.md"
     }
   ],
-  "next_retest_after_group": 14
+  "next_retest_after_group": 15
 }
