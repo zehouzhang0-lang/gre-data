@@ -1,0 +1,5891 @@
+{
+  "schema_version": 1,
+  "assignment_id": "20260910_2014_all_vocab_review",
+  "generated_at": "2026-09-10T20:14:46+08:00",
+  "scope": "All recorded studied vocabulary, difficult words, TC/SE expansion and both handwritten batches; deduplicated. Unconfirmed handwriting excluded.",
+  "counts": {
+    "total": 640,
+    "group_size": 20,
+    "groups": 32,
+    "answered": 0
+  },
+  "instructions": [
+    "每组20词，末组为余数；按序给中文核心义，不会写问号。",
+    "首答不提示释义；判定后集中纠正，再继续下一组。",
+    "本轮重新覆盖全池；当天较早作答不自动算本轮已答。",
+    "保留首答与纠正记录，重复复测不增加覆盖数量。"
+  ],
+  "pending_transcriptions": [
+    {
+      "word": null,
+      "candidates": [
+        "precipitive",
+        "precipitate"
+      ],
+      "source": "vocab/imports/20260910_1739_youdao_handwritten.json",
+      "image": 4
+    }
+  ],
+  "items": [
+    {
+      "word": "heresy",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "antiquity",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "commonplace",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "lachrymose",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "chagrin",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "nonchalant",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "valorize",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "symbiosis",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "harrow",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "regimen",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "reserve",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "misinterpretation",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "compromise",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "intransigent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "capricious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fickle",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rescind",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "poignant",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "accrete",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "deferential",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "surrender",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "improvisation",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "archetypal",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fertility",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vagary",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "speak ill of",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "prodigious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "exonerate",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "abolish",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "inadvertent",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "amour",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "prosecute",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "levelheaded",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "reform",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "forswear",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "onset",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "somnolent",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "plod",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "negotiable",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "classical",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tempestuous",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "disperse",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "pandemonium",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "purveyor",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "scintillating",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "frugal",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "byword",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "betoken",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "don",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "gawky",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "retail",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "trenchant",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "mandate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "augment",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "anagen",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "attune",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "deviate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "incompetent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "querulous",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "compelling",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "provocateur",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "guardian",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "retaliate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "toothsome",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "occasion",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "peal",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "captious",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "exasperation",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "trunk",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "verisimilitude",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "execrate",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "precede",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "clamp",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "artifact",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "wary",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "civic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "stanch",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "comestible",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ennoble",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "argon",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "calm",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "forsake",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "composed",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "mawkish",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "identical",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "stubbly",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "collegial",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fatalism",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "prominent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "passive",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "gigantic",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "bellicose",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "wayward",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "medal",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "perforce",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "wanting",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "precedent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "husk",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "kinship",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "truculent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "energize",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "yield",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rebel",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "contemplation",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "trademark",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "swift",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "improvise",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unceasing",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "feeble",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "enfeeble",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "partiality",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "envisage",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "philistine",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "inhibit",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "teleology",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "peerless",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "evocative",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "conviction",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "invective",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "transitory",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "incentive",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "antiquarian",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "transcend",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "virtuoso",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "intoxicate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "dull",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "restrain",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "forthwith",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unorthodox",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ponder",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "collected",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "plodding",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "impolitic",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "pneumonia",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fetter",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "revel",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "subordinate",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "cosmopolitan",
+      "source_records": [
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "xenophobic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "inert",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "regurgitate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "parsimonious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "polemic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "take with a grain of salt",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "weigh",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ill-advised",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "cork",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "defame",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "commute",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "plummet",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "garish",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "eulogize",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "scrape",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "colonel",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "detached",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "presumption",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "engender",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "spiral",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "robust",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unperturbed",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "mingle",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "serendipity",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "accuse",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "diffidence",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "apprehend",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "filbert",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "nonconformist",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "autonomy",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "helter-skelter",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "insentient",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "brassy",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "volatile",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "indulge",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "untoward",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vexation",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rigid",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "definite",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tease apart",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "dearth",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "sentient",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "nefarious",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "evanescent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vaunt",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fluid",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "neon",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "impair",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "collegiality",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "defining",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "didactic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "shamble",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "jubilant",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "spartan",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "retractable",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "combative",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "advent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "front",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "sonorous",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "arduous",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "deteriorate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "grease",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "accede",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "paraphernalia",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "allegiance",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "astringent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "conceal",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "morbid",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "menace",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "discursive",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "contumacious",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rear",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "indubitable",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "condemn",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "meddle",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "self-serving",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "bugle",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vacuous",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "immutable",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "polemical",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "sterling",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "indecorous",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "explicable",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "anathema",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "toddler",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "herbivorous",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "patronize",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "cinch",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tacit",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tender",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "prophetic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "humility",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "doubt",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "implement",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "purposefulness",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ramshackle",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fatal",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "inevitable",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ruthless",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "disorganization",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "underpin",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "kingfisher",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "interweave",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "wench",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "upheaval",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "meld",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "bias",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "aver",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "daredevil",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "esteem",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "sabotage",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "mask",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unruly",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fraudulent",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "peasant",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "receptive",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "forage",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "commiseration",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "drudgery",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "suffice",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "enliven",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "espouse",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "air",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "collective",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "confront",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "admirable",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "filthy",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "totality",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "arboreal",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "christen",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "deleterious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "recession",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "subvert",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "bathetic",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "apprentice",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "spontaneous",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "neophyte",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "brusque",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "inebriate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "cordiality",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "perpendicular",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "dumper",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "skulduggery",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "glean",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "insular",
+      "source_records": [
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ad hoc",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "flag",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "feast",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "breakaway",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "thrifty",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "singular",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "priest",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "awry",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "enhance",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "restorative",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "apathetic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "assuage",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "innovative",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "impostor",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "valuable",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ponderous",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "novice",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "purpose",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "renegade",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "habitual",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unflinching",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "deduce",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "alliance",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unprecedented",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "profound",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "annotate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "agrarian",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "monitor",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "champion",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "proofread",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "reign",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "emancipate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "brook",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "disgorge",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "invoke",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "hackneyed",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rote",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "altruism",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "resent",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ecstasy",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "wooden",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "allude",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "stalwart",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "embolden",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "undermine",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "evince",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "prescient",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "instrumental",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "irascibility",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "pedigree",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "convivial",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "intergranular",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "moundsman",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "exile",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "aplomb",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "invertebrate",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "proficient",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "comparatively",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "predicament",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ambiguous",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "routine",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "expedite",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "commiserative",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "masquerade",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "participatory",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "outdo",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "atomize",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tumultuous",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "haphazard",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "champaign",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "instantiate",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "amass",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "proselytize",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ram",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "mercenary",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "captivate",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "milieu",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "callow",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "counterfeit",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "artery",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "amateurism",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "avaricious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "birch",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "zealot",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "errant",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "contrive",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "humiliate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "eschew",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "decimate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "irritate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "reluctant",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "pugnacious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "discredit",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unconscionable",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "covet",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "troop",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "pessimism",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "paean",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "martinet",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "effluvium",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "zenith",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "lieutenant",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "abrade",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "telogen",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "self-perpetuating",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "sanguinity",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vapid",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "diffuse",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "retrench",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "last-ditch",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "pan",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "burdensome",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "predecessor",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "eyesore",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "exhaustive",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tolerate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "antedate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "calamity",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "embody",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "empirical",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "indiscriminate",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "millstone",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "masculine",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "pragmatist",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "incorporate",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unravel",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "capuchin",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rear up",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "clamorous",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "innate",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "mishandle",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "license",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "discordance",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "imprecision",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "coruscate",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "baffle",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ruly",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "patrimony",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "suppress",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "doctrinaire",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "hyperbole",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "materialize",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "proprietary",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "studied",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "obscure",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "reproach",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "repeated",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "blandish",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "substantial",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "bout",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "idealistic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "wrench",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "overhaul",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ooze",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vague",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rigorous",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "voracious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "apropos",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "surrogate",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "portend",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "anecdote",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "disdain",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "undercut",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "shabby",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "beneficence",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "constrict",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "furtive",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "latent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "dogmatic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "austere",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "loathe",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "reinvent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "exacting",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fecundity",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "stagger",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "archaic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "simultaneous",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "purview",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "abreast",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "overlap",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "imminent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "cardinal",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "potent",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "balk",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "exceptional",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "abate",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "radical",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "shortcoming",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "recess",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "dichotomous",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "compile",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "abet",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "myopic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "recoil",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "turbulent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "avert",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rosy",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "depict",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "preclude",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "lopsided",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ramification",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rebuff",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "apt",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fungible",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tetanus",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "prefigure",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "shrink",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "propound",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tedious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "eloquent",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "satire",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "crocodilian",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "overlook",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "auction",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "culminate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ritualize",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "temperament",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "quotidian",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "commitment",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "disjunction",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tortuous",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "bulwark",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "musty",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "polarize",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "antipathy",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "demonize",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "flinch",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "archetype",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "amateur",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vagueness",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "devolve",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "absurd",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "soothsayer",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "ameliorate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "depressing",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vilify",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "detach",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "encroach",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "intercollegiate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "occult",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "brainchild",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "evitable",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "indifferent",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "prejudice",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "distress",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "long",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "patron",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "intensification",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "mutation",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "coterie",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tonic",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vanity",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "valueless",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "forthright",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rivulet",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "commiserate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "eradicate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "sacrosanct",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "volition",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "expunge",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "euphoria",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "offset",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "assent",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "onerous",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "anthropocentrism",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "colossal",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "stance",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "aversion",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "sawdust",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "discharge",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "legitimate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "introspection",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "repudiate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vicarious",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "beetle",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "lure",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "finicky",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "frenzy",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "impersonal",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "approbation",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vulgar",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "implicitly",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "impenetrable",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "criterion",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "countermand",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "embed",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "facetious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "impudent",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "lens",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "external",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "theatrical",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "succumb",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rebellion",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "concise",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "invidious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "fluctuate",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "felony",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tangy",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "staunch",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unfettered",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "patchwork",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "anticipate",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "grief",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "utter",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "expedition",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "triumph",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "roost",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "superior",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "foresee",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "malaria",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "sociable",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "bark",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "repertoire",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "designate",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "expectancy",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "proximity",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "gratify",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "overt",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "avian",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "acquaintance",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "lament",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "impermanent",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "rapacious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "disgruntle",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "wide-ranging",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "span",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "run-of-the-mill",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "tractable",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "sensation",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "exclusive",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "quench",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "mixed",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "explicitly",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "compel",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "illiberal",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "cushion",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "vault",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "furious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "savvy",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "champagne",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "stern",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "noxious",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "temptation",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "pliable",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "conviviality",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "emblem",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "divisive",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "catholic",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "allegory",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "gallop",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "unkempt",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "medley",
+      "source_records": [
+        "vocab/days/day02.md"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "numinous",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "disclose",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/homework/20260907_0022_fill_vocab.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "bristle",
+      "source_records": [
+        "vocab/days/day02.md",
+        "vocab/difficult.yaml"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "gallant",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    },
+    {
+      "word": "compress",
+      "source_records": [
+        "vocab/difficult.yaml",
+        "vocab/lexicon.json"
+      ],
+      "evidence": null
+    }
+  ],
+  "groups": [
+    {
+      "group": 1,
+      "words": [
+        "heresy",
+        "antiquity",
+        "commonplace",
+        "lachrymose",
+        "chagrin",
+        "nonchalant",
+        "valorize",
+        "symbiosis",
+        "harrow",
+        "regimen",
+        "reserve",
+        "misinterpretation",
+        "compromise",
+        "intransigent",
+        "capricious",
+        "fickle",
+        "rescind",
+        "poignant",
+        "accrete",
+        "deferential"
+      ],
+      "status": "issued",
+      "responses": null
+    },
+    {
+      "group": 2,
+      "words": [
+        "surrender",
+        "improvisation",
+        "archetypal",
+        "fertility",
+        "vagary",
+        "speak ill of",
+        "prodigious",
+        "exonerate",
+        "abolish",
+        "inadvertent",
+        "amour",
+        "prosecute",
+        "levelheaded",
+        "reform",
+        "forswear",
+        "onset",
+        "somnolent",
+        "plod",
+        "negotiable",
+        "classical"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 3,
+      "words": [
+        "tempestuous",
+        "disperse",
+        "pandemonium",
+        "purveyor",
+        "scintillating",
+        "frugal",
+        "byword",
+        "betoken",
+        "don",
+        "gawky",
+        "retail",
+        "trenchant",
+        "mandate",
+        "augment",
+        "anagen",
+        "attune",
+        "deviate",
+        "incompetent",
+        "querulous",
+        "compelling"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 4,
+      "words": [
+        "provocateur",
+        "guardian",
+        "retaliate",
+        "toothsome",
+        "occasion",
+        "peal",
+        "captious",
+        "exasperation",
+        "trunk",
+        "verisimilitude",
+        "execrate",
+        "precede",
+        "clamp",
+        "artifact",
+        "wary",
+        "civic",
+        "stanch",
+        "comestible",
+        "ennoble",
+        "argon"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 5,
+      "words": [
+        "calm",
+        "forsake",
+        "composed",
+        "mawkish",
+        "identical",
+        "stubbly",
+        "collegial",
+        "fatalism",
+        "prominent",
+        "passive",
+        "gigantic",
+        "bellicose",
+        "wayward",
+        "medal",
+        "perforce",
+        "wanting",
+        "precedent",
+        "husk",
+        "kinship",
+        "truculent"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 6,
+      "words": [
+        "energize",
+        "yield",
+        "rebel",
+        "contemplation",
+        "trademark",
+        "swift",
+        "improvise",
+        "unceasing",
+        "feeble",
+        "enfeeble",
+        "partiality",
+        "envisage",
+        "philistine",
+        "inhibit",
+        "teleology",
+        "peerless",
+        "evocative",
+        "conviction",
+        "invective",
+        "transitory"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 7,
+      "words": [
+        "incentive",
+        "antiquarian",
+        "transcend",
+        "virtuoso",
+        "intoxicate",
+        "dull",
+        "restrain",
+        "forthwith",
+        "unorthodox",
+        "ponder",
+        "collected",
+        "plodding",
+        "impolitic",
+        "pneumonia",
+        "fetter",
+        "revel",
+        "subordinate",
+        "cosmopolitan",
+        "xenophobic",
+        "inert"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 8,
+      "words": [
+        "regurgitate",
+        "parsimonious",
+        "polemic",
+        "take with a grain of salt",
+        "weigh",
+        "ill-advised",
+        "cork",
+        "defame",
+        "commute",
+        "plummet",
+        "garish",
+        "eulogize",
+        "scrape",
+        "colonel",
+        "detached",
+        "presumption",
+        "engender",
+        "spiral",
+        "robust",
+        "unperturbed"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 9,
+      "words": [
+        "mingle",
+        "serendipity",
+        "accuse",
+        "diffidence",
+        "apprehend",
+        "filbert",
+        "nonconformist",
+        "autonomy",
+        "helter-skelter",
+        "insentient",
+        "brassy",
+        "volatile",
+        "indulge",
+        "untoward",
+        "vexation",
+        "rigid",
+        "definite",
+        "tease apart",
+        "dearth",
+        "sentient"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 10,
+      "words": [
+        "nefarious",
+        "evanescent",
+        "vaunt",
+        "fluid",
+        "neon",
+        "impair",
+        "collegiality",
+        "defining",
+        "didactic",
+        "shamble",
+        "jubilant",
+        "spartan",
+        "retractable",
+        "combative",
+        "advent",
+        "front",
+        "sonorous",
+        "arduous",
+        "deteriorate",
+        "grease"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 11,
+      "words": [
+        "accede",
+        "paraphernalia",
+        "allegiance",
+        "astringent",
+        "conceal",
+        "morbid",
+        "menace",
+        "discursive",
+        "contumacious",
+        "rear",
+        "indubitable",
+        "condemn",
+        "meddle",
+        "self-serving",
+        "bugle",
+        "vacuous",
+        "immutable",
+        "polemical",
+        "sterling",
+        "indecorous"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 12,
+      "words": [
+        "explicable",
+        "anathema",
+        "toddler",
+        "herbivorous",
+        "patronize",
+        "cinch",
+        "tacit",
+        "tender",
+        "prophetic",
+        "humility",
+        "doubt",
+        "implement",
+        "purposefulness",
+        "ramshackle",
+        "fatal",
+        "inevitable",
+        "ruthless",
+        "disorganization",
+        "underpin",
+        "kingfisher"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 13,
+      "words": [
+        "interweave",
+        "wench",
+        "upheaval",
+        "meld",
+        "bias",
+        "aver",
+        "daredevil",
+        "esteem",
+        "sabotage",
+        "mask",
+        "unruly",
+        "fraudulent",
+        "peasant",
+        "receptive",
+        "forage",
+        "commiseration",
+        "drudgery",
+        "suffice",
+        "enliven",
+        "espouse"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 14,
+      "words": [
+        "air",
+        "collective",
+        "confront",
+        "admirable",
+        "filthy",
+        "totality",
+        "arboreal",
+        "christen",
+        "deleterious",
+        "recession",
+        "subvert",
+        "bathetic",
+        "apprentice",
+        "spontaneous",
+        "neophyte",
+        "brusque",
+        "inebriate",
+        "cordiality",
+        "perpendicular",
+        "dumper"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 15,
+      "words": [
+        "skulduggery",
+        "glean",
+        "insular",
+        "ad hoc",
+        "flag",
+        "feast",
+        "breakaway",
+        "thrifty",
+        "singular",
+        "priest",
+        "awry",
+        "enhance",
+        "restorative",
+        "apathetic",
+        "assuage",
+        "innovative",
+        "impostor",
+        "valuable",
+        "ponderous",
+        "novice"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 16,
+      "words": [
+        "purpose",
+        "renegade",
+        "habitual",
+        "unflinching",
+        "deduce",
+        "alliance",
+        "unprecedented",
+        "profound",
+        "annotate",
+        "agrarian",
+        "monitor",
+        "champion",
+        "proofread",
+        "reign",
+        "emancipate",
+        "brook",
+        "disgorge",
+        "invoke",
+        "hackneyed",
+        "rote"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 17,
+      "words": [
+        "altruism",
+        "resent",
+        "ecstasy",
+        "wooden",
+        "allude",
+        "stalwart",
+        "embolden",
+        "undermine",
+        "evince",
+        "prescient",
+        "instrumental",
+        "irascibility",
+        "pedigree",
+        "convivial",
+        "intergranular",
+        "moundsman",
+        "exile",
+        "aplomb",
+        "invertebrate",
+        "proficient"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 18,
+      "words": [
+        "comparatively",
+        "predicament",
+        "ambiguous",
+        "routine",
+        "expedite",
+        "commiserative",
+        "masquerade",
+        "participatory",
+        "outdo",
+        "atomize",
+        "tumultuous",
+        "haphazard",
+        "champaign",
+        "instantiate",
+        "amass",
+        "proselytize",
+        "ram",
+        "mercenary",
+        "captivate",
+        "milieu"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 19,
+      "words": [
+        "callow",
+        "counterfeit",
+        "artery",
+        "amateurism",
+        "avaricious",
+        "birch",
+        "zealot",
+        "errant",
+        "contrive",
+        "humiliate",
+        "eschew",
+        "decimate",
+        "irritate",
+        "reluctant",
+        "pugnacious",
+        "discredit",
+        "unconscionable",
+        "covet",
+        "troop",
+        "pessimism"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 20,
+      "words": [
+        "paean",
+        "martinet",
+        "effluvium",
+        "zenith",
+        "lieutenant",
+        "abrade",
+        "telogen",
+        "self-perpetuating",
+        "sanguinity",
+        "vapid",
+        "diffuse",
+        "retrench",
+        "last-ditch",
+        "pan",
+        "burdensome",
+        "predecessor",
+        "eyesore",
+        "exhaustive",
+        "tolerate",
+        "antedate"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 21,
+      "words": [
+        "calamity",
+        "embody",
+        "empirical",
+        "indiscriminate",
+        "millstone",
+        "masculine",
+        "pragmatist",
+        "incorporate",
+        "unravel",
+        "capuchin",
+        "rear up",
+        "clamorous",
+        "innate",
+        "mishandle",
+        "license",
+        "discordance",
+        "imprecision",
+        "coruscate",
+        "baffle",
+        "ruly"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 22,
+      "words": [
+        "patrimony",
+        "suppress",
+        "doctrinaire",
+        "hyperbole",
+        "materialize",
+        "proprietary",
+        "studied",
+        "obscure",
+        "reproach",
+        "repeated",
+        "blandish",
+        "substantial",
+        "bout",
+        "idealistic",
+        "wrench",
+        "overhaul",
+        "ooze",
+        "vague",
+        "rigorous",
+        "voracious"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 23,
+      "words": [
+        "apropos",
+        "surrogate",
+        "portend",
+        "anecdote",
+        "disdain",
+        "undercut",
+        "shabby",
+        "beneficence",
+        "constrict",
+        "furtive",
+        "latent",
+        "dogmatic",
+        "austere",
+        "loathe",
+        "reinvent",
+        "exacting",
+        "fecundity",
+        "stagger",
+        "archaic",
+        "simultaneous"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 24,
+      "words": [
+        "purview",
+        "abreast",
+        "overlap",
+        "imminent",
+        "cardinal",
+        "potent",
+        "balk",
+        "exceptional",
+        "abate",
+        "radical",
+        "shortcoming",
+        "recess",
+        "dichotomous",
+        "compile",
+        "abet",
+        "myopic",
+        "recoil",
+        "turbulent",
+        "avert",
+        "rosy"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 25,
+      "words": [
+        "depict",
+        "preclude",
+        "lopsided",
+        "ramification",
+        "rebuff",
+        "apt",
+        "fungible",
+        "tetanus",
+        "prefigure",
+        "shrink",
+        "propound",
+        "tedious",
+        "eloquent",
+        "satire",
+        "crocodilian",
+        "overlook",
+        "auction",
+        "culminate",
+        "ritualize",
+        "temperament"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 26,
+      "words": [
+        "quotidian",
+        "commitment",
+        "disjunction",
+        "tortuous",
+        "bulwark",
+        "musty",
+        "polarize",
+        "antipathy",
+        "demonize",
+        "flinch",
+        "archetype",
+        "amateur",
+        "vagueness",
+        "devolve",
+        "absurd",
+        "soothsayer",
+        "ameliorate",
+        "depressing",
+        "vilify",
+        "detach"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 27,
+      "words": [
+        "encroach",
+        "intercollegiate",
+        "occult",
+        "brainchild",
+        "evitable",
+        "indifferent",
+        "prejudice",
+        "distress",
+        "long",
+        "patron",
+        "intensification",
+        "mutation",
+        "coterie",
+        "tonic",
+        "vanity",
+        "valueless",
+        "forthright",
+        "rivulet",
+        "commiserate",
+        "eradicate"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 28,
+      "words": [
+        "sacrosanct",
+        "volition",
+        "expunge",
+        "euphoria",
+        "offset",
+        "assent",
+        "onerous",
+        "anthropocentrism",
+        "colossal",
+        "stance",
+        "aversion",
+        "sawdust",
+        "discharge",
+        "legitimate",
+        "introspection",
+        "repudiate",
+        "vicarious",
+        "beetle",
+        "lure",
+        "finicky"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 29,
+      "words": [
+        "frenzy",
+        "impersonal",
+        "approbation",
+        "vulgar",
+        "implicitly",
+        "impenetrable",
+        "criterion",
+        "countermand",
+        "embed",
+        "facetious",
+        "impudent",
+        "lens",
+        "external",
+        "theatrical",
+        "succumb",
+        "rebellion",
+        "concise",
+        "invidious",
+        "fluctuate",
+        "felony"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 30,
+      "words": [
+        "tangy",
+        "staunch",
+        "unfettered",
+        "patchwork",
+        "anticipate",
+        "grief",
+        "utter",
+        "expedition",
+        "triumph",
+        "roost",
+        "superior",
+        "foresee",
+        "malaria",
+        "sociable",
+        "bark",
+        "repertoire",
+        "designate",
+        "expectancy",
+        "proximity",
+        "gratify"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 31,
+      "words": [
+        "overt",
+        "avian",
+        "acquaintance",
+        "lament",
+        "impermanent",
+        "rapacious",
+        "disgruntle",
+        "wide-ranging",
+        "span",
+        "run-of-the-mill",
+        "tractable",
+        "sensation",
+        "exclusive",
+        "quench",
+        "mixed",
+        "explicitly",
+        "compel",
+        "illiberal",
+        "cushion",
+        "vault"
+      ],
+      "status": "pending",
+      "responses": null
+    },
+    {
+      "group": 32,
+      "words": [
+        "furious",
+        "savvy",
+        "champagne",
+        "stern",
+        "noxious",
+        "temptation",
+        "pliable",
+        "conviviality",
+        "emblem",
+        "divisive",
+        "catholic",
+        "allegory",
+        "gallop",
+        "unkempt",
+        "medley",
+        "numinous",
+        "disclose",
+        "bristle",
+        "gallant",
+        "compress"
+      ],
+      "status": "pending",
+      "responses": null
+    }
+  ]
+}
