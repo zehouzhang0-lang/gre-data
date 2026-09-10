@@ -7,8 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 180,
-    "issued_main_words": 180
+    "answered": 200,
+    "issued_main_words": 200
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -6392,8 +6392,130 @@
         "deteriorate",
         "grease"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "nefarious",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 邪恶的、不法的（贬义）。"
+        },
+        {
+          "word": "evanescent",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 转瞬即逝的、短暂的。"
+        },
+        {
+          "word": "vaunt",
+          "user_answer": "拍卖",
+          "result": "wrong",
+          "note": "v./n. 夸耀、吹嘘；拍卖为auction。"
+        },
+        {
+          "word": "fluid",
+          "user_answer": "液体",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "neon",
+          "user_answer": "霓虹，氖",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "impair",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "v. 损害、削弱（能力、功能、质量等）。"
+        },
+        {
+          "word": "collegiality",
+          "user_answer": "共同掌权",
+          "result": "correct",
+          "note": "同僚共同掌权、共担责任；也指同事间的合作关系。接受。"
+        },
+        {
+          "word": "defining",
+          "user_answer": "决定性的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "didactic",
+          "user_answer": "爱说教的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "shamble",
+          "user_answer": "踉踉跄跄地",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "jubilant",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 欢欣鼓舞的、喜气洋洋的。"
+        },
+        {
+          "word": "spartan",
+          "user_answer": "斯巴达的，简朴的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "retractable",
+          "user_answer": "温顺的，易驯服的",
+          "result": "wrong",
+          "note": "adj. 可缩回的、可伸缩的；易驾驭的为tractable。"
+        },
+        {
+          "word": "combative",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 好斗的、好争辩的。"
+        },
+        {
+          "word": "advent",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "n. 到来、出现；the advent of…。"
+        },
+        {
+          "word": "front",
+          "user_answer": "前方的",
+          "result": "correct",
+          "note": "前方的，接受有效形容词义。"
+        },
+        {
+          "word": "sonorous",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 声音洪亮的、浑厚的。"
+        },
+        {
+          "word": "arduous",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 艰巨的、费力的；arduous work。"
+        },
+        {
+          "word": "deteriorate",
+          "user_answer": "大规模毁坏",
+          "result": "partial",
+          "note": "v. 恶化、变坏、退化；答毁坏有负面变化方向，部分正确，但没有大规模之意，也不等于毁灭。"
+        },
+        {
+          "word": "grease",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "n. 油脂、润滑脂；v. 给……涂油润滑。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2222_all_vocab_round10.md"
     },
     {
       "group": 11,
@@ -7412,6 +7534,78 @@
     },
     {
       "word": "apprehend",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "nefarious",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "evanescent",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "vaunt",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "impair",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "jubilant",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "retractable",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "combative",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "advent",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "sonorous",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "arduous",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "deteriorate",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "grease",
       "reason": "forgotten",
       "status": "pending",
       "after_group": 10
@@ -8471,6 +8665,34 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2156_all_vocab_retest07.md"
+    },
+    {
+      "id": "after_group10",
+      "status": "issued",
+      "words": [
+        "nefarious",
+        "retractable",
+        "apprehend",
+        "jubilant",
+        "vaunt",
+        "dearth",
+        "evanescent",
+        "grease",
+        "rigid",
+        "sonorous",
+        "impair",
+        "advent",
+        "deteriorate",
+        "arduous",
+        "combative",
+        "fluid",
+        "defining",
+        "neon",
+        "spartan",
+        "collegiality"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 10
