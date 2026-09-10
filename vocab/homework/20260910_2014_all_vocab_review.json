@@ -7,7 +7,7 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 119,
+    "answered": 120,
     "issued_main_words": 120
   },
   "instructions": [
@@ -5916,7 +5916,10 @@
           "note": "有效核心义，接受。"
         }
       ],
-      "record": "vocab/homework/20260910_2109_all_vocab_round06.md"
+      "record": "vocab/homework/20260910_2109_all_vocab_round06.md",
+      "supplemental_answer_records": [
+        "vocab/homework/20260910_2114_all_vocab_retest04.md"
+      ]
     },
     {
       "group": 7,
@@ -5942,7 +5945,7 @@
         "xenophobic",
         "inert"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -6643,7 +6646,7 @@
     {
       "word": "regimen",
       "reason": "partial",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
@@ -6810,7 +6813,7 @@
     {
       "word": "medal",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 5
     },
     {
@@ -6834,37 +6837,37 @@
     {
       "word": "rebel",
       "reason": "omitted",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 6
     },
     {
       "word": "philistine",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 6
     },
     {
       "word": "inhibit",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 6
     },
     {
       "word": "teleology",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 6
     },
     {
       "word": "evocative",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 6
     },
     {
       "word": "invective",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 6
     }
   ],
@@ -7321,7 +7324,7 @@
     },
     {
       "id": "after_group06",
-      "status": "issued",
+      "status": "answered",
       "words": [
         "rebel",
         "regimen",
@@ -7344,13 +7347,135 @@
         "peerless",
         "transitory"
       ],
-      "responses": null,
+      "responses": [
+        {
+          "word": "rebel",
+          "user_answer": "反叛者",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "regimen",
+          "user_answer": "科学系统的生活方案",
+          "result": "correct",
+          "note": "本次明确系统、方案，接受核心方向；科学性不是必要条件。"
+        },
+        {
+          "word": "invective",
+          "user_answer": "辱骂，辱骂性的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "yield",
+          "user_answer": "产出",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "medal",
+          "user_answer": "奖牌",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "evocative",
+          "user_answer": "唤起情感联想的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "enfeeble",
+          "user_answer": "使虚弱",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "artifact",
+          "user_answer": "人造艺品",
+          "result": "partial",
+          "note": "人造方向正确；艺品仍偏艺术或装饰，核心为人工制品，包括工具、器物，不限艺术品。"
+        },
+        {
+          "word": "philistine",
+          "user_answer": "庸俗之人",
+          "result": "correct",
+          "note": "接受庸俗之人；补留轻视文化艺术、看重物质的限定。"
+        },
+        {
+          "word": "trademark",
+          "user_answer": "商标",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "wary",
+          "user_answer": "歪的",
+          "result": "wrong",
+          "note": "谨慎、警惕的；不是歪的。与awry区分。"
+        },
+        {
+          "word": "teleology",
+          "user_answer": "目的论",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "conviction",
+          "user_answer": "信念，定罪",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "inhibit",
+          "user_answer": "抑制，阻止",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "envisage",
+          "user_answer": "联想，展想",
+          "result": "correct",
+          "note": "将展想理解为展开想象，接受设想方向；规范表述为设想、想象、预想，不泛指由一事联想到另一事。此为语义解释，非用户已确认的笔误。"
+        },
+        {
+          "word": "feeble",
+          "user_answer": "虚弱的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "contemplation",
+          "user_answer": "沉思，冥想",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "partiality",
+          "user_answer": "偏见",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "peerless",
+          "user_answer": "出类拔萃的，绝世无双的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "transitory",
+          "user_answer": "短暂的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
       "adds_to_coverage": true,
       "coverage_additions_only": [
         "rebel"
       ],
-      "note": "除rebel为主序首次补答，其余重复不增加覆盖。"
+      "note": "除rebel为主序首次补答，其余重复不增加覆盖。",
+      "record": "vocab/homework/20260910_2114_all_vocab_retest04.md"
     }
   ],
-  "next_retest_after_group": 6
+  "next_retest_after_group": 7
 }
