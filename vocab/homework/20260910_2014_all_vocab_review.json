@@ -7,8 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 140,
-    "issued_main_words": 140
+    "answered": 160,
+    "issued_main_words": 160
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -6094,8 +6094,130 @@
         "robust",
         "unperturbed"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "regurgitate",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "反刍、使食物回涌；机械复述。"
+        },
+        {
+          "word": "parsimonious",
+          "user_answer": "贪婪的",
+          "result": "wrong",
+          "note": "吝啬的、过度节省的；不是贪婪。"
+        },
+        {
+          "word": "polemic",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "激烈的论战、抨击性文章；争辩。"
+        },
+        {
+          "word": "take with a grain of salt",
+          "user_answer": "保留意见",
+          "result": "correct",
+          "note": "保留意见按持保留态度理解，接受；即不完全相信。"
+        },
+        {
+          "word": "weigh",
+          "user_answer": "称重，权衡",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "ill-advised",
+          "user_answer": "诋毁",
+          "result": "wrong",
+          "note": "考虑不周的、不明智的；不是诋毁。"
+        },
+        {
+          "word": "cork",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "软木；软木塞。"
+        },
+        {
+          "word": "defame",
+          "user_answer": "诋毁",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "commute",
+          "user_answer": "通勤",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "plummet",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "骤降、暴跌；垂直坠落。"
+        },
+        {
+          "word": "garish",
+          "user_answer": "过于花哨的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "eulogize",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "高度赞扬、颂扬。"
+        },
+        {
+          "word": "scrape",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "刮、擦；刮去；名词可指擦伤。"
+        },
+        {
+          "word": "colonel",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "上校。"
+        },
+        {
+          "word": "detached",
+          "user_answer": "拆分，分离",
+          "result": "correct",
+          "note": "接受分离这一核心方向，形容词为分离的、独立的；另有客观超然的。"
+        },
+        {
+          "word": "presumption",
+          "user_answer": "预设",
+          "result": "correct",
+          "note": "接受预设的假定方向；另有冒昧、放肆义。"
+        },
+        {
+          "word": "engender",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "引起、产生、导致。"
+        },
+        {
+          "word": "spiral",
+          "user_answer": "螺旋的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "robust",
+          "user_answer": "强劲的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "unperturbed",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "镇定的、不慌乱的、不受困扰的。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2133_all_vocab_round08.md"
     },
     {
       "group": 9,
@@ -7045,6 +7167,72 @@
       "reason": "partial",
       "status": "pending",
       "after_group": 8
+    },
+    {
+      "word": "regurgitate",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "parsimonious",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "polemic",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "ill-advised",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "cork",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "plummet",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "eulogize",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "scrape",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "colonel",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "engender",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 8
+    },
+    {
+      "word": "unperturbed",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 8
     }
   ],
   "retests": [
@@ -7801,6 +7989,34 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2129_all_vocab_retest05.md"
+    },
+    {
+      "id": "after_group08",
+      "status": "issued",
+      "words": [
+        "regurgitate",
+        "parsimonious",
+        "virtuoso",
+        "cork",
+        "ill-advised",
+        "weigh",
+        "polemic",
+        "engender",
+        "unorthodox",
+        "colonel",
+        "eulogize",
+        "commute",
+        "scrape",
+        "plodding",
+        "unperturbed",
+        "garish",
+        "plummet",
+        "detached",
+        "presumption",
+        "robust"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 8
