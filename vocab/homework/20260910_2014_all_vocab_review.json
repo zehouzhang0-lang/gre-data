@@ -6839,7 +6839,7 @@
         "enliven",
         "espouse"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -7887,7 +7887,7 @@
     {
       "word": "bugle",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 11
     },
     {
@@ -7911,31 +7911,31 @@
     {
       "word": "self-serving",
       "reason": "correct_core_with_incorrect_extra_sense",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 12
     },
     {
       "word": "paraphernalia",
       "reason": "correct_core_with_incorrect_extra_sense",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 12
     },
     {
       "word": "explicable",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 12
     },
     {
       "word": "tacit",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 12
     },
     {
       "word": "prophetic",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 12
     },
     {
@@ -7947,8 +7947,14 @@
     {
       "word": "disorganization",
       "reason": "correct_core_with_incorrect_extra_sense",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 12
+    },
+    {
+      "word": "ramshackle",
+      "reason": "correct_core_with_incorrect_extra_sense",
+      "status": "pending",
+      "after_group": 13
     }
   ],
   "retests": [
@@ -9308,7 +9314,7 @@
     },
     {
       "id": "after_group12",
-      "status": "issued",
+      "status": "answered",
       "words": [
         "explicable",
         "bugle",
@@ -9331,9 +9337,131 @@
         "herbivorous",
         "toddler"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "explicable",
+          "user_answer": "可解释的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "bugle",
+          "user_answer": "军号，冲锋号",
+          "result": "correct",
+          "note": "军号正确，已纠正警徽误连。"
+        },
+        {
+          "word": "tacit",
+          "user_answer": "默契的，心照不宣的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "paraphernalia",
+          "user_answer": "一整套要用的东西",
+          "result": "correct",
+          "note": "一整套要用的东西覆盖用具义，已去掉技能。"
+        },
+        {
+          "word": "prophetic",
+          "user_answer": "预兆的，预言的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "self-serving",
+          "user_answer": "自私自利的",
+          "result": "correct",
+          "note": "自私自利正确，已去掉自助。"
+        },
+        {
+          "word": "implement",
+          "user_answer": "安装实施",
+          "result": "correct",
+          "note": "实施正确；安装仍为附加误义，删除；安装用install。"
+        },
+        {
+          "word": "disorganization",
+          "user_answer": "无组织的",
+          "result": "correct",
+          "note": "无组织正确，已去掉分离。"
+        },
+        {
+          "word": "patronize",
+          "user_answer": "高高在上的",
+          "result": "correct",
+          "note": "接受居高临下待人的核心方向；规范动词译法为以高高在上的态度对待。"
+        },
+        {
+          "word": "anathema",
+          "user_answer": "极度令人心生厌恶的",
+          "result": "correct",
+          "note": "接受极度厌恶方向；规范名词译法为极度厌恶的人或事。"
+        },
+        {
+          "word": "tender",
+          "user_answer": "温柔的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "cinch",
+          "user_answer": "小菜一碟",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "humility",
+          "user_answer": "谦虚",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "ramshackle",
+          "user_answer": "摇摇欲坠的，踉跄的",
+          "result": "correct",
+          "note": "摇摇欲坠正确，通常指建筑、车辆等破旧不牢固；踉跄不是核心同义。"
+        },
+        {
+          "word": "fatal",
+          "user_answer": "致命的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "inevitable",
+          "user_answer": "不可避免的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "underpin",
+          "user_answer": "巩固",
+          "result": "correct",
+          "note": "巩固覆盖支撑方向，接受；更准为支撑、构成基础。"
+        },
+        {
+          "word": "kingfisher",
+          "user_answer": "翠鸟",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "herbivorous",
+          "user_answer": "草食的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "toddler",
+          "user_answer": "刚学会走路的小孩",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2251_all_vocab_retest10.md"
     }
   ],
-  "next_retest_after_group": 12
+  "next_retest_after_group": 13
 }
