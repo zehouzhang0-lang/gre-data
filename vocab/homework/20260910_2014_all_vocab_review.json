@@ -6988,7 +6988,7 @@
         "perpendicular",
         "dumper"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -8081,13 +8081,13 @@
     {
       "word": "upheaval",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 13
     },
     {
       "word": "aver",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 13
     },
     {
@@ -8099,19 +8099,19 @@
     {
       "word": "sabotage",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 13
     },
     {
       "word": "drudgery",
       "reason": "partial",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 13
     },
     {
       "word": "espouse",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 13
     }
   ],
@@ -9622,7 +9622,7 @@
     },
     {
       "id": "after_group13",
-      "status": "issued",
+      "status": "answered",
       "words": [
         "aver",
         "upheaval",
@@ -9645,9 +9645,131 @@
         "commiseration",
         "enliven"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "aver",
+          "user_answer": "断言，坚称",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "upheaval",
+          "user_answer": "动荡，巨变",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "implement",
+          "user_answer": "实施，安装",
+          "result": "correct",
+          "note": "实施核心义正确，但再次误加安装；安装是install，继续检验。"
+        },
+        {
+          "word": "esteem",
+          "user_answer": "尊严",
+          "result": "wrong",
+          "note": "再次答尊严，错误；应为尊敬、敬重、珍视。尊严通常是dignity。"
+        },
+        {
+          "word": "drudgery",
+          "user_answer": "苦差事",
+          "result": "correct",
+          "note": "苦差事覆盖枯燥繁重工作，正确。"
+        },
+        {
+          "word": "ramshackle",
+          "user_answer": "摇摇欲坠的，蹒跚的",
+          "result": "correct",
+          "note": "摇摇欲坠核心义正确，但再次误加蹒跚；指建筑/车辆等破旧不牢固，继续检验。"
+        },
+        {
+          "word": "sabotage",
+          "user_answer": "蓄意破坏",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "espouse",
+          "user_answer": "支持，拥护",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "suffice",
+          "user_answer": "满足",
+          "result": "correct",
+          "note": "满足沿用满足需要的理解接受；更准确为足够、足以满足，而非使心情满意。"
+        },
+        {
+          "word": "interweave",
+          "user_answer": "交织",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "bias",
+          "user_answer": "偏见",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "daredevil",
+          "user_answer": "鲁莽的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "mask",
+          "user_answer": "面具",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "unruly",
+          "user_answer": "不遵循规矩的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "fraudulent",
+          "user_answer": "诈骗",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "peasant",
+          "user_answer": "佃农",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "receptive",
+          "user_answer": "包容的，容纳的",
+          "result": "correct",
+          "note": "愿意接纳的方向接受；常搭配receptive to ideas。"
+        },
+        {
+          "word": "forage",
+          "user_answer": "觅食，粮草",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "commiseration",
+          "user_answer": "同情，怜悯",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "enliven",
+          "user_answer": "使有生机",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2305_all_vocab_retest11.md"
     }
   ],
-  "next_retest_after_group": 13
+  "next_retest_after_group": 14
 }
