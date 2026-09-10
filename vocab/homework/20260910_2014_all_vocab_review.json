@@ -6392,7 +6392,7 @@
         "deteriorate",
         "grease"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -7251,7 +7251,7 @@
     {
       "word": "unorthodox",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 7
     },
     {
@@ -7287,7 +7287,7 @@
     {
       "word": "plodding",
       "reason": "partial",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 8
     },
     {
@@ -7359,37 +7359,37 @@
     {
       "word": "filbert",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 9
     },
     {
       "word": "nonconformist",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 9
     },
     {
       "word": "insentient",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 9
     },
     {
       "word": "volatile",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 9
     },
     {
       "word": "untoward",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 9
     },
     {
       "word": "vexation",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 9
     },
     {
@@ -7401,8 +7401,20 @@
     {
       "word": "sentient",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 9
+    },
+    {
+      "word": "rigid",
+      "reason": "omitted",
+      "status": "pending",
+      "after_group": 10
+    },
+    {
+      "word": "apprehend",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 10
     }
   ],
   "retests": [
@@ -8312,7 +8324,7 @@
     },
     {
       "id": "after_group09",
-      "status": "issued",
+      "status": "answered_with_omissions",
       "words": [
         "sentient",
         "filbert",
@@ -8333,12 +8345,133 @@
         "rigid",
         "definite",
         "accuse",
-        "tease",
-        "apart"
+        "tease apart"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "sentient",
+          "user_answer": "知觉的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "filbert",
+          "user_answer": "榛树",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "plodding",
+          "user_answer": "沉重缓慢地行走",
+          "result": "correct",
+          "note": "本次明确缓慢沉重的行走方式，接受。"
+        },
+        {
+          "word": "vexation",
+          "user_answer": "烦恼，烦心",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "autonomy",
+          "user_answer": "自治",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "volatile",
+          "user_answer": "易变的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "insentient",
+          "user_answer": "无知觉的，无意识的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "serendipity",
+          "user_answer": "捡到好东西的运气",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "untoward",
+          "user_answer": "不顺利的，不符合预期的",
+          "result": "correct",
+          "note": "不顺利的覆盖不利方向，接受。"
+        },
+        {
+          "word": "nonconformist",
+          "user_answer": "不顺从者，不墨守成规的者",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "brassy",
+          "user_answer": "刺耳的，厚脸皮的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "dearth",
+          "user_answer": null,
+          "result": "omitted",
+          "note": "依据语义对齐推定漏答，未判断遗忘。"
+        },
+        {
+          "word": "unorthodox",
+          "user_answer": "不正宗的，不传统的，不地道的",
+          "result": "correct",
+          "note": "不传统的为有效核心义，接受；不正宗、不地道不是等义。"
+        },
+        {
+          "word": "mingle",
+          "user_answer": "混合，融合，应酬",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "apprehend",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "理解、领会；逮捕。原先理解答对，此次明确忘记。"
+        },
+        {
+          "word": "indulge",
+          "user_answer": "使沉溺",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "rigid",
+          "user_answer": null,
+          "result": "omitted",
+          "note": "依据语义对齐推定漏答，未判断遗忘。"
+        },
+        {
+          "word": "definite",
+          "user_answer": "明确的，绝对的",
+          "result": "correct",
+          "note": "明确的为有效义，接受；不是任何语境都能换成绝对的。"
+        },
+        {
+          "word": "accuse",
+          "user_answer": "指控",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "tease apart",
+          "user_answer": "拆分，查明",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2156_all_vocab_retest07.md"
     }
   ],
-  "next_retest_after_group": 9
+  "next_retest_after_group": 10
 }
