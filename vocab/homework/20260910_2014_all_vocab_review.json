@@ -7,7 +7,7 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 0
+    "answered": 20
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -5047,8 +5047,130 @@
         "accrete",
         "deferential"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "heresy",
+          "user_answer": "异端，邪教",
+          "result": "correct",
+          "note": "异端思想；不等于某个邪教组织。接受异端。"
+        },
+        {
+          "word": "antiquity",
+          "user_answer": "古典的",
+          "result": "partial",
+          "note": "古代；古老。古典方向接近，但古典风格不等于古代。"
+        },
+        {
+          "word": "commonplace",
+          "user_answer": "一般的，随处可见的",
+          "result": "correct",
+          "note": "普通、平常；司空见惯的。"
+        },
+        {
+          "word": "lachrymose",
+          "user_answer": "爱流眼泪的",
+          "result": "correct",
+          "note": "爱哭的、泪水多的；悲伤的。"
+        },
+        {
+          "word": "chagrin",
+          "user_answer": "失望",
+          "result": "partial",
+          "note": "因失败、受辱或失望而懊恼、羞恼。单说失望不充分。"
+        },
+        {
+          "word": "nonchalant",
+          "user_answer": "漫不经心的",
+          "result": "correct",
+          "note": "若无其事的、漫不经心的。"
+        },
+        {
+          "word": "valorize",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "赋予价值、肯定价值；提高价值或价格。"
+        },
+        {
+          "word": "symbiosis",
+          "user_answer": "共生",
+          "result": "correct",
+          "note": "共生关系。"
+        },
+        {
+          "word": "harrow",
+          "user_answer": "耙",
+          "result": "correct",
+          "note": "耙为有效名词义；动词另有折磨、使痛苦。"
+        },
+        {
+          "word": "regimen",
+          "user_answer": "养生之道",
+          "result": "partial",
+          "note": "有系统的饮食、治疗或训练方案；养生之道方向接近，需明确规律方案。"
+        },
+        {
+          "word": "reserve",
+          "user_answer": "预订保留",
+          "result": "correct",
+          "note": "预订、保留均为有效动词义；原填空语境的寡言、矜持仍待语境检验。"
+        },
+        {
+          "word": "misinterpretation",
+          "user_answer": "错误翻译",
+          "result": "partial",
+          "note": "误解、错误解读；不限于翻译，错误翻译更直接是mistranslation。"
+        },
+        {
+          "word": "compromise",
+          "user_answer": "妥协",
+          "result": "correct",
+          "note": "妥协、折中。"
+        },
+        {
+          "word": "intransigent",
+          "user_answer": "立即的",
+          "result": "wrong",
+          "note": "不妥协的、不肯让步的；与立即无关。"
+        },
+        {
+          "word": "capricious",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "反复无常的、任性的，强调受突发念头支配。"
+        },
+        {
+          "word": "fickle",
+          "user_answer": "过分挑剔的",
+          "result": "wrong",
+          "note": "反复无常的、易变的；不是挑剔的。可能与finicky混淆，尚未确认。"
+        },
+        {
+          "word": "rescind",
+          "user_answer": "撤销废除",
+          "result": "correct",
+          "note": "撤销、废除。"
+        },
+        {
+          "word": "poignant",
+          "user_answer": "极其深刻的，深深动人的",
+          "result": "correct",
+          "note": "接受深深动人的；不泛指所有深刻。"
+        },
+        {
+          "word": "accrete",
+          "user_answer": "附着增长，共同增加",
+          "result": "correct",
+          "note": "接受附着增长；共同增加不是准确同义，强调逐渐积聚。"
+        },
+        {
+          "word": "deferential",
+          "user_answer": "尊敬的，恭敬的",
+          "result": "correct",
+          "note": "恭敬的、表示尊重的。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2020_all_vocab_round01.md"
     },
     {
       "group": 2,
@@ -5074,7 +5196,7 @@
         "negotiable",
         "classical"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -5886,6 +6008,56 @@
       ],
       "status": "pending",
       "responses": null
+    }
+  ],
+  "retest_queue": [
+    {
+      "word": "antiquity",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 2
+    },
+    {
+      "word": "chagrin",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 2
+    },
+    {
+      "word": "valorize",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 2
+    },
+    {
+      "word": "regimen",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 2
+    },
+    {
+      "word": "misinterpretation",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 2
+    },
+    {
+      "word": "intransigent",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 2
+    },
+    {
+      "word": "capricious",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 2
+    },
+    {
+      "word": "fickle",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 2
     }
   ]
 }
