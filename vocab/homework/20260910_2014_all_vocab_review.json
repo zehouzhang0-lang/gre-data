@@ -7,8 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 240,
-    "issued_main_words": 240
+    "answered": 260,
+    "issued_main_words": 260
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -6839,8 +6839,130 @@
         "enliven",
         "espouse"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "interweave",
+          "user_answer": "交织",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "wench",
+          "user_answer": "乡下姑娘",
+          "result": "correct",
+          "note": "乡下姑娘接受旧式姑娘义；有过时或贬义语体，不作为现代中性称呼。"
+        },
+        {
+          "word": "upheaval",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "n. 剧变、动荡；social upheaval；另有地壳隆起义。"
+        },
+        {
+          "word": "meld",
+          "user_answer": "混合",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "bias",
+          "user_answer": "偏见",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "aver",
+          "user_answer": "避免，转向",
+          "result": "wrong",
+          "note": "v. 断言、坚称（正式）；aver that…。避免、转开为avert，形近混淆。"
+        },
+        {
+          "word": "daredevil",
+          "user_answer": "鲁莽的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "esteem",
+          "user_answer": "尊严",
+          "result": "wrong",
+          "note": "n./v. 尊敬、敬重、珍视；hold someone in high esteem；尊严通常为dignity。"
+        },
+        {
+          "word": "sabotage",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "n./v. 蓄意破坏、故意妨碍；sabotage a plan（负向）。"
+        },
+        {
+          "word": "mask",
+          "user_answer": "面具遮掩",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "unruly",
+          "user_answer": "不顺从的，不合规矩的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "fraudulent",
+          "user_answer": "诈骗行为的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "peasant",
+          "user_answer": "佃农",
+          "result": "correct",
+          "note": "佃农是有效义，亦可泛指农民、小农，不限租地耕作。"
+        },
+        {
+          "word": "receptive",
+          "user_answer": "包容的，愿意容纳的",
+          "result": "correct",
+          "note": "接受愿意容纳、接纳的方向；常指乐于接受新思想、建议，receptive to ideas。"
+        },
+        {
+          "word": "forage",
+          "user_answer": "粮草，觅食",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "commiseration",
+          "user_answer": "同情，怜悯",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "drudgery",
+          "user_answer": "幸苦",
+          "result": "partial",
+          "note": "n. 枯燥繁重的工作、苦差事；辛苦方向相关，但缺少工作以及枯燥乏味的核心，部分正确。幸苦按辛苦笔误。"
+        },
+        {
+          "word": "suffice",
+          "user_answer": "使满足",
+          "result": "correct",
+          "note": "使满足按满足需要的方向接受；更准为足够、足以满足需要，非使人心情满意。A little will suffice。"
+        },
+        {
+          "word": "enliven",
+          "user_answer": "使有生机",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "espouse",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "v. 支持、拥护、信奉（观点、事业等）；espouse a cause。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2256_all_vocab_round13.md"
     },
     {
       "group": 14,
@@ -7953,6 +8075,42 @@
     {
       "word": "ramshackle",
       "reason": "correct_core_with_incorrect_extra_sense",
+      "status": "pending",
+      "after_group": 13
+    },
+    {
+      "word": "upheaval",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 13
+    },
+    {
+      "word": "aver",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 13
+    },
+    {
+      "word": "esteem",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 13
+    },
+    {
+      "word": "sabotage",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 13
+    },
+    {
+      "word": "drudgery",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 13
+    },
+    {
+      "word": "espouse",
+      "reason": "forgotten",
       "status": "pending",
       "after_group": 13
     }
@@ -9461,6 +9619,34 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2251_all_vocab_retest10.md"
+    },
+    {
+      "id": "after_group13",
+      "status": "issued",
+      "words": [
+        "aver",
+        "upheaval",
+        "implement",
+        "esteem",
+        "drudgery",
+        "ramshackle",
+        "sabotage",
+        "espouse",
+        "suffice",
+        "interweave",
+        "bias",
+        "daredevil",
+        "mask",
+        "unruly",
+        "fraudulent",
+        "peasant",
+        "receptive",
+        "forage",
+        "commiseration",
+        "enliven"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 13
