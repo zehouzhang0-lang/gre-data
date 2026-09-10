@@ -7,8 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 120,
-    "issued_main_words": 120
+    "answered": 140,
+    "issued_main_words": 140
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -5945,8 +5945,130 @@
         "xenophobic",
         "inert"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "incentive",
+          "user_answer": "有感情的，有知觉的",
+          "result": "wrong",
+          "note": "激励、诱因、动机；有知觉的是sentient，不能混同。"
+        },
+        {
+          "word": "antiquarian",
+          "user_answer": "古书的",
+          "result": "correct",
+          "note": "接受古书相关方向，补准经营古旧珍本书的、古物研究的；名词为古物研究者或收藏者。"
+        },
+        {
+          "word": "transcend",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "超越、超出限制。"
+        },
+        {
+          "word": "virtuoso",
+          "user_answer": "艺术大师，艺术上很有造诣的人",
+          "result": "correct",
+          "note": "技艺高超的大师，尤其艺术或音乐领域。"
+        },
+        {
+          "word": "intoxicate",
+          "user_answer": "使沉醉，中毒",
+          "result": "correct",
+          "note": "使沉醉、使陶醉为有效义。"
+        },
+        {
+          "word": "dull",
+          "user_answer": "无趣的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "restrain",
+          "user_answer": "阻止，压抑",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "forthwith",
+          "user_answer": "立即",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "unorthodox",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "非传统的、不正统的。"
+        },
+        {
+          "word": "ponder",
+          "user_answer": "思索",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "collected",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "镇定的、沉着的；也可指收集起来的。"
+        },
+        {
+          "word": "plodding",
+          "user_answer": "笨重沉重的走；苦差活",
+          "result": "correct",
+          "note": "接受沉重缓慢地走、费力劳动的动作方向；形容词可指缓慢费力的、单调乏味的。"
+        },
+        {
+          "word": "impolitic",
+          "user_answer": "不理智的，不明智的",
+          "result": "correct",
+          "note": "不明智的、欠考虑的。"
+        },
+        {
+          "word": "pneumonia",
+          "user_answer": "肺炎",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "fetter",
+          "user_answer": "不知道",
+          "result": "forgotten",
+          "note": "束缚、限制；名词脚镣、束缚。"
+        },
+        {
+          "word": "revel",
+          "user_answer": "狂欢",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "subordinate",
+          "user_answer": "下属的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "cosmopolitan",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "国际化的、世界性的；见多识广的。"
+        },
+        {
+          "word": "xenophobic",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "排外的、仇视或害怕外国人的。"
+        },
+        {
+          "word": "inert",
+          "user_answer": "惰性的，不易动的",
+          "result": "correct",
+          "note": "惰性的、不活跃的、不易动的。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2121_all_vocab_round07.md"
     },
     {
       "group": 8,
@@ -6869,6 +6991,48 @@
       "reason": "wrong",
       "status": "corrected_once",
       "after_group": 6
+    },
+    {
+      "word": "incentive",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 7
+    },
+    {
+      "word": "transcend",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 7
+    },
+    {
+      "word": "unorthodox",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 7
+    },
+    {
+      "word": "collected",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 7
+    },
+    {
+      "word": "fetter",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 7
+    },
+    {
+      "word": "cosmopolitan",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 7
+    },
+    {
+      "word": "xenophobic",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 7
     }
   ],
   "retests": [
@@ -7475,6 +7639,34 @@
       ],
       "note": "除rebel为主序首次补答，其余重复不增加覆盖。",
       "record": "vocab/homework/20260910_2114_all_vocab_retest04.md"
+    },
+    {
+      "id": "after_group07",
+      "status": "issued",
+      "words": [
+        "incentive",
+        "wary",
+        "transcend",
+        "virtuoso",
+        "artifact",
+        "collected",
+        "pneumonia",
+        "xenophobic",
+        "antiquarian",
+        "fetter",
+        "dull",
+        "cosmopolitan",
+        "plodding",
+        "unorthodox",
+        "restrain",
+        "forthwith",
+        "inert",
+        "revel",
+        "impolitic",
+        "subordinate"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 7
