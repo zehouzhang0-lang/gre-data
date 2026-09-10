@@ -7,8 +7,8 @@
     "total": 640,
     "group_size": 20,
     "groups": 32,
-    "answered": 260,
-    "issued_main_words": 260
+    "answered": 280,
+    "issued_main_words": 280
   },
   "instructions": [
     "每组20词，末组为余数；按序给中文核心义，不会写问号。",
@@ -6988,8 +6988,130 @@
         "perpendicular",
         "dumper"
       ],
-      "status": "issued",
-      "responses": null
+      "status": "answered",
+      "responses": [
+        {
+          "word": "air",
+          "user_answer": "气氛",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "collective",
+          "user_answer": "集体的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "confront",
+          "user_answer": "安慰，舒适",
+          "result": "wrong",
+          "note": "v. 面对、正视、对抗；confront a problem；安慰/舒适为comfort。"
+        },
+        {
+          "word": "admirable",
+          "user_answer": "尊敬的",
+          "result": "partial",
+          "note": "adj. 值得钦佩的、令人赞赏的；尊敬方向相关但未明确值得被钦佩，部分正确。"
+        },
+        {
+          "word": "filthy",
+          "user_answer": "破旧不堪的",
+          "result": "wrong",
+          "note": "adj. 肮脏的、污秽的；不等于破旧。"
+        },
+        {
+          "word": "totality",
+          "user_answer": "全部，关键部分的",
+          "result": "correct",
+          "note": "全部、整体正确，关键部分不是同义。"
+        },
+        {
+          "word": "arboreal",
+          "user_answer": "树栖的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "christen",
+          "user_answer": "命名，洗礼",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "deleterious",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 有害的（常指不易察觉的伤害）；deleterious effects。"
+        },
+        {
+          "word": "recession",
+          "user_answer": "撤销，废除",
+          "result": "wrong",
+          "note": "n. 经济衰退；后退、消退；撤销/废除为rescission或rescind，非本词。"
+        },
+        {
+          "word": "subvert",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "v. 颠覆、推翻、破坏；subvert authority。"
+        },
+        {
+          "word": "bathetic",
+          "user_answer": "呈辞滥调的，过于矫情的",
+          "result": "correct",
+          "note": "过于矫情的命中虚假感伤方向，接受；陈词滥调不能直接当同义。"
+        },
+        {
+          "word": "apprentice",
+          "user_answer": "学徒，作。。学徒",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "spontaneous",
+          "user_answer": "自发的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "neophyte",
+          "user_answer": "劝入教",
+          "result": "wrong",
+          "note": "n. 新手、初学者、新信徒；劝入教是proselytize，不能把人误作行为。"
+        },
+        {
+          "word": "brusque",
+          "user_answer": "短暂的，不客气的",
+          "result": "correct",
+          "note": "不客气的正确；核心是生硬简慢的、唐突的，不表示时间短暂。"
+        },
+        {
+          "word": "inebriate",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "v. 使醉、使陶醉；n. 醉汉；adj. 醉的。"
+        },
+        {
+          "word": "cordiality",
+          "user_answer": "猩红的，主体的",
+          "result": "wrong",
+          "note": "n. 热情、友好、真诚亲切；猩红/主要的可能误连cardinal。"
+        },
+        {
+          "word": "perpendicular",
+          "user_answer": "忘了",
+          "result": "forgotten",
+          "note": "adj. 垂直的、成直角的；perpendicular to。"
+        },
+        {
+          "word": "dumper",
+          "user_answer": "泵",
+          "result": "wrong",
+          "note": "n. 翻斗车、自卸车；倾倒者、甩掉恋人的人等；泵为pump。"
+        }
+      ],
+      "record": "vocab/homework/20260910_2320_all_vocab_round14.md"
     },
     {
       "group": 15,
@@ -8113,6 +8235,90 @@
       "reason": "forgotten",
       "status": "corrected_once",
       "after_group": 13
+    },
+    {
+      "word": "confront",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "admirable",
+      "reason": "partial",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "filthy",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "totality",
+      "reason": "correct_core_with_incorrect_extra_sense",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "deleterious",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "recession",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "subvert",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "bathetic",
+      "reason": "correct_core_with_incorrect_extra_sense",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "neophyte",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "brusque",
+      "reason": "correct_core_with_incorrect_extra_sense",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "inebriate",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "cordiality",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "perpendicular",
+      "reason": "forgotten",
+      "status": "pending",
+      "after_group": 14
+    },
+    {
+      "word": "dumper",
+      "reason": "wrong",
+      "status": "pending",
+      "after_group": 14
     }
   ],
   "retests": [
@@ -9769,6 +9975,34 @@
       ],
       "adds_to_coverage": false,
       "record": "vocab/homework/20260910_2305_all_vocab_retest11.md"
+    },
+    {
+      "id": "after_group14",
+      "status": "issued",
+      "words": [
+        "confront",
+        "esteem",
+        "filthy",
+        "recession",
+        "neophyte",
+        "cordiality",
+        "dumper",
+        "admirable",
+        "deleterious",
+        "subvert",
+        "inebriate",
+        "perpendicular",
+        "implement",
+        "ramshackle",
+        "totality",
+        "brusque",
+        "bathetic",
+        "christen",
+        "arboreal",
+        "spontaneous"
+      ],
+      "responses": null,
+      "adds_to_coverage": false
     }
   ],
   "next_retest_after_group": 14
