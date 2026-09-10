@@ -5494,7 +5494,7 @@
         "ennoble",
         "argon"
       ],
-      "status": "pending",
+      "status": "issued",
       "responses": null
     },
     {
@@ -6264,7 +6264,7 @@
     {
       "word": "chagrin",
       "reason": "partial",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 2
     },
     {
@@ -6324,60 +6324,60 @@
     {
       "word": "accrete",
       "reason": "partial",
-      "status": "pending"
+      "status": "corrected_once"
     },
     {
       "word": "disperse",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 3
     },
     {
       "word": "betoken",
       "reason": "partial",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 3
     },
     {
       "word": "trenchant",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 3
     },
     {
       "word": "mandate",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 3
     },
     {
       "word": "augment",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 3
     },
     {
       "word": "anagen",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 3
     },
     {
       "word": "deviate",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 3
     },
     {
       "word": "querulous",
       "reason": "forgotten",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 3
     },
     {
       "word": "compelling",
       "reason": "wrong",
-      "status": "pending",
+      "status": "corrected_once",
       "after_group": 3
     }
   ],
@@ -6534,7 +6534,7 @@
     },
     {
       "id": "after_group03",
-      "status": "issued",
+      "status": "answered",
       "words": [
         "disperse",
         "chagrin",
@@ -6557,9 +6557,131 @@
         "don",
         "incompetent"
       ],
-      "responses": null,
-      "adds_to_coverage": false
+      "responses": [
+        {
+          "word": "disperse",
+          "user_answer": "分散，使分散",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "chagrin",
+          "user_answer": "失望后的憎恶，懊恼",
+          "result": "correct",
+          "note": "接受失望后的懊恼；憎恶不属于该词核心义。"
+        },
+        {
+          "word": "frugal",
+          "user_answer": "质朴的",
+          "result": "correct",
+          "note": "接受质朴、俭朴；补充节俭、不浪费。"
+        },
+        {
+          "word": "augment",
+          "user_answer": "增长，扩大",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "anagen",
+          "user_answer": "毛发的生长期的",
+          "result": "correct",
+          "note": "接受毛发生长期，不因中文多一个的字扣分。"
+        },
+        {
+          "word": "byword",
+          "user_answer": "代名词",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "regimen",
+          "user_answer": "养生之道，生活之道",
+          "result": "partial",
+          "note": "方向接近但仍过宽；核心是系统性的饮食、治疗或训练方案。用固定规律的安排理解，例a daily exercise regimen。"
+        },
+        {
+          "word": "trenchant",
+          "user_answer": "犀利的，清晰有力的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "attune",
+          "user_answer": "使协调一致",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "deviate",
+          "user_answer": "偏离",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "purveyor",
+          "user_answer": "供应商，支持者",
+          "result": "correct",
+          "note": "接受供应商；不泛指所有支持者。"
+        },
+        {
+          "word": "mandate",
+          "user_answer": "命令，授权，强制要求",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "accrete",
+          "user_answer": "附着增长",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "betoken",
+          "user_answer": "预示，预显",
+          "result": "correct",
+          "note": "预示为有效义，接受。"
+        },
+        {
+          "word": "retail",
+          "user_answer": "零售",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "querulous",
+          "user_answer": "爱牢骚的",
+          "result": "correct",
+          "note": "爱牢骚的按爱发牢骚理解。"
+        },
+        {
+          "word": "compelling",
+          "user_answer": "吸引人注意的，令人信服的，引人入胜的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "scintillating",
+          "user_answer": "才气横生的，闪闪发光的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "don",
+          "user_answer": "穿上",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        },
+        {
+          "word": "incompetent",
+          "user_answer": "不称职的",
+          "result": "correct",
+          "note": "有效核心义，接受。"
+        }
+      ],
+      "adds_to_coverage": false,
+      "record": "vocab/homework/20260910_2044_all_vocab_retest02.md"
     }
   ],
-  "next_retest_after_group": 3
+  "next_retest_after_group": 4
 }
