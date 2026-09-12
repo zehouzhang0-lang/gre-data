@@ -64,3 +64,6 @@ gre-data/
 本仓库按 2026-09-02 核对到的 ETS GRE General Test 规则建模：Verbal 和 Quantitative 各为 130–170 分、1 分递增；Analytical Writing 为 0–6 分、0.5 分递增。机考的 Verbal 和 Quantitative 均为 section-level adaptive，原始正确题数不能脱离官方换算直接当成精确量表分。
 
 考试规则会变化。涉及考试结构、报名、费用、送分和证件要求时，以 ETS 当日官方页面为准。
+# 本地学习平台
+
+Windows运行 `./start-platform.ps1`，macOS/Linux运行 `bash ./start-platform.sh`，打开 http://127.0.0.1:4173 。需要Node.js 22+与Git。已有10份PDF默认可读，支持答题、答案导入、生词本、背诵和GitHub进度同步。也可在Codex中说“启动GRE平台”。详见 [平台说明](platform/README.md)。

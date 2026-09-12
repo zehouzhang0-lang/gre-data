@@ -1,3 +1,4 @@
+param([string]$TargetBranch = '')
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 Set-Location $PSScriptRoot
@@ -13,17 +14,23 @@ function Invoke-Git {
     throw "git $($GitArgs -join ' ') failed with exit code $LASTEXITCODE"
   }
 }
-$branch = (& git branch --show-current).Trim()
-if ($LASTEXITCODE -ne 0 -or $branch -ne 'main') {
-  throw "Expected branch main, found '$branch'. Stop and inspect before syncing."
+$branch = [string](& git branch --show-current)
+$branch = $branch.Trim()
+if ($LASTEXITCODE -ne 0 -or -not $branch) {
+  throw 'Detached HEAD: preserve this worktree and create an intentional branch before syncing.'
 }
+if (-not $TargetBranch) {
+  if ($branch -ne 'main') { throw "Worktree branch '$branch': pass -TargetBranch main explicitly after reviewing changes." }
+  $TargetBranch = 'main'
+}
+if ($TargetBranch -ne 'main' -and $TargetBranch -ne $branch) { throw 'Target must be main or the current branch.' }
 
 $remote = (& git remote get-url origin).Trim()
 if ($LASTEXITCODE -ne 0 -or $remote -ne $ExpectedRemote) {
   throw "Unexpected origin remote: '$remote'. Expected '$ExpectedRemote'."
 }
 
-Invoke-Git -GitArgs @('pull', '--rebase', '--autostash', 'origin', 'main')
+Invoke-Git -GitArgs @('pull', '--rebase', '--autostash', 'origin', $TargetBranch)
 
 $dirty = & git status --porcelain
 if ($LASTEXITCODE -ne 0) { throw 'git status failed.' }
@@ -34,7 +41,7 @@ if ($dirty) {
   $staged = @(& git diff --cached --name-only --diff-filter=ACMR)
   if ($LASTEXITCODE -ne 0) { throw 'Unable to inspect staged files.' }
 
-  $blocked = @($staged | Where-Object { ($_ -replace '\\', '/') -match $BlockedPathPattern })
+  $blocked = @($staged | Where-Object { (($_ -replace '\\', '/') -match $BlockedPathPattern) -and (($_ -replace '\\', '/') -notmatch '^materials/uploads/[0-9a-f-]+\.pdf$') })
   if ($blocked.Count -gt 0) {
     throw "Blocked private or binary files are staged. Nothing was committed:`n$($blocked -join "`n")"
   }
@@ -42,7 +49,8 @@ if ($dirty) {
   $oversized = @()
   foreach ($relativePath in $staged) {
     $fullPath = Join-Path $PSScriptRoot $relativePath
-    if ((Test-Path -LiteralPath $fullPath -PathType Leaf) -and (Get-Item -LiteralPath $fullPath).Length -gt $MaxTrackedBytes) {
+    $limitBytes = if (($relativePath -replace '\\', '/') -match '^materials/uploads/[0-9a-f-]+\.pdf$') { 30MB } else { $MaxTrackedBytes }
+    if ((Test-Path -LiteralPath $fullPath -PathType Leaf) -and (Get-Item -LiteralPath $fullPath).Length -gt $limitBytes) {
       $oversized += $relativePath
     }
   }
@@ -52,9 +60,9 @@ if ($dirty) {
 
   Invoke-Git -GitArgs @('diff', '--cached', '--check')
   Invoke-Git -GitArgs @('commit', '-m', "practice: $(Get-Date -Format 'yyyy-MM-dd HH:mm')")
-  Invoke-Git -GitArgs @('push', 'origin', 'main')
+  Invoke-Git -GitArgs @('push', 'origin', "HEAD:$TargetBranch")
   Write-Output 'Sync complete: new GRE data pushed.'
 } else {
-  Invoke-Git -GitArgs @('push', 'origin', 'main')
+  Invoke-Git -GitArgs @('push', 'origin', "HEAD:$TargetBranch")
   Write-Output 'Sync complete: no new GRE data.'
 }

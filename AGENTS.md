@@ -114,6 +114,9 @@
 
 ## Git 与多设备边界
 
+- 学习平台（2026-09-12用户授权）：允许同步 `platform/` 源码、启动脚本、包锁文件、`.agents/skills/gre-platform/` 和用户主动上传的 `materials/uploads/*.pdf`。平台事件是新增事实来源，教练训练前按需读取 `platform/events/`；自评不等于核验，不重复计入旧训练。
+- 工作副本使用自己的分支；审核后Windows可显式运行 `./sync.ps1 -TargetBranch main`，其他平台 `./sync.sh main`。脚本推送当前HEAD到目标，不盲目切换其他工作副本的main。
+
 - 开始前 pull，结束后 push。
 - 不在两台设备上同时训练或写同一文件。
 - 遇到冲突立即停止并汇报文件名；禁止擅自丢弃一侧数据。

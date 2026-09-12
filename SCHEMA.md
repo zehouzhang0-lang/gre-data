@@ -3,6 +3,19 @@
 > 版本：1.0.0（2026-09-02）
 > 本规范只服务 GRE General Test，不复用 IELTS 的分数、科目或题型字段。
 
+## 学习平台扩展（2026-09-12）
+
+用户授权在本仓库建设可迭代本地平台；平台源码、锁文件、启动脚本、skill与学习数据一起同步。`platform/events/<uuid>.json` 为追加式原子记录，包含 `schema_version: 1`、`id`、ISO UTC `recorded_at`、`kind`、`payload`。事件按时间再按ID重放；同ID同内容重试不重复创建，不同内容拒绝。
+
+- `vocab_upsert`：word、meaning、pos、note。词形小写且合并连续空格；短语完整保存。释义标记用户编辑待核验。
+- `vocab_delete` / `vocab_restore`：word。仅控制平台展示，不删除旧词库与历史。
+- `vocab_recall`：word、answer原文、self_rating（remembered/partial/forgotten）、mode（recall/flashcard）、assessment固定self_reported。跳过不写记录；自评不自动更新difficult/mastered、旧作业覆盖数或技巧等级。教练核对后须另写原子记录并注明事件ID，防止重复计数。
+- `attempt` / `attempts_import`：教材material、单元unit、题号question共同定位，type（tc/se/rc/quant）、answer原文、duration_seconds（未知null）、note。批量导入使用items数组。
+- `questions_import` / `keys_import`：items数组，含共同定位、type、answer、explanation，answer_source固定user_provided；题目导入另含prompt与options文本数组。无答案或自由文本不能可靠比较时result=null。原始作答保留，显示核对按最新答案计算；历史答案事件均保留。不换算GRE量表分。
+- `material_upload`：id、filename、repo_path、pages（未知null）、answer_status。用户主动上传的PDF保存为 `materials/uploads/<uuid>.pdf`，单份≤30MB。此目录为本次用户授权新增同步范围，现有materials/files资料与catalog保持原样。仅接收PDF，不扩大到其他任意二进制或隐私文件。
+
+浏览器草稿只在本机暂存，不算完成。平台只读适配现有源文件，CRUD与自评从事件叠加，不静默重写旧训练证据。教练接续平台训练须同时读取平台事件。页面定期读取磁盘；跨设备通过显式Git同步，源码更新后重启服务。
+
 ## 核心原则
 
 1. 每次训练一个原子文件；计划完成状态也采用追加式事件。

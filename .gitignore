@@ -66,3 +66,8 @@ private/
 !/materials/files/张巍GRE镇考3000词-正序（2026年）.pdf
 !/materials/files/张巍GRE阅读机经440篇.pdf
 !/materials/files/真经GRE等价词汇总（2026年版 ）.pdf
+
+# PDF files explicitly uploaded through the learning platform
+!/materials/uploads/*.pdf
+platform/events/.*.tmp
+.gre-platform/
