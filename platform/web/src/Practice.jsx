@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Header, Icon, Field, Empty, Modal } from "./components";
 import { request, save, keyOf, typeNames } from "./api";
 import ImportDialog from "./ImportDialog";
+import AiReview from "./AiReview";
 import PdfExcerpt, { useSourcePdf } from "./PdfExcerpt";
 
 const draftKey = "gre:practice:v2";
@@ -98,6 +99,7 @@ export default function Practice({ state, refresh, notify }) {
             {saved && <div className="answer-feedback" role="status"><strong>{answerKey ? latest?.result === true ? "答案一致" : latest?.result === false ? "答案不一致" : "待核对" : "已记录 · 待核对"}</strong>{answerKey ? <><p>参考答案：{answerKey.answer} <small>用户提供</small></p><p>{answerKey.explanation || "尚未补充解析。"}</p></> : <p>这份教材尚未附答案，作答已保留。</p>}<button className="text-button" onClick={() => setDialog("answers")}>{answerKey ? "更新答案与解析" : "补充答案与解析"}</button></div>}
             {error && <p role="alert" className="error">{error}</p>}
             <div className="guided-actions"><span>{index + 1} / {questions.length}</span>{!saved && <button className="text-button" disabled={busy || index === questions.length - 1} onClick={() => choose(questions[index + 1])}>暂时跳过</button>}{saved ? <button className="primary" disabled={index === questions.length - 1} onClick={() => choose(questions[index + 1])}>{index === questions.length - 1 ? "本题型已到最后一题" : "下一题 →"}</button> : <button className="primary" disabled={!valid || busy} onClick={submit}>{busy ? "正在保存…" : "提交答案"}</button>}</div>
+            {latest && <AiReview key={latest.id} state={state} refresh={refresh} attempt={latest} />}
             {latest && !saved && <small className="prior-attempt">上次作答：{latest.answer} · {latest.result === null ? "待核对" : latest.result ? "答案一致" : "答案不一致"}</small>}
           </div>
         </section>

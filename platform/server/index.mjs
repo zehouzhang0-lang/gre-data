@@ -8,6 +8,7 @@ import { Store } from "./store.mjs";
 import { syncProgress } from "./sync.mjs";
 import { QuestionBank, legacyPractice } from "./question-bank.mjs";
 import { keyOf } from "./store.mjs";
+import { AiCoach } from "./ai-coach.mjs";
 const appRoot = fileURLToPath(new URL("../..", import.meta.url));
 const root = process.env.GRE_DATA_ROOT
   ? path.resolve(process.env.GRE_DATA_ROOT)
@@ -29,6 +30,11 @@ const vite = dev
     })
   : null;
 let busy = false;
+const ai = new AiCoach(root, store, questionBank, async (kind, payload, id) => {
+  while (busy) await new Promise(resolve => setTimeout(resolve, 100));
+  busy = true;
+  try { return await store.append(kind, payload, id); } finally { busy = false; }
+});
 function json(res, status, value) {
   res.writeHead(status, {
     "Content-Type": "application/json; charset=utf-8",
@@ -64,6 +70,15 @@ const server = http.createServer(async (req, res) => {
     if (req.headers["sec-fetch-site"] === "cross-site")
       return json(res, 403, { error: "不接受跨站请求" });
     const url = new URL(req.url, `http://${host}`);
+    if (req.method === "GET" && url.pathname === "/api/ai/status") return json(res, 200, await ai.status(url.searchParams.get("refresh") === "1"));
+    if (req.method === "POST" && url.pathname === "/api/ai/review") {
+      const data = await body(req);
+      return json(res, 202, await ai.start(data.scope, data.attempt_id));
+    }
+    if (req.method === "POST" && url.pathname === "/api/ai/cancel") {
+      await body(req);
+      return json(res, 200, { job: ai.cancel() });
+    }
     if (req.method === "GET" && url.pathname === "/api/practice") {
       const type = url.searchParams.get("type") || "se";
       const state = await store.state();
@@ -131,6 +146,7 @@ const server = http.createServer(async (req, res) => {
           if (root !== appRoot) throw new Error("隔离测试模式不允许同步Git");
           return json(res, 200, await syncProgress(root));
         }
+        if (data.kind === "ai_review") throw new Error("请通过AI分析入口生成记录");
         if (data.kind === "material_upload")
           throw new Error("请通过PDF上传入口添加资料");
         return json(

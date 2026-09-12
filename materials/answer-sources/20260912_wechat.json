@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "imported_at": "2026-09-12T15:49:16.436Z",
+  "method": "local_windows_ocr_with_glyph_checks_and_original_exception_review",
+  "answer_source": "user_provided",
+  "sources": [
+    {
+      "id": "wechat_tc_20260912",
+      "material": "text_completion_2000",
+      "filename": "微信图片_20260912232755_617_2.png",
+      "sha256": "30b513d208ca130fca394fda66bd4770e32aaff3f91acb50942ffbad89849e57",
+      "image_dimensions": [
+        1156,
+        67484
+      ],
+      "article_published_date": "2026-03-24",
+      "article_modified_date": "2026-09-01",
+      "publisher": "张巍GRE",
+      "original_storage": "user_local_original_image_not_committed"
+    },
+    {
+      "id": "wechat_rc_20260912",
+      "material": "reading_440",
+      "filename": "微信图片_20260912232758_618_2.png",
+      "sha256": "76c34bee6f6fde753f46d1fbbbe7cb87e540a01c14e40f0f5127604871dc345f",
+      "image_dimensions": [
+        1156,
+        102024
+      ],
+      "article_published_date": "2026-03-24",
+      "article_modified_date": "2026-09-01",
+      "publisher": "张巍GRE",
+      "original_storage": "user_local_original_image_not_committed"
+    }
+  ],
+  "counts": {
+    "text_completion_2000": 2002,
+    "reading_440": 893
+  },
+  "pending": [],
+  "notes": [
+    {
+      "key": "[\"reading_440\",\"passage2\",\"1\"]",
+      "source_ref": "wechat_rc_20260912:6257-6297",
+      "sentence_prefix": "While we cannot know"
+    },
+    {
+      "key": "[\"reading_440\",\"passage18\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:8835-8868",
+      "sentence_prefix": "Often written"
+    },
+    {
+      "key": "[\"reading_440\",\"passage22\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:9475-9517",
+      "sentence_prefix": "Such a strategy"
+    },
+    {
+      "key": "[\"reading_440\",\"passage40\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:12373-12413",
+      "sentence_prefix": "Buell"
+    },
+    {
+      "key": "[\"reading_440\",\"passage41\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:12538-12580",
+      "sentence_prefix": "This compression has combined"
+    },
+    {
+      "key": "[\"reading_440\",\"passage55\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:14792-14831",
+      "sentence_prefix": "Yet McCormick"
+    },
+    {
+      "key": "[\"reading_440\",\"passage58\",\"1\"]",
+      "source_ref": "wechat_rc_20260912:15275-15315",
+      "sentence_prefix": "This shift in focus"
+    },
+    {
+      "key": "[\"reading_440\",\"passage148\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:30374-30418",
+      "sentence_prefix": "Early modern lace making"
+    },
+    {
+      "key": "[\"reading_440\",\"passage172\",\"1\"]",
+      "source_ref": "wechat_rc_20260912:35512-35630",
+      "sentence_prefix": "The problem, however"
+    },
+    {
+      "key": "[\"reading_440\",\"passage175\",\"1\"]",
+      "source_ref": "wechat_rc_20260912:36074-36114",
+      "sentence_prefix": "Women harvest cactus"
+    },
+    {
+      "key": "[\"reading_440\",\"passage191\",\"3\"]",
+      "source_ref": "wechat_rc_20260912:38653-38693",
+      "sentence_prefix": "I am not advocating"
+    },
+    {
+      "key": "[\"reading_440\",\"passage220\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:46285-46325",
+      "sentence_prefix": "Bison routinely"
+    },
+    {
+      "key": "[\"reading_440\",\"passage223\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:47003-47043",
+      "sentence_prefix": "Red squirrels would have to collect"
+    },
+    {
+      "key": "[\"reading_440\",\"passage224\",\"3\"]",
+      "source_ref": "wechat_rc_20260912:47242-47282",
+      "sentence_prefix": "Norman Rockwell was"
+    },
+    {
+      "key": "[\"reading_440\",\"passage228\",\"1\"]",
+      "source_ref": "wechat_rc_20260912:48199-48239",
+      "sentence_prefix": "Long marginalized"
+    },
+    {
+      "key": "[\"reading_440\",\"passage267\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:57872-57914",
+      "sentence_prefix": "We take for granted"
+    },
+    {
+      "key": "[\"reading_440\",\"passage305\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:66965-67005",
+      "sentence_prefix": "He offered no mechanism"
+    },
+    {
+      "key": "[\"reading_440\",\"passage376\",\"1\"]",
+      "source_ref": "wechat_rc_20260912:83955-84222",
+      "sentence_prefix": "The first is self-consciously revisionist"
+    },
+    {
+      "key": "[\"reading_440\",\"passage435\",\"2\"]",
+      "source_ref": "wechat_rc_20260912:98140-98498",
+      "sentence_prefix": "Ralph Ellison"
+    },
+    {
+      "key": "[\"reading_440\",\"passage207\",\"1\"]",
+      "source_ref": "wechat_rc_20260912:43175-43215",
+      "sentence_prefix": "The possibility exists"
+    },
+    {
+      "key": "[\"reading_440\",\"passage154\",\"1\"]",
+      "source_ref": "wechat_rc_20260912:32531-32650",
+      "publisher_correction": "原图注明2019-07-10由C改为A"
+    }
+  ]
+}

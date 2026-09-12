@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Header, Modal, Empty } from "./components";
+import AiReview, { ReviewText } from "./AiReview";
 import { request, download, typeNames } from "./api";
 const labels = {
+  ai_review: "AI讲解与复盘",
   vocab_recall: "词汇回忆自评",
   vocab_upsert: "编辑生词",
   vocab_delete: "移除生词",
@@ -12,10 +14,11 @@ const labels = {
   attempt: "答题",
   material_upload: "上传 PDF",
 };
-export default function History({ state }) {
+export default function History({ state, refresh }) {
   const [tab, setTab] = useState("attempts"),
     [record, setRecord] = useState(null),
-    [search, setSearch] = useState("");
+    [search, setSearch] = useState(""),
+    [selectedAttempt, setSelectedAttempt] = useState(null);
   async function open(r) {
     try {
       const data = await request(
@@ -37,6 +40,7 @@ export default function History({ state }) {
               attempts: state.attempts,
               vocabulary_recalls: state.vocabulary.flatMap((w) => w.recalls),
               events: state.events,
+              ai_reviews: state.reviews || [],
             })
           }
         >
@@ -48,6 +52,7 @@ export default function History({ state }) {
           ["attempts", "平台作答"],
           ["events", "操作与自评"],
           ["legacy", "历史训练"],
+          ["ai", "AI复盘"],
         ].map(([key, name]) => (
           <button
             className={tab === key ? "selected" : ""}
@@ -91,6 +96,7 @@ export default function History({ state }) {
                   {a.expected ? `　参考答案：${a.expected}` : ""}
                 </p>
                 {a.note && <p>思路：{a.note}</p>}
+                <button className="text-button" onClick={() => setSelectedAttempt(a.id)}>AI讲解</button>
                 <details>
                   <summary>解析</summary>
                   <p>{a.explanation || "尚未提供解析。"}</p>
@@ -105,6 +111,7 @@ export default function History({ state }) {
             ))}
           </div>
         ))}
+      {tab === "ai" && <><AiReview state={state} refresh={refresh} scope="recent" />{(state.reviews || []).filter(r => r.scope === "attempt").map(r => <ReviewText key={r.id} review={r} attempt={state.attempts.find(a => a.id === r.attempt_id)} />)}</>}
       {tab === "events" &&
         (!state.events.length ? (
           <Empty title="还没有平台操作记录" />
@@ -147,6 +154,7 @@ export default function History({ state }) {
           </div>
         </>
       )}
+      {selectedAttempt && <Modal title="AI讲解" onClose={() => setSelectedAttempt(null)}><AiReview state={state} refresh={refresh} attempt={state.attempts.find(a => a.id === selectedAttempt)} /></Modal>}
       {record && (
         <Modal title={record.title} onClose={() => setRecord(null)}>
           <pre className="record-text">{record.text}</pre>

@@ -4,7 +4,7 @@ import YAML from "yaml";
 import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
 import { keyOf } from "./store.mjs";
 
-const version = 4;
+const version = 6;
 const sources = {
   tc: ["text_completion_2000", 14],
   se: ["text_completion_2000", 14],
@@ -52,16 +52,39 @@ function regions(rows, fullPage = false) {
   }
   return result;
 }
-function optionLetters(rows) {
-  return [...new Set(rows.flatMap(r => [...r.text.matchAll(/(?:^|\s)([A-I])[.．]\s*/g)].map(m => m[1])))].sort();
+function optionMatches(text, type) {
+  // Reading uses at most A–E. An author's initial (e.g. I. Schoep) is prose.
+  return [...text.matchAll(new RegExp(`(?:^|\\s)([A-${type === "rc" ? "E" : "I"}])[.．]\\s*`, "g"))];
 }
-function verbalText(rows, passageRows, mode) {
+function optionRows(rows, type) {
+  if (type === "quant") return rows;
+  return rows.map((row, i) => {
+    let text = row.text.replace(/([.!?])([A-I])[.．](?=\s)/g, "$1 $2. ");
+    const bare = text.match(/^([A-I])\s+(.+)/);
+    // A missing dot is recoverable only between the neighbouring option labels.
+    if (bare && i > 0 && i + 1 < rows.length) {
+      const code = bare[1].charCodeAt(0);
+      const before = optionMatches(rows[i - 1].text, type).at(-1)?.[1];
+      const after = optionMatches(rows[i + 1].text, type)[0]?.[1];
+      if (before === String.fromCharCode(code - 1) && after === String.fromCharCode(code + 1)) text = `${bare[1]}. ${bare[2]}`;
+    }
+    return text === row.text ? row : { ...row, text };
+  });
+}
+function optionLetters(rows, type) {
+  return [...new Set(rows.flatMap(r => optionMatches(r.text, type).map(m => m[1])))].sort();
+}
+function verbalText(rows, passageRows, mode, type) {
   const clean = value => value.replace(/【[^】]*】/g, "").replace(/([a-z])-\s+([a-z])/g, "$1-$2").trim();
-  const first = rows.findIndex(r => /(?:^|\s)[A-I][.]\s*/.test(r.text));
+  const first = rows.findIndex(r => optionMatches(r.text, type).length);
   const options = {}, promptRows = first < 0 ? rows : rows.slice(0, first);
+  if (first >= 0) {
+    const prefix = rows[first].text.slice(0, optionMatches(rows[first].text, type)[0].index).trim();
+    if (prefix) promptRows.push({ ...rows[first], text: prefix });
+  }
   let previous = "", columns = false, safe = true;
   for (const row of first < 0 ? [] : rows.slice(first)) {
-    const matches = [...row.text.matchAll(/(?:^|\s)([A-I])[.]\s*/g)];
+    const matches = optionMatches(row.text, type);
     if (matches.length > 1) columns = true;
     if (matches.length) {
       matches.forEach((m, i) => { options[m[1]] = (options[m[1]] || "") + row.text.slice(m.index + m[0].length, matches[i + 1]?.index ?? row.text.length); });
@@ -83,8 +106,9 @@ function verbalText(rows, passageRows, mode) {
     native: safe && !/�/.test(prompt) && !/highlighted|boldface|bolded|bold type|bold print/i.test(prompt) && (first >= 0 || mode === "sentence") };
 }
 function makeQuestion(material, unit, number, type, rows, passageRows = []) {
+  rows = optionRows(rows, type);
   const text = rows.map(r => r.text).join(" ");
-  let letters = optionLetters(rows), mode = "single", groups;
+  let letters = optionLetters(rows, type), mode = "single", groups;
   if (type === "tc") {
     if (letters.length === 6 && !/\(ii\)/i.test(text)) type = "se";
     else if (letters.length === 6 || letters.length === 9) {
@@ -96,15 +120,15 @@ function makeQuestion(material, unit, number, type, rows, passageRows = []) {
   if (type === "quant" && /Quantity\s*A/i.test(text) && /Quantity\s*B/i.test(text)) {
     mode = "comparison";
     letters = ["A", "B", "C", "D"];
-  } else if (type === "rc" && /select (?:the |a )?sentence/i.test(text)) mode = "sentence";
+  } else if (type === "rc" && /(?:select|click on) (?:the |a )?sentence/i.test(text)) mode = "sentence";
   else if ((type === "rc" && letters.length === 3) || /select all|indicate all|one or more/i.test(text)) mode = "multiple";
   else if (!letters.length) mode = "entry";
-  const passage = passageRows.map(r => r.text).join(" ").replace(/【[^】]*】/g, "").replace(/^Passage\s*\d+\s*/i, "");
+  const passage = passageRows.map(r => r.text).join(" ").replace(/【[^】]*】/g, "").replace(/^Passage\s*\d+\s*/i, "").replace(/([a-z])-\s+([a-z])/g, "$1-$2");
   const q = {
     material, unit, question: String(number), type, mode, letters, groups,
     regions: regions(rows, type === "quant"), passageRegions: regions(passageRows),
     sentences: mode === "sentence" ? [...new Intl.Segmenter("en", { granularity: "sentence" }).segment(passage)].map(s => s.segment.trim()).filter(Boolean) : undefined,
-    ...(type !== "quant" ? verbalText(rows, passageRows, mode) : {}),
+    ...(type !== "quant" ? verbalText(rows, passageRows, mode, type) : {}),
   };
   return { ...q, key: keyOf(q) };
 }
@@ -117,13 +141,15 @@ export function parseBook(material, rows) {
       if (!passage.length) return;
       const number = passage[0].text.match(/^Passage\s*(\d+)/i)?.[1];
       if (!number) return;
-      const markers = passage.flatMap((r, i) => /^\d{1,2}[.]\s+\D/.test(r.text) && r.items[0].x < 65 ? [i] : []);
-      if (!markers.length) {
+      const markers = passage.flatMap((r, i) => /^\d{1,2}[.](?=\s*[^\s\d])/.test(r.text) && r.items[0].x < 65 ? [i] : []);
+      // Some passages omit "1." but retain "2."; the first options still
+      // provide a source boundary for that unnumbered first question.
+      if (!markers.length || /^2[.]/.test(passage[markers[0]].text)) {
         const a = passage.findIndex(r => /^A[.]\s*/.test(r.text));
-        if (a > 1) {
+        if (a > 1 && (!markers.length || a < markers[0])) {
           let start = a - 1;
           while (start > 1 && passage[start].page === passage[start - 1].page && passage[start].y - passage[start - 1].y < 20) start--;
-          markers.push(start);
+          markers.unshift(start);
         }
       }
       if (!markers.length) return; // image-only or unknown layout: never invent a question
@@ -152,7 +178,7 @@ export function parseBook(material, rows) {
         unit = quant ? `section${section[1]}_${/easy|medium|hard/i.test(section[2]) ? section[2].toLowerCase() : "data"}` : `test${section[1]}_section${section[2]}_${section[3].toLowerCase()}`;
         continue;
       }
-      const marker = row.text.match(/^(\d{1,3})[.](?:\s+|$)/);
+      const marker = row.text.match(quant ? /^(\d{1,3})[.](?:\s+|$)/ : /^(\d{1,3})[.](?=\s*[^\s\d]|\s*$)/);
       // Math table values are not question numbers: require the left text margin.
       if (marker && row.items[0].x < (quant ? 100 : 65) && (quant || Number(marker[1]) <= 20)) {
         finish();

@@ -106,7 +106,9 @@ materials:
     sha256: 7802A91A9B58AF1C2A71323050CF3825BA403C146A343D7E8A8424EAC0E2F34C
     role: primary_reading_drill
     structure: 440_passages
-    answer_status: external_not_present
+    answer_status: external_available
+    answer_record: materials/answer-sources/20260912_wechat.json
+    answer_count: 893
   - id: text_completion_2000
     filename: 张巍GRE填空机经2000题.pdf
     repo_path: materials/files/张巍GRE填空机经2000题.pdf
@@ -116,7 +118,9 @@ materials:
     sha256: 08AF079FFF905E997673C6B6037CA9A56D0BC7634CF7B83039AC2D9B9909FB23
     role: primary_text_completion_drill
     structure: tests_with_easy_medium_hard_sections
-    answer_status: external_not_present
+    answer_status: external_available
+    answer_record: materials/answer-sources/20260912_wechat.json
+    answer_count: 2002
     answer_retrieval:
       channel: wechat_official_account
       account: 张巍GRE
@@ -165,7 +169,5 @@ missing_for_plan:
     requirement: 50_pages_per_day
     status: not_provided
 missing_answer_sets:
-  - for_material: reading_440
-  - for_material: text_completion_2000
   - for_material: quant_900
   - for_material: quant_170_hard_4_0

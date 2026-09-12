@@ -16,6 +16,7 @@ const kinds = new Set([
   "attempt",
   "attempts_import",
   "material_upload",
+  "ai_review",
 ]);
 const types = new Set(["tc", "se", "rc", "quant"]);
 const text = (v, name, max = 10000, optional = false) => {
@@ -45,6 +46,17 @@ function attempt(p) {
 export function validate(kind, p) {
   if (!kinds.has(kind) || !p || typeof p !== "object")
     throw new Error("不支持的操作");
+  if (kind === "ai_review") {
+    if (!["attempt", "recent"].includes(p.scope) || !p.result || !/^[a-f0-9]{64}$/.test(p.input_hash)) throw new Error("AI分析记录不完整");
+    if (!["supported", "needs_review"].includes(p.result.assessment) || !Array.isArray(p.result.technique_ids)) throw new Error("AI分析结果格式不正确");
+    return {
+      scope: p.scope, attempt_id: p.scope === "attempt" ? text(p.attempt_id, "作答编号", 120) : null,
+      input_hash: p.input_hash, model: text(p.model, "模型", 100), provider: "codex_cli", provisional: true,
+      expected_answer: text(p.expected_answer, "生成时参考答案", 1000, true) || null,
+      result: { summary: text(p.result.summary, "结论", 2000), evidence: text(p.result.evidence, "证据", 6000), reasoning_gap: text(p.result.reasoning_gap, "推理与错因", 3000), next_action: text(p.result.next_action, "下一步", 3000),
+        technique_ids: p.result.technique_ids.slice(0,8).map(id => text(id, "技巧ID", 100)), assessment: p.result.assessment },
+    };
+  }
   if (kind === "material_upload") {
     if (!/^materials\/uploads\/[0-9a-f-]+\.pdf$/.test(p.repo_path))
       throw new Error("上传路径不合法");
@@ -97,7 +109,12 @@ export function validate(kind, p) {
       answer: answer || null,
       explanation: text(item.explanation, "解析", 10000, true),
       answer_source: "user_provided",
+      source_ref: text(item.source_ref, "答案来源定位", 500, true),
     };
+    if (item.answer_format !== undefined) {
+      if (item.answer_format !== "sentence" || item.type !== "rc") throw new Error("选句答案只适用于Reading");
+      result.answer_format = "sentence";
+    }
     if (kind === "questions_import") {
       result.prompt = text(item.prompt, "题目", 16000);
       result.options = item.options ?? [];
@@ -115,8 +132,13 @@ export function validate(kind, p) {
   return { items };
 }
 
-export function grade(answer, expected, type) {
+export function grade(answer, expected, type, format) {
   if (!expected) return null;
+  // An explicitly sourced sentence is a selection, not a semantic free-text answer.
+  if (type === "rc" && format === "sentence") {
+    const sentence = v => v.normalize("NFKC").replace(/([a-z])-\s+([a-z])/g, "$1-$2").replace(/\s+/g, " ").trim();
+    return sentence(answer) === sentence(expected);
+  }
   const clean = (v) =>
     v
       .trim()
@@ -305,9 +327,10 @@ export class Store {
       }
     const questions = new Map(),
       keys = new Map(),
-      attempts = [];
+      attempts = [], reviews = [];
     for (const e of events) {
       const p = e.payload;
+      if (e.kind === "ai_review") reviews.push({ ...p, id: e.id, recorded_at: e.recorded_at });
       if (e.kind === "vocab_upsert") {
         const old = words.get(p.word) || {
           status: "未检验",
@@ -382,12 +405,13 @@ export class Store {
       ),
       questions: [...questions.values()],
       keys: Object.fromEntries(keys),
+      reviews: reviews.reverse(),
       attempts: attempts
         .map((a) => {
           const k = keys.get(keyOf(a));
           return {
             ...a,
-            result: grade(a.answer, k?.answer, a.type),
+            result: grade(a.answer, k?.answer, a.type, k?.answer_format),
             expected: k?.answer || null,
             explanation: k?.explanation || "",
             answer_source: k?.answer_source || "unavailable",

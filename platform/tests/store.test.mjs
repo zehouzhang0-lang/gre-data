@@ -70,6 +70,9 @@ test("grading respects ordered TC blanks, unordered SE choices, numeric fraction
   assert.equal(grade("1/2", "0.5", "quant"), true);
   assert.equal(grade("无限", "inf", "quant"), null);
   assert.equal(grade("说明文字", "说明文字", "rc"), null);
+  assert.equal(grade("The evidence\n is limited.", "The evidence is limited.", "rc", "sentence"), true);
+  assert.equal(grade("The evidence is strong.", "The evidence is limited.", "rc", "sentence"), false);
+  assert.equal(grade("Sea-level changes.", "Sea- level changes.", "rc", "sentence"), true);
   assert.equal(grade("A", null, "tc"), null);
 });
 test("import validation rejects duplicate locations, missing prompts and oversized batches", () => {

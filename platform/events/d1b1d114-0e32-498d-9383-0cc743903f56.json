@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "d1b1d114-0e32-498d-9383-0cc743903f56",
+  "recorded_at": "2026-09-12T15:46:00.574Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "c840a7b8-1faa-4f21-a8e1-6594d9d14600",
+    "input_hash": "45e79f26e3b4b3db63b6b8928ea2ab7b28ee0f43dde8c2329c4b280610505d66",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": null,
+    "result": {
+      "summary": "AI暂定：B（insular，思想封闭、眼界狭隘）最符合句意，与你的作答一致。资料未提供参考答案，此判断不代表出版方答案。",
+      "evidence": "先预测逻辑：paradox（悖论）提示两种特征形成反差；cosmopolitan指具有世界眼光，因此空格应表达眼界封闭、局限于自身。检查唯一空格：insular与cosmopolitan直接对立；through their empire说明世界性特征的来源。A capricious（反复无常）、C mercenary（唯利是图）、D idealistic（理想主义的）、E intransigent（不妥协的）均不能形成同样明确的语义反差。both…and连接的两种特征在此由paradox明确构成矛盾。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。作答B符合AI暂定推导，但不能据此确认你使用了逻辑线索或掌握了词义。标签：读题／策略（本题检查维度，非已证实弱项）；无用时数据，不能评价时间管理。",
+      "next_action": "下次先圈出paradox，再遮住选项写下预测“眼界封闭”，随后逐项核对与cosmopolitan的关系。本题可补写一句选择B的理由，并用自己的话解释insular，以提供可检验的推理和词义证据。",
+      "technique_ids": [
+        "v_tc_logic_map"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

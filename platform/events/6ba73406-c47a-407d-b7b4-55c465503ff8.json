@@ -1,0 +1,2010 @@
+{
+  "schema_version": 1,
+  "id": "6ba73406-c47a-407d-b7b4-55c465503ff8",
+  "recorded_at": "2026-09-12T15:41:47.577Z",
+  "kind": "keys_import",
+  "payload": {
+    "items": [
+      {
+        "material": "text_completion_2000",
+        "unit": "test86_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:39731-39768"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test86_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "DE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:39731-39768"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40027-40064"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40027-40064"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "AEI",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40027-40064"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "AC",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40027-40064"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40027-40064"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40027-40064"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40027-40064"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section2_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "D",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40175-40212"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section2_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40175-40212"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section2_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40175-40212"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section2_medium",
+        "question": "4",
+        "type": "tc",
+        "answer": "BDG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40175-40212"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section2_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40175-40212"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40175-40212"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test87_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "DE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40175-40212"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section1_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40471-40508"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section1_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40471-40508"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section1_easy",
+        "question": "3",
+        "type": "tc",
+        "answer": "BDG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40471-40508"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section1_easy",
+        "question": "4",
+        "type": "se",
+        "answer": "CE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40471-40508"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section1_easy",
+        "question": "5",
+        "type": "se",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40471-40508"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section1_easy",
+        "question": "6",
+        "type": "se",
+        "answer": "AD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40471-40508"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section1_easy",
+        "question": "7",
+        "type": "se",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40471-40508"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section2_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40618-40655"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section2_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40618-40655"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section2_easy",
+        "question": "3",
+        "type": "tc",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40618-40655"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section2_easy",
+        "question": "4",
+        "type": "tc",
+        "answer": "BDG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40618-40655"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section2_easy",
+        "question": "5",
+        "type": "se",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40618-40655"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section2_easy",
+        "question": "6",
+        "type": "se",
+        "answer": "BC",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40618-40655"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test88_section2_easy",
+        "question": "7",
+        "type": "se",
+        "answer": "AC",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40618-40655"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "B",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40914-40951"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40914-40951"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "AEG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40914-40951"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40914-40951"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40914-40951"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "AF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40914-40951"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:40914-40951"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section2_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41062-41099"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section2_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "CE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41062-41099"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section2_easy",
+        "question": "3",
+        "type": "tc",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41062-41099"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section2_easy",
+        "question": "4",
+        "type": "tc",
+        "answer": "ADI",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41062-41099"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section2_easy",
+        "question": "5",
+        "type": "se",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41062-41099"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section2_easy",
+        "question": "6",
+        "type": "se",
+        "answer": "AD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41062-41099"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test89_section2_easy",
+        "question": "7",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41062-41099"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "B",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41358-41395"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41358-41395"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "BDH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41358-41395"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "AC",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41358-41395"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41358-41395"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41358-41395"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41358-41395"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section2_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "B",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41506-41543"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section2_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "B",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41506-41543"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section2_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41506-41543"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section2_medium",
+        "question": "4",
+        "type": "tc",
+        "answer": "ADH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41506-41543"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section2_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "BC",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41506-41543"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "CE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41506-41543"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test90_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "DE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41506-41543"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "D",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41802-41839"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "AF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41802-41839"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CEH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41802-41839"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41802-41839"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "AD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41802-41839"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41802-41839"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41802-41839"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section2_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "B",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41950-41987"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section2_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41950-41987"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section2_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41950-41987"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section2_medium",
+        "question": "4",
+        "type": "tc",
+        "answer": "CDG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41950-41987"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section2_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41950-41987"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41950-41987"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test91_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:41950-41987"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42246-42283"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42246-42283"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "BFG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42246-42283"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "CE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42246-42283"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42246-42283"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42246-42283"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "BC",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42246-42283"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section2_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "E",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42394-42431"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section2_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42394-42431"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section2_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "AF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42394-42431"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section2_medium",
+        "question": "4",
+        "type": "tc",
+        "answer": "CDI",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42394-42431"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section2_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42394-42431"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42394-42431"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test92_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "EF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42394-42431"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "A",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42690-42727"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42690-42727"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "ADG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42690-42727"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42690-42727"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42690-42727"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42690-42727"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42690-42727"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section2_hard",
+        "question": "1",
+        "type": "tc",
+        "answer": "E",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42838-42875"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section2_hard",
+        "question": "2",
+        "type": "tc",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42838-42875"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section2_hard",
+        "question": "3",
+        "type": "tc",
+        "answer": "CE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42838-42875"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section2_hard",
+        "question": "4",
+        "type": "tc",
+        "answer": "AEH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42838-42875"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section2_hard",
+        "question": "5",
+        "type": "se",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42838-42875"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section2_hard",
+        "question": "6",
+        "type": "se",
+        "answer": "AF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42838-42875"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test93_section2_hard",
+        "question": "7",
+        "type": "se",
+        "answer": "EF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:42838-42875"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "A",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43134-43171"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "AF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43134-43171"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CDI",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43134-43171"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "CE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43134-43171"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43134-43171"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43134-43171"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43134-43171"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section2_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "D",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43282-43319"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section2_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43282-43319"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section2_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43282-43319"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section2_medium",
+        "question": "4",
+        "type": "tc",
+        "answer": "BDH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43282-43319"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section2_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "AD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43282-43319"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43282-43319"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test94_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "EF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43282-43319"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "D",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43578-43615"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43578-43615"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CDH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43578-43615"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43578-43615"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43578-43615"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "DE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43578-43615"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43578-43615"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section2_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "D",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43725-43762"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section2_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "C",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43725-43762"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section2_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43725-43762"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section2_medium",
+        "question": "4",
+        "type": "tc",
+        "answer": "CFH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43725-43762"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section2_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "EF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43725-43762"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "AC",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43725-43762"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test95_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:43725-43762"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "E",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44021-44058"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44021-44058"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "BEI",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44021-44058"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44021-44058"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44021-44058"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "AB",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44021-44058"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44021-44058"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section2_hard",
+        "question": "1",
+        "type": "tc",
+        "answer": "B",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44169-44206"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section2_hard",
+        "question": "2",
+        "type": "tc",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44169-44206"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section2_hard",
+        "question": "3",
+        "type": "tc",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44169-44206"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section2_hard",
+        "question": "4",
+        "type": "tc",
+        "answer": "AEI",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44169-44206"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section2_hard",
+        "question": "5",
+        "type": "se",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44169-44206"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section2_hard",
+        "question": "6",
+        "type": "se",
+        "answer": "AD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44169-44206"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test96_section2_hard",
+        "question": "7",
+        "type": "se",
+        "answer": "EF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44169-44206"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44465-44502"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "CE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44465-44502"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CDG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44465-44502"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44465-44502"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "AB",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44465-44502"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "AC",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44465-44502"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44465-44502"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section2_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "D",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44613-44650"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section2_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "E",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44613-44650"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section2_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44613-44650"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section2_medium",
+        "question": "4",
+        "type": "tc",
+        "answer": "BFG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44613-44650"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section2_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44613-44650"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "AE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44613-44650"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test97_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44613-44650"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "D",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44909-44946"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44909-44946"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CDH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44909-44946"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44909-44946"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "AD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44909-44946"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44909-44946"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:44909-44946"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section2_hard",
+        "question": "1",
+        "type": "tc",
+        "answer": "E",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45057-45094"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section2_hard",
+        "question": "2",
+        "type": "tc",
+        "answer": "AD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45057-45094"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section2_hard",
+        "question": "3",
+        "type": "tc",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45057-45094"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section2_hard",
+        "question": "4",
+        "type": "tc",
+        "answer": "BFG",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45057-45094"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section2_hard",
+        "question": "5",
+        "type": "se",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45057-45094"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section2_hard",
+        "question": "6",
+        "type": "se",
+        "answer": "BC",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45057-45094"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test98_section2_hard",
+        "question": "7",
+        "type": "se",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45057-45094"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section1_hard",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45353-45390"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section1_hard",
+        "question": "2",
+        "type": "tc",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45353-45390"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section1_hard",
+        "question": "3",
+        "type": "tc",
+        "answer": "CFH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45353-45390"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section1_hard",
+        "question": "4",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45353-45390"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section1_hard",
+        "question": "5",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45353-45390"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section1_hard",
+        "question": "6",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45353-45390"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section1_hard",
+        "question": "7",
+        "type": "se",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45353-45390"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section2_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "E",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45501-45538"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section2_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "D",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45501-45538"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section2_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45501-45538"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section2_medium",
+        "question": "4",
+        "type": "tc",
+        "answer": "AEH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45501-45538"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section2_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45501-45538"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45501-45538"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test99_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45501-45538"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "A",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45797-45834"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "BE",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45797-45834"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section1_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "CDI",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45797-45834"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section1_medium",
+        "question": "4",
+        "type": "se",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45797-45834"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section1_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "AD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45797-45834"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section1_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "CF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45797-45834"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section1_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45797-45834"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section2_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "B",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45945-45982"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section2_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "AD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45945-45982"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section2_medium",
+        "question": "3",
+        "type": "tc",
+        "answer": "BD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45945-45982"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section2_medium",
+        "question": "4",
+        "type": "tc",
+        "answer": "AFH",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45945-45982"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section2_medium",
+        "question": "5",
+        "type": "se",
+        "answer": "DF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45945-45982"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section2_medium",
+        "question": "6",
+        "type": "se",
+        "answer": "CD",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45945-45982"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test100_section2_medium",
+        "question": "7",
+        "type": "se",
+        "answer": "AB",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:45945-45982"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test101_section1_medium",
+        "question": "1",
+        "type": "tc",
+        "answer": "A",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:46241-46278"
+      },
+      {
+        "material": "text_completion_2000",
+        "unit": "test101_section1_medium",
+        "question": "2",
+        "type": "tc",
+        "answer": "BF",
+        "explanation": "",
+        "answer_source": "user_provided",
+        "source_ref": "wechat_tc_20260912:46241-46278"
+      }
+    ]
+  }
+}
