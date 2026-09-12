@@ -1,386 +1,111 @@
-import { useEffect, useState } from "react";
-import { Header, Icon, Field, Empty } from "./components";
-import { save, keyOf, typeNames } from "./api";
+import { useEffect, useRef, useState } from "react";
+import { Header, Icon, Field, Empty, Modal } from "./components";
+import { request, save, keyOf, typeNames } from "./api";
 import ImportDialog from "./ImportDialog";
-import PdfReader from "./PdfReader";
-const draftKey = "gre:practice:v1";
-function initial() {
-  try {
-    return JSON.parse(localStorage.getItem(draftKey)) || {};
-  } catch {
-    return {};
-  }
+import PdfExcerpt, { useSourcePdf } from "./PdfExcerpt";
+
+const draftKey = "gre:practice:v2";
+function readDraft() { try { return JSON.parse(localStorage.getItem(draftKey)) || {}; } catch { return {}; } }
+function title(q) {
+  return `${q.unit.replace(/^test(\d+)_section(\d+)_(\w+)$/, "Test $1 · Section $2 · $3").replace(/^passage(\d+)$/, "Passage $1").replace(/^section(\d+)_(\w+)$/, "Section $1 · $2")} · 第 ${q.question} 题`;
 }
+function prepare(q) {
+  if (q.regions) return q;
+  const letters = (q.options || []).map((_, i) => String.fromCharCode(65 + i));
+  const mode = q.type === "se" ? "pair" : !letters.length ? "entry" : q.type === "tc" && /\(ii\)/i.test(q.prompt) ? "blanks" : /select all|indicate all|one or more/i.test(q.prompt) || q.type === "rc" && letters.length === 3 ? "multiple" : "single";
+  return { ...q, letters, mode, groups: mode === "blanks" ? Array.from({ length: Math.ceil(letters.length / 3) }, (_, i) => letters.slice(i * 3, i * 3 + 3)) : undefined };
+}
+
 export default function Practice({ state, refresh, notify }) {
-  const [draft, setDraft] = useState(() => ({
-    type: "se",
-    material: "text_completion_2000",
-    unit: "test2_section1_easy",
-    question: "6",
-    page: 17,
-    answer: "",
-    note: "",
-    ...initial(),
-  }));
-  const [dialog, setDialog] = useState(null),
-    [showPdf, setShowPdf] = useState(true),
-    [revealed, setRevealed] = useState(false),
-    [busy, setBusy] = useState(false),
-    [started, setStarted] = useState(null);
-  const [error, setError] = useState("");
-  const change = (patch) => {
-    setDraft((d) => ({ ...d, ...patch }));
-    if (
-      "question" in patch ||
-      "unit" in patch ||
-      "material" in patch ||
-      "type" in patch
-    ) {
-      setRevealed(false);
-      setStarted(null);
-    }
-  };
+  const [type, setType] = useState(() => readDraft().type || "se");
+  const [bank, setBank] = useState(null), [current, setCurrent] = useState(""), [loading, setLoading] = useState(true);
+  const [answer, setAnswer] = useState(""), [note, setNote] = useState(""), [saved, setSaved] = useState(false);
+  const [error, setError] = useState(""), [busy, setBusy] = useState(false), [dialog, setDialog] = useState(null), [generation, setGeneration] = useState(0);
+  const attemptId = useRef(crypto.randomUUID());
+  const bankSignature = state.questions.map(q => q.key + q.prompt + JSON.stringify(q.options)).join("|");
   useEffect(() => {
-    localStorage.setItem(draftKey, JSON.stringify(draft));
-  }, [draft]);
-  const material = state.materials.find((m) => m.id === draft.material);
-  const currentKey = keyOf(draft),
-    question = state.questions.find((q) => q.key === currentKey),
-    answerKey = state.keys[currentKey];
-  const last = state.attempts.find((a) => keyOf(a) === currentKey);
-  const pdfUrl = `/api/material/${encodeURIComponent(draft.material)}#page=${draft.page}&view=FitH`;
-  const questions = state.questions.filter((q) => q.type === draft.type);
-  async function submit(next = false) {
-    setBusy(true);
-    setError("");
+    let active = true;
+    setLoading(true); setError(""); setBank(null);
+    request(`/api/practice?type=${type}`).then(data => {
+      if (!active) return;
+      const draft = readDraft()[type];
+      const q = data.questions.find(q => q.key === draft?.key) || data.questions.find(q => q.key === data.recommended);
+      setBank({ ...data, type, questions: data.questions.map(prepare) });
+      setCurrent(q?.key || "");
+      setAnswer(q?.key === draft?.key ? draft.answer || "" : "");
+      setNote(q?.key === draft?.key ? draft.note || "" : "");
+      setSaved(q?.key === draft?.key && !!draft.saved);
+      attemptId.current = q?.key === draft?.key && draft.attemptId ? draft.attemptId : crypto.randomUUID();
+    }).catch(e => { if (active) setError(e.message); }).finally(() => { if (active) setLoading(false); });
+    return () => { active = false; };
+  }, [type, bankSignature, generation]);
+  useEffect(() => {
+    if (loading || !current || bank?.type !== type) return;
+    localStorage.setItem(draftKey, JSON.stringify({ ...readDraft(), type, [type]: { key: current, answer, note, saved, attemptId: attemptId.current } }));
+  }, [type, current, answer, note, saved, loading]);
+  const questions = bank?.questions || [], question = questions.find(q => q.key === current), index = questions.findIndex(q => q.key === current);
+  const { pdf, error: pdfError } = useSourcePdf(question?.regions && (!question.native || dialog === "source") ? question.material : null);
+  const latest = state.attempts.find(a => keyOf(a) === current), answerKey = state.keys[current];
+  const selected = answer ? answer.split("/") : [];
+  const valid = question && (question.mode === "pair" ? selected.length === 2 : question.mode === "blanks" ? question.groups.every(group => group.some(letter => selected.includes(letter))) : !!answer.trim());
+  function choose(q) {
+    if (!q || busy) return;
+    setCurrent(q.key); setAnswer(""); setNote(""); setSaved(false); setError(""); setDialog(null);
+    attemptId.current = crypto.randomUUID();
+  }
+  function select(letter, group) {
+    if (saved || busy) return;
+    attemptId.current = crypto.randomUUID();
+    if (group) setAnswer([...selected.filter(v => !group.includes(v)), letter].sort().join("/"));
+    else if (["pair", "multiple"].includes(question.mode)) {
+      if (selected.includes(letter)) setAnswer(selected.filter(v => v !== letter).join("/"));
+      else if (question.mode !== "pair" || selected.length < 2) setAnswer([...selected, letter].sort().join("/"));
+    } else setAnswer(letter);
+  }
+  async function submit() {
+    if (!valid || busy || saved) return;
+    setBusy(true); setError("");
     try {
-      await save("attempt", {
-        ...draft,
-        duration_seconds: started ? (Date.now() - started) / 1000 : null,
-      });
+      await save("attempt", { material: question.material, unit: question.unit, question: question.question, type, answer, note, duration_seconds: null }, attemptId.current);
+      setSaved(true);
+      setBank(b => ({ ...b, completed: [...new Set([...b.completed, current])] }));
       await refresh();
-      notify("答案已保存");
-      setRevealed(true);
-      if (next)
-        change({
-          question: String(Number(draft.question) + 1),
-          answer: "",
-          note: "",
-        });
-    } catch (e) {
-      setError(e.message);
-    } finally {
-      setBusy(false);
-    }
+    } catch (e) { setError(e.message); } finally { setBusy(false); }
   }
-  function tab(type) {
-    const defaults =
-      type === "quant"
-        ? { material: "quant_900", unit: "easy", page: 1, question: "1" }
-        : type === "rc"
-          ? {
-              material: "reading_440",
-              unit: "passage1",
-              page: 1,
-              question: "1",
-            }
-          : {
-              material: "text_completion_2000",
-              unit: type === "se" ? "test2_section1_easy" : "test1_section1_easy",
-              page: type === "se" ? 17 : 14,
-              question: type === "se" ? "6" : "1",
-            };
-    change({ ...defaults, type, answer: "", note: "" });
+  const captions = { pair: "选择两项", blanks: "每空选择一项", multiple: "选择所有符合的选项", single: "选择一项", comparison: "比较两项数量", entry: "输入答案", sentence: "点击文章中的一句" };
+  const comparison = { A: "Quantity A 较大", B: "Quantity B 较大", C: "两项相等", D: "无法确定关系" };
+  function options(letters, group) {
+    return <div className={`answer-options ${question.mode === "comparison" || (question.native || !question.regions) && question.options?.length ? "with-text" : ""}`}>
+      {letters.map(letter => <button key={letter} className={selected.includes(letter) ? "chosen" : ""} aria-pressed={selected.includes(letter)} disabled={busy || saved} onClick={() => select(letter, group)}>
+        <b>{letter}</b>{question.mode === "comparison" ? comparison[letter] : (question.native || !question.regions) ? question.options?.[question.letters.indexOf(letter)] || "" : ""}
+      </button>)}
+    </div>;
   }
-  return (
-    <>
-      <Header title="刷题练习" description="专注一道题，留下可复盘的答案。">
-        <button onClick={() => setDialog("questions")}>
-          <Icon name="upload" />
-          导入题目
-        </button>
-      </Header>
-      <div className="tabs" role="tablist" aria-label="题型">
-        {Object.entries(typeNames).map(([type, name]) => (
-          <button
-            role="tab"
-            aria-selected={draft.type === type}
-            className={draft.type === type ? "selected" : ""}
-            key={type}
-            onClick={() => tab(type)}
-          >
-            {name}
-          </button>
-        ))}
-      </div>
-      <div className="practice-grid">
-        <section className="panel material-panel">
-          <h2>教材与题目</h2>
-          <div className="material-fields">
-            <Field label="教材">
-              <select
-                value={draft.material}
-                onChange={(e) =>
-                  change({
-                    material: e.target.value,
-                    page: 1,
-                    unit: "default",
-                    question: "1",
-                    answer: "",
-                  })
-                }
-              >
-                {state.materials.map((m) => (
-                  <option key={m.id} value={m.id}>
-                    {m.filename.replace(/\.pdf$/i, "")}
-                  </option>
-                ))}
-              </select>
-            </Field>
-            <Field label="页码">
-              <input
-                title="PDF文件页码（含封面），可能与书内印刷页码不同"
-                type="number"
-                min="1"
-                max={material?.pages || 9999}
-                value={draft.page}
-                onChange={(e) =>
-                  change({ page: Math.max(1, Number(e.target.value)) })
-                }
-              />
-            </Field>
+  return <>
+    <Header title="刷题练习" description="接着上次练，只需作答。"><button className="text-button" onClick={() => setDialog("questions")}><Icon name="upload" />导入题目</button></Header>
+    <div className="tabs" role="tablist" aria-label="题型">{Object.entries(typeNames).map(([id, name]) => <button key={id} role="tab" aria-selected={type === id} className={type === id ? "selected" : ""} disabled={busy} onClick={() => setType(id)}>{name}</button>)}</div>
+    {loading ? <div className="practice-loading" role="status">正在从已有教材准备题目…<small>首次整理后，本机会自动记住题目位置。</small></div> : !question ? <Empty title={error || "暂无可练习题目"}><button onClick={() => setGeneration(g => g + 1)}>重新读取</button><button onClick={() => setDialog("questions")}>导入题目</button></Empty> : <div className="guided-practice">
+      <div className="practice-heading"><div><small>{state.materials.find(m => m.id === question.material)?.filename.replace(/\.pdf$/i, "") || "导入题目"}</small><h2>{title(question)}</h2></div><div className="question-navigation"><button className="text-button" disabled={busy || index < 1} onClick={() => choose(questions[index - 1])}>← 上一题</button><button disabled={busy} onClick={() => setDialog("jump")}>换题</button></div></div>
+      <div className={`practice-content ${question.passageRegions?.length ? "has-passage" : ""}`}>
+        {!!question.passageRegions?.length && <section className="reading-passage" aria-label="阅读文章"><h3>文章</h3>{question.mode === "sentence" && question.sentences?.length ? <div className="sentence-passage">{question.sentences.map((sentence, i) => <button key={i} disabled={busy || saved} className={answer === sentence ? "chosen" : ""} aria-pressed={answer === sentence} onClick={() => setAnswer(sentence)}>{sentence}</button>)}</div> : question.native ? <div className="native-passage">{question.paragraphs.map((p, i) => <p key={i}>{p}</p>)}</div> : <PdfExcerpt pdf={pdf} regions={question.passageRegions} label={`${question.unit} 文章原文`} />}</section>}
+        <section className="question-workspace" aria-label="当前练习题">
+          {pdfError && <p role="alert" className="error">{pdfError}</p>}
+          <div className={`question-source ${type === "quant" ? "quant-source" : ""}`}>{question.regions && !question.native ? <PdfExcerpt pdf={pdf} regions={question.regions} label={title(question)} /> : <p className="imported-prompt">{question.prompt}</p>}</div>
+          <div className="guided-answer">
+            <div className="section-heading"><h3>{captions[question.mode]}</h3>{question.mode === "pair" && <small>{selected.length} / 2</small>}</div>
+            {question.mode === "blanks" ? question.groups.map((group, i) => <div className="blank-choice" key={i}><span>空 {i + 1}</span>{options(group, group)}</div>) : question.mode === "entry" ? <Field label="我的答案"><input autoComplete="off" disabled={busy || saved} placeholder={type === "quant" ? "输入数值、分数或原题选项" : "填写作答"} value={answer} onChange={e => setAnswer(e.target.value)} /></Field> : question.mode === "sentence" ? <p className="answer-hint">{answer ? "已选中一句，提交即可。" : "在文章中直接点选。"}</p> : options(question.letters)}
+            <details className="optional-note"><summary>补充思路</summary><textarea aria-label="解题思路" rows={3} disabled={busy || saved} value={note} onChange={e => setNote(e.target.value)} /></details>
+            {saved && <div className="answer-feedback" role="status"><strong>{answerKey ? latest?.result === true ? "答案一致" : latest?.result === false ? "答案不一致" : "待核对" : "已记录 · 待核对"}</strong>{answerKey ? <><p>参考答案：{answerKey.answer} <small>用户提供</small></p><p>{answerKey.explanation || "尚未补充解析。"}</p></> : <p>这份教材尚未附答案，作答已保留。</p>}<button className="text-button" onClick={() => setDialog("answers")}>{answerKey ? "更新答案与解析" : "补充答案与解析"}</button></div>}
+            {error && <p role="alert" className="error">{error}</p>}
+            <div className="guided-actions"><span>{index + 1} / {questions.length}</span>{!saved && <button className="text-button" disabled={busy || index === questions.length - 1} onClick={() => choose(questions[index + 1])}>暂时跳过</button>}{saved ? <button className="primary" disabled={index === questions.length - 1} onClick={() => choose(questions[index + 1])}>{index === questions.length - 1 ? "本题型已到最后一题" : "下一题 →"}</button> : <button className="primary" disabled={!valid || busy} onClick={submit}>{busy ? "正在保存…" : "提交答案"}</button>}</div>
+            {latest && !saved && <small className="prior-attempt">上次作答：{latest.answer} · {latest.result === null ? "待核对" : latest.result ? "答案一致" : "答案不一致"}</small>}
           </div>
-          <div className="document-tools">
-            <button
-              className="text-button"
-              onClick={() => setShowPdf((v) => !v)}
-            >
-              {showPdf ? "收起教材" : "显示教材"}
-            </button>
-            <a href={pdfUrl} target="_blank" rel="noreferrer">
-              单独打开 PDF ↗
-            </a>
-          </div>
-          {showPdf && material?.available ? (
-            <PdfReader
-              material={draft.material}
-              page={draft.page}
-              onPage={(page) => change({ page })}
-            />
-          ) : showPdf ? (
-            <Empty title="本机尚无此PDF">
-              <p>同步仓库资料后即可直接阅读。</p>
-            </Empty>
-          ) : null}
-          {questions.length > 0 && (
-            <Field label="已导入题目">
-              <select
-                value={question?.key || ""}
-                onChange={(e) => {
-                  const q = state.questions.find(
-                    (q) => q.key === e.target.value,
-                  );
-                  if (q)
-                    change({
-                      material: q.material,
-                      unit: q.unit,
-                      question: q.question,
-                      type: q.type,
-                      answer: "",
-                    });
-                }}
-              >
-                <option value="">选择题目</option>
-                {questions.map((q) => (
-                  <option key={q.key} value={q.key}>
-                    {q.unit} · {q.question}
-                  </option>
-                ))}
-              </select>
-            </Field>
-          )}
-          {question && (
-            <article className="question">
-              <h3>第 {question.question} 题</h3>
-              <p>{question.prompt}</p>
-              {question.options.map((option, i) => (
-                <button
-                  className={`option ${draft.answer.split("/").includes(String.fromCharCode(65 + i)) ? "chosen" : ""}`}
-                  key={i}
-                  onClick={() => {
-                    const letter = String.fromCharCode(65 + i);
-                    let answer = letter;
-                    if (
-                      draft.type === "se" ||
-                      draft.type === "rc" ||
-                      draft.type === "quant"
-                    ) {
-                      const selected = draft.answer
-                        ? draft.answer.split("/")
-                        : [];
-                      answer = (
-                        selected.includes(letter)
-                          ? selected.filter((a) => a !== letter)
-                          : [...selected, letter]
-                      ).join("/");
-                    }
-                    change({ answer });
-                  }}
-                >
-                  <b>{String.fromCharCode(65 + i)}</b>
-                  {option}
-                </button>
-              ))}
-            </article>
-          )}
-        </section>
-        <section className="panel answer-panel">
-          <h2>我的答案</h2>
-          <div className="answer-location">
-            <Field label="单元">
-              <input
-                value={draft.unit}
-                onChange={(e) => change({ unit: e.target.value })}
-              />
-            </Field>
-            <Field label="题号">
-              <input
-                value={draft.question}
-                onChange={(e) =>
-                  change({ question: e.target.value, answer: "", note: "" })
-                }
-              />
-            </Field>
-          </div>
-          <Field label="我的答案">
-            <textarea
-              rows={4}
-              placeholder="例如 A，或 D/F；多空按顺序填写 A/D/G"
-              value={draft.answer}
-              onChange={(e) => change({ answer: e.target.value })}
-            />
-          </Field>
-          <details>
-            <summary>记录思路（可选）</summary>
-            <textarea
-              aria-label="解题思路"
-              value={draft.note}
-              onChange={(e) => change({ note: e.target.value })}
-              rows={3}
-            />
-          </details>
-          <div className="answer-actions">
-            <button
-              className="text-button"
-              onClick={() => setStarted((v) => (v ? null : Date.now()))}
-            >
-              {started ? "计时中 · 取消" : "开始计时"}
-            </button>
-            <button
-              className="primary"
-              disabled={busy || !draft.answer.trim()}
-              onClick={() => submit()}
-            >
-              保存答案
-            </button>
-            {/^\d+$/.test(draft.question) && (
-              <button
-                disabled={busy || !draft.answer.trim()}
-                onClick={() => submit(true)}
-              >
-                保存并下一题 →
-              </button>
-            )}
-          </div>
-          {error && (
-            <p role="alert" className="error">
-              {error}
-            </p>
-          )}
-          <div className="divider" />
-          <div className="section-heading">
-            <h2>答案与解析</h2>
-            {answerKey && (
-              <button
-                className="text-button"
-                onClick={() => setDialog("answers")}
-              >
-                更新答案
-              </button>
-            )}
-          </div>
-          {answerKey ? (
-            revealed ? (
-              <div className="explanation">
-                <span className="result">
-                  {last
-                    ? last.result === true
-                      ? "答案一致"
-                      : last.result === false
-                        ? "答案不一致"
-                        : "待教练核对"
-                    : "参考答案"}
-                </span>
-                <h3>{answerKey.answer}</h3>
-                <p>
-                  {answerKey.explanation ||
-                    "尚未补充解析。可上传解析，或让教练结合题干核对。"}
-                </p>
-                <small>
-                  来源：用户提供{last ? ` · 我的答案：${last.answer}` : ""}
-                </small>
-                <button
-                  className="text-button"
-                  onClick={() => setRevealed(false)}
-                >
-                  隐藏答案
-                </button>
-              </div>
-            ) : (
-              <Empty title="先完成独立作答">
-                <button onClick={() => setRevealed(true)}>
-                  查看答案与解析
-                </button>
-              </Empty>
-            )
-          ) : (
-            <Empty title="尚未导入标准答案">
-              <p>
-                {last
-                  ? "作答已保存，待核对。"
-                  : "可上传答案和解析，随后核对作答。"}
-              </p>
-              <button onClick={() => setDialog("answers")}>
-                <Icon name="upload" />
-                上传答案
-              </button>
-            </Empty>
-          )}
         </section>
       </div>
-      <footer className="progress-strip">
-        <strong>上次词汇复习</strong>
-        <span>
-          {state.counts.answered ?? 0} / {state.counts.total ?? 0}
-        </span>
-        <progress
-          value={state.counts.answered || 0}
-          max={state.counts.total || 1}
-        />
-        <small>原进度已保留</small>
-      </footer>
-      {dialog && (
-        <ImportDialog
-          mode={dialog}
-          context={{
-            material: draft.material,
-            unit: draft.unit,
-            type: draft.type,
-          }}
-          onClose={() => setDialog(null)}
-          onSaved={refresh}
-        />
-      )}
-    </>
-  );
+      <div className="practice-footnote"><span>作答后自动保存进度 · 已有 {bank.completed.length} 题作答记录</span>{question.regions && <button className="text-button" onClick={() => setDialog("source")}>查看原题 ↗</button>}</div>
+    </div>}
+    {dialog === "source" && question && <Modal title="教材原题" onClose={() => setDialog(null)}>{pdfError && <p role="alert">{pdfError}</p>}<div className="original-source">{!!question.passageRegions?.length && <PdfExcerpt pdf={pdf} regions={question.passageRegions} label="文章原文" />}<PdfExcerpt pdf={pdf} regions={question.regions} label={title(question)} /></div><a href={`/api/material/${encodeURIComponent(question.material)}#page=${question.regions[0].page}`} target="_blank" rel="noreferrer">打开完整 PDF ↗</a></Modal>}
+    {dialog === "jump" && <Modal title="选择练习" onClose={() => setDialog(null)}><div className="question-picker">{questions.map((q, i) => <button key={q.key} className={q.key === current ? "chosen" : ""} onClick={() => choose(q)}><span>{title(q)}</span><small>{bank.completed.includes(q.key) ? "已作答" : `第 ${i + 1} 题`}</small></button>)}</div></Modal>}
+    {dialog && !["jump", "source"].includes(dialog) && <ImportDialog mode={dialog} context={{ material: question?.material || "text_completion_2000", unit: question?.unit || "default", type }} onClose={() => setDialog(null)} onSaved={async () => { await refresh(); notify("导入已保存"); }} />}
+  </>;
 }

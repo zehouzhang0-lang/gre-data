@@ -12,6 +12,7 @@ function App() {
   const [state, setState] = useState(null),
     [page, setPage] = useState("practice"),
     [error, setError] = useState(""),
+    [syncError, setSyncError] = useState(""),
     [toast, setToast] = useState(""),
     [syncing, setSyncing] = useState(false),
     [recallWords, setRecallWords] = useState(null);
@@ -25,7 +26,7 @@ function App() {
       revision.current = data.revision;
       setState(data);
     }
-    setError((previous) => previous.startsWith("本地服务") ? "" : previous);
+    setError("");
   }, []);
   useEffect(() => {
     refresh().catch((e) => setError(e.message));
@@ -47,10 +48,11 @@ function App() {
     setSyncing(true);
     try {
       const result = await post("/api/sync", {});
+      setSyncError("");
       await refresh();
       setToast(result.message);
     } catch (e) {
-      setError(e.message);
+      setSyncError(e.message);
     } finally {
       setSyncing(false);
     }
@@ -99,6 +101,12 @@ function App() {
         </div>
       </aside>
       <main>
+        {syncError && (
+          <div className="error-banner" role="alert">
+            <div><span>本次同步未完成，本地记录仍保留。</span><details><summary>查看原因</summary><p>{syncError}</p></details></div>
+            <button disabled={syncing} onClick={sync}>{syncing ? "正在同步…" : "重试同步"}</button>
+          </div>
+        )}
         {error && (
           <div className="error-banner" role="alert">
             <span>{error}</span>

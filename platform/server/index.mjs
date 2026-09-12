@@ -6,11 +6,14 @@ import { fileURLToPath } from "node:url";
 import { randomUUID } from "node:crypto";
 import { Store } from "./store.mjs";
 import { syncProgress } from "./sync.mjs";
+import { QuestionBank, legacyPractice } from "./question-bank.mjs";
+import { keyOf } from "./store.mjs";
 const appRoot = fileURLToPath(new URL("../..", import.meta.url));
 const root = process.env.GRE_DATA_ROOT
   ? path.resolve(process.env.GRE_DATA_ROOT)
   : appRoot;
 const store = new Store(root);
+const questionBank = new QuestionBank(root);
 const port = Number(process.env.PORT || 4173);
 const dev = process.argv.includes("--dev");
 const vite = dev
@@ -61,6 +64,21 @@ const server = http.createServer(async (req, res) => {
     if (req.headers["sec-fetch-site"] === "cross-site")
       return json(res, 403, { error: "不接受跨站请求" });
     const url = new URL(req.url, `http://${host}`);
+    if (req.method === "GET" && url.pathname === "/api/practice") {
+      const type = url.searchParams.get("type") || "se";
+      const state = await store.state();
+      const [indexed, legacy] = await Promise.all([
+        questionBank.load(type, state.materials), legacyPractice(store, type),
+      ]);
+      const imported = state.questions.filter(q => q.type === type);
+      const questions = [...new Map([...indexed, ...imported].map(q => [q.key, q])).values()];
+      const attempts = state.attempts.filter(a => a.type === type);
+      const completed = [...new Set([...attempts, ...legacy].map(keyOf))];
+      const last = attempts[0] || legacy[0];
+      const previousIndex = last ? questions.findIndex(q => q.key === keyOf(last)) : -1;
+      const next = questions.slice(previousIndex + 1).find(q => !completed.includes(q.key)) || questions.find(q => !completed.includes(q.key));
+      return json(res, 200, { questions, completed, recommended: next?.key || questions[0]?.key });
+    }
     if (req.method === "GET" && url.pathname === "/api/state") {
       const state = await store.state();
       return json(
