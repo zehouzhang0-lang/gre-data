@@ -1,0 +1,2647 @@
+{
+  "schema_version": 1,
+  "batch_id": "20260913_0001_handwritten_vocab",
+  "received_at": "2026-09-13T00:01:47+08:00",
+  "imported_at": "2026-09-12T17:19:10.870Z",
+  "material_id": "handwritten_vocab_20260913",
+  "source_type": "user_handwritten_photos",
+  "image_count": 6,
+  "study_date": null,
+  "study_date_note": "用户称今天的新词；收到照片时已过零点，未推定每词实际学习日期或Day进度。",
+  "counts": {
+    "recognized_occurrences": 170,
+    "recognized_entries": 170,
+    "within_batch_repeats": 0,
+    "added_to_difficult": 168,
+    "already_present": 2,
+    "pending_transcriptions": 0
+  },
+  "new_words": [
+    "waggish",
+    "roughhouse",
+    "courteous",
+    "ostensible",
+    "sensational",
+    "daunting",
+    "lurid",
+    "immaterial",
+    "inconsequential",
+    "irrelevant",
+    "redoubtable",
+    "vanquish",
+    "fringe",
+    "divided",
+    "dated",
+    "delineate",
+    "syntax",
+    "prose",
+    "undue",
+    "inflate",
+    "beholden",
+    "eternal",
+    "gregarious",
+    "worrisome",
+    "fulminate",
+    "bestow",
+    "semblance",
+    "stemma",
+    "manuscript",
+    "unwieldy",
+    "pant",
+    "douse",
+    "extinguish",
+    "winnow",
+    "hone",
+    "spearhead",
+    "ashore",
+    "flummox",
+    "confound",
+    "eel",
+    "loom",
+    "panoply",
+    "illicit",
+    "expendable",
+    "linger",
+    "conservation",
+    "backwater",
+    "stumble",
+    "aggravate",
+    "exacerbate",
+    "reminiscent",
+    "gainsay",
+    "gloomy",
+    "downbeat",
+    "import",
+    "camaraderie",
+    "permeate",
+    "solidarity",
+    "copious",
+    "recant",
+    "editorial",
+    "jubilation",
+    "porous",
+    "permeable",
+    "preachy",
+    "sanctimonious",
+    "carnivorous",
+    "majestic",
+    "majesty",
+    "hallow",
+    "congenial",
+    "riot",
+    "surmount",
+    "realm",
+    "off-putting",
+    "offput",
+    "disorganize",
+    "disarray",
+    "measured",
+    "baseless",
+    "unfounded",
+    "untenable",
+    "altercate",
+    "recrudescent",
+    "chronic",
+    "dermatosis",
+    "psoriasis",
+    "resurgent",
+    "puncture",
+    "trocar",
+    "abdominal",
+    "exalt",
+    "astute",
+    "shrewd",
+    "incisive",
+    "brandish",
+    "medallion",
+    "enigmatic",
+    "motif",
+    "stymie",
+    "subsist",
+    "cumbersome",
+    "waver",
+    "risible",
+    "ludicrous",
+    "sulky",
+    "topple",
+    "connive",
+    "wrest",
+    "wriggle",
+    "ebb",
+    "crustacean",
+    "wane",
+    "on the wane",
+    "ridicule",
+    "timidity",
+    "pilgrim",
+    "devout",
+    "pious",
+    "sleek",
+    "jockey",
+    "august",
+    "subside",
+    "subsidy",
+    "impute",
+    "grossly",
+    "gross",
+    "guile",
+    "loose",
+    "jejune",
+    "adolescent",
+    "egotism",
+    "dwindle",
+    "windfall",
+    "deficit",
+    "swelling",
+    "swell",
+    "contract",
+    "unwarranted",
+    "groundless",
+    "warrant",
+    "resemblance",
+    "homogeneous",
+    "homogeneity",
+    "uncanny",
+    "canny",
+    "strident",
+    "bluff",
+    "lustily",
+    "harsh",
+    "defiant",
+    "haughty",
+    "arrogant",
+    "inaccessibility",
+    "strip",
+    "divest",
+    "underscore",
+    "reverence",
+    "tepee",
+    "awe",
+    "concoct",
+    "insipid",
+    "encumber",
+    "phenomenal",
+    "glamour",
+    "glamorous",
+    "pizzazz",
+    "prone"
+  ],
+  "repeated_words": [
+    "evocative",
+    "awry"
+  ],
+  "pending_transcriptions": [],
+  "images": [
+    {
+      "image": 1,
+      "filename": "codex-clipboard-764a6e5c-c898-4f57-a8f9-4bfa492aa32d.jpg",
+      "sha256": "24a390a6199ec50c35f62c79ccfc89fed77c99594aebdce8738b60b986a8cd28"
+    },
+    {
+      "image": 2,
+      "filename": "codex-clipboard-cfaf1b7a-4bda-4b21-b016-906e7b61828b.jpg",
+      "sha256": "50b54fc14de2044ba1653a9477207d0f2f8db6210df5ab02ab62b663786a234f"
+    },
+    {
+      "image": 3,
+      "filename": "codex-clipboard-bcf2993a-46b8-4b71-ab5b-a7aeb43028a5.jpg",
+      "sha256": "9d8d98f1740f75b81bc3fa207d8fab930405d2db6719805ae9175ecb314b0bcf"
+    },
+    {
+      "image": 4,
+      "filename": "codex-clipboard-a370c34a-d0f0-420b-98af-b5cbf25c4396.jpg",
+      "sha256": "1f32e0e73eb1b249b678129447fafec46adc36bcbedf7d02e94f6c8c59506445"
+    },
+    {
+      "image": 5,
+      "filename": "codex-clipboard-29159945-0d00-45dc-bdc8-725305c3d434.jpg",
+      "sha256": "8b7db3bb2121f4f18b25681d0c1457f65c6d418dcc8868317c013e467241e314"
+    },
+    {
+      "image": 6,
+      "filename": "codex-clipboard-ad5cec67-d063-4d71-b677-e37c54e30a47.jpg",
+      "sha256": "2886e3bbf07a7e38407a65d21a926668dc241fc70cb149ef6410162635a4daeb"
+    }
+  ],
+  "items": [
+    {
+      "image": 1,
+      "word": "waggish",
+      "raw_word": "waggish",
+      "pos": "adj.",
+      "meaning": "滑稽的；爱开玩笑的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "roughhouse",
+      "raw_word": "roughhouse",
+      "pos": "v.",
+      "meaning": "打闹；粗野地玩闹",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "courteous",
+      "raw_word": "courteous",
+      "pos": "adj.",
+      "meaning": "有礼貌的；谦恭的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "ostensible",
+      "raw_word": "ostensible",
+      "pos": "adj.",
+      "meaning": "表面的；声称的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "sensational",
+      "raw_word": "sensational",
+      "pos": "adj.",
+      "meaning": "耸人听闻的；轰动的；出色的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "daunting",
+      "raw_word": "daunting",
+      "pos": "adj.",
+      "meaning": "令人畏惧的；使人气馁的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "lurid",
+      "raw_word": "lurid",
+      "pos": "adj.",
+      "meaning": "骇人的；耸人听闻的；刺眼的；俗艳的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "immaterial",
+      "raw_word": "immaterial",
+      "pos": "adj.",
+      "meaning": "无关紧要的；不相关的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "core_meaning_checked",
+      "definition_source": {
+        "publisher": "Cambridge Dictionary",
+        "url": "https://dictionary.cambridge.org/us/dictionary/english/immaterial"
+      }
+    },
+    {
+      "image": 1,
+      "word": "inconsequential",
+      "raw_word": "inconsequential",
+      "pos": "adj.",
+      "meaning": "不重要的；无关紧要的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "irrelevant",
+      "raw_word": "irrelevant",
+      "pos": "adj.",
+      "meaning": "不相关的；不切题的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "redoubtable",
+      "raw_word": "redoubtable",
+      "pos": "adj.",
+      "meaning": "令人敬畏的；可怕的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "vanquish",
+      "raw_word": "vanquish",
+      "pos": "v.",
+      "meaning": "征服；击败；克服",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "fringe",
+      "raw_word": "frnge",
+      "pos": "n.",
+      "meaning": "边缘",
+      "note": "按边缘义和手写词形规范为fringe。",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "divided",
+      "raw_word": "divided",
+      "pos": "adj.",
+      "meaning": "分歧的；意见不一的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "dated",
+      "raw_word": "dated",
+      "pos": "adj.",
+      "meaning": "陈旧的；过时的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "delineate",
+      "raw_word": "delineate",
+      "pos": "v.",
+      "meaning": "勾画；描述；解释",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "syntax",
+      "raw_word": "syntax",
+      "pos": "n.",
+      "meaning": "句法；语法",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "prose",
+      "raw_word": "prose",
+      "pos": "n.; adj.; v.",
+      "meaning": "散文；散文的；平淡的；写散文；平淡地说或写",
+      "note": "以散文为核心名词义；亦可作形容词和动词，不仅指平淡乏味。",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "core_meaning_checked",
+      "definition_source": {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/prose"
+      }
+    },
+    {
+      "image": 1,
+      "word": "undue",
+      "raw_word": "undue",
+      "pos": "adj.",
+      "meaning": "过度的；不适当的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "inflate",
+      "raw_word": "inflate",
+      "pos": "v.",
+      "meaning": "充气；膨胀；夸大",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "beholden",
+      "raw_word": "beholden",
+      "pos": "adj.",
+      "meaning": "欠人情的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "eternal",
+      "raw_word": "eternal",
+      "pos": "adj.",
+      "meaning": "永恒的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "gregarious",
+      "raw_word": "gregarious",
+      "pos": "adj.",
+      "meaning": "爱交际的；群居的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 1,
+      "word": "worrisome",
+      "raw_word": "worrisome",
+      "pos": "adj.",
+      "meaning": "令人担忧的",
+      "note": "",
+      "images": [
+        1
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "fulminate",
+      "raw_word": "fulminate",
+      "pos": "v.",
+      "meaning": "严厉谴责；怒斥",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "bestow",
+      "raw_word": "bestow",
+      "pos": "v.",
+      "meaning": "赠予；授予",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "semblance",
+      "raw_word": "semblance",
+      "pos": "n.",
+      "meaning": "表象；外观",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "stemma",
+      "raw_word": "stemma",
+      "pos": "n.",
+      "meaning": "家谱；谱系图；抄本传承关系图",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "core_meaning_checked",
+      "definition_source": {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/stemma"
+      }
+    },
+    {
+      "image": 2,
+      "word": "manuscript",
+      "raw_word": "manuscript",
+      "pos": "n.",
+      "meaning": "手稿",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "unwieldy",
+      "raw_word": "unwieldy",
+      "pos": "adj.",
+      "meaning": "笨重的；难以操控的",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "pant",
+      "raw_word": "pant",
+      "pos": "v.",
+      "meaning": "气喘；喘息；渴望",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "douse",
+      "raw_word": "douse",
+      "pos": "v.",
+      "meaning": "熄灭",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "extinguish",
+      "raw_word": "extinguish",
+      "pos": "v.",
+      "meaning": "熄灭；消灭",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "winnow",
+      "raw_word": "winnow",
+      "pos": "v.",
+      "meaning": "筛选；簸扬",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "hone",
+      "raw_word": "hone",
+      "pos": "v.; n.",
+      "meaning": "磨快；磨练；磨刀石",
+      "note": "常见义为磨快、磨练；笔记中的渴望对应词典标注的方言义，不能与常见义混用。",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "core_meaning_checked",
+      "definition_source": {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/hone"
+      }
+    },
+    {
+      "image": 2,
+      "word": "spearhead",
+      "raw_word": "spearhead",
+      "pos": "n.",
+      "meaning": "先锋；先头部队",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "ashore",
+      "raw_word": "ashore",
+      "pos": "adv.",
+      "meaning": "向岸上；在岸上",
+      "note": "词典词性为副词adv.，表示在岸上或向岸上。",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "core_meaning_checked",
+      "definition_source": {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/ashore"
+      }
+    },
+    {
+      "image": 2,
+      "word": "flummox",
+      "raw_word": "flummox",
+      "pos": "v.",
+      "meaning": "使困惑；使不知所措",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "confound",
+      "raw_word": "confound",
+      "pos": "v.",
+      "meaning": "使困惑；使惊讶；混淆",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "eel",
+      "raw_word": "eel（有涂改）",
+      "pos": "n.",
+      "meaning": "鳗鱼",
+      "note": "按最终词形及鳗鱼义规范为eel。",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "loom",
+      "raw_word": "loom",
+      "pos": "v.; n.",
+      "meaning": "隐约出现；逼近；织布机",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "evocative",
+      "raw_word": "evocative",
+      "pos": "adj.",
+      "meaning": "唤起回忆或感情的",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "existing",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "panoply",
+      "raw_word": "panoply",
+      "pos": "n.",
+      "meaning": "盛装；华丽的陈列；全套盔甲",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "illicit",
+      "raw_word": "illicit",
+      "pos": "adj.",
+      "meaning": "违法的；不正当的",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "expendable",
+      "raw_word": "expendable",
+      "pos": "adj.",
+      "meaning": "可消耗的",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "linger",
+      "raw_word": "linger",
+      "pos": "v.",
+      "meaning": "逗留；徘徊；继续存在",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "conservation",
+      "raw_word": "conservation",
+      "pos": "n.",
+      "meaning": "保护",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "backwater",
+      "raw_word": "backwater",
+      "pos": "n.",
+      "meaning": "停滞的水域；闭塞落后的地区",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "stumble",
+      "raw_word": "stumble",
+      "pos": "v.",
+      "meaning": "绊倒",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "aggravate",
+      "raw_word": "aggravate",
+      "pos": "v.",
+      "meaning": "加剧；使恶化；激怒",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "exacerbate",
+      "raw_word": "exacerbate",
+      "pos": "v.",
+      "meaning": "使恶化；使加剧",
+      "note": "",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 2,
+      "word": "reminiscent",
+      "raw_word": "reminiscent",
+      "pos": "adj.",
+      "meaning": "使人想起的；怀旧的",
+      "note": "reminiscent of表示使人想起；另有回忆往事、怀旧义。",
+      "images": [
+        2
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "core_meaning_checked",
+      "definition_source": {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/reminiscent"
+      }
+    },
+    {
+      "image": 3,
+      "word": "gainsay",
+      "raw_word": "gainsay",
+      "pos": "v.",
+      "meaning": "否认；反驳",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "gloomy",
+      "raw_word": "gloomy",
+      "pos": "adj.",
+      "meaning": "阴暗的；幽暗的；沮丧的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "downbeat",
+      "raw_word": "downbeat",
+      "pos": "adj.",
+      "meaning": "沮丧的；消极的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "import",
+      "raw_word": "import",
+      "pos": "n.; v.",
+      "meaning": "进口；进口商品；意义；重要性；进口；输入",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "camaraderie",
+      "raw_word": "camaraderie",
+      "pos": "n.",
+      "meaning": "情谊；友情",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "permeate",
+      "raw_word": "permeate",
+      "pos": "v.",
+      "meaning": "渗透；弥漫",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "solidarity",
+      "raw_word": "solidarity",
+      "pos": "n.",
+      "meaning": "团结一致",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "copious",
+      "raw_word": "copious",
+      "pos": "adj.",
+      "meaning": "丰富的；大量的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "recant",
+      "raw_word": "recant",
+      "pos": "v.",
+      "meaning": "公开放弃原先的信仰或主张",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "editorial",
+      "raw_word": "editorials",
+      "pos": "n.",
+      "meaning": "社论",
+      "note": "复数editorials归入词元editorial。",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "jubilation",
+      "raw_word": "jubilation",
+      "pos": "n.",
+      "meaning": "欣喜若狂",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "porous",
+      "raw_word": "porous",
+      "pos": "adj.",
+      "meaning": "多孔的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "permeable",
+      "raw_word": "permeable",
+      "pos": "adj.",
+      "meaning": "能渗透的；可穿透的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "preachy",
+      "raw_word": "preachy",
+      "pos": "adj.",
+      "meaning": "爱说教的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "sanctimonious",
+      "raw_word": "sanctimonious",
+      "pos": "adj.",
+      "meaning": "伪善的；道貌岸然的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "carnivorous",
+      "raw_word": "carnivorous",
+      "pos": "adj.",
+      "meaning": "食肉的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "majestic",
+      "raw_word": "majestic",
+      "pos": "adj.",
+      "meaning": "庄严的；壮丽的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "majesty",
+      "raw_word": "majesty",
+      "pos": "n.",
+      "meaning": "威严；尊严；陛下；君权",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "hallow",
+      "raw_word": "hallow",
+      "pos": "v.",
+      "meaning": "奉为神圣",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "congenial",
+      "raw_word": "congenial",
+      "pos": "adj.",
+      "meaning": "令人愉快的；意气相投的；性质相似的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "riot",
+      "raw_word": "riot",
+      "pos": "n.; v.",
+      "meaning": "暴乱；骚乱",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "surmount",
+      "raw_word": "surmount",
+      "pos": "v.",
+      "meaning": "克服；战胜；在……之上",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "realm",
+      "raw_word": "realm",
+      "pos": "n.",
+      "meaning": "领域；范围；王国",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "off-putting",
+      "raw_word": "off-putting",
+      "pos": "adj.",
+      "meaning": "令人反感的；令人不适的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "offput",
+      "raw_word": "offput",
+      "pos": "n.",
+      "meaning": "推迟；拖延；浪费时间",
+      "note": "Collins收录名词offput（拖延），不是off-putting的词性替换。",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "core_meaning_checked",
+      "definition_source": {
+        "publisher": "Collins Dictionary",
+        "url": "https://www.collinsdictionary.com/dictionary/english/offput"
+      }
+    },
+    {
+      "image": 3,
+      "word": "awry",
+      "raw_word": "awry",
+      "pos": "adv.; adj.",
+      "meaning": "歪斜地；歪斜的；出错的",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "existing",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "disorganize",
+      "raw_word": "disorganize",
+      "pos": "v.",
+      "meaning": "扰乱；破坏组织或秩序",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 3,
+      "word": "disarray",
+      "raw_word": "disarray",
+      "pos": "n.",
+      "meaning": "混乱；杂乱",
+      "note": "",
+      "images": [
+        3
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "measured",
+      "raw_word": "measured",
+      "pos": "adj.",
+      "meaning": "慎重的",
+      "note": "释义按用户笔记整理，未作词典核验。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "baseless",
+      "raw_word": "baseless",
+      "pos": "adj.",
+      "meaning": "无根据的",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "unfounded",
+      "raw_word": "unfounded",
+      "pos": null,
+      "meaning": "无根据的",
+      "note": "baseless右侧清晰英文旁注；释义按该组笔记整理。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "untenable",
+      "raw_word": "untenable",
+      "pos": null,
+      "meaning": "站不住脚的；不能维持的",
+      "note": "baseless右下方清晰旁注。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "altercate",
+      "raw_word": "altercate",
+      "pos": "v.",
+      "meaning": "争吵；吵闹",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "recrudescent",
+      "raw_word": "recrudesent",
+      "pos": "adj.",
+      "meaning": "复发的",
+      "note": "手写拼写缺少s后的c，规范为recrudescent；词义按笔记，未核验。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "chronic",
+      "raw_word": "chronic",
+      "pos": "adj.",
+      "meaning": "（病）慢性的；长期的",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "dermatosis",
+      "raw_word": "dermatosis",
+      "pos": "n.",
+      "meaning": "皮肤病",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "psoriasis",
+      "raw_word": "Psoriasis",
+      "pos": null,
+      "meaning": "银屑病",
+      "note": "统一为小写；左侧试写的p不另收录。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "resurgent",
+      "raw_word": "resurgent",
+      "pos": "adj.",
+      "meaning": "复活的",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "puncture",
+      "raw_word": "puncture",
+      "pos": "v.",
+      "meaning": "刺穿；破坏",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "trocar",
+      "raw_word": "trocar",
+      "pos": "n.",
+      "meaning": "套管针",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "abdominal",
+      "raw_word": "abdominal",
+      "pos": "adj.; n.",
+      "meaning": "腹部的；腹肌",
+      "note": "词性及释义均按笔记转录，未核验。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "exalt",
+      "raw_word": "exalt",
+      "pos": "v.",
+      "meaning": "赞誉；提拔；赞扬",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "astute",
+      "raw_word": "astute",
+      "pos": "adj.",
+      "meaning": "精明的；机敏的",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "shrewd",
+      "raw_word": "shrewd",
+      "pos": "adj.",
+      "meaning": "精明的；机敏的",
+      "note": "下方判断/手段相关中文附注较密，未完整辨清，仅整理上述清晰部分。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "incisive",
+      "raw_word": "incisive",
+      "pos": "adj.",
+      "meaning": "深刻的；敏锐的",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "brandish",
+      "raw_word": "brandish",
+      "pos": "v.",
+      "meaning": "炫耀；挥舞；挥动",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "medallion",
+      "raw_word": "medallion",
+      "pos": "n.",
+      "meaning": "大奖章",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "enigmatic",
+      "raw_word": "enig matic",
+      "pos": "adj.",
+      "meaning": "神秘的",
+      "note": "合并手写词内空隙为enigmatic。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "motif",
+      "raw_word": "motif",
+      "pos": "n.",
+      "meaning": "主题；主旨；图案；花纹",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "stymie",
+      "raw_word": "stymie",
+      "pos": "v.; n.",
+      "meaning": "阻挠；从中作梗；障碍球",
+      "note": "动词旁注为非正式；名词义按手写笔记，待核验。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "subsist",
+      "raw_word": "subsist",
+      "pos": "v.",
+      "meaning": "维持；生存；存在；靠……生活",
+      "note": "已划去的中文试写不保留。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "cumbersome",
+      "raw_word": "cumbersome",
+      "pos": "adj.",
+      "meaning": "笨重的",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "waver",
+      "raw_word": "waver",
+      "pos": "v.; n.",
+      "meaning": "踌躇；犹豫；动摇",
+      "note": "词性按用户笔记转录。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "risible",
+      "raw_word": "risible",
+      "pos": "adj.",
+      "meaning": "可笑的；滑稽的",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "ludicrous",
+      "raw_word": "ludicrous",
+      "pos": "adj.",
+      "meaning": "滑稽的；荒唐的",
+      "note": "",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "sulky",
+      "raw_word": "sulky",
+      "pos": "adj.",
+      "meaning": "阴郁的；闷闷不乐的；愠怒的",
+      "note": "按清晰中文旁注整理。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "topple",
+      "raw_word": "topple",
+      "pos": "v.",
+      "meaning": "颠覆；向前倒下",
+      "note": "底部裁片确认英文为topple。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 4,
+      "word": "connive",
+      "raw_word": "connive",
+      "pos": "v.",
+      "meaning": "共谋",
+      "note": "末项中文不够清晰，仅整理清晰部分；英文词形明确。",
+      "images": [
+        4
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "wrest",
+      "raw_word": "wrest",
+      "pos": "v.; n.",
+      "meaning": "抢夺；用力拧、扭；扭、拧",
+      "note": "笔记另列n.，该词性需核验。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "wriggle",
+      "raw_word": "wriggle",
+      "pos": "v.",
+      "meaning": "扭动；蠕动",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "ebb",
+      "raw_word": "ebb",
+      "pos": "n.; v.",
+      "meaning": "衰退；退潮",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "crustacean",
+      "raw_word": "crustaceans",
+      "pos": "n.",
+      "meaning": "甲壳纲动物",
+      "note": "复数crustaceans归词元crustacean；左侧划掉的试写不收录。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "wane",
+      "raw_word": "wane",
+      "pos": "v.; n.",
+      "meaning": "（月）亏缺；衰落；消逝；减弱；衰弱",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "on the wane",
+      "raw_word": "on the wane",
+      "pos": "phrase",
+      "meaning": "在减弱；在衰落",
+      "note": "wane条目的完整短语旁注；作为一个短语保存，未词典核验。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "ridicule",
+      "raw_word": "ridicule",
+      "pos": "n.; v.",
+      "meaning": "嘲笑",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "timidity",
+      "raw_word": "timidity",
+      "pos": "n.",
+      "meaning": "胆怯；胆小",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "pilgrim",
+      "raw_word": "pilgrim",
+      "pos": "n.; v.",
+      "meaning": "朝圣者；去朝圣",
+      "note": "仅收录右侧更正后的pilgrim；左侧划掉的错拼不收录。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "devout",
+      "raw_word": "devout",
+      "pos": "adj.",
+      "meaning": "虔诚的",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "pious",
+      "raw_word": "pious",
+      "pos": "adj.",
+      "meaning": "虔诚的；伪善的",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "sleek",
+      "raw_word": "sleek",
+      "pos": "adj.; v.",
+      "meaning": "光滑的；流畅的；时尚的；使平整；打扮干净",
+      "note": "左侧已划掉的试写不另收录；动词释义按用户笔记。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "jockey",
+      "raw_word": "jockey",
+      "pos": "v.; n.",
+      "meaning": "欺骗；骗取；赛马师",
+      "note": "释义按用户笔记，未核验。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "august",
+      "raw_word": "august",
+      "pos": "adj.",
+      "meaning": "威严的；受人敬畏的",
+      "note": "此条按形容词笔记转录，不改成月份。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "subside",
+      "raw_word": "subside",
+      "pos": "v.",
+      "meaning": "平息；消退；沉没",
+      "note": "末义按手写笔记，待核验。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "subsidy",
+      "raw_word": "subsidy",
+      "pos": "n.",
+      "meaning": "补贴；津贴",
+      "note": "subside下方清晰独立词条。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "impute",
+      "raw_word": "impute",
+      "pos": "v.",
+      "meaning": "归罪于；嫁祸于",
+      "note": "笔记旁注为正式。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "grossly",
+      "raw_word": "grossly",
+      "pos": "adv.",
+      "meaning": "很；非常",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "gross",
+      "raw_word": "gross",
+      "pos": "adv.; adj.",
+      "meaning": "总；全部；总的；粗的；恶心的",
+      "note": "grossly下方清晰旁注；词性和中文候选义按笔记保留，未核验。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "guile",
+      "raw_word": "guile",
+      "pos": "n.",
+      "meaning": "狡诈；奸诈",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "loose",
+      "raw_word": "loose",
+      "pos": "adj.",
+      "meaning": "松散的；未固定牢的",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "jejune",
+      "raw_word": "jejune",
+      "pos": "adj.",
+      "meaning": "缺乏营养的；枯燥无味的；幼稚的",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "adolescent",
+      "raw_word": "adolescent",
+      "pos": "adj.",
+      "meaning": "青春期的；不成熟的",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "egotism",
+      "raw_word": "egotism",
+      "pos": "n.",
+      "meaning": "自我主义",
+      "note": "首项中文不够清晰，仅保守整理清晰部分。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "dwindle",
+      "raw_word": "dwindle",
+      "pos": "v.",
+      "meaning": "逐渐减少；变小",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "windfall",
+      "raw_word": "windfall",
+      "pos": "n.",
+      "meaning": "意外之财；风吹下的果子",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "deficit",
+      "raw_word": "deficit",
+      "pos": "n.",
+      "meaning": "亏损；赤字",
+      "note": "仅收录更正后的deficit；左侧划掉的defe试写不收录。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "swelling",
+      "raw_word": "swelling",
+      "pos": "n.",
+      "meaning": "肿块",
+      "note": "按独立名词记录；旁注动词swell另列。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "swell",
+      "raw_word": "(swell)",
+      "pos": "v.",
+      "meaning": "肿胀；膨胀；使膨胀",
+      "note": "swelling条目中的清晰括号旁注。",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 5,
+      "word": "contract",
+      "raw_word": "contract",
+      "pos": "n.; v.",
+      "meaning": "合同；使缩小；签约",
+      "note": "",
+      "images": [
+        5
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "unwarranted",
+      "raw_word": "unwarranted",
+      "pos": null,
+      "meaning": "无根据的",
+      "note": "groundless上方清晰旁注；释义按该组笔记整理。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "groundless",
+      "raw_word": "groundless",
+      "pos": "adj.",
+      "meaning": "无根据的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "warrant",
+      "raw_word": "warrant",
+      "pos": "n.; v.",
+      "meaning": "令状；授权令；正当根据；使正当；需要",
+      "note": "动词行末中文不够清晰，仅整理上述清晰部分；英文词形清楚。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "resemblance",
+      "raw_word": "resemblance",
+      "pos": "n.",
+      "meaning": "相似；相似之处",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "homogeneous",
+      "raw_word": "homogeneous",
+      "pos": "adj.",
+      "meaning": "同种的；同种类的；齐一的",
+      "note": "释义按笔记整理，未核验。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "homogeneity",
+      "raw_word": "homogeneity",
+      "pos": "n.",
+      "meaning": "同质性；均一性",
+      "note": "原图未另写中文；依据Merriam-Webster补充核心义。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "core_meaning_checked",
+      "definition_source": {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/homogeneity"
+      }
+    },
+    {
+      "image": 6,
+      "word": "uncanny",
+      "raw_word": "uncanny",
+      "pos": "adj.",
+      "meaning": "离奇的；出奇的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "canny",
+      "raw_word": "canny",
+      "pos": "adj.",
+      "meaning": "精明的；机敏的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "strident",
+      "raw_word": "strident",
+      "pos": "adj.",
+      "meaning": "刺耳的；不和谐的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "bluff",
+      "raw_word": "bluff",
+      "pos": "v.; n.",
+      "meaning": "虚张声势",
+      "note": "笔记另标n.但未另写清楚释义，不补充其他义项。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "lustily",
+      "raw_word": "lustily",
+      "pos": "adv.",
+      "meaning": "精力充沛地",
+      "note": "笔记词性为adv.，中文整理为副词表达。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "harsh",
+      "raw_word": "harsh",
+      "pos": "adj.",
+      "meaning": "恶劣的；严厉的；残酷的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "defiant",
+      "raw_word": "defiant",
+      "pos": "adj.",
+      "meaning": "违抗的；反抗的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "haughty",
+      "raw_word": "haughty",
+      "pos": "adj.",
+      "meaning": "自大的；傲慢的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "arrogant",
+      "raw_word": "arrogant",
+      "pos": null,
+      "meaning": "自大的；傲慢的",
+      "note": "haughty下方清晰英文旁注；释义按该组笔记整理。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "inaccessibility",
+      "raw_word": "inaclessibility",
+      "pos": "n.",
+      "meaning": "难以到达；无法获得",
+      "note": "手写第二个c近似l；结合清晰词形其余部分和中文笔记，规范为inaccessibility。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "strip",
+      "raw_word": "strip",
+      "pos": "v.; n.",
+      "meaning": "剥夺；除去；脱开；条；带",
+      "note": "词义按用户笔记整理，未核验。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "divest",
+      "raw_word": "divest",
+      "pos": "v.",
+      "meaning": "剥夺；剥离",
+      "note": "笔记旁注为正式。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "underscore",
+      "raw_word": "underscore",
+      "pos": "v.; n.",
+      "meaning": "强调；下划线",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "reverence",
+      "raw_word": "reverence",
+      "pos": "n.; v.",
+      "meaning": "尊敬；崇敬",
+      "note": "词性按笔记，未核验。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "tepee",
+      "raw_word": "tepee",
+      "pos": "n.",
+      "meaning": "圆锥形帐篷",
+      "note": "保留清晰拼写tepee。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "awe",
+      "raw_word": "awe",
+      "pos": "n.; v.",
+      "meaning": "敬畏；使敬畏",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "concoct",
+      "raw_word": "concoct",
+      "pos": "v.",
+      "meaning": "编造；调制",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "insipid",
+      "raw_word": "insipid",
+      "pos": "adj.",
+      "meaning": "无趣的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "encumber",
+      "raw_word": "encumber",
+      "pos": "v.",
+      "meaning": "阻碍；妨碍；使受限制或束缚",
+      "note": "中文括号补注按笔记保守整理。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "phenomenal",
+      "raw_word": "phenomenal",
+      "pos": "adj.",
+      "meaning": "非凡的；惊人的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "glamour",
+      "raw_word": "glamour（词中有涂改）",
+      "pos": "n.; v.",
+      "meaning": "吸引力；魅力；迷住；迷惑",
+      "note": "词中有涂改，结合清晰词尾及右侧glamorous规范为glamour；动词义按笔记，待核验。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "glamorous",
+      "raw_word": "glamorous",
+      "pos": "adj.",
+      "meaning": "迷人的；有魅力的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "pizzazz",
+      "raw_word": "pizzazz",
+      "pos": "n.",
+      "meaning": "充满活力的外表或风格",
+      "note": "笔记旁注为非正式；中文保守整理，未核验。",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    },
+    {
+      "image": 6,
+      "word": "prone",
+      "raw_word": "prone",
+      "pos": "adj.",
+      "meaning": "俯卧的；有……倾向的；易于……的",
+      "note": "",
+      "images": [
+        6
+      ],
+      "lexicon": "vocab/lexicon.json",
+      "status": "new",
+      "definition_status": "handwritten_candidate_not_individually_verified"
+    }
+  ],
+  "notes": [
+    "仅收录接触记录；未做主动回忆测试，未增加掌握数量或原640词复习覆盖数。",
+    "旧词保留原释义及全部复习证据，仅追加来源。",
+    "划掉的试写与照片4左侧露出的照片5内容不重复计数。",
+    "多数释义为笔记候选义；8项疑点已查词典，未来词义判分仍依据具体语境。",
+    "原图不随本次文本收录自动上传。"
+  ]
+}

@@ -29,6 +29,15 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: handwritten_vocab_20260913
+    filename: null
+    sha256: null
+    role: user_vocabulary_notes
+    answer_status: not_applicable
+    description: "9月13日零点后提交的六页新词笔记；实际学习日期与Day归属未推定。"
+    record: vocab/imports/20260913_0001_handwritten_vocab.json
+    image_count: 6
+    original_storage: user_supplied_chat_attachments_not_committed
   - id: youdao_handwritten_20260910
     filename: null
     sha256: null
