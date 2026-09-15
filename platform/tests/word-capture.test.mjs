@@ -1,0 +1,32 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import {randomUUID} from 'node:crypto';
+import {Store,validate} from '../server/store.mjs';
+import {capturedWord} from '../shared/capture-word.mjs';
+const source={material:'text_completion_2000',unit:'test1_section1_easy',question:'6',type:'se'};
+test('capture accepts a word or short phrase, normalizes punctuation, and rejects sentences or markup',()=>{
+  assert.equal(capturedWord(' “Epilogue,” '),'epilogue');
+  assert.equal(capturedWord('face‑to‑face'),'face-to-face');
+  assert.equal(capturedWord('ad   hoc'),'ad hoc');
+  assert.equal(capturedWord('author’s'),"author's");
+  for(const value of ['', 'A/B', '<script>alert(1)</script>', 'a full sentence that has too many words', '123', '词汇'])assert.throws(()=>capturedWord(value));
+  assert.throws(()=>validate('vocab_capture',{word:'epilogue'}),/来源/);
+  assert.throws(()=>validate('vocab_capture',{word:'epilogue',source,context:'x'.repeat(241)}),/语境/);
+});
+test('capture is durable, leaves meaning pending and never resets an existing definition or review history',async t=>{
+  const root=await fs.mkdtemp(path.join(os.tmpdir(),'gre-capture-'));t.after(()=>fs.rm(root,{recursive:true,force:true}));
+  const store=new Store(root),id=randomUUID(),payload={word:'Epilogue,',source,context:'An epilogue ends the story.'};
+  await store.append('vocab_capture',payload,id);await store.append('vocab_capture',payload,id);
+  let s=await store.state(),w=s.vocabulary[0];
+  assert.equal(s.events.length,1);assert.equal(w.word,'epilogue');assert.equal(w.meaning,'');assert.equal(w.captures.length,1);assert.equal(w.captures[0].source.question,'6');
+  assert.equal(s.spacedReview.items[0].has_history,false);assert.equal(s.spacedReview.items[0].ready,false);
+  await store.append('vocab_upsert',{word:'epilogue',meaning:'尾声',pos:'n.',note:'原笔记'});
+  await store.append('vocab_recall',{word:'epilogue',answer:'尾声',self_rating:'remembered',mode:'recall'});
+  await store.append('vocab_capture',{...payload,source:{...source,question:'7'}});
+  await store.append('vocab_delete',{word:'epilogue'});await store.append('vocab_capture',payload);
+  s=await new Store(root).state();w=s.vocabulary[0];
+  assert.equal(s.vocabulary.length,1);assert.equal(w.deleted,false);assert.equal(w.meaning,'尾声');assert.equal(w.pos,'n.');assert.equal(w.note,'原笔记');assert.equal(w.recalls.length,1);assert.equal(w.captures.length,2);assert.equal(s.spacedReview.items[0].platform_count,1);
+});

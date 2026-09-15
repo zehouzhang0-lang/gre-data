@@ -8,6 +8,7 @@
 用户授权在本仓库建设可迭代本地平台；平台源码、锁文件、启动脚本、skill与学习数据一起同步。`platform/events/<uuid>.json` 为追加式原子记录，包含 `schema_version: 1`、`id`、ISO UTC `recorded_at`、`kind`、`payload`。事件按时间再按ID重放；同ID同内容重试不重复创建，不同内容拒绝。
 
 - `vocab_upsert`：word、meaning、pos、note。词形小写且合并连续空格；短语完整保存。释义标记用户编辑待核验。
+- `vocab_capture`：word、source（material/unit/question/type）、context（最多240字）。来自用户主动选词并右键收录；允许先无释义入库。统一大小写、边界标点、弯引号和连字符，不自动推断词元；最多5词短语、120字符。初次创建meaning/pos/note为空，状态未检验，附题目来源与短语境；既有词仅补充来源并恢复显示，不覆写词义、笔记、回忆、自评或掌握状态。同词同题同语境的captures去重；收录不计作答或复习，不自动进入有释义的翻卡队列。补释义仍用vocab_upsert，主题归属仍用word_topics。浏览器发现已存在的有效词时只提示，不追加重复操作。
 - `vocab_delete` / `vocab_restore`：word。仅控制平台展示，不删除旧词库与历史。
 - `vocab_recall`：word、answer原文、self_rating（remembered/partial/forgotten）、mode（recall/flashcard）、assessment固定self_reported。跳过不写记录；自评不自动更新difficult/mastered、旧作业覆盖数或技巧等级。教练核对后须另写原子记录并注明事件ID，防止重复计数。
 - `attempt` / `attempts_import`：教材material、单元unit、题号question共同定位，type（tc/se/rc/quant）、answer原文、duration_seconds（未知null）、note。批量导入使用items数组。

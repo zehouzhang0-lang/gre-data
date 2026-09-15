@@ -16,6 +16,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
       (filter === "difficult"
         ? w.status === "待复习" || w.recalls.at(-1)?.self_rating === "forgotten"
         : true) &&
+      (filter !== "pending" || !w.meaning) &&
       `${w.word} ${w.meaning}`.toLowerCase().includes(query),
   );
   const visible = words.slice(page * 30, page * 30 + 30);
@@ -75,6 +76,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
         >
           <option value="all">全部词汇</option>
           <option value="difficult">待复习</option>
+          <option value="pending">待补释义</option>
           <option value="deleted">已移除</option>
         </select>
         <span>{words.length} 项</span>
@@ -215,6 +217,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
           </p>
           <p>{detail.collocation}</p>
           <p>{detail.note}</p>
+          {!!detail.captures?.length && <details className="capture-sources"><summary>摘词来源 · {detail.captures.length} 处</summary>{detail.captures.map((c,i)=><div key={i}><small>{state.materials.find(m=>m.id===c.source.material)?.filename || c.source.material} · {c.source.unit} · 第 {c.source.question} 题</small><p>{c.context}</p></div>)}</details>}
           <small>{detail.definition_source}</small>
           {detail.feedback && <p>历史批改：{detail.feedback}</p>}
           {detail.dictionary_url &&

@@ -3,6 +3,7 @@ import { Header, Icon, Field, Empty, Modal } from "./components";
 import { request, save, keyOf, typeNames } from "./api";
 import ImportDialog from "./ImportDialog";
 import AiReview from "./AiReview";
+import useWordCapture from "./useWordCapture";
 import PdfExcerpt, { useSourcePdf } from "./PdfExcerpt";
 
 const draftKey = "gre:practice:v2";
@@ -46,6 +47,8 @@ export default function Practice({ state, refresh, notify, reviewTarget, onRevie
   }, [type, current, answer, note, saved, loading]);
   const questions = bank?.questions || [], question = questions.find(q => q.key === current), index = questions.findIndex(q => q.key === current);
   const { pdf, error: pdfError } = useSourcePdf(question?.regions && (!question.native || dialog === "source") ? question.material : null);
+  const captureRoot=useRef(null);
+  const capture=useWordCapture({root:captureRoot,question,vocabulary:state.vocabulary,refresh,notify});
   const latest = state.attempts.find(a => keyOf(a) === current), answerKey = state.keys[current];
   const reviewStats = state.spacedReview?.items.find(i=>i.kind==='question'&&i.key===current);
   const selected = answer ? answer.split("/") : [];
@@ -56,7 +59,7 @@ export default function Practice({ state, refresh, notify, reviewTarget, onRevie
     attemptId.current = crypto.randomUUID();
   }
   function select(letter, group) {
-    if (saved || busy) return;
+    if (saved || busy || capture.enabled) return;
     attemptId.current = crypto.randomUUID();
     if (group) setAnswer([...selected.filter(v => !group.includes(v)), letter].sort().join("/"));
     else if (["pair", "multiple"].includes(question.mode)) {
@@ -78,21 +81,22 @@ export default function Practice({ state, refresh, notify, reviewTarget, onRevie
   const comparison = { A: "Quantity A 较大", B: "Quantity B 较大", C: "两项相等", D: "无法确定关系" };
   function options(letters, group) {
     return <div className={`answer-options ${question.mode === "comparison" || (question.native || !question.regions) && question.options?.length ? "with-text" : ""}`}>
-      {letters.map(letter => <button key={letter} className={selected.includes(letter) ? "chosen" : ""} aria-pressed={selected.includes(letter)} disabled={busy || saved} onClick={() => select(letter, group)}>
-        <b>{letter}</b>{question.mode === "comparison" ? comparison[letter] : (question.native || !question.regions) ? question.options?.[question.letters.indexOf(letter)] || "" : ""}
+      {letters.map(letter => <button key={letter} className={selected.includes(letter) ? "chosen" : ""} aria-pressed={selected.includes(letter)} disabled={busy || saved && !capture.enabled} onClick={() => select(letter, group)}>
+        <b>{letter}</b><span data-word-source>{question.mode === "comparison" ? comparison[letter] : (question.native || !question.regions) ? question.options?.[question.letters.indexOf(letter)] || "" : ""}</span>
       </button>)}
     </div>;
   }
-  return <>
+  return <div ref={captureRoot} className={capture.enabled?"word-capture-mode":""} onMouseDownCapture={capture.mouseDown} onContextMenuCapture={capture.contextMenu}>
     {!reviewTarget && <><Header title="刷题练习" description="接着上次练，只需作答。"><button className="text-button" onClick={() => setDialog("questions")}><Icon name="upload" />导入题目</button></Header>
     <div className="tabs" role="tablist" aria-label="题型">{Object.entries(typeNames).map(([id, name]) => <button key={id} role="tab" aria-selected={type === id} className={type === id ? "selected" : ""} disabled={busy} onClick={() => setType(id)}>{name}</button>)}</div></>}
     {loading ? <div className="practice-loading" role="status">正在从已有教材准备题目…<small>首次整理后，本机会自动记住题目位置。</small></div> : !question ? <Empty title={error || (reviewTarget ? "暂时找不到本题原文，记录仍保留" : "暂无可练习题目")} >{reviewTarget && <button onClick={onReviewNext}>跳过这题</button>}<button onClick={() => setGeneration(g => g + 1)}>重新读取</button><button onClick={() => setDialog("questions")}>导入题目</button></Empty> : <div className="guided-practice">
+      <div className="word-capture-toolbar"><button aria-pressed={capture.enabled} onClick={capture.toggle} disabled={capture.saving}>{capture.enabled?"退出选词":"选词"}</button>{capture.enabled && <span>{capture.saving?"正在收录…":"划选单词后右键收录 · Esc 退出"}</span>}</div>
       <div className="practice-heading"><div><small>{state.materials.find(m => m.id === question.material)?.filename.replace(/\.pdf$/i, "") || "导入题目"}</small><h2>{title(question)}</h2></div>{!reviewTarget && <div className="question-navigation"><button className="text-button" disabled={busy || index < 1} onClick={() => choose(questions[index - 1])}>← 上一题</button><button disabled={busy} onClick={() => setDialog("jump")}>换题</button></div>}</div>
       <div className={`practice-content ${question.passageRegions?.length ? "has-passage" : ""}`}>
-        {!!question.passageRegions?.length && <section className="reading-passage" aria-label="阅读文章"><h3>文章</h3>{question.mode === "sentence" && question.sentences?.length ? <div className="sentence-passage">{question.sentences.map((sentence, i) => <button key={i} disabled={busy || saved} className={answer === sentence ? "chosen" : ""} aria-pressed={answer === sentence} onClick={() => setAnswer(sentence)}>{sentence}</button>)}</div> : question.native ? <div className="native-passage">{question.paragraphs.map((p, i) => <p key={i}>{p}</p>)}</div> : <PdfExcerpt pdf={pdf} regions={question.passageRegions} label={`${question.unit} 文章原文`} />}</section>}
+        {!!question.passageRegions?.length && <section className="reading-passage" aria-label="阅读文章"><h3>文章</h3>{question.mode === "sentence" && question.sentences?.length ? <div className="sentence-passage">{question.sentences.map((sentence, i) => <button key={i} disabled={busy || saved && !capture.enabled} className={answer === sentence ? "chosen" : ""} aria-pressed={answer === sentence} onClick={() => {if(!capture.enabled)setAnswer(sentence);}}><span data-word-source>{sentence}</span></button>)}</div> : question.native ? <div className="native-passage" data-word-source>{question.paragraphs.map((p, i) => <p key={i}>{p}</p>)}</div> : <PdfExcerpt selectable={capture.enabled} pdf={pdf} regions={question.passageRegions} label={`${question.unit} 文章原文`} />}</section>}
         <section className="question-workspace" aria-label="当前练习题">
           {pdfError && <p role="alert" className="error">{pdfError}</p>}
-          <div className={`question-source ${type === "quant" ? "quant-source" : ""}`}>{question.regions && !question.native ? <PdfExcerpt pdf={pdf} regions={question.regions} label={title(question)} /> : <p className="imported-prompt">{question.prompt}</p>}</div>
+          <div className={`question-source ${type === "quant" ? "quant-source" : ""}`}>{question.regions && !question.native ? <PdfExcerpt selectable={capture.enabled} pdf={pdf} regions={question.regions} label={title(question)} /> : <p className="imported-prompt" data-word-source>{question.prompt}</p>}</div>
           <div className="guided-answer">
             <div className="section-heading"><h3>{captions[question.mode]}</h3>{question.mode === "pair" && <small>{selected.length} / 2</small>}</div>
             {question.mode === "blanks" ? question.groups.map((group, i) => <div className="blank-choice" key={i}><span>空 {i + 1}</span>{options(group, group)}</div>) : question.mode === "entry" ? <Field label="我的答案"><input autoComplete="off" disabled={busy || saved} placeholder={type === "quant" ? "输入数值、分数或原题选项" : "填写作答"} value={answer} onChange={e => setAnswer(e.target.value)} /></Field> : question.mode === "sentence" ? <p className="answer-hint">{answer ? "已选中一句，提交即可。" : "在文章中直接点选。"}</p> : options(question.letters)}
@@ -108,8 +112,8 @@ export default function Practice({ state, refresh, notify, reviewTarget, onRevie
       </div>
       <div className="practice-footnote"><span>作答后自动保存进度 · 已有 {bank.completed.length} 题作答记录</span>{question.regions && <button className="text-button" onClick={() => setDialog("source")}>查看原题 ↗</button>}</div>
     </div>}
-    {dialog === "source" && question && <Modal title="教材原题" onClose={() => setDialog(null)}>{pdfError && <p role="alert">{pdfError}</p>}<div className="original-source">{!!question.passageRegions?.length && <PdfExcerpt pdf={pdf} regions={question.passageRegions} label="文章原文" />}<PdfExcerpt pdf={pdf} regions={question.regions} label={title(question)} /></div><a href={`/api/material/${encodeURIComponent(question.material)}#page=${question.regions[0].page}`} target="_blank" rel="noreferrer">打开完整 PDF ↗</a></Modal>}
+    {dialog === "source" && question && <Modal title="教材原题" onClose={() => setDialog(null)}>{pdfError && <p role="alert">{pdfError}</p>}<div className="original-source">{!!question.passageRegions?.length && <PdfExcerpt selectable={capture.enabled} pdf={pdf} regions={question.passageRegions} label="文章原文" />}<PdfExcerpt selectable={capture.enabled} pdf={pdf} regions={question.regions} label={title(question)} /></div><a href={`/api/material/${encodeURIComponent(question.material)}#page=${question.regions[0].page}`} target="_blank" rel="noreferrer">打开完整 PDF ↗</a></Modal>}
     {dialog === "jump" && <Modal title="选择练习" onClose={() => setDialog(null)}><div className="question-picker">{questions.map((q, i) => <button key={q.key} className={q.key === current ? "chosen" : ""} onClick={() => choose(q)}><span>{title(q)}</span><small>{bank.completed.includes(q.key) ? "已作答" : `第 ${i + 1} 题`}</small></button>)}</div></Modal>}
     {dialog && !["jump", "source"].includes(dialog) && <ImportDialog mode={dialog} context={{ material: question?.material || "text_completion_2000", unit: question?.unit || "default", type }} onClose={() => setDialog(null)} onSaved={async () => { await refresh(); notify("导入已保存"); }} />}
-  </>;
+  </div>;
 }

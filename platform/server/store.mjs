@@ -5,12 +5,14 @@ import YAML from "yaml";
 import { validateRelation, projectRelations } from "./word-relations.mjs";
 import { legacyWordReviews, projectReview } from "./spaced-review.mjs";
 import { readLegacyQuestions } from "./legacy-review.mjs";
+import { capturedWord } from "../shared/capture-word.mjs";
 
 export const normalizeWord = (value) =>
   value.trim().toLowerCase().replace(/\s+/g, " ");
 export const keyOf = (q) => JSON.stringify([q.material, q.unit, q.question]);
 const kinds = new Set([
   "vocab_upsert",
+  "vocab_capture",
   "vocab_delete",
   "vocab_restore",
   "vocab_recall",
@@ -53,6 +55,10 @@ export function validate(kind, p) {
     throw new Error("不支持的操作");
   const relation = validateRelation(kind, p);
   if (relation) return relation;
+  if (kind === "vocab_capture") {
+    if (!p.source || !types.has(p.source.type)) throw new Error("摘词缺少题目来源");
+    return {word:capturedWord(p.word),source:{...location(p.source),type:p.source.type},context:text(p.context,"摘词语境",240,true)};
+  }
   if (kind === "ai_review") {
     if (!["attempt", "recent"].includes(p.scope) || !p.result || !/^[a-f0-9]{64}$/.test(p.input_hash)) throw new Error("AI分析记录不完整");
     if (!["supported", "needs_review"].includes(p.result.assessment) || !Array.isArray(p.result.technique_ids)) throw new Error("AI分析结果格式不正确");
@@ -345,7 +351,12 @@ export class Store {
     for (const e of events) {
       const p = e.payload;
       if (e.kind === "ai_review") reviews.push({ ...p, id: e.id, recorded_at: e.recorded_at });
-      if (e.kind === "vocab_upsert") {
+      if (e.kind === "vocab_capture") {
+        const old=words.get(p.word) || {word:p.word,meaning:"",pos:"",note:"",status:"未检验",recalls:[],collocation:"",dictionary_url:"",definition_source:"题中摘词，待补释义"};
+        const captures=[...(old.captures || [])];
+        if (!captures.some(c => keyOf(c.source)===keyOf(p.source) && c.context===p.context)) captures.push({source:p.source,context:p.context,recorded_at:e.recorded_at});
+        words.set(p.word,{...old,deleted:false,captures});
+      } else if (e.kind === "vocab_upsert") {
         const old = words.get(p.word) || {
           status: "未检验",
           recalls: [],

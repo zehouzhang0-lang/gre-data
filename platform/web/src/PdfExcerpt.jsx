@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { getDocument, GlobalWorkerOptions } from "pdfjs-dist";
+import { getDocument, GlobalWorkerOptions, TextLayer } from "pdfjs-dist";
 import workerUrl from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 GlobalWorkerOptions.workerSrc = workerUrl;
 
@@ -25,7 +25,30 @@ export function useSourcePdf(material) {
   }, [material]);
   return result;
 }
-function Slice({ pdf, region, label }) {
+function SelectableText({pdf,region,width}) {
+  const container=useRef(null),[message,setMessage]=useState('');
+  const scale=width/(region.right-region.left);
+  useEffect(()=>{
+    let active=true,layer;
+    const node=container.current;node.replaceChildren();setMessage('');
+    (async()=>{
+      const page=await pdf.getPage(region.page),content=await page.getTextContent();
+      if(!active)return;
+      const natural=page.getViewport({scale:1});
+      const items=content.items.filter(item=>{
+        if(!item.str)return false;
+        const [x,y]=natural.convertToViewportPoint(item.transform[4],item.transform[5]);
+        return x+item.width>region.left && x<region.right && y>region.top && y-item.height<region.bottom;
+      });
+      if(!items.length){setMessage('该区域没有可选文字');return;}
+      layer=new TextLayer({textContentSource:{...content,items},container:node,viewport:page.getViewport({scale})});
+      await layer.render();
+    })().catch(error=>{if(active&&error.name!=='AbortException')setMessage('文字选择暂不可用，原题仍可阅读');});
+    return ()=>{active=false;layer?.cancel();node.replaceChildren();};
+  },[pdf,region,width]);
+  return <><div ref={container} className="capture-pdf-text" data-word-source style={{left:-region.left*scale,top:-region.top*scale,'--total-scale-factor':scale,'--scale-round-x':'1px','--scale-round-y':'1px'}}/>{message&&<small className="capture-pdf-message">{message}</small>}</>;
+}
+function Slice({ pdf, region, label, selectable }) {
   const box = useRef(null), canvas = useRef(null);
   const [width, setWidth] = useState(600), [status, setStatus] = useState("loading");
   useEffect(() => {
@@ -61,10 +84,11 @@ function Slice({ pdf, region, label }) {
     {status === "loading" && <span className="source-loading" role="status">正在呈现原题…</span>}
     {!['ready', 'loading'].includes(status) && <p role="alert">原题显示失败：{status}</p>}
     <canvas ref={canvas} role="img" aria-label={label} data-loaded={status === "ready"} />
+    {selectable && status==='ready' && <SelectableText pdf={pdf} region={region} width={width}/>}
     {region.focusTop !== undefined && <div className="source-focus" aria-hidden="true" style={{ top: (region.focusTop - region.top) * width / (region.right - region.left), height: (region.focusBottom - region.focusTop) * width / (region.right - region.left) }} />}
   </div>;
 }
-export default function PdfExcerpt({ pdf, regions, label }) {
+export default function PdfExcerpt({ pdf, regions, label, selectable=false }) {
   if (!pdf) return <p className="source-loading">正在读取教材…</p>;
-  return regions.map((region, index) => <Slice key={`${region.page}-${index}`} pdf={pdf} region={region} label={label} />);
+  return regions.map((region, index) => <Slice key={`${region.page}-${index}`} pdf={pdf} region={region} label={label} selectable={selectable} />);
 }

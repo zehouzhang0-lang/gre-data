@@ -11,6 +11,22 @@
   line-height: 1.6;
   font-size: 14px;
 }
+.word-capture-toolbar { display:flex; align-items:center; justify-content:flex-end; gap:12px; margin:0 0 14px; }
+.word-capture-toolbar button { border-radius:20px; padding:7px 16px; min-height:34px; font-size:13px; }
+.word-capture-toolbar button[aria-pressed=true] { background:#147d72; color:white; border-color:#147d72; }
+.word-capture-toolbar span { color:#688377; font-size:12px; }
+.word-capture-mode [data-word-source], .word-capture-mode [data-word-source] * { cursor:text; user-select:text; -webkit-user-select:text; }
+.word-capture-mode .answer-options button, .word-capture-mode .sentence-passage button { cursor:text; user-select:text; -webkit-user-select:text; }
+.word-capture-mode [data-word-source]::selection, .word-capture-mode [data-word-source] *::selection { background:#b3ddcc; }
+.capture-sources { margin:14px 0; color:#60746b; }
+.capture-sources p { font:16px/1.7 Georgia,serif; }
+.capture-pdf-text { position:absolute; line-height:1; text-align:initial; transform-origin:0 0; text-size-adjust:none; forced-color-adjust:none; letter-spacing:normal; word-spacing:normal; z-index:2; --min-font-size:1; --text-scale-factor:calc(var(--total-scale-factor) * var(--min-font-size)); --min-font-size-inv:calc(1 / var(--min-font-size)); }
+.capture-pdf-text :is(span,br) { color:transparent; position:absolute; white-space:pre; transform-origin:0 0; cursor:text; }
+.capture-pdf-text > :not(.markedContent), .capture-pdf-text .markedContent span:not(.markedContent) { --font-height:0; font-size:calc(var(--text-scale-factor) * var(--font-height)); --scale-x:1; --rotate:0deg; transform:rotate(var(--rotate)) scaleX(var(--scale-x)) scale(var(--min-font-size-inv)); }
+.capture-pdf-text .markedContent { display:contents; }
+.capture-pdf-text span::selection { background:#83bdaa88 !important; }
+.capture-pdf-message { position:absolute; right:8px; top:8px; background:#f4f8f6; padding:3px 8px; color:#63776d; }
+@media(max-width:600px) { .word-capture-toolbar { flex-wrap:wrap; justify-content:flex-start; }.word-capture-toolbar span { max-width:220px; } }
 .review-overview { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; margin:24px 0 36px; }
 .review-overview section { background:#f2f7f4; border-radius:16px; padding:26px; display:flex; align-items:start; flex-direction:column; gap:8px; }
 .review-overview section:nth-child(2) { background:#f4f5fa; }

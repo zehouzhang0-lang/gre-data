@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "41de3d3a-2a1c-4752-b203-712748e35e46",
+  "recorded_at": "2026-09-15T13:13:13.960Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "7cb9a8dc-f2bf-4b0e-9699-fd1e78e28ff2",
+    "input_hash": "ae4a328ebd46b9559b47c4b67fba1157fd3f93d201ab4a617f23fee967766694",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BF",
+    "result": {
+      "summary": "你的B/F与用户提供的参考答案BF一致。句子用“误导性的表象”与内在耐心形成反差；irascibility和exasperation分别填入均成立，且全句表达等价。",
+      "evidence": "先预测语义方向：“misleading front, concealing”表明外表掩盖真实内在；“amazing reserves of patience”要求空格表达不耐烦或易怒。B irascibility（易怒）与F exasperation（恼怒、不耐烦）分别代入，都表示教授看似易怒，实则极有耐心并投入学生的学习。两词并非完全同义，但在本句中形成等价表述。A cordiality（亲切）与D conviviality（欢乐友好）虽意义接近，却不符合与耐心相反的表象；C disorganization（缺乏条理）和E diffidence（缺乏自信、羞怯）也没有得到这一反差的支持。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。标签：读题（表里反差）、策略（两项分别成立且全句等价），仅为本题检查维度，不代表已发现弱项；无耗时数据，无法评估时间策略。",
+      "next_action": "下次先圈出表里转折词，遮住选项预测“不耐烦／易怒”；再逐项代入，确认两项都与内在耐心构成反差，最后用同一句中文复述两种完整句意，检验等价性。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

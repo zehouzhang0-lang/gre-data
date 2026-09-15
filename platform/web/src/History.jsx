@@ -8,6 +8,7 @@ const labels = {
   ai_review: "AI讲解与复盘",
   vocab_recall: "词汇回忆自评",
   vocab_upsert: "编辑生词",
+  vocab_capture: "题中摘词",
   vocab_delete: "移除生词",
   vocab_restore: "恢复生词",
   questions_import: "导入题目",
