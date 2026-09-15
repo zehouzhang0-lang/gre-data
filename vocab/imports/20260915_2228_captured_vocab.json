@@ -1,0 +1,3374 @@
+{
+  "schema_version": 1,
+  "batch_id": "20260915_2228_captured_vocab",
+  "imported_at": "2026-09-15T14:30:40.743Z",
+  "source_type": "platform_vocab_capture",
+  "counts": {
+    "captured": 80,
+    "canonical_entries": 80,
+    "normalized_forms": 13,
+    "new_to_vocabulary": 79,
+    "existing_lemma": [
+      "dwindle"
+    ],
+    "relation_groups": 13
+  },
+  "note": "词典核验与分类整理，不是学习完成事件。13个原选词形归并至规范词条，保留原事件；dwindling 并入已有 dwindle，不增加复习次数。原词形仅软移除，必要时可恢复。",
+  "items": [
+    {
+      "surface": "accentuate",
+      "word": "accentuate",
+      "pos": "v.",
+      "meaning": "突出；强调；使更加明显",
+      "collocation": "accentuate a contrast",
+      "connotation": "中性",
+      "topics": [
+        "language",
+        "quantity"
+      ],
+      "note": "侧重让已有特点更加显眼，不必表示数量增加。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "accentuate",
+          "recorded_at": "2026-09-15T13:51:36.250Z"
+        }
+      ],
+      "event_ids": [
+        "410da426-cfdf-4ca9-bfca-bd9a2dd17bfb"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/accentuate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "adversarial",
+      "word": "adversarial",
+      "pos": "adj.",
+      "meaning": "对抗的；双方相互对立的",
+      "collocation": "an adversarial relationship",
+      "connotation": "中性或负向，依关系而定",
+      "topics": [
+        "conflict",
+        "social"
+      ],
+      "note": "常描述利益对立或辩论制度；未必表示个人仇恨。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "adversarial",
+          "recorded_at": "2026-09-15T13:29:34.326Z"
+        }
+      ],
+      "event_ids": [
+        "8e3b43dc-2f81-4ede-9804-6b15f13c636a"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/adversarial",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "affable",
+      "word": "affable",
+      "pos": "adj.",
+      "meaning": "和蔼的；友善而易于交谈的",
+      "collocation": "an affable colleague",
+      "connotation": "褒义",
+      "topics": [
+        "character",
+        "social"
+      ],
+      "note": "重在容易接近、交谈愉快；与爱争吵的性情形成对照。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "affable",
+          "recorded_at": "2026-09-15T13:23:35.603Z"
+        }
+      ],
+      "event_ids": [
+        "68567ce6-b73c-4f51-a67a-d3e0305d5f34"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/affable",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "amplify",
+      "word": "amplify",
+      "pos": "v.",
+      "meaning": "放大；增强；详述",
+      "collocation": "amplify a signal",
+      "connotation": "中性",
+      "topics": [
+        "quantity",
+        "language"
+      ],
+      "note": "声音语境中表示增强；用于陈述时可指增加细节、展开说明。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section1_easy",
+            "question": "4",
+            "type": "se"
+          },
+          "context": "amplify",
+          "recorded_at": "2026-09-15T14:02:56.335Z"
+        }
+      ],
+      "event_ids": [
+        "0c9d8676-b63f-42bc-b5b2-1a228edc0a22"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/amplify",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "antagonistic",
+      "word": "antagonistic",
+      "pos": "adj.",
+      "meaning": "敌对的；反对的；相互对抗的",
+      "collocation": "antagonistic toward a proposal",
+      "connotation": "常负向",
+      "topics": [
+        "conflict",
+        "social"
+      ],
+      "note": "比单纯处于对立关系更容易带出敌意或反感；常接 to/toward。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "antagonistic",
+          "recorded_at": "2026-09-15T13:29:41.856Z"
+        }
+      ],
+      "event_ids": [
+        "e943ce37-9682-4a1f-8556-6f620a9fc00e"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/antagonistic",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "antediluvian",
+      "word": "antediluvian",
+      "pos": "adj.",
+      "meaning": "极其陈旧过时的；《圣经》大洪水以前的",
+      "collocation": "antediluvian attitudes",
+      "connotation": "比喻义常含贬义或幽默",
+      "topics": [
+        "time",
+        "change"
+      ],
+      "note": "题目谈守旧、反对创新，重点记“极其过时”，而非只背字面年代。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "antediluvian",
+          "recorded_at": "2026-09-15T14:09:10.223Z"
+        }
+      ],
+      "event_ids": [
+        "ede37256-ec0e-4e07-8565-0a25eebe4cd8"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/antediluvian",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "attenuates",
+      "word": "attenuate",
+      "pos": "v.",
+      "meaning": "削弱；减轻；使变薄",
+      "collocation": "attenuate temperature fluctuations",
+      "connotation": "中性，较正式",
+      "topics": [
+        "change",
+        "quantity"
+      ],
+      "note": "题中 attenuates 是第三人称单数：减小温度变化的幅度。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "attenuates",
+          "recorded_at": "2026-09-15T13:35:00.142Z"
+        }
+      ],
+      "event_ids": [
+        "2aaf68e9-7dbb-4f2f-a702-8260ad3252e7"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/attenuate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "be subject to",
+      "word": "be subject to",
+      "pos": "短语",
+      "meaning": "受……支配或约束；可能遭受；取决于",
+      "collocation": "be subject to the same rules",
+      "connotation": "依搭配而定",
+      "topics": [
+        "conflict",
+        "reason"
+      ],
+      "note": "题中指受相同物理规律支配；subject to change 则指可能改变。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "vent horizon boundary is _____ space travelers; crossing it would be subject to the same physical laws that apply anywhere else.",
+          "recorded_at": "2026-09-15T13:33:38.224Z"
+        }
+      ],
+      "event_ids": [
+        "3e2dc85c-29e4-4a6b-9677-ce7c084b05ef"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/subject%20to",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "belie",
+      "word": "belie",
+      "pos": "v.",
+      "meaning": "造成与实际不符的印象；掩盖；与……相矛盾",
+      "collocation": "a simple name that belies its importance",
+      "connotation": "中性，较正式",
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "note": "题中简单名称使人低估其重要性；不是 believe 的变形。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "belie",
+          "recorded_at": "2026-09-15T13:51:32.145Z"
+        }
+      ],
+      "event_ids": [
+        "58cdacad-38b6-4603-b71d-d5c076fb7b94"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/belie",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "chafing",
+      "word": "chafing dish",
+      "pos": "n.",
+      "meaning": "餐桌上用于加热或保温食物的器皿；暖锅",
+      "collocation": "keep food warm in a chafing dish",
+      "connotation": "中性",
+      "topics": [
+        "food"
+      ],
+      "note": "题中应整体记 chafing dish；单独按 chafe 的“擦痛、烦躁”理解会误读。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "as sometimes associated with the culinary accessory known as the chafing dish, but Welsh rarebit was considered the truly ______ chafing dish recipe.",
+          "recorded_at": "2026-09-15T13:36:41.198Z"
+        }
+      ],
+      "event_ids": [
+        "def68420-7206-4fdc-a461-ff01e2825e47"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/chafing%20dish",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "chauvinistic",
+      "word": "chauvinistic",
+      "pos": "adj.",
+      "meaning": "盲目偏袒本群体的；沙文主义的；大男子主义的",
+      "collocation": "a chauvinistic attitude",
+      "connotation": "贬义",
+      "topics": [
+        "character",
+        "society"
+      ],
+      "note": "核心是认为本国、本群体或本性别优越，不等同于一般守旧。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "chauvinistic",
+          "recorded_at": "2026-09-15T14:09:15.198Z"
+        }
+      ],
+      "event_ids": [
+        "f54a1f25-6303-46e9-a071-d1eba85b846b"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/chauvinistic",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "clandestine",
+      "word": "clandestine",
+      "pos": "adj.",
+      "meaning": "秘密进行的；暗中的",
+      "collocation": "a clandestine meeting",
+      "connotation": "常带隐瞒、违规色彩",
+      "topics": [
+        "action",
+        "society"
+      ],
+      "note": "常暗示因不被允许而怕被发现；与 covert 的“不公开”有侧重差别。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test6_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "clandestine",
+          "recorded_at": "2026-09-15T14:21:34.819Z"
+        }
+      ],
+      "event_ids": [
+        "51de1421-282c-47b3-97fa-e47dae6f6dc6"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/clandestine",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "coagulation",
+      "word": "coagulation",
+      "pos": "n.",
+      "meaning": "凝结；凝固；凝血",
+      "collocation": "blood coagulation",
+      "connotation": "中性，科技用语",
+      "topics": [
+        "body",
+        "material"
+      ],
+      "note": "题中的 coagulation factors 指凝血因子。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "Coagulation factors are useful proteins whose simple names—many are known only by Roman numerals—_____ their importance and the specificity of their roles in the thinning and clotting of blood.",
+          "recorded_at": "2026-09-15T13:50:58.645Z"
+        }
+      ],
+      "event_ids": [
+        "7cf1243f-633b-4f23-a13a-8e5b1e9ff870"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/coagulation",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "condescending",
+      "word": "condescending",
+      "pos": "adj.",
+      "meaning": "居高临下的；带优越感地待人的",
+      "collocation": "a condescending reply",
+      "connotation": "贬义",
+      "topics": [
+        "character",
+        "social"
+      ],
+      "note": "关键是把对方看低一等；并非单纯“愿意屈尊帮助”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "condescending",
+          "recorded_at": "2026-09-15T14:04:14.630Z"
+        }
+      ],
+      "event_ids": [
+        "d9158b92-faf3-4068-bf9b-69e010f56f2c"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/condescending",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "conjecture",
+      "word": "conjecture",
+      "pos": "n.; v.",
+      "meaning": "推测；猜想；在证据不足时推断",
+      "collocation": "a scientific conjecture",
+      "connotation": "中性，正式",
+      "topics": [
+        "reason"
+      ],
+      "note": "题中 risky conjecture 是大胆但尚待证实的推测；不是已证明的结论。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "__; as Ramachandran frequently remarks, science thrives on risky conjecture.",
+          "recorded_at": "2026-09-15T14:01:27.726Z"
+        }
+      ],
+      "event_ids": [
+        "5e2a3027-8ee1-447c-90f1-5b111c8884d3"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conjecture",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "conspicuous",
+      "word": "conspicuous",
+      "pos": "adj.",
+      "meaning": "显眼的；引人注目的；明显的",
+      "collocation": "a conspicuous difference",
+      "connotation": "依语境褒贬皆可",
+      "topics": [
+        "reason",
+        "material"
+      ],
+      "note": "形容容易被看见或注意到，不等于 ubiquitous 的“到处都有”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "4",
+            "type": "se"
+          },
+          "context": "conspicuous",
+          "recorded_at": "2026-09-15T13:42:02.208Z"
+        }
+      ],
+      "event_ids": [
+        "13fc4db4-f910-4408-9883-f5175207d6ed"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conspicuous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "covert",
+      "word": "covert",
+      "pos": "adj.",
+      "meaning": "隐蔽的；不公开的",
+      "collocation": "a covert operation",
+      "connotation": "依目的而定",
+      "topics": [
+        "action",
+        "society"
+      ],
+      "note": "侧重未公开、未表露；不能仅凭 secret agent 就忽略题目在谈危险程度。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test6_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "covert",
+          "recorded_at": "2026-09-15T14:21:24.200Z"
+        }
+      ],
+      "event_ids": [
+        "e6603e5c-dd66-463d-905d-55c26e310445"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/covert",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "culinary accessory",
+      "word": "culinary accessory",
+      "pos": "名词短语",
+      "meaning": "烹饪辅助用具；厨房配件",
+      "collocation": "a useful culinary accessory",
+      "connotation": "中性",
+      "topics": [
+        "food"
+      ],
+      "note": "组合义：culinary 是烹饪的，accessory 是辅助物件；题中具体指 chafing dish。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "dish known as lobster Newburg was sometimes associated with the culinary accessory known as the chafing dish, but Welsh rarebit was considered the truly ______ chafing dish recipe.",
+          "recorded_at": "2026-09-15T13:36:44.756Z"
+        }
+      ],
+      "event_ids": [
+        "fb011635-d982-4d35-bf80-d6b9830dd94b"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/culinary",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/accessory",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "dampen",
+      "word": "dampen",
+      "pos": "v.",
+      "meaning": "减弱；抑制；使潮湿",
+      "collocation": "dampen a sound",
+      "connotation": "依宾语而定",
+      "topics": [
+        "change",
+        "quantity"
+      ],
+      "note": "声音语境中是减弱、消音；dampen enthusiasm 表示打击热情。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section1_easy",
+            "question": "4",
+            "type": "se"
+          },
+          "context": "dampen",
+          "recorded_at": "2026-09-15T14:02:52.353Z"
+        }
+      ],
+      "event_ids": [
+        "aeb5b5ac-c773-4c75-9747-b842d7869c99"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dampen",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "detect",
+      "word": "detect",
+      "pos": "v.",
+      "meaning": "发现；察觉；检测出",
+      "collocation": "detect a subtle change",
+      "connotation": "中性",
+      "topics": [
+        "reason"
+      ],
+      "note": "侧重发现某物存在；题中是检测出有生物学意义的变化。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "detect",
+          "recorded_at": "2026-09-15T14:13:59.693Z"
+        }
+      ],
+      "event_ids": [
+        "c28fce44-ec1b-4c5f-b042-cbb1290a25c5"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/detect",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "diametrically",
+      "word": "diametrically",
+      "pos": "adv.",
+      "meaning": "完全地；截然地；沿直径地",
+      "collocation": "diametrically opposed interests",
+      "connotation": "中性，用于强调对立",
+      "topics": [
+        "conflict",
+        "quantity"
+      ],
+      "note": "常与 opposed/opposite 搭配，表示完全相反。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "nship are inherently _____: the interests of business owners are diametrically opposed to those of employees.",
+          "recorded_at": "2026-09-15T13:29:46.555Z"
+        }
+      ],
+      "event_ids": [
+        "e1aaff0f-65cb-4eaf-bc5f-6eae97206cc7"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/diametrically",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "dieticians",
+      "word": "dietitian",
+      "pos": "n.",
+      "meaning": "营养师；饮食营养专家",
+      "collocation": "consult a dietitian",
+      "connotation": "中性",
+      "topics": [
+        "body",
+        "food"
+      ],
+      "note": "dieticians 是 dietician 的复数；dietician 为认可的变体拼写，统一收在 dietitian。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "that the only function of food is to provide nourishment, these dieticians view an emphasis on the aesthetic dimension of the culinary arts as _____.",
+          "recorded_at": "2026-09-15T13:19:40.542Z"
+        }
+      ],
+      "event_ids": [
+        "f920b821-1430-43c8-b579-e1788df8bb67"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dietitian",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "discern",
+      "word": "discern",
+      "pos": "v.",
+      "meaning": "辨认；察觉；分辨",
+      "collocation": "discern a pattern",
+      "connotation": "中性，较正式",
+      "topics": [
+        "reason"
+      ],
+      "note": "既可表示费力看清，也可凭判断分辨；discern A from B 表示区分两者。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "discern",
+          "recorded_at": "2026-09-15T14:13:55.823Z"
+        }
+      ],
+      "event_ids": [
+        "7ed48796-0522-455f-bf74-377782b8b92f"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/discern",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "downright",
+      "word": "downright",
+      "pos": "adv.; adj.",
+      "meaning": "adv. 完全地，简直；adj. 十足的，直率的",
+      "collocation": "downright absurd",
+      "connotation": "强调语气，常修饰负向评价",
+      "topics": [
+        "quantity",
+        "language"
+      ],
+      "note": "题中放在形容词前加强程度，不按 down + right 字面拆译。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "y is so old-fashioned and opposed to innovation that it can seem downright _____.",
+          "recorded_at": "2026-09-15T14:09:06.348Z"
+        }
+      ],
+      "event_ids": [
+        "a455af2d-b403-4762-a18c-adc38002ecf0"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/downright",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "dwindling",
+      "word": "dwindle",
+      "pos": "v.",
+      "meaning": "逐渐减少；变小",
+      "collocation": "resources dwindle",
+      "connotation": "中性，常指不希望的减少",
+      "topics": [
+        "change",
+        "quantity"
+      ],
+      "note": "dwindling 作修饰语时表示“逐渐减少的”；并入已有 dwindle，保留复习历史。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "dwindling",
+          "recorded_at": "2026-09-15T13:59:32.350Z"
+        }
+      ],
+      "event_ids": [
+        "d1ccef29-dee3-41b4-b068-a37af4ab7f6b"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dwindle",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "efficacious",
+      "word": "efficacious",
+      "pos": "adj.",
+      "meaning": "有效的；能产生预期效果的",
+      "collocation": "an efficacious method",
+      "connotation": "常褒义，正式",
+      "topics": [
+        "reason"
+      ],
+      "note": "强调能奏效；efficient 更强调少耗费时间或资源，二者不完全等同。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "efficacious",
+          "recorded_at": "2026-09-15T13:30:59.429Z"
+        }
+      ],
+      "event_ids": [
+        "efa88592-4702-41bb-af97-37701526c9de"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/efficacious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "elicit",
+      "word": "elicit",
+      "pos": "v.",
+      "meaning": "引出；诱发；设法获得回应",
+      "collocation": "elicit a response",
+      "connotation": "中性",
+      "topics": [
+        "action",
+        "language"
+      ],
+      "note": "题中是诱发可测行为；易混 illicit（adj. 非法的），注意词性。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "lose a rodent in a labyrinth; today’s scientists design mazes to elicit a few simple, easily measured behaviors.",
+          "recorded_at": "2026-09-15T13:16:30.478Z"
+        }
+      ],
+      "event_ids": [
+        "eb6adbb0-10a1-4c81-8a37-1151f440e287"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/elicit",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "eroded",
+      "word": "erode",
+      "pos": "v.",
+      "meaning": "侵蚀；逐步削弱",
+      "collocation": "erode public trust",
+      "connotation": "物理义中性；比喻义常负向",
+      "topics": [
+        "change",
+        "environment"
+      ],
+      "note": "eroded 是过去式或过去分词；用于权利、信任等抽象对象时指逐步损害。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "4",
+            "type": "se"
+          },
+          "context": "eroded",
+          "recorded_at": "2026-09-15T13:24:51.276Z"
+        }
+      ],
+      "event_ids": [
+        "942b75a4-3fb2-43b1-a032-c154a4dee235"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/erode",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "excessive",
+      "word": "excessive",
+      "pos": "adj.",
+      "meaning": "过多的；过度的",
+      "collocation": "excessive attention",
+      "connotation": "通常负向",
+      "topics": [
+        "quantity"
+      ],
+      "note": "超过合理或必要限度，比单纯“很多”多了一层评价。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "excessive",
+          "recorded_at": "2026-09-15T13:59:22.811Z"
+        }
+      ],
+      "event_ids": [
+        "de8ecfca-8c6f-4864-85a5-535663bdc263"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/excessive",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "exhilarating",
+      "word": "exhilarating",
+      "pos": "adj.",
+      "meaning": "令人兴奋愉快的；使人振奋的",
+      "collocation": "an exhilarating experience",
+      "connotation": "褒义",
+      "topics": [
+        "mood"
+      ],
+      "note": "描述体验带来的兴奋；与表示危险的 perilous 不能机械互换。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test6_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "exhilarating",
+          "recorded_at": "2026-09-15T14:21:30.147Z"
+        }
+      ],
+      "event_ids": [
+        "fce92193-3479-4070-b012-5d483cd7c4e7"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exhilarating",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "exigencies",
+      "word": "exigency",
+      "pos": "n.",
+      "meaning": "特定情势下的迫切需要；紧急情况",
+      "collocation": "the exigencies of the plot",
+      "connotation": "中性，正式",
+      "topics": [
+        "reason",
+        "time"
+      ],
+      "note": "题中复数 exigencies 指情节当下的需要，不一定是灾难或突发事故。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "ild’s perspective according to no logic other than the immediate exigencies of the plot.",
+          "recorded_at": "2026-09-15T13:22:16.333Z"
+        }
+      ],
+      "event_ids": [
+        "22c97b04-96a8-4deb-ba14-0a7007c960c0"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exigency",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "expel",
+      "word": "expel",
+      "pos": "v.",
+      "meaning": "驱逐；开除；排出",
+      "collocation": "expel a member from an organization",
+      "connotation": "依语境而定",
+      "topics": [
+        "conflict",
+        "society"
+      ],
+      "note": "常见 expel someone from；题中组织成员语境取“开除”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "expel",
+          "recorded_at": "2026-09-15T13:49:05.827Z"
+        }
+      ],
+      "event_ids": [
+        "5e7d93ec-a7f3-4096-92aa-b4254e6b7b7f"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/expel",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "exploitation",
+      "word": "exploitation",
+      "pos": "n.",
+      "meaning": "开发利用；剥削；不公平利用",
+      "collocation": "the exploitation of resources",
+      "connotation": "资源开发可中性；剥削义负向",
+      "topics": [
+        "economy",
+        "nature"
+      ],
+      "note": "题中对象是自然资源，取“开发利用”；整体评价由上下文决定。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "or protecting natural resources too often issue permits allowing exploitation of those resources, a process that remains _____ given that agencies have become experts at masking their decisions in the scientific terms.",
+          "recorded_at": "2026-09-15T14:05:40.627Z"
+        }
+      ],
+      "event_ids": [
+        "355039e8-6a0e-4a9d-b3af-d53ec828a72a"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exploitation",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exploit",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "exploitative",
+      "word": "exploitative",
+      "pos": "adj.",
+      "meaning": "剥削性的；为自身利益不公平利用他人的",
+      "collocation": "exploitative working conditions",
+      "connotation": "贬义",
+      "topics": [
+        "economy",
+        "social"
+      ],
+      "note": "强调不公平地利用人或群体获利；不只是中性的“开发”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "exploitative",
+          "recorded_at": "2026-09-15T13:29:31.441Z"
+        }
+      ],
+      "event_ids": [
+        "5a37d58d-8b60-4e3c-a362-4f833a7233b3"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exploitative",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "flamboyant",
+      "word": "flamboyant",
+      "pos": "adj.",
+      "meaning": "炫目的；华丽张扬的；引人注目的",
+      "collocation": "a flamboyant style",
+      "connotation": "可褒可贬",
+      "topics": [
+        "arts",
+        "character"
+      ],
+      "note": "侧重外在表现醒目夸张；unconventional 只表示不循常规。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "flamboyant",
+          "recorded_at": "2026-09-15T13:52:58.948Z"
+        }
+      ],
+      "event_ids": [
+        "a5487231-c06b-419f-91da-08d47733da20"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flamboyant",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "fractiousness",
+      "word": "fractiousness",
+      "pos": "n.",
+      "meaning": "易怒好争吵的性情；难以管束",
+      "collocation": "a reputation for fractiousness",
+      "connotation": "贬义",
+      "topics": [
+        "character",
+        "conflict"
+      ],
+      "note": "fractious 的名词；题中指员工难相处、容易争执的名声。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "The employee had a reputation for fractiousness, but his coworkers found him to be, on the contrary, quiet _____.",
+          "recorded_at": "2026-09-15T13:23:42.097Z"
+        }
+      ],
+      "event_ids": [
+        "989627a8-711a-4804-936d-f458d0730afb"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fractiousness",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fractious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "hazardous",
+      "word": "hazardous",
+      "pos": "adj.",
+      "meaning": "危险的；有危害风险的",
+      "collocation": "hazardous conditions",
+      "connotation": "负向描述",
+      "topics": [
+        "environment",
+        "action"
+      ],
+      "note": "用于可能造成伤害或损失的环境、材料、活动；通常较客观。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "hazardous",
+          "recorded_at": "2026-09-15T13:47:18.913Z"
+        }
+      ],
+      "event_ids": [
+        "9ffb843d-0692-4dab-bb9b-3b31c8d75c3a"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hazardous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "heterogeneous",
+      "word": "heterogeneous",
+      "pos": "adj.",
+      "meaning": "由不同成分构成的；异质的；多样混杂的",
+      "collocation": "heterogeneous subject matter",
+      "connotation": "本身中性",
+      "topics": [
+        "material",
+        "reason"
+      ],
+      "note": "题中论题成分不同；与 homogeneous（同质的）对照，不自动等于质量差。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "heterogeneous",
+          "recorded_at": "2026-09-15T13:26:47.184Z"
+        }
+      ],
+      "event_ids": [
+        "050e9f00-ea85-4d3b-b55a-ae1a30bb32a2"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/heterogeneous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "hodgepodge",
+      "word": "hodgepodge",
+      "pos": "n.",
+      "meaning": "杂乱的混合物；大杂烩",
+      "collocation": "a hodgepodge of viewpoints",
+      "connotation": "常负向或非正式",
+      "topics": [
+        "material",
+        "language"
+      ],
+      "note": "比 heterogeneous 更强调混杂、缺少整齐组织。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "a hodgepodge",
+          "recorded_at": "2026-09-15T13:22:12.585Z"
+        }
+      ],
+      "event_ids": [
+        "9931895c-e69a-4086-a247-d1b257da3bbe"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hodgepodge",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "illuminating",
+      "word": "illuminating",
+      "pos": "adj.",
+      "meaning": "富有启发性的；帮助理解的",
+      "collocation": "an illuminating explanation",
+      "connotation": "褒义",
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "note": "抽象语境指使问题变清楚，不只表示物理照明。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "illuminating",
+          "recorded_at": "2026-09-15T13:20:47.199Z"
+        }
+      ],
+      "event_ids": [
+        "1ec6ad18-1cc1-4b1f-a296-baab38a399d4"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/illuminating",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "illusory",
+      "word": "illusory",
+      "pos": "adj.",
+      "meaning": "虚幻的；造成错觉的；不真实的",
+      "collocation": "an illusory sense of safety",
+      "connotation": "常含否定评价",
+      "topics": [
+        "reason"
+      ],
+      "note": "强调看似存在而实际不成立；与 illuminating（有启发的）分开记。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "illusory",
+          "recorded_at": "2026-09-15T13:33:29.423Z"
+        }
+      ],
+      "event_ids": [
+        "8920b7d1-261a-4081-a974-cf81c9e6959f"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/illusory",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "impractical",
+      "word": "impractical",
+      "pos": "adj.",
+      "meaning": "不切实际的；不实用的；不善处理实际事务的",
+      "collocation": "an impractical proposal",
+      "connotation": "常负向",
+      "topics": [
+        "reason",
+        "action"
+      ],
+      "note": "未必逻辑上不可能，也可能因成本、条件等而不宜实行。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "impractical",
+          "recorded_at": "2026-09-15T13:52:48.938Z"
+        }
+      ],
+      "event_ids": [
+        "4f50d60f-444b-4674-8719-a95b650f6790"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impractical",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "inbreeding",
+      "word": "inbreeding",
+      "pos": "n.",
+      "meaning": "近亲繁殖；近亲交配",
+      "collocation": "inbreeding in a small population",
+      "connotation": "中性，生物学用语",
+      "topics": [
+        "nature"
+      ],
+      "note": "题中指种群内亲缘很近的个体繁殖；保留独立名词词条。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "Although field studies have linked inbreeding to declines among song sparrow populations, some researchers argue that, in nature, inbreeding proves _____ as a factor when compared with crushing blows from weather changes",
+          "recorded_at": "2026-09-15T13:47:10.682Z"
+        }
+      ],
+      "event_ids": [
+        "579bbdc1-7581-4dbd-810b-d4d1391216b5"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inbreeding",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "indigenous",
+      "word": "indigenous",
+      "pos": "adj.",
+      "meaning": "本土的；原生的；原住民的",
+      "collocation": "a species indigenous to the island",
+      "connotation": "中性",
+      "topics": [
+        "nature",
+        "environment"
+      ],
+      "note": "常用 indigenous to；用于群体时须按语境理解为原住民，不能泛化成“普遍”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "indigenous",
+          "recorded_at": "2026-09-15T13:38:43.569Z"
+        }
+      ],
+      "event_ids": [
+        "46ec36f6-6212-4463-b53b-c5f72a231730"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/indigenous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "insulting",
+      "word": "insulting",
+      "pos": "adj.",
+      "meaning": "侮辱性的；冒犯人的",
+      "collocation": "an insulting remark",
+      "connotation": "贬义",
+      "topics": [
+        "social",
+        "language"
+      ],
+      "note": "强调言行造成冒犯；不等于单纯“令人失望”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "insulting",
+          "recorded_at": "2026-09-15T14:04:11.187Z"
+        }
+      ],
+      "event_ids": [
+        "58e99515-e952-449e-8a0c-9335fa5c5ba8"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/insulting",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "intriguing",
+      "word": "intriguing",
+      "pos": "adj.",
+      "meaning": "引人入胜的；激起好奇的",
+      "collocation": "an intriguing question",
+      "connotation": "常褒义",
+      "topics": [
+        "mood",
+        "reason"
+      ],
+      "note": "强调引发兴趣与好奇，不表示事情已经得到证明。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "intriguing",
+          "recorded_at": "2026-09-15T13:26:59.025Z"
+        }
+      ],
+      "event_ids": [
+        "d101fee5-34bb-4057-ace8-be311ced8cc6"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/intriguing",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "labyrinth",
+      "word": "labyrinth",
+      "pos": "n.",
+      "meaning": "迷宫；错综复杂的体系",
+      "collocation": "a labyrinth of corridors",
+      "connotation": "中性或带复杂难解之感",
+      "topics": [
+        "environment",
+        "reason"
+      ],
+      "note": "题中是实验迷宫；比喻义可描述制度或问题错综复杂。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "ce it was first invented instead of hoping to lose a rodent in a labyrinth; today’s scientists design mazes to elicit a few simple, easily measured behaviors.",
+          "recorded_at": "2026-09-15T13:15:23.888Z"
+        }
+      ],
+      "event_ids": [
+        "64e9961f-8a37-4d14-879c-1d6f1d7d2f7c"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/labyrinth",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "legislators",
+      "word": "legislator",
+      "pos": "n.",
+      "meaning": "立法者；立法机关成员；议员",
+      "collocation": "a group of legislators",
+      "connotation": "中性",
+      "topics": [
+        "society"
+      ],
+      "note": "legislators 是复数；核心是参与立法，不泛指所有政府工作人员。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "Although legislators on both sides of issues have repeatedly _____ a desire to find a middle ground, until now no acceptable compromise has been achieved.",
+          "recorded_at": "2026-09-15T14:07:37.421Z"
+        }
+      ],
+      "event_ids": [
+        "f4313a95-7d04-4e45-b9c1-ec1b9226ee53"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/legislator",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "lucrative",
+      "word": "lucrative",
+      "pos": "adj.",
+      "meaning": "获利丰厚的；赚钱的",
+      "collocation": "a lucrative contract",
+      "connotation": "通常正向经济评价",
+      "topics": [
+        "economy"
+      ],
+      "note": "只说明收益高，不自动表示合法、公平或有意义。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "lucrative",
+          "recorded_at": "2026-09-15T13:53:02.267Z"
+        }
+      ],
+      "event_ids": [
+        "87d4564f-cda7-471b-98fa-23a303d234ea"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lucrative",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "mediated",
+      "word": "mediate",
+      "pos": "v.",
+      "meaning": "居中调解；通过中介促成或传递",
+      "collocation": "be mediated by an institution",
+      "connotation": "中性，正式",
+      "topics": [
+        "social",
+        "action"
+      ],
+      "note": "题中指判断经同行评审期刊这一中介机制形成，不一定有争吵需要调停。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "In mathematics, judgments about the validity of proofs are mediated by peer-reviewed journals; to ensure _____, reviewers are carefully chosen by journal editors, and the identity of scholars whose papers are under consi",
+          "recorded_at": "2026-09-15T13:17:39.586Z"
+        }
+      ],
+      "event_ids": [
+        "0b4a594e-4bd6-49af-9ac8-f42246a6cc07"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mediate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "mediocre",
+      "word": "mediocre",
+      "pos": "adj.",
+      "meaning": "平庸的；质量一般或不佳的",
+      "collocation": "a mediocre performance",
+      "connotation": "贬义",
+      "topics": [
+        "reason",
+        "arts"
+      ],
+      "note": "是质量评价，不仅仅表示位置“处于中间”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "mediocre",
+          "recorded_at": "2026-09-15T13:27:06.804Z"
+        }
+      ],
+      "event_ids": [
+        "7fa2a6ab-248f-4d25-b12f-3d58330ab428"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mediocre",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "mitigate",
+      "word": "mitigate",
+      "pos": "v.",
+      "meaning": "减轻；缓和；降低严重程度",
+      "collocation": "mitigate the damage",
+      "connotation": "常指改善不利影响",
+      "topics": [
+        "change",
+        "conflict"
+      ],
+      "note": "常接伤害、风险、痛苦；侧重减轻，未必彻底消除。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "mitigate",
+          "recorded_at": "2026-09-15T13:51:29.329Z"
+        }
+      ],
+      "event_ids": [
+        "c3e57dd5-3111-4466-b6e2-7f7a363f3c87"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mitigate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "mutes",
+      "word": "mute",
+      "pos": "v.; adj.",
+      "meaning": "v. 减弱，使安静；adj. 无声的，沉默的",
+      "collocation": "mute seasonal fluctuations",
+      "connotation": "中性",
+      "topics": [
+        "change",
+        "quantity"
+      ],
+      "note": "题中 mutes 是动词第三人称单数：减弱变化，不是“沉默的人们”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "mutes",
+          "recorded_at": "2026-09-15T13:35:03.103Z"
+        }
+      ],
+      "event_ids": [
+        "2d532b4a-94d0-4763-8874-5e7326ebcd2e"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mute",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "newfangled",
+      "word": "newfangled",
+      "pos": "adj.",
+      "meaning": "新奇的；新式而令人不以为然的",
+      "collocation": "a newfangled device",
+      "connotation": "常含不赞同或调侃",
+      "topics": [
+        "time",
+        "change"
+      ],
+      "note": "new 不自动带贬义；newfangled 常流露说话者对新玩意的不信任。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "newfangled",
+          "recorded_at": "2026-09-15T13:38:57.124Z"
+        }
+      ],
+      "event_ids": [
+        "01ee419c-2027-4d28-ab7b-3de42af96ea2"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/newfangled",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Oxford",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/newfangled",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "nourishment",
+      "word": "nourishment",
+      "pos": "n.",
+      "meaning": "营养；滋养；维持生长的食物",
+      "collocation": "provide nourishment",
+      "connotation": "中性或正向",
+      "topics": [
+        "body",
+        "food"
+      ],
+      "note": "题中取食物提供的营养；也可比喻精神滋养。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "dieticians believe that the only function of food is to provide nourishment, these dieticians view an emphasis on the aesthetic dimension of the culinary arts as _____.",
+          "recorded_at": "2026-09-15T13:19:44.669Z"
+        }
+      ],
+      "event_ids": [
+        "ca3d4e0d-2096-4c3a-823b-2108f20c5500"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/nourishment",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "numerals",
+      "word": "numeral",
+      "pos": "n.; adj.",
+      "meaning": "n. 表示数的符号，数码；adj. 数字的",
+      "collocation": "Roman numerals",
+      "connotation": "中性",
+      "topics": [
+        "quantity",
+        "language"
+      ],
+      "note": "题中 Roman numerals 是罗马数字；numeral 侧重符号，number 可指数量概念。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "useful proteins whose simple names—many are known only by Roman numerals—_____ their importance and the specificity of their roles in the thinning and clotting of blood.",
+          "recorded_at": "2026-09-15T13:51:13.604Z"
+        }
+      ],
+      "event_ids": [
+        "cfea6507-fd77-440f-812c-38e6fd9f6483"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/numeral",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "obviate",
+      "word": "obviate",
+      "pos": "v.",
+      "meaning": "预先避免；排除；使不再必要",
+      "collocation": "obviate the need for extra work",
+      "connotation": "中性，正式",
+      "topics": [
+        "action",
+        "reason"
+      ],
+      "note": "重在消除问题或需求；与仅降低严重程度的 mitigate 有别。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "obviate",
+          "recorded_at": "2026-09-15T13:51:25.901Z"
+        }
+      ],
+      "event_ids": [
+        "db6464da-dff1-4b26-a700-3882c07bebd5"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/obviate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "opaque",
+      "word": "opaque",
+      "pos": "adj.",
+      "meaning": "不透明的；晦涩难懂的；不清楚的",
+      "collocation": "an opaque decision-making process",
+      "connotation": "物理义中性；比喻义常负向",
+      "topics": [
+        "material",
+        "reason"
+      ],
+      "note": "题中机构掩饰决策过程，取“不透明、难以看清”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "opaque",
+          "recorded_at": "2026-09-15T14:05:31.783Z"
+        }
+      ],
+      "event_ids": [
+        "57e423b5-e8a4-4832-b8d9-29900837b9ee"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/opaque",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "oust",
+      "word": "oust",
+      "pos": "v.",
+      "meaning": "赶走；罢免；驱逐；取代",
+      "collocation": "oust someone from office",
+      "connotation": "依情境而定",
+      "topics": [
+        "conflict",
+        "society"
+      ],
+      "note": "侧重将人赶下职位或逐出位置；expel 常见于组织开除或排出物体。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "oust",
+          "recorded_at": "2026-09-15T13:49:08.689Z"
+        }
+      ],
+      "event_ids": [
+        "bc6cf0f3-c354-4a24-87fb-f66cf9d62c47"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/oust",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "paradigm",
+      "word": "paradigm",
+      "pos": "n.",
+      "meaning": "范例；典范；理论或思维框架",
+      "collocation": "a paradigm of clarity",
+      "connotation": "中性",
+      "topics": [
+        "reason"
+      ],
+      "note": "a paradigm 可指范例；学术语境也指共享的理论框架。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "a paradigm",
+          "recorded_at": "2026-09-15T13:22:26.468Z"
+        }
+      ],
+      "event_ids": [
+        "c9c0279f-cd7b-4be4-a939-5990056ce2e2"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/paradigm",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "paradigmatic",
+      "word": "paradigmatic",
+      "pos": "adj.",
+      "meaning": "典型的；可作范例的；范式的",
+      "collocation": "a paradigmatic example",
+      "connotation": "中性或正向",
+      "topics": [
+        "reason"
+      ],
+      "note": "题中谈某种器皿的代表性食谱，重点是“典型的”，不是“流行的”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "paradigmatic",
+          "recorded_at": "2026-09-15T13:38:39.888Z"
+        }
+      ],
+      "event_ids": [
+        "61c82c79-6486-47f2-9205-ad4d939a841a"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/paradigmatic",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "perilous",
+      "word": "perilous",
+      "pos": "adj.",
+      "meaning": "危险的；险恶的",
+      "collocation": "a perilous mission",
+      "connotation": "负向描述",
+      "topics": [
+        "action",
+        "environment"
+      ],
+      "note": "常强调严重危险；不要与 exhilarating 的兴奋感混淆。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test6_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "perilous",
+          "recorded_at": "2026-09-15T14:21:19.808Z"
+        }
+      ],
+      "event_ids": [
+        "32953347-9839-4c17-8109-d171a35a1812"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perilous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "populist",
+      "word": "populist",
+      "pos": "adj.; n.",
+      "meaning": "adj. 民粹主义的，诉诸普通民众的；n. 民粹主义者",
+      "collocation": "a populist movement",
+      "connotation": "依立场和语境而定",
+      "topics": [
+        "society"
+      ],
+      "note": "题中修饰运动；可出现在不同政治方向，不能只凭此词判断进步或保守。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "Progressive and reactionary populist movements are not necessarily _____; each may, and usually does, possess features of the other.",
+          "recorded_at": "2026-09-15T13:31:05.684Z"
+        }
+      ],
+      "event_ids": [
+        "199cd0eb-e730-46d7-bf84-5b38f2080eaa"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/populist",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "precarious",
+      "word": "precarious",
+      "pos": "adj.",
+      "meaning": "不稳固的；岌岌可危的；不可靠的",
+      "collocation": "a precarious balance",
+      "connotation": "常负向",
+      "topics": [
+        "environment",
+        "reason"
+      ],
+      "note": "侧重基础或处境不稳定，因而有危险；不只是泛指危险。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "precarious",
+          "recorded_at": "2026-09-15T13:47:24.351Z"
+        }
+      ],
+      "event_ids": [
+        "a7c6e06b-bfd9-4eda-b557-4fb444a018dc"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/precarious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "proclaimed",
+      "word": "proclaim",
+      "pos": "v.",
+      "meaning": "公开宣告；正式宣布；明确显示",
+      "collocation": "proclaim a commitment to reform",
+      "connotation": "中性或强调语气",
+      "topics": [
+        "language",
+        "society"
+      ],
+      "note": "题中 proclaimed 为过去分词；着重公开宣布某种愿望或立场。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "proclaimed",
+          "recorded_at": "2026-09-15T14:07:44.496Z"
+        }
+      ],
+      "event_ids": [
+        "fb51058a-e0a1-4675-9e2c-e451099e20e5"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/proclaim",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "professed",
+      "word": "profess",
+      "pos": "v.",
+      "meaning": "公开声称；宣称信奉；自称",
+      "collocation": "profess a desire for compromise",
+      "connotation": "中性；可含言行不一的暗示",
+      "topics": [
+        "language",
+        "character"
+      ],
+      "note": "题中 professed 为过去分词；声称不等于落实，也不必然等于撒谎。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test5_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "professed",
+          "recorded_at": "2026-09-15T14:07:46.444Z"
+        }
+      ],
+      "event_ids": [
+        "c67bced1-ef25-491e-9fe8-716f9e6ae9d8"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/profess",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "quirky",
+      "word": "quirky",
+      "pos": "adj.",
+      "meaning": "古怪有趣的；独特而不循常规的",
+      "collocation": "a quirky choice",
+      "connotation": "常中性或略褒义",
+      "topics": [
+        "character",
+        "arts"
+      ],
+      "note": "侧重个人独特、有趣的怪处，不自动等于叛逆或不实用。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "quirky",
+          "recorded_at": "2026-09-15T13:52:51.534Z"
+        }
+      ],
+      "event_ids": [
+        "7c95b3e0-0f80-4eba-99e8-f6f7ec783627"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/quirky",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "rarebit",
+      "word": "rarebit",
+      "pos": "n.",
+      "meaning": "奶酪吐司；浇有调味融化奶酪的烤面包",
+      "collocation": "Welsh rarebit",
+      "connotation": "中性",
+      "topics": [
+        "food"
+      ],
+      "note": "题中 Welsh rarebit 是菜名，也叫 Welsh rabbit；不是兔肉。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "with the culinary accessory known as the chafing dish, but Welsh rarebit was considered the truly ______ chafing dish recipe.",
+          "recorded_at": "2026-09-15T13:36:50.011Z"
+        }
+      ],
+      "event_ids": [
+        "c4511e5f-2d4a-4b01-bc02-49c4d67c5f14"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/rarebit",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Collins",
+          "url": "https://www.collinsdictionary.com/us/dictionary/english/welsh-rabbit",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "reactionary",
+      "word": "reactionary",
+      "pos": "adj.; n.",
+      "meaning": "adj. 反对变革、主张复旧的，极端保守的；n. 反动派",
+      "collocation": "a reactionary movement",
+      "connotation": "常贬义，政治语境",
+      "topics": [
+        "society",
+        "change"
+      ],
+      "note": "比一般 conservative 更强调反对改革、恢复旧秩序；不是“反应快”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "Progressive and reactionary populist movements are not necessarily _____; each may, and usually does, possess features of the other.",
+          "recorded_at": "2026-09-15T13:31:10.029Z"
+        }
+      ],
+      "event_ids": [
+        "7e44580c-ac5f-4da5-a1ac-9c243e94dfe5"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/reactionary",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "sagacious",
+      "word": "sagacious",
+      "pos": "adj.",
+      "meaning": "睿智的；有远见和敏锐判断力的",
+      "collocation": "a sagacious judgment",
+      "connotation": "褒义，正式",
+      "topics": [
+        "reason",
+        "character"
+      ],
+      "note": "侧重明智判断，不等同于 affable 的待人友善。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test2_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "sagacious",
+          "recorded_at": "2026-09-15T13:23:32.344Z"
+        }
+      ],
+      "event_ids": [
+        "1d9e830a-caec-4d4d-926c-bff503ea9dd4"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sagacious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "sanction",
+      "word": "sanction",
+      "pos": "n.; v.",
+      "meaning": "n. 批准，认可；制裁，处罚。v. 正式批准；制裁",
+      "collocation": "sanction a proposal; impose sanctions",
+      "connotation": "依义项相反",
+      "topics": [
+        "society",
+        "conflict"
+      ],
+      "note": "必须看宾语和情境区分“准许”与“处罚”；不能把所有 sanction 都背成同一方向。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "sanction",
+          "recorded_at": "2026-09-15T13:49:11.323Z"
+        }
+      ],
+      "event_ids": [
+        "5fc29b53-dcda-4e73-a86e-bbaeec6b4092"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sanction",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "scant",
+      "word": "scant",
+      "pos": "adj.",
+      "meaning": "不足的；少量的；勉强够的",
+      "collocation": "receive scant attention",
+      "connotation": "常含不足之意",
+      "topics": [
+        "quantity"
+      ],
+      "note": "题中指受到很少关注；与 excessive 的过量形成程度对照。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "6",
+            "type": "se"
+          },
+          "context": "scant",
+          "recorded_at": "2026-09-15T13:59:17.971Z"
+        }
+      ],
+      "event_ids": [
+        "1c110059-96b0-4b4b-8825-a60773e90f7e"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/scant",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "sparrow",
+      "word": "sparrow",
+      "pos": "n.",
+      "meaning": "麻雀；某些类似麻雀的小型鸣禽",
+      "collocation": "a song sparrow population",
+      "connotation": "中性",
+      "topics": [
+        "nature"
+      ],
+      "note": "题中 song sparrow 是具体鸟类名称；保留短语背景，勿与 swallow 混淆。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "ough field studies have linked inbreeding to declines among song sparrow populations, some researchers argue that, in nature, inbreeding proves _____ as a factor when compared with crushing blows from weather changes.",
+          "recorded_at": "2026-09-15T13:47:14.440Z"
+        }
+      ],
+      "event_ids": [
+        "3fffd846-73de-48ff-a01e-aa5d6ffb94e2"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sparrow",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "speculations",
+      "word": "speculation",
+      "pos": "n.",
+      "meaning": "推测；猜想；投机活动",
+      "collocation": "bold speculation about the brain",
+      "connotation": "学术义中性；金融义强调风险",
+      "topics": [
+        "reason",
+        "economy"
+      ],
+      "note": "题中 speculations 是有关大脑的猜想，非金融投机；与 conjecture 对照记。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "machandran’s opinion, it is perfectly acceptable to propose bold speculations about the brain, even if these speculations seem _____; as Ramachandran frequently remarks, science thrives on risky conjecture.",
+          "recorded_at": "2026-09-15T14:01:17.205Z"
+        }
+      ],
+      "event_ids": [
+        "7b572370-0660-42ef-8419-87fcbf2e60e0"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/speculation",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/speculate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "subversive",
+      "word": "subversive",
+      "pos": "adj.; n.",
+      "meaning": "adj. 颠覆性的，破坏现存制度的；n. 从事颠覆活动者",
+      "collocation": "a subversive movement",
+      "connotation": "依立场而定，常负向",
+      "topics": [
+        "society",
+        "conflict"
+      ],
+      "note": "侧重动摇或推翻现有体系，不能直接等同于“进步”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section1_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "subversive",
+          "recorded_at": "2026-09-15T13:30:56.183Z"
+        }
+      ],
+      "event_ids": [
+        "5ead004e-25a6-4112-bc03-51fc71b35673"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/subversive",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "sumptuous",
+      "word": "sumptuous",
+      "pos": "adj.",
+      "meaning": "奢华的；豪华的；丰盛的",
+      "collocation": "a sumptuous banquet",
+      "connotation": "常正向，也可批评奢侈",
+      "topics": [
+        "food",
+        "arts"
+      ],
+      "note": "用于餐食强调丰盛精美，用于环境强调豪华昂贵。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "sumptuous",
+          "recorded_at": "2026-09-15T13:38:48.966Z"
+        }
+      ],
+      "event_ids": [
+        "029e8440-c49f-4ed5-ba99-a4e83ae60cee"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sumptuous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "trifling",
+      "word": "trifling",
+      "pos": "adj.",
+      "meaning": "微不足道的；不重要的；价值很小的",
+      "collocation": "a trifling effect",
+      "connotation": "常含轻视或弱化",
+      "topics": [
+        "reason",
+        "quantity"
+      ],
+      "note": "题中修饰影响，取程度很小；保留独立形容词，不并为 trifle 动词。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "4",
+            "type": "se"
+          },
+          "context": "trifling",
+          "recorded_at": "2026-09-15T13:41:57.273Z"
+        }
+      ],
+      "event_ids": [
+        "ea13ffd5-1a52-4e24-9b9e-5e51eca0dadf"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trifling",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "trivial",
+      "word": "trivial",
+      "pos": "adj.",
+      "meaning": "不重要的；琐碎的；微不足道的",
+      "collocation": "a trivial detail",
+      "connotation": "常含轻视或弱化",
+      "topics": [
+        "reason"
+      ],
+      "note": "通常指重要性很低；数学中还可指平凡、简单的情形。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section1_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "trivial",
+          "recorded_at": "2026-09-15T13:47:27.621Z"
+        }
+      ],
+      "event_ids": [
+        "8be84ce0-dced-4407-bf8d-1aacd808d501"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trivial",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "ubiquitous",
+      "word": "ubiquitous",
+      "pos": "adj.",
+      "meaning": "无处不在的；普遍存在的",
+      "collocation": "ubiquitous advertising",
+      "connotation": "中性或依情境评价",
+      "topics": [
+        "environment",
+        "quantity"
+      ],
+      "note": "说的是分布广、到处遇到；不是 indigenous 的“原生本土”。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test3_section2_easy",
+            "question": "7",
+            "type": "se"
+          },
+          "context": "ubiquitous",
+          "recorded_at": "2026-09-15T13:38:54.333Z"
+        }
+      ],
+      "event_ids": [
+        "28510354-41e7-4566-87b4-1f9b4e8cdabb"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ubiquitous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "surface": "unconventional",
+      "word": "unconventional",
+      "pos": "adj.",
+      "meaning": "不循常规的；非传统的",
+      "collocation": "an unconventional approach",
+      "connotation": "可褒可贬",
+      "topics": [
+        "character",
+        "change"
+      ],
+      "note": "本身不保证好坏；与 quirky 相近但不一定有古怪有趣的色彩。",
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test4_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "unconventional",
+          "recorded_at": "2026-09-15T13:52:45.826Z"
+        }
+      ],
+      "event_ids": [
+        "9e2bd872-e24a-4764-a661-31c6aef9cf83"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unconventional",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    }
+  ],
+  "normalization_events": [
+    {
+      "id": "f6e7517a-0c9a-4dbb-a6d0-bd22ea80d87b",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "attenuate",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test3_section2_easy",
+          "question": "6",
+          "type": "se"
+        },
+        "context": "attenuates"
+      }
+    },
+    {
+      "id": "3480c94e-d6f5-496c-a195-21a9323a8df6",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "attenuates"
+      }
+    },
+    {
+      "id": "1e9c3e57-84ae-4dbc-8161-807c888aa7f4",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "chafing dish",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test3_section2_easy",
+          "question": "7",
+          "type": "se"
+        },
+        "context": "as sometimes associated with the culinary accessory known as the chafing dish, but Welsh rarebit was considered the truly ______ chafing dish recipe."
+      }
+    },
+    {
+      "id": "e4d34018-39bb-4481-a3da-b768ba1440a7",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "chafing"
+      }
+    },
+    {
+      "id": "292a4141-a727-4476-863c-fbcb432279a0",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "dietitian",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test2_section2_easy",
+          "question": "5",
+          "type": "se"
+        },
+        "context": "that the only function of food is to provide nourishment, these dieticians view an emphasis on the aesthetic dimension of the culinary arts as _____."
+      }
+    },
+    {
+      "id": "793cf557-a254-476c-8bf3-597dd9275f1e",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "dieticians"
+      }
+    },
+    {
+      "id": "01eaadc8-0699-4142-844e-17da49828317",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "dwindle",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test4_section2_easy",
+          "question": "6",
+          "type": "se"
+        },
+        "context": "dwindling"
+      }
+    },
+    {
+      "id": "bd0ca036-0784-476a-a14d-e7c301ecae54",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "dwindling"
+      }
+    },
+    {
+      "id": "9ba00ef2-87e7-4650-92c0-f20db2ff15e7",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "erode",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test3_section1_easy",
+          "question": "4",
+          "type": "se"
+        },
+        "context": "eroded"
+      }
+    },
+    {
+      "id": "aa23e7f9-6109-4ec2-8f7d-79bc62356db4",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "eroded"
+      }
+    },
+    {
+      "id": "5869d399-2deb-4972-b7b7-176bcf633ff7",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "exigency",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test2_section2_easy",
+          "question": "6",
+          "type": "se"
+        },
+        "context": "ild’s perspective according to no logic other than the immediate exigencies of the plot."
+      }
+    },
+    {
+      "id": "1e287fb9-e571-4dde-87ce-8f9966170a2e",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "exigencies"
+      }
+    },
+    {
+      "id": "a2c26b5f-93be-42d0-ba84-898917d02165",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "legislator",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test5_section1_easy",
+          "question": "7",
+          "type": "se"
+        },
+        "context": "Although legislators on both sides of issues have repeatedly _____ a desire to find a middle ground, until now no acceptable compromise has been achieved."
+      }
+    },
+    {
+      "id": "2746d5a1-3e3b-43a8-a30d-3a10b622dc6f",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "legislators"
+      }
+    },
+    {
+      "id": "77eac4d5-6966-4def-acfb-9f7d54060f57",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "mediate",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test2_section1_easy",
+          "question": "7",
+          "type": "se"
+        },
+        "context": "In mathematics, judgments about the validity of proofs are mediated by peer-reviewed journals; to ensure _____, reviewers are carefully chosen by journal editors, and the identity of scholars whose papers are under consi"
+      }
+    },
+    {
+      "id": "9d0eca92-333c-4c35-a857-24adb2468f30",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "mediated"
+      }
+    },
+    {
+      "id": "0e29a96b-4d7f-4b65-9083-ef4caff46332",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "mute",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test3_section2_easy",
+          "question": "6",
+          "type": "se"
+        },
+        "context": "mutes"
+      }
+    },
+    {
+      "id": "9b5cfc3f-8f46-47be-a0ef-b38a8e0d0805",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "mutes"
+      }
+    },
+    {
+      "id": "e18b37a8-d8c4-4ad6-a492-af6f04dae318",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "numeral",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test4_section1_easy",
+          "question": "7",
+          "type": "se"
+        },
+        "context": "useful proteins whose simple names—many are known only by Roman numerals—_____ their importance and the specificity of their roles in the thinning and clotting of blood."
+      }
+    },
+    {
+      "id": "253068cc-61ec-46ac-a5f8-81bef0342776",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "numerals"
+      }
+    },
+    {
+      "id": "84ddda23-bb0b-4aee-8b52-4a46664f05d9",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "proclaim",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test5_section1_easy",
+          "question": "7",
+          "type": "se"
+        },
+        "context": "proclaimed"
+      }
+    },
+    {
+      "id": "dbb18faf-a301-44f8-b17c-e143ff8939a9",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "proclaimed"
+      }
+    },
+    {
+      "id": "adf4cb66-1513-41ef-8ade-3691da78c668",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "profess",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test5_section1_easy",
+          "question": "7",
+          "type": "se"
+        },
+        "context": "professed"
+      }
+    },
+    {
+      "id": "db855332-6909-4780-8123-4af112237c64",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "professed"
+      }
+    },
+    {
+      "id": "ca46a585-c382-4589-981c-a31804c5e6d3",
+      "kind": "vocab_capture",
+      "payload": {
+        "word": "speculation",
+        "source": {
+          "material": "text_completion_2000",
+          "unit": "test4_section2_easy",
+          "question": "7",
+          "type": "se"
+        },
+        "context": "machandran’s opinion, it is perfectly acceptable to propose bold speculations about the brain, even if these speculations seem _____; as Ramachandran frequently remarks, science thrives on risky conjecture."
+      }
+    },
+    {
+      "id": "e7bcfbea-2440-4d0c-9a79-38ad91cc29a5",
+      "kind": "vocab_delete",
+      "payload": {
+        "word": "speculations"
+      }
+    }
+  ],
+  "classification_event_ids": [
+    "918e48c7-541d-4284-bad7-5b2e0501db5c",
+    "4107a840-c23c-4306-b58d-09738da83249",
+    "df68c538-34d9-445b-a0f9-4a1d43bc4ddb",
+    "6747a82e-e618-4a91-8b18-ab90e639d6a2",
+    "9c207fa7-fe24-49d1-95b1-a149ceb6a658",
+    "0c299692-fedd-4379-81df-9344a63fdeaa",
+    "a33488a2-e0ba-4b14-8606-48577acdad2c",
+    "2813755e-67e2-43a5-b0c2-6cdf8dd97d23",
+    "ded193c7-ee5f-4d95-b05a-ce299784f77c",
+    "15126711-2e42-4761-88eb-2ea24474e9a1",
+    "39e66bba-06e1-490c-8550-aaff5e2bd49c",
+    "237777a0-0f59-4e2e-9299-4b880bfb8538",
+    "7aa684a4-2095-4911-aec6-ff5e83a0cf7c",
+    "866e8b93-ba16-4161-9487-a3329384cc4a",
+    "fab89436-31d1-44a8-8b8d-9cbed977f241",
+    "2fa553b9-49ab-454f-bc20-c3551e62dd61",
+    "4be254c4-631a-4664-bf71-f163e00a5725",
+    "8c739063-8311-4638-bc34-9b2f6392acea",
+    "855dd61b-c6dc-421b-a4b7-3adf78ad78c8",
+    "9fd89661-c73f-4106-8532-f8ca21ead1b5",
+    "85f67377-95fa-4806-9609-b42b0cc2abfe",
+    "7c5d5423-c5af-4536-ba22-fde7203f733d",
+    "5780d851-0521-4adf-a00b-bca1590a7a21",
+    "54152e14-98a9-4cc1-887f-03ff99cb41c9",
+    "da484986-597d-4f2b-a67d-b0f5d34b2044",
+    "571b8f4b-fa8b-4634-81a3-0b5d3b62dbaa",
+    "0c4013e8-4554-42b6-b0d3-68b7661e9e91",
+    "a32a915c-de48-41cb-81da-541bada526ce",
+    "1ae3447d-0bbe-48a4-a956-a25301a7661d",
+    "a7a9faf6-edd4-4232-9f15-fbc3ac517c7d",
+    "b4e8b3fb-2f15-4490-959b-f52337193040",
+    "e91ea543-8780-4152-8318-8517ff9bac1a",
+    "bd53a64d-cf6a-4df5-8bae-1cee8aee9415",
+    "71ef7f66-995e-49d1-839a-2e82588a5274",
+    "456e2dea-501e-44ce-a9c9-ff37a63ec1d5",
+    "e55b71e9-54be-49e3-aad6-4cf416ea1ff1",
+    "0f3c925f-4047-4f18-85cd-4c79585e6fff",
+    "f579eaf7-302e-45d5-883a-061efea7501f",
+    "cc24596f-feac-441f-b38b-982d8eab63b0",
+    "75ef8c48-f2e7-415c-914c-baca447019a9",
+    "f4ed456e-6041-4186-9f09-6cdcb156178c",
+    "6e1039ac-0d8d-46ff-89d5-c7a130eac1e0",
+    "a4ee9997-cb9e-46da-8a8f-a110d399b244",
+    "212a974d-d972-4867-a3c2-5caa283d6b83",
+    "e8ff1b2c-0f94-4f11-a95b-7c5ef65daaf0",
+    "8bea8e9b-b64c-4018-a792-fd7743acb813",
+    "67f6f3b5-f2dd-4011-8f80-989fbd10976d",
+    "010c4d74-6751-43ca-8bd5-a15d9cc796c8",
+    "6ffc1dce-5e04-477d-a3b7-dc5816f7caf9",
+    "48f6dabb-8586-46c0-860c-d81cdec655e8",
+    "7f99c566-e9f9-4d0e-bc02-2ab6d888171c",
+    "b57ae853-927b-4c22-a1fd-8f002086d570",
+    "8e71ba5e-dcc3-4b74-83b9-cf5403f49b17",
+    "65bd0cea-3720-4e3a-b178-1473ed6eaf46",
+    "8b1d6e90-4152-4202-b94f-80ba66f89d58",
+    "841f5a35-e0fd-4ed1-af57-14de6673c004",
+    "79f1a424-f537-4471-9cda-8bf5ff9af9d6",
+    "f032fb3e-f689-4a46-9a9b-497abb9d0e7a",
+    "2e35641b-e543-4cd1-bddd-0e7f2f7c5ac9",
+    "3b13f4fd-1f76-4521-826e-1cfb7fc699b0",
+    "8027fe00-d785-4682-a0ea-f2abe16205d4",
+    "d418e676-ff18-4728-b6c5-f16fa783648b",
+    "2b125bb9-ec58-4c78-9e86-6e2de2bab461",
+    "87912edd-f64b-4d62-89bf-77babe6090de",
+    "5ee814ad-41d1-4b10-abc4-9a2b622f3cbc",
+    "81ddef28-f237-44f8-97e9-7527e76db165",
+    "01ccf282-a132-4f03-91ce-edbed22a84f2",
+    "01503edb-b278-42d1-a6ac-290453fc53f7",
+    "38e0a467-f0cc-42d6-ac5e-8aa0b6794c7a",
+    "f320adfe-8146-4d77-b6d1-3e18ce97f7a4",
+    "6a10730e-50eb-4cdf-9452-0216362006ad",
+    "07ead822-eaeb-4936-8e30-7a6cc4f45c34",
+    "a42884d3-938a-4ab8-a1fd-c3a4afcb1bb4",
+    "78ceb9fc-6ee0-400f-88f4-9ad9387c0f9b",
+    "23496a04-c2af-4bd8-b956-9672c30626b9",
+    "9526cf8b-6f07-453d-b5d2-5bf5c2b7ea4e",
+    "24c5fa1b-68ef-4c6c-9f77-32fbd8c3aa09",
+    "2d91f5c8-4152-428f-b012-722cee71e8cb",
+    "b7f36a70-51fd-4a00-815a-ebf296670e97",
+    "cba10fbf-88b9-4c42-b309-1760d3e81f66"
+  ],
+  "relation_group_ids": [
+    "capture-20260915-1",
+    "capture-20260915-2",
+    "capture-20260915-3",
+    "capture-20260915-4",
+    "capture-20260915-5",
+    "capture-20260915-6",
+    "capture-20260915-7",
+    "capture-20260915-8",
+    "capture-20260915-9",
+    "capture-20260915-10",
+    "capture-20260915-11",
+    "capture-20260915-12",
+    "capture-20260915-13"
+  ]
+}

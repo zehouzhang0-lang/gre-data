@@ -117,6 +117,40 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "accentuate",
+      "pos": "v.",
+      "meaning": "突出；强调；使更加明显",
+      "original_context": null,
+      "collocation": "accentuate a contrast",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "accentuate",
+          "event_ids": [
+            "410da426-cfdf-4ca9-bfca-bd9a2dd17bfb"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/accentuate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "侧重让已有特点更加显眼，不必表示数量增加。 语体/色彩：中性。"
+    },
+    {
       "word": "accuse",
       "pos": "v.",
       "meaning": "指控；指责",
@@ -260,6 +294,76 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "adversarial",
+      "pos": "adj.",
+      "meaning": "对抗的；双方相互对立的",
+      "original_context": null,
+      "collocation": "an adversarial relationship",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或负向，依关系而定",
+      "related_words": [
+        "antagonistic"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "adversarial",
+          "event_ids": [
+            "8e3b43dc-2f81-4ede-9804-6b15f13c636a"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/adversarial",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "常描述利益对立或辩论制度；未必表示个人仇恨。 语体/色彩：中性或负向，依关系而定。"
+    },
+    {
+      "word": "affable",
+      "pos": "adj.",
+      "meaning": "和蔼的；友善而易于交谈的",
+      "original_context": null,
+      "collocation": "an affable colleague",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "affable",
+          "event_ids": [
+            "68567ce6-b73c-4f51-a67a-d3e0305d5f34"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/affable",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "重在容易接近、交谈愉快；与爱争吵的性情形成对照。 语体/色彩：褒义。"
     },
     {
       "word": "aggravate",
@@ -504,6 +608,42 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "amplify",
+      "pos": "v.",
+      "meaning": "放大；增强；详述",
+      "original_context": null,
+      "collocation": "amplify a signal",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [
+        "attenuate"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "amplify",
+          "event_ids": [
+            "0c9d8676-b63f-42bc-b5b2-1a228edc0a22"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/amplify",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "声音语境中表示增强；用于陈述时可指增加细节、展开说明。 语体/色彩：中性。"
+    },
+    {
       "word": "anagen",
       "pos": "n.",
       "meaning": "毛发生长周期的生长期",
@@ -658,6 +798,42 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "antagonistic",
+      "pos": "adj.",
+      "meaning": "敌对的；反对的；相互对抗的",
+      "original_context": null,
+      "collocation": "antagonistic toward a proposal",
+      "collocation_source": "coach_composed",
+      "connotation": "常负向",
+      "related_words": [
+        "adversarial"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "antagonistic",
+          "event_ids": [
+            "e943ce37-9682-4a1f-8556-6f620a9fc00e"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/antagonistic",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "比单纯处于对立关系更容易带出敌意或反感；常接 to/toward。 语体/色彩：常负向。"
+    },
+    {
       "word": "antedate",
       "pos": "v./n.",
       "meaning": "早于；把日期提前；较早的日期",
@@ -687,6 +863,40 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "antediluvian",
+      "pos": "adj.",
+      "meaning": "极其陈旧过时的；《圣经》大洪水以前的",
+      "original_context": null,
+      "collocation": "antediluvian attitudes",
+      "collocation_source": "coach_composed",
+      "connotation": "比喻义常含贬义或幽默",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "antediluvian",
+          "event_ids": [
+            "ede37256-ec0e-4e07-8565-0a25eebe4cd8"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/antediluvian",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题目谈守旧、反对创新，重点记“极其过时”，而非只背字面年代。 语体/色彩：比喻义常含贬义或幽默。"
     },
     {
       "word": "anthropocentrism",
@@ -1172,6 +1382,45 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "attenuate",
+      "pos": "v.",
+      "meaning": "削弱；减轻；使变薄",
+      "original_context": null,
+      "collocation": "attenuate temperature fluctuations",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，较正式",
+      "related_words": [
+        "dampen",
+        "mute",
+        "mitigate",
+        "amplify"
+      ],
+      "normalization_note": "attenuates → attenuate；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "attenuates",
+          "event_ids": [
+            "2aaf68e9-7dbb-4f2f-a702-8260ad3252e7"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/attenuate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中 attenuates 是第三人称单数：减小温度变化的幅度。 语体/色彩：中性，较正式。"
+    },
+    {
       "word": "attune",
       "pos": "v.",
       "meaning": "使适应；使协调；调音",
@@ -1557,6 +1806,40 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "be subject to",
+      "pos": "短语",
+      "meaning": "受……支配或约束；可能遭受；取决于",
+      "original_context": "vent horizon boundary is _____ space travelers; crossing it would be subject to the same physical laws that apply anywhere else.",
+      "collocation": "be subject to the same rules",
+      "collocation_source": "coach_composed",
+      "connotation": "依搭配而定",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "be subject to",
+          "event_ids": [
+            "3e2dc85c-29e4-4a6b-9677-ce7c084b05ef"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/subject%20to",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中指受相同物理规律支配；subject to change 则指可能改变。 语体/色彩：依搭配而定。"
+    },
+    {
       "word": "beholden",
       "pos": "adj.",
       "meaning": "欠人情的",
@@ -1577,6 +1860,40 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "belie",
+      "pos": "v.",
+      "meaning": "造成与实际不符的印象；掩盖；与……相矛盾",
+      "original_context": null,
+      "collocation": "a simple name that belies its importance",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，较正式",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "belie",
+          "event_ids": [
+            "58cdacad-38b6-4603-b71d-d5c076fb7b94"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/belie",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中简单名称使人低估其重要性；不是 believe 的变形。 语体/色彩：中性，较正式。"
     },
     {
       "word": "bellicose",
@@ -2109,6 +2426,40 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "chafing dish",
+      "pos": "n.",
+      "meaning": "餐桌上用于加热或保温食物的器皿；暖锅",
+      "original_context": "as sometimes associated with the culinary accessory known as the chafing dish, but Welsh rarebit was considered the truly ______ chafing dish recipe.",
+      "collocation": "keep food warm in a chafing dish",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": "chafing → chafing dish；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "chafing",
+          "event_ids": [
+            "def68420-7206-4fdc-a461-ff01e2825e47"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/chafing%20dish",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中应整体记 chafing dish；单独按 chafe 的“擦痛、烦躁”理解会误读。 语体/色彩：中性。"
+    },
+    {
       "word": "champagne",
       "pos": "n.",
       "meaning": "香槟酒",
@@ -2206,6 +2557,40 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "chauvinistic",
+      "pos": "adj.",
+      "meaning": "盲目偏袒本群体的；沙文主义的；大男子主义的",
+      "original_context": null,
+      "collocation": "a chauvinistic attitude",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "chauvinistic",
+          "event_ids": [
+            "f54a1f25-6303-46e9-a071-d1eba85b846b"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/chauvinistic",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "核心是认为本国、本群体或本性别优越，不等同于一般守旧。 语体/色彩：贬义。"
     },
     {
       "word": "christen",
@@ -2398,6 +2783,76 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "clandestine",
+      "pos": "adj.",
+      "meaning": "秘密进行的；暗中的",
+      "original_context": null,
+      "collocation": "a clandestine meeting",
+      "collocation_source": "coach_composed",
+      "connotation": "常带隐瞒、违规色彩",
+      "related_words": [
+        "covert"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "clandestine",
+          "event_ids": [
+            "51de1421-282c-47b3-97fa-e47dae6f6dc6"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/clandestine",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "常暗示因不被允许而怕被发现；与 covert 的“不公开”有侧重差别。 语体/色彩：常带隐瞒、违规色彩。"
+    },
+    {
+      "word": "coagulation",
+      "pos": "n.",
+      "meaning": "凝结；凝固；凝血",
+      "original_context": "Coagulation factors are useful proteins whose simple names—many are known only by Roman numerals—_____ their importance and the specificity of their roles in the thinning and clotting of blood.",
+      "collocation": "blood coagulation",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，科技用语",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "coagulation",
+          "event_ids": [
+            "7cf1243f-633b-4f23-a13a-8e5b1e9ff870"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/coagulation",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中的 coagulation factors 指凝血因子。 语体/色彩：中性，科技用语。"
     },
     {
       "word": "collected",
@@ -3044,6 +3499,40 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "condescending",
+      "pos": "adj.",
+      "meaning": "居高临下的；带优越感地待人的",
+      "original_context": null,
+      "collocation": "a condescending reply",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "condescending",
+          "event_ids": [
+            "d9158b92-faf3-4068-bf9b-69e010f56f2c"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/condescending",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "关键是把对方看低一等；并非单纯“愿意屈尊帮助”。 语体/色彩：贬义。"
+    },
+    {
       "word": "confound",
       "pos": "v.",
       "meaning": "使困惑；使惊讶；混淆",
@@ -3088,6 +3577,42 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "conjecture",
+      "pos": "n.; v.",
+      "meaning": "推测；猜想；在证据不足时推断",
+      "original_context": "__; as Ramachandran frequently remarks, science thrives on risky conjecture.",
+      "collocation": "a scientific conjecture",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，正式",
+      "related_words": [
+        "speculation"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "conjecture",
+          "event_ids": [
+            "5e2a3027-8ee1-447c-90f1-5b111c8884d3"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conjecture",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中 risky conjecture 是大胆但尚待证实的推测；不是已证明的结论。 语体/色彩：中性，正式。"
+    },
+    {
       "word": "connive",
       "pos": "v.",
       "meaning": "共谋",
@@ -3130,6 +3655,40 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "conspicuous",
+      "pos": "adj.",
+      "meaning": "显眼的；引人注目的；明显的",
+      "original_context": null,
+      "collocation": "a conspicuous difference",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境褒贬皆可",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "conspicuous",
+          "event_ids": [
+            "13fc4db4-f910-4408-9883-f5175207d6ed"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conspicuous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "形容容易被看见或注意到，不等于 ubiquitous 的“到处都有”。 语体/色彩：依语境褒贬皆可。"
     },
     {
       "word": "constrict",
@@ -3385,6 +3944,42 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "covert",
+      "pos": "adj.",
+      "meaning": "隐蔽的；不公开的",
+      "original_context": null,
+      "collocation": "a covert operation",
+      "collocation_source": "coach_composed",
+      "connotation": "依目的而定",
+      "related_words": [
+        "clandestine"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "covert",
+          "event_ids": [
+            "e6603e5c-dd66-463d-905d-55c26e310445"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/covert",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "侧重未公开、未表露；不能仅凭 secret agent 就忽略题目在谈危险程度。 语体/色彩：依目的而定。"
+    },
+    {
       "word": "covet",
       "pos": "v.",
       "meaning": "觊觎；强烈渴望拥有",
@@ -3500,6 +4095,47 @@
       "note": "复数crustaceans归词元crustacean；左侧划掉的试写不收录。 手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "culinary accessory",
+      "pos": "名词短语",
+      "meaning": "烹饪辅助用具；厨房配件",
+      "original_context": "dish known as lobster Newburg was sometimes associated with the culinary accessory known as the chafing dish, but Welsh rarebit was considered the truly ______ chafing dish recipe.",
+      "collocation": "a useful culinary accessory",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "culinary accessory",
+          "event_ids": [
+            "fb011635-d982-4d35-bf80-d6b9830dd94b"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/culinary",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/accessory",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "组合义：culinary 是烹饪的，accessory 是辅助物件；题中具体指 chafing dish。 语体/色彩：中性。"
+    },
+    {
       "word": "culminate",
       "pos": "v.",
       "meaning": "达到顶点；最终导致或以某事告终",
@@ -3582,6 +4218,44 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "dampen",
+      "pos": "v.",
+      "meaning": "减弱；抑制；使潮湿",
+      "original_context": null,
+      "collocation": "dampen a sound",
+      "collocation_source": "coach_composed",
+      "connotation": "依宾语而定",
+      "related_words": [
+        "attenuate",
+        "mute",
+        "mitigate"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "dampen",
+          "event_ids": [
+            "aeb5b5ac-c773-4c75-9747-b842d7869c99"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dampen",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "声音语境中是减弱、消音；dampen enthusiasm 表示打击热情。 语体/色彩：依宾语而定。"
     },
     {
       "word": "dated",
@@ -3994,6 +4668,42 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "detect",
+      "pos": "v.",
+      "meaning": "发现；察觉；检测出",
+      "original_context": null,
+      "collocation": "detect a subtle change",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [
+        "discern"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "detect",
+          "event_ids": [
+            "c28fce44-ec1b-4c5f-b042-cbb1290a25c5"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/detect",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "侧重发现某物存在；题中是检测出有生物学意义的变化。 语体/色彩：中性。"
+    },
+    {
       "word": "deteriorate",
       "pos": "v.",
       "meaning": "恶化；变坏",
@@ -4062,6 +4772,74 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "diametrically",
+      "pos": "adv.",
+      "meaning": "完全地；截然地；沿直径地",
+      "original_context": "nship are inherently _____: the interests of business owners are diametrically opposed to those of employees.",
+      "collocation": "diametrically opposed interests",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，用于强调对立",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "diametrically",
+          "event_ids": [
+            "e1aaff0f-65cb-4eaf-bc5f-6eae97206cc7"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/diametrically",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "常与 opposed/opposite 搭配，表示完全相反。 语体/色彩：中性，用于强调对立。"
+    },
+    {
+      "word": "dietitian",
+      "pos": "n.",
+      "meaning": "营养师；饮食营养专家",
+      "original_context": "that the only function of food is to provide nourishment, these dieticians view an emphasis on the aesthetic dimension of the culinary arts as _____.",
+      "collocation": "consult a dietitian",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": "dieticians → dietitian；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "dieticians",
+          "event_ids": [
+            "f920b821-1430-43c8-b579-e1788df8bb67"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dietitian",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "dieticians 是 dietician 的复数；dietician 为认可的变体拼写，统一收在 dietitian。 语体/色彩：中性。"
+    },
+    {
       "word": "diffuse",
       "pos": "v./adj.",
       "meaning": "扩散；传播；分散的；冗长的",
@@ -4113,6 +4891,42 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "discern",
+      "pos": "v.",
+      "meaning": "辨认；察觉；分辨",
+      "original_context": null,
+      "collocation": "discern a pattern",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，较正式",
+      "related_words": [
+        "detect"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "discern",
+          "event_ids": [
+            "7ed48796-0522-455f-bf74-377782b8b92f"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/discern",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "既可表示费力看清，也可凭判断分辨；discern A from B 表示区分两者。 语体/色彩：中性，较正式。"
     },
     {
       "word": "discredit",
@@ -4440,6 +5254,40 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "downright",
+      "pos": "adv.; adj.",
+      "meaning": "adv. 完全地，简直；adj. 十足的，直率的",
+      "original_context": "y is so old-fashioned and opposed to innovation that it can seem downright _____.",
+      "collocation": "downright absurd",
+      "collocation_source": "coach_composed",
+      "connotation": "强调语气，常修饰负向评价",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "downright",
+          "event_ids": [
+            "a455af2d-b403-4762-a18c-adc38002ecf0"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/downright",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中放在形容词前加强程度，不按 down + right 字面拆译。 语体/色彩：强调语气，常修饰负向评价。"
+    },
+    {
       "word": "drudgery",
       "pos": "n.",
       "meaning": "单调辛苦的工作；苦差事",
@@ -4582,10 +5430,10 @@
       "pos": "v.",
       "meaning": "逐渐减少；变小",
       "original_context": null,
-      "collocation": null,
-      "connotation": null,
+      "collocation": "resources dwindle",
+      "connotation": "中性，常指不希望的减少",
       "related_words": [],
-      "normalization_note": null,
+      "normalization_note": "dwindling → dwindle；原摘词事件保留，来源归并到规范词条。",
       "sources": [
         {
           "material_id": "handwritten_vocab_20260913",
@@ -4593,11 +5441,30 @@
           "image": 5,
           "kind": "user_handwritten_notes",
           "origin_word": null
+        },
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "dwindling",
+          "event_ids": [
+            "d1ccef29-dee3-41b4-b068-a37af4ab7f6b"
+          ]
         }
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
-      "note": "手写笔记释义整理，尚未逐词词典核验。"
+      "note": "dwindling 作修饰语时表示“逐渐减少的”；并入已有 dwindle，保留复习历史。 语体/色彩：中性，常指不希望的减少。",
+      "collocation_source": "coach_composed",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dwindle",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
     },
     {
       "word": "ebb",
@@ -4666,6 +5533,40 @@
       "note": "按最终词形及鳗鱼义规范为eel。 手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "efficacious",
+      "pos": "adj.",
+      "meaning": "有效的；能产生预期效果的",
+      "original_context": null,
+      "collocation": "an efficacious method",
+      "collocation_source": "coach_composed",
+      "connotation": "常褒义，正式",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "efficacious",
+          "event_ids": [
+            "efa88592-4702-41bb-af97-37701526c9de"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/efficacious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "强调能奏效；efficient 更强调少耗费时间或资源，二者不完全等同。 语体/色彩：常褒义，正式。"
+    },
+    {
       "word": "effluvium",
       "pos": "n.",
       "meaning": "难闻的气味；散发出的气体或排出物",
@@ -4717,6 +5618,42 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "首项中文不够清晰，仅保守整理清晰部分。 手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "elicit",
+      "pos": "v.",
+      "meaning": "引出；诱发；设法获得回应",
+      "original_context": "lose a rodent in a labyrinth; today’s scientists design mazes to elicit a few simple, easily measured behaviors.",
+      "collocation": "elicit a response",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [
+        "illicit"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "elicit",
+          "event_ids": [
+            "eb6adbb0-10a1-4c81-8a37-1151f440e287"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/elicit",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中是诱发可测行为；易混 illicit（adj. 非法的），注意词性。 语体/色彩：中性。"
     },
     {
       "word": "emancipate",
@@ -4982,6 +5919,40 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "erode",
+      "pos": "v.",
+      "meaning": "侵蚀；逐步削弱",
+      "original_context": null,
+      "collocation": "erode public trust",
+      "collocation_source": "coach_composed",
+      "connotation": "物理义中性；比喻义常负向",
+      "related_words": [],
+      "normalization_note": "eroded → erode；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "eroded",
+          "event_ids": [
+            "942b75a4-3fb2-43b1-a032-c154a4dee235"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/erode",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "eroded 是过去式或过去分词；用于权利、信任等抽象对象时指逐步损害。 语体/色彩：物理义中性；比喻义常负向。"
     },
     {
       "word": "errant",
@@ -5400,6 +6371,110 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "excessive",
+      "pos": "adj.",
+      "meaning": "过多的；过度的",
+      "original_context": null,
+      "collocation": "excessive attention",
+      "collocation_source": "coach_composed",
+      "connotation": "通常负向",
+      "related_words": [
+        "scant"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "excessive",
+          "event_ids": [
+            "de8ecfca-8c6f-4864-85a5-535663bdc263"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/excessive",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "超过合理或必要限度，比单纯“很多”多了一层评价。 语体/色彩：通常负向。"
+    },
+    {
+      "word": "exhilarating",
+      "pos": "adj.",
+      "meaning": "令人兴奋愉快的；使人振奋的",
+      "original_context": null,
+      "collocation": "an exhilarating experience",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "exhilarating",
+          "event_ids": [
+            "fce92193-3479-4070-b012-5d483cd7c4e7"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exhilarating",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "描述体验带来的兴奋；与表示危险的 perilous 不能机械互换。 语体/色彩：褒义。"
+    },
+    {
+      "word": "exigency",
+      "pos": "n.",
+      "meaning": "特定情势下的迫切需要；紧急情况",
+      "original_context": "ild’s perspective according to no logic other than the immediate exigencies of the plot.",
+      "collocation": "the exigencies of the plot",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，正式",
+      "related_words": [],
+      "normalization_note": "exigencies → exigency；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "exigencies",
+          "event_ids": [
+            "22c97b04-96a8-4deb-ba14-0a7007c960c0"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exigency",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中复数 exigencies 指情节当下的需要，不一定是灾难或突发事故。 语体/色彩：中性，正式。"
+    },
+    {
       "word": "expectancy",
       "pos": "n.",
       "meaning": "期待；预期",
@@ -5497,6 +6572,42 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "expel",
+      "pos": "v.",
+      "meaning": "驱逐；开除；排出",
+      "original_context": null,
+      "collocation": "expel a member from an organization",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境而定",
+      "related_words": [
+        "oust"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "expel",
+          "event_ids": [
+            "5e7d93ec-a7f3-4096-92aa-b4254e6b7b7f"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/expel",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "常见 expel someone from；题中组织成员语境取“开除”。 语体/色彩：依语境而定。"
+    },
+    {
       "word": "expendable",
       "pos": "adj.",
       "meaning": "可消耗的",
@@ -5550,6 +6661,81 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "exploitation",
+      "pos": "n.",
+      "meaning": "开发利用；剥削；不公平利用",
+      "original_context": "or protecting natural resources too often issue permits allowing exploitation of those resources, a process that remains _____ given that agencies have become experts at masking their decisions in the scientific terms.",
+      "collocation": "the exploitation of resources",
+      "collocation_source": "coach_composed",
+      "connotation": "资源开发可中性；剥削义负向",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "exploitation",
+          "event_ids": [
+            "355039e8-6a0e-4a9d-b3af-d53ec828a72a"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exploitation",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exploit",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中对象是自然资源，取“开发利用”；整体评价由上下文决定。 语体/色彩：资源开发可中性；剥削义负向。"
+    },
+    {
+      "word": "exploitative",
+      "pos": "adj.",
+      "meaning": "剥削性的；为自身利益不公平利用他人的",
+      "original_context": null,
+      "collocation": "exploitative working conditions",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "exploitative",
+          "event_ids": [
+            "5a37d58d-8b60-4e3c-a362-4f833a7233b3"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exploitative",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "强调不公平地利用人或群体获利；不只是中性的“开发”。 语体/色彩：贬义。"
     },
     {
       "word": "expunge",
@@ -5943,6 +7129,40 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "flamboyant",
+      "pos": "adj.",
+      "meaning": "炫目的；华丽张扬的；引人注目的",
+      "original_context": null,
+      "collocation": "a flamboyant style",
+      "collocation_source": "coach_composed",
+      "connotation": "可褒可贬",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "flamboyant",
+          "event_ids": [
+            "a5487231-c06b-419f-91da-08d47733da20"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flamboyant",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "侧重外在表现醒目夸张；unconventional 只表示不循常规。 语体/色彩：可褒可贬。"
+    },
+    {
       "word": "fluid",
       "pos": "n./adj.",
       "meaning": "流体；流动的；易变的；流畅的",
@@ -6135,6 +7355,47 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "fractiousness",
+      "pos": "n.",
+      "meaning": "易怒好争吵的性情；难以管束",
+      "original_context": "The employee had a reputation for fractiousness, but his coworkers found him to be, on the contrary, quiet _____.",
+      "collocation": "a reputation for fractiousness",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "fractiousness",
+          "event_ids": [
+            "989627a8-711a-4804-936d-f458d0730afb"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fractiousness",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fractious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "fractious 的名词；题中指员工难相处、容易争执的名声。 语体/色彩：贬义。"
     },
     {
       "word": "frenzy",
@@ -6780,6 +8041,43 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "hazardous",
+      "pos": "adj.",
+      "meaning": "危险的；有危害风险的",
+      "original_context": null,
+      "collocation": "hazardous conditions",
+      "collocation_source": "coach_composed",
+      "connotation": "负向描述",
+      "related_words": [
+        "perilous",
+        "precarious"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "hazardous",
+          "event_ids": [
+            "9ffb843d-0692-4dab-bb9b-3b31c8d75c3a"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hazardous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "用于可能造成伤害或损失的环境、材料、活动；通常较客观。 语体/色彩：负向描述。"
+    },
+    {
       "word": "herbivorous",
       "pos": "adj.",
       "meaning": "食草的；以植物为食的",
@@ -6824,6 +8122,76 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "heterogeneous",
+      "pos": "adj.",
+      "meaning": "由不同成分构成的；异质的；多样混杂的",
+      "original_context": null,
+      "collocation": "heterogeneous subject matter",
+      "collocation_source": "coach_composed",
+      "connotation": "本身中性",
+      "related_words": [
+        "homogeneous"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "heterogeneous",
+          "event_ids": [
+            "050e9f00-ea85-4d3b-b55a-ae1a30bb32a2"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/heterogeneous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中论题成分不同；与 homogeneous（同质的）对照，不自动等于质量差。 语体/色彩：本身中性。"
+    },
+    {
+      "word": "hodgepodge",
+      "pos": "n.",
+      "meaning": "杂乱的混合物；大杂烩",
+      "original_context": null,
+      "collocation": "a hodgepodge of viewpoints",
+      "collocation_source": "coach_composed",
+      "connotation": "常负向或非正式",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "hodgepodge",
+          "event_ids": [
+            "9931895c-e69a-4086-a247-d1b257da3bbe"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hodgepodge",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "比 heterogeneous 更强调混杂、缺少整齐组织。 语体/色彩：常负向或非正式。"
     },
     {
       "word": "homogeneity",
@@ -7118,6 +8486,74 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "illuminating",
+      "pos": "adj.",
+      "meaning": "富有启发性的；帮助理解的",
+      "original_context": null,
+      "collocation": "an illuminating explanation",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "illuminating",
+          "event_ids": [
+            "1ec6ad18-1cc1-4b1f-a296-baab38a399d4"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/illuminating",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "抽象语境指使问题变清楚，不只表示物理照明。 语体/色彩：褒义。"
+    },
+    {
+      "word": "illusory",
+      "pos": "adj.",
+      "meaning": "虚幻的；造成错觉的；不真实的",
+      "original_context": null,
+      "collocation": "an illusory sense of safety",
+      "collocation_source": "coach_composed",
+      "connotation": "常含否定评价",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "illusory",
+          "event_ids": [
+            "8920b7d1-261a-4081-a974-cf81c9e6959f"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/illusory",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "强调看似存在而实际不成立；与 illuminating（有启发的）分开记。 语体/色彩：常含否定评价。"
+    },
+    {
       "word": "immaterial",
       "pos": "adj.",
       "meaning": "无关紧要的；不相关的",
@@ -7354,6 +8790,40 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "impractical",
+      "pos": "adj.",
+      "meaning": "不切实际的；不实用的；不善处理实际事务的",
+      "original_context": null,
+      "collocation": "an impractical proposal",
+      "collocation_source": "coach_composed",
+      "connotation": "常负向",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "impractical",
+          "event_ids": [
+            "4f50d60f-444b-4674-8719-a95b650f6790"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impractical",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "未必逻辑上不可能，也可能因成本、条件等而不宜实行。 语体/色彩：常负向。"
+    },
+    {
       "word": "improvisation",
       "pos": "n.",
       "meaning": "即兴创作；临时应变的产物",
@@ -7485,6 +8955,40 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写第二个c近似l；结合清晰词形其余部分和中文笔记，规范为inaccessibility。 手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "inbreeding",
+      "pos": "n.",
+      "meaning": "近亲繁殖；近亲交配",
+      "original_context": "Although field studies have linked inbreeding to declines among song sparrow populations, some researchers argue that, in nature, inbreeding proves _____ as a factor when compared with crushing blows from weather changes",
+      "collocation": "inbreeding in a small population",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，生物学用语",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "inbreeding",
+          "event_ids": [
+            "579bbdc1-7581-4dbd-810b-d4d1391216b5"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inbreeding",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中指种群内亲缘很近的个体繁殖；保留独立名词词条。 语体/色彩：中性，生物学用语。"
     },
     {
       "word": "incentive",
@@ -7621,6 +9125,40 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "indigenous",
+      "pos": "adj.",
+      "meaning": "本土的；原生的；原住民的",
+      "original_context": null,
+      "collocation": "a species indigenous to the island",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "indigenous",
+          "event_ids": [
+            "46ec36f6-6212-4463-b53b-c5f72a231730"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/indigenous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "常用 indigenous to；用于群体时须按语境理解为原住民，不能泛化成“普遍”。 语体/色彩：中性。"
     },
     {
       "word": "indubitable",
@@ -7949,6 +9487,40 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "insulting",
+      "pos": "adj.",
+      "meaning": "侮辱性的；冒犯人的",
+      "original_context": null,
+      "collocation": "an insulting remark",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "insulting",
+          "event_ids": [
+            "58e99515-e952-449e-8a0c-9335fa5c5ba8"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/insulting",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "强调言行造成冒犯；不等于单纯“令人失望”。 语体/色彩：贬义。"
+    },
+    {
       "word": "intercollegiate",
       "pos": "adj.",
       "meaning": "大学之间的；校际的",
@@ -8099,6 +9671,40 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "intriguing",
+      "pos": "adj.",
+      "meaning": "引人入胜的；激起好奇的",
+      "original_context": null,
+      "collocation": "an intriguing question",
+      "collocation_source": "coach_composed",
+      "connotation": "常褒义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "intriguing",
+          "event_ids": [
+            "d101fee5-34bb-4057-ace8-be311ced8cc6"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/intriguing",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "强调引发兴趣与好奇，不表示事情已经得到证明。 语体/色彩：常褒义。"
     },
     {
       "word": "introspection",
@@ -8466,6 +10072,40 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "labyrinth",
+      "pos": "n.",
+      "meaning": "迷宫；错综复杂的体系",
+      "original_context": "ce it was first invented instead of hoping to lose a rodent in a labyrinth; today’s scientists design mazes to elicit a few simple, easily measured behaviors.",
+      "collocation": "a labyrinth of corridors",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或带复杂难解之感",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "labyrinth",
+          "event_ids": [
+            "64e9961f-8a37-4d14-879c-1d6f1d7d2f7c"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/labyrinth",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中是实验迷宫；比喻义可描述制度或问题错综复杂。 语体/色彩：中性或带复杂难解之感。"
+    },
+    {
       "word": "latent",
       "pos": "adj.",
       "meaning": "潜在的；潜伏的；尚未显现的",
@@ -8495,6 +10135,40 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "legislator",
+      "pos": "n.",
+      "meaning": "立法者；立法机关成员；议员",
+      "original_context": "Although legislators on both sides of issues have repeatedly _____ a desire to find a middle ground, until now no acceptable compromise has been achieved.",
+      "collocation": "a group of legislators",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": "legislators → legislator；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "legislators",
+          "event_ids": [
+            "f4313a95-7d04-4e45-b9c1-ec1b9226ee53"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/legislator",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "legislators 是复数；核心是参与立法，不泛指所有政府工作人员。 语体/色彩：中性。"
     },
     {
       "word": "levelheaded",
@@ -8662,6 +10336,40 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "lucrative",
+      "pos": "adj.",
+      "meaning": "获利丰厚的；赚钱的",
+      "original_context": null,
+      "collocation": "a lucrative contract",
+      "collocation_source": "coach_composed",
+      "connotation": "通常正向经济评价",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "lucrative",
+          "event_ids": [
+            "87d4564f-cda7-471b-98fa-23a303d234ea"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lucrative",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "只说明收益高，不自动表示合法、公平或有意义。 语体/色彩：通常正向经济评价。"
     },
     {
       "word": "ludicrous",
@@ -9176,6 +10884,74 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "mediate",
+      "pos": "v.",
+      "meaning": "居中调解；通过中介促成或传递",
+      "original_context": "In mathematics, judgments about the validity of proofs are mediated by peer-reviewed journals; to ensure _____, reviewers are carefully chosen by journal editors, and the identity of scholars whose papers are under consi",
+      "collocation": "be mediated by an institution",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，正式",
+      "related_words": [],
+      "normalization_note": "mediated → mediate；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "mediated",
+          "event_ids": [
+            "0b4a594e-4bd6-49af-9ac8-f42246a6cc07"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mediate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中指判断经同行评审期刊这一中介机制形成，不一定有争吵需要调停。 语体/色彩：中性，正式。"
+    },
+    {
+      "word": "mediocre",
+      "pos": "adj.",
+      "meaning": "平庸的；质量一般或不佳的",
+      "original_context": null,
+      "collocation": "a mediocre performance",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "mediocre",
+          "event_ids": [
+            "7fa2a6ab-248f-4d25-b12f-3d58330ab428"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mediocre",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "是质量评价，不仅仅表示位置“处于中间”。 语体/色彩：贬义。"
+    },
+    {
       "word": "mingle",
       "pos": "v.",
       "meaning": "混合；交往；混杂其中",
@@ -9251,6 +11027,44 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "mitigate",
+      "pos": "v.",
+      "meaning": "减轻；缓和；降低严重程度",
+      "original_context": null,
+      "collocation": "mitigate the damage",
+      "collocation_source": "coach_composed",
+      "connotation": "常指改善不利影响",
+      "related_words": [
+        "attenuate",
+        "dampen",
+        "mute"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "mitigate",
+          "event_ids": [
+            "c3e57dd5-3111-4466-b6e2-7f7a363f3c87"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mitigate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "常接伤害、风险、痛苦；侧重减轻，未必彻底消除。 语体/色彩：常指改善不利影响。"
     },
     {
       "word": "motif",
@@ -9368,6 +11182,44 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "mute",
+      "pos": "v.; adj.",
+      "meaning": "v. 减弱，使安静；adj. 无声的，沉默的",
+      "original_context": null,
+      "collocation": "mute seasonal fluctuations",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [
+        "attenuate",
+        "dampen",
+        "mitigate"
+      ],
+      "normalization_note": "mutes → mute；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "mutes",
+          "event_ids": [
+            "2d532b4a-94d0-4763-8874-5e7326ebcd2e"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mute",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中 mutes 是动词第三人称单数：减弱变化，不是“沉默的人们”。 语体/色彩：中性。"
+    },
+    {
       "word": "myopic",
       "pos": "adj.",
       "meaning": "近视的；目光短浅的",
@@ -9445,6 +11297,81 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "newfangled",
+      "pos": "adj.",
+      "meaning": "新奇的；新式而令人不以为然的",
+      "original_context": null,
+      "collocation": "a newfangled device",
+      "collocation_source": "coach_composed",
+      "connotation": "常含不赞同或调侃",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "newfangled",
+          "event_ids": [
+            "01ee419c-2027-4d28-ab7b-3de42af96ea2"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/newfangled",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Oxford",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/newfangled",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "new 不自动带贬义；newfangled 常流露说话者对新玩意的不信任。 语体/色彩：常含不赞同或调侃。"
+    },
+    {
+      "word": "nourishment",
+      "pos": "n.",
+      "meaning": "营养；滋养；维持生长的食物",
+      "original_context": "dieticians believe that the only function of food is to provide nourishment, these dieticians view an emphasis on the aesthetic dimension of the culinary arts as _____.",
+      "collocation": "provide nourishment",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或正向",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "nourishment",
+          "event_ids": [
+            "ca3d4e0d-2096-4c3a-823b-2108f20c5500"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/nourishment",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中取食物提供的营养；也可比喻精神滋养。 语体/色彩：中性或正向。"
+    },
+    {
       "word": "noxious",
       "pos": "adj.",
       "meaning": "有害的；有毒的；令人厌恶的",
@@ -9474,6 +11401,74 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "numeral",
+      "pos": "n.; adj.",
+      "meaning": "n. 表示数的符号，数码；adj. 数字的",
+      "original_context": "useful proteins whose simple names—many are known only by Roman numerals—_____ their importance and the specificity of their roles in the thinning and clotting of blood.",
+      "collocation": "Roman numerals",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": "numerals → numeral；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "numerals",
+          "event_ids": [
+            "cfea6507-fd77-440f-812c-38e6fd9f6483"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/numeral",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中 Roman numerals 是罗马数字；numeral 侧重符号，number 可指数量概念。 语体/色彩：中性。"
+    },
+    {
+      "word": "obviate",
+      "pos": "v.",
+      "meaning": "预先避免；排除；使不再必要",
+      "original_context": null,
+      "collocation": "obviate the need for extra work",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，正式",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "obviate",
+          "event_ids": [
+            "db6464da-dff1-4b26-a700-3882c07bebd5"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/obviate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "重在消除问题或需求；与仅降低严重程度的 mitigate 有别。 语体/色彩：中性，正式。"
     },
     {
       "word": "off-putting",
@@ -9613,6 +11608,40 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "opaque",
+      "pos": "adj.",
+      "meaning": "不透明的；晦涩难懂的；不清楚的",
+      "original_context": null,
+      "collocation": "an opaque decision-making process",
+      "collocation_source": "coach_composed",
+      "connotation": "物理义中性；比喻义常负向",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "opaque",
+          "event_ids": [
+            "57e423b5-e8a4-4832-b8d9-29900837b9ee"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/opaque",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中机构掩饰决策过程，取“不透明、难以看清”。 语体/色彩：物理义中性；比喻义常负向。"
+    },
+    {
       "word": "ostensible",
       "pos": "adj.",
       "meaning": "表面的；声称的",
@@ -9633,6 +11662,42 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "oust",
+      "pos": "v.",
+      "meaning": "赶走；罢免；驱逐；取代",
+      "original_context": null,
+      "collocation": "oust someone from office",
+      "collocation_source": "coach_composed",
+      "connotation": "依情境而定",
+      "related_words": [
+        "expel"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "oust",
+          "event_ids": [
+            "bc6cf0f3-c354-4a24-87fb-f66cf9d62c47"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/oust",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "侧重将人赶下职位或逐出位置；expel 常见于组织开除或排出物体。 语体/色彩：依情境而定。"
     },
     {
       "word": "overhaul",
@@ -9871,6 +11936,74 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "paradigm",
+      "pos": "n.",
+      "meaning": "范例；典范；理论或思维框架",
+      "original_context": null,
+      "collocation": "a paradigm of clarity",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "paradigm",
+          "event_ids": [
+            "c9c0279f-cd7b-4be4-a939-5990056ce2e2"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/paradigm",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "a paradigm 可指范例；学术语境也指共享的理论框架。 语体/色彩：中性。"
+    },
+    {
+      "word": "paradigmatic",
+      "pos": "adj.",
+      "meaning": "典型的；可作范例的；范式的",
+      "original_context": null,
+      "collocation": "a paradigmatic example",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或正向",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "paradigmatic",
+          "event_ids": [
+            "61c82c79-6486-47f2-9205-ad4d939a841a"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/paradigmatic",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中谈某种器皿的代表性食谱，重点是“典型的”，不是“流行的”。 语体/色彩：中性或正向。"
     },
     {
       "word": "parsimonious",
@@ -10182,6 +12315,43 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "perilous",
+      "pos": "adj.",
+      "meaning": "危险的；险恶的",
+      "original_context": null,
+      "collocation": "a perilous mission",
+      "collocation_source": "coach_composed",
+      "connotation": "负向描述",
+      "related_words": [
+        "hazardous",
+        "precarious"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "perilous",
+          "event_ids": [
+            "32953347-9839-4c17-8109-d171a35a1812"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perilous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "常强调严重危险；不要与 exhilarating 的兴奋感混淆。 语体/色彩：负向描述。"
     },
     {
       "word": "permeable",
@@ -10597,6 +12767,40 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "populist",
+      "pos": "adj.; n.",
+      "meaning": "adj. 民粹主义的，诉诸普通民众的；n. 民粹主义者",
+      "original_context": "Progressive and reactionary populist movements are not necessarily _____; each may, and usually does, possess features of the other.",
+      "collocation": "a populist movement",
+      "collocation_source": "coach_composed",
+      "connotation": "依立场和语境而定",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "populist",
+          "event_ids": [
+            "199cd0eb-e730-46d7-bf84-5b38f2080eaa"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/populist",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中修饰运动；可出现在不同政治方向，不能只凭此词判断进步或保守。 语体/色彩：依立场和语境而定。"
+    },
+    {
       "word": "porous",
       "pos": "adj.",
       "meaning": "多孔的",
@@ -10639,6 +12843,43 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "precarious",
+      "pos": "adj.",
+      "meaning": "不稳固的；岌岌可危的；不可靠的",
+      "original_context": null,
+      "collocation": "a precarious balance",
+      "collocation_source": "coach_composed",
+      "connotation": "常负向",
+      "related_words": [
+        "hazardous",
+        "perilous"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "precarious",
+          "event_ids": [
+            "a7c6e06b-bfd9-4eda-b557-4fb444a018dc"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/precarious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "侧重基础或处境不稳定，因而有危险；不只是泛指危险。 语体/色彩：常负向。"
     },
     {
       "word": "precede",
@@ -10894,6 +13135,40 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "proclaim",
+      "pos": "v.",
+      "meaning": "公开宣告；正式宣布；明确显示",
+      "original_context": null,
+      "collocation": "proclaim a commitment to reform",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或强调语气",
+      "related_words": [],
+      "normalization_note": "proclaimed → proclaim；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "proclaimed",
+          "event_ids": [
+            "fb51058a-e0a1-4675-9e2c-e451099e20e5"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/proclaim",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中 proclaimed 为过去分词；着重公开宣布某种愿望或立场。 语体/色彩：中性或强调语气。"
+    },
+    {
       "word": "prodigious",
       "pos": "adj.",
       "meaning": "巨大的；惊人的；非凡的",
@@ -10931,6 +13206,40 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "profess",
+      "pos": "v.",
+      "meaning": "公开声称；宣称信奉；自称",
+      "original_context": null,
+      "collocation": "profess a desire for compromise",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；可含言行不一的暗示",
+      "related_words": [],
+      "normalization_note": "professed → profess；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "professed",
+          "event_ids": [
+            "c67bced1-ef25-491e-9fe8-716f9e6ae9d8"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/profess",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中 professed 为过去分词；声称不等于落实，也不必然等于撒谎。 语体/色彩：中性；可含言行不一的暗示。"
     },
     {
       "word": "proficient",
@@ -11462,6 +13771,42 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "quirky",
+      "pos": "adj.",
+      "meaning": "古怪有趣的；独特而不循常规的",
+      "original_context": null,
+      "collocation": "a quirky choice",
+      "collocation_source": "coach_composed",
+      "connotation": "常中性或略褒义",
+      "related_words": [
+        "unconventional"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "quirky",
+          "event_ids": [
+            "7c95b3e0-0f80-4eba-99e8-f6f7ec783627"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/quirky",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "侧重个人独特、有趣的怪处，不自动等于叛逆或不实用。 语体/色彩：常中性或略褒义。"
+    },
+    {
       "word": "quotidian",
       "pos": "adj.",
       "meaning": "每日的；日常平凡的",
@@ -11677,6 +14022,81 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "rarebit",
+      "pos": "n.",
+      "meaning": "奶酪吐司；浇有调味融化奶酪的烤面包",
+      "original_context": "with the culinary accessory known as the chafing dish, but Welsh rarebit was considered the truly ______ chafing dish recipe.",
+      "collocation": "Welsh rarebit",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "rarebit",
+          "event_ids": [
+            "c4511e5f-2d4a-4b01-bc02-49c4d67c5f14"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/rarebit",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Collins",
+          "url": "https://www.collinsdictionary.com/us/dictionary/english/welsh-rabbit",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中 Welsh rarebit 是菜名，也叫 Welsh rabbit；不是兔肉。 语体/色彩：中性。"
+    },
+    {
+      "word": "reactionary",
+      "pos": "adj.; n.",
+      "meaning": "adj. 反对变革、主张复旧的，极端保守的；n. 反动派",
+      "original_context": "Progressive and reactionary populist movements are not necessarily _____; each may, and usually does, possess features of the other.",
+      "collocation": "a reactionary movement",
+      "collocation_source": "coach_composed",
+      "connotation": "常贬义，政治语境",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "reactionary",
+          "event_ids": [
+            "7e44580c-ac5f-4da5-a1ac-9c243e94dfe5"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/reactionary",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "比一般 conservative 更强调反对改革、恢复旧秩序；不是“反应快”。 语体/色彩：常贬义，政治语境。"
     },
     {
       "word": "realm",
@@ -12857,6 +15277,40 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "sagacious",
+      "pos": "adj.",
+      "meaning": "睿智的；有远见和敏锐判断力的",
+      "original_context": null,
+      "collocation": "a sagacious judgment",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义，正式",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "sagacious",
+          "event_ids": [
+            "1d9e830a-caec-4d4d-926c-bff503ea9dd4"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sagacious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "侧重明智判断，不等同于 affable 的待人友善。 语体/色彩：褒义，正式。"
+    },
+    {
       "word": "sanctimonious",
       "pos": "adj.",
       "meaning": "伪善的；道貌岸然的",
@@ -12877,6 +15331,40 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "sanction",
+      "pos": "n.; v.",
+      "meaning": "n. 批准，认可；制裁，处罚。v. 正式批准；制裁",
+      "original_context": null,
+      "collocation": "sanction a proposal; impose sanctions",
+      "collocation_source": "coach_composed",
+      "connotation": "依义项相反",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "sanction",
+          "event_ids": [
+            "5fc29b53-dcda-4e73-a86e-bbaeec6b4092"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sanction",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "必须看宾语和情境区分“准许”与“处罚”；不能把所有 sanction 都背成同一方向。 语体/色彩：依义项相反。"
     },
     {
       "word": "savvy",
@@ -12939,6 +15427,42 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "scant",
+      "pos": "adj.",
+      "meaning": "不足的；少量的；勉强够的",
+      "original_context": null,
+      "collocation": "receive scant attention",
+      "collocation_source": "coach_composed",
+      "connotation": "常含不足之意",
+      "related_words": [
+        "excessive"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "scant",
+          "event_ids": [
+            "1c110059-96b0-4b4b-8825-a60773e90f7e"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/scant",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中指受到很少关注；与 excessive 的过量形成程度对照。 语体/色彩：常含不足之意。"
     },
     {
       "word": "scrape",
@@ -13330,6 +15854,40 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "sparrow",
+      "pos": "n.",
+      "meaning": "麻雀；某些类似麻雀的小型鸣禽",
+      "original_context": "ough field studies have linked inbreeding to declines among song sparrow populations, some researchers argue that, in nature, inbreeding proves _____ as a factor when compared with crushing blows from weather changes.",
+      "collocation": "a song sparrow population",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "sparrow",
+          "event_ids": [
+            "3fffd846-73de-48ff-a01e-aa5d6ffb94e2"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sparrow",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中 song sparrow 是具体鸟类名称；保留短语背景，勿与 swallow 混淆。 语体/色彩：中性。"
+    },
+    {
       "word": "spartan",
       "pos": "adj.",
       "meaning": "简朴而严格的；斯巴达式的",
@@ -13439,6 +15997,49 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "speculation",
+      "pos": "n.",
+      "meaning": "推测；猜想；投机活动",
+      "original_context": "machandran’s opinion, it is perfectly acceptable to propose bold speculations about the brain, even if these speculations seem _____; as Ramachandran frequently remarks, science thrives on risky conjecture.",
+      "collocation": "bold speculation about the brain",
+      "collocation_source": "coach_composed",
+      "connotation": "学术义中性；金融义强调风险",
+      "related_words": [
+        "conjecture"
+      ],
+      "normalization_note": "speculations → speculation；原摘词事件保留，来源归并到规范词条。",
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "speculations",
+          "event_ids": [
+            "7b572370-0660-42ef-8419-87fcbf2e60e0"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/speculation",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/speculate",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中 speculations 是有关大脑的猜想，非金融投机；与 conjecture 对照记。 语体/色彩：学术义中性；金融义强调风险。"
     },
     {
       "word": "stance",
@@ -13734,6 +16335,40 @@
       "note": "已划去的中文试写不保留。 手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "subversive",
+      "pos": "adj.; n.",
+      "meaning": "adj. 颠覆性的，破坏现存制度的；n. 从事颠覆活动者",
+      "original_context": null,
+      "collocation": "a subversive movement",
+      "collocation_source": "coach_composed",
+      "connotation": "依立场而定，常负向",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "subversive",
+          "event_ids": [
+            "5ead004e-25a6-4112-bc03-51fc71b35673"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/subversive",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "侧重动摇或推翻现有体系，不能直接等同于“进步”。 语体/色彩：依立场而定，常负向。"
+    },
+    {
       "word": "subvert",
       "pos": "v.",
       "meaning": "颠覆；破坏；使失效",
@@ -13851,6 +16486,40 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "按清晰中文旁注整理。 手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "sumptuous",
+      "pos": "adj.",
+      "meaning": "奢华的；豪华的；丰盛的",
+      "original_context": null,
+      "collocation": "a sumptuous banquet",
+      "collocation_source": "coach_composed",
+      "connotation": "常正向，也可批评奢侈",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "sumptuous",
+          "event_ids": [
+            "029e8440-c49f-4ed5-ba99-a4e83ae60cee"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sumptuous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "用于餐食强调丰盛精美，用于环境强调豪华昂贵。 语体/色彩：常正向，也可批评奢侈。"
     },
     {
       "word": "superior",
@@ -14798,6 +17467,78 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "trifling",
+      "pos": "adj.",
+      "meaning": "微不足道的；不重要的；价值很小的",
+      "original_context": null,
+      "collocation": "a trifling effect",
+      "collocation_source": "coach_composed",
+      "connotation": "常含轻视或弱化",
+      "related_words": [
+        "trivial"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "trifling",
+          "event_ids": [
+            "ea13ffd5-1a52-4e24-9b9e-5e51eca0dadf"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trifling",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "题中修饰影响，取程度很小；保留独立形容词，不并为 trifle 动词。 语体/色彩：常含轻视或弱化。"
+    },
+    {
+      "word": "trivial",
+      "pos": "adj.",
+      "meaning": "不重要的；琐碎的；微不足道的",
+      "original_context": null,
+      "collocation": "a trivial detail",
+      "collocation_source": "coach_composed",
+      "connotation": "常含轻视或弱化",
+      "related_words": [
+        "trifling"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "trivial",
+          "event_ids": [
+            "8be84ce0-dced-4407-bf8d-1aacd808d501"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trivial",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "通常指重要性很低；数学中还可指平凡、简单的情形。 语体/色彩：常含轻视或弱化。"
+    },
+    {
       "word": "trocar",
       "pos": "n.",
       "meaning": "套管针",
@@ -14978,6 +17719,40 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "ubiquitous",
+      "pos": "adj.",
+      "meaning": "无处不在的；普遍存在的",
+      "original_context": null,
+      "collocation": "ubiquitous advertising",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或依情境评价",
+      "related_words": [],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "ubiquitous",
+          "event_ids": [
+            "28510354-41e7-4566-87b4-1f9b4e8cdabb"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ubiquitous",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "说的是分布广、到处遇到；不是 indigenous 的“原生本土”。 语体/色彩：中性或依情境评价。"
+    },
+    {
       "word": "uncanny",
       "pos": "adj.",
       "meaning": "离奇的；出奇的",
@@ -14998,6 +17773,42 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "unconventional",
+      "pos": "adj.",
+      "meaning": "不循常规的；非传统的",
+      "original_context": null,
+      "collocation": "an unconventional approach",
+      "collocation_source": "coach_composed",
+      "connotation": "可褒可贬",
+      "related_words": [
+        "quirky"
+      ],
+      "normalization_note": null,
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "vocab/imports/20260915_2228_captured_vocab.json",
+          "kind": "platform_vocab_capture",
+          "origin_word": "unconventional",
+          "event_ids": [
+            "9e2bd872-e24a-4764-a661-31c6aef9cf83"
+          ]
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unconventional",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "note": "本身不保证好坏；与 quirky 相近但不一定有古怪有趣的色彩。 语体/色彩：可褒可贬。"
     },
     {
       "word": "undercut",
@@ -16454,5 +19265,5 @@
       "learning_status": "encountered_pending_retest"
     }
   ],
-  "updated_at": "2026-09-13"
+  "updated_at": "2026-09-15T14:30:40.734Z"
 }
