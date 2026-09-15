@@ -6,6 +6,7 @@ import { validateRelation, projectRelations } from "./word-relations.mjs";
 import { legacyWordReviews, projectReview } from "./spaced-review.mjs";
 import { readLegacyQuestions } from "./legacy-review.mjs";
 import { capturedWord } from "../shared/capture-word.mjs";
+import { WORD_STAGES, meaningChoices, drillResult, roundProgress, roundRating } from "../shared/word-session.mjs";
 
 export const normalizeWord = (value) =>
   value.trim().toLowerCase().replace(/\s+/g, " ");
@@ -16,6 +17,7 @@ const kinds = new Set([
   "vocab_delete",
   "vocab_restore",
   "vocab_recall",
+  "vocab_session", "vocab_drill",
   "questions_import",
   "keys_import",
   "attempt",
@@ -26,6 +28,10 @@ const kinds = new Set([
   "relation_upsert", "relation_delete", "relation_restore",
 ]);
 const types = new Set(["tc", "se", "rc", "quant"]);
+const uuid = value => {
+  if(typeof value!=="string" || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value))throw new Error("无效复习轮次编号");
+  return value;
+};
 const text = (v, name, max = 10000, optional = false) => {
   if (optional && (v === undefined || v === null || v === "")) return "";
   if (typeof v !== "string" || !v.trim() || v.length > max)
@@ -55,6 +61,16 @@ export function validate(kind, p) {
     throw new Error("不支持的操作");
   const relation = validateRelation(kind, p);
   if (relation) return relation;
+  if(kind === "vocab_session") {
+    if(!Array.isArray(p.words)||p.words.length<1||p.words.length>20)throw new Error("每轮选择 1–20 个词");
+    const words=p.words.map(w=>normalizeWord(text(w,"单词",120)));
+    if(new Set(words).size!==words.length || ![1,2].includes(p.meaning_passes))throw new Error("词汇不能重复，认词轮数为 1 或 2");
+    return {session_id:uuid(p.session_id),words,meaning_passes:p.meaning_passes};
+  }
+  if(kind === "vocab_drill") {
+    if(!WORD_STAGES.includes(p.stage)||!["correct","incorrect","revealed"].includes(p.result)||!["choice","typing","self_check"].includes(p.response_mode))throw new Error("复习步骤或结果无效");
+    return {session_id:uuid(p.session_id),word:normalizeWord(text(p.word,"单词",120)),stage:p.stage,answer:text(p.answer,"本次回答",3000,true),result:p.result,response_mode:p.response_mode};
+  }
   if (kind === "vocab_capture") {
     if (!p.source || !types.has(p.source.type)) throw new Error("摘词缺少题目来源");
     return {word:capturedWord(p.word),source:{...location(p.source),type:p.source.type},context:text(p.context,"摘词语境",240,true)};
@@ -91,6 +107,7 @@ export function validate(kind, p) {
         note: text(p.note, "备注", 3000, true),
       };
     if (kind === "vocab_recall") {
+      if(p.mode === "multistage")return {word,mode:"multistage",session_id:uuid(p.session_id)};
       if (!["remembered", "partial", "forgotten"].includes(p.self_rating))
         throw new Error("请选择回忆结果");
       return {
@@ -226,19 +243,52 @@ export class Store {
       )
     )
       throw new Error("无效操作编号");
-    const p = validate(kind, payload);
+    let p = validate(kind, payload);
     await fs.mkdir(this.eventsDir, { recursive: true });
     const target = path.join(this.eventsDir, `${id}.json`);
     try {
       const prior = JSON.parse(await fs.readFile(target, "utf8"));
       if (
         prior.kind !== kind ||
-        JSON.stringify(prior.payload) !== JSON.stringify(p)
+        JSON.stringify(validate(kind,prior.payload)) !== JSON.stringify(p)
       )
         throw new Error("操作编号已被不同内容使用");
       return prior;
     } catch (e) {
       if (e.code !== "ENOENT") throw e;
+    }
+    if(kind === "vocab_session" || kind === "vocab_drill" || kind === "vocab_recall"&&p.mode === "multistage") {
+      const events=await this.events(),sessions=events.filter(e=>e.kind==='vocab_session'),existing=sessions.find(e=>e.payload.session_id===p.session_id);
+      if(kind === "vocab_session") {
+        if(existing) {
+          if(JSON.stringify(validate(kind,existing.payload))!==JSON.stringify(p))throw new Error("此轮复习已经开始，请继续原轮次");
+          return existing;
+        }
+        const state=await this.state(),wordMap=new Map(state.vocabulary.filter(w=>!w.deleted&&w.meaning).map(w=>[w.word,w]));
+        if(p.words.some(w=>!wordMap.has(w)))throw new Error("请先为本轮单词补齐释义；已移除词不能开始复习");
+        p={...p,items:p.words.map(word=>{const w=wordMap.get(word);return {word,meaning:w.meaning,pos:w.pos||'',choices:meaningChoices(w,state.vocabulary,state.relations,p.session_id+word)};})};
+      } else {
+        if(!existing)throw new Error("找不到复习轮次，请先开始一轮复习");
+        const session=existing.payload,drills=events.filter(e=>e.kind==='vocab_drill').map(e=>e.payload),recalls=events.filter(e=>e.kind==='vocab_recall'&&e.payload.mode==='multistage').map(e=>e.payload),progress=roundProgress(session,drills,recalls);
+        const item=session.items.find(w=>w.word===p.word);
+        if(!item)throw new Error("该词不在本轮复习中");
+        if(kind === "vocab_drill") {
+          if(!progress.next || progress.next.stage!==p.stage || progress.next.word!==p.word)throw new Error("复习步骤已变化，请刷新后继续");
+          const mode=p.stage.startsWith('meaning_')?(item.choices.length?'choice':'self_check'):'typing';
+          if(p.response_mode!==mode)throw new Error("此步骤的作答方式不匹配");
+          if(p.result==='revealed'&&p.answer)throw new Error("揭晓答案不应附带作答");
+          if(p.result!=='revealed'&&mode!=='self_check'&&!p.answer)throw new Error("请先选择或填写答案");
+          if(mode==='choice'&&p.result!=='revealed'&&!item.choices.some(c=>c.word===p.answer))throw new Error("请选择本题提供的释义");
+          const result=drillResult(item,p);
+          if(result!==p.result)throw new Error("回答与核对结果不一致");
+          p={...p,assessment:mode==='self_check'?'self_reported':'locally_checked'};
+        } else {
+          const prior=events.find(e=>e.kind==='vocab_recall'&&e.payload.mode==='multistage'&&e.payload.session_id===p.session_id&&e.payload.word===p.word);
+          if(prior)return prior;
+          if(!progress.ready_words.includes(p.word))throw new Error("完成所有步骤后才能记作一轮复习");
+          p={...p,answer:drills.filter(d=>d.session_id===p.session_id&&d.word===p.word&&d.stage==='spelling').at(-1)?.answer||'',self_rating:roundRating(session,p.word,drills),assessment:drills.some(d=>d.session_id===p.session_id&&d.word===p.word&&d.response_mode==='self_check')?'mixed':'locally_checked'};
+        }
+      }
     }
     if (kind === "relation_upsert" || kind === "word_topics" || kind === "topic_upsert") {
       const state = await this.state();
@@ -307,6 +357,8 @@ export class Store {
         meaning: item.meaning || old.meaning,
         pos: item.pos || old.pos,
         note: item.note || old.note,
+        original_context: item.original_context || old.original_context || "",
+        sources: item.sources?.map(({material_id,record,kind,origin_word})=>({material_id,record,kind,origin_word})) || old.sources || [],
         collocation: item.collocation || old.collocation || "",
         dictionary_url:
           item.dictionary_url ||
@@ -347,9 +399,11 @@ export class Store {
       }
     const questions = new Map(),
       keys = new Map(),
-      attempts = [], reviews = [];
+      attempts = [], reviews = [], vocabSessions = [], vocabDrills = [], sessionRecalls = [], recalledRounds = new Set();
     for (const e of events) {
       const p = e.payload;
+      if(e.kind==='vocab_session'&&!vocabSessions.some(s=>s.session_id===p.session_id))vocabSessions.push({...p,id:e.id,recorded_at:e.recorded_at});
+      if(e.kind==='vocab_drill')vocabDrills.push({...p,id:e.id,recorded_at:e.recorded_at});
       if (e.kind === "ai_review") reviews.push({ ...p, id: e.id, recorded_at: e.recorded_at });
       if (e.kind === "vocab_capture") {
         const old=words.get(p.word) || {word:p.word,meaning:"",pos:"",note:"",status:"未检验",recalls:[],collocation:"",dictionary_url:"",definition_source:"题中摘词，待补释义"};
@@ -373,6 +427,11 @@ export class Store {
         if (words.has(p.word))
           words.get(p.word).deleted = e.kind === "vocab_delete";
       } else if (e.kind === "vocab_recall") {
+        if(p.mode==='multistage') {
+          const roundKey=JSON.stringify([p.session_id,p.word]);
+          if(recalledRounds.has(roundKey))continue;
+          recalledRounds.add(roundKey);sessionRecalls.push({...p,id:e.id,recorded_at:e.recorded_at});
+        }
         words.get(p.word)?.recalls.push({ ...p, recorded_at: e.recorded_at });
       } else if (e.kind === "questions_import" || e.kind === "keys_import") {
         for (const q of p.items) {
@@ -429,6 +488,11 @@ export class Store {
     const legacyQuestions = await readLegacyQuestions(this);
     const spacedReview = projectReview({ vocabulary:[...words.values()], legacyWords:legacyWordReviews({homework,lexicon,difficult,mastered}), legacyQuestions, events, grade, now, timeZone:profile.timezone || 'Asia/Shanghai' });
     return {
+      vocabSessions: vocabSessions.map(session=>{
+        const progress=roundProgress(session,vocabDrills,sessionRecalls);
+        return {...session,...progress,completed_at:progress.complete?sessionRecalls.filter(r=>r.session_id===session.session_id).at(-1)?.recorded_at||null:null};
+      }).reverse(),
+      vocabDrills: vocabDrills,
       spacedReview,
       relations,
       vocabulary: [...words.values()].sort((a, b) =>
@@ -456,6 +520,12 @@ export class Store {
           recorded_at: e.recorded_at,
           word: e.payload.word,
           count: e.payload.items?.length,
+          session_id:e.payload.session_id,
+          stage:e.payload.stage,
+          result:e.payload.result,
+          self_rating:e.payload.self_rating,
+          mode:e.payload.mode,
+          assessment:e.payload.assessment,
         }))
         .reverse(),
       history: history.sort((a, b) => b.name.localeCompare(a.name)),

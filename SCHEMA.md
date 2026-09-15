@@ -10,7 +10,9 @@
 - `vocab_upsert`：word、meaning、pos、note。词形小写且合并连续空格；短语完整保存。释义标记用户编辑待核验。
 - `vocab_capture`：word、source（material/unit/question/type）、context（最多240字）。来自用户主动选词并右键收录；允许先无释义入库。统一大小写、边界标点、弯引号和连字符，不自动推断词元；最多5词短语、120字符。初次创建meaning/pos/note为空，状态未检验，附题目来源与短语境；既有词仅补充来源并恢复显示，不覆写词义、笔记、回忆、自评或掌握状态。同词同题同语境的captures去重；收录不计作答或复习，不自动进入有释义的翻卡队列。补释义仍用vocab_upsert，主题归属仍用word_topics。浏览器发现已存在的有效词时只提示，不追加重复操作。
 - `vocab_delete` / `vocab_restore`：word。仅控制平台展示，不删除旧词库与历史。
-- `vocab_recall`：word、answer原文、self_rating（remembered/partial/forgotten）、mode（recall/flashcard）、assessment固定self_reported。跳过不写记录；自评不自动更新difficult/mastered、旧作业覆盖数或技巧等级。教练核对后须另写原子记录并注明事件ID，防止重复计数。
+- `vocab_recall`：旧模式保留word、answer原文、self_rating（remembered/partial/forgotten）、mode（recall/flashcard）、assessment=self_reported。新mode=multistage带session_id，只有本词各阶段均通过才结算，self_rating由服务端根据各阶段首次结果推导；同session_id+word只结算一次。跳过不记完成；不自动更新difficult/mastered、旧作业覆盖数或技巧等级。教练核对后须另写原子记录并注明事件ID，防止重复计数。
+- `vocab_session`：session_id（UUID）、words（1–20个已有且有释义的词）、meaning_passes（1或2，默认2）。服务端保存本轮词形、词性、释义及认义选项快照，之后词条修改不改变这一轮答案。开轮不计复习完成。
+- `vocab_drill`：session_id、word、stage（meaning_1/meaning_2/cloze/spelling）、answer、result（correct/incorrect/revealed）、response_mode（choice/typing/self_check）。服务端核验本轮快照、阶段顺序和选项/拼写结果；没有足够互异释义选项时才用明确标记的自查，不对自由中文字符串机械判错。每次小练习追加记录，轮内错误穿插重练；小练习次数与完成轮次数分开。
 - `attempt` / `attempts_import`：教材material、单元unit、题号question共同定位，type（tc/se/rc/quant）、answer原文、duration_seconds（未知null）、note。批量导入使用items数组。
 - `questions_import` / `keys_import`：items数组，含共同定位、type、answer、explanation，answer_source固定user_provided；题目导入另含prompt与options文本数组。无答案或自由文本不能可靠比较时result=null。原始作答保留，显示核对按最新答案计算；历史答案事件均保留。不换算GRE量表分。
 - 答案的可选 `source_ref` 保存来源标识及图像行定位；Reading选句键可指定 `answer_format: sentence`，answer保存与文章唯一匹配的完整句子，只忽略空白及Unicode排版差异比较，不用于语义自由文本判分。`materials/answer-sources/*.json` 保存原图文件名、SHA256、作者/修订信息及待核例外。OCR只是录入方式，不自动把用户提供的答案升级为ETS官方答案。
@@ -19,13 +21,15 @@
 
 浏览器草稿只在本机暂存，不算完成。平台只读适配现有源文件，CRUD与自评从事件叠加，不静默重写旧训练证据。教练接续平台训练须同时读取平台事件。页面定期读取磁盘；跨设备通过显式Git同步，源码更新后重启服务。
 
+多阶段认义选项与拼写检查的assessment为locally_checked，自查小练习为self_reported；含自查的整词结算为mixed。`state.vocabSessions`投影本轮items快照、完成词completed_words、作答次数drill_count、下一步及completed_at；`state.vocabDrills`保留逐次原答。词库索引只读暴露已有sources（material_id/record/kind/origin_word）和original_context，不迁移或改写原词库来源。
+
 自动练习索引从现有PDF派生，保存在忽略的 `.gre-platform/questions-*.json`，包括来源、单元、题号、题型、作答方式、原页区域及用于排版的临时题干、选项、段落和句子文本。索引不是训练证据，不提交Git，文件变化或索引版本变化后自动重建。题号仍沿用原书；数学补充套题重编号时采用 `set_p<起始PDF文件页>` 单元避免覆盖同号题。索引定位由系统传入attempt事件，学习者无需填写定位字段。
 
 ## 词汇关系与主题（2026-09-15）
 
 `vocab/relations.json` 保存可迭代的初始主题与词组。topics包含id、name、可选pattern（对已有中文释义的粗分类规则）及words（明确归类词）。自动分类只作建议；允许一个词属于多个主题；不确定项保留待分类。groups包含id、type（synonym/antonym/lookalike）、title、note、members（word/usage/example）、source及可选sources。关系只适用于所述义项，不作为SE整句等价的证据。示例为教练自拟，未冒充原题。
 
-平台追加事件：`topic_upsert`（id/name）、`topic_delete`/`topic_restore`（id）；`word_topics`（word/topics/automatic，automatic=true恢复自动建议）；`relation_upsert`（id/type/title/note/members，2–12个已有词，source固定user_edited）、`relation_delete`/`relation_restore`（id）。人工分类覆盖建议；删除分类或词组不删除词、原始关系及学习证据，恢复后重新显示。形近建议仅按编辑距离生成，不代表语义近似，可编辑后收录。对照记忆不生成掌握证据，正式背诵仍使用既有vocab_recall自评事件。
+平台追加事件：`topic_upsert`（id/name）、`topic_delete`/`topic_restore`（id）；`word_topics`（word/topics/automatic，automatic=true恢复自动建议）；`relation_upsert`（id/type/title/note/members，2–12个已有词，source固定user_edited）、`relation_delete`/`relation_restore`（id）。人工分类覆盖建议；删除分类或词组不删除词、原始关系及学习证据，恢复后重新显示。形近建议仅按编辑距离生成，不代表语义近似，可编辑后收录。对照揭晓不生成掌握证据；背诵这一组接入多阶段学习，完成后使用vocab_recall结算。
 
 初始source区分`dictionary_checked`（sources列出的词典已核对）、`coach_draft`（教练整理、待逐项核验）；用户修改统一标记`user_edited`，不继承旧核验状态。分类规则只检索现有释义，不调用AI，也不自动补写空缺词义。
 
@@ -33,17 +37,18 @@
 
 ### 间隔复习投影（2026-09-15）
 
-`platform/server/spaced-review.mjs` 从已有回忆、题目作答和旧训练证据派生 `spacedReview`，不创建虚构复习事件，也不覆写掌握度。所有新回忆继续使用 `vocab_recall`，新做题继续使用 `attempt` / `attempts_import`；普通练习和复习入口共享计数与日程。用户跳过不写事件。
+`platform/server/spaced-review.mjs` 从已有回忆、题目作答和旧训练证据派生 `spacedReview`，不创建虚构复习事件，也不覆写掌握度。完成的词汇轮次使用 `vocab_recall`，新做题继续使用 `attempt` / `attempts_import`；普通练习和复习入口共享计数与日程。开轮及未完成的小练习不记为已完成复习。
 
 - 以profile.timezone划分学习日（当前Asia/Shanghai）。词汇在首次主动回忆后排期，只有导入、抄写、编辑释义不算复习；尚无回忆证据的词列入首轮。有明确作答的旧题以及平台新作答自动加入复习。
 - 初始间隔1天，后续到期且跨日的成功回忆按2、4、7、15、30、60天延长；达到60天仍循环安排。忘记或答错重置为10分钟后再练；不够准确或答案未知次日再练。十分钟再学习后记得，从1天重新开始。提前或同日重复成功只计次数，不跳级、不推迟原排期。普通日间隔按日历日，不要求等到次日相同钟点；十分钟任务按绝对时间。
-- 题目用提交时已经存在的参考答案计算排期结果；之后补答案不追溯伪造当时的已知结果。结果未知不计答对。词汇结果为用户自評，永远不当成教练核验或GRE成绩。
+- 题目用提交时已经存在的参考答案计算排期结果；之后补答案不追溯伪造当时的已知结果。结果未知不计答对。旧词汇结果仍为用户自评；多阶段练习按本轮固定义项和拼写作有限核对，不当成教练核验、长期掌握或GRE成绩。
+- 多阶段默认顺序为英→中两遍、补全中间字母、中→英。认义阶段首次错误或揭晓记forgotten；认义均首次通过但后续拼写需纠正记partial；所有阶段首次通过记remembered。后来改对不抹去首次困难。整轮中断后从已同步的session/drill/recall事件恢复，已结算词不重复结算；同一天重复开轮仍遵循不连续跨级规则。
 - 词条`review_count`合并旧复测次数与平台后续回忆。旧difficult/mastered累计数、homework分组和lexicon.review_evidence存在重叠：按同源record去重，明细扣除首轮后与旧累计数取最大值。旧记录仅有日期或累计值时，保守从最后已知日期后1天重新排期，不凭累计次数推断长期间隔。`legacy_review_count`和`platform_count`分别展示。
 - 题目`attempt_count`为明确的旧作答加平台作答，`review_count`不含首答。未答题、仅讲解和未完成题号范围不算作答；部分完成的范围只接入有明确答案的题号。
 - `due`指现在可练，`due_today`含今日稍后的再练及逾期；待补释义的词保留任务但不进入翻卡队列。每日完成按不同内容去重，另计当天实际复习次数和首次作答量；忘记后待再练的项目保留为未完成。逾期不删除、不假记完成。
 - 七天预览仅展示当前每项的下一次安排（今日含积压），不能当成固定工作量承诺；后续作答会动态改变安排。revision包含分钟时间段，跨日及十分钟到期后可通过现有轮询更新，不必产生数据写入。
 
-初始间隔是便于执行的启发式设置，不是个人遗忘率测量。依据间隔学习研究（Cepeda等，2008）：https://doi.org/10.1111/j.1467-9280.2008.02209.x 。本模块不预测“记住百分比”，不声称存在人人通用的艾宾浩斯最佳间隔。
+初始间隔与四阶段流程是可调整的实现设置，不是个人遗忘率测量。间隔学习依据（Cepeda等，2008）：https://doi.org/10.1111/j.1467-9280.2008.02209.x ；主动提取与分散练习依据（Dunlosky等，2013）：https://www.psychologicalscience.org/publications/journals/pspi/learning-techniques.html 。研究支持学习原则，不证明此处固定轮次人人最优。本模块不预测“记住百分比”，不声称存在人人通用的艾宾浩斯最佳间隔。
 
 ### 记录原则
 

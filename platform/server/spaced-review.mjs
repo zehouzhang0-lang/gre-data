@@ -58,7 +58,7 @@ function update(item, at, result, today, timeZone, source, id) {
 
 export function projectReview({vocabulary,legacyWords=[],legacyQuestions=[],events,grade,now=new Date(),timeZone='Asia/Shanghai'}) {
   const today=dayKey(now,timeZone), map=new Map();
-  for(const w of vocabulary)map.set(wordKey(w.word),initial(wordKey(w.word),'word',{word:w.word,deleted:!!w.deleted,ready:!!(w.meaning||w.feedback)}));
+  for(const w of vocabulary)map.set(wordKey(w.word),initial(wordKey(w.word),'word',{word:w.word,deleted:!!w.deleted,ready:!!w.meaning?.trim()}));
   for(const old of legacyWords) {
     const item=map.get(wordKey(old.word));if(!item || !old.last_day)continue;
     item.legacy_review_count=old.review_count;item.review_count=old.review_count;item.has_history=true;item.last_day=old.last_day;setNext(item,old.last_day,1);
@@ -68,11 +68,16 @@ export function projectReview({vocabulary,legacyWords=[],legacyQuestions=[],even
     const item=map.get(id);item.legacy_attempt_count++;if(item.has_history)item.legacy_review_count++;
     update(item,q.recorded_at,'unknown',today,timeZone,'legacy',q.record);
   }
-  const keys=new Map();
+  const keys=new Map(), completedRounds=new Set();
   for(const event of events) {
     const p=event.payload;
     if(event.kind==='keys_import'||event.kind==='questions_import')for(const q of p.items)if(q.answer)keys.set(keyOf(q),q);
     if(event.kind==='vocab_recall') {
+      if(p.mode==='multistage') {
+        const roundKey=JSON.stringify([p.session_id,p.word]);
+        if(completedRounds.has(roundKey))continue;
+        completedRounds.add(roundKey);
+      }
       const item=map.get(wordKey(p.word));if(item)update(item,event.recorded_at,p.self_rating,today,timeZone,'platform',event.id);
     }
     if(event.kind==='attempt'||event.kind==='attempts_import') {

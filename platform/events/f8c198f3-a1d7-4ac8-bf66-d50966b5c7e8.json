@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "f8c198f3-a1d7-4ac8-bf66-d50966b5c7e8",
+  "recorded_at": "2026-09-15T14:40:37.647Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "5459e305-6a19-4eff-a25b-400df5e0775f",
+    "input_hash": "2885b81c1f4183866faefcf9e4696bafe7846c2e742ddf945abc1b4e98f74062",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BD",
+    "result": {
+      "summary": "参考答案为B/D，你选择了B/F。句子强调双重间谍面临更大的危险；B precarious和D perilous分别填入均成立且全句等价，F exhilarating（令人兴奋的）不符合这一语义方向。",
+      "evidence": "先预测逻辑：前半句“dangerous enough”设定危险这一比较维度，“but…infinitely more”进一步强化；冒号后“a single slip…crashing to destruction”（一次失误即可招致毁灭）解释空格，锁定“危险的、岌岌可危的”。逐项检查：A arduous意为艰苦的，未对应危险；B precarious意为处境危险、不稳固的，成立；C clandestine和E covert均指秘密的，虽彼此近义，却不符合此处比较和解释；D perilous意为危险的，成立，与B构成全句等价；F exhilarating意为令人兴奋的，题干未支持兴奋或刺激体验。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可观察到的偏差是选入F、漏选D。待核查标签：知识（是否混淆词义）、读题（是否抓住冒号解释）、策略（是否分别检验两项及全句等价）；无用时数据，不能判断时间问题。",
+      "next_action": "重做时先遮住选项，用“更危险”预测空格；再分别代入B、D、F，将整句译成中文，并指出各项是否得到“一次失误即可毁灭”的支持。最后检查B与D是否表达相同的核心意思，并自行回忆三个词的核心义后核对。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
