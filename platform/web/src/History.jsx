@@ -3,6 +3,8 @@ import { Header, Modal, Empty } from "./components";
 import AiReview, { ReviewText } from "./AiReview";
 import { request, download, typeNames } from "./api";
 const labels = {
+  topic_upsert: "编辑词汇主题", topic_delete: "移除词汇主题", topic_restore: "恢复词汇主题",
+  word_topics: "调整单词分类", relation_upsert: "编辑词汇关系", relation_delete: "移除词汇关系", relation_restore: "恢复词汇关系",
   ai_review: "AI讲解与复盘",
   vocab_recall: "词汇回忆自评",
   vocab_upsert: "编辑生词",

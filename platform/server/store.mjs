@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { randomUUID, createHash } from "node:crypto";
 import YAML from "yaml";
+import { validateRelation, projectRelations } from "./word-relations.mjs";
 
 export const normalizeWord = (value) =>
   value.trim().toLowerCase().replace(/\s+/g, " ");
@@ -17,6 +18,8 @@ const kinds = new Set([
   "attempts_import",
   "material_upload",
   "ai_review",
+  "topic_upsert", "topic_delete", "topic_restore", "word_topics",
+  "relation_upsert", "relation_delete", "relation_restore",
 ]);
 const types = new Set(["tc", "se", "rc", "quant"]);
 const text = (v, name, max = 10000, optional = false) => {
@@ -46,6 +49,8 @@ function attempt(p) {
 export function validate(kind, p) {
   if (!kinds.has(kind) || !p || typeof p !== "object")
     throw new Error("不支持的操作");
+  const relation = validateRelation(kind, p);
+  if (relation) return relation;
   if (kind === "ai_review") {
     if (!["attempt", "recent"].includes(p.scope) || !p.result || !/^[a-f0-9]{64}$/.test(p.input_hash)) throw new Error("AI分析记录不完整");
     if (!["supported", "needs_review"].includes(p.result.assessment) || !Array.isArray(p.result.technique_ids)) throw new Error("AI分析结果格式不正确");
@@ -227,6 +232,13 @@ export class Store {
     } catch (e) {
       if (e.code !== "ENOENT") throw e;
     }
+    if (kind === "relation_upsert" || kind === "word_topics" || kind === "topic_upsert") {
+      const state = await this.state();
+      const available = new Set(state.vocabulary.filter(w => !w.deleted).map(w => w.word));
+      if (kind === "relation_upsert" && p.members.some(m => !available.has(m.word))) throw new Error("请先将词组中的词加入生词本；已移除词需先恢复");
+      if (kind === "word_topics" && (!available.has(p.word) || p.topics.some(id => !state.relations.topics.some(t => t.id === id && !t.deleted)))) throw new Error("单词或主题已不存在，请刷新后重新选择");
+      if (kind === "topic_upsert" && state.relations.topics.some(t => !t.deleted && t.id !== p.id && t.name === p.name)) throw new Error("已有同名主题");
+    }
     // Serial local writes must retain causal order even within one clock millisecond.
     const previous = (await this.events()).at(-1);
     const timestamp = Math.max(
@@ -399,7 +411,10 @@ export class Store {
     const profile = YAML.parse(
       profileText.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/)?.[1] || "{}",
     );
+    const relationSeed = await this.json("vocab/relations.json", { topics: [], groups: [] });
+    const relations = projectRelations([...words.values()], relationSeed, events);
     return {
+      relations,
       vocabulary: [...words.values()].sort((a, b) =>
         a.word.localeCompare(b.word),
       ),
@@ -444,6 +459,7 @@ export class Store {
             events,
             profileText,
             history,
+            relationSeed,
           ]),
         )
         .digest("hex"),

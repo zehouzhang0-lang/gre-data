@@ -1,0 +1,1000 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-15",
+  "topics": [
+    {
+      "id": "mood",
+      "name": "心情与感受",
+      "pattern": "忧|愉快|快乐|沮丧|愤怒|恐惧|悲伤|喜悦|情绪|不安|担忧|惊恐|兴奋|憎|厌恶|嫉妒|平静|镇定|沉着|同情|怜悯|恋情|满足|惊讶|惊奇|震惊|失望|挫败|悲观|乐观|敬畏|欣喜|喜爱|惆怅|烦恼|怨恨|热情|冷漠|感情|激动|担心|焦虑|痛苦|迷恋",
+      "words": [
+        "gloomy",
+        "downbeat",
+        "sulky",
+        "jubilation",
+        "worrisome",
+        "awe"
+      ]
+    },
+    {
+      "id": "character",
+      "name": "性格与态度",
+      "pattern": "性格|谦|傲|自负|胆怯|勇敢|懒|勤|固执|顽固|顺从|温和|好斗|机敏|精明|谨慎|吝啬|无私|仁慈|善行|任性|严厉|粗鲁|生硬|圆滑|诚实|虚伪|伪善|贪|虚荣|骄|怪癖|怪异|老练|机智|聪明|愚蠢|顽劣|任性|勤奋|坚韧|坚毅|果断|鲁莽|轻率|敏锐|勇气|羞怯|害羞|直率|爽朗|灵巧|灵活|细心|细致",
+      "words": [
+        "astute",
+        "shrewd",
+        "canny",
+        "haughty",
+        "arrogant",
+        "timid",
+        "pugnacious"
+      ]
+    },
+    {
+      "id": "social",
+      "name": "人际与交往",
+      "pattern": "友|社交|人情|团结|礼貌|恭敬|人际|交往|好客|陪伴|熟人|相识|联盟|结盟|同僚|合作|承诺|奉献|伙伴|称赞|赞美|赞誉|羞辱|侮辱|奉承|交谈|礼节|体贴|尊敬|尊重|忠诚|背叛|和睦|和谐|疏远|亲密|慷慨|赠予",
+      "words": [
+        "gregarious",
+        "convivial",
+        "congenial",
+        "camaraderie",
+        "solidarity",
+        "courteous",
+        "beholden"
+      ]
+    },
+    {
+      "id": "conflict",
+      "name": "冲突与约束",
+      "pattern": "争吵|争论|攻击|战斗|战争|反抗|反对|阻碍|阻挠|妨碍|限制|束缚|压制|剥夺|征服|强迫|迫使|争执|指控|控告|报复|打击|斗争|钳制|抑制|妥协|损害|危及|破坏|抵制|击败|击退|战胜|阻止|阻挡|威胁|暴力|暴乱|恐吓|侵略|侵犯|剥夺",
+      "words": [
+        "fetter",
+        "unfettered",
+        "bellicose",
+        "combative",
+        "defiant",
+        "encumber",
+        "stymie"
+      ]
+    },
+    {
+      "id": "reason",
+      "name": "思考与判断",
+      "pattern": "证据|推理|逻辑|判断|无根据|相关|重要|困惑|含糊|明晰|明确|洞察|理解|荒谬|不合理|恰当|倾向|预料|预示|表明|偏见|信服|理由|原因|推断|相信|怀疑|合理|可靠|有效|可行|不成立|必要|必需|误导|误解|出错|谬|模糊|晦涩|真相|真实|虚假|假装|欺骗|无意义|准确|精确|严密|理解|认知|分析|解释|思考|思索|沉思|认定|推测",
+      "words": [
+        "baseless",
+        "groundless",
+        "unfounded",
+        "inconsequential",
+        "immaterial",
+        "irrelevant",
+        "flummox",
+        "confound"
+      ]
+    },
+    {
+      "id": "language",
+      "name": "表达与信息",
+      "pattern": "说教|演说|描述|描绘|表达|言论|批评|谴责|承认|否认|撤回|反驳|隐瞒|揭露|说明|暗指|提到|指责|评注|注释|信息|知名|名声|陈述|叙述|讲述|叙事|宣传|隐喻|措辞|话语|语调|口头|口才|口是心非|讽刺|讥|嘲笑|申斥|抨击|辩护|辩论|讨论|争辩|说明|辩解|鼓吹|赞扬|谎言|谣言|胡说|声明|书信|写作|坦白|透露|揭示",
+      "words": [
+        "delineate",
+        "depict",
+        "preachy",
+        "sanctimonious",
+        "didactic",
+        "recant",
+        "repudiate",
+        "forswear",
+        "conceal",
+        "disclose"
+      ]
+    },
+    {
+      "id": "change",
+      "name": "变化与发展",
+      "pattern": "变化|发展|增加|增大|减少|减弱|衰|恶化|加剧|改善|复兴|复发|消退|恢复|崛起|到来|出现|成熟|缓解|平息|削弱|加强|强化|扩大|扩展|膨胀|扩充|萌芽|兴起|终止|结束|瓦解|衰竭|衰退|萎缩|消失|消散|逐渐|降低|减轻|缩小|变化|改变|改动|变更|修改|改进|改良|复活|复苏|退化|演化|适应|转变|取代|替代|磨损",
+      "words": [
+        "augment",
+        "dwindle",
+        "wane",
+        "ebb",
+        "aggravate",
+        "exacerbate",
+        "ameliorate",
+        "resurgent",
+        "recrudescent"
+      ]
+    },
+    {
+      "id": "quantity",
+      "name": "数量与程度",
+      "pattern": "大量|丰富|稀少|稀缺|缺乏|不足|充足|过度|极端|微小|巨大|多余|相对|比较而言|高于|低于|超过|过分|不够|过多|微不足道|很小|极小|稠密|密集|稀疏|减少|少量|剩余|剩下|广泛|普遍|罕见|通常|常见|频繁|丰富|繁多|庞大|充裕|充沛|稀缺",
+      "words": [
+        "copious",
+        "dearth",
+        "deficit",
+        "wanting",
+        "undue",
+        "grossly"
+      ]
+    },
+    {
+      "id": "time",
+      "name": "时间与持续",
+      "pattern": "永久|永恒|短暂|暂时|长期|过时|陈旧|持续|即将|先于|延迟|早于|提前|较早|预先|一阵|发作期|近期|最近|古老|古代|新颖|陈腐|起初|最初|从前|即时|立即|缓慢|迅速|快速|急促|突然|开端|起源|开始|时机|顺序|后续|拖延|延缓|滞后",
+      "words": [
+        "eternal",
+        "evanescent",
+        "transitory",
+        "imminent",
+        "dated",
+        "chronic",
+        "precede"
+      ]
+    },
+    {
+      "id": "environment",
+      "name": "环境与空间",
+      "pattern": "环境|阴暗|荒凉|偏僻|潮湿|干旱|明亮|光线|边缘|狭窄|宽阔|空旷|陆地|空气|空间|并排|并肩|风景|景色|山|平原|小溪|气候|城市|城镇|边界|界限|边境|地形|地貌|房屋|房间|土地|田野|乡村|幽暗|黑暗|刺眼|耀眼|喧闹|吵闹|寂静|宁静|噪声|噪音|晴朗|阴沉|温暖|寒冷|凉爽",
+      "words": [
+        "gloomy",
+        "ashore",
+        "fringe",
+        "backwater",
+        "champaign"
+      ]
+    },
+    {
+      "id": "nature",
+      "name": "自然与生物",
+      "pattern": "动物|植物|生物|物种|生态|食肉|甲壳|昆虫|森林|海洋|农业|树皮|甲虫|树|卷尾猴|繁殖|捕食|猎食|捕猎|栖息|群居|种群|遗传|进化|地质|矿物|岩石|化石|潮汐|退潮|鳍|鱼|鸟|菌|孢子|细胞|氩",
+      "words": [
+        "carnivorous",
+        "crustaceans",
+        "conservation"
+      ]
+    },
+    {
+      "id": "body",
+      "name": "身体与健康",
+      "pattern": "疾病|皮肤|腹|肿|疼痛|呼吸|健康|强壮|虚弱|疲惫|感知|感觉|青春期|不成熟|动脉|擦伤|肢体|骨|血|肌肉|器官|胃|肺|消化|营养|体力|病|炎症|痉挛|麻痹|昏迷|生理|嗜睡|困倦|疲劳|疲倦|发烧|呕吐",
+      "words": [
+        "dermatosis",
+        "psoriasis",
+        "trocar",
+        "abdominal",
+        "robust",
+        "feeble",
+        "sentient",
+        "insentient"
+      ]
+    },
+    {
+      "id": "material",
+      "name": "性质与形态",
+      "pattern": "多孔|渗透|坚硬|柔软|弯曲|笨重|光滑|粗糙|均匀|相似|形状|涩|刺耳|色的|颜色|铜|压缩|压紧|浓缩|稀释|混合|液体|气体|固体|坚固|结实|易碎|脆弱|薄|厚|平滑|歪斜|黏|粘|湿|干燥|流动|透明|浑浊|空心|不透明|弯|曲|笔直|混乱|杂乱|有序|整齐",
+      "words": [
+        "porous",
+        "permeable",
+        "rigid",
+        "pliable",
+        "cumbersome",
+        "unwieldy",
+        "sleek",
+        "homogeneous"
+      ]
+    },
+    {
+      "id": "society",
+      "name": "社会与制度",
+      "pattern": "法律|合法|非法|政治|政府|权力|统治|社会|宗教|虔诚|道德|自治|自主权|组织|派别|命名|公民|市政|军|上校|上尉|投票|民主|专制|独裁|贵族|君主|国家|民族|种族|权利|社会|制度|法规|规定|政策|习俗|传统|礼仪|阶级|党派|团体|信仰|崇拜|圣|神|祭",
+      "words": [
+        "legitimate",
+        "illicit",
+        "devout",
+        "pious",
+        "pilgrim",
+        "warrant"
+      ]
+    },
+    {
+      "id": "economy",
+      "name": "经济与资源",
+      "pattern": "金钱|财政|经济|节俭|节省|财产|补助|补贴|财富|盈余|赤字|消费|价值|拍卖|交易|商品|商业|商人|贸易|市场|雇|收入|支出|开支|利润|盈利|亏损|筹款|援助|资源|支付|欠债|资产|债务|财物|奢侈|浪费|匮乏|穷|贫|生计|贵重|便宜|成本",
+      "words": [
+        "frugal",
+        "thrifty",
+        "parsimonious",
+        "subsidy",
+        "windfall",
+        "valuable",
+        "valueless",
+        "expendable"
+      ]
+    },
+    {
+      "id": "arts",
+      "name": "艺术与审美",
+      "pattern": "艺术|文学|音乐|散文|手稿|语法|主题|装饰|华丽|壮丽|轶事|趣闻|调音|典型|原型|范例|代名词|俗语|军号|奖章|奖牌|雕|绘画|画作|美丽|美观|审美|优美|生动|象征|戏剧|诗|虚构|小说|作家|歌唱|歌声|旋律|寓言|篇章|语句|文字|散文|文体|辞藻|文雅",
+      "words": [
+        "prose",
+        "manuscript",
+        "syntax",
+        "motif",
+        "medallion",
+        "majestic",
+        "glamour",
+        "glamorous"
+      ]
+    },
+    {
+      "id": "action",
+      "name": "行为与操作",
+      "pattern": "挥舞|挥动|扭|拧|夹紧|系紧|授予|收集|搜集|采集|搜寻|筛选|挑选|选择|搬|移动|挪|攀|跳|跑|走|扔|投掷|抛弃|丢弃|脱离|分离|清除|去除|消除|穿过|穿越|停留|逗留|倚|依靠|放置|搁置|推动|拉|撕|刺穿|切|折叠|嵌|剥|擦|缠|覆盖|包围|围绕|容忍|容许",
+      "words": []
+    }
+  ],
+  "groups": [
+    {
+      "id": "synonym-1",
+      "type": "synonym",
+      "title": "节俭，还是吝啬？",
+      "note": "都涉及节省；parsimonious 的负面色彩更突出。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/frugal",
+        "https://www.merriam-webster.com/dictionary/parsimonious"
+      ],
+      "members": [
+        {
+          "word": "frugal",
+          "usage": "adj. 节省资源、生活简朴，通常中性或褒义。常用 frugal lifestyle。",
+          "example": "She maintained a frugal lifestyle."
+        },
+        {
+          "word": "parsimonious",
+          "usage": "adj. 节省到了吝啬的程度，通常贬义；学术语境也可指使用假设或资源很少。",
+          "example": "The owner was parsimonious with staff bonuses."
+        }
+      ]
+    },
+    {
+      "id": "synonym-2",
+      "type": "synonym",
+      "title": "精于节省",
+      "note": "frugal 着重少耗费；thrifty 着重善于管理资源。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "frugal",
+          "usage": "adj. 节俭、简朴；a frugal meal 可指一顿简单便餐。",
+          "example": ""
+        },
+        {
+          "word": "thrifty",
+          "usage": "adj. 节俭而善于持家，常含褒义；a thrifty household。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-3",
+      "type": "synonym",
+      "title": "喜欢交际，还是相处合拍？",
+      "note": "这一组是相关义；描述对象不同，不能机械互换。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "gregarious",
+          "usage": "adj. 爱与人交往，描述社交倾向；也指动物群居。",
+          "example": ""
+        },
+        {
+          "word": "convivial",
+          "usage": "adj. 聚会气氛或人物欢乐友善；a convivial gathering。",
+          "example": ""
+        },
+        {
+          "word": "congenial",
+          "usage": "adj. 性情相投或环境合意；congenial company / surroundings。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-4",
+      "type": "synonym",
+      "title": "低落的三种侧重",
+      "note": "注意心情、态度与环境三个不同对象。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "gloomy",
+          "usage": "adj. 阴暗；也指心情忧郁或前景悲观。",
+          "example": "The gloomy room did little to improve his mood."
+        },
+        {
+          "word": "downbeat",
+          "usage": "adj. 情绪或评价低落、悲观；a downbeat assessment。",
+          "example": ""
+        },
+        {
+          "word": "sulky",
+          "usage": "adj. 因不满而闷闷不乐、赌气不说话，常带贬义。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-5",
+      "type": "synonym",
+      "title": "精明与敏锐",
+      "note": "这些词可褒可贬，取决于其能力被如何使用。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "astute",
+          "usage": "adj. 善于判断局势、洞察利益；an astute observer。",
+          "example": ""
+        },
+        {
+          "word": "shrewd",
+          "usage": "adj. 判断精明，尤指实际事务；a shrewd negotiator。",
+          "example": ""
+        },
+        {
+          "word": "canny",
+          "usage": "adj. 精明而谨慎，常含会盘算的意味；a canny investor。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-6",
+      "type": "synonym",
+      "title": "不重要与不相关",
+      "note": "先问“不影响结果”，还是“不属于当前话题”。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "inconsequential",
+          "usage": "adj. 无足轻重、没有重要后果；an inconsequential detail。",
+          "example": ""
+        },
+        {
+          "word": "immaterial",
+          "usage": "adj. 对讨论或决定无关紧要；immaterial to the outcome；另有非物质义。",
+          "example": ""
+        },
+        {
+          "word": "irrelevant",
+          "usage": "adj. 与当前问题不相关；irrelevant to the argument。不等于在一切场合都不重要。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-7",
+      "type": "synonym",
+      "title": "使问题恶化",
+      "note": "共同义是使已经存在的问题更严重。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "aggravate",
+          "usage": "v. 加剧不良状况；还可表示惹恼某人（较口语）。",
+          "example": "The delay aggravated the shortage."
+        },
+        {
+          "word": "exacerbate",
+          "usage": "v. 加剧问题、疼痛或冲突，通常较正式。",
+          "example": "The drought exacerbated food insecurity."
+        }
+      ]
+    },
+    {
+      "id": "synonym-8",
+      "type": "synonym",
+      "title": "笨重与难操作",
+      "note": "可以描述实物，也可以描述制度或表达。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "cumbersome",
+          "usage": "adj. 笨重、繁琐，侧重造成负担；a cumbersome procedure。",
+          "example": ""
+        },
+        {
+          "word": "unwieldy",
+          "usage": "adj. 因大小、形状或复杂性而难以操控；an unwieldy tool。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-9",
+      "type": "synonym",
+      "title": "多孔与可渗透",
+      "note": "两词都有“可渗透”义；porous 还直接描述多孔结构。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/porous",
+        "https://www.merriam-webster.com/dictionary/permeable"
+      ],
+      "members": [
+        {
+          "word": "porous",
+          "usage": "adj. 多孔的；可渗透的。也可喻指边境或防守容易被穿过。",
+          "example": "The porous surface absorbed the dye."
+        },
+        {
+          "word": "permeable",
+          "usage": "adj. 能让液体、气体或其他物质穿过；常用 permeable to。",
+          "example": "The membrane is permeable to water."
+        }
+      ]
+    },
+    {
+      "id": "synonym-10",
+      "type": "synonym",
+      "title": "教导与说教",
+      "note": "按语气区分：以教导为目的 ≠ 令人反感地说教 ≠ 伪善。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "didactic",
+          "usage": "adj. 旨在教导；也可因过于教条而含贬义。",
+          "example": ""
+        },
+        {
+          "word": "preachy",
+          "usage": "adj. 爱说教、训人，通常贬义且较口语。",
+          "example": ""
+        },
+        {
+          "word": "sanctimonious",
+          "usage": "adj. 假装道德高尚，通常贬义；重点在自以为道德优越。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-11",
+      "type": "synonym",
+      "title": "好斗的不同场景",
+      "note": "均可贬义，但不局限于实际动武。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "bellicose",
+          "usage": "adj. 好战、倾向战争或挑衅；bellicose rhetoric。",
+          "example": ""
+        },
+        {
+          "word": "combative",
+          "usage": "adj. 好争斗，常形容辩论或回应时的态度。",
+          "example": ""
+        },
+        {
+          "word": "pugnacious",
+          "usage": "adj. 动辄争吵或打斗，侧重人的好斗性格。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-12",
+      "type": "synonym",
+      "title": "描绘与勾勒",
+      "note": "可用于文字描述；depict 也常用于图画。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "delineate",
+          "usage": "v. 清楚勾勒轮廓、界限或细节；delineate responsibilities。",
+          "example": ""
+        },
+        {
+          "word": "depict",
+          "usage": "v. 描绘或表现人物、场景；depict a scene。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-13",
+      "type": "synonym",
+      "title": "缺少根据",
+      "note": "都可以修饰 accusation / claim，表示缺少事实支持。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "baseless",
+          "usage": "adj. 无事实根据的，常指指控或传言。",
+          "example": ""
+        },
+        {
+          "word": "groundless",
+          "usage": "adj. 无充分理由的，也常指恐惧或怀疑。",
+          "example": ""
+        },
+        {
+          "word": "unfounded",
+          "usage": "adj. 没有事实基础的；unfounded fears。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-14",
+      "type": "synonym",
+      "title": "傲慢与高傲",
+      "note": "都通常贬义；haughty 更突出对他人的轻视。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "arrogant",
+          "usage": "adj. 过分自信、自认重要或优越。",
+          "example": ""
+        },
+        {
+          "word": "haughty",
+          "usage": "adj. 高傲而轻蔑待人；a haughty manner。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-15",
+      "type": "synonym",
+      "title": "放弃、撤回与否认",
+      "note": "按宾语选词：习惯、过去的主张、他人的说法。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "forswear",
+          "usage": "v. 郑重放弃或发誓戒除；forswear violence。",
+          "example": ""
+        },
+        {
+          "word": "recant",
+          "usage": "v. 公开撤回自己以前的观点或声明。",
+          "example": ""
+        },
+        {
+          "word": "repudiate",
+          "usage": "v. 拒绝承认或断然否认观点、关联或责任。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-16",
+      "type": "synonym",
+      "title": "短暂与消逝",
+      "note": "都涉及不能长久，但 evanescent 更强调很快消失。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "evanescent",
+          "usage": "adj. 转瞬即逝，较正式或文学化；evanescent fame。",
+          "example": ""
+        },
+        {
+          "word": "transitory",
+          "usage": "adj. 暂时、过渡性的；a transitory phase。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-17",
+      "type": "synonym",
+      "title": "缺少、不足",
+      "note": "相关概念，词性不同：前两词是名词，wanting 在此是形容词。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "dearth",
+          "usage": "n. 某种所需之物稀缺；a dearth of evidence。",
+          "example": ""
+        },
+        {
+          "word": "deficit",
+          "usage": "n. 相对于需求或标准的不足；a budget deficit。",
+          "example": ""
+        },
+        {
+          "word": "wanting",
+          "usage": "adj. 缺乏、不够好；found wanting / wanting in evidence。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "synonym-18",
+      "type": "synonym",
+      "title": "使困惑",
+      "note": "共同义是让人不知所措，语体有所区别。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "flummox",
+          "usage": "v. 使困惑，较口语；be flummoxed by a puzzle。",
+          "example": ""
+        },
+        {
+          "word": "confound",
+          "usage": "v. 使困惑；另可指挫败预期、混淆因素，较正式。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "antonym-19",
+      "type": "antonym",
+      "title": "改善 ↔ 恶化",
+      "note": "限定在状况或问题变好、变坏的语义上。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "ameliorate",
+          "usage": "v. 改善不良状况；ameliorate poverty。",
+          "example": ""
+        },
+        {
+          "word": "exacerbate",
+          "usage": "v. 使现存问题加剧；exacerbate tensions。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "antonym-20",
+      "type": "antonym",
+      "title": "增大 ↔ 减少",
+      "note": "方向相反，动词用法不同。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "augment",
+          "usage": "v. 增加、扩大；通常及物，augment income。",
+          "example": ""
+        },
+        {
+          "word": "dwindle",
+          "usage": "v. 逐渐减少；不及物，supplies dwindled。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "antonym-21",
+      "type": "antonym",
+      "title": "强健 ↔ 虚弱",
+      "note": "可用于身体；论证语境中也可形成强弱对比。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "robust",
+          "usage": "adj. 强健的、稳健有力的；robust evidence。",
+          "example": ""
+        },
+        {
+          "word": "feeble",
+          "usage": "adj. 虚弱的、无力的；a feeble argument。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "antonym-22",
+      "type": "antonym",
+      "title": "合法 ↔ 违法",
+      "note": "仅在符合法律的义项上对照；legitimate 也可指合情合理。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "legitimate",
+          "usage": "adj. 合法或正当的；a legitimate business。",
+          "example": ""
+        },
+        {
+          "word": "illicit",
+          "usage": "adj. 非法或社会不容许的；illicit trade。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "antonym-23",
+      "type": "antonym",
+      "title": "有价值 ↔ 无价值",
+      "note": "value 的评判标准由语境确定。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "valuable",
+          "usage": "adj. 有价值、贵重或有用；valuable information。",
+          "example": ""
+        },
+        {
+          "word": "valueless",
+          "usage": "adj. 没有价值或没有用处。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "antonym-24",
+      "type": "antonym",
+      "title": "能感知 ↔ 无感知",
+      "note": "指感知能力，不能直接等同于聪明与愚笨。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "sentient",
+          "usage": "adj. 有感知能力的；sentient beings。",
+          "example": ""
+        },
+        {
+          "word": "insentient",
+          "usage": "adj. 无知觉、无感知能力的。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "antonym-25",
+      "type": "antonym",
+      "title": "僵硬 ↔ 易弯曲",
+      "note": "此处按材料性质对照；引申到态度时需重新看语境。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "rigid",
+          "usage": "adj. 坚硬不易弯曲；也可指规则死板。",
+          "example": ""
+        },
+        {
+          "word": "pliable",
+          "usage": "adj. 易弯曲、柔韧；也可指容易受影响。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "antonym-26",
+      "type": "antonym",
+      "title": "永恒 ↔ 暂时",
+      "note": "表示持续时间的相对关系。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "eternal",
+          "usage": "adj. 永恒、不终止；eternal life。",
+          "example": ""
+        },
+        {
+          "word": "transitory",
+          "usage": "adj. 短暂、暂时；transitory effects。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "antonym-27",
+      "type": "antonym",
+      "title": "隐瞒 ↔ 披露",
+      "note": "在信息是否被公开的维度上相反。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "conceal",
+          "usage": "v. 隐藏、不让人发现；conceal the truth。",
+          "example": ""
+        },
+        {
+          "word": "disclose",
+          "usage": "v. 披露原先不为人知的信息；disclose findings。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "lookalike-28",
+      "type": "lookalike",
+      "title": "subside · subsidy · subsist",
+      "note": "先看词尾，再回忆词性和搭配。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "subside",
+          "usage": "v. 平息、消退或下沉；the pain subsided。",
+          "example": ""
+        },
+        {
+          "word": "subsidy",
+          "usage": "n. 补贴；a government subsidy。",
+          "example": ""
+        },
+        {
+          "word": "subsist",
+          "usage": "v. 生存、维持生活；subsist on rice。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "lookalike-29",
+      "type": "lookalike",
+      "title": "medal · meddle · medallion",
+      "note": "medal 与 medallion 有语义联系，meddle 是干预。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "medal",
+          "usage": "n. 奖牌、勋章。",
+          "example": ""
+        },
+        {
+          "word": "meddle",
+          "usage": "v. 干预、管闲事；meddle in / with。",
+          "example": ""
+        },
+        {
+          "word": "medallion",
+          "usage": "n. 大奖章、圆形饰章或圆形装饰物。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "lookalike-30",
+      "type": "lookalike",
+      "title": "precede · precedent",
+      "note": "precede 是动作；precedent 表示可供参照的先例。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "precede",
+          "usage": "v. 在……之前、先于；A precedes B。",
+          "example": ""
+        },
+        {
+          "word": "precedent",
+          "usage": "n. 先例；set a precedent。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "lookalike-31",
+      "type": "lookalike",
+      "title": "awry · wary",
+      "note": "awry 常与 go 连用；wary 常与 of 连用。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "awry",
+          "usage": "adv./adj. 歪斜；出错、不如预期；the plan went awry。",
+          "example": ""
+        },
+        {
+          "word": "wary",
+          "usage": "adj. 警惕、谨慎；wary of strangers。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "lookalike-32",
+      "type": "lookalike",
+      "title": "connive · contrive",
+      "note": "都有谋划的联想，但 connive 通常含不正当意味。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "connive",
+          "usage": "v. 暗中共谋；或 connive at，纵容错误行为。",
+          "example": ""
+        },
+        {
+          "word": "contrive",
+          "usage": "v. 设法做到或巧妙设计；contrive to escape。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "lookalike-33",
+      "type": "lookalike",
+      "title": "champaign · champagne",
+      "note": "一个指地貌，一个指酒；champaign 较少用。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "champaign",
+          "usage": "n. 开阔平原；属于较少见的地理词。",
+          "example": ""
+        },
+        {
+          "word": "champagne",
+          "usage": "n. 香槟酒。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "lookalike-34",
+      "type": "lookalike",
+      "title": "fulminate · culminate",
+      "note": "不要把严厉抨击误记成达到顶点。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "fulminate",
+          "usage": "v. 激烈谴责；fulminate against a policy。",
+          "example": ""
+        },
+        {
+          "word": "culminate",
+          "usage": "v. 达到顶点或以某结果告终；culminate in an agreement。",
+          "example": ""
+        }
+      ]
+    },
+    {
+      "id": "lookalike-35",
+      "type": "lookalike",
+      "title": "wane · waver",
+      "note": "wane 是强度下降；waver 是摇摆。",
+      "source": "coach_draft",
+      "sources": [],
+      "members": [
+        {
+          "word": "wane",
+          "usage": "v. 衰减；月亮渐亏；enthusiasm waned。",
+          "example": ""
+        },
+        {
+          "word": "waver",
+          "usage": "v. 摇摆、犹豫或不坚定；waver between two choices。",
+          "example": ""
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import { request, post } from "./api";
 import { Icon } from "./components";
 import Practice from "./Practice";
 import Vocabulary from "./Vocabulary";
+import WordRelations from "./WordRelations";
 import Recall from "./Recall";
 import Library from "./Library";
 import History from "./History";
@@ -17,6 +18,7 @@ function App() {
     [syncing, setSyncing] = useState(false),
     [recallWords, setRecallWords] = useState(null);
   const revision = useRef("");
+  const [relationSearch, setRelationSearch] = useState("");
   const refreshSequence = useRef(0);
   const refresh = useCallback(async () => {
     const sequence = ++refreshSequence.current;
@@ -61,6 +63,7 @@ function App() {
     ["practice", "file", "刷题练习"],
     ["library", "folder", "资料库"],
     ["vocab", "book", "生词本"],
+    ["relations", "cards", "分类与关联"],
     ["recall", "cards", "记忆与背诵"],
     ["history", "history", "学习记录"],
   ];
@@ -80,6 +83,7 @@ function App() {
               aria-current={page === id ? "page" : undefined}
               onClick={() => {
                 setPage(id);
+                if (id === "relations") setRelationSearch("");
                 if (id === "recall") setRecallWords(null);
               }}
             >
@@ -124,12 +128,14 @@ function App() {
             {page === "vocab" && (
               <Vocabulary
                 {...props}
+                openRelations={(word = "") => { setRelationSearch(word); setPage("relations"); }}
                 startRecall={(words) => {
                   setRecallWords(words);
                   setPage("recall");
                 }}
               />
             )}{" "}
+            {page === "relations" && <WordRelations {...props} initialSearch={relationSearch} back={() => setPage("vocab")} startRecall={(words) => { setRecallWords(words); setPage("recall"); }} />}
             {page === "recall" && (
               <Recall {...props} initialWords={recallWords} />
             )}{" "}

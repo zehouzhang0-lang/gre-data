@@ -31,4 +31,6 @@ description: 启动、维护和同步当前gre-data仓库的本地GRE学习工�
 
 ## 维护
 
+- 生词本“分类与关联”使用 `vocab/relations.json` 初始主题和词组，加上 topic/word_topics/relation 系列平台事件。已有808词、17个主题、35个初始词组；主题为粗分类建议，手动归属优先，待分类不强行补齐。近义/反义关系按具体义项整理，形近候选只表示拼写接近。辨析核验状态区分dictionary_checked/coach_draft/user_edited；用户编辑不继承已核验状态。对照揭晓不记掌握；按组背诵沿用回忆自评。维护规则见SCHEMA.md和platform/README.md。
+
 模块边界与导入格式见 `platform/README.md`。只运行与修改有关的必要验证；功能改变用隔离数据目录 `GRE_DATA_ROOT`，不得向用户真实训练库写测试作答。界面保持简洁、留白清楚，减少冗余文字与分隔线。

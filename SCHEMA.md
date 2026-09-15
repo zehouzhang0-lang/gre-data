@@ -20,6 +20,14 @@
 
 自动练习索引从现有PDF派生，保存在忽略的 `.gre-platform/questions-*.json`，包括来源、单元、题号、题型、作答方式、原页区域及用于排版的临时题干、选项、段落和句子文本。索引不是训练证据，不提交Git，文件变化或索引版本变化后自动重建。题号仍沿用原书；数学补充套题重编号时采用 `set_p<起始PDF文件页>` 单元避免覆盖同号题。索引定位由系统传入attempt事件，学习者无需填写定位字段。
 
+## 词汇关系与主题（2026-09-15）
+
+`vocab/relations.json` 保存可迭代的初始主题与词组。topics包含id、name、可选pattern（对已有中文释义的粗分类规则）及words（明确归类词）。自动分类只作建议；允许一个词属于多个主题；不确定项保留待分类。groups包含id、type（synonym/antonym/lookalike）、title、note、members（word/usage/example）、source及可选sources。关系只适用于所述义项，不作为SE整句等价的证据。示例为教练自拟，未冒充原题。
+
+平台追加事件：`topic_upsert`（id/name）、`topic_delete`/`topic_restore`（id）；`word_topics`（word/topics/automatic，automatic=true恢复自动建议）；`relation_upsert`（id/type/title/note/members，2–12个已有词，source固定user_edited）、`relation_delete`/`relation_restore`（id）。人工分类覆盖建议；删除分类或词组不删除词、原始关系及学习证据，恢复后重新显示。形近建议仅按编辑距离生成，不代表语义近似，可编辑后收录。对照记忆不生成掌握证据，正式背诵仍使用既有vocab_recall自评事件。
+
+初始source区分`dictionary_checked`（sources列出的词典已核对）、`coach_draft`（教练整理、待逐项核验）；用户修改统一标记`user_edited`，不继承旧核验状态。分类规则只检索现有释义，不调用AI，也不自动补写空缺词义。
+
 ## 核心原则
 
 1. 每次训练一个原子文件；计划完成状态也采用追加式事件。

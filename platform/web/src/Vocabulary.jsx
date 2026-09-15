@@ -1,7 +1,7 @@
 import { useDeferredValue, useState } from "react";
 import { Header, Icon, Field, Modal, Empty } from "./components";
 import { save } from "./api";
-export default function Vocabulary({ state, refresh, notify, startRecall }) {
+export default function Vocabulary({ state, refresh, notify, startRecall, openRelations }) {
   const [search, setSearch] = useState(""),
     [filter, setFilter] = useState("all"),
     [edit, setEdit] = useState(null),
@@ -40,6 +40,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall }) {
         title="生词本"
         description={`${state.vocabulary.filter((w) => !w.deleted).length} 个词与短语，来自你的学习记录。`}
       >
+        <button onClick={() => openRelations()}>分类与关联</button>
         <button disabled={busy || !words.some((w) => !w.deleted)} onClick={() => startRecall(words.filter((w) => !w.deleted))}>
           背诵当前词表
         </button>
@@ -208,6 +209,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall }) {
       )}
       {detail && (
         <Modal title={detail.word} onClose={() => setDetail(null)}>
+          <button onClick={() => openRelations(detail.word)}>查看关联与用法</button>
           <p className="definition">
             {detail.pos} {detail.meaning || "尚未整理释义"}
           </p>
