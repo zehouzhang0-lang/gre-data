@@ -3,6 +3,8 @@ import path from "node:path";
 import { randomUUID, createHash } from "node:crypto";
 import YAML from "yaml";
 import { validateRelation, projectRelations } from "./word-relations.mjs";
+import { legacyWordReviews, projectReview } from "./spaced-review.mjs";
+import { readLegacyQuestions } from "./legacy-review.mjs";
 
 export const normalizeWord = (value) =>
   value.trim().toLowerCase().replace(/\s+/g, " ");
@@ -259,7 +261,7 @@ export class Store {
     await fs.rename(temp, target);
     return event;
   }
-  async state() {
+  async state(now = new Date()) {
     const [
       lexicon,
       homework,
@@ -413,7 +415,10 @@ export class Store {
     );
     const relationSeed = await this.json("vocab/relations.json", { topics: [], groups: [] });
     const relations = projectRelations([...words.values()], relationSeed, events);
+    const legacyQuestions = await readLegacyQuestions(this);
+    const spacedReview = projectReview({ vocabulary:[...words.values()], legacyWords:legacyWordReviews({homework,lexicon,difficult,mastered}), legacyQuestions, events, grade, now, timeZone:profile.timezone || 'Asia/Shanghai' });
     return {
+      spacedReview,
       relations,
       vocabulary: [...words.values()].sort((a, b) =>
         a.word.localeCompare(b.word),
@@ -460,6 +465,8 @@ export class Store {
             profileText,
             history,
             relationSeed,
+            legacyQuestions,
+            Math.floor(+new Date(now) / 60000),
           ]),
         )
         .digest("hex"),

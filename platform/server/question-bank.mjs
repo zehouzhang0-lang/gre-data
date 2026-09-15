@@ -1,6 +1,6 @@
+import { readLegacyQuestions } from './legacy-review.mjs';
 import fs from "node:fs/promises";
 import path from "node:path";
-import YAML from "yaml";
 import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
 import { keyOf } from "./store.mjs";
 
@@ -234,21 +234,5 @@ export class QuestionBank {
 }
 
 export async function legacyPractice(store, type) {
-  const mode = { tc: "text_completion", se: "sentence_equivalence", rc: "reading_comprehension", quant: "quant" }[type];
-  const records = [];
-  for (const dir of ["verbal/submissions", "quant/submissions"]) {
-    for (const file of await store.list(dir)) {
-      if (!file.endsWith(".md")) continue;
-      const raw = await store.read(`${dir}/${file}`);
-      const record = YAML.parse(raw.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/)?.[1] || "{}");
-      if (record.mode !== mode || !record.source) continue;
-      const range = String(record.source.question_range).match(/^(\d+)(?:-(\d+))?$/);
-      if (!range) continue;
-      for (let n = +range[1]; n <= +(range[2] || range[1]); n++) records.push({
-        material: record.source.material_id, unit: record.source.unit, question: String(n),
-        recorded_at: record.started_at || record.date,
-      });
-    }
-  }
-  return records.sort((a, b) => b.recorded_at.localeCompare(a.recorded_at));
+  return (await readLegacyQuestions(store)).filter(q => q.type === type).sort((a,b) => b.recorded_at.localeCompare(a.recorded_at));
 }

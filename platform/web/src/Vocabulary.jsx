@@ -232,6 +232,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
           <p>
             平台回忆自评：{detail.recalls.length} 次。自评不直接提升已掌握等级。
           </p>
+          {state.spacedReview?.items.find(i=>i.word===detail.word) && <p>累计复习：{state.spacedReview.items.find(i=>i.word===detail.word).review_count} 次 · 下次：{state.spacedReview.items.find(i=>i.word===detail.word).due_date || '待首轮回忆'}</p>}
         </Modal>
       )}
     </>

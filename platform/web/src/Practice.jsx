@@ -17,8 +17,8 @@ function prepare(q) {
   return { ...q, letters, mode, groups: mode === "blanks" ? Array.from({ length: Math.ceil(letters.length / 3) }, (_, i) => letters.slice(i * 3, i * 3 + 3)) : undefined };
 }
 
-export default function Practice({ state, refresh, notify }) {
-  const [type, setType] = useState(() => readDraft().type || "se");
+export default function Practice({ state, refresh, notify, reviewTarget, onReviewNext }) {
+  const [type, setType] = useState(() => reviewTarget?.type || readDraft().type || "se");
   const [bank, setBank] = useState(null), [current, setCurrent] = useState(""), [loading, setLoading] = useState(true);
   const [answer, setAnswer] = useState(""), [note, setNote] = useState(""), [saved, setSaved] = useState(false);
   const [error, setError] = useState(""), [busy, setBusy] = useState(false), [dialog, setDialog] = useState(null), [generation, setGeneration] = useState(0);
@@ -29,8 +29,8 @@ export default function Practice({ state, refresh, notify }) {
     setLoading(true); setError(""); setBank(null);
     request(`/api/practice?type=${type}`).then(data => {
       if (!active) return;
-      const draft = readDraft()[type];
-      const q = data.questions.find(q => q.key === draft?.key) || data.questions.find(q => q.key === data.recommended);
+      const draft = reviewTarget ? null : readDraft()[type];
+      const q = reviewTarget ? data.questions.find(q=>q.key===reviewTarget.key) : data.questions.find(q => q.key === draft?.key) || data.questions.find(q => q.key === data.recommended);
       setBank({ ...data, type, questions: data.questions.map(prepare) });
       setCurrent(q?.key || "");
       setAnswer(q?.key === draft?.key ? draft.answer || "" : "");
@@ -39,14 +39,15 @@ export default function Practice({ state, refresh, notify }) {
       attemptId.current = q?.key === draft?.key && draft.attemptId ? draft.attemptId : crypto.randomUUID();
     }).catch(e => { if (active) setError(e.message); }).finally(() => { if (active) setLoading(false); });
     return () => { active = false; };
-  }, [type, bankSignature, generation]);
+  }, [type, bankSignature, generation, reviewTarget?.key]);
   useEffect(() => {
-    if (loading || !current || bank?.type !== type) return;
+    if (reviewTarget || loading || !current || bank?.type !== type) return;
     localStorage.setItem(draftKey, JSON.stringify({ ...readDraft(), type, [type]: { key: current, answer, note, saved, attemptId: attemptId.current } }));
   }, [type, current, answer, note, saved, loading]);
   const questions = bank?.questions || [], question = questions.find(q => q.key === current), index = questions.findIndex(q => q.key === current);
   const { pdf, error: pdfError } = useSourcePdf(question?.regions && (!question.native || dialog === "source") ? question.material : null);
   const latest = state.attempts.find(a => keyOf(a) === current), answerKey = state.keys[current];
+  const reviewStats = state.spacedReview?.items.find(i=>i.kind==='question'&&i.key===current);
   const selected = answer ? answer.split("/") : [];
   const valid = question && (question.mode === "pair" ? selected.length === 2 : question.mode === "blanks" ? question.groups.every(group => group.some(letter => selected.includes(letter))) : !!answer.trim());
   function choose(q) {
@@ -83,10 +84,10 @@ export default function Practice({ state, refresh, notify }) {
     </div>;
   }
   return <>
-    <Header title="刷题练习" description="接着上次练，只需作答。"><button className="text-button" onClick={() => setDialog("questions")}><Icon name="upload" />导入题目</button></Header>
-    <div className="tabs" role="tablist" aria-label="题型">{Object.entries(typeNames).map(([id, name]) => <button key={id} role="tab" aria-selected={type === id} className={type === id ? "selected" : ""} disabled={busy} onClick={() => setType(id)}>{name}</button>)}</div>
-    {loading ? <div className="practice-loading" role="status">正在从已有教材准备题目…<small>首次整理后，本机会自动记住题目位置。</small></div> : !question ? <Empty title={error || "暂无可练习题目"}><button onClick={() => setGeneration(g => g + 1)}>重新读取</button><button onClick={() => setDialog("questions")}>导入题目</button></Empty> : <div className="guided-practice">
-      <div className="practice-heading"><div><small>{state.materials.find(m => m.id === question.material)?.filename.replace(/\.pdf$/i, "") || "导入题目"}</small><h2>{title(question)}</h2></div><div className="question-navigation"><button className="text-button" disabled={busy || index < 1} onClick={() => choose(questions[index - 1])}>← 上一题</button><button disabled={busy} onClick={() => setDialog("jump")}>换题</button></div></div>
+    {!reviewTarget && <><Header title="刷题练习" description="接着上次练，只需作答。"><button className="text-button" onClick={() => setDialog("questions")}><Icon name="upload" />导入题目</button></Header>
+    <div className="tabs" role="tablist" aria-label="题型">{Object.entries(typeNames).map(([id, name]) => <button key={id} role="tab" aria-selected={type === id} className={type === id ? "selected" : ""} disabled={busy} onClick={() => setType(id)}>{name}</button>)}</div></>}
+    {loading ? <div className="practice-loading" role="status">正在从已有教材准备题目…<small>首次整理后，本机会自动记住题目位置。</small></div> : !question ? <Empty title={error || (reviewTarget ? "暂时找不到本题原文，记录仍保留" : "暂无可练习题目")} >{reviewTarget && <button onClick={onReviewNext}>跳过这题</button>}<button onClick={() => setGeneration(g => g + 1)}>重新读取</button><button onClick={() => setDialog("questions")}>导入题目</button></Empty> : <div className="guided-practice">
+      <div className="practice-heading"><div><small>{state.materials.find(m => m.id === question.material)?.filename.replace(/\.pdf$/i, "") || "导入题目"}</small><h2>{title(question)}</h2></div>{!reviewTarget && <div className="question-navigation"><button className="text-button" disabled={busy || index < 1} onClick={() => choose(questions[index - 1])}>← 上一题</button><button disabled={busy} onClick={() => setDialog("jump")}>换题</button></div>}</div>
       <div className={`practice-content ${question.passageRegions?.length ? "has-passage" : ""}`}>
         {!!question.passageRegions?.length && <section className="reading-passage" aria-label="阅读文章"><h3>文章</h3>{question.mode === "sentence" && question.sentences?.length ? <div className="sentence-passage">{question.sentences.map((sentence, i) => <button key={i} disabled={busy || saved} className={answer === sentence ? "chosen" : ""} aria-pressed={answer === sentence} onClick={() => setAnswer(sentence)}>{sentence}</button>)}</div> : question.native ? <div className="native-passage">{question.paragraphs.map((p, i) => <p key={i}>{p}</p>)}</div> : <PdfExcerpt pdf={pdf} regions={question.passageRegions} label={`${question.unit} 文章原文`} />}</section>}
         <section className="question-workspace" aria-label="当前练习题">
@@ -98,9 +99,10 @@ export default function Practice({ state, refresh, notify }) {
             <details className="optional-note"><summary>补充思路</summary><textarea aria-label="解题思路" rows={3} disabled={busy || saved} value={note} onChange={e => setNote(e.target.value)} /></details>
             {saved && <div className="answer-feedback" role="status"><strong>{answerKey ? latest?.result === true ? "答案一致" : latest?.result === false ? "答案不一致" : "待核对" : "已记录 · 待核对"}</strong>{answerKey ? <><p>参考答案：{answerKey.answer} <small>用户提供</small></p><p>{answerKey.explanation || "尚未补充解析。"}</p></> : <p>这份教材尚未附答案，作答已保留。</p>}<button className="text-button" onClick={() => setDialog("answers")}>{answerKey ? "更新答案与解析" : "补充答案与解析"}</button></div>}
             {error && <p role="alert" className="error">{error}</p>}
-            <div className="guided-actions"><span>{index + 1} / {questions.length}</span>{!saved && <button className="text-button" disabled={busy || index === questions.length - 1} onClick={() => choose(questions[index + 1])}>暂时跳过</button>}{saved ? <button className="primary" disabled={index === questions.length - 1} onClick={() => choose(questions[index + 1])}>{index === questions.length - 1 ? "本题型已到最后一题" : "下一题 →"}</button> : <button className="primary" disabled={!valid || busy} onClick={submit}>{busy ? "正在保存…" : "提交答案"}</button>}</div>
-            {latest && <AiReview key={latest.id} state={state} refresh={refresh} attempt={latest} />}
-            {latest && !saved && <small className="prior-attempt">上次作答：{latest.answer} · {latest.result === null ? "待核对" : latest.result ? "答案一致" : "答案不一致"}</small>}
+            <div className="guided-actions"><span>{reviewTarget?`已复习 ${reviewStats?.review_count||0} 次`:`${index + 1} / ${questions.length}`}</span>{!saved && <button className="text-button" disabled={busy || !reviewTarget && index === questions.length - 1} onClick={() => reviewTarget?onReviewNext():choose(questions[index + 1])}>暂时跳过</button>}{saved ? <button className="primary" disabled={!reviewTarget && index === questions.length - 1} onClick={() => reviewTarget?onReviewNext():choose(questions[index + 1])}>{!reviewTarget && index === questions.length - 1 ? "本题型已到最后一题" : "下一题 →"}</button> : <button className="primary" disabled={!valid || busy} onClick={submit}>{busy ? "正在保存…" : "提交答案"}</button>}</div>
+            {saved && reviewStats && <p className="review-next">{reviewStats.retry_at?`下次复习：${new Date(reviewStats.retry_at).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',timeZone:state.spacedReview.time_zone})} 再练`:`下次复习：${reviewStats.due_date}`} · 已复习 {reviewStats.review_count} 次</p>}
+            {latest && (!reviewTarget || saved) && <AiReview key={latest.id} state={state} refresh={refresh} attempt={latest} />}
+            {latest && !saved && !reviewTarget && <small className="prior-attempt">上次作答：{latest.answer} · {latest.result === null ? "待核对" : latest.result ? "答案一致" : "答案不一致"}</small>}
           </div>
         </section>
       </div>
