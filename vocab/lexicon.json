@@ -18400,6 +18400,37 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "metaphoric",
+      "pos": "adj.",
+      "meaning": "隐喻的；比喻性的",
+      "collocation": "metaphoric language",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "也作 metaphorical。不是字面含义；MW 在 metaphor 条内列出该形容词派生。 语体／色彩：中性。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/metaphoric",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "隐喻的；比喻性的"
+        }
+      ],
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "vocab_dictionary_cleanup_20260916",
+          "record": "vocab/imports/20260916_0139_dictionary_supplement.json",
+          "kind": "dictionary_curation",
+          "origin_word": null
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/metaphoric",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest"
+    },
+    {
       "word": "milieu",
       "pos": "n.",
       "meaning": "周围环境；社会或文化背景",
@@ -18947,6 +18978,39 @@
           "note": "中文核心义由教练依据词典归纳；不是手写中文的转录。"
         }
       ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "mundane",
+      "pos": "adj.",
+      "meaning": "日常的；平凡的；世俗的",
+      "collocation": "mundane concerns",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；乏味义可负向",
+      "note": "可强调普通实际事务，也可与精神或宗教世界相对；并非任何时候都含强烈鄙视。 语体／色彩：中性；乏味义可负向。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mundane",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "日常的；平凡的；世俗的"
+        }
+      ],
+      "related_words": [
+        "prosaic"
+      ],
+      "sources": [
+        {
+          "material_id": "vocab_dictionary_cleanup_20260916",
+          "record": "vocab/imports/20260916_0139_dictionary_supplement.json",
+          "kind": "dictionary_curation",
+          "origin_word": null
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/mundane",
+      "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
     },
@@ -22569,6 +22633,39 @@
           "note": "中文核心义依据词典归纳，不转录手写中文。"
         }
       ],
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "prosaic",
+      "pos": "adj.",
+      "meaning": "平淡乏味的；缺乏想象力的；散文的；日常普通的",
+      "collocation": "a prosaic account",
+      "collocation_source": "coach_composed",
+      "connotation": "文风义常贬义；散文义中性",
+      "note": "评价文风可指缺乏诗意和想象；与 mundane 的普通义相近，但二者不能在所有句子中互换。 语体／色彩：文风义常贬义；散文义中性。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prosaic",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "平淡乏味的；缺乏想象力的；散文的；日常普通的"
+        }
+      ],
+      "related_words": [
+        "mundane"
+      ],
+      "sources": [
+        {
+          "material_id": "vocab_dictionary_cleanup_20260916",
+          "record": "vocab/imports/20260916_0139_dictionary_supplement.json",
+          "kind": "dictionary_curation",
+          "origin_word": null
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/prosaic",
+      "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
     },
@@ -32007,5 +32104,5 @@
       "learning_status": "encountered_pending_retest"
     }
   ],
-  "updated_at": "2026-09-16T01:33:40.354963+08:00"
+  "updated_at": "2026-09-16T01:39:10.493158+08:00"
 }
