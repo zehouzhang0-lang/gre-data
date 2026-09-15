@@ -29,6 +29,22 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: handwritten_vocab_20260916
+    filename: null
+    sha256: null
+    role: user_vocabulary_notes
+    answer_status: not_applicable
+    description: "2026年9月16日提交的六页手写词，逐词核验并分类；未推定初学日期。"
+    record: vocab/imports/20260916_0133_handwritten_vocab.json
+    image_count: 6
+    original_storage: user_supplied_chat_attachments_not_committed
+  - id: vocab_dictionary_cleanup_20260916
+    filename: null
+    sha256: null
+    role: vocabulary_dictionary_curation
+    answer_status: not_applicable
+    description: "既有空缺释义词与整理期间新增摘词的权威词典核验记录。"
+    record: vocab/imports/20260916_0133_dictionary_backfill.json
   - id: handwritten_vocab_20260913
     filename: null
     sha256: null

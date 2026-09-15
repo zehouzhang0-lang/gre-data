@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15",
+  "updated_at": "2026-09-16",
   "topics": [
     {
       "id": "mood",
@@ -1491,6 +1491,380 @@
           "word": "quirky",
           "usage": "adj. 古怪有趣的；独特而不循常规的。侧重个人独特、有趣的怪处，不自动等于叛逆或不实用。",
           "example": "a quirky choice"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-1",
+      "type": "lookalike",
+      "title": "职业与业余爱好",
+      "note": "教练依据已核验词典义项整理；例句自拟。形近但重点不同：vocation 可包含使命感，avocation 通常指本职之外的兴趣。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/vocation",
+        "https://www.merriam-webster.com/dictionary/avocation"
+      ],
+      "members": [
+        {
+          "word": "vocation",
+          "usage": "n. 职业、志业；也指投身某工作的召唤或使命感。搭配 a vocation for teaching。",
+          "example": "She regarded teaching as her vocation."
+        },
+        {
+          "word": "avocation",
+          "usage": "n. 业余爱好或本职之外的活动。常用 pursue an avocation。",
+          "example": "For the engineer, painting remained an avocation."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-2",
+      "type": "lookalike",
+      "title": "regimen 与 regiment",
+      "note": "教练依据已核验词典义项整理；例句自拟。记住末尾 t：regimen 是规律方案；regiment 是军队编制，也可作严格管制的动词。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/regimen",
+        "https://www.merriam-webster.com/dictionary/regiment"
+      ],
+      "members": [
+        {
+          "word": "regimen",
+          "usage": "n. 为健康、训练等目标安排的规律方案。常用 an exercise regimen。",
+          "example": "He followed a simple exercise regimen each morning."
+        },
+        {
+          "word": "regiment",
+          "usage": "n. 军队的团；v. 严格管制，使整齐划一。动词常含限制个性的意味。",
+          "example": "The new rules regiment every aspect of daily life."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-3",
+      "type": "lookalike",
+      "title": "词源学与昆虫学",
+      "note": "教练依据已核验词典义项整理；例句自拟。两词均为学科名，但研究对象完全不同；检索时看清 etym- 与 entom-。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/etymology",
+        "https://www.merriam-webster.com/dictionary/entomology"
+      ],
+      "members": [
+        {
+          "word": "etymology",
+          "usage": "n. 词源、词语发展史；研究这些历史的词源学。",
+          "example": "The etymology of the term explains its older meaning."
+        },
+        {
+          "word": "entomology",
+          "usage": "n. 昆虫学。研究昆虫的结构、分类和生活等。",
+          "example": "Her interest in beetles led her to study entomology."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-4",
+      "type": "lookalike",
+      "title": "糖精与甜腻",
+      "note": "教练依据已核验词典义项整理；例句自拟。saccharin 是物质名；saccharine 是形容词，感情或文风义往往带贬义。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/saccharin",
+        "https://www.merriam-webster.com/dictionary/saccharine"
+      ],
+      "members": [
+        {
+          "word": "saccharin",
+          "usage": "n. 糖精，一种人工甜味剂。词尾没有 e。",
+          "example": "The ingredient list includes saccharin."
+        },
+        {
+          "word": "saccharine",
+          "usage": "adj. 甜的；甜得发腻的；感情过分甜腻或讨好得虚假的。",
+          "example": "The film's saccharine ending weakened its emotional impact."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-5",
+      "type": "synonym",
+      "title": "骤然发迹的新贵",
+      "note": "教练依据已核验词典义项整理；例句自拟。近义限于人物的骤然上升与不获认可；parvenu 偏社会地位，upstart 还可强调新来者自命不凡。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/parvenu",
+        "https://www.merriam-webster.com/dictionary/upstart"
+      ],
+      "members": [
+        {
+          "word": "parvenu",
+          "usage": "n. 骤然获得财富或地位，却尚未获相应社会认可的新贵；通常贬义。",
+          "example": "The old elite dismissed the wealthy newcomer as a parvenu."
+        },
+        {
+          "word": "upstart",
+          "usage": "n. 骤然发迹者或自命不凡的新来者；人物义通常贬义，指新兴企业时可中性。",
+          "example": "The veteran editor resented the ambitious upstart."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-6",
+      "type": "synonym",
+      "title": "失手、搞砸与犯大错",
+      "note": "教练依据已核验词典义项整理；例句自拟。三词都可涉及失误，但不能机械互换：botch 侧重做坏的结果，fumble 侧重笨拙，blunder 侧重严重错误。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/botch",
+        "https://www.merriam-webster.com/dictionary/fumble",
+        "https://www.merriam-webster.com/dictionary/blunder"
+      ],
+      "members": [
+        {
+          "word": "botch",
+          "usage": "v. 把事情搞砸或做得拙劣，通常接任务作宾语；可用 botch up。",
+          "example": "The inexperienced contractor botched the repair."
+        },
+        {
+          "word": "fumble",
+          "usage": "v. 笨拙地摸索、处理；也可指处置事务失误。fumble for 常接正在摸找的物品。",
+          "example": "She fumbled for her keys in the dark."
+        },
+        {
+          "word": "blunder",
+          "usage": "n. 严重或愚蠢的错误；v. 犯大错或莽撞地行动。",
+          "example": "Ignoring the warning was a costly blunder."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-7",
+      "type": "synonym",
+      "title": "悼亡作品的不同形式",
+      "note": "教练依据已核验词典义项整理；例句自拟。近义限于悼亡作品；requiem 偏追思仪式与音乐，elegy 更广见于哀悼或沉思的诗文、乐曲。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/requiem",
+        "https://www.merriam-webster.com/dictionary/elegy"
+      ],
+      "members": [
+        {
+          "word": "requiem",
+          "usage": "n. 追思弥撒、安魂曲或悼念死者的乐曲；常有庄重、宗教色彩。",
+          "example": "The choir performed a requiem for the victims."
+        },
+        {
+          "word": "elegy",
+          "usage": "n. 挽诗、挽歌，也可指哀伤沉思的诗或乐曲；不限定宗教仪式。",
+          "example": "She wrote an elegy after her mentor's death."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-8",
+      "type": "synonym",
+      "title": "应允请求与赞同意见",
+      "note": "教练依据已核验词典义项整理；例句自拟。近义限于同意义；accede 常见于应允要求，assent 偏表示认可。accede 的就任或加入义不在此对应。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/accede",
+        "https://www.merriam-webster.com/dictionary/assent"
+      ],
+      "members": [
+        {
+          "word": "accede",
+          "usage": "v. 应允、同意，较正式；常用 accede to a request/demand。",
+          "example": "After reviewing the costs, the council acceded to the request."
+        },
+        {
+          "word": "assent",
+          "usage": "v.; n. 赞同、同意；常用 assent to a proposal，名词可用 give one's assent。",
+          "example": "The committee assented to the revised proposal."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-9",
+      "type": "synonym",
+      "title": "狂喜与欣快感",
+      "note": "教练依据已核验词典义项整理；例句自拟。都指强烈愉悦；ecstasy 可突出忘我的狂喜，euphoria 指高度愉快、兴奋的状态。无需硬性规定持续多久。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/ecstasy",
+        "https://www.merriam-webster.com/dictionary/euphoria"
+      ],
+      "members": [
+        {
+          "word": "ecstasy",
+          "usage": "n. 狂喜、极度兴奋；此组取情绪义，另有出神等义项。",
+          "example": "The discovery filled the young researcher with ecstasy."
+        },
+        {
+          "word": "euphoria",
+          "usage": "n. 强烈愉快或兴奋的状态、欣快感；不自动表示判断理性。",
+          "example": "The initial euphoria faded as practical difficulties emerged."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-10",
+      "type": "synonym",
+      "title": "吹毛求疵与过分挑剔",
+      "note": "教练依据已核验词典义项整理；例句自拟。近义限于对细节苛求；captious 常是挑错或设难，finicky 还可指个人口味挑剔或设备难伺候。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/captious",
+        "https://www.merriam-webster.com/dictionary/finicky"
+      ],
+      "members": [
+        {
+          "word": "captious",
+          "usage": "adj. 吹毛求疵的；故意提出难题、挑起争辩的，通常贬义。",
+          "example": "His captious objections focused on punctuation rather than evidence."
+        },
+        {
+          "word": "finicky",
+          "usage": "adj. 过分挑剔或苛求细节的；常用 finicky about。也可形容需要精细处理的东西。",
+          "example": "She is finicky about the texture of her food."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-11",
+      "type": "synonym",
+      "title": "晦涩与昏暗",
+      "note": "教练依据已核验词典义项整理；例句自拟。两词在难看清、难理解的义项有交集；tenebrous 偏书面且常带阴暗色彩，obscure 的不出名义不能直接替换。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/obscure",
+        "https://www.merriam-webster.com/dictionary/tenebrous"
+      ],
+      "members": [
+        {
+          "word": "obscure",
+          "usage": "adj. 模糊、难懂的；也可指鲜为人知的。作动词时为遮蔽、使难以理解。",
+          "example": "The argument remained obscure despite the long explanation."
+        },
+        {
+          "word": "tenebrous",
+          "usage": "adj. 昏暗的；晦涩难懂的；也可令人忧郁，偏书面语。",
+          "example": "The novel leads readers through a tenebrous world of secrets."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-12",
+      "type": "synonym",
+      "title": "即兴与脱稿",
+      "note": "教练依据已核验词典义项整理；例句自拟。都可表示即兴；注意 extempore 可作副词，extemporaneous 作形容词，演讲语境中也可指有准备但不用讲稿。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/extempore",
+        "https://www.merriam-webster.com/dictionary/extemporaneous"
+      ],
+      "members": [
+        {
+          "word": "extempore",
+          "usage": "adv.; adj. 即兴地、无准备地；即兴的。可直接修饰说话动作。",
+          "example": "Asked for a closing remark, she spoke extempore."
+        },
+        {
+          "word": "extemporaneous",
+          "usage": "adj. 即兴的、临时的；也可指准备过但不用讲稿的演说。",
+          "example": "He prepared the main points for an extemporaneous speech."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-13",
+      "type": "antonym",
+      "title": "敬重与轻蔑",
+      "note": "教练依据已核验词典义项整理；例句自拟。反义限定在对人或事的价值态度：esteem 的敬重义与 disdain 的鄙视义相对。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/esteem",
+        "https://www.merriam-webster.com/dictionary/disdain"
+      ],
+      "members": [
+        {
+          "word": "esteem",
+          "usage": "n.; v. 敬重、尊重、珍视；常用 hold someone in high esteem。另有认为义。",
+          "example": "Her colleagues held her in high esteem for her integrity."
+        },
+        {
+          "word": "disdain",
+          "usage": "n.; v. 轻蔑、鄙视；可用 disdain for，另有不屑于做某事的用法。",
+          "example": "He showed disdain for work he considered beneath him."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-14",
+      "type": "antonym",
+      "title": "归罪与洗清指责",
+      "note": "教练依据已核验词典义项整理；例句自拟。反义限于归罪、判责与洗清指控的方向；exonerate 不等于承认有错后给予原谅。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/condemn",
+        "https://www.merriam-webster.com/dictionary/exonerate"
+      ],
+      "members": [
+        {
+          "word": "condemn",
+          "usage": "v. 谴责、判定有罪或判刑；此组取指责或认定有罪的义项。",
+          "example": "The tribunal condemned the officer for the unlawful order."
+        },
+        {
+          "word": "exonerate",
+          "usage": "v. 洗清指控、证明无责；也可指免除责任。",
+          "example": "The newly discovered records exonerated the officer."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-15",
+      "type": "antonym",
+      "title": "有力与衰弱",
+      "note": "教练依据已核验词典义项整理；例句自拟。反义限定在活力和力量维度；effete 常带衰败或养尊处优的贬义，比暂时疲倦更重。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/vigorous",
+        "https://www.merriam-webster.com/dictionary/effete"
+      ],
+      "members": [
+        {
+          "word": "vigorous",
+          "usage": "adj. 精力充沛、强健的；行动或论辩有力、积极的。",
+          "example": "The proposal prompted vigorous debate."
+        },
+        {
+          "word": "effete",
+          "usage": "adj. 衰弱、失去活力的；也可指因过分娇养而软弱，通常贬义。",
+          "example": "Critics described the once-powerful institution as effete."
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-16",
+      "type": "antonym",
+      "title": "常见与例外",
+      "note": "教练依据已核验词典义项整理；例句自拟。反义限定在寻常与不寻常维度；commonplace 不自动表示差，exceptional 也不总表示优秀。",
+      "source": "dictionary_checked",
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/commonplace",
+        "https://www.merriam-webster.com/dictionary/exceptional"
+      ],
+      "members": [
+        {
+          "word": "commonplace",
+          "usage": "adj. 常见、平凡、普通的；名词还可指陈词滥调。",
+          "example": "Such delays have become commonplace on this route."
+        },
+        {
+          "word": "exceptional",
+          "usage": "adj. 例外、不寻常的；另有特别优秀的义项。",
+          "example": "The unusually severe storm was an exceptional event."
         }
       ]
     }

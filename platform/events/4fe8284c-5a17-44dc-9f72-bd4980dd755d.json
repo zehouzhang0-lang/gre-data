@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "4fe8284c-5a17-44dc-9f72-bd4980dd755d",
+  "recorded_at": "2026-09-15T17:30:39.285Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "aa276d13-39a7-4e28-bc8d-821182f62d7e",
+    "input_hash": "93afa3e18dedb366c291bfc8db7c547b719b6d85cd924ea5448d693fc63daae9",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AF",
+    "result": {
+      "summary": "你的A/F与用户提供的参考答案AF一致。Though引出外表与本性的反差；pugnacious和truculent均可描述好斗的本性，分别代入成立且全句等价。",
+      "evidence": "决定性线索是“Though…a dignified bearing and made a great first impression”与“soon realized…essentially”：起初仪态庄重、印象良好，熟悉后却发现本性不同，空格应表达与良好印象相反的性情。A pugnacious意为好斗的；F truculent意为凶狠好斗的，两者代入均呈现同一反差。B deliberate（审慎的）、C punctilious（一丝不苟、拘礼的）、D courteous（彬彬有礼的）不能形成所需反差；E complacent（自满的）虽带贬义，却没有与之构成全句等价的另一项。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。此次答案匹配，但无法确认是否完成逐项代入与等价检查。【读题/策略】可核查是否使用Though预测反差；【知识】可核查是否区分好斗与自满。无用时数据，无法评估时间策略。",
+      "next_action": "下次先圈出Though，写出预测“外表庄重→本性负面”；再将候选词分别代入，检查每句是否成立，最后用同一句中文概括两句，确认都表达“本性好斗”。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

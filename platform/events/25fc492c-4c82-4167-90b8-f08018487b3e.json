@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "25fc492c-4c82-4167-90b8-f08018487b3e",
+  "recorded_at": "2026-09-15T17:26:46.310Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "c4692cbe-d350-4858-9881-a6572bf1d2c0",
+    "input_hash": "1e7a94b0c9c0cb64dd679578eccfea2f005adffa8f3ca8b226e990f248a4a940",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "CE",
+    "result": {
+      "summary": "参考答案CE与题干一致：检测到分子氧并不是明确无歧义的生命迹象，因为分子氧既可能来自生物过程，也可能来自非生物过程。你的A/F不符合这两处语义要求。",
+      "evidence": "先预测逻辑：冒号后解释前句，or连接两种氧气来源，因此句意应为“发现氧气≠确定存在生命”。第一空：C detection（检测到）契合随后对氧气来源的讨论；A dearth（缺乏）没有依据，B presumption（假定）不如实际检测契合迹象判断。第二空：E an unambiguous受not否定，表示“不是无歧义的迹象”，对应photosynthesis（biotic）与water escape（abiotic）两种来源。D a controversial会变成“不是有争议的迹象”，不符合来源存在歧义的解释；F a possible会变成“不是可能的生命迹象”，但光合作用这一生物来源仍保留生命的可能性。两空合查，CE成立。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可观察到的答案偏离是：A把“检测到氧气”换成“缺乏氧气”；F把“不能确定”变成“不可能作为迹象”。标签：读题/策略（待核实）；暂无证据判断知识、计算或时间问题。",
+      "next_action": "下次先遮住选项，把冒号后的两种来源标为“生物/非生物”，写出预测“检测到；不确定”。再将每个第二空选项连同not一起翻译，区分“不是确定证据”和“不是可能证据”，最后代回两空检查整句。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_tc_multi_blank_consistency"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
