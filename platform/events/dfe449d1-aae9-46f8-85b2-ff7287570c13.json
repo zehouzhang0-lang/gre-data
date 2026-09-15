@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "dfe449d1-aae9-46f8-85b2-ff7287570c13",
+  "recorded_at": "2026-09-15T14:06:07.327Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "4088e5d4-711f-4d8c-8d7f-e744b5a6d85b",
+    "input_hash": "29fd6b6edb4ae2e146c438b1ab4519d558be0f1b622dd058d54b1c2b7cd4129c",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "CE",
+    "result": {
+      "summary": "按用户提供的参考答案，本题选C/E（obscure/opaque）。你选C/F，C正确，F不能与C形成全句等价。句意强调审批过程被科学术语遮掩而不透明。",
+      "evidence": "先预测逻辑：given that引出原因；“masking their decisions in the scientific terms”说明机构用科学术语掩饰决定，因此空格应表示“难以看清、不透明”。检查两项：C obscure代入表示过程不清楚；E opaque代入表示过程不透明，两句意义一致。F misleading表示过程具有误导性，虽与掩饰有关，却把“不透明”换成“使人产生错误认识”，不能与C等价。A controversial（有争议的）、B exacting（要求严格的）、D onerous（繁重的）也不符合该因果线索的直接语义方向。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可观察到的偏离是选入F而遗漏E：C/F未通过全句等价检查。标签：策略（待核实）；目前无法确定是词义知识、读题还是筛选步骤造成，且无用时数据可评估时间问题。",
+      "next_action": "下次先遮住选项，将空格预测为“不透明”；再分别把候选词代入整句，用中文各改写一句。只有两句都受原文支持且意义相同才保留。此题重做时，明确写出obscure/opaque与misleading的区别。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

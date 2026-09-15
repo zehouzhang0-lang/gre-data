@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "0517fef5-8a88-40bd-8253-d4148e1d1bc5",
+  "recorded_at": "2026-09-15T13:38:55.883Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "e1e352bc-56ab-4b3f-a608-618d96317573",
+    "input_hash": "9d3930b8ce3519adec618d6e746830d36a202b95a25ff8ead5cbd43a42b90752",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "DF",
+    "result": {
+      "summary": "参考答案为D/F，你选A/F。句子将“有时与保温餐炉关联”与“真正具有代表性的餐炉菜谱”对照；D与F分别成立，且全句意义等价。A表示本土的，不能表达典型性。",
+      "evidence": "决定性线索是“sometimes associated with”与“but…truly”的对照：前者仅说龙虾菜偶尔与餐炉有关，后者强调Welsh rarebit才是典型代表。D paradigmatic意为“典范性的”，F archetypal意为“典型的”，代入后都表达真正具有代表性的餐炉菜谱。A indigenous意为“本土的、原生的”，题干没有产地或起源证据。B sumptuous（丰盛豪华的）、C ubiquitous（无处不在的）、E newfangled（新奇时髦的）均不能与另一选项形成有文本支持的等价句。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可观察到的是A/F未满足全句等价要求；无法据此确定是误解indigenous，还是未检查配对。标签：读题、知识、策略（待核实）；无计算需求，未提供用时，不能判断时间问题。",
+      "next_action": "下次先遮住选项，用“偶有关联→真正典型”概括转折，再分别代入两个候选词并复述全句，确认意义等价。本题请不看释义回忆indigenous、paradigmatic、archetypal的核心义，再说明为什么A缺少文本支持；据回忆结果检查词义，不更新掌握等级。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

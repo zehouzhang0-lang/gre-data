@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "cbb1c4a8-fb7b-4c63-8ccb-eb4a8808eb65",
+  "recorded_at": "2026-09-15T13:50:17.651Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "e2acfb4a-8539-49c0-b863-5cbc7ed6d059",
+    "input_hash": "648eb6e38656558ed34f4213ed734107ac62f2e463116fb0655e9d843fce9151",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BD",
+    "result": {
+      "summary": "参考答案为B/D（expel/oust），与题干一致。你选A/B，B正确，A应替换为D。两项都表示“驱逐、除名”，使全句表达相同意思。",
+      "evidence": "先预测逻辑：Since引出原因；“international, politically neutral”说明学会坚持科学的国际性与政治中立，因此即使在战争期间，也拒绝因敌国身份而将会员除名。注意refused to的否定作用，空内应填“驱逐、除名”。B expel与D oust分别代入，都表达“拒绝驱逐来自敌国的会员”，语义成立且全句等价。A betray意为“背叛”，即使可以理解，也不等于驱逐；C endorse意为“支持、认可”；E sanction可指“批准”或“制裁”，不能与其他项构成此处的等价句；F condemn意为“谴责”，不等于除名。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可观察到的偏离是A/B未满足SE的全句等价要求：“拒绝背叛”与“拒绝驱逐”表达不同。标签：策略（配对等价检查）；这只是本题检查点，不能据此认定存在词汇知识或读题弱项。未提供用时，无法判断时间因素。",
+      "next_action": "重做时先写出“政治中立→拒绝因国籍除名”，再分别代入B、D并各译成一句中文，核对两句是否同义。最后对比betray与expel：前者改变忠诚关系，后者取消成员资格；不能只因两个词都带负面色彩就配对。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

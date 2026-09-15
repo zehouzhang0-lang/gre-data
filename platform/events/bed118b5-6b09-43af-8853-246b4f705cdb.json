@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "bed118b5-6b09-43af-8853-246b4f705cdb",
+  "recorded_at": "2026-09-15T13:20:01.522Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "53cb3ad1-3f6e-4617-8f44-fa16346ff2ae",
+    "input_hash": "627b2bcb3f64d73d3354f80ed81a19d201b32145bef9737cbaa16d9859b153aa",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BD",
+    "result": {
+      "summary": "本题选择B/D，与用户提供的参考答案一致。B unwarranted与D groundless分别填入均成立，全句都表示这些营养师认为强调烹饪的审美层面缺乏依据。",
+      "evidence": "先预测逻辑：Since引出原因；“the only function of food is to provide nourishment”把食物功能限定为提供营养，因此这些营养师会否定强调烹饪审美的必要性，空格应为“无正当理由、缺乏依据”。B unwarranted意为“无正当理由的”，D groundless意为“无根据的”，两者各自符合因果关系，代入后全句等价。A unprecedented与F novel涉及前所未有或新颖，题干未讨论新旧；C illuminating与E promising分别指有启发性、有前景，与预判的否定方向不符。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。本次选项匹配参考答案，但不能据此确认是否完成了独立填入与全句等价检验。知识、读题、策略标签均待推理证据判定；未记录用时，无法判断时间问题。",
+      "next_action": "下次先圈出Since与only，用中文预测“强调审美没有充分理由”；再分别将候选词填入，检查各自是否符合因果关系，最后比较两句是否表达相同判断。记录一句选择理由及用时，便于区分逻辑判断与词义辨析。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

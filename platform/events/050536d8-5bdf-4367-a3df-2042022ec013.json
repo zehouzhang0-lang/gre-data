@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "050536d8-5bdf-4367-a3df-2042022ec013",
+  "recorded_at": "2026-09-15T13:31:06.349Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "9a5053c2-0ea0-4068-a51c-5596c896be3d",
+    "input_hash": "58b10201952b4018e35af3c38aacb17c5ce62a5ddf03687611bb7640504bafa8",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AD",
+    "result": {
+      "summary": "本次选择A/D，与用户提供的参考答案AD一致。句内逻辑是：两类运动通常兼具对方特征，因此未必截然对立。A和D在本句中分别成立，且形成等价句意。",
+      "evidence": "先预测语义方向：分号后“each may, and usually does, possess features of the other”说明双方特征可以重叠；结合“not necessarily”，空格应表达“截然区分或相互对立”。A dichotomous表示二分的、截然分立的，填入后指两类运动未必截然分立；D contradictory表示相互矛盾或对立的，填入后指两类运动未必相互对立。两词并非所有语境下都同义，但此处都否定绝对对立。B untenable（站不住脚的）、C unsustainable（不可持续的）、E subversive（颠覆性的）、F efficacious（有效的）均不能由特征重叠这一证据推出。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。本次答案匹配参考答案，但不能据此确认是否完成两项独立代入与全句等价检查。标签：策略（待核验）；知识、读题及时间方面均无足够证据判断，且未记录用时。",
+      "next_action": "下次先写出“特征重叠→未必截然对立”的预测，再分别代入两项并各自翻译全句，确认两句意义一致。补记选项判断理由，尤其说明为何B/C虽然意义相近仍不符合句内证据。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

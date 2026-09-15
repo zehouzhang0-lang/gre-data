@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "1c6aeb5b-0f01-4409-9218-94d89b512bd3",
+  "recorded_at": "2026-09-15T13:53:04.606Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "01a31ef5-dead-434e-855f-0baaa7453cae",
+    "input_hash": "4b122b3510e0aec493f5a09bf55c07f6364e5d890927c99deb6a67050122bf0b",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AC",
+    "result": {
+      "summary": "参考答案A/C成立。Despite要求前后形成反差：选择显得不寻常，但Moreland既不叛逆，也不认为自己与众不同。A与C分别填入均符合此逻辑，且全句意义等价；所选D/E不成立。",
+      "evidence": "决定性证据是“Despite”与“neither a rebellious spirit nor someone who saw herself as anything out of the ordinary”。先预测空格方向为“不寻常、不循常规”。A unconventional（不循常规的）与C quirky（古怪独特的）都描述选择不同寻常，与后半句形成让步反差，两句意义等价。D flamboyant（浮夸张扬的）侧重引人注目，E successful（成功的）侧重结果成功，两者无法使全句等价；E也缺乏与后半句的明确反差。B impractical（不切实际的）、F lucrative（有利可图的）均不符合预测方向。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可观察的偏离是D/E未通过“分别符合句意且全句等价”的双重检验。标签：策略（待核实）；词义知识、读题及时间问题均无足够证据判定。",
+      "next_action": "下次先圈出Despite及out of the ordinary，不看选项写出“不寻常”的预测；再将候选词分别代入，检查每句是否构成反差，最后比较两句是否等价。本题复做时写一句话说明flamboyant与successful为何不能互换。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "eb7893ec-8872-44aa-bae0-3637f706b5f1",
+  "recorded_at": "2026-09-15T14:09:46.182Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "3eb91f5f-1054-438c-ba48-4ce25025d380",
+    "input_hash": "5475d825a3ffeb15958f1d2ecac0a6340a544f5776d88d989c6cbcef08ff8a32",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AC",
+    "result": {
+      "summary": "参考答案A/C与题干一致。句意先预测为“极其守旧、过时”：A antediluvian与C archaic分别填入都成立，且全句含义等价。所选F patronizing表示“居高临下的”，不符合此处语义。",
+      "evidence": "决定性证据是“old-fashioned and opposed to innovation”（老派且反对创新）；“so…that…”引出这种特征达到极端程度的表现，“downright”进一步加强语气。A antediluvian在此表示极其陈旧的，C archaic表示过时的，两者均承接守旧语义。B flighty意为轻浮、不定性的；D chauvinistic意为沙文主义的；E capricious意为反复无常的；F patronizing意为以高人一等的姿态待人的。后四项均不能由题干推出；A/F填入后全句也不等价。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的作答偏差是选F而漏选C。标签：知识/读题/策略（待核实）；目前无法判断是混淆词义、未抓住守旧线索，还是遗漏了两项全句等价检查。无用时数据，不能判断时间问题。",
+      "next_action": "下次先遮住选项，将空格预测为“极其守旧、过时”；再让候选词分别入句，检查是否有文本支持，最后比较两句是否等价。本题可先不看释义回忆antediluvian、archaic、patronizing的核心义，再核对，以区分词义问题与等价检查遗漏。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

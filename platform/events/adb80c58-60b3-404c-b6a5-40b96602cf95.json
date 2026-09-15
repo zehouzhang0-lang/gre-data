@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "adb80c58-60b3-404c-b6a5-40b96602cf95",
+  "recorded_at": "2026-09-15T13:52:10.607Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "d8fa496d-0fde-4a3f-9c16-ace3f90de7a3",
+    "input_hash": "0e322e26552e4c9da6df9de822326a6822cb4c38bb5b764fece6a7c8cbfab010",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "DE",
+    "result": {
+      "summary": "参考答案为D/E（belie/mask），与题干一致。你选了B/D，D正确，B应换成E。句子强调简单名称掩盖了凝血因子的重要性及其作用的特异性。",
+      "evidence": "先预测语义：主语是simple names，插入语“many are known only by Roman numerals”强调名称简单；“useful proteins”“importance”“specificity”强调实际功能重要而具体，空格应表达名称未能如实体现这些特点。D belie表示给人错误印象、不能如实反映；E mask表示掩盖，分别填入均成立，全句都表示简单名称掩盖实际重要性与作用特异性。B obviate意为使不再必要，名称简单并不会使重要性或作用特异性变得不必要。A nullify（使失效）、C mitigate（减轻）均误指实际作用被削弱；F accentuate（突出）与所预测方向相反。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的作答偏差是B/D不能形成全句等价：obviate表示消除必要性，belie表示造成误导印象。标签：知识（词义）、读题（名称与功能的关系）、策略（双项独立验证）均待核实；无计算要求，未提供用时，无法判断时间因素。",
+      "next_action": "先不看选项，用“简单名称掩盖实际重要性”概括句意；再分别代入D和E，确认两句含义等价。随后凭回忆写出obviate、belie、mask的核心义并各造一句，再核对词义，重点区分“使不再必要”与“掩盖”。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

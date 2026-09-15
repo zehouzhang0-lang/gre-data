@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "47436635-2904-4bab-b28e-b3bb3dc49d9b",
+  "recorded_at": "2026-09-15T13:17:50.419Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "738e4624-873e-4779-80cd-d8817dd5ca9c",
+    "input_hash": "e699fcad7440cd9d4b9e82a2a6f15ac90b98e90516844a537fdc8093eb9b3deb",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AD",
+    "result": {
+      "summary": "参考答案为A/D：intricate与convoluted均表示复杂、曲折，填入后都说明迷宫越来越不复杂。你选的C/E虽语义接近，但表示效能或用途下降，不符合句中对比。",
+      "evidence": "先预测方向：早期希望让啮齿动物迷失在labyrinth中；如今设计迷宫是为了引出“a few simple, easily measured behaviors”，对比指向设计复杂程度降低。空前有ever less，因此空内应表示“复杂”。A intricate（错综复杂的）和D convoluted（曲折复杂的）分别代入均成立，且全句等价。C effective（有效的）与E useful（有用的）代入后表示越来越无效或无用，文中没有这样的证据。B extensive侧重范围广，F prevalent侧重普遍程度，也不符合对比方向。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的是C/E未通过语境检验；不能仅因两词意思接近就认定答案成立。标签：读题／策略（待核实）；尚无证据判断知识、计算或时间问题。",
+      "next_action": "下次先圈出less与前后对比，写下整句预测“复杂度降低”，再推出空内需为“复杂”。将每个候选词分别代入，确认两项都符合文本且全句等价。重做本题时补记你当时选择C/E的依据。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

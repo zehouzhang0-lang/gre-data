@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "2593efcc-1880-488d-9f8e-8aca217b550a",
+  "recorded_at": "2026-09-15T13:23:55.655Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "2caf4b02-dee4-4eec-aa23-c42a576867c2",
+    "input_hash": "6385a40e6e8247af580201fe4dee909c6dd449214030c257b671f734d4237ddc",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BE",
+    "result": {
+      "summary": "参考答案为B/E：affable与easygoing均符合对“易争吵”的反转，整句均表达同事觉得他性情温和、容易相处。你选的B/C中，C不符合这一语义方向。",
+      "evidence": "句内逻辑：fractiousness意为易怒、好争吵；but与on the contrary明确要求空格朝相反方向，即温和、好相处。B affable（和蔼友善的）和E easygoing（随和的）分别代入均成立，且在本句中表达等价评价。C sagacious（睿智的）与A insightful（有洞察力的）描述认知能力，不能反转好争吵的名声；D capable（有能力的）和F productive（高产的）同样不回应性情对比。题干“quiet _____”搭配略显生硬，但不改变支持B/E的决定性逻辑。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的答案偏离是：C描述智慧，未回应题干的性情反转，也无法与B形成全句等价。标签：读题/策略（复核方向）；是否存在词义知识缺口尚待检验。未记录用时，无法判断时间因素。",
+      "next_action": "下次先圈出but、on the contrary，并在看选项前写下预测“温和、好相处”。再将候选项分别代入，逐一检查“能否反转fractiousness”和“两句是否等价”。本题重做时，先凭回忆写出fractiousness、affable、sagacious、easygoing的核心义，再核对。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

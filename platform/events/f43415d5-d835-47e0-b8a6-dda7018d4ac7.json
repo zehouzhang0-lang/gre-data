@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "f43415d5-d835-47e0-b8a6-dda7018d4ac7",
+  "recorded_at": "2026-09-15T13:42:29.635Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "5e181017-8bec-449f-80ff-65d34b29a962",
+    "input_hash": "335185de75cc4f85f06e8c9470cdb93238592c6d1bb577c62e4e7cad0ae286fc",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AB",
+    "result": {
+      "summary": "参考答案AB成立：minimal与trifling都表示影响微小，分别填入均符合转折，且全句意义等价。你选的A/F中，F表示有害，不能与A构成等价句。",
+      "evidence": "Although与nevertheless共同提示让步转折：前半句说能举出大量外来物种扰乱生态系统的例子，后半句转向“大多数存活下来的引入物种”，语义应为影响不大。A minimal（极小的）与B trifling（微不足道的）分别填入均成立，且表达相同判断。C marked（显著的）、D conspicuous（明显的）虽意义接近，却不符合此处转折方向；E intriguing（引人好奇的）无文本支持；F deleterious（有害的）延续前半句负面方向，也不等于A所说的影响程度小。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的是所选A/F未满足SE的全句等价要求：影响小与影响有害是不同判断。复盘标签：策略（双项等价检验）、读题（转折方向）；这些是检查点，不代表已确定你的弱项。未记录用时，无法判断时间问题。",
+      "next_action": "下次先圈出Although、nevertheless，遮住选项预测“影响微小”；再把每个候选词分别代入，检查逻辑是否成立；最后用中文改写两句，确认表达同一判断。本题重新比较“影响微小”与“影响有害”，说明两者为何不能组成等价对。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

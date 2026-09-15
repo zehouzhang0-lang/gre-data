@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "f31217f2-a08d-4ed7-8540-efd303196aac",
+  "recorded_at": "2026-09-15T13:30:12.085Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "ab98adbd-eeb0-4d71-bde8-4bd90711276e",
+    "input_hash": "0ea0a1539c2bc922fe563075482ece8a8e3839ae0e0ca7fca1a0fd4f0b6e1613",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AD",
+    "result": {
+      "summary": "参考答案A/D成立。冒号后说明劳资双方利益截然对立，空格应表示“对抗的”。A adversarial与D antagonistic分别代入均成立且全句等价；你选的B exploitative表示“剥削性的”，超出了题干证据。",
+      "evidence": "决定性文本是“the interests of business owners are diametrically opposed to those of employees”：企业主与雇员的利益截然对立。冒号后解释前句，因此先预测空格为“对立、对抗的”。A adversarial和D antagonistic均符合这一方向，分别代入都描述劳资关系具有对抗性。B exploitative增加了“剥削”含义，利益对立不足以证明剥削；C mercenary表示唯利是图，题干未评价逐利动机；E variable与F changeable虽都指易变，却不符合“利益截然对立”的解释。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可观察到的偏离是用B替代A：B与D既不表达相同含义，也不能形成等价全句。复盘标签：读题（是否紧扣冒号后的解释）、策略（是否逐项验证并比较全句）；尚不能确定存在词义知识缺口，无用时数据可评估时间问题。",
+      "next_action": "重做时先遮住选项，圈出冒号及diametrically opposed，写下预测“对抗的”。再分别代入A、B、D并翻译全句，指出B额外引入的“剥削”判断。最后检查两项是否各自有文本支持、代入后是否全句等价，并记录你的实际选择理由。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
