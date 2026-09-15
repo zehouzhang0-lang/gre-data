@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "89b5da75-564d-4b66-87e9-e373bbf4ed6c",
+  "recorded_at": "2026-09-15T17:42:32.546Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "5895b749-f351-4c4e-9de3-c6fe21654241",
+    "input_hash": "701830115a997b447332597ef97ab8e2ddca1edc9a5e26814378802f40707711",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AB",
+    "result": {
+      "summary": "参考答案为A/B，你选A/C。句子对比“视觉上极其显眼”和“质量占比很小”，空格应表达显眼程度掩盖了实际占比小这一事实。A、B分别成立且全句意义相近；C方向相反。",
+      "evidence": "决定性证据是“two percent of the mass”“extreme visual prominence”和“relatively minor contribution”：尘埃虽显眼，却只占该区域质量的2%。A belies表示显眼的外观给人误导印象，与实际质量贡献小不相符；B masks表示这种显眼程度掩盖了质量贡献小这一事实。两项都表达外观使实际的小占比不易被认识。C highlights与F accentuates均表示突出、强调小占比，方向不符；D nullifies和E disproves则表示使其失效或证伪，视觉显眼并不能否定已测出的2%。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可观察到的答案偏离是：保留了符合反差关系的A，却搭配了表达“突出”的C，两句不等价。标签：读题（反差方向）、策略（双项等价检查）；这些是本题复核维度，不代表已确定的个人弱项。",
+      "next_action": "下次先用“看着多，实际少”概括关系，预测“掩盖／造成误导”。再将每个候选词分别代入，写出整句释义；仅当两句都符合2%的事实、且传达相同关系时才配对。本题重做时重点比较masks与highlights的方向。",
+      "technique_ids": [
+        "v_se_dual_equivalence",
+        "v_tc_logic_map"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

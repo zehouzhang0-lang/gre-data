@@ -36,3 +36,5 @@
 ## 整理期间继续摘词的补充
 
 主批次写入后新增的 metaphoric、mundane、prosaic 已继续核验并分类，详见 [补充记录](20260916_0139_dictionary_supplement.json)。本次累计补齐 **218 个缺释义词**，连同手写词共整理 **360 个词条**。
+
+随后摘录的 belies、disprove、nullifie 也已核验：belies 合并到已有 belie，nullifie 依据原摘词语境 nullifies 归到 nullify，原始事件保留。详见 [后续摘词记录](20260916_0141_captured_supplement.json)。累计处理 **221 个缺释义选词**。

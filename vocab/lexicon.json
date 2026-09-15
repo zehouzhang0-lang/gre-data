@@ -3433,13 +3433,13 @@
     {
       "word": "belie",
       "pos": "v.",
-      "meaning": "造成与实际不符的印象；掩盖；与……相矛盾",
+      "meaning": "造成与真实情况不符的印象；掩盖；与…相矛盾；证明…不实",
       "original_context": null,
-      "collocation": "a simple name that belies its importance",
+      "collocation": "a calm manner belies anxiety",
       "collocation_source": "coach_composed",
-      "connotation": "中性，较正式",
+      "connotation": "依语境而定",
       "related_words": [],
-      "normalization_note": null,
+      "normalization_note": "可指表象掩盖事实，也可指证据与说法冲突。belies 是第三人称单数形式，归并到已有 belie。",
       "sources": [
         {
           "material_id": "text_completion_2000",
@@ -3449,9 +3449,22 @@
           "event_ids": [
             "58cdacad-38b6-4603-b71d-d5c076fb7b94"
           ]
+        },
+        {
+          "material_id": "vocab_dictionary_cleanup_20260916",
+          "record": "vocab/imports/20260916_0141_captured_supplement.json",
+          "kind": "dictionary_curation",
+          "origin_word": "belies"
         }
       ],
       "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/belie",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "造成与真实情况不符的印象；掩盖；与…相矛盾；证明…不实"
+        },
         {
           "publisher": "Merriam-Webster",
           "url": "https://www.merriam-webster.com/dictionary/belie",
@@ -3462,7 +3475,8 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
-      "note": "题中简单名称使人低估其重要性；不是 believe 的变形。 语体/色彩：中性，较正式。"
+      "note": "可指表象掩盖事实，也可指证据与说法冲突。belies 是第三人称单数形式，归并到已有 belie。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/belie"
     },
     {
       "word": "bellicose",
@@ -8723,6 +8737,37 @@
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "disprove",
+      "pos": "v.",
+      "meaning": "证明…错误；证伪",
+      "collocation": "disprove a hypothesis",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境而定",
+      "note": "需要证据显示某说法不成立；并非只是不同意或未能证实。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disprove",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "证明…错误；证伪"
+        }
+      ],
+      "sources": [
+        {
+          "material_id": "vocab_dictionary_cleanup_20260916",
+          "record": "vocab/imports/20260916_0141_captured_supplement.json",
+          "kind": "dictionary_curation",
+          "origin_word": null
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/disprove",
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "original_context": null
     },
     {
       "word": "distress",
@@ -19472,6 +19517,37 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "nullify",
+      "pos": "v.",
+      "meaning": "使无效；废止；抵消效果",
+      "collocation": "nullify an agreement",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境而定",
+      "note": "摘词语境为 nullifies，是 nullify 的第三人称单数；nullifie 不是本条规范词形。",
+      "normalization_note": "摘词语境为 nullifies，是 nullify 的第三人称单数；nullifie 不是本条规范词形。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/nullify",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "使无效；废止；抵消效果"
+        }
+      ],
+      "sources": [
+        {
+          "material_id": "vocab_dictionary_cleanup_20260916",
+          "record": "vocab/imports/20260916_0141_captured_supplement.json",
+          "kind": "dictionary_curation",
+          "origin_word": "nullifie"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/nullify",
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "original_context": null
     },
     {
       "word": "numeral",
@@ -32104,5 +32180,5 @@
       "learning_status": "encountered_pending_retest"
     }
   ],
-  "updated_at": "2026-09-16T01:39:10.493158+08:00"
+  "updated_at": "2026-09-15T17:42:22.441863+00:00"
 }

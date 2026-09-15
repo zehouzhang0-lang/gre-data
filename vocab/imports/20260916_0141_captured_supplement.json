@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "batch_id": "20260916_0141_captured_supplement",
+  "material_id": "vocab_dictionary_cleanup_20260916",
+  "imported_at": "2026-09-15T17:42:22.440003+00:00",
+  "source_type": "platform_vocab_capture",
+  "counts": {
+    "selected_forms": 3,
+    "existing_lemma": 1,
+    "normalized_forms": 2
+  },
+  "note": "继续整理收尾期间的摘词；保留原始事件，屈折形式归到词元。不计复习完成。",
+  "items": [
+    {
+      "surface": "belies",
+      "word": "belie",
+      "pos": "v.",
+      "meaning": "造成与真实情况不符的印象；掩盖；与…相矛盾；证明…不实",
+      "collocation": "a calm manner belies anxiety",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境而定",
+      "topics": [
+        "language",
+        "reason"
+      ],
+      "note": "可指表象掩盖事实，也可指证据与说法冲突。belies 是第三人称单数形式，归并到已有 belie。",
+      "normalization_note": "可指表象掩盖事实，也可指证据与说法冲突。belies 是第三人称单数形式，归并到已有 belie。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/belie",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "造成与真实情况不符的印象；掩盖；与…相矛盾；证明…不实"
+        }
+      ],
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test6_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "belies",
+          "recorded_at": "2026-09-15T17:40:23.893Z"
+        }
+      ]
+    },
+    {
+      "surface": "disprove",
+      "word": "disprove",
+      "pos": "v.",
+      "meaning": "证明…错误；证伪",
+      "collocation": "disprove a hypothesis",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境而定",
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "note": "需要证据显示某说法不成立；并非只是不同意或未能证实。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disprove",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "证明…错误；证伪"
+        }
+      ],
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test6_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "disproves",
+          "recorded_at": "2026-09-15T17:40:29.996Z"
+        }
+      ]
+    },
+    {
+      "surface": "nullifie",
+      "word": "nullify",
+      "pos": "v.",
+      "meaning": "使无效；废止；抵消效果",
+      "collocation": "nullify an agreement",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境而定",
+      "topics": [
+        "society",
+        "conflict"
+      ],
+      "note": "摘词语境为 nullifies，是 nullify 的第三人称单数；nullifie 不是本条规范词形。",
+      "normalization_note": "摘词语境为 nullifies，是 nullify 的第三人称单数；nullifie 不是本条规范词形。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/nullify",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "使无效；废止；抵消效果"
+        }
+      ],
+      "captures": [
+        {
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test6_section2_easy",
+            "question": "5",
+            "type": "se"
+          },
+          "context": "nullifies",
+          "recorded_at": "2026-09-15T17:40:38.599Z"
+        }
+      ]
+    }
+  ]
+}
