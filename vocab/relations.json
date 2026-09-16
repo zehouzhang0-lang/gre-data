@@ -1867,6 +1867,380 @@
           "example": "The unusually severe storm was an exceptional event."
         }
       ]
+    },
+    {
+      "id": "curated-20260916-afternoon-1",
+      "type": "antonym",
+      "title": "协调与不协调",
+      "note": "反义限定于组成部分彼此吻合或事物适合情境的程度；不是说所有细节必须相同。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "congruity",
+          "usage": "n. 一致、协调、相称；注意事物与情境是否吻合。",
+          "example": "The critic praised the congruity between the subject and the style."
+        },
+        {
+          "word": "incongruity",
+          "usage": "n. 不协调或不合适之处；也可指前后不一致。",
+          "example": "The critic noted an incongruity between the solemn topic and the playful style."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/congruity",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/incongruity",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-2",
+      "type": "lookalike",
+      "title": "evasive 与 elusive",
+      "note": "两词拼写相近且都可涉及躲避。evasive 常描写有意回避的动作或答话；elusive 侧重某物难以被抓住、找到或理解。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "evasive",
+          "usage": "adj. 回避的；答话时常指不正面回答问题。",
+          "example": "Her evasive reply left the question unanswered."
+        },
+        {
+          "word": "elusive",
+          "usage": "adj. 难捕捉、难找到或难理解的；不必有回避意图。",
+          "example": "The cause remained elusive despite months of research."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/evasive",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/elusive",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-3",
+      "type": "antonym",
+      "title": "证据含糊与足以定论",
+      "note": "反义仅限 evidence、results 等语境中结论的明确程度；不把 equivocal 的所有人格或言辞义都与 conclusive 对立。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "equivocal",
+          "usage": "adj. 证据或结果不能支持明确判断，仍有多种解释。",
+          "example": "The first test produced equivocal results."
+        },
+        {
+          "word": "conclusive",
+          "usage": "adj. 证据或结果足以确定结论、结束疑问。",
+          "example": "The second test provided conclusive evidence of contamination."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/equivocal",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conclusive",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-4",
+      "type": "lookalike",
+      "title": "coherent 与 cogent",
+      "note": "两词可形容论述，分别检查内部是否连贯、理由是否有力。表达连贯不保证证据充分。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "coherent",
+          "usage": "adj. 条理清楚、各部分相互衔接；评价组织与逻辑一致性。",
+          "example": "The account was coherent, but its central claim lacked evidence."
+        },
+        {
+          "word": "cogent",
+          "usage": "adj. 论据清楚有力、令人信服；评价说服力。",
+          "example": "She offered a cogent argument supported by independent measurements."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/coherent",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cogent",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-5",
+      "type": "synonym",
+      "title": "闷闷不乐与伤感忧郁",
+      "note": "近义限于低落情绪。glum 常表现为阴沉不乐的神色；melancholy 还可含沉思伤感，或修饰令人伤感的艺术作品。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "glum",
+          "usage": "adj. 郁郁寡欢、不高兴；常用 look glum 或 a glum expression。",
+          "example": "He looked glum after the match was canceled."
+        },
+        {
+          "word": "melancholy",
+          "usage": "adj.; n. 忧郁、惆怅；此组取情绪或引起伤感的义项。",
+          "example": "The old photograph left her in a melancholy mood."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/glum",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/melancholy",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-6",
+      "type": "antonym",
+      "title": "和蔼与粗鲁",
+      "note": "反义限定在待人的态度：affable 让人易于亲近交谈；churlish 常指无礼、不友善。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "affable",
+          "usage": "adj. 和蔼可亲、易于交谈；不必特别健谈。",
+          "example": "The affable librarian made new visitors feel welcome."
+        },
+        {
+          "word": "churlish",
+          "usage": "adj. 粗鲁无礼、难相处；通常贬义。",
+          "example": "His churlish response discouraged further questions."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/affable",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/churlish",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-7",
+      "type": "antonym",
+      "title": "温和与易怒",
+      "note": "反义限定于脾气或待人态度；mellow 的酒味醇厚、声音柔和等义项不在此对应。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "mellow",
+          "usage": "adj. 性情温和、圆熟、放松；也可作动词表示变温和。",
+          "example": "Experience had made her more mellow and patient."
+        },
+        {
+          "word": "irascible",
+          "usage": "adj. 容易被激怒、脾气暴躁；不等于严肃坚定。",
+          "example": "The irascible manager snapped at minor interruptions."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mellow",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/irascible",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-8",
+      "type": "synonym",
+      "title": "礼貌与相互礼让",
+      "note": "两词共享文明友好的范围。civility 更聚焦言行有礼；comity 更常强调群体间的和谐与相互尊重，另有法律、国际关系中的礼让义。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "comity",
+          "usage": "n. 相互友好、礼让与和谐；常用于群体、机构或国家之间。",
+          "example": "The agreement restored a measure of comity between the two councils."
+        },
+        {
+          "word": "civility",
+          "usage": "n. 得体礼貌的言行；复数可指客套礼节。",
+          "example": "They disagreed sharply but continued the discussion with civility."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/comity",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/civility",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-9",
+      "type": "synonym",
+      "title": "幼年的与幼稚的",
+      "note": "近义只在批评不成熟行为时成立。juvenile 还能中性描述年龄与未成年群体；puerile 常带幼稚可笑的讥评。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "puerile",
+          "usage": "adj. 幼稚可笑的、孩子气的；常修饰笑话、推理或行为。",
+          "example": "The debate collapsed into puerile insults."
+        },
+        {
+          "word": "juvenile",
+          "usage": "adj.; n. 青少年的、未成年人；评价行为时也可指幼稚。",
+          "example": "The film examines juvenile behavior without treating every teenager as immature."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/puerile",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/juvenile",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-10",
+      "type": "synonym",
+      "title": "征求、恳求与乞求",
+      "note": "共同点是请求；用语姿态不同。solicit 可正常征求意见，entreat 强调恳切，supplicate 更突出谦卑或祈求。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "solicit",
+          "usage": "v. 请求、征求、募集；对象常为意见、支持或捐助。",
+          "example": "The team solicited feedback from local residents."
+        },
+        {
+          "word": "entreat",
+          "usage": "v. 恳切请求；常用 entreat someone to do something。",
+          "example": "She entreated the committee to reconsider the deadline."
+        },
+        {
+          "word": "supplicate",
+          "usage": "v. 谦卑而恳切地乞求；也可用于祈祷。",
+          "example": "The prisoner supplicated for mercy."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/solicit",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/entreat",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/supplicate",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260916-afternoon-11",
+      "type": "synonym",
+      "title": "改善处境与平息怒气",
+      "note": "近义仅在使不良状态缓和这一方向。根据宾语选择：ameliorate 常对处境、痛苦或不良影响，mollify 常对生气的人或情绪。 例句为教学自拟。",
+      "members": [
+        {
+          "word": "ameliorate",
+          "usage": "v. 改善不良处境，使更好或较能忍受；不保证彻底消除。",
+          "example": "The new policy helped ameliorate the housing shortage."
+        },
+        {
+          "word": "mollify",
+          "usage": "v. 安抚、平息怒气或使缓和。",
+          "example": "The apology mollified the frustrated customer."
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ameliorate",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mollify",
+          "checked_at": "2026-09-16",
+          "status": "checked"
+        }
+      ]
     }
   ]
 }

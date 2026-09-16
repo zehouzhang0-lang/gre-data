@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-16T16:34:50.992+08:00",
+  "material_id": "vocab_dictionary_cleanup_20260916_afternoon",
+  "source_kind": "platform_vocabulary_capture",
+  "definition_policy": "中文为依据词典义项自写的学习释义；无原句时不推定语境义。GRE做题需按完整题目语境判义，本批不声称是ETS官方词表或官方解析。搭配及关系例句为自拟。录入不计复习完成，也不改变既有掌握度。",
+  "items": [
+    {
+      "surface": "tempers",
+      "word": "temper",
+      "pos": "v.; n.",
+      "meaning": "v. 缓和；使适度；使回火；n. 脾气；情绪",
+      "collocation": "temper optimism with caution",
+      "connotation": "中性，视对象而定",
+      "note": "原题选项 tempers 是动词第三人称单数；这里的相关义是缓和、削弱程度，不是“脾气”。词义整理不构成对本题答案的判定。",
+      "normalization_note": "tempers → temper（动词词元）；原始摘词与题号仍保留。",
+      "topics": [
+        "change",
+        "mood"
+      ],
+      "context_sense": "原题作为谓语的候选词：缓和、使不那么极端。",
+      "image": null,
+      "collocation_source": "coach_composed",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/temper",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "v. 缓和；使适度；使回火；n. 脾气；情绪"
+        }
+      ],
+      "related_words": [],
+      "source": {
+        "material": "text_completion_2000",
+        "unit": "test143_section2_hard",
+        "question": "1",
+        "type": "tc"
+      },
+      "capture_event_ids": [
+        "958ba2b8-7b4a-4e02-8bec-1791e7f2c69d"
+      ],
+      "capture_records": [
+        {
+          "id": "958ba2b8-7b4a-4e02-8bec-1791e7f2c69d",
+          "recorded_at": "2026-09-15T17:46:53.389Z",
+          "word": "tempers",
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test143_section2_hard",
+            "question": "1",
+            "type": "tc"
+          },
+          "context": "tempers"
+        }
+      ]
+    },
+    {
+      "surface": "corroborate",
+      "word": "corroborate",
+      "pos": "v.",
+      "meaning": "佐证；用证据证实；使更可信",
+      "collocation": "corroborate an account with documents",
+      "connotation": "正式，中性",
+      "note": "以独立证据支持已有说法；不同于单纯重复或声称。原题中出现的 corroborates 是第三人称单数。",
+      "normalization_note": null,
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "context_sense": "原题作为谓语的候选词：证实叙述。",
+      "image": null,
+      "collocation_source": "coach_composed",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/corroborate",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "佐证；用证据证实；使更可信"
+        }
+      ],
+      "related_words": [],
+      "source": {
+        "material": "text_completion_2000",
+        "unit": "test143_section2_hard",
+        "question": "1",
+        "type": "tc"
+      },
+      "capture_event_ids": [
+        "f0968d72-394d-4775-8d93-7d15ac6ec87f"
+      ],
+      "capture_records": [
+        {
+          "id": "f0968d72-394d-4775-8d93-7d15ac6ec87f",
+          "recorded_at": "2026-09-15T17:47:01.903Z",
+          "word": "corroborate",
+          "source": {
+            "material": "text_completion_2000",
+            "unit": "test143_section2_hard",
+            "question": "1",
+            "type": "tc"
+          },
+          "context": "corroborates"
+        }
+      ]
+    }
+  ],
+  "normalizations": [
+    {
+      "from": "tempers",
+      "to": "temper",
+      "method": "canonical_entry_plus_reversible_duplicate_hide",
+      "original_event": "958ba2b8-7b4a-4e02-8bec-1791e7f2c69d",
+      "learning_evidence": "none_for_this_inflected_form"
+    }
+  ]
+}
