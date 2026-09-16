@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "e09b1355-3075-44e6-89c9-a9b699db6da8",
+  "recorded_at": "2026-09-16T15:34:37.233Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "dd4fda22-8571-4650-a78d-996e45cc28af",
+    "input_hash": "fa14ab9cd8f1ee67fb127ea0ae7be15ebf680710b76c408d2c3ab2c10a787265",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "CF",
+    "result": {
+      "summary": "参考答案为C/F，与题干一致。你选的B/E不能表达工会对企业贪婪逐利的批评，也不能使两句等价。",
+      "evidence": "先预测语义方向：polemically（以论战、攻击的方式）和while构成工会“保住好工作”与企业削减用工成本的对立，因此空格应体现对企业逐利的负面评价。决定性证据是企业以兼职替代全职，“cut down on both wages and benefits”（同时削减工资与福利）。C rapacious（贪婪掠夺的）与F avaricious（贪财的）分别填入都符合批评语气，且全句含义等价。B enterprising意为有进取心的，E influential意为有影响力的，既不对应上述批评，也不互相等价。A precarious（不稳定的）、D troubled（陷入困境的）均缺少题干支持。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的是B/E不满足语境支持和全句等价两个条件；尚不能判定属于知识、读题或策略问题。未记录耗时，无法判断时间因素。",
+      "next_action": "下次先圈出态度词和对立关系，用中文预测“贪婪逐利的”；再将每个候选词分别代入，检查是否有文本支持；最后比较两句是否表达相同含义。本题重做时写出B/E与C/F的词义及淘汰依据。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
