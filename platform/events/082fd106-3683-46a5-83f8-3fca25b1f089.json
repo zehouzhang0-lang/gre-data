@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "082fd106-3683-46a5-83f8-3fca25b1f089",
+  "recorded_at": "2026-09-16T11:18:23.453Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "849c3127-18c4-4ee2-8289-aca32feaa3da",
+    "input_hash": "a08bae22f7d9b586dde2df8d411a20c14066502b46a357e9322913531ca0f856",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "B",
+    "result": {
+      "summary": "按用户提供的参考答案，本题选B。研究把发育期的群体密度与后来的觅食表现联系起来，支持跨生命阶段跟踪观察的推断；C所说密度可能无关，与实验结果不符。",
+      "evidence": "文章说明研究考察“group density during development”对“later foraging success”的作用：需要掌握孔雀鱼早期饲养条件，再观察其后来的觅食表现，这是B所述多个生命时间点观察的依据，不意味着全生命周期持续观察。小群体养大的鱼比大群体养大的鱼更快跟随成年鱼找到食物，末句也指出早期社交环境可能影响社会学习能力，因此C缺乏支持。A：未交代研究最初另有目的；D：仅说明实验室饲养，未说明模拟野外；E：高密度饲养的鱼反而更可能把同类视为竞争者。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的是选项C的“密度可能关系不大”与文中的组间表现差异及末句结论不符。标签：读题／推理策略（待核实），不能据此认定长期弱项。",
+      "next_action": "下次做推断题，先圈出时间和比较词：during development、later、quicker…than。用一句话写出研究链条“早期密度条件→后期觅食表现”，再逐项检查是否有文章证据；选择B时只推到跨阶段观察，不扩大为终生持续跟踪。",
+      "technique_ids": [
+        "v_rc_scope_evidence",
+        "v_rc_inference_minimum"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

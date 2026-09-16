@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "f0fd8051-e1d1-4d69-add3-57e2e8e1312e",
+  "recorded_at": "2026-09-16T11:21:55.278Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "4861a24b-e9f1-4833-a4c9-0009db0bac82",
+    "input_hash": "e74224d491185e8f962b1bdd74e850e4d76c3d9e5c1f2f666a9f0a355d21d72b",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "C",
+    "result": {
+      "summary": "本次选择C，与用户提供的参考答案一致。文章围绕低密度饲养的孔雀鱼后来更善于通过同伴找到食物这一反直觉发现，解释其原因及意义，故主旨为“提出对某一发现的解释”。",
+      "evidence": "文章先交代研究背景和发现：低密度饲养的鱼比高密度饲养的鱼更快跟随受训成鱼找到食物。核心转折是“This counterintuitive finding is explained by”：高密度饲养的鱼较少结群，因此较少学到社会学习的好处。随后“Instead…may learn”提出竞争者认知这一可能解释；末句“This finding suggests”概括早期社会环境的影响。B虽涵盖研究介绍，却未突出解释发现这一重心；A没有对应的研究缺陷，D没有两个独立发现，E的条件对比只是解释的起点。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。本题答对，但不能据此判断是否准确区分B与C。【读题/策略】可核查是否依据作者解释发现的篇幅与功能判定主旨。未提供用时，无法评估时间问题。",
+      "next_action": "重读时给各句标注“背景—研究问题—发现—原因解释—可能机制—意义”，再用一句话概括作者在做什么。比较B、C时，指出哪几句超出了单纯介绍研究，并说明它们如何支持C。",
+      "technique_ids": [
+        "v_rc_author_function",
+        "v_rc_scope_evidence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

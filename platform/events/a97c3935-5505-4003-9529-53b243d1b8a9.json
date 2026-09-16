@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "a97c3935-5505-4003-9529-53b243d1b8a9",
+  "recorded_at": "2026-09-16T11:18:54.422Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "8d645a87-e4f9-4367-8a3d-42586cb7c455",
+    "input_hash": "aa4529280145a3e2d482ad8f82f42349ad7e4caab97dcb66e6ee3f411ab92c0f",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "D",
+    "result": {
+      "summary": "参考答案D有文章支持。首句区分“已证实鱼类存在社会学习”与“很少研究其发展背景”；B要求比较孔雀鱼与多数其他鱼类，文中没有这种比较。",
+      "evidence": "决定性证据是首句：“social learning ... is well documented among fish”，但“few studies have investigated social learning within a developmental context”。这支持D：有研究确认某些鱼类存在社会学习，却未考察其发生的发展背景。B中的“most other fish”无依据：实验比较的是不同养育密度下的孔雀鱼，不是孔雀鱼与其他鱼种。A的“only recently”无时间证据；C的“generally focused ... other than foraging”无研究主题分布证据；E无鱼类与其他水生动物的研究数量比较。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的是B超出了文章的比较范围。复盘标签：读题／策略（核对比较对象与推断范围）；不能据此认定存在知识弱项，且无用时数据可判断时间问题。",
+      "next_action": "重做时先用中文概括首句：社会学习已有记录，发展背景研究较少。再圈出各选项的比较对象、时间词和范围词，逐一定位文章证据；若找不到“多数其他鱼类”的比较依据，就排除B，并用首句两分句共同验证D。",
+      "technique_ids": [
+        "v_rc_scope_evidence",
+        "v_rc_inference_minimum"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
