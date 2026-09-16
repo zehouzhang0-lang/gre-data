@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "6021effb-c119-4f53-9211-91e9db194476",
+  "recorded_at": "2026-09-16T14:43:01.379Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "113b2296-29c9-4b61-ae4b-6493556ce108",
+    "input_hash": "f1f4f0d9510b64cb3fd7ebf9b19aa13d2007ac800965bb9a6128a5ac730d8f7f",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "D",
+    "result": {
+      "summary": "参考答案D有文章支持。全文先说明非裔美国戏剧的自然主义传统，再以Kennedy的作品展示对这一传统的突破。你选的E把个体创作扩大为艺术家群体的当前兴趣，并添加了“最佳典范”的判断。",
+      "evidence": "首段“until recently”提示传统正在变化，并指出自然主义把个体视为受外部现实控制。第二段明确说Kennedy的超现实主义戏剧“mark one of the first departures from naturalism”，且其目标是描绘灵魂与精神世界，使人物摆脱与外部环境的束缚。这一前后转折直接支持D。E的“best exemplifies”和“African American artists”的群体性“current interest”均缺少文章证据。A、B仅概括传统背景，遗漏突破；C声称影响甚微，文章没有论证这一点。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。标签：读题／策略（待核实）。从选项差异看，需要核对是否把Kennedy个人的创作目标推广为整个艺术家群体的兴趣，以及是否忽略“best”所需的比较证据；这不证明你有固定弱项。",
+      "next_action": "下次做主旨题，先各用一句话概括两段功能：“传统及其限制→Kennedy的突破”，再写出全文转折。逐项圈出主体范围、程度词与时间词；选择E前，必须在原文定位支持“艺术家群体当前兴趣”和“最佳典范”的证据，找不到就排除。",
+      "technique_ids": [
+        "v_rc_scope_evidence",
+        "v_rc_author_function"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
