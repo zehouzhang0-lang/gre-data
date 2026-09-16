@@ -29,6 +29,13 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: vocab_dictionary_cleanup_20260917
+    filename: null
+    sha256: null
+    role: vocabulary_dictionary_curation
+    answer_status: not_applicable
+    description: "2026年9月17日从平台题目摘词补释义、按主题归类并做词形规范。"
+    record: vocab/imports/20260917_0028_captured_vocab.json
   - id: handwritten_vocab_20260916_afternoon
     filename: null
     sha256: null

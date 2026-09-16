@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-16T16:31:25.098Z",
+  "material_id": "vocab_dictionary_cleanup_20260917",
+  "source_kind": "platform_vocabulary_capture",
+  "counts": {
+    "captured_forms": 29,
+    "canonical_entries": 29,
+    "normalizations": 3,
+    "pending_transcriptions": 0
+  },
+  "definition_policy": "中文释义依据 Merriam-Webster 与已保存题目语境归纳；不冒充 ETS 官方释义。补释义与分类不计复习完成，不改变既有掌握度。",
+  "items": [
+    {
+      "word": "acquisition",
+      "pos": "n.",
+      "meaning": "获得；取得；获得的事物",
+      "collocation": "the acquisition of knowledge",
+      "topic": "action",
+      "note": "指取得的过程或所得之物；原文为通过观察获得行为。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/acquisition"
+    },
+    {
+      "word": "acute",
+      "pos": "adj.",
+      "meaning": "敏锐的；强烈的；急性的；迫切的",
+      "collocation": "an acute observer",
+      "topic": "reason",
+      "note": "本题型优先义为敏锐的；也可形容强烈痛苦或急需处理的问题。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/acute"
+    },
+    {
+      "word": "banal",
+      "pos": "adj.",
+      "meaning": "陈腐乏味的；缺乏新意的",
+      "collocation": "a banal remark",
+      "topic": "language",
+      "note": "不是普通的“平凡”，而是因老套、无新意而显得乏味。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/banal"
+    },
+    {
+      "word": "bound",
+      "pos": "adj.",
+      "meaning": "被束缚的；紧密相连的；有义务的；注定会的",
+      "collocation": "be inextricably bound to the environment",
+      "topic": "conflict",
+      "note": "本句取“紧密相连、无法分开”的义项；不取跳跃或边界义。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/bound"
+    },
+    {
+      "word": "clarity",
+      "pos": "n.",
+      "meaning": "清楚；明晰；清澈；易理解的程度",
+      "collocation": "clarity of thought",
+      "topic": "language",
+      "note": "可指表达或思路清楚，也可指空气、水等透明清澈。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/clarity"
+    },
+    {
+      "word": "concrete",
+      "pos": "adj.",
+      "meaning": "具体的；真实可感的；有形的",
+      "collocation": "concrete reality",
+      "topic": "reason",
+      "note": "与 abstract 相对；原文指可感知的现实，不指建筑材料。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/concrete"
+    },
+    {
+      "word": "counterintuitive",
+      "pos": "adj.",
+      "meaning": "反直觉的；与通常预期相反的",
+      "collocation": "a counterintuitive finding",
+      "topic": "reason",
+      "note": "不是错误，而是结果与直觉预期相反。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/counterintuitive"
+    },
+    {
+      "word": "differ in",
+      "pos": "v. phr.",
+      "meaning": "在……方面不同",
+      "collocation": "differ in important ways",
+      "topic": "reason",
+      "note": "用 differ in + 方面；与 differ from + 对象区分。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/differ in"
+    },
+    {
+      "word": "disheartening",
+      "pos": "adj.",
+      "meaning": "令人灰心的；使人失去希望或勇气的",
+      "collocation": "a disheartening result",
+      "topic": "mood",
+      "note": "描述造成沮丧的事，而非人的性格。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/disheartening"
+    },
+    {
+      "word": "dissimilar",
+      "pos": "adj.",
+      "meaning": "不同的；不相似的",
+      "collocation": "dissimilar backgrounds",
+      "topic": "reason",
+      "note": "强调不像或不同；not dissimilar 常可表示“颇相似”。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/dissimilar"
+    },
+    {
+      "word": "distill",
+      "pos": "v.",
+      "meaning": "蒸馏；提炼；萃取精华",
+      "collocation": "distill an experience into a poem",
+      "topic": "action",
+      "note": "抽象义是把复杂内容提炼为核心；原文用清晰感提炼美感的比喻。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/distill"
+    },
+    {
+      "word": "distressing",
+      "pos": "adj.",
+      "meaning": "令人痛苦、忧虑或不安的",
+      "collocation": "a distressing report",
+      "topic": "mood",
+      "note": "这里是形容词，表示引起心理困扰；与 distress n. 的困境、痛苦相关。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/distressing"
+    },
+    {
+      "word": "enterprising",
+      "pos": "adj.",
+      "meaning": "有进取心的；主动积极且敢于行动的",
+      "collocation": "an enterprising researcher",
+      "topic": "character",
+      "note": "褒义，强调独立、有活力并乐于行动。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/enterprising"
+    },
+    {
+      "word": "extraneous",
+      "pos": "adj.",
+      "meaning": "外来的；无关紧要的；非必要的",
+      "collocation": "extraneous details",
+      "topic": "reason",
+      "note": "常指不构成关键部分或与主题无关的内容。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/extraneous"
+    },
+    {
+      "word": "forage",
+      "pos": "v.; n.",
+      "meaning": "觅食；搜寻食物；饲料",
+      "collocation": "forage for food",
+      "topic": "nature",
+      "note": "原摘词 foraging 归入词元 forage；在原文中指觅食行为。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/forage"
+    },
+    {
+      "word": "foretell",
+      "pos": "v.",
+      "meaning": "预言；预示；预先说出",
+      "collocation": "foretell the outcome",
+      "topic": "reason",
+      "note": "比 predict 更带“预先告知/预示”的色彩。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/foretell"
+    },
+    {
+      "word": "guppy",
+      "pos": "n.",
+      "meaning": "孔雀鱼；花鳉",
+      "collocation": "a trained adult guppy",
+      "topic": "nature",
+      "note": "原摘词 guppies 归入单数词元 guppy；原文研究对象为孔雀鱼。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/guppy"
+    },
+    {
+      "word": "inextricably",
+      "pos": "adv.",
+      "meaning": "不可分开地；难以解脱地；无法理清地",
+      "collocation": "be inextricably bound to",
+      "topic": "reason",
+      "note": "修饰 bound，强调联系紧密到无法分离。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/inextricably"
+    },
+    {
+      "word": "knotty",
+      "pos": "adj.",
+      "meaning": "复杂难解的；棘手的",
+      "collocation": "a knotty problem",
+      "topic": "reason",
+      "note": "由“有结”引申为问题复杂、难以解决。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/knotty"
+    },
+    {
+      "word": "limpid",
+      "pos": "adj.",
+      "meaning": "清澈透明的；清楚简洁的；宁静的",
+      "collocation": "limpid water",
+      "topic": "environment",
+      "note": "可形容水的清澈，也可形容文风清楚简洁。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/limpid"
+    },
+    {
+      "word": "mimetic",
+      "pos": "adj.",
+      "meaning": "模仿的；摹拟的",
+      "collocation": "the mimetic tradition",
+      "topic": "arts",
+      "note": "在艺术语境指以模仿、再现现实为特征。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/mimetic"
+    },
+    {
+      "word": "peculiarly",
+      "pos": "adv.",
+      "meaning": "特别地；独特地；异常地",
+      "collocation": "peculiarly clear",
+      "topic": "quantity",
+      "note": "本句取“特别、异常地”；有时也可表示奇怪地。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/peculiarly"
+    },
+    {
+      "word": "pedestrian",
+      "pos": "adj.; n.",
+      "meaning": "adj. 平淡乏味的；步行的；n. 行人",
+      "collocation": "a pedestrian style",
+      "topic": "language",
+      "note": "GRE中常考“平庸乏味”；并非只指行人或步行。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/pedestrian"
+    },
+    {
+      "word": "pellucid",
+      "pos": "adj.",
+      "meaning": "清澈透明的；清楚易懂的",
+      "collocation": "pellucid prose",
+      "topic": "language",
+      "note": "比 clear 更书面，可指水、光线或表达非常清楚。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/pellucid"
+    },
+    {
+      "word": "plight",
+      "pos": "n.",
+      "meaning": "困境；艰难而危险的处境",
+      "collocation": "the plight of a people",
+      "topic": "society",
+      "note": "原文指群体的艰难处境，不取古老的“誓约”义。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/plight"
+    },
+    {
+      "word": "portray",
+      "pos": "v.",
+      "meaning": "描绘；刻画；把……描述成",
+      "collocation": "portray a character as resilient",
+      "topic": "arts",
+      "note": "可指视觉描绘、文字刻画或演员饰演；原文取刻画。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/portray"
+    },
+    {
+      "word": "rudimentary",
+      "pos": "adj.",
+      "meaning": "初步的；基础的；未充分发展的",
+      "collocation": "rudimentary knowledge",
+      "topic": "quantity",
+      "note": "可指最基本的，也可指原始、发展不充分的。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/rudimentary"
+    },
+    {
+      "word": "sagacious",
+      "pos": "adj.",
+      "meaning": "睿智的；判断敏锐而有远见的",
+      "collocation": "sagacious advice",
+      "topic": "character",
+      "note": "原摘词 sagaciou 依题目语境规范为 sagacious；强调深思熟虑的判断。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/sagacious"
+    },
+    {
+      "word": "surrealistic",
+      "pos": "adj.",
+      "meaning": "超现实主义的；如梦似幻而怪异的",
+      "collocation": "surrealistic plays",
+      "topic": "arts",
+      "note": "原文指戏剧的超现实主义风格，不等同于一般的 unusual。",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/surrealistic"
+    }
+  ],
+  "normalizations": [
+    {
+      "raw": "foraging",
+      "canonical": "forage",
+      "note": "foraging → forage（词元；保留原题摘词与语境）",
+      "event_id": "46767986-da19-49a7-a3f0-e186c82550d8",
+      "recorded_at": "2026-09-16T11:24:09.499Z",
+      "source": {
+        "material": "reading_440",
+        "unit": "passage1",
+        "question": "1",
+        "type": "rc"
+      },
+      "context": "vestigated the role of group density during development in later foraging success in laboratory-housed guppies. When raised with a small number of conspecifics (members of the same species), guppies were quicker to locat"
+    },
+    {
+      "raw": "guppies",
+      "canonical": "guppy",
+      "note": "guppies → guppy（复数归单数词元；保留原题摘词与语境）",
+      "event_id": "2fea1031-dd3c-4634-8873-3cd9ae6534f1",
+      "recorded_at": "2026-09-16T11:24:15.275Z",
+      "source": {
+        "material": "reading_440",
+        "unit": "passage1",
+        "question": "1",
+        "type": "rc"
+      },
+      "context": "th a small number of conspecifics (members of the same species), guppies were quicker to locate food by following a trained adult guppy than were guppies raised in large groups. This counterintuitive finding is explained"
+    },
+    {
+      "raw": "sagaciou",
+      "canonical": "sagacious",
+      "note": "sagaciou → sagacious（按原题语境与词典拼写修正；保留原题摘词与语境）",
+      "event_id": "a2f240b2-2894-45b1-9ed5-9d5b4431947a",
+      "recorded_at": "2026-09-16T15:22:00.402Z",
+      "source": {
+        "material": "text_completion_2000",
+        "unit": "test6_section2_easy",
+        "question": "7",
+        "type": "se"
+      },
+      "context": "sagacious"
+    }
+  ],
+  "pending_transcriptions": []
+}
