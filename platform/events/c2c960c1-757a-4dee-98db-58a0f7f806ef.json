@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "c2c960c1-757a-4dee-98db-58a0f7f806ef",
+  "recorded_at": "2026-09-17T07:31:04.235Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "81b81612-8a77-4b8c-adcf-a1f381225fd4",
+    "input_hash": "6ef563bc2d3612b1474e43cb8016d0e39905244ee0011becef24e5445c8ef0f0",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "C",
+    "result": {
+      "summary": "本题选择C，与用户提供的参考答案一致。先由冒号后的例子预测空格应指“超自然、神秘的”，再核对选项，numinous符合语义。",
+      "evidence": "冒号及“for example”表明后文是在举例解释前文信念；决定性证据是“the house ... was haunted”（房子闹鬼），因此空格应指向超自然事物。C numinous意为神秘的、具有超自然或神圣意味的，填入唯一空格后与例子一致。A clamorous（喧闹的）、B invidious（招致嫉妒或不满的）、D empirical（基于观察或经验的）、E sonorous（声音洪亮的）均不能准确概括该例子的语义。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。本次答案正确，但不能据此确认是否识别了举例逻辑或掌握了词义。标签：读题、策略（本题训练点，非已证实弱项）；未记录耗时，无法评价时间策略。",
+      "next_action": "下次先圈出冒号和for example，依据haunted写下预测“超自然的”，再查看选项；将所选词代回全句，核验后文例子是否直接支持前文描述。",
+      "technique_ids": [
+        "v_tc_logic_map"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

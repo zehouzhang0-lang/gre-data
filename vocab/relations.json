@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-16",
+  "updated_at": "2026-09-17",
   "topics": [
     {
       "id": "mood",
@@ -2239,6 +2239,533 @@
           "url": "https://www.merriam-webster.com/dictionary/mollify",
           "checked_at": "2026-09-16",
           "status": "checked"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-1",
+      "type": "synonym",
+      "title": "深奥难懂：理解难度与内行范围",
+      "note": "同为知识理解相关词，不能脱离语境互换。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "abstruse",
+          "usage": "深奥难解的，难以理解的；重点在理解难度。",
+          "example": "an abstruse argument"
+        },
+        {
+          "word": "recondite",
+          "usage": "深奥难懂的；少有人知的；常指冷僻专门知识。",
+          "example": "recondite scholarship"
+        },
+        {
+          "word": "esoteric",
+          "usage": "仅少数内行理解的；秘传的；重点在理解者范围小，不必然内容本身逻辑晦涩。",
+          "example": "esoteric terminology"
+        },
+        {
+          "word": "arcane",
+          "usage": "鲜为人知的；神秘难懂的；强调只有少数人知晓。",
+          "example": "arcane rules"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/abstruse",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；深奥难解的，难以理解的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/recondite",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；深奥难懂的；少有人知的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/esoteric",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；仅少数内行理解的；秘传的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/arcane",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；鲜为人知的；神秘难懂的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-2",
+      "type": "synonym",
+      "title": "恶臭：noisome 与 malodorous",
+      "note": "共同义项为恶臭；noisome还可指有害、令人厌恶；不是noisy。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "noisome",
+          "usage": "恶臭的；令人厌恶的；有害的；不是noisy（吵闹的）；不要按noise联想定词义。",
+          "example": "noisome fumes"
+        },
+        {
+          "word": "malodorous",
+          "usage": "有恶臭的；令人反感的、不正当的；核心是气味；引申义须看语境。",
+          "example": "a malodorous drain"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/noisome",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；恶臭的；令人厌恶的；有害的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/malodorous",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；有恶臭的；令人反感的、不正当的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-3",
+      "type": "antonym",
+      "title": "可攻破与攻不破",
+      "note": "仅就防御可攻破性构成反义；也可比喻论证是否可攻破。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "pregnable",
+          "usage": "可攻破的；易受攻击的；与impregnable相反；不要与pregnant混淆。",
+          "example": "a pregnable fortress"
+        },
+        {
+          "word": "impregnable",
+          "usage": "攻不破的；不可动摇、难以驳倒的；可以修饰堡垒，也可以修饰论证立场。",
+          "example": "an impregnable defense"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pregnable",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；可攻破的；易受攻击的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impregnable",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；攻不破的；不可动摇、难以驳倒的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-4",
+      "type": "synonym",
+      "title": "热忱：感情强度与目标投入",
+      "note": "均为名词；fervor偏重强烈热情，zeal偏重为目标投入行动。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "fervor",
+          "usage": "热忱，强烈热情；强调感情强度；不必然表示理性赞同。",
+          "example": "speak with fervor"
+        },
+        {
+          "word": "zeal",
+          "usage": "热忱，热心；对目标的热情投入；常突出为目标积极行动；不自动等于鲁莽。",
+          "example": "zeal for reform"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fervor",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；热忱，强烈热情"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/zeal",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；热忱，热心；对目标的热情投入"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-5",
+      "type": "lookalike",
+      "title": "meditate 与 medicate",
+      "note": "拼写相近但意义不同：冥想／用药。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "meditate",
+          "usage": "冥想；沉思，仔细考虑；与medicate只差字母，但无用药义。",
+          "example": "meditate on a problem"
+        },
+        {
+          "word": "medicate",
+          "usage": "给药治疗；在某物中加入药物；与meditate（冥想）分开记。",
+          "example": "medicate a patient"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/meditate",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；冥想；沉思，仔细考虑"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/medicate",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；给药治疗；在某物中加入药物"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-6",
+      "type": "synonym",
+      "title": "诽谤与中伤：形式和范围",
+      "note": "限定损害名誉义。aspersion常是暗示性指责，calumny强调恶意虚假，defamation为诽谤总称，slur可以是侮辱而未必陈述事实。公开谴责denunciation本身不蕴含虚假。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "aspersion",
+          "usage": "诋毁，中伤；损害名誉的指责；常用复数；指散布损害名誉的说法。",
+          "example": "cast aspersions on her motives"
+        },
+        {
+          "word": "calumny",
+          "usage": "恶意诽谤；虚假中伤之辞；包含虚假且损害名誉的意思。",
+          "example": "spread calumny"
+        },
+        {
+          "word": "defamation",
+          "usage": "诽谤，损害名誉的虚假陈述；语义区别：批评不必然是诽谤。",
+          "example": "a campaign of defamation"
+        },
+        {
+          "word": "slur",
+          "usage": "侮辱、诋毁的言辞；连音；v. 含糊地说；诋毁；连奏；说话含糊和名誉侮辱是不同义项。",
+          "example": "an ethnic slur"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/aspersion",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；诋毁，中伤；损害名誉的指责"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/calumny",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；恶意诽谤；虚假中伤之辞"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/defamation",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；诽谤，损害名誉的虚假陈述"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/slur",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；侮辱、诋毁的言辞；连音；v. 含糊地说；诋毁；连奏"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-7",
+      "type": "synonym",
+      "title": "无瑕疵与无可指责",
+      "note": "faultless偏表现无误，irreproachable偏品德行为无可责备；并非所有语境可替换。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "faultless",
+          "usage": "无缺点、无错误的；完美的；强调表现或结果没有失误。",
+          "example": "a faultless performance"
+        },
+        {
+          "word": "irreproachable",
+          "usage": "无可指责的，无可非议的；强调行为品德无可责备，不必等于所有技术表现完美。",
+          "example": "irreproachable conduct"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/faultless",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；无缺点、无错误的；完美的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/irreproachable",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；无可指责的，无可非议的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-8",
+      "type": "synonym",
+      "title": "混合与拼凑：作品还是杂乱",
+      "note": "仅就混合构成义关联。hodgepodge杂乱拼凑；welter偏无序的一大堆；patchwork拼接；pastiche为风格模仿或混合的艺术作品，不必杂乱。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "hodgepodge",
+          "usage": "杂烩；杂乱拼凑的混合物；规范写成一个词。",
+          "example": "a hodgepodge of ideas"
+        },
+        {
+          "word": "welter",
+          "usage": "n. 混乱的一大堆；v. 翻滚，打滚；不是单纯数量多，还常有无序感。",
+          "example": "a welter of conflicting reports"
+        },
+        {
+          "word": "patchwork",
+          "usage": "拼布制品；拼凑而成的混合体；有拼接组合意味，不必全然混乱。",
+          "example": "a patchwork of policies"
+        },
+        {
+          "word": "pastiche",
+          "usage": "模仿他人风格的作品；混合不同风格的作品；不自动等于剽窃；核心收录名词。",
+          "example": "a literary pastiche"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hodgepodge",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；杂烩；杂乱拼凑的混合物"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/welter",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；n. 混乱的一大堆；v. 翻滚，打滚"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/patchwork",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；拼布制品；拼凑而成的混合体"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pastiche",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；模仿他人风格的作品；混合不同风格的作品"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-9",
+      "type": "synonym",
+      "title": "强烈厌恶与仇恨",
+      "note": "detestation更强调强烈厌恶，hatred也可指对人的敌意；都不自动等于malice的伤害意图。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "detestation",
+          "usage": "强烈厌恶，憎恨；强度高于普通不喜欢。",
+          "example": "detestation of cruelty"
+        },
+        {
+          "word": "hatred",
+          "usage": "仇恨，强烈厌恶；感受本身不自动包含造谣或伤害行为。",
+          "example": "hatred of injustice"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/detestation",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；强烈厌恶，憎恨"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hatred",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；仇恨，强烈厌恶"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-10",
+      "type": "synonym",
+      "title": "难相处：暴躁与乖戾",
+      "note": "仅就性情义关联；cantankerous易怒难相处，crabbed常带阴郁生硬感，且另有字迹难读义。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "cantankerous",
+          "usage": "脾气坏、爱发牢骚的；难相处的；比单次发怒更常描述易烦躁的脾性。",
+          "example": "a cantankerous neighbor"
+        },
+        {
+          "word": "crabbed",
+          "usage": "乖戾严酷的；（字迹或文字）难辨认、难理解的；形容词通常读两音节；难读义不要误释为写作者一定暴躁。",
+          "example": "crabbed handwriting"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cantankerous",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；脾气坏、爱发牢骚的；难相处的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/crabbed",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；乖戾严酷的；（字迹或文字）难辨认、难理解的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-11",
+      "type": "synonym",
+      "title": "速度：行动快捷与运动速度",
+      "note": "只在迅速程度义下近似。celerity正式语体描述行动迅速；velocity常是可量化的运动速度，物理语境有方向。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "celerity",
+          "usage": "迅速，敏捷，行动快捷；强调行动之快，不是方向或位移。",
+          "example": "act with celerity"
+        },
+        {
+          "word": "velocity",
+          "usage": "速度，速率；周转速度；物理学严格语境中速度包含方向；日常用法可近似speed。",
+          "example": "the velocity of the vehicle"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/celerity",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；迅速，敏捷，行动快捷"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/velocity",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；速度，速率；周转速度"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-12",
+      "type": "lookalike",
+      "title": "degenerate 与 degenerative",
+      "note": "同词族不等于词性、用法相同；前者可为动词，后者形容退化性的过程或疾病。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "degenerate",
+          "usage": "v. 恶化，退化；adj. 衰败的，堕落的；n. 堕落的人；常用degenerate into；名词用于人有强烈贬斥色彩。",
+          "example": "degenerate into a quarrel"
+        },
+        {
+          "word": "degenerative",
+          "usage": "退化性的；导致功能逐渐衰退的；不直接等同形容道德败坏的degenerate。",
+          "example": "a degenerative disease"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/degenerate",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；v. 恶化，退化；adj. 衰败的，堕落的；n. 堕落的人"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/degenerative",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；退化性的；导致功能逐渐衰退的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260917-handwritten-13",
+      "type": "lookalike",
+      "title": "suscept 与 susceptible",
+      "note": "同源词。suscept是寄生宿主的技术名词；susceptible是易受影响的形容词。 关系按指定义项整理，不可只凭近义关系判定Sentence Equivalence答案。搭配为教练自拟。",
+      "members": [
+        {
+          "word": "suscept",
+          "usage": "可被寄生或正在被寄生的生物；寄生宿主；是有效词条，不应擅改为suspect；不是普通“嫌疑人”。",
+          "example": "a parasitic suscept"
+        },
+        {
+          "word": "susceptible",
+          "usage": "易受影响或感染的；可接受某种处理的；susceptible to常接影响、疾病；正式表达也有susceptible of。",
+          "example": "susceptible to persuasion"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/suscept",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；可被寄生或正在被寄生的生物；寄生宿主"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/susceptible",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；易受影响或感染的；可接受某种处理的"
         }
       ]
     }
