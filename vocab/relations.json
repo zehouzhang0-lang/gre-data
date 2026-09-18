@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-17",
+  "updated_at": "2026-09-18",
   "topics": [
     {
       "id": "mood",
@@ -2766,6 +2766,756 @@
           "checked_at": "2026-09-17",
           "status": "checked",
           "evidence": "已读取词典条目并按义项归纳中文；易受影响或感染的；可接受某种处理的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-1",
+      "type": "synonym",
+      "title": "使着迷：吸引注意与倾心",
+      "note": "mesmerize、entrance、enthrall常指如被迷住般全神贯注；captivate偏魅力吸引；enamor偏倾心，常用被动。只就吸引义关联。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "mesmerize",
+          "usage": "使着迷，使入迷；催眠；日常比喻义不表示真的实施催眠术。",
+          "example": "mesmerize the audience"
+        },
+        {
+          "word": "entrance",
+          "usage": "n. 入口；进入，入场资格；v. 使出神，使陶醉；名词重音在前/ˈentrəns/，动词重音在后/ɪnˈtræns/；不是同音同义。",
+          "example": "the main entrance; entrance the audience"
+        },
+        {
+          "word": "enthrall",
+          "usage": "使着迷，使全神贯注；奴役（旧义）；现代常指牢牢吸引注意，英式也作enthral。",
+          "example": "enthrall young readers"
+        },
+        {
+          "word": "captivate",
+          "usage": "迷住，深深吸引；常通过魅力吸引；不能在所有capture抓捕语境替换。",
+          "example": "captivate the audience"
+        },
+        {
+          "word": "enamor",
+          "usage": "使倾心，使迷恋；常以被动be enamored of/with使用。",
+          "example": "be enamored of the idea"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mesmerize",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使着迷，使入迷；催眠"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/entrance",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 入口；进入，入场资格；v. 使出神，使陶醉"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/enthrall",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使着迷，使全神贯注；奴役（旧义）"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/captivate",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：迷住，深深吸引"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/enamor",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使倾心，使迷恋"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-2",
+      "type": "synonym",
+      "title": "炫耀与装腔作势",
+      "note": "ostentatious强调显眼炫示以引人注意；pretentious强调自我夸大或故作高深，并非所有显眼设计都属装腔。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "ostentatious",
+          "usage": "炫耀的，招摇的；过分铺张以引人注目的；强调想引来注意或羡慕，不只是外表漂亮。",
+          "example": "an ostentatious display"
+        },
+        {
+          "word": "pretentious",
+          "usage": "自命不凡的，装腔作势的；夸大自身价值的；不能仅译与众不同；含虚夸、故作高深的评价。",
+          "example": "pretentious prose"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ostentatious",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：炫耀的，招摇的；过分铺张以引人注目的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pretentious",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：自命不凡的，装腔作势的；夸大自身价值的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-3",
+      "type": "synonym",
+      "title": "善意打趣",
+      "note": "raillery较书面，banter常指往来轻松玩笑；区别于恶意侮辱。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "raillery",
+          "usage": "善意的嘲弄，逗趣；玩笑；通常不是恶意侮辱。",
+          "example": "good-humored raillery"
+        },
+        {
+          "word": "banter",
+          "usage": "n. 轻松风趣的玩笑、打趣；v. 互相打趣；与恶毒讽刺、诽谤分开记。",
+          "example": "exchange playful banter"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/raillery",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：善意的嘲弄，逗趣；玩笑"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/banter",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 轻松风趣的玩笑、打趣；v. 互相打趣"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-4",
+      "type": "synonym",
+      "title": "阻碍与束缚",
+      "note": "hamper妨碍行动进展；stifle压制表达或发展；shackle限制自由；confine限制在范围内；circumscribe明确限定界线。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "hamper",
+          "usage": "v. 妨碍，阻碍；n. 有盖大篮，洗衣篮或食品篮；动词不涉及篮子；名词不只指礼物篮。",
+          "example": "hamper progress"
+        },
+        {
+          "word": "stifle",
+          "usage": "v. 压制，扼杀；忍住；使窒息；n. 四足动物后腿的膝关节；动物解剖名词是独立技术义；不等于人类所有关节。",
+          "example": "stifle dissent"
+        },
+        {
+          "word": "shackle",
+          "usage": "n. 镣铐，束缚；v. 给戴镣铐，限制行动；比喻束缚义常见。",
+          "example": "shackled by restrictions"
+        },
+        {
+          "word": "confine",
+          "usage": "v. 限制在一定范围，禁闭；n. 边界，范围（常用confines）；confine to是限制到；名词通常用复数。",
+          "example": "confine the discussion to costs"
+        },
+        {
+          "word": "circumscribe",
+          "usage": "限制范围；明确界定；环绕画线；作外接图形；几何义是外接，不是内切；抽象义常指限制。",
+          "example": "circumscribe their authority"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hamper",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 妨碍，阻碍；n. 有盖大篮，洗衣篮或食品篮"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/stifle",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 压制，扼杀；忍住；使窒息；n. 四足动物后腿的膝关节"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/shackle",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 镣铐，束缚；v. 给戴镣铐，限制行动"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/confine",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 限制在一定范围，禁闭；n. 边界，范围（常用confines）"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/circumscribe",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：限制范围；明确界定；环绕画线；作外接图形"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-5",
+      "type": "synonym",
+      "title": "细致认真",
+      "note": "meticulous着重准确和细节；painstaking着重投入勤勉谨慎的努力；都不自动带pedantic的迂腐贬义。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "meticulous",
+          "usage": "细致严谨的；极注意准确性与细节的；不等于pedantic卖弄学问、纠缠琐节。",
+          "example": "meticulous records"
+        },
+        {
+          "word": "painstaking",
+          "usage": "adj. 费心细致的，辛勤周到的；n. 勤勉细致的努力；不是“令人痛苦的”；强调投入谨慎努力。",
+          "example": "painstaking research"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/meticulous",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：细致严谨的；极注意准确性与细节的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/painstaking",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 费心细致的，辛勤周到的；n. 勤勉细致的努力"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-6",
+      "type": "antonym",
+      "title": "履职细致与疏忽",
+      "note": "仅在执行职责的认真程度上对照：meticulous仔细严谨，remiss疏忽职责。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "meticulous",
+          "usage": "细致严谨的；极注意准确性与细节的；不等于pedantic卖弄学问、纠缠琐节。",
+          "example": "meticulous records"
+        },
+        {
+          "word": "remiss",
+          "usage": "疏忽职责的，怠慢的；粗心松懈的；重点是未尽职责，不只是速度慢。",
+          "example": "remiss in her duties"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/meticulous",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：细致严谨的；极注意准确性与细节的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/remiss",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：疏忽职责的，怠慢的；粗心松懈的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-7",
+      "type": "lookalike",
+      "title": "可怜还是冷淡",
+      "note": "pathetic令人怜悯或差劲；apathetic不关心。拼写相近不表示简单的一对反义词。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "pathetic",
+          "usage": "可怜的，令人怜悯的；差劲得可悲的，荒唐可笑的；不等于apathetic漠不关心；看语气是怜悯还是鄙视。",
+          "example": "a pathetic excuse"
+        },
+        {
+          "word": "apathetic",
+          "usage": "冷淡的，漠不关心的；缺乏兴趣或情感的；不等于令人可怜，也不必指蓄意伤害他人。",
+          "example": "apathetic voters"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pathetic",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：可怜的，令人怜悯的；差劲得可悲的，荒唐可笑的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/apathetic",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：冷淡的，漠不关心的；缺乏兴趣或情感的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-8",
+      "type": "lookalike",
+      "title": "过时与古物研究",
+      "note": "antiquated陈旧不适用；antiquarian古物研究、收藏或古书交易的。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "antiquated",
+          "usage": "陈旧过时的；不再适用的；不等于antiquarian（古物研究或收藏的）。",
+          "example": "antiquated equipment"
+        },
+        {
+          "word": "antiquarian",
+          "usage": "adj. 古物研究、收藏的；经营古旧书的；n. 古物研究者或收藏者；不是antiquated陈旧无用，不能以含old自动归为贬义。",
+          "example": "an antiquarian bookseller"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/antiquated",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：陈旧过时的；不再适用的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/antiquarian",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 古物研究、收藏的；经营古旧书的；n. 古物研究者或收藏者"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-9",
+      "type": "synonym",
+      "title": "装饰、添饰与粉饰",
+      "note": "adorn美化外观；embellish可装饰也可叙事添油加醋；varnish涂漆且可比喻粉饰。仅在外观美化义相近。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "adorn",
+          "usage": "装饰；为……增色；不自带故事添油加醋的意味。",
+          "example": "adorn the hall with flowers"
+        },
+        {
+          "word": "embellish",
+          "usage": "装饰，美化；给叙述增添夸张或虚构细节；故事语境未必只是提高表达质量，可能添油加醋。",
+          "example": "embellish a story"
+        },
+        {
+          "word": "varnish",
+          "usage": "n. 清漆，罩光层；表面光彩；v. 涂清漆；粉饰，美化掩盖；比喻义强调好看外表可能掩盖不愉快实情。",
+          "example": "varnish the truth"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/adorn",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：装饰；为……增色"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/embellish",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：装饰，美化；给叙述增添夸张或虚构细节"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/varnish",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 清漆，罩光层；表面光彩；v. 涂清漆；粉饰，美化掩盖"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-10",
+      "type": "synonym",
+      "title": "拖延与迟缓",
+      "note": "dilatory拖延或故意造成延误；sluggish反应或运动缓慢；laggard相对别人落后。三者都不能自动推定失职。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "dilatory",
+          "usage": "拖延的，迟缓的；意在造成延误的；可指故意拖延，也可指办事拖拉。",
+          "example": "dilatory tactics"
+        },
+        {
+          "word": "sluggish",
+          "usage": "行动迟缓的；反应慢的；增长缓慢、不景气的；不必出于故意或失职。",
+          "example": "sluggish growth"
+        },
+        {
+          "word": "laggard",
+          "usage": "n. 落后者；adj. 迟缓落后的；强调相较其他人或事物落后，不能从词义推断一定懒惰。",
+          "example": "a laggard in adopting technology"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dilatory",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：拖延的，迟缓的；意在造成延误的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sluggish",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：行动迟缓的；反应慢的；增长缓慢、不景气的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/laggard",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 落后者；adj. 迟缓落后的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-11",
+      "type": "synonym",
+      "title": "复杂精细与曲折难解",
+      "note": "intricate强调部件相互关系复杂，可褒；convoluted常批评表达绕；byzantine常指制度流程极繁复或运作诡秘。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "intricate",
+          "usage": "结构复杂精细的；难分析的；复杂可能是精巧，不一定杂乱或不合理。",
+          "example": "an intricate pattern"
+        },
+        {
+          "word": "convoluted",
+          "usage": "盘绕的；复杂难懂、曲折的；是形容词，也为convolute过去分词；不直接列为动词原形。",
+          "example": "a convoluted explanation"
+        },
+        {
+          "word": "byzantine",
+          "usage": "adj. 错综复杂的；诡秘迂回的；拜占庭的；n. 拜占庭居民；历史名称常大写Byzantine；抽象义不是所有复杂事物的中性同义词。",
+          "example": "byzantine procedures"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/intricate",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：结构复杂精细的；难分析的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/convoluted",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：盘绕的；复杂难懂、曲折的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/byzantine",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 错综复杂的；诡秘迂回的；拜占庭的；n. 拜占庭居民"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-12",
+      "type": "synonym",
+      "title": "明智的判断",
+      "note": "judicious强调审慎判断；sensible强调合乎常识、实际合理，不自动等于智慧超群。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "judicious",
+          "usage": "判断明智的，审慎合理的；不是judicial（司法的），重点判断力。",
+          "example": "a judicious choice"
+        },
+        {
+          "word": "sensible",
+          "usage": "明智合理的；实用的；可感知的；意识到的；不等于sensitive敏感的；sensible of可表示意识到。",
+          "example": "a sensible decision"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/judicious",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：判断明智的，审慎合理的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sensible",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：明智合理的；实用的；可感知的；意识到的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-13",
+      "type": "synonym",
+      "title": "相关且贴切",
+      "note": "apposite侧重恰好适合情境；germane侧重与主题切实相关，常接to。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "apposite",
+          "usage": "恰当贴切的，切题的；不是opposite（相反的）；侧重特别贴合当前情境。",
+          "example": "an apposite example"
+        },
+        {
+          "word": "germane",
+          "usage": "与主题有关且适切的；常接to，重点在与当前主题相关。",
+          "example": "germane to the discussion"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/apposite",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：恰当贴切的，切题的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/germane",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：与主题有关且适切的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-14",
+      "type": "synonym",
+      "title": "怨恨的不同表达",
+      "note": "rancor为深积怨毒；grudge常针对某次过节；acrimony侧重言语、态度的尖刻怨怒。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "rancor",
+          "usage": "深积的怨恨，怨毒；英式rancour；侧重怨恨深、持续久。",
+          "example": "lasting rancor"
+        },
+        {
+          "word": "grudge",
+          "usage": "n. 怨恨，积怨；v. 不情愿地给予或承认，吝惜；名词怨恨与动词不情愿付出分开记。",
+          "example": "hold a grudge; grudge the expense"
+        },
+        {
+          "word": "acrimony",
+          "usage": "尖刻，激烈的怨怒；言语或态度上的刻薄；常见于争论语气，不单指内心长期记恨。",
+          "example": "a debate full of acrimony"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/rancor",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：深积的怨恨，怨毒"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/grudge",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 怨恨，积怨；v. 不情愿地给予或承认，吝惜"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/acrimony",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：尖刻，激烈的怨怒；言语或态度上的刻薄"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-15",
+      "type": "synonym",
+      "title": "清晰与单义",
+      "note": "explicit强调明白直说、没有隐藏；univocal强调只有一个含义或无歧义。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "explicit",
+          "usage": "明确直说的，清楚不含糊的；直白展示细节的；清楚表达与露骨内容是不同语境义；不等于语气强硬。",
+          "example": "explicit instructions"
+        },
+        {
+          "word": "univocal",
+          "usage": "只有一个含义的；明确无歧义的；核心词性形容词；不把笔记“单义词”的名词标注当主用法。",
+          "example": "a univocal statement"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/explicit",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：明确直说的，清楚不含糊的；直白展示细节的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/univocal",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：只有一个含义的；明确无歧义的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-16",
+      "type": "synonym",
+      "title": "运用与施加",
+      "note": "在权力影响义上相近；wield强调握有并运用，exert强调施加力量或影响，工具挥舞义不可机械互换。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "wield",
+          "usage": "挥动、有效使用工具；运用权力或影响；侧重掌握并运用，与exert施加义部分重合。",
+          "example": "wield considerable influence"
+        },
+        {
+          "word": "exert",
+          "usage": "施加，运用（力量、影响等）；努力；exert oneself表示用力、努力，不只对外施力。",
+          "example": "exert pressure; exert oneself"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/wield",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：挥动、有效使用工具；运用权力或影响"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exert",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：施加，运用（力量、影响等）；努力"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-17",
+      "type": "synonym",
+      "title": "理想与不切实际",
+      "note": "idealistic可正面描述理想主义，也可不现实；quixotic更突出追求理想时不切实际。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "idealistic",
+          "usage": "理想主义的；不切实际的；不等于“理想、完美”的ideal；是否不现实由语境决定。",
+          "example": "an idealistic reformer"
+        },
+        {
+          "word": "quixotic",
+          "usage": "过分理想化而不切实际的；唐吉诃德式的；反复无常的；比idealistic更突出不切实际，不只是高尚志向。",
+          "example": "a quixotic campaign"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/idealistic",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：理想主义的；不切实际的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/quixotic",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：过分理想化而不切实际的；唐吉诃德式的；反复无常的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260918-handwritten-18",
+      "type": "synonym",
+      "title": "同质性两种名词",
+      "note": "homogeneity与homogeneousness均指同质或均匀性质；前者更常作为技术抽象名词，具体学科用法需看语境。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "homogeneity",
+          "usage": "同质性；组成或性质的一致性；表示性质或构成相似，不是外形略像就算同质。",
+          "example": "cultural homogeneity"
+        },
+        {
+          "word": "homogeneousness",
+          "usage": "同质性；均匀一致的性质；MW在homogeneous词条中列为派生名词；与homogeneity意义相近。",
+          "example": "the homogeneousness of the mixture"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/homogeneity",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：同质性；组成或性质的一致性"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/homogeneous",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：同质性；均匀一致的性质"
         }
       ]
     }
