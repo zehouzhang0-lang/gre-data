@@ -29,6 +29,15 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: handwritten_vocab_20260921
+    filename: null
+    sha256: null
+    role: user_vocabulary_notes
+    answer_status: not_applicable
+    description: "2026年9月21日五页手写新词，逐词核验词义、词性并分类去重，保留原复习证据。"
+    record: vocab/imports/20260921_1736_handwritten_vocab.json
+    image_count: 5
+    original_storage: user_supplied_chat_attachments_not_committed
   - id: handwritten_vocab_20260918
     filename: null
     sha256: null

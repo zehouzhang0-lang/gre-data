@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-18",
+  "updated_at": "2026-09-21",
   "topics": [
     {
       "id": "mood",
@@ -3516,6 +3516,663 @@
           "checked_at": "2026-09-18",
           "status": "checked",
           "evidence": "已读取词典条目并归纳核心义：同质性；均匀一致的性质"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-1",
+      "type": "synonym",
+      "title": "轻信与易受骗",
+      "note": "credulous侧重缺乏证据便相信；gullible侧重容易被人欺骗。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "credulous",
+          "usage": "轻信的，容易信以为真的；强调证据不足也相信；不是credible“可信的”。",
+          "example": "a credulous reader"
+        },
+        {
+          "word": "gullible",
+          "usage": "容易受骗的，轻信的；比credulous更突出易被欺骗利用。",
+          "example": "a gullible buyer"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/credulous",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：轻信的，容易信以为真的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/gullible",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：容易受骗的，轻信的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-2",
+      "type": "synonym",
+      "title": "使困惑",
+      "note": "perplex使迷惑不解；confound还可指使惊讶、挫败或混淆。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "perplex",
+          "usage": "使困惑；使复杂化；重点在难以理解或决断。",
+          "example": "perplex the investigators"
+        },
+        {
+          "word": "confound",
+          "usage": "使困惑；混淆；使落空，驳倒；confound expectations是出乎意料、使预期落空，不宜逐字译为混淆预期。",
+          "example": "confound expectations"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perplex",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使困惑；使复杂化"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/confound",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使困惑；混淆；使落空，驳倒"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-3",
+      "type": "synonym",
+      "title": "贫困与缺钱",
+      "note": "indigent强调贫困、生活必需不足；impecunious强调缺钱，不必指永久贫困。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "indigent",
+          "usage": "adj. 贫困的，赤贫的；n. 贫困者；描述缺乏资源，不作人格贬损。",
+          "example": "indigent families"
+        },
+        {
+          "word": "impecunious",
+          "usage": "没有钱的，贫穷的；常指惯常缺钱，与慷慨或吝啬不是同一维度。",
+          "example": "an impecunious student"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/indigent",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 贫困的，赤贫的；n. 贫困者"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impecunious",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：没有钱的，贫穷的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-4",
+      "type": "synonym",
+      "title": "偏好与倾向",
+      "note": "predilection偏爱；proclivity惯常行为倾向，常用于负面行为；bent可指爱好或天赋倾向。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "predilection",
+          "usage": "偏爱，嗜好；通常接for，强调已有偏好。",
+          "example": "a predilection for poetry"
+        },
+        {
+          "word": "proclivity",
+          "usage": "倾向，习性，癖好；尤其指固有且可能不好的倾向，不是所有语境都贬义。",
+          "example": "a proclivity for exaggeration"
+        },
+        {
+          "word": "bent",
+          "usage": "adj. 弯曲的；决意的；n. 倾向，天赋；be bent on是决心做；名词不是简单弯曲形状。",
+          "example": "a scientific bent; bent on winning"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/predilection",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：偏爱，嗜好"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/proclivity",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：倾向，习性，癖好"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bent",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 弯曲的；决意的；n. 倾向，天赋"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-5",
+      "type": "synonym",
+      "title": "善变与不稳定",
+      "note": "fickle指忠诚或喜好易变；flighty指轻浮不可靠；volatile指可能骤变或易激动；erratic指行为轨迹不规律。限定在不稳定义比较。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "fickle",
+          "usage": "善变的，不坚定的；常用于感情、忠诚、偏好的不稳定。",
+          "example": "fickle public opinion"
+        },
+        {
+          "word": "flighty",
+          "usage": "轻浮不定的；容易兴奋或受惊的；常批评欠稳重；不是flight“飞行”的普通形容词。",
+          "example": "a flighty temperament"
+        },
+        {
+          "word": "volatile",
+          "usage": "adj. 易变的，不稳定的；易怒的；易挥发的；n. 挥发性物质；易挥发是物理性质，不自动等于易燃。",
+          "example": "a volatile market"
+        },
+        {
+          "word": "erratic",
+          "usage": "adj. 不规则、不稳定的；n. 漂砾；着重行为或走势不规律，不一定出于任性。",
+          "example": "erratic performance"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fickle",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：善变的，不坚定的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flighty",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：轻浮不定的；容易兴奋或受惊的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/volatile",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 易变的，不稳定的；易怒的；易挥发的；n. 挥发性物质"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/erratic",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 不规则、不稳定的；n. 漂砾"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-6",
+      "type": "lookalike",
+      "title": "多才多艺与易变",
+      "note": "versatile多才多艺或多用途，常褒义；volatile易变、易激动，也可指易挥发。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "versatile",
+          "usage": "多才多艺的；用途广泛的；能灵活适应的；多能不等于反复无常；罕见变化义需具体语境。",
+          "example": "a versatile tool"
+        },
+        {
+          "word": "volatile",
+          "usage": "adj. 易变的，不稳定的；易怒的；易挥发的；n. 挥发性物质；易挥发是物理性质，不自动等于易燃。",
+          "example": "a volatile market"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/versatile",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：多才多艺的；用途广泛的；能灵活适应的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/volatile",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 易变的，不稳定的；易怒的；易挥发的；n. 挥发性物质"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-7",
+      "type": "lookalike",
+      "title": "真实与贪食",
+      "note": "veracity真实性、诚实；voracity贪食或强烈求取欲。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "veracity",
+          "usage": "真实性，准确性；诚实；不是voracity“贪食、强烈欲望”。",
+          "example": "question the veracity of a claim"
+        },
+        {
+          "word": "voracity",
+          "usage": "贪食，旺盛胃口；强烈渴求；可比喻求知欲，不限负面贪吃。",
+          "example": "a reader's voracity"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/veracity",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：真实性，准确性；诚实"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/voracity",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：贪食，旺盛胃口；强烈渴求"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/voracious",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已核对派生词的基础义或易混词拼写。"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-8",
+      "type": "lookalike",
+      "title": "复制与表里不一",
+      "note": "duplicate复制或副本；duplicity欺骗、两面派行为；duplicitous是相应形容词。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "duplicate",
+          "usage": "v. 复制，重复；n. 副本；adj. 相同的，重复的；动词尾音/eɪt/，名词和形容词/ət/；不同于duplicitous。",
+          "example": "duplicate a file"
+        },
+        {
+          "word": "duplicity",
+          "usage": "口是心非，欺骗；两面性；核心义是以言行隐瞒真实意图，不是简单复制。",
+          "example": "political duplicity"
+        },
+        {
+          "word": "duplicitous",
+          "usage": "欺骗的，口是心非的；与duplicate字形接近但核心意义不同。",
+          "example": "duplicitous behavior"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/duplicate",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 复制，重复；n. 副本；adj. 相同的，重复的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/duplicity",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：口是心非，欺骗；两面性"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/duplicitous",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：欺骗的，口是心非的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-9",
+      "type": "lookalike",
+      "title": "精明与诡异",
+      "note": "canny精明谨慎；uncanny离奇得令人不安或超乎寻常，不能按前缀当作反义词。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "canny",
+          "usage": "精明的，审慎的；现代核心义强调精明谨慎；不和uncanny机械组成反义词。",
+          "example": "a canny investor"
+        },
+        {
+          "word": "uncanny",
+          "usage": "离奇得令人不安的；超乎寻常的；不是canny“精明”的简单否定。",
+          "example": "an uncanny resemblance"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/canny",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：精明的，审慎的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/uncanny",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：离奇得令人不安的；超乎寻常的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-10",
+      "type": "synonym",
+      "title": "调解与和解",
+      "note": "conciliation重在安抚、减少敌意；reconciliation重在恢复友好或调和差异，也可指账目核对。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "conciliation",
+          "usage": "安抚，调停；和解；强调消除敌意、争取好感；不一定已有友好关系可恢复。",
+          "example": "efforts at conciliation"
+        },
+        {
+          "word": "reconciliation",
+          "usage": "和解，恢复友好；调和，使一致；也可指账目核对、使相互一致；与单方面忍受不同。",
+          "example": "reconciliation between rivals"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conciliate",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：安抚，调停；和解"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/reconciliation",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：和解，恢复友好；调和，使一致"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-11",
+      "type": "synonym",
+      "title": "仁慈与宽宏",
+      "note": "benevolent关怀他人、愿意行善；magnanimous尤指对对手或冒犯者宽宏大度。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "benevolent",
+          "usage": "仁慈的，善意的；慈善的；善意可体现为慈善行为，不限金钱赠予。",
+          "example": "a benevolent organization"
+        },
+        {
+          "word": "magnanimous",
+          "usage": "宽宏大量的，慷慨高尚的；常强调对敌手、失败者不计较，与一般友善侧重不同。",
+          "example": "magnanimous in victory"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/benevolent",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：仁慈的，善意的；慈善的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/magnanimous",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：宽宏大量的，慷慨高尚的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-12",
+      "type": "antonym",
+      "title": "不会犯错与可能犯错",
+      "note": "infallibility不可能犯错的性质；fallibility可能犯错，并非已犯错的次数。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "infallibility",
+          "usage": "绝不出错的性质，绝对可靠性；表示不能犯错，不是某一次碰巧正确。",
+          "example": "a claim to infallibility"
+        },
+        {
+          "word": "fallibility",
+          "usage": "可能犯错的性质，易错性；不等于永远错误或能力极差。",
+          "example": "human fallibility"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/infallibility",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：绝不出错的性质，绝对可靠性"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/infallible",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已核对派生词的基础义或易混词拼写。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fallibility",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：可能犯错的性质，易错性"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-13",
+      "type": "antonym",
+      "title": "显眼与不明显",
+      "note": "仅在明显程度上对照：blatant公然、刺眼且常贬义；subtle不易察觉、精细。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "blatant",
+          "usage": "公然的，明目张胆的；喧嚣刺耳的；不只是中性的“明显”；通常含冒犯、肆无忌惮意味。",
+          "example": "a blatant lie"
+        },
+        {
+          "word": "subtle",
+          "usage": "微妙难察觉的；精巧的；敏锐的；巧妙隐蔽的；b不发音；可褒可贬，不能一律译成狡猾。",
+          "example": "a subtle distinction"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blatant",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：公然的，明目张胆的；喧嚣刺耳的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/subtle",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：微妙难察觉的；精巧的；敏锐的；巧妙隐蔽的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-14",
+      "type": "synonym",
+      "title": "损害与破坏",
+      "note": "vitiate损害质量、效力或使无效，较正式；spoil破坏、使变坏，也可指宠坏。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "vitiate",
+          "usage": "损害、削弱；败坏；使无效；常指效力、质量被损害，不必完全摧毁。",
+          "example": "vitiate an argument"
+        },
+        {
+          "word": "spoil",
+          "usage": "v. 破坏，变质，溺爱；n. 战利品、所得利益；挖出的土石；战利品常用复数spoils；spoiling for a fight指急于争斗。",
+          "example": "spoil the effect; the spoils of victory"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vitiate",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：损害、削弱；败坏；使无效"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/spoil",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 破坏，变质，溺爱；n. 战利品、所得利益；挖出的土石"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-15",
+      "type": "synonym",
+      "title": "激发与赋予活力",
+      "note": "galvanize强调促使立即行动；animate使活跃、有生气。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "galvanize",
+          "usage": "激励、促使立即行动；电刺激；给铁钢镀锌；镀锌是实际工艺义；比喻义强调突然唤起行动。",
+          "example": "galvanize people into action"
+        },
+        {
+          "word": "animate",
+          "usage": "v. 赋予活力，激励；制作动画；adj. 有生命的；动词尾音/eɪt/，形容词/ət/。",
+          "example": "animate a discussion; animate beings"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/galvanize",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：激励、促使立即行动；电刺激；给铁钢镀锌"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/animate",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 赋予活力，激励；制作动画；adj. 有生命的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-16",
+      "type": "synonym",
+      "title": "牵强与离奇",
+      "note": "far-fetched指难以相信、牵强；outlandish指古怪异常，只有在荒诞说法的语境中重叠。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "far-fetched",
+          "usage": "牵强的，难以置信的；重点是不合情理，与距离远近通常无关。",
+          "example": "a far-fetched explanation"
+        },
+        {
+          "word": "outlandish",
+          "usage": "古怪离奇的；超出合理限度的；外观怪异不必然是假话，与far-fetched不完全等价。",
+          "example": "an outlandish costume"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/far-fetched",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：牵强的，难以置信的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/outlandish",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：古怪离奇的；超出合理限度的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260921-handwritten-17",
+      "type": "synonym",
+      "title": "哄劝与诱引",
+      "note": "cajole凭好话哄劝；entice凭有吸引力的事物诱使，不必使用奉承。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "cajole",
+          "usage": "用好话或温和劝说哄劝；诱哄；常见cajole somebody into doing；可含奉承或虚假许诺。",
+          "example": "cajole someone into helping"
+        },
+        {
+          "word": "entice",
+          "usage": "引诱，诱使；吸引；强调激起欲望，不必一定带欺骗。",
+          "example": "entice visitors into the shop"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cajole",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：用好话或温和劝说哄劝；诱哄"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/entice",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：引诱，诱使；吸引"
         }
       ]
     }
