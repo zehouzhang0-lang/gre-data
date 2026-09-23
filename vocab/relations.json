@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-23",
   "topics": [
     {
       "id": "mood",
@@ -4173,6 +4173,719 @@
           "checked_at": "2026-09-21",
           "status": "checked",
           "evidence": "已读取词典条目并归纳核心义：引诱，诱使；吸引"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-1",
+      "type": "synonym",
+      "title": "简短表达与寡言",
+      "note": "laconic言简意赅；terse简短有力，也可能显得不友好；curt简短生硬；taciturn指性格寡言，不等于每句话都精练。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "laconic",
+          "usage": "言简意赅的，寥寥数语的；用词极少，可显得冷淡或神秘；不必等于不礼貌。",
+          "example": "a laconic response"
+        },
+        {
+          "word": "terse",
+          "usage": "简短精练的；简短生硬的；既可无赘语，也可因过短显得冷淡，须看语气。",
+          "example": "a terse explanation"
+        },
+        {
+          "word": "curt",
+          "usage": "简短的；简短无礼、生硬的；相比terse，更常突出态度不客气。",
+          "example": "a curt dismissal"
+        },
+        {
+          "word": "taciturn",
+          "usage": "性格沉默寡言的，不爱说话的；描述一贯说话倾向，不是文章写得简练。",
+          "example": "a taciturn colleague"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/laconic",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：言简意赅的，寥寥数语的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/terse",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：简短精练的；简短生硬的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/curt",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：简短的；简短无礼、生硬的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/taciturn",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：性格沉默寡言的，不爱说话的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-2",
+      "type": "synonym",
+      "title": "令人生畏",
+      "note": "daunting强调任务令人却步；formidable强调强大、难对付；forbidding强调外观或态度令人生畏、难接近。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "daunting",
+          "usage": "令人畏惧的，使人望而却步的；侧重任务或障碍使人缺乏信心；是daunt的分词形容词。",
+          "example": "a daunting workload"
+        },
+        {
+          "word": "formidable",
+          "usage": "强大难对付的；令人敬畏的；非同寻常的；不只表示可怕，也可赞叹能力或成就。",
+          "example": "a formidable competitor"
+        },
+        {
+          "word": "forbidding",
+          "usage": "冷峻吓人的，令人难以接近的；险恶的；形容词与forbid的现在分词区分；“禁止”是原动词用法。",
+          "example": "a forbidding exterior"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/daunting",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：令人畏惧的，使人望而却步的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/formidable",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：强大难对付的；令人敬畏的；非同寻常的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/forbidding",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：冷峻吓人的，令人难以接近的；险恶的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-3",
+      "type": "synonym",
+      "title": "劝诫与抗议",
+      "note": "expostulate强调为劝阻而讲理；remonstrate正式表示反对或责备。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "expostulate",
+          "usage": "认真劝诫，提出反对意见；常用expostulate with someone about/on something；重点是讲理由劝阻。",
+          "example": "expostulate with a colleague"
+        },
+        {
+          "word": "remonstrate",
+          "usage": "抗议，提出异议；规劝，责难；常接with人、against事；强调提出反对理由。",
+          "example": "remonstrate with an official"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/expostulate",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：认真劝诫，提出反对意见"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/remonstrate",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：抗议，提出异议；规劝，责难"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-4",
+      "type": "synonym",
+      "title": "支持与加强",
+      "note": "bolster可支持信心、论点；buttress由扶壁引申为支撑、加强论证。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "bolster",
+          "usage": "v. 支持，加强；n. 长枕，支撑物；证据可以加强论点；不必指物理支柱。",
+          "example": "bolster an argument"
+        },
+        {
+          "word": "buttress",
+          "usage": "v. 支撑，加强；n. 扶壁，支撑物；建筑支撑与论证支撑两义相通。",
+          "example": "buttress a claim with evidence"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bolster",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 支持，加强；n. 长枕，支撑物"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/buttress",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 支撑，加强；n. 扶壁，支撑物"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-5",
+      "type": "synonym",
+      "title": "驱逐",
+      "note": "banish驱逐或消除念头；expel正式逐出或排出；oust尤指赶下职位。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "banish",
+          "usage": "放逐，驱逐；消除，排除；既可驱逐人，也可消除疑虑等抽象事物。",
+          "example": "banish doubt"
+        },
+        {
+          "word": "expel",
+          "usage": "驱逐，开除；排出；组织成员可被开除，物质可被排出。",
+          "example": "expel air from the lungs"
+        },
+        {
+          "word": "oust",
+          "usage": "罢黜，赶下台；驱逐，剥夺职位或占有权；常强调从权位或位置上移除。",
+          "example": "oust a leader from office"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/banish",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：放逐，驱逐；消除，排除"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/expel",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：驱逐，开除；排出"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/oust",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：罢黜，赶下台；驱逐，剥夺职位或占有权"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-6",
+      "type": "synonym",
+      "title": "荒谬可笑",
+      "note": "ludicrous强调荒唐到可笑；preposterous强调违背常理、荒谬绝伦。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "ludicrous",
+          "usage": "荒唐可笑的，愚蠢得可笑的；常带嘲讽；不等于单纯有趣。",
+          "example": "a ludicrous suggestion"
+        },
+        {
+          "word": "preposterous",
+          "usage": "荒谬的，违背常理的；强调极不合道理；与ludicrous在荒唐义重叠。",
+          "example": "a preposterous claim"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ludicrous",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：荒唐可笑的，愚蠢得可笑的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/preposterous",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：荒谬的，违背常理的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-7",
+      "type": "synonym",
+      "title": "可以察觉",
+      "note": "perceptible可由感官或心智察觉；discernible强调可辨认、分辨。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "perceptible",
+          "usage": "可察觉的，可感知的；指对象能被察觉，不是人洞察力强；后者常用perceptive。",
+          "example": "a perceptible change"
+        },
+        {
+          "word": "discernible",
+          "usage": "能辨认、能察觉的；可以由感官或思维识别，与perceptible在可察觉义相近。",
+          "example": "a discernible pattern"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perceptible",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：可察觉的，可感知的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/discernible",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：能辨认、能察觉的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-8",
+      "type": "synonym",
+      "title": "镇静",
+      "note": "serene平和宁静；unruffled尤其指在压力或干扰下依然镇定。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "serene",
+          "usage": "平静安详的；晴朗的，风平浪静的；现代核心是形容词；名词宁静为旧用法，不与serenity混淆。",
+          "example": "a serene expression"
+        },
+        {
+          "word": "unruffled",
+          "usage": "镇定的，不慌乱的；平滑的，未起皱的；手写标动词应订正；“使平静”对应unruffle，非此形容词。",
+          "example": "remain unruffled"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/serene",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：平静安详的；晴朗的，风平浪静的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unruffled",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：镇定的，不慌乱的；平滑的，未起皱的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-9",
+      "type": "synonym",
+      "title": "静息",
+      "note": "repose兼有休息、安睡；quietude侧重安静平和的状态。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "repose",
+          "usage": "n. 休息，安眠；宁静，沉着；v. 休憩；把信任寄托于；repose in可指躺卧或寄托，依宾语和句法区分。",
+          "example": "repose confidence in someone"
+        },
+        {
+          "word": "quietude",
+          "usage": "宁静，平静；是状态名词，不是命令人安静的动词。",
+          "example": "the quietude of the valley"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/repose",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 休息，安眠；宁静，沉着；v. 休憩；把信任寄托于"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/quietude",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：宁静，平静"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-10",
+      "type": "synonym",
+      "title": "重新塑造",
+      "note": "recast重铸、重写或重新分配角色；refashion改变形式或重新制作。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "recast",
+          "usage": "v. 重铸，改写，重新塑造；重新选派演员；n. 改铸或改编之物；过去式、过去分词仍为recast；不等于总结recap。",
+          "example": "recast a narrative"
+        },
+        {
+          "word": "refashion",
+          "usage": "重新制作，改造，重塑；重点改变形态或样式，与recast改造义相近。",
+          "example": "refashion an old design"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/recast",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 重铸，改写，重新塑造；重新选派演员；n. 改铸或改编之物"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/refashion",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：重新制作，改造，重塑"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-11",
+      "type": "synonym",
+      "title": "田园意境",
+      "note": "仅比较田园义：bucolic常描绘理想化乡村；pastoral还可指牧师职责，不在此组等价。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "bucolic",
+          "usage": "adj. 田园的，乡村的，牧歌式的；n. 田园诗；乡下人；重点是乡村生活及田园意境，不是牧师职责。",
+          "example": "a bucolic landscape"
+        },
+        {
+          "word": "pastoral",
+          "usage": "adj. 田园的，牧羊生活的；牧师或教牧关怀的；n. 田园文学、艺术作品；pastoral care可指教牧关怀，不宜一律译为乡村护理。",
+          "example": "pastoral poetry; pastoral care"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bucolic",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 田园的，乡村的，牧歌式的；n. 田园诗；乡下人"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pastoral",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 田园的，牧羊生活的；牧师或教牧关怀的；n. 田园文学、艺术作品"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-12",
+      "type": "synonym",
+      "title": "煽动与挑衅",
+      "note": "inflammatory强调激起愤怒冲突；provocative可指挑衅，也可褒义地引人思考，不能一概等同。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "inflammatory",
+          "usage": "煽动性的，容易激怒人的；炎症性的；医学义与煽动义分开，不把所有刺激性的事都译为炎症。",
+          "example": "inflammatory rhetoric"
+        },
+        {
+          "word": "provocative",
+          "usage": "挑衅的；引起思考、反应的；挑逗的；provocative ideas可指引人深思，不必是恶意煽动。",
+          "example": "a provocative question"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inflammatory",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：煽动性的，容易激怒人的；炎症性的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/provocative",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：挑衅的；引起思考、反应的；挑逗的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-13",
+      "type": "synonym",
+      "title": "欺骗",
+      "note": "hoodwink蒙骗某人；hoax以骗局、恶作剧欺骗。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "hoodwink",
+          "usage": "蒙骗，欺骗；强调虚假表象使人受骗。",
+          "example": "hoodwink someone into agreeing"
+        },
+        {
+          "word": "hoax",
+          "usage": "n. 骗局，恶作剧；v. 欺骗，使信以为真；核心是故意让人相信假的事情，不只是普通玩笑。",
+          "example": "expose a hoax"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hoodwink",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：蒙骗，欺骗"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hoax",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 骗局，恶作剧；v. 欺骗，使信以为真"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-14",
+      "type": "synonym",
+      "title": "损害外观与名声",
+      "note": "tarnish使失去光泽或玷污名声；blemish使有瑕疵或损害完美形象。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "tarnish",
+          "usage": "v. 使失去光泽；损害名誉或品质；n. 失泽表层，污斑；金属失泽义与名誉受损义相通，不能一律译作生锈。",
+          "example": "tarnish a reputation"
+        },
+        {
+          "word": "blemish",
+          "usage": "n. 瑕疵，污点；v. 损害外观或完美性，玷污；常见外观或声誉小缺点；与功能性缺陷defect有所区别。",
+          "example": "a blemish on the record"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/tarnish",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 使失去光泽；损害名誉或品质；n. 失泽表层，污斑"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blemish",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 瑕疵，污点；v. 损害外观或完美性，玷污"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-15",
+      "type": "synonym",
+      "title": "热烈",
+      "note": "仅在热情强烈义比较；fiery还可指暴躁、火红；fervent强调热忱真挚。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "fiery",
+          "usage": "火一般的，炽热的；热情激烈的；暴躁的；火红的；热烈与易怒需看对象；拼写fiery，不是firey。",
+          "example": "a fiery speech"
+        },
+        {
+          "word": "fervent",
+          "usage": "热情强烈的，热诚的；炽热的；热情可用于任何立场，本身不证明该立场正确。",
+          "example": "a fervent supporter"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fiery",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：火一般的，炽热的；热情激烈的；暴躁的；火红的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fervent",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：热情强烈的，热诚的；炽热的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-16",
+      "type": "lookalike",
+      "title": "反弹与重新装订",
+      "note": "rebound作原形意为反弹、恢复；rebind是重新装订，其过去式和过去分词恰为rebound。须结合时态判断。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "rebound",
+          "usage": "v. 弹回，反弹；从挫折中恢复；n. 反弹，回升；篮板球；另可作rebind的过去式、过去分词，表示重新装订，须由句法辨认。",
+          "example": "rebound from a setback"
+        },
+        {
+          "word": "rebind",
+          "usage": "重新捆扎；重新装订；rebind–rebound–rebound；不要把它的过去式与反弹动词混成一个义项。",
+          "example": "rebind an old volume"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/rebound",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 弹回，反弹；从挫折中恢复；n. 反弹，回升；篮板球"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/rebind",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：重新捆扎；重新装订"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-17",
+      "type": "synonym",
+      "title": "揭示",
+      "note": "divulge常指泄露秘密；unveil常指首次公布、揭幕。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "divulge",
+          "usage": "泄露，透露（秘密或原本不为人知的信息）；强调使隐秘信息为人所知，不一定都是违法泄密。",
+          "example": "divulge confidential details"
+        },
+        {
+          "word": "unveil",
+          "usage": "揭去覆盖物，揭幕；首次公开，披露；常见新计划、产品首次亮相，不必含秘密泄露。",
+          "example": "unveil a proposal"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/divulge",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：泄露，透露（秘密或原本不为人知的信息）"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unveil",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：揭去覆盖物，揭幕；首次公开，披露"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-18",
+      "type": "synonym",
+      "title": "减小",
+      "note": "仅比较数量或规模下降：diminish减少；shrink收缩。shrink还有畏缩义。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "diminish",
+          "usage": "减少，缩小，减弱；贬低；既可及物也可不及物；贬低义指降低重要性或声誉。",
+          "example": "diminish confidence"
+        },
+        {
+          "word": "shrink",
+          "usage": "v. 缩小，收缩；退缩；n. 收缩；精神科医生或心理治疗师（非正式）；过去式shrank或shrunk，过去分词shrunk或shrunken；医生义为口语。",
+          "example": "shrink from responsibility"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/diminish",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：减少，缩小，减弱；贬低"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/shrink",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 缩小，收缩；退缩；n. 收缩；精神科医生或心理治疗师（非正式）"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260923-handwritten-19",
+      "type": "synonym",
+      "title": "融合与综合",
+      "note": "synthesis综合各部分形成整体；fusion融合成一体，另有熔合、核聚变义。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "synthesis",
+          "usage": "综合，综合体；合成；强调将不同部分或观点构成整体；复数syntheses。",
+          "example": "a synthesis of theories"
+        },
+        {
+          "word": "fusion",
+          "usage": "融合，结合；熔化；核聚变；既可指物理过程，也可指文化、艺术风格融合；核聚变与核裂变不同。",
+          "example": "a fusion of styles"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/synthesis",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：综合，综合体；合成"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fusion",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：融合，结合；熔化；核聚变"
         }
       ]
     }
