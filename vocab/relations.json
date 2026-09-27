@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-23",
+  "updated_at": "2026-09-27",
   "topics": [
     {
       "id": "mood",
@@ -4886,6 +4886,579 @@
           "checked_at": "2026-09-23",
           "status": "checked",
           "evidence": "已读取词典条目并归纳核心义：融合，结合；熔化；核聚变"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-1",
+      "type": "synonym",
+      "title": "严厉批评",
+      "note": "censure正式谴责；reprehend是较旧的正式责备；lambaste强调猛烈抨击。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "censure",
+          "usage": "n. 严厉批评，谴责；正式申斥；v. 谴责，正式责备；不是censor审查删改；正式申斥不自动等同法律处罚。",
+          "example": "public censure; censure an official"
+        },
+        {
+          "word": "reprehend",
+          "usage": "谴责，责备，表示不赞同；与reprehensible应受谴责的关联；本词是施加批评的动词。",
+          "example": "reprehend misconduct"
+        },
+        {
+          "word": "lambaste",
+          "usage": "痛斥，严厉抨击；鞭打，痛打；批评义程度强；也拼lambast。",
+          "example": "lambaste a proposal"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/censure",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 严厉批评，谴责；正式申斥；v. 谴责，正式责备"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/reprehend",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：谴责，责备，表示不赞同"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lambaste",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：痛斥，严厉抨击；鞭打，痛打"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-2",
+      "type": "lookalike",
+      "title": "审查与谴责",
+      "note": "censor审查删改；censure责备谴责。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "censor",
+          "usage": "n. 审查员；v. 审查并删去被认为不妥的内容；censor是审查删改；censure是谴责，不能混用。",
+          "example": "censor a report"
+        },
+        {
+          "word": "censure",
+          "usage": "n. 严厉批评，谴责；正式申斥；v. 谴责，正式责备；不是censor审查删改；正式申斥不自动等同法律处罚。",
+          "example": "public censure; censure an official"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/censor",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 审查员；v. 审查并删去被认为不妥的内容"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/censure",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 严厉批评，谴责；正式申斥；v. 谴责，正式责备"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-3",
+      "type": "synonym",
+      "title": "明显与显眼",
+      "note": "palpable强调可感知；conspicuous显眼；manifest明显；salient突出且重要；obtrusive过于显眼而令人不快。仅在明显义比较。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "palpable",
+          "usage": "可触知的；明显可感的；显而易见的；不必真的摸得到；情绪、差异也可明显得让人感受到。",
+          "example": "palpable tension"
+        },
+        {
+          "word": "conspicuous",
+          "usage": "显眼的，显著的，引人注意的；显眼不一定优秀；缺席也可格外引人注意。",
+          "example": "a conspicuous absence"
+        },
+        {
+          "word": "manifest",
+          "usage": "adj. 明显的；v. 表明，显现；n. 乘客名单、货物清单；动词和形容词均常用；manifest名词清单不要与manifesto宣言混作唯一释义。",
+          "example": "manifest concern; a cargo manifest"
+        },
+        {
+          "word": "salient",
+          "usage": "adj. 显著的，突出的，重要的；n. 突出部分，突出阵地；突出义常兼具值得关注的重要性，而不只是颜色醒目。",
+          "example": "the salient points"
+        },
+        {
+          "word": "obtrusive",
+          "usage": "突兀碍眼的，过分显眼的；冒失打扰人的；突出的；比conspicuous显眼多出不受欢迎、侵扰的意味。",
+          "example": "obtrusive advertising"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/palpable",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：可触知的；明显可感的；显而易见的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conspicuous",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：显眼的，显著的，引人注意的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/manifest",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 明显的；v. 表明，显现；n. 乘客名单、货物清单"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/salient",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 显著的，突出的，重要的；n. 突出部分，突出阵地"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/obtrusive",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：突兀碍眼的，过分显眼的；冒失打扰人的；突出的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-4",
+      "type": "antonym",
+      "title": "隐微与显眼",
+      "note": "仅比较可察觉程度：subtle不易察觉，conspicuous显眼。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "subtle",
+          "usage": "微妙的，不易察觉或理解的；细腻精巧的；敏锐的；巧妙的，狡猾的；可形容轻微差别，也可形容敏锐头脑；b不发音。",
+          "example": "a subtle distinction"
+        },
+        {
+          "word": "conspicuous",
+          "usage": "显眼的，显著的，引人注意的；显眼不一定优秀；缺席也可格外引人注意。",
+          "example": "a conspicuous absence"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/subtle",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：微妙的，不易察觉或理解的；细腻精巧的；敏锐的；巧妙的，狡猾的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conspicuous",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：显眼的，显著的，引人注意的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-5",
+      "type": "synonym",
+      "title": "危险与不稳",
+      "note": "perilous危险；precarious因不稳定、不可靠而有风险。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "perilous",
+          "usage": "危险的，充满风险的；强调风险很大；precarious更强调不稳定导致危险。",
+          "example": "a perilous journey"
+        },
+        {
+          "word": "precarious",
+          "usage": "不稳定的，危险的；无保障的；依据不确定的；可用于平衡、工作、生计或论证基础；核心是不稳、难以保障。",
+          "example": "a precarious position"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perilous",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：危险的，充满风险的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/precarious",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：不稳定的，危险的；无保障的；依据不确定的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-6",
+      "type": "synonym",
+      "title": "悔恨",
+      "note": "penitence侧重悔过；remorse侧重因过错而痛苦自责。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "penitence",
+          "usage": "悔过，忏悔，为过错感到懊悔；侧重对罪过或错误的悔改态度。",
+          "example": "show penitence"
+        },
+        {
+          "word": "remorse",
+          "usage": "悔恨，内疚，自责；通常因自己做过的错事而痛苦，不是任何遗憾都叫remorse。",
+          "example": "feel remorse for a wrong"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/penitence",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：悔过，忏悔，为过错感到懊悔"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/remorse",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：悔恨，内疚，自责"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-7",
+      "type": "synonym",
+      "title": "小缺点与小过错",
+      "note": "foible偏向性格弱点；peccadillo指较轻微的过错，不能在所有语境互换。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "foible",
+          "usage": "性格或行为上的小缺点，小毛病；剑身近尖端的较弱部分；弱点义通常不指严重罪行；与peccadillo轻微过错比较。",
+          "example": "human foibles"
+        },
+        {
+          "word": "peccadillo",
+          "usage": "小过失，小毛病；轻微的不当行为；侧重一次轻微过错；foible更多指性格或行为上的弱点。",
+          "example": "a minor peccadillo"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/foible",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：性格或行为上的小缺点，小毛病；剑身近尖端的较弱部分"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/peccadillo",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：小过失，小毛病；轻微的不当行为"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-8",
+      "type": "synonym",
+      "title": "陈旧",
+      "note": "仅在陈旧乏味的说法义比较：hoary还可指灰白、年老；stale还可指食物不新鲜。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "hoary",
+          "usage": "灰白的，白发苍苍的；古老的；陈腐老套的；除了颜色和年岁，也常批评重复太久的笑话、论点。",
+          "example": "a hoary cliché"
+        },
+        {
+          "word": "stale",
+          "usage": "adj. 不新鲜的；陈腐乏味的；失去活力的；v. 使变陈旧；n. 牲畜尿液（少见）；陈旧和缺乏新意是核心；动词也有牲畜排尿的少见义，不混入普通形容词解释。",
+          "example": "stale bread; a stale joke"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hoary",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：灰白的，白发苍苍的；古老的；陈腐老套的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/stale",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 不新鲜的；陈腐乏味的；失去活力的；v. 使变陈旧；n. 牲畜尿液（少见）"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-9",
+      "type": "antonym",
+      "title": "直觉与反直觉",
+      "note": "intuitive凭直觉的或易懂的；counterintuitive违背直觉预期。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "intuitive",
+          "usage": "直觉的，凭直觉理解的；易于理解和使用的；界面易用义指容易领会；直觉判断本身不保证正确。",
+          "example": "an intuitive interface"
+        },
+        {
+          "word": "counterintuitive",
+          "usage": "违反直觉预期的，反直觉的；反直觉不等于错误，可能是被证据支持的结果。",
+          "example": "a counterintuitive result"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/intuitive",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：直觉的，凭直觉理解的；易于理解和使用的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/counterintuitive",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：违反直觉预期的，反直觉的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-10",
+      "type": "antonym",
+      "title": "鼓舞与动摇",
+      "note": "hearten使振作；unnerve使失去勇气或镇定。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "hearten",
+          "usage": "鼓舞，使振奋，使有信心；与unnerve使失去镇定或勇气形成语境对照。",
+          "example": "hearten supporters"
+        },
+        {
+          "word": "unnerve",
+          "usage": "使失去勇气或镇定；使紧张不安；可形容心理不安，不必真的失去体力。",
+          "example": "an unnerving silence"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hearten",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：鼓舞，使振奋，使有信心"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unnerve",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使失去勇气或镇定；使紧张不安"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-11",
+      "type": "lookalike",
+      "title": "公正与传授",
+      "note": "impartial是不偏袒的；impart是传授、告知或赋予。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "impartial",
+          "usage": "公正的，不偏不倚的；强调不偏袒任何一方；与impart传授的意义不同。",
+          "example": "an impartial observer"
+        },
+        {
+          "word": "impart",
+          "usage": "传授，告知；赋予，给予某种性质；impart something to someone；也可说impart flavor赋予风味。",
+          "example": "impart knowledge to students"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impartial",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：公正的，不偏不倚的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impart",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：传授，告知；赋予，给予某种性质"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-12",
+      "type": "lookalike",
+      "title": "结果与顺序",
+      "note": "consequence强调后果；sequence强调先后排列。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "consequence",
+          "usage": "结果，后果；推论；重要性，地位；of consequence表示重要；不能只记后果这一义。",
+          "example": "as a consequence; of little consequence"
+        },
+        {
+          "word": "sequence",
+          "usage": "n. 顺序；连续的一系列；后续发展；v. 按顺序排列；测定序列；sequence强调顺序；consequence通常强调因果结果，两者不宜机械互换。",
+          "example": "a sequence of events"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/consequence",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：结果，后果；推论；重要性，地位"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sequence",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 顺序；连续的一系列；后续发展；v. 按顺序排列；测定序列"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-13",
+      "type": "synonym",
+      "title": "客观态度",
+      "note": "detached在客观、不带个人感情义可近impartial；impartial强调不偏袒，detached也可能冷淡。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "detached",
+          "usage": "分开的，独立的；超然的，客观冷静的；疏离的；房屋可指独栋；态度可褒义客观或负面冷漠，须看语境。",
+          "example": "a detached house; a detached observer"
+        },
+        {
+          "word": "impartial",
+          "usage": "公正的，不偏不倚的；强调不偏袒任何一方；与impart传授的意义不同。",
+          "example": "an impartial observer"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/detached",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：分开的，独立的；超然的，客观冷静的；疏离的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impartial",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：公正的，不偏不倚的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-14",
+      "type": "lookalike",
+      "title": "退火与废除",
+      "note": "anneal退火或使坚韧；annul正式废除、使无效。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "anneal",
+          "usage": "使退火；使坚韧、增强；使互补核酸链退火配对；材料退火常用于降低脆性、改善性能，不能简单等同淬火变硬；本批按动词记录。",
+          "example": "anneal glass"
+        },
+        {
+          "word": "annul",
+          "usage": "废除，宣告无效；抵消，使失效；强调取消效力；annulled、annulling双写l，区别annual每年的。",
+          "example": "annul an agreement"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/anneal",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使退火；使坚韧、增强；使互补核酸链退火配对"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/annul",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：废除，宣告无效；抵消，使失效"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260927-handwritten-15",
+      "type": "antonym",
+      "title": "增加与缩减",
+      "note": "仅在规模数量义比较：augment增加；downsize缩减规模。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "augment",
+          "usage": "增加，扩大，加强；补充；强调使数量、规模或强度增加，不必从零开始。",
+          "example": "augment income"
+        },
+        {
+          "word": "downsize",
+          "usage": "缩小规模；精简机构，裁员；搬到较小住所等；缩小规模是上位义；并非每次使用都意味着裁员。",
+          "example": "downsize a company"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/augment",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：增加，扩大，加强；补充"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/downsize",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：缩小规模；精简机构，裁员；搬到较小住所等"
         }
       ]
     }
