@@ -1,0 +1,3247 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-30T15:20:52.800Z",
+  "material_id": "handwritten_vocab_20260930_evening",
+  "source_kind": "user_handwritten_notes",
+  "counts": {
+    "handwritten_unique": 112,
+    "handwritten_new": 99,
+    "handwritten_existing": 13,
+    "relation_groups_added": 16,
+    "pending_transcriptions": 0
+  },
+  "images": [
+    {
+      "image": 1,
+      "filename": "codex-clipboard-618a9f0f-84b1-427c-b4df-213b704c6869.jpg",
+      "sha256": "98a830a2615ee9a7e9ce7f39a45fd623faaa46086128af47a8ca521fca8b6bbb",
+      "transcribed_count": 27
+    },
+    {
+      "image": 2,
+      "filename": "codex-clipboard-13708c30-5b6a-47b3-ac6a-5d4c8cf63e53.jpg",
+      "sha256": "56a40bc431f157e81d90f3bef12d5329d316ae4ce4778d79af9b8a773fedaa26",
+      "transcribed_count": 28
+    },
+    {
+      "image": 3,
+      "filename": "codex-clipboard-15c4de9b-2bc1-4890-be75-b8a621043fa9.jpg",
+      "sha256": "53b4545e5e044c421f590e98f43bb29008303f7ccc33fbc98344a77f91bbbb09",
+      "transcribed_count": 28
+    },
+    {
+      "image": 4,
+      "filename": "codex-clipboard-9062f59e-1d28-4092-8b5d-0c35f5f29875.jpg",
+      "sha256": "ab8bd09ec5fe6a3a6ac61d65988ee4612cef33b3739f110895493e81a31c449a",
+      "transcribed_count": 29
+    }
+  ],
+  "definition_policy": "逐词读取Merriam-Webster，blamed的口语义另核Collins，proxy的替代指标义补核Oxford；核对拼写变体后用自己的中文归纳核心义，核验日期2026-09-30；词性、色彩、主题与搭配分列。无题目原句，不推定语境义，不声称是ETS官方词表或官方解析。搭配为自拟。圈改误拼只保留最终规范词形；括号内词根或短语在用法笔记说明，不重复计为新词。照片导入只证明接触，不记复习完成，不改变掌握证据。",
+  "items": [
+    {
+      "surface": "towering",
+      "word": "towering",
+      "image": 1,
+      "pos": "adj.",
+      "meaning": "高耸的；卓越的；程度极强的",
+      "collocation": "a towering achievement",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义，视对象而定",
+      "note": "既可形容高度，也可形容成就或强烈情绪，不只表示高大。",
+      "normalization_note": null,
+      "topics": [
+        "quantity"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/towering",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：高耸的；卓越的；程度极强的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "immense",
+      "word": "immense",
+      "image": 1,
+      "pos": "adj.",
+      "meaning": "巨大的；数量或程度极大的",
+      "collocation": "immense pressure",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "可修饰空间、数量和抽象程度。",
+      "normalization_note": null,
+      "topics": [
+        "quantity"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/immense",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：巨大的；数量或程度极大的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "grandiose",
+      "word": "grandiose",
+      "image": 1,
+      "pos": "adj.",
+      "meaning": "浮夸的；宏大壮丽的；不切实际地宏伟的",
+      "collocation": "grandiose ambitions",
+      "collocation_source": "coach_composed",
+      "connotation": "常含贬义，宏伟义可中性",
+      "note": "不能一概当作褒义的宏伟；判断是否含夸张炫耀。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "quantity"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/grandiose",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：浮夸的；宏大壮丽的；不切实际地宏伟的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "vociferous",
+      "word": "vociferous",
+      "image": 1,
+      "pos": "adj.",
+      "meaning": "大声疾呼的；喧嚷而强烈表达意见的",
+      "collocation": "vociferous opposition",
+      "collocation_source": "coach_composed",
+      "connotation": "常含负面评价",
+      "note": "重点是表达强烈且声势大，不只是音量高。",
+      "normalization_note": "规范拼写为vociferous。",
+      "topics": [
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vociferous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：大声疾呼的；喧嚷而强烈表达意见的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "obloquy",
+      "word": "obloquy",
+      "image": 1,
+      "pos": "n.",
+      "meaning": "公开的谴责或辱骂；恶名，耻辱",
+      "collocation": "public obloquy",
+      "collocation_source": "coach_composed",
+      "connotation": "负面；正式",
+      "note": "既可指谴责言辞，也可指受谴责后的坏名声。",
+      "normalization_note": null,
+      "topics": [
+        "social",
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/obloquy",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：公开的谴责或辱骂；恶名，耻辱"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "checker",
+      "word": "checker",
+      "image": 1,
+      "pos": "v.; n.",
+      "meaning": "v. 使呈方格状；使交错变化；n. 方格；棋子；检查者",
+      "collocation": "checker the surface with alternating colors",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "笔记主要记动词交错变化义；不要误读成check。",
+      "normalization_note": null,
+      "topics": [
+        "material",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/checker",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 使呈方格状；使交错变化；n. 方格；棋子；检查者"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "feigned",
+      "word": "feigned",
+      "image": 1,
+      "pos": "adj.",
+      "meaning": "假装的；虚构的；并非真心的",
+      "collocation": "feigned enthusiasm",
+      "collocation_source": "coach_composed",
+      "connotation": "常含贬义",
+      "note": "也是feign的过去式及过去分词；此处按形容词收录。",
+      "normalization_note": null,
+      "topics": [
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/feigned",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：假装的；虚构的；并非真心的"
+        }
+      ],
+      "related_words": [
+        "fictitious"
+      ]
+    },
+    {
+      "surface": "earthly",
+      "word": "earthly",
+      "image": 1,
+      "pos": "adj.",
+      "meaning": "地球上的；尘世的，人间的；可能的",
+      "collocation": "earthly possessions",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "可能义常见于否定或疑问语气，如no earthly reason。",
+      "normalization_note": null,
+      "topics": [
+        "environment",
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/earthly",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：地球上的；尘世的，人间的；可能的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "metaphor",
+      "word": "metaphor",
+      "image": 1,
+      "pos": "n.",
+      "meaning": "隐喻；比喻性的象征",
+      "collocation": "a metaphor for isolation",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "把一种事物直接当作另一种来表达相似，不等于所有类比。",
+      "normalization_note": null,
+      "topics": [
+        "language",
+        "arts"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/metaphor",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：隐喻；比喻性的象征"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "analogy",
+      "word": "analogy",
+      "image": 1,
+      "pos": "n.",
+      "meaning": "类比；相似关系；类推",
+      "collocation": "draw an analogy between two systems",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "侧重两事物在某方面相似，据此解释或推理；不能单凭类比证明结论。",
+      "normalization_note": null,
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/analogy",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：类比；相似关系；类推"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "proxy",
+      "word": "proxy",
+      "image": 1,
+      "pos": "n.",
+      "meaning": "代理人；代理权；授权书；替代指标",
+      "collocation": "vote by proxy",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "区别代理人、授权本身和替代指标；测量语境proxy for指间接代表目标变量的指标。",
+      "normalization_note": null,
+      "topics": [
+        "social",
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/proxy",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：代理人；代理权；授权书"
+        },
+        {
+          "publisher": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/proxy",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "核验第三义项：用来代表另一待测量或计算对象的替代指标。"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "denote",
+      "word": "denote",
+      "image": 1,
+      "pos": "v.",
+      "meaning": "表示；标示；意指",
+      "collocation": "the symbol denotes a constant",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；较正式",
+      "note": "常说明符号或词语所直接表示的对象。",
+      "normalization_note": null,
+      "topics": [
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/denote",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：表示；标示；意指"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "obeisance",
+      "word": "obeisance",
+      "image": 1,
+      "pos": "n.",
+      "meaning": "鞠躬等敬礼动作；敬意；臣服",
+      "collocation": "pay obeisance to authority",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，卑躬屈膝语境可贬",
+      "note": "可指身体动作，也可指承认他人地位的态度。",
+      "normalization_note": null,
+      "topics": [
+        "social"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/obeisance",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：鞠躬等敬礼动作；敬意；臣服"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "renaissance",
+      "word": "renaissance",
+      "image": 1,
+      "pos": "n.",
+      "meaning": "复兴，再生；文艺复兴",
+      "collocation": "a renaissance in local theater",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义",
+      "note": "特指欧洲历史时期通常大写Renaissance。",
+      "normalization_note": null,
+      "topics": [
+        "change",
+        "arts"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/renaissance",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：复兴，再生；文艺复兴"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "pushover",
+      "word": "pushover",
+      "image": 1,
+      "pos": "n.",
+      "meaning": "容易被击败或说服的人；容易完成的事",
+      "collocation": "be no pushover in negotiations",
+      "collocation_source": "coach_composed",
+      "connotation": "口语；常含轻视",
+      "note": "人或任务都可作所指；不是动词推倒。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "social"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pushover",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：容易被击败或说服的人；容易完成的事"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "abdicate",
+      "word": "abdicate",
+      "image": 1,
+      "pos": "v.",
+      "meaning": "退位；正式放弃权力；放弃责任",
+      "collocation": "abdicate responsibility",
+      "collocation_source": "coach_composed",
+      "connotation": "正式；放弃责任常贬",
+      "note": "不限于君主退位，也可指不再承担本应承担的责任。",
+      "normalization_note": null,
+      "topics": [
+        "society",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/abdicate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：退位；正式放弃权力；放弃责任"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "interminable",
+      "word": "interminable",
+      "image": 1,
+      "pos": "adj.",
+      "meaning": "没完没了的；冗长得令人厌烦的",
+      "collocation": "an interminable discussion",
+      "collocation_source": "coach_composed",
+      "connotation": "通常贬义",
+      "note": "常是主观感觉漫长，不要求真的无限。",
+      "normalization_note": null,
+      "topics": [
+        "time"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/interminable",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：没完没了的；冗长得令人厌烦的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "terminate",
+      "word": "terminate",
+      "image": 1,
+      "pos": "v.",
+      "meaning": "结束；终止；终止雇用",
+      "collocation": "terminate an agreement",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；正式",
+      "note": "既可及物也可不及物；结束不必是失败。",
+      "normalization_note": null,
+      "topics": [
+        "time",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/terminate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：结束；终止；终止雇用"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "slant",
+      "word": "slant",
+      "image": 1,
+      "pos": "v.; n.; adj.",
+      "meaning": "v. 倾斜；使带有倾向；n. 斜度；观点或偏向；adj. 倾斜的",
+      "collocation": "a political slant in the report",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；歪曲信息义贬",
+      "note": "观点义不一定恶意；刻意歪曲报道时为负面。",
+      "normalization_note": null,
+      "topics": [
+        "language",
+        "material"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/slant",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 倾斜；使带有倾向；n. 斜度；观点或偏向；adj. 倾斜的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "obtrude",
+      "word": "obtrude",
+      "image": 1,
+      "pos": "v.",
+      "meaning": "强加；冒昧闯入；过分显眼地出现",
+      "collocation": "obtrude one's views on others",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义；正式",
+      "note": "强调不受欢迎地进入他人的注意或空间。",
+      "normalization_note": null,
+      "topics": [
+        "social",
+        "conflict"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/obtrude",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：强加；冒昧闯入；过分显眼地出现"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "blemish",
+      "word": "blemish",
+      "image": 1,
+      "pos": "n.; v.",
+      "meaning": "n. 瑕疵，污点；v. 损害，使有瑕疵",
+      "collocation": "a blemish on her record",
+      "collocation_source": "coach_composed",
+      "connotation": "负面",
+      "note": "可指外观缺陷，也可指名誉或记录的污点。",
+      "normalization_note": null,
+      "topics": [
+        "material",
+        "social"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blemish",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 瑕疵，污点；v. 损害，使有瑕疵"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "indemnity",
+      "word": "indemnity",
+      "image": 1,
+      "pos": "n.",
+      "meaning": "赔偿；赔偿金；免受损失的保障；责任或处罚豁免",
+      "collocation": "an indemnity against loss",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；正式",
+      "note": "保障、补偿和豁免须按语境区分；不是一般意义的免罪。",
+      "normalization_note": null,
+      "topics": [
+        "economy",
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/indemnity",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：赔偿；赔偿金；免受损失的保障；责任或处罚豁免"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "perfunctory",
+      "word": "perfunctory",
+      "image": 1,
+      "pos": "adj.",
+      "meaning": "敷衍的；例行公事而缺乏用心的",
+      "collocation": "a perfunctory inspection",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "重点是机械应付、缺乏兴趣或认真程度。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perfunctory",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：敷衍的；例行公事而缺乏用心的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "foster",
+      "word": "foster",
+      "image": 1,
+      "pos": "v.; adj.",
+      "meaning": "v. 培养，促进；代养；adj. 寄养的，代养的",
+      "collocation": "foster mutual trust",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，取决于所促进事物",
+      "note": "促进也能搭配疾病或猜疑；寄养不自动等于正式收养。",
+      "normalization_note": null,
+      "topics": [
+        "change",
+        "social"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/foster",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 培养，促进；代养；adj. 寄养的，代养的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "distend",
+      "word": "distend",
+      "image": 1,
+      "pos": "v.",
+      "meaning": "使膨胀；胀大；扩张",
+      "collocation": "gas distends the abdomen",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "常指内部压力使容积扩大。",
+      "normalization_note": null,
+      "topics": [
+        "material",
+        "body"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/distend",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使膨胀；胀大；扩张"
+        }
+      ],
+      "related_words": [
+        "contract"
+      ]
+    },
+    {
+      "surface": "penance",
+      "word": "penance",
+      "image": 1,
+      "pos": "n.",
+      "meaning": "赎罪行为；补赎；作为弥补的惩罚或苦行",
+      "collocation": "do penance for an offense",
+      "collocation_source": "coach_composed",
+      "connotation": "宗教或正式",
+      "note": "重点是表现悔意的行动或惩罚，不宜只记内心后悔。",
+      "normalization_note": null,
+      "topics": [
+        "society",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/penance",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：赎罪行为；补赎；作为弥补的惩罚或苦行"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "fertile",
+      "word": "fertile",
+      "image": 1,
+      "pos": "adj.",
+      "meaning": "肥沃的；能繁殖的；富于创造力的；有利于发展的",
+      "collocation": "a fertile imagination",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义",
+      "note": "土地、生殖和思想创造力是不同义项。",
+      "normalization_note": null,
+      "topics": [
+        "nature",
+        "reason"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fertile",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：肥沃的；能繁殖的；富于创造力的；有利于发展的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "epoch",
+      "word": "epoch",
+      "image": 2,
+      "pos": "n.",
+      "meaning": "时代，纪元；重要开端；地质世",
+      "collocation": "a new epoch in science",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；较正式",
+      "note": "通常指有鲜明特征或重要事件的时期。",
+      "normalization_note": null,
+      "topics": [
+        "time"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/epoch",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：时代，纪元；重要开端；地质世"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "impulsive",
+      "word": "impulsive",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "冲动的；凭一时冲动行事的",
+      "collocation": "an impulsive purchase",
+      "collocation_source": "coach_composed",
+      "connotation": "常含贬义",
+      "note": "强调未充分思考就行动，不等于犹豫不决。",
+      "normalization_note": null,
+      "topics": [
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impulsive",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：冲动的；凭一时冲动行事的"
+        }
+      ],
+      "related_words": [
+        "prudent"
+      ]
+    },
+    {
+      "surface": "cavalier",
+      "word": "cavalier",
+      "image": 2,
+      "pos": "adj.; n.",
+      "meaning": "adj. 漫不经心而轻慢的；n. 骑士；骑兵",
+      "collocation": "a cavalier attitude toward safety",
+      "collocation_source": "coach_composed",
+      "connotation": "形容词常贬",
+      "note": "GRE常考把重要事项不当回事，而非仅仅洒脱。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cavalier",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 漫不经心而轻慢的；n. 骑士；骑兵"
+        }
+      ],
+      "related_words": [
+        "disdainful"
+      ]
+    },
+    {
+      "surface": "caprice",
+      "word": "caprice",
+      "image": 2,
+      "pos": "n.",
+      "meaning": "一时兴起；任性；反复无常的变化",
+      "collocation": "the caprices of fashion",
+      "collocation_source": "coach_composed",
+      "connotation": "常含负面评价",
+      "note": "可以指个人念头，也可指难以预测的变化。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "change"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/caprice",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：一时兴起；任性；反复无常的变化"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "gravitate",
+      "word": "gravitate",
+      "image": 2,
+      "pos": "v.",
+      "meaning": "受引力作用移动；自然地被吸引或趋向",
+      "collocation": "gravitate toward familiar ideas",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "常用toward或to，表示自发倾向。",
+      "normalization_note": null,
+      "topics": [
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/gravitate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：受引力作用移动；自然地被吸引或趋向"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "debunk",
+      "word": "debunk",
+      "image": 2,
+      "pos": "v.",
+      "meaning": "揭穿；驳斥虚假说法",
+      "collocation": "debunk a popular misconception",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "重点是暴露虚假，不只是表示不同意见。",
+      "normalization_note": null,
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/debunk",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：揭穿；驳斥虚假说法"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "harass",
+      "word": "harass",
+      "image": 2,
+      "pos": "v.",
+      "meaning": "反复骚扰；不断困扰；反复袭扰",
+      "collocation": "harass a witness",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "通常含持续或反复，不只是一次打断。",
+      "normalization_note": null,
+      "topics": [
+        "conflict",
+        "social"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/harass",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：反复骚扰；不断困扰；反复袭扰"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "perp",
+      "word": "perp",
+      "image": 2,
+      "pos": "n.",
+      "meaning": "作案者，罪犯",
+      "collocation": "identify the perp",
+      "collocation_source": "coach_composed",
+      "connotation": "非正式",
+      "note": "perpetrator的口语缩略语；指人，不是犯罪行为。",
+      "normalization_note": null,
+      "topics": [
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perp",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：作案者，罪犯"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "disenchant",
+      "word": "disenchant",
+      "image": 2,
+      "pos": "v.",
+      "meaning": "使不再抱幻想；使醒悟或失望",
+      "collocation": "be disenchanted with the leadership",
+      "collocation_source": "coach_composed",
+      "connotation": "常描述失望",
+      "note": "理想化看法破灭，不等于简单使不开心。",
+      "normalization_note": null,
+      "topics": [
+        "mood",
+        "reason"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disenchant",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使不再抱幻想；使醒悟或失望"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "gourmet",
+      "word": "gourmet",
+      "image": 2,
+      "pos": "n.; adj.",
+      "meaning": "n. 美食鉴赏家；adj. 精致高档的美食的",
+      "collocation": "gourmet cuisine",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义",
+      "note": "强调鉴赏和精良烹饪，不等于贪吃。",
+      "normalization_note": null,
+      "topics": [
+        "arts"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/gourmet",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 美食鉴赏家；adj. 精致高档的美食的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "encapsulate",
+      "word": "encapsulate",
+      "image": 2,
+      "pos": "v.",
+      "meaning": "概括，浓缩表达；装入胶囊或包封",
+      "collocation": "encapsulate the central argument",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "抽象义是用简短形式体现要点。",
+      "normalization_note": null,
+      "topics": [
+        "language",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/encapsulate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：概括，浓缩表达；装入胶囊或包封"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "profligate",
+      "word": "profligate",
+      "image": 2,
+      "pos": "adj.; n.",
+      "meaning": "adj. 挥霍的；放荡堕落的；n. 挥霍放荡的人",
+      "collocation": "profligate use of public funds",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "挥霍资源和道德放纵两义要分开。",
+      "normalization_note": null,
+      "topics": [
+        "economy",
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/profligate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 挥霍的；放荡堕落的；n. 挥霍放荡的人"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "willful",
+      "word": "willful",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "任性的，固执的；故意的",
+      "collocation": "willful neglect",
+      "collocation_source": "coach_composed",
+      "connotation": "常含贬义",
+      "note": "wilful也是认可拼写；故意义不等于意志坚强。",
+      "normalization_note": null,
+      "topics": [
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/willful",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：任性的，固执的；故意的"
+        }
+      ],
+      "related_words": [
+        "perverse"
+      ]
+    },
+    {
+      "surface": "witty",
+      "word": "witty",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "机智幽默的；巧妙风趣的",
+      "collocation": "a witty reply",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "note": "现代核心义含幽默巧思，不只是聪明。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/witty",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：机智幽默的；巧妙风趣的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "tout",
+      "word": "tout",
+      "image": 2,
+      "pos": "v.; n.",
+      "meaning": "v. 大力吹捧或推销；招揽；n. 招揽生意者",
+      "collocation": "tout the benefits of a product",
+      "collocation_source": "coach_composed",
+      "connotation": "中性至贬义",
+      "note": "被大力宣传不代表优点已获证实。",
+      "normalization_note": null,
+      "topics": [
+        "language",
+        "economy"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/tout",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 大力吹捧或推销；招揽；n. 招揽生意者"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "ideologue",
+      "word": "ideologue",
+      "image": 2,
+      "pos": "n.",
+      "meaning": "意识形态的坚定拥护者；教条主义者；空想理论家",
+      "collocation": "a rigid political ideologue",
+      "collocation_source": "coach_composed",
+      "connotation": "常含贬义",
+      "note": "常暗示盲从某种理念，不能直接等同于普通思想家。",
+      "normalization_note": null,
+      "topics": [
+        "society",
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ideologue",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：意识形态的坚定拥护者；教条主义者；空想理论家"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "umbrage",
+      "word": "umbrage",
+      "image": 2,
+      "pos": "n.",
+      "meaning": "因受轻视或冒犯而生的不快，愤懑",
+      "collocation": "take umbrage at criticism",
+      "collocation_source": "coach_composed",
+      "connotation": "较正式",
+      "note": "固定搭配take umbrage at；冒犯可能只是当事人的感受。",
+      "normalization_note": null,
+      "topics": [
+        "mood"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/umbrage",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：因受轻视或冒犯而生的不快，愤懑"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "amplify",
+      "word": "amplify",
+      "image": 2,
+      "pos": "v.",
+      "meaning": "放大，增强；详述，扩充说明",
+      "collocation": "amplify the argument with evidence",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "既可扩大音量或影响，也可补充细节。",
+      "normalization_note": null,
+      "topics": [
+        "quantity",
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/amplify",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：放大，增强；详述，扩充说明"
+        }
+      ],
+      "related_words": [
+        "sap"
+      ]
+    },
+    {
+      "surface": "ubiquitous",
+      "word": "ubiquitous",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "无处不在的；普遍可见的",
+      "collocation": "ubiquitous digital screens",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "比一般常见更强调到处都能遇见。",
+      "normalization_note": null,
+      "topics": [
+        "environment",
+        "quantity"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ubiquitous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无处不在的；普遍可见的"
+        }
+      ],
+      "related_words": [
+        "omnipresent"
+      ]
+    },
+    {
+      "surface": "pervasive",
+      "word": "pervasive",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "遍及各处的；渗透各方面的",
+      "collocation": "a pervasive sense of unease",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，常修饰问题或影响",
+      "note": "强调贯穿整体的各部分，不仅出现频率高。",
+      "normalization_note": null,
+      "topics": [
+        "environment",
+        "quantity"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pervasive",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：遍及各处的；渗透各方面的"
+        }
+      ],
+      "related_words": [
+        "prevalent"
+      ]
+    },
+    {
+      "surface": "prevalent",
+      "word": "prevalent",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "普遍存在的；盛行的；占主导的",
+      "collocation": "a prevalent belief",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "可以很常见而非无处不在。",
+      "normalization_note": null,
+      "topics": [
+        "society",
+        "quantity"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prevalent",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：普遍存在的；盛行的；占主导的"
+        }
+      ],
+      "related_words": [
+        "pervasive"
+      ]
+    },
+    {
+      "surface": "omnipresent",
+      "word": "omnipresent",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "无所不在的",
+      "collocation": "omnipresent surveillance",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；较正式",
+      "note": "强调处处存在，可与ubiquitous在相应语境比较。",
+      "normalization_note": null,
+      "topics": [
+        "environment",
+        "quantity"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/omnipresent",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无所不在的"
+        }
+      ],
+      "related_words": [
+        "ubiquitous"
+      ]
+    },
+    {
+      "surface": "nimble",
+      "word": "nimble",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "敏捷轻巧的；思维机敏的",
+      "collocation": "nimble fingers",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "note": "侧重反应和动作灵活迅速，也能形容头脑。",
+      "normalization_note": null,
+      "topics": [
+        "action",
+        "reason"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/nimble",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：敏捷轻巧的；思维机敏的"
+        }
+      ],
+      "related_words": [
+        "dexterous"
+      ]
+    },
+    {
+      "surface": "dexterous",
+      "word": "dexterous",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "手巧的；灵巧熟练的；机敏善处理的",
+      "collocation": "dexterous handling of a dispute",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "note": "强调操作或处理事情的技巧，不只是快。",
+      "normalization_note": null,
+      "topics": [
+        "action",
+        "reason"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dexterous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：手巧的；灵巧熟练的；机敏善处理的"
+        }
+      ],
+      "related_words": [
+        "nimble"
+      ]
+    },
+    {
+      "surface": "perverse",
+      "word": "perverse",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "故意作对的；悖理的；乖戾的；败坏的",
+      "collocation": "a perverse refusal to cooperate",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "常指顽固违背合理做法，不必涉及性含义。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "reason"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perverse",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：故意作对的；悖理的；乖戾的；败坏的"
+        }
+      ],
+      "related_words": [
+        "willful"
+      ]
+    },
+    {
+      "surface": "fictitious",
+      "word": "fictitious",
+      "image": 2,
+      "pos": "adj.",
+      "meaning": "虚构的；假冒的；并非真实的",
+      "collocation": "a fictitious identity",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或贬义",
+      "note": "文学虚构可中性；假身份带欺骗意味。",
+      "normalization_note": null,
+      "topics": [
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fictitious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：虚构的；假冒的；并非真实的"
+        }
+      ],
+      "related_words": [
+        "feigned"
+      ]
+    },
+    {
+      "surface": "portray",
+      "word": "portray",
+      "image": 2,
+      "pos": "v.",
+      "meaning": "描绘；描述成；扮演",
+      "collocation": "portray the decision as necessary",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "portray A as B指出呈现方式，不自动证明B属实。",
+      "normalization_note": null,
+      "topics": [
+        "arts",
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/portray",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：描绘；描述成；扮演"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "vacillation",
+      "word": "vacillation",
+      "image": 2,
+      "pos": "n.",
+      "meaning": "犹豫不决；摇摆不定",
+      "collocation": "vacillation between two options",
+      "collocation_source": "coach_composed",
+      "connotation": "常含贬义",
+      "note": "区别于冲动：此词强调无法选定立场。",
+      "normalization_note": null,
+      "topics": [
+        "reason",
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vacillation",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：犹豫不决；摇摆不定"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "genealogy",
+      "word": "genealogy",
+      "image": 3,
+      "pos": "n.",
+      "meaning": "家谱；血统；谱系研究；起源发展史",
+      "collocation": "trace a family's genealogy",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "也能指思想或制度的历史来源。",
+      "normalization_note": null,
+      "topics": [
+        "society",
+        "time"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/genealogy",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：家谱；血统；谱系研究；起源发展史"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "spate",
+      "word": "spate",
+      "image": 3,
+      "pos": "n.",
+      "meaning": "一连串，大量；突然爆发；洪水",
+      "collocation": "a spate of complaints",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，常用于负面事件",
+      "note": "常用a spate of，含集中涌现的意味。",
+      "normalization_note": null,
+      "topics": [
+        "quantity",
+        "change"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/spate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：一连串，大量；突然爆发；洪水"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "revolt",
+      "word": "revolt",
+      "image": 3,
+      "pos": "n.; v.",
+      "meaning": "n. 反抗，叛乱；v. 反抗；使厌恶或感到厌恶",
+      "collocation": "revolt against oppressive rule",
+      "collocation_source": "coach_composed",
+      "connotation": "视语境而定",
+      "note": "反抗义常接against；使厌恶是另一个动词义。",
+      "normalization_note": null,
+      "topics": [
+        "conflict",
+        "mood"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/revolt",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 反抗，叛乱；v. 反抗；使厌恶或感到厌恶"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "dictatorship",
+      "word": "dictatorship",
+      "image": 3,
+      "pos": "n.",
+      "meaning": "独裁统治；独裁政权",
+      "collocation": "a military dictatorship",
+      "collocation_source": "coach_composed",
+      "connotation": "通常负面",
+      "note": "区别统治制度与实施该制度的政权。",
+      "normalization_note": null,
+      "topics": [
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dictatorship",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：独裁统治；独裁政权"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "inoculate",
+      "word": "inoculate",
+      "image": 3,
+      "pos": "v.",
+      "meaning": "给接种；接种微生物；使获得防御能力；灌输",
+      "collocation": "inoculate against a disease",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "接种可为预防，也可指实验中引入微生物，不能一律理解为免疫。",
+      "normalization_note": null,
+      "topics": [
+        "body",
+        "nature"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inoculate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：给接种；接种微生物；使获得防御能力；灌输"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "swab",
+      "word": "swab",
+      "image": 3,
+      "pos": "n.; v.",
+      "meaning": "n. 拭子，棉签；拭子样本；v. 擦拭；用拭子涂药",
+      "collocation": "swab the wound",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "名词既可指工具，也可指采得的样本。",
+      "normalization_note": null,
+      "topics": [
+        "body",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/swab",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 拭子，棉签；拭子样本；v. 擦拭；用拭子涂药"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "exempt",
+      "word": "exempt",
+      "image": 3,
+      "pos": "adj.; v.",
+      "meaning": "adj. 获豁免的；v. 免除，豁免",
+      "collocation": "exempt from the requirement",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "形容词exempt from；动词exempt someone from something。",
+      "normalization_note": null,
+      "topics": [
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exempt",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 获豁免的；v. 免除，豁免"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "blamed",
+      "word": "blamed",
+      "image": 3,
+      "pos": "adj.; adv.; v.（分词）",
+      "meaning": "adj. 该死的；adv. 非常，极其；另为blame的过去式及过去分词，责备",
+      "collocation": "that blamed machine",
+      "collocation_source": "coach_composed",
+      "connotation": "主要美式非正式；轻度咒骂",
+      "note": "照片的该死的义确有词典依据；与was blamed被责备的普通分词用法分开。",
+      "normalization_note": "保留手写blamed；其口语形容词义另由Collins核验。",
+      "topics": [
+        "language",
+        "mood"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Collins",
+          "url": "https://www.collinsdictionary.com/dictionary/english/blamed",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "核对非正式形容词和副词用法；普通分词义另据Merriam-Webster。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blamed",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已核对派生词的基础义或易混词拼写。"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "avid",
+      "word": "avid",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "热切的，热衷的；渴求的，贪求的",
+      "collocation": "an avid reader",
+      "collocation_source": "coach_composed",
+      "connotation": "中性至褒义，贪求义可贬",
+      "note": "avid for可表示渴望；是否贬义取决于对象与程度。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "mood"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/avid",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：热切的，热衷的；渴求的，贪求的"
+        }
+      ],
+      "related_words": [
+        "fervid"
+      ]
+    },
+    {
+      "surface": "misanthrope",
+      "word": "misanthrope",
+      "image": 3,
+      "pos": "n.",
+      "meaning": "厌恶或不信任人类的人",
+      "collocation": "a withdrawn misanthrope",
+      "collocation_source": "coach_composed",
+      "connotation": "通常负面",
+      "note": "照片标adj.需订正为名词，所指是人。",
+      "normalization_note": "拼写保留，照片adj.订正为n.。",
+      "topics": [
+        "character",
+        "social"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/misanthrope",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：厌恶或不信任人类的人"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "wily",
+      "word": "wily",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "狡猾的；诡计多端的",
+      "collocation": "a wily opponent",
+      "collocation_source": "coach_composed",
+      "connotation": "常含贬义",
+      "note": "强调运用计谋，有时也含对老练手腕的承认。",
+      "normalization_note": null,
+      "topics": [
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/wily",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：狡猾的；诡计多端的"
+        }
+      ],
+      "related_words": [
+        "crafty"
+      ]
+    },
+    {
+      "surface": "crafty",
+      "word": "crafty",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "狡猾的；巧妙熟练的",
+      "collocation": "a crafty scheme",
+      "collocation_source": "coach_composed",
+      "connotation": "狡猾义贬；巧妙义视语境",
+      "note": "与wily在狡猾义相近；并非所有熟练都不诚实。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/crafty",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：狡猾的；巧妙熟练的"
+        }
+      ],
+      "related_words": [
+        "wily"
+      ]
+    },
+    {
+      "surface": "egregious",
+      "word": "egregious",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "极其明显且恶劣的；惊人的（坏处）",
+      "collocation": "an egregious breach of trust",
+      "collocation_source": "coach_composed",
+      "connotation": "强烈贬义",
+      "note": "现代优先记极坏，旧时杰出义不作为默认答案。",
+      "normalization_note": null,
+      "topics": [
+        "quantity",
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/egregious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：极其明显且恶劣的；惊人的（坏处）"
+        }
+      ],
+      "related_words": [
+        "blatant"
+      ]
+    },
+    {
+      "surface": "salacious",
+      "word": "salacious",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "色情的，挑逗性欲的；好色的",
+      "collocation": "salacious gossip",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "可形容内容或人的欲望，不等于所有粗俗。",
+      "normalization_note": null,
+      "topics": [
+        "language",
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/salacious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：色情的，挑逗性欲的；好色的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "divergent",
+      "word": "divergent",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "分叉的，发散的；相异的，有分歧的",
+      "collocation": "divergent interpretations",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "强调从共同点分开或互不一致。",
+      "normalization_note": null,
+      "topics": [
+        "reason",
+        "change"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/divergent",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：分叉的，发散的；相异的，有分歧的"
+        }
+      ],
+      "related_words": [
+        "alike"
+      ]
+    },
+    {
+      "surface": "prudent",
+      "word": "prudent",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "审慎明智的；谨慎节制的",
+      "collocation": "a prudent decision",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "note": "包含良好判断，不只是胆小或消极。",
+      "normalization_note": null,
+      "topics": [
+        "reason",
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prudent",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：审慎明智的；谨慎节制的"
+        }
+      ],
+      "related_words": [
+        "impulsive"
+      ]
+    },
+    {
+      "surface": "protagonist",
+      "word": "protagonist",
+      "image": 3,
+      "pos": "n.",
+      "meaning": "主角；主要参与者；倡导者，支持者",
+      "collocation": "the protagonist of the novel",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "主角不一定是道德上的英雄。",
+      "normalization_note": null,
+      "topics": [
+        "arts",
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/protagonist",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：主角；主要参与者；倡导者，支持者"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "rabid",
+      "word": "rabid",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "极端狂热的；狂暴的；患狂犬病的",
+      "collocation": "a rabid partisan",
+      "collocation_source": "coach_composed",
+      "connotation": "常含贬义",
+      "note": "狂热义通常比普通热情更极端；疾病义另记。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "body"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/rabid",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：极端狂热的；狂暴的；患狂犬病的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "choreograph",
+      "word": "choreograph",
+      "image": 3,
+      "pos": "v.",
+      "meaning": "编舞；精心安排活动的步骤或细节",
+      "collocation": "choreograph a public ceremony",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "引申义不限于舞蹈，强调协调安排。",
+      "normalization_note": null,
+      "topics": [
+        "arts",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/choreograph",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：编舞；精心安排活动的步骤或细节"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "monochromatic",
+      "word": "monochromatic",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "单色的；单一波长的；单调无变化的",
+      "collocation": "a monochromatic design",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；单调义贬",
+      "note": "单色设计不自动等于乏味；引申义须看语境。",
+      "normalization_note": null,
+      "topics": [
+        "material",
+        "arts"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/monochromatic",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：单色的；单一波长的；单调无变化的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "grumble",
+      "word": "grumble",
+      "image": 3,
+      "pos": "v.; n.",
+      "meaning": "v. 嘟囔抱怨；发低沉声；n. 抱怨，低沉声",
+      "collocation": "grumble about the delay",
+      "collocation_source": "coach_composed",
+      "connotation": "常含不满",
+      "note": "常指小声不满，也可指肚子或雷声。",
+      "normalization_note": null,
+      "topics": [
+        "mood",
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/grumble",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 嘟囔抱怨；发低沉声；n. 抱怨，低沉声"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "coerce",
+      "word": "coerce",
+      "image": 3,
+      "pos": "v.",
+      "meaning": "胁迫；强制；靠威胁迫使取得",
+      "collocation": "coerce someone into agreeing",
+      "collocation_source": "coach_composed",
+      "connotation": "通常贬义",
+      "note": "常用coerce someone into doing，含外在强力。",
+      "normalization_note": null,
+      "topics": [
+        "conflict"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/coerce",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：胁迫；强制；靠威胁迫使取得"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "inhale",
+      "word": "inhale",
+      "image": 3,
+      "pos": "v.",
+      "meaning": "吸入，吸气；急切或贪婪地吃下、吸收",
+      "collocation": "inhale deeply",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；急吃义非正式",
+      "note": "和exhale方向相反；比喻进食义另记。",
+      "normalization_note": null,
+      "topics": [
+        "body",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inhale",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：吸入，吸气；急切或贪婪地吃下、吸收"
+        }
+      ],
+      "related_words": [
+        "exhale"
+      ]
+    },
+    {
+      "surface": "exhale",
+      "word": "exhale",
+      "image": 3,
+      "pos": "v.",
+      "meaning": "呼出；散发气体或蒸气",
+      "collocation": "exhale slowly",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "核心方向是向外，与inhale相反。",
+      "normalization_note": null,
+      "topics": [
+        "body",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exhale",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：呼出；散发气体或蒸气"
+        }
+      ],
+      "related_words": [
+        "inhale",
+        "emit"
+      ]
+    },
+    {
+      "surface": "emit",
+      "word": "emit",
+      "image": 3,
+      "pos": "v.",
+      "meaning": "发出；排放；放射；发行",
+      "collocation": "emit heat and light",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "适用于声音、光、热和气体，不局限于呼吸。",
+      "normalization_note": null,
+      "topics": [
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/emit",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：发出；排放；放射；发行"
+        }
+      ],
+      "related_words": [
+        "exhale"
+      ]
+    },
+    {
+      "surface": "fervid",
+      "word": "fervid",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "热烈的，热情强烈的；灼热的",
+      "collocation": "fervid devotion to a cause",
+      "collocation_source": "coach_composed",
+      "connotation": "较正式，程度强烈",
+      "note": "可能含过度热情，但不必像rabid一样暗示非理性。",
+      "normalization_note": null,
+      "topics": [
+        "mood",
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fervid",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：热烈的，热情强烈的；灼热的"
+        }
+      ],
+      "related_words": [
+        "avid"
+      ]
+    },
+    {
+      "surface": "temper",
+      "word": "temper",
+      "image": 3,
+      "pos": "n.; v.",
+      "meaning": "n. 脾气，情绪；v. 缓和，调和；使回火或变坚韧",
+      "collocation": "temper enthusiasm with caution",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "名词不只指坏脾气；动词GRE常见缓和过强程度义。",
+      "normalization_note": null,
+      "topics": [
+        "mood",
+        "change"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/temper",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 脾气，情绪；v. 缓和，调和；使回火或变坚韧"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "cheerless",
+      "word": "cheerless",
+      "image": 3,
+      "pos": "adj.",
+      "meaning": "阴郁的；无欢乐的；令人提不起精神的",
+      "collocation": "a cheerless winter afternoon",
+      "collocation_source": "coach_composed",
+      "connotation": "负面",
+      "note": "可形容环境，不一定只形容人的心情。",
+      "normalization_note": null,
+      "topics": [
+        "mood",
+        "environment"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cheerless",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：阴郁的；无欢乐的；令人提不起精神的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "plunder",
+      "word": "plunder",
+      "image": 4,
+      "pos": "v.; n.",
+      "meaning": "v. 抢掠；掠夺性使用；n. 掠夺；赃物",
+      "collocation": "plunder natural resources",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "强调强取或不正当地耗用。",
+      "normalization_note": null,
+      "topics": [
+        "conflict",
+        "economy"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/plunder",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 抢掠；掠夺性使用；n. 掠夺；赃物"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "disgorge",
+      "word": "disgorge",
+      "image": 4,
+      "pos": "v.",
+      "meaning": "吐出；大量涌出或排出；被迫交出",
+      "collocation": "disgorge illicit profits",
+      "collocation_source": "coach_composed",
+      "connotation": "中性至负面",
+      "note": "既有身体排出义，也可指在压力下交出所得。",
+      "normalization_note": null,
+      "topics": [
+        "action",
+        "economy"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disgorge",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：吐出；大量涌出或排出；被迫交出"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "sap",
+      "word": "sap",
+      "image": 4,
+      "pos": "n.; v.",
+      "meaning": "n. 植物汁液；精力；傻瓜；v. 逐渐削弱，耗尽",
+      "collocation": "sap public confidence",
+      "collocation_source": "coach_composed",
+      "connotation": "动词通常负面；傻瓜义非正式",
+      "note": "动词强调渐渐消耗力量，也可影响信心或耐心。",
+      "normalization_note": null,
+      "topics": [
+        "nature",
+        "change"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sap",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 植物汁液；精力；傻瓜；v. 逐渐削弱，耗尽"
+        }
+      ],
+      "related_words": [
+        "amplify"
+      ]
+    },
+    {
+      "surface": "generic",
+      "word": "generic",
+      "image": 4,
+      "pos": "adj.; n.",
+      "meaning": "adj. 类别共有的，通用的；无品牌的；无特色的；n. 无品牌产品",
+      "collocation": "a generic description",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；无特色义可贬",
+      "note": "通用不等于低质量；不要与遗传相关词混淆。",
+      "normalization_note": null,
+      "topics": [
+        "material",
+        "economy"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/generic",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 类别共有的，通用的；无品牌的；无特色的；n. 无品牌产品"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "asperity",
+      "word": "asperity",
+      "image": 4,
+      "pos": "n.",
+      "meaning": "言行严厉刻薄；严酷；表面粗糙或不平",
+      "collocation": "reply with asperity",
+      "collocation_source": "coach_composed",
+      "connotation": "负面；正式",
+      "note": "物理粗糙与语气尖刻由具体对象区分。",
+      "normalization_note": null,
+      "topics": [
+        "language",
+        "material"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/asperity",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：言行严厉刻薄；严酷；表面粗糙或不平"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "enquire",
+      "word": "enquire",
+      "image": 4,
+      "pos": "v.",
+      "meaning": "询问；打听；调查",
+      "collocation": "enquire about the requirements",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；主要英式拼写",
+      "note": "是inquire的拼写变体；调查义常与into搭配。",
+      "normalization_note": "保留英式拼写，关联inquire词典解释。",
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/enquire",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：询问；打听；调查"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inquire",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已核对派生词的基础义或易混词拼写。"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "bountiful",
+      "word": "bountiful",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "丰盛充足的；慷慨的",
+      "collocation": "a bountiful supply of fruit",
+      "collocation_source": "coach_composed",
+      "connotation": "通常褒义",
+      "note": "可指得到的数量丰富，也可指给予者慷慨。",
+      "normalization_note": null,
+      "topics": [
+        "quantity",
+        "economy"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bountiful",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：丰盛充足的；慷慨的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "fractious",
+      "word": "fractious",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "易怒好争吵的；难管束的",
+      "collocation": "a fractious committee",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "强调难以合作或管理，不只是活泼。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "conflict"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fractious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：易怒好争吵的；难管束的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "crass",
+      "word": "crass",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "粗俗无知的；缺乏体谅的；唯利的",
+      "collocation": "a crass remark",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "主要评价思想、品味或举止粗鄙，不是材料表面粗糙。",
+      "normalization_note": null,
+      "topics": [
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/crass",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：粗俗无知的；缺乏体谅的；唯利的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "patronage",
+      "word": "patronage",
+      "image": 4,
+      "pos": "n.",
+      "meaning": "赞助，支持；顾客光顾；恩赐般的关照；任人唯亲式职位分配",
+      "collocation": "patronage of the arts",
+      "collocation_source": "coach_composed",
+      "connotation": "中性至贬义，依义项",
+      "note": "艺术赞助、商业惠顾和政治任用分别理解。",
+      "normalization_note": null,
+      "topics": [
+        "economy",
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/patronage",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：赞助，支持；顾客光顾；恩赐般的关照；任人唯亲式职位分配"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "standstill",
+      "word": "standstill",
+      "image": 4,
+      "pos": "n.",
+      "meaning": "停顿；停滞",
+      "collocation": "bring work to a standstill",
+      "collocation_source": "coach_composed",
+      "connotation": "中性至负面",
+      "note": "常用at a standstill或come to a standstill；不直接当动词。",
+      "normalization_note": null,
+      "topics": [
+        "change"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/standstill",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：停顿；停滞"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "beget",
+      "word": "beget",
+      "image": 4,
+      "pos": "v.",
+      "meaning": "导致，产生；生育（父亲生子）",
+      "collocation": "distrust begets further distrust",
+      "collocation_source": "coach_composed",
+      "connotation": "较正式",
+      "note": "常用于因果链；过去式begot，过去分词begotten。",
+      "normalization_note": null,
+      "topics": [
+        "change"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/beget",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：导致，产生；生育（父亲生子）"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "bust",
+      "word": "bust",
+      "image": 4,
+      "pos": "n.; v.; adj.",
+      "meaning": "n. 半身像；胸部；失败；经济萧条；v. 打破；逮捕；adj. 破产的",
+      "collocation": "a cycle of boom and bust",
+      "collocation_source": "coach_composed",
+      "connotation": "名词可中性；部分义口语",
+      "note": "不要只记雕像；go bust是破产，经济语境与boom相对。",
+      "normalization_note": null,
+      "topics": [
+        "arts",
+        "economy",
+        "action"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bust",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 半身像；胸部；失败；经济萧条；v. 打破；逮捕；adj. 破产的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "epidemic",
+      "word": "epidemic",
+      "image": 4,
+      "pos": "n.; adj.",
+      "meaning": "n. 流行病暴发；迅速蔓延；adj. 流行性的，广泛蔓延的",
+      "collocation": "an epidemic of fraud",
+      "collocation_source": "coach_composed",
+      "connotation": "常含负面含义",
+      "note": "比喻义可形容非疾病现象，并非仅指疾病名称。",
+      "normalization_note": null,
+      "topics": [
+        "body",
+        "society"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/epidemic",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 流行病暴发；迅速蔓延；adj. 流行性的，广泛蔓延的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "intelligible",
+      "word": "intelligible",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "能被理解的；清楚可懂的",
+      "collocation": "an intelligible explanation",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义",
+      "note": "表示内容可理解，不表示人聪明。",
+      "normalization_note": null,
+      "topics": [
+        "language",
+        "reason"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/intelligible",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：能被理解的；清楚可懂的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "alike",
+      "word": "alike",
+      "image": 4,
+      "pos": "adj.; adv.",
+      "meaning": "adj. 相似的；adv. 同样地，一样地",
+      "collocation": "the two approaches look alike",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "形容词常作表语；副词可表示两类人同样如此。",
+      "normalization_note": null,
+      "topics": [
+        "reason"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/alike",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 相似的；adv. 同样地，一样地"
+        }
+      ],
+      "related_words": [
+        "divergent"
+      ]
+    },
+    {
+      "surface": "vicissitude",
+      "word": "vicissitude",
+      "image": 4,
+      "pos": "n.",
+      "meaning": "变迁，起伏；际遇；不可控的困难",
+      "collocation": "the vicissitudes of a long career",
+      "collocation_source": "coach_composed",
+      "connotation": "较正式",
+      "note": "常用复数，既可指好坏变化，也可着重艰难遭遇。",
+      "normalization_note": null,
+      "topics": [
+        "change",
+        "time"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vicissitude",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：变迁，起伏；际遇；不可控的困难"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "impunity",
+      "word": "impunity",
+      "image": 4,
+      "pos": "n.",
+      "meaning": "免受惩罚、伤害或损失",
+      "collocation": "act with impunity",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，违规语境常负面",
+      "note": "不受惩罚不等于无罪，须区分事实后果与行为正当性。",
+      "normalization_note": null,
+      "topics": [
+        "society",
+        "conflict"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impunity",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：免受惩罚、伤害或损失"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "haughty",
+      "word": "haughty",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "傲慢自大的；居高临下的",
+      "collocation": "a haughty response",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "常伴随认为别人低一等的优越态度。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "social"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/haughty",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：傲慢自大的；居高临下的"
+        }
+      ],
+      "related_words": [
+        "disdainful"
+      ]
+    },
+    {
+      "surface": "blatant",
+      "word": "blatant",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "公然的，明目张胆的；刺耳喧嚣的",
+      "collocation": "a blatant distortion of the facts",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "note": "不只是显著，常含无耻或令人反感的评价。",
+      "normalization_note": null,
+      "topics": [
+        "language",
+        "character"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blatant",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：公然的，明目张胆的；刺耳喧嚣的"
+        }
+      ],
+      "related_words": [
+        "egregious"
+      ]
+    },
+    {
+      "surface": "disdainful",
+      "word": "disdainful",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "轻蔑的；不屑的",
+      "collocation": "disdainful of opposing views",
+      "collocation_source": "coach_composed",
+      "connotation": "通常贬义",
+      "note": "重点是看不起某人某物，常接of。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "social"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disdainful",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：轻蔑的；不屑的"
+        }
+      ],
+      "related_words": [
+        "haughty",
+        "cavalier"
+      ]
+    },
+    {
+      "surface": "germinate",
+      "word": "germinate",
+      "image": 4,
+      "pos": "v.",
+      "meaning": "发芽；萌发，开始形成",
+      "collocation": "an idea begins to germinate",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "既用于种子，也用于想法或制度的初步发展。",
+      "normalization_note": null,
+      "topics": [
+        "nature",
+        "change"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/germinate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：发芽；萌发，开始形成"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "ruffle",
+      "word": "ruffle",
+      "image": 4,
+      "pos": "v.; n.",
+      "meaning": "v. 弄乱；使烦躁或不安；n. 褶边；波纹",
+      "collocation": "ruffle someone's composure",
+      "collocation_source": "coach_composed",
+      "connotation": "中性至负面",
+      "note": "既可扰动表面，也可扰乱情绪；不是ruffian。",
+      "normalization_note": null,
+      "topics": [
+        "mood",
+        "material"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ruffle",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 弄乱；使烦躁或不安；n. 褶边；波纹"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "cordial",
+      "word": "cordial",
+      "image": 4,
+      "pos": "adj.; n.",
+      "meaning": "adj. 热情友好的；真挚的；n. 甜烈酒；提神饮料",
+      "collocation": "maintain cordial relations",
+      "collocation_source": "coach_composed",
+      "connotation": "常褒义",
+      "note": "友好可带礼貌距离，不必是亲密朋友。",
+      "normalization_note": null,
+      "topics": [
+        "social",
+        "mood"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cordial",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 热情友好的；真挚的；n. 甜烈酒；提神饮料"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "promise",
+      "word": "promise",
+      "image": 4,
+      "pos": "n.; v.",
+      "meaning": "n. 承诺；成功的希望或潜力；v. 承诺；预示",
+      "collocation": "show considerable promise",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义",
+      "note": "show promise指显露潜力，不是作出承诺。",
+      "normalization_note": null,
+      "topics": [
+        "language",
+        "reason"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/promise",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 承诺；成功的希望或潜力；v. 承诺；预示"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "contract",
+      "word": "contract",
+      "image": 4,
+      "pos": "n.; v.",
+      "meaning": "n. 合同，契约；v. 收缩；订约；感染疾病；招致",
+      "collocation": "muscles contract; contract an illness",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "note": "名词合同与动词收缩、感染分别记；不能只凭一个中文义解题。",
+      "normalization_note": null,
+      "topics": [
+        "economy",
+        "change",
+        "body"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/contract",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 合同，契约；v. 收缩；订约；感染疾病；招致"
+        }
+      ],
+      "related_words": [
+        "distend"
+      ]
+    },
+    {
+      "surface": "histrionic",
+      "word": "histrionic",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "矫揉造作、情绪夸张的；表演或戏剧的",
+      "collocation": "a histrionic display of grief",
+      "collocation_source": "coach_composed",
+      "connotation": "夸张义贬；戏剧义中性",
+      "note": "区分正常舞台表演与故作姿态的引申义。",
+      "normalization_note": null,
+      "topics": [
+        "character",
+        "arts"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/histrionic",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：矫揉造作、情绪夸张的；表演或戏剧的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "listless",
+      "word": "listless",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "无精打采的；缺乏兴趣或活力的",
+      "collocation": "feel listless after a sleepless night",
+      "collocation_source": "coach_composed",
+      "connotation": "负面",
+      "note": "缺乏活力不一定意味着悲伤，也不等于故意敷衍。",
+      "normalization_note": null,
+      "topics": [
+        "mood",
+        "body"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/listless",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无精打采的；缺乏兴趣或活力的"
+        }
+      ],
+      "related_words": []
+    },
+    {
+      "surface": "contented",
+      "word": "contented",
+      "image": 4,
+      "pos": "adj.",
+      "meaning": "满意的；知足的",
+      "collocation": "a contented expression",
+      "collocation_source": "coach_composed",
+      "connotation": "通常褒义",
+      "note": "不自动含自满不求进取的贬义。",
+      "normalization_note": null,
+      "topics": [
+        "mood"
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/contented",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：满意的；知足的"
+        }
+      ],
+      "related_words": []
+    }
+  ],
+  "existing_updates": [
+    {
+      "word": "immense",
+      "previous": {
+        "pos": "adj.",
+        "meaning": "巨大的，极大的",
+        "note": "可修饰规模、数量或程度；不是必须无限大。 语体／色彩：中性。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "blemish",
+      "previous": {
+        "pos": "n.; v.",
+        "meaning": "n. 瑕疵，污点；v. 损害外观或完美性，玷污",
+        "note": "常见外观或声誉小缺点；与功能性缺陷defect有所区别。 语体／色彩：负面。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "witty",
+      "previous": {
+        "pos": "adj.",
+        "meaning": "机智幽默的；巧妙风趣的",
+        "note": "核心是聪慧而幽默，不应只笼统记成聪明。 语体／色彩：通常褒义。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "amplify",
+      "previous": {
+        "pos": "v.",
+        "meaning": "放大；增强；详述",
+        "note": "声音语境中表示增强；用于陈述时可指增加细节、展开说明。 语体/色彩：中性。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "ubiquitous",
+      "previous": {
+        "pos": "adj.",
+        "meaning": "无处不在的；普遍存在的",
+        "note": "说的是分布广、到处遇到；不是 indigenous 的“原生本土”。 语体/色彩：中性或依情境评价。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "portray",
+      "previous": {
+        "pos": "v.",
+        "meaning": "描绘；刻画；把……描述成",
+        "note": ""
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "misanthrope",
+      "previous": {
+        "pos": "n.",
+        "meaning": "厌恶或不信任人类的人，厌世者",
+        "note": "不等同introvert内向者；重点是对人类的厌恶或不信任。 语体／色彩：通常负面。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "temper",
+      "previous": {
+        "pos": "v.; n.",
+        "meaning": "v. 缓和；使适度；使回火；n. 脾气；情绪",
+        "note": "原题选项 tempers 是动词第三人称单数；这里的相关义是缓和、削弱程度，不是“脾气”。词义整理不构成对本题答案的判定。 语体／色彩：中性，视对象而定 来源：test143_section2_hard 第1题。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "disgorge",
+      "previous": {
+        "pos": "v.",
+        "meaning": "吐出；涌出，大量排出；被迫交出或退还",
+        "note": "可写交通工具涌出人群；法律或商业语境可指退还不当收益。 语体／色彩：依义项。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "haughty",
+      "previous": {
+        "pos": "adj.",
+        "meaning": "自大的；傲慢的",
+        "note": "手写笔记释义整理，尚未逐词词典核验。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "blatant",
+      "previous": {
+        "pos": "adj.",
+        "meaning": "公然的，明目张胆的；喧嚣刺耳的",
+        "note": "不只是中性的“明显”；通常含冒犯、肆无忌惮意味。 语体／色彩：贬义。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "contract",
+      "previous": {
+        "pos": "n.; v.",
+        "meaning": "合同；使缩小；签约",
+        "note": "手写笔记释义整理，尚未逐词词典核验。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    },
+    {
+      "word": "contented",
+      "previous": {
+        "pos": "adj.",
+        "meaning": "满足的，满意的",
+        "note": "名词和动词“满足”是content；contented另可为content的过去式和过去分词。 语体／色彩：正面。"
+      },
+      "reason": "本批逐词核验后补充词性、核心义与辨析；原有复习证据保留。"
+    }
+  ],
+  "topic_event_ids": [
+    "dd62467e-2f3d-45dd-9877-d345a68c298a",
+    "a197d089-a3bb-42ce-9149-c98209537b84",
+    "3c7e7b54-2722-4a86-88e0-92438fb75e95",
+    "b6e68c66-5b52-40fe-8abe-513bf30cc2e8",
+    "ca460766-066b-4173-9f00-f003cbf9e7bc",
+    "630f9d8a-8b02-4ee9-870f-282a03d11bce",
+    "52ed1132-7eab-446e-a307-62e23dad9a89",
+    "e52fd246-1fb2-4c5f-b314-df7f662b86a2",
+    "92acf55a-6c89-4bab-a754-409eea057d7e",
+    "0e9383a4-b632-4e07-abd5-7aab8c3abdbc",
+    "f47f9695-75d3-4904-b974-7317a94789ab",
+    "3a3a3b84-6c07-4caa-a7cf-5075b7d7f649",
+    "848b47d0-08d5-4f9c-a3fc-84e7629c509d",
+    "6627e6fb-db2c-42a9-9b70-6b65b580bc00",
+    "781dd7a5-d15d-4df6-bdfd-6f2cce660195",
+    "421841f2-ad32-46e7-ae7b-0ad877e47468",
+    "d88db456-c033-4048-b78d-1a5f597581f6",
+    "0271c165-8f8d-451b-96b0-8f93862b7edd",
+    "b6caa0a8-3bfe-4369-8a1b-e81ee18966d0",
+    "d0610a70-e41d-4a4d-b63e-f9c0a9ffd713",
+    "b4b9f51c-337d-4832-a3cb-5adf6a848062",
+    "cb5feae2-baa8-49ae-840f-aee1a70760f5",
+    "1c6304a4-543c-40ba-9ba4-4526deed866f",
+    "3ab23da4-45be-42ba-b91b-1190042e24f4",
+    "a819fbe9-4729-43b3-82a3-7291a49d7d7e",
+    "f6a7c8b3-baa3-4465-9daa-fce61e3d577f",
+    "4f53e150-e6dc-4b7a-8afb-6a30c24b2cb7",
+    "966017b6-23f0-4e51-9af4-d89a238cfa30",
+    "2188e554-4055-4f3e-a7fb-113219de32c3",
+    "0faec064-7770-4247-b518-6d24438c6a1a",
+    "c063784e-cbef-4979-a57e-c1c3f1e8ed04",
+    "3e5a4e19-ac3a-4f6d-8c00-eba506530ef3",
+    "59b98507-c4af-4df9-9f01-233a42845d53",
+    "abb1b135-3972-4e71-91e6-ee07c157b55c",
+    "2da87b0a-6c79-4c8d-bd82-9c661cca825b",
+    "f6f21765-8a07-4869-8154-56d3c345dab9",
+    "766ad2b4-806b-4776-a144-a3e4fce8498c",
+    "0c8b6550-41bc-4099-92c7-d17b7c6e0819",
+    "6ce22c51-e58c-4c61-846f-faf8c70e53b7",
+    "8bcb3b6a-1d5a-4527-8fdd-2fccc95152a5",
+    "94b8874d-46c5-4af7-ae52-795bffeffc5b",
+    "f60c2b4d-aca1-4850-8d15-19ecc3e11de2",
+    "88055f5a-416f-49ea-b0dd-59a87e283e9c",
+    "2a6d925a-75c9-459a-bd68-13935c0f31e4",
+    "4333ccda-b9ce-49cd-b332-58531432c35a",
+    "9325b474-ceab-409c-8bec-4be0f994689e",
+    "fcfa2136-f159-4d70-8195-33762dbc2110",
+    "99d13cef-1ea5-4ef1-8771-acc2fd907ef4",
+    "41ac70de-7128-425b-b411-28727481416a",
+    "70c4ea0a-f0a3-414b-acbb-7f00bad7b65f",
+    "aa218935-0df4-4664-8f4d-da8fb252fe9c",
+    "047c22e9-10a3-455c-baae-e6111581676e",
+    "5b96bf43-cd3a-45b7-9019-ba6ce31b99ff",
+    "338cad43-8503-4ce5-9a53-613b15613edf",
+    "abf97e2b-2894-446d-b6b4-9a7955dacef9",
+    "e61ce05a-2cea-4e08-822c-ec1aa790eb44",
+    "434342a7-ba32-424a-87fc-743a7fa2f57f",
+    "d0959970-a00c-4890-b714-e1d4d4554b04",
+    "3a5b7e85-a91b-419c-a5cc-e892a855da8a",
+    "6ce009d2-e3b7-4b47-93eb-a036645b4dea",
+    "d17f38b5-efe0-4f5a-8513-172806c1da4d",
+    "79acbaec-e175-4a59-a54d-4ed55018951e",
+    "e5dcb21d-9779-49cf-b8cf-6a6386549d2e",
+    "004c52b0-349d-4fc4-93d7-4868a66a0d68",
+    "f61b21d5-6abb-44f6-a7c0-90ba95ad9ba4",
+    "abdb35cb-156c-4606-ae8e-64fa59fa142e",
+    "3a478572-41f1-4b8b-b45d-1ab43d0e885c",
+    "9c232be9-bbfc-482a-9f37-9fe11dc3a055",
+    "dbe022d5-f8af-4998-996e-58e7554dd54d",
+    "f1ac71c5-8967-4ea3-b0ff-572303066dcd",
+    "0004ad88-14aa-4619-a6a5-c774ca990c44",
+    "6f3432d3-e8ed-4a89-9feb-f2ba4e5760f6",
+    "ad453494-d331-403b-9bc8-e37a9a5cf502",
+    "3db07370-d8b9-415d-bb09-b4f82615484c",
+    "9f343ba9-56a7-412e-8ceb-268f63b16ea5",
+    "dfeaa92b-918d-4cf0-b939-32bcfba1c06b",
+    "2641f98a-deae-4d18-93f9-17e42e5dc6b1",
+    "880cc2be-2e8a-4397-8a0a-60df0b4e50f1",
+    "3035260a-c3f0-4e00-a06f-c717bcea1416",
+    "164e5ded-c401-4a71-8ec8-73bc7429f0b8",
+    "48f05e57-b374-4e93-9d54-9a122c220f11",
+    "28aba97b-105a-461f-9731-0101d3c6285a",
+    "434894e3-de26-43b5-8d2c-e7679810f261",
+    "62a777d0-8e42-4c86-9c1c-7f78fccb6f36",
+    "5ab36f39-24f8-4fe6-ab58-2a501952444d",
+    "47108a92-45ac-41b6-819a-c0812c26e1d3",
+    "740ad4e5-3f19-4a0c-887e-fb7e6992437c",
+    "f5f507e1-477e-45df-86c3-533a3bfa462a",
+    "7a628b8d-5d88-4bd7-b726-28b2a5c29cd0",
+    "eeee4954-3ff3-410c-be2f-51557edf117a",
+    "dbae3fc5-07c6-40cc-b444-bda4e01740d2",
+    "07c6a2cc-4593-43a4-b89b-53d25428d457",
+    "ab9a1ace-9bba-453b-a0f8-74a97f2bb0d9",
+    "1c50cb51-27a0-4fcf-8533-4f132a913d57",
+    "73c7416d-7836-4346-8eef-539582882a97",
+    "c684e6e8-e194-40d7-a6d1-3c9138fcc8a4",
+    "6df3a7d4-f400-4794-95b5-49618d9170b7",
+    "299607be-6218-4019-b6e1-7cd02033b9d7",
+    "8e83c973-aeb4-4146-89bb-fddaadda8998",
+    "9474db18-c824-4745-be09-f6b7f46195cf",
+    "0f80a169-bbca-4b66-831f-28bcfbb41184",
+    "8df3babf-19a9-4cc3-aefa-250d8a02d5a1",
+    "20d6ac86-939b-4d37-8306-234a11ad8e0c",
+    "ed0fa10a-550a-4920-bd02-e029d58bba9c",
+    "360ed0f0-168f-4ea7-b9ea-09872add52dc",
+    "5c45c887-5229-46e0-8a54-bafa20e0fa06",
+    "71eabc6f-98c6-4db6-903d-c60b83b8488f",
+    "29aebb3b-2d45-4ffe-aa17-669e9e71500c",
+    "a0f0e10e-b7bd-41ec-8d37-cb15e6d67e7d",
+    "9f1a0c96-232d-4f7d-8034-346494762ded",
+    "3070facf-7f4a-459f-a549-7ebf8d96cd6b",
+    "2e1a0fe4-72bb-4a6b-8073-2a12b07a05fb"
+  ]
+}

@@ -6099,6 +6099,566 @@
           "evidence": "已读取词典条目并归纳核心义：一致的，相符的；全等的；同余的"
         }
       ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-1",
+      "type": "synonym",
+      "title": "处处可见",
+      "note": "仅比较无处不在义；ubiquitous也常指日常反复遇见，omnipresent语气更绝对。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "ubiquitous",
+          "usage": "无处不在的；普遍可见的；比一般常见更强调到处都能遇见。",
+          "example": "ubiquitous digital screens"
+        },
+        {
+          "word": "omnipresent",
+          "usage": "无所不在的；强调处处存在，可与ubiquitous在相应语境比较。",
+          "example": "omnipresent surveillance"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ubiquitous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无处不在的；普遍可见的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/omnipresent",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无所不在的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-2",
+      "type": "synonym",
+      "title": "普遍分布",
+      "note": "仅比较广泛存在义：pervasive强调渗透每部分，prevalent强调常见或盛行；强度与侧重不同。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "pervasive",
+          "usage": "遍及各处的；渗透各方面的；强调贯穿整体的各部分，不仅出现频率高。",
+          "example": "a pervasive sense of unease"
+        },
+        {
+          "word": "prevalent",
+          "usage": "普遍存在的；盛行的；占主导的；可以很常见而非无处不在。",
+          "example": "a prevalent belief"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pervasive",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：遍及各处的；渗透各方面的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prevalent",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：普遍存在的；盛行的；占主导的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-3",
+      "type": "synonym",
+      "title": "灵巧敏捷",
+      "note": "nimble重在动作或反应轻快；dexterous重在熟练技巧，均可用于手或思维。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "nimble",
+          "usage": "敏捷轻巧的；思维机敏的；侧重反应和动作灵活迅速，也能形容头脑。",
+          "example": "nimble fingers"
+        },
+        {
+          "word": "dexterous",
+          "usage": "手巧的；灵巧熟练的；机敏善处理的；强调操作或处理事情的技巧，不只是快。",
+          "example": "dexterous handling of a dispute"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/nimble",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：敏捷轻巧的；思维机敏的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dexterous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：手巧的；灵巧熟练的；机敏善处理的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-4",
+      "type": "synonym",
+      "title": "狡猾多谋",
+      "note": "仅比较使用计谋的狡猾义；crafty的手巧义不在此组。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "wily",
+          "usage": "狡猾的；诡计多端的；强调运用计谋，有时也含对老练手腕的承认。",
+          "example": "a wily opponent"
+        },
+        {
+          "word": "crafty",
+          "usage": "狡猾的；巧妙熟练的；与wily在狡猾义相近；并非所有熟练都不诚实。",
+          "example": "a crafty scheme"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/wily",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：狡猾的；诡计多端的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/crafty",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：狡猾的；巧妙熟练的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-5",
+      "type": "synonym",
+      "title": "傲慢轻视",
+      "note": "haughty突出自认高人一等；disdainful突出对对象的轻蔑。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "haughty",
+          "usage": "傲慢自大的；居高临下的；常伴随认为别人低一等的优越态度。",
+          "example": "a haughty response"
+        },
+        {
+          "word": "disdainful",
+          "usage": "轻蔑的；不屑的；重点是看不起某人某物，常接of。",
+          "example": "disdainful of opposing views"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/haughty",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：傲慢自大的；居高临下的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disdainful",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：轻蔑的；不屑的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-6",
+      "type": "antonym",
+      "title": "冲动与审慎",
+      "note": "仅比较决策方式：impulsive未经充分思考；prudent重在审慎判断。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "impulsive",
+          "usage": "冲动的；凭一时冲动行事的；强调未充分思考就行动，不等于犹豫不决。",
+          "example": "an impulsive purchase"
+        },
+        {
+          "word": "prudent",
+          "usage": "审慎明智的；谨慎节制的；包含良好判断，不只是胆小或消极。",
+          "example": "a prudent decision"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impulsive",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：冲动的；凭一时冲动行事的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prudent",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：审慎明智的；谨慎节制的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-7",
+      "type": "antonym",
+      "title": "呼吸方向",
+      "note": "inhale吸入，exhale呼出；仅限呼吸义。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "inhale",
+          "usage": "吸入，吸气；急切或贪婪地吃下、吸收；和exhale方向相反；比喻进食义另记。",
+          "example": "inhale deeply"
+        },
+        {
+          "word": "exhale",
+          "usage": "呼出；散发气体或蒸气；核心方向是向外，与inhale相反。",
+          "example": "exhale slowly"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inhale",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：吸入，吸气；急切或贪婪地吃下、吸收"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exhale",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：呼出；散发气体或蒸气"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-8",
+      "type": "antonym",
+      "title": "体积变化",
+      "note": "仅比较物理体积：distend胀大，contract收缩；合同与感染义不在此组。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "distend",
+          "usage": "使膨胀；胀大；扩张；常指内部压力使容积扩大。",
+          "example": "gas distends the abdomen"
+        },
+        {
+          "word": "contract",
+          "usage": "n. 合同，契约；v. 收缩；订约；感染疾病；招致；名词合同与动词收缩、感染分别记；不能只凭一个中文义解题。",
+          "example": "muscles contract; contract an illness"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/distend",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使膨胀；胀大；扩张"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/contract",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 合同，契约；v. 收缩；订约；感染疾病；招致"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-9",
+      "type": "synonym",
+      "title": "虚假或虚构",
+      "note": "feigned强调假装或非真心；fictitious强调虚构不存在；二者仅在非真实义相近。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "feigned",
+          "usage": "假装的；虚构的；并非真心的；也是feign的过去式及过去分词；此处按形容词收录。",
+          "example": "feigned enthusiasm"
+        },
+        {
+          "word": "fictitious",
+          "usage": "虚构的；假冒的；并非真实的；文学虚构可中性；假身份带欺骗意味。",
+          "example": "a fictitious identity"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/feigned",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：假装的；虚构的；并非真心的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fictitious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：虚构的；假冒的；并非真实的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-10",
+      "type": "synonym",
+      "title": "公然恶劣",
+      "note": "仅比较明显不当的行为：egregious着重恶劣程度，blatant着重明目张胆。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "egregious",
+          "usage": "极其明显且恶劣的；惊人的（坏处）；现代优先记极坏，旧时杰出义不作为默认答案。",
+          "example": "an egregious breach of trust"
+        },
+        {
+          "word": "blatant",
+          "usage": "公然的，明目张胆的；刺耳喧嚣的；不只是显著，常含无耻或令人反感的评价。",
+          "example": "a blatant distortion of the facts"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/egregious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：极其明显且恶劣的；惊人的（坏处）"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blatant",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：公然的，明目张胆的；刺耳喧嚣的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-11",
+      "type": "synonym",
+      "title": "任性作对",
+      "note": "仅比较执拗不听劝义；willful的故意义不自动等于perverse悖理。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "willful",
+          "usage": "任性的，固执的；故意的；wilful也是认可拼写；故意义不等于意志坚强。",
+          "example": "willful neglect"
+        },
+        {
+          "word": "perverse",
+          "usage": "故意作对的；悖理的；乖戾的；败坏的；常指顽固违背合理做法，不必涉及性含义。",
+          "example": "a perverse refusal to cooperate"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/willful",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：任性的，固执的；故意的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/perverse",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：故意作对的；悖理的；乖戾的；败坏的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-12",
+      "type": "synonym",
+      "title": "强烈热情",
+      "note": "avid侧重渴望和热衷；fervid侧重情感炽烈。不能把普通热情一律判作狂热。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "avid",
+          "usage": "热切的，热衷的；渴求的，贪求的；avid for可表示渴望；是否贬义取决于对象与程度。",
+          "example": "an avid reader"
+        },
+        {
+          "word": "fervid",
+          "usage": "热烈的，热情强烈的；灼热的；可能含过度热情，但不必像rabid一样暗示非理性。",
+          "example": "fervid devotion to a cause"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/avid",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：热切的，热衷的；渴求的，贪求的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fervid",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：热烈的，热情强烈的；灼热的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-13",
+      "type": "synonym",
+      "title": "轻慢他人",
+      "note": "仅比较不尊重的态度：cavalier重在不把事情当回事，disdainful重在鄙视。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "cavalier",
+          "usage": "adj. 漫不经心而轻慢的；n. 骑士；骑兵；GRE常考把重要事项不当回事，而非仅仅洒脱。",
+          "example": "a cavalier attitude toward safety"
+        },
+        {
+          "word": "disdainful",
+          "usage": "轻蔑的；不屑的；重点是看不起某人某物，常接of。",
+          "example": "disdainful of opposing views"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cavalier",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 漫不经心而轻慢的；n. 骑士；骑兵"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disdainful",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：轻蔑的；不屑的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-14",
+      "type": "synonym",
+      "title": "向外释放",
+      "note": "仅比较排出气体：exhale偏呼气或散发蒸气，emit范围更广。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "exhale",
+          "usage": "呼出；散发气体或蒸气；核心方向是向外，与inhale相反。",
+          "example": "exhale slowly"
+        },
+        {
+          "word": "emit",
+          "usage": "发出；排放；放射；发行；适用于声音、光、热和气体，不局限于呼吸。",
+          "example": "emit heat and light"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exhale",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：呼出；散发气体或蒸气"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/emit",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：发出；排放；放射；发行"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-15",
+      "type": "antonym",
+      "title": "相似与相异",
+      "note": "仅比较对象之间的性质：alike相似，divergent有分歧；注意alike常作表语。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "alike",
+          "usage": "adj. 相似的；adv. 同样地，一样地；形容词常作表语；副词可表示两类人同样如此。",
+          "example": "the two approaches look alike"
+        },
+        {
+          "word": "divergent",
+          "usage": "分叉的，发散的；相异的，有分歧的；强调从共同点分开或互不一致。",
+          "example": "divergent interpretations"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/alike",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 相似的；adv. 同样地，一样地"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/divergent",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：分叉的，发散的；相异的，有分歧的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-evening-handwritten-16",
+      "type": "antonym",
+      "title": "增强与削弱",
+      "note": "仅比较抽象强度或力量：amplify增强，sap渐渐削弱；需搭配可比较的对象。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "amplify",
+          "usage": "放大，增强；详述，扩充说明；既可扩大音量或影响，也可补充细节。",
+          "example": "amplify the argument with evidence"
+        },
+        {
+          "word": "sap",
+          "usage": "n. 植物汁液；精力；傻瓜；v. 逐渐削弱，耗尽；动词强调渐渐消耗力量，也可影响信心或耐心。",
+          "example": "sap public confidence"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/amplify",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：放大，增强；详述，扩充说明"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sap",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 植物汁液；精力；傻瓜；v. 逐渐削弱，耗尽"
+        }
+      ]
     }
   ]
 }
