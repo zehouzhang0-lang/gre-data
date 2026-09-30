@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-27",
+  "updated_at": "2026-09-30",
   "topics": [
     {
       "id": "mood",
@@ -5459,6 +5459,644 @@
           "checked_at": "2026-09-27",
           "status": "checked",
           "evidence": "已读取词典条目并归纳核心义：缩小规模；精简机构，裁员；搬到较小住所等"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-1",
+      "type": "lookalike",
+      "title": "冒昧与奢华",
+      "note": "presumptuous是冒昧越分；sumptuous是奢华丰盛，不能凭共同字母推断近义。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "presumptuous",
+          "usage": "自以为是而冒昧的；放肆越分的；强调未经许可或无充分根据而自作主张，不是单纯自信。",
+          "example": "a presumptuous assumption"
+        },
+        {
+          "word": "sumptuous",
+          "usage": "奢华的；豪华丰盛的；侧重丰盛、华美且耗费昂贵；勿与presumptuous混淆。",
+          "example": "a sumptuous banquet"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/presumptuous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：自以为是而冒昧的；放肆越分的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sumptuous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：奢华的；豪华丰盛的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-2",
+      "type": "synonym",
+      "title": "替代旧事物",
+      "note": "supplant常带排挤旧者的意味；supersede常指新规则或版本使旧者不再适用。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "supplant",
+          "usage": "取代，替代；排挤而占据其位置；常强调新者挤掉旧者，并非每次都含欺诈。",
+          "example": "new methods supplant old ones"
+        },
+        {
+          "word": "supersede",
+          "usage": "取代；使旧事物不再使用或生效；注意结尾-sede；新版本替代旧版本的常用词。",
+          "example": "a revised policy supersedes the old one"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/supplant",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：取代，替代；排挤而占据其位置"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/supersede",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：取代；使旧事物不再使用或生效"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-3",
+      "type": "synonym",
+      "title": "难以改变的态度",
+      "note": "implacable重在敌意无法平息；inexorable重在无法说服或阻挡；hard-nosed还可指务实。仅比较强硬不让步义。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "implacable",
+          "usage": "无法安抚或平息的；不能缓和的；重在敌意、愤怒或立场难以平息；与inexorable有交集但不处处等同。",
+          "example": "implacable hostility"
+        },
+        {
+          "word": "inexorable",
+          "usage": "不可阻挡的；不为劝说所动的；无情持续的；可指趋势无法阻挡，也可指人不肯让步。",
+          "example": "an inexorable decline"
+        },
+        {
+          "word": "hard-nosed",
+          "usage": "强硬不妥协的；讲求实际的；既可形容难对付，也可肯定清醒务实，不只译顽固。",
+          "example": "a hard-nosed negotiator"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/implacable",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无法安抚或平息的；不能缓和的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inexorable",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：不可阻挡的；不为劝说所动的；无情持续的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hard-nosed",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：强硬不妥协的；讲求实际的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hardheaded",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已核对派生词的基础义或易混词拼写。"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-4",
+      "type": "synonym",
+      "title": "世俗事务",
+      "note": "仅比较世俗义：secular非宗教；temporal与精神权力相对；mundane与超尘俗事务相对。其他义项不等价。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "secular",
+          "usage": "adj. 世俗的，非宗教的；长期的；n. 不受修会誓约约束的教士；俗人；非宗教不等于无神论；经济等语境可指长期趋势。",
+          "example": "secular institutions; a secular trend"
+        },
+        {
+          "word": "temporal",
+          "usage": "adj. 时间的；世俗的；颞部的；n. 颞部的骨或肌肉等结构；不是temporary暂时的；世俗义可近secular，解剖义指颞部。",
+          "example": "temporal sequence"
+        },
+        {
+          "word": "mundane",
+          "usage": "平凡普通的；日常的；世俗的；日常义不等于低劣；世俗义与精神世界相对。",
+          "example": "mundane household tasks"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/secular",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 世俗的，非宗教的；长期的；n. 不受修会誓约约束的教士；俗人"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/temporal",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 时间的；世俗的；颞部的；n. 颞部的骨或肌肉等结构"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mundane",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：平凡普通的；日常的；世俗的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-5",
+      "type": "synonym",
+      "title": "违抗",
+      "note": "defy强调反抗、挑战；flout强调蔑视规则而不遵守。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "defy",
+          "usage": "违抗，公然反抗；使无法完成或理解；向某人挑战；defy explanation指难以解释；defy someone to do要求对方做认为不可能的事。",
+          "example": "defy expectations"
+        },
+        {
+          "word": "flout",
+          "usage": "v. 公然蔑视或无视；n. 嘲弄（较少见）；通常搭配规则、法律；勿与flaunt炫耀混淆。",
+          "example": "flout safety regulations"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/defy",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：违抗，公然反抗；使无法完成或理解；向某人挑战"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flout",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 公然蔑视或无视；n. 嘲弄（较少见）"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-6",
+      "type": "synonym",
+      "title": "无法满足的欲望",
+      "note": "insatiable不能满足；quenchless不能平息；voracious胃口或需求极大。须结合欲望对象判断褒贬。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "insatiable",
+          "usage": "无法满足的；贪得无厌的；对知识可褒，对财富欲望可贬，不能机械贴贬义。",
+          "example": "an insatiable appetite for knowledge"
+        },
+        {
+          "word": "quenchless",
+          "usage": "无法熄灭的；无法满足或平息的；相当于unquenchable，重点是不能被平息或满足。",
+          "example": "quenchless curiosity"
+        },
+        {
+          "word": "voracious",
+          "usage": "贪吃的；求知等欲望强烈的；食欲很大或热切求知，不一定含道德谴责。",
+          "example": "a voracious reader"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/insatiable",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无法满足的；贪得无厌的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/quenchless",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无法熄灭的；无法满足或平息的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/voracious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：贪吃的；求知等欲望强烈的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-7",
+      "type": "lookalike",
+      "title": "思考与事前谋划",
+      "note": "meditate沉思或冥想；premeditate强调事先考虑，常用于预谋。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "meditate",
+          "usage": "沉思；冥想；思量，谋划；不只是宗教冥想；勿与mediate调解混淆。",
+          "example": "meditate on a difficult question"
+        },
+        {
+          "word": "premeditate",
+          "usage": "事先考虑；预谋；常见premeditated attack，强调事前计划而非冲动。",
+          "example": "premeditate an attack"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/meditate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：沉思；冥想；思量，谋划"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/premeditate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：事先考虑；预谋"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-8",
+      "type": "synonym",
+      "title": "放弃或让出",
+      "note": "relinquish放弃或松开；cede常把权利、领土等转交给另一方。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "relinquish",
+          "usage": "放弃；交出控制权；松开；可指自愿或不情愿放弃，也可指松手。",
+          "example": "relinquish control"
+        },
+        {
+          "word": "cede",
+          "usage": "割让；让出，转交；通常把领土、权利或控制权交给另一方。",
+          "example": "cede authority to a committee"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/relinquish",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：放弃；交出控制权；松开"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cede",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：割让；让出，转交"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-9",
+      "type": "synonym",
+      "title": "广博学识",
+      "note": "erudite重在读书所得的深厚学识；encyclopedic重在全面广博。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "erudite",
+          "usage": "博学的；显示深厚学识的；本词按形容词记忆；名词学识为erudition。",
+          "example": "an erudite commentary"
+        },
+        {
+          "word": "encyclopedic",
+          "usage": "百科全书式的；广博全面的；重在覆盖广，erudite更强调学识深厚。",
+          "example": "encyclopedic knowledge of history"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/erudite",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：博学的；显示深厚学识的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/encyclopedic",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：百科全书式的；广博全面的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-10",
+      "type": "synonym",
+      "title": "不同成分",
+      "note": "disparate可比较互异事物；heterogeneous强调一个整体由异质成分组成。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "disparate",
+          "usage": "迥然不同的；由不同性质的成分组成的；核心是性质差异，不是desperate绝望的；本批按常用形容词收录。",
+          "example": "disparate sources of evidence"
+        },
+        {
+          "word": "heterogeneous",
+          "usage": "由不同成分组成的；异质的，多样混合的；不是单纯数量多，而是组成部分性质不同。",
+          "example": "a heterogeneous population"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disparate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：迥然不同的；由不同性质的成分组成的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/heterogeneous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：由不同成分组成的；异质的，多样混合的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-11",
+      "type": "synonym",
+      "title": "初起阶段",
+      "note": "incipient强调刚出现；inchoate还强调未成形、不连贯。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "incipient",
+          "usage": "开始出现的；初起的；强调刚开始显现，不一定强调混乱或不成形。",
+          "example": "incipient signs of conflict"
+        },
+        {
+          "word": "inchoate",
+          "usage": "初步形成的；未充分发展的；未成形而不连贯的；与incipient相比更强调尚未形成清楚结构；本批按形容词核心义收录。",
+          "example": "an inchoate plan"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/incipient",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：开始出现的；初起的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inchoate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：初步形成的；未充分发展的；未成形而不连贯的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-12",
+      "type": "lookalike",
+      "title": "稀缺与几乎不",
+      "note": "scarce常作形容词稀缺；scarcely是副词几乎不，位置与语义功能不同。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "scarce",
+          "usage": "adj. 稀缺的，不足的；adv. 几乎不，仅仅（较少见）；不是scared害怕；make oneself scarce指躲开、不露面。",
+          "example": "scarce resources"
+        },
+        {
+          "word": "scarcely",
+          "usage": "几乎不；仅仅，刚刚；简直不可能；带近否定含义，不是很少见的；scarcely...when表示刚……就……。",
+          "example": "scarcely enough time"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/scarce",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 稀缺的，不足的；adv. 几乎不，仅仅（较少见）"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/scarcely",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：几乎不；仅仅，刚刚；简直不可能"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-13",
+      "type": "synonym",
+      "title": "奢华丰盛",
+      "note": "sumptuous侧重华美昂贵；lavish侧重大量、丰盛，也可形容慷慨给予。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "sumptuous",
+          "usage": "奢华的；豪华丰盛的；侧重丰盛、华美且耗费昂贵；勿与presumptuous混淆。",
+          "example": "a sumptuous banquet"
+        },
+        {
+          "word": "lavish",
+          "usage": "adj. 奢华丰盛的；大量给予的；v. 大量给予，挥霍；lavish A on B；大量赞扬不一定负面，大肆耗费可贬。",
+          "example": "lavish praise on a student"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sumptuous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：奢华的；豪华丰盛的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lavish",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 奢华丰盛的；大量给予的；v. 大量给予，挥霍"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-14",
+      "type": "antonym",
+      "title": "奢华与简朴",
+      "note": "只比较装饰或生活方式：sumptuous奢华；austere简朴不加装饰。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "sumptuous",
+          "usage": "奢华的；豪华丰盛的；侧重丰盛、华美且耗费昂贵；勿与presumptuous混淆。",
+          "example": "a sumptuous banquet"
+        },
+        {
+          "word": "austere",
+          "usage": "严峻冷淡的；严格禁欲的；简朴无装饰的；艰苦的；朴素风格可中性或褒义；严酷条件可负面。",
+          "example": "an austere interior"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sumptuous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：奢华的；豪华丰盛的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/austere",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：严峻冷淡的；严格禁欲的；简朴无装饰的；艰苦的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-15",
+      "type": "antonym",
+      "title": "有利与不利前景",
+      "note": "auspicious预示好结果；inauspicious开端或条件不利。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "auspicious",
+          "usage": "预示成功的；吉利的，有利的；侧重良好前景，不保证最后成功。",
+          "example": "an auspicious beginning"
+        },
+        {
+          "word": "inauspicious",
+          "usage": "不吉利的；前景不佳的，不利的；与auspicious反义；可能只是开局不利，不必预示灾难。",
+          "example": "an inauspicious start"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/auspicious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：预示成功的；吉利的，有利的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inauspicious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：不吉利的；前景不佳的，不利的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-16",
+      "type": "synonym",
+      "title": "不祥前兆",
+      "note": "ominous强调预示坏事且令人担忧；inauspicious不利、不吉利，程度可能较轻。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "ominous",
+          "usage": "不祥的；预示危险或灾祸的；是形容词，不是名词；常强调令人担忧的征兆。",
+          "example": "an ominous silence"
+        },
+        {
+          "word": "inauspicious",
+          "usage": "不吉利的；前景不佳的，不利的；与auspicious反义；可能只是开局不利，不必预示灾难。",
+          "example": "an inauspicious start"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ominous",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：不祥的；预示危险或灾祸的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inauspicious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：不吉利的；前景不佳的，不利的"
+        }
+      ]
+    },
+    {
+      "id": "curated-20260930-handwritten-17",
+      "type": "synonym",
+      "title": "相近与相符",
+      "note": "akin to指性质相近；congruent with指相符一致，一般语境比较，不将几何全等义混入。 按指定义项辨析，不能只凭近义词配对判定Sentence Equivalence整句等价；搭配为教练自拟。",
+      "members": [
+        {
+          "word": "akin",
+          "usage": "相似的；有亲缘关系的；通常作表语并接to，表示相近而非完全相同。",
+          "example": "akin to a compromise"
+        },
+        {
+          "word": "congruent",
+          "usage": "一致的，相符的；全等的；同余的；几何全等要求形状和大小相同；一般语境可指相符。",
+          "example": "congruent with the evidence"
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/akin",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：相似的；有亲缘关系的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/congruent",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：一致的，相符的；全等的；同余的"
         }
       ]
     }

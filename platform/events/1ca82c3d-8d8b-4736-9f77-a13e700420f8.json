@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "1ca82c3d-8d8b-4736-9f77-a13e700420f8",
+  "recorded_at": "2026-09-27T15:10:17.472Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "6153f67e-2a39-4347-b3bf-029aad8f3b8f",
+    "input_hash": "42ab58790b25caba311cd28138de2035cfa84b781b54d76cd8e23d6f2220e373",
+    "model": "gpt-6-astra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BD",
+    "result": {
+      "summary": "参考答案为B/D（intriguing/provocative），与你选择的B/E相比，应将E换为D。句子承认动物语言的新证据引人关注，却强调它仍不足以证明语言存在；B、D分别填入后表达等价。",
+      "evidence": "句内逻辑：前文“intangible”和“no agreed-upon way to determine its existence”说明语言难以界定、缺乏公认判定方法；“quite ______, but insufficient”预测空格应是对证据的有限肯定，与“不充分”形成让步转折。B intriguing表示引人好奇；D provocative在此表示引发思考或讨论，两者均表达“证据很引人关注，但仍不充分”。E viable表示可行的或能成立的，评价的是可行性，无法与B形成全句等价。A equivocal（模棱两可）、C controvertible（可争辩）、F dubitable（可疑）均偏向证据的不确定性，不符合此处预期的让步方向。参考答案与题干一致。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的作答偏离是B/E未满足SE的全句等价要求：intriguing谈吸引力，viable谈可行性。标签：策略（双项等价检查）；这只是本题核查点，不能据此认定词义知识或读题能力薄弱。",
+      "next_action": "下次先圈出“but insufficient”，将空格预判为“引人关注”。再把候选词分别代回整句并各写一句中文释义；只有两句都成立且核心意思相同才配对。本题重点对比intriguing/provocative与viable的语义差别。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
