@@ -1,6 +1,10 @@
 schema_version: 1
 id: gre-30d-adaptive-20260903-v4
-status: active_pending_baseline
+status: superseded
+superseded_on: "2026-10-01"
+superseded_reason: "考期改为11月1日，时间预算改为每周18–24小时。保留下方历史计划，停止按旧配额执行；新周期待基线。"
+current_planning_record: planning/20261001_exam-planning.md
+current_day_snapshot: planning/days/2026-10-01.yaml
 timezone: Asia/Shanghai
 week_starts_on: monday
 exam_date: null

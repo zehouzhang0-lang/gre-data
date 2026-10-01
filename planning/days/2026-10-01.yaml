@@ -1,0 +1,71 @@
+schema_version: 1
+date: "2026-10-01"
+timezone: Asia/Shanghai
+strategy_id: gre-nov01-diagnostic-20261001
+source_day: null
+generated_at: "2026-10-01T12:17:37+08:00"
+status: planned
+budget_min: 240
+tasks:
+  - id: 2026-10-01-01-verbal
+    order: 1
+    key: verbal_application
+    target: "SE从Test143 Section2 Q7续练，选6道未答；TC从Test1 Section2 Q2选4道未答，合计10题"
+    duration_min: 55
+    material_id: text_completion_2000
+    material_status: available
+    action: "18分钟独立限时作答，37分钟复盘；题型块不视为完整Verbal section。记录每题用时和信心，先预测空格再选项。"
+    success: "10题均留原答及用时；错题写证据、偏离步骤、错因和复测动作，不以完成量推断能力。"
+    evidence_required: [题目定位, 原答, 逐题用时, 参考答案来源, 逻辑证据, 错因]
+  - id: 2026-10-01-02-reading
+    order: 2
+    key: reading
+    target: "从Passage5起2篇未答文章及附题"
+    duration_min: 40
+    material_id: reading_440
+    material_status: available
+    action: "15分钟计时作答，25分钟定位证据和排除干扰项。"
+    success: "每题答案回指文本；记录超时和未答，区分作者观点与他人观点。"
+    evidence_required: [原答, 耗时, 文本证据, 错因]
+  - id: 2026-10-01-03-quant
+    order: 3
+    key: quantitative
+    target: "Section1 easy Q9起12道未答题"
+    duration_min: 55
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    action: "21分钟作答，34分钟推导核验；保留条件、单位和QC边界。非完整自适应模考。"
+    success: "保留每题过程和耗时；无可靠答案的题标记待核验，不虚报正确率。"
+    evidence_required: [原答, 解题过程, 用时, 核验依据, 错因]
+  - id: 2026-10-01-04-vocab
+    order: 4
+    key: vocab_review
+    target: "到期词和本次错题词，按时间上限完成主动回忆"
+    duration_min: 30
+    material_id: core3000_random_2026
+    material_status: available
+    action: "使用平台到期队列；记录实际词数和首次回忆结果，不用抄写替代。"
+    success: "每个复习词有独立回忆结果；遗忘词安排跨日复测。"
+    evidence_required: [实际词数, 首次回忆结果, 平台事件ID]
+  - id: 2026-10-01-05-planning
+    order: 5
+    key: error_analysis
+    target: "汇总诊断，确认模考基线和材料可用性"
+    duration_min: 30
+    material_id: null
+    material_status: not_applicable
+    action: "按题型汇总已核验样本；确认最近完整计时模考，如有记录日期及V/Q/AW，否则确认可用官方模考。"
+    success: "明确已知和待核项；不从分项正确率换算GRE分数。"
+    evidence_required: [诊断记录, 基线或待核事项]
+  - id: 2026-10-01-06-break
+    order: 6
+    key: break
+    target: "各训练块之间合计休息30分钟"
+    duration_min: 30
+    material_id: null
+    material_status: not_applicable
+    evidence_required: [实际休息时间]
+notes:
+  - "仅今日诊断计划，未记录完成；周四额外0–120分钟不列必做量。"
+  - "若计时截止仍未做完，保存未答，不为追题量隐藏超时。"
+  - "旧每日120新词及42小时周预算不再自动适用。"
