@@ -18,7 +18,7 @@
 
 本机安装Codex CLI并通过 `codex login` 登录ChatGPT账号，`codex login status` 应显示 `Logged in using ChatGPT`。平台自动查找CLI；Windows也查找Codex桌面应用附带的可执行文件。已验证CLI 0.153.4。其他设备需在本机单独登录，登录凭据不会随仓库同步。
 
-服务端调用官方 `codex exec`，复用ChatGPT登录和订阅额度；Pro的20x用量不等于API余额，API按量计费与订阅独立。此入口强制ChatGPT登录并移除API密钥环境变量，不会自动改用付费API。按用户2026-10-01的节省额度要求，模型默认gpt-6-luna，推理强度medium，不自动升级到sol或astra；可在启动前通过 `GRE_AI_MODEL` 改为账号支持的Codex模型。`/api/ai/status` 返回实际配置模型与推理强度；CLI不在默认路径时使用 `GRE_CODEX_BIN` 指向其可执行文件。
+服务端调用官方 `codex exec`，复用ChatGPT登录和订阅额度；Pro的20x用量不等于API余额，API按量计费与订阅独立。此入口强制ChatGPT登录并移除API密钥环境变量，不会自动改用付费API。按用户2026-10-01的节省额度要求，模型默认gpt-5.6-terra，推理强度medium，不自动升级到sol或astra；可在启动前通过 `GRE_AI_MODEL` 改为账号支持的Codex模型。`/api/ai/status` 返回实际配置模型与推理强度；CLI不在默认路径时使用 `GRE_CODEX_BIN` 指向其可执行文件。
 
 只有点击分析按钮才发起模型请求。同一时间运行一个分析，最长等待5分钟，可以停止；失败时保留已有作答。模型接收本次题目/必要原图区域和学习记录，使用只读临时目录、结构化输出，关闭命令执行、插件及多agent；由平台后端校验并追加结果。临时文件随后清理，不把凭据或CLI日志写入Git。近期复盘只读取最近20次作答和60条词汇自评，不凭自评推断正式成绩。
 
@@ -101,3 +101,5 @@
 视觉参考：shadcn/ui Sidebar Blocks、satnaing/shadcn-admin和Linear的界面重设计文章。仅借鉴信息层级和布局，不引入整套后台字段。
 
 2026-10-01讲解规则：单题必须包含完整题干翻译，按原顺序逐项说明含义、中文翻译及选择/排除依据。结构化题目漏译或漏项时分析失败，不保存残缺讲解；旧讲解可点击重新分析补齐。
+
+2026-10-01用户明确选择gpt-5.6-terra，推理强度medium，替代Luna默认配置。

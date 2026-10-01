@@ -7,7 +7,7 @@ import { keyOf } from "./store.mjs";
 
 const object = properties => ({ type: "object", additionalProperties: false, properties, required: Object.keys(properties) });
 const string = { type: "string" };
-const analysisModel = () => process.env.GRE_AI_MODEL || "gpt-6-luna";
+const analysisModel = () => process.env.GRE_AI_MODEL || "gpt-5.6-terra";
 export function validateExplanation(result, question) {
   if (!result.question_translation?.trim() || !Array.isArray(result.option_explanations)) throw new Error("AI讲解缺少完整题干翻译或未覆盖所有选项，请重新分析");
   const items = result.option_explanations;
