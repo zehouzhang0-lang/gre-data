@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "c0fcc082-3a52-4387-af08-aacf52503521",
+  "recorded_at": "2026-10-01T06:09:52.260Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "a0e25714-486a-4afa-93dd-d87ab417c6a8",
+    "input_hash": "4a7954116774a9b83301aba86482bb44189022b9cf807d56021b4b63433d229a",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "CD",
+    "result": {
+      "question_translation": "由于该激进团体先前的_____信念已成为主流政治的核心原则，它解散了；再也没有怀疑者需要说服，其宗旨已不复存在。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "arcane：深奥难懂、只有少数人知晓的；本题中指“晦涩的信念”。",
+          "translation": "深奥难懂的；鲜为人知的。",
+          "reasoning": "排除：后文强调这些信念后来成为“主流政治的核心原则”，需要的是原先不被主流接受的立场；arcane只说明难懂或少人知晓，不能自然推出“有怀疑者需要说服”，且与B不构成全句等价。"
+        },
+        {
+          "label": "B",
+          "meaning": "seditious：煽动反叛或颠覆政府的；本题中指“具有煽动性的信念”。",
+          "translation": "煽动叛乱的；颠覆性的。",
+          "reasoning": "排除：句子没有政府、叛乱或颠覆的证据；成为主流政治原则不等于曾经煽动叛乱。且B代入后的句意与A并不等价。"
+        },
+        {
+          "label": "C",
+          "meaning": "quixotic：不切实际而理想化的；本题中指“曾被视为不现实的政治信念”。",
+          "translation": "不切实际而理想化的；空想的。",
+          "reasoning": "选择：团体原本要说服“怀疑者”，而如今其信念已成为主流核心原则，说明这些信念先前是非主流、被怀疑的理想化主张。"
+        },
+        {
+          "label": "D",
+          "meaning": "idealistic：理想主义的、追求高尚理想的；本题中指“曾属理想主义的政治信念”。",
+          "translation": "理想主义的；崇尚理想的。",
+          "reasoning": "选择：D与C均可描述曾受质疑、后来获主流采纳的理想化信念。分别代入后，团体都因原先的理想化立场成为主流而失去说服对象；两句在本题语境中等价。"
+        },
+        {
+          "label": "E",
+          "meaning": "popular：受大众欢迎的；本题中指“当时已经流行的信念”。",
+          "translation": "流行的；受欢迎的。",
+          "reasoning": "排除：若“previously popular”，就削弱了后文“已成为主流核心原则”所表达的转变，也难解释此前仍有许多怀疑者。"
+        },
+        {
+          "label": "F",
+          "meaning": "conventional：传统的、常规的；本题中指“当时已经符合主流惯例的信念”。",
+          "translation": "传统的；常规的；符合惯例的。",
+          "reasoning": "排除：若原先已属常规，就与后来成为主流政治核心原则的关键转变不协调，也无法解释该团体以说服怀疑者为目的。"
+        }
+      ],
+      "summary": "本题参考答案为CD。句子核心转折是：原先受怀疑、偏理想化的信念，如今成为主流，团体遂失去使命。你选A/B既不构成SE等价，也未贴合该逻辑。未提供推理，尚无证据确定更具体错因。",
+      "evidence": "决定性证据是“had become core tenets of mainstream politics”与“no more skeptics to persuade”。它们共同表明填空应写这些信念此前并非普遍接受，且曾被怀疑。C quixotic（不切实际而理想化）和D idealistic（理想主义的）在此均能表达曾受质疑、后来被主流接纳的主张，并使全句因果一致。A arcane仅指深奥/鲜为人知；B seditious指煽动叛乱，题干无此证据，二者代入后全句含义也不等价。参考答案CD与题干一致。",
+      "reasoning_gap": "未提供作答推理，尚无证据确定是词义不熟、忽略上下文，还是未执行SE“双项全句等价”检验。可确认的偏离是：没有先由“主流化＋无怀疑者”预测“原先受质疑的理想化立场”，且A/B语义不等价。",
+      "next_action": "下次SE先用一句中文预测逻辑：原先受怀疑的理想化信念→现在主流化→团体失去说服对象。随后每个候选词分别代入完整句，只有两项都符合该链条、且两句意思等价时才成对选择。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "ba306334-c63e-446a-876b-4dfbb249e05d",
+  "recorded_at": "2026-10-01T06:58:17.425Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "44b4f518-6995-4d8d-ba7a-b594fb97e80e",
+    "input_hash": "6eb0ccfb0341f2a1ccf30a7c9bace9237dd5c6cda3aa977d49374d62c8a65ef7",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AB",
+    "result": {
+      "question_translation": "在因纽特文化中，精细复杂的雕刻常被用来提升诸如鱼叉头和其他工具之类的_____物品。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "utilitarian：实用的、以功能用途为主的；此处指工具类物品。",
+          "translation": "在因纽特文化中，精细复杂的雕刻常被用来提升诸如鱼叉头和其他工具之类的实用物品。",
+          "reasoning": "“harpoon heads and other tools”是明确的工具证据，指向以用途为核心的“实用”。与B分别填入后句义一致。"
+        },
+        {
+          "label": "B",
+          "meaning": "functional：功能性的、具有实际用途的；此处指能发挥工具功能的物品。",
+          "translation": "在因纽特文化中，精细复杂的雕刻常被用来提升诸如鱼叉头和其他工具之类的功能性物品。",
+          "reasoning": "鱼叉头和其他工具具有实际功能，直接支持functional。与A填入后都表示：雕刻提升原本实用的工具，形成等价完整句。"
+        },
+        {
+          "label": "C",
+          "meaning": "domestic：家庭的、家用的；此处指用于家庭生活的。",
+          "translation": "在因纽特文化中，精细复杂的雕刻常被用来提升诸如鱼叉头和其他工具之类的家用物品。",
+          "reasoning": "题干只说明鱼叉头和工具，未限定“家用”；范围过窄，且不能与任何正确项构成等价句。"
+        },
+        {
+          "label": "D",
+          "meaning": "decorative：装饰性的；此处指主要用于装饰的。",
+          "translation": "在因纽特文化中，精细复杂的雕刻常被用来提升诸如鱼叉头和其他工具之类的装饰性物品。",
+          "reasoning": "雕刻本身是用来“enhance（增饰、提升）”工具的元素；将工具称为装饰性物品弱化了其作为工具的决定性用途，也不与E构成等价句。"
+        },
+        {
+          "label": "E",
+          "meaning": "manufactured：制造出来的；此处指经生产制成的。",
+          "translation": "在因纽特文化中，精细复杂的雕刻常被用来提升诸如鱼叉头和其他工具之类的制成品。",
+          "reasoning": "工具可以是制成品，但“制造出来”没有抓住题干以鱼叉头、工具强调的实用功能；也不与D构成全句等价。"
+        },
+        {
+          "label": "F",
+          "meaning": "ornamental：装饰用的、观赏性的；此处指主要供装饰的。",
+          "translation": "在因纽特文化中，精细复杂的雕刻常被用来提升诸如鱼叉头和其他工具之类的装饰用品。",
+          "reasoning": "与D同属装饰义，均与“鱼叉头和其他工具”的实用语境不符；且SE要求选出的两项分别成立并使全句等价，F不能与正确项达成该条件。"
+        }
+      ],
+      "summary": "参考答案为A/B。句内逻辑是：精雕细刻用来增饰原本具有实际用途的鱼叉头和工具；A、B均表达“实用/功能性”。你的D/E不构成等价句，且未选中工具用途这一核心线索。",
+      "evidence": "参考答案明确给出AB，且来源标为user_provided，应先按其解释。题干中的决定性证据是“harpoon heads and other tools”：这些是为实际用途服务的器物，因此A utilitarian和B functional均可分别成立。两者代入后都表达“雕刻增饰实用工具”，全句语义等价，满足SE双等价要求。D decorative与E manufactured分别意为“装饰性的”“制造出来的”，二者代入后句义并不等价；同时D未贴合工具用途。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因是词义、读题、策略或时间问题。仅能确认所选D/E未满足SE“两项各自成立且全句等价”的检验。duration_seconds缺失，无法判断时间标签。",
+      "next_action": "下次SE先写出语义预测：“雕刻增饰实用工具”。再将候选分别代入，逐一问：是否贴合“鱼叉头和工具”？两句是否完全同义？本题应保留A/B，排除D/E。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

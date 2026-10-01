@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "2a208c26-35a9-4897-8342-dfb156f9e77a",
+  "recorded_at": "2026-10-01T06:52:50.930Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "abb896ea-c00d-4797-8ff7-64154223fae7",
+    "input_hash": "02ef115f870d905c47d63dffb154c470a9b3edbae83b126ececd9d94b9ed047f",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BE",
+    "result": {
+      "question_translation": "劳工权利的倡导者已经采取了一项新策略；这项策略将需要相当大的独创性，但如果成功，可能会_____一场旨在使劳工权利成为美国民主中不可撼动特征的运动。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "frustrate：挫败、阻碍；此处指阻止该劳工权利运动发展。",
+          "translation": "挫败一场旨在使劳工权利成为美国民主中不可撼动特征的运动。",
+          "reasoning": "排除：新策略“if successful（如果成功）”的结果应是推动倡导者目标，而非阻碍其目标。"
+        },
+        {
+          "label": "B",
+          "meaning": "galvanize：激励、动员，使人采取行动；此处指凝聚并推动运动。",
+          "translation": "动员/激励一场旨在使劳工权利成为美国民主中不可撼动特征的运动。",
+          "reasoning": "选择：策略若成功，应为既定目标注入行动力、推动运动；与“advocates”“aimed at making labor rights…”的正向目标一致。"
+        },
+        {
+          "label": "C",
+          "meaning": "presume：假定、推定；通常指未经充分证据而认为某事为真。",
+          "translation": "假定一场旨在使劳工权利成为美国民主中不可撼动特征的运动。",
+          "reasoning": "排除：presume不能自然表达“成功的新策略对一场运动产生推动作用”，与句子的结果逻辑不合。"
+        },
+        {
+          "label": "D",
+          "meaning": "affect：影响；此处仅表示对运动产生某种影响。",
+          "translation": "影响一场旨在使劳工权利成为美国民主中不可撼动特征的运动。",
+          "reasoning": "排除：虽然语法可通，但语义过于宽泛，未体现成功策略应带来的明确正向动员效果，不能与E构成等价句。"
+        },
+        {
+          "label": "E",
+          "meaning": "animate：赋予活力、激发；此处指使运动更有生气和动力。",
+          "translation": "激发/赋予活力一场旨在使劳工权利成为美国民主中不可撼动特征的运动。",
+          "reasoning": "选择：成功策略能使该运动获得活力并向目标推进；与B的“动员、激励”在本句中表达同一正向结果。"
+        },
+        {
+          "label": "F",
+          "meaning": "thwart：阻挠、使受挫；此处指妨碍运动实现目标。",
+          "translation": "阻挠一场旨在使劳工权利成为美国民主中不可撼动特征的运动。",
+          "reasoning": "排除：与“if successful”后应服务于倡导者目标的正向逻辑相反。"
+        }
+      ],
+      "summary": "本题参考答案为B/E。成功的新策略应动员并激发劳工权利运动；你的C/E中，C“假定”不表达推动运动的作用，故两项不等价。",
+      "evidence": "句子主干为：倡导者采取新策略；若成功，可能会_____一场“旨在使劳工权利成为美国民主不可撼动特征”的运动。倡导者、if successful及aimed at均限定空格为正向推动结果。B galvanize（动员、激励）与E animate（激发、赋予活力）均可使运动增强；C presume（假定）是认知判断，不能使运动获得行动力。SE要求两个选项分别填入后均成立，且整句含义等价；C/E不满足。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。答案C/E显示未完成SE的“双句回填等价”检验：E符合正向语境，但C的词义类别（假定）与E的推动效果不同。标签：知识/策略待核实。",
+      "next_action": "下次SE先写预测：成功策略→动员、激发运动。再将每个候选词单独回填并比较完整句：只有都符合预测且彼此可替换的两项才保留；遇到presume这类“认为”词，先检查它是否能充当对运动的行动效果。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
