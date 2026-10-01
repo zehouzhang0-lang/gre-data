@@ -82,7 +82,12 @@ export function validate(kind, p) {
       scope: p.scope, attempt_id: p.scope === "attempt" ? text(p.attempt_id, "作答编号", 120) : null,
       input_hash: p.input_hash, model: text(p.model, "模型", 100), provider: "codex_cli", provisional: true,
       expected_answer: text(p.expected_answer, "生成时参考答案", 1000, true) || null,
-      result: { summary: text(p.result.summary, "结论", 2000), evidence: text(p.result.evidence, "证据", 6000), reasoning_gap: text(p.result.reasoning_gap, "推理与错因", 3000), next_action: text(p.result.next_action, "下一步", 3000),
+      result: { ...(p.result.question_translation !== undefined ? { question_translation: text(p.result.question_translation, "题干翻译", 20000, true) } : {}),
+        ...(p.result.option_explanations !== undefined ? { option_explanations: (() => {
+          if (!Array.isArray(p.result.option_explanations) || p.result.option_explanations.length > 30) throw new Error("选项讲解格式不正确");
+          return p.result.option_explanations.map(o => ({ label: text(o.label, "选项编号", 100), meaning: text(o.meaning, "选项含义", 3000), translation: text(o.translation, "选项翻译", 6000), reasoning: text(o.reasoning, "选项分析", 6000) }));
+        })() } : {}),
+        summary: text(p.result.summary, "结论", 2000), evidence: text(p.result.evidence, "证据", 6000), reasoning_gap: text(p.result.reasoning_gap, "推理与错因", 3000), next_action: text(p.result.next_action, "下一步", 3000),
         technique_ids: p.result.technique_ids.slice(0,8).map(id => text(id, "技巧ID", 100)), assessment: p.result.assessment },
     };
   }

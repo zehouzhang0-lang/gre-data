@@ -489,3 +489,6 @@ evidence_records:
 4. 所有来源 ID 能在 `materials/catalog.yaml` 找到，或标为官方 URL。
 5. 答案不可得时没有虚构正确率。
 6. `git status --short` 中只有预期文本数据。
+
+## AI讲解翻译扩展（2026-10-01）
+新单题讲解result另含question_translation（完整题干中文翻译）和option_explanations数组，每项含label/meaning/translation/reasoning，按原顺序覆盖所有选项。最近练习汇总没有原题时为empty string和空数组。旧事件可缺省这两个字段，读取时不补造；用户重新分析生成独立新事件。

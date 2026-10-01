@@ -23,6 +23,8 @@ test("AI review is asynchronous, retains the reference snapshot, and never rewri
     assert.notEqual(options.cwd, root);
     await gate;
     await fs.writeFile(args[args.indexOf("--output-last-message") + 1], JSON.stringify({
+      question_translation: "测试题干完整翻译",
+      option_explanations: ["A", "B"].map(label => ({ label, meaning: "本题含义", translation: "选项翻译", reasoning: "选择或排除依据" })),
       summary: "测试分析", evidence: "测试证据", reasoning_gap: "未提供推理", next_action: "回看证据", technique_ids: ["invented_id"], assessment: "needs_review",
     }));
     return { stdout: "", stderr: "" };
@@ -42,6 +44,8 @@ test("AI review is asynchronous, retains the reference snapshot, and never rewri
   assert.equal(state.attempts.find(a => a.id === attempt.id).answer, "A");
   assert.equal(state.reviews[0].expected_answer, "B");
   assert.equal(state.reviews[0].provisional, true);
+  assert.equal(state.reviews[0].result.question_translation, "测试题干完整翻译");
+  assert.deepEqual(state.reviews[0].result.option_explanations.map(o => o.label), ["A", "B"]);
   assert.deepEqual(state.reviews[0].result.technique_ids, []);
   assert.equal(Object.values(state.keys)[0].answer, "B");
 });

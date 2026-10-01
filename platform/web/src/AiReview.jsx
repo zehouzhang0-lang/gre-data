@@ -7,6 +7,8 @@ export function ReviewText({ review, attempt }) {
     <div className="section-heading"><strong>AI {review.scope === "recent" ? "学习复盘" : "讲解"}</strong><small>暂定分析 · {review.model}</small></div>
     {attempt && <small>{attempt.unit} · 第 {attempt.question} 题{review.expected_answer !== attempt.expected ? " · 参考答案已更新，以下保留生成时分析" : ""}</small>}
     <p>{r.summary}</p>
+    {r.question_translation && <details open><summary>题干完整翻译</summary><p>{r.question_translation}</p></details>}
+    {!!r.option_explanations?.length && <details open><summary>逐项含义、翻译与分析</summary>{r.option_explanations.map((o, i) => <div key={`${o.label}-${i}`}><strong>{o.label}</strong><p>含义：{o.meaning}</p><p>翻译：{o.translation}</p><p>{o.reasoning}</p></div>)}</details>}
     <details open><summary>依据与推理</summary><p>{r.evidence}</p><p>{r.reasoning_gap}</p></details>
     <div className="ai-next"><strong>下一步</strong><p>{r.next_action}</p></div>
     {r.assessment === "needs_review" && <small>依据尚不充分，待进一步核对。</small>}
