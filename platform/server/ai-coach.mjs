@@ -7,6 +7,7 @@ import { keyOf } from "./store.mjs";
 
 const object = properties => ({ type: "object", additionalProperties: false, properties, required: Object.keys(properties) });
 const string = { type: "string" };
+const analysisModel = () => process.env.GRE_AI_MODEL || "gpt-6-luna";
 export const reviewSchema = object({
   summary: string,
   evidence: string,
@@ -114,7 +115,7 @@ export class AiCoach {
         this.connection = { available: subscription, method: subscription ? "chatgpt_subscription" : "unsupported", message: subscription ? "已连接本机Codex · 使用订阅额度" : "请先在本机Codex登录ChatGPT账号；此入口不会使用API余额" };
       } catch (error) { this.connection = { available: false, message: error.message }; }
     }
-    return { ...this.connection, job: this.job };
+    return { ...this.connection, model: analysisModel(), reasoning_effort: "medium", job: this.job };
   }
   async start(scope, attemptId) {
     if (this.job && ["running", "saving"].includes(this.job.status)) throw new Error("已有AI分析正在进行");
@@ -161,7 +162,7 @@ export class AiCoach {
       const inputHash = createHash("sha256").update(JSON.stringify(context)).digest("hex");
       const schemaFile = path.join(folder, "response.schema.json"), outputFile = path.join(folder, "response.json");
       await fs.writeFile(schemaFile, JSON.stringify(reviewSchema));
-      const model = process.env.GRE_AI_MODEL || "gpt-6-astra";
+      const model = analysisModel();
       const args = ["exec", "--ignore-user-config", "--ephemeral", "--skip-git-repo-check", "--sandbox", "read-only", "--model", model,
         "-c", 'approval_policy="never"', "-c", 'forced_login_method="chatgpt"', "-c", 'model_reasoning_effort="medium"',
         "--disable", "shell_tool", "--disable", "unified_exec", "--disable", "multi_agent", "--disable", "plugins", "--disable", "hooks", "--disable", "computer_use", "--disable", "skill_search",
