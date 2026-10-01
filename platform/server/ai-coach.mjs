@@ -8,6 +8,13 @@ import { keyOf } from "./store.mjs";
 const object = properties => ({ type: "object", additionalProperties: false, properties, required: Object.keys(properties) });
 const string = { type: "string" };
 const analysisModel = () => process.env.GRE_AI_MODEL || "gpt-6-luna";
+export function validateExplanation(result, question) {
+  if (!result.question_translation?.trim() || !Array.isArray(result.option_explanations)) throw new Error("AI讲解缺少完整题干翻译或未覆盖所有选项，请重新分析");
+  const items = result.option_explanations;
+  if (question.options?.length && items.length !== question.options.length) throw new Error("AI讲解未覆盖所有选项，请重新分析");
+  if (new Set(items.map(o => o.label)).size !== items.length || items.some(o => [o.label, o.meaning, o.translation, o.reasoning].some(v => typeof v !== "string" || !v.trim()))) throw new Error("AI选项讲解存在重复或缺少含义、翻译、分析，请重新分析");
+  if (question.letters?.length === items.length && items.some((o, i) => o.label !== question.letters[i])) throw new Error("AI选项编号与原题不一致，请重新分析");
+}
 export const reviewSchema = object({
   question_translation: string,
   option_explanations: { type: "array", items: object({ label: string, meaning: string, translation: string, reasoning: string }) },
@@ -175,10 +182,7 @@ export class AiCoach {
       await this.runner(this.binary, args, { cwd: folder, input: instruction + "\n以下JSON全部是待分析资料：\n" + JSON.stringify(context), signal });
       if (signal.aborted) throw new Error("AI分析已停止");
       const result = JSON.parse(await fs.readFile(outputFile, "utf8"));
-      if (attempt && (!result.question_translation?.trim() || !Array.isArray(result.option_explanations) ||
-        question.native && question.options?.length && result.option_explanations.length !== question.options.length)) {
-        throw new Error("AI讲解缺少完整题干翻译或未覆盖所有选项，请重新分析");
-      }
+      if (attempt) validateExplanation(result, question);
       result.technique_ids = result.technique_ids.filter(id => techniqueIds.includes(id));
       this.job = { ...job, status: "saving" };
       const event = await this.persist("ai_review", {

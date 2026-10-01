@@ -4,7 +4,18 @@ import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { Store } from "../server/store.mjs";
-import { AiCoach } from "../server/ai-coach.mjs";
+import { AiCoach, validateExplanation } from "../server/ai-coach.mjs";
+
+test("explanations reject missing, repeated, empty or mislabelled options for imported questions too", () => {
+  const q = { options: ["one", "two"], letters: ["A", "B"] };
+  const r = { question_translation: "完整翻译", option_explanations: ["A", "B"].map(label => ({label, meaning: "含义", translation: "翻译", reasoning: "依据"})) };
+  assert.doesNotThrow(() => validateExplanation(r, q));
+  assert.throws(() => validateExplanation({...r, option_explanations: r.option_explanations.slice(0, 1)}, q), /未覆盖/);
+  assert.throws(() => validateExplanation({...r, question_translation: " "}, q), /缺少/);
+  assert.throws(() => validateExplanation({...r, option_explanations: [r.option_explanations[0], r.option_explanations[0]]}, q), /重复/);
+  assert.throws(() => validateExplanation({...r, option_explanations: r.option_explanations.map(o => ({...o, translation: ""}))}, q), /缺少/);
+  assert.throws(() => validateExplanation({...r, option_explanations: [...r.option_explanations].reverse()}, q), /编号/);
+});
 
 test("AI review is asynchronous, retains the reference snapshot, and never rewrites an attempt or key", async t => {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), "gre-coach-test-"));
