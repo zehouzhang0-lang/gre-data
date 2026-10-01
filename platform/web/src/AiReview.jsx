@@ -3,6 +3,9 @@ import { request, post } from "./api";
 
 export function ReviewText({ review, attempt }) {
   const r = review.result;
+  if (review.scope === "attempt" && (!r.question_translation?.trim() || !Array.isArray(r.option_explanations) || r.option_explanations.some(o => !o.meaning?.trim() || !o.translation?.trim() || !o.reasoning?.trim()))) {
+    return <article className="ai-review"><strong>旧版讲解不完整</strong><p>缺少完整题干翻译或逐项含义、翻译与分析。点击“重新分析”生成完整讲解。</p></article>;
+  }
   return <article className="ai-review">
     <div className="section-heading"><strong>AI {review.scope === "recent" ? "学习复盘" : "讲解"}</strong><small>暂定分析 · {review.model}</small></div>
     {attempt && <small>{attempt.unit} · 第 {attempt.question} 题{review.expected_answer !== attempt.expected ? " · 参考答案已更新，以下保留生成时分析" : ""}</small>}

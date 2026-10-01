@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "5a0d80fe-80cd-44eb-a36b-07391749c524",
+  "recorded_at": "2026-10-01T04:52:54.065Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "9a81e3ea-ca4f-47b1-9717-c719d6245b8a",
+    "input_hash": "4f6b5726c855a31e8ab209d96d0407e1050497ee6621a905a89a53c910327e5a",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BD",
+    "result": {
+      "question_translation": "秘密特工的生活已经足够危险了，但双重特工的生活更是极其_____：一次小小的失误就可能使一名特工彻底毁灭。请选择两个词，使填入后形成意思等价、完整通顺的句子。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "arduous：艰难费力、需要大量辛劳的；本题中强调“劳苦”，不直接强调危险风险。",
+          "translation": "艰巨的；费力的。",
+          "reasoning": "排除。冒号后“a single slip can send an agent crashing to destruction”决定性地指向极高的危险性/风险，而非工作是否辛苦。A不能与D构成等价句。"
+        },
+        {
+          "label": "B",
+          "meaning": "precarious：不稳定而危险的；随时可能出问题或失败的。",
+          "translation": "危险而不稳定的；岌岌可危的。",
+          "reasoning": "选择。一次失误即可导致毁灭，说明双重特工处境极不稳固且风险很高，B准确对应该因果说明。"
+        },
+        {
+          "label": "C",
+          "meaning": "clandestine：秘密进行的、隐蔽的。",
+          "translation": "秘密的；暗中进行的。",
+          "reasoning": "排除。双重特工的身份或行动或许隐秘，但句中比较的是其生活“更危险”，冒号并未支持“更秘密”。"
+        },
+        {
+          "label": "D",
+          "meaning": "perilous：充满严重危险的。",
+          "translation": "危险重重的；凶险的。",
+          "reasoning": "选择。其核心义与B同为高风险；填入后均能由“一次失误就可能毁灭”直接支持，因此B、D构成两句等价的正确完成。"
+        },
+        {
+          "label": "E",
+          "meaning": "covert：隐蔽的、秘密的，通常指行动不公开。",
+          "translation": "隐蔽的；秘密的。",
+          "reasoning": "排除。与C同属“隐秘”方向，不能由失误导致毁灭这一证据推出，也不与B或D等价。"
+        },
+        {
+          "label": "F",
+          "meaning": "exhilarating：令人兴奋振奋的。",
+          "translation": "令人兴奋的；使人振奋的。",
+          "reasoning": "排除。危险可能令人兴奋，但题干明确用毁灭后果界定的是风险程度，不能据此选择情绪体验词。"
+        }
+      ],
+      "summary": "参考答案为BD。题干以“一次失误即可毁灭”说明双重特工生活风险更高；B precarious与D perilous均表示危险，用户选A/D，A误指费力艰难。",
+      "evidence": "参考答案（user_provided）为BD，且与题干一致。比较结构“infinitely more _____”后的冒号提供解释：\"a single slip can send an agent crashing to destruction\"。这直接证明空格需填“危险/风险极高”的词。B表示危险且不稳定，D表示危险重重；两词分别填入时全句均为“双重特工生活远更危险”，语义等价。A arduous 表示费力、艰巨，题干没有“任务耗力或劳动强度”的证据。用户未提供作答思路，尚无证据确定其为何将A误选为正确项。",
+      "reasoning_gap": "作答A/D而非BD，结果错误；可确定A的语义方向偏离了冒号所界定的“高风险”。未提供推理，尚无证据确定错因属于词汇、读题或策略；不应据此断定长期弱项。",
+      "next_action": "下次SE先用冒号把空格预测为“更危险/更不稳”；逐一代入后问：两词是否都被同一证据支持，且两句是否等价。特别区分 arduous（费力）与 precarious/perilous（危险）。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

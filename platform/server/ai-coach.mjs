@@ -6,7 +6,7 @@ import { randomUUID, createHash } from "node:crypto";
 import { keyOf } from "./store.mjs";
 
 const object = properties => ({ type: "object", additionalProperties: false, properties, required: Object.keys(properties) });
-const string = { type: "string" };
+const string = { type: "string", minLength: 1 };
 const analysisModel = () => process.env.GRE_AI_MODEL || "gpt-5.6-terra";
 export function validateExplanation(result, question) {
   if (!result.question_translation?.trim() || !Array.isArray(result.option_explanations)) throw new Error("AI讲解缺少完整题干翻译或未覆盖所有选项，请重新分析");
@@ -16,7 +16,7 @@ export function validateExplanation(result, question) {
   if (question.letters?.length === items.length && items.some((o, i) => o.label !== question.letters[i])) throw new Error("AI选项编号与原题不一致，请重新分析");
 }
 export const reviewSchema = object({
-  question_translation: string,
+  question_translation: { type: "string" },
   option_explanations: { type: "array", items: object({ label: string, meaning: string, translation: string, reasoning: string }) },
   summary: string,
   evidence: string,
@@ -171,7 +171,15 @@ export class AiCoach {
       };
       const inputHash = createHash("sha256").update(JSON.stringify(context)).digest("hex");
       const schemaFile = path.join(folder, "response.schema.json"), outputFile = path.join(folder, "response.json");
-      await fs.writeFile(schemaFile, JSON.stringify(reviewSchema));
+      const schema = structuredClone(reviewSchema);
+      if (attempt) {
+        schema.properties.question_translation.minLength = 1;
+        if (question.options?.length) {
+          schema.properties.option_explanations.minItems = question.options.length;
+          schema.properties.option_explanations.maxItems = question.options.length;
+        }
+      }
+      await fs.writeFile(schemaFile, JSON.stringify(schema));
       const model = analysisModel();
       const args = ["exec", "--ignore-user-config", "--ephemeral", "--skip-git-repo-check", "--sandbox", "read-only", "--model", model,
         "-c", 'approval_policy="never"', "-c", 'forced_login_method="chatgpt"', "-c", 'model_reasoning_effort="medium"',
