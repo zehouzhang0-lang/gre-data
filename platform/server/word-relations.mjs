@@ -24,6 +24,18 @@ function distance(a,b) {
   for(let i=1;i<=a.length;i++) { const next=[i];for(let j=1;j<=b.length;j++)next[j]=Math.min(next[j-1]+1,row[j]+1,row[j-1]+(a[i-1]===b[j-1]?0:1));row=next; }
   return row[b.length];
 }
+// Most pairs qualify only at distance 0 or 1; avoid a full edit-distance
+// matrix for those pairs. Two-edit long-word candidates still use distance().
+function withinOneEdit(a,b) {
+  let i=0,j=0,edits=0;
+  while(i<a.length&&j<b.length) {
+    if(a[i]===b[j]) { i++;j++;continue; }
+    if(++edits>1)return false;
+    if(a.length>=b.length)i++;
+    if(b.length>=a.length)j++;
+  }
+  return edits+(a.length-i)+(b.length-j)<=1;
+}
 export function projectRelations(vocabulary, seed, events) {
   const topics=new Map((seed.topics||[]).map(t=>[t.id,{...t,deleted:false}]));
   const groups=new Map((seed.groups||[]).map(g=>[g.id,{...g,deleted:false}])), overrides=new Map();
@@ -50,7 +62,9 @@ export function projectRelations(vocabulary, seed, events) {
   for(let i=0;i<candidates.length;i++)for(let j=i+1;j<candidates.length;j++){
     const a=candidates[i],b=candidates[j],pair=[a,b].join('|');
     if(pairs.has(pair)||Math.abs(a.length-b.length)>1)continue;
-    const d=distance(a,b);if(d<=1 || d===2&&Math.min(a.length,b.length)>=8&&a.slice(0,2)===b.slice(0,2))suggestions.push({pair,words:[a,b],distance:d});
+    const allowTwo=Math.min(a.length,b.length)>=8&&a.slice(0,2)===b.slice(0,2);
+    const d=allowTwo?distance(a,b):withinOneEdit(a,b)?Number(a!==b):2;
+    if(d<=1 || d===2&&allowTwo)suggestions.push({pair,words:[a,b],distance:d});
   }
   suggestions.sort((a,b)=>a.distance-b.distance||a.pair.localeCompare(b.pair));
   suggestionCache={signature,value:suggestions};

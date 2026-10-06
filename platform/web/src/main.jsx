@@ -9,6 +9,7 @@ import Recall from "./Recall";
 import Library from "./Library";
 import History from "./History";
 import "./styles.css";
+import { createRefreshQueue } from "../../shared/refresh-queue.mjs";
 function App() {
   const [state, setState] = useState(null),
     [page, setPage] = useState("practice"),
@@ -19,22 +20,21 @@ function App() {
     [recallWords, setRecallWords] = useState(null);
   const revision = useRef("");
   const [relationSearch, setRelationSearch] = useState("");
-  const refreshSequence = useRef(0);
-  const refresh = useCallback(async () => {
-    const sequence = ++refreshSequence.current;
+  const refreshQueue = useRef(null);
+  if (!refreshQueue.current) refreshQueue.current = createRefreshQueue(async () => {
     const data = await request(`/api/state?revision=${revision.current}`);
-    if (sequence !== refreshSequence.current) return;
     if (!data.unchanged) {
       revision.current = data.revision;
       setState(data);
     }
     setError("");
-  }, []);
+  });
+  const refresh = useCallback(() => refreshQueue.current.refresh(), []);
   useEffect(() => {
     refresh().catch((e) => setError(e.message));
     const timer = setInterval(
       () =>
-        refresh().catch(() =>
+        refreshQueue.current.poll().catch(() =>
           setError("本地服务暂时不可用，未保存的内容请保留，服务恢复后重试。"),
         ),
       5000,

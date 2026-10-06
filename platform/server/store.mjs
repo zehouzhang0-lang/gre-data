@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { randomUUID, createHash } from "node:crypto";
 import YAML from "yaml";
+import { ParsedFiles } from "./parsed-files.mjs";
 import { validateRelation, projectRelations } from "./word-relations.mjs";
 import { legacyWordReviews, projectReview } from "./spaced-review.mjs";
 import { readLegacyQuestions } from "./legacy-review.mjs";
@@ -207,6 +208,7 @@ export class Store {
   constructor(root) {
     this.root = root;
     this.eventsDir = path.join(root, "platform/events");
+    this.parsedFiles = new ParsedFiles(root);
   }
   async read(relative, fallback) {
     try {
@@ -217,10 +219,10 @@ export class Store {
     }
   }
   async json(relative, fallback = {}) {
-    return JSON.parse(await this.read(relative, JSON.stringify(fallback)));
+    return this.parsedFiles.read(relative, JSON.parse, fallback);
   }
   async yaml(relative, fallback = {}) {
-    return YAML.parse(await this.read(relative, YAML.stringify(fallback)));
+    return this.parsedFiles.read(relative, YAML.parse, fallback);
   }
   async list(relative) {
     try {

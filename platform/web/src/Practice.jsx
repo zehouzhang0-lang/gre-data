@@ -118,7 +118,7 @@ export default function Practice({ state, refresh, notify, reviewTarget, reviewS
     try {
       await save("attempt", { material: question.material, unit: question.unit, question: question.question, type, answer, note, duration_seconds: null }, draft.attemptId);
       updateDraft({ saved: true });
-      await refresh().catch(() => notify("答案已保存，学习记录将在恢复连接后更新"));
+      void refresh().catch(() => notify("答案已保存，学习记录将在恢复连接后更新"));
     } catch (e) { setError(e.message); } finally { writeBusy.current = false; setBusy(false); reviewSession?.onBusyChange(false); }
   }
   const captions = { pair: "选择两项", blanks: "每空选择一项", multiple: "选择所有符合的选项", single: "选择一项", comparison: "比较两项数量", entry: "输入答案", sentence: "点击文章中的一句" };
@@ -146,10 +146,10 @@ export default function Practice({ state, refresh, notify, reviewTarget, reviewS
             <div className="section-heading"><h3>{captions[question.mode]}</h3>{question.mode === "pair" && <small>{selected.length} / 2</small>}</div>
             {question.mode === "blanks" ? question.groups.map((group, i) => <div className="blank-choice" key={i}><span>空 {i + 1}</span>{options(group, group)}</div>) : question.mode === "entry" ? <Field label="我的答案"><input autoComplete="off" disabled={busy || saved} placeholder={type === "quant" ? "输入数值、分数或原题选项" : "填写作答"} value={answer} onChange={e => updateDraft({ answer: e.target.value })} /></Field> : question.mode === "sentence" ? <p className="answer-hint">{answer ? "已选中一句，保存即可。" : "在文章中直接点选。"}</p> : options(question.letters)}
             <details className="optional-note"><summary>补充思路</summary><textarea aria-label="解题思路" rows={3} disabled={busy || saved} value={note} onChange={e => updateDraft({ note: e.target.value })} /></details>
-            {saved && <div className="answer-feedback" role="status"><strong>{answerKey ? latest?.result === true ? "答案一致" : latest?.result === false ? "答案不一致" : "待核对" : "已记录 · 待核对"}</strong>{answerKey ? <><p>参考答案：{answerKey.answer} <small>用户提供</small></p><p>{answerKey.explanation || "尚未补充解析。"}</p></> : <p>这份教材尚未附答案，作答已保留。</p>}<button className="text-button" onClick={() => setDialog("answers")}>{answerKey ? "更新答案与解析" : "补充答案与解析"}</button></div>}
+            {saved && <div className="answer-feedback" role="status"><strong>{!latest ? "已保存 · 正在更新核对结果" : answerKey ? latest?.result === true ? "答案一致" : latest?.result === false ? "答案不一致" : "待核对" : "已记录 · 待核对"}</strong>{answerKey ? <><p>参考答案：{answerKey.answer} <small>用户提供</small></p><p>{answerKey.explanation || "尚未补充解析。"}</p></> : <p>这份教材尚未附答案，作答已保留。</p>}<button className="text-button" onClick={() => setDialog("answers")}>{answerKey ? "更新答案与解析" : "补充答案与解析"}</button></div>}
             {error && <p role="alert" className="error">{error}</p>}
             <div className="question-save-state"><span className={saved ? "saved-label" : ""}>{saved ? "本题答案已保存" : answer || note ? "草稿已保留 · 保存后计入学习记录" : reviewTarget ? `已复习 ${reviewStats?.review_count || 0} 次` : "选择答案后保存"}</span>{saved && <button className="text-button" disabled={busy} onClick={() => { const next = emptyDraft(); setDraft(next); remember(current, next); setError(""); }}>重做本题</button>}</div>
-            {saved && reviewStats && <p className="review-next">{reviewStats.retry_at?`下次复习：${new Date(reviewStats.retry_at).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',timeZone:state.spacedReview.time_zone})} 再练`:`下次复习：${reviewStats.due_date}`} · 已复习 {reviewStats.review_count} 次</p>}
+            {saved && latest && reviewStats && <p className="review-next">{reviewStats.retry_at?`下次复习：${new Date(reviewStats.retry_at).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',timeZone:state.spacedReview.time_zone})} 再练`:`下次复习：${reviewStats.due_date}`} · 已复习 {reviewStats.review_count} 次</p>}
             {latest && saved && <AiReview key={latest.id} state={state} refresh={refresh} attempt={latest} />}
           </div>
         </section>

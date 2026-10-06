@@ -4,8 +4,15 @@ const DAY = 86400000;
 const keyOf = q => JSON.stringify([q.material, q.unit, q.question]);
 const wordKey = word => `word:${word}`;
 const questionKey = q => `question:${keyOf(q)}`;
+const dayFormatters = new Map();
 export function dayKey(date, timeZone = 'Asia/Shanghai') {
-  return new Intl.DateTimeFormat('en-CA', { timeZone, year:'numeric', month:'2-digit', day:'2-digit' }).format(new Date(date));
+  let formatter = dayFormatters.get(timeZone);
+  if (!formatter) {
+    formatter = new Intl.DateTimeFormat('en-CA', { timeZone, year:'numeric', month:'2-digit', day:'2-digit' });
+    if (dayFormatters.size >= 16) dayFormatters.delete(dayFormatters.keys().next().value);
+    dayFormatters.set(timeZone, formatter);
+  }
+  return formatter.format(new Date(date));
 }
 export const addDays = (day, days) => new Date(Date.parse(`${day}T12:00:00Z`) + days * DAY).toISOString().slice(0,10);
 const latestDay = (a,b) => !a || b > a ? b : a;
