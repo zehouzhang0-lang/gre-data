@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "85df6358-9869-4d51-9c81-ace5db8df3f3",
+  "recorded_at": "2026-10-01T07:30:22.181Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "83a42a91-7389-48d7-9d00-acc69f279f80",
+    "input_hash": "86fe488dabfd0c10f221b9dbbfa9a78c1b762574b979ed499c37aef9827738d8",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "CF",
+    "result": {
+      "question_translation": "文化和言语一样，主要是人类所具有的一种能力，尽管这两种功能在较低等的灵长类动物中可能以一种更_____的形式存在。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "indispensable：不可或缺的、必不可少的；此处指功能是否必要。",
+          "translation": "不可或缺的",
+          "reasoning": "句子比较的是人类与较低等灵长类所具有功能的发达程度；“更不可或缺的形式”不构成程度或发展层级的合理对比。"
+        },
+        {
+          "label": "B",
+          "meaning": "crucial：关键的、至关重要的；此处指重要性。",
+          "translation": "关键的；至关重要的",
+          "reasoning": "文中没有讨论文化或言语对较低等灵长类的重要性，只在说明其可能以较不发达的形式存在。"
+        },
+        {
+          "label": "C",
+          "meaning": "primitive：原始的、早期的、未充分发展的；此处指较低发展阶段。",
+          "translation": "原始的；较初级的",
+          "reasoning": "“lesser primates（较低等灵长类）”与“more _____ form（更……的形式）”共同要求表示较早期或较不发达程度的词；primitive符合。与F填入后全句均表达：这些功能在较低等灵长类中仅以较不发达的形态存在。"
+        },
+        {
+          "label": "D",
+          "meaning": "intelligible：可理解的、清楚可懂的；此处本可指某种表达是否能被理解。",
+          "translation": "可理解的；清楚可懂的",
+          "reasoning": "题干没有建立“是否可理解”的比较维度；而且D与用户另一选择E不构成同义、等价的一对。"
+        },
+        {
+          "label": "E",
+          "meaning": "recognizable：可辨认的、能识别出来的；此处指是否能被认出。",
+          "translation": "可辨认的；可识别的",
+          "reasoning": "题干所需的是功能发展程度，而非观察者能否辨认。E也不能与D分别填入后形成等价的完整句意。"
+        },
+        {
+          "label": "F",
+          "meaning": "rudimentary：初步的、基本的、未充分发展的；此处指仅具雏形。",
+          "translation": "初步的；基础的；未充分发展的",
+          "reasoning": "“more rudimentary form”准确表示文化和言语在较低等灵长类中可能只具雏形。与C分别填入后，均完整表达相同的“发展较低/未充分发展”含义，满足SE双项全句等价要求。"
+        }
+      ],
+      "summary": "参考答案为C/F。句子要求“较低等灵长类中以更不发达的形式存在”；C primitive与F rudimentary均符合且全句等价。你的D/E分别是“可理解/可辨认”，不对应发展程度，也彼此不等价。",
+      "evidence": "决定性线索是“lesser primates”和“more _____ form”。“more”要求可描述形式之发展层级的比较，语境是在将人类主要具备的文化、言语能力与较低等灵长类可能具备的较弱版本对照。C的“原始、初级”和F的“未充分发展、仅具雏形”都可填入，并分别得到同一核心判断。D“可理解”和E“可辨认”改写的是可理解性/可识别性，题干未提供该维度；二者也不是可互换的等价表达。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。仅从作答结果可确认：本题未先锁定“能力发展程度”这一语义方向，也未完成SE要求的“两项分别成立且全句等价”检验。时间数据缺失，无法判断时间因素。",
+      "next_action": "下次SE先用中文预测：较低等灵长类只能拥有文化、言语的“较初级/较不发达版本”。再逐个代入候选：先删去不谈发展程度的词，最后比较两项填入后的完整句义是否能互换；本题应保留C/F。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
