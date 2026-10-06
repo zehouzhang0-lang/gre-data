@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Header, Icon, Field, Empty, Modal } from "./components";
-import { request, save, keyOf, typeNames } from "./api";
+import { request, save, keyOf, typeNames, materialURL } from "./api";
 import ImportDialog from "./ImportDialog";
 import AiReview from "./AiReview";
 import useWordCapture from "./useWordCapture";
@@ -157,7 +157,7 @@ export default function Practice({ state, refresh, notify, reviewTarget, reviewS
       <div className="question-action-dock" aria-label="答题操作"><button disabled={busy || navigationIndex <= 0} onClick={() => choose(navigationQuestions[navigationIndex - 1])}>← 上一题</button><button className="primary" disabled={!valid || busy || saved} onClick={submit}>{busy ? "正在保存…" : "保存答案"}</button><button disabled={busy || navigationIndex >= navigationQuestions.length - 1} onClick={() => choose(navigationQuestions[navigationIndex + 1])}>下一题 →</button></div>
       <div className="practice-footnote"><span>{reviewTarget ? "本轮独立作答 · 保存后计入复习次数" : `已有 ${questions.filter(q => completed.has(q.key)).length} 题作答记录`}</span>{question.regions && <button className="text-button" onClick={() => setDialog("source")}>查看原题 ↗</button>}</div>
     </div>}
-    {dialog === "source" && question && <Modal title="教材原题" onClose={() => setDialog(null)}>{pdfError && <p role="alert">{pdfError}</p>}<div className="original-source">{!!question.passageRegions?.length && <PdfExcerpt selectable={capture.enabled} pdf={pdf} regions={question.passageRegions} label="文章原文" />}<PdfExcerpt selectable={capture.enabled} pdf={pdf} regions={question.regions} label={title(question)} /></div><a href={`/api/material/${encodeURIComponent(question.material)}#page=${question.regions[0].page}`} target="_blank" rel="noreferrer">打开完整 PDF ↗</a></Modal>}
+    {dialog === "source" && question && <Modal title="教材原题" onClose={() => setDialog(null)}>{pdfError && <p role="alert">{pdfError}</p>}<div className="original-source">{!!question.passageRegions?.length && <PdfExcerpt selectable={capture.enabled} pdf={pdf} regions={question.passageRegions} label="文章原文" />}<PdfExcerpt selectable={capture.enabled} pdf={pdf} regions={question.regions} label={title(question)} /></div><a href={state.materials.find(m => m.id === question.material)?.available ? `${materialURL(question.material)}#page=${question.regions[0].page}` : undefined} target="_blank" rel="noreferrer">打开完整 PDF ↗</a></Modal>}
     {dialog && dialog !== "source" && <ImportDialog mode={dialog} context={{ material: question?.material || "text_completion_2000", unit: question?.unit || "default", type }} onClose={() => setDialog(null)} onSaved={async () => { await refresh(); notify("导入已保存"); }} />}
   </div>;
 }

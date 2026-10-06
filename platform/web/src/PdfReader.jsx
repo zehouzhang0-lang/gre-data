@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { materialURL } from "./api";
 import { getDocument, GlobalWorkerOptions } from "pdfjs-dist";
 import workerUrl from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 GlobalWorkerOptions.workerSrc = workerUrl;
@@ -17,7 +18,7 @@ export default function PdfReader({ material, page, onPage }) {
     setError("");
     let active = true;
     const task = getDocument({
-      url: `/api/material/${encodeURIComponent(material)}`,
+      url: materialURL(material),
       isEvalSupported: false,
     });
     task.promise

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { request, post } from "./api";
+import { request, post, isOffline } from "./api";
 
 export function ReviewText({ review, attempt }) {
   const r = review.result;
@@ -20,6 +20,10 @@ export function ReviewText({ review, attempt }) {
 }
 
 export default function AiReview({ state, refresh, attempt, scope = "attempt" }) {
+  if (isOffline) {
+    const review = (state.reviews || []).find(r => r.scope === scope && (scope === "recent" || r.attempt_id === attempt?.id));
+    return <section className="ai-panel">{review && <ReviewText review={review} attempt={attempt}/>}<button onClick={() => window.dispatchEvent(new Event("gre:export"))}>导出后发回聊天讲解</button><p className="muted">离线版不调用 AI。讲解需完整翻译题干，并逐项覆盖所有选项的核心义、语境义、完整翻译与选择或排除依据。</p></section>;
+  }
   const [connection, setConnection] = useState(null), [error, setError] = useState(""), [starting, setStarting] = useState(false);
   const reviews = (state.reviews || []).filter(r => r.scope === scope && (scope === "recent" || r.attempt_id === attempt?.id));
   const review = reviews[0], job = connection?.job;

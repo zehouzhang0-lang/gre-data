@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { materialURL, isOffline } from "./api";
 import { getDocument, GlobalWorkerOptions, TextLayer } from "pdfjs-dist";
 import workerUrl from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 GlobalWorkerOptions.workerSrc = workerUrl;
@@ -13,7 +14,7 @@ export function useSourcePdf(material) {
     // Local files load once. Owning fetch cancellation prevents PDF range-reader
     // promises from outliving the component when the learner switches books.
     (async () => {
-      const response = await fetch(`/api/material/${encodeURIComponent(material)}`, { signal: controller.signal });
+      const response = await fetch(materialURL(material), { signal: controller.signal });
       if (!response.ok) throw new Error("教材读取失败");
       const data = new Uint8Array(await response.arrayBuffer());
       if (!active) return;
@@ -89,6 +90,6 @@ function Slice({ pdf, region, label, selectable }) {
   </div>;
 }
 export default function PdfExcerpt({ pdf, regions, label, selectable=false }) {
-  if (!pdf) return <p className="source-loading">正在读取教材…</p>;
+  if (!pdf) return <p className="source-loading">{isOffline ? "原题图片需要 PDF：请在资料库选择对应教材，再返回本题。" : "正在读取教材…"}</p>;
   return regions.map((region, index) => <Slice key={`${region.page}-${index}`} pdf={pdf} region={region} label={label} selectable={selectable} />);
 }

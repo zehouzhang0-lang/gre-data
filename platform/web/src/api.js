@@ -31,3 +31,6 @@ export function download(name, data) {
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
+
+export const isOffline = false;
+export const materialURL = id => `/api/material/${encodeURIComponent(id)}`;

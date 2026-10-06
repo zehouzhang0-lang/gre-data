@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {createHash,randomUUID} from 'node:crypto';
+import {sha256} from '../offline/browser-crypto.mjs';
+import {decodeImport,mergeEvents} from '../offline/validation.mjs';
+const q={key:'["m","u","1"]',material:'m',unit:'u',question:'1',type:'se',prompt:'Question',letters:['A','B','C','D','E','F'],options:['a','b','c','d','e','f']};
+const attempt=()=>({schema_version:1,id:randomUUID(),kind:'attempt',recorded_at:'2026-10-06T17:00:00.000Z',question_key:q.key,payload:{material:'m',unit:'u',question:'1',type:'se',answer:'A/F',note:'original note',duration_seconds:null}});
+test('offline SHA-256 preserves Store revision hashes for Unicode and multi-block input',()=>{for(const s of ['', 'abc', '原始题干与作答', 'x'.repeat(100000)])assert.equal(sha256(s),createHash('sha256').update(s).digest('hex'));});
+test('old single-file answers retain event IDs, dates and notes, and repeat imports are idempotent',()=>{const e=attempt();const data={format:'gre-offline-answers',questions:[q],session:{records:[e]}};const imported=decodeImport(data);assert.equal(imported.events[0].id,e.id);assert.equal(imported.events[0].recorded_at,e.recorded_at);assert.deepEqual(imported.events[0].payload,e.payload);assert.equal(mergeEvents(imported.events,imported.events).added,0);});
+test('conflicting IDs and malformed old answers reject the entire merge without mutation',()=>{const e=attempt(),first=decodeImport({format:'gre-offline-answers',questions:[q],session:{records:[e]}}).events;const snapshot=JSON.stringify(first);assert.throws(()=>mergeEvents(first,[{...first[0],payload:{...first[0].payload,answer:'B/D'}}]),/冲突/);assert.equal(JSON.stringify(first),snapshot);assert.throws(()=>decodeImport({format:'gre-offline-answers',questions:[q],session:{records:[{...e,payload:{...e.payload,answer:'A/A'}}]}}),/两个不同/);});
