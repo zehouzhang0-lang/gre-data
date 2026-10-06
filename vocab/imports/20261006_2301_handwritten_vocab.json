@@ -4,13 +4,13 @@
   "material_id": "handwritten_vocab_20261006",
   "source_kind": "user_handwritten_notes",
   "counts": {
-    "handwritten_occurrences": 415,
-    "handwritten_unique": 404,
+    "handwritten_occurrences": 416,
+    "handwritten_unique": 405,
     "within_batch_repeats": 11,
-    "handwritten_new": 301,
+    "handwritten_new": 302,
     "handwritten_existing": 103,
     "relation_groups_added": 23,
-    "pending_transcriptions": 1
+    "pending_transcriptions": 0
   },
   "images": [
     {
@@ -29,7 +29,7 @@
       "image": 3,
       "filename": "codex-clipboard-268f9325-17a1-488b-a7d4-ec59df6ecb04.jpg",
       "sha256": "7ced12e2d22e1b45518aa3862d24f59050a1366e5e36d6dc0b48b8a28c0bccbb",
-      "transcribed_count": 29
+      "transcribed_count": 30
     },
     {
       "image": 4,
@@ -2359,6 +2359,41 @@
         "implausible"
       ],
       "original_context": null
+    },
+    {
+      "surface": "catalog",
+      "word": "catalog",
+      "image": 3,
+      "pos": "n.; v.",
+      "meaning": "n. 目录；清单；v. 编目；将信息分类列入目录；逐项记录或列举",
+      "collocation": "a library catalog; catalog historical documents",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；常用于资料整理、图书与商品目录",
+      "note": "catalogue是另一种拼写；catalog可作名词或动词。没有原例句，本次记录核心义，不臆测具体语境义。",
+      "normalization_note": "用户明确确认第3页待辨认词为catalog；原待辨认标记cataly已解决。",
+      "topics": [
+        "language",
+        "action"
+      ],
+      "related_words": [
+        "catalogue"
+      ],
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/catalog",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "读取名词与动词条目：系统排列的目录或清单；编目、录入目录、分类记录；catalogue为变体。中文释义归纳，搭配自拟。"
+        }
+      ],
+      "images": [
+        3
+      ],
+      "surfaces": [
+        "catalog"
+      ]
     },
     {
       "surface": "spurn",
@@ -13894,15 +13929,7 @@
       "original_context": null
     }
   ],
-  "pending_transcriptions": [
-    {
-      "image": 3,
-      "location": "implausible下一行、presume左侧",
-      "surface": "cataly（字形待确认）",
-      "candidates": [],
-      "reason": "独立词条完整可见，但英文与中文均未能可靠辨认；待用户确认，不进入抽测池。"
-    }
-  ],
+  "pending_transcriptions": [],
   "corrections": [
     {
       "image": 1,
@@ -14056,6 +14083,11 @@
       "image": 15,
       "original": "照片以口齿清晰的开头",
       "correction": "补明轻率或不真诚的贬义，不当作单纯口才好的褒义词。"
+    },
+    {
+      "image": 3,
+      "word": "catalog",
+      "note": "用户明确确认第3页待辨认词为catalog；原待辨认标记cataly已解决。"
     }
   ],
   "existing_updates": [
@@ -16319,6 +16351,35 @@
         }
       ],
       "related_words": []
+    },
+    {
+      "surface": "catalog",
+      "word": "catalog",
+      "image": 3,
+      "pos": "n.; v.",
+      "meaning": "n. 目录；清单；v. 编目；将信息分类列入目录；逐项记录或列举",
+      "collocation": "a library catalog; catalog historical documents",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；常用于资料整理、图书与商品目录",
+      "note": "catalogue是另一种拼写；catalog可作名词或动词。没有原例句，本次记录核心义，不臆测具体语境义。",
+      "normalization_note": "用户明确确认第3页待辨认词为catalog；原待辨认标记cataly已解决。",
+      "topics": [
+        "language",
+        "action"
+      ],
+      "related_words": [
+        "catalogue"
+      ],
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/catalog",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "读取名词与动词条目：系统排列的目录或清单；编目、录入目录、分类记录；catalogue为变体。中文释义归纳，搭配自拟。"
+        }
+      ]
     },
     {
       "surface": "spurn",
@@ -25726,5 +25787,21 @@
       ],
       "related_words": []
     }
-  ]
+  ],
+  "resolved_transcriptions": [
+    {
+      "original": {
+        "image": 3,
+        "location": "implausible下一行、presume左侧",
+        "surface": "cataly（字形待确认）",
+        "candidates": [],
+        "reason": "独立词条完整可见，但英文与中文均未能可靠辨认；待用户确认，不进入抽测池。"
+      },
+      "word": "catalog",
+      "resolution": "user_confirmed",
+      "resolved_at": "2026-10-06T15:26:57.643Z",
+      "record": "vocab/imports/20261006_2325_catalog_confirmation.json"
+    }
+  ],
+  "updated_at": "2026-10-06T15:26:57.643Z"
 }

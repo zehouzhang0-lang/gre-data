@@ -1,6 +1,6 @@
 # 2026-10-06 手写词汇整理
 
-15 页共 415 次词条记录，去重后 **404 个词与短语**：新增 **301**，已有 **103**，待辨认 **1**。新增 23 组辨析。
+15 页共 416 次词条记录，去重后 **405 个词与短语**：新增 **302**，已有 **103**，待辨认 **0**。新增 23 组辨析。
 
 照片按上传顺序编号，规范词形去重并保留各页来源。新词和疑难义项读取权威词典；已有核验来源可复用，保留实际核验日期，不把复用冒充今日重新核验。中文释义为归纳，搭配为教练自拟。无原例句，original_context为null，不把核心义当作具体题目语境义。旧词只补来源，空释义可补齐；不覆盖已有释义、用户编辑与复测历史。本次只收录，不计完成复习或掌握。
 
@@ -35,9 +35,9 @@
 - 第 15 页 · **saccharine**：saccharine按adj.含糖、甜腻或矫情整理；常用名词糖精为saccharin。
 - 第 15 页 · **glib**：补明轻率或不真诚的贬义，不当作单纯口才好的褒义词。
 
-## 待辨认
+## 用户确认
 
-- 第 3 页：cataly（字形待确认）。独立词条完整可见，但英文与中文均未能可靠辨认；待用户确认，不进入抽测池。 暂不加入抽测池，等待用户确认。
+- 第 3 页待辨认词已由用户明确确认为 **catalog**；已补入词库和本批索引。原待辨认记录保留在 JSON 的 resolved_transcriptions 中；本次确认不计复习或掌握。
 
 ## 易混与近义词辨析
 
@@ -69,7 +69,7 @@
 
 - 第 1 页（28 条）：[excoriate](#excoriate)、[emulate](#emulate)、[indict](#indict)、[valorize](#valorize)、[exalt](#exalt)、[relish](#relish)、[ploy](#ploy)、[betray](#betray)、[quandary](#quandary)、[spike](#spike)、[upsurge](#upsurge)、[harbinger](#harbinger)、[portent](#portent)、[lull](#lull)、[respite](#respite)、[amalgam](#amalgam)、[entice](#entice)、[perplex](#perplex)、[exactitude](#exactitude)、[meticulousness](#meticulousness)、[endure](#endure)、[eminence](#eminence)、[tenacity](#tenacity)、[encyclopedic](#encyclopedic)、[long-winded](#long-winded)、[ramble](#ramble)、[overbear](#overbear)、[overbearing](#overbearing)
 - 第 2 页（29 条）：[proliferate](#proliferate)、[stagnate](#stagnate)、[alga](#alga)、[coalesce](#coalesce)、[fragile](#fragile)、[decadence](#decadence)、[degeneracy](#degeneracy)、[paragon](#paragon)、[conundrum](#conundrum)、[palpable](#palpable)、[dim](#dim)、[imperative](#imperative)、[prescient](#prescient)、[concession](#concession)、[compromise](#compromise)、[bedrock](#bedrock)、[precarious](#precarious)、[perilous](#perilous)、[receipt](#receipt)、[reception](#reception)、[resonate](#resonate)、[hostile](#hostile)、[prophetic](#prophetic)、[upheaval](#upheaval)、[imminent](#imminent)、[refinement](#refinement)、[augmentation](#augmentation)、[replete](#replete)、[encomium](#encomium)
-- 第 3 页（29 条）：[snag](#snag)、[hitch](#hitch)、[upshot](#upshot)、[champion](#champion)、[assert](#assert)、[hallmark](#hallmark)、[transient](#transient)、[persistence](#persistence)、[implausible](#implausible)、[spurn](#spurn)、[presume](#presume)、[thwart](#thwart)、[elaborate](#elaborate)、[harpoon](#harpoon)、[utility](#utility)、[utilitarian](#utilitarian)、[manufacture](#manufacture)、[ornament](#ornament)、[pragmatic](#pragmatic)、[empiricism](#empiricism)、[empirical](#empirical)、[conjecture](#conjecture)、[judicious](#judicious)、[sober](#sober)、[spew](#spew)、[quiescent](#quiescent)、[turbulence](#turbulence)、[remoteness](#remoteness)、[cynicism](#cynicism)
+- 第 3 页（30 条）：[snag](#snag)、[hitch](#hitch)、[upshot](#upshot)、[champion](#champion)、[assert](#assert)、[hallmark](#hallmark)、[transient](#transient)、[persistence](#persistence)、[implausible](#implausible)、[catalog](#catalog)、[spurn](#spurn)、[presume](#presume)、[thwart](#thwart)、[elaborate](#elaborate)、[harpoon](#harpoon)、[utility](#utility)、[utilitarian](#utilitarian)、[manufacture](#manufacture)、[ornament](#ornament)、[pragmatic](#pragmatic)、[empiricism](#empiricism)、[empirical](#empirical)、[conjecture](#conjecture)、[judicious](#judicious)、[sober](#sober)、[spew](#spew)、[quiescent](#quiescent)、[turbulence](#turbulence)、[remoteness](#remoteness)、[cynicism](#cynicism)
 - 第 4 页（27 条）：[pharmaceutical](#pharmaceutical)、[pharmacy](#pharmacy)、[conventional](#conventional)、[convent](#convent)、[impeach](#impeach)、[ingenious](#ingenious)、[deprecate](#deprecate)、[self-deprecate](#self-deprecate)、[remark](#remark)、[complimentary](#complimentary)、[disband](#disband)、[skeptic](#skeptic)、[arcane](#arcane)、[seditious](#seditious)、[quixotic](#quixotic)、[confound](#confound)、[constant](#constant)、[observation](#observation)、[ephemeral](#ephemeral)、[peculiar](#peculiar)、[peculiarity](#peculiarity)、[eccentricity](#eccentricity)、[predilect](#predilect)、[proclivity](#proclivity)、[accord](#accord)、[restive](#restive)、[fractious](#fractious)
 - 第 5 页（29 条）：[aerial](#aerial)、[crude](#crude)、[artistry](#artistry)、[faculty](#faculty)、[primitive](#primitive)、[rudimentary](#rudimentary)、[primate](#primate)、[biography](#biography)、[insipid](#insipid)、[gingerbread](#gingerbread)、[almond](#almond)、[coat](#coat)、[conjure](#conjure)、[strip away](#strip-away)、[inter](#inter)、[voluble](#voluble)、[concession](#concession)、[entail](#entail)、[abnegation](#abnegation)、[repudiation](#repudiation)、[inattention](#inattention)、[subversive](#subversive)、[induce](#induce)、[slumber](#slumber)、[laconic](#laconic)、[lethargic](#lethargic)、[fatigue](#fatigue)、[befuddle](#befuddle)、[evenhanded](#evenhanded)
 - 第 6 页（28 条）：[encomium](#encomium)、[forum](#forum)、[fashion](#fashion)、[reproduce](#reproduce)、[hallmark](#hallmark)、[sporadic](#sporadic)、[chicanery](#chicanery)、[subterfuge](#subterfuge)、[retribute](#retribute)、[retribution](#retribution)、[outrage](#outrage)、[thorough](#thorough)、[meticulous](#meticulous)、[ornamental](#ornamental)、[compensate](#compensate)、[subside](#subside)、[appraise](#appraise)、[confederacy](#confederacy)、[intuitive](#intuitive)、[instinct](#instinct)、[render](#render)、[rampant](#rampant)、[swamp](#swamp)、[eddy](#eddy)、[luxuriant](#luxuriant)、[redeem](#redeem)、[minutia](#minutia)、[prudent](#prudent)
@@ -90,7 +90,7 @@
 - **人际与交往**：exalt、betray、entice、eminence、overbearing、coalesce、fragile、concession、compromise、reception、champion、spurn、remoteness、accord、forum、confederacy、adhere、succor、synergy、ally、counterpart、suave、abase、curator、bazaar、merchant、merchandise、intimacy、mutual、rapport、conform、gaffe、sartorial、ethos、cohesion、sustenance、utopia、notorious
 - **冲突与约束**：excoriate、indict、overbear、compromise、perilous、hostile、snag、hitch、assert、spurn、thwart、seditious、confound、fractious、repudiation、subversive、retribute、retribution、outrage、bound、subdue、insurrection、intrude、belittle、virulent、denounce、abase、adverse、inextricable、extricate、destructive、enjoin、admonish、encroach、persecution、sanction、command、forfeit
 - **思考与判断**：valorize、ploy、quandary、harbinger、portent、amalgam、perplex、exactitude、meticulousness、encyclopedic、paragon、conundrum、dim、imperative、prescient、bedrock、prophetic、upshot、hallmark、implausible、presume、utility、utilitarian、pragmatic、empiricism、empirical、conjecture、judicious、sober、cynicism、conventional、impeach、ingenious、deprecate、skeptic、arcane、quixotic、confound、observation、accord、crude、faculty、rudimentary、conjure、strip away、entail、inattention、induce、befuddle、evenhanded、chicanery、subterfuge、thorough、meticulous、appraise、intuitive、instinct、prudent、underlie、deduce、irrefutable、preternatural、conflate、cognizant、cognition、intrinsic、inherent、divination、quack、concrete、unfavorable、discretion、camouflage、deception、device、stratagem、alternative、culpable、merit、simulate、calibrate、foretell、pivotal、calculated、providential、anomaly、compartmentalize、impenetrable、imbibe、predispose、stratify
-- **表达与信息**：excoriate、exalt、betray、encyclopedic、long-winded、ramble、imperative、reception、resonate、encomium、assert、elaborate、deprecate、self-deprecate、remark、complimentary、arcane、observation、peculiarity、biography、voluble、repudiation、laconic、chicanery、subterfuge、outrage、appraise、render、underplay、instance、probe、emblem、emblematic、charade、mordant、rant、diatribe、hortatory、tendentious、slant、antecedent、precursor、precedent、naysayer、screed、conflate、hagiography、byline、jeremiad、lamentable、proposition、denounce、espouse、aside、panegyric、oration、avant-garde、sentence、sententious、repertoire、emphatic、plagiarize、endorse、commend、glib、burlesque
+- **表达与信息**：excoriate、exalt、betray、encyclopedic、long-winded、ramble、imperative、reception、resonate、encomium、assert、catalog、elaborate、deprecate、self-deprecate、remark、complimentary、arcane、observation、peculiarity、biography、voluble、repudiation、laconic、chicanery、subterfuge、outrage、appraise、render、underplay、instance、probe、emblem、emblematic、charade、mordant、rant、diatribe、hortatory、tendentious、slant、antecedent、precursor、precedent、naysayer、screed、conflate、hagiography、byline、jeremiad、lamentable、proposition、denounce、espouse、aside、panegyric、oration、avant-garde、sentence、sententious、repertoire、emphatic、plagiarize、endorse、commend、glib、burlesque
 - **变化与发展**：emulate、spike、upsurge、proliferate、stagnate、coalesce、degeneracy、upheaval、refinement、augmentation、upshot、quiescent、deprecate、disband、rudimentary、induce、reproduce、compensate、subside、render、redeem、verge、converge、bifurcate、nascent、fuel、revert、overshadow、outlast、detract、congest、combustion、burgeon、wax、dilapidate、decay、imitate、stimulate、ripe、languish、transcend、foray、cleave、ailing
 - **数量与程度**：upsurge、exactitude、augmentation、replete、constant、eccentricity、minutia、predominant、rife、marginal、enormity、girth、rarefied、mighty、extent、awash、opulent、residual、encompass、possess、overextend、needy、strain、utmost
 - **时间与持续**：harbinger、portent、lull、respite、endure、prescient、prophetic、imminent、transient、persistence、quiescent、constant、ephemeral、primitive、slumber、sporadic、steadfast、bound、nascent、antecedent、precursor、precedent、outlast、sequel、auspicious、finale、contemporary、temporary、temporal、antebellum、inception
@@ -101,7 +101,7 @@
 - **社会与制度**：indict、decadence、degeneracy、concession、upheaval、utility、turbulence、pharmacy、conventional、convent、impeach、disband、seditious、faculty、primitive、primate、inter、entail、subversive、forum、retribution、confederacy、insurrection、bribery、bribe、partisan
 - **经济与资源**：valorize、stagnate、precarious、receipt、manufacture、pharmaceutical、complimentary、fashion、compensate、redeem、automobile、invaluable、inherit
 - **艺术与审美**：refinement、elaborate、utilitarian、ornament、artistry、biography、insipid、gingerbread、fashion、ornamental、charade、hagiography、grandeur、byline、sequel、aesthetic、elegiac
-- **行为与操作**：emulate、ploy、entice、ramble、receipt、snag、hitch、champion、harpoon、manufacture、ornament、spew、coat、conjure、strip away、inter、abnegation、induce、reproduce、retribute、compensate、appraise、render、bound、subdue、instance、probe、cloak、intrude、forestall、prune、dispense、inherit
+- **行为与操作**：emulate、ploy、entice、ramble、receipt、snag、hitch、champion、catalog、harpoon、manufacture、ornament、spew、coat、conjure、strip away、inter、abnegation、induce、reproduce、retribute、compensate、appraise、render、bound、subdue、instance、probe、cloak、intrude、forestall、prune、dispense、inherit
 
 ## 完整词表
 
@@ -621,6 +621,16 @@
 - 辨析：可指军事视觉伪装，也可引申为掩盖事实。
 - 照片：第 12 页；本批新收录。
 - 核验来源：[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/camouflage)（2026-10-06，checked）。
+
+### catalog
+
+- **n.; v.** n. 目录；清单；v. 编目；将信息分类列入目录；逐项记录或列举
+- 色彩／语体：中性；常用于资料整理、图书与商品目录；分类：表达与信息／行为与操作。
+- 搭配（自拟）：a library catalog; catalog historical documents
+- 辨析：catalogue是另一种拼写；catalog可作名词或动词。没有原例句，本次记录核心义，不臆测具体语境义。
+- 照片：第 3 页；本批新收录。
+- 订正：用户明确确认第3页待辨认词为catalog；原待辨认标记cataly已解决。
+- 核验来源：[Merriam-Webster](https://www.merriam-webster.com/dictionary/catalog)（2026-10-06，checked）。
 
 ### champion
 

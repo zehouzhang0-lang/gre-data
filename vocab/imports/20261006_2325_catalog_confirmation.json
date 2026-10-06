@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-06T15:26:57.643Z",
+  "source_kind": "user_confirmation",
+  "material_id": "handwritten_vocab_20261006",
+  "original_record": "vocab/imports/20261006_2301_handwritten_vocab.json",
+  "original_pending": {
+    "image": 3,
+    "location": "implausible下一行、presume左侧",
+    "surface": "cataly（字形待确认）",
+    "candidates": [],
+    "reason": "独立词条完整可见，但英文与中文均未能可靠辨认；待用户确认，不进入抽测池。"
+  },
+  "user_confirmation": "是catalog",
+  "action": "resolve_pending_transcription_and_add_word",
+  "counts_before": {
+    "handwritten_occurrences": 415,
+    "handwritten_unique": 404,
+    "within_batch_repeats": 11,
+    "handwritten_new": 301,
+    "handwritten_existing": 103,
+    "relation_groups_added": 23,
+    "pending_transcriptions": 1
+  },
+  "counts_after": {
+    "handwritten_occurrences": 416,
+    "handwritten_unique": 405,
+    "within_batch_repeats": 11,
+    "handwritten_new": 302,
+    "handwritten_existing": 103,
+    "relation_groups_added": 23,
+    "pending_transcriptions": 0
+  },
+  "items": [
+    {
+      "surface": "catalog",
+      "word": "catalog",
+      "image": 3,
+      "pos": "n.; v.",
+      "meaning": "n. 目录；清单；v. 编目；将信息分类列入目录；逐项记录或列举",
+      "collocation": "a library catalog; catalog historical documents",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；常用于资料整理、图书与商品目录",
+      "note": "catalogue是另一种拼写；catalog可作名词或动词。没有原例句，本次记录核心义，不臆测具体语境义。",
+      "normalization_note": "用户明确确认第3页待辨认词为catalog；原待辨认标记cataly已解决。",
+      "topics": [
+        "language",
+        "action"
+      ],
+      "related_words": [
+        "catalogue"
+      ],
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/catalog",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "读取名词与动词条目：系统排列的目录或清单；编目、录入目录、分类记录；catalogue为变体。中文释义归纳，搭配自拟。"
+        }
+      ]
+    }
+  ],
+  "learning_evidence_changed": false
+}

@@ -11847,6 +11847,45 @@
       "last_review": null
     },
     {
+      "word": "catalog",
+      "pos": "n.; v.",
+      "meaning": "n. 目录；清单；v. 编目；将信息分类列入目录；逐项记录或列举",
+      "collocation": "a library catalog; catalog historical documents",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；常用于资料整理、图书与商品目录",
+      "related_words": [
+        "catalogue"
+      ],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261006",
+          "record": "vocab/imports/20261006_2301_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/catalog",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "读取名词与动词条目：系统排列的目录或清单；编目、录入目录、分类记录；catalogue为变体。中文释义归纳，搭配自拟。"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/catalog",
+      "note": "catalogue是另一种拼写；catalog可作名词或动词。没有原例句，本次记录核心义，不臆测具体语境义。",
+      "normalization_note": "用户明确确认第3页待辨认词为catalog；原待辨认标记cataly已解决。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "catalyst",
       "pos": "n.",
       "meaning": "催化剂；促成或加速变化的人或事",
@@ -84032,5 +84071,5 @@
       "learning_status": "encountered_pending_retest"
     }
   ],
-  "updated_at": "2026-09-16T16:31:25.098Z"
+  "updated_at": "2026-10-06"
 }
