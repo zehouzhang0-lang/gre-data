@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "f7b86df7-27e7-400c-bc08-fa2c4ad0dfb7",
+  "recorded_at": "2026-10-08T15:32:13.138Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "3206e9b6-428e-415f-aa01-355cccf790fd",
+    "input_hash": "2ab320d454593f699429de50305090048f2c64018e911618292b52d54f3670a3",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "CF",
+    "result": {
+      "question_translation": "与她们那些在政治取向上更偏民族主义而非女权主义的前辈相比，年轻一代的罗马女性活动家更倾向于_____女性权利，并且常常创建主要关注女性议题的组织。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "expand：扩大、拓展；此处指扩大女性权利。",
+          "translation": "扩大女性权利。",
+          "reasoning": "“更倾向于”以及后文“创建主要关注女性议题的组织”支持积极推动女性权益；但SE要求两项填入后全句意义等价，A与C并非同义。排除。"
+        },
+        {
+          "label": "B",
+          "meaning": "de-emphasize：淡化、降低对……的重视。",
+          "translation": "淡化女性权利。",
+          "reasoning": "后文说明她们创建以女性议题为中心的组织，表明重视而非淡化。排除。"
+        },
+        {
+          "label": "C",
+          "meaning": "champion：积极拥护、倡导并推动；此处指积极倡导女性权利。",
+          "translation": "积极倡导女性权利。",
+          "reasoning": "与前辈“更偏民族主义而非女权主义”形成对比，且组织聚焦女性议题，直接支持年轻活动家积极倡导女性权利。与F填入后句意等价。"
+        },
+        {
+          "label": "D",
+          "meaning": "idealize：理想化；把……看得过于完美。",
+          "translation": "理想化女性权利。",
+          "reasoning": "题干没有“认为女性权利完美”的证据；聚焦女性议题不等于理想化。排除。"
+        },
+        {
+          "label": "E",
+          "meaning": "downplay：轻描淡写、贬低或弱化重要性。",
+          "translation": "弱化女性权利的重要性。",
+          "reasoning": "与“创建主要关注女性议题的组织”这一重视女性议题的证据相反。排除。"
+        },
+        {
+          "label": "F",
+          "meaning": "defend：维护、捍卫；此处指维护女性权利。",
+          "translation": "维护女性权利。",
+          "reasoning": "年轻一代更具女权取向，并建立关注女性议题的组织，支持她们维护女性权利。与C均表达对女性权利的积极支持，填入后全句等价。"
+        }
+      ],
+      "summary": "答案C/F正确。句子将年轻一代与较少女权取向的前辈对比，逻辑方向是更积极支持女性权利；C与F均成立且全句等价。",
+      "evidence": "决定性证据有两处：前辈“more nationalist than feminist”说明其女权取向较弱；年轻一代“more inclined to”后接的行为又由“creating organizations focused primarily on women’s issues”具体说明。因此空格须为支持、推进或维护女性权利的动词。C champion（积极倡导）和F defend（维护）都符合。A expand虽方向正向，但强调“扩大”权利，不能与C构成SE所需的等价句；B/E与聚焦女性议题相反，D无“理想化”依据。未提供作答推理，尚无证据确定其具体解题策略或潜在错因。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。本题作答正确；仍需保留SE双选核验：不要只确认单个词方向正确，还要将C、F分别代回，确认两句均由题干支持且表达同一核心含义。",
+      "next_action": "下次SE先写出预测：年轻活动家“更积极支持女性权利”；再逐项代入。锁定一个正向词后，寻找另一项能在同一语境下替换、且不额外加入“扩大/理想化”等新含义的词。本题应核验 champion ↔ defend。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

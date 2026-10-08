@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "2737879b-6069-4d37-8d66-93b3de3d99c7",
+  "recorded_at": "2026-10-08T15:34:31.899Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "7f16060a-2970-42f3-b51d-571735538592",
+    "input_hash": "96d36b9fe22fddc6df3a56139fe8ef5d2c890e872af0a3f7e25e0e53cff5ee07",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AE",
+    "result": {
+      "question_translation": "个人、政府和公司表现出充分的能力，能够通过根据当前情况设定目标，然后即使那些情况发生剧烈变化也盲目遵循这些目标，来_____它们自己。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "hamstring：束缚、限制，使（自己）难以有效行动；此处指因僵化遵循旧目标而自我设限。",
+          "translation": "束缚（自己）；使（自己）难以行动。",
+          "reasoning": "选择。后文“blindly following them even when those conditions change drastically”表明主体未随条件变化调整，结果是限制自身，而非使自身焕新或增强。"
+        },
+        {
+          "label": "B",
+          "meaning": "reinvent：重新塑造、彻底改造；此处会表示主动根据变化更新自身。",
+          "translation": "重新塑造（自己）；彻底改造（自己）。",
+          "reasoning": "排除。句中强调的是“盲目遵循”旧目标，表达僵化造成的负面后果；reinvent含主动更新、重塑之义，方向相反。"
+        },
+        {
+          "label": "C",
+          "meaning": "promote：促进、推动、提升；此处指促进自身发展。",
+          "translation": "促进（自己）；提升（自己）。",
+          "reasoning": "排除。盲从已不适用的目标不会支持“促进自身”的正向结果，且与后文的批评语气不合。"
+        },
+        {
+          "label": "D",
+          "meaning": "revitalize：使恢复活力、使重新振兴；此处指令自身焕发新生。",
+          "translation": "使（自己）恢复活力；使（自己）重新振兴。",
+          "reasoning": "排除。语境是条件剧变后仍固守旧目标，结果应为自我限制/损害，不是复兴。你的B/D组合均把句意读成正向改变，偏离了“blindly”给出的负向逻辑。"
+        },
+        {
+          "label": "E",
+          "meaning": "impair：损害、削弱，使功能或效果变差；此处指僵化目标会损害自身行动能力。",
+          "translation": "损害（自己）；削弱（自己）。",
+          "reasoning": "选择。旧条件下设定的目标在条件剧变后仍被盲从，会削弱主体适应和行动的能力，恰合句意。"
+        },
+        {
+          "label": "F",
+          "meaning": "invigorate：使精力充沛、使增强活力；此处指增强自身活力。",
+          "translation": "使（自己）精力充沛；使（自己）增强活力。",
+          "reasoning": "排除。它是正向增强，与“blindly following”所造成的僵化负面结果不符。"
+        }
+      ],
+      "summary": "本题参考答案为A/E，且与题干一致。条件剧变后仍盲从旧目标会造成自我限制或损害；B/D均表示积极的重塑或复兴，方向相反。",
+      "evidence": "决定性证据是“then blindly following them even when those conditions change drastically”。“blindly”表示不加调整地盲从，“even when”强调条件已剧变，整体构成对僵化决策的批评，空格应填负向的自我妨碍结果。A hamstring与E impair都表示限制、削弱自己，分别代回后全句含义等价。B reinvent和D revitalize都指主动、正向的更新或恢复活力，不能由盲从旧目标推出。可观察到的偏离标签：词义/句义匹配；未提供推理，尚无证据确定是知识、读题、策略、计算或时间问题。",
+      "reasoning_gap": "未提供作答思路，无法判断为何选择B/D，也不能据此认定长期词汇薄弱。需要补充：你当时如何理解“blindly”和“even when those conditions change drastically”，以及为何认为B与D能表达同一句义。",
+      "next_action": "下次SE先写逻辑链：条件剧变＋盲从旧目标→负面自我后果；再逐项代入。选出A/E后，用“限制/削弱自身”各造一句并比较全句是否等价；若一词变成“重塑/复兴”，立即按方向冲突排除。",
+      "technique_ids": [
+        "v_se_dual_equivalence",
+        "v_tc_logic_map"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
