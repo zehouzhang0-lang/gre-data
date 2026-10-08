@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "6bc14526-6c1c-4232-9a59-1951fd54f0f9",
+  "recorded_at": "2026-10-08T14:19:11.838Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "efdecad3-e81f-4890-83fd-f64b042e2f7b",
+    "input_hash": "c19d8381abd2b0e2c22bc0e2b210532ac017496bb6a44f73585f79d60da9058f",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AC",
+    "result": {
+      "question_translation": "很少有观念比“文化以达尔文式的方式演化”这一观念更_____；许多学者已经开始撰写有关文化演化的文章，但很少有人以其应得的严谨态度对待其背后的达尔文逻辑。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "abused：被滥用、被不当对待；此处指该观念虽常被谈论，却未被严谨处理。",
+          "translation": "被滥用的",
+          "reasoning": "参考答案为A/C。后文“few treat ... logic with the care it deserves”直接说明人们没有给予应有的审慎对待，支持“被滥用”。"
+        },
+        {
+          "label": "B",
+          "meaning": "archaic：古老过时的、陈旧的。",
+          "translation": "陈旧过时的",
+          "reasoning": "文中说许多学者“已经开始”写文化演化，重点是处理不严谨，不是观念年代久远。"
+        },
+        {
+          "label": "C",
+          "meaning": "misused：被误用、不当使用；此处指对文化演化观念的使用没有遵循其达尔文逻辑。",
+          "translation": "被误用的",
+          "reasoning": "参考答案为A/C。对底层达尔文逻辑缺少应有的严谨，直接支持“被误用”；其在本句中与A都表达不当对待。"
+        },
+        {
+          "label": "D",
+          "meaning": "outdated：不再适用的、过时的。",
+          "translation": "过时的",
+          "reasoning": "“许多学者已经开始撰写”不能证明观念失去适用性；句子批评的是使用方式，非其有效性。用户选D，偏离了后半句的逻辑指向。"
+        },
+        {
+          "label": "E",
+          "meaning": "divisive：引发分歧或对立的。",
+          "translation": "有争议、造成分裂的",
+          "reasoning": "没有任何文本证据说明该观念使人群或学界分裂。"
+        },
+        {
+          "label": "F",
+          "meaning": "derivative：缺乏原创性、派生而来的。",
+          "translation": "缺乏原创性的；派生的",
+          "reasoning": "句子未讨论该观念是否原创，而是讨论研究者是否严谨遵循其逻辑。"
+        }
+      ],
+      "summary": "应选A/C，参考答案支持。句子批评文化演化观念被不当对待：常被讨论，却少有人严谨处理其达尔文逻辑。D“过时”无文本支持。",
+      "evidence": "决定性证据是转折后的“but few treat the underlying Darwinian logic with the care it deserves”。“few”与“care it deserves”说明问题在于研究者对该观念及其逻辑的处理不当，故A abused与C misused均成立。两词在本句中都概括“未被应有的审慎、正确地对待”，代入后全句逻辑一致：观念广受讨论，但常被不当使用。D outdated要求“该观念已不适用/过时”的证据，原文没有提供，且“many academics have begun writing”并不推出过时。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。仅能确定所选A/D中，A符合后句证据，D把“处理不严谨”误读为“观念过时”。",
+      "next_action": "下次SE先用转折词but定位评价依据：先预测“常被谈论但被不当处理”，再逐个代入。选定A后，第二项须同样表达“不当使用/对待”，并检验两项代入后整句含义等价；排除任何需要“过时、争议、原创性”等额外证据的词。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

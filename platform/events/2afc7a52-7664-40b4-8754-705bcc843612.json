@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "2afc7a52-7664-40b4-8754-705bcc843612",
+  "recorded_at": "2026-10-08T14:56:35.735Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "e8290b79-2814-4102-8b7a-1e1069ee9a2c",
+    "input_hash": "9ab267e223abdb2d3f5780ccbf2eaf7b2c10e207a86e5889848a4566d908664b",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "CF",
+    "result": {
+      "question_translation": "文化和语言一样，主要是人类所具有的能力，尽管这两种功能在较低等灵长类动物中都可能以一种更_____的形式存在。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "indispensable：不可或缺的、必不可少的。",
+          "translation": "不可或缺的",
+          "reasoning": "排除：more indispensable（更不可或缺的）不能说明较低等灵长类中的文化和语言形式较人类更基础；与“primarily a human faculty”后的让步逻辑不符。"
+        },
+        {
+          "label": "B",
+          "meaning": "crucial：至关重要的、关键的。",
+          "translation": "至关重要的",
+          "reasoning": "排除：more crucial（更关键的）描述重要性，不描述功能的发展程度；不能与另一空构成全句等价。"
+        },
+        {
+          "label": "C",
+          "meaning": "primitive：原始的、早期的、未充分发展的。此处指文化和语言以更基础的形态存在。",
+          "translation": "原始的；较初级的",
+          "reasoning": "选择：句中先说文化和语言主要是人类能力，再以although让步，说明较低等灵长类也可能有这些能力，但形式更初级。与F代入后句义相同。"
+        },
+        {
+          "label": "D",
+          "meaning": "intelligible：可理解的、能被理解的。",
+          "translation": "可理解的",
+          "reasoning": "排除：more intelligible（更容易理解的）讨论可理解性，不是比较文化和语言在物种中的发展阶段；不符合上下文。"
+        },
+        {
+          "label": "E",
+          "meaning": "recognizable：可辨认的、可识别的。",
+          "translation": "可辨认的",
+          "reasoning": "排除：more recognizable（更容易辨认的）描述观察者是否能识别，不能表达较低等灵长类中功能更基础，且无法与F全句等价。"
+        },
+        {
+          "label": "F",
+          "meaning": "rudimentary：初步的、雏形的、未充分发展的。此处指文化和语言仅以雏形存在。",
+          "translation": "初步的；雏形的",
+          "reasoning": "选择：more rudimentary直接表达“形式更不成熟、更基础”，与“lesser primates”及让步结构一致。代入后与C均表示这些功能存在，但只是较初级/雏形的形式，因此两句等价。"
+        }
+      ],
+      "summary": "参考答案为C/F；你的A/B错误。空格要求表达较低等灵长类中这两种能力以更初级、未充分发展的形式存在，C与F构成等价句。",
+      "evidence": "决定性证据是“although”引出的让步：文化和语言主要属于人类，但“both functions may exist”于较低等灵长类。因此空格必须限定其存在形式较基础或不成熟。C primitive与F rudimentary都表示原始、初级、雏形，分别代入后全句都表达同一意思。A indispensable和B crucial只表示重要或必要，既不表示发展程度，也不能彼此构成两项全句等价。用户未提供推理，尚无证据确定错因。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。结果显示未完成SE的“双项分别通顺且两句等价”核验：A/B同属重要性语义，不对应句中所需的形态/发展程度语义。标签：读题/策略。",
+      "next_action": "下次SE先写出预测：让步＋lesser primates → “也有，但更初级/不成熟”。随后分别代入候选项，检查两句是否都通顺，并比较它们是否仅表达同一含义；若一个词描述重要性、另一个也描述重要性，仍须确认其符合空格语义。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

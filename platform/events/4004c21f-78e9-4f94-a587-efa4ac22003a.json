@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "4004c21f-78e9-4f94-a587-efa4ac22003a",
+  "recorded_at": "2026-10-08T13:24:15.191Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "045123d8-296f-416a-a49e-c32fd56cb1cf",
+    "input_hash": "6092896dd532c38debdf67161f655d441d7aed416b54147d72a231262e4bb9fe",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BF",
+    "result": {
+      "question_translation": "查韦斯山口（Chavez Pass）考古遗址最初被解释为表明一种_____社会，因为人们认为它位于一群规模较小、同时代的聚落的中心，而它大概控制着这些聚落。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "expansionist：扩张主义的；强调向外扩张领土或影响力。",
+          "translation": "一个扩张主义的（社会）",
+          "reasoning": "“位于较小聚落群中心并控制它们”说明内部支配关系，不提供向外扩张的证据，排除。"
+        },
+        {
+          "label": "B",
+          "meaning": "hierarchical：等级分明的、具有上下级层级的。",
+          "translation": "一个等级分明的（社会）",
+          "reasoning": "中心遗址“控制”周边较小聚落，直接表明聚落间存在上下等级；与F共同使全句成立。"
+        },
+        {
+          "label": "C",
+          "meaning": "urban：城市的、都市化的。",
+          "translation": "一个城市的（社会）",
+          "reasoning": "遗址处于聚落群中心不等于该社会已城市化；题干没有城市规模、人口密度或城市制度的证据，排除。"
+        },
+        {
+          "label": "D",
+          "meaning": "heterogeneous：异质的、由不同类型成分构成的。",
+          "translation": "一个异质的（社会）",
+          "reasoning": "题干说明的是控制关系而非成员或聚落类型的差异，排除。"
+        },
+        {
+          "label": "E",
+          "meaning": "diverse：多样的。",
+          "translation": "一个多样的（社会）",
+          "reasoning": "“较小、同时代的聚落”没有说明文化、族群或社会构成多样，排除。"
+        },
+        {
+          "label": "F",
+          "meaning": "stratified：分层的，社会地位或权力存在层级分化的。",
+          "translation": "一个分层的（社会）",
+          "reasoning": "中心对周边聚落的控制体现权力分层；与B在本句中都概括“存在等级支配结构”，两项分别成立且全句等价。"
+        }
+      ],
+      "summary": "应选B/F。中心遗址被认为控制一组较小聚落，指向等级化、分层化社会。你的C/D均未由题干支持。未提供推理，尚无证据确定错因。",
+      "evidence": "决定性文本是“at the center of a cluster of smaller, contemporary settlements that it presumably controlled”。“controlled”给出支配关系，“中心—较小聚落”的结构给出层级，因此B hierarchical与F stratified均可填入并保持句意：该遗址体现了具有权力等级的社会。C urban要求城市化证据；D heterogeneous要求异质构成证据；两者均非题干所述逻辑。参考答案为BF，且与题干一致。",
+      "reasoning_gap": "作答C/D偏离了题干的因果证据：没有把“控制周边较小聚落”优先映射为权力等级。由于用户未提供推理，尚无证据确定这是知识、读题、策略、计算或时间问题。",
+      "next_action": "下次SE先将因果线索压缩为“中心控制周边→等级/分层”，再逐一代入候选词。最后核验两词能否分别表达同一结构；本题中hierarchical与stratified可以，urban与heterogeneous不可以。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
