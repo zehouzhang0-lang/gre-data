@@ -29,6 +29,17 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: handwritten_vocab_20261008
+    pages: null
+    title: "2026-10-08 手写词汇（5页）"
+    filename: null
+    sha256: null
+    role: user_vocabulary_notes
+    answer_status: not_applicable
+    description: "用户上传的五页手写词汇；规范词形、词性与释义，合并重复词并保留页码和核验来源。"
+    record: vocab/imports/20261008_2101_handwritten_vocab.json
+    image_count: 5
+    original_storage: user_supplied_chat_attachments_not_committed
   - id: handwritten_vocab_20261006
     pages: null
     title: "2026-10-06 手写词汇（15页）"
