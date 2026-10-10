@@ -4,6 +4,7 @@ import { Modal, Empty } from './components';
 import { CatalogPager } from './CatalogParts';
 import { ratingLabels, relationshipLabels, wallDefaults, wallSettings, readPreference, writePreference, wordRating, wallEntries } from './word-wall-model.mjs';
 import './word-wall.css';
+import useWordWallSelection from './useWordWallSelection';
 
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const presets = { '舒适': { columns: 8, rows: 8, height: 96, font: 18 }, '紧凑': wallDefaults, '极密': { columns: 16, rows: 12, height: 52, font: 14 } };
@@ -14,15 +15,18 @@ function roundFor(day) {
 }
 const WordTile = memo(function WordTile({ entry, word, flipped, selected, busy, layout, onFlip, onSelect, onRate, onDetail, onGroup, onEdit, onRemove }) {
   const rating = wordRating(word), ready = !word.deleted && !!word.meaning?.trim();
-  return <article className={`wall-card ${layout === 'ordinary' ? 'wall-ordinary' : ''} ${flipped ? 'is-flipped' : ''} ${selected ? 'is-selected' : ''} rated-${rating} ${entry.groupStart ? 'group-start' : ''}`} data-word={word.word} data-group={entry.group?.id || ''}>
-    <button className="wall-face" title={word.word} aria-label={`${word.word} · ${flipped ? '隐藏释义' : '翻看释义'}`} aria-pressed={flipped} onClick={() => onFlip(word.word)}>
+  return <article className={`wall-card ${layout === 'ordinary' ? 'wall-ordinary' : ''} ${flipped ? 'is-flipped' : ''} ${selected ? 'is-selected' : ''} rated-${rating} ${entry.groupStart ? 'group-start' : ''}`} data-word={word.word} data-group={entry.group?.id || ''} data-selectable={ready}>
+    <button className="wall-face" title={word.word} aria-label={`${word.word} · ${flipped ? '隐藏释义' : '翻看释义'}`} aria-pressed={flipped} onClick={event => {
+      if (event.ctrlKey || event.metaKey) { if (!busy && ready) onSelect(word.word); }
+      else onFlip(word.word);
+    }}>
       {layout === 'ordinary' || !flipped ? <strong lang="en">{word.word}</strong> : <span className="wall-meaning">{word.pos} {word.meaning || '待补释义'}</span>}
       {layout === 'ordinary' && <span className="wall-meaning">{word.pos} {word.meaning || '待补释义'}</span>}
     </button>
-    <input className="wall-check" type="checkbox" aria-label={`选中 ${word.word}`} checked={selected} disabled={busy || !ready} onChange={() => onSelect(word.word)} />
     {rating !== 'unrated' && <span className="wall-rating-dot" role="img" aria-label={ratingLabels[rating]} title={ratingLabels[rating]} />}
     {entry.group && <button className="wall-group-handle" onClick={() => onGroup(entry.group)} aria-label={`查看第 ${entry.groupNumber} 组辨析`}>{entry.groupNumber}</button>}
     <div className="wall-card-actions">
+      <button className="wall-select" aria-label={`选择 ${word.word}`} aria-pressed={selected} disabled={busy || !ready} onClick={() => onSelect(word.word)}>{selected ? '取消选择' : '选择'}</button>
       <button aria-label={`查看 ${word.word} 完整释义`} onClick={() => onDetail(word)}>详情</button>
       <button disabled={busy || !ready} aria-label={`标记 ${word.word}`} onClick={() => onRate(word.word)}>标记</button>
       {layout === 'ordinary' && <><button onClick={() => onEdit(word)}>编辑</button><button disabled={busy} onClick={() => onRemove(word)}>{word.deleted ? '恢复' : '移除'}</button></>}
@@ -67,6 +71,7 @@ export default function WordWall({ words, state, indexes, scopeKey, layout, sort
   const size = layout === 'ordinary' ? 18 : columns * settings.rows;
   const currentPage = Math.min(page, Math.max(0, Math.ceil(entries.length / size) - 1));
   const visible = entries.slice(currentPage * size, (currentPage + 1) * size);
+  const selectionBox = useWordWallSelection({ grid, selected, setSelected, disabled: busy || !!pending || layout !== 'wall', resetKey: `${deferredKey}:${currentPage}:${size}` });
   const undone = new Set(state.events.filter(e => e.kind === 'vocab_quick_undo').map(e => e.target_id));
   const undo = [...undoIds].reverse().find(id => state.events.some(e => e.id === id) && !undone.has(id));
   useEffect(() => { writePreference('word-wall-size', settings); }, [settings]);
@@ -76,7 +81,7 @@ export default function WordWall({ words, state, indexes, scopeKey, layout, sort
   }, []);
   useEffect(() => {
     document.body.classList.toggle('word-wall-focus', focus);
-    const escape = e => { if (e.key === 'Escape') setFocus(false); };
+    const escape = e => { if (e.key === 'Escape' && !e.defaultPrevented) setFocus(false); };
     document.addEventListener('keydown', escape);
     return () => { document.body.classList.remove('word-wall-focus'); document.removeEventListener('keydown', escape); };
   }, [focus]);
@@ -137,11 +142,12 @@ export default function WordWall({ words, state, indexes, scopeKey, layout, sort
       <small>当前 {columns} 列 × {settings.rows} 行，每页最多 {columns * settings.rows} 张。窄窗口自动减少列数，保留可读字号。</small>
     </div>}
     <nav className="wall-letters" aria-label="字母筛选（可多选）"><button aria-pressed={!letters.length} onClick={() => filterChange(() => setLetters([]))}>全部</button>{alphabet.map(letter => <button key={letter} aria-pressed={letters.includes(letter)} onClick={() => filterChange(() => setLetters(prev => prev.includes(letter) ? prev.filter(x => x !== letter) : [...prev, letter]))}>{letter}</button>)}</nav>
-    <div className="wall-selection"><button disabled={busy || !!pending} onClick={() => selectWords(visible.map(e => e.word))}>选中本页</button><button disabled={busy || !!pending || !ready.length} onClick={() => setConfirmAll(true)}>选中全部筛选结果 · {ready.length}</button><button onClick={() => setSelected(new Set())}>取消选择</button><small>点击正文翻面；勾选框独立选择。标记后保留位置，刷新词表应用新状态。</small></div>
+    <div className="wall-selection"><button disabled={busy || !!pending} onClick={() => selectWords(visible.map(e => e.word))}>选中本页</button><button disabled={busy || !!pending || !ready.length} onClick={() => setConfirmAll(true)}>选中全部筛选结果 · {ready.length}</button><button onClick={() => setSelected(new Set())}>取消选择</button><small>{layout === 'wall' ? '按住鼠标拖动框选；Ctrl/⌘ 切换选择，Shift 追加，Esc 取消框选。单击仍翻面。' : '点击翻面；悬停点“选择”或 Ctrl/⌘ + 点击选中。'}绿边框表示已选。</small></div>
     {error && <div className="error" role="alert">{error}{pending && <><button disabled={busy} onClick={() => send(pending)}>重试保存</button><button disabled={busy} onClick={cancelRetry}>核对状态并停止重试</button></>}</div>}
     <div ref={grid} className="wall-grid" style={{ '--wall-columns': columns, '--wall-height': `${settings.height}px`, '--wall-font': `${settings.font}px` }}>
       {visible.map(entry => <WordTile key={entry.key} entry={entry} word={live.get(entry.word)} layout={layout} flipped={flipped.has(entry.word)} selected={selected.has(entry.word)} busy={busy || !!pending} onFlip={toggleFlip} onSelect={toggleSelect} onRate={setSingle} onDetail={onDetail} onGroup={setGroup} onEdit={onEdit} onRemove={onRemove} />)}
     </div>
+    {selectionBox && <div className="wall-selection-box" aria-hidden="true" style={selectionBox} />}
     {!entries.length && <Empty title="没有匹配的单词"><p>可以减少筛选条件；已有标记和记录不会丢失。</p></Empty>}
     <CatalogPager page={currentPage} count={entries.length} size={size} onChange={setPage} />
     <div className="wall-batchbar" aria-label="批量记忆标记"><strong>已选 {activeSelected.length} 词</strong>{Object.entries(ratingLabels).map(([id, label]) => <button key={id} className={`rating-${id}`} disabled={!activeSelected.length || busy || !!pending} onClick={() => rate(id)}>{label}</button>)}<button disabled={!undo || busy || !!pending} onClick={() => send({ id: crypto.randomUUID(), kind: 'vocab_quick_undo', payload: { target_id: undo } })}>撤销上次标记</button><small>{busy ? '正在保存…' : '自评影响排期，不等同已核验掌握'}</small></div>

@@ -13,6 +13,15 @@ export function writePreference(key, value) {
   try { localStorage.setItem(`gre:${key}:v1`, JSON.stringify(value)); } catch { /* Preferences are optional. */ }
 }
 export function wordRating(word) { return word.recalls?.at(-1)?.self_rating || 'unrated'; }
+export function intersectsBox(a, b) { return a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top; }
+export function dragSelection(base, hits, mode = 'replace') {
+  const next = new Set(mode === 'replace' ? [] : base);
+  for (const word of new Set(hits)) {
+    if (mode === 'toggle' && base.has(word)) next.delete(word);
+    else next.add(word);
+  }
+  return next;
+}
 function hash(value) { let h = 2166136261; for (const c of value) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; }
 
 // Repeat appearances preserve overlapping groups, but selection and marking use the

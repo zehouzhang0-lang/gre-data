@@ -7,7 +7,7 @@ import { randomUUID } from 'node:crypto';
 import { Store, validate, grade } from '../server/store.mjs';
 import { quickReviewEvents } from '../shared/quick-review.mjs';
 import { projectReview } from '../server/spaced-review.mjs';
-import { wallEntries, wallSettings, wordRating } from '../web/src/word-wall-model.mjs';
+import { wallEntries, wallSettings, wordRating, dragSelection, intersectsBox } from '../web/src/word-wall-model.mjs';
 
 async function fixture(t) {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), 'gre-quick-review-'));
@@ -82,4 +82,15 @@ test('layout preferences clamp invalid values and unmarked is never remembered',
   assert.deepEqual(wallSettings(),{columns:12,rows:10,height:64,font:16});
   assert.deepEqual(wallSettings({columns:100,rows:-1,height:1,font:'oops'}),{columns:18,rows:3,height:48,font:16});
   assert.equal(wordRating({recalls:[]}), 'unrated');
+});
+
+test('desktop marquee replaces, adds or toggles from its starting snapshot and deduplicates groups', () => {
+  const base = new Set(['abash', 'aback']), hits = ['aback', 'abate', 'abate'];
+  assert.deepEqual([...dragSelection(base, hits)], ['aback', 'abate']);
+  assert.deepEqual([...dragSelection(base, hits, 'add')], ['abash', 'aback', 'abate']);
+  assert.deepEqual([...dragSelection(base, hits, 'toggle')], ['abash', 'abate']);
+  assert.deepEqual([...base], ['abash', 'aback']);
+  assert.deepEqual([...dragSelection(base, [], 'toggle')], [...base]);
+  assert.equal(intersectsBox({left:0,right:50,top:0,bottom:50},{left:49,right:100,top:49,bottom:100}), true);
+  assert.equal(intersectsBox({left:0,right:50,top:0,bottom:50},{left:50,right:100,top:0,bottom:50}), false);
 });

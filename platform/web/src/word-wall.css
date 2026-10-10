@@ -9,21 +9,22 @@
 .vocabulary-screen.is-wall .catalog-filters { margin:8px 0; }
 .vocabulary-screen.is-wall .catalog-breadcrumb { margin:10px 0; }
 .word-wall button,.word-wall select { font-size:12px; min-height:30px; padding:4px 9px; }
-.word-wall button[aria-pressed=true] { background:#e3f0eb; color:#126b61; border-color:#7ba99e; }
+.word-wall button[aria-pressed=true]:not(.wall-face):not(.wall-select) { background:#e3f0eb; color:#126b61; border-color:#7ba99e; }
 .wall-tools { padding:8px 0; border-bottom:1px solid var(--line); }.wall-tools > span { margin-right:auto; color:#66766f; font-size:12px; }
 .wall-settings { padding:12px 0; }.wall-settings label { display:flex; align-items:center; gap:6px; font-size:12px; }.wall-settings input { width:65px; padding:4px; }.wall-settings small { width:100%; }
 .wall-letters { margin:10px 0; gap:3px; }.wall-letters button { min-width:28px; padding:2px 7px; border-color:transparent; }
 .wall-selection { margin:8px 0 12px; }.wall-selection small { margin-left:auto; font-size:11px; color:#718078; }
 .wall-grid { display:grid; grid-template-columns:repeat(var(--wall-columns),minmax(0,1fr)); gap:6px; width:100%; }
+.layout-wall .wall-grid { user-select:none; -webkit-user-select:none; }
+.wall-selection-box { position:fixed; pointer-events:none; z-index:40; border:1px solid #147d72; background:#147d721a; }
 .wall-card { position:relative; min-width:0; height:var(--wall-height); border:1px solid #e7edeb; border-radius:5px; background:#f7f9f8; transition:background .14s,border-color .14s; }
 .wall-card:hover,.wall-card:focus-within { border-color:#92b5aa; z-index:2; }.wall-card.is-selected { border-color:#147d72; box-shadow:inset 0 0 0 1px #147d72; }
 .wall-card.rated-remembered { background:#eff8f2; }.wall-card.rated-partial { background:#fff9e9; }.wall-card.rated-forgotten { background:#fcefeb; }
 .word-wall .wall-face { border:0; background:transparent; width:100%; height:100%; padding:8px 6px; color:inherit; border-radius:4px; display:flex; align-items:center; justify-content:center; flex-direction:column; overflow:hidden; }
-.wall-face strong { font:500 var(--wall-font)/1.15 Georgia,'Times New Roman',serif; overflow-wrap:anywhere; max-height:100%; overflow:auto; scrollbar-width:thin; }
+.wall-face strong { font:400 var(--wall-font)/1.2 'Trebuchet MS','Segoe UI',sans-serif; overflow-wrap:anywhere; max-height:100%; overflow:auto; scrollbar-width:thin; }
 .is-flipped .wall-face { animation:wall-reveal .16s ease-out; }
 @keyframes wall-reveal { from { opacity:.5; transform:rotateX(12deg); } to { opacity:1; transform:rotateX(0); } }
 .wall-meaning { font:12px/1.35 'Microsoft YaHei','Segoe UI',sans-serif; overflow:auto; max-height:100%; width:100%; overflow-wrap:anywhere; scrollbar-width:thin; }
-.wall-check { position:absolute; top:3px; left:4px; width:12px; height:12px; margin:0; accent-color:#147d72; opacity:.35; }.wall-card:hover .wall-check,.wall-card:focus-within .wall-check,.wall-check:checked { opacity:1; }
 .wall-rating-dot { position:absolute; right:5px; top:5px; width:5px; height:5px; border-radius:50%; background:#459774; }.rated-partial .wall-rating-dot { background:#bc8d27; }.rated-forgotten .wall-rating-dot { background:#b97058; }
 .word-wall .wall-group-handle { position:absolute; bottom:0; left:1px; min-height:13px; padding:0 3px; font-size:9px; border:0; color:#687c8a; background:transparent; }
 .wall-card.group-start { border-left:3px solid #8aa9bc; }
@@ -37,4 +38,4 @@
 .word-wall-focus .catalog-view-tabs,.word-wall-focus .catalog-toolbar,.word-wall-focus .catalog-filters,.word-wall-focus .catalog-breadcrumb,.word-wall-focus .wall-filters { display:none; }
 .word-wall-focus .page-header { margin-bottom:10px; }
 @media(prefers-reduced-motion:reduce) { .wall-card { transition:none; }.wall-face { animation:none !important; } }
-@media(max-width:650px) { .wall-batchbar { bottom:0; padding:8px; gap:5px; }.wall-filters select { max-width:100%; }.wall-selection small,.wall-batchbar small { width:100%; }.wall-check { opacity:1; } }
+@media(max-width:650px) { .wall-batchbar { bottom:0; padding:8px; gap:5px; }.wall-filters select { max-width:100%; }.wall-selection small,.wall-batchbar small { width:100%; } }
