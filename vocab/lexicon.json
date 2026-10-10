@@ -55,6 +55,13 @@
           "kind": "user_handwritten_notes",
           "image": 4,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -115,6 +122,43 @@
       "last_review": null
     },
     {
+      "word": "abash",
+      "pos": "v.",
+      "meaning": "使窘迫；使羞愧或不安",
+      "collocation": "be abashed by the criticism",
+      "collocation_source": "coach_composed",
+      "connotation": "负向感受",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/abash",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：使窘迫；使羞愧或不安"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/abash",
+      "note": "与 aback、abate 分开记；abash 强调难为情。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "abate",
       "pos": "v.",
       "meaning": "减弱，减轻；减少；消除（滋扰等）",
@@ -133,6 +177,13 @@
           "record": "vocab/imports/20260916_0133_dictionary_backfill.json",
           "kind": "dictionary_curation",
           "image": null,
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
           "origin_word": null
         }
       ],
@@ -432,6 +483,13 @@
           "kind": "dictionary_curation",
           "image": null,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -587,6 +645,43 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "abrogate",
+      "pos": "v.",
+      "meaning": "正式废除，撤销（法律、协议等）；抛弃（义务）",
+      "collocation": "abrogate a treaty",
+      "collocation_source": "coach_composed",
+      "connotation": "正式",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/abrogate",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：正式废除，撤销（法律、协议等）；抛弃（义务）"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/abrogate",
+      "note": "优先识别法规、条约义；不是普通物体的清除。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "abrupt",
@@ -2857,6 +2952,43 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/alarmist"
     },
     {
+      "word": "albeit",
+      "pos": "conj.",
+      "meaning": "虽然；尽管",
+      "collocation": "a useful, albeit limited, study",
+      "collocation_source": "coach_composed",
+      "connotation": "正式",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/albeit",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：虽然；尽管"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/albeit",
+      "note": "表示让步，常连接较短成分；不是表示原因的连词。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "alga",
       "pos": "n.",
       "meaning": "藻类",
@@ -4121,6 +4253,43 @@
       "last_review": null
     },
     {
+      "word": "analytical",
+      "pos": "adj.",
+      "meaning": "分析性的；善于分析的",
+      "collocation": "an analytical approach",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/analytical",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：分析性的；善于分析的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/analytical",
+      "note": "强调分解问题并仔细推理；analytic 是同义词形。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "anathema",
       "pos": "n.",
       "meaning": "令人厌恶或强烈排斥的人或事；诅咒",
@@ -4307,6 +4476,43 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "anemia",
+      "pos": "n.",
+      "meaning": "贫血；缺乏活力",
+      "collocation": "anemia; institutional anemia",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或比喻负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/anemia",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：贫血；缺乏活力"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/anemia",
+      "note": "英式拼写 anaemia；比喻义可指组织缺乏生气。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "anguish",
@@ -4871,6 +5077,43 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "anthropogenic",
+      "pos": "adj.",
+      "meaning": "人类活动造成的；人为产生的",
+      "collocation": "anthropogenic climate change",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，学术用语",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/anthropogenic",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：人类活动造成的；人为产生的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/anthropogenic",
+      "note": "强调成因来自人类活动，不能据此推断是故意造成的。",
+      "normalization_note": "规范拼写 anthropogenic；指由人类活动造成，不一定指有意制造。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "anthropomorphism",
@@ -6195,6 +6438,13 @@
           "kind": "user_handwritten_notes",
           "image": 2,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -6315,6 +6565,43 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "artful",
+      "pos": "adj.",
+      "meaning": "巧妙的；机巧狡猾的",
+      "collocation": "an artful arrangement; an artful excuse",
+      "collocation_source": "coach_composed",
+      "connotation": "可褒可贬",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/artful",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：巧妙的；机巧狡猾的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/artful",
+      "note": "强调技巧；用于手段时可暗示不诚实，不等于总是艺术性的。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "articulate",
       "pos": "adj.; v.",
       "meaning": "adj. 善于清楚表达的；表达清晰的；有关节的；v. 清楚表达、发音；连接",
@@ -6401,6 +6688,13 @@
           "kind": "user_handwritten_notes",
           "image": 5,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -6414,6 +6708,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/artistry",
       "note": "重在表现出的技艺，不仅指艺术这个领域。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "ascribe",
+      "pos": "v.",
+      "meaning": "把……归因于；认为……出自；把某特质归属于",
+      "collocation": "ascribe success to careful planning",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，较正式",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/ascribe",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：把……归因于；认为……出自；把某特质归属于"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/ascribe",
+      "note": "固定结构 ascribe A to B；既可谈原因，也可谈作者或归属。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -6686,6 +7017,43 @@
       "last_review": null
     },
     {
+      "word": "assiduous",
+      "pos": "adj.",
+      "meaning": "勤勉的；专心细致的",
+      "collocation": "assiduous research",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/assiduous",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：勤勉的；专心细致的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/assiduous",
+      "note": "兼含持续努力和仔细关注细节，不只是忙碌。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "assuage",
       "pos": "v.",
       "meaning": "缓解；平息；满足",
@@ -6835,6 +7203,43 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "astronomical",
+      "pos": "adj.",
+      "meaning": "天文学的；极其巨大的",
+      "collocation": "astronomical costs",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或强调程度",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/astronomical",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：天文学的；极其巨大的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/astronomical",
+      "note": "价格语境通常是高得惊人，不是字面的天文学。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "astute",
@@ -9111,6 +9516,13 @@
           "kind": "user_handwritten_notes",
           "image": 3,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -9164,6 +9576,50 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/bent",
       "note": "be bent on是决心做；名词不是简单弯曲形状。 语体／色彩：依义项。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "bereave",
+      "pos": "v.",
+      "meaning": "使丧失亲人；剥夺",
+      "collocation": "be bereaved of a spouse",
+      "collocation_source": "coach_composed",
+      "connotation": "悲伤语境，较正式",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/bereave",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：使丧失亲人；剥夺"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bereave",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：使丧失亲人；剥夺"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/bereave",
+      "note": "常见被动结构；bereaved/bereft 均为相关过去分词，具体搭配有区别。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -11290,6 +11746,43 @@
       "last_review": null
     },
     {
+      "word": "buoy",
+      "pos": "n.; v.",
+      "meaning": "n. 浮标；v. 使浮起；鼓舞；支撑",
+      "collocation": "buoy confidence; a navigation buoy",
+      "collocation_source": "coach_composed",
+      "connotation": "依义项而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/buoy",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：n. 浮标；v. 使浮起；鼓舞；支撑"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/buoy",
+      "note": "名词通常为航道浮标；动词常与 up 连用，表示支持或振奋。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "burdensome",
       "pos": "adj.",
       "meaning": "繁重的，造成负担的，难以承受的",
@@ -12588,6 +13081,43 @@
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "caricature",
+      "pos": "n.; v.",
+      "meaning": "n. 夸张讽刺的画像或描述；v. 夸张讽刺地描绘",
+      "collocation": "a caricature of a politician",
+      "collocation_source": "coach_composed",
+      "connotation": "常含讽刺",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/caricature",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：n. 夸张讽刺的画像或描述；v. 夸张讽刺地描绘"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/caricature",
+      "note": "夸大突出特征以产生滑稽或讽刺效果，也可比喻失真的简化描述。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "carnivorous",
@@ -14354,6 +14884,40 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/civility"
     },
     {
+      "word": "clamorous",
+      "pos": "adj.",
+      "meaning": "喧闹的；吵嚷着坚持的",
+      "collocation": "clamorous demands",
+      "note": "常含吵闹、不满，不只声音响亮。",
+      "id": "clamorous",
+      "group": "test1_section2_easy",
+      "question_range": "1-2",
+      "source_records": [
+        "verbal/submissions/20260906_2117_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/clamorous",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定",
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ]
+    },
+    {
       "word": "clamp",
       "pos": "n./v.",
       "meaning": "夹具；夹紧；钳制",
@@ -14472,6 +15036,43 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "cleanse",
+      "pos": "v.; n.",
+      "meaning": "v. 彻底清洁；净化；n. 清洁处理",
+      "collocation": "cleanse the skin",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/cleanse",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：v. 彻底清洁；净化；n. 清洁处理"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/cleanse",
+      "note": "既可物理清洁，也可比喻道德净化；注意 cleanse 的拼写。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "cleave",
@@ -15906,6 +16507,43 @@
       "last_review": null
     },
     {
+      "word": "commentary",
+      "pos": "n.",
+      "meaning": "评论；解说；注释",
+      "collocation": "a running commentary",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/commentary",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：评论；解说；注释"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/commentary",
+      "note": "可指实时赛事解说，也可指对文本或社会现象的评论。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "commiserate",
       "pos": "v.",
       "meaning": "同情；表示怜悯",
@@ -16237,6 +16875,43 @@
       ],
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/compartmentalize",
       "note": "不仅物理分舱，也可指在心理上把不同事务隔开。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "compassion",
+      "pos": "n.",
+      "meaning": "同情；怜悯；恻隐之心",
+      "collocation": "show compassion for others",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/compassion",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：同情；怜悯；恻隐之心"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/compassion",
+      "note": "通常既感受到他人的痛苦，也带希望帮助的意思。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -16600,6 +17275,94 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "comprehend",
+      "pos": "v.",
+      "meaning": "理解，领会；包含，涵盖",
+      "collocation": "comprehend the argument",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/comprehend",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：理解，领会；包含，涵盖"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/comprehend",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：理解，领会；包含，涵盖"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/comprehend",
+      "note": "理解义最常见；包含义较少见但有词典依据。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "comprehensive",
+      "pos": "adj.; n.",
+      "meaning": "adj. 全面的，综合的；n. （英国）综合中学",
+      "collocation": "a comprehensive review",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/comprehensive",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：adj. 全面的，综合的；n. （英国）综合中学"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/comprehensive",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：adj. 全面的，综合的；n. （英国）综合中学"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/comprehensive",
+      "note": "全面是范围完整，不是“容易理解”；容易理解是 comprehensible。",
+      "normalization_note": "核心义为全面的、综合的；不要与 comprehensible（易懂的）混淆。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "compress",
       "pos": "v./n.",
       "meaning": "压缩；压紧；浓缩；敷布",
@@ -16739,6 +17502,43 @@
       "last_review": null
     },
     {
+      "word": "concede",
+      "pos": "v.",
+      "meaning": "（常不情愿地）承认；让步；认输；让出",
+      "collocation": "concede a point",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/concede",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：（常不情愿地）承认；让步；认输；让出"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/concede",
+      "note": "concede that 后接承认的内容；体育语境可指丢分。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "conceivable",
       "pos": "adj.",
       "meaning": "可想象的；可以设想的",
@@ -16780,6 +17580,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/conceivable",
       "note": "只表能够设想，不等于很有可能或已经发生。 语体／色彩：中性。\n能设想不等于实际可行，注意与feasible的区别。 语体／色彩：中性。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "conceive",
+      "pos": "v.",
+      "meaning": "构想；想象，理解；怀孕，使受孕",
+      "collocation": "conceive a plan; conceive of an alternative",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/conceive",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：构想；想象，理解；怀孕，使受孕"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/conceive",
+      "note": "conceive of 常用于想象可能性；生育义取决于上下文。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -17154,6 +17991,50 @@
       "last_review": null
     },
     {
+      "word": "conditioner",
+      "pos": "n.",
+      "meaning": "护发素；调理剂或调节装置",
+      "collocation": "hair conditioner; soil conditioner",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/conditioner",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：护发素；调理剂或调节装置"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conditioner",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：护发素；调理剂或调节装置"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/conditioner",
+      "note": "单用常指护发素；空调机通常是 air conditioner，不把 conditioner 一律等同空调。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "condone",
       "original_context": null,
       "sources": [
@@ -17392,6 +18273,43 @@
       ],
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/conflate",
       "note": "当差别重要时含混淆错误；不能在所有语境都视为有害合并。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "confluence",
+      "pos": "n.",
+      "meaning": "河流汇合处；汇聚，融合",
+      "collocation": "a confluence of factors",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/confluence",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：河流汇合处；汇聚，融合"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/confluence",
+      "note": "除水流交汇，还可指因素、事件或思想的汇合。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -18449,6 +19367,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/contemporary",
       "note": "同一时期不必精确同步；历史语境未必指现在。 语体／色彩：中性。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "contemptuous",
+      "pos": "adj.",
+      "meaning": "轻蔑的；鄙视的",
+      "collocation": "a contemptuous glance",
+      "collocation_source": "coach_composed",
+      "connotation": "负向态度",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/contemptuous",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：轻蔑的；鄙视的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/contemptuous",
+      "note": "表示表现出轻视，不是自己“可鄙”；常见 contemptuous of。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -20598,6 +21553,43 @@
       "last_review": null
     },
     {
+      "word": "crumble",
+      "pos": "v.; n.",
+      "meaning": "v. 碎裂；崩溃，衰弱；n. 酥粒水果甜点",
+      "collocation": "confidence begins to crumble",
+      "collocation_source": "coach_composed",
+      "connotation": "依义项而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/crumble",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：v. 碎裂；崩溃，衰弱；n. 酥粒水果甜点"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/crumble",
+      "note": "碎裂为小块，或势力、信心逐渐瓦解；普通碎屑常用 crumb。",
+      "normalization_note": "动词是碎裂或崩溃；名词常指酥粒水果甜点，普通碎屑通常是 crumb。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "crustacean",
       "pos": "n.",
       "meaning": "甲壳纲动物",
@@ -20618,6 +21610,43 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "复数crustaceans归词元crustacean；左侧划掉的试写不收录。 手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "cryptic",
+      "pos": "adj.",
+      "meaning": "隐晦难懂的；神秘的",
+      "collocation": "a cryptic message",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/cryptic",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：隐晦难懂的；神秘的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/cryptic",
+      "note": "常指表达含蓄、像谜，难以解释。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "culinary",
@@ -24215,6 +25244,43 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/detrimental"
     },
     {
+      "word": "detritus",
+      "pos": "n.",
+      "meaning": "碎屑；残渣；废弃物",
+      "collocation": "the detritus of a busy day",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/detritus",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：碎屑；残渣；废弃物"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/detritus",
+      "note": "可指自然分解后的碎屑，也可比喻事件留下的杂物。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "devastate",
       "pos": "v.",
       "meaning": "严重破坏，摧毁；使极度悲痛或震惊",
@@ -25797,6 +26863,43 @@
       "last_review": null
     },
     {
+      "word": "dispassionate",
+      "pos": "adj.",
+      "meaning": "不受感情左右的；冷静客观的",
+      "collocation": "a dispassionate assessment",
+      "collocation_source": "coach_composed",
+      "connotation": "通常褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/dispassionate",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：不受感情左右的；冷静客观的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/dispassionate",
+      "note": "重点是判断不受个人情绪影响，不等于冷酷无情。",
+      "normalization_note": "强调不受个人情感左右、客观冷静，不等于冷酷无情。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "dispatch",
       "pos": "v.; n.",
       "meaning": "v. 派遣，发送；迅速处理；迅速杀死；n. 公文，急报；派遣；迅速高效",
@@ -27129,6 +28232,43 @@
       "last_review": null
     },
     {
+      "word": "dreary",
+      "pos": "adj.",
+      "meaning": "沉闷乏味的；阴郁凄凉的",
+      "collocation": "a dreary afternoon",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/dreary",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：沉闷乏味的；阴郁凄凉的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/dreary",
+      "note": "兼有无趣与令人情绪低落的意味。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "droll",
       "pos": "adj.; n.",
       "meaning": "adj. 古怪而滑稽的；n. 滑稽的人",
@@ -27240,6 +28380,50 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/dualism",
       "note": "并非任何两个物品都叫dualism。 语体／色彩：中性，哲学用语。",
       "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "ductile",
+      "pos": "adj.",
+      "meaning": "有延展性的，可拉成丝的；易受影响的",
+      "collocation": "ductile copper",
+      "collocation_source": "coach_composed",
+      "connotation": "技术义中性，人物义依语境",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/ductile",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：有延展性的，可拉成丝的；易受影响的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/ductile",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：有延展性的，可拉成丝的；易受影响的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/ductile",
+      "note": "金属义强调可拉伸成丝；比喻人易被引导或塑造，不等于善辩。",
+      "normalization_note": "材料义强调可拉伸成丝；另有易受影响或塑造的比喻义。",
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
@@ -27452,6 +28636,50 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/duplicity",
       "note": "核心义是以言行隐瞒真实意图，不是简单复制。 语体／色彩：通常贬义。",
       "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "durable",
+      "pos": "adj.",
+      "meaning": "耐用的；持久的",
+      "collocation": "durable materials",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/durable",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：耐用的；持久的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/durable",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：耐用的；持久的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/durable",
+      "note": "耐用品常用复数名词 durables 或短语 durable goods；先掌握形容词义。",
+      "normalization_note": "核心为形容词耐用的；耐用品常写作复数 durables 或 durable goods。",
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
@@ -28152,6 +29380,43 @@
       "last_review": null
     },
     {
+      "word": "effusive",
+      "pos": "adj.",
+      "meaning": "感情溢于言表的；热情洋溢的",
+      "collocation": "effusive praise",
+      "collocation_source": "coach_composed",
+      "connotation": "可褒可贬，可能显得过度",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/effusive",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：感情溢于言表的；热情洋溢的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/effusive",
+      "note": "常修饰感谢、欢迎、赞美，强调强烈而外露的表达。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "egalitarian",
       "pos": "adj.; n.",
       "meaning": "adj. 主张平等的，平等主义的；n. 平等主义者",
@@ -28511,6 +29776,43 @@
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "elude",
+      "pos": "v.",
+      "meaning": "逃避，躲开；使未能得到或理解",
+      "collocation": "the answer eludes me",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/elude",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：逃避，躲开；使未能得到或理解"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/elude",
+      "note": "主语为人可指躲避；主语为答案或成功时指某人没想出或没得到。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "elusive",
@@ -29709,6 +31011,80 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "engage",
+      "pos": "v.",
+      "meaning": "吸引（注意）；使参与；雇用；交战；啮合",
+      "collocation": "engage the audience; engage in discussion",
+      "collocation_source": "coach_composed",
+      "connotation": "依义项而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/engage",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：吸引（注意）；使参与；雇用；交战；啮合"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/engage",
+      "note": "engage in 表示参与；机械、雇佣和战斗语境各选相应义项。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "engaging",
+      "pos": "adj.",
+      "meaning": "迷人的；有吸引力的",
+      "collocation": "an engaging speaker",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/engaging",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：迷人的；有吸引力的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/engaging",
+      "note": "常含亲切讨喜；与 engrossing 的占据全部注意力有差别。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "engender",
       "pos": "v.",
       "meaning": "产生；引起；导致",
@@ -29755,6 +31131,87 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "engross",
+      "pos": "v.",
+      "meaning": "使全神贯注；正式誊写；大量购入",
+      "collocation": "be engrossed in a book",
+      "collocation_source": "coach_composed",
+      "connotation": "依义项而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/engross",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：使全神贯注；正式誊写；大量购入"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/engross",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：使全神贯注；正式誊写；大量购入"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/engross",
+      "note": "GRE 常见占据全部注意力义；正式誊写法律文件是另一义项。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "engrossing",
+      "pos": "adj.",
+      "meaning": "引人入胜的；使全神贯注的",
+      "collocation": "an engrossing story",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/engrossing",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：引人入胜的；使全神贯注的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/engrossing",
+      "note": "事情 engrossing；人 engrossed in 某事。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "enhance",
       "pos": "v.",
       "meaning": "增强，提高；改善（价值、品质或吸引力）",
@@ -29790,6 +31247,43 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "enigma",
+      "pos": "n.",
+      "meaning": "谜；难以理解的人或事",
+      "note": "名词；对应形容词 enigmatic。本批为此前摘词补核心释义。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null,
+      "normalization_note": null,
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "collocation": "remain an enigma",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/enigma",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：谜；难以理解的人或事"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/enigma"
+    },
+    {
       "word": "enigmatic",
       "pos": "adj.",
       "meaning": "神秘的",
@@ -29804,6 +31298,13 @@
           "record": "vocab/imports/20260913_0001_handwritten_vocab.json",
           "image": 4,
           "kind": "user_handwritten_notes",
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
           "origin_word": null
         }
       ],
@@ -29839,6 +31340,43 @@
       ],
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/enjoin",
       "note": "enjoin someone to do 指命令去做；enjoin someone from doing 指禁止做。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "enlighten",
+      "pos": "v.",
+      "meaning": "启发；使了解；向……说明",
+      "collocation": "enlighten someone about the issue",
+      "collocation_source": "coach_composed",
+      "connotation": "通常褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/enlighten",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：启发；使了解；向……说明"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/enlighten",
+      "note": "核心是提供信息、理解或事实，不等于物理照明。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -30370,6 +31908,13 @@
           "record": "vocab/imports/20260916_1634_handwritten_vocab.json",
           "image": 2,
           "kind": "user_handwritten_notes",
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
           "origin_word": null
         }
       ],
@@ -31991,6 +33536,13 @@
           "kind": "user_handwritten_notes",
           "image": 1,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -32368,6 +33920,13 @@
           "kind": "dictionary_curation",
           "image": null,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -32449,6 +34008,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/exorbitant",
       "note": "比expensive更强，含不合理或过度的评价。 语体／色彩：贬义。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "expatriate",
+      "pos": "n.; adj.; v.",
+      "meaning": "n. 侨居国外者；adj. 侨居国外的；v. 移居国外，使离开祖国",
+      "collocation": "an expatriate community",
+      "collocation_source": "coach_composed",
+      "connotation": "通常中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/expatriate",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：n. 侨居国外者；adj. 侨居国外的；v. 移居国外，使离开祖国"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/expatriate",
+      "note": "侨居不必是被放逐；与 exile 的被迫离乡意味区分。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -32590,6 +34186,13 @@
           "record": "vocab/imports/20260923_1754_handwritten_vocab.json",
           "kind": "user_handwritten_notes",
           "image": 4,
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
           "origin_word": null
         }
       ],
@@ -32918,6 +34521,43 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "expurgate",
+      "pos": "v.",
+      "meaning": "删去（文章中冒犯或不宜的内容）；净化文本",
+      "collocation": "an expurgated edition",
+      "collocation_source": "coach_composed",
+      "connotation": "正式",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/expurgate",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：删去（文章中冒犯或不宜的内容）；净化文本"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/expurgate",
+      "note": "规范拼写 expurgate；重点是删去不宜内容，与 expel 驱逐不同。",
+      "normalization_note": "规范拼写 expurgate；删去文章中不宜或冒犯性的内容，不是 expel（驱逐）。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "exquisite",
@@ -34342,6 +35982,43 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "fence",
+      "pos": "n.; v.",
+      "meaning": "n. 栅栏，围栏；销赃者；v. 围起来；击剑",
+      "collocation": "a wooden fence; fence off an area",
+      "collocation_source": "coach_composed",
+      "connotation": "依义项而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/fence",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：n. 栅栏，围栏；销赃者；v. 围起来；击剑"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/fence",
+      "note": "物理围栏、击剑和销赃义不可混读；搭配决定含义。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "ferocious",
       "pos": "adj.",
       "meaning": "凶猛残暴的；极强烈的",
@@ -35196,6 +36873,43 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "flair",
+      "pos": "n.",
+      "meaning": "天赋；才华；独特风格",
+      "collocation": "a flair for languages",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/flair",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：天赋；才华；独特风格"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/flair",
+      "note": "a flair for 指某方面的天赋；with flair 指做得有风格、有神采。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "flamboyant",
       "pos": "adj.",
       "meaning": "炫目的；华丽张扬的；引人注目的",
@@ -35387,6 +37101,43 @@
       "last_review": null
     },
     {
+      "word": "florid",
+      "pos": "adj.",
+      "meaning": "过分华丽的；辞藻堆砌的；脸色红润或发红的",
+      "collocation": "florid prose; a florid complexion",
+      "collocation_source": "coach_composed",
+      "connotation": "文风义常贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/florid",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：过分华丽的；辞藻堆砌的；脸色红润或发红的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/florid",
+      "note": "区分文风装饰过多与脸色偏红两个义项。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "flout",
       "pos": "v.; n.",
       "meaning": "v. 公然蔑视或无视；n. 嘲弄（较少见）",
@@ -35505,6 +37256,43 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "flummery",
+      "pos": "n.",
+      "meaning": "虚浮的客套或奉承；空话；一种传统甜食",
+      "collocation": "dismiss the speech as flummery",
+      "collocation_source": "coach_composed",
+      "connotation": "空话义贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/flummery",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：虚浮的客套或奉承；空话；一种传统甜食"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/flummery",
+      "note": "GRE 阅读优先识别无实质内容的恭维或礼仪；食物义单独保留。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "flummox",
@@ -36103,6 +37891,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/formidable",
       "note": "不只表示可怕，也可赞叹能力或成就。 语体／色彩：可褒可惧。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "formulaic",
+      "pos": "adj.",
+      "meaning": "公式化的；套式化的；刻板的",
+      "collocation": "a formulaic plot",
+      "collocation_source": "coach_composed",
+      "connotation": "通常贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/formulaic",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：公式化的；套式化的；刻板的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/formulaic",
+      "note": "强调依赖反复使用的固定套路；不只与数学公式有关。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -37874,6 +39699,43 @@
       "last_review": null
     },
     {
+      "word": "genteel",
+      "pos": "adj.",
+      "meaning": "上流社会式的；文雅有礼的；故作高雅的",
+      "collocation": "genteel manners",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境可中性或讽刺",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/genteel",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：上流社会式的；文雅有礼的；故作高雅的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/genteel",
+      "note": "既可真指优雅，也可暗示装腔作势；不要固定为褒义。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "genuine",
       "pos": "adj.",
       "meaning": "真实的，非伪造的；真诚的；确实的",
@@ -39449,6 +41311,43 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "halt",
+      "pos": "v.; n.",
+      "meaning": "v. 停止，使停止；n. 停顿，停止",
+      "collocation": "bring the process to a halt",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/halt",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：v. 停止，使停止；n. 停顿，停止"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/halt",
+      "note": "可作名词和动词，不只作名词。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "hamper",
       "pos": "v.; n.",
       "meaning": "v. 妨碍，阻碍；n. 有盖大篮，洗衣篮或食品篮",
@@ -39834,6 +41733,13 @@
         {
           "material_id": "handwritten_vocab_20260917",
           "record": "vocab/imports/20260917_1808_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
           "kind": "user_handwritten_notes",
           "image": 4,
           "origin_word": null
@@ -40309,6 +42215,43 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/henceforth",
       "note": "以所说的这个时间点为起点向后延续。 语体／色彩：正式，中性。 规范拼写 henceforth。",
       "normalization_note": "规范拼写 henceforth。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "hepatitis",
+      "pos": "n.",
+      "meaning": "肝炎",
+      "collocation": "viral hepatitis",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，医学词汇",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/hepatitis",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：肝炎"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/hepatitis",
+      "note": "词汇层面的疾病名称；注意词尾 -itis。",
+      "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
@@ -40941,6 +42884,13 @@
         {
           "material_id": "handwritten_vocab_20260917",
           "record": "vocab/imports/20260917_1808_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
           "kind": "user_handwritten_notes",
           "image": 4,
           "origin_word": null
@@ -41851,6 +43801,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/idiosyncrasy",
       "note": "不必是坏习惯；医疗义是特殊敏感反应。 语体／色彩：中性，依特点定褒贬。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "ignite",
+      "pos": "v.",
+      "meaning": "点燃；激起，引发",
+      "collocation": "ignite a debate",
+      "collocation_source": "coach_composed",
+      "connotation": "依语境而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/ignite",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：点燃；激起，引发"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/ignite",
+      "note": "可指火焰，也可比喻引发争论、热情等。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -44536,6 +46523,43 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "incrustation",
+      "pos": "n.",
+      "meaning": "结壳；表面形成的硬层或沉积物",
+      "collocation": "a mineral incrustation",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/incrustation",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：结壳；表面形成的硬层或沉积物"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/incrustation",
+      "note": "incrustation 是合法拼写，也常见 encrustation；不必按错词处理。",
+      "normalization_note": "incrustation 是合法词形，不作为拼写错误；也常见 encrustation。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "incumbent",
       "pos": "adj.; n.",
       "meaning": "adj. 在任的；负有义务的；n. 现任者，在职者",
@@ -44600,6 +46624,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/incur",
       "note": "主语自身遭受后果，不是普遍意义的“导致”。 语体／色彩：常不利。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "incursion",
+      "pos": "n.",
+      "meaning": "侵入；突袭；越界介入",
+      "collocation": "a military incursion",
+      "collocation_source": "coach_composed",
+      "connotation": "通常负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/incursion",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：侵入；突袭；越界介入"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/incursion",
+      "note": "可为军事入侵，也可比喻突然侵入他人领域。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -44700,6 +46761,13 @@
           "record": "vocab/imports/20261006_2301_handwritten_vocab.json",
           "kind": "user_handwritten_notes",
           "image": 1,
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
           "origin_word": null
         }
       ],
@@ -45352,6 +47420,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/infamy",
       "note": "不是没有名气，亦非单纯很出名。 语体／色彩：强烈贬义。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "infantile",
+      "pos": "adj.",
+      "meaning": "婴儿的；幼儿期的；幼稚的",
+      "collocation": "infantile behaviour",
+      "collocation_source": "coach_composed",
+      "connotation": "婴儿义中性，评价成人时贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/infantile",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：婴儿的；幼儿期的；幼稚的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/infantile",
+      "note": "医学或年龄语境不必贬义；评价成人行为时常含不成熟之意。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -46580,6 +48685,43 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "interject",
+      "pos": "v.",
+      "meaning": "插话；插入（话语）",
+      "collocation": "interject a brief comment",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/interject",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：插话；插入（话语）"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/interject",
+      "note": "描述别人说话时插入一句话；不是 inject 的物理注入义。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "intermediary",
       "pos": "n.; adj.",
       "meaning": "n. 中间人，调解人；媒介；中间阶段；adj. 中间的，起中介作用的",
@@ -47143,6 +49285,50 @@
       ],
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/invaluable",
       "note": "前缀in-不能理解成没有价值，价值极高才难以估量。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "invariable",
+      "pos": "adj.; n.",
+      "meaning": "adj. 不变的；始终如一的；n. 不变量",
+      "collocation": "an invariable rule",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/invariable",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：adj. 不变的；始终如一的；n. 不变量"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/invariable",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：adj. 不变的；始终如一的；n. 不变量"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/invariable",
+      "note": "核心词性为形容词；名词不变量义较少用。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -47967,6 +50153,43 @@
       ],
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/jeremiad",
       "note": "通常是冗长悲观的抱怨，较正式。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "jest",
+      "pos": "n.; v.",
+      "meaning": "n. 玩笑；v. 开玩笑",
+      "collocation": "speak in jest",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/jest",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：n. 玩笑；v. 开玩笑"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/jest",
+      "note": "in jest＝开玩笑地，区别认真表态。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -49914,6 +52137,13 @@
           "record": "vocab/imports/20260917_0028_captured_vocab.json",
           "kind": "dictionary_checked_capture",
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -50445,6 +52675,43 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/lowly"
     },
     {
+      "word": "lucid",
+      "pos": "adj.",
+      "meaning": "表达清晰易懂的；头脑清醒的",
+      "collocation": "a lucid explanation",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/lucid",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：表达清晰易懂的；头脑清醒的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/lucid",
+      "note": "可形容论述，也可形容人的思维清醒；与透明材料义分开。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "lucrative",
       "pos": "adj.",
       "meaning": "获利丰厚的；赚钱的",
@@ -50477,6 +52744,43 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "只说明收益高，不自动表示合法、公平或有意义。 语体/色彩：通常正向经济评价。"
+    },
+    {
+      "word": "lucubration",
+      "pos": "n.",
+      "meaning": "艰深费力的研究；冗长学究式论述",
+      "collocation": "scholarly lucubrations",
+      "collocation_source": "coach_composed",
+      "connotation": "正式，常带贬意或戏谑",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/lucubration",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：艰深费力的研究；冗长学究式论述"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/lucubration",
+      "note": "重在费力研究或其成果；不宜只记成一般的“刻苦”。",
+      "normalization_note": "规范拼写 lucubration；指费力研究或其论述成果，不宜只记成一般的刻苦。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "ludicrous",
@@ -50761,6 +53065,13 @@
           "record": "vocab/imports/20260921_1736_handwritten_vocab.json",
           "kind": "user_handwritten_notes",
           "image": 3,
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
           "origin_word": null
         }
       ],
@@ -51061,6 +53372,13 @@
           "kind": "user_handwritten_notes",
           "image": 1,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -51200,6 +53518,13 @@
           "kind": "user_handwritten_notes",
           "image": 5,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -51280,6 +53605,50 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "mar",
+      "pos": "v.; n.",
+      "meaning": "v. 损坏，破坏完美；n. 瑕疵",
+      "collocation": "mar the occasion",
+      "collocation_source": "coach_composed",
+      "connotation": "负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/mar",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：v. 损坏，破坏完美；n. 瑕疵"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mar",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：v. 损坏，破坏完美；n. 瑕疵"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/mar",
+      "note": "动词可用于外观、体验、名誉；过去式 marred，名词义较少用。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "margin",
@@ -52251,6 +54620,43 @@
         }
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/mellow"
+    },
+    {
+      "word": "melodious",
+      "pos": "adj.",
+      "meaning": "悦耳的；旋律优美的",
+      "collocation": "a melodious voice",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/melodious",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：悦耳的；旋律优美的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/melodious",
+      "note": "描述声音；与 malodorous（恶臭的）分开记。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "menace",
@@ -53228,6 +55634,80 @@
       "last_review": null
     },
     {
+      "word": "modish",
+      "pos": "adj.",
+      "meaning": "时髦的；流行的",
+      "collocation": "modish clothing",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，可含追逐时尚之意",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/modish",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：时髦的；流行的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/modish",
+      "note": "强调符合当下时尚，不保证经久耐用或高雅。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "molder",
+      "pos": "v.; n.",
+      "meaning": "v. 腐朽，腐烂瓦解；n. 铸模工，塑造者",
+      "collocation": "old papers molder in a cellar",
+      "collocation_source": "coach_composed",
+      "connotation": "动词常负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/molder",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：v. 腐朽，腐烂瓦解；n. 铸模工，塑造者"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/molder",
+      "note": "动词英式拼写 moulder；名词来自 mold，另指塑造事物或观念的人。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "molecular",
       "pos": "adj.",
       "meaning": "分子的；由分子构成的；关于个别或微小组成部分的",
@@ -53946,6 +56426,43 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "normalization_note": null
+    },
+    {
+      "word": "munificent",
+      "pos": "adj.",
+      "meaning": "慷慨的；出手大方的",
+      "collocation": "a munificent donation",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义，正式",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/munificent",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：慷慨的；出手大方的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/munificent",
+      "note": "尤其指金钱或礼物上的慷慨。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "murky",
@@ -54683,6 +57200,43 @@
       "note": "new 不自动带贬义；newfangled 常流露说话者对新玩意的不信任。 语体/色彩：常含不赞同或调侃。"
     },
     {
+      "word": "nihilism",
+      "pos": "n.",
+      "meaning": "虚无主义",
+      "collocation": "philosophical nihilism",
+      "collocation_source": "coach_composed",
+      "connotation": "哲学或社会思想用语",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/nihilism",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：虚无主义"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/nihilism",
+      "note": "涉及否定既有价值、原则或制度；不能把一般悲观都称为虚无主义。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "nimble",
       "pos": "adj.",
       "meaning": "敏捷轻巧的；思维机敏的",
@@ -55294,6 +57848,13 @@
           "record": "vocab/imports/20260916_0141_captured_supplement.json",
           "kind": "dictionary_curation",
           "origin_word": "nullifie"
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
         }
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/nullify",
@@ -56465,6 +59026,43 @@
       "note": "题中机构掩饰决策过程，取“不透明、难以看清”。 语体/色彩：物理义中性；比喻义常负向。"
     },
     {
+      "word": "opinionated",
+      "pos": "adj.",
+      "meaning": "固执己见的；武断的",
+      "collocation": "an opinionated commentator",
+      "collocation_source": "coach_composed",
+      "connotation": "通常贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/opinionated",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：固执己见的；武断的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/opinionated",
+      "note": "不仅有观点，还强调坚信并强烈表达自己的观点。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "oppressive",
       "pos": "adj.",
       "meaning": "压迫性的；苛重的；令人压抑的；闷热难受的",
@@ -56878,6 +59476,13 @@
           "kind": "user_handwritten_notes",
           "image": 1,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -57112,6 +59717,43 @@
       ],
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/outrage",
       "note": "名词既可指令人发指的行为，也可指对此的强烈愤怒。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "outset",
+      "pos": "n.",
+      "meaning": "开始；开端",
+      "collocation": "at the outset; from the outset",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/outset",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：开始；开端"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/outset",
+      "note": "常用于固定介词搭配；不同于 outcome（结果）。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -58615,6 +61257,13 @@
           "kind": "user_handwritten_notes",
           "image": 4,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -58796,6 +61445,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/pathology",
       "note": "不仅是学科名称，也可指构成疾病的结构、功能异常及社会病态。 语体／色彩：学科义中性；异常义消极。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "patriarchy",
+      "pos": "n.",
+      "meaning": "父权制；男性主导的社会或制度",
+      "collocation": "challenge patriarchy",
+      "collocation_source": "coach_composed",
+      "connotation": "社会学用语，评价依语境",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/patriarchy",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：父权制；男性主导的社会或制度"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/patriarchy",
+      "note": "既可指男性家长统治，也可指更广泛的男性权力结构。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -59449,6 +62135,13 @@
           "record": "vocab/imports/20260917_0028_captured_vocab.json",
           "kind": "dictionary_checked_capture",
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -59529,6 +62222,43 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/penchant",
       "note": "通常接for；不等于天赋。 语体／色彩：中性。",
       "normalization_note": "采用划改后的正确拼写。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "pendulum",
+      "pos": "n.",
+      "meaning": "钟摆；摇摆的趋势或局面",
+      "collocation": "the political pendulum swings",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pendulum",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：钟摆；摇摆的趋势或局面"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/pendulum",
+      "note": "比喻意见、权力或趋势在两端之间摆动。",
+      "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
@@ -60004,6 +62734,43 @@
       "learning_status": "encountered_pending_retest",
       "note": "常强调严重危险；不要与 exhilarating 的兴奋感混淆。 语体/色彩：负向描述。\n强调风险很大；precarious更强调不稳定导致危险。 语体／色彩：负面。",
       "dictionary_url": "https://www.merriam-webster.com/dictionary/perilous"
+    },
+    {
+      "word": "perimeter",
+      "pos": "n.",
+      "meaning": "周长；周界，外围",
+      "collocation": "the perimeter of a rectangle",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/perimeter",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：周长；周界，外围"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/perimeter",
+      "note": "数学题中的周长与区域边界两个义项要区分；不是面积。",
+      "normalization_note": "采用笔记划改后的规范词形 perimeter；周长或周界，不是面积。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "peripatetic",
@@ -60677,6 +63444,43 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/pertain"
     },
     {
+      "word": "peruse",
+      "pos": "v.",
+      "meaning": "阅读，细读；浏览，翻阅",
+      "collocation": "peruse a report",
+      "collocation_source": "coach_composed",
+      "connotation": "较正式",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/peruse",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：阅读，细读；浏览，翻阅"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/peruse",
+      "note": "权威词典同时收录仔细读和较随意浏览；具体阅读方式由上下文决定。",
+      "normalization_note": "词典同时收录仔细阅读和浏览翻阅；不能把浏览义一概判错。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "pervasive",
       "pos": "adj.",
       "meaning": "遍及各处的；渗透各方面的",
@@ -60821,6 +63625,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/petrify",
       "note": "可字面石化，也可比喻吓得动弹不得。 语体／色彩：恐惧义负面。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "petty",
+      "pos": "adj.",
+      "meaning": "琐碎的；小规模的；小心眼的",
+      "collocation": "petty complaints; petty crime",
+      "collocation_source": "coach_composed",
+      "connotation": "通常贬义或表示程度小",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/petty",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：琐碎的；小规模的；小心眼的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/petty",
+      "note": "评价人时指过分计较小事；petty crime 是较轻微的犯罪。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -61026,6 +63867,50 @@
       "note": "仅收录右侧更正后的pilgrim；左侧划掉的错拼不收录。 手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "pine",
+      "pos": "n.; v.",
+      "meaning": "n. 松树，松木；v. 苦苦思念，渴望；因悲伤而憔悴",
+      "collocation": "pine for home; pine away",
+      "collocation_source": "coach_composed",
+      "connotation": "思念义常含忧伤",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pine",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：n. 松树，松木；v. 苦苦思念，渴望；因悲伤而憔悴"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pine",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：n. 松树，松木；v. 苦苦思念，渴望；因悲伤而憔悴"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/pine",
+      "note": "pine for 表示深切渴望；pine away 表示逐渐消瘦或衰弱。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "pious",
       "pos": "adj.",
       "meaning": "虔诚的；伪善的",
@@ -61046,6 +63931,87 @@
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
       "note": "手写笔记释义整理，尚未逐词词典核验。"
+    },
+    {
+      "word": "pique",
+      "pos": "v.; n.",
+      "meaning": "v. 激起（兴趣、好奇）；使恼怒；n. 自尊受损后的恼怒",
+      "collocation": "pique someone's curiosity; in a fit of pique",
+      "collocation_source": "coach_composed",
+      "connotation": "依义项而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pique",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：v. 激起（兴趣、好奇）；使恼怒；n. 自尊受损后的恼怒"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pique",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：v. 激起（兴趣、好奇）；使恼怒；n. 自尊受损后的恼怒"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/pique",
+      "note": "与 curiosity 搭配通常是激起好奇；名词常带受冒犯后的不悦。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "pitfall",
+      "pos": "n.",
+      "meaning": "隐患；易犯的错误；陷阱",
+      "collocation": "avoid common pitfalls",
+      "collocation_source": "coach_composed",
+      "connotation": "负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pitfall",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：隐患；易犯的错误；陷阱"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/pitfall",
+      "note": "常指看起来不明显、容易使人出错的危险或困难。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "pivotal",
@@ -62740,6 +65706,43 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "preconceive",
+      "pos": "v.",
+      "meaning": "预先形成（意见）；先入为主地设想",
+      "collocation": "preconceived notions",
+      "collocation_source": "coach_composed",
+      "connotation": "常暗示证据不足",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/preconceive",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：预先形成（意见）；先入为主地设想"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/preconceive",
+      "note": "在实际了解或经历之前形成想法；常见形式是 preconceived。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "precursor",
       "pos": "n.",
       "meaning": "先驱；前身；前兆",
@@ -63452,6 +66455,43 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/pressing",
       "note": "强调事情迫在眉睫；不把press的所有动词义当作形容词义。 语体／色彩：中性。",
       "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "prestige",
+      "pos": "n.; adj.",
+      "meaning": "n. 声望，威信；adj. 有声望的，高档的",
+      "collocation": "academic prestige; a prestige brand",
+      "collocation_source": "coach_composed",
+      "connotation": "通常正向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/prestige",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：n. 声望，威信；adj. 有声望的，高档的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/prestige",
+      "note": "不是只能作名词；修饰品牌或产品时可表示与高地位相关。",
+      "normalization_note": "保留名词声望，以及形容词有声望的、高档的；两种词性均有词典依据。",
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
@@ -64323,6 +67363,13 @@
           "kind": "user_handwritten_notes",
           "image": 4,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -65151,6 +68198,87 @@
       ],
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/prune",
       "note": "删减文章是修剪树枝的引申义；名词另指干果。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "pry",
+      "pos": "v.",
+      "meaning": "窥探，打听隐私；撬开",
+      "collocation": "pry into someone's affairs; pry open a lid",
+      "collocation_source": "coach_composed",
+      "connotation": "窥探义贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pry",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：窥探，打听隐私；撬开"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/pry",
+      "note": "pry into 指探听隐私；pry open 指用工具撬开。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "prying",
+      "pos": "adj.",
+      "meaning": "爱窥探的；好打听隐私的",
+      "collocation": "prying questions",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/prying",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：爱窥探的；好打听隐私的"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prying",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：爱窥探的；好打听隐私的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/prying",
+      "note": "也是 pry 的现在分词；形容人或问题时通常含多管闲事之意。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -67062,6 +70190,13 @@
           "kind": "dictionary_curation",
           "image": null,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -67633,6 +70768,13 @@
         {
           "material_id": "handwritten_vocab_20260917",
           "record": "vocab/imports/20260917_1808_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
           "kind": "user_handwritten_notes",
           "image": 1,
           "origin_word": null
@@ -68483,6 +71625,13 @@
           "kind": "user_handwritten_notes",
           "image": 4,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -68496,6 +71645,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/remark",
       "note": "作动词常接on，评论义不要求批判。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "remarkable",
+      "pos": "adj.",
+      "meaning": "非凡的；引人注目的；值得注意的",
+      "collocation": "a remarkable improvement",
+      "collocation_source": "coach_composed",
+      "connotation": "通常褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/remarkable",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：非凡的；引人注目的；值得注意的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/remarkable",
+      "note": "令人注意不等于必然优秀；搭配负面事件时需按语境理解。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -68847,6 +72033,43 @@
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "reparation",
+      "pos": "n.",
+      "meaning": "补偿；赔偿；弥补",
+      "collocation": "make reparation for the damage",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，正式",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/reparation",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：补偿；赔偿；弥补"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/reparation",
+      "note": "战争赔款等语境常用复数 reparations；注意拼写中的 -para-。",
+      "normalization_note": "规范拼写 reparation；补偿或赔偿，战争赔款常用复数 reparations。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "repercuss",
@@ -69623,6 +72846,80 @@
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/residual",
       "note": "照片词形按 residual 规范化；不是普通的留下动作。",
       "normalization_note": "照片字母间距与连写不规则，按完整词形规范为 residual。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "resolute",
+      "pos": "adj.",
+      "meaning": "坚定的；果断的",
+      "collocation": "a resolute response",
+      "collocation_source": "coach_composed",
+      "connotation": "通常褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/resolute",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：坚定的；果断的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/resolute",
+      "note": "对应坚定态度；与名词 resolution 的决心义相联。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "resolution",
+      "pos": "n.",
+      "meaning": "决心；决议；解决；分辨率",
+      "collocation": "show resolution; conflict resolution",
+      "collocation_source": "coach_composed",
+      "connotation": "依义项而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/resolution",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：决心；决议；解决；分辨率"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/resolution",
+      "note": "同一词有多个名词义；不要只记成解决问题。",
+      "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
@@ -70429,6 +73726,43 @@
       "last_review": null
     },
     {
+      "word": "retrofit",
+      "pos": "v.; n.",
+      "meaning": "给现有设备加装或改装；改装工程",
+      "collocation": "retrofit an old building",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，技术用语",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/retrofit",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：给现有设备加装或改装；改装工程"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/retrofit",
+      "note": "强调在原设备或建筑建成之后加装新功能。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "revel",
       "pos": "v./n.",
       "meaning": "狂欢；尽情享受；狂欢活动",
@@ -70444,6 +73778,13 @@
           "record": "vocab/imports/20260910_1739_youdao_handwritten.json",
           "image": 1,
           "kind": "wordlist_and_dictionary_example_mixed",
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
           "origin_word": null
         }
       ],
@@ -70561,6 +73902,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/revile",
       "note": "强度高于一般批评，常由愤怒或仇恨驱动。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "revitalize",
+      "pos": "v.",
+      "meaning": "使恢复活力；使振兴",
+      "collocation": "revitalize the economy",
+      "collocation_source": "coach_composed",
+      "connotation": "通常褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/revitalize",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：使恢复活力；使振兴"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/revitalize",
+      "note": "re- 表示重新；强调活力或发展恢复。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -72693,6 +76071,87 @@
       "last_review": null
     },
     {
+      "word": "scathe",
+      "pos": "v.; n.",
+      "meaning": "v. 损害，灼伤；严厉痛斥；n. 损伤",
+      "collocation": "scathe a reputation",
+      "collocation_source": "coach_composed",
+      "connotation": "较少用，负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/scathe",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：v. 损害，灼伤；严厉痛斥；n. 损伤"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/scathe",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：v. 损害，灼伤；严厉痛斥；n. 损伤"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/scathe",
+      "note": "现代更常见派生形容词 scathing；动词和名词义保留区分。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "scathing",
+      "pos": "adj.",
+      "meaning": "严厉批评的；尖刻痛斥的",
+      "collocation": "a scathing review",
+      "collocation_source": "coach_composed",
+      "connotation": "强烈负向批评",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/scathing",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：严厉批评的；尖刻痛斥的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/scathing",
+      "note": "常修饰评论或抨击；不是一般的轻微不赞成。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "schism",
       "pos": "n.",
       "meaning": "分裂；分歧；教会或团体内部的分裂",
@@ -72931,6 +76390,43 @@
       "last_review": null
     },
     {
+      "word": "sectarian",
+      "pos": "adj.; n.",
+      "meaning": "adj. 宗派的；派系偏狭的；n. 宗派成员，偏狭者",
+      "collocation": "sectarian conflict",
+      "collocation_source": "coach_composed",
+      "connotation": "宗派义中性，偏狭义贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/sectarian",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：adj. 宗派的；派系偏狭的；n. 宗派成员，偏狭者"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/sectarian",
+      "note": "religious sect 是宗派；政治或观点语境也可指狭隘的派系立场。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "secular",
       "pos": "adj.; n.",
       "meaning": "adj. 世俗的，非宗教的；长期的；n. 不受修会誓约约束的教士；俗人",
@@ -73008,6 +76504,43 @@
       "related_words": []
     },
     {
+      "word": "seethe",
+      "pos": "v.",
+      "meaning": "沸腾，翻涌；怒火中烧；充满涌动",
+      "collocation": "seethe with anger",
+      "collocation_source": "coach_composed",
+      "connotation": "通常强烈负向情绪",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/seethe",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：沸腾，翻涌；怒火中烧；充满涌动"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/seethe",
+      "note": "愤怒义常指心中翻腾却未充分表达；常搭配 with。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "self-deprecate",
       "pos": "v.",
       "meaning": "贬低自己，自嘲",
@@ -73056,6 +76589,80 @@
       "dictionary_url": "https://www.merriam-webster.com/dictionary/deprecate",
       "note": "保留手写动词词形；本次核验为deprecate及self-deprecating词族，未找到可访问的独立动词词条；优先熟记self-deprecating（自我贬低的、自谦的）。",
       "normalization_note": "保留手写形式，不擅自改成self-deprecating；完整动词词条的权威来源仍待补。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "self-evident",
+      "pos": "adj.",
+      "meaning": "不言自明的；显而易见的",
+      "collocation": "a self-evident truth",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/self-evident",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：不言自明的；显而易见的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/self-evident",
+      "note": "强调无需进一步证明或解释即可看出。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "self-regard",
+      "pos": "n.",
+      "meaning": "自尊；对自身或自身利益的关注",
+      "collocation": "excessive self-regard",
+      "collocation_source": "coach_composed",
+      "connotation": "依程度可中性或贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/self-regard",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：自尊；对自身或自身利益的关注"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/self-regard",
+      "note": "词性为名词；过度 self-regard 可含自负、自我中心之意。",
+      "normalization_note": "词性为名词；可指自尊或对自身利益的关注，过度时含自负之意。",
       "original_context": null,
       "review_evidence": [],
       "learning_status": "encountered_pending_retest",
@@ -73697,6 +77304,43 @@
       "last_review": null
     },
     {
+      "word": "set in",
+      "pos": "phr. v.",
+      "meaning": "（常指不好的情况）开始并持续",
+      "collocation": "fatigue sets in",
+      "collocation_source": "coach_composed",
+      "connotation": "常含负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/set-in",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：（常指不好的情况）开始并持续"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/set-in",
+      "note": "通常不及物，主语是寒冷、疲劳等情况；不直接等同“投入某物”。",
+      "normalization_note": "短语动词常指寒冷、疲劳等开始并持续；不直接等同投入或嵌入某物。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "setback",
       "original_context": null,
       "sources": [
@@ -73732,6 +77376,80 @@
         }
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/setback"
+    },
+    {
+      "word": "settled",
+      "pos": "adj.",
+      "meaning": "安定的；定居的；稳定的；已确定的",
+      "collocation": "a settled life; settled weather",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/settled",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：安定的；定居的；稳定的；已确定的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/settled",
+      "note": "可指适应环境、长期居住或天气稳定；也可为 settle 的过去分词。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "sever",
+      "pos": "v.",
+      "meaning": "切断；断绝（关系）",
+      "collocation": "sever diplomatic ties",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/sever",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：切断；断绝（关系）"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/sever",
+      "note": "实体和抽象联系都可切断；注意与 severe（严厉的）区别。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "sew",
@@ -73976,6 +77694,43 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "shawl",
+      "pos": "n.",
+      "meaning": "披肩；围巾式大块披布",
+      "collocation": "wrap a shawl around her shoulders",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/shawl",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：披肩；围巾式大块披布"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/shawl",
+      "note": "通常披在肩部或头部。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "sheer",
       "pos": "adj.; adv.; v.; n.",
       "meaning": "adj. 十足的，纯粹的；陡峭的；轻薄透明的；adv. 垂直地；v. 偏离航向；n. 薄纱等",
@@ -74097,6 +77852,13 @@
           "record": "vocab/imports/20260913_0001_handwritten_vocab.json",
           "image": 4,
           "kind": "user_handwritten_notes",
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
           "origin_word": null
         }
       ],
@@ -74844,6 +78606,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/slumber",
       "note": "可比喻暂时不活动。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "slumberous",
+      "pos": "adj.",
+      "meaning": "困倦欲睡的；催眠的；沉静懒散的",
+      "collocation": "a slumberous afternoon",
+      "collocation_source": "coach_composed",
+      "connotation": "文学用语",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/slumberous",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：困倦欲睡的；催眠的；沉静懒散的"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/slumberous",
+      "note": "既可描述困倦状态，也可描述令人欲睡的氛围；slumbrous 为变体。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -76144,6 +79943,13 @@
           "kind": "user_handwritten_notes",
           "image": 6,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -76924,6 +80730,13 @@
           "kind": "user_handwritten_notes",
           "image": 6,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -77199,6 +81012,13 @@
           "record": "vocab/imports/20260921_1736_handwritten_vocab.json",
           "kind": "user_handwritten_notes",
           "image": 1,
+          "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
           "origin_word": null
         }
       ],
@@ -79014,6 +82834,50 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "surfeit",
+      "pos": "n.; v.",
+      "meaning": "n. 过量，过剩；过饱，餍腻；v. 使过量得到，使餍足",
+      "collocation": "a surfeit of information",
+      "collocation_source": "coach_composed",
+      "connotation": "通常负向，正式",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/surfeit",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：n. 过量，过剩；过饱，餍腻；v. 使过量得到，使餍足"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/surfeit",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：n. 过量，过剩；过饱，餍腻；v. 使过量得到，使餍足"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/surfeit",
+      "note": "不是普通的“足够”；强调太多，甚至产生厌腻。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "surmount",
       "pos": "v.",
       "meaning": "克服；战胜；在……之上",
@@ -79398,6 +83262,43 @@
       ],
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/swamp",
       "note": "工作或消息把人压得应付不过来，是淹没的引申义。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "sweeping",
+      "pos": "adj.",
+      "meaning": "范围广泛的；全面的；笼统不加区分的",
+      "collocation": "sweeping reforms; a sweeping generalization",
+      "collocation_source": "coach_composed",
+      "connotation": "依搭配而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/sweeping",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：范围广泛的；全面的；笼统不加区分的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/sweeping",
+      "note": "改革语境可中性或正向；概括语境常批评过于笼统。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -79828,6 +83729,13 @@
           "kind": "user_handwritten_notes",
           "image": 6,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -79921,6 +83829,43 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "tantalize",
+      "pos": "v.",
+      "meaning": "诱逗；使可望而不可即；吊胃口",
+      "collocation": "tantalize readers with a hint",
+      "collocation_source": "coach_composed",
+      "connotation": "吸引中夹有受挫感",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/tantalize",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：诱逗；使可望而不可即；吊胃口"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/tantalize",
+      "note": "核心是诱人的东西尚未能得到，不只是普通吸引。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "tantamount",
       "pos": "adj.",
       "meaning": "在意义、价值或效果上等同的",
@@ -79997,6 +83942,43 @@
       "last_review": null
     },
     {
+      "word": "tawdry",
+      "pos": "adj.",
+      "meaning": "俗艳而廉价的；卑俗的",
+      "collocation": "tawdry jewellery",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/tawdry",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：俗艳而廉价的；卑俗的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/tawdry",
+      "note": "表面花哨却质量差，也可评价行为或事件卑俗。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "taxing",
       "pos": "adj.",
       "meaning": "费力的，繁重累人的",
@@ -80032,6 +84014,40 @@
       "review_count": 0,
       "correct_streak": 0,
       "last_review": null
+    },
+    {
+      "word": "tedious",
+      "pos": "adj.",
+      "meaning": "冗长乏味的、令人厌烦的",
+      "collocation": "a tedious task",
+      "note": "强调枯燥或冗长，不是竞争激烈。",
+      "id": "tedious",
+      "group": "test1_section2_easy",
+      "question_range": "4",
+      "source_records": [
+        "verbal/submissions/20260906_2145_text_completion.md"
+      ],
+      "evidence": {
+        "added_on": "2026-09-06",
+        "review_count": 2,
+        "correct_streak": 1,
+        "last_review": "2026-09-06",
+        "origin": "text_completion_2000"
+      },
+      "category": "填空新增",
+      "priority": "继续巩固",
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/tedious",
+      "definition_source": "沿用本轮训练记录中的词典核验与教练释义；未重新进行逐词独立核验",
+      "context_warning": "词义与例搭配用于复习；完整句意由实际题目决定",
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ]
     },
     {
       "word": "teem",
@@ -81338,6 +85354,43 @@
       "last_review": null
     },
     {
+      "word": "tiring",
+      "pos": "adj.",
+      "meaning": "令人疲劳的",
+      "collocation": "a tiring journey",
+      "collocation_source": "coach_composed",
+      "connotation": "负向感受",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/tiring",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：令人疲劳的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/tiring",
+      "note": "来自第3页 wearing 旁的英文补注；tiring 使人累，tired 是人已感到累。",
+      "normalization_note": "wearing 旁的英文补注也单独收录；tiring 是令人疲劳的，tired 是感到疲劳的。",
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "toddler",
       "pos": "n.",
       "meaning": "学步幼儿",
@@ -82217,6 +86270,43 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "transparent",
+      "pos": "adj.",
+      "meaning": "透明的；清楚易懂的；公开透明的；显而易见的",
+      "collocation": "transparent glass; a transparent excuse",
+      "collocation_source": "coach_composed",
+      "connotation": "依义项而定",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/transparent",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：透明的；清楚易懂的；公开透明的；显而易见的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/transparent",
+      "note": "transparent excuse 常指明显站不住脚的借口；不应一律当褒义。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "trenchant",
@@ -83733,6 +87823,80 @@
       "note": "手写笔记释义整理，尚未逐词词典核验。"
     },
     {
+      "word": "unduly",
+      "pos": "adv.",
+      "meaning": "过度地；不适当地",
+      "collocation": "unduly harsh criticism",
+      "collocation_source": "coach_composed",
+      "connotation": "负向评价",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/unduly",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：过度地；不适当地"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/unduly",
+      "note": "超过合理、必要或可接受程度；是副词。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "unearth",
+      "pos": "v.",
+      "meaning": "发掘；发现，揭露",
+      "collocation": "unearth new evidence",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/unearth",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：发掘；发现，揭露"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/unearth",
+      "note": "由从土中挖出，引申为经过搜寻发现隐蔽信息。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "uneven",
       "pos": "adj.",
       "meaning": "不平坦的；不齐的；不均衡的；水平参差不齐的；奇数的",
@@ -83875,6 +88039,43 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "unflappable",
+      "pos": "adj.",
+      "meaning": "沉着镇定的；临危不乱的",
+      "collocation": "remain unflappable under pressure",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/unflappable",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：沉着镇定的；临危不乱的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/unflappable",
+      "note": "强调困难或压力下不慌乱，不等于没有情感。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "unflinching",
@@ -85229,6 +89430,13 @@
           "kind": "user_handwritten_notes",
           "image": 2,
           "origin_word": null
+        },
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
         }
       ],
       "definition_sources": [
@@ -85424,6 +89632,43 @@
       ],
       "review_evidence": [],
       "learning_status": "encountered_pending_retest"
+    },
+    {
+      "word": "vain",
+      "pos": "adj.",
+      "meaning": "徒劳的；自负的；爱慕虚荣的",
+      "collocation": "a vain attempt; in vain",
+      "collocation_source": "coach_composed",
+      "connotation": "通常贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/vain",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：徒劳的；自负的；爱慕虚荣的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/vain",
+      "note": "in vain＝徒劳地；评价人时常指过分自恋。不要与 vein 混淆。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "vainglorious",
@@ -85868,6 +90113,80 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "veer",
+      "pos": "v.",
+      "meaning": "转向；改变方向或立场",
+      "collocation": "veer away from the topic",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/veer",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：转向；改变方向或立场"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/veer",
+      "note": "可用于行进方向，也可用于话题、观点偏移。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "vein",
+      "pos": "n.",
+      "meaning": "静脉；叶脉；矿脉；风格，倾向",
+      "collocation": "in a similar vein; a vein of gold",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 2,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/vein",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：静脉；叶脉；矿脉；风格，倾向"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/vein",
+      "note": "in a similar vein 表示以相似的风格、思路；与 vain 同音而义不同。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "velocity",
       "pos": "n.",
       "meaning": "速度，速率；周转速度",
@@ -86184,6 +90503,117 @@
       "last_review": null
     },
     {
+      "word": "vertiginous",
+      "pos": "adj.",
+      "meaning": "令人眩晕的；眩晕的",
+      "collocation": "a vertiginous drop",
+      "collocation_source": "coach_composed",
+      "connotation": "中性或负向",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/vertiginous",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：令人眩晕的；眩晕的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/vertiginous",
+      "note": "可形容高度、运动造成眩晕，也可形容感受；名词为 vertigo。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "vertigo",
+      "pos": "n.",
+      "meaning": "眩晕；天旋地转的感觉",
+      "collocation": "a feeling of vertigo",
+      "collocation_source": "coach_composed",
+      "connotation": "中性，身体感受",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/vertigo",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：眩晕；天旋地转的感觉"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/vertigo",
+      "note": "相应形容词 vertiginous；本次仅作词义学习。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "verve",
+      "pos": "n.",
+      "meaning": "活力；热情；神采",
+      "collocation": "perform with verve",
+      "collocation_source": "coach_composed",
+      "connotation": "褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/verve",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：活力；热情；神采"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/verve",
+      "note": "尤可评价艺术表现富有活力和热情。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "vest",
       "pos": "n.; v.",
       "meaning": "n. 背心，马甲；v. 授予（权力、权利）；使归属",
@@ -86405,6 +90835,43 @@
       ],
       "dictionary_url": "https://www.merriam-webster.com/dictionary/viable",
       "note": "商业方案义与生物存活义相通但不混写。 语体／色彩：中性偏褒。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "vibrant",
+      "pos": "adj.",
+      "meaning": "充满活力的；鲜明强烈的",
+      "collocation": "a vibrant community; vibrant colours",
+      "collocation_source": "coach_composed",
+      "connotation": "通常褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/vibrant",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：充满活力的；鲜明强烈的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/vibrant",
+      "note": "形容人或环境是有生气；形容色彩是鲜艳明亮。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -86640,6 +91107,80 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "villain",
+      "pos": "n.",
+      "meaning": "恶人；反派人物；罪魁祸首",
+      "collocation": "the villain in a novel",
+      "collocation_source": "coach_composed",
+      "connotation": "通常贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/villain",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：恶人；反派人物；罪魁祸首"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/villain",
+      "note": "可指真实坏人、虚构反派，或被视为有害的人或事物。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "villainous",
+      "pos": "adj.",
+      "meaning": "邪恶的；恶毒的；卑劣的",
+      "collocation": "a villainous scheme",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/villainous",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：邪恶的；恶毒的；卑劣的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/villainous",
+      "note": "villain 的形容词；不能简化为普通的“不好”。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "vintage",
       "pos": "n.; adj.",
       "meaning": "n. 葡萄或葡萄酒的收成年份、产量；制造年代；adj. 经典优质的；旧式的；某人典型风格的",
@@ -86787,6 +91328,43 @@
       ],
       "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/virulent",
       "note": "生物义与言辞攻击义分别记。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "vitality",
+      "pos": "n.",
+      "meaning": "活力；生命力；精力",
+      "collocation": "restore vitality",
+      "collocation_source": "coach_composed",
+      "connotation": "通常褒义",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 1,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/vitality",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：活力；生命力；精力"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/vitality",
+      "note": "对应有活力的状态；注意它是名词。",
       "normalization_note": null,
       "original_context": null,
       "review_evidence": [],
@@ -87214,6 +91792,43 @@
       "learning_status": "encountered_pending_retest"
     },
     {
+      "word": "vulnerable",
+      "pos": "adj.",
+      "meaning": "易受伤害的；易受攻击或影响的",
+      "collocation": "vulnerable to criticism",
+      "collocation_source": "coach_composed",
+      "connotation": "常含风险",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 4,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/vulnerable",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：易受伤害的；易受攻击或影响的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/vulnerable",
+      "note": "常接 to；身体、情感和系统都可 vulnerable。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "waffle",
       "pos": "n.; v.",
       "meaning": "n. 华夫饼；空话，废话；v. 犹豫不决，含糊其辞；啰嗦地说",
@@ -87490,6 +92105,43 @@
       "learning_status": "reviewed_not_mastered"
     },
     {
+      "word": "waterfowl",
+      "pos": "n.",
+      "meaning": "水禽；水鸟",
+      "collocation": "migrating waterfowl",
+      "collocation_source": "coach_composed",
+      "connotation": "中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 5,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/waterfowl",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：水禽；水鸟"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/waterfowl",
+      "note": "常统称生活在水边的鸟类；复数也可为 waterfowl。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
       "word": "watershed",
       "pos": "n.",
       "meaning": "分水岭；流域；重要转折点",
@@ -87630,6 +92282,43 @@
         }
       ],
       "learning_status": "reviewed_not_mastered"
+    },
+    {
+      "word": "wearing",
+      "pos": "adj.",
+      "meaning": "令人疲惫的；令人烦累的",
+      "collocation": "a wearing day",
+      "collocation_source": "coach_composed",
+      "connotation": "负向感受",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "handwritten_vocab_20261010",
+          "record": "vocab/imports/20261010_1601_handwritten_vocab.json",
+          "kind": "user_handwritten_notes",
+          "image": 3,
+          "origin_word": null
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/wearing",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：令人疲惫的；令人烦累的"
+        }
+      ],
+      "dictionary_url": "https://dictionary.cambridge.org/dictionary/english/wearing",
+      "note": "这里是形容词，描述事情造成疲惫；不是单纯“正在穿”。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     },
     {
       "word": "well-disposed",
@@ -88654,5 +93343,5 @@
       "learning_status": "encountered_pending_retest"
     }
   ],
-  "updated_at": "2026-10-06"
+  "updated_at": "2026-10-10"
 }
