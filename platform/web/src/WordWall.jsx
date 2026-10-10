@@ -16,10 +16,10 @@ function roundFor(day) {
 const WordTile = memo(function WordTile({ entry, word, flipped, selected, busy, layout, onFlip, onSelect, onRate, onDetail, onGroup, onEdit, onRemove }) {
   const rating = wordRating(word), ready = !word.deleted && !!word.meaning?.trim();
   return <article className={`wall-card ${layout === 'ordinary' ? 'wall-ordinary' : ''} ${flipped ? 'is-flipped' : ''} ${selected ? 'is-selected' : ''} rated-${rating} ${entry.groupStart ? 'group-start' : ''}`} data-word={word.word} data-group={entry.group?.id || ''} data-selectable={ready}>
-    <button className="wall-face" title={word.word} aria-label={`${word.word} · ${flipped ? '隐藏释义' : '翻看释义'}`} aria-pressed={flipped} onClick={event => {
-      if (event.ctrlKey || event.metaKey) { if (!busy && ready) onSelect(word.word); }
-      else onFlip(word.word);
-    }}>
+    <button className="wall-face" title={word.word} aria-label={`${word.word} · 单击选中，双击${flipped ? '隐藏释义' : '翻看释义'}`} aria-description="Enter 选中；空格翻面" aria-pressed={selected}
+      onClick={() => { if (!busy && ready) onSelect(word.word, 'add'); }}
+      onDoubleClick={() => onFlip(word.word)}
+      onKeyDown={event => { if (event.key === ' ') { event.preventDefault(); if (!event.repeat) onFlip(word.word); } }}>
       {layout === 'ordinary' || !flipped ? <strong lang="en">{word.word}</strong> : <span className="wall-meaning">{word.pos} {word.meaning || '待补释义'}</span>}
       {layout === 'ordinary' && <span className="wall-meaning">{word.pos} {word.meaning || '待补释义'}</span>}
     </button>
@@ -87,7 +87,7 @@ export default function WordWall({ words, state, indexes, scopeKey, layout, sort
   }, [focus]);
   function filterChange(fn) { fn(); setPage(0); setSelected(new Set()); }
   const toggleFlip = useCallback(word => setFlipped(prev => { const next = new Set(prev); next.has(word) ? next.delete(word) : next.add(word); return next; }), []);
-  const toggleSelect = useCallback(word => setSelected(prev => { const next = new Set(prev); next.has(word) ? next.delete(word) : next.add(word); return next; }), []);
+  const toggleSelect = useCallback((word, mode = 'toggle') => setSelected(prev => { if (mode === 'add' && prev.has(word)) return prev; const next = new Set(prev); mode === 'toggle' && next.has(word) ? next.delete(word) : next.add(word); return next; }), []);
   function selectWords(list) { setSelected(new Set(list.filter(w => live.get(w)?.meaning?.trim() && !live.get(w)?.deleted))); }
   async function send(operation) {
     if (lock.current) return;
@@ -142,7 +142,7 @@ export default function WordWall({ words, state, indexes, scopeKey, layout, sort
       <small>当前 {columns} 列 × {settings.rows} 行，每页最多 {columns * settings.rows} 张。窄窗口自动减少列数，保留可读字号。</small>
     </div>}
     <nav className="wall-letters" aria-label="字母筛选（可多选）"><button aria-pressed={!letters.length} onClick={() => filterChange(() => setLetters([]))}>全部</button>{alphabet.map(letter => <button key={letter} aria-pressed={letters.includes(letter)} onClick={() => filterChange(() => setLetters(prev => prev.includes(letter) ? prev.filter(x => x !== letter) : [...prev, letter]))}>{letter}</button>)}</nav>
-    <div className="wall-selection"><button disabled={busy || !!pending} onClick={() => selectWords(visible.map(e => e.word))}>选中本页</button><button disabled={busy || !!pending || !ready.length} onClick={() => setConfirmAll(true)}>选中全部筛选结果 · {ready.length}</button><button onClick={() => setSelected(new Set())}>取消选择</button><small>{layout === 'wall' ? '按住鼠标拖动框选；Ctrl/⌘ 切换选择，Shift 追加，Esc 取消框选。单击仍翻面。' : '点击翻面；悬停点“选择”或 Ctrl/⌘ + 点击选中。'}绿边框表示已选。</small></div>
+    <div className="wall-selection"><button disabled={busy || !!pending} onClick={() => selectWords(visible.map(e => e.word))}>选中本页</button><button disabled={busy || !!pending || !ready.length} onClick={() => setConfirmAll(true)}>选中全部筛选结果 · {ready.length}</button><button onClick={() => setSelected(new Set())}>取消选择</button><small>{layout === 'wall' ? '单击选中 · 双击翻面 · 右键清空；可从词墙外空白处拖入框选，Shift 追加，Ctrl/⌘ 切换，Esc 取消。' : '单击选中；使用“取消选择”清空。'}绿边框表示已选。</small></div>
     {error && <div className="error" role="alert">{error}{pending && <><button disabled={busy} onClick={() => send(pending)}>重试保存</button><button disabled={busy} onClick={cancelRetry}>核对状态并停止重试</button></>}</div>}
     <div ref={grid} className="wall-grid" style={{ '--wall-columns': columns, '--wall-height': `${settings.height}px`, '--wall-font': `${settings.font}px` }}>
       {visible.map(entry => <WordTile key={entry.key} entry={entry} word={live.get(entry.word)} layout={layout} flipped={flipped.has(entry.word)} selected={selected.has(entry.word)} busy={busy || !!pending} onFlip={toggleFlip} onSelect={toggleSelect} onRate={setSingle} onDetail={onDetail} onGroup={setGroup} onEdit={onEdit} onRemove={onRemove} />)}

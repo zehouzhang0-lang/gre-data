@@ -16,6 +16,7 @@
 .wall-selection { margin:8px 0 12px; }.wall-selection small { margin-left:auto; font-size:11px; color:#718078; }
 .wall-grid { display:grid; grid-template-columns:repeat(var(--wall-columns),minmax(0,1fr)); gap:6px; width:100%; }
 .layout-wall .wall-grid { user-select:none; -webkit-user-select:none; }
+.word-wall-selecting,.word-wall-selecting * { user-select:none !important; -webkit-user-select:none !important; }
 .wall-selection-box { position:fixed; pointer-events:none; z-index:40; border:1px solid #147d72; background:#147d721a; }
 .wall-card { position:relative; min-width:0; height:var(--wall-height); border:1px solid #e7edeb; border-radius:5px; background:#f7f9f8; transition:background .14s,border-color .14s; }
 .wall-card:hover,.wall-card:focus-within { border-color:#92b5aa; z-index:2; }.wall-card.is-selected { border-color:#147d72; box-shadow:inset 0 0 0 1px #147d72; }
