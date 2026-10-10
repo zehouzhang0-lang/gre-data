@@ -2,9 +2,10 @@ import { useDeferredValue, useMemo, useState } from "react";
 import { Header, Icon, Field, Modal, Empty } from "./components";
 import { save } from "./api";
 import { CatalogSearch, CatalogPager, CollectionCard, materialLabel, sourceLabel } from "./CatalogParts";
+import WordWall from './WordWall';
+import { readPreference, writePreference } from './word-wall-model.mjs';
 
 const PAGE_SIZE = 18;
-const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const topicKey = id => `topic:${id}`;
 
 function buildIndexes(state) {
@@ -30,11 +31,13 @@ function buildIndexes(state) {
   return { topics, assignment, schedules, sources: [...sources.values()], sourceKeys };
 }
 
-export default function Vocabulary({ state, refresh, notify, startRecall, openRelations }) {
-  const [search, setSearch] = useState("");
-  const [view, setView] = useState("topics");
+export default function Vocabulary({ state, refresh, notify, startRecall, openRelations, wallRequest }) {
+  const [layout, setLayout] = useState(() => wallRequest ? 'wall' : readPreference('vocabulary-layout', 'wall') === 'ordinary' ? 'ordinary' : 'wall');
+  const [search, setSearch] = useState(wallRequest?.search || "");
+  const [view, setView] = useState("all");
   const [collection, setCollection] = useState(null);
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState(wallRequest?.bucket || "all");
+  const [requestedWords, setRequestedWords] = useState(wallRequest?.words || null);
   const [letter, setLetter] = useState("");
   const [sort, setSort] = useState("alphabet");
   const [page, setPage] = useState(0);
@@ -65,6 +68,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
     return { ...group, id, count: words.length, preview: words.slice(0, 3).map(w => w.word).join(" · ") };
   }).filter(group => group.count > 0).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
   const words = base.filter(word => {
+    if (requestedWords && !requestedWords.includes(word.word)) return false;
     const ids = indexes.assignment.get(word.word)?.topics || [];
     if (collection?.id.startsWith("topic:")) {
       const id = collection.id.slice(6);
@@ -83,7 +87,6 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
   const currentPage = Math.min(page, Math.max(0, Math.ceil(words.length / PAGE_SIZE) - 1));
   const visible = words.slice(currentPage * PAGE_SIZE, (currentPage + 1) * PAGE_SIZE);
   const listing = view === "all" || !!collection || !!query || filter === "deleted";
-  const readyWords = words.filter(w => !w.deleted && !!w.meaning?.trim());
   function resetView(next) { setView(next); setCollection(null); setSearch(""); setLetter(""); setPage(0); }
   function resetFilters() { setFilter("all"); setCollection(null); setSearch(""); setLetter(""); setPage(0); }
   async function mutate(kind, payload) {
@@ -93,10 +96,10 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
     finally { setBusy(false); }
   }
   function openDetail(word) { setDetailWord(word.word); setTopicDraft(null); setError(""); }
-  return <>
+  return <div className={`vocabulary-screen ${layout === 'wall' ? 'is-wall' : ''}`}>
     <Header title="生词本" description={`${state.vocabulary.filter(w => !w.deleted).length} 个词与短语，按主题、来源找到想复习的内容。`}>
+      <div className="wall-view-switch" aria-label="词库显示方式">{[['wall','单词墙'],['ordinary','普通视图']].map(([id,label]) => <button key={id} aria-pressed={layout===id} onClick={() => { setLayout(id); writePreference('vocabulary-layout', id); }}>{label}</button>)}</div>
       <button onClick={() => openRelations()}>管理分类与关联</button>
-      {listing && <button disabled={busy || !readyWords.length} onClick={() => startRecall(readyWords)}>复习这组词 · {readyWords.length}</button>}
       <button className="primary" onClick={() => { setError(""); setEdit({ word: "", meaning: "", pos: "", note: "" }); }}><Icon name="plus" />新增单词</button>
     </Header>
     <nav className="catalog-view-tabs" aria-label="词库索引方式">
@@ -104,12 +107,13 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
     </nav>
     <div className="catalog-toolbar">
       <CatalogSearch value={search} onChange={value => { setSearch(value); setPage(0); }} label="搜索单词、释义或主题" placeholder={collection ? `在「${collection.name}」中搜索…` : "搜索单词、释义或主题…"} />
-      {listing && <select aria-label="词汇排序" value={sort} onChange={e => { setSort(e.target.value); setPage(0); }}><option value="alphabet">按字母</option><option value="due">按复习日期</option><option value="recent">最近接触</option></select>}
+      {listing && <select aria-label="词汇排序" value={sort} onChange={e => { setSort(e.target.value); setPage(0); }}><option value="alphabet">按字母</option><option value="due">按复习日期</option><option value="recent">最近接触</option><option value="random">打乱（保留同组）</option></select>}
     </div>
     <nav className="catalog-filters" aria-label="词汇筛选">
       {buckets.map(([id, label]) => <button key={id} aria-pressed={filter === id} onClick={() => { setFilter(id); setPage(0); if (id === "deleted") setCollection(null); }}>{label}<small>{state.vocabulary.filter(w => matchesBucket(w, id)).length}</small></button>)}
     </nav>
     {error && <p role="alert" className="error">{error}</p>}
+    {requestedWords && <p>{wallRequest?.title || '从其他入口选定的词表'} · {requestedWords.length} 词　<button onClick={() => setRequestedWords(null)}>查看全部词库</button></p>}
     {!listing ? <>
       <div className="catalog-breadcrumb"><strong>{view === "sources" ? "从哪里学到的" : "想记哪一类"}</strong><small>{collections.length} 组 · 可同时属于多组</small></div>
       <div className="catalog-collections">{collections.map(group => <CollectionCard key={group.id} title={group.name} count={group.count} preview={group.preview} onClick={() => { setCollection(group); setLetter(""); setPage(0); }} />)}</div>
@@ -119,8 +123,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
         {collection && <><button onClick={() => { setCollection(null); setLetter(""); setPage(0); }}>← 返回{view === "sources" ? "来源" : "主题"}目录</button><span aria-hidden="true">/</span></>}
         <strong>{collection?.name || (query ? "搜索结果" : buckets.find(([id]) => id === filter)?.[1] + "词汇")}</strong><small>{words.length} 项</small>
       </div>
-      <nav className="catalog-letter-index" aria-label="单词首字母"><button aria-pressed={!letter} onClick={() => { setLetter(""); setPage(0); }}>全部</button>{alphabet.map(char => <button key={char} aria-pressed={letter === char} onClick={() => { setLetter(char); setPage(0); }}>{char}</button>)}</nav>
-      <div className="catalog-word-grid">{visible.map(word => {
+      {filter !== 'deleted' ? <WordWall words={words} state={state} indexes={indexes} scopeKey={JSON.stringify([query,collection?.id,filter,sort,requestedWords])} layout={layout} sort={sort} request={wallRequest} refresh={refresh} notify={notify} startRecall={startRecall} onDetail={openDetail} onEdit={word => { setError(''); setEdit({...word,existing:true}); }} onRemove={word => mutate(word.deleted?'vocab_restore':'vocab_delete',{word:word.word})} /> : <><div className="catalog-word-grid">{visible.map(word => {
         const schedule = indexes.schedules.get(word.word);
         const names = topicNames(indexes.assignment.get(word.word)?.topics || []);
         return <article className="catalog-word" key={word.word}>
@@ -131,6 +134,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
       })}</div>
       {!words.length && <Empty title="没有匹配的词汇"><p>可以清除筛选，重新选择主题或来源。</p><button onClick={resetFilters}>清除筛选</button></Empty>}
       <CatalogPager page={currentPage} count={words.length} size={PAGE_SIZE} onChange={setPage} />
+      </>}
     </>}
     {edit && <Modal title={edit.existing ? "编辑单词" : "新增单词"} onClose={() => setEdit(null)}>
       <form onSubmit={async e => { e.preventDefault(); if (await mutate("vocab_upsert", { word: edit.word, meaning: edit.meaning, pos: edit.pos || "", note: edit.note || "" })) setEdit(null); }}>
@@ -159,5 +163,5 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
       <p className="catalog-compact-note">复习记录保留原始结果；自评记得不等同于已核验掌握。</p>
       {error && <p role="alert" className="error">{error}</p>}
     </Modal>}
-  </>;
+  </div>;
 }

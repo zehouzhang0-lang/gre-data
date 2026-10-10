@@ -4,7 +4,7 @@ import {save} from './api';
 const dateText = date => date ? `${Number(date.slice(5,7))}月${Number(date.slice(8,10))}日` : '待首轮';
 const resultText = { remembered:'记得 / 答案一致', partial:'不够准确', forgotten:'忘记 / 答案不一致', unknown:'答案待核对' };
 const questionTitle = q => `${q.unit.replace(/^test(\d+)_section(\d+)_(\w+)$/,'Test $1 · Section $2 · $3').replace(/^passage(\d+)$/,'Passage $1')} · 第 ${q.question} 题`;
-export default function ReviewDashboard({state,onWords,onQuestions,refresh}) {
+export default function ReviewDashboard({state,onWords,onQuestions,refresh,openWall}) {
   const data=state.spacedReview;
   const [kind,setKind]=useState('word'),[scope,setScope]=useState('due'),[search,setSearch]=useState(''),[detail,setDetail]=useState(null),[page,setPage]=useState(0);
   const [editing,setEditing]=useState(null),[meaning,setMeaning]=useState(''),[error,setError]=useState(''),[busy,setBusy]=useState(false);
@@ -28,7 +28,7 @@ export default function ReviewDashboard({state,onWords,onQuestions,refresh}) {
     return item.due_today?'今天':dateText(item.due_date);
   }
   return <>
-    <Header title="记忆与背诵" description={`${dateText(data.today)} · 先处理到期内容，再开始新的学习。`}/>
+    <Header title="记忆与背诵" description={`${dateText(data.today)} · 先处理到期内容，再开始新的学习。`}>{openWall && <button onClick={() => openWall({bucket:'due'})}>今日单词墙</button>}</Header>
     <div className="review-overview">
       <section><span>今日单词待复习</span><strong>{summary.word.remaining}<small>词</small></strong><p>{summary.word.overdue ? `含 ${summary.word.overdue} 词逾期` : '按每个词的复习表现安排'}</p><button className="primary" disabled={!dueWords.length} onClick={()=>startWords(dueWords.slice(0,10))}>复习单词{dueWords.length>0?` · ${Math.min(10,dueWords.length)} 词 →`:''}</button>{(summary.word.waiting>0||summary.word.blocked>0)&&<small>{summary.word.waiting>0&&`${summary.word.waiting} 词稍后再练　`}{summary.word.blocked>0&&`${summary.word.blocked} 词需先补释义`}</small>}</section>
       <section><span>今日题目待复习</span><strong>{summary.question.remaining}<small>题</small></strong><p>{summary.question.overdue?`含 ${summary.question.overdue} 题逾期`:'做过的题也会继续安排重做'}</p><button className="primary" disabled={!dueQuestions.length} onClick={()=>onQuestions(dueQuestions.slice(0,10))}>重做题目{dueQuestions.length>0?` · ${Math.min(10,dueQuestions.length)} 题 →`:''}</button>{summary.question.waiting>0&&<small>{summary.question.waiting} 题稍后再练</small>}</section>

@@ -11,6 +11,8 @@
 - `vocab_capture`：word、source（material/unit/question/type）、context（最多240字）。来自用户主动选词并右键收录；允许先无释义入库。统一大小写、边界标点、弯引号和连字符，不自动推断词元；最多5词短语、120字符。初次创建meaning/pos/note为空，状态未检验，附题目来源与短语境；既有词仅补充来源并恢复显示，不覆写词义、笔记、回忆、自评或掌握状态。同词同题同语境的captures去重；收录不计作答或复习，不自动进入有释义的翻卡队列。补释义仍用vocab_upsert，主题归属仍用word_topics。浏览器发现已存在的有效词时只提示，不追加重复操作。
 - `vocab_delete` / `vocab_restore`：word。仅控制平台展示，不删除旧词库与历史。
 - `vocab_recall`：旧模式保留word、answer原文、self_rating（remembered/partial/forgotten）、mode（recall/flashcard）、assessment=self_reported。新mode=multistage带session_id，只有本词各阶段均通过才结算，self_rating由服务端根据各阶段首次结果推导；同session_id+word只结算一次。跳过不记完成；不自动更新difficult/mastered、旧作业覆盖数或技巧等级。教练核对后须另写原子记录并注明事件ID，防止重复计数。
+- `vocab_quick_review`（2026-10-10 单词墙）：session_id 为 UUID；items 为 1–5000 个不重复的已有、有释义且未移除的词，各含 word 和 self_rating（remembered/partial/forgotten），assessment 固定 self_reported。一批一个原子事件，校验任意词失败则整批不保存。同一轮同一词的后续标记修正有效结果，不增加次数，保留该词本轮首次有效标记的时间；原始事件不改写。投影为 mode=quick_grid 的回忆，不实际补写 vocab_recall 文件。
+- `vocab_quick_undo`：target_id 只能引用 vocab_quick_review；撤销整次标记，通过追加事件恢复上一个有效版本和对应排期，不删除原始记录。重复撤销同一目标不重复扣减。新一轮明确由用户开始；浏览器按学习日保存当前轮次编号，跨日换新轮。布局偏好、勾选、翻面均不是学习证据。
 - `vocab_session`：session_id（UUID）、words（1–20个已有且有释义的词）、meaning_passes（1或2，默认2）。服务端保存本轮词形、词性、释义及认义选项快照，之后词条修改不改变这一轮答案。开轮不计复习完成。
 - `vocab_drill`：session_id、word、stage（meaning_1/meaning_2/cloze/spelling）、answer、result（correct/incorrect/revealed）、response_mode（choice/typing/self_check）。服务端核验本轮快照、阶段顺序和选项/拼写结果；没有足够互异释义选项时才用明确标记的自查，不对自由中文字符串机械判错。每次小练习追加记录，轮内错误穿插重练；小练习次数与完成轮次数分开。
 - `attempt` / `attempts_import`：教材material、单元unit、题号question共同定位，type（tc/se/rc/quant）、answer原文、duration_seconds（未知null）、note。批量导入使用items数组。

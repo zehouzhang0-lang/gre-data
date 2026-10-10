@@ -20,6 +20,8 @@ function App() {
     [recallWords, setRecallWords] = useState(null);
   const revision = useRef("");
   const [relationSearch, setRelationSearch] = useState("");
+  const [wallRequest, setWallRequest] = useState(null);
+  const openWall = (options = {}) => { setWallRequest({ ...options, id: crypto.randomUUID() }); setPage('vocab'); };
   const refreshQueue = useRef(null);
   if (!refreshQueue.current) refreshQueue.current = createRefreshQueue(async () => {
     const data = await request(`/api/state?revision=${revision.current}`);
@@ -83,6 +85,7 @@ function App() {
               aria-current={page === id ? "page" : undefined}
               onClick={() => {
                 setPage(id);
+                if (id === "vocab") setWallRequest(null);
                 if (id === "relations") setRelationSearch("");
                 if (id === "recall") setRecallWords(null);
               }}
@@ -127,7 +130,9 @@ function App() {
             {page === "library" && <Library {...props} />}{" "}
             {page === "vocab" && (
               <Vocabulary
+                key={wallRequest?.id || 'default-vocabulary'}
                 {...props}
+                wallRequest={wallRequest}
                 openRelations={(word = "") => { setRelationSearch(word); setPage("relations"); }}
                 startRecall={(words) => {
                   setRecallWords(words);
@@ -135,9 +140,9 @@ function App() {
                 }}
               />
             )}{" "}
-            {page === "relations" && <WordRelations {...props} initialSearch={relationSearch} back={() => setPage("vocab")} startRecall={(words) => { setRecallWords(words); setPage("recall"); }} />}
+            {page === "relations" && <WordRelations {...props} openWall={openWall} initialSearch={relationSearch} back={() => setPage("vocab")} startRecall={(words) => { setRecallWords(words); setPage("recall"); }} />}
             {page === "recall" && (
-              <Recall {...props} initialWords={recallWords} />
+              <Recall {...props} openWall={openWall} initialWords={recallWords} />
             )}{" "}
             {page === "history" && <History {...props} />}
           </>

@@ -5,7 +5,7 @@ import { save } from './api';
 const types = { synonym: '近义词', antonym: '反义词', lookalike: '形近词' };
 const blank = (type = 'synonym', words = []) => ({ id: crypto.randomUUID(), type, title: '', note: '', members: words.map(word => ({ word, usage: '', example: '' })) });
 
-export default function WordRelations({ state, refresh, notify, startRecall, initialSearch = '', back }) {
+export default function WordRelations({ state, refresh, notify, startRecall, initialSearch = '', back, openWall }) {
   const [search, setSearch] = useState(initialSearch), [topic, setTopic] = useState('all'), [tab, setTab] = useState(initialSearch ? 'synonym' : 'words');
   const [limit, setLimit] = useState(30), [removed, setRemoved] = useState(false), [edit, setEdit] = useState(null), [detail, setDetail] = useState(null);
   const [reveal, setReveal] = useState(true), [classify, setClassify] = useState(null), [manage, setManage] = useState(false), [topicDraft, setTopicDraft] = useState({ id: '', name: '' });
@@ -34,6 +34,7 @@ export default function WordRelations({ state, refresh, notify, startRecall, ini
   return <>
     <Header title="分类与关联" description="在语境中辨义，把容易混淆的词放在一起记。">
       <button onClick={back}>返回生词本</button>
+      {openWall && <button onClick={() => openWall(tab === 'words' ? {words:words.map(w=>w.word),title:'分类词表'} : {words:[...new Set(groups.flatMap(g=>g.members.map(m=>m.word)))],relation:tab,title:types[tab]})}>用单词墙查看</button>}
       <button disabled={!words.length} onClick={() => startRecall(words)}>背诵当前词表</button>
       <button className="primary" onClick={() => openEdit(blank(tab === 'words' ? 'synonym' : tab))}>新增词组</button>
     </Header>
@@ -69,7 +70,7 @@ export default function WordRelations({ state, refresh, notify, startRecall, ini
             <small>{types[g.type]}{g.source === 'coach_draft' ? ' · 待词典逐项核验' : g.source === 'user_edited' ? ' · 自己整理' : ' · 已查词典'}</small>
             <h2>{g.title}</h2><div className="relation-members">{g.members.map(m => <span key={m.word} className={!m.available ? 'muted' : ''}>{m.word}{!m.available && '（已移除）'}</span>)}</div>
             <p>{g.note || '补充用法区别，让对照更容易记住。'}</p>
-            <div className="relation-card-actions"><button onClick={() => { setDetail(g); setReveal(true); }}>查看区别</button><button onClick={() => { setDetail(g); setReveal(false); }}>对照记忆</button>
+            <div className="relation-card-actions">{openWall && !removed && <button onClick={() => openWall({groupId:g.id,relation:g.type})}>单词墙</button>}<button onClick={() => { setDetail(g); setReveal(true); }}>查看区别</button><button onClick={() => { setDetail(g); setReveal(false); }}>对照记忆</button>
               {removed ? <button disabled={busy} onClick={() => mutate('relation_restore',{id:g.id})}>恢复</button> : <button className="text-button" onClick={() => openEdit(g)}>编辑</button>}
             </div>
           </article>)}</div>

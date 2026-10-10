@@ -1,4 +1,5 @@
 // A transparent spaced-retrieval heuristic, not a fitted human forgetting curve.
+import { withQuickReviews } from '../shared/quick-review.mjs';
 export const REVIEW_INTERVALS = [1, 2, 4, 7, 15, 30, 60];
 const DAY = 86400000;
 const keyOf = q => JSON.stringify([q.material, q.unit, q.question]);
@@ -76,7 +77,7 @@ export function projectReview({vocabulary,legacyWords=[],legacyQuestions=[],even
     update(item,q.recorded_at,'unknown',today,timeZone,'legacy',q.record);
   }
   const keys=new Map(), completedRounds=new Set();
-  for(const event of events) {
+  for(const event of withQuickReviews(events)) {
     const p=event.payload;
     if(event.kind==='keys_import'||event.kind==='questions_import')for(const q of p.items)if(q.answer)keys.set(keyOf(q),q);
     if(event.kind==='vocab_recall') {

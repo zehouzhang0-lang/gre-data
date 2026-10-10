@@ -8,6 +8,7 @@ import { legacyWordReviews, projectReview } from "./spaced-review.mjs";
 import { readLegacyQuestions } from "./legacy-review.mjs";
 import { capturedWord } from "../shared/capture-word.mjs";
 import { WORD_STAGES, meaningChoices, drillResult, roundProgress, roundRating } from "../shared/word-session.mjs";
+import { QUICK_RATINGS, withQuickReviews } from "../shared/quick-review.mjs";
 
 export const normalizeWord = (value) =>
   value.trim().toLowerCase().replace(/\s+/g, " ");
@@ -18,6 +19,7 @@ const kinds = new Set([
   "vocab_delete",
   "vocab_restore",
   "vocab_recall",
+  "vocab_quick_review", "vocab_quick_undo",
   "vocab_session", "vocab_drill",
   "questions_import",
   "keys_import",
@@ -62,6 +64,16 @@ export function validate(kind, p) {
     throw new Error("不支持的操作");
   const relation = validateRelation(kind, p);
   if (relation) return relation;
+  if (kind === "vocab_quick_undo") return { target_id: uuid(p.target_id) };
+  if (kind === "vocab_quick_review") {
+    if (!Array.isArray(p.items) || p.items.length < 1 || p.items.length > 5000) throw new Error("一次标记 1–5000 个词");
+    const items = p.items.map(item => {
+      if (!item || !QUICK_RATINGS.includes(item.self_rating)) throw new Error("请选择三档记忆状态之一");
+      return { word: normalizeWord(text(item.word, "单词", 120)), self_rating: item.self_rating };
+    });
+    if (new Set(items.map(i => i.word)).size !== items.length) throw new Error("批量标记不能包含重复单词");
+    return { session_id: uuid(p.session_id), items, assessment: "self_reported" };
+  }
   if(kind === "vocab_session") {
     if(!Array.isArray(p.words)||p.words.length<1||p.words.length>20)throw new Error("每轮选择 1–20 个词");
     const words=p.words.map(w=>normalizeWord(text(w,"单词",120)));
@@ -264,6 +276,15 @@ export class Store {
     } catch (e) {
       if (e.code !== "ENOENT") throw e;
     }
+    if (kind === "vocab_quick_review") {
+      const state = await this.state();
+      const ready = new Set(state.vocabulary.filter(w => !w.deleted && w.meaning?.trim()).map(w => w.word));
+      if (p.items.some(i => !ready.has(i.word))) throw new Error("存在已移除、未知或缺释义的词；本批未保存，请刷新后重新选择");
+    }
+    if (kind === "vocab_quick_undo") {
+      const targetEvent = (await this.events()).find(e => e.id === p.target_id);
+      if (targetEvent?.kind !== "vocab_quick_review") throw new Error("只能撤销单词墙标记，不能撤销其他学习记录");
+    }
     if(kind === "vocab_session" || kind === "vocab_drill" || kind === "vocab_recall"&&p.mode === "multistage") {
       const events=await this.events(),sessions=events.filter(e=>e.kind==='vocab_session'),existing=sessions.find(e=>e.payload.session_id===p.session_id);
       if(kind === "vocab_session") {
@@ -407,7 +428,7 @@ export class Store {
     const questions = new Map(),
       keys = new Map(),
       attempts = [], reviews = [], vocabSessions = [], vocabDrills = [], sessionRecalls = [], recalledRounds = new Set();
-    for (const e of events) {
+    for (const e of withQuickReviews(events)) {
       const p = e.payload;
       if(e.kind==='vocab_session'&&!vocabSessions.some(s=>s.session_id===p.session_id))vocabSessions.push({...p,id:e.id,recorded_at:e.recorded_at});
       if(e.kind==='vocab_drill')vocabDrills.push({...p,id:e.id,recorded_at:e.recorded_at});
@@ -531,6 +552,7 @@ export class Store {
           stage:e.payload.stage,
           result:e.payload.result,
           self_rating:e.payload.self_rating,
+          target_id:e.payload.target_id,
           mode:e.payload.mode,
           assessment:e.payload.assessment,
         }))
