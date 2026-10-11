@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "f4348199-7bd3-4670-b6b8-14e57a206672",
+  "recorded_at": "2026-10-11T07:36:16.161Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "5a9f670b-5545-4021-93e3-eb477b5dc32e",
+    "input_hash": "5fe2151448f602e188e0d373601543ec1348c3291662c947cdb35a59cf00020a",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "DE",
+    "result": {
+      "question_translation": "从历史上看，土壤中氮的耗竭一直是农民面临的最_____问题之一：氮是一种必不可少的营养物质，却会很快从土壤中淋失；农民一直难以找到补充它的方法。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "capricious：反复无常的、任性的；此处指问题表现难以预料地变化。",
+          "translation": "反复无常的",
+          "reasoning": "排除。题干强调氮会“很快淋失”且农民“难以找到补充方法”，证据指向问题顽固、难解决，而非表现反复无常。"
+        },
+        {
+          "label": "B",
+          "meaning": "ubiquitous：无处不在的、普遍存在的；此处指这种问题非常常见。",
+          "translation": "无处不在的；普遍存在的",
+          "reasoning": "排除。即使问题可能普遍，题干决定性信息是长期难以补充氮，要求描述解决难度，不是分布范围。"
+        },
+        {
+          "label": "C",
+          "meaning": "worrisome：令人担忧的；此处指氮耗竭会引发担忧。",
+          "translation": "令人担忧的",
+          "reasoning": "排除。它可单独使句子大致通顺，但不能与E构成同义的完整句义；“令人担忧”不等于“难以解决”。"
+        },
+        {
+          "label": "D",
+          "meaning": "stubborn：顽固的、难以消除的；此处指问题长期持续且不易解决。",
+          "translation": "顽固的；难以解决的",
+          "reasoning": "保留。氮迅速淋失、农民长期挣扎于补充方法，直接支持问题持续且顽固。与E代入后句义等价。"
+        },
+        {
+          "label": "E",
+          "meaning": "intractable：棘手的、难以解决的；此处指农民难以找到补氮办法。",
+          "translation": "棘手的；难以解决的",
+          "reasoning": "保留。题干明确说农民“have struggled to find ways to replenish it”，即难以解决，直接支持E。与D均表达问题顽固、难解决。"
+        },
+        {
+          "label": "F",
+          "meaning": "unpredictable：不可预测的；此处指问题的发生或变化无法预料。",
+          "translation": "不可预测的",
+          "reasoning": "排除。题干没有给出问题发生或变化不可预测的证据，反而说明氮会很快淋失这一稳定机制。"
+        }
+      ],
+      "summary": "参考答案为D/E。你选C/E：E正确，但C“令人担忧”与E“难以解决”不能使完整句义等价；应选D/E。",
+      "evidence": "句内逻辑为：氮是必需营养物，却“quickly leached from soil”，且农民“have struggled to find ways to replenish it”。后半句决定性地说明该问题长期存在且难解决，支持stubborn与intractable。SE要求两项分别代入后全句等价：D/E均为“顽固、难解决”；C仅为“令人担忧”，强度和语义焦点均不同，故C/E不成立。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。仅从答案可见，需加强SE的“双句等价”复核：不能因某词单独能通顺就与另一词配对。",
+      "next_action": "下次SE先用题干证据写出预测义“长期、难解决”，再将两个候选词分别代回整句，问自己：两句是否仍表达同一性质？若一个是后果评价（令人担忧）、一个是解决难度（难解决），即排除。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
