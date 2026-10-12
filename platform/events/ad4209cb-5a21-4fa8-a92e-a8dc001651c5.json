@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "ad4209cb-5a21-4fa8-a92e-a8dc001651c5",
+  "recorded_at": "2026-10-11T08:59:37.164Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "74cc5bc3-e4c9-420a-a057-97d15e1a700b",
+    "input_hash": "559cc1a603c0e1ab3893b911273aa79510215b3675f780fd49c96456f7b9b0b7",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AB",
+    "result": {
+      "question_translation": "尽管承认近来的网络战争、电话黑客丑闻和身份盗窃报道，往往突出了“hacking（黑客行为/侵入）”一词的破坏性含义，Sue Halpern仍认为，“hacking”是一个如此_____的术语，以至于它的含义几乎总是由其语境决定。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "generic：通用的、宽泛的；此处指可用于多种不同情形、含义范围较宽。",
+          "translation": "一个通用的术语",
+          "reasoning": "参考答案指定A。后半句说其含义“几乎总是由语境决定”，支持该词不是固定指单一行为，而是宽泛地用于不同语境。"
+        },
+        {
+          "label": "B",
+          "meaning": "inclusive：包容性强的、涵盖范围广的；此处指能囊括多种活动或含义。",
+          "translation": "一个包容性强的术语",
+          "reasoning": "参考答案指定B。它与A都表达覆盖范围广，因此能解释为什么“hacking”的具体含义须由上下文确定；两项分别填入后均使全句成立，语义等价。"
+        },
+        {
+          "label": "C",
+          "meaning": "positive：积极的、正面的。",
+          "translation": "一个正面的术语",
+          "reasoning": "前文仅说近期报道突出其破坏性含义，不能推出该词本身固定为“正面”；且“正面”不能解释意义为何几乎总由语境决定。"
+        },
+        {
+          "label": "D",
+          "meaning": "subjective：主观的、取决于个人观点的。",
+          "translation": "一个主观的术语",
+          "reasoning": "“由语境决定”不等于“由个人主观看法决定”。D单独或与E配对都不能构成与另一项等价的完整句义。"
+        },
+        {
+          "label": "E",
+          "meaning": "affirmative：肯定的、赞同的、表示确认的。",
+          "translation": "一个肯定的术语",
+          "reasoning": "该词不表示“hacking”意义广泛或依赖语境，也不能与D构成同义的一对；因此不能支持所选D/E。"
+        },
+        {
+          "label": "F",
+          "meaning": "technical：技术性的、专业术语性的。",
+          "translation": "一个技术性的术语",
+          "reasoning": "即使“hacking”可用于技术领域，“技术性”也不必然意味着其含义随语境变化，缺少决定性支持。"
+        }
+      ],
+      "summary": "按提供的参考答案，正确配对为A/B：两词都指范围宽、可涵盖多种情形，故具体含义依赖语境。你的D/E中E与该逻辑无关。",
+      "evidence": "决定性文本是“its meaning nearly always derives from its context（其含义几乎总是由语境决定）”。这要求空格词表达术语含义覆盖面宽而非固定单义。A generic（通用、宽泛）与B inclusive（涵盖广）分别满足，并能形成两句等价的完整句义。D subjective（主观）把“语境”误作“个人观点”；E affirmative（肯定的）既不表示宽泛，也不能与D等价。前半句“destructive connotation”只是说明媒体突出的一种负面含义，进一步表明它并非该词唯一含义。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。仅能从答案判断：D/E未执行SE的“双项均成立且全句等价”检验；尤其E不能解释“意义由语境决定”。",
+      "next_action": "下次SE先圈定结果线索“meaning…derives from its context”，预测“宽泛/涵盖多义”；再把每个候选分别代回完整句。只有两项都满足预测、且代回后的全句意思相同，才提交配对。",
+      "technique_ids": [
+        "v_se_dual_equivalence",
+        "v_tc_logic_map"
+      ],
+      "assessment": "needs_review"
+    }
+  }
+}

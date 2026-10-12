@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "9283febf-159c-44de-aca0-5ce53f872801",
+  "recorded_at": "2026-10-11T08:11:24.549Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "fdd6f9d9-f45d-4b56-9c2f-bd21e69598a0",
+    "input_hash": "df99d70e82c143e39352dcf4709112af24d255b86be009d6c934fb3b0e79a26e",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AD",
+    "result": {
+      "question_translation": "尽管她的诗歌倾向于过分_____，但并非只由虔诚的情感构成：它常常激发想象力，并提供生动的娱乐。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "preachy：说教味浓的；在此指诗歌过于宣讲道德或宗教训诫。",
+          "translation": "尽管她的诗歌倾向于过分说教，……",
+          "reasoning": "正确。后文“并非只由虔诚的情感构成”限定了空格应与宗教/道德说教相关；A与D均符合。"
+        },
+        {
+          "label": "B",
+          "meaning": "querulous：爱抱怨的、牢骚满腹的。",
+          "translation": "尽管她的诗歌倾向于过分抱怨，……",
+          "reasoning": "排除。抱怨与“虔诚的情感”没有决定性的语义对应，且不能与D构成等价的整句含义。"
+        },
+        {
+          "label": "C",
+          "meaning": "insincere：不真诚的。",
+          "translation": "尽管她的诗歌倾向于过分不真诚，……",
+          "reasoning": "排除。句子强调的是诗歌的虔诚/说教色彩，而非真诚程度；也找不到另一项可使全句等价。"
+        },
+        {
+          "label": "D",
+          "meaning": "sanctimonious：假装虔诚而道貌岸然的；在此指带有过分宗教/道德说教姿态。",
+          "translation": "尽管她的诗歌倾向于过分道貌岸然（佯装虔诚），……",
+          "reasoning": "正确。该词直接呼应“pious sentiments（虔诚的情感）”。与A分别代入后，均表达“诗歌虽有过分说教/虔诚姿态，但也富于想象和娱乐性”，全句等价。"
+        },
+        {
+          "label": "E",
+          "meaning": "plaintive：哀伤的、悲诉般的。",
+          "translation": "尽管她的诗歌倾向于过分哀伤，……",
+          "reasoning": "排除。哀伤不等于抱怨，更不指向“虔诚的情感”；与B不能使整句含义等价。"
+        },
+        {
+          "label": "F",
+          "meaning": "disingenuous：不坦率的、虚伪而故作天真的。",
+          "translation": "尽管她的诗歌倾向于过分不坦率（虚伪），……",
+          "reasoning": "排除。与“虔诚的情感”的语义联系不足，且没有与之等价的配对项。"
+        }
+      ],
+      "summary": "参考答案为A/D。空格应指“过分说教或佯装虔诚”，与后文“虔诚的情感”呼应；所选B/E均指抱怨或哀伤，既不受该证据支持，也不能构成两项全句等价。",
+      "evidence": "句内逻辑：让步结构“Despite…does not consist solely…”表明前半承认诗有某种明显倾向，后半补充其并不只有“pious sentiments（虔诚的情感）”，而且能激发想象、带来娱乐。故空格语义应为宗教/道德说教色彩。A（preachy）与D（sanctimonious）分别代入，均保留这一核心让步关系；B（querulous，抱怨）与E（plaintive，哀伤）代入则转为情绪抱怨/悲伤，且两句并不等价。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的答案偏离是：把B/E当作SE配对，但两词仅都可带负面情绪，不能分别使句子与A/D所表达的“过度说教/虔诚姿态”含义等价。",
+      "next_action": "下次SE先圈定决定性锚点“pious sentiments”，预测空格为“宗教或道德说教过强”；再逐一代入候选。最终只选两项在语境、语气和完整句意上可互换的词，不以“都属负面词”配对。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
