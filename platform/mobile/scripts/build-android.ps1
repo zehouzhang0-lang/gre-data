@@ -33,6 +33,10 @@ function Get-VerifiedDownload([string]$Url, [string]$Destination, [string]$Sha25
 
 try {
     Set-Location -LiteralPath $mobileRoot
+    $packageVersion = [string](Get-Content -LiteralPath 'package.json' -Raw | ConvertFrom-Json).version
+    if ($packageVersion -notmatch '^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$') {
+        throw 'package.json must have a valid version for the APK filename.'
+    }
     if (-not $JavaHome -or (-not $PSBoundParameters.ContainsKey('JavaHome') -and -not (Test-Path -LiteralPath (Join-Path $JavaHome 'bin/jlink.exe')))) {
         $javaCommand = Get-Command java.exe -ErrorAction Stop
         $JavaHome = Split-Path -Parent (Split-Path -Parent $javaCommand.Source)
@@ -110,7 +114,7 @@ try {
     } finally { Pop-Location }
     $releaseDirectory = Join-Path $mobileRoot 'releases'
     New-Item -ItemType Directory -Path $releaseDirectory -Force | Out-Null
-    $apk = Join-Path $releaseDirectory 'GRE-vocabulary-0.1.0-debug.apk'
+    $apk = Join-Path $releaseDirectory "GRE-vocabulary-$packageVersion-debug.apk"
     Copy-Item -LiteralPath 'android/app/build/outputs/apk/debug/app-debug.apk' -Destination $apk
     $apksigner = Join-Path $SdkRoot 'build-tools/36.0.0/apksigner.bat'
     & $apksigner verify --verbose $apk

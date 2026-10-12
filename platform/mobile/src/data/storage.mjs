@@ -1,12 +1,17 @@
 import { MAX_FILE_BYTES } from './model.mjs';
+import { Capacitor, registerPlugin } from '@capacitor/core';
 
-let bridgePromise;
-async function bridge() {
-  if (!bridgePromise) bridgePromise = import('@capacitor/core').then(({ Capacitor, registerPlugin }) => Capacitor.isNativePlatform() ? registerPlugin('VocabStorage') : null);
-  return bridgePromise;
+let nativeBridge;
+function bridge() {
+  if (!Capacitor.isNativePlatform()) return null;
+  // A Capacitor plugin is a Proxy that also exposes `then`. Returning it from
+  // an async function makes Promise resolution call a nonexistent native then()
+  // and never settle. Keep the proxy synchronous; await only its method calls.
+  if (!nativeBridge) nativeBridge = registerPlugin('VocabStorage');
+  return nativeBridge;
 }
 export async function createStorage() {
-  const native = await bridge();
+  const native = bridge();
   if (native) return { kind: 'sqlite', read: async () => (await native.read()).value, write: async value => { await native.write({ value }); } };
   if (!globalThis.indexedDB) throw Error('本机存储不可用，无法安全保存学习记录');
   const database = await new Promise((resolve, reject) => {
@@ -29,7 +34,7 @@ export async function createStorage() {
   return { kind: 'indexeddb', read: () => transaction('readonly', store => store.get('vocabulary')), write: value => transaction('readwrite', store => store.put(value, 'vocabulary')), close: () => database.close() };
 }
 export async function exportFile(name, content) {
-  const native = await bridge();
+  const native = bridge();
   if (native) return native.exportFile({ name, content });
   const blob = new Blob([content], { type: 'application/json;charset=utf-8' }), uri = URL.createObjectURL(blob), anchor = document.createElement('a');
   anchor.href = uri; anchor.download = name; anchor.click();
@@ -37,7 +42,7 @@ export async function exportFile(name, content) {
   return { name, downloadRequested: true };
 }
 export async function importFile() {
-  const native = await bridge();
+  const native = bridge();
   if (native) return native.importFile();
   return new Promise((resolve, reject) => {
     const input = document.createElement('input');

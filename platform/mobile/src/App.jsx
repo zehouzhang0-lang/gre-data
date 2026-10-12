@@ -8,7 +8,7 @@ import Settings from './components/Settings';
 import WordSession from './components/WordSession';
 
 export default function App() {
-  const { state, repo, refresh, error } = useRepository();
+  const { state, repo, refresh, error, slow } = useRepository();
   const [tab, setTab] = useState('wall'), [session, setSession] = useState(null), [selecting, setSelecting] = useState(false);
   const [busy, setBusy] = useState(false), [toast, setToast] = useState(null), [version, setVersion] = useState(0);
   const guard = useRef(false), toastTimer = useRef(null);
@@ -34,7 +34,9 @@ export default function App() {
   const resume = round => { setSession({ round, words: [], key: round.session_id }); setTab('review'); };
   const restored = () => { setVersion(v => v + 1); setSession(null); setSelecting(false); setTab('wall'); };
   if (error && !state) return <div className="startup"><h1>本地词库暂时无法读取</h1><p role="alert">{error}</p><p>没有清除任何数据。请重新打开应用后重试。</p><button onClick={() => location.reload()}>重新读取</button></div>;
-  if (!state || !repo) return <div className="startup" role="status"><h1>正在打开词库</h1><p>首次打开会将词库保存到手机。</p></div>;
+  if (!state || !repo) return slow
+    ? <div className="startup" data-testid="startup-slow"><h1>词库打开耗时较长</h1><p role="status">已经等待超过 15 秒，初始化尚未完成。</p><p>不会清除或重置已有数据。你可以继续等待，或重新读取。</p><button onClick={() => location.reload()}>重新读取</button></div>
+    : <div className="startup" role="status"><h1>正在打开词库</h1><p>首次打开会将词库保存到手机。</p></div>;
   return <div className="app-shell" data-version={version}>
     <WordWall key={`wall-${version}`} state={state} repo={repo} busy={busy} active={tab === 'wall' && !session} mutate={mutate} notify={notify} onSelectionMode={setSelecting} onStartReview={start}/>
     <Review key={`review-${version}`} state={state} active={tab === 'review' && !session} onStart={start} onResume={resume} onWall={() => setTab('wall')}/>

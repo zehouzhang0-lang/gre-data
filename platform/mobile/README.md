@@ -46,13 +46,19 @@ Android SDK、JDK 与 Gradle 的具体要求以锁定的 Capacitor 版本和构�
 
 将生成的 APK 传到安卓手机并由系统安装器打开；系统可能要求给当前文件管理器授予“安装未知应用”权限。只对本人确认的安装包执行此操作，不关闭系统整体安全防护。
 
-安装包输出为 `platform/mobile/releases/GRE-vocabulary-0.1.0-debug.apk`。系统最低 Android 7.0（API 24），同时需要 Android System WebView 111 或更高版本；老系统若无法更新 WebView，可能无法使用。应用不申请联网或共享存储权限，文件导入导出通过 Android 系统文件选择器完成。
+安装包按 `package.json` 的版本输出为 `platform/mobile/releases/GRE-vocabulary-<版本>-debug.apk`，当前为 `0.1.1`。系统最低 Android 7.0（API 24），同时需要 Android System WebView 111 或更高版本；老系统若无法更新 WebView，可能无法使用。应用不申请联网或共享存储权限，文件导入导出通过 Android 系统文件选择器完成。
 
 开发预览 APK 与正式发布签名需要区分。后续覆盖升级必须使用相同包名和签名，版本号需递增；签名不一致时不要直接卸载旧版，先导出备份。签名密钥、SDK、Gradle 缓存、生成 APK 和含个人数据的种子均不提交 Git。
 
 本机预览签名保存在 `%LOCALAPPDATA%/GREVocabBuild/android-private/debug.keystore`，应妥善保留以支持后续覆盖安装，不要公开或提交。JSON 备份没有加密，包含个人词库和学习记录，只存放到自己信任的位置。
 
 首版已完成浏览器触控模拟、数据回归、Android 编译和静态检查；当前没有连接安卓设备，原生 SQLite 与系统文件选择器的设备端测试仍待真机执行。建议首次安装后开启飞行模式，完成一次标记、退出重开和外部备份，确认手机上的保存链路。
+
+### 0.1.1 启动修复
+
+修复 0.1.0 在 Android 上停留“正在打开词库”的确定性缺陷：异步函数直接返回 Capacitor 插件 Proxy，触发 Promise 的 thenable 处理，错误调用不存在的 `VocabStorage.then()` 并永久等待。改为同步保留插件对象，只等待实际读写方法。回归测试使用真实 Capacitor Proxy 加模拟原生传输，覆盖首次保存、重开保留、文件调用和异常；它不替代 Android SQLite / 文件选择器的真机验证。
+
+新增 15 秒启动耗时提示，不清空存储、不并发重开数据库；迟到成功仍进入首页。0.1.0 用户直接安装同签名 0.1.1 覆盖升级，不必卸载或清除数据。
 
 ## 模块边界
 
