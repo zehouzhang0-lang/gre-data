@@ -1,0 +1,25 @@
+/* Accepted mobile concepts: white canvas, dense word wall, quiet teal controls.
+ * Content: rounded Nunito. Chrome: system Chinese. No checkbox on cards. */
+:root {
+  --canvas: #ffffff;
+  --ink: #20252b;
+  --muted: #73818b;
+  --accent: #147d72;
+  --accent-soft: #edf7f4;
+  --line: #dce5e6;
+  --tile: #f6f8f8;
+  --remembered: #edf7f2;
+  --partial: #fff8e9;
+  --forgotten: #fcefeb;
+  --danger: #8e4433;
+  --radius: 7px;
+  --space: 8px;
+  --word-font: 'Nunito', 'Trebuchet MS', sans-serif;
+  --ui-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+  --columns: 4;
+  --card-height: 52px;
+  --card-font: 14.5px;
+  --grid-gap: 5px;
+  --safe-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+  --safe-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+}

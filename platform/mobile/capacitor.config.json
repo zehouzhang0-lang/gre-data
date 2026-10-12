@@ -1,0 +1,22 @@
+{
+  "appId": "cn.grestudy.vocabulary",
+  "appName": "GRE词库",
+  "webDir": "dist",
+  "loggingBehavior": "none",
+  "server": {
+    "hostname": "localhost",
+    "androidScheme": "https",
+    "cleartext": false,
+    "allowNavigation": [],
+    "errorPath": "webview-error.html"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "minWebViewVersion": 111,
+    "webContentsDebuggingEnabled": false,
+    "backgroundColor": "#ffffff"
+  },
+  "plugins": {
+    "SystemBars": { "style": "LIGHT", "insetsHandling": "css", "initialViewportFitValueHint": "cover" }
+  }
+}

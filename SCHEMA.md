@@ -35,6 +35,21 @@
 
 初始source区分`dictionary_checked`（sources列出的词典已核对）、`coach_draft`（教练整理、待逐项核验）；用户修改统一标记`user_edited`，不继承旧核验状态。分类规则只检索现有释义，不调用AI，也不自动补写空缺词义。
 
+## 独立 Android 离线词库（2026-10-12）
+
+手机端是独立、无账户、无后台服务的个人词库。首版不与 Git 或电脑自动同步；词库内容导入和完整备份恢复是两个不同操作。源码位于 `platform/mobile/`，不改变桌面鼠标键位或桌面事件文件。
+
+- Android 的 `VocabStorage` 原生插件以 SQLite 事务保存一份版本化文档；浏览器开发验收使用 IndexedDB 事务。学习数据不放 `localStorage`，不向真实 `platform/events/` 写手机测试记录。
+- 本地外层格式为 `{storage_version: 1, current, recovery}`。`recovery` 为最近一次完整恢复前的 `current`，只有一层，绝不递归包含其他恢复快照。恢复时新数据和恢复前快照在同一事务落盘；失败不更新内存状态和页面投影。撤回恢复交换两份独立数据。
+- `current` 为 `{schema_version: 1, dataset_id, time_zone, baseline, events, quickRound, settings}`。`dataset_id` 是 UUID；`time_zone` 沿用导出的学习时区；`quickRound` 保存 `{day, id}`，跨学习日首次标记自动换轮。显示密度、筛选等 `settings` 不是学习证据。
+- `baseline.vocabulary` 只包含原始词义、词性、备注、来源、旧状态等内容，`recalls` 必须为空。`baseline.legacyWords` 保留已去重的旧复习次数、最后已知日期和记录来源。`baseline.relations` 是初始主题与词组；主题规则在电脑导出时变成明确词表，手机不执行导入文件中的正则表达式。
+- `events` 保留原始 `{schema_version,id,recorded_at,kind,payload}`，只允许 `vocab_*`、`topic_*`、`word_topics`、`relation_*` 中已定义的词汇事件；不含刷题作答、AI分析、PDF或凭据。事件ID、轮次快照和原始作答均保留。使用现有 `quick-review`、`word-session`、`spaced-review` 和关系投影逻辑，同轮改标、撤销、跨日排期和多阶段结算不另建重复计数规则。自评仍不是教练核验或长期掌握。
+- `platform/mobile/scripts/export-vocabulary.mjs` 读取事件叠加前的词库基线和独立原始词汇事件；生成忽略的 `platform/mobile/public/vocabulary-seed.json` 供个人 APK 首次安装。导出时校验手机投影与桌面逐词释义/回忆、完整词汇排期、主题归属、词组和复习轮次一致。不得把 `/api/state.events` 摘要当完整原始备份，也不得把已累计的词条投影与同一批历史事件重复叠加。
+- 首装词库包为 `{format:'gre-vocabulary-seed',version:1,created_at,checksum,payload}`；完整备份使用 `format:'gre-vocabulary-backup'`，其余相同。`payload` 是完整 `current`，不含递归恢复历史。`checksum` 为 `{algorithm:'SHA-256',value}`，校验对象为 `JSON.stringify(payload)` 的 UTF-8 字节。SHA-256 用于发现损坏，不是来源认证。单文件最大20 MB，导入前校验大小、版本、校验和、字段、唯一ID及引用和学习步骤一致性；任何校验失败不写数据。
+- “导入新增词”可接受这两类包，只合并当前不存在的词条和无冲突新分类/关系；既有词义、移除状态、手机全部学习事件、旧复习基线和未完成轮次保持不动。预览展示新增/已有词数和跳过的内容冲突。导入文件中的复习历史不会叠加到手机计数；重复导入不增加词数或复习次数。
+- “完整恢复”只接受完整备份，并由界面明确二次确认替换全部手机数据；恢复后ID、原始事件、设置和未完成轮次原样保留。系统文件选择器把备份保存到应用以外位置，应用内恢复前快照不等于外部备份。导出、导入或系统选择器取消不算学习完成。
+- 已有 SQLite 数据优先于新版 APK 内置词库；同包名、同签名覆盖安装不自动重置数据。未知更高版本拒绝读取/覆盖，保留原文等待兼容升级；不以空白库替代损坏数据。卸载应用会危及本地数据，必须先导出可验证的外部完整备份。APK 签名密钥及个人预置数据不提交仓库。
+
 ## 核心原则
 
 ### 间隔复习投影（2026-09-15）
