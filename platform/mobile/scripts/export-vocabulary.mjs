@@ -14,6 +14,8 @@ const defaultRoot = fileURLToPath(new URL('../../..', import.meta.url));
 export async function exportVocabulary(root = defaultRoot, now = new Date()) {
   const store = new Store(root), baseStore = new Store(root);
   baseStore.events = async () => [];
+  const baseJson=baseStore.json.bind(baseStore);
+  baseStore.json=(name,fallback)=>name==='vocab/standardized.json'?Promise.resolve({items:[]}):baseJson(name,fallback);
   const [live, baseline, rawEvents, relationSeed, homework, lexicon, difficult, mastered] = await Promise.all([
     store.state(now), baseStore.state(now), store.events(), store.json('vocab/relations.json', { topics: [], groups: [] }),
     store.json('vocab/homework/20260910_2014_all_vocab_review.json', { items: [] }), store.json('vocab/lexicon.json', { items: [] }),
@@ -26,6 +28,7 @@ export async function exportVocabulary(root = defaultRoot, now = new Date()) {
   const data = validateData({
     schema_version: 1, dataset_id: crypto.randomUUID(), time_zone: live.spacedReview.time_zone,
     baseline: {
+      definitions: (await store.json('vocab/standardized.json',{items:[]})).items,
       vocabulary: baseline.vocabulary.map(cleanWord),
       legacyWords: legacyWordReviews({ homework, lexicon, difficult, mastered }).filter(w => known.has(w.word)),
       relations: {

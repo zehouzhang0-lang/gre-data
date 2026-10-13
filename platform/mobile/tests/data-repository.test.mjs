@@ -20,6 +20,20 @@ async function setup(seed = fixture()) {
 }
 const item = (state, word = 'lucid') => state.spacedReview.items.find(i => i.word === word);
 const word = (state, name = 'lucid') => state.vocabulary.find(w => w.word === name);
+test('structured definitions survive mobile storage and do not overwrite later edits', async () => {
+  const seed = fixture();
+  seed.baseline.definitions = [{ word: 'lucid', input: {pos:'adj.',meaning:'清晰的'}, senses:[{pos:'adj.',meanings:['清晰的','神志清醒的']}], status:'dictionary_checked', sources:[] }];
+  const {repo, storage} = await setup(validateData(seed));
+  assert.equal(word(await repo.getState()).meaning,'adj.清晰的；神志清醒的');
+  assert.equal(word(await repo.getState()).recalls.length,0);
+  const reopened = await openRepository({storage,seed:emptyData()});
+  assert.equal(word(await reopened.getState()).senses[0].meanings.length,2);
+  const revised = structuredClone(seed);
+  revised.baseline.vocabulary[0].meaning='用户修订的释义';
+  const result = word(projectState(validateData(revised)));
+  assert.equal(result.meaning,'用户修订的释义');
+  assert.equal(result.definition_status,'changed');
+});
 async function reseal(packet) { packet.checksum.value = await digest(packet.payload); return JSON.stringify(packet); }
 
 test('first open stores a raw baseline, not phantom recalls; reopening ignores a changed seed', async () => {

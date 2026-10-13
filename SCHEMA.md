@@ -509,3 +509,14 @@ evidence_records:
 
 ## AI讲解翻译扩展（2026-10-01）
 新单题讲解result另含question_translation（完整题干中文翻译）和option_explanations数组，每项含label/meaning/translation/reasoning，按原顺序覆盖所有选项。最近练习汇总没有原题时为empty string和空数组。旧事件可缺省这两个字段，读取时不补造；用户重新分析生成独立新事件。
+
+## 词典式释义（2026-10-13）
+
+- `vocab/standardized.json`：`schema_version: 1`，`items` 覆盖有效合并词库（含已移除记录）。每项包含 `word`、原始输入指纹 `input: {pos, meaning}`、`senses: [{pos, meanings: []}]`、`status`、`sources`、`note`、`normalized_at`、`content_type`、`formatted`。
+- 一个词性一个分组，每组按核心义到扩展义排列，不固定义项数量。同一义项的近义中文可以用逗号连接，独立义项用数组分别保存。列表以分号分隔、词性换行；详情按词性分组、义项编号。
+- `status`：`dictionary_checked` 本次查证；`historical_checked` 沿用既有词典核验；`coach_draft` 待核验；`spelling_pending` 待确认拼写；`spelling_redirect` 截断拼写归入正确词条。运行时出现 `changed` 表示用户修改释义后待重新整理。
+- `sources` 保存词典链接、发布者、核验日期及已有证据；不把历史核验改记为本次查证。`note` 保存词义辨析、语域或拼写说明，独立于核心义项。
+- `vocab/definition-edits.json` 保存人工编订义项，`vocab/definition-checks.json` 保存本次补充核验；在仓库根目录运行 `node platform/scripts/standardize-vocabulary.mjs` 重建规范层并校验。
+- 服务端在原始事件合并后应用规范层，输入不匹配时保留后续用户修订。此层不修改回忆、掌握状态、复习事件或旧词库原文。
+- 手机数据版本 1 增加可选 `baseline.definitions`，字段按上述规范校验；缺省为空，兼容旧数据。手机端同样在事件合并后应用，新增词导入时携带对应规范释义。
+- 主题仍由 `vocab/relations.json` 与分类事件共同投影；词性、核验状态、单词/短语、义项数为独立筛选维度，不混入主题标签。

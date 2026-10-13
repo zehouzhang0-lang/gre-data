@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Sheet } from './Primitives';
 import { ratingLabels, wordRating, sourceLabel } from '../model.mjs';
+import { definitionStatusLabels } from '../../../shared/standard-definition.mjs';
 
 export default function WordDetail({ word, state, busy, onSave, onRate, onClose }) {
   const [editing, setEditing] = useState(false), [draft, setDraft] = useState({ pos: word.pos || '', meaning: word.meaning || '', note: word.note || '' });
@@ -14,7 +15,7 @@ export default function WordDetail({ word, state, busy, onSave, onRate, onClose 
       <p className="hint">编辑后标为用户编辑、待核验；不改写过去轮次的答案快照。</p>
       <div className="form-actions"><button disabled={busy} type="button" onClick={() => setEditing(false)}>取消编辑</button><button disabled={busy} className="primary">保存词条</button></div>
     </form> : <>
-      <div className="word-definition"><small>{word.pos || '词性未记录'}</small><p>{word.meaning || '待补释义'}</p>{word.note && <p className="muted">{word.note}</p>}</div>
+      <div className="word-definition">{word.senses?.length ? word.senses.map(group=><section key={group.pos}><small>{group.pos}</small><ol>{group.meanings.map((meaning,i)=><li key={i}>{meaning}</li>)}</ol></section>) : <><small>{word.pos || '词性未记录'}</small><p>{word.meaning || '待补释义'}</p></>}{word.definition_status&&<small>{definitionStatusLabels[word.definition_status]}</small>}{word.note && <p className="muted">{word.note}</p>}</div>
       <div className="detail-meta"><span>{ratingLabels[wordRating(word)] || '未标记'}</span><span>{schedule?.review_count ?? word.review_count ?? 0} 次复习</span></div>
       <button className="wide-button" onClick={() => setEditing(true)}>编辑词条</button>
       <fieldset className="filter-section"><legend>按刚才的回忆标记</legend><div className="detail-ratings">{Object.entries(ratingLabels).map(([id, label]) => <button disabled={busy || !word.meaning?.trim()} key={id} className={`rating-${id}`} onClick={() => onRate(id, [word.word])}>{label}</button>)}</div><p className="hint">自评影响复习排期，不等于核验掌握。</p></fieldset>

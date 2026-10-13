@@ -4,6 +4,7 @@ import { save } from "./api";
 import { CatalogSearch, CatalogPager, CollectionCard, materialLabel, sourceLabel } from "./CatalogParts";
 import WordWall from './WordWall';
 import { readPreference, writePreference } from './word-wall-model.mjs';
+import { definitionStatusLabels, partOfSpeechLabels, matchesDefinitionFilters } from '../../shared/standard-definition.mjs';
 
 const PAGE_SIZE = 18;
 const topicKey = id => `topic:${id}`;
@@ -40,6 +41,8 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
   const [requestedWords, setRequestedWords] = useState(wallRequest?.words || null);
   const [letter, setLetter] = useState("");
   const [sort, setSort] = useState("alphabet");
+  const [definitionFilters, setDefinitionFilters] = useState({pos:'',status:'',type:'',senses:''});
+  const setDefinitionFilter=(key,value)=>{setDefinitionFilters(f=>({...f,[key]:value}));setPage(0);};
   const [page, setPage] = useState(0);
   const [edit, setEdit] = useState(null);
   const [detailWord, setDetailWord] = useState(null);
@@ -61,7 +64,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
     return true;
   }
   const buckets = [["all", "全部"], ["due", "到期复习"], ["difficult", "容易忘"], ["pending", "待补释义"], ["deleted", "已移除"]];
-  const base = state.vocabulary.filter(w => matchesBucket(w, filter));
+  const base = state.vocabulary.filter(w => matchesBucket(w, filter) && matchesDefinitionFilters(w,definitionFilters));
   const collections = (view === "sources" ? indexes.sources : [...indexes.topics, { id: "unclassified", name: "待分类" }]).map(group => {
     const id = view === "sources" ? group.id : topicKey(group.id);
     const words = base.filter(w => view === "sources" ? indexes.sourceKeys.get(w.word)?.has(id) : group.id === "unclassified" ? !indexes.assignment.get(w.word)?.topics.length : indexes.assignment.get(w.word)?.topics.includes(group.id));
@@ -86,9 +89,9 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
   });
   const currentPage = Math.min(page, Math.max(0, Math.ceil(words.length / PAGE_SIZE) - 1));
   const visible = words.slice(currentPage * PAGE_SIZE, (currentPage + 1) * PAGE_SIZE);
-  const listing = view === "all" || !!collection || !!query || filter === "deleted";
+  const listing = view === "all" || !!collection || !!query || filter === "deleted" || Object.values(definitionFilters).some(Boolean);
   function resetView(next) { setView(next); setCollection(null); setSearch(""); setLetter(""); setPage(0); }
-  function resetFilters() { setFilter("all"); setCollection(null); setSearch(""); setLetter(""); setPage(0); }
+  function resetFilters() { setFilter("all"); setCollection(null); setSearch(""); setLetter(""); setPage(0); setDefinitionFilters({pos:'',status:'',type:'',senses:''}); }
   async function mutate(kind, payload) {
     setBusy(true); setError("");
     try { await save(kind, payload); await refresh(); notify("生词本已保存"); return true; }
@@ -112,6 +115,13 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
     <nav className="catalog-filters" aria-label="词汇筛选">
       {buckets.map(([id, label]) => <button key={id} aria-pressed={filter === id} onClick={() => { setFilter(id); setPage(0); if (id === "deleted") setCollection(null); }}>{label}<small>{state.vocabulary.filter(w => matchesBucket(w, id)).length}</small></button>)}
     </nav>
+    <div className="definition-filters">
+      <select aria-label="按词性筛选" value={definitionFilters.pos} onChange={e=>setDefinitionFilter('pos',e.target.value)}><option value="">全部词性</option>{Object.entries(partOfSpeechLabels).map(([id,label])=><option key={id} value={id}>{label} {id}</option>)}</select>
+      <select aria-label="按释义核验筛选" value={definitionFilters.status} onChange={e=>setDefinitionFilter('status',e.target.value)}><option value="">全部核验状态</option>{Object.entries(definitionStatusLabels).map(([id,label])=><option key={id} value={id}>{label}</option>)}</select>
+      <select aria-label="按词条类型筛选" value={definitionFilters.type} onChange={e=>setDefinitionFilter('type',e.target.value)}><option value="">单词与短语</option><option value="word">单词</option><option value="phrase">短语</option></select>
+      <select aria-label="按义项数量筛选" value={definitionFilters.senses} onChange={e=>setDefinitionFilter('senses',e.target.value)}><option value="">全部义项</option><option value="single">单义项</option><option value="multiple">多义项</option></select>
+      {Object.values(definitionFilters).some(Boolean)&&<button onClick={resetFilters}>清除筛选</button>}
+    </div>
     {error && <p role="alert" className="error">{error}</p>}
     {requestedWords && <p>{wallRequest?.title || '从其他入口选定的词表'} · {requestedWords.length} 词　<button onClick={() => setRequestedWords(null)}>查看全部词库</button></p>}
     {!listing ? <>
@@ -123,7 +133,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
         {collection && <><button onClick={() => { setCollection(null); setLetter(""); setPage(0); }}>← 返回{view === "sources" ? "来源" : "主题"}目录</button><span aria-hidden="true">/</span></>}
         <strong>{collection?.name || (query ? "搜索结果" : buckets.find(([id]) => id === filter)?.[1] + "词汇")}</strong><small>{words.length} 项</small>
       </div>
-      {filter !== 'deleted' ? <WordWall words={words} state={state} indexes={indexes} scopeKey={JSON.stringify([query,collection?.id,filter,sort,requestedWords])} layout={layout} sort={sort} request={wallRequest} refresh={refresh} notify={notify} startRecall={startRecall} onDetail={openDetail} onEdit={word => { setError(''); setEdit({...word,existing:true}); }} onRemove={word => mutate(word.deleted?'vocab_restore':'vocab_delete',{word:word.word})} /> : <><div className="catalog-word-grid">{visible.map(word => {
+      {filter !== 'deleted' ? <WordWall words={words} state={state} indexes={indexes} scopeKey={JSON.stringify([query,collection?.id,filter,sort,requestedWords,definitionFilters])} layout={layout} sort={sort} request={wallRequest} refresh={refresh} notify={notify} startRecall={startRecall} onDetail={openDetail} onEdit={word => { setError(''); setEdit({...word,existing:true}); }} onRemove={word => mutate(word.deleted?'vocab_restore':'vocab_delete',{word:word.word})} /> : <><div className="catalog-word-grid">{visible.map(word => {
         const schedule = indexes.schedules.get(word.word);
         const names = topicNames(indexes.assignment.get(word.word)?.topics || []);
         return <article className="catalog-word" key={word.word}>
@@ -148,7 +158,10 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
       </form>
     </Modal>}
     {detail && <Modal title={detail.word} onClose={() => { setDetailWord(null); setTopicDraft(null); }}>
-      <p className="definition">{detail.pos} {detail.meaning || "尚未整理释义"}</p>
+      {detail.senses?.length ? <div className="dictionary-entry">{detail.senses.map(group=><section className="dictionary-pos-group" key={group.pos}><div className="dictionary-pos"><span>{group.pos}</span><small>{partOfSpeechLabels[group.pos]}</small></div><ol>{group.meanings.map((meaning,i)=><li key={i}>{meaning}</li>)}</ol></section>)}</div> : <p className="definition">{detail.pos} {detail.meaning || "尚未整理释义"}</p>}
+      {detail.standard_definition?.note && <p className="dictionary-usage">{detail.standard_definition.note}</p>}
+      {detail.definition_status && <small className="dictionary-verification">{definitionStatusLabels[detail.definition_status]}</small>}
+      {!!detail.standard_definition?.sources?.length && <details className="dictionary-sources"><summary>词典依据</summary>{detail.standard_definition.sources.map((source,i)=><p key={i}><a href={source.url} target="_blank" rel="noreferrer">{source.publisher || '词典'}</a>{source.checked_at ? ` · ${source.checked_at}` : ''}</p>)}</details>}
       {detail.collocation && <p>{detail.collocation}</p>}{detail.note && <p>{detail.note}</p>}
       <div className="catalog-detail-summary"><span>{detailSchedule ? `累计复习 ${detailSchedule.review_count} 次` : `平台回忆 ${detail.recalls?.length || 0} 次`}</span><span>下次：{detail.deleted ? "已移出复习计划" : detailSchedule?.due_date || "待首轮回忆"}</span><span>{detail.status}</span></div>
       {!detail.deleted && <details className="catalog-detail-topics"><summary>分类 · {topicNames(indexes.assignment.get(detail.word)?.topics || []).join("、") || "待分类"}</summary><div className="topic-checkboxes">{indexes.topics.map(topic => {

@@ -9,6 +9,7 @@ import { readLegacyQuestions } from "./legacy-review.mjs";
 import { capturedWord } from "../shared/capture-word.mjs";
 import { WORD_STAGES, meaningChoices, drillResult, roundProgress, roundRating } from "../shared/word-session.mjs";
 import { QUICK_RATINGS, withQuickReviews } from "../shared/quick-review.mjs";
+import { applyStandardDefinition, validateStandardDefinition } from "../shared/standard-definition.mjs";
 
 export const normalizeWord = (value) =>
   value.trim().toLowerCase().replace(/\s+/g, " ");
@@ -511,6 +512,12 @@ export class Store {
     const profile = YAML.parse(
       profileText.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/)?.[1] || "{}",
     );
+    const standardized = await this.json("vocab/standardized.json", { items: [] });
+    for (const definition of standardized.items) {
+      validateStandardDefinition(definition);
+      const word = words.get(definition.word);
+      if (word) words.set(word.word, applyStandardDefinition(word, definition));
+    }
     const relationSeed = await this.json("vocab/relations.json", { topics: [], groups: [] });
     const relations = projectRelations([...words.values()], relationSeed, events);
     const legacyQuestions = await readLegacyQuestions(this);

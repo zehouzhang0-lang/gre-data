@@ -2,6 +2,7 @@ import { withQuickReviews, QUICK_RATINGS } from '../../../shared/quick-review.mj
 import { WORD_STAGES, meaningChoices, drillResult, roundProgress, roundRating } from '../../../shared/word-session.mjs';
 import { projectReview, dayKey } from '../../../server/spaced-review.mjs';
 import { projectRelations, validateRelation } from '../../../server/word-relations.mjs';
+import { applyStandardDefinition, validateStandardDefinition } from '../../../shared/standard-definition.mjs';
 
 export const DATA_VERSION = 1;
 export const MAX_FILE_BYTES = 20 * 1024 * 1024;
@@ -127,6 +128,7 @@ export function validateData(value) {
   const baseline = value.baseline;
   if (!baseline) throw Error('词库原始基线缺失');
   const vocabulary = unique(array(baseline.vocabulary, '词库').map(cleanWord), w => w.word, '词库');
+  const definitions = unique(array(baseline.definitions || [], '规范释义').map(validateStandardDefinition), d=>d.word, '规范释义');
   const legacyWords = unique(array(baseline.legacyWords, '旧复习证据').map(w => {
     const last_day = w.last_day == null ? null : text(w.last_day, '复习日期', 10);
     if (last_day && (!/^\d{4}-\d{2}-\d{2}$/.test(last_day) || !Number.isFinite(Date.parse(last_day)) || new Date(last_day).toISOString().slice(0, 10) !== last_day)) throw Error('旧复习日期无效');
@@ -184,7 +186,7 @@ export function validateData(value) {
   if (quickRound && !/^\d{4}-\d{2}-\d{2}$/.test(quickRound.day)) throw Error('轮次日期无效');
   const settings = JSON.parse(JSON.stringify(value.settings || {}));
   if (typeof settings !== 'object' || settings === null || Array.isArray(settings) || JSON.stringify(settings).length > 100000) throw Error('设置格式无效');
-  return { schema_version: DATA_VERSION, dataset_id: uuid(value.dataset_id), time_zone, baseline: { vocabulary, legacyWords, relations }, events, quickRound, settings };
+  return { schema_version: DATA_VERSION, dataset_id: uuid(value.dataset_id), time_zone, baseline: { vocabulary, legacyWords, relations, definitions }, events, quickRound, settings };
 }
 export const eventOrder = (a, b) => a.recorded_at.localeCompare(b.recorded_at) || a.id.localeCompare(b.id);
 function validateDrill(p, item, progress) {
@@ -202,6 +204,7 @@ export function projectState(data, now = new Date()) {
     if (p.mode === 'multistage') completed.add(key);
     words.get(p.word)?.recalls.push({ ...p, recorded_at: e.recorded_at });
   }
+  for(const definition of data.baseline.definitions || []) { const w=words.get(definition.word); if(w)words.set(w.word,applyStandardDefinition(w,definition)); }
   const vocabulary = [...words.values()].sort((a, b) => a.word.localeCompare(b.word));
   const relations = projectRelations(vocabulary, data.baseline.relations, data.events);
   const spacedReview = projectReview({ vocabulary, legacyWords: data.baseline.legacyWords, events: data.events, now, timeZone: data.time_zone });

@@ -81,6 +81,8 @@ export async function openRepository(options = {}) {
     importVocabulary(json) { return enqueue(async () => {
       const packet = await readPackage(json), plan = planImport(current, packet.data), next = clone(current), added = new Set(plan.additions.map(w => w.word));
       next.baseline.vocabulary.push(...plan.additions.map(w => cleanWord({ ...w, recalls: [], deleted: false })));
+      next.baseline.definitions ||= [];
+      next.baseline.definitions.push(...(packet.data.baseline.definitions || []).filter(d=>added.has(d.word) && !next.baseline.definitions.some(old=>old.word===d.word)));
       const assignments = new Map(plan.imported.relations.assignments.map(a => [a.word, a.topics]));
       // Only new words receive imported classifications. Existing words, all phone
       // learning events, old review baselines and unfinished rounds are untouched.
