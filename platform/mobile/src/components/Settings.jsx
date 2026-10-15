@@ -20,7 +20,7 @@ export default function Settings({ state, repo, active, busy, mutate, notify, on
     if (reading || busy) return;
     setReading(true);
     try {
-      const content = await (recover ? repo.backupRecovery() : repo.backup());
+      const content = await (recover === 'catalog' ? repo.backupCatalogRecovery() : recover ? repo.backupRecovery() : repo.backup());
       const name = `gre-vocabulary-${recover ? 'before-restore-' : ''}${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
       const result = await exportFile(name, content);
       setLastExport(`${result?.downloadRequested ? '已发起下载' : '已导出'}：${result?.name || name}`);
@@ -35,8 +35,10 @@ export default function Settings({ state, repo, active, busy, mutate, notify, on
   }
   return <section className="screen" hidden={!active} aria-label="设置与备份"><header className="screen-header"><h1>设置</h1></header><main className="screen-scroll settings-content">
     <section className="settings-section"><h2>词库与数据</h2><p className="muted">{state.vocabulary.filter(w => !w.deleted).length} 个单词 · 数据保存在此设备</p>
+      {state.settings.catalogUpdate && <p role="status">新版词义与分类已更新，学习进度已保留。{state.settings.catalogUpdate.preserved > 0 ? `另有 ${state.settings.catalogUpdate.preserved} 个词保留手机原有释义。` : ''}</p>}
       <button className="settings-row" disabled={reading || busy} onClick={() => choose('import')}><Icon name="download"/><span>导入词库<small>合并新词与新分类，不覆盖已有复习进度</small></span></button>
       <button className="settings-row" disabled={reading || busy} onClick={() => backup()}><Icon name="upload"/><span>导出完整备份<small>词库、关系、历史、轮次与显示设置</small></span></button>
+      {state.hasCatalogRecovery && <button className="settings-row" disabled={reading || busy} onClick={() => backup('catalog')}><Icon name="upload"/><span>导出词库更新前备份<small>保留本次升级前的词库和学习记录</small></span></button>}
       <button className="settings-row" disabled={reading || busy} onClick={() => choose('restore')}><Icon name="history"/><span>恢复完整备份<small>预览后替换当前数据，并保留恢复前快照</small></span></button>
       {state.hasRecovery && <><button className="settings-row" disabled={reading || busy} onClick={() => setRecovery(true)}><Icon name="history"/><span>撤回上次完整恢复<small>回到上一次恢复操作之前的数据</small></span></button><button className="settings-row" disabled={reading || busy} onClick={() => backup(true)}><Icon name="upload"/><span>导出恢复前备份<small>将安全快照另存到应用之外</small></span></button></>}
       {reading && <p role="status">正在处理文件…</p>}{lastExport && <p className="export-path">{lastExport}</p>}

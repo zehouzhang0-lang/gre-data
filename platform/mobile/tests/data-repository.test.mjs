@@ -36,6 +36,80 @@ test('structured definitions survive mobile storage and do not overwrite later e
 });
 async function reseal(packet) { packet.checksum.value = await digest(packet.payload); return JSON.stringify(packet); }
 
+async function catalogOptions() {
+  const incoming = fixture();
+  incoming.baseline.definitions = [{word:'lucid',input:{pos:'adj.',meaning:'清晰的'},senses:[{pos:'adj.',meanings:['清晰的','神志清醒的']}],status:'dictionary_checked',sources:[]}];
+  incoming.baseline.relations.topics.push({id:'mind',name:'思维',words:['lucid','verve']});
+  const content = await createPackage(incoming, SEED_FORMAT);
+  return {revision:'test-catalog-1',load:async()=>content};
+}
+
+test('APK catalog update preserves events, schedules, unfinished sessions and settings; commits once',async()=>{
+  const {repo,storage,clock} = await setup();
+  await repo.rate(['lucid'],'partial');
+  await repo.setSettings({columns:3});
+  await repo.saveEvent('vocab_session',{session_id:crypto.randomUUID(),words:['lucid'],meaning_passes:2});
+  await repo.saveEvent('word_topics',{word:'lucid',topics:['expression']});
+  const before = JSON.parse(storage.value).current, stateBefore = await repo.getState();
+  const catalogUpdate = await catalogOptions();
+  const upgraded = await openRepository({storage,catalogUpdate,now:()=>clock.value});
+  const after = JSON.parse(storage.value).current, state = await upgraded.getState();
+  assert.equal(word(state).meaning,'adj.清晰的；神志清醒的');
+  assert.deepEqual(after.events,before.events);
+  assert.deepEqual(after.baseline.legacyWords,before.baseline.legacyWords);
+  assert.deepEqual(after.quickRound,before.quickRound);
+  assert.equal(after.dataset_id,before.dataset_id);
+  assert.equal(after.settings.columns,3);
+  assert.deepEqual(state.vocabSessions,stateBefore.vocabSessions);
+  assert.equal(item(state).due_date,item(stateBefore).due_date);
+  assert.equal(item(state).platform_count,item(stateBefore).platform_count);
+  assert.deepEqual(state.relations.assignments.find(a=>a.word==='lucid').topics,['expression']);
+  assert(state.relations.assignments.find(a=>a.word==='verve').topics.includes('mind'));
+  assert.deepEqual((await readPackage(await upgraded.backupCatalogRecovery())).data,before);
+  const writes=storage.writes;
+  await openRepository({storage,catalogUpdate:{...catalogUpdate,load:()=>{throw Error('must not reload');}}});
+  assert.equal(storage.writes,writes);
+});
+
+test('catalog update preserves edited meanings, hidden words, custom categories and existing recovery',async()=>{
+  const {repo,storage} = await setup();
+  await repo.saveEvent('vocab_upsert',{word:'lucid',pos:'adj.',meaning:'我自己的释义',note:'私人笔记'});
+  await repo.saveEvent('vocab_delete',{word:'abate'});
+  await repo.saveEvent('topic_upsert',{id:'personal',name:'我的分类'});
+  await repo.saveEvent('word_topics',{word:'verve',topics:['personal']});
+  const document=JSON.parse(storage.value); document.recovery=fixture(); storage.value=JSON.stringify(document);
+  const upgraded=await openRepository({storage,catalogUpdate:await catalogOptions()});
+  const state=await upgraded.getState();
+  assert.equal(word(state).meaning,'我自己的释义');
+  assert.equal(word(state).note,'私人笔记');
+  assert.equal(word(state,'abate').deleted,true);
+  assert.deepEqual(state.relations.assignments.find(a=>a.word==='verve').topics,['personal']);
+  assert.deepEqual(JSON.parse(storage.value).recovery,document.recovery);
+  assert.equal(state.settings.catalogUpdate.preserved,1);
+});
+
+test('failed catalog storage or damaged package leaves old bytes intact and upgrade can retry',async()=>{
+  const {storage}=await setup(), before=storage.value, catalogUpdate=await catalogOptions();
+  storage.fail=true;
+  await assert.rejects(openRepository({storage,catalogUpdate}),/disk full/);
+  assert.equal(storage.value,before);
+  storage.fail=false;
+  await assert.rejects(openRepository({storage,catalogUpdate:{...catalogUpdate,load:async()=>'broken'}}));
+  assert.equal(storage.value,before);
+  const upgraded=await openRepository({storage,catalogUpdate});
+  assert.equal(word(await upgraded.getState()).senses[0].meanings.length,2);
+});
+
+test('newly defined blank word can be rated, reopened and backed up without losing the recall',async()=>{
+  const seed=fixture(); seed.baseline.vocabulary[0].meaning='';
+  seed.baseline.definitions=[{word:'lucid',input:{pos:'adj.',meaning:''},senses:[{pos:'adj.',meanings:['清晰的']}],status:'dictionary_checked',sources:[]}];
+  const {repo,storage}=await setup(seed);
+  await repo.rate(['lucid'],'remembered');
+  const reopened=await openRepository({storage});
+  assert.equal(word(await reopened.getState()).recalls.length,1);
+  assert.equal((await readPackage(await reopened.backup())).data.events.length,1);
+});
+
 test('first open stores a raw baseline, not phantom recalls; reopening ignores a changed seed', async () => {
   const { repo, storage, clock } = await setup();
   assert.equal((await repo.getState()).vocabulary.length, 4);

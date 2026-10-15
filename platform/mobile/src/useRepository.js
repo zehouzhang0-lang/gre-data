@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { openRepository } from './data/repository.mjs';
+import { CATALOG_REVISION } from './data/catalog-update.mjs';
 
 export const STARTUP_SLOW_MS = 15_000;
 
@@ -26,7 +27,11 @@ export default function useRepository() {
   }, []);
   useEffect(() => {
     alive.current = true;
-    initialization.current ||= openRepository().then(async repo => { repository.current = repo; return repo.getState(); });
+    initialization.current ||= openRepository({catalogUpdate:{revision:CATALOG_REVISION,load:async()=>{
+      const response = await fetch('./vocabulary-seed.json');
+      if (!response.ok) throw Error('新版词库读取失败，原学习数据已保留；请重新打开应用');
+      return response.text();
+    }}}).then(async repo => { repository.current = repo; return repo.getState(); });
     const stopWatching = watchStartup(initialization.current, {
       onSlow: () => setSlow(true),
       onReady: next => { ready.current = true; setState(next); setSlow(false); setError(''); },

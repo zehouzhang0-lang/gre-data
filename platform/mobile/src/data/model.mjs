@@ -135,6 +135,7 @@ export function validateData(value) {
     return { word: normalizeWord(w.word), review_count: count(w.review_count), last_day, records: array(w.records || [], '旧记录来源', 5000).map(r => text(r, '记录来源', 1000)) };
   }), w => w.word, '旧复习证据');
   const relations = cleanRelations(baseline.relations);
+  const definitionMap = new Map(definitions.map(d => [d.word,d]));
   const words = new Map(vocabulary.map(w => [w.word, clone(w)]));
   const sessions = new Map(), drills = [], recalls = [], seen = new Map();
   const topics = new Set(relations.topics.map(t => t.id)), groups = new Set(relations.groups.map(g => g.id));
@@ -152,7 +153,7 @@ export function validateData(value) {
   for (const e of events) {
     const p = e.payload;
     if (e.kind === 'vocab_quick_undo' && seen.get(p.target_id)?.kind !== 'vocab_quick_review') throw Error('撤销指向不存在的标记');
-    if (e.kind === 'vocab_quick_review' && p.items.some(i => !words.has(i.word) || words.get(i.word).deleted || !words.get(i.word).meaning)) throw Error('标记引用未就绪单词');
+    if (e.kind === 'vocab_quick_review' && p.items.some(i => !words.has(i.word) || words.get(i.word).deleted || !applyStandardDefinition(words.get(i.word),definitionMap.get(i.word)).meaning)) throw Error('标记引用未就绪单词');
     if (e.kind === 'vocab_recall' && !words.has(p.word)) throw Error('回忆引用未知单词');
     if (['vocab_delete', 'vocab_restore'].includes(e.kind) && !words.has(p.word)) throw Error('词条操作引用未知单词');
     if (e.kind === 'topic_upsert') topics.add(p.id);

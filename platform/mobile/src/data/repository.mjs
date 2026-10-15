@@ -2,6 +2,7 @@ import { clone, cleanWord, validateData, projectState, prepareEvent, ensureRound
 import { BACKUP_FORMAT, createPackage, readPackage } from './packages.mjs';
 import { createStorage } from './storage.mjs';
 import { dayKey } from '../../../server/spaced-review.mjs';
+import { updateCatalog } from './catalog-update.mjs';
 
 export function emptyData(timeZone = 'Asia/Shanghai') {
   return { schema_version: 1, dataset_id: crypto.randomUUID(), time_zone: timeZone, baseline: { vocabulary: [], legacyWords: [], relations: { topics: [], groups: [] } }, events: [], quickRound: null, settings: {} };
@@ -32,7 +33,7 @@ function planImport(current, incoming) {
 }
 export async function openRepository(options = {}) {
   const storage = options.storage || await createStorage(), now = options.now || (() => new Date()), makeId = options.makeId || (() => crypto.randomUUID());
-  let current, recovery = null, queue = Promise.resolve();
+  let current, recovery = null, catalogRecovery = null, queue = Promise.resolve();
   const persisted = await storage.read();
   if (persisted != null) {
     let document;
@@ -40,6 +41,7 @@ export async function openRepository(options = {}) {
     if (document.storage_version !== 1) throw Error('不支持的本机数据库版本，请升级应用，当前数据保留');
     current = validateData(document.current);
     recovery = document.recovery ? validateData(document.recovery) : null;
+    catalogRecovery = document.catalogRecovery ? validateData(document.catalogRecovery) : null;
   } else {
     if (options.seed) current = typeof options.seed === 'string' ? (await readPackage(options.seed)).data : validateData(options.seed);
     else {
@@ -51,14 +53,19 @@ export async function openRepository(options = {}) {
     await storage.write(JSON.stringify({ storage_version: 1, current, recovery }));
   }
   const enqueue = task => { const operation = queue.then(task); queue = operation.catch(() => {}); return operation; };
-  async function persist(next, nextRecovery = recovery) {
+  async function persist(next, nextRecovery = recovery, nextCatalogRecovery = catalogRecovery) {
     // Both the replacement and its pre-restore safety copy are one transaction.
-    const encoded = JSON.stringify({ storage_version: 1, current: next, recovery: nextRecovery });
+    const encoded = JSON.stringify({ storage_version: 1, current: next, recovery: nextRecovery, catalogRecovery: nextCatalogRecovery });
     if (new TextEncoder().encode(JSON.stringify(next)).length > MAX_FILE_BYTES - 8192) throw Error('本机数据超过备份上限，请先导出备份并联系维护者；此次操作未保存');
     await storage.write(encoded);
-    current = next; recovery = nextRecovery;
+    current = next; recovery = nextRecovery; catalogRecovery = nextCatalogRecovery;
   }
-  function snapshot() { return { ...projectState(current, now()), hasRecovery: !!recovery, storageKind: storage.kind || 'test', eventCount: current.events.length }; }
+  if (options.catalogUpdate && current.settings.catalogUpdate?.revision !== options.catalogUpdate.revision) {
+    const packet = await readPackage(await options.catalogUpdate.load());
+    const next = updateCatalog(current, packet.data, options.catalogUpdate.revision);
+    await persist(next, recovery, catalogRecovery || clone(current));
+  }
+  function snapshot() { return { ...projectState(current, now()), hasRecovery: !!recovery, hasCatalogRecovery: !!catalogRecovery, storageKind: storage.kind || 'test', eventCount: current.events.length }; }
   function addEvent(next, kind, payload, id = makeId()) {
     const event = prepareEvent(next, kind, payload, id, now());
     if (!next.events.some(e => e.id === event.id)) next.events.push(event);
@@ -77,6 +84,7 @@ export async function openRepository(options = {}) {
     setSettings(patch) { return enqueue(async () => { const next = clone(current); next.settings = { ...next.settings, ...clone(patch) }; const checked = validateData(next); await persist(checked); return clone(checked.settings); }); },
     async backup() { await queue; return createPackage(current, BACKUP_FORMAT, now()); },
     async backupRecovery() { await queue; if (!recovery) throw Error('没有恢复前快照'); return createPackage(recovery, BACKUP_FORMAT, now()); },
+    async backupCatalogRecovery() { await queue; if (!catalogRecovery) throw Error('没有词库更新前快照'); return createPackage(catalogRecovery, BACKUP_FORMAT, now()); },
     async previewImport(json) { await queue; const packet = await readPackage(json); return { ...planImport(current, packet.data).preview, kind: packet.format, canRestore: packet.format === BACKUP_FORMAT }; },
     importVocabulary(json) { return enqueue(async () => {
       const packet = await readPackage(json), plan = planImport(current, packet.data), next = clone(current), added = new Set(plan.additions.map(w => w.word));
