@@ -16,7 +16,10 @@ export function clozeFor(word) {
   return {display,missing};
 }
 function hash(value) { let n=2166136261;for(const c of value)n=Math.imul(n^c.charCodeAt(0),16777619);return n>>>0; }
-export function shuffled(values,seed) {return [...values].sort((a,b)=>hash(seed+JSON.stringify(a))-hash(seed+JSON.stringify(b)));}
+export function shuffled(values,seed) {
+  return values.map((value,index)=>({value,index,key:hash(seed+JSON.stringify(value))}))
+    .sort((a,b)=>a.key-b.key||a.index-b.index).map(item=>item.value);
+}
 const meaningText = value => String(value||'').replace(/\s+/g,'').replace(/[的地得；;，,。.:：()（）]/g,'');
 function meaningPieces(value) { const text=meaningText(value);return new Set(Array.from({length:Math.max(0,text.length-1)},(_,i)=>text.slice(i,i+2))); }
 export function meaningChoices(item,vocabulary,relations,seed) {

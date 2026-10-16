@@ -13,7 +13,7 @@
 - `vocab_recall`：旧模式保留word、answer原文、self_rating（remembered/partial/forgotten）、mode（recall/flashcard）、assessment=self_reported。新mode=multistage带session_id，只有本词各阶段均通过才结算，self_rating由服务端根据各阶段首次结果推导；同session_id+word只结算一次。跳过不记完成；不自动更新difficult/mastered、旧作业覆盖数或技巧等级。教练核对后须另写原子记录并注明事件ID，防止重复计数。
 - `vocab_quick_review`（2026-10-10 单词墙）：session_id 为 UUID；items 为 1–5000 个不重复的已有、有释义且未移除的词，各含 word 和 self_rating（remembered/partial/forgotten），assessment 固定 self_reported。一批一个原子事件，校验任意词失败则整批不保存。同一轮同一词的后续标记修正有效结果，不增加次数，保留该词本轮首次有效标记的时间；原始事件不改写。投影为 mode=quick_grid 的回忆，不实际补写 vocab_recall 文件。
 - `vocab_quick_undo`：target_id 只能引用 vocab_quick_review；撤销整次标记，通过追加事件恢复上一个有效版本和对应排期，不删除原始记录。重复撤销同一目标不重复扣减。新一轮明确由用户开始；浏览器按学习日保存当前轮次编号，跨日换新轮。布局偏好、勾选、翻面均不是学习证据。
-- `vocab_session`：session_id（UUID）、words（1–20个已有且有释义的词）、meaning_passes（1或2，默认2）。服务端保存本轮词形、词性、释义及认义选项快照，之后词条修改不改变这一轮答案。开轮不计复习完成。
+- `vocab_session`：session_id（UUID）、words（已有且有释义的不重复词，桌面每轮1–20个；手机允许自定义数量，见独立 Android 离线词库）、meaning_passes（1或2，默认2）。服务端保存本轮词形、词性、释义及认义选项快照，之后词条修改不改变这一轮答案。开轮不计复习完成。
 - `vocab_drill`：session_id、word、stage（meaning_1/meaning_2/cloze/spelling）、answer、result（correct/incorrect/revealed）、response_mode（choice/typing/self_check）。服务端核验本轮快照、阶段顺序和选项/拼写结果；没有足够互异释义选项时才用明确标记的自查，不对自由中文字符串机械判错。每次小练习追加记录，轮内错误穿插重练；小练习次数与完成轮次数分开。
 - `attempt` / `attempts_import`：教材material、单元unit、题号question共同定位，type（tc/se/rc/quant）、answer原文、duration_seconds（未知null）、note。批量导入使用items数组。
 - `questions_import` / `keys_import`：items数组，含共同定位、type、answer、explanation，answer_source固定user_provided；题目导入另含prompt与options文本数组。无答案或自由文本不能可靠比较时result=null。原始作答保留，显示核对按最新答案计算；历史答案事件均保留。不换算GRE量表分。
@@ -44,6 +44,7 @@
 - `current` 为 `{schema_version: 1, dataset_id, time_zone, baseline, events, quickRound, settings}`。`dataset_id` 是 UUID；`time_zone` 沿用导出的学习时区；`quickRound` 保存 `{day, id}`，跨学习日首次标记自动换轮。显示密度、筛选等 `settings` 不是学习证据。
 - `baseline.vocabulary` 只包含原始词义、词性、备注、来源、旧状态等内容，`recalls` 必须为空。`baseline.legacyWords` 保留已去重的旧复习次数、最后已知日期和记录来源。`baseline.relations` 是初始主题与词组；主题规则在电脑导出时变成明确词表，手机不执行导入文件中的正则表达式。
 - `events` 保留原始 `{schema_version,id,recorded_at,kind,payload}`，只允许 `vocab_*`、`topic_*`、`word_topics`、`relation_*` 中已定义的词汇事件；不含刷题作答、AI分析、PDF或凭据。事件ID、轮次快照和原始作答均保留。使用现有 `quick-review`、`word-session`、`spaced-review` 和关系投影逻辑，同轮改标、撤销、跨日排期和多阶段结算不另建重复计数规则。自评仍不是教练核验或长期掌握。
+- 手机 `vocab_session` 自定义词数（2026-10-16）：允许输入从1到当前范围内可练词数的整数，按当前词表顺序取前N个不同词，不再截断到20个。`words` 与 `items` 同步沿用通用数组50000项结构防护；仍拒绝未知、已隐藏、无释义和重复词。创建、持久化、恢复和备份保留完整词表与开轮快照，旧轮次兼容。多个词的活动轮次隐藏顶部步骤总数与进度条，单词轮次保留；不改变学习结算。
 - `platform/mobile/scripts/export-vocabulary.mjs` 读取事件叠加前的词库基线和独立原始词汇事件；生成忽略的 `platform/mobile/public/vocabulary-seed.json` 供个人 APK 首次安装。导出时校验手机投影与桌面逐词释义/回忆、完整词汇排期、主题归属、词组和复习轮次一致。不得把 `/api/state.events` 摘要当完整原始备份，也不得把已累计的词条投影与同一批历史事件重复叠加。
 - 首装词库包为 `{format:'gre-vocabulary-seed',version:1,created_at,checksum,payload}`；完整备份使用 `format:'gre-vocabulary-backup'`，其余相同。`payload` 是完整 `current`，不含递归恢复历史。`checksum` 为 `{algorithm:'SHA-256',value}`，校验对象为 `JSON.stringify(payload)` 的 UTF-8 字节。SHA-256 用于发现损坏，不是来源认证。单文件最大20 MB，导入前校验大小、版本、校验和、字段、唯一ID及引用和学习步骤一致性；任何校验失败不写数据。
 - “导入新增词”可接受这两类包，只合并当前不存在的词条和无冲突新分类/关系；既有词义、移除状态、手机全部学习事件、旧复习基线和未完成轮次保持不动。预览展示新增/已有词数和跳过的内容冲突。导入文件中的复习历史不会叠加到手机计数；重复导入不增加词数或复习次数。

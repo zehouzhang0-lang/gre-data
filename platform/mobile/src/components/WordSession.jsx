@@ -5,13 +5,13 @@ import { Confirm, Empty, Icon } from './Primitives';
 
 const union = (a, b) => [...new Map([...a, ...b].map(e => [e.id, e])).values()].sort((a, b) => a.recorded_at.localeCompare(b.recorded_at) || a.id.localeCompare(b.id));
 export default function WordSession({ state, repo, initialWords = [], initialSession, refresh, onExit, notify }) {
-  const [session, setSession] = useState(initialSession), [count, setCount] = useState(Math.min(10, initialWords.length)), [passes, setPasses] = useState(2);
+  const available = useMemo(() => [...new Map(initialWords.filter(w => !w.deleted && w.meaning?.trim()).map(w => [w.word, w])).values()], [initialWords]);
+  const [session, setSession] = useState(initialSession), [count, setCount] = useState(() => String(Math.min(10, available.length))), [passes, setPasses] = useState(2);
   const [localDrills, setLocalDrills] = useState([]), [localRecalls, setLocalRecalls] = useState([]);
   const [feedback, setFeedback] = useState(null), [answer, setAnswer] = useState(''), [revealed, setRevealed] = useState(false);
   const [busy, setBusy] = useState(false), [failure, setFailure] = useState(null), [error, setError] = useState('');
   const [exitConfirm, setExitConfirm] = useState(false);
   const guard = useRef(false), startOperation = useRef(null), completionOperations = useRef(new Map());
-  const available = initialWords.filter(w => !w.deleted && w.meaning?.trim()).slice(0, 20);
   const current = state.vocabSessions?.find(s => s.session_id === session?.session_id) || session;
   const drills = useMemo(() => union(state.vocabDrills || [], localDrills), [state.vocabDrills, localDrills]);
   const recalls = useMemo(() => union((state.events || []).filter(e => e.kind === 'vocab_recall' && e.mode === 'multistage'), localRecalls), [state.events, localRecalls]);
@@ -44,7 +44,9 @@ export default function WordSession({ state, repo, initialWords = [], initialSes
     finally { guard.current = false; setBusy(false); }
   }
   function start() {
-    startOperation.current ||= { kind: 'vocab_session', id: crypto.randomUUID(), payload: { session_id: crypto.randomUUID(), words: available.slice(0, count).map(w => w.word), meaning_passes: passes } };
+    const wordCount = Number(count);
+    if (!Number.isInteger(wordCount) || wordCount < 1 || wordCount > available.length) return;
+    startOperation.current ||= { kind: 'vocab_session', id: crypto.randomUUID(), payload: { session_id: crypto.randomUUID(), words: available.slice(0, wordCount).map(w => w.word), meaning_passes: passes } };
     execute(startOperation.current);
   }
   function submit(result, value = answer) {
@@ -63,7 +65,7 @@ export default function WordSession({ state, repo, initialWords = [], initialSes
     setFeedback(null); setAnswer(''); setRevealed(false);
   }
   return <section className="screen session-screen" aria-label="认义与拼写复习"><header className="screen-header"><button aria-label="返回复习（已提交步骤自动保存）" disabled={busy} className="icon-button" onClick={requestExit}><Icon name="back"/></button><h1>{current ? '记忆与背诵' : '开始一轮'}</h1><span className="header-spacer"/></header><main className="screen-scroll session-content">
-    {!current ? <section className="session-setup"><h2>先认得，再想得出</h2><p className="muted">英文认义 → 补全拼写 → 中文默写</p>{available.length ? <><label className="field">本轮词数<select value={count} disabled={busy || !!failure} onChange={e => { setCount(Number(e.target.value)); startOperation.current = null; }}>{[...new Set([Math.min(5, available.length), Math.min(10, available.length), Math.min(20, available.length)])].map(n => <option key={n} value={n}>{n} 词</option>)}</select></label><label className="field">英文认义<select value={passes} disabled={busy || !!failure} onChange={e => { setPasses(Number(e.target.value)); startOperation.current = null; }}><option value="2">2 遍</option><option value="1">1 遍</option></select></label><button className="primary wide-button" disabled={busy || !!failure} onClick={start}>开始复习</button><p className="hint">每一步都保存在手机上。中途退出后，可从复习页继续。</p></> : <Empty title="没有可练的单词"><p>请先补充释义。</p></Empty>}</section> : progress.complete ? <section className="session-complete"><h2>本轮已完成</h2><p>{current.words.length} 词 · {progress.drill_count} 次作答与补练</p>{current.words.map(word => { const recall = recalls.find(r => r.session_id === current.session_id && r.word === word); return <div className="review-word-row" key={word}><strong className="english">{word}</strong><span>{recall?.self_rating === 'remembered' ? '本轮顺利' : recall?.self_rating === 'forgotten' ? '10 分钟后再练' : '明天再练'}</span></div>; })}<button className="primary wide-button" onClick={onExit}>返回复习</button></section> : <>
+    {!current ? <section className="session-setup"><h2>先认得，再想得出</h2><p className="muted">英文认义 → 补全拼写 → 中文默写</p>{available.length ? <form onSubmit={e => { e.preventDefault(); start(); }}><label className="field">本轮词数（最多 {available.length}）<input type="number" inputMode="numeric" aria-label="本轮词数" required min="1" max={available.length} step="1" value={count} disabled={busy || !!failure} onChange={e => { setCount(e.target.value); startOperation.current = null; }}/></label><label className="field">英文认义<select value={passes} disabled={busy || !!failure} onChange={e => { setPasses(Number(e.target.value)); startOperation.current = null; }}><option value="2">2 遍</option><option value="1">1 遍</option></select></label><button type="submit" className="primary wide-button" disabled={busy || !!failure}>开始复习</button></form> : <Empty title="没有可练的单词"><p>请先补充释义。</p></Empty>}</section> : progress.complete ? <section className="session-complete"><h2>本轮已完成</h2><p>{current.words.length} 词 · {progress.drill_count} 次作答与补练</p>{current.words.map(word => { const recall = recalls.find(r => r.session_id === current.session_id && r.word === word); return <div className="review-word-row" key={word}><strong className="english">{word}</strong><span>{recall?.self_rating === 'remembered' ? '本轮顺利' : recall?.self_rating === 'forgotten' ? '10 分钟后再练' : '明天再练'}</span></div>; })}<button className="primary wide-button" onClick={onExit}>返回复习</button></section> : <>
       <div className="session-stage">{stageLabels[step?.stage] || '保存本轮'}{showStepProgress && <span>{progress.passed} / {progress.total} 步</span>}</div>{showStepProgress && <progress className="session-progress" aria-label="本词复习进度" value={progress.passed} max={progress.total}/>}
       {item ? <><div className="session-prompt"><small>{meaningStage ? '选择这个英文的中文义' : step.stage === 'cloze' ? '补全缺失字母' : '根据中文，写出英文'}</small>{meaningStage ? <h2 className="english">{item.word}</h2> : step.stage === 'cloze' ? <><p>{item.pos} {item.meaning}</p><h2 className="english">{clozeFor(item.word).display}</h2></> : <h2 className="meaning-prompt">{item.pos} {item.meaning}</h2>}</div>
         {!feedback && !failure && meaningStage && !selfCheck && <div className="meaning-choices">{choices.map((choice, i) => <button key={choice.word} disabled={busy} onClick={() => submit(null, choice.word)}><span>{String.fromCharCode(65 + i)}</span>{choice.meaning}</button>)}</div>}

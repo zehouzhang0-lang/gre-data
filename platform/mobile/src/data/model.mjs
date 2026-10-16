@@ -78,8 +78,8 @@ export function cleanPayload(kind, p) {
     return { session_id: uuid(p.session_id), items, assessment: 'self_reported' };
   }
   if (kind === 'vocab_session') {
-    const words = unique(array(p.words, '本轮单词', 20).map(normalizeWord), w => w, '本轮单词');
-    if (!words.length || ![1, 2].includes(p.meaning_passes)) throw Error('每轮 1–20 词，认义 1 或 2 遍');
+    const words = unique(array(p.words, '本轮单词').map(normalizeWord), w => w, '本轮单词');
+    if (!words.length || ![1, 2].includes(p.meaning_passes)) throw Error('每轮至少 1 词，认义 1 或 2 遍');
     return { session_id: uuid(p.session_id), words, meaning_passes: p.meaning_passes };
   }
   if (kind === 'vocab_drill') {
@@ -100,7 +100,7 @@ export function cleanPayload(kind, p) {
   return { word };
 }
 function cleanSnapshot(p) {
-  const items = array(p.items, '开轮词义快照', 20).map(item => ({ word: normalizeWord(item.word), meaning: text(item.meaning, '开轮释义', 10000), pos: text(item.pos, '词性', 200, true), choices: array(item.choices, '认义选项', 4).map(c => ({ word: normalizeWord(c.word), meaning: text(c.meaning, '选项释义', 10000) })) }));
+  const items = array(p.items, '开轮词义快照').map(item => ({ word: normalizeWord(item.word), meaning: text(item.meaning, '开轮释义', 10000), pos: text(item.pos, '词性', 200, true), choices: array(item.choices, '认义选项', 4).map(c => ({ word: normalizeWord(c.word), meaning: text(c.meaning, '选项释义', 10000) })) }));
   if (JSON.stringify(items.map(i => i.word)) !== JSON.stringify(p.words)) throw Error('开轮快照与单词顺序不一致');
   for (const item of items) {
     if (![0, 4].includes(item.choices.length) || new Set(item.choices.map(c => c.word)).size !== item.choices.length || item.choices.length && !item.choices.some(c => c.word === item.word && c.meaning === item.meaning)) throw Error('开轮选项快照无效');
