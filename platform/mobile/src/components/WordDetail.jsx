@@ -3,12 +3,14 @@ import { Sheet } from './Primitives';
 import { ratingLabels, wordRating, sourceLabel } from '../model.mjs';
 import { definitionStatusLabels, partOfSpeechLabels } from '../../../shared/standard-definition.mjs';
 
-function SenseExample({ example }) {
-  if (!example?.en || !example?.zh || example.kind !== 'quotation') return <small className="sense-example-pending">例句待补充</small>;
-  const sourceLabel = `原例句来源：${example.source?.publisher || '词典'}`;
+function hasExample(example) { return example?.en && example?.zh && example.kind === 'quotation'; }
+
+function SenseExample({ example, meaning, pos }) {
+  const sourceLabel = `来源：${example.source?.publisher || '词典'}`;
   return <div className="sense-example">
     <p className="sense-example-en" lang="en">{example.en}</p>
     <p className="sense-example-zh" lang="zh-Hans">{example.zh}</p>
+    <small className="sense-example-meaning">{pos} · {meaning}</small>
     <small className="sense-example-source">{/^https?:\/\//.test(example.source?.url || '') ? <a href={example.source.url} target="_blank" rel="noreferrer">{sourceLabel}</a> : sourceLabel}{example.source?.locator && ` · ${example.source.locator}`}</small>
   </div>;
 }
@@ -18,6 +20,9 @@ export default function WordDetail({ word, state, busy, onSave, onRate, onClose 
   const schedule = state.spacedReview?.items.find(i => i.kind === 'word' && i.word === word.word);
   const reading = state.cardReadings?.find(item => item.word === word.word);
   const related = (state.relations?.groups || []).filter(g => !g.deleted && g.members.some(m => m.word === word.word));
+  const senses = (word.senses || []).flatMap(group => group.meanings.map((meaning, index) => ({ pos: group.pos, meaning, example: group.examples?.[index] })));
+  const examples = senses.filter(sense => hasExample(sense.example));
+  const pending = senses.filter(sense => !hasExample(sense.example));
   return <Sheet title={word.word} className="word-detail-sheet" onClose={busy ? () => {} : onClose}>
     {editing ? <form onSubmit={async e => { e.preventDefault(); if (await onSave({ word: word.word, ...draft })) setEditing(false); }}>
       <label className="field">词性<input value={draft.pos} onChange={e => setDraft(p => ({ ...p, pos: e.target.value }))}/></label>
@@ -26,7 +31,9 @@ export default function WordDetail({ word, state, busy, onSave, onRate, onClose 
       <p className="hint">编辑后标为用户编辑、待核验；不改写过去轮次的答案快照。</p>
       <div className="form-actions"><button disabled={busy} type="button" onClick={() => setEditing(false)}>取消编辑</button><button disabled={busy} className="primary">保存词条</button></div>
     </form> : <>
-      <div className="word-definition">{word.senses?.length ? word.senses.map(group=><section className="word-pos-group" key={group.pos}><div className="word-pos-label"><span>{group.pos}</span><small>{partOfSpeechLabels[group.pos]}</small></div><div className="word-senses">{group.meanings.map((meaning,i)=><div className="word-sense" key={i}><p className="sense-meaning">{meaning}</p><SenseExample example={group.examples?.[i]}/></div>)}</div></section>) : <><small>{word.pos || '词性未记录'}</small><p>{word.meaning || '待补释义'}</p></>}{word.definition_status&&<small>{definitionStatusLabels[word.definition_status]}</small>}{word.note && <p className="muted">{word.note}</p>}</div>
+      <div className="word-definition" aria-label="词义">{word.senses?.length ? <dl className="definition-overview">{word.senses.map(group => <div className="definition-row" key={group.pos}><dt title={partOfSpeechLabels[group.pos]}>{group.pos}</dt><dd>{group.meanings.join('；')}</dd></div>)}</dl> : <div className="definition-row"><span className="definition-pos">{word.pos || '词性未记录'}</span><p>{word.meaning || '待补释义'}</p></div>}</div>
+      {!!senses.length && <section className="word-examples" aria-label="双语例句"><h3>双语例句</h3><div className="word-example-list">{examples.map((sense, index) => <SenseExample key={index} {...sense}/>)}</div>{!!pending.length && <p className="sense-example-pending">{examples.length ? `待补例句：${pending.map(sense => `${sense.pos} ${sense.meaning}`).join('；')}` : '例句待补充'}</p>}</section>}
+      {(word.definition_status || word.note) && <details className="definition-notes"><summary>词义说明</summary>{word.definition_status && <small>{definitionStatusLabels[word.definition_status]}</small>}{word.note && <p>{word.note}</p>}</details>}
       <div className="detail-meta"><span>{ratingLabels[wordRating(word)] || '未标记'}</span><span>{schedule?.review_count ?? word.review_count ?? 0} 次复习</span></div>
       <div className="detail-meta" aria-label="翻阅记录"><span>翻阅 {reading?.view_count || 0} 次</span>{reading?.last_viewed_at && <time dateTime={reading.last_viewed_at}>最近翻阅 {new Date(reading.last_viewed_at).toLocaleString('zh-CN', { timeZone: state.timeZone, month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</time>}</div>
       <button className="wide-button" onClick={() => setEditing(true)}>编辑词条</button>

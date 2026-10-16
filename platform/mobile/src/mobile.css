@@ -100,21 +100,25 @@ small, .hint { color: var(--muted); font-size: 12px; line-height: 1.65; }
 .action-list button[aria-pressed="true"] { padding-left: 10px; }
 .form-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 12px; }
 .word-detail-sheet .sheet-header h2 { font-family: var(--word-font); font-size: 27px; overflow-wrap: anywhere; }
-.word-definition { font-size: 16px; line-height: 1.7; padding-top: 8px; white-space: pre-wrap; }
-.word-definition small { font-size: 13px; }
-.word-definition .muted { font-size: 13px; }
-.word-pos-group { margin-bottom: 24px; }
-.word-pos-label { display: flex; gap: 8px; align-items: baseline; margin-bottom: 12px; }
-.word-pos-label > span { font-size: 15px; font-style: italic; font-weight: 600; }
-.word-senses { display: grid; gap: 22px; }
-.word-sense { min-width: 0; }
-.word-sense .sense-meaning { margin: 0; font-weight: 500; }
-.sense-example { margin-top: 7px; overflow-wrap: anywhere; }
-.sense-example .sense-example-en { margin: 0; font-size: 15px; line-height: 1.65; }
-.sense-example .sense-example-zh { margin: 3px 0 0; font-size: 13px; line-height: 1.7; color: var(--muted); }
+.word-definition { font-size: 15px; line-height: 1.75; padding-top: 4px; white-space: pre-wrap; }
+.definition-overview { margin: 0; display: grid; gap: 8px; }
+.definition-row { display: grid; grid-template-columns: 42px minmax(0,1fr); gap: 8px; align-items: baseline; }
+.definition-row dt, .definition-pos { color: var(--muted); font-style: italic; font-size: 14px; overflow-wrap: anywhere; }
+.definition-row dd, .definition-row p { margin: 0; overflow-wrap: anywhere; }
+.word-examples { margin: 26px 0 20px; }
+.word-examples h3 { margin: 0 0 16px; font-size: 14px; font-weight: 600; }
+.word-example-list { display: grid; gap: 22px; }
+.sense-example { min-width: 0; overflow-wrap: anywhere; }
+.sense-example .sense-example-en { margin: 0; font-size: 16px; line-height: 1.65; }
+.sense-example .sense-example-zh { margin: 5px 0 0; font-size: 13px; line-height: 1.7; color: var(--muted); }
+.sense-example-meaning { display: block; margin-top: 6px; font-size: 11px; color: var(--muted); }
 .sense-example .sense-example-source { display: block; margin-top: 4px; font-size: 11px; }
 .sense-example-source a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
-.sense-example-pending { display: block; margin-top: 5px; font-size: 12px; color: var(--muted); }
+.sense-example-pending { margin: 16px 0 0; font-size: 12px; line-height: 1.6; color: var(--muted); }
+.definition-notes { margin: 18px 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.definition-notes summary { cursor: pointer; }
+.definition-notes small { display: block; margin-top: 8px; }
+.definition-notes p { margin: 4px 0 0; white-space: pre-wrap; }
 .detail-meta { display: flex; gap: 18px; color: var(--muted); font-size: 12px; margin-bottom: 14px; }
 .detail-ratings { display: grid; grid-template-columns: repeat(3,1fr); gap: 5px; }
 .detail-ratings button { font-size: 11px; padding: 8px 2px; }
