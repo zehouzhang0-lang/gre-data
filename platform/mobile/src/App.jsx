@@ -30,7 +30,7 @@ export default function App() {
     } catch (e) { notify(e.message, true); return false; }
     finally { guard.current = false; setBusy(false); }
   }, [refresh, notify]);
-  const start = words => { setSession({ words, key: crypto.randomUUID() }); setTab('review'); };
+  const start = (words, { initialCount } = {}) => { setSession({ words, initialCount, key: crypto.randomUUID() }); setTab('review'); };
   const resume = round => { setSession({ round, words: [], key: round.session_id }); setTab('review'); };
   const restored = () => { setVersion(v => v + 1); setSession(null); setSelecting(false); setTab('wall'); };
   if (error && !state) return <div className="startup"><h1>本地词库暂时无法读取</h1><p role="alert">{error}</p><p>没有清除任何数据。请重新打开应用后重试。</p><button onClick={() => location.reload()}>重新读取</button></div>;
@@ -41,7 +41,7 @@ export default function App() {
     <WordWall key={`wall-${version}`} state={state} repo={repo} busy={busy} active={tab === 'wall' && !session} mutate={mutate} notify={notify} onSelectionMode={setSelecting} onStartReview={start}/>
     <Review key={`review-${version}`} state={state} active={tab === 'review' && !session} onStart={start} onResume={resume} onWall={() => setTab('wall')}/>
     <Settings key={`settings-${version}`} state={state} repo={repo} active={tab === 'settings' && !session} busy={busy} mutate={mutate} notify={notify} onRestored={restored}/>
-    {session && <WordSession key={session.key} state={state} repo={repo} initialWords={session.words} initialSession={session.round} refresh={refresh} onExit={() => { setSession(null); refresh().catch(e => notify(e.message, true)); }} notify={notify}/>}
+    {session && <WordSession key={session.key} state={state} repo={repo} initialWords={session.words} initialCount={session.initialCount} initialSession={session.round} refresh={refresh} onExit={() => { setSession(null); refresh().catch(e => notify(e.message, true)); }} notify={notify}/>}
     {!session && !selecting && <BottomNav tab={tab} onChange={setTab}/>}
     {toast && <div className={`toast ${toast.isError ? 'error-toast' : ''}`} role={toast.isError ? 'alert' : 'status'}><span>{toast.message}</span>{toast.undo && state.undoId && <button disabled={busy} onClick={() => mutate(() => repo.undoQuickReview(), '已撤销上次标记')}>撤销</button>}<button className="toast-close" aria-label="关闭提示" onClick={() => setToast(null)}><Icon name="close" size={16}/></button></div>}
   </div>;

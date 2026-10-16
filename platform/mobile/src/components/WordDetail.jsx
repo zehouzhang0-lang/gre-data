@@ -16,6 +16,7 @@ function SenseExample({ example }) {
 export default function WordDetail({ word, state, busy, onSave, onRate, onClose }) {
   const [editing, setEditing] = useState(false), [draft, setDraft] = useState({ pos: word.pos || '', meaning: word.meaning || '', note: word.note || '' });
   const schedule = state.spacedReview?.items.find(i => i.kind === 'word' && i.word === word.word);
+  const reading = state.cardReadings?.find(item => item.word === word.word);
   const related = (state.relations?.groups || []).filter(g => !g.deleted && g.members.some(m => m.word === word.word));
   return <Sheet title={word.word} className="word-detail-sheet" onClose={busy ? () => {} : onClose}>
     {editing ? <form onSubmit={async e => { e.preventDefault(); if (await onSave({ word: word.word, ...draft })) setEditing(false); }}>
@@ -27,6 +28,7 @@ export default function WordDetail({ word, state, busy, onSave, onRate, onClose 
     </form> : <>
       <div className="word-definition">{word.senses?.length ? word.senses.map(group=><section className="word-pos-group" key={group.pos}><div className="word-pos-label"><span>{group.pos}</span><small>{partOfSpeechLabels[group.pos]}</small></div><div className="word-senses">{group.meanings.map((meaning,i)=><div className="word-sense" key={i}><p className="sense-meaning">{meaning}</p><SenseExample example={group.examples?.[i]}/></div>)}</div></section>) : <><small>{word.pos || '词性未记录'}</small><p>{word.meaning || '待补释义'}</p></>}{word.definition_status&&<small>{definitionStatusLabels[word.definition_status]}</small>}{word.note && <p className="muted">{word.note}</p>}</div>
       <div className="detail-meta"><span>{ratingLabels[wordRating(word)] || '未标记'}</span><span>{schedule?.review_count ?? word.review_count ?? 0} 次复习</span></div>
+      <div className="detail-meta" aria-label="翻阅记录"><span>翻阅 {reading?.view_count || 0} 次</span>{reading?.last_viewed_at && <time dateTime={reading.last_viewed_at}>最近翻阅 {new Date(reading.last_viewed_at).toLocaleString('zh-CN', { timeZone: state.timeZone, month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</time>}</div>
       <button className="wide-button" onClick={() => setEditing(true)}>编辑词条</button>
       <fieldset className="filter-section"><legend>按刚才的回忆标记</legend><div className="detail-ratings">{Object.entries(ratingLabels).map(([id, label]) => <button disabled={busy || !word.meaning?.trim()} key={id} className={`rating-${id}`} onClick={() => onRate(id, [word.word])}>{label}</button>)}</div><p className="hint">自评影响复习排期，不等于核验掌握。</p></fieldset>
       {!!related.length && <div className="detail-section"><h3>关联词组</h3>{related.map(group => <div className="detail-relation" key={group.id}><strong>{group.title}</strong><p className="english">{group.members.map(m => m.word).join(' · ')}</p>{group.note && <p>{group.note}</p>}</div>)}</div>}

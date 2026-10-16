@@ -4,9 +4,9 @@ import { useBackAction } from '../useBack';
 import { Confirm, Empty, Icon } from './Primitives';
 
 const union = (a, b) => [...new Map([...a, ...b].map(e => [e.id, e])).values()].sort((a, b) => a.recorded_at.localeCompare(b.recorded_at) || a.id.localeCompare(b.id));
-export default function WordSession({ state, repo, initialWords = [], initialSession, refresh, onExit, notify }) {
+export default function WordSession({ state, repo, initialWords = [], initialCount = 10, initialSession, refresh, onExit, notify }) {
   const available = useMemo(() => [...new Map(initialWords.filter(w => !w.deleted && w.meaning?.trim()).map(w => [w.word, w])).values()], [initialWords]);
-  const [session, setSession] = useState(initialSession), [count, setCount] = useState(() => String(Math.min(10, available.length))), [passes, setPasses] = useState(2);
+  const [session, setSession] = useState(initialSession), [count, setCount] = useState(() => String(Math.min(initialCount, available.length))), [passes, setPasses] = useState(2);
   const [localDrills, setLocalDrills] = useState([]), [localRecalls, setLocalRecalls] = useState([]);
   const [feedback, setFeedback] = useState(null), [answer, setAnswer] = useState(''), [revealed, setRevealed] = useState(false);
   const [busy, setBusy] = useState(false), [failure, setFailure] = useState(null), [error, setError] = useState('');

@@ -3,10 +3,11 @@ import { WORD_STAGES, meaningChoices, drillResult, roundProgress, roundRating } 
 import { projectReview, dayKey } from '../../../server/spaced-review.mjs';
 import { projectRelations, validateRelation } from '../../../server/word-relations.mjs';
 import { applyStandardDefinition, validateStandardDefinition } from '../../../shared/standard-definition.mjs';
+import { cleanCardReadingPayload, projectCardReadings } from './card-reading.mjs';
 
 export const DATA_VERSION = 1;
 export const MAX_FILE_BYTES = 20 * 1024 * 1024;
-export const VOCAB_EVENT_KINDS = new Set(['vocab_upsert', 'vocab_capture', 'vocab_delete', 'vocab_restore', 'vocab_recall', 'vocab_quick_review', 'vocab_quick_undo', 'vocab_session', 'vocab_drill', 'topic_upsert', 'topic_delete', 'topic_restore', 'word_topics', 'relation_upsert', 'relation_delete', 'relation_restore']);
+export const VOCAB_EVENT_KINDS = new Set(['vocab_upsert', 'vocab_capture', 'vocab_delete', 'vocab_restore', 'vocab_recall', 'vocab_card_reading', 'vocab_quick_review', 'vocab_quick_undo', 'vocab_session', 'vocab_drill', 'topic_upsert', 'topic_delete', 'topic_restore', 'word_topics', 'relation_upsert', 'relation_delete', 'relation_restore']);
 export const clone = value => structuredClone(value);
 export const normalizeWord = value => text(value, '单词', 120).toLowerCase().replace(/\s+/g, ' ');
 export function text(value, label, max = 10000, optional = false) {
@@ -66,6 +67,7 @@ export function cleanRelations(value) {
 }
 export function cleanPayload(kind, p) {
   if (!VOCAB_EVENT_KINDS.has(kind) || !p || typeof p !== 'object') throw Error('不是支持的词库记录');
+  if (kind === 'vocab_card_reading') return cleanCardReadingPayload(p, normalizeWord, timestamp);
   const relation = validateRelation(kind, p);
   if (relation) return relation;
   if (kind === 'vocab_quick_undo') return { target_id: uuid(p.target_id) };
@@ -152,6 +154,7 @@ export function validateData(value) {
   }), e => e.id, '学习记录').sort(eventOrder);
   for (const e of events) {
     const p = e.payload;
+    if (e.kind === 'vocab_card_reading' && p.items.some(i => !words.has(i.word) || words.get(i.word).deleted || i.viewed_at > e.recorded_at)) throw Error('翻阅记录引用无效单词或未来时间');
     if (e.kind === 'vocab_quick_undo' && seen.get(p.target_id)?.kind !== 'vocab_quick_review') throw Error('撤销指向不存在的标记');
     if (e.kind === 'vocab_quick_review' && p.items.some(i => !words.has(i.word) || words.get(i.word).deleted || !applyStandardDefinition(words.get(i.word),definitionMap.get(i.word)).meaning)) throw Error('标记引用未就绪单词');
     if (e.kind === 'vocab_recall' && !words.has(p.word)) throw Error('回忆引用未知单词');
@@ -216,7 +219,7 @@ export function projectState(data, now = new Date()) {
     return { ...session, ...progress, completed_at: progress.complete ? recalls.filter(r => r.session_id === session.session_id).at(-1)?.recorded_at || null : null };
   }).reverse();
   const undone = new Set(data.events.filter(e => e.kind === 'vocab_quick_undo').map(e => e.payload.target_id));
-  return { vocabulary, relations, spacedReview, vocabSessions, vocabDrills, events: data.events.map(e => ({ ...e, ...e.payload })).reverse(), quickRound: data.quickRound, undoId: data.events.findLast(e => e.kind === 'vocab_quick_review' && !undone.has(e.id))?.id || null, settings: clone(data.settings), timeZone: data.time_zone, datasetId: data.dataset_id };
+  return { vocabulary, relations, spacedReview, vocabSessions, vocabDrills, cardReadings: projectCardReadings(data.events, vocabulary), events: data.events.map(e => ({ ...e, ...e.payload })).reverse(), quickRound: data.quickRound, undoId: data.events.findLast(e => e.kind === 'vocab_quick_review' && !undone.has(e.id))?.id || null, settings: clone(data.settings), timeZone: data.time_zone, datasetId: data.dataset_id };
 }
 export function prepareEvent(data, kind, payload, id, now = new Date()) {
   const p = cleanPayload(kind, payload), prior = data.events.find(e => e.id === id);
@@ -226,6 +229,7 @@ export function prepareEvent(data, kind, payload, id, now = new Date()) {
     return prior;
   }
   const state = projectState(data, now), available = new Map(state.vocabulary.filter(w => !w.deleted).map(w => [w.word, w]));
+  if (kind === 'vocab_card_reading' && p.items.some(i => !available.has(i.word) || Date.parse(i.viewed_at) > +new Date(now))) throw Error('翻阅记录引用无效单词或未来时间');
   if (kind === 'vocab_quick_review' && p.items.some(i => !available.get(i.word)?.meaning)) throw Error('存在已移除、未知或缺释义的词，本批未保存');
   if (kind === 'vocab_quick_undo' && data.events.find(e => e.id === p.target_id)?.kind !== 'vocab_quick_review') throw Error('只能撤销已有单词墙标记');
   if (['vocab_delete', 'vocab_restore'].includes(kind) && !state.vocabulary.some(w => w.word === p.word)) throw Error('单词不存在');

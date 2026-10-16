@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { buildIndexes, defaultDisplay, displaySettings, emptyFilters, entrySections, filterCount, filterEntries, normalizeFilters, PAGE_SIZE, ratingLabels, relationshipLabels } from '../model.mjs';
+import { buildIndexes, defaultDisplay, displaySettings, emptyFilters, entrySections, filterCount, filterEntries, normalizeFilters, PAGE_SIZE, ratingLabels, relationshipLabels, wordRating } from '../model.mjs';
+import { createCardReadingDraft } from '../card-reading-draft.mjs';
 import { useBackAction } from '../useBack';
 import { Confirm, Empty, Icon, Pager, Sheet } from './Primitives';
 import { FilterSheet, SearchSheet, SizeSheet, SortSheet } from './WallSheets';
@@ -16,6 +17,8 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
   const [selecting, setSelecting] = useState(false), [sheet, setSheet] = useState(null), [confirm, setConfirm] = useState(null);
   const [detail, setDetail] = useState(null), [group, setGroup] = useState(null);
   const scroll = useRef(null), settingsReady = useRef(false), settingsTimer = useRef(null);
+  const readingDraft = useRef(null);
+  if (!readingDraft.current) readingDraft.current = createCardReadingDraft();
   const live = useMemo(() => new Map(state.vocabulary.filter(w => !w.deleted).map(w => [w.word, w])), [state.vocabulary]);
   const indexes = useMemo(() => buildIndexes(state), [state]);
   const present = entries.filter(e => live.has(e.word));
@@ -33,7 +36,12 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
   }, [display, filters, page, repo, notify]);
   const cancelSelection = useCallback(() => { setSelecting(false); setSelected(new Set()); }, []);
   useBackAction(cancelSelection, active && selecting, 60);
-  const flip = useCallback(word => setFlipped(previous => { const next = new Set(previous); next.has(word) ? next.delete(word) : next.add(word); return next; }), []);
+  const flip = useCallback(word => {
+    const next = new Set(flipped);
+    if (next.has(word)) next.delete(word);
+    else { next.add(word); readingDraft.current.record(word, new Date().toISOString()); }
+    setFlipped(next);
+  }, [flipped]);
   const select = useCallback(word => {
     if (!live.get(word)?.meaning?.trim()) { notify('这个词待补释义，请先在详情中补充。'); return; }
     setSelected(previous => { const next = new Set(previous); next.has(word) ? next.delete(word) : next.add(word); return next; });
@@ -63,6 +71,24 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
     if (await mutate(() => repo.rate(words, rating), `已标记 ${words.length} 词 · ${ratingLabels[rating]}`)) {
       cancelSelection(); setDetail(null);
     }
+  }
+  async function saveCardReadings() {
+    const prepare = () => readingDraft.current.prepare(word => {
+      const rating = wordRating(live.get(word));
+      return rating === 'unrated' ? null : rating;
+    }, word => live.has(word));
+    let batch = prepare();
+    if (!batch) { notify('没有新的翻阅记录；已有印象标记已保存'); setSheet(null); return; }
+    const savedWords = new Set();
+    while (batch) {
+      const currentBatch = batch;
+      if (!await mutate(() => repo.saveEvent('vocab_card_reading', currentBatch.payload, currentBatch.id))) return;
+      currentBatch.payload.items.forEach(item => savedWords.add(item.word));
+      readingDraft.current.commit();
+      batch = prepare();
+    }
+    notify(`已记录 ${savedWords.size} 个词的翻阅状态`);
+    setSheet(null);
   }
   function selectPage() {
     setSelected(previous => new Set([...previous, ...visible.map(e => e.word).filter(word => live.get(word)?.meaning?.trim())]));
@@ -102,9 +128,10 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
     {active && sheet === 'more' && <Sheet title="词库操作" onClose={() => setSheet(null)}><div className="action-list">
       <button onClick={() => { setFlipped(new Set()); setSheet(null); }}>全部翻回英文</button>
       <button onClick={() => changeFilter(filters, seed + 1)}>刷新当前词表</button>
+      <button disabled={busy} onClick={saveCardReadings}>记录本轮卡片状态</button>
       {selecting && <button onClick={() => { setSelected(new Set()); setSheet(null); }}>清空选择</button>}
       {selectedWords.length === 1 && <button onClick={() => { setDetail(selectedWords[0]); setSheet(null); }}>查看所选词详情</button>}
-      <button disabled={!ready.length} onClick={() => { setSheet(null); cancelSelection(); onStartReview(ready.map(word => live.get(word))); }}>背诵筛选词 · {ready.length} 词</button>
+      {selecting ? <button disabled={busy || !selectedWords.length} onClick={() => { const words = selectedWords.map(word => live.get(word)); setSheet(null); cancelSelection(); onStartReview(words, { initialCount: words.length }); }}>背诵当前多选单词 · {selectedWords.length} 词</button> : <button disabled={busy || !ready.length} onClick={() => { setSheet(null); onStartReview(ready.map(word => live.get(word))); }}>背诵筛选词 · {ready.length} 词</button>}
       <button disabled={busy || !state.undoId} onClick={async () => { if (await mutate(() => repo.undoQuickReview(), '已撤销上次标记，次数和排期已恢复')) setSheet(null); }}>撤销上次标记</button>
       <button disabled={busy} onClick={startRound}>开始新一轮</button>
     </div><p className="hint">本轮改标只更正结果，不重复计次。标记后卡片保留原位置；主动刷新才重新筛选。</p></Sheet>}
