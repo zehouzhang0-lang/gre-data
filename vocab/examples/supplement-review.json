@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-16",
+  "before": {
+    "words": 2727,
+    "senses": 6862,
+    "examples": 2399,
+    "pending": 4463
+  },
+  "after": {
+    "date": "2026-10-16",
+    "words": 2799,
+    "senses": 7014,
+    "words_with_examples": 2114,
+    "examples": 3711,
+    "pending": 3303,
+    "source_pages": 2460,
+    "publishers": {
+      "ETS": 14,
+      "Oxford": 3697
+    },
+    "source_policy": "ETS original sentences take priority when the part of speech and specific meaning match; Oxford original examples supplement them. No authored examples; unmatched or unavailable sentences remain null."
+  },
+  "delta": {
+    "words": 72,
+    "senses": 152,
+    "filled_senses": 1312,
+    "ets_sentences": 14,
+    "ets_replacement_of_oxford": 1
+  },
+  "scope": {
+    "ets_sources": 12,
+    "old_pending_words": 2412,
+    "old_pending_senses": 4463,
+    "today_words": 108,
+    "new_words": 72,
+    "repeated_words": 36,
+    "final_oxford_proposals": 1207,
+    "independent_reviewed_proposals": 1215
+  },
+  "omitted_proposals": [
+    {
+      "word": "contemporary",
+      "pos": "n.",
+      "meaning": "同时代人，同龄人",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "exacerbate",
+      "pos": "v.",
+      "meaning": "使加剧",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "gauge",
+      "pos": "v.",
+      "meaning": "测量，估计，判断",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "merit",
+      "pos": "v.",
+      "meaning": "值得，应受到",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "obscure",
+      "pos": "v.",
+      "meaning": "使难以理解",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "profound",
+      "pos": "adj.",
+      "meaning": "程度很深的",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "usage",
+      "pos": "n.",
+      "meaning": "用法",
+      "reason": "already_has_priority_source"
+    }
+  ],
+  "independent_rejections": [
+    {
+      "word": "contemplation",
+      "pos": "n.",
+      "meaning": "意图",
+      "reason": "此句是固定短语 in contemplation，Oxford 在 Idioms 下明确释为正在考虑中（being considered），不直接例证独立名词的意图义。译文打算采取把尚在考虑阶段的措施改成了行动意图；应留空或另找确切例句，不把此句挂到意图义。",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/contemplation",
+      "locator": "Idioms > in contemplation"
+    },
+    {
+      "word": "retrofit",
+      "pos": "n.",
+      "meaning": "改装工程",
+      "reason": "语义和词性匹配，但原页例句本身疑漏不定冠词：单数可数名词 plant retrofit 前缺限定词。已重新打开 Oxford 原页，页面原文也如此；为了提供规范自然的学习例句应暂留空，不能擅自补 a 后仍标为原句。",
+      "source_url": "https://www.oxfordlearnersdictionaries.com/definition/english/retrofit_2",
+      "locator": "noun definition example"
+    }
+  ],
+  "policy": "Only exact POS/sense matches with traceable ETS/Oxford originals; leave null when unavailable, unclear, fragmentary, defective or above quotation budget. New words do not count as learned. Not an exhaustive search of all publications.",
+  "today_new_examples": 101,
+  "today_new_pending": 51
+}

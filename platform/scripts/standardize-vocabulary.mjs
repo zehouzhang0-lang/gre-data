@@ -47,7 +47,7 @@ for(const w of snapshot.vocabulary) {
     const historicallyChecked=oldSources.some(s=>['checked','dictionary_checked'].includes(s.status));
     const status=['spelling_pending','spelling_redirect'].includes(edit?.status)?edit.status:checked?'dictionary_checked':historicallyChecked?'historical_checked':'coach_draft';
     items.push(attachSenseExamples({word:w.word,input:{pos:w.pos||'',meaning:w.meaning||''},senses,status,
-      sources:checked?[checked.source]:oldSources,
+      sources:checked?(checked.sources || [checked.source]):oldSources,
       note:edit?.note||'',normalized_at:'2026-10-13',
       content_type:/\s/.test(w.word)?'phrase':'word',
       formatted:formatDefinition(senses)},examples.get(w.word)));

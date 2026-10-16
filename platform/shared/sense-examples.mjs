@@ -14,7 +14,9 @@ export function validateQuotationBudget(entries) {
   const counts=new Map();
   for(const entry of entries) for(const group of entry.senses) for(const e of group.examples||[]) {
     if(!e)continue; validateSenseExample(e);
-    const u=new URL(e.source.url);const key=u.hostname.replace(/^www\./,'')+u.pathname.replace('/us/definition/','/definition/').replace(/\/$/,'');
+    const u=new URL(e.source.url);const host=u.hostname.replace(/^www\./,'');
+    const path=u.pathname.replace('/us/definition/','/definition/').replace(/\/$/,'');
+    const key=host+(host==='ets.org'?path.replace(/^\/content\/dam\/ets-org\/pdfs\//,'/pdfs/'):path);
     const n=e.en.trim().split(/\s+/).length;counts.set(key,(counts.get(key)||0)+n);
   }
   for(const [url,count] of counts) if(count>25) throw Error(`原例句摘录超过单页25词：${url} (${count})`);

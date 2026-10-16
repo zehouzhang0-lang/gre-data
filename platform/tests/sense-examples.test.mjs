@@ -35,3 +35,11 @@ test('catalog update and subsequent backup retain examples without changing phon
  const reopened=await openRepository({storage});
  assert.equal((await reopened.getState()).vocabulary[0].senses[0].examples[0].en,example.en);
 });
+
+test('ETS page locators survive validation and PDF aliases share one quotation budget',()=>{
+ const ets={...example,source:{publisher:'ETS',url:'https://www.ets.org/pdfs/gre/sample-issue-task.pdf#page=8',locator:'PDF 第 8 页 · 官方点评'}};
+ const enriched=attachSenseExamples(definition,{senses:[{...definition.senses[0],examples:[ets,null]}]});
+ assert.deepEqual(validateStandardDefinition(enriched).senses[0].examples[0].source,ets.source);
+ const alias={...ets,source:{...ets.source,url:'https://www.ets.org/content/dam/ets-org/pdfs/gre/sample-issue-task.pdf#page=9'}};
+ assert.throws(()=>validateQuotationBudget([{senses:[{examples:[ets,ets,alias,alias]}]}]));
+});

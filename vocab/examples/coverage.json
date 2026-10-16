@@ -1,10 +1,14 @@
 {
   "date": "2026-10-16",
-  "words": 2727,
-  "senses": 6862,
-  "words_with_examples": 1908,
-  "examples": 2399,
-  "pending": 4463,
-  "source_pages": 1924,
-  "source_policy": "Oxford original examples matched to the existing senses. ETS remains the priority for official question contexts. No authored examples; unmatched or unavailable sentences remain pending."
+  "words": 2799,
+  "senses": 7014,
+  "words_with_examples": 2114,
+  "examples": 3711,
+  "pending": 3303,
+  "source_pages": 2460,
+  "publishers": {
+    "ETS": 14,
+    "Oxford": 3697
+  },
+  "source_policy": "ETS original sentences take priority when the part of speech and specific meaning match; Oxford original examples supplement them. No authored examples; unmatched or unavailable sentences remain null."
 }

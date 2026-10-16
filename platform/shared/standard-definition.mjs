@@ -8,7 +8,7 @@ export function validateSenseExample(e) {
   if (!e || e.kind !== 'quotation' || e.review_status !== 'source_checked' || typeof e.en !== 'string' || !e.en.trim() || e.en.length > 1000 || typeof e.zh !== 'string' || !e.zh.trim() || e.zh.length > 1000) throw Error('例句必须是已核对原句及中文译文');
   let url; try { url = new URL(e.source?.url); } catch { throw Error('例句来源缺失'); }
   if (url.protocol !== 'https:' || !['ets.org','oxfordlearnersdictionaries.com','oxfordreference.com','oed.com'].some(domain=>url.hostname===domain||url.hostname.endsWith('.'+domain)) || typeof e.source.publisher !== 'string' || !e.source.publisher.trim()) throw Error('例句须来自 ETS 或 Oxford 可追溯页面');
-  return {en:e.en.trim(),zh:e.zh.trim(),kind:'quotation',review_status:'source_checked',source:{publisher:e.source.publisher.slice(0,150),url:url.href,...(e.source.checked_at?{checked_at:String(e.source.checked_at).slice(0,10)}:{})}};
+  return {en:e.en.trim(),zh:e.zh.trim(),kind:'quotation',review_status:'source_checked',source:{publisher:e.source.publisher.slice(0,150),url:url.href,...(e.source.checked_at?{checked_at:String(e.source.checked_at).slice(0,10)}:{}),...(typeof e.source.locator==='string'&&e.source.locator.trim()?{locator:e.source.locator.trim().slice(0,500)}:{})}};
 }
 export function validateStandardDefinition(d) {
   if (!d || typeof d.word!=='string' || !d.word || d.word.length>120 || !d.input || typeof d.input.pos!=='string' || typeof d.input.meaning!=='string' || d.input.meaning.length>10000 || !Array.isArray(d.senses) || d.senses.length>20 || !Object.hasOwn(definitionStatusLabels,d.status)) throw Error('规范释义字段无效');

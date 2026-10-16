@@ -513,7 +513,7 @@ evidence_records:
 ## 词典式释义（2026-10-13）
 
 - `vocab/standardized.json`：`schema_version: 1`，`items` 覆盖有效合并词库（含已移除记录）。每项包含 `word`、原始输入指纹 `input: {pos, meaning}`、`senses: [{pos, meanings: []}]`、`status`、`sources`、`note`、`normalized_at`、`content_type`、`formatted`。
-- 一个词性一个分组，每组按核心义到扩展义排列，不固定义项数量。同一义项的近义中文可以用逗号连接，独立义项用数组分别保存。列表以分号分隔、词性换行；详情按词性分组、义项编号。
+- 一个词性一个分组，每组按核心义到扩展义排列，不固定义项数量。同一义项的近义中文可以用逗号连接，独立义项用数组分别保存。列表以分号分隔、词性换行；详情按词性分组，以无编号段落排列义项。
 - `status`：`dictionary_checked` 本次查证；`historical_checked` 沿用既有词典核验；`coach_draft` 待核验；`spelling_pending` 待确认拼写；`spelling_redirect` 截断拼写归入正确词条。运行时出现 `changed` 表示用户修改释义后待重新整理。
 - `sources` 保存词典链接、发布者、核验日期及已有证据；不把历史核验改记为本次查证。`note` 保存词义辨析、语域或拼写说明，独立于核心义项。
 - `vocab/definition-edits.json` 保存人工编订义项，`vocab/definition-checks.json` 保存本次补充核验；在仓库根目录运行 `node platform/scripts/standardize-vocabulary.mjs` 重建规范层并校验。
@@ -531,8 +531,14 @@ evidence_records:
 
 用户要求只采用可追溯 ETS／Oxford 原例句，未取得可靠原句的保留待补充。按 ETS 官方语境优先、Oxford 具体义项辅助核对；不声称某词典是 ETS 指定词典，也不把自编句子标为官方例句。
 
-`vocab/examples/verified-*.json` 保存 `{schema_version:1,items:[{word,senses:[{pos,meanings,examples}]}]}`。`meanings` 与规范词库原数组精确一致，`examples` 同长度，每项为 `null` 或 `{en,zh,kind:'quotation',review_status:'source_checked',source:{publisher,url,checked_at}}`。英文为短原句，中文为自译；来源是实际读取的具体页面。缺原句、仅有搭配短语、词性/义项不确定或摘录额度不足的保留 null，不补写原创。英文按规范化来源页合计最多25词，重复展示也计入。
+`vocab/examples/verified-*.json` 保存 `{schema_version:1,items:[{word,senses:[{pos,meanings,examples}]}]}`。`meanings` 与规范词库原数组精确一致，`examples` 同长度，每项为 `null` 或 `{en,zh,kind:'quotation',review_status:'source_checked',source:{publisher,url,checked_at,locator?}}`。英文为短原句，中文为自译；来源是实际读取的具体页面。可选 locator 保存 PDF 页码、文章或点评栏目；PDF URL 可加 #page，但摘录限额仍按整份 PDF 计算，ETS 旧 /content/dam/ets-org/pdfs/ 与 /pdfs/ 路径合并计数。缺原句、仅有搭配短语、词性/义项不确定或摘录额度不足的保留 null，不补写原创。英文按规范化来源页合计最多25词，重复展示也计入。
 
 规范生成脚本按词形、词性和完整义项数组匹配例句；原义项改动时不沿用索引错配例句。手机校验、升级、持久化和备份均保留可选 examples，兼容此前无 examples 的数据。展示用无编号段落，每个义项下跟原例句、中文及来源链接；缺失处写“例句待补充”。仅阅读例句不产生学习事件。
 
 `node platform/scripts/audit-sense-examples.mjs` 校验重复词、义项位置、来源类型与单页摘录限额，输出 `vocab/examples/coverage.json`。网页检索候选缓存不作为已匹配例句随安装包发布，正式计数以已附具体义项的例句为准。
+
+### 追加词库内容（2026-10-16，0.1.5）
+
+覆盖升级可追加手机尚不存在的新词，但新词不携带电脑回忆、旧累计次数或练习轮次；隐藏过的旧词不复活。既有词仍依据原输入指纹更新规范层，不覆盖用户改写。catalogUpdate 新增 added 计数，重复启动不重复导入，原始事件、旧排期、未完成轮次与既有恢复快照保留。
+
+`definition-checks.json` 中单个核验项允许 `sources` 数组，完整保留实际查阅的不同词性来源；兼容既有单一 `source`。`vocab/examples/supplement-review.json` 记录本轮补查范围和未采用理由，未找到原句不等于该来源完全没有用例。

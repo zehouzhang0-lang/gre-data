@@ -9,7 +9,7 @@ function SenseExample({ example }) {
   return <div className="sense-example">
     <p className="sense-example-en" lang="en">{example.en}</p>
     <p className="sense-example-zh" lang="zh-Hans">{example.zh}</p>
-    <small className="sense-example-source">{/^https?:\/\//.test(example.source?.url || '') ? <a href={example.source.url} target="_blank" rel="noreferrer">{sourceLabel}</a> : sourceLabel}</small>
+    <small className="sense-example-source">{/^https?:\/\//.test(example.source?.url || '') ? <a href={example.source.url} target="_blank" rel="noreferrer">{sourceLabel}</a> : sourceLabel}{example.source?.locator && ` · ${example.source.locator}`}</small>
   </div>;
 }
 

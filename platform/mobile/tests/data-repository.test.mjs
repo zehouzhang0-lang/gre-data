@@ -89,6 +89,36 @@ test('catalog update preserves edited meanings, hidden words, custom categories 
   assert.equal(state.settings.catalogUpdate.preserved,1);
 });
 
+test('catalog adds new words once without importing desktop learning or restoring phone-hidden words',async()=>{
+  const phone=await setup();
+  await phone.repo.rate(['lucid'],'partial');
+  await phone.repo.saveEvent('vocab_delete',{word:'abate'});
+  const before=JSON.parse(phone.storage.value).current, oldState=await phone.repo.getState();
+  const desktop=await setup(fixture([{word:'timely',meaning:'及时的',pos:'adj.'}]));
+  await desktop.repo.rate(['timely'],'remembered');
+  const incoming=(await readPackage(await desktop.repo.backup())).data;
+  incoming.baseline.definitions=[{word:'timely',input:{pos:'adj.',meaning:'及时的'},senses:[{pos:'adj.',meanings:['适时的'],examples:[null]}],status:'dictionary_checked',sources:[]}];
+  incoming.baseline.relations.topics[0].words.push('timely');
+  const content=await createPackage(incoming,SEED_FORMAT), catalogUpdate={revision:'new-words',load:async()=>content};
+  const upgraded=await openRepository({storage:phone.storage,now:()=>phone.clock.value,catalogUpdate});
+  const state=await upgraded.getState(), after=JSON.parse(phone.storage.value).current;
+  assert.equal(state.settings.catalogUpdate.added,1);
+  assert.equal(word(state,'timely').meaning,'adj.适时的');
+  assert.deepEqual(word(state,'timely').recalls,[]);
+  assert.equal(word(state,'timely').status,'未检验');
+  assert.equal(item(state,'timely').review_count,0);
+  assert.equal(word(state,'abate').deleted,true);
+  assert.deepEqual(after.events,before.events);
+  assert.deepEqual(after.baseline.legacyWords,before.baseline.legacyWords);
+  assert.deepEqual(item(state),item(oldState));
+  assert(state.relations.assignments.find(a=>a.word==='timely').topics.includes('expression'));
+  assert.deepEqual((await readPackage(await upgraded.backupCatalogRecovery())).data,before);
+  const writes=phone.storage.writes;
+  const reopened=await openRepository({storage:phone.storage,catalogUpdate});
+  assert.equal(phone.storage.writes,writes);
+  assert.equal((await reopened.getState()).vocabulary.filter(w=>w.word==='timely').length,1);
+});
+
 test('failed catalog storage or damaged package leaves old bytes intact and upgrade can retry',async()=>{
   const {storage}=await setup(), before=storage.value, catalogUpdate=await catalogOptions();
   storage.fail=true;

@@ -1,13 +1,22 @@
-import { clone, projectState, validateData } from './model.mjs';
+import { cleanWord, clone, projectState, validateData } from './model.mjs';
 import { applyStandardDefinition } from '../../../shared/standard-definition.mjs';
 
-export const CATALOG_REVISION = '2026-10-16-source-examples-1';
+export const CATALOG_REVISION = '2026-10-16-source-examples-2';
 
 // Only content is merged. Never import desktop events, review baselines or rounds.
 export function updateCatalog(current, incoming, revision) {
   const next = clone(current);
   const raw = projectState({...current, baseline:{...current.baseline, definitions:[]}});
   const localWords = new Map(raw.vocabulary.map(w => [w.word,w]));
+  const incomingRaw = projectState({...incoming, baseline:{...incoming.baseline, definitions:[]}});
+  let added = 0;
+  for (const word of incomingRaw.vocabulary) {
+    if (word.deleted || localWords.has(word.word)) continue;
+    const fresh = cleanWord({...word, recalls:[], status:'未检验', feedback:'', deleted:false});
+    next.baseline.vocabulary.push(fresh);
+    localWords.set(word.word,fresh);
+    added++;
+  }
   const definitions = new Map((current.baseline.definitions || []).map(d => [d.word,d]));
   let updated = 0, preserved = 0;
   for (const d of incoming.baseline.definitions || []) {
@@ -27,6 +36,6 @@ export function updateCatalog(current, incoming, revision) {
   }
   next.baseline.relations.topics = [...topics.values()];
   // Existing phone topic/word_topics events still override these defaults.
-  next.settings.catalogUpdate = {revision, updated, preserved};
+  next.settings.catalogUpdate = {revision, updated, preserved, added};
   return validateData(next);
 }
