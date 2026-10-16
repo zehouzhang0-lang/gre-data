@@ -27,11 +27,19 @@ export default function useRepository() {
   }, []);
   useEffect(() => {
     alive.current = true;
-    initialization.current ||= openRepository({catalogUpdate:{revision:CATALOG_REVISION,load:async()=>{
-      const response = await fetch('./vocabulary-seed.json');
-      if (!response.ok) throw Error('新版词库读取失败，原学习数据已保留；请重新打开应用');
-      return response.text();
-    }}}).then(async repo => { repository.current = repo; return repo.getState(); });
+    // Fast Refresh preserves this hook's refs. Reopen only when the repository
+    // implementation changes, after its queued writes finish, without remounting
+    // the word wall or discarding its unsaved reading batch and selected words.
+    if (initialization.current?.factory !== openRepository) {
+      const previous = repository.current;
+      const operation = (previous ? previous.getState() : Promise.resolve()).then(() => openRepository({catalogUpdate:{revision:CATALOG_REVISION,load:async()=>{
+        const response = await fetch('./vocabulary-seed.json');
+        if (!response.ok) throw Error('新版词库读取失败，原学习数据已保留；请重新打开应用');
+        return response.text();
+      }}})).then(async repo => { repository.current = repo; return repo.getState(); });
+      operation.factory = openRepository;
+      initialization.current = operation;
+    }
     const stopWatching = watchStartup(initialization.current, {
       onSlow: () => setSlow(true),
       onReady: next => { ready.current = true; setState(next); setSlow(false); setError(''); },
@@ -41,6 +49,6 @@ export default function useRepository() {
     const timer = setInterval(visible, 60_000);
     document.addEventListener('visibilitychange', visible);
     return () => { alive.current = false; stopWatching(); clearInterval(timer); document.removeEventListener('visibilitychange', visible); };
-  }, [refresh]);
+  }, [refresh, openRepository]);
   return { state, repo: repository.current, refresh, error, slow };
 }

@@ -73,6 +73,7 @@ export async function openRepository(options = {}) {
   }
   return {
     async getState() { await queue; return clone(snapshot()); },
+    // Callers keep the same ID when retrying a failed manual reading save.
     saveEvent(kind, payload, id = makeId()) { return enqueue(async () => { const next = clone(current), event = addEvent(next, kind, payload, id); await persist(next); return clone(event); }); },
     rate(words, rating, id = makeId()) { return enqueue(async () => {
       const next = clone(current), round = ensureRound(next, now(), makeId);
