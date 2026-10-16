@@ -49,10 +49,10 @@ small, .hint { color: var(--muted); font-size: 12px; line-height: 1.65; }
 .wall-section + .wall-section { margin-top: 16px; }
 .group-heading { width: 100%; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 7px 2px; min-height: 36px; color: #58646b; display: flex; text-align: left; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px; }
 .group-heading span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; font-size: 11px; color: var(--muted); }
-.wall-dock { flex-shrink: 0; display: flex; gap: 7px; padding: 10px 12px; border-top: 1px solid var(--line); background: #fff; }
-.wall-dock button { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 8px 10px; font-size: 14px; }
-.wall-dock .dock-search { flex: 1; justify-content: flex-start; color: var(--muted); background: var(--tile); min-width: 0; }
-.dock-search span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.wall-toolbar { flex-shrink: 0; display: flex; gap: 7px; padding: 4px 12px 10px; background: #fff; }
+.wall-toolbar button { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 8px 10px; font-size: 14px; }
+.wall-toolbar .wall-search { flex: 1; justify-content: flex-start; color: var(--muted); background: var(--tile); min-width: 0; }
+.wall-search span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .filter-count { font-size: 10px; }
 .bottom-nav { flex-shrink: 0; display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--line); padding: 2px 4px calc(3px + var(--safe-bottom)); background: #fff; }
 .bottom-nav button { border: 0; border-radius: 0; position: relative; height: 58px; padding: 6px 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; color: var(--muted); font-size: 12px; }
