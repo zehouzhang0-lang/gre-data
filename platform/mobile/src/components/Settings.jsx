@@ -35,7 +35,7 @@ export default function Settings({ state, repo, active, busy, mutate, notify, on
   }
   return <section className="screen" hidden={!active} aria-label="设置与备份"><header className="screen-header"><h1>设置</h1></header><main className="screen-scroll settings-content">
     <section className="settings-section"><h2>词库与数据</h2><p className="muted">{state.vocabulary.filter(w => !w.deleted).length} 个单词 · 数据保存在此设备</p>
-      {state.settings.catalogUpdate && <p role="status">新版词义与分类已更新，学习进度已保留。{state.settings.catalogUpdate.preserved > 0 ? `另有 ${state.settings.catalogUpdate.preserved} 个词保留手机原有释义。` : ''}</p>}
+      {state.settings.catalogUpdate && <p role="status">新版词义、分类与例句已更新，学习进度已保留。{state.settings.catalogUpdate.preserved > 0 ? `另有 ${state.settings.catalogUpdate.preserved} 个词保留手机原有释义。` : ''}</p>}
       <button className="settings-row" disabled={reading || busy} onClick={() => choose('import')}><Icon name="download"/><span>导入词库<small>合并新词与新分类，不覆盖已有复习进度</small></span></button>
       <button className="settings-row" disabled={reading || busy} onClick={() => backup()}><Icon name="upload"/><span>导出完整备份<small>词库、关系、历史、轮次与显示设置</small></span></button>
       {state.hasCatalogRecovery && <button className="settings-row" disabled={reading || busy} onClick={() => backup('catalog')}><Icon name="upload"/><span>导出词库更新前备份<small>保留本次升级前的词库和学习记录</small></span></button>}

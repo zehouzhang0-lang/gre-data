@@ -4574,5 +4574,36 @@
         ]
       }
     ]
+  },
+  "wholesale": {
+    "senses": [
+      {
+        "pos": "n.",
+        "meanings": [
+          "批发"
+        ]
+      },
+      {
+        "pos": "adj.",
+        "meanings": [
+          "批发的",
+          "大规模的，全面的"
+        ]
+      },
+      {
+        "pos": "adv.",
+        "meanings": [
+          "以批发方式",
+          "大规模地，整体地"
+        ]
+      },
+      {
+        "pos": "v.",
+        "meanings": [
+          "批发销售"
+        ]
+      }
+    ],
+    "note": "2026-10-16 核对 Oxford wholesale_1（副词）及 wholesale_2（形容词），纠正原归入名词组的形容词、副词释义；名词“批发”和动词“批发销售”保留既有 Merriam-Webster 核验证据并再次确认。"
   }
 }

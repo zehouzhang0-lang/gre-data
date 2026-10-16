@@ -526,3 +526,13 @@ evidence_records:
 手机启动检测 `settings.catalogUpdate.revision`，未应用当前内容版本时校验安装包内词库并合并规范释义与默认主题。释义仅在原始输入指纹相符时更新，不覆写手机不同的释义；既有分类事件继续覆盖默认归属。不会导入电脑学习事件，也不改本机 `dataset_id`、`events`、`baseline.legacyWords`、`quickRound` 或轮次快照。词条隐藏状态不变。
 
 同一 SQLite 文档事务保存更新结果及可选 `catalogRecovery`（首次词库更新前的完整 current 快照），不替代原有 `recovery`。普通保存继续携带该快照，可从设置单独导出为完整备份。标记与内容同事务保存，失败保留原字节，下次启动重试；已成功的内容版本不重复迁移。备份恢复带旧版本标记时，下次启动重新应用内容更新，但不导入另一端进度。
+
+### 逐义项原例句（2026-10-16，0.1.4）
+
+用户要求只采用可追溯 ETS／Oxford 原例句，未取得可靠原句的保留待补充。按 ETS 官方语境优先、Oxford 具体义项辅助核对；不声称某词典是 ETS 指定词典，也不把自编句子标为官方例句。
+
+`vocab/examples/verified-*.json` 保存 `{schema_version:1,items:[{word,senses:[{pos,meanings,examples}]}]}`。`meanings` 与规范词库原数组精确一致，`examples` 同长度，每项为 `null` 或 `{en,zh,kind:'quotation',review_status:'source_checked',source:{publisher,url,checked_at}}`。英文为短原句，中文为自译；来源是实际读取的具体页面。缺原句、仅有搭配短语、词性/义项不确定或摘录额度不足的保留 null，不补写原创。英文按规范化来源页合计最多25词，重复展示也计入。
+
+规范生成脚本按词形、词性和完整义项数组匹配例句；原义项改动时不沿用索引错配例句。手机校验、升级、持久化和备份均保留可选 examples，兼容此前无 examples 的数据。展示用无编号段落，每个义项下跟原例句、中文及来源链接；缺失处写“例句待补充”。仅阅读例句不产生学习事件。
+
+`node platform/scripts/audit-sense-examples.mjs` 校验重复词、义项位置、来源类型与单页摘录限额，输出 `vocab/examples/coverage.json`。网页检索候选缓存不作为已匹配例句随安装包发布，正式计数以已附具体义项的例句为准。

@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import { Store } from '../server/store.mjs';
 import { formatDefinition, validateStandardDefinition } from '../shared/standard-definition.mjs';
+import {attachSenseExamples,validateQuotationBudget} from '../shared/sense-examples.mjs';
 
 // Reproducible migration of the effective vocabulary. Source records and recalls
 // remain untouched. Unmarked mixed-POS entries require explicit editorial input.
@@ -13,6 +14,11 @@ const originals=new Map(lexicon.items.map(w=>[w.word,w]));
 const edits=JSON.parse(await fs.readFile('vocab/definition-edits.json','utf8'));
 const checks=await store.json('vocab/definition-checks.json',{items:[]});
 const verified=new Map(checks.items.map(x=>[x.word,x]));
+const exampleEntries=[];
+for(const name of await fs.readdir('vocab/examples').catch(()=>[])) if(/^verified-.*\.json$/.test(name)) exampleEntries.push(...JSON.parse(await fs.readFile('vocab/examples/'+name,'utf8')).items);
+if(new Set(exampleEntries.map(x=>x.word)).size!==exampleEntries.length)throw Error('例句词条重复');
+validateQuotationBudget(exampleEntries);
+const examples=new Map(exampleEntries.map(x=>[x.word,x]));
 const chinese={名词:'n.',动词:'v.',形容词:'adj.',副词:'adv.'};
 function parse(w) {
   const raw=w.meaning.replace(/（(名词|动词|形容词|副词)）/g,(_,x)=>chinese[x]);
@@ -40,11 +46,11 @@ for(const w of snapshot.vocabulary) {
     const oldSources=original?.meaning===w.meaning ? original.definition_sources||[] : [];
     const historicallyChecked=oldSources.some(s=>['checked','dictionary_checked'].includes(s.status));
     const status=['spelling_pending','spelling_redirect'].includes(edit?.status)?edit.status:checked?'dictionary_checked':historicallyChecked?'historical_checked':'coach_draft';
-    items.push({word:w.word,input:{pos:w.pos||'',meaning:w.meaning||''},senses,status,
+    items.push(attachSenseExamples({word:w.word,input:{pos:w.pos||'',meaning:w.meaning||''},senses,status,
       sources:checked?[checked.source]:oldSources,
       note:edit?.note||'',normalized_at:'2026-10-13',
       content_type:/\s/.test(w.word)?'phrase':'word',
-      formatted:formatDefinition(senses)});
+      formatted:formatDefinition(senses)},examples.get(w.word)));
   }catch(e){failures.push(e.message);}
 }
 if(failures.length){console.log(failures.join('\n'));process.exitCode=1;}else{

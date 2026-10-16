@@ -9,6 +9,16 @@ import { definitionStatusLabels, partOfSpeechLabels, matchesDefinitionFilters } 
 const PAGE_SIZE = 18;
 const topicKey = id => `topic:${id}`;
 
+function SenseExample({ example }) {
+  if (!example?.en || !example?.zh || example.kind !== 'quotation') return <small className="dictionary-example-pending">例句待补充</small>;
+  const sourceLabel = `原例句来源：${example.source?.publisher || '词典'}`;
+  return <div className="dictionary-example">
+    <p className="dictionary-example-en" lang="en">{example.en}</p>
+    <p className="dictionary-example-zh" lang="zh-Hans">{example.zh}</p>
+    <small className="dictionary-example-source">{/^https?:\/\//.test(example.source?.url || '') ? <a href={example.source.url} target="_blank" rel="noreferrer">{sourceLabel}</a> : sourceLabel}</small>
+  </div>;
+}
+
 function buildIndexes(state) {
   const topics = (state.relations?.topics || []).filter(t => !t.deleted);
   const assignment = new Map((state.relations?.assignments || []).map(a => [a.word, a]));
@@ -158,7 +168,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
       </form>
     </Modal>}
     {detail && <Modal title={detail.word} onClose={() => { setDetailWord(null); setTopicDraft(null); }}>
-      {detail.senses?.length ? <div className="dictionary-entry">{detail.senses.map(group=><section className="dictionary-pos-group" key={group.pos}><div className="dictionary-pos"><span>{group.pos}</span><small>{partOfSpeechLabels[group.pos]}</small></div><ol>{group.meanings.map((meaning,i)=><li key={i}>{meaning}</li>)}</ol></section>)}</div> : <p className="definition">{detail.pos} {detail.meaning || "尚未整理释义"}</p>}
+      {detail.senses?.length ? <div className="dictionary-entry">{detail.senses.map(group=><section className="dictionary-pos-group" key={group.pos}><div className="dictionary-pos"><span>{group.pos}</span><small>{partOfSpeechLabels[group.pos]}</small></div><div className="dictionary-senses">{group.meanings.map((meaning,i)=><div className="dictionary-sense" key={i}><p className="dictionary-meaning">{meaning}</p><SenseExample example={group.examples?.[i]}/></div>)}</div></section>)}</div> : <p className="definition">{detail.pos} {detail.meaning || "尚未整理释义"}</p>}
       {detail.standard_definition?.note && <p className="dictionary-usage">{detail.standard_definition.note}</p>}
       {detail.definition_status && <small className="dictionary-verification">{definitionStatusLabels[detail.definition_status]}</small>}
       {!!detail.standard_definition?.sources?.length && <details className="dictionary-sources"><summary>词典依据</summary>{detail.standard_definition.sources.map((source,i)=><p key={i}><a href={source.url} target="_blank" rel="noreferrer">{source.publisher || '词典'}</a>{source.checked_at ? ` · ${source.checked_at}` : ''}</p>)}</details>}

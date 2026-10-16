@@ -45,6 +45,8 @@ export async function exportVocabulary(root = defaultRoot, now = new Date()) {
   }
   const words = state => state.vocabulary.map(w => [w.word, w.meaning, w.pos, w.note, !!w.deleted, w.recalls]);
   equal('词条、释义与原始回忆', words(live), words(projected));
+  const senses = state => state.vocabulary.map(w => [w.word, w.senses || []]);
+  equal('逐义释义与来源例句', senses(live), senses(projected));
   const schedule = state => state.spacedReview.items.filter(i => i.kind === 'word');
   equal('完整单词复习排期', schedule(live), schedule(projected));
   const assignments = state => [...state.relations.assignments].sort((a, b) => a.word.localeCompare(b.word));

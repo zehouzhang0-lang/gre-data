@@ -1,0 +1,4435 @@
+{
+  "schema_version": 1,
+  "checked_ranges": [
+    [
+      1500,
+      1649
+    ]
+  ],
+  "policy": "逐项核对 Oxford 原例句；未找到完整且对应义项的句子或超出摘录额度时留空。",
+  "items": [
+    {
+      "word": "legislators",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "立法者",
+            "立法机关成员（legislator 的复数）"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "legitimate",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "合法的",
+            "正当合理的",
+            "真实的",
+            "婚生的（特定义）"
+          ],
+          "examples": [
+            {
+              "en": "Is his business strictly legitimate?",
+              "zh": "他的生意完全合法吗？",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/legitimate",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Politicians are legitimate targets for satire.",
+              "zh": "政客是可以合理讽刺的对象。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/legitimate",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "使合法化或正当化"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lenient",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "宽容的",
+            "不严厉的",
+            "舒缓的"
+          ],
+          "examples": [
+            {
+              "en": "The judge was far too lenient with him.",
+              "zh": "法官对他宽容得过头了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lenient",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The judge was far too lenient with him.",
+              "zh": "法官对他的判罚远不够严厉。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lenient",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lens",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "透镜、镜片"
+          ],
+          "examples": [
+            {
+              "en": "Have you got your lenses in?",
+              "zh": "你戴上隐形眼镜了吗？",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lens",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lest",
+      "senses": [
+        {
+          "pos": "conj.",
+          "meanings": [
+            "以免",
+            "唯恐，担心会"
+          ],
+          "examples": [
+            {
+              "en": "He gripped his brother's arm lest he be trampled by the mob.",
+              "zh": "他紧紧抓住兄弟的胳膊，以免兄弟被人群踩踏。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lest",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "She was afraid lest she had revealed too much.",
+              "zh": "她担心自己透露得太多了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lest",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lethargic",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "无精打采的",
+            "昏昏欲睡的",
+            "行动迟缓的"
+          ],
+          "examples": [
+            {
+              "en": "The weather made her lethargic.",
+              "zh": "这种天气让她无精打采。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lethargic",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "levelheaded",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "冷静明智的",
+            "头脑清醒的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "leverage",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "影响力、筹码",
+            "杠杆作用",
+            "借贷融资"
+          ],
+          "examples": [
+            {
+              "en": "Retailers can exert leverage over producers by threatening to take their business elsewhere.",
+              "zh": "零售商可以威胁转向其他供货商，以此对生产商施加影响。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/leverage_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "A longer piece of wood would give you greater leverage.",
+              "zh": "用更长的木头，杠杆作用会更大。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/leverage_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "利用优势或资源"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "levity",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "轻率",
+            "轻佻",
+            "不合时宜的玩笑或轻松态度"
+          ],
+          "examples": [
+            null,
+            null,
+            {
+              "en": "The joke provided a moment of levity in an otherwise dreary meeting.",
+              "zh": "这场会议本来十分沉闷，那个笑话带来了片刻轻松。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/levity",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "libel",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "书面诽谤",
+            "诽谤性文字"
+          ],
+          "examples": [
+            {
+              "en": "He sued the newspaper for libel.",
+              "zh": "他控告那家报纸书面诽谤。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/libel_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The article was a serious libel against the professor.",
+              "zh": "那篇文章是对这位教授的严重诽谤。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/libel_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "以文字诽谤"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "liberation",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "解放",
+            "释放",
+            "摆脱束缚"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "license",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "执照",
+            "许可",
+            "放纵"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "授权"
+          ],
+          "examples": [
+            {
+              "en": "They had licensed the firm to produce the drug.",
+              "zh": "他们授权这家公司生产该药。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/license_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lieutenant",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "中尉等军衔",
+            "副手"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lighthearted",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "轻松愉快的，无忧无虑的",
+            "不严肃的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lilac",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "丁香花或丁香属灌木",
+            "淡紫色"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "淡紫色的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lime",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "石灰",
+            "酸橙",
+            "黏鸟胶"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "Serve the dish garnished with wedges of lime.",
+              "zh": "上菜时用几瓣酸橙作点缀。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lime_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "施石灰，涂黏胶"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "limpid",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "清澈透明的",
+            "清楚简洁的",
+            "宁静的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "linger",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "逗留",
+            "徘徊",
+            "继续存在"
+          ],
+          "examples": [
+            {
+              "en": "She lingered for a few minutes to talk to Nick.",
+              "zh": "她多停留了几分钟，和尼克说话。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/linger",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            {
+              "en": "The faint smell of her perfume lingered in the room.",
+              "zh": "她香水的淡淡气味仍留在房间里。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/linger",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lionize",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "把某人奉为名人，追捧"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "listless",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "无精打采的",
+            "缺乏兴趣或活力的"
+          ],
+          "examples": [
+            {
+              "en": "The illness left her feeling listless and depressed.",
+              "zh": "这场病使她觉得无精打采、情绪低落。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/listless",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The illness left her feeling listless and depressed.",
+              "zh": "这场病使她觉得缺乏活力、情绪低落。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/listless",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "loathe",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "厌恶",
+            "憎恶"
+          ],
+          "examples": [
+            {
+              "en": "I loathe modern art.",
+              "zh": "我厌恶现代艺术。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/loathe",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "They loathe each other.",
+              "zh": "他们彼此憎恶。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/loathe",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "locale",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "事件发生的地点，场所"
+          ],
+          "examples": [
+            {
+              "en": "The majority of people in this locale work in agriculture.",
+              "zh": "这一地区的大多数人从事农业。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/locale",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lofty",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "高耸的",
+            "高尚、崇高的",
+            "高傲的",
+            "高深难及的"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "log",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "原木，木段",
+            "日志，记录"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "The captain keeps a log.",
+              "zh": "船长记航海日志。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/log_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "记录",
+            "伐木"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "long",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "长的",
+            "长久的"
+          ],
+          "examples": [
+            {
+              "en": "She had long dark hair.",
+              "zh": "她留着一头黑色长发。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/long_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "There was a long silence before she spoke.",
+              "zh": "沉默了很久，她才开口。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/long_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "adv.",
+          "meanings": [
+            "长时间地"
+          ],
+          "examples": [
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "渴望"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "long-winded",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "冗长啰唆的"
+          ],
+          "examples": [
+            {
+              "en": "Her essay was long-winded and boring.",
+              "zh": "她的文章冗长乏味。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/long-winded",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "loom",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "隐约出现",
+            "逼近"
+          ],
+          "examples": [
+            {
+              "en": "A dark shape loomed up ahead of us.",
+              "zh": "前方隐约出现了一个黑影。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/loom_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "There was a crisis looming.",
+              "zh": "一场危机正在逼近。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/loom_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "织布机"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "loose",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "松散的",
+            "未固定牢的"
+          ],
+          "examples": [
+            {
+              "en": "The potatoes were sold loose, not in bags.",
+              "zh": "这些土豆是散装出售的，没有装袋。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/loose_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "One of the bricks feels slightly loose.",
+              "zh": "有一块砖摸起来有些松动。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/loose_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lopsided",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "向一侧倾斜的",
+            "不平衡的，不对称的",
+            "一边倒的"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "The article presents a somewhat lopsided view of events.",
+              "zh": "这篇文章对事件的看法有些偏颇。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lopsided",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "loquacious",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "健谈的，多话的",
+            "话语冗长的"
+          ],
+          "examples": [
+            {
+              "en": "He is particularly loquacious on the topic of politics.",
+              "zh": "一谈到政治，他的话尤其多。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/loquacious",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lorry",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "卡车，货车"
+          ],
+          "examples": [
+            {
+              "en": "Emergency food supplies were brought in by lorry.",
+              "zh": "应急食品由卡车运来。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lorry",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lowly",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "地位低的",
+            "卑微的",
+            "谦卑的"
+          ],
+          "examples": [
+            {
+              "en": "How should I know? I’m just a lowly employee.",
+              "zh": "我怎么会知道？我只是一个地位低微的雇员。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lowly",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "How should I know? I’m just a lowly employee.",
+              "zh": "我怎么会知道？我只是一个卑微的雇员。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lowly",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "adv.",
+          "meanings": [
+            "谦卑地",
+            "低声地"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lucid",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "表达清晰易懂的",
+            "头脑清醒的"
+          ],
+          "examples": [
+            {
+              "en": "He gave a very lucid account of the events.",
+              "zh": "他对这些事件作了非常清晰的叙述。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lucid",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "In a rare lucid moment, she called me by my name.",
+              "zh": "在难得清醒的片刻，她叫出了我的名字。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lucid",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lucrative",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "获利丰厚的",
+            "赚钱的"
+          ],
+          "examples": [
+            {
+              "en": "Had the plan worked it would have proved highly lucrative.",
+              "zh": "如果这个计划成功了，就会带来丰厚利润。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lucrative",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Had the plan worked it would have proved highly lucrative.",
+              "zh": "如果这个计划成功了，就会非常赚钱。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lucrative",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lucubration",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "艰深费力的研究",
+            "冗长学究式论述"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "ludicrous",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "荒唐可笑的，愚蠢得可笑的"
+          ],
+          "examples": [
+            {
+              "en": "It was ludicrous to think that the plan could succeed.",
+              "zh": "认为这个计划能成功，简直荒唐可笑。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ludicrous",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lull",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "暂时平静，间歇"
+          ],
+          "examples": [
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "使平静，使放松警惕"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lure",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "引诱"
+          ],
+          "examples": [
+            {
+              "en": "The child was lured into a car but managed to escape.",
+              "zh": "那个孩子被诱骗上了一辆车，但设法逃脱了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lure_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "诱惑物",
+            "诱饵"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lurid",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "骇人的",
+            "耸人听闻的",
+            "刺眼的",
+            "俗艳的"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "The podcast gave all the lurid details of the murder.",
+              "zh": "那期播客讲述了这起谋杀案所有耸人听闻的细节。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lurid",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            {
+              "en": "She was wearing a lurid orange and green blouse.",
+              "zh": "她穿着一件橙绿相间、颜色俗艳的女式衬衫。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lurid",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lurk",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "潜伏，潜藏",
+            "暗中存在"
+          ],
+          "examples": [
+            {
+              "en": "A crocodile was lurking just below the surface.",
+              "zh": "一条鳄鱼潜伏在水面下。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lurk_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "At night, danger lurks in these streets.",
+              "zh": "夜里，这些街道暗藏危险。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lurk_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lustily",
+      "senses": [
+        {
+          "pos": "adv.",
+          "meanings": [
+            "精力充沛地"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "luxuriant",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "繁茂的",
+            "丰富繁复的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "macabre",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "可怖、阴森的",
+            "涉及死亡或恐怖事物的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "magnanimous",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "宽宏大量的，慷慨高尚的"
+          ],
+          "examples": [
+            {
+              "en": "He was magnanimous in defeat and praised his opponent's skill.",
+              "zh": "他落败后仍很大度，赞扬了对手的技艺。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/magnanimous",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mainstay",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "主要支柱",
+            "最可靠的支持者或资源",
+            "核心部分"
+          ],
+          "examples": [
+            {
+              "en": "Cocoa is the country's economic mainstay.",
+              "zh": "可可是这个国家的经济支柱。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mainstay",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "She is the mainstay of our theatre group.",
+              "zh": "她是我们剧团的顶梁柱。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mainstay",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Love songs form the mainstay of his act.",
+              "zh": "情歌是他演出的主要内容。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mainstay",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "majestic",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "庄严的",
+            "壮丽的"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "The Rockies are majestic in size.",
+              "zh": "落基山脉规模宏大，雄伟壮丽。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/majestic",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "majesty",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "威严",
+            "尊严",
+            "陛下",
+            "君权"
+          ],
+          "examples": [
+            null,
+            null,
+            {
+              "en": "The Prime Minister is here to see you, Your Majesty.",
+              "zh": "陛下，首相前来觐见您。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/majesty",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "malaria",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "疟疾"
+          ],
+          "examples": [
+            {
+              "en": "Malaria is transmitted by mosquitoes.",
+              "zh": "疟疾由蚊子传播。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/malaria",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "malfeasance",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "违法或不当行为，尤指官员渎职"
+          ],
+          "examples": [
+            {
+              "en": "The memo set strict ground rules for dealing with corporate malfeasance.",
+              "zh": "这份备忘录为处理公司的不法行为制定了严格的基本规则。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/malfeasance",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "malice",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "恶意",
+            "伤害他人的意图"
+          ],
+          "examples": [
+            {
+              "en": "She is entirely without malice.",
+              "zh": "她完全没有恶意。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/malice",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He sent the letter out of malice.",
+              "zh": "他寄出那封信是出于恶意。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/malice",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "malicious",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "恶意的，蓄意伤害的"
+          ],
+          "examples": [
+            {
+              "en": "He took malicious pleasure in telling me what she had said.",
+              "zh": "他恶意地把她的话告诉我，并以此为乐。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/malicious",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "malleable",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "可锻造、可塑的",
+            "易受影响或改变的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "malodorous",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "有恶臭的",
+            "令人反感的、不正当的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mandate",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "授权",
+            "命令"
+          ],
+          "examples": [
+            {
+              "en": "They accused him of acting without a mandate.",
+              "zh": "他们指责他未经授权便采取行动。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mandate_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "要求执行"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "maneuver",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "巧妙动作",
+            "策略，手段",
+            "军事演习"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "The amendment was somehow introduced by political maneuver.",
+              "zh": "这项修正案不知怎么通过政治手段被提了出来。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/maneuver_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The army is on maneuvers in the desert.",
+              "zh": "军队正在沙漠里演习。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/maneuver_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "巧妙操纵或移动",
+            "设法取得位置或优势"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "manifest",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "明显的"
+          ],
+          "examples": [
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "表明，显现"
+          ],
+          "examples": [
+            {
+              "en": "Social tensions were manifested in the recent political crisis.",
+              "zh": "社会紧张局势在最近的政治危机中显露出来。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/manifest_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "乘客名单、货物清单"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "manufacture",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "制造",
+            "捏造"
+          ],
+          "examples": [
+            {
+              "en": "This company manufactures the equipment used to make contact lenses.",
+              "zh": "这家公司制造生产隐形眼镜所用的设备。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/manufacture_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "制造，生产"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "manuscript",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "手稿"
+          ],
+          "examples": [
+            {
+              "en": "I read her poems in manuscript.",
+              "zh": "我读过她诗歌的手稿。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/manuscript",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mar",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "损坏，破坏完美"
+          ],
+          "examples": [
+            {
+              "en": "The game was marred by the behaviour of rowdy fans.",
+              "zh": "闹事球迷的行为破坏了这场比赛。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mar",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "瑕疵"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "margin",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "边缘、页边空白",
+            "余地",
+            "差额",
+            "利润空间"
+          ],
+          "examples": [
+            null,
+            null,
+            {
+              "en": "She beat the other runners by a margin of ten seconds.",
+              "zh": "她以十秒的优势击败了其他跑步选手。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/margin",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "What are your average operating margins?",
+              "zh": "你们的平均营业利润率是多少？",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/margin",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "给……加边"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "marginal",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "边缘的",
+            "微小的",
+            "不重要的",
+            "仅够维持的"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "The difference between the two estimates is marginal.",
+              "zh": "这两个估计值之间的差别很小。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/marginal_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The story will only be of marginal interest to our readers.",
+              "zh": "我们的读者对这个故事只会有很少的兴趣。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/marginal_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "marital",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "婚姻的，夫妻关系的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "marshal",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "有序召集、整理"
+          ],
+          "examples": [
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "元帅",
+            "仪式指挥人员",
+            "执法官"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "martinet",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "严格执行纪律的人"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "masculine",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "男性的",
+            "具有传统男性特征的",
+            "阳性的"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "He was handsome and strong, and very masculine.",
+              "zh": "他英俊强壮，很有男子气概。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/masculine_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "‘He’ and ‘him’ are masculine pronouns.",
+              "zh": "He 和 him 是阳性代词。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/masculine_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "阳性词"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mask",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "面具",
+            "口罩",
+            "伪装"
+          ],
+          "examples": [
+            {
+              "en": "The robbers wore stocking masks.",
+              "zh": "劫匪戴着长筒袜做的面罩。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mask_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            {
+              "en": "He longed to throw off the mask of respectability.",
+              "zh": "他渴望抛掉那副体面的伪装。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mask_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "掩饰",
+            "遮盖"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "masquerade",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "化装舞会",
+            "伪装"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "He was tired of the masquerade and wanted the truth to come out.",
+              "zh": "他厌倦了这种伪装，希望真相能大白。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/masquerade_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "冒充"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mastermind",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "策划者，幕后主脑"
+          ],
+          "examples": [
+            {
+              "en": "The mastermind behind the robbery was never caught.",
+              "zh": "这起抢劫案的幕后策划者一直没有被抓到。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mastermind_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "策划、指挥复杂行动"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "materialize",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "出现",
+            "成为现实",
+            "实现"
+          ],
+          "examples": [
+            {
+              "en": "A tall figure suddenly materialized at her side.",
+              "zh": "一个高大的身影突然出现在她身旁。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/materialize",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The promotion he had been promised failed to materialize.",
+              "zh": "曾经答应给他的晋升没有兑现。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/materialize",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "maudlin",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "感伤过度的",
+            "酒后伤感失态的"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "He gets very maudlin after a few drinks.",
+              "zh": "他喝了几杯酒后就变得非常伤感。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/maudlin",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mawkish",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "过分感伤的",
+            "令人腻烦的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "maze",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "迷宫",
+            "复杂混乱的局面"
+          ],
+          "examples": [
+            {
+              "en": "We got lost in the maze.",
+              "zh": "我们在迷宫里迷了路。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/maze",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Many applicants for the grant are put off by the maze of regulations and conditions.",
+              "zh": "许多补助金申请人被错综复杂的规定和条件吓退了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/maze",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "使迷惑"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "meander",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "蜿蜒而行",
+            "漫无目的地闲逛"
+          ],
+          "examples": [
+            {
+              "en": "The stream meanders slowly down to the sea.",
+              "zh": "小溪蜿蜒着缓缓流向大海。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meander_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "They meandered around the old town admiring the architecture.",
+              "zh": "他们在老城区闲逛，欣赏那里的建筑。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meander_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "曲折路线",
+            "河曲"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "measured",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "慎重的，有分寸的",
+            "缓慢而有节奏的"
+          ],
+          "examples": [
+            {
+              "en": "She replied in a measured tone to his threat.",
+              "zh": "她以克制的语气回应他的威胁。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/measured",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He walked down the corridor with measured steps.",
+              "zh": "他迈着缓慢而有节奏的步子走过走廊。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/measured",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "medal",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "奖章",
+            "勋章"
+          ],
+          "examples": [
+            {
+              "en": "You really deserve a medal!",
+              "zh": "你真应该得到一枚奖章！",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/medal_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "medallion",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "大型饰章",
+            "圆形饰物",
+            "小圆肉片"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "meddle",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "干涉",
+            "管闲事"
+          ],
+          "examples": [
+            {
+              "en": "He had no right to meddle in her affairs.",
+              "zh": "他没有权利干涉她的事情。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meddle",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He’s just a meddling old fool!",
+              "zh": "他就是个爱管闲事的老糊涂！",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meddle",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mediate",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "调解，居中促成，传递"
+          ],
+          "examples": [
+            {
+              "en": "The Secretary-General was asked to mediate in the dispute.",
+              "zh": "秘书长应邀调解这场争端。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mediate",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "间接的，居间的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mediated",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "调解",
+            "通过中介促成（mediate 的过去式及过去分词）"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "medicate",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "给药治疗",
+            "在某物中加入药物"
+          ],
+          "examples": [
+            {
+              "en": "He is being medicated for high blood pressure.",
+              "zh": "他正在接受药物治疗，以控制高血压。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/medicate",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mediocre",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "平庸的，质量一般或较差的"
+          ],
+          "examples": [
+            {
+              "en": "I thought the play was only mediocre.",
+              "zh": "我觉得这出戏很平庸。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mediocre",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "meditate",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "沉思",
+            "冥想",
+            "思量，谋划"
+          ],
+          "examples": [
+            {
+              "en": "He went off to meditate on the new idea.",
+              "zh": "他走开去仔细思考这个新想法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meditate",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            {
+              "en": "They were meditating revenge.",
+              "zh": "他们在谋划报复。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meditate",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "medley",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "混合物",
+            "杂集",
+            "集锦曲"
+          ],
+          "examples": [
+            {
+              "en": "The building was a medley of styles from different periods.",
+              "zh": "这座建筑混合了不同时期的风格。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/medley",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "megalomania",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "自大狂，妄自尊大",
+            "对权力、宏伟事业的过度迷恋"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "melancholy",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "忧郁，惆怅"
+          ],
+          "examples": [
+            {
+              "en": "A mood of melancholy descended on us.",
+              "zh": "一种忧郁的情绪笼罩着我们。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/melancholy_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "忧郁的，令人伤感的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "meld",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "融合",
+            "合并"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "融合物"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mellow",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "温和圆熟的",
+            "柔和醇厚的"
+          ],
+          "examples": [
+            {
+              "en": "Dad's certainly grown mellower with age.",
+              "zh": "爸爸随着年龄增长，脾气确实越来越温和了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mellow_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Mellow music and lighting helped to create the right atmosphere.",
+              "zh": "柔和的音乐和灯光有助于营造恰当的气氛。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mellow_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "（使）变温和、成熟"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "melodious",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "悦耳的",
+            "旋律优美的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "menace",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "威胁",
+            "危险的人或物"
+          ],
+          "examples": [
+            {
+              "en": "The back-bench rebels remain a potential menace to the stability of the government.",
+              "zh": "后座议员中的反对者仍是政府稳定的潜在威胁。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/menace_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "They have become a public menace.",
+              "zh": "他们已经成了公害。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/menace_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "威胁到"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mercenary",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "唯利是图的"
+          ],
+          "examples": [
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "雇佣兵"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "merchandise",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "商品，货物"
+          ],
+          "examples": [
+            {
+              "en": "These tokens can be exchanged for merchandise in any of our stores.",
+              "zh": "这些代金券可以在我们任何一家商店兑换商品。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/merchandise_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "推销，经销"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "merchant",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "商人，批发商"
+          ],
+          "examples": [
+            {
+              "en": "Venice was once a city of rich merchants.",
+              "zh": "威尼斯曾是一座富商云集的城市。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/merchant_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "商业的",
+            "商船的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "merit",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "优点",
+            "价值",
+            "功绩"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "The plan is entirely without merit.",
+              "zh": "这个计划毫无价值。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/merit_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He was awarded a certificate of merit for his piano playing.",
+              "zh": "他因为钢琴演奏表现出色而获得了荣誉证书。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/merit_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "值得，应受到"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mesmerize",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使着迷，使入迷",
+            "催眠"
+          ],
+          "examples": [
+            {
+              "en": "They were mesmerized by her performance.",
+              "zh": "他们被她的表演迷住了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mesmerize",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "metaphor",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "隐喻",
+            "比喻性的象征"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "metaphoric",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "隐喻的",
+            "比喻性的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "meticulous",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "细致严谨的",
+            "极注意准确性与细节的"
+          ],
+          "examples": [
+            {
+              "en": "Their room had been prepared with meticulous care.",
+              "zh": "他们的房间已经得到细致周到的布置。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meticulous",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He's always meticulous in keeping the records up to date.",
+              "zh": "他总是一丝不苟地保持记录更新。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/meticulous",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "meticulousness",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "一丝不苟，极度细心"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mighty",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "强大的",
+            "巨大的"
+          ],
+          "examples": [
+            {
+              "en": "He struck him with a mighty blow across his shoulder.",
+              "zh": "他朝他的肩膀猛击了一下。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mighty_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "adv.",
+          "meanings": [
+            "非常，很"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "milieu",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "周围环境",
+            "社会或文化背景"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "The findings of the report refer to a particular social and cultural milieu.",
+              "zh": "这份报告的研究结果涉及特定的社会和文化环境。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/milieu",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "millstone",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "磨石",
+            "沉重负担"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "My debts are a millstone around my neck.",
+              "zh": "债务是我沉重的负担。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/millstone",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mimetic",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "模仿的",
+            "摹拟的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mince",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "切碎，剁碎",
+            "委婉地说",
+            "装模作样地小步走"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "She doesn't mince her words when she talks about her ex-boss.",
+              "zh": "她谈起前老板时说话毫不委婉。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mince_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He minced over to serve us.",
+              "zh": "他扭捏地迈着小步过来招待我们。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mince_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "碎肉，肉末（英式）"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mingle",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "混合",
+            "交往",
+            "混杂其中"
+          ],
+          "examples": [
+            {
+              "en": "The sounds of laughter and singing mingled in the evening air.",
+              "zh": "笑声和歌声交织在傍晚的空气里。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mingle",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            {
+              "en": "The princess was not recognized and mingled freely with the crowds.",
+              "zh": "公主没有被认出来，自在地混在人群中。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mingle",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "miniature",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "微型的",
+            "缩小的"
+          ],
+          "examples": [
+            {
+              "en": "It looks like a miniature version of James Bond's car.",
+              "zh": "它看起来像詹姆斯·邦德那辆车的微型版本。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/miniature_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "They expect their children to behave like miniature adults.",
+              "zh": "他们希望自己的孩子表现得像缩小版的成年人。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/miniature_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "微缩模型、小画像"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "minutia",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "细枝末节",
+            "微小细节"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mirth",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "欢乐",
+            "欢笑"
+          ],
+          "examples": [
+            {
+              "en": "The performance produced much mirth among the audience.",
+              "zh": "这场演出给观众带来了许多欢乐。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mirth",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The performance produced much mirth among the audience.",
+              "zh": "这场演出引得观众欢笑连连。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mirth",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "misanthrope",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "厌恶或不信任人类的人"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "miscellaneous",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "各种各样混合的",
+            "杂项的"
+          ],
+          "examples": [
+            {
+              "en": "The museum houses a miscellaneous collection of iron age artefacts.",
+              "zh": "这家博物馆收藏着各种各样的铁器时代器物。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/miscellaneous",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "She gave me some money to cover any miscellaneous expenses.",
+              "zh": "她给了我一些钱，用来支付各种杂费。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/miscellaneous",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "miscellany",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "杂集",
+            "多种东西的混合"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "miserly",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "吝啬的，小气的",
+            "少得可怜的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mishandle",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "处理不当",
+            "粗暴对待"
+          ],
+          "examples": [
+            {
+              "en": "The entire campaign had been badly mishandled.",
+              "zh": "整个活动都处理得很糟糕。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mishandle",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "misinterpretation",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "误解、错误解释"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "misnomer",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "误称",
+            "不恰当的名称"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "missionary",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "传教士"
+          ],
+          "examples": [
+            {
+              "en": "My father was a missionary from a little town in South Africa.",
+              "zh": "我父亲是一名来自南非某小镇的传教士。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/missionary",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "传教的",
+            "热忱传播某信念的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mixed",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "混合的",
+            "男女混合的",
+            "褒贬不一的",
+            "矛盾交织的"
+          ],
+          "examples": [
+            {
+              "en": "I served chicken with mixed vegetables.",
+              "zh": "我端上了鸡肉配什锦蔬菜。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mixed",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "I'd rather not talk about it in mixed company.",
+              "zh": "我宁愿不在男女都有的场合谈论此事。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mixed",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mockery",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "嘲弄",
+            "拙劣的模仿",
+            "使显得荒谬的事物"
+          ],
+          "examples": [
+            {
+              "en": "She couldn't stand any more of their mockery.",
+              "zh": "她再也无法忍受他们的嘲弄。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mockery",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "It was a mockery of a trial.",
+              "zh": "那场审判只是一场拙劣的模仿。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mockery",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The trial made a mockery of justice.",
+              "zh": "那场审判使正义沦为笑柄。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mockery",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "moderate",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "适度的，温和的"
+          ],
+          "examples": [
+            {
+              "en": "Cook over a moderate heat.",
+              "zh": "用中火烹调。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/moderate_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "缓和，减轻",
+            "主持讨论"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "温和派"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "modish",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "时髦的",
+            "流行的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "modulate",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "调节，调整",
+            "改变（嗓音的音量或音高）",
+            "转调",
+            "调制（信号）"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "molder",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "腐朽，腐烂瓦解"
+          ],
+          "examples": [
+            {
+              "en": "The room smelled of disuse and moldering books.",
+              "zh": "房间里有一股久未使用和书籍霉烂的气味。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/molder",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "铸模工，塑造者"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "molecular",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "分子的",
+            "由分子构成的",
+            "关于个别或微小组成部分的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mollify",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "安抚",
+            "平息怒气",
+            "使缓和"
+          ],
+          "examples": [
+            {
+              "en": "His explanation failed to mollify her.",
+              "zh": "他的解释未能安抚她。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mollify",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "His explanation failed to mollify her.",
+              "zh": "他的解释未能平息她的怒气。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mollify",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "momentous",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "重大的，有深远影响的"
+          ],
+          "examples": [
+            {
+              "en": "At the same time, momentous events were taking place in Russia.",
+              "zh": "与此同时，俄罗斯正在发生重大事件。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/momentous",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "monarchy",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "君主制",
+            "君主国"
+          ],
+          "examples": [
+            {
+              "en": "The Spartan constitution was mixed, containing elements of monarchy, oligarchy and democracy.",
+              "zh": "斯巴达的政体是混合的，含有君主制、寡头制和民主制的成分。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/monarchy",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "There are several constitutional monarchies in Europe.",
+              "zh": "欧洲有几个君主立宪国家。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/monarchy",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "monger",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "商贩",
+            "散布或煽动某事的人"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "贩卖，兜售"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mongoose",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "獴（小型食肉哺乳动物）"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "monitor",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "监测",
+            "监督"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "监视器",
+            "监督人员"
+          ],
+          "examples": [
+            {
+              "en": "He was lying there hooked up to a heart monitor.",
+              "zh": "他躺在那里，连接着心脏监测仪。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/monitor_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "UN monitors declared the referendum fair.",
+              "zh": "联合国监督员宣布这次公民投票是公正的。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/monitor_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "monochromatic",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "单色的",
+            "单一波长的",
+            "单调无变化的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "monogamy",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "一夫一妻制",
+            "同一时期只有一个配偶或性伴侣的关系"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "monolithic",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "庞大而单一的",
+            "整体一致的（常指僵化）",
+            "整块材料制成的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "monstrous",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "骇人、残暴或极不合理的",
+            "巨大的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "moody",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "喜怒无常的",
+            "忧郁的"
+          ],
+          "examples": [
+            {
+              "en": "Moody people are very difficult to deal with.",
+              "zh": "喜怒无常的人很难相处。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/moody",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "morale",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "士气",
+            "面对任务时的信心、精神状态"
+          ],
+          "examples": [
+            {
+              "en": "Morale amongst the players is very high at the moment.",
+              "zh": "队员们目前士气很高。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/morale",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Staff are suffering from low morale.",
+              "zh": "员工的士气低落。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/morale",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "morbid",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "病态的",
+            "对死亡或恐怖有不正常兴趣的",
+            "疾病的"
+          ],
+          "examples": [
+            {
+              "en": "My mind was filled with morbid thoughts of death.",
+              "zh": "我的脑海里满是关于死亡的病态想法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/morbid",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He had a morbid fascination with blood.",
+              "zh": "他对血有一种病态的迷恋。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/morbid",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mordant",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "尖刻讽刺的",
+            "刻薄而机智的"
+          ],
+          "examples": [
+            {
+              "en": "His mordant wit appealed to students.",
+              "zh": "他尖刻的机智话语很受学生欢迎。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mordant",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "His mordant wit appealed to students.",
+              "zh": "他刻薄而机智的谈吐很受学生欢迎。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mordant",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "morose",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "阴郁寡言的",
+            "闷闷不乐的"
+          ],
+          "examples": [
+            {
+              "en": "She just sat there looking morose.",
+              "zh": "她只是坐在那里，神情阴郁。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/morose",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "She seems a bit morose today.",
+              "zh": "她今天似乎有些闷闷不乐。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/morose",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "motif",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "（作品中反复出现的）主题，主旨",
+            "装饰图案"
+          ],
+          "examples": [
+            {
+              "en": "Alienation is a central motif in her novels.",
+              "zh": "疏离感是她小说中反复出现的核心主题。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/motif",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "motley",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "混杂的、各色各样的",
+            "杂色的"
+          ],
+          "examples": [
+            {
+              "en": "She had a motley group of friends at college.",
+              "zh": "她在大学里交了一群各色各样的朋友。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/motley",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "混杂物",
+            "丑角的杂色服装"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "moundsman",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "棒球投手"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "muddle",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "混淆",
+            "弄乱，搞砸"
+          ],
+          "examples": [
+            {
+              "en": "I muddled the dates and arrived a week early.",
+              "zh": "我把日期弄混了，早到了一周。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/muddle_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Don't do that—you're muddling my papers.",
+              "zh": "别这样——你把我的文件弄乱了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/muddle_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "混乱，糊涂状态"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "multifarious",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "种类繁多的，各式各样的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "multitudinous",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "众多的",
+            "由无数部分或方面构成的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mundane",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "平凡普通的",
+            "日常的",
+            "世俗的"
+          ],
+          "examples": [
+            {
+              "en": "I lead a pretty mundane existence.",
+              "zh": "我的生活相当平凡。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mundane",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "On a more mundane level, can we talk about the timetable for next week?",
+              "zh": "谈点日常的事情吧，我们能讨论一下下周的时间表吗？",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mundane",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "munificent",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "慷慨的",
+            "出手大方的"
+          ],
+          "examples": [
+            {
+              "en": "He enjoys being munificent on a princely scale.",
+              "zh": "他喜欢像王公一样慷慨施予。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/munificent",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He enjoys being munificent on a princely scale.",
+              "zh": "他喜欢像王公一样出手大方。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/munificent",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "murky",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "昏暗的，浑浊的",
+            "含糊不清的，隐晦的"
+          ],
+          "examples": [
+            {
+              "en": "She gazed into the murky depths of the water.",
+              "zh": "她凝视着浑浊的水下深处。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/murky",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The meaning of this sentence remains murky.",
+              "zh": "这句话的意思仍然不清楚。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/murky",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "musing",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "沉思，冥想"
+          ],
+          "examples": [
+            {
+              "en": "We had to sit and listen to his musings on life.",
+              "zh": "我们只得坐着听他对人生的沉思。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/musing",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "沉思的，出神的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "muster",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "召集，集合",
+            "聚集",
+            "鼓起（勇气等）"
+          ],
+          "examples": [
+            {
+              "en": "The troops mustered.",
+              "zh": "部队集合了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/muster_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "We mustered what support we could for the plan.",
+              "zh": "我们尽力为这个计划争取支持。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/muster_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "集合，集结",
+            "点名，检阅"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "musty",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "有霉味的",
+            "发霉的",
+            "陈腐的"
+          ],
+          "examples": [
+            {
+              "en": "These clothes smell musty.",
+              "zh": "这些衣服闻起来有霉味。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/musty",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  ]
+}

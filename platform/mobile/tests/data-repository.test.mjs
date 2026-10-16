@@ -38,7 +38,7 @@ async function reseal(packet) { packet.checksum.value = await digest(packet.payl
 
 async function catalogOptions() {
   const incoming = fixture();
-  incoming.baseline.definitions = [{word:'lucid',input:{pos:'adj.',meaning:'清晰的'},senses:[{pos:'adj.',meanings:['清晰的','神志清醒的']}],status:'dictionary_checked',sources:[]}];
+  incoming.baseline.definitions = [{word:'lucid',input:{pos:'adj.',meaning:'清晰的'},senses:[{pos:'adj.',meanings:['清晰的','神志清醒的'],examples:[null,null]}],status:'dictionary_checked',sources:[]}];
   incoming.baseline.relations.topics.push({id:'mind',name:'思维',words:['lucid','verve']});
   const content = await createPackage(incoming, SEED_FORMAT);
   return {revision:'test-catalog-1',load:async()=>content};
@@ -55,6 +55,7 @@ test('APK catalog update preserves events, schedules, unfinished sessions and se
   const upgraded = await openRepository({storage,catalogUpdate,now:()=>clock.value});
   const after = JSON.parse(storage.value).current, state = await upgraded.getState();
   assert.equal(word(state).meaning,'adj.清晰的；神志清醒的');
+  assert.deepEqual(word(state).senses[0].examples,[null,null]);
   assert.deepEqual(after.events,before.events);
   assert.deepEqual(after.baseline.legacyWords,before.baseline.legacyWords);
   assert.deepEqual(after.quickRound,before.quickRound);
