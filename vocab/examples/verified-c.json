@@ -13,9 +13,39 @@
             "在一定程度上"
           ],
           "examples": [
-            null,
-            null,
-            null
+            {
+              "en": "These pants are a little bit tight.",
+              "zh": "这条裤子稍微有点紧。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bit",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "It costs a little bit more than I wanted to spend.",
+              "zh": "它的价格比我想花的稍微多一点。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bit",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "These pants are a little bit tight.",
+              "zh": "这条裤子有点紧。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bit",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -159,7 +189,17 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "The National Aeronautics and Space Administration is abbreviated to NASA.",
+              "zh": "美国国家航空航天局缩写为 NASA。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/abbreviate",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -1111,8 +1151,28 @@
             "须作出解释或承担后果的义务"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "Effective boards act transparently to ensure full accountability to shareholders.",
+              "zh": "有效履职的董事会以透明的方式行事，确保对股东完全负责。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/accountability",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Consumers are curious about the practices of the company and demand accountability for its actions.",
+              "zh": "消费者想了解公司的经营做法，并要求公司对其行为作出交代。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/accountability",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -1332,7 +1392,17 @@
             "获得的事物"
           ],
           "examples": [
-            null,
+            {
+              "en": "Reading skills facilitate the independent acquisition of knowledge by the child.",
+              "zh": "阅读技能有助于儿童独立获取知识。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/acquisition",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
             {
               "en": "His latest acquisition is a racehorse.",
@@ -1521,8 +1591,29 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
-            null
+            {
+              "en": "She adheres to teaching methods she learned over 30 years ago.",
+              "zh": "她仍坚持使用三十多年前学到的教学方法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/adhere-to",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "I also want to add here that GRE tests are backed by decades of research and adhere to a rigorous assessment process.",
+              "zh": "我还想补充一点：GRE 考试以数十年的研究为基础，并遵循严格的评估流程。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/overview-of-the-gre-program.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：介绍 GRE 研究基础与评估流程的段落"
+              }
+            }
           ]
         }
       ],
@@ -4254,7 +4345,18 @@
             "善于分析的"
           ],
           "examples": [
-            null,
+            {
+              "en": "You’ll see content on the test that assesses verbal reasoning, mathematical reasoning, critical thinking and analytical writing skills.",
+              "zh": "考试中的内容会评估言语推理、数学推理、批判性思维和分析性写作能力。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/admissions-resources/advice/its-better-when-you-have-a-study-plan.html",
+                "checked_at": "2026-10-16",
+                "locator": "网页：Familiarize yourself with the test content and format 段落"
+              }
+            },
             {
               "en": "She has a clear, analytical mind.",
               "zh": "她思路清晰，善于分析。",
@@ -4884,7 +4986,17 @@
             "下注、付款"
           ],
           "examples": [
-            null
+            {
+              "en": "About 100 poker players anted up $300.",
+              "zh": "大约一百名扑克玩家各付了三百美元的底注。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ante-up",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -5790,7 +5902,17 @@
             "正式批准"
           ],
           "examples": [
-            null,
+            {
+              "en": "There was widespread approbation of the new president.",
+              "zh": "新总统得到了广泛赞许。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/approbation",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The King received the official approbation of the church.",
               "zh": "国王得到了教会的正式认可。",
@@ -6221,8 +6343,28 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
-            null
+            {
+              "en": "Asher is arguably the best medical writer of the last 100 years.",
+              "zh": "可以说，阿舍是过去一百年来最优秀的医学作家。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/arguably",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Arguably, folk song and folk music constitute the original world music.",
+              "zh": "有理由认为，民歌和民间音乐构成了最初的世界音乐。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/arguably",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -6507,7 +6649,18 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "Are these differences an artifact of the modeling procedures for e-rater?",
+              "zh": "这些差异是 e-rater 建模程序造成的假象吗？",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-compendium.pdf#page=190",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 190 页（物理页码），关于 e-rater 建模的研究问题"
+              }
+            }
           ]
         }
       ],
@@ -6933,7 +7086,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The Athenian leaders arrived on the island of Melos to assert their right of conquest over the islanders.",
+              "zh": "雅典领导人来到米洛斯岛，向岛民坚持主张他们的征服权。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/assert",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "I was determined to assert my authority from the beginning.",
               "zh": "我决心从一开始就确立自己的权威。",
@@ -7339,7 +7502,17 @@
             "衰退"
           ],
           "examples": [
-            null,
+            {
+              "en": "TV viewing may lead to atrophy of children's imaginations.",
+              "zh": "看电视可能导致儿童想象力萎缩。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/atrophy_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The cultural life of the country will sink into atrophy unless more writers and artists emerge.",
               "zh": "除非出现更多作家和艺术家，否则这个国家的文化生活将逐渐衰退。",
@@ -8583,7 +8756,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "He had to stop rowing to bail water out of the boat.",
+              "zh": "他不得不停止划船，把船里的水舀出去。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bail-out",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Sorry, I really have to bail.",
               "zh": "对不起，我真的得退出了。",
@@ -9190,8 +9373,28 @@
             "取决于"
           ],
           "examples": [
-            null,
-            null,
+            {
+              "en": "All nuclear installations are subject to international safeguards.",
+              "zh": "所有核设施都受到国际安全保障措施的约束。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/subject_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Flights are subject to delay because of the fog.",
+              "zh": "由于有雾，航班可能延误。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/subject_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -9508,7 +9711,17 @@
             "表明某说法不实，与之矛盾"
           ],
           "examples": [
-            null,
+            {
+              "en": "Her energy and youthful good looks belie her 65 years.",
+              "zh": "她的精力和年轻漂亮的容貌让人看不出她已经六十五岁。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/belie",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "My calm exterior belies my deep inner fear.",
               "zh": "我平静的外表掩盖了内心深深的恐惧。",
@@ -10646,7 +10859,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "I wasn't sure he understood what I was saying, but I blundered on with my explanation.",
+              "zh": "我不确定他是否明白我的话，却仍莽撞地继续解释。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/blunder-on",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -11170,7 +11393,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "He was surprised at her breadth of knowledge about music.",
+              "zh": "他对她在音乐方面的广博知识感到惊讶。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/breadth",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -11379,7 +11612,17 @@
             "溴化物"
           ],
           "examples": [
-            null,
+            {
+              "en": "Feel-good bromides can create the illusion of problem solving.",
+              "zh": "让人感觉良好的陈词滥调可能制造出问题已获解决的假象。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bromide",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
             null
           ]
@@ -11616,8 +11859,28 @@
             "突然增多"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "That skirt is too tight. It shows all your bulges.",
+              "zh": "那条裙子太紧了，把你身上隆起的赘肉全显出来了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bulge_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "After the war there was a bulge in the birth rate.",
+              "zh": "战后出生率出现了一次暂时的猛增。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bulge_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -12014,7 +12277,17 @@
             "公事公办的"
           ],
           "examples": [
-            null,
+            {
+              "en": "She adopted a brisk businesslike tone.",
+              "zh": "她采用了轻快干练的语气。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/businesslike",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
             {
               "en": "She adopted a brisk businesslike tone.",
@@ -12384,7 +12657,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Hillary Clinton was appointed to the Cabinet as Secretary of State.",
+              "zh": "希拉里·克林顿获任国务卿，进入内阁。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cabinet",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -13501,7 +13784,17 @@
           "examples": [
             null,
             null,
-            null
+            {
+              "en": "Interviews with the refugees catalog a history of discrimination and violence.",
+              "zh": "对难民的访谈逐项记录了一段歧视与暴力的历史。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/catalog_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -13597,7 +13890,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Variables can also be categorical, or nonnumerical, such as the eye color of individuals.",
+              "zh": "变量也可以是分类变量，即非数值变量，例如个人的眼睛颜色。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-math-review.pdf#page=126",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 126 页（物理页码），Data Analysis：变量类型"
+              }
+            }
           ]
         }
       ],
@@ -13833,7 +14137,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Cuba was ceded by Spain to the US in 1898.",
+              "zh": "一八九八年，西班牙将古巴转交给美国。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cede",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -14052,7 +14366,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "‘You will like Rome,’ he said, with absolute certitude.",
+              "zh": "“你会喜欢罗马的，”他十分肯定地说。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/certitude",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -14085,7 +14409,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Kate pulled the blankets over the girl and chafed her hands.",
+              "zh": "凯特给女孩盖上毯子，搓揉她的双手。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/chafe",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -15275,7 +15609,17 @@
               }
             },
             null,
-            null
+            {
+              "en": "Kangle's translation is considered the most authentic, but lacks clarity in some instances.",
+              "zh": "康格尔的译本被认为最忠实，但有些地方不够清晰易懂。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/clarity",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -15296,8 +15640,28 @@
             "古希腊罗马文化相关的"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "He plays classical music, as well as rock and jazz.",
+              "zh": "他既演奏古典音乐，也演奏摇滚乐和爵士乐。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/classical",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "In classical mythology, the roles of hero and trickster can be combined in a single character.",
+              "zh": "在古希腊罗马神话中，英雄与诡计多端者的角色可以合于一人。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/classical",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -16007,8 +16371,30 @@
             "意识到的"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "Also, be cognizant of your time, but don't rush.",
+              "zh": "此外，要留意剩余时间，但不要匆忙作答。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/overview-of-the-gre-general-test.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：提醒考生注意时间的段落"
+              }
+            },
+            {
+              "en": "Also, be cognizant of your time, but don't rush.",
+              "zh": "此外，要留意剩余时间，但不要匆忙作答。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/overview-of-the-gre-general-test.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：提醒考生注意时间的段落"
+              }
+            }
           ]
         }
       ],
@@ -17225,7 +17611,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The format that aligns better with your natural strengths will generally produce a stronger score with comparable preparation.",
+              "zh": "在准备程度相近的情况下，更契合你天然优势的考试形式通常会带来更高的分数。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/admissions-resources/business-school/gre-vs-gmat.html",
+                "checked_at": "2026-10-16",
+                "locator": "网页：选择考试时比较自身优势与准备程度的段落"
+              }
+            },
             {
               "en": "The two machines are comparable in size.",
               "zh": "这两台机器大小相当。",
@@ -17464,7 +17861,17 @@
             "付报酬"
           ],
           "examples": [
-            null,
+            {
+              "en": "Her lawyers say she should be compensated for her suffering.",
+              "zh": "她的律师说，她应该为所遭受的痛苦获得赔偿。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/compensate",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Nothing can compensate for the loss of a loved one.",
               "zh": "什么也无法弥补失去至亲的痛苦。",
@@ -17581,7 +17988,17 @@
             "殷勤好说话的"
           ],
           "examples": [
-            null,
+            {
+              "en": "She was a complaisant wife and dutiful daughter.",
+              "zh": "她是一位顺从的妻子，也是一位尽责的女儿。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/complaisant",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -17802,7 +18219,18 @@
             "全面的，综合的"
           ],
           "examples": [
-            null
+            {
+              "en": "But remember, it’s just one part of your comprehensive application package!",
+              "zh": "但请记住，它只是你整套综合申请材料中的一个部分！",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/admissions-resources/advice/the-right-next-step.html",
+                "checked_at": "2026-10-16",
+                "locator": "网页：准备研究生申请的后段提醒"
+              }
+            }
           ]
         },
         {
@@ -18455,8 +18883,29 @@
             "结论性的"
           ],
           "examples": [
-            null,
-            null,
+            {
+              "en": "The numbers you choose may not necessarily be conclusive.",
+              "zh": "你选取的数值未必具有决定性。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/preparing-for-the-quantitative-reasoning-measure.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：Quantitative Reasoning 代值策略"
+              }
+            },
+            {
+              "en": "Despite the lack of conclusive evidence, the claims were accepted.",
+              "zh": "尽管缺乏确凿证据，这些说法还是被接受了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/conclusive",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The evidence is by no means conclusive.",
               "zh": "这些证据远不足以下定论。",
@@ -18468,7 +18917,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The numbers you choose may not necessarily be conclusive.",
+              "zh": "你选取的数值未必足以得出结论。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/preparing-for-the-quantitative-reasoning-measure.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：Quantitative Reasoning 代值策略"
+              }
+            }
           ]
         }
       ],
@@ -19335,7 +19795,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Two circles with equal radii are called congruent circles.",
+              "zh": "半径相等的两个圆称为全等圆。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-math-review.pdf#page=107",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 107 页（物理页码），Geometry：圆"
+              }
+            },
             null
           ]
         }
@@ -19488,7 +19959,17 @@
             "变魔术般地变出（conjure 的第三人称单数）"
           ],
           "examples": [
-            null,
+            {
+              "en": "He strained to conjure up her face and voice, but they had vanished.",
+              "zh": "他努力在脑海中唤起她的面容和声音，但它们已消失了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/conjure-up",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "He could conjure coins from behind people's ears.",
               "zh": "他能从人们耳朵后面变出硬币。",
@@ -19758,8 +20239,28 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
-            null
+            {
+              "en": "Here, conservation of water has become vital.",
+              "zh": "在这里，节约用水已经变得至关重要。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/conservation",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Conservation of angular momentum keeps a spinning top upright.",
+              "zh": "角动量守恒使旋转的陀螺保持直立。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/conservation",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -19968,7 +20469,18 @@
             "常数"
           ],
           "examples": [
-            null
+            {
+              "en": "When numbers, constants, or variables are given, their possible values are all real numbers unless otherwise restricted.",
+              "zh": "题目给出数、常数或变量时，除非另有限制，它们的可能取值均为实数。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-math-conventions.pdf#page=5",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 5 页（物理页码），Mathematical Conventions：实数范围"
+              }
+            }
           ]
         }
       ],
@@ -20001,7 +20513,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Environmental regulations constrain what firms are able to do with their waste products.",
+              "zh": "环境法规约束着企业处理废弃物的方式。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/constrain",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The company said that it was constrained to raise prices.",
               "zh": "公司表示，不得不提高价格。",
@@ -20845,7 +21367,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The methodology used here is conventional in the field of economics.",
+              "zh": "这里采用的方法遵循经济学领域的惯例。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/conventional",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -22090,7 +22622,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Be genuine, respectful and courteous.",
+              "zh": "要真诚、尊重他人，并且谦恭有礼。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://globalhighered.ets.org/hubfs/GRE%20Pdf%20files/20QuestionsPDF.pdf#page=16",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 16 页（物理页码），面试建议"
+              }
+            }
           ]
         }
       ],
@@ -23270,7 +23813,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "A home studio can be a blessing and a curse for a workaholic.",
+              "zh": "对工作狂来说，家中的工作室可能既是福也是祸。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/curse_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -24183,7 +24736,17 @@
             "骗人的"
           ],
           "examples": [
-            null,
+            {
+              "en": "The government were accused of being hypocritical and deceitful.",
+              "zh": "政府被指责虚伪而且欺骗民众。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/deceitful",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The government were accused of being hypocritical and deceitful.",
               "zh": "政府被指责虚伪且不诚实。",
@@ -24731,7 +25294,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "We will defer to whatever the committee decides.",
+              "zh": "无论委员会作出什么决定，我们都会尊重并听从。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/defer-to",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -25748,7 +26321,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "He was demonized by sections of the press.",
+              "zh": "部分报刊把他描绘得十分邪恶。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/demonize",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -25949,7 +26532,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The red triangle denotes danger.",
+              "zh": "红色三角形表示危险。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/denote",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Here ‘family’ denotes mother, father and children.",
               "zh": "这里的“家庭”指母亲、父亲和孩子。",
@@ -26218,7 +26811,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "In my view this book would deprave young children.",
+              "zh": "在我看来，这本书会使幼童堕落。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/deprave",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -31734,7 +32337,17 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "His egotism prevented him from really loving anyone but himself.",
+              "zh": "他的自我中心使他无法真正爱自己以外的任何人。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/egotism",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -32611,7 +33224,18 @@
             "基于观察、经验或实验的"
           ],
           "examples": [
-            null
+            {
+              "en": "In these circumstances, the goal of obtaining up-to-date empirical evidence regarding GRE-Validity is a challenging one.",
+              "zh": "在这些情况下，要获取有关 GRE 效度的最新实证证据是一项挑战。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/Media/Research/pdf/GREB-75-08R.pdf#page=90",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 90 页（物理页码），印刷页码 93，末句；已回看扫描原页"
+              }
+            }
           ]
         }
       ],
@@ -32666,7 +33290,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The syllabus aims to empower students to become independent learners.",
+              "zh": "这份课程大纲旨在使学生有能力成为独立的学习者。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/empower",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The movement actively empowered women and gave them confidence in themselves.",
               "zh": "这场运动积极增强女性的自主权，使她们对自己充满信心。",
@@ -32709,7 +33343,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Our robust practices have become industry standards emulated globally.",
+              "zh": "我们完善的做法已成为全球效仿的行业标准。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-guide-to-the-use-of-scores.pdf#page=18",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 18 页（物理页码），考试安全实践说明"
+              }
+            }
           ]
         }
       ],
@@ -32994,7 +33639,17 @@
             "广博全面的"
           ],
           "examples": [
-            null,
+            {
+              "en": "Penny’s contact book was encyclopedic.",
+              "zh": "彭妮的通讯录内容丰富得像一部百科全书。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/encyclopedic",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "She has an encyclopedic knowledge of natural history.",
               "zh": "她的自然史知识非常广博。",
@@ -33082,7 +33737,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The world leaders endorsed a ban on land mines.",
+              "zh": "各国领导人认可了禁止地雷的提议。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/endorse",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "I wonder how many celebrities actually use the products they endorse.",
               "zh": "我想知道有多少名人真的使用他们所代言的产品。",

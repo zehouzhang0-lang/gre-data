@@ -18,9 +18,39 @@
             "在一定程度上"
           ],
           "examples": [
-            null,
-            null,
-            null
+            {
+              "en": "These pants are a little bit tight.",
+              "zh": "这条裤子稍微有点紧。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bit",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "It costs a little bit more than I wanted to spend.",
+              "zh": "它的价格比我想花的稍微多一点。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bit",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "These pants are a little bit tight.",
+              "zh": "这条裤子有点紧。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bit",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -224,7 +254,17 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "The National Aeronautics and Space Administration is abbreviated to NASA.",
+              "zh": "美国国家航空航天局缩写为 NASA。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/abbreviate",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -1684,8 +1724,28 @@
             "须作出解释或承担后果的义务"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "Effective boards act transparently to ensure full accountability to shareholders.",
+              "zh": "有效履职的董事会以透明的方式行事，确保对股东完全负责。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/accountability",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Consumers are curious about the practices of the company and demand accountability for its actions.",
+              "zh": "消费者想了解公司的经营做法，并要求公司对其行为作出交代。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/accountability",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -2099,7 +2159,17 @@
             "获得的事物"
           ],
           "examples": [
-            null,
+            {
+              "en": "Reading skills facilitate the independent acquisition of knowledge by the child.",
+              "zh": "阅读技能有助于儿童独立获取知识。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/acquisition",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
             {
               "en": "His latest acquisition is a racehorse.",
@@ -2476,8 +2546,29 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
-            null
+            {
+              "en": "She adheres to teaching methods she learned over 30 years ago.",
+              "zh": "她仍坚持使用三十多年前学到的教学方法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/adhere-to",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "I also want to add here that GRE tests are backed by decades of research and adhere to a rigorous assessment process.",
+              "zh": "我还想补充一点：GRE 考试以数十年的研究为基础，并遵循严格的评估流程。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/overview-of-the-gre-program.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：介绍 GRE 研究基础与评估流程的段落"
+              }
+            }
           ]
         }
       ],
@@ -6244,7 +6335,18 @@
             "善于分析的"
           ],
           "examples": [
-            null,
+            {
+              "en": "You’ll see content on the test that assesses verbal reasoning, mathematical reasoning, critical thinking and analytical writing skills.",
+              "zh": "考试中的内容会评估言语推理、数学推理、批判性思维和分析性写作能力。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/admissions-resources/advice/its-better-when-you-have-a-study-plan.html",
+                "checked_at": "2026-10-16",
+                "locator": "网页：Familiarize yourself with the test content and format 段落"
+              }
+            },
             {
               "en": "She has a clear, analytical mind.",
               "zh": "她思路清晰，善于分析。",
@@ -7117,7 +7219,17 @@
             "下注、付款"
           ],
           "examples": [
-            null
+            {
+              "en": "About 100 poker players anted up $300.",
+              "zh": "大约一百名扑克玩家各付了三百美元的底注。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ante-up",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -8412,7 +8524,17 @@
             "正式批准"
           ],
           "examples": [
-            null,
+            {
+              "en": "There was widespread approbation of the new president.",
+              "zh": "新总统得到了广泛赞许。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/approbation",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The King received the official approbation of the church.",
               "zh": "国王得到了教会的正式认可。",
@@ -8999,8 +9121,28 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
-            null
+            {
+              "en": "Asher is arguably the best medical writer of the last 100 years.",
+              "zh": "可以说，阿舍是过去一百年来最优秀的医学作家。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/arguably",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Arguably, folk song and folk music constitute the original world music.",
+              "zh": "有理由认为，民歌和民间音乐构成了最初的世界音乐。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/arguably",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -9393,7 +9535,18 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "Are these differences an artifact of the modeling procedures for e-rater?",
+              "zh": "这些差异是 e-rater 建模程序造成的假象吗？",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-compendium.pdf#page=190",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 190 页（物理页码），关于 e-rater 建模的研究问题"
+              }
+            }
           ]
         }
       ],
@@ -9927,7 +10080,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The Athenian leaders arrived on the island of Melos to assert their right of conquest over the islanders.",
+              "zh": "雅典领导人来到米洛斯岛，向岛民坚持主张他们的征服权。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/assert",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "I was determined to assert my authority from the beginning.",
               "zh": "我决心从一开始就确立自己的权威。",
@@ -10165,7 +10328,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Many of his associates also assumed positions of power.",
+              "zh": "他的许多同僚也取得了有权势的职位。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/assume",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "He assumed an air of concern.",
               "zh": "他装出一副关切的样子。",
@@ -10557,7 +10730,17 @@
             "衰退"
           ],
           "examples": [
-            null,
+            {
+              "en": "TV viewing may lead to atrophy of children's imaginations.",
+              "zh": "看电视可能导致儿童想象力萎缩。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/atrophy_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The cultural life of the country will sink into atrophy unless more writers and artists emerge.",
               "zh": "除非出现更多作家和艺术家，否则这个国家的文化生活将逐渐衰退。",
@@ -12312,7 +12495,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "He had to stop rowing to bail water out of the boat.",
+              "zh": "他不得不停止划船，把船里的水舀出去。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bail-out",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Sorry, I really have to bail.",
               "zh": "对不起，我真的得退出了。",
@@ -13118,8 +13311,28 @@
             "取决于"
           ],
           "examples": [
-            null,
-            null,
+            {
+              "en": "All nuclear installations are subject to international safeguards.",
+              "zh": "所有核设施都受到国际安全保障措施的约束。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/subject_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Flights are subject to delay because of the fog.",
+              "zh": "由于有雾，航班可能延误。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/subject_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -13610,7 +13823,17 @@
             "表明某说法不实，与之矛盾"
           ],
           "examples": [
-            null,
+            {
+              "en": "Her energy and youthful good looks belie her 65 years.",
+              "zh": "她的精力和年轻漂亮的容貌让人看不出她已经六十五岁。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/belie",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "My calm exterior belies my deep inner fear.",
               "zh": "我平静的外表掩盖了内心深深的恐惧。",
@@ -15479,7 +15702,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "I wasn't sure he understood what I was saying, but I blundered on with my explanation.",
+              "zh": "我不确定他是否明白我的话，却仍莽撞地继续解释。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/blunder-on",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -16549,7 +16782,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "He was surprised at her breadth of knowledge about music.",
+              "zh": "他对她在音乐方面的广博知识感到惊讶。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/breadth",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -16861,7 +17104,17 @@
             "溴化物"
           ],
           "examples": [
-            null,
+            {
+              "en": "Feel-good bromides can create the illusion of problem solving.",
+              "zh": "让人感觉良好的陈词滥调可能制造出问题已获解决的假象。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bromide",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
             null
           ]
@@ -17170,8 +17423,28 @@
             "突然增多"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "That skirt is too tight. It shows all your bulges.",
+              "zh": "那条裙子太紧了，把你身上隆起的赘肉全显出来了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bulge_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "After the war there was a bulge in the birth rate.",
+              "zh": "战后出生率出现了一次暂时的猛增。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bulge_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -17824,7 +18097,17 @@
             "公事公办的"
           ],
           "examples": [
-            null,
+            {
+              "en": "She adopted a brisk businesslike tone.",
+              "zh": "她采用了轻快干练的语气。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/businesslike",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
             {
               "en": "She adopted a brisk businesslike tone.",
@@ -18285,7 +18568,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Hillary Clinton was appointed to the Cabinet as Secretary of State.",
+              "zh": "希拉里·克林顿获任国务卿，进入内阁。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/cabinet",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -19819,7 +20112,17 @@
           "examples": [
             null,
             null,
-            null
+            {
+              "en": "Interviews with the refugees catalog a history of discrimination and violence.",
+              "zh": "对难民的访谈逐项记录了一段歧视与暴力的历史。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/catalog_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -19951,7 +20254,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Variables can also be categorical, or nonnumerical, such as the eye color of individuals.",
+              "zh": "变量也可以是分类变量，即非数值变量，例如个人的眼睛颜色。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-math-review.pdf#page=126",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 126 页（物理页码），Data Analysis：变量类型"
+              }
+            }
           ]
         }
       ],
@@ -20259,7 +20573,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Cuba was ceded by Spain to the US in 1898.",
+              "zh": "一八九八年，西班牙将古巴转交给美国。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/cede",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -20550,7 +20874,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "‘You will like Rome,’ he said, with absolute certitude.",
+              "zh": "“你会喜欢罗马的，”他十分肯定地说。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/certitude",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -20595,7 +20929,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Kate pulled the blankets over the girl and chafed her hands.",
+              "zh": "凯特给女孩盖上毯子，搓揉她的双手。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/chafe",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -22273,7 +22617,17 @@
               }
             },
             null,
-            null
+            {
+              "en": "Kangle's translation is considered the most authentic, but lacks clarity in some instances.",
+              "zh": "康格尔的译本被认为最忠实，但有些地方不够清晰易懂。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/clarity",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -22306,8 +22660,28 @@
             "古希腊罗马文化相关的"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "He plays classical music, as well as rock and jazz.",
+              "zh": "他既演奏古典音乐，也演奏摇滚乐和爵士乐。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/classical",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "In classical mythology, the roles of hero and trickster can be combined in a single character.",
+              "zh": "在古希腊罗马神话中，英雄与诡计多端者的角色可以合于一人。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/classical",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -23240,8 +23614,30 @@
             "意识到的"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "Also, be cognizant of your time, but don't rush.",
+              "zh": "此外，要留意剩余时间，但不要匆忙作答。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/overview-of-the-gre-general-test.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：提醒考生注意时间的段落"
+              }
+            },
+            {
+              "en": "Also, be cognizant of your time, but don't rush.",
+              "zh": "此外，要留意剩余时间，但不要匆忙作答。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/overview-of-the-gre-general-test.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：提醒考生注意时间的段落"
+              }
+            }
           ]
         }
       ],
@@ -24879,7 +25275,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The format that aligns better with your natural strengths will generally produce a stronger score with comparable preparation.",
+              "zh": "在准备程度相近的情况下，更契合你天然优势的考试形式通常会带来更高的分数。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/admissions-resources/business-school/gre-vs-gmat.html",
+                "checked_at": "2026-10-16",
+                "locator": "网页：选择考试时比较自身优势与准备程度的段落"
+              }
+            },
             {
               "en": "The two machines are comparable in size.",
               "zh": "这两台机器大小相当。",
@@ -25190,7 +25597,17 @@
             "付报酬"
           ],
           "examples": [
-            null,
+            {
+              "en": "Her lawyers say she should be compensated for her suffering.",
+              "zh": "她的律师说，她应该为所遭受的痛苦获得赔偿。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/compensate",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Nothing can compensate for the loss of a loved one.",
               "zh": "什么也无法弥补失去至亲的痛苦。",
@@ -25343,7 +25760,17 @@
             "殷勤好说话的"
           ],
           "examples": [
-            null,
+            {
+              "en": "She was a complaisant wife and dutiful daughter.",
+              "zh": "她是一位顺从的妻子，也是一位尽责的女儿。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/complaisant",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -25643,7 +26070,18 @@
             "全面的，综合的"
           ],
           "examples": [
-            null
+            {
+              "en": "But remember, it’s just one part of your comprehensive application package!",
+              "zh": "但请记住，它只是你整套综合申请材料中的一个部分！",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/admissions-resources/advice/the-right-next-step.html",
+                "checked_at": "2026-10-16",
+                "locator": "网页：准备研究生申请的后段提醒"
+              }
+            }
           ]
         },
         {
@@ -26478,8 +26916,29 @@
             "结论性的"
           ],
           "examples": [
-            null,
-            null,
+            {
+              "en": "The numbers you choose may not necessarily be conclusive.",
+              "zh": "你选取的数值未必具有决定性。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/preparing-for-the-quantitative-reasoning-measure.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：Quantitative Reasoning 代值策略"
+              }
+            },
+            {
+              "en": "Despite the lack of conclusive evidence, the claims were accepted.",
+              "zh": "尽管缺乏确凿证据，这些说法还是被接受了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/conclusive",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The evidence is by no means conclusive.",
               "zh": "这些证据远不足以下定论。",
@@ -26491,7 +26950,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The numbers you choose may not necessarily be conclusive.",
+              "zh": "你选取的数值未必足以得出结论。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/preparing-for-the-quantitative-reasoning-measure.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：Quantitative Reasoning 代值策略"
+              }
+            }
           ]
         }
       ],
@@ -27660,7 +28130,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Two circles with equal radii are called congruent circles.",
+              "zh": "半径相等的两个圆称为全等圆。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-math-review.pdf#page=107",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 107 页（物理页码），Geometry：圆"
+              }
+            },
             null
           ]
         }
@@ -27868,7 +28349,17 @@
             "变魔术般地变出（conjure 的第三人称单数）"
           ],
           "examples": [
-            null,
+            {
+              "en": "He strained to conjure up her face and voice, but they had vanished.",
+              "zh": "他努力在脑海中唤起她的面容和声音，但它们已消失了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/conjure-up",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "He could conjure coins from behind people's ears.",
               "zh": "他能从人们耳朵后面变出硬币。",
@@ -28222,8 +28713,28 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
-            null
+            {
+              "en": "Here, conservation of water has become vital.",
+              "zh": "在这里，节约用水已经变得至关重要。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/conservation",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Conservation of angular momentum keeps a spinning top upright.",
+              "zh": "角动量守恒使旋转的陀螺保持直立。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/conservation",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -28499,7 +29010,18 @@
             "常数"
           ],
           "examples": [
-            null
+            {
+              "en": "When numbers, constants, or variables are given, their possible values are all real numbers unless otherwise restricted.",
+              "zh": "题目给出数、常数或变量时，除非另有限制，它们的可能取值均为实数。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-math-conventions.pdf#page=5",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 5 页（物理页码），Mathematical Conventions：实数范围"
+              }
+            }
           ]
         }
       ],
@@ -28544,7 +29066,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Environmental regulations constrain what firms are able to do with their waste products.",
+              "zh": "环境法规约束着企业处理废弃物的方式。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/constrain",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The company said that it was constrained to raise prices.",
               "zh": "公司表示，不得不提高价格。",
@@ -29623,7 +30155,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The methodology used here is conventional in the field of economics.",
+              "zh": "这里采用的方法遵循经济学领域的惯例。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/conventional",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -31369,7 +31911,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Be genuine, respectful and courteous.",
+              "zh": "要真诚、尊重他人，并且谦恭有礼。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://globalhighered.ets.org/hubfs/GRE%20Pdf%20files/20QuestionsPDF.pdf#page=16",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 16 页（物理页码），面试建议"
+              }
+            }
           ]
         }
       ],
@@ -32040,7 +32593,17 @@
               }
             },
             null,
-            null,
+            {
+              "en": "A slight feeling of suspicion crept over me.",
+              "zh": "我渐渐生出了些许疑心。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/creep_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
             {
               "en": "He's always creeping to the boss.",
@@ -33061,7 +33624,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "A home studio can be a blessing and a curse for a workaholic.",
+              "zh": "对工作狂来说，家中的工作室可能既是福也是祸。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/curse_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -34259,7 +34832,17 @@
             "骗人的"
           ],
           "examples": [
-            null,
+            {
+              "en": "The government were accused of being hypocritical and deceitful.",
+              "zh": "政府被指责虚伪而且欺骗民众。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/deceitful",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The government were accused of being hypocritical and deceitful.",
               "zh": "政府被指责虚伪且不诚实。",
@@ -34994,7 +35577,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "We will defer to whatever the committee decides.",
+              "zh": "无论委员会作出什么决定，我们都会尊重并听从。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/defer-to",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -36399,7 +36992,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "He was demonized by sections of the press.",
+              "zh": "部分报刊把他描绘得十分邪恶。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/demonize",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -36660,7 +37263,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The red triangle denotes danger.",
+              "zh": "红色三角形表示危险。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/denote",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Here ‘family’ denotes mother, father and children.",
               "zh": "这里的“家庭”指母亲、父亲和孩子。",
@@ -37013,7 +37626,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "In my view this book would deprave young children.",
+              "zh": "在我看来，这本书会使幼童堕落。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/deprave",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -44125,7 +44748,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "His words were an echo of what she had heard many times before.",
+              "zh": "他的话重复了她以前听过许多次的说法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/echo_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -44769,7 +45402,17 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "His egotism prevented him from really loving anyone but himself.",
+              "zh": "他的自我中心使他无法真正爱自己以外的任何人。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/egotism",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -46001,7 +46644,18 @@
             "基于观察、经验或实验的"
           ],
           "examples": [
-            null
+            {
+              "en": "In these circumstances, the goal of obtaining up-to-date empirical evidence regarding GRE-Validity is a challenging one.",
+              "zh": "在这些情况下，要获取有关 GRE 效度的最新实证证据是一项挑战。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/Media/Research/pdf/GREB-75-08R.pdf#page=90",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 90 页（物理页码），印刷页码 93，末句；已回看扫描原页"
+              }
+            }
           ]
         }
       ],
@@ -46080,7 +46734,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The syllabus aims to empower students to become independent learners.",
+              "zh": "这份课程大纲旨在使学生有能力成为独立的学习者。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/empower",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The movement actively empowered women and gave them confidence in themselves.",
               "zh": "这场运动积极增强女性的自主权，使她们对自己充满信心。",
@@ -46135,7 +46799,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Our robust practices have become industry standards emulated globally.",
+              "zh": "我们完善的做法已成为全球效仿的行业标准。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-guide-to-the-use-of-scores.pdf#page=18",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 18 页（物理页码），考试安全实践说明"
+              }
+            }
           ]
         }
       ],
@@ -46549,7 +47224,17 @@
             "广博全面的"
           ],
           "examples": [
-            null,
+            {
+              "en": "Penny’s contact book was encyclopedic.",
+              "zh": "彭妮的通讯录内容丰富得像一部百科全书。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/encyclopedic",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "She has an encyclopedic knowledge of natural history.",
               "zh": "她的自然史知识非常广博。",
@@ -46661,7 +47346,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The world leaders endorsed a ban on land mines.",
+              "zh": "各国领导人认可了禁止地雷的提议。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/endorse",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "I wonder how many celebrities actually use the products they endorse.",
               "zh": "我想知道有多少名人真的使用他们所代言的产品。",
@@ -50196,7 +50891,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Until 1994, the South African government was racially exclusive.",
+              "zh": "直到一九九四年，南非政府仍在种族上具有排他性。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/exclusive",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "He belongs to an exclusive club.",
               "zh": "他属于一家限制准入的高档俱乐部。",
@@ -51366,7 +52071,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "In the changed climate of the late 1970s, it was possible to include more sexually explicit material.",
+              "zh": "在二十世纪七十年代末变化后的环境中，作品可以包含更多露骨的性描写。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/explicit",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -51527,7 +52242,17 @@
             "不公平利用"
           ],
           "examples": [
-            null,
+            {
+              "en": "The company maintains control over domestic natural gas exploration and exploitation.",
+              "zh": "该公司保持着对国内天然气勘探与开发的控制。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/exploitation",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Starvation and poverty are the result of global economic exploitation, not lack of resources.",
               "zh": "饥饿和贫困是全球经济剥削的结果，而非资源匮乏所致。",
@@ -51539,7 +52264,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Immigrants are often vulnerable to exploitation.",
+              "zh": "移民常常容易受到剥削。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/exploitation",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -52032,7 +52767,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Sea ice varies considerably in extent and duration from year to year.",
+              "zh": "海冰的分布范围和持续时间每年都有很大变化。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/extent",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The island is 300 square kilometres in extent.",
               "zh": "这座岛的面积为三百平方公里。",
@@ -53628,7 +54373,17 @@
             "并非真心的"
           ],
           "examples": [
-            null,
+            {
+              "en": "‘A present for me?’ she asked with feigned surprise.",
+              "zh": "“给我的礼物？”她装出惊讶的样子问。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/feign",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
             null
           ]
@@ -54843,7 +55598,17 @@
             "财务的"
           ],
           "examples": [
-            null,
+            {
+              "en": "The fiscal year begins in July.",
+              "zh": "财政年度从七月开始。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/fiscal",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -58941,7 +59706,17 @@
             "一件衣服"
           ],
           "examples": [
-            null
+            {
+              "en": "He was wearing a strange shapeless garment.",
+              "zh": "他穿着一件奇怪而不成样子的衣服。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/garment",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -59237,7 +60012,17 @@
             "无特色的"
           ],
           "examples": [
-            null,
+            {
+              "en": "“Broadband” is a generic term for any high-speed connection to the Internet.",
+              "zh": "“宽带”是各种高速互联网连接的通称。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/generic",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The doctor offered me a choice of a branded or a generic drug.",
               "zh": "医生让我在品牌药和仿制药之间选择。",
@@ -60502,7 +61287,17 @@
             "不切实际地宏伟的"
           ],
           "examples": [
-            null,
+            {
+              "en": "The grandiose scheme for a journey across the desert came to nothing.",
+              "zh": "那项穿越沙漠的浮夸计划最终落空了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/grandiose",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
             {
               "en": "The grandiose scheme for a journey across the desert came to nothing.",
@@ -65855,7 +66650,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "She was kept in ignorance of her husband's activities.",
+              "zh": "她一直被蒙在鼓里，不知道丈夫的活动。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ignorance",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -66694,7 +67499,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Even one drink can impair driving performance.",
+              "zh": "即使只喝一杯酒，也可能削弱驾驶表现。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/impair",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -67593,7 +68408,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Such initiatives may be costly or otherwise difficult to implement.",
+              "zh": "实施这类举措可能成本高昂，或在其他方面存在困难。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/implement",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -67713,7 +68538,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The ability to listen is implicit in the teacher's role.",
+              "zh": "倾听能力是教师职责内含的要求。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/implicit",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "She had the implicit trust of her staff.",
               "zh": "她得到了员工们的完全信任。",
@@ -67758,7 +68593,18 @@
             "毫无保留地"
           ],
           "examples": [
-            null,
+            {
+              "en": "We also have questions that get at inferences and implications, what the passage says implicitly.",
+              "zh": "我们也有考查推断和隐含意义的问题，也就是考查文章含蓄表达了什么。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/test-takers/general-test/transcript/preparing-for-the-verbal-reasoning-measure.html",
+                "checked_at": "2026-10-16",
+                "locator": "官方逐字稿：阅读理解中的推断和隐含意义"
+              }
+            },
             {
               "en": "It reinforces, implicitly or explicitly, the idea that money is all-important.",
               "zh": "这会以含蓄或明确的方式强化金钱至上的观念。",
@@ -69331,7 +70177,17 @@
             "不胜任的"
           ],
           "examples": [
-            null,
+            {
+              "en": "The governor was accused of being incompetent to lead.",
+              "zh": "州长被指责没有能力领导。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/incompetent_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The prime minister was attacked as incompetent to lead.",
               "zh": "首相受到指责，被认为无力领导。",
@@ -69605,7 +70461,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Research results are incorporated in educational materials.",
+              "zh": "研究成果被融入教学材料中。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/incorporate",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The company was incorporated in 2008.",
               "zh": "这家公司于二〇〇八年注册成立。",
@@ -70339,7 +71205,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "From the experimental evidence, one infers or induces the hypothesis.",
+              "zh": "人们从实验证据中推断或归纳出假设。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/induce",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -71292,7 +72168,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "He believed there was no inherent contradiction between religion and science.",
+              "zh": "他认为宗教与科学之间并不存在内在矛盾。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/inherent",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -72169,7 +73055,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The Act was amended by the passing of a statutory instrument.",
+              "zh": "通过一项法定文书，对该法案作了修订。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/instrument",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -73903,7 +74799,17 @@
             "牵涉其中的"
           ],
           "examples": [
-            null,
+            {
+              "en": "The complete calculation is too involved to include here.",
+              "zh": "完整的计算过程过于复杂，无法在此列出。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/involved",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Several people have been involved with the project from the beginning.",
               "zh": "有几个人从一开始就参与了这个项目。",
@@ -74101,7 +75007,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Some of the discussion appears irrelevant to the topic in hand.",
+              "zh": "其中一些讨论似乎与眼下的主题无关。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/irrelevant",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -74946,7 +75862,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The fans were in jubilant mood after the victory.",
+              "zh": "获胜后，球迷们喜气洋洋。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/jubilant",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -75887,7 +76813,17 @@
           ],
           "examples": [
             null,
-            null,
+            {
+              "en": "Share prices languished at the closing bell.",
+              "zh": "收盘时股价依然低迷。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/languish",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "She continues to languish in a foreign prison.",
               "zh": "她继续在异国监狱里煎熬。",
@@ -75994,7 +76930,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "She lapsed into silence again.",
+              "zh": "她又陷入了沉默。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/lapse-into",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -76083,7 +77029,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "She underwent a heart transplant in a last-ditch attempt to save her.",
+              "zh": "她接受了心脏移植，作为挽救生命的最后一搏。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/last-ditch",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -76298,7 +77254,17 @@
             "大量给予，挥霍"
           ],
           "examples": [
-            null
+            {
+              "en": "She lavishes most of her attention on her youngest son.",
+              "zh": "她把大部分注意力都倾注在小儿子身上。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/lavish-on",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -79657,8 +80623,28 @@
             "利润空间"
           ],
           "examples": [
-            null,
-            null,
+            {
+              "en": "In 1908, the majority of storms tracked eastward along the northern margin of the Great Lakes.",
+              "zh": "1908 年，大多数风暴沿着五大湖的北部边缘向东移动。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/margin",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The narrow passageway left me little margin for error as I reversed the car.",
+              "zh": "我倒车时，狭窄的通道几乎不容许我出错。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/margin",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "She beat the other runners by a margin of ten seconds.",
               "zh": "她以十秒的优势击败了其他跑步选手。",
@@ -79724,7 +80710,17 @@
             "仅够维持的"
           ],
           "examples": [
-            null,
+            {
+              "en": "His grandfather spoke a marginal Native American language.",
+              "zh": "他的祖父会说一种处于边缘地位的美洲原住民语言。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/marginal",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The difference between the two estimates is marginal.",
               "zh": "这两个估计值之间的差别很小。",
@@ -80683,8 +81679,28 @@
             "通过中介促成（mediate 的过去式及过去分词）"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "The UN mediated between the opposing sides in the civil war.",
+              "zh": "联合国在内战的对立双方之间进行了调解。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/mediate",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "This model assumes that the effects are indirect and mediated by other factors.",
+              "zh": "这个模型假定，这些影响是间接的，通过其他因素的中介而产生。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/mediate",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -81014,7 +82030,17 @@
             "合并"
           ],
           "examples": [
-            null,
+            {
+              "en": "The chocolate and coffee flavors meld beautifully in this dessert.",
+              "zh": "这道甜点中的巧克力味和咖啡味融合得十分美妙。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/meld",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         },
@@ -81435,7 +82461,17 @@
             "功绩"
           ],
           "examples": [
-            null,
+            {
+              "en": "They weighed the relative merits of the four candidates.",
+              "zh": "他们权衡了这四位候选人各自的优点。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/merit_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The plan is entirely without merit.",
               "zh": "这个计划毫无价值。",
@@ -81977,7 +83013,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "If you'll excuse me, I must go and mingle (= talk to other guests).",
+              "zh": "请原谅，我得去和其他客人交际一下。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mingle",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The princess was not recognized and mingled freely with the crowds.",
               "zh": "公主没有被认出来，自在地混在人群中。",
@@ -82051,7 +83097,17 @@
             "微缩模型、小画像"
           ],
           "examples": [
-            null
+            {
+              "en": "She collects miniatures for her dollhouse.",
+              "zh": "她为自己的玩偶屋收集微缩模型。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/miniature_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -82616,7 +83672,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The play was given a mixed reception by the critics (= some liked it, some did not).",
+              "zh": "评论界对这出戏的评价褒贬不一，有人喜欢，也有人不喜欢。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mixed",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "I listened to her story with mixed emotions.",
               "zh": "我怀着复杂的心情听她讲述。",
@@ -83406,7 +84472,18 @@
             "单调无变化的"
           ],
           "examples": [
-            null,
+            {
+              "en": "If their vision were monochromatic, they would likely have found at least some of the gray cards indistinguishable from the blue.",
+              "zh": "如果它们的视觉是单色的，它们很可能会发现，至少有一些灰色卡片无法与蓝色卡片区分。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/gre/gre-mini-quiz.html",
+                "checked_at": "2026-10-16",
+                "locator": "Mini Quiz，问题 6–7 共用蜜蜂颜色视觉阅读段落，末句"
+              }
+            },
             null,
             null
           ]
@@ -84539,8 +85616,28 @@
             "缓和（mute 的第三人称单数）"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "The traffic noise was muted by the heavy drapes.",
+              "zh": "厚重的窗帘减弱了交通噪声。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mute_3",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "She thought it better to mute her criticism.",
+              "zh": "她觉得最好还是缓和一下自己的批评。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/mute_3",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -85224,7 +86321,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "He has some nerve asking us for money!",
+              "zh": "他居然厚着脸皮向我们要钱！",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/nerve_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -85322,7 +86429,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "A drug that is formulated for injection into the bloodstream needs to function at neutral pH.",
+              "zh": "为注入血流而配制的药物，需要能在中性 pH 条件下发挥作用。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/neutral",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "‘So you told her?’ he said in a neutral tone of voice.",
               "zh": "“那么你告诉她了？”他用不带倾向的语气说道。",
@@ -86207,7 +87324,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "These seeds can be a great source of nourishment to birds in winter.",
+              "zh": "这些种子可以成为鸟类冬季的重要食物来源。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/nourishment",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -86720,7 +87847,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "It is obligatory for all employees to wear protective clothing.",
+              "zh": "所有员工都必须穿防护服。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/obligatory",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "In the mid-60s he took the almost obligatory trip to India.",
               "zh": "六十年代中期，他按当时几乎人人照做的惯例去了一趟印度。",
@@ -86999,7 +88136,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "More recent evidence supports this observation in other species.",
+              "zh": "更新的证据表明，这一观察结果在其他物种中也成立。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/observation",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "She has some interesting observations on possible future developments.",
               "zh": "她对未来可能的发展提出了一些有趣的看法。",
@@ -87266,7 +88413,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "They were charged with obstructing the police in the course of duty.",
+              "zh": "他们被指控妨碍警察执行公务。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/obstruct",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The pillar obstructed our view of the stage.",
               "zh": "柱子挡住了我们看舞台的视线。",
@@ -87483,7 +88640,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "It should have been an occasion for rejoicing, but she could not feel any real joy.",
+              "zh": "这本该是值得欢庆的时刻，可她却感受不到真正的喜悦。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/occasion_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "I've met him on several occasions.",
               "zh": "我见过他好几次。",
@@ -88122,7 +89289,17 @@
             "在衰落"
           ],
           "examples": [
-            null,
+            {
+              "en": "Violent crime appears to be on the wane in the capital.",
+              "zh": "首都的暴力犯罪似乎正在减少。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/wane_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -88797,7 +89974,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The clock is simply for ornament; it doesn't work anymore.",
+              "zh": "这个钟只是用作装饰，已经不能走了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ornament_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The building is an ornament to the city.",
               "zh": "这座建筑为城市增光添彩。",
@@ -89859,7 +91046,18 @@
             "共同之处"
           ],
           "examples": [
-            null,
+            {
+              "en": "When thinking about your application as a whole, it’s a good strategy to have some overlap.",
+              "zh": "把申请材料作为一个整体来考虑时，保留一些相互重叠的内容是不错的策略。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://globalhighered.ets.org/hubfs/GRE%20Pdf%20files/20QuestionsPDF.pdf#page=2",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 2 页（物理页码），专家对申请材料整体一致性的回答"
+              }
+            },
             {
               "en": "There is (a) considerable overlap between the two subjects.",
               "zh": "这两门学科之间有相当多的共同之处。",
@@ -90023,7 +91221,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "A special code is needed to override the time lock.",
+              "zh": "需要一个特殊代码才能解除定时锁的自动控制。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/override_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -90611,9 +91819,29 @@
             "摇摄"
           ],
           "examples": [
+            {
+              "en": "The television series was panned by critics and viewers alike.",
+              "zh": "这部电视连续剧受到了评论家和观众一致的严厉批评。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pan_3",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
-            null,
-            null
+            {
+              "en": "The camera panned back to the audience.",
+              "zh": "摄影机又摇摄回观众席。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pan_3",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -91002,7 +92230,18 @@
               }
             },
             null,
-            null
+            {
+              "en": "The empirical Bayes paradigm provides one way of deciding to what extent unusual results should be treated as genuine.",
+              "zh": "经验贝叶斯框架为判断应在多大程度上把异常结果视为真实结果提供了一种方法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/Media/Research/pdf/GREB-90-01VSS.pdf#page=23",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 23 页（物理页码），印刷页码 15，第二段末句；已回看扫描原页"
+              }
+            }
           ]
         }
       ],
@@ -91397,7 +92636,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "His work partakes of the aesthetic fashions of his time.",
+              "zh": "他的作品带有其时代审美风尚的特征。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/partake-of",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -91530,7 +92779,17 @@
           ],
           "examples": [
             null,
-            null,
+            {
+              "en": "There was not a particle of evidence (= no evidence at all) to support the case.",
+              "zh": "没有丝毫证据能够支持这桩案件。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/particle",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "In ‘She tore up the letter’, the word ‘up’ is a particle.",
               "zh": "在“She tore up the letter”中，“up”这个词是小品词。",
@@ -92523,7 +93782,17 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "He was strongly attracted by her peculiarities of dress and behavior.",
+              "zh": "她在穿着和行为上的怪癖深深吸引了他。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/peculiarity",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -92675,7 +93944,18 @@
             "教学的，教育学的"
           ],
           "examples": [
-            null
+            {
+              "en": "Griffith's work presented a number of advantages for this particular pedagogical purpose.",
+              "zh": "格里菲思的作品对于这一特定教学目的具有多项优势。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://grediagnostic.ets.org/GREDWeb/gred/longer_passage.jsp",
+                "checked_at": "2026-10-16",
+                "locator": "Diagnostic Service：Reading Comprehension — Longer Passage，正文第三段第一句"
+              }
+            }
           ]
         }
       ],
@@ -92799,7 +94079,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "This line (= publicly stated opinion) is being peddled by all the government spokesmen.",
+              "zh": "政府的所有发言人都在鼓吹这一公开说法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/peddle",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -93481,7 +94771,17 @@
             "洞察力"
           ],
           "examples": [
-            null,
+            {
+              "en": "Studies on brain injuries demonstrate the complexities involved in visual perception.",
+              "zh": "关于脑损伤的研究表明，视觉感知涉及复杂的过程。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/perception",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "There is a general public perception that standards in schools are falling.",
               "zh": "公众普遍认为学校的教育水平正在下降。",
@@ -94691,7 +95991,18 @@
             "适用"
           ],
           "examples": [
-            null,
+            {
+              "en": "Read passages to get an overall sense of them before answering questions that pertain to them.",
+              "zh": "先通读文章以了解大意，再回答与文章有关的问题。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-student-presentation.pdf#page=42",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 42 页（物理页码），Verbal Reasoning Tips and Strategies，第一个要点"
+              }
+            },
             null,
             {
               "en": "Those laws no longer pertain.",
@@ -94912,7 +96223,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "For some perverse reason he is refusing to see a doctor.",
+              "zh": "不知出于什么乖戾的理由，他拒绝去看医生。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/perverse",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -95418,7 +96739,17 @@
             "因悲伤而憔悴"
           ],
           "examples": [
-            null,
+            {
+              "en": "She pined for months after he'd gone.",
+              "zh": "他离开后，她苦苦思念了好几个月。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pine_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The Major’s dog pined badly when her master died.",
               "zh": "少校的狗在主人去世后因悲伤而日渐憔悴。",
@@ -95976,7 +97307,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "He advised his client to plead insanity (= say that he/she was mentally ill and therefore not responsible for his/her actions).",
+              "zh": "他建议当事人以精神失常作答辩，即声称因精神疾病而不应对自己的行为负责。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/plead",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -96458,8 +97799,28 @@
             "骤降"
           ],
           "examples": [
-            null,
-            null,
+            {
+              "en": "He plunged his sword into the giant's body.",
+              "zh": "他猛地把剑刺进了巨人的身体。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/plunge-in",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The pool was declared open and eager swimmers plunged in.",
+              "zh": "泳池宣布开放，急切的游泳者纷纷跳了进去。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/plunge-in",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "This year profits plunged by 40 per cent.",
               "zh": "今年利润骤降了百分之四十。",
@@ -96480,8 +97841,28 @@
             "骤降"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "He took the plunge into the deep end.",
+              "zh": "他纵身跳入了深水区。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/plunge_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "This increase reversed an earlier price plunge.",
+              "zh": "这次上涨扭转了此前价格骤降的局面。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/plunge_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -97508,7 +98889,17 @@
             "实践某种活动的人"
           ],
           "examples": [
-            null,
+            {
+              "en": "‘United Nations, Divided World’ is an important collection of readings by practitioners and academics.",
+              "zh": "《联合国，分裂的世界》是一部重要的选读文集，收录了从业者和学者的文章。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/practitioner",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -98946,7 +100337,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "His administration presided over one of the worst economic declines in the country's history (= he was in power when the decline happened).",
+              "zh": "该政府执政期间，国家经历了历史上最严重的经济衰退之一，也就是说，衰退发生时它正掌权。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/preside",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -99897,8 +101298,28 @@
             "公开表明（proclaim 的过去式及过去分词）"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "The day was proclaimed a public holiday.",
+              "zh": "那一天被宣布为公共假日。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/us/definition/american_english/proclaim",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The senator proclaimed how shocked he was at the news.",
+              "zh": "这位参议员公开表明，自己听到这个消息是多么震惊。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/us/definition/american_english/proclaim",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -99985,7 +101406,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "DVDs can store prodigious amounts of information.",
+              "zh": "DVD 能存储数量惊人的信息。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/prodigious",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -100101,8 +101532,28 @@
             "公开表明（profess 的过去式及过去分词）"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "I don't profess to be an expert on this subject.",
+              "zh": "我并不声称自己是这个领域的专家。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/profess",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He professed his admiration for their work.",
+              "zh": "他公开表明了自己对他们工作的赞赏。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/profess",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -100658,7 +102109,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Tired drivers were found to be particularly prone to ignore warning signs.",
+              "zh": "研究发现，疲劳的司机尤其容易忽视警示标志。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/prone",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Working without a break makes you more prone to error.",
               "zh": "不休息地工作会让你更容易出错。",
@@ -100941,7 +102402,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Her assessment is based on the proposition that power corrupts.",
+              "zh": "她的评估基于“权力使人腐化”这一主张。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/proposition_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "First of all we need to examine whether this proposition is true.",
               "zh": "首先，我们需要检验这个命题是否为真。",
@@ -101750,7 +103221,17 @@
             },
             null,
             null,
-            null
+            {
+              "en": "The number of patients on a doctor's list was seen as a good proxy for assessing how hard they work.",
+              "zh": "一名医生名下的病人数，被视为衡量其工作辛劳程度的良好替代指标。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/proxy",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -101918,7 +103399,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "She used a knife to pry open the lid.",
+              "zh": "她用一把刀撬开了盖子。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/pry",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -101951,7 +103442,17 @@
             "好打听隐私的"
           ],
           "examples": [
-            null,
+            {
+              "en": "She tried to keep the children away from the prying eyes of the world's media.",
+              "zh": "她试图让孩子们远离世界各地媒体爱窥探的目光。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/us/definition/american_english/pry",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -102101,7 +103602,17 @@
           ],
           "examples": [
             null,
-            null,
+            {
+              "en": "Her speech was punctuated by bursts of applause.",
+              "zh": "她的演讲不时被阵阵掌声打断。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/punctuate",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -102156,7 +103667,17 @@
             "轮胎破洞"
           ],
           "examples": [
-            null,
+            {
+              "en": "There were four small puncture marks on her wrist where the cat had bitten her.",
+              "zh": "她的手腕被猫咬过的地方有四个小刺孔。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/puncture_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "I had a puncture on the way and arrived late.",
               "zh": "我的车在路上爆了胎，因此迟到了。",
@@ -102211,7 +103732,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The purpose of the visit was to see the campus in person.",
+              "zh": "这次访问的意图是亲自看看校园。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/purpose",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -102445,7 +103976,17 @@
           ],
           "examples": [
             null,
-            null,
+            {
+              "en": "She exposed Dr. Jones as a quack.",
+              "zh": "她揭露琼斯医生是个冒牌医生。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/quack_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         },
@@ -102796,7 +104337,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "If you have a query about your insurance policy, contact our customer service department.",
+              "zh": "如果您对保单有疑问，请联系我们的客户服务部门。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/query_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -103495,7 +105046,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Climbing plants rambled over the front of the house.",
+              "zh": "攀援植物在房屋正面蔓延生长。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ramble_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -104408,7 +105969,17 @@
             "王国"
           ],
           "examples": [
-            null,
+            {
+              "en": "At the end of the speech he seemed to be moving into the realms of fantasy.",
+              "zh": "演讲快结束时，他似乎进入了幻想的领域。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/realm",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "A successful outcome is not beyond the realms of possibility.",
               "zh": "获得成功的结果并非不可能。",
@@ -104546,7 +106117,17 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "The great bulk of the building reared up against the night sky.",
+              "zh": "建筑物庞大的轮廓衬着夜空高耸而起。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/rear_3",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -104782,7 +106363,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Their team leads in rebounds this year.",
+              "zh": "今年他们球队的篮板球数领先。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/rebound_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -105251,7 +106842,17 @@
             "招待会"
           ],
           "examples": [
-            null,
+            {
+              "en": "Delegates gave him a warm reception as he called for more spending on education.",
+              "zh": "他呼吁增加教育支出时，代表们给予了他热烈的欢迎。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/reception",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "There was very poor reception on my phone.",
               "zh": "我的手机信号接收效果很差。",
@@ -105936,7 +107537,17 @@
               }
             },
             null,
-            null
+            {
+              "en": "This voucher can be redeemed at any of our branches.",
+              "zh": "这张代金券可在我们任何一家分店兑换。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/redeem",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -106567,7 +108178,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Billions of dollars are being spent on rehabilitating inner-city areas.",
+              "zh": "数十亿美元正用于修复城市的老旧中心区。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/rehabilitate",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -106696,7 +108317,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "It's essential to keep a tight rein on public spending.",
+              "zh": "严格约束公共支出至关重要。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/rein_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -106707,9 +108338,29 @@
             "抑制"
           ],
           "examples": [
+            {
+              "en": "We need to rein back public spending.",
+              "zh": "我们需要开始更严格地控制公共支出。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/rein-back",
+                "checked_at": "2026-10-16"
+              }
+            },
             null,
-            null,
-            null
+            {
+              "en": "She kept her emotions tightly reined in.",
+              "zh": "她紧紧抑制着自己的情绪。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/rein-back",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -106971,7 +108622,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "I relinquished her hand (= stopped holding it) and stood up.",
+              "zh": "我松开了她的手，然后站了起来。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/relinquish",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -107658,7 +109319,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The artist has rendered the stormy sea in dark greens and browns.",
+              "zh": "画家用深绿色和棕色描绘了波涛汹涌的大海。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/render",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -109208,7 +110879,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "The U.N. Security Council unanimously adopted a resolution calling for a halt to hostilities.",
+              "zh": "联合国安理会一致通过了一项呼吁停止敌对行动的决议。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/resolution",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The government is pressing for an early resolution of the dispute.",
               "zh": "政府正敦促尽早解决争端。",
@@ -109220,7 +110901,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "In the 1980s, inkjet printers had maximum resolution of 300 dpi (dots per inch).",
+              "zh": "在 20 世纪 80 年代，喷墨打印机的最高分辨率为 300 dpi，即每英寸 300 个点。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/resolution",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -109319,7 +111010,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Strike action should be regarded as a last resort, when all attempts to negotiate have failed.",
+              "zh": "只有一切谈判尝试都失败时，才应把罢工视为最后的办法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/resort_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         },
@@ -109330,7 +111031,17 @@
             "常去"
           ],
           "examples": [
-            null,
+            {
+              "en": "They felt they had to resort to violence.",
+              "zh": "他们觉得自己不得不诉诸暴力。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/resort-to",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -109637,7 +111348,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The government is taking steps to restrain inflation.",
+              "zh": "政府正在采取措施抑制通货膨胀。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/restrain",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -109672,7 +111393,17 @@
             "克制"
           ],
           "examples": [
-            null,
+            {
+              "en": "The new law has imposed restraints on exports to Russia.",
+              "zh": "新法律对向俄罗斯出口施加了限制。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/restraint",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The government has imposed export restraints on some products.",
               "zh": "政府对一些产品实施了出口限制。",
@@ -109684,7 +111415,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "Children must use an approved child restraint or adult seat belt.",
+              "zh": "儿童必须使用经过批准的儿童约束装置或成人安全带。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/restraint",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The police appealed to the crowd for restraint.",
               "zh": "警方呼吁人群保持克制。",
@@ -109844,7 +111585,17 @@
             "零售"
           ],
           "examples": [
-            null
+            {
+              "en": "The recommended retail price is $9.99.",
+              "zh": "建议零售价是 9.99 美元。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/retail1_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -109865,7 +111616,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "She retailed the neighbors' activities with relish.",
+              "zh": "她津津有味地转述邻居们的活动。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/retail2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -109938,7 +111699,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "She has a good memory and finds it easy to retain facts.",
+              "zh": "她记忆力很好，记住事实对她来说很容易。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/retain",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "You will need to retain the services of a lawyer.",
               "zh": "你需要聘请一位律师。",
@@ -110321,7 +112092,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "You can only retrieve the situation by apologizing.",
+              "zh": "你只有道歉才能挽回局面。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/retrieve",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -110365,7 +112146,18 @@
             "影响以往事项的"
           ],
           "examples": [
-            null,
+            {
+              "en": "Fee Reduction Vouchers are not retroactive, and they cannot be replaced if lost or stolen.",
+              "zh": "费用减免券不追溯生效，而且遗失或被盗后无法补发。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-info-bulletin.pdf#page=7",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 7 页（物理页码），Fee Reduction Vouchers 要点"
+              }
+            },
             null
           ]
         }
@@ -110568,8 +112360,28 @@
             "回到先前话题或做法"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "His manner seems to have reverted to normal.",
+              "zh": "他的举止似乎已恢复正常。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/revert-to",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The conversation kept reverting to the events of March 6th.",
+              "zh": "谈话不断回到 3 月 6 日发生的事情上。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/revert-to",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -110603,7 +112415,17 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "He was reviled in the press for his angry outbursts.",
+              "zh": "他因大发雷霆而受到媒体的痛斥。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/revile",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -111970,7 +113792,17 @@
             "争吵"
           ],
           "examples": [
-            null,
+            {
+              "en": "The vegetables were planted in neat rows.",
+              "zh": "蔬菜种成了整齐的一排排。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/row_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         },
@@ -111981,7 +113813,17 @@
             "争吵"
           ],
           "examples": [
-            null,
+            {
+              "en": "We rowed around the island.",
+              "zh": "我们划船绕了那座岛一圈。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/row_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -113654,7 +115496,17 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "For Emma, life had lost its savor.",
+              "zh": "对埃玛来说，生活已经失去了乐趣。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/savor_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -115249,7 +117101,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The band became a sensation overnight.",
+              "zh": "这支乐队一夜之间成了轰动一时的团体。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sensation",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -116875,7 +118737,18 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Users navigate the test and test questions through keyboard shortcuts and a keyboard-accessible menu.",
+              "zh": "用户通过键盘快捷键和可由键盘操作的菜单来浏览考试及试题。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "ETS",
+                "url": "https://www.ets.org/pdfs/gre/gre-compendium.pdf#page=255",
+                "checked_at": "2026-10-16",
+                "locator": "PDF 第 255 页（物理页码），屏幕阅读器版考试导航说明"
+              }
+            }
           ]
         },
         {
@@ -117068,7 +118941,17 @@
             "发出刺耳声（shriek 的现在分词）"
           ],
           "examples": [
-            null,
+            {
+              "en": "The audience was shrieking with laughter.",
+              "zh": "观众笑得尖叫起来。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/shriek_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -117550,7 +119433,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "She has been accused of siphoning off thousands of dollars from the company into her own bank account.",
+              "zh": "她被指控从公司转走数千美元，存入自己的银行账户。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/siphon_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -118528,8 +120421,28 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
-            null
+            {
+              "en": "Her husband was very loving, but she felt smothered.",
+              "zh": "她丈夫十分爱她，但她却觉得自己被这种爱束缚得喘不过气。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/smother",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He tried to smother the flames with a blanket.",
+              "zh": "他试图用一条毯子把火焰闷熄。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/smother",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -118772,8 +120685,28 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
-            null
+            {
+              "en": "The sheets kept getting snarled up.",
+              "zh": "床单总是缠在一起。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/snarl-up",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The accident snarled up the traffic all day.",
+              "zh": "这起事故导致交通堵塞了一整天。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/snarl-up",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -119614,8 +121547,28 @@
             "散布、引发"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "Sow the seeds in rows.",
+              "zh": "把种子一行行地播下。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sow1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "In this way he sowed the seeds of his own success.",
+              "zh": "他就这样播下了自己成功的种子。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sow1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -119894,7 +121847,17 @@
             "贬损"
           ],
           "examples": [
-            null,
+            {
+              "en": "Don't speak ill of the dead.",
+              "zh": "不要说死者的坏话。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/ill_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -119979,7 +121942,17 @@
             "规格，规范"
           ],
           "examples": [
-            null,
+            {
+              "en": "Sophisticated users will read the detailed specifications of any computer they are thinking of buying.",
+              "zh": "有经验的用户会仔细阅读他们考虑购买的任何计算机的详细规格说明。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/specification",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The house has been built exactly to our specifications.",
               "zh": "这所房子完全按照我们的规格建造。",
@@ -120388,7 +122361,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "He gave her a drink spiked with tranquilizers.",
+              "zh": "他给了她一杯掺有镇静药的饮料。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/spike_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -121581,7 +123564,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "She claimed that he had been stalking her over a period of three years.",
+              "zh": "她声称他曾连续三年纠缠跟踪她。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stalk_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "He stalked off without a word.",
               "zh": "他一言不发，怒气冲冲地走开了。",
@@ -121691,7 +123684,17 @@
               }
             },
             null,
-            null
+            {
+              "en": "Widen your stance (= move your feet wider apart) for greater stability when hitting the ball.",
+              "zh": "击球时把站姿放宽，也就是双脚分得更开，以便更稳。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stance",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -122209,7 +124212,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Most people's insecurities stem from something that happened in their childhood.",
+              "zh": "大多数人的不安全感源于童年发生的某些事情。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stem-from",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -122640,7 +124653,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The article can be used to stimulate discussion among students.",
+              "zh": "这篇文章可用来促进学生之间的讨论。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stimulate",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -123171,7 +125194,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "She could hear the strains of Mozart through the window.",
+              "zh": "她能透过窗户听到莫扎特的曲调。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/strain_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -123184,7 +125217,17 @@
           ],
           "examples": [
             null,
-            null,
+            {
+              "en": "Bend gently to the left without straining.",
+              "zh": "轻轻向左侧弯，不要用力过度。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/strain_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "Strain off any excess liquid.",
               "zh": "滤去多余的液体。",
@@ -123805,8 +125848,28 @@
             "去除表面而显露实质"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "First, you need to strip away all the old plaster.",
+              "zh": "首先，你需要剥去所有旧灰泥。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/strip-away",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The movie aims to strip away the lies surrounding Kennedy's life.",
+              "zh": "这部电影旨在揭开围绕肯尼迪生平的种种谎言。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/strip-away",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -124084,7 +126147,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "He stumped around the country trying to build up support.",
+              "zh": "他在全国各地巡回演说，试图争取支持。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stump_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -124462,7 +126535,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Doubts that had been submerged in her mind suddenly resurfaced.",
+              "zh": "她心中深藏的疑虑突然又浮现出来。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/submerge",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -124915,8 +126998,28 @@
               }
             },
             null,
-            null,
-            null
+            {
+              "en": "The job required a subtle mind.",
+              "zh": "这项工作需要敏锐的头脑。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/subtle",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "I decided to try a more subtle approach.",
+              "zh": "我决定尝试一种更巧妙的方法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/subtle",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -125995,7 +128098,17 @@
               }
             },
             null,
-            null
+            {
+              "en": "Her cooking was always good, but this time she had surpassed herself (= done better than her own high standards).",
+              "zh": "她的厨艺一向很好，但这一次她胜过了自己以往的高水准。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/surpass",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -126039,7 +128152,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The balance of payments was in surplus last year (= the value of exports was greater than the value of imports).",
+              "zh": "去年的国际收支有盈余，也就是说，出口额高于进口额。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/surplus_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -126620,7 +128743,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "She was brought up under the sway of Communism.",
+              "zh": "她是在共产主义的影响下长大的。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/sway_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -126919,7 +129052,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "She imagined us living in a perfect mother and daughter symbiosis.",
+              "zh": "她想象着我们母女生活在一种完美的相互依存关系中。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/symbiosis",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -127443,7 +129586,17 @@
             "对某事持保留或怀疑态度"
           ],
           "examples": [
-            null
+            {
+              "en": "If I were you, I'd take everything he says with a grain of salt.",
+              "zh": "如果我是你，我会对他说的一切都持保留态度。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/salt_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -127735,8 +129888,28 @@
             "使分裂或内心冲突"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "I tore my jeans on the fence.",
+              "zh": "我的牛仔裤被篱笆扯破了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tear1_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "I was torn between my parents and my friend.",
+              "zh": "我在父母和朋友之间左右为难。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tear1_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         },
         {
@@ -127745,7 +129918,17 @@
             "裂口、破洞（撕裂义）"
           ],
           "examples": [
-            null
+            {
+              "en": "This sheet has a tear in it.",
+              "zh": "这张床单上有一道裂口。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tear1_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -127859,7 +130042,17 @@
             "倾泻"
           ],
           "examples": [
-            null,
+            {
+              "en": "The streets were teeming with tourists.",
+              "zh": "街上到处都是游客。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/teem-with",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The rain was teeming down.",
               "zh": "大雨倾盆而下。",
@@ -128191,8 +130384,28 @@
             "使金属回火（temper 的第三人称单数）"
           ],
           "examples": [
-            null,
-            null,
+            {
+              "en": "The hot sunny days were tempered by a light breeze.",
+              "zh": "一阵微风缓和了晴天的炎热。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/temper_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "His delight was tempered by regret.",
+              "zh": "他的喜悦中掺杂着遗憾。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/temper_2",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         },
@@ -128214,7 +130427,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "Come back when you're in a better temper.",
+              "zh": "等你情绪好一些再回来。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/temper_1",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -128538,7 +130761,17 @@
             "脆弱敏感的"
           ],
           "examples": [
-            null,
+            {
+              "en": "What he needs now is a lot of tender loving care (= sympathetic treatment).",
+              "zh": "他现在需要的是许多温柔体贴的关怀。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tender_1",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "This meat is extremely tender.",
               "zh": "这肉非常嫩。",
@@ -129411,7 +131644,17 @@
               }
             },
             null,
-            null
+            {
+              "en": "I throttled back as we approached the runway.",
+              "zh": "接近跑道时，我减小了油门。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/throttle-back",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -129616,8 +131859,28 @@
             "使受挫（thwart 的过去式及过去分词）"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "She was thwarted in her attempt to take control of the party.",
+              "zh": "她夺取该党控制权的企图受到了阻挠。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/us/definition/american_english/thwart",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "She was thwarted in her attempt to take control of the party.",
+              "zh": "她夺取该党控制权的企图受挫了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/us/definition/american_english/thwart",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -129960,8 +132223,28 @@
             "尝试改进（tinker 的现在分词）"
           ],
           "examples": [
-            null,
-            null
+            {
+              "en": "He's in the garage tinkering with his bike.",
+              "zh": "他在车库里修修补补自己的自行车。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tinker_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He's in the garage tinkering with his bike.",
+              "zh": "他在车库里摆弄自己的自行车，试着把它改进一下。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/tinker_2",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -131359,7 +133642,17 @@
             },
             null,
             null,
-            null
+            {
+              "en": "Am I that transparent (= are my intentions that obvious)?",
+              "zh": "我的意图就这么显而易见吗？",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/transparent",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -132958,7 +135251,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "I was moving into uncharted territory (= a completely new experience) with this relationship.",
+              "zh": "这段关系让我进入了未知的领域，是一种全新的经历。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/uncharted",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -135613,7 +137916,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null,
+            {
+              "en": "All office holders were required to conform to Anglican usages and beliefs.",
+              "zh": "所有任职者都必须遵守圣公会的惯例并认同其信仰。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/usage",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         }
@@ -135667,7 +137980,17 @@
                 "checked_at": "2026-10-16"
               }
             },
-            null
+            {
+              "en": "The change of management ushered in fresh ideas and policies.",
+              "zh": "管理层的变动带来了新的理念和政策。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/usher-in",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -136007,7 +138330,17 @@
             "茫然无神的"
           ],
           "examples": [
-            null,
+            {
+              "en": "There is a vacant room, actually.",
+              "zh": "其实有一间空着的房间。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/vacant",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The seat next to him was vacant.",
               "zh": "他旁边的座位空着。",
@@ -137452,7 +139785,17 @@
             "接近，濒临"
           ],
           "examples": [
-            null
+            {
+              "en": "Some of his suggestions verged on the outrageous.",
+              "zh": "他的一些建议近乎荒唐。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/verge-on",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -138303,7 +140646,17 @@
             "有力、积极的"
           ],
           "examples": [
-            null,
+            {
+              "en": "This plant is a vigorous grower.",
+              "zh": "这种植物生长得很强健旺盛。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/vigorous",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "They conducted a vigorous campaign against tax fraud.",
               "zh": "他们积极开展了反对税务欺诈的运动。",
@@ -139726,7 +142079,17 @@
           ],
           "examples": [
             null,
-            null
+            {
+              "en": "He warbled his way through the song.",
+              "zh": "他颤声唱完了这首歌。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/warble",
+                "checked_at": "2026-10-16"
+              }
+            }
           ]
         }
       ],
@@ -141625,7 +143988,17 @@
             "用力拧、扭"
           ],
           "examples": [
-            null,
+            {
+              "en": "He wrested the gun from my grasp.",
+              "zh": "他从我手里夺走了枪。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/wrest-from",
+                "checked_at": "2026-10-16"
+              }
+            },
             null
           ]
         },
@@ -141976,7 +144349,17 @@
             "天顶"
           ],
           "examples": [
-            null,
+            {
+              "en": "The band was then at the zenith of its popularity.",
+              "zh": "那时，这支乐队的人气正处于顶点。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/zenith",
+                "checked_at": "2026-10-16"
+              }
+            },
             {
               "en": "The rock band was at the zenith of its creative powers.",
               "zh": "这支摇滚乐队当时正处于创造力的巅峰。",

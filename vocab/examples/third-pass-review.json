@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-16",
+  "before": {
+    "words": 2799,
+    "senses": 7014,
+    "examples": 3711,
+    "pending": 3303
+  },
+  "after": {
+    "date": "2026-10-16",
+    "words": 2799,
+    "senses": 7014,
+    "words_with_examples": 2157,
+    "examples": 3947,
+    "pending": 3067,
+    "source_pages": 2651,
+    "publishers": {
+      "ETS": 37,
+      "Oxford": 3910
+    },
+    "source_policy": "ETS original sentences take priority when the part of speech and specific meaning match; Oxford original examples supplement them. No authored examples; unmatched or unavailable sentences remain null."
+  },
+  "delta": {
+    "filled_senses": 236,
+    "ets_additions": 23,
+    "ets_replacements": 0,
+    "oxford_additions": 213
+  },
+  "scope": {
+    "reviewed_pending_meanings": 3303,
+    "ets_public_sources": 28,
+    "oxford_lookup_records": 7784,
+    "distinct_oxford_urls": 6139,
+    "academic_pages_visibly_checked": 35
+  },
+  "omitted_proposals": [
+    {
+      "word": "adhere",
+      "pos": "v.",
+      "meaning": "遵守",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "analytical",
+      "pos": "adj.",
+      "meaning": "分析性的",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "comparable",
+      "pos": "adj.",
+      "meaning": "相似的",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "comprehensive",
+      "pos": "adj.",
+      "meaning": "全面的，综合的",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "conclusive",
+      "pos": "adj.",
+      "meaning": "决定性的",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "empirical",
+      "pos": "adj.",
+      "meaning": "基于观察、经验或实验的",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "implicitly",
+      "pos": "adv.",
+      "meaning": "含蓄地",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "constant",
+      "pos": "n.",
+      "meaning": "常数",
+      "reason": "already_has_priority_source"
+    },
+    {
+      "word": "overlap",
+      "pos": "n.",
+      "meaning": "重叠部分",
+      "reason": "already_has_priority_source"
+    }
+  ],
+  "author_rejections": [
+    {
+      "word": "bitter",
+      "pos": "adj.",
+      "meaning": "痛苦的",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/bitter_1",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "American quote differs from previously examined OALD quote only in minor wording/punctuation; not using a second dictionary page to bypass existing source limits."
+    },
+    {
+      "word": "indulge",
+      "pos": "v.",
+      "meaning": "放纵",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/indulge",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "American quote differs from previously examined OALD quote only in minor wording/punctuation; not using a second dictionary page to bypass existing source limits."
+    },
+    {
+      "word": "jubilant",
+      "pos": "adj.",
+      "meaning": "喜气洋洋的",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/jubilant",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "American quote differs from previously examined OALD quote only in minor wording/punctuation; not using a second dictionary page to bypass existing source limits."
+    },
+    {
+      "word": "lurid",
+      "pos": "adj.",
+      "meaning": "骇人的",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/lurid",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "American quote differs from previously examined OALD quote only in minor wording/punctuation; not using a second dictionary page to bypass existing source limits."
+    },
+    {
+      "word": "alliance",
+      "pos": "n.",
+      "meaning": "联合",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/alliance",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Only a small localized wording change from the OALD original; existing English source budget does not permit another quotation. Kept pending instead of switching dictionaries to increase the limit."
+    },
+    {
+      "word": "confining",
+      "pos": "v.",
+      "meaning": "限制",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/confine",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Only a small localized wording change from the OALD original; existing English source budget does not permit another quotation. Kept pending instead of switching dictionaries to increase the limit."
+    },
+    {
+      "word": "confining",
+      "pos": "v.",
+      "meaning": "禁闭（confine 的现在分词）",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/confine",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Only a small localized wording change from the OALD original; existing English source budget does not permit another quotation. Kept pending instead of switching dictionaries to increase the limit."
+    },
+    {
+      "word": "evasive",
+      "pos": "adj.",
+      "meaning": "回避的",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/evasive",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Only a small localized wording change from the OALD original; existing English source budget does not permit another quotation. Kept pending instead of switching dictionaries to increase the limit."
+    },
+    {
+      "word": "exalt",
+      "pos": "v.",
+      "meaning": "赞扬",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/exalt",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Only a small localized wording change from the OALD original; existing English source budget does not permit another quotation. Kept pending instead of switching dictionaries to increase the limit."
+    },
+    {
+      "word": "grief",
+      "pos": "n.",
+      "meaning": "悲痛",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/grief",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Only a small localized wording change from the OALD original; existing English source budget does not permit another quotation. Kept pending instead of switching dictionaries to increase the limit."
+    },
+    {
+      "word": "inaugurate",
+      "pos": "v.",
+      "meaning": "正式启用",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/inaugurate",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Only a small localized wording change from the OALD original; existing English source budget does not permit another quotation. Kept pending instead of switching dictionaries to increase the limit."
+    },
+    {
+      "word": "materialize",
+      "pos": "v.",
+      "meaning": "实现",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/materialize",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Near-identical existing OALD quote with punctuation, spelling, or minor grammatical variation; not reused under another dictionary URL."
+    },
+    {
+      "word": "misnomer",
+      "pos": "n.",
+      "meaning": "不恰当的名称",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/misnomer",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Near-identical existing OALD quote with punctuation, spelling, or minor grammatical variation; not reused under another dictionary URL."
+    },
+    {
+      "word": "nonchalant",
+      "pos": "adj.",
+      "meaning": "漫不经心的",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/nonchalant",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Near-identical existing OALD quote with punctuation, spelling, or minor grammatical variation; not reused under another dictionary URL."
+    },
+    {
+      "word": "obtrusive",
+      "pos": "adj.",
+      "meaning": "突出的",
+      "source": {
+        "publisher": "Oxford Advanced American Dictionary",
+        "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/obtrusive",
+        "checked_at": "2026-10-16"
+      },
+      "reason": "Near-identical existing OALD quote with punctuation, spelling, or minor grammatical variation; not reused under another dictionary URL."
+    }
+  ],
+  "independent_review": {
+    "schema_version": 1,
+    "checked_at": "2026-10-16",
+    "status": "complete",
+    "scope": "Independent semantic and part-of-speech review of all frozen round3 Oxford proposals (AL 87, MZ 135). ETS withdrawn borderline participle retained only as an audit record.",
+    "reviewed": 222,
+    "inputs": [
+      {
+        "file": ".gre-platform/round3-oxford-al.json",
+        "reviewed": 87,
+        "entries_sha256": "a10990c5f737ffae2b02cfa7fbeee1f0ea4a074c5b5dd4544ca45c1f8569a95f"
+      },
+      {
+        "file": ".gre-platform/round3-oxford-mz.json",
+        "reviewed": 135,
+        "entries_sha256": "2b37ee0b5da514c1315f5a07eb5c7bbb6e06b2cade8da696f7f6faccc85ab88a"
+      }
+    ],
+    "notes": [
+      "逐条核对英文是否为完整自然句、中文义项与语境是否对应；疑点交叉查看公开词典缓存的释义。",
+      "同一动词的时态、分词等屈折变化可对应原词条；不把不同词性或衍生词充作目标词例句。",
+      "plead insanity 原例句在 Oxford American 原页明确归于 to state in court that you are guilty or not guilty of a crime，与现有认罪或作无罪答辩义对应，保留。",
+      "retail price 原例句在 Oxford American 的 retail noun 条目内，名词作定语表示零售，保留。",
+      "来源可访问性、逐字校验、页面总引文词数由主合并审计单独验证；本记录不因 Academic 名称拒绝语义。"
+    ],
+    "rejections": [
+      {
+        "word": "abbreviate",
+        "pos": "v.",
+        "meaning": "缩写",
+        "reason": "原句中 abbreviated 仅作 name 的定语，不能清晰示范动词「缩写」；采用已有 Oxford 明确被动谓语例句更准确。ETS 作者已从提案撤回此句。"
+      }
+    ]
+  },
+  "policy": "Only traceable original ETS/Oxford sentences; specific POS and meaning reviewed, no authored English, Chinese translations are our own. Empty, incomplete, inaccessible, unmatched and quotation-budget-limited entries remain null. No learning events or mastery claims are created.",
+  "release_validation": {
+    "version": "0.1.6",
+    "version_code": 7,
+    "application_id": "cn.grestudy.vocabulary",
+    "apk_sha256": "A2D052779EA897207E435A5E930A69C039DCB2B34138BFA2248D8D1A651AB46B",
+    "same_certificate_as_0_1_5": true,
+    "apk_seed_byte_parity": true,
+    "platform_tests": 45,
+    "mobile_tests": 36,
+    "final_content_tests": 7,
+    "actual_old_apk_upgrade": {
+      "result": "passed",
+      "old_apk": "platform/mobile/releases/GRE-vocabulary-0.1.5-debug.apk",
+      "added": 0,
+      "incoming": "platform/mobile/public/vocabulary-seed.json",
+      "revision": "2026-10-16-source-examples-3",
+      "words": 2802,
+      "old_examples": 3711,
+      "new_examples": 3947,
+      "events": 2198,
+      "recalls": 373,
+      "sessions": 2,
+      "checks": [
+        "actual 0.1.5 APK baseline",
+        "phone-added recall and unfinished session",
+        "exact per-meaning examples and sources",
+        "raw events and recalls unchanged",
+        "all schedules and sessions unchanged",
+        "both existing recovery snapshots unchanged",
+        "first catalog recovery snapshot complete",
+        "backup restore and reopen lossless",
+        "same-revision update idempotent"
+      ]
+    },
+    "production_browser_backup": {
+      "checked_at": "2026-10-16",
+      "result": "passed",
+      "method": "Actual production mobile UI: old IndexedDB fixture, catalog upgrade, reload, export complete backup through Settings; checksum-validated backup compared to old fixture.",
+      "examples": 3947,
+      "events": 2198,
+      "recalls": 373,
+      "sessions": 2,
+      "original_raw_vocabulary_unchanged": true,
+      "events_recalls_schedules_sessions_unchanged": true
+    },
+    "physical_android_tested": false
+  }
+}
