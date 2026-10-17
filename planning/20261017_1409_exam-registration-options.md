@@ -35,6 +35,15 @@ locations: [xiamen, kuala_lumpur]
 - 吉隆坡：ETS 实时日历中，11月10–20日全部不可选；11月上旬最后的可选日期是11月5日，下一批为11月24–27日。因此本次查询没有11月中旬考位。
 - 厦门：中国大陆官方固定考试日历包含11月15日上午场，报名截止到11月11日；但是否由厦门大学开考以及实时余位仍需登录 NEEA 确认，当前尚无余位证据。
 
+## 厦门大学马来西亚分校周边补查
+
+- 用户当前在厦门大学马来西亚分校；学校官方地址为 Jalan Sunsuria, Bandar Sunsuria, 43900 Sepang, Selangor。
+- 以邮编 43900 在 ETS 官方日历查询，2026年10月至11月没有返回 Sepang、Cyberjaya 或 Putrajaya 考点。不同日期返回的最近正式 GRE General Test 考点如下：
+  - `KUALA LUMPUR, MALAYSIA - APCU-8851`，Prometric Testing Center；ETS 显示距 43900 约 23.15 miles（约37.3公里）。11月5日有 08:00、12:30、14:45；11月24日有 08:00、12:45。
+  - `Yes International College - STN21171A`，Megan Avenue II, Jalan Yap Kwan Seng；ETS 显示距 43900 约 23.91 miles（约38.5公里）。11月1日有 09:00。
+- 两处均由 ETS 官方 GRE General Test 排期页直接列出并可选择，因此属于本次日期范围内可报名的正式考点。11月10–20日仍无可选场次。
+- 若用户不是马来西亚公民，须按 ETS 的境外考试证件规则核对有效实体护照；报名姓名必须与考试日所带证件的姓名一致。学生证不能替代主要证件。
+
 ## 官方来源
 
 - https://www.ets.org/gre/test-takers/general-test/schedule.html

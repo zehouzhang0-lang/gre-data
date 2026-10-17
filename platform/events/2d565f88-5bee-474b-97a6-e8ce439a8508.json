@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "2d565f88-5bee-474b-97a6-e8ce439a8508",
+  "recorded_at": "2026-10-17T06:27:13.426Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "2651abda-8fe6-438f-8412-fdc045e79148",
+    "input_hash": "a4cd2c7180da5a79201f475c66db15301301752ebade2922096ff94a606df021",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "DF",
+    "result": {
+      "question_translation": "物理学的“墓地”中散布着失败理论、无法解释的效应以及异常粒子的残骸；这些异常粒子曾短暂地_____研究界的聚光灯，随后又迅速淡出视野。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "douse：浇灭、使熄灭；本题中指使关注减弱或消失。",
+          "translation": "浇灭（研究界的聚光灯）。",
+          "reasoning": "排除。“briefly _____ the research spotlight, then rapidly fade from view”先说短暂获得关注、后说淡出视野；douse与获得聚光灯的语义方向相反，且不符合常见搭配。"
+        },
+        {
+          "label": "B",
+          "meaning": "intensify：加强、加剧；本题中指增强研究聚光灯本身。",
+          "translation": "加强（研究界的聚光灯）。",
+          "reasoning": "排除。句子需要表示粒子成为关注对象，而非粒子“加强聚光灯”；“intensify the spotlight”也不能自然表达“吸引关注”。"
+        },
+        {
+          "label": "C",
+          "meaning": "perpetuate：使持续、使延续。",
+          "translation": "使（研究界的聚光灯）持续下去。",
+          "reasoning": "排除。语义应为短暂得到关注，随后淡出；perpetuate强调延续，与“briefly”和“rapidly fade from view”的短暂性冲突。"
+        },
+        {
+          "label": "D",
+          "meaning": "capture：捕获；本题中指吸引并获得关注。",
+          "translation": "捕获/吸引（研究界的聚光灯，即研究界的关注）。",
+          "reasoning": "选择。capture the spotlight是固定且自然的搭配，表示“成为关注焦点”，与随后“fade from view（淡出视野）”形成时间上的先后对照。"
+        },
+        {
+          "label": "E",
+          "meaning": "extinguish：熄灭、消灭；本题中指使关注之光熄灭。",
+          "translation": "熄灭（研究界的聚光灯）。",
+          "reasoning": "排除。它表示消除关注，和句子所需的“短暂成为焦点”相反；用户选A/E，两词均落在“使光熄灭”的反向语义场。"
+        },
+        {
+          "label": "F",
+          "meaning": "secure：获得、赢得、确保；本题中指赢得研究界的关注。",
+          "translation": "获得/赢得（研究界的聚光灯，即研究界的关注）。",
+          "reasoning": "选择。secure the spotlight可表示赢得关注，语义上与D均为“短暂获得研究界关注”，并可自然接“then rapidly fade from view”。"
+        }
+      ],
+      "summary": "应选D/F：异常粒子先短暂“获得研究界关注”，随后迅速淡出。用户A/E都表示熄灭或消除光亮，方向与句意相反。",
+      "evidence": "参考答案为DF，且题干的决定性结构是“briefly _____ the research spotlight, then rapidly fade from view”。then后的“迅速淡出视野”预设此前曾处于视野/聚光灯下。D capture the spotlight与F secure the spotlight均表示获得关注；A douse与E extinguish均表示浇灭/熄灭，反而是使关注消失，不能填在“briefly”之后来引出“then rapidly fade”。D与F代入后分别形成“短暂吸引/赢得关注，随后淡出”的等价完整句。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。仅能从作答A/E看出答案选择了“熄灭光亮”的反向语义，而未按“先受关注、后淡出”的时间逻辑筛选。",
+      "next_action": "下次SE先圈出转折/时间链：briefly…then fade from view＝“先成为焦点，后消失”。再为每个候选写一句完整释义；只保留都能表达“获得关注”且代入后全句等价的一对。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
