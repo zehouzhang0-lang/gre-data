@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { request, post } from "./api";
 import { Icon } from "./components";
 import Practice from "./Practice";
+import QuestionReview from "./QuestionReview";
 import Vocabulary from "./Vocabulary";
 import WordRelations from "./WordRelations";
 import Recall from "./Recall";
@@ -21,6 +22,7 @@ function App() {
   const revision = useRef("");
   const [relationSearch, setRelationSearch] = useState("");
   const [wallRequest, setWallRequest] = useState(null);
+  const [practiceReview, setPracticeReview] = useState(null);
   const openWall = (options = {}) => { setWallRequest({ ...options, id: crypto.randomUUID() }); setPage('vocab'); };
   const refreshQueue = useRef(null);
   if (!refreshQueue.current) refreshQueue.current = createRefreshQueue(async () => {
@@ -85,6 +87,7 @@ function App() {
               aria-current={page === id ? "page" : undefined}
               onClick={() => {
                 setPage(id);
+                setPracticeReview(null);
                 if (id === "vocab") setWallRequest(null);
                 if (id === "relations") setRelationSearch("");
                 if (id === "recall") setRecallWords(null);
@@ -126,7 +129,7 @@ function App() {
           <div className="loading">正在读取 GRE 项目…</div>
         ) : (
           <>
-            {page === "practice" && <Practice {...props} />}{" "}
+            {page === "practice" && (practiceReview ? <QuestionReview {...props} items={practiceReview} exitLabel="返回刷题" onExit={() => setPracticeReview(null)} /> : <Practice {...props} onStartReview={question => setPracticeReview([question])} />)}{" "}
             {page === "library" && <Library {...props} />}{" "}
             {page === "vocab" && (
               <Vocabulary

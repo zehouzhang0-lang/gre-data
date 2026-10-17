@@ -7,7 +7,7 @@ import { randomUUID } from "node:crypto";
 import { Store } from "./store.mjs";
 import { syncProgress } from "./sync.mjs";
 import { QuestionBank, legacyPractice } from "./question-bank.mjs";
-import { keyOf } from "./store.mjs";
+import { buildPracticeBank } from "./practice-bank.mjs";
 import { AiCoach } from "./ai-coach.mjs";
 const appRoot = fileURLToPath(new URL("../..", import.meta.url));
 const root = process.env.GRE_DATA_ROOT
@@ -85,14 +85,9 @@ const server = http.createServer(async (req, res) => {
       const [indexed, legacy] = await Promise.all([
         questionBank.load(type, state.materials), legacyPractice(store, type),
       ]);
-      const imported = state.questions.filter(q => q.type === type);
-      const questions = [...new Map([...indexed, ...imported].map(q => [q.key, q])).values()];
-      const attempts = state.attempts.filter(a => a.type === type);
-      const completed = [...new Set([...attempts, ...legacy].map(keyOf))];
-      const last = attempts[0] || legacy[0];
-      const previousIndex = last ? questions.findIndex(q => q.key === keyOf(last)) : -1;
-      const next = questions.slice(previousIndex + 1).find(q => !completed.includes(q.key)) || questions.find(q => !completed.includes(q.key));
-      return json(res, 200, { questions, completed, recommended: next?.key || questions[0]?.key });
+      return json(res, 200, buildPracticeBank({
+        indexed, imported: state.questions, attempts: state.attempts, legacy, type,
+      }));
     }
     if (req.method === "GET" && url.pathname === "/api/state") {
       const state = await store.state();

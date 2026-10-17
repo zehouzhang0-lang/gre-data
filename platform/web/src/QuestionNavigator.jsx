@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import "./question-navigation.css";
+import { firstFreshIn } from "./practice-navigation.mjs";
 
 export function questionTitle(q) {
   return `${unitTitle(q.unit)} · 第 ${q.question} 题`;
@@ -11,22 +12,23 @@ function unitTitle(unit) {
     .replace(/^section(\d+)_(\w+)$/, "Section $1 · $2");
 }
 
-export default function QuestionNavigator({ questions, current, materials, completed, drafts, busy, onChoose, review = false, onFinish }) {
+export default function QuestionNavigator({ questions, current, materials, completed, skipped = new Set(), progress, drafts, busy, onChoose, review = false, onFinish }) {
   const [expanded, setExpanded] = useState(() => typeof matchMedia !== "function" || !matchMedia("(max-width: 640px)").matches);
-  const active = questions.find(q => q.key === current);
+  const active = questions.find(q => q.key === current) || questions[0];
   const books = useMemo(() => [...new Set(questions.map(q => q.material))], [questions]);
   const units = useMemo(() => [...new Set(questions.filter(q => q.material === active?.material).map(q => q.unit))], [questions, active?.material]);
   const visible = review ? questions : questions.filter(q => q.material === active?.material && q.unit === active?.unit);
-  const status = q => drafts[q.key]?.saved ? "saved" : drafts[q.key]?.answer || drafts[q.key]?.note ? "draft" : !review && completed.has(q.key) ? "saved" : "unanswered";
-  const statusText = { saved: "已保存", draft: "有草稿", unanswered: "未作答" };
+  const status = q => !review && completed.has(q.key) ? "saved" : !review && skipped.has(q.key) ? "skipped" : review && drafts[q.key]?.saved ? "saved" : drafts[q.key]?.answer || drafts[q.key]?.note ? "draft" : "unanswered";
+  const statusText = { saved: "已保存", skipped: "同内容已做", draft: "有草稿", unanswered: "未作答" };
   function firstIn(material, unit) {
     const candidates = questions.filter(q => q.material === material && (!unit || q.unit === unit));
-    onChoose(candidates.find(q => status(q) !== "saved") || candidates[0]);
+    // A completed unit is still browsable, but its original questions stay read-only.
+    onChoose((progress ? firstFreshIn(questions, progress, material, unit) : candidates.find(q => status(q) !== "saved" && status(q) !== "skipped")) || candidates[0]);
   }
   return <nav className="question-index" aria-label={review ? "本轮题目导航" : "题目导航"}>
     <div className="question-index-bar">
       <button className="question-index-toggle" aria-expanded={expanded} onClick={() => setExpanded(value => !value)}>{expanded ? "收起题目导航" : "展开题目导航"}<span aria-hidden="true">{expanded ? "⌃" : "⌄"}</span></button>
-      <span className="question-index-position">{review ? "本轮复习" : active && unitTitle(active.unit)} · {active ? `${questions.findIndex(q => q.key === current) + 1} / ${questions.length}` : `${questions.length} 题`}</span>
+      <span className="question-index-position">{review ? "本轮复习" : active && unitTitle(active.unit)} · {current && questions.some(q => q.key === current) ? `${questions.findIndex(q => q.key === current) + 1} / ${questions.length}` : `${questions.length} 个原题号`}</span>
       {review && onFinish && <button className="text-button" disabled={busy} onClick={onFinish}>结束本组</button>}
     </div>
     {expanded && <div className="question-index-body">
@@ -35,7 +37,7 @@ export default function QuestionNavigator({ questions, current, materials, compl
         <label><span>单元</span><select aria-label="练习单元" value={active?.unit || ""} disabled={busy} onChange={event => firstIn(active.material, event.target.value)}>{units.map(unit => <option key={unit} value={unit}>{unitTitle(unit)}</option>)}</select></label>
       </div>}
       <div className="question-number-grid" aria-label={review ? "本轮题号" : "当前单元题号"}>{visible.map((q, index) => <button key={q.key} disabled={busy} className={`question-number ${status(q)} ${q.key === current ? "current" : ""}`} aria-current={q.key === current ? "step" : undefined} aria-label={`${review ? `本轮第 ${index + 1} 题 · ` : ""}${questionTitle(q)} · ${statusText[status(q)]}`} title={`${questionTitle(q)} · ${statusText[status(q)]}`} onClick={() => onChoose(q)}>{review ? index + 1 : q.question}<span className="question-status-dot" aria-hidden="true" /></button>)}</div>
-      <div className="question-index-legend"><span><i className="unanswered" />未作答</span><span><i className="draft" />草稿</span><span><i className="saved" />已保存</span></div>
+      <div className="question-index-legend"><span><i className="unanswered" />未作答</span><span><i className="draft" />草稿</span><span><i className="saved" />已保存</span>{!review && <span><i className="skipped" />同内容已做</span>}</div>
     </div>}
   </nav>;
 }
