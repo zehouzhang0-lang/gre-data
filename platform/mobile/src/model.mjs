@@ -35,6 +35,7 @@ export function buildIndexes(state) {
 function hash(text) { let h = 2166136261; for (const c of text) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; }
 export function filterEntries(state, filters, seed = 0) {
   const indexes = buildIndexes(state), query = filters.query.trim().toLocaleLowerCase();
+  const curation = new Set((state.curationRequests || []).map(item => item.word));
   const words = state.vocabulary.filter(w => {
     if (w.deleted) return false;
     const topics = indexes.assignments.get(w.word)?.topics || [];
@@ -44,7 +45,7 @@ export function filterEntries(state, filters, seed = 0) {
       && (!filters.sources.length || filters.sources.some(s => indexes.sourceKeys.get(w.word)?.has(s)))
       && (!filters.ratings.length || filters.ratings.includes(wordRating(w)))
       && (!filters.letters.length || filters.letters.includes(w.word[0]?.toUpperCase()))
-      && (filters.scope === 'all' || filters.scope === 'due' && schedule?.due_today || filters.scope === 'new' && !schedule?.has_history || filters.scope === 'missing' && !w.meaning?.trim());
+      && (filters.scope === 'all' || filters.scope === 'due' && schedule?.due_today || filters.scope === 'new' && !schedule?.has_history || filters.scope === 'missing' && !w.meaning?.trim() || filters.scope === 'curation' && curation.has(w.word));
   });
   words.sort((a, b) => filters.sort === 'random' ? hash(`${seed}:${a.word}`) - hash(`${seed}:${b.word}`)
     : filters.sort === 'za' ? b.word.localeCompare(a.word, 'en') : a.word.localeCompare(b.word, 'en'));
@@ -68,7 +69,7 @@ export function normalizeFilters(value = {}) {
   const next = { ...emptyFilters, ...value };
   for (const key of ['topics', 'sources', 'relations', 'ratings', 'letters']) next[key] = Array.isArray(value[key]) ? value[key].filter(v => typeof v === 'string') : [];
   next.query = typeof next.query === 'string' ? next.query : '';
-  next.scope = ['all', 'due', 'new', 'missing'].includes(next.scope) ? next.scope : 'all';
+  next.scope = ['all', 'due', 'new', 'missing', 'curation'].includes(next.scope) ? next.scope : 'all';
   next.sort = ['az', 'za', 'random'].includes(next.sort) ? next.sort : 'az';
   next.relations = next.relations.filter(id => Object.hasOwn(relationshipLabels, id));
   next.ratings = next.ratings.filter(id => id === 'unrated' || Object.hasOwn(ratingLabels, id));

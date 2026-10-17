@@ -14,7 +14,7 @@ export function FilterSheet({ filters, indexes, onApply, onClose }) {
   const change = key => value => setDraft(p => ({ ...p, [key]: value }));
   return <Sheet title="筛选词库" onClose={onClose} footer={<><button onClick={() => setDraft({ ...emptyFilters, query: draft.query, sort: draft.sort })}>重置筛选</button><button className="primary" onClick={() => onApply(draft)}>应用筛选</button></>}>
     <p className="hint">同一项可多选；不同项同时满足。关系模式会按词组排列。</p>
-    <label className="field">复习范围<select value={draft.scope} onChange={e => change('scope')(e.target.value)}><option value="all">全部单词</option><option value="due">今日待复习</option><option value="new">待首轮回忆</option><option value="missing">待补释义</option></select></label>
+    <label className="field">词库范围<select value={draft.scope} onChange={e => change('scope')(e.target.value)}><option value="all">全部单词</option><option value="due">今日待复习</option><option value="new">待首轮回忆</option><option value="missing">待补释义</option><option value="curation">待补充整理</option></select></label>
     <Choices label="语义主题" options={[...indexes.topics, { id: 'unclassified', name: '待分类' }]} values={draft.topics} onChange={change('topics')}/>
     <Choices label="关系 · 同组排列" options={Object.entries(relationshipLabels).map(([id, name]) => ({ id, name }))} values={draft.relations} onChange={change('relations')}/>
     <Choices label="记忆状态" options={Object.entries({ unrated: '未标记', ...ratingLabels }).map(([id, name]) => ({ id, name }))} values={draft.ratings} onChange={change('ratings')}/>

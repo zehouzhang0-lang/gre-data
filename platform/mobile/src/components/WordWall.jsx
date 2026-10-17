@@ -23,10 +23,11 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
   const indexes = useMemo(() => buildIndexes(state), [state]);
   const present = entries.filter(e => live.has(e.word));
   const unique = [...new Set(present.map(e => e.word))], ready = unique.filter(word => live.get(word)?.meaning?.trim());
-  const selectedWords = ready.filter(word => selected.has(word));
+  const selectedWords = unique.filter(word => selected.has(word));
+  const selectedReady = selectedWords.length > 0 && selectedWords.every(word => live.get(word)?.meaning?.trim());
   const pages = Math.max(1, Math.ceil(present.length / PAGE_SIZE)), currentPage = Math.min(page, pages - 1);
   const visible = present.slice(currentPage * PAGE_SIZE, (currentPage + 1) * PAGE_SIZE);
-  const pageReady = [...new Set(visible.map(entry => entry.word))].filter(word => live.get(word)?.meaning?.trim());
+  const pageWords = [...new Set(visible.map(entry => entry.word))];
   const sections = entrySections(visible);
   useEffect(() => { onSelectionMode(selecting && active); return () => onSelectionMode(false); }, [selecting, active, onSelectionMode]);
   useEffect(() => {
@@ -43,13 +44,11 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
     setFlipped(next);
   }, [flipped]);
   const select = useCallback(word => {
-    if (!live.get(word)?.meaning?.trim()) { notify('这个词待补释义，请先在详情中补充。'); return; }
     setSelected(previous => { const next = new Set(previous); next.has(word) ? next.delete(word) : next.add(word); return next; });
-  }, [live, notify]);
+  }, []);
   const longPress = useCallback(word => {
-    if (!live.get(word)?.meaning?.trim()) { setDetail(word); return; }
     setSelecting(true); setSelected(previous => new Set([...previous, word]));
-  }, [live]);
+  }, []);
   function changeFilter(next, nextSeed = seed) {
     const apply = async () => {
       clearTimeout(settingsTimer.current);
@@ -67,7 +66,7 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
     if (await mutate(() => repo.setSettings({ display, wallFilters: filters, wallPage: page }))) setSheet(null);
   }
   async function rate(rating, words = selectedWords) {
-    if (!words.length) return;
+    if (!words.length || words.some(word => !live.get(word)?.meaning?.trim())) return;
     if (await mutate(() => repo.rate(words, rating), `已标记 ${words.length} 词 · ${ratingLabels[rating]}`)) {
       cancelSelection(); setDetail(null);
     }
@@ -91,10 +90,18 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
     setSheet(null);
   }
   function selectPage() {
-    setSelected(previous => new Set([...previous, ...visible.map(e => e.word).filter(word => live.get(word)?.meaning?.trim())]));
+    setSelected(previous => new Set([...previous, ...pageWords]));
   }
   function selectAll() {
-    setConfirm({ title: '选中全部筛选结果', text: `将选中所有页面的 ${ready.length} 个不同单词，不只是本页。跨组重复词只标记一次；待补释义的词不选中。`, action: `确认选择 ${ready.length} 词`, run: () => setSelected(new Set(ready)) });
+    setConfirm({ title: '选中全部筛选结果', text: `将选中所有页面的 ${unique.length} 个不同单词，不只是本页。跨组重复词只选中一次。`, action: `确认选择 ${unique.length} 词`, run: () => setSelected(new Set(unique)) });
+  }
+  async function requestCuration() {
+    if (!selectedWords.length) return;
+    let added = 0;
+    if (await mutate(async () => { added = (await repo.requestCuration(selectedWords)).added; })) {
+      notify(added ? `已标记 ${added} 词待补充整理` : '所选单词已标记待补充整理');
+      setSheet(null); cancelSelection();
+    }
   }
   function startRound() {
     setSheet(null);
@@ -102,7 +109,7 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
       if (await mutate(() => repo.startQuickRound(), '新一轮已开始')) { setSelected(new Set()); setFlipped(new Set()); setEntries(filterEntries(state, filters, seed)); }
     } });
   }
-  const scopeLabel = { all: '全部单词', due: '今日待复习', new: '待首轮回忆', missing: '待补释义' }[filters.scope];
+  const scopeLabel = { all: '全部单词', due: '今日待复习', new: '待首轮回忆', missing: '待补释义', curation: '待补充整理' }[filters.scope];
   const context = filters.relations.length ? `同组排列 · ${filters.relations.map(r => relationshipLabels[r]).join(' / ')}` : `${scopeLabel} · ${filters.sort === 'az' ? 'A–Z' : filters.sort === 'za' ? 'Z–A' : '随机'}`;
   const detailWord = live.get(detail);
   return <section className="screen wall-screen" hidden={!active} aria-label="手机单词墙" style={{ '--columns': display.columns, '--card-height': `${display.height}px`, '--card-font': `${display.font}px` }}>
@@ -110,7 +117,7 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
       {selecting ? <><button className="text-button" onClick={cancelSelection}>取消</button><h1>已选 {selectedWords.length} 词</h1><button className="icon-button" aria-label="多选更多操作" onClick={() => setSheet('more')}><Icon name="more"/></button></> : <><h1>词库</h1><div className="header-actions"><button onClick={() => setSheet('size')}>{display.columns} 列 <Icon name="down" size={14}/></button><button onClick={() => setSelecting(true)}>多选</button></div></>}
     </header>
     {!selecting && <div className="wall-toolbar" role="group" aria-label="词库搜索与筛选"><button className="wall-search" onClick={() => setSheet('search')}><Icon name="search"/><span>{filters.query || '搜索单词'}</span></button><button aria-label="筛选" onClick={() => setSheet('filter')}><Icon name="filter"/>筛选{filterCount(filters) ? <span className="filter-count">{filterCount(filters)}</span> : null}</button><button onClick={() => setSheet('sort')}><Icon name="sort"/>排序</button></div>}
-    {selecting && <div className="selection-tools"><button disabled={busy || !pageReady.length} onClick={selectPage}>选中本页 <small>{pageReady.length} 词</small></button><button disabled={busy || !ready.length} onClick={selectAll}>选全部结果 <small>{ready.length} 词</small></button></div>}
+    {selecting && <div className="selection-tools"><button disabled={busy || !pageWords.length} onClick={selectPage}>选中本页 <small>{pageWords.length} 词</small></button><button disabled={busy || !unique.length} onClick={selectAll}>选全部结果 <small>{unique.length} 词</small></button></div>}
     <div className="wall-context"><span>{context}{filters.query ? ` · “${filters.query}”` : ''}{filterCount(filters) ? ` · ${filterCount(filters)} 项筛选` : ''}</span>{!selecting && <button className="icon-button" aria-label="词库更多操作" onClick={() => setSheet('more')}><Icon name="more" size={18}/></button>}</div>
     <main ref={scroll} className="screen-scroll wall-scroll" data-testid="word-wall-scroll">
       {sections.map(section => <section className="wall-section" key={section.id}>
@@ -120,7 +127,7 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
       {!visible.length && <Empty><p>减少筛选条件，或导入你的词库。</p><button onClick={() => changeFilter({ ...emptyFilters })}>清除筛选</button></Empty>}
       {!!present.length && <Pager page={currentPage} pages={pages} count={present.length} onChange={async value => { clearTimeout(settingsTimer.current); if (await mutate(() => repo.setSettings({ display, wallFilters: filters, wallPage: value }))) { setPage(value); scroll.current?.scrollTo({ top: 0 }); } }}/>}
     </main>
-    {selecting && <div className="rating-bar" aria-label="批量记忆标记">{Object.entries(ratingLabels).map(([id, label]) => <button key={id} disabled={busy || !selectedWords.length} className={`rating-${id}`} onClick={() => rate(id)}>{label}</button>)}</div>}
+    {selecting && <div className="rating-bar" aria-label="批量记忆标记">{Object.entries(ratingLabels).map(([id, label]) => <button key={id} disabled={busy || !selectedReady} title={!selectedReady ? '所选词需先补齐释义' : undefined} className={`rating-${id}`} onClick={() => rate(id)}>{label}</button>)}</div>}
     {active && sheet === 'size' && <SizeSheet display={display} busy={busy} onChange={setDisplay} onClose={commitDisplay}/>}
     {active && sheet === 'filter' && <FilterSheet filters={filters} indexes={indexes} onApply={changeFilter} onClose={() => setSheet(null)}/>}
     {active && sheet === 'search' && <SearchSheet query={filters.query} onApply={query => changeFilter({ ...filters, query })} onClose={() => setSheet(null)}/>}
@@ -129,9 +136,10 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
       <button onClick={() => { setFlipped(new Set()); setSheet(null); }}>全部翻回英文</button>
       <button onClick={() => changeFilter(filters, seed + 1)}>刷新当前词表</button>
       <button disabled={busy} onClick={saveCardReadings}>记录本轮卡片状态</button>
+      {selecting && <button disabled={busy || !selectedWords.length} onClick={requestCuration}>补充整理</button>}
       {selecting && <button onClick={() => { setSelected(new Set()); setSheet(null); }}>清空选择</button>}
       {selectedWords.length === 1 && <button onClick={() => { setDetail(selectedWords[0]); setSheet(null); }}>查看所选词详情</button>}
-      {selecting ? <button disabled={busy || !selectedWords.length} onClick={() => { const words = selectedWords.map(word => live.get(word)); setSheet(null); cancelSelection(); onStartReview(words, { initialCount: words.length }); }}>背诵当前多选单词 · {selectedWords.length} 词</button> : <button disabled={busy || !ready.length} onClick={() => { setSheet(null); onStartReview(ready.map(word => live.get(word))); }}>背诵筛选词 · {ready.length} 词</button>}
+      {selecting ? <button disabled={busy || !selectedReady} title={!selectedReady ? '所选词需先补齐释义' : undefined} onClick={() => { const words = selectedWords.map(word => live.get(word)); setSheet(null); cancelSelection(); onStartReview(words, { initialCount: words.length }); }}>背诵当前多选单词 · {selectedWords.length} 词</button> : <button disabled={busy || !ready.length} onClick={() => { setSheet(null); onStartReview(ready.map(word => live.get(word))); }}>背诵筛选词 · {ready.length} 词</button>}
       <button disabled={busy || !state.undoId} onClick={async () => { if (await mutate(() => repo.undoQuickReview(), '已撤销上次标记，次数和排期已恢复')) setSheet(null); }}>撤销上次标记</button>
       <button disabled={busy} onClick={startRound}>开始新一轮</button>
     </div><p className="hint">本轮改标只更正结果，不重复计次。标记后卡片保留原位置；主动刷新才重新筛选。</p></Sheet>}

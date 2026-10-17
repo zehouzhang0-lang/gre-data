@@ -75,6 +75,17 @@ export async function openRepository(options = {}) {
     async getState() { await queue; return clone(snapshot()); },
     // Callers keep the same ID when retrying a failed manual reading save.
     saveEvent(kind, payload, id = makeId()) { return enqueue(async () => { const next = clone(current), event = addEvent(next, kind, payload, id); await persist(next); return clone(event); }); },
+    requestCuration(words) { return enqueue(async () => {
+      const next = clone(current);
+      // Validate the whole selection before deduplicating existing requests.
+      const event = prepareEvent(next, 'vocab_curation_request', { words }, makeId(), now());
+      const pending = new Set(snapshot().curationRequests.map(item => item.word));
+      event.payload.words = event.payload.words.filter(word => !pending.has(word));
+      if (!event.payload.words.length) return { added: 0 };
+      next.events.push(event);
+      await persist(next);
+      return { added: event.payload.words.length };
+    }); },
     rate(words, rating, id = makeId()) { return enqueue(async () => {
       const next = clone(current), round = ensureRound(next, now(), makeId);
       const event = addEvent(next, 'vocab_quick_review', { session_id: round.id, items: [...new Set(words.map(w => typeof w === 'string' ? w : w.word))].map(word => ({ word, self_rating: rating })) }, id);
