@@ -192,6 +192,17 @@ small, .hint { color: var(--muted); font-size: 12px; line-height: 1.65; }
 .session-complete > .wide-button { margin-top: 26px; }
 .inline-error { margin-top: 20px; padding: 15px; background: var(--forgotten); color: var(--danger); border-radius: var(--radius); }
 .startup { padding: calc(60px + var(--safe-top)) 24px; max-width: 480px; margin: auto; }
+.word-pronunciation { display: grid; gap: 3px; margin: 2px 0 22px; }
+.pronunciation-row { display: grid; grid-template-columns: 20px minmax(0, auto) 40px 30px; align-items: center; justify-content: start; column-gap: 6px; min-height: 40px; }
+.pronunciation-accent { color: var(--muted); font-size: 13px; }
+.pronunciation-ipa { font-family: "Segoe UI", "Noto Sans", sans-serif; font-size: 15px; line-height: 1.5; overflow-wrap: anywhere; }
+.pronunciation-ipa.pending, .pronunciation-kind { color: var(--muted); font-size: 11px; }
+.pronunciation-play { display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; background: transparent; color: var(--accent); }
+.pronunciation-play.active { background: #e5f1ee; border-radius: 50%; }
+.pronunciation-error { color: var(--muted); font-size: 12px; }
+.pronunciation-sources { color: var(--muted); font-size: 11px; line-height: 1.65; overflow-wrap: anywhere; }
+.pronunciation-sources p { margin: 6px 0; }
+.pronunciation-sources a { color: inherit; text-decoration: none; }
 .startup h1 { margin-bottom: 18px; }
 .startup p { color: var(--muted); }
 @media (min-width: 600px) { .app-shell { border-inline: 1px solid var(--line); } .wall-scroll { padding-inline: 12px; } }

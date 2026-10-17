@@ -3,6 +3,10 @@
 > 版本：1.0.0（2026-09-02）
 > 本规范只服务 GRE General Test，不复用 IELTS 的分数、科目或题型字段。
 
+## 手机只读发音资源（2026-10-18）
+
+`platform/mobile/public/pronunciation.json` 为版本 1 的可重建资源清单，独立于学习数据库。`words[词形].gb/us` 保存来源 IPA（缺可靠依据为 null）、本地 audio 路径、真人／合成 kind；真人条目另带内置合成 fallback 和 recording 的作者、逐文件许可及来源。`assets` 保存音频字节数与 SHA-256，打包前完整校验；不存在的旧数据字段无需迁移。该资源不进入学习事件、备份 current 或个人释义。显示音标不修改词义；播放、停止及自动回退不计翻阅或复习。
+
 ## 学习平台扩展（2026-09-12）
 
 用户授权在本仓库建设可迭代本地平台；平台源码、锁文件、启动脚本、skill与学习数据一起同步。`platform/events/<uuid>.json` 为追加式原子记录，包含 `schema_version: 1`、`id`、ISO UTC `recorded_at`、`kind`、`payload`。事件按时间再按ID重放；同ID同内容重试不重复创建，不同内容拒绝。

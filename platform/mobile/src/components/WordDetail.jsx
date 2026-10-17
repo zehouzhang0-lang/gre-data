@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Sheet } from './Primitives';
 import { ratingLabels, wordRating, sourceLabel } from '../model.mjs';
 import { definitionStatusLabels, partOfSpeechLabels } from '../../../shared/standard-definition.mjs';
 import { highlightExample } from '../example-highlight.mjs';
+import Pronunciation, { PronunciationSources } from './Pronunciation';
+import { loadPronunciations } from '../pronunciation.mjs';
 
 function hasExample(example) { return example?.en && example?.zh && example.kind === 'quotation'; }
 
@@ -17,6 +19,12 @@ function SenseExample({ example, meaning, pos, headword }) {
 }
 
 export default function WordDetail({ word, state, busy, onSave, onRate, onClose }) {
+  const [pronunciation, setPronunciation] = useState(null), [pronunciationLoading, setPronunciationLoading] = useState(true);
+  useEffect(() => {
+    let live = true; setPronunciation(null); setPronunciationLoading(true);
+    loadPronunciations().then(words => { if (live) setPronunciation(Object.hasOwn(words, word.word) ? words[word.word] : null); }).catch(() => {}).finally(() => { if (live) setPronunciationLoading(false); });
+    return () => { live = false; };
+  }, [word.word]);
   const [editing, setEditing] = useState(false), [draft, setDraft] = useState({ pos: word.pos || '', meaning: word.meaning || '', note: word.note || '' });
   const schedule = state.spacedReview?.items.find(i => i.kind === 'word' && i.word === word.word);
   const reading = state.cardReadings?.find(item => item.word === word.word);
@@ -32,6 +40,7 @@ export default function WordDetail({ word, state, busy, onSave, onRate, onClose 
       <p className="hint">编辑后标为用户编辑、待核验；不改写过去轮次的答案快照。</p>
       <div className="form-actions"><button disabled={busy} type="button" onClick={() => setEditing(false)}>取消编辑</button><button disabled={busy} className="primary">保存词条</button></div>
     </form> : <>
+      <Pronunciation word={word.word} entry={pronunciation} loading={pronunciationLoading}/>
       <div className="word-definition" aria-label="词义">{word.senses?.length ? <dl className="definition-overview">{word.senses.map(group => <div className="definition-row" key={group.pos}><dt title={partOfSpeechLabels[group.pos]}>{group.pos}</dt><dd>{group.meanings.join('；')}</dd></div>)}</dl> : <div className="definition-row"><span className="definition-pos">{word.pos || '词性未记录'}</span><p>{word.meaning || '待补释义'}</p></div>}</div>
       {!!related.length && <div className="detail-section"><h3>关联词组</h3>{related.map(group => <div className="detail-relation" key={group.id}><strong>{group.title}</strong><p className="english">{group.members.map(m => m.word).join(' · ')}</p>{group.note && <p>{group.note}</p>}</div>)}</div>}
       {!!senses.length && <section className="word-examples" aria-label="双语例句"><h3>双语例句</h3><div className="word-example-list">{examples.map((sense, index) => <SenseExample key={index} {...sense} headword={word.word}/>)}</div>{!!pending.length && <p className="sense-example-pending">{examples.length ? `待补例句：${pending.map(sense => `${sense.pos} ${sense.meaning}`).join('；')}` : '例句待补充'}</p>}</section>}
@@ -44,6 +53,7 @@ export default function WordDetail({ word, state, busy, onSave, onRate, onClose 
       <button className="wide-button" onClick={() => setEditing(true)}>编辑词条</button>
       </section>
       <div className="detail-section"><h3>收录来源</h3>{word.sources?.length ? [...new Set(word.sources.map(sourceLabel))].map(text => <p key={text}>{text}</p>) : <p className="muted">未记录来源</p>}{word.captures?.map((capture, i) => <p key={i}>{capture.source?.material} · {capture.source?.unit} · {capture.context}</p>)}</div>
+      <PronunciationSources entry={pronunciation}/>
     </>}
   </Sheet>;
 }

@@ -1,0 +1,26 @@
+GRE vocabulary pronunciation resources — 0.1.9
+
+Dictionary IPA: English Wiktionary contributors, via Kaikki/Wiktextract.
+Dump date: 2026-09-02. Word-specific source URLs and accent/POS metadata are
+included in pronunciation.json and displayed in the existing source area.
+The extracted dictionary transcription data is shared under CC BY-SA 4.0:
+https://creativecommons.org/licenses/by-sa/4.0/
+https://en.wiktionary.org/wiki/Wiktionary:Copyrights
+https://kaikki.org/dictionary/English/
+An individually attributed short Oxford IPA reference corrects paucity; it is
+not represented as CC-licensed Oxford material. No Oxford audio is copied.
+Changes: selected English words, selected relevant part of speech and accent,
+omitted unverified/ambiguous transcription. Displayed IPA is retained verbatim.
+
+Synthesized voices: Kokoro-82M by hexgrad, Apache-2.0 model.
+https://huggingface.co/hexgrad/Kokoro-82M
+https://huggingface.co/hexgrad/Kokoro-82M/blob/main/LICENSE
+British: bf_emma. American: af_heart.
+Generated locally with kokoro-onnx; these are synthetic voices, not recordings
+of dictionary speakers. The model and build-time libraries are not shipped.
+
+Human recordings, if included, have individual source, author, credit, license
+URL and conversion details in each pronunciation.json recording entry.
+Only explicitly reusable files are eligible; an undownloaded file is not used.
+
+No Oxford/ETS audio is redistributed. No paid speech API is used.

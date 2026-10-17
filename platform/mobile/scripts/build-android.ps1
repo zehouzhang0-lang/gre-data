@@ -103,6 +103,8 @@ try {
     if (-not (Test-Path -LiteralPath 'public/vocabulary-seed.json')) {
         throw 'The personal offline word library public/vocabulary-seed.json is missing. Refusing to produce an empty-library APK.'
     }
+    & node 'scripts/verify-pronunciation.mjs'
+    Assert-Exit 'Verify offline pronunciation coverage and file integrity'
     & npm.cmd run build
     Assert-Exit 'Build offline web resources'
     & npx.cmd cap sync android

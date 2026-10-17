@@ -2,6 +2,7 @@ import { useEffect, useId, useRef } from 'react';
 import { useBackAction } from '../useBack';
 
 const paths = {
+  speaker: <><path d="m11 4-6 5H2v6h3l6 5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></>,
   book: <><path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Z"/><path d="M12 5v15"/></>,
   history: <><path d="M3 10a9 9 0 1 1 1 7M3 4v6h6"/><path d="M12 7v5l3 2"/></>,
   settings: <><path d="m9 3-1 3-3 1-2 4 2 2v3l4 3 3-1 3 1 4-3v-3l2-2-2-4-3-1-1-3Z"/><circle cx="12" cy="11" r="3"/></>,

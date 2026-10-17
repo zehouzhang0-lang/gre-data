@@ -8,6 +8,7 @@ public class MainActivity extends BridgeActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         registerPlugin(VocabStoragePlugin.class);
+        registerPlugin(PronunciationPlugin.class);
         super.onCreate(savedInstanceState);
         if (getBridge() != null) {
             getBridge().getWebView().setBackgroundColor(Color.WHITE);

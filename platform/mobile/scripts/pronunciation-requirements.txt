@@ -1,0 +1,5 @@
+# Build-time only; no Python/model runtime is bundled in Android.
+kokoro-onnx==0.5.0
+onnxruntime==1.31.0
+requests==2.34.2
+beautifulsoup4==4.15.0

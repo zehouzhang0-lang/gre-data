@@ -4,6 +4,10 @@
     <!-- Local WebView assets and the system document picker need no network or storage permission. -->
     <uses-permission android:name="android.permission.INTERNET" tools:node="remove" />
 
+    <queries>
+        <intent><action android:name="android.intent.action.TTS_SERVICE" /></intent>
+    </queries>
+
     <application
         android:allowBackup="false"
         android:fullBackupContent="false"
