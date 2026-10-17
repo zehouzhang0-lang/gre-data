@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "612027b3-086d-4566-b2d5-879fee352429",
+  "recorded_at": "2026-10-17T08:48:22.892Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "6d888f18-3878-466f-ab9f-826087e32948",
+    "input_hash": "a3f91475f5ed7712827f424be3e54ce548580e0685a965b784afd084a5987671",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BF",
+    "result": {
+      "question_translation": "查韦斯山口（Chavez Pass）考古遗址最初被解读为表明一个_____社会，因为人们认为它位于一群规模较小、同时代的聚落的中心，并且推测它控制着这些聚落。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "expansionist：扩张主义的；本题指不断向外扩张的社会。",
+          "translation": "一个扩张主义的社会",
+          "reasoning": "“位于较小聚落群的中心并控制它们”说明内部支配关系，不能决定性证明对外扩张，因此不选。"
+        },
+        {
+          "label": "B",
+          "meaning": "hierarchical：有等级层级的；本题指中心聚落与附属聚落之间存在上下级结构。",
+          "translation": "一个等级制的社会",
+          "reasoning": "中心遗址“控制”较小的同时代聚落，直接支持聚落间存在层级，符合题干。"
+        },
+        {
+          "label": "C",
+          "meaning": "urban：城市的；本题指具有城市性质的社会。",
+          "translation": "一个城市型的社会",
+          "reasoning": "题干只说明中心—附属聚落关系，未提供人口规模、城市设施或城市化证据，不能推出“城市型”。"
+        },
+        {
+          "label": "D",
+          "meaning": "heterogeneous：异质的、由不同成分构成的；本题指社会内部成分多样。",
+          "translation": "一个异质的社会",
+          "reasoning": "题干没有涉及人口、文化或群体成分差异，缺乏支持。"
+        },
+        {
+          "label": "E",
+          "meaning": "diverse：多样的；本题指社会具有多种不同特征或群体。",
+          "translation": "一个多样的社会",
+          "reasoning": "“多个聚落”不等于社会构成多样；题干没有多样性证据。"
+        },
+        {
+          "label": "F",
+          "meaning": "stratified：分层的；本题指社会或聚落之间存在高低层级。",
+          "translation": "一个分层的社会",
+          "reasoning": "中心聚落被认为控制较小聚落，支持权力/地位分层。它与B都描述等级结构，能使全句分别成立且句义等价。"
+        }
+      ],
+      "summary": "答案为B/F，作答正确。题干的“中心”与“控制”指向聚落间的等级/分层结构。",
+      "evidence": "参考答案为BF，与你填写的B/F一致。决定性依据是该遗址“at the center of a cluster of smaller, contemporary settlements”且“presumably controlled”这些聚落：这支持中心与附属聚落的上下级关系。B hierarchical（等级制）与F stratified（分层的）在本句中均概括这一结构；其余选项涉及对外扩张、城市化或成分多样性，题干均未提供相应证据。",
+      "reasoning_gap": "未提供推理，尚无证据确定你的解题过程或是否存在知识、读题、策略、计算或时间问题；用时数据也缺失。",
+      "next_action": "下次SE先压缩证据链：smaller settlements＋center＋controlled → 层级结构；再逐项检验两词是否都能使全句成立且表达同一结论。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

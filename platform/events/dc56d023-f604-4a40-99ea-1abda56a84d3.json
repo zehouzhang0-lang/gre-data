@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "dc56d023-f604-4a40-99ea-1abda56a84d3",
+  "recorded_at": "2026-10-17T16:08:59.736Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "7fed5d18-afe2-4033-9c6f-df8645063665",
+    "input_hash": "3b6c565ff71e6f19c02a551e678b3d7acca0fe4e7d0ee861fc38dacb5e67b8f4",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AE",
+    "result": {
+      "question_translation": "个人、政府和公司表现出充分的能力，通过根据当前情况设定目标，然后即使那些情况发生剧烈变化仍盲目遵循这些目标，来使自己_____。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "hamstring：束缚、严重限制行动能力；此处指使自身因僵化目标而受限。",
+          "translation": "束缚（严重限制）自己。",
+          "reasoning": "应选。后文“盲目遵循”已不适应剧变的目标，结果是限制自身行动，而非改造或增强自身。"
+        },
+        {
+          "label": "B",
+          "meaning": "reinvent：彻底重塑、重新创造；此处指使自身改头换面。",
+          "translation": "彻底重塑自己。",
+          "reasoning": "排除。根据现状设目标后仍盲从旧目标表现的是僵化，不能支持“重塑自己”。"
+        },
+        {
+          "label": "C",
+          "meaning": "promote：促进、推动、提升；此处指促进自身发展。",
+          "translation": "促进自己。",
+          "reasoning": "排除。语境强调条件变化后仍盲从所造成的负面限制，不是促进。"
+        },
+        {
+          "label": "D",
+          "meaning": "revitalize：使恢复活力、振兴；此处指使自身焕发生机。",
+          "translation": "使自己恢复活力（振兴自己）。",
+          "reasoning": "排除。盲目遵循过时目标不表示恢复活力；且无法与A构成等价句。"
+        },
+        {
+          "label": "E",
+          "meaning": "impair：损害、削弱；此处指削弱自身的应变或行动能力。",
+          "translation": "损害（削弱）自己。",
+          "reasoning": "应选。过时条件下仍盲从目标会削弱自身有效应对变化的能力，与A均表达自我限制/损害。"
+        },
+        {
+          "label": "F",
+          "meaning": "invigorate：使精力充沛、使增强活力；此处指增强自身活力。",
+          "translation": "使自己充满活力。",
+          "reasoning": "排除。该词是正向增强，和“盲目遵循”造成的消极结果相反。"
+        }
+      ],
+      "summary": "参考答案为A/E。句子批评在条件剧变后仍盲从旧目标，逻辑结果应为“自我束缚/损害”。你的B/D均表示更新或振兴，与句意方向相反，也不等价。",
+      "evidence": "决定性证据是“then blindly following them even when those conditions change drastically”：目标建立所依赖的条件已剧变，却仍盲目遵循，表明适应能力受限。A hamstring（束缚、限制）和E impair（损害、削弱）分别填入后均表达这一负面后果，整句等价。B reinvent（重塑）和D revitalize（恢复活力）都是正向改变，既不由“blindly following”推出，也不能与彼此形成同义改写。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。仅能确认作答B/D与题干的负向因果方向及SE“双项分别成立、全句等价”要求不符。",
+      "next_action": "下次SE先把“盲从过时目标”的结果预测为负向限制，再逐个代入。选定一词后，要求另一词代入整句仍表达同一后果；本题可记：hamstring≈严重限制，impair≈损害/削弱。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

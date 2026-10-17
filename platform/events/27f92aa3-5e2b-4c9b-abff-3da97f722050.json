@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "27f92aa3-5e2b-4c9b-abff-3da97f722050",
+  "recorded_at": "2026-10-17T07:31:30.215Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "8953c9c4-4884-4647-9a63-89a02d555f3a",
+    "input_hash": "b356ef691e110c4970bd15bcd1f94a4d0239bdbc3746128b810fb83e534ba573",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AB",
+    "result": {
+      "question_translation": "由于电影制片厂迫于创造国际销售额的压力，偏爱采用奇幻情节的大预算影片，对日常国内生活的呈现，在很大程度上已被 _____ 给其他媒体，例如电视和文学。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "left to：留给……处理；本句指把对日常生活的呈现交由其他媒体承担。",
+          "translation": "对日常国内生活的呈现，在很大程度上已留给其他媒体，例如电视和文学。",
+          "reasoning": "正确。电影转向大制作奇幻片，日常生活题材的呈现便“留给”电视和文学，搭配为 leave A to B。"
+        },
+        {
+          "label": "B",
+          "meaning": "ceded to：让与、移交给；本句指将该呈现职能让给其他媒体。",
+          "translation": "对日常国内生活的呈现，在很大程度上已让与其他媒体，例如电视和文学。",
+          "reasoning": "正确。cede A to B 表示将A交给B，与A同样表达电影把该题材空间让给其他媒体。"
+        },
+        {
+          "label": "C",
+          "meaning": "ascribed to：归因于、归属于。",
+          "translation": "对日常国内生活的呈现，在很大程度上已被归因于其他媒体，例如电视和文学。",
+          "reasoning": "排除。题干需要“由其他媒体承担”的转移关系，不是把该呈现的原因归因于媒体。"
+        },
+        {
+          "label": "D",
+          "meaning": "attributed to：归因于、认为是……造成的。",
+          "translation": "对日常国内生活的呈现，在很大程度上已被归因于其他媒体，例如电视和文学。",
+          "reasoning": "排除。语义是因果归属，不符合电影放弃该类题材、其他媒体承接的逻辑。"
+        },
+        {
+          "label": "E",
+          "meaning": "substituted for：替代……；主语A substituted for B意为A替代B。",
+          "translation": "对日常国内生活的呈现，在很大程度上已替代其他媒体，例如电视和文学。",
+          "reasoning": "排除。句子会变成“呈现日常生活替代了电视和文学”，方向和语义都不成立；题干应是其他媒体承担这种呈现。"
+        },
+        {
+          "label": "F",
+          "meaning": "replaced with：用……替换；通常为 replace A with B。",
+          "translation": "对日常国内生活的呈现，在很大程度上已被用其他媒体，例如电视和文学，替换。",
+          "reasoning": "排除。即使勉强补足结构，也表示“呈现被其他媒体替换”，不合题意；媒体是承载该呈现的渠道，不是其替代物。"
+        }
+      ],
+      "summary": "参考答案为A/B；你的A/E错在第二项。A与B均表示将日常生活的呈现交给其他媒体；E表示“该呈现替代其他媒体”，方向相反。",
+      "evidence": "题干因果链：制片厂为国际销售而偏爱“大预算＋奇幻情节”影片，因此“日常国内生活的呈现”转由电视、文学等媒体承担。A的 leave A to B 与B的 cede A to B 都精确编码“交给/让与”。E的 substitute A for B 中A替代B，代入后成为“日常生活的呈现替代电视和文学”，与题干逻辑冲突。参考答案明确为AB，且记录答案A/E与其不一致。未提供个人推理，尚无证据确定是词义、语法方向还是作答策略导致选E。",
+      "reasoning_gap": "SE要求两项各自填入均通顺，并使整句表达等价。此次仅A满足“交给其他媒体”的关系；E虽含“替代”义，但主客体方向不符。未提供推理，尚无证据确定更具体错因。",
+      "next_action": "下次SE先把每个候选放回完整句，圈定“谁把什么交给谁”。遇到 substitute for，固定核对：A substitutes for B＝A替代B；本题需要的是电影将该呈现交给电视、文学，故选A/B。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
