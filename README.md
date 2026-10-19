@@ -8,7 +8,7 @@
 
 基础设施和 30 天计划已经建立。当前目标为 Verbal + Quantitative 合计 320，暑假每天可投入约 6 小时，计划从 2026-09-02 的 Day 1 执行到 2026-10-01 的 Day 30。Day 1 实测 102 词约需 120 分钟后，原图的高负荷计划已降级为来源参考；当前执行 `planning/adaptive-30-day-plan-v4.yaml`。个人档案仍需补充：
 
-- 目标 Verbal / Quantitative / Analytical Writing 分数
+- 目标 Verbal / Quantitative 分数（Analytical Writing 已于 2026-10-19 确认为 3.5）
 - 计划考试日期
 - 最近一次正式或完整模考成绩
 - 申请方向和优先弱项

@@ -1043,13 +1043,15 @@ dialog::backdrop {
     justify-content: space-between;
     margin-top: 8px;
     gap: 3px;
+    max-width: 100%;
+    overflow-x: auto;
   }
   .sidebar nav button {
     flex-direction: column;
     gap: 5px;
     padding: 8px 6px;
     font-size: 11px;
-    flex: 1;
+    flex: 1 0 auto;
     white-space: nowrap;
     border-radius: 5px;
   }

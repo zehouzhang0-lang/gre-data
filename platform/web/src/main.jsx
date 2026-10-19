@@ -9,6 +9,7 @@ import WordRelations from "./WordRelations";
 import Recall from "./Recall";
 import Library from "./Library";
 import History from "./History";
+import Writing from "./Writing";
 import "./styles.css";
 import { createRefreshQueue } from "../../shared/refresh-queue.mjs";
 function App() {
@@ -23,6 +24,7 @@ function App() {
   const [relationSearch, setRelationSearch] = useState("");
   const [wallRequest, setWallRequest] = useState(null);
   const [practiceReview, setPracticeReview] = useState(null);
+  const [writingRequest, setWritingRequest] = useState(null);
   const openWall = (options = {}) => { setWallRequest({ ...options, id: crypto.randomUUID() }); setPage('vocab'); };
   const refreshQueue = useRef(null);
   if (!refreshQueue.current) refreshQueue.current = createRefreshQueue(async () => {
@@ -65,6 +67,7 @@ function App() {
   }
   const nav = [
     ["practice", "file", "刷题练习"],
+    ["writing", "file", "写作训练"],
     ["library", "folder", "资料库"],
     ["vocab", "book", "生词本"],
     ["relations", "cards", "分类与关联"],
@@ -91,6 +94,7 @@ function App() {
                 if (id === "vocab") setWallRequest(null);
                 if (id === "relations") setRelationSearch("");
                 if (id === "recall") setRecallWords(null);
+                if (id === "writing") setWritingRequest(null);
               }}
             >
               <Icon name={icon} />
@@ -131,6 +135,7 @@ function App() {
           <>
             {page === "practice" && (practiceReview ? <QuestionReview {...props} items={practiceReview} exitLabel="返回刷题" onExit={() => setPracticeReview(null)} /> : <Practice {...props} onStartReview={question => setPracticeReview([question])} />)}{" "}
             {page === "library" && <Library {...props} />}{" "}
+            {page === "writing" && <Writing key={writingRequest || "writing"} {...props} initialSubmissionId={writingRequest} />}
             {page === "vocab" && (
               <Vocabulary
                 key={wallRequest?.id || 'default-vocabulary'}
@@ -147,7 +152,7 @@ function App() {
             {page === "recall" && (
               <Recall {...props} openWall={openWall} initialWords={recallWords} />
             )}{" "}
-            {page === "history" && <History {...props} />}
+            {page === "history" && <History {...props} openWriting={id => { setWritingRequest(id); setPage("writing"); }} />}
           </>
         )}
       </main>

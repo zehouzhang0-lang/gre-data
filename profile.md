@@ -1,7 +1,7 @@
 ---
 schema_version: 1
 created_at: "2026-09-02"
-updated_at: "2026-10-01"
+updated_at: "2026-10-19"
 timezone: Asia/Shanghai
 exam: gre_general
 exam_date: "2026-11-01"
@@ -10,7 +10,7 @@ target:
   combined_vq: 320
   verbal: null
   quantitative: null
-  analytical_writing: null
+  analytical_writing: 3.5
 current:
   verbal: null
   quantitative: null
@@ -31,6 +31,8 @@ application_direction: null
 ---
 
 # 用户档案
+
+2026-10-19 更新：用户确认 Analytical Writing 先以 3.5 为目标；自报尚未尝试 GRE 作文，写作基线仍未知，不估计当前分数。授权新增电脑平台写作模块，默认分步训练并保留30分钟限时实战；尚未确认申请项目的写作分数要求，不将3.5视为录取门槛。其他分科与V+Q合计目标保持原样。
 
 2026-10-01 更新：用户明确计划2026年11月1日考试，尚未确认报名。周一至周三各1小时、周四4–6小时、周五3小时、周六及周日各4–6小时，合计18–24小时/周。执行预算采用下限18小时，替代原暑假42小时假设。V+Q目标暂沿用320。2026-10-01 12:19（UTC+8）用户明确确认没有完整计时模考，当前无量表分基线。先执行当日诊断；完整周期与分科配比待基线后确定。详见 planning/20261001_exam-planning.md。
 

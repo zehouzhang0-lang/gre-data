@@ -562,3 +562,18 @@ evidence_records:
 覆盖升级可追加手机尚不存在的新词，但新词不携带电脑回忆、旧累计次数或练习轮次；隐藏过的旧词不复活。既有词仍依据原输入指纹更新规范层，不覆盖用户改写。catalogUpdate 新增 added 计数，重复启动不重复导入，原始事件、旧排期、未完成轮次与既有恢复快照保留。
 
 `definition-checks.json` 中单个核验项允许 `sources` 数组，完整保留实际查阅的不同词性来源；兼容既有单一 `source`。`vocab/examples/supplement-review.json` 记录本轮补查范围和未采用理由，未找到原句不等于该来源完全没有用例。
+
+## 平台 Issue 写作事件（2026-10-19）
+
+存放于现有 `platform/events/`，沿用 `schema_version: 1`、UUID v4 `id`、服务端 ISO `recorded_at`、`kind`、`payload`。旧 `analytical-writing/submissions/` Markdown 保持原样，不伪造迁移事件。
+
+- `writing_session`：`topic` 完整快照、`mode: outline | paragraph | full_essay`、`condition: practice | timed`、`parent_id: null | 已保存提交UUID`。只有 full_essay 可 timed；修订必须 practice，题目继承父稿。topic 包含 id/title/prompt/instructions/translation/source_url/source_kind/theme；source_kind 为 coach_original、user_provided、official。官方标记需 ETS HTTPS 来源，用户输入不自动核验为官方。
+- `writing_submission`：客户端只提交 session_id/text/outline/assistance_used/completed/snapshot_at。text/outline 原始空格和换行保留，空白拒绝；paragraph/full_essay 需正文。completed 是全文完成声明，部分训练不据此获得整体分数。服务端追加 topic/mode/condition/parent_id/started_at/deadline_at/duration_seconds/timing_status/word_count；不信任客户端的时长、分数或题目注入。
+- 计时从会话 recorded_at 起 1800 秒，duration_seconds 按服务端提交接收时间计算。timing_status 为 untimed / within_limit / recovered_after_deadline；within_limit 需 snapshot_at 不晚于截止且接收不晚于截止后5秒。snapshot_at 必须含时区，并与会话开始/接收时间合理相符；恢复超时不得伪装为期限内提交。
+- 一个会话只有一个不可变提交。相同 UUID 相同请求幂等；不同 UUID 但同会话完全相同请求返回原提交，内容改变则拒绝并要求另开修订。因果重放按引用依赖确保同毫秒事件顺序，缺失引用、循环或时间倒挂报错，不静默覆盖。
+- `writing_review`：submission_id、input_hash（完整不可变原稿上下文 SHA-256）、model、provider（固定 codex_cli）、provisional（固定 true）、result。浏览器不能经通用 events 接口写入点评；必须走显式 AI 入口并通过验证。
+- result 严格字段：summary、score（null或0–6半分）、score_reason、dimensions（task_fulfillment/position/development/organization/language_control恰好各一）、priorities（2–3）、sentence_feedback（0–6）、next_action、technique_ids。每个维度含id/feedback/evidence；优先项issue/evidence/action；局部改写original/suggestion/reason。evidence/original 必须能在用户原稿找到，不以题干作用户语言证据。提纲/单段/未完成全文的score强制null；完整全文证据不足也可null。
+- state.writing 暴露 sessions/submissions/reviews/target。target 只读取 profile.target.analytical_writing，AI 结果不覆盖 profile.current/scores/mastery。sessions 投影附 started_at/deadline_at/submission_id/submitted_at/submitted；开始但未提交只作为草稿会话，不计完成量。写作提交与修订单列统计，不加入普通 attempt、正确率或客观题间隔复习。
+- 浏览器 `gre-writing:v1:` 保存分会话草稿、待确认开始请求、稳定提交ID与冻结快照，仅本机缓存、不经Git同步；服务端提交和点评才是跨设备事实。不能在多设备/多标签同时编辑同一份未提交稿。
+
+规则核对：2026-10-19；ETS Issue、Analytical Writing overview 与 scoring 官方页面，链接见 `platform/server/writing-topics.mjs`。原创题没有官方题号或虚构 ETS 来源。

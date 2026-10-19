@@ -9,6 +9,7 @@ import { syncProgress } from "./sync.mjs";
 import { QuestionBank, legacyPractice } from "./question-bank.mjs";
 import { buildPracticeBank } from "./practice-bank.mjs";
 import { AiCoach } from "./ai-coach.mjs";
+import { writingTopics, writingResources } from "./writing-topics.mjs";
 const appRoot = fileURLToPath(new URL("../..", import.meta.url));
 const root = process.env.GRE_DATA_ROOT
   ? path.resolve(process.env.GRE_DATA_ROOT)
@@ -73,11 +74,14 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "GET" && url.pathname === "/api/ai/status") return json(res, 200, await ai.status(url.searchParams.get("refresh") === "1"));
     if (req.method === "POST" && url.pathname === "/api/ai/review") {
       const data = await body(req);
-      return json(res, 202, await ai.start(data.scope, data.attempt_id));
+      return json(res, 202, await ai.start(data.scope, data.scope === "writing" ? data.submission_id : data.attempt_id));
     }
     if (req.method === "POST" && url.pathname === "/api/ai/cancel") {
       await body(req);
       return json(res, 200, { job: ai.cancel() });
+    }
+    if (req.method === "GET" && url.pathname === "/api/writing/topics") {
+      return json(res, 200, { topics: writingTopics, resources: writingResources });
     }
     if (req.method === "GET" && url.pathname === "/api/practice") {
       const type = url.searchParams.get("type") || "se";
@@ -141,7 +145,7 @@ const server = http.createServer(async (req, res) => {
           if (root !== appRoot) throw new Error("隔离测试模式不允许同步Git");
           return json(res, 200, await syncProgress(root));
         }
-        if (data.kind === "ai_review") throw new Error("请通过AI分析入口生成记录");
+        if (["ai_review", "writing_review"].includes(data.kind)) throw new Error("请通过AI分析入口生成记录");
         if (data.kind === "material_upload")
           throw new Error("请通过PDF上传入口添加资料");
         return json(

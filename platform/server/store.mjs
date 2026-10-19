@@ -10,6 +10,7 @@ import { capturedWord } from "../shared/capture-word.mjs";
 import { WORD_STAGES, meaningChoices, drillResult, roundProgress, roundRating } from "../shared/word-session.mjs";
 import { QUICK_RATINGS, withQuickReviews } from "../shared/quick-review.mjs";
 import { applyStandardDefinition, validateStandardDefinition } from "../shared/standard-definition.mjs";
+import { WRITING_KINDS, validateWriting, prepareWritingEvent, projectWriting } from "./writing.mjs";
 
 export const normalizeWord = (value) =>
   value.trim().toLowerCase().replace(/\s+/g, " ");
@@ -28,6 +29,7 @@ const kinds = new Set([
   "attempts_import",
   "material_upload",
   "ai_review",
+  ...WRITING_KINDS,
   "topic_upsert", "topic_delete", "topic_restore", "word_topics",
   "relation_upsert", "relation_delete", "relation_restore",
 ]);
@@ -63,6 +65,7 @@ function attempt(p) {
 export function validate(kind, p) {
   if (!kinds.has(kind) || !p || typeof p !== "object")
     throw new Error("不支持的操作");
+  if (WRITING_KINDS.has(kind)) return validateWriting(kind, p);
   const relation = validateRelation(kind, p);
   if (relation) return relation;
   if (kind === "vocab_quick_undo") return { target_id: uuid(p.target_id) };
@@ -222,6 +225,7 @@ export class Store {
     this.root = root;
     this.eventsDir = path.join(root, "platform/events");
     this.parsedFiles = new ParsedFiles(root);
+    this.writingQueue = Promise.resolve();
   }
   async read(relative, fallback) {
     try {
@@ -263,6 +267,11 @@ export class Store {
       )
     )
       throw new Error("无效操作编号");
+    if (WRITING_KINDS.has(kind)) {
+      const operation = this.writingQueue.then(() => this.appendWriting(kind, payload, id));
+      this.writingQueue = operation.catch(() => {});
+      return operation;
+    }
     let p = validate(kind, payload);
     await fs.mkdir(this.eventsDir, { recursive: true });
     const target = path.join(this.eventsDir, `${id}.json`);
@@ -343,6 +352,19 @@ export class Store {
     await fs.writeFile(temp, JSON.stringify(event, null, 2) + "\n", {
       flag: "wx",
     });
+    await fs.rename(temp, target);
+    return event;
+  }
+  async appendWriting(kind, payload, id) {
+    const events = await this.events();
+    const previous = events.at(-1);
+    const timestamp = Math.max(Date.now(), previous ? Date.parse(previous.recorded_at) + 1 : 0);
+    const event = prepareWritingEvent({ kind, payload, id, recorded_at: new Date(timestamp).toISOString(), events });
+    if (events.some(prior => prior.id === event.id)) return event;
+    await fs.mkdir(this.eventsDir, { recursive: true });
+    const target = path.join(this.eventsDir, `${event.id}.json`);
+    const temp = path.join(this.eventsDir, `.${event.id}.tmp`);
+    await fs.writeFile(temp, JSON.stringify(event, null, 2) + "\n", { flag: "wx" });
     await fs.rename(temp, target);
     return event;
   }
@@ -523,6 +545,7 @@ export class Store {
     const legacyQuestions = await readLegacyQuestions(this);
     const spacedReview = projectReview({ vocabulary:[...words.values()], legacyWords:legacyWordReviews({homework,lexicon,difficult,mastered}), legacyQuestions, events, grade, now, timeZone:profile.timezone || 'Asia/Shanghai' });
     return {
+      writing: projectWriting(events, profile.target?.analytical_writing),
       vocabSessions: vocabSessions.map(session=>{
         const progress=roundProgress(session,vocabDrills,sessionRecalls);
         return {...session,...progress,completed_at:progress.complete?sessionRecalls.filter(r=>r.session_id===session.session_id).at(-1)?.recorded_at||null:null};

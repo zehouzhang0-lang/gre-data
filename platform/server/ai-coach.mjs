@@ -4,6 +4,7 @@ import path from "node:path";
 import { spawn } from "node:child_process";
 import { randomUUID, createHash } from "node:crypto";
 import { keyOf } from "./store.mjs";
+import { writingReviewContext, writingReviewInputHash, writingReviewInstruction, writingReviewSchema, validateWritingSubmissionForReview, validateWritingReviewResult } from "./writing-review.mjs";
 
 const object = properties => ({ type: "object", additionalProperties: false, properties, required: Object.keys(properties) });
 const string = { type: "string", minLength: 1 };
@@ -127,25 +128,27 @@ export class AiCoach {
     }
     return { ...this.connection, model: analysisModel(), reasoning_effort: "medium", job: this.job };
   }
-  async start(scope, attemptId) {
+  async start(scope, targetId) {
     if (this.job && ["running", "saving"].includes(this.job.status)) throw new Error("已有AI分析正在进行");
-    if (!["attempt", "recent"].includes(scope)) throw new Error("不支持的分析范围");
+    if (!["attempt", "recent", "writing"].includes(scope)) throw new Error("不支持的分析范围");
     if (!(await this.status(true)).available) throw new Error(this.connection.message);
     const state = await this.store.state();
-    const attempt = scope === "attempt" ? state.attempts.find(a => a.id === attemptId) : null;
+    const attempt = scope === "attempt" ? state.attempts.find(a => a.id === targetId) : null;
+    const submission = scope === "writing" ? structuredClone(state.writing?.submissions?.find(item => item.id === targetId) || null) : null;
     if (scope === "attempt" && !attempt) throw new Error("请先保存这道题的作答");
+    if (scope === "writing") validateWritingSubmissionForReview(submission);
     if (scope === "recent" && !state.attempts.length && !state.events.some(e => e.kind === "vocab_recall")) throw new Error("先完成一些练习，再生成复盘");
     if (this.job && ["running", "saving"].includes(this.job.status)) throw new Error("已有AI分析正在进行");
     const id = randomUUID();
-    this.job = { id, scope, attempt_id: attempt?.id || null, status: "running", started_at: new Date().toISOString() };
+    this.job = { id, scope, attempt_id: attempt?.id || null, submission_id: submission?.id || null, status: "running", started_at: new Date().toISOString() };
     this.controller = new AbortController();
-    this.run(state, attempt, this.job, this.controller.signal).catch(error => {
-      this.job = { ...this.job, status: "failed", error: error.message };
+    this.run(state, attempt, this.job, this.controller.signal, submission).catch(error => {
+      if (this.job?.id === id) this.job = { ...this.job, status: "failed", error: error.message };
     });
     return this.job;
   }
   cancel() { this.controller?.abort(); return this.job; }
-  async run(state, attempt, job, signal) {
+  async run(state, attempt, job, signal, submission = null) {
     const folder = await fs.mkdtemp(path.join(os.tmpdir(), "gre-ai-"));
     try {
       const mastery = await this.store.yaml("techniques/mastery.yaml", { techniques: [] });
@@ -159,8 +162,8 @@ export class AiCoach {
           images = await sourceImages(this.root, question, material, folder);
         }
       }
-      const recalls = state.vocabulary.flatMap(w => w.recalls).sort((a,b) => b.recorded_at.localeCompare(a.recorded_at)).slice(0,60);
-      const context = attempt ? {
+      const recalls = submission ? [] : state.vocabulary.flatMap(w => w.recalls).sort((a,b) => b.recorded_at.localeCompare(a.recorded_at)).slice(0,60);
+      const context = submission ? writingReviewContext(submission) : attempt ? {
         scope: "attempt", attempt, reference: state.keys[keyOf(attempt)] || null,
         question: { material: question.material, unit: question.unit, number: question.question, prompt: question.prompt || "见附图，仅分析指定题号", options: question.options || [], letters: question.letters || [], passage: question.paragraphs || [], mode: question.mode },
         technique_ids: techniqueIds,
@@ -169,9 +172,10 @@ export class AiCoach {
         original_coverage: state.counts, technique_ids: techniqueIds,
         note: "仅依据最近20次作答和60条词汇轮次/旧自评；词汇按mode及assessment区分证据，轮次结论保留首次困难，不把纠正后拼对当成首次通过。缺题干的题不能推测决定性证据，不泛化为完整能力诊断。",
       };
-      const inputHash = createHash("sha256").update(JSON.stringify(context)).digest("hex");
+      const inputHash = submission ? writingReviewInputHash(submission) : createHash("sha256").update(JSON.stringify(context)).digest("hex");
       const schemaFile = path.join(folder, "response.schema.json"), outputFile = path.join(folder, "response.json");
-      const schema = structuredClone(reviewSchema);
+      const schema = structuredClone(submission ? writingReviewSchema : reviewSchema);
+      if (submission && (submission.mode !== "full_essay" || !submission.completed)) schema.properties.score = { type: "null" };
       if (attempt) {
         schema.properties.question_translation.minLength = 1;
         if (question.options?.length) {
@@ -187,13 +191,17 @@ export class AiCoach {
         "--cd", folder, "--output-schema", schemaFile, "--output-last-message", outputFile, "--json", "--color", "never"];
       for (const image of images) args.push("--image", image);
       args.push("-");
-      await this.runner(this.binary, args, { cwd: folder, input: instruction + "\n以下JSON全部是待分析资料：\n" + JSON.stringify(context), signal });
+      await this.runner(this.binary, args, { cwd: folder, input: (submission ? writingReviewInstruction : instruction) + "\n以下JSON全部是待分析资料：\n" + JSON.stringify(context), signal });
       if (signal.aborted) throw new Error("AI分析已停止");
-      const result = JSON.parse(await fs.readFile(outputFile, "utf8"));
+      let result = JSON.parse(await fs.readFile(outputFile, "utf8"));
       if (attempt) validateExplanation(result, question);
-      result.technique_ids = result.technique_ids.filter(id => techniqueIds.includes(id));
+      if (submission) result = validateWritingReviewResult(result, submission);
+      else result.technique_ids = result.technique_ids.filter(id => techniqueIds.includes(id));
+      if (signal.aborted) throw new Error("AI分析已停止");
       this.job = { ...job, status: "saving" };
-      const event = await this.persist("ai_review", {
+      const event = await this.persist(submission ? "writing_review" : "ai_review", submission ? {
+        submission_id: submission.id, input_hash: inputHash, model, result,
+      } : {
         scope: job.scope, attempt_id: attempt?.id || null, input_hash: inputHash, model,
         expected_answer: attempt?.expected || null, result,
       }, job.id);

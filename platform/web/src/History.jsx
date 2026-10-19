@@ -19,7 +19,7 @@ function AttemptEntry({ attempt, onAi, timeZone }) {
   </article>;
 }
 
-export default function History({ state, refresh }) {
+export default function History({ state, refresh, openWriting }) {
   const [tab, setTab] = useState("overview");
   const [wordView, setWordView] = useState("words");
   const [record, setRecord] = useState(null);
@@ -45,6 +45,8 @@ export default function History({ state, refresh }) {
   const assignments = useMemo(() => new Map((state.relations?.assignments || []).map(a => [a.word, a.topics])), [state.relations]);
   const sessions = state.vocabSessions || [];
   const drills = state.vocabDrills || [];
+  const writingSubmissions = state.writing?.submissions || [];
+  const writingModeLabels = { outline: "提纲", paragraph: "单段", full_essay: "整篇" };
   const recalls = useMemo(() => state.vocabulary.flatMap(word => (word.recalls || []).map((recall, index) => ({ ...recall, word: word.word, id: recall.id || `${word.word}:${recall.recorded_at}:${index}` }))), [state.vocabulary]);
   const attemptGroups = useMemo(() => groupBy(state.attempts, keyOf).sort((a, b) => b.records[0].recorded_at.localeCompare(a.records[0].recorded_at)), [state.attempts]);
   const wordGroups = useMemo(() => {
@@ -54,12 +56,13 @@ export default function History({ state, refresh }) {
   }, [recalls, drills]);
   const days = useMemo(() => {
     const map = new Map();
-    const ensure = at => { const date = studyDay(at, timeZone); if (!map.has(date)) map.set(date, { date, attempts: [], recalls: [], drills: [] }); return map.get(date); };
+    const ensure = at => { const date = studyDay(at, timeZone); if (!map.has(date)) map.set(date, { date, attempts: [], recalls: [], drills: [], writing: [] }); return map.get(date); };
     for (const a of state.attempts) ensure(a.recorded_at).attempts.push(a);
     for (const r of recalls) ensure(r.recorded_at).recalls.push(r);
     for (const r of drills) ensure(r.recorded_at).drills.push(r);
+    for (const submission of writingSubmissions) ensure(submission.recorded_at).writing.push(submission);
     return [...map.values()].sort((a, b) => b.date.localeCompare(a.date));
-  }, [state.attempts, recalls, drills, timeZone]);
+  }, [state.attempts, recalls, drills, writingSubmissions, timeZone]);
 
   function changeTab(next) { setTab(next); setSearch(""); setType(""); setResult(""); setMaterial(""); setTopic(""); setEventKind(""); setPage(0); }
   function openDetail(value) { setDetail(value); setDetailPage(0); }
@@ -73,12 +76,13 @@ export default function History({ state, refresh }) {
   const filteredWords = wordGroups.map(group => ({ ...group, matching: group.records.filter(r => dated(r) && (!result || r.self_rating === result)), matchingDrills: group.drills.filter(dated) }))
     .filter(group => (group.matching.length || !result && group.matchingDrills.length) && (!topic || assignments.get(group.id)?.includes(topic)) && matches(`${group.id} ${vocabulary.get(group.id)?.meaning || ""}`));
   const filteredSessions = sessions.filter(session => (!date || day(session.recorded_at) === date || session.completed_at && day(session.completed_at) === date || drills.some(d => d.session_id === session.session_id && dated(d))) && matches((session.words || []).join(" "))).sort((a, b) => b.recorded_at.localeCompare(a.recorded_at));
-  const filteredDays = days.filter(d => (!date || d.date === date) && matches(`${d.date} ${[...d.recalls, ...d.drills].map(r => r.word).join(" ")} ${d.attempts.map(a => `${a.unit} ${materialLabel(a.material, state.materials)}`).join(" ")}`));
+  const filteredDays = days.filter(d => (!date || d.date === date) && matches(`${d.date} ${[...d.recalls, ...d.drills].map(r => r.word).join(" ")} ${d.attempts.map(a => `${a.unit} ${materialLabel(a.material, state.materials)}`).join(" ")} ${d.writing.map(s => s.topic.title).join(" ")}`));
   const filteredLegacy = state.history.filter(r => (!date || legacyDate(r) === date) && (!type || legacySubject(r) === type) && matches(r.name));
   const scopeEvents = state.events.filter(e => eventScope === "all" || (eventScope === "learning" ? learningEventKinds.has(e.kind) : !learningEventKinds.has(e.kind)));
   const filteredEvents = scopeEvents.filter(e => dated(e) && (!eventKind || eventKind === e.kind) && matches(`${eventLabels[e.kind] || e.kind} ${e.word || ""} ${e.stage ? stageLabels[e.stage] || e.stage : ""}`));
   const filteredReviews = (state.reviews || []).filter(review => dated(review) && matches(`${review.result?.summary || ""} ${review.result?.evidence || ""}`));
-  const rows = { overview: filteredDays, attempts: filteredAttempts, words: wordView === "sessions" ? filteredSessions : filteredWords, legacy: filteredLegacy, events: filteredEvents, ai: filteredReviews }[tab];
+  const filteredWriting = writingSubmissions.filter(s => dated(s) && matches(`${s.topic.title} ${s.text} ${s.outline}`));
+  const rows = { overview: filteredDays, attempts: filteredAttempts, words: wordView === "sessions" ? filteredSessions : filteredWords, writing: filteredWriting, legacy: filteredLegacy, events: filteredEvents, ai: filteredReviews }[tab];
   const currentPage = Math.min(page, Math.max(0, Math.ceil(rows.length / PAGE_SIZE) - 1));
   const visible = rows.slice(currentPage * PAGE_SIZE, (currentPage + 1) * PAGE_SIZE);
   const questionDetail = detail?.kind === "question" ? attemptGroups.find(g => g.id === detail.id) : null;
@@ -91,9 +95,9 @@ export default function History({ state, refresh }) {
   const detailVisible = detailRows.slice(detailCurrentPage * 10, (detailCurrentPage + 1) * 10);
   return <>
     <Header title="学习记录" description="按日期、题目和单词回看，每次练习都有出处。">
-      <button onClick={() => download("gre-workbench-export.json", { schema_version: 1, exported_at: new Date().toISOString(), attempts: state.attempts, vocabulary_recalls: recalls, vocabulary_sessions: sessions, vocabulary_drills: drills, events: state.events, ai_reviews: state.reviews || [] })}>导出记录</button>
+      <button onClick={() => download("gre-workbench-export.json", { schema_version: 1, exported_at: new Date().toISOString(), attempts: state.attempts, vocabulary_recalls: recalls, vocabulary_sessions: sessions, vocabulary_drills: drills, writing: state.writing || null, events: state.events, ai_reviews: state.reviews || [] })}>导出记录</button>
     </Header>
-    <nav className="catalog-view-tabs" aria-label="学习记录分类">{[["overview", "学习概览"], ["attempts", "做题记录"], ["words", "单词复习"], ["legacy", "历史训练"], ["ai", "AI 复盘"], ["events", "操作记录"]].map(([id, label]) => <button key={id} aria-pressed={tab === id} onClick={() => changeTab(id)}>{label}</button>)}</nav>
+    <nav className="catalog-view-tabs" aria-label="学习记录分类">{[["overview", "学习概览"], ["attempts", "做题记录"], ["words", "单词复习"], ["writing", "写作记录"], ["legacy", "历史训练"], ["ai", "AI 复盘"], ["events", "操作记录"]].map(([id, label]) => <button key={id} aria-pressed={tab === id} onClick={() => changeTab(id)}>{label}</button>)}</nav>
     {tab === "overview" && <div className="catalog-counts"><div><strong>{days.length}</strong><span>平台学习日</span></div><div><strong>{attemptGroups.length}</strong><span>题目 · {state.attempts.length} 次作答</span></div><div><strong>{wordGroups.filter(w => w.records.length).length}</strong><span>单词 · {recalls.length} 次回忆</span></div>{sessions.length > 0 && <div><strong>{sessions.filter(s => s.complete).length}</strong><span>已完成复习轮次</span></div>}</div>}
     <div className="catalog-toolbar">
       <CatalogSearch value={search} onChange={value => { setSearch(value); setPage(0); }} label="搜索学习记录" placeholder={tab === "words" ? "搜索单词或释义…" : tab === "attempts" ? "搜索教材、单元、题号或笔记…" : "搜索日期、名称或内容…"} />
@@ -105,7 +109,8 @@ export default function History({ state, refresh }) {
       {tab === "events" && <><select aria-label="操作记录范围" value={eventScope} onChange={e => { setEventScope(e.target.value); setEventKind(""); setPage(0); }}><option value="maintenance">整理与维护</option><option value="learning">学习事件</option><option value="all">全部原始事件</option></select><select aria-label="操作类型" value={eventKind} onChange={e => { setEventKind(e.target.value); setPage(0); }}><option value="">全部类型</option>{[...new Set(scopeEvents.map(e => e.kind))].map(kind => <option key={kind} value={kind}>{eventLabels[kind] || kind}</option>)}</select></>}
     </div>
     {tab === "words" && <nav className="catalog-filters" aria-label="单词复习索引">{[["words", "按单词"], ["sessions", "按轮次"]].map(([id, label]) => <button key={id} aria-pressed={wordView === id} onClick={() => { setWordView(id); setResult(""); setTopic(""); setPage(0); }}>{label}</button>)}</nav>}
-    {tab === "overview" && <div className="catalog-day-grid">{visible.map(d => <article className="catalog-day-card" key={d.date}><h2>{d.date}{d.date === state.spacedReview?.today && <small>今天</small>}</h2><div className="catalog-day-links">{d.attempts.length > 0 && <button onClick={() => openDay(d.date, "attempts")}>做题 {d.attempts.length} 次 <small>· {new Set(d.attempts.map(keyOf)).size} 题 ↗</small></button>}{d.recalls.length > 0 && <button onClick={() => openDay(d.date, "words")}>回忆 {d.recalls.length} 次 <small>· {new Set(d.recalls.map(r => r.word)).size} 词 ↗</small></button>}{d.drills.length > 0 && <button onClick={() => openDay(d.date, "words", "sessions")}>轮内练习 {d.drills.length} 步 <small>↗</small></button>}</div></article>)}</div>}
+    {tab === "overview" && <div className="catalog-day-grid">{visible.map(d => <article className="catalog-day-card" key={d.date}><h2>{d.date}{d.date === state.spacedReview?.today && <small>今天</small>}</h2><div className="catalog-day-links">{d.attempts.length > 0 && <button onClick={() => openDay(d.date, "attempts")}>做题 {d.attempts.length} 次 <small>· {new Set(d.attempts.map(keyOf)).size} 题 ↗</small></button>}{d.recalls.length > 0 && <button onClick={() => openDay(d.date, "words")}>回忆 {d.recalls.length} 次 <small>· {new Set(d.recalls.map(r => r.word)).size} 词 ↗</small></button>}{d.drills.length > 0 && <button onClick={() => openDay(d.date, "words", "sessions")}>轮内练习 {d.drills.length} 步 <small>↗</small></button>}{d.writing.length > 0 && <button onClick={() => openDay(d.date, "writing")}>写作 {d.writing.length} 次 <small>· 含提纲、单段与修订 ↗</small></button>}</div></article>)}</div>}
+    {tab === "writing" && <div className="catalog-records">{visible.map(s => <button className="catalog-record-button" key={s.id} onClick={() => openWriting ? openWriting(s.id) : setRecord({ title: s.topic.title, text: s.text || s.outline })}><div><strong>{s.topic.title}</strong><p>{day(s.recorded_at)} · {writingModeLabels[s.mode]}{s.parent_id ? " · 修订" : ""} · {s.condition === "timed" ? "限时实战" : "分步训练"}{s.timing_status === "recovered_after_deadline" ? " · 超时恢复" : ""}{s.assistance_used ? " · 使用辅助" : ""}{s.mode === "full_essay" && !s.completed ? " · 全文未完成" : ""}</p></div><span>{s.mode === "outline" ? "提纲" : `${s.word_count} 词`}<small>查看原稿与批改 ↗</small></span></button>)}</div>}
     {tab === "attempts" && <div className="catalog-records">{visible.map(group => { const a = group.matching[0]; return <button className="catalog-record-button" key={group.id} onClick={() => openDetail({ kind: "question", id: group.id })}><div><strong>{typeNames[a.type]} · {a.unit} · 第 {a.question} 题</strong><p>{materialLabel(a.material, state.materials)} · {day(a.recorded_at)}</p></div><span className={a.result === false ? "catalog-result-wrong" : a.result === true ? "catalog-result-right" : ""}>{attemptLabel(a.result)}<small>累计作答 {group.records.length} 次 ↗</small></span></button>; })}</div>}
     {tab === "words" && wordView === "words" && <div className="catalog-records">{visible.map(group => { const last = group.matching[0]; return <button className="catalog-record-button" key={group.id} onClick={() => openDetail({ kind: "word", id: group.id, showDrills: !group.records.length })}><div><strong className="catalog-history-word">{group.id}</strong><p>{vocabulary.get(group.id)?.meaning || "待补释义"}</p></div><span>{last ? recallLabel(last) : "本轮练习中"}<small>{group.records.length} 次回忆 · {group.drills.length > 0 ? `${group.drills.length} 步练习 · ` : ""}{day(last?.recorded_at || group.last_at)} ↗</small></span></button>; })}</div>}
     {tab === "words" && wordView === "sessions" && <div className="catalog-records">{visible.map(session => <button className="catalog-record-button" key={session.session_id} onClick={() => openDetail({ kind: "session", id: session.session_id })}><div><strong>{day(session.recorded_at)} · {session.words.length} 词一轮</strong><p>{session.words.slice(0, 5).join(" · ")}{session.words.length > 5 ? " …" : ""}</p></div><span>{session.complete ? "已完成" : "进行中"}<small>{session.completed_words?.length || 0} / {session.words.length} 词 · {session.drill_count || 0} 步 ↗</small></span></button>)}</div>}

@@ -1,5 +1,6 @@
 export const stageLabels = { meaning_1: "英选中 · 第一遍", meaning_2: "英选中 · 第二遍", cloze: "字母填空", spelling: "中文拼英文" };
 export const eventLabels = {
+  writing_session: "开始写作（未提交）", writing_submission: "保存写作", writing_review: "AI 写作批改（暂定）",
   vocab_quick_review: '单词墙自评（含改标）', vocab_quick_undo: '撤销单词墙标记',
   topic_upsert: "编辑词汇主题", topic_delete: "移除词汇主题", topic_restore: "恢复词汇主题",
   word_topics: "调整单词分类", relation_upsert: "编辑词汇关系", relation_delete: "移除词汇关系", relation_restore: "恢复词汇关系",
@@ -7,7 +8,7 @@ export const eventLabels = {
   vocab_upsert: "编辑生词", vocab_capture: "题中摘词", vocab_delete: "移除生词", vocab_restore: "恢复生词",
   questions_import: "导入题目", keys_import: "导入答案与解析", attempts_import: "上传作答", attempt: "答题", material_upload: "上传 PDF",
 };
-export const learningEventKinds = new Set(["attempt", "attempts_import", "vocab_recall", "vocab_drill", "vocab_session", "vocab_quick_review", "vocab_quick_undo"]);
+export const learningEventKinds = new Set(["attempt", "attempts_import", "vocab_recall", "vocab_drill", "vocab_session", "vocab_quick_review", "vocab_quick_undo", "writing_session", "writing_submission"]);
 export function attemptLabel(result) { return result === true ? "答案一致" : result === false ? "答案不一致" : "待核对"; }
 export function recallLabel(recall) {
   if (recall.mode === "multistage") return { remembered: "本轮通过", partial: "本轮有提示或错答", forgotten: "本轮需再练" }[recall.self_rating] || "本轮已记录";
