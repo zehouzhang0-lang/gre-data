@@ -2,6 +2,7 @@ import { useEffect, useId, useRef } from 'react';
 import { useBackAction } from '../useBack';
 
 const paths = {
+  practice: <><path d="M5 3h11l3 3v15H5Z"/><path d="M9 9h6M9 13h6M9 17h4"/></>,
   speaker: <><path d="m11 4-6 5H2v6h3l6 5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></>,
   book: <><path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Z"/><path d="M12 5v15"/></>,
   history: <><path d="M3 10a9 9 0 1 1 1 7M3 4v6h6"/><path d="M12 7v5l3 2"/></>,
@@ -44,5 +45,8 @@ export function Confirm({ title, children, action = '确认', onConfirm, onClose
   return <Sheet title={title} onClose={busy ? () => {} : onClose} footer={<><button disabled={busy} onClick={onClose}>取消</button><button className={danger ? 'danger' : 'primary'} disabled={busy} onClick={onConfirm}>{busy ? '处理中…' : action}</button></>}><div className="confirm-copy">{children}</div></Sheet>;
 }
 export function Empty({ title = '没有匹配的单词', children }) { return <div className="empty"><h2>{title}</h2>{children}</div>; }
-export function BottomNav({ tab, onChange }) { return <nav className="bottom-nav" aria-label="主要导航">{[['wall', 'book', '词库'], ['review', 'history', '复习'], ['settings', 'settings', '设置']].map(([id, icon, text]) => <button key={id} aria-current={tab === id ? 'page' : undefined} className={tab === id ? 'active' : ''} onClick={() => onChange(id)}><Icon name={icon} size={25}/><span>{text}</span></button>)}</nav>; }
+export function BottomNav({ tab, onChange, practicePreview = false }) {
+  const items = [['wall', 'book', '词库'], ['review', 'history', '复习'], ...(practicePreview ? [['practice', 'practice', '刷题']] : []), ['settings', 'settings', '设置']];
+  return <nav className="bottom-nav" aria-label="主要导航">{items.map(([id, icon, text]) => <button key={id} aria-current={tab === id ? 'page' : undefined} className={tab === id ? 'active' : ''} onClick={() => onChange(id)}><Icon name={icon} size={25}/><span>{text}</span></button>)}</nav>;
+}
 export function Pager({ page, pages, onChange, count }) { return <nav className="pager" aria-label="单词分页"><button disabled={page === 0} onClick={() => onChange(page - 1)}>上一页</button><span>{page + 1} / {pages}<small>{count} 张卡片</small></span><button disabled={page >= pages - 1} onClick={() => onChange(page + 1)}>下一页</button></nav>; }
