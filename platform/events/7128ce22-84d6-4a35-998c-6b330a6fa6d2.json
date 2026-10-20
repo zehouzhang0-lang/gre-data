@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "7128ce22-84d6-4a35-998c-6b330a6fa6d2",
+  "recorded_at": "2026-10-20T04:22:01.885Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "77f1af85-02ce-4f3e-a1d5-aba02e56237f",
+    "input_hash": "bf0e4a1e5c2b2103a03c1a1e197024e0fd92c5d2fa57e8e8e68f45c11962fc54",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "BE",
+    "result": {
+      "question_translation": "研究人员称为 M-120 的那只猞猁——健壮大胆，而且显然聪明到能发现免费午餐——也许是世界上最不_____的猞猁：科学家每年会捕到它好几次。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "intelligent：聪明的、有智力的；此处指猞猁是否聪明。",
+          "translation": "聪明的",
+          "reasoning": "排除。“科学家每年会捕到它好几次”只能说明它不善躲避或难以逃脱，不能证明它是“最不聪明的”；前文反而说它 apparently smart enough（显然聪明到足以）找到免费午餐。"
+        },
+        {
+          "label": "B",
+          "meaning": "evasive：善于躲避、逃避追捕的；此处指难不难被科学家抓到。",
+          "translation": "善于躲避的；难以追捕的",
+          "reasoning": "选择。冒号后的证据说明科学家一年能多次捕到它，因此它是最不善于躲避的猞猁之一。"
+        },
+        {
+          "label": "C",
+          "meaning": "fearless：无畏的、不害怕的；此处指胆量。",
+          "translation": "无畏的",
+          "reasoning": "排除。beefy、audacious 可涉及体格或大胆，但“多次被捕到”并不能决定其是否无畏；且题目所需是与被捕频率直接对应的“躲避能力”。"
+        },
+        {
+          "label": "D",
+          "meaning": "furtive：鬼鬼祟祟的、偷偷摸摸而避免被察觉的。",
+          "translation": "鬼鬼祟祟的；偷偷摸摸的",
+          "reasoning": "排除。虽与隐蔽有关，但其核心是秘密行动的方式；题干直接要求与反复被捕相反的“难以被找到／抓到”，不是行为是否鬼祟。"
+        },
+        {
+          "label": "E",
+          "meaning": "elusive：难以找到、捉到或理解的；此处指难以捕获。",
+          "translation": "难以捉到的；难以找到的",
+          "reasoning": "选择。科学家每年数次捕到它，直接表明它并不难以捉到，故“world’s least elusive lynx”成立。"
+        },
+        {
+          "label": "F",
+          "meaning": "intrepid：无畏的、勇敢的。",
+          "translation": "无畏的；勇敢的",
+          "reasoning": "排除。与 fearless 同类，描述胆量而非是否容易被捕；无法由“每年捕到好几次”推出。"
+        }
+      ],
+      "summary": "参考答案为 BE，且与题干一致。你选 A/B：B正确，A错误；应选 B/E。",
+      "evidence": "决定性证据是冒号后的“the scientists catch him several times a year”（科学家每年多次捕到它）。这说明 M-120 不善躲避、也不难捕获，故 B evasive 与 E elusive 都能填入并使整句成立。A intelligent 与“被多次捕到”无逻辑对应，且前文“apparently smart enough”还指向它相当聪明。B/E 分别填入后均表达“最不难捕到的猞猁”，全句等价。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。可确认的答案偏离是：把 intelligent 作为配对项；它没有受到“每年多次捕到”这一决定性证据支持。",
+      "next_action": "做SE时先把冒号后的证据压缩为“反复被捕→不善躲避／不难捕获”，再分别代入两项；最后用完整句复述，确认两项都表达同一结论，而非只看词义相近。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

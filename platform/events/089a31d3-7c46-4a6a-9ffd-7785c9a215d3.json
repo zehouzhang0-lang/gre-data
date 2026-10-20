@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "089a31d3-7c46-4a6a-9ffd-7785c9a215d3",
+  "recorded_at": "2026-10-20T04:25:05.521Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "7cad9c76-7063-4bcf-b449-363a4d90cfbc",
+    "input_hash": "0b487fd473d6cc737f98f3fadf8c2b7773446e7471322bc9be4806fa34bd9fcd",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "AB",
+    "result": {
+      "question_translation": "书中收录了某些植物（但不是所有植物）的起源、分布和栖息地信息；如果每个物种都提供这些信息，读者就能更清楚地理解 _____ 物种与引入物种之间的差异。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "endemic：某一特定地区特有的；此处指原生于且自然局限于该地区的物种。",
+          "translation": "特有的",
+          "reasoning": "选项A与B共同构成正确答案。句中将一类自然存在的物种与“introduced species（引入物种）”对比；“endemic species”可与其形成该对比。"
+        },
+        {
+          "label": "B",
+          "meaning": "native：本地原生的；此处指并非由外来人为引入、而是在当地自然存在的物种。",
+          "translation": "本地原生的",
+          "reasoning": "选项B与A共同构成正确答案。它直接与“introduced species（引入物种）”相对，且填入后句义通顺。"
+        },
+        {
+          "label": "C",
+          "meaning": "seasonal：季节性的；随季节出现、变化或发生的。",
+          "translation": "季节性的",
+          "reasoning": "“季节性物种”不是与引入物种相对应的来源/分布分类，不能由题干所列的起源、分布和栖息地信息得到决定性支持。"
+        },
+        {
+          "label": "D",
+          "meaning": "rare：罕见的；数量少或不常见的。",
+          "translation": "罕见的",
+          "reasoning": "“罕见”描述数量或出现频率，不是“introduced”所对应的物种来源身份，无法构成全句所需的等价答案。"
+        },
+        {
+          "label": "E",
+          "meaning": "unusual：不寻常的；不同于常态的。",
+          "translation": "不寻常的",
+          "reasoning": "“不寻常”是宽泛评价，未表达物种是否由外部引入，不能与A或B构成语义等价的完整句。"
+        },
+        {
+          "label": "F",
+          "meaning": "dominant：占优势的；在数量、覆盖度或影响力上居主导地位的。",
+          "translation": "占优势的",
+          "reasoning": "“占优势”描述生态数量或地位，不是来源类别；与“introduced species”不形成题干要求的对照。"
+        }
+      ],
+      "summary": "答案与参考答案一致：A/B（endemic、native）。二者分别填入后都与“introduced species”形成来源上的对照，且整句含义等价。",
+      "evidence": "决定性证据是题干的“Origin, distribution, and habitat”及“introduced species”。其中introduced指由外部引入；endemic指某地区特有，native指当地原生。两词虽范围并非严格完全相同，但在本句中均将植物归为非外来引入的一类，分别填入后均表达：补充信息能帮助读者辨析当地自然存在的植物与引入植物。参考答案明确为AB，用户作答A/B，判对。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因或具体策略强弱。此次结果正确；不能据单题或本轮的用户作答证明长期掌握。",
+      "next_action": "下次SE先锁定对比关系：introduced（外来引入）→空格应为当地自然存在/非引入类别；再分别代入A、B，核验两句均通顺并在本题语境中表达同一核心对照。",
+      "technique_ids": [
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}

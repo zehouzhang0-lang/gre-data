@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "81a81380-6600-46e2-97f1-e4e8482ea422",
+  "recorded_at": "2026-10-20T04:35:21.160Z",
+  "kind": "ai_review",
+  "payload": {
+    "scope": "attempt",
+    "attempt_id": "1759bccf-1736-477e-a536-59aa47c256c6",
+    "input_hash": "537b100e8cee151ca99dec4d4c90f998f8d095ff58314c247405ffba70addbd5",
+    "model": "gpt-5.6-terra",
+    "provider": "codex_cli",
+    "provisional": true,
+    "expected_answer": "EF",
+    "result": {
+      "question_translation": "为实现某一目标（如食品生产或防洪控制）而对生态系统作出的改变，常常会_____生态系统所提供的其他重要产品和服务之间显著、未曾预见的权衡取舍。",
+      "option_explanations": [
+        {
+          "label": "A",
+          "meaning": "predict：预测，预言；此处指“预测会出现权衡”。",
+          "translation": "预测",
+          "reasoning": "排除：主语是“对生态系统作出的改变”，句子强调这些改变会带来未预见的代价；“改变预测权衡”不合这里的因果语义。且与F不能构成全句等价。"
+        },
+        {
+          "label": "B",
+          "meaning": "delay：延迟，使推迟。",
+          "translation": "延迟",
+          "reasoning": "排除：权衡是由改变引发的后果，而非被推迟的事项；搭配和句意均不成立。"
+        },
+        {
+          "label": "C",
+          "meaning": "foretell：预示，预言。",
+          "translation": "预言",
+          "reasoning": "排除：与A一样将“改变”解释为预言者，偏离“产生意外权衡”的因果关系；也不能与F全句等价。"
+        },
+        {
+          "label": "D",
+          "meaning": "obscure：使模糊，掩盖。",
+          "translation": "掩盖，使不清楚",
+          "reasoning": "排除：空格后是“显著、未曾预见的权衡”，需要表达其被造成，而不是被掩盖。"
+        },
+        {
+          "label": "E",
+          "meaning": "yield：产生，带来；此处指改变“带来”权衡。",
+          "translation": "产生，带来",
+          "reasoning": "选择：changes often yield trade-offs＝这些改变常常带来权衡，准确表达因果后果。"
+        },
+        {
+          "label": "F",
+          "meaning": "engender：产生，引起。",
+          "translation": "产生，引起",
+          "reasoning": "选择：changes often engender trade-offs＝这些改变常常引起权衡。与E分别代入后，均表示“改变导致权衡”，全句语义等价。"
+        }
+      ],
+      "summary": "应选E/F。句内逻辑是“为达成目标的生态改变”会带来其他生态产品与服务之间意外而显著的权衡；E、F都表达“产生/引起”。",
+      "evidence": "决定性证据是宾语“significant unforeseen trade-offs”。该名词短语指实际出现的负面权衡，空格需填入表示因果产生的动词。yield与engender均可搭配“trade-offs”，分别意为“带来”和“引起”。A predict、C foretell意为“预测/预言”，把changes误作预测者，且与“unforeseen（未曾预见的）”所强调的意外后果不匹配。参考答案为EF，和题干一致。",
+      "reasoning_gap": "未提供推理，尚无证据确定错因。仅从作答A/C可见，答案选择了同义的“预测/预言”方向，而正确方向是“改变造成后果”；这是对本题语义方向的偏离，不足以据此判定长期词汇弱项。",
+      "next_action": "下次SE先将骨架写成“Changes often ___ trade-offs”，预测空格为“导致/产生”。再分别代入两项：只有两句均通顺、因果方向一致且整句等价时再选；特别核对unforeseen是否与所选动词的角色冲突。",
+      "technique_ids": [
+        "v_tc_logic_map",
+        "v_se_dual_equivalence"
+      ],
+      "assessment": "supported"
+    }
+  }
+}
