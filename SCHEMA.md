@@ -429,6 +429,12 @@ items:
 
 手写不清的条目放在导入文件的 `pending_transcriptions`，确认前不进入正式抽测池。复数或屈折变化归到词元；有独立用法的派生词可以单列并保存关联。已有词保留原复测历史，只追加来源；新接触而未测试的词 `initial_result: null`、`review_count: 0`、`correct_streak: 0`、`last_review: null`。新增与复现分开计数。
 
+## 手机完整备份证据核对（2026-10-21）
+
+`vocab/imports/YYYYMMDD_HHMM_mobile_backup.json` 为 `schema_version: 1`、`kind: mobile_backup_audit` 的只读审计记录，不是可写入 `platform/events/` 的事件，也不是手机恢复包。保存原备份文件名、整文件SHA-256、payload校验和、导出时间、dataset_id、时区、计数、共同事件ID、手机独有原始事件、轮次概要及逐词待整理任务。时间比较将同一瞬间的UTC与时区表示归一化；同ID内容冲突时停止，不能覆盖。共同记录不再复制为新事件。
+
+原始完整包保存在本机忽略目录 `.gre-platform/mobile-backups/<sha256>.json`，只读校验后按原字节归档；跨设备共享的审计记录不假装能替代完整备份。curation_requests 的 status 固定 pending，observed_gaps 只描述字段缺失，不代表现有释义、分类或例句已经核验。归档不会修改词义、分类、学习事件、排期、掌握状态或手机数据库。
+
 ## 手机词汇作业
 
 路径：`vocab/homework/YYYYMMDD_HHMM_来源简述.{md,json,html}`。Markdown 保存任务范围、操作与验证；JSON 保存 `schema_version`、`assignment_id`、含时区的 `generated_at`、`scope`、`counts`、`items`、`instructions`；HTML 为用户请求的可离线使用文本页面。

@@ -63,8 +63,46 @@
 .preview-feedback > div { flex: 1; }
 .preview-feedback small { display: block; font-size: 11px; margin-top: 3px; }
 .preview-feedback button { padding: 0 5px; min-height: 28px; }
-.practice-directory { display: flex; gap: 12px; padding-block: 15px; }
-.practice-directory button { display: flex; align-items: center; gap: 8px; min-width: 48px; justify-content: center; }
+.practice-directory { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; padding-block: 15px; }
+.practice-directory .question-number { min-width: 0; min-height: 58px; padding: 7px 3px; display: flex; flex-direction: column; gap: 3px; justify-content: center; }
+.question-number > span { color: var(--ink); font-size: 16px; }
+.question-number > small { font-size: 8px; font-weight: 400; color: var(--muted); white-space: nowrap; }
+.question-number.status-submitted { background: #edf5ef; border-color: #adc8b7; }
+.question-number.status-draft { background: #fff8e9; border-color: #dbc995; }
+.question-number.status-preview { background: #f0f3f9; border-color: #b8c8dd; }
+.question-number.status-duplicate { background: #f5f6f6; }
+.question-number[aria-current="page"] { outline: 2px solid var(--accent); outline-offset: 1px; }
+.directory-types { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin-bottom: 18px; }
+.directory-types button { padding-inline: 6px; }
+.directory-field { display: grid; gap: 6px; margin: 14px 0; color: var(--muted); font-size: 12px; }
+.directory-field select, .directory-field input, .question-jump input { width: 100%; min-width: 0; min-height: 44px; color: var(--ink); }
+.directory-field select { font-size: 12px; }
+.question-jump { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px; margin-top: 18px; font-size: 13px; }
+.directory-filter { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; font-size: 12px; color: var(--muted); }
+.directory-filter label { display: flex; align-items: center; gap: 8px; }
+.directory-filter select { width: auto; font-size: 12px; }
+.directory-error { color: #9e4d43; font-size: 13px; margin-top: 10px; }
+.directory-empty { text-align: center; color: var(--muted); padding: 20px 0; font-size: 13px; }
+.directory-pages, .directory-history { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 11px; color: var(--muted); }
+.directory-history { border-top: 1px solid var(--line); margin-top: 10px; padding-top: 8px; }
+.directory-history > button { padding: 6px 0; min-width: 66px; font-size: 12px; }
+.directory-entry { width: 100%; margin-top: 10px; }
+.bank-count { margin-left: 10px; color: var(--muted); font-size: 12px; font-weight: 400; }
+.source-image { margin: 0 0 20px; }
+.source-image .math-source { margin: 0; }
+.source-image .math-image-button { position: relative; }
+.source-focus { position: absolute; left: 0; width: 100%; border-left: 3px solid #478b7d; background: #70bba309; pointer-events: none; }
+.source-image figcaption { color: var(--muted); font-size: 10px; margin-top: 6px; }
+.reading-passage-scroll .source-image { width: var(--reading-image-width); }
+.question-history { border-top: 1px solid var(--line); margin: 20px 0; padding-top: 14px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.question-history > strong, .question-history > span { display: block; font-weight: 400; }
+.question-history > span { font-size: 11px; }
+.question-history > p { margin-top: 10px; overflow-wrap: anywhere; }
+.passage-sentence { display: inline; border: 0; background: transparent; font: inherit; color: inherit; text-align: left; padding: 2px 0; border-radius: 3px; min-height: 0; }
+.passage-sentence.chosen { color: #256c5e; background: #e0f0e9; }
+.sentence-selection { padding: 12px; background: #f3f7f5; font-family: var(--word-font); font-size: var(--reading-size); line-height: 1.7; color: var(--muted); }
+.question-header > div { min-width: 0; padding-inline: 4px; }
+.question-header > div > span { display: block; overflow-wrap: anywhere; font-size: 10px; }
 @media (max-width: 350px) {
   .practice-home, .question-body { padding-inline: 14px; }
   .practice-type { padding-inline: 11px; }
