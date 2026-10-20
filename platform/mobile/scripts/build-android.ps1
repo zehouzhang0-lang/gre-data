@@ -105,6 +105,8 @@ try {
     }
     & node 'scripts/verify-pronunciation.mjs'
     Assert-Exit 'Verify offline pronunciation coverage and file integrity'
+    & node 'scripts/export-practice.mjs'
+    Assert-Exit 'Export offline question bank and existing practice history'
     & npm.cmd run build
     Assert-Exit 'Build offline web resources'
     & npx.cmd cap sync android

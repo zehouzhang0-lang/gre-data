@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { Component, lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
 import useRepository from './useRepository';
 import { useBackAction, useBackBridge } from './useBack';
 import { BottomNav, Icon } from './components/Primitives';
@@ -7,10 +7,24 @@ import Review from './components/Review';
 import Settings from './components/Settings';
 import WordSession from './components/WordSession';
 
+const Practice = lazy(() => import('./components/Practice'));
+class PracticeBoundary extends Component {
+  state = { error: null };
+  static getDerivedStateFromError(error) { return { error }; }
+  render() {
+    if (!this.state.error) return this.props.children;
+    return <section className="screen" hidden={!this.props.active}><div className="empty">
+      <h2>刷题页面暂时无法打开</h2><p role="alert">{this.state.error.message}</p>
+      <button onClick={() => location.reload()}>重新打开</button>
+    </div></section>;
+  }
+}
+
 export default function App() {
   const { state, repo, refresh, error, slow } = useRepository();
   const [tab, setTab] = useState('wall'), [session, setSession] = useState(null), [selecting, setSelecting] = useState(false);
   const [busy, setBusy] = useState(false), [toast, setToast] = useState(null), [version, setVersion] = useState(0);
+  const [practiceOpened, setPracticeOpened] = useState(false);
   const guard = useRef(false), toastTimer = useRef(null);
   useBackBridge();
   useBackAction(() => setTab('wall'), tab !== 'wall' && !session, 20);
@@ -19,6 +33,7 @@ export default function App() {
     if (!isError) toastTimer.current = setTimeout(() => setToast(null), undo ? 8500 : 4500);
   }, []);
   useEffect(() => () => clearTimeout(toastTimer.current), []);
+  useEffect(() => { if (tab === 'practice') setPracticeOpened(true); }, [tab]);
   const mutate = useCallback(async (operation, message) => {
     if (guard.current) return false;
     guard.current = true; setBusy(true);
@@ -40,9 +55,14 @@ export default function App() {
   return <div className="app-shell" data-version={version}>
     <WordWall key={`wall-${version}`} state={state} repo={repo} busy={busy} active={tab === 'wall' && !session} mutate={mutate} notify={notify} onSelectionMode={setSelecting} onStartReview={start}/>
     <Review key={`review-${version}`} state={state} active={tab === 'review' && !session} onStart={start} onResume={resume} onWall={() => setTab('wall')}/>
+    {(practiceOpened || tab === 'practice') && <PracticeBoundary active={tab === 'practice' && !session}>
+      <Suspense fallback={tab === 'practice' && !session ? <section className="screen"><div className="empty" role="status">正在打开刷题…</div></section> : null}>
+        <Practice active={tab === 'practice' && !session} notify={notify}/>
+      </Suspense>
+    </PracticeBoundary>}
     <Settings key={`settings-${version}`} state={state} repo={repo} active={tab === 'settings' && !session} busy={busy} mutate={mutate} notify={notify} onRestored={restored}/>
     {session && <WordSession key={session.key} state={state} repo={repo} initialWords={session.words} initialCount={session.initialCount} initialSession={session.round} refresh={refresh} onExit={() => { setSession(null); refresh().catch(e => notify(e.message, true)); }} notify={notify}/>}
-    {!session && !selecting && <BottomNav tab={tab} onChange={setTab}/>}
+    {!session && !selecting && <BottomNav tab={tab} onChange={setTab} practice/>}
     {toast && <div className={`toast ${toast.isError ? 'error-toast' : ''}`} role={toast.isError ? 'alert' : 'status'}><span>{toast.message}</span>{toast.undo && state.undoId && <button disabled={busy} onClick={() => mutate(() => repo.undoQuickReview(), '已撤销上次标记')}>撤销</button>}<button className="toast-close" aria-label="关闭提示" onClick={() => setToast(null)}><Icon name="close" size={16}/></button></div>}
   </div>;
 }

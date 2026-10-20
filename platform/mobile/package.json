@@ -1,6 +1,6 @@
 {
   "name": "gre-vocabulary-offline",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -9,6 +9,9 @@
   "scripts": {
     "preview:practice": "vite --config preview/vite.config.js",
     "dev": "vite --host 127.0.0.1",
+    "practice:export": "node scripts/export-practice.mjs",
+    "practice:verify": "node scripts/verify-practice.mjs",
+    "prebuild": "npm run practice:verify",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/*.test.mjs",

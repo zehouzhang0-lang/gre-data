@@ -72,6 +72,18 @@
 
 ## 核心原则
 
+### Android 离线刷题（2026-10-21，0.2.0）
+
+题库与学习记录分开保存。`platform/mobile/public/practice/` 是忽略的个人安装包资源，由仓库现有题库索引、PDF、参考答案和真实作答派生；不向 Git 提交重复的整库正文或图片。`manifest.json` 使用 `format: gre-practice-bank`、`version: 1`，保留内容 revision、四类 catalog、原题 key、content_id、详情路径、来源 PDF 与索引哈希及逐文件 SHA-256/字节数。详情保留原题输入方式、选项组、原文、来源定位和 `answerKey`；不能安全抽取的区域随包预渲染，数学采用完整原页以保留图表。没有参考答案使用 null，不生成答案或解析。
+
+`history.json` 只携带原有 `attempt` / `attempts_import` 完整事件和旧训练引用。手机首次打开刷题时按原 ID 幂等接入；以后内容包升级仍只合并新增事实，同 ID 不同内容时停止合并并保留本地数据。旧训练引用不制造新的 attempt。原题号和相同内容的完成状态分开；浏览、导航、字体与分屏设置不算作答。
+
+Android 使用独立 `PracticeStorage` 插件和 `gre-practice.sqlite`，浏览器使用独立 `gre-practice-mobile` IndexedDB。沿用 SQLite 分块事务保存的可靠性，不改 `gre-vocabulary.sqlite`、词汇 dataset_id、词汇事件、词义版本、备份格式或恢复快照。格式为 `{format:'gre-practice-storage',version:1,dataset_id,seed_revisions,events,legacy,drafts,draft_heads,preferences}`；未知版本或损坏文档拒绝覆盖。
+
+草稿保存原选择数组、原题 key、草稿/会话 ID、是否重做及更新时间。仅显式“保存答案”且持久化事务成功后追加一次 attempt；重复提交同一草稿会话不增加次数。手机事件保留原有 attempt payload，并用 `practice` 保存草稿来源、题库版本、原题来源快照、选项、提交时参考答案及有限核对结果。原答案、来源和结果不被后来内容更新覆写；没有答案或无法可靠比较时 result 为 null，用户提供的参考答案不升级为 ETS 官方答案。已做题只读，显式重做另建草稿。
+
+刷题备份独立使用 `{format:'gre-practice-backup',version:1,created_at,checksum,payload}`，SHA-256 校验 payload JSON UTF-8 字节，文件最多20 MB。导入先预览，只合并按 ID 去重的作答、旧训练引用和草稿，保留本机已有记录与正在编辑的草稿；同 ID 内容冲突整批拒绝。原词汇备份仍从原入口单独导入/导出，不把题库图片或作答塞进词汇事件，不自动双向同步电脑。
+
 ### 间隔复习投影（2026-09-15）
 
 `platform/server/spaced-review.mjs` 从已有回忆、题目作答和旧训练证据派生 `spacedReview`，不创建虚构复习事件，也不覆写掌握度。完成的词汇轮次使用 `vocab_recall`，新做题继续使用 `attempt` / `attempts_import`；普通练习和复习入口共享计数与日程。开轮及未完成的小练习不记为已完成复习。

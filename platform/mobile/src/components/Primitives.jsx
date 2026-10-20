@@ -45,8 +45,8 @@ export function Confirm({ title, children, action = '确认', onConfirm, onClose
   return <Sheet title={title} onClose={busy ? () => {} : onClose} footer={<><button disabled={busy} onClick={onClose}>取消</button><button className={danger ? 'danger' : 'primary'} disabled={busy} onClick={onConfirm}>{busy ? '处理中…' : action}</button></>}><div className="confirm-copy">{children}</div></Sheet>;
 }
 export function Empty({ title = '没有匹配的单词', children }) { return <div className="empty"><h2>{title}</h2>{children}</div>; }
-export function BottomNav({ tab, onChange, practicePreview = false }) {
-  const items = [['wall', 'book', '词库'], ['review', 'history', '复习'], ...(practicePreview ? [['practice', 'practice', '刷题']] : []), ['settings', 'settings', '设置']];
-  return <nav className="bottom-nav" aria-label="主要导航">{items.map(([id, icon, text]) => <button key={id} aria-current={tab === id ? 'page' : undefined} className={tab === id ? 'active' : ''} onClick={() => onChange(id)}><Icon name={icon} size={25}/><span>{text}</span></button>)}</nav>;
+export function BottomNav({ tab, onChange, practicePreview = false, practice = false }) {
+  const items = [['wall', 'book', '词库'], ['review', 'history', '复习'], ...(practice || practicePreview ? [['practice', 'practice', '刷题']] : []), ['settings', 'settings', '设置']];
+  return <nav className="bottom-nav" style={{ gridTemplateColumns: `repeat(${items.length}, 1fr)` }} aria-label="主要导航">{items.map(([id, icon, text]) => <button key={id} aria-current={tab === id ? 'page' : undefined} className={tab === id ? 'active' : ''} onClick={() => onChange(id)}><Icon name={icon} size={25}/><span>{text}</span></button>)}</nav>;
 }
 export function Pager({ page, pages, onChange, count }) { return <nav className="pager" aria-label="单词分页"><button disabled={page === 0} onClick={() => onChange(page - 1)}>上一页</button><span>{page + 1} / {pages}<small>{count} 张卡片</small></span><button disabled={page >= pages - 1} onClick={() => onChange(page + 1)}>下一页</button></nav>; }
