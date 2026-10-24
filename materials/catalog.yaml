@@ -29,6 +29,16 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: handwritten_vocab_20261024
+    title: "2026-10-24 手写词汇（5页）"
+    filename: null
+    sha256: null
+    role: user_vocabulary_notes
+    answer_status: not_applicable
+    description: "139词：41个新词、98个已有词，其中92词为昨日三页重拍；不计复习或掌握。"
+    record: vocab/imports/20261024_1708_handwritten_vocab.json
+    image_count: 5
+    original_storage: user_supplied_chat_attachments_not_committed
   - id: handwritten_vocab_20261023
     title: "2026-10-23 手写词汇（3页）"
     filename: null

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23",
+  "updated_at": "2026-10-24",
   "topics": [
     {
       "id": "mood",
@@ -130,7 +130,15 @@
         "sate",
         "skittish",
         "startle",
-        "startling"
+        "startling",
+        "agitate",
+        "sinister",
+        "exuberant",
+        "bravado",
+        "jovial",
+        "testy",
+        "beguile",
+        "agog"
       ]
     },
     {
@@ -347,7 +355,17 @@
         "posture",
         "skittish",
         "tactful",
-        "voyeur"
+        "voyeur",
+        "sinister",
+        "magisterial",
+        "bravado",
+        "jovial",
+        "insolent",
+        "facile",
+        "sordid",
+        "unseemly",
+        "mutable",
+        "testy"
       ]
     },
     {
@@ -463,7 +481,14 @@
         "laud",
         "ministration",
         "tactful",
-        "voyeur"
+        "voyeur",
+        "agitate",
+        "jovial",
+        "insolent",
+        "unseemly",
+        "parley",
+        "compatible",
+        "beguile"
       ]
     },
     {
@@ -592,7 +617,11 @@
         "enmity",
         "fortify",
         "invasive",
-        "usurp"
+        "usurp",
+        "compulsory",
+        "boycott",
+        "annex",
+        "parley"
       ]
     },
     {
@@ -816,7 +845,17 @@
         "sophist",
         "sophistry",
         "telling",
-        "vindicate"
+        "vindicate",
+        "fathom",
+        "dismiss",
+        "facile",
+        "adduce",
+        "consilience",
+        "clear-cut",
+        "compatible",
+        "augur",
+        "discount",
+        "riddle"
       ]
     },
     {
@@ -1024,7 +1063,16 @@
         "sophist",
         "sophistry",
         "telling",
-        "voluminous"
+        "voluminous",
+        "figurative",
+        "pithy",
+        "propaganda",
+        "insolent",
+        "facile",
+        "adduce",
+        "parley",
+        "skim",
+        "riddle"
       ]
     },
     {
@@ -1154,7 +1202,8 @@
         "obsolete",
         "outmode",
         "undo",
-        "weather"
+        "weather",
+        "mutable"
       ]
     },
     {
@@ -1236,7 +1285,13 @@
         "commensurable",
         "commensurate",
         "magnify",
-        "voluminous"
+        "voluminous",
+        "fathom",
+        "exuberant",
+        "preeminent",
+        "plethora",
+        "superfluous",
+        "superfluity"
       ]
     },
     {
@@ -1312,7 +1367,9 @@
         "incessant",
         "obsolete",
         "outmode",
-        "shelve"
+        "shelve",
+        "senescence",
+        "beguile"
       ]
     },
     {
@@ -1378,7 +1435,11 @@
         "echo",
         "clangorous",
         "fusty",
-        "weather"
+        "weather",
+        "mogul",
+        "sordid",
+        "annex",
+        "clear-cut"
       ]
     },
     {
@@ -1445,7 +1506,12 @@
         "hereditary",
         "invasive",
         "nettle",
-        "ore"
+        "ore",
+        "senescence",
+        "segregate",
+        "exuberant",
+        "pithy",
+        "mutable"
       ]
     },
     {
@@ -1524,7 +1590,9 @@
         "fortify",
         "invasive",
         "languid",
-        "posture"
+        "posture",
+        "senescence",
+        "analgesic"
       ]
     },
     {
@@ -1623,7 +1691,12 @@
         "coagulate",
         "dilute",
         "disintegrate",
-        "fortify"
+        "fortify",
+        "shear",
+        "clear-cut",
+        "skim",
+        "compatible",
+        "riddle"
       ]
     },
     {
@@ -1747,7 +1820,17 @@
         "oversight",
         "protocol",
         "usurp",
-        "vindicate"
+        "vindicate",
+        "compulsory",
+        "segregate",
+        "magisterial",
+        "dismiss",
+        "boycott",
+        "preeminent",
+        "propaganda",
+        "mogul",
+        "annex",
+        "augur"
       ]
     },
     {
@@ -1807,7 +1890,13 @@
         "derivative",
         "endow",
         "ore",
-        "pecuniary"
+        "pecuniary",
+        "boycott",
+        "mogul",
+        "sordid",
+        "superfluity",
+        "skim",
+        "discount"
       ]
     },
     {
@@ -1890,7 +1979,9 @@
         "comical",
         "diverting",
         "derivative",
-        "eclectic"
+        "eclectic",
+        "figurative",
+        "exuberant"
       ]
     },
     {
@@ -2055,7 +2146,17 @@
         "self-defeating",
         "shelve",
         "sift",
-        "undo"
+        "undo",
+        "hew",
+        "agitate",
+        "compulsory",
+        "segregate",
+        "shear",
+        "dismiss",
+        "annex",
+        "clear-cut",
+        "skim",
+        "riddle"
       ]
     },
     {
@@ -2069,7 +2170,8 @@
         "quaff",
         "abstemious",
         "coddle",
-        "sate"
+        "sate",
+        "skim"
       ]
     }
   ],
@@ -11310,6 +11412,153 @@
           "checked_at": "2026-10-23",
           "status": "checked",
           "evidence": "已读取名词和形容词条目，核对拥护者、黏附及契约关联义。"
+        }
+      ]
+    },
+    {
+      "id": "curated-20261024-concise",
+      "type": "synonym",
+      "title": "简练与言简意赅",
+      "note": "pithy 强调表达简短而有实质内容；terse 强调简练，有时显得简短生硬。不能把所有简短回答都理解为言之有物。 关系只适用于所述义项，不代表 SE 整句自动等价。",
+      "members": [
+        {
+          "word": "pithy",
+          "usage": "简练而有力、言简意赅",
+          "example": ""
+        },
+        {
+          "word": "terse",
+          "usage": "简短、简练；有时显得生硬",
+          "example": ""
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pithy",
+          "checked_at": "2026-10-24",
+          "status": "dictionary_checked",
+          "evidence": "词条区分富含髓质与简短而切题有力两义，辨析强调表达的实质内容。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/terse",
+          "checked_at": "2026-10-24",
+          "status": "checked",
+          "evidence": "本次实际读取词典条目，核对本批关联辨析；既有词条释义与核验日期不改写。"
+        }
+      ]
+    },
+    {
+      "id": "curated-20261024-excess",
+      "type": "lookalike",
+      "title": "多余的与多余之物",
+      "note": "superfluous 是形容词，说明超过所需；superfluity 是名词，可指过剩的数量或多余之物。 关系只适用于所述义项，不代表 SE 整句自动等价。",
+      "members": [
+        {
+          "word": "superfluous",
+          "usage": "多余的、不必要的",
+          "example": ""
+        },
+        {
+          "word": "superfluity",
+          "usage": "过量、过剩；多余之物",
+          "example": ""
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/superfluous",
+          "checked_at": "2026-10-24",
+          "status": "dictionary_checked",
+          "evidence": "形容词的现用义包括超出足够或必要数量，以及没有必要；挥霍义被标为废用。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/superfluity",
+          "checked_at": "2026-10-24",
+          "status": "dictionary_checked",
+          "evidence": "名词包括供应过剩、不必要的物品以及放纵尤其奢华的生活习惯或欲望。"
+        }
+      ]
+    },
+    {
+      "id": "curated-20261024-guile",
+      "type": "lookalike",
+      "title": "狡诈与诱骗",
+      "note": "guile 是名词，指欺骗性的狡诈；beguile 是动词，可指诱骗，也可指吸引或愉快地消磨时间，后两义不必含欺诈。 关系只适用于所述义项，不代表 SE 整句自动等价。",
+      "members": [
+        {
+          "word": "guile",
+          "usage": "狡诈、诡计",
+          "example": ""
+        },
+        {
+          "word": "beguile",
+          "usage": "诱骗；使着迷；消磨时间",
+          "example": ""
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/guile",
+          "checked_at": "2026-10-24",
+          "status": "checked",
+          "evidence": "本次实际读取词典条目，核对本批关联辨析；既有词条释义与核验日期不改写。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/beguile",
+          "checked_at": "2026-10-24",
+          "status": "dictionary_checked",
+          "evidence": "动词包含欺骗或诱导、使人感兴趣，以及以愉快活动消磨时间或排遣烦闷；词源说明确认现代迷人义不必含恶意。"
+        }
+      ]
+    },
+    {
+      "id": "curated-20261024-puzzle",
+      "type": "synonym",
+      "title": "谜与难题",
+      "note": "两词在令人困惑的问题这一名词义上可重叠。riddle 还可指供人猜解的谜语；conundrum 常指复杂难题或困境，其双关谜语义带古旧色彩。 关系只适用于所述义项，不代表 SE 整句自动等价。",
+      "members": [
+        {
+          "word": "riddle",
+          "usage": "谜语；难解之谜",
+          "example": ""
+        },
+        {
+          "word": "conundrum",
+          "usage": "复杂难题、困境",
+          "example": ""
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/riddle",
+          "checked_at": "2026-10-24",
+          "status": "dictionary_checked",
+          "evidence": "名词分别有谜语、难懂人事和粗筛；动词分别有解释或出谜、筛分、穿出许多孔洞及遍布。"
+        },
+        {
+          "publisher": "Dictionary.com",
+          "url": "https://www.dictionary.com/browse/riddle",
+          "checked_at": "2026-10-24",
+          "status": "checked",
+          "evidence": "独立复核动词出谜、解谜用法；出谜或谜样表达不常用，解谜义不泛化为任意解释。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conundrum",
+          "checked_at": "2026-10-24",
+          "status": "checked",
+          "evidence": "本次实际读取词典条目，核对本批关联辨析；既有词条释义与核验日期不改写。"
         }
       ]
     }
