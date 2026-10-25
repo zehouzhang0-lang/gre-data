@@ -1,0 +1,6148 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-25T14:51:31.423Z",
+  "date": "2026-10-25",
+  "time_zone": "Asia/Kuala_Lumpur",
+  "material_id": "handwritten_vocab_20261025",
+  "source_kind": "user_handwritten_notes",
+  "counts": {
+    "handwritten_occurrences": 98,
+    "transcribed_occurrences": 97,
+    "handwritten_unique": 97,
+    "within_batch_repeats": 0,
+    "handwritten_new": 78,
+    "handwritten_existing": 19,
+    "new_senses": 232,
+    "relation_groups_added": 6,
+    "pending_transcriptions": 1
+  },
+  "images": [
+    {
+      "image": 1,
+      "filename": "codex-clipboard-43dd4065-a41c-4623-9e82-21fcbd19441e.jpg",
+      "sha256": "9324acb400d294ec8fc3dbc4be478fcb5e2efc54ffd1ba998e8a9c946178f367",
+      "transcribed_count": 7,
+      "pending_count": 0
+    },
+    {
+      "image": 2,
+      "filename": "codex-clipboard-9b87ea09-27b2-4a9f-9e58-51a0f3a9e331.jpg",
+      "sha256": "0b573ec81c12749171c7950176b4a220b015e99bd1935c2e365914095d6d1e10",
+      "transcribed_count": 32,
+      "pending_count": 1
+    },
+    {
+      "image": 3,
+      "filename": "codex-clipboard-ff591bac-c65b-4425-904c-cb9f25f29d86.jpg",
+      "sha256": "7b9606a3e630195f87bb4b5675d1808df75bf37f6f124ca747f58fd3ea58d3b6",
+      "transcribed_count": 27,
+      "pending_count": 0
+    },
+    {
+      "image": 4,
+      "filename": "codex-clipboard-fd359ddc-63c2-405a-a294-6336d14d41ac.jpg",
+      "sha256": "13571cdfcc86861f6187dbb16edb5f3080110a5caca42289bc6f06c132a1ec46",
+      "transcribed_count": 31,
+      "pending_count": 0
+    }
+  ],
+  "confirmed_transcriptions": [
+    {
+      "surface": "elucidate",
+      "word": "elucidate",
+      "image": 1,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "elusive",
+      "word": "elusive",
+      "image": 1,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "rehabilitate",
+      "word": "rehabilitate",
+      "image": 1,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "episodic",
+      "word": "episodic",
+      "image": 1,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "phlegmatic",
+      "word": "phlegmatic",
+      "image": 1,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "retinue",
+      "word": "retinue",
+      "image": 1,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "brash",
+      "word": "brash",
+      "image": 1,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "latitude",
+      "word": "latitude",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "leeway",
+      "word": "leeway",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "analogy",
+      "word": "analogy",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "imperceptible",
+      "word": "imperceptible",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "exhale",
+      "word": "exhale",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "decay",
+      "word": "decay",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "observation",
+      "word": "observation",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "labyrinth",
+      "word": "labyrinth",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "lurch",
+      "word": "lurch",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "inveigle",
+      "word": "inveigle",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "swindle",
+      "word": "swindle",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "salutary",
+      "word": "salutary",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "adversarial",
+      "word": "adversarial",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "overbearing",
+      "word": "overbearing",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "fragile",
+      "word": "fragile",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "repeal",
+      "word": "repeal",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "lukewarm",
+      "word": "lukewarm",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "virtue",
+      "word": "virtue",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "venerate",
+      "word": "venerate",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "sycophantic",
+      "word": "sycophantic",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "retreat",
+      "word": "retreat",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "pilfer",
+      "word": "pilfer",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "pastoral",
+      "word": "pastoral",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "interdisciplinary",
+      "word": "interdisciplinary",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "obtuse",
+      "word": "obtuse",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "glorify",
+      "word": "glorify",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "trite",
+      "word": "trite",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "immure",
+      "word": "immure",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "vigilant",
+      "word": "vigilant",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "eject",
+      "word": "eject",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "extraneous",
+      "word": "extraneous",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "insidious",
+      "word": "insidious",
+      "image": 2,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "substantiate",
+      "word": "substantiate",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "unflagging",
+      "word": "unflagging",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "utilitarian",
+      "word": "utilitarian",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "unsophisticated",
+      "word": "unsophisticated",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "fidelity",
+      "word": "fidelity",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "venal",
+      "word": "venal",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "feign",
+      "word": "feign",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "hypocrisy",
+      "word": "hypocrisy",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "flabbergast",
+      "word": "flabbergast",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "sound",
+      "word": "sound",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "scaremonger",
+      "word": "scaremonger",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "culminate",
+      "word": "culminate",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "invalidate",
+      "word": "invalidate",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "retract",
+      "word": "retract",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "synoptic",
+      "word": "synoptic",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "vortex",
+      "word": "vortex",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "overreach",
+      "word": "overreach",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "stump",
+      "word": "stump",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "fealty",
+      "word": "fealty",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "stem",
+      "word": "stem",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "suffocate",
+      "word": "suffocate",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "respire",
+      "word": "respire",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "adjunct",
+      "word": "adjunct",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "platitudinous",
+      "word": "platitudinous",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "untrammeled",
+      "word": "untrammeled",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "eclipse",
+      "word": "eclipse",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "flippant",
+      "word": "flippant",
+      "image": 3,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "melodramatic",
+      "word": "melodramatic",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "hard-boiled",
+      "word": "hard-boiled",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "appeal",
+      "word": "appeal",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "modicum",
+      "word": "modicum",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "fleet",
+      "word": "fleet",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "fleeting",
+      "word": "fleeting",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "corrode",
+      "word": "corrode",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "momentum",
+      "word": "momentum",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "invert",
+      "word": "invert",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "staid",
+      "word": "staid",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "consternation",
+      "word": "consternation",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "hurtle",
+      "word": "hurtle",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "preliminary",
+      "word": "preliminary",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "fauna",
+      "word": "fauna",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "arable",
+      "word": "arable",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "hard-wringing",
+      "word": "hand-wringing",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "wring",
+      "word": "wring",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "wringing",
+      "word": "wringing",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "misgiving",
+      "word": "misgiving",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "misgive",
+      "word": "misgive",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "prepossessing",
+      "word": "prepossessing",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "precipitate",
+      "word": "precipitate",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "cliché",
+      "word": "cliché",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "inconsequential",
+      "word": "inconsequential",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "telltale",
+      "word": "telltale",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "hazard",
+      "word": "hazard",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "terrific",
+      "word": "terrific",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "lymphatic",
+      "word": "lymphatic",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "occlude",
+      "word": "occlude",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "tourniquet",
+      "word": "tourniquet",
+      "image": 4,
+      "status": "visually_transcribed"
+    },
+    {
+      "surface": "venous",
+      "word": "venous",
+      "image": 4,
+      "status": "visually_transcribed"
+    }
+  ],
+  "definition_policy": "四页逐项转录，97词确认，1项字迹不清隔离待确认。78个新词按实际读取的权威词典整理词性、核心义、语体与分类；未提供完整ETS题目语境，不声称官方语境核验。19个旧词仅追加本批照片来源，保留规范释义、原例句、历史核验日期、笔记、分类及学习证据。新义项未取得可追溯ETS/Oxford原例句，全部留null，不自编；照片未提供完整原句，本批original_context=null。",
+  "items": [
+    {
+      "surface": "elucidate",
+      "word": "elucidate",
+      "image": 1,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.阐明，解释清楚",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "阐明，解释清楚"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "reason"
+      ],
+      "original_context": null,
+      "note": "侧重通过解释或分析使原本不清楚的内容变得明白。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/elucidate",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "核对通过解释或分析使内容清楚的动词义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "elusive",
+      "word": "elusive",
+      "image": 1,
+      "action": "existing_source_appended",
+      "pos": "adj.",
+      "meaning": "adj.难以抓住、找到的；难以理解、界定的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "难以抓住、找到的",
+            "难以理解、界定的"
+          ],
+          "examples": [
+            {
+              "en": "Eric, as elusive as ever, was nowhere to be found.",
+              "zh": "埃里克像往常一样行踪不定，哪儿也找不到。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/elusive",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "action"
+      ],
+      "original_context": null,
+      "note": "侧重对象难以捕捉或界定；不必含有故意回避。与 evasive 不能只因中文都含“躲避”而混用。 语体／色彩：中性",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/elusive",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "核对难抓住或追踪、难理解界定、难分离识别三类含义。"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "rehabilitate",
+      "word": "rehabilitate",
+      "image": 1,
+      "action": "existing_source_appended",
+      "pos": "v.",
+      "meaning": "v.使康复；使恢复正常生活；恢复名誉；修复",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使康复",
+            "使恢复正常生活",
+            "恢复名誉",
+            "修复"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "We must do more to rehabilitate young offenders.",
+              "zh": "我们必须加大力度，帮助少年犯重新融入社会。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/rehabilitate",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He played a major role in rehabilitating Magritte as an artist.",
+              "zh": "他在恢复马格利特的艺术家声誉方面发挥了重要作用。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/rehabilitate",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Billions of dollars are being spent on rehabilitating inner-city areas.",
+              "zh": "数十亿美元正用于修复城市的老旧中心区。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/rehabilitate",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "change"
+      ],
+      "original_context": null,
+      "note": "",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Oxford Learner’s Dictionaries",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/rehabilitate",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文并对照中文核心义；屈折形式按词元解释，罕见义保留用法限定。"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "episodic",
+      "word": "episodic",
+      "image": 1,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.间歇发生的，偶发的；由相对独立的片段组成的，分集的；局限于某次事件的，暂时的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "间歇发生的，偶发的",
+            "由相对独立的片段组成的，分集的",
+            "局限于某次事件的，暂时的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "time",
+        "arts",
+        "language"
+      ],
+      "original_context": null,
+      "note": "可说明事件发生方式或叙事结构；偶发义不表示按固定周期发生。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/episodic",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "核对间歇发生、由松散关联片段组成，以及限于一次事件的短暂义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "phlegmatic",
+      "word": "phlegmatic",
+      "image": 1,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.沉着冷静的，不易激动的；迟缓冷淡的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "沉着冷静的，不易激动的",
+            "迟缓冷淡的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "mood"
+      ],
+      "original_context": null,
+      "note": "既可侧重沉着，也可带有反应迟缓、冷淡之意；具体褒贬取决于语境。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/phlegmatic",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "核对不易被激起情绪，以及迟缓、冷淡的性情义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "retinue",
+      "word": "retinue",
+      "image": 1,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.随行人员，扈从",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "随行人员，扈从"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "social",
+        "society"
+      ],
+      "original_context": null,
+      "note": "是随重要人物同行的一群助手或侍从的集合称呼，不是单个仆人。",
+      "normalization_note": "规范为随行人员群体（集合名词），不是单个随从。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/retinue",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "核对作为集合名词的一群随行人员或侍从。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "brash",
+      "word": "brash",
+      "image": 1,
+      "action": "new",
+      "pos": "adj. / n.",
+      "meaning": "adj.鲁莽的，轻率的；傲慢无礼的，冒失的；精力旺盛而外露的；（声音）刺耳的；（颜色）鲜艳刺目的；（木材等）易碎的\nn.碎片堆，碎冰；（医学，见 water brash）唾液反流，吐酸水",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "鲁莽的，轻率的",
+            "傲慢无礼的，冒失的",
+            "精力旺盛而外露的",
+            "（声音）刺耳的",
+            "（颜色）鲜艳刺目的",
+            "（木材等）易碎的"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "碎片堆，碎冰",
+            "（医学，见 water brash）唾液反流，吐酸水"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "material",
+        "body"
+      ],
+      "original_context": null,
+      "note": "形容行为或态度时常含贬义。碎片和医学名词义与常用形容词义须分开理解；water brash 涉及大量唾液反流，常伴胃酸。",
+      "normalization_note": "手写“鲁莽、傲慢无礼”的词性应为 adj.，不是 v.；“胃热”不足以准确表示相关医学名词义。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/brash",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "核对鲁莽、冒失无礼、精力外露、刺耳、鲜艳、易碎等形容词义，碎片堆名词义及医学 water brash 的转介。"
+        },
+        {
+          "publisher": "Merriam-Webster Medical",
+          "url": "https://www.merriam-webster.com/medical/water%20brash",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "核对 water brash 是大量唾液反流，常伴有胃内酸性物质；不等于笼统的胃热。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "latitude",
+      "word": "latitude",
+      "image": 2,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.行动或选择的自由，回旋余地；纬度；纬度地带，地区；范围，幅度；（摄影）曝光宽容度",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "行动或选择的自由，回旋余地",
+            "纬度",
+            "纬度地带，地区",
+            "范围，幅度",
+            "（摄影）曝光宽容度"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "environment",
+        "quantity"
+      ],
+      "original_context": null,
+      "note": "抽象义侧重获准自由行动或选择的范围，可与 leeway 对照；地理义是纬度，不是经度。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/latitude",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "名词释义覆盖选择自由、地理纬度及地区、范围，以及摄影曝光容许范围。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "leeway",
+      "word": "leeway",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "n.",
+      "meaning": "n.余地；可自由调整的幅度；（船的）风致偏航",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "余地",
+            "可自由调整的幅度",
+            "（船的）风致偏航"
+          ],
+          "examples": [
+            {
+              "en": "How much leeway should parents give their children?",
+              "zh": "父母应该给孩子多大自由？",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/leeway",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "quantity"
+      ],
+      "original_context": null,
+      "note": "常用义是行动或变化的容许范围，不必是实际空房间。 语体／色彩：中性。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/leeway",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "已读取词条；核心义归纳：余地；可自由调整的幅度；（船的）风致偏航"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "analogy",
+      "word": "analogy",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "n.",
+      "meaning": "n.类比；相似关系；类推",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "类比",
+            "相似关系",
+            "类推"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "There are no analogies with any previous legal cases.",
+              "zh": "与以往任何法律案件都没有相似之处。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/analogy",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "We can understand this theory by analogy with human beings.",
+              "zh": "我们可以通过与人类进行类推来理解这一理论。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/analogy",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "original_context": null,
+      "note": "侧重两事物在某方面相似，据此解释或推理；不能单凭类比证明结论。 语体／色彩：中性。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/analogy",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：类比；相似关系；类推"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "imperceptible",
+      "word": "imperceptible",
+      "image": 2,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.难以察觉的，细微得几乎感觉不到的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "难以察觉的，细微得几乎感觉不到的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "quantity"
+      ],
+      "original_context": null,
+      "note": "常形容变化、差别或动作非常细微、缓慢，不能推导为完全不存在。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/imperceptible",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词指感官或思维不能察觉，或变化极细微、渐进而难以察觉。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "exhale",
+      "word": "exhale",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "v.",
+      "meaning": "v.呼出；散发气体或蒸气",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "呼出",
+            "散发气体或蒸气"
+          ],
+          "examples": [
+            {
+              "en": "He sat back and exhaled deeply.",
+              "zh": "他往后一靠，深深呼出一口气。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/exhale",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "body",
+        "action"
+      ],
+      "original_context": null,
+      "note": "核心方向是向外，与inhale相反。 语体／色彩：中性。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exhale",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：呼出；散发气体或蒸气"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "decay",
+      "word": "decay",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "v. / n.",
+      "meaning": "v.腐烂，腐朽；衰退；衰减\nn.腐烂；衰败；衰减",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "腐烂，腐朽",
+            "衰退",
+            "衰减"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "腐烂",
+            "衰败",
+            "衰减"
+          ],
+          "examples": [
+            {
+              "en": "The decay of the wood will spread if it is not removed.",
+              "zh": "木材的腐烂部分若不移除，腐烂就会蔓延。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/decay_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            {
+              "en": "Radioactive decay happens at a constant rate regardless of exposure to air.",
+              "zh": "放射性衰变以恒定速率发生，与是否暴露于空气无关。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/decay_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "change",
+        "nature"
+      ],
+      "original_context": null,
+      "note": "用户确认手写原意为decay；decade是十年，不能用作腐烂。 语体／色彩：通常负面。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/decay",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 腐烂，腐朽；衰退；衰减；n. 腐烂；衰败；衰减"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "observation",
+      "word": "observation",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "n.",
+      "meaning": "n.观察；观察所得；评论，意见；遵守",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "观察",
+            "观察所得",
+            "评论，意见",
+            "遵守"
+          ],
+          "examples": [
+            {
+              "en": "Most information was collected by direct observation of the animals' behaviour.",
+              "zh": "大多数信息是通过直接观察动物行为收集的。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/observation",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "More recent evidence supports this observation in other species.",
+              "zh": "更新的证据表明，这一观察结果在其他物种中也成立。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Learner’s Dictionary of Academic English",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/academic/observation",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "She has some interesting observations on possible future developments.",
+              "zh": "她对未来可能的发展提出了一些有趣的看法。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/observation",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "original_context": null,
+      "note": "发表一条observation可指评论，而非一次观看动作。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/observation",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：观察；观察所得；评论，意见；遵守"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "labyrinth",
+      "word": "labyrinth",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "n.",
+      "meaning": "n.迷宫；错综复杂的体系",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "迷宫",
+            "错综复杂的体系"
+          ],
+          "examples": [
+            {
+              "en": "We lost our way in the labyrinth of streets.",
+              "zh": "我们在迷宫般的街道中迷路了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/labyrinth",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "environment",
+        "reason"
+      ],
+      "original_context": null,
+      "note": "题中是实验迷宫；比喻义可描述制度或问题错综复杂。 语体/色彩：中性或带复杂难解之感。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/labyrinth",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "lurch",
+      "word": "lurch",
+      "image": 2,
+      "action": "new",
+      "pos": "v. / n.",
+      "meaning": "v.突然摇晃或倾斜；踉跄而行，蹒跚移动\nn.突然的晃动或倾斜；（克里比奇牌戏等）悬殊比分的惨败",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "突然摇晃或倾斜",
+            "踉跄而行，蹒跚移动"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "突然的晃动或倾斜",
+            "（克里比奇牌戏等）悬殊比分的惨败"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "conflict"
+      ],
+      "original_context": null,
+      "note": "leave somebody in the lurch 表示在他人需要帮助时弃之不顾；“惨败”是词典所列的特定牌戏义，不能把 lurch 泛译为任何挫折。",
+      "normalization_note": "手写中的“挫折、惨败”不可作通用义；惨败仅保留有词典依据的牌戏语域，困境用法另在短语说明中交代。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lurch",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "核对动词突然摇晃、踉跄移动及对应名词；另一个名词词条的惨败义有牌戏语域限制。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/in%20the%20lurch",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "短语表示处于脆弱而无人援助的处境，核对 leave somebody in the lurch 的说明。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "inveigle",
+      "word": "inveigle",
+      "image": 2,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.诱骗，哄劝；靠花言巧语或奉承取得",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "诱骗，哄劝",
+            "靠花言巧语或奉承取得"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "social",
+        "language"
+      ],
+      "original_context": null,
+      "note": "强调用诱惑、巧言或奉承让人同意，或由此取得好处；不同于直接强迫。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inveigle",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "及物动词分为以诡计或诱惑说服，以及巧言取得某物两类。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "swindle",
+      "word": "swindle",
+      "image": 2,
+      "action": "new",
+      "pos": "v. / n.",
+      "meaning": "v.诈骗，骗取（钱财）\nn.骗局，诈骗行为",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "诈骗，骗取（钱财）"
+          ],
+          "examples": [
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "骗局，诈骗行为"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "economy",
+        "conflict"
+      ],
+      "original_context": null,
+      "note": "通常涉及通过欺诈取得他人的钱财或财产，不泛指所有不真实的话。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/swindle",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "动词指通过欺诈取得钱财或剥夺他人财产；名词指诈骗行为或骗局。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "salutary",
+      "word": "salutary",
+      "image": 2,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.有益的，有改善作用的；有益健康的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "有益的，有改善作用的",
+            "有益健康的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "body"
+      ],
+      "original_context": null,
+      "note": "教训或警告即使令人不快，也可因带来纠正、改善作用而称为 salutary。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/salutary",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词既指带来有益或补救效果，也指有益健康。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "adversarial",
+      "word": "adversarial",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "adj.",
+      "meaning": "adj.对抗的；双方相互对立的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "对抗的",
+            "双方相互对立的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "conflict",
+        "social"
+      ],
+      "original_context": null,
+      "note": "常描述利益对立或辩论制度；未必表示个人仇恨。 语体/色彩：中性或负向，依关系而定。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/adversarial",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "overbearing",
+      "word": "overbearing",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "adj.",
+      "meaning": "adj.专横的，盛气凌人的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "专横的，盛气凌人的"
+          ],
+          "examples": [
+            {
+              "en": "She found him rude and overbearing.",
+              "zh": "她觉得他粗鲁而且盛气凌人。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overbearing",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "social"
+      ],
+      "original_context": null,
+      "note": "独立形容词，重在试图支配别人。",
+      "normalization_note": "手写“压倒、击败”是 overbear 的动词义；本条沿用词库中 overbearing 的形容词释义，不把现在分词当作新的基本动词词性。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/overbearing",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：专横的，盛气凌人的"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "fragile",
+      "word": "fragile",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "adj.",
+      "meaning": "adj.易碎的；脆弱的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "易碎的",
+            "脆弱的"
+          ],
+          "examples": [
+            {
+              "en": "Be careful not to drop it; it’s very fragile.",
+              "zh": "当心别摔了；它很容易碎。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fragile",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The economy remains extremely fragile.",
+              "zh": "经济仍然极其脆弱。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fragile",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "social",
+        "material"
+      ],
+      "original_context": null,
+      "note": "既可形容实物，也可形容关系或制度。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fragile",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：易碎的；脆弱的"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "repeal",
+      "word": "repeal",
+      "image": 2,
+      "action": "new",
+      "pos": "v. / n.",
+      "meaning": "v.废除，撤销（法律、条例等）；放弃，取消\nn.废除，撤销",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "废除，撤销（法律、条例等）",
+            "放弃，取消"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "废除，撤销"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "society",
+        "action"
+      ],
+      "original_context": null,
+      "note": "法律语境强调由有权机构正式废除；不等于某人单纯拒绝遵守法律。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/repeal",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "动词核心义为通过权力尤其立法废止，另列放弃义；词条同时收录名词。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "lukewarm",
+      "word": "lukewarm",
+      "image": 2,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.微温的，不冷不热的；不热心的，态度冷淡的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "微温的，不冷不热的",
+            "不热心的，态度冷淡的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "mood",
+        "body"
+      ],
+      "original_context": null,
+      "note": "从温度不高引申为支持、回应或评价缺乏热情，不必表示公开反对。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lukewarm",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词分别表示温度适中偏温，以及缺少信念或热情。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "virtue",
+      "word": "virtue",
+      "image": 2,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.美德，良好品行；优点，长处；功效，效力；贞洁",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "美德，良好品行",
+            "优点，长处",
+            "功效，效力",
+            "贞洁"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "reason"
+      ],
+      "original_context": null,
+      "note": "by virtue of 表示由于或凭借，不是“因为美德”；讨论物品或制度时常指优点、益处，而非道德品格。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/virtue",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "名词覆盖道德品质、益处和优点、发挥作用的能力，以及贞洁义。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/by%20virtue%20of",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "短语指凭借某种力量或权威，因此以由于、凭借作简明说明。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "venerate",
+      "word": "venerate",
+      "image": 2,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.崇敬，敬重；（以宗教仪式）敬奉",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "崇敬，敬重",
+            "（以宗教仪式）敬奉"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "social",
+        "society"
+      ],
+      "original_context": null,
+      "note": "比一般喜欢更强调敬意；宗教语境可指以仪式敬奉圣像、圣物。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/venerate",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "及物动词分为深切敬重，以及通过宗教礼仪敬奉两义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "sycophantic",
+      "word": "sycophantic",
+      "image": 2,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.谄媚的，阿谀奉承的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "谄媚的，阿谀奉承的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "social"
+      ],
+      "original_context": null,
+      "note": "强调逢迎、卑躬屈膝的奉承，不等同于真诚敬重。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sycophantic",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词指具有谄媚者特征，即逢迎和卑躬屈膝。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "retreat",
+      "word": "retreat",
+      "image": 2,
+      "action": "new",
+      "pos": "v. / n.",
+      "meaning": "v.撤退，退却；退出，退避；退缩，后退\nn.撤退，退却；退避，隐退；隐居处，避难处；（为静修、学习等安排的）隐退期；（军队）撤退信号，降旗仪式",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "撤退，退却",
+            "退出，退避",
+            "退缩，后退"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "撤退，退却",
+            "退避，隐退",
+            "隐居处，避难处",
+            "（为静修、学习等安排的）隐退期",
+            "（军队）撤退信号，降旗仪式"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "conflict",
+        "society"
+      ],
+      "original_context": null,
+      "note": "可指军队撤退，也可指退出公共生活、暂离日常环境进行静修；不能把所有 retreat 都译成战败逃跑。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/retreat",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "词条区分退出与退却、军队撤退及信号、隐居处和集体静修期，并收录动词退回义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "pilfer",
+      "word": "pilfer",
+      "image": 2,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.偷窃，尤指少量而反复地偷",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "偷窃，尤指少量而反复地偷"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "conflict"
+      ],
+      "original_context": null,
+      "note": "强调暗中小量偷取，常有反复性；不等于战争中的暴力劫掠。小量并不表示偷的东西一定不值钱。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pilfer",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "动词核心为偷窃，特别是暗中、少量、反复地取走；用法说明明确区别暴力掠夺。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "pastoral",
+      "word": "pastoral",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "adj. / n.",
+      "meaning": "adj.田园的，牧羊生活的；牧师或教牧关怀的\nn.田园文学、艺术作品",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "田园的，牧羊生活的",
+            "牧师或教牧关怀的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "田园文学、艺术作品"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "environment",
+        "arts",
+        "society"
+      ],
+      "original_context": null,
+      "note": "pastoral care可指教牧关怀，不宜一律译为乡村护理。 语体／色彩：依语境。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pastoral",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 田园的，牧羊生活的；牧师或教牧关怀的；n. 田园文学、艺术作品"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "interdisciplinary",
+      "word": "interdisciplinary",
+      "image": 2,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.跨学科的，涉及多个学科的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "跨学科的，涉及多个学科的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "society"
+      ],
+      "original_context": null,
+      "note": "指跨越两个或更多学术、科学或艺术领域，不能仅凭一项研究很复杂就认定跨学科。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/interdisciplinary",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词指涉及两个或更多学术、科学或艺术学科。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "obtuse",
+      "word": "obtuse",
+      "image": 2,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.迟钝的，不敏锐的；晦涩的，表达不清的；钝的，不尖锐的；（几何）钝角的，具有钝角的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "迟钝的，不敏锐的",
+            "晦涩的，表达不清的",
+            "钝的，不尖锐的",
+            "（几何）钝角的，具有钝角的"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "material",
+        "quantity"
+      ],
+      "original_context": null,
+      "note": "形容人时指不易理解明显的信息，带批评意味；几何钝角大于90度且小于180度。表达晦涩义也有词典依据，须结合所修饰对象判断。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/obtuse",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词覆盖理解迟钝、表达难解、不尖锐，以及超过90度而不足180度的角。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "glorify",
+      "word": "glorify",
+      "image": 2,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.赞美，颂扬；美化，把……说得比实际更好；使增光，使荣耀；（宗教）赞颂，荣耀",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "赞美，颂扬",
+            "美化，把……说得比实际更好",
+            "使增光，使荣耀",
+            "（宗教）赞颂，荣耀"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "social",
+        "society"
+      ],
+      "original_context": null,
+      "note": "既可真诚颂扬，也可含过度美化之意；glorified 用于名词前时常暗示名称好听而本质普通。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/glorify",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "词条包含赋予荣誉、颂扬、使显得好于实际，以及宗教赞颂义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "trite",
+      "word": "trite",
+      "image": 2,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.陈腐的，因反复使用而乏味的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "陈腐的，因反复使用而乏味的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "arts"
+      ],
+      "original_context": null,
+      "note": "多评价观点、措辞或情节缺乏新意；并不单纯表示年代久远。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trite",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词强调因频繁使用而陈旧乏味，缺少新鲜感或原创性。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "immure",
+      "word": "immure",
+      "image": 2,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.监禁，禁闭；把……封闭或埋入墙内",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "监禁，禁闭",
+            "把……封闭或埋入墙内"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "conflict"
+      ],
+      "original_context": null,
+      "note": "可字面指关在墙内，也可引申为受封闭环境限制、与外界隔绝。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/immure",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "及物动词指像围墙般封闭或监禁，以及筑入、埋入墙中。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "vigilant",
+      "word": "vigilant",
+      "image": 2,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.警觉的，警惕的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "警觉的，警惕的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "character"
+      ],
+      "original_context": null,
+      "note": "强调持续留意危险、保持戒备，不只是看到某件事。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vigilant",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词指警醒地观察，尤其为防范危险而保持不间断的警觉。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "eject",
+      "word": "eject",
+      "image": 2,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.驱逐，逐出；喷出，弹出，排出；（飞行员）弹射逃生",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "驱逐，逐出",
+            "喷出，弹出，排出",
+            "（飞行员）弹射逃生"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "conflict"
+      ],
+      "original_context": null,
+      "note": "共同方向是由内向外排出；人被赶出场所与机械弹出物体须按宾语区分。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/eject",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "动词收录借力量或权威逐出，以及由内部抛出、弹出；词典用法同时支持飞行员弹射。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "extraneous",
+      "word": "extraneous",
+      "image": 2,
+      "action": "existing_source_appended",
+      "pos": "adj.",
+      "meaning": "adj.外来的；无关紧要的；非必要的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "外来的",
+            "无关紧要的",
+            "非必要的"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "We do not want any extraneous information on the page.",
+              "zh": "我们不希望页面上有任何无关信息。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/extraneous",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Coughs and extraneous noises can be edited out.",
+              "zh": "咳嗽声和多余的杂音可以被剪辑掉。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/extraneous",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "reason"
+      ],
+      "original_context": null,
+      "note": "",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/extraneous",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "note": "中文核心义按词典释义与已保存题目语境归纳。"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "insidious",
+      "word": "insidious",
+      "image": 2,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.隐蔽而逐渐有害的；阴险的，暗中设陷阱的；诱人却有害的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "隐蔽而逐渐有害的",
+            "阴险的，暗中设陷阱的",
+            "诱人却有害的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "conflict",
+        "body"
+      ],
+      "original_context": null,
+      "note": "核心常是危害缓慢累积而不易察觉；不只用于阴险的人，也可描述问题或疾病的发展。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/insidious",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词分别涉及逐渐而隐蔽的危害、伺机陷害，以及诱人但有害。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "substantiate",
+      "word": "substantiate",
+      "image": 3,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.证实，用证据支持；使具体化，使实体化",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "证实，用证据支持",
+            "使具体化，使实体化"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "language"
+      ],
+      "original_context": null,
+      "note": "常用于 substantiate a claim / allegation，要求提供支持说法的证据；不是仅重复声称。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/substantiate",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典动词涵盖凭证据确证以及赋予实质或具体形式。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "unflagging",
+      "word": "unflagging",
+      "image": 3,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.不懈的，不知疲倦的；持续不减的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不懈的，不知疲倦的",
+            "持续不减的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "time"
+      ],
+      "original_context": null,
+      "note": "常修饰努力、精力或热情，强调持续而不衰减。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unflagging",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "形容词释义为不疲倦、持续不松懈。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "utilitarian",
+      "word": "utilitarian",
+      "image": 3,
+      "action": "existing_source_appended",
+      "pos": "adj. / n.",
+      "meaning": "adj.重实用的；功利主义的\nn.功利主义者",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "重实用的",
+            "功利主义的"
+          ],
+          "examples": [
+            {
+              "en": "Her clothes were utilitarian, unlike the elaborate dresses the other girls were wearing.",
+              "zh": "她的衣服注重实用，与其他女孩穿的华丽裙装不同。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/utilitarian",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "功利主义者"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "arts"
+      ],
+      "original_context": null,
+      "note": "哲学义与只重实用的日常义分开理解。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/utilitarian",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：adj. 重实用的；功利主义的；n. 功利主义者"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "unsophisticated",
+      "word": "unsophisticated",
+      "image": 3,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.不谙世故的，缺乏经验的；简单的，不复杂的；质朴的，纯真的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不谙世故的，缺乏经验的",
+            "简单的，不复杂的",
+            "质朴的，纯真的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "social",
+        "material"
+      ],
+      "original_context": null,
+      "note": "描述人可指缺乏世故或经验，描述技术、装置可指结构简单；不一概等于愚笨。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unsophisticated",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "形容词分别涵盖未经世故、缺乏复杂结构以及真诚未受腐化。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "fidelity",
+      "word": "fidelity",
+      "image": 3,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.忠诚，忠实；准确性，忠实于原作；保真度，逼真度",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "忠诚，忠实",
+            "准确性，忠实于原作",
+            "保真度，逼真度"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "social",
+        "arts"
+      ],
+      "original_context": null,
+      "note": "常见 fidelity to a person / principle；音像语境的 high fidelity 表示高保真。与 fealty 相比，本词也常强调履行义务与复制的准确性。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fidelity",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词释义包括忠诚、细节准确和音像复制的保真程度。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "venal",
+      "word": "venal",
+      "image": 3,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.可用金钱收买的，易受贿的；贪赃枉法的，腐败的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "可用金钱收买的，易受贿的",
+            "贪赃枉法的，腐败的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "society",
+        "economy"
+      ],
+      "original_context": null,
+      "note": "用于官员、行为或制度时常含收受贿赂之意；不要与 venial（可宽恕的）混淆。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/venal",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "形容词涵盖可被收买、受贿或带有腐败交易特征。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "feign",
+      "word": "feign",
+      "image": 3,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.假装，装作；佯称，谎称",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "假装，装作",
+            "佯称，谎称"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "language"
+      ],
+      "original_context": null,
+      "note": "常接情绪、症状或无知等宾语；feign ignorance 指装作不知。",
+      "normalization_note": "按词典归为动词；不将手写中不清楚的词性符号另建名词义。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/feign",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "动词涵盖制造虚假表象、假装，以及把不实情况说成真实。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "hypocrisy",
+      "word": "hypocrisy",
+      "image": 3,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.伪善，虚伪；伪善的行为",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "伪善，虚伪",
+            "伪善的行为"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "social"
+      ],
+      "original_context": null,
+      "note": "强调宣称的道德标准或信念与实际行为不一致，不只是一般的说错话。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hypocrisy",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词包括声称具有未真正具备的信念或美德，以及具体伪善行为。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "flabbergast",
+      "word": "flabbergast",
+      "image": 3,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.使大吃一惊，使目瞪口呆",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使大吃一惊，使目瞪口呆"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "mood"
+      ],
+      "original_context": null,
+      "note": "常以 be flabbergasted 表示惊讶得说不出话；本词收录原形。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flabbergast",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "及物动词表示以惊讶、震惊或惊奇压倒对方。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "sound",
+      "word": "sound",
+      "image": 3,
+      "action": "new",
+      "pos": "adj. / n. / v. / adv.",
+      "meaning": "adj.合理的，有充分根据的；健全的，健康的；完好的，牢固的；稳健可靠的；扎实的，充分的；酣熟的，不受打扰的；严厉的，重重的\nn.声音，声响；语音；（录音、影视的）声音，音响；（由言语传达的）印象；海峡，海湾\nv.听起来，给人以某种印象；（使）发声，鸣响；发音，读出；表达，宣告；发出（警报或信号）；测量（水的）深度；试探，探询\nadv.酣熟地，充分地",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "合理的，有充分根据的",
+            "健全的，健康的",
+            "完好的，牢固的",
+            "稳健可靠的",
+            "扎实的，充分的",
+            "酣熟的，不受打扰的",
+            "严厉的，重重的"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "声音，声响",
+            "语音",
+            "（录音、影视的）声音，音响",
+            "（由言语传达的）印象",
+            "海峡，海湾"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "听起来，给人以某种印象",
+            "（使）发声，鸣响",
+            "发音，读出",
+            "表达，宣告",
+            "发出（警报或信号）",
+            "测量（水的）深度",
+            "试探，探询"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "adv.",
+          "meanings": [
+            "酣熟地，充分地"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "body",
+        "language",
+        "nature",
+        "action"
+      ],
+      "original_context": null,
+      "note": "GRE 论证语境的 sound 常指论证合理可靠；sound asleep 为酣睡，sound out 常指试探意见。形容词、声音名词和测深动词不可混为一个义项。",
+      "normalization_note": "补全手写只列出的声音和健康等释义；分词性整理常用义，不纳入鱼鳔或医疗探针等少见专门义。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sound",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "已读取同页形容词、声音名词、发声动词、副词、海峡名词和测深动词各分项；涵盖合理可靠、健康完好、声音及探询等常用义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "scaremonger",
+      "word": "scaremonger",
+      "image": 3,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.散布恐慌者，危言耸听者",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "散布恐慌者，危言耸听者"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "language",
+        "mood"
+      ],
+      "original_context": null,
+      "note": "强调制造不必要的恐慌，不是所有传递警报或坏消息的人。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/scaremonger",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词指制造不必要警惧的人。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "culminate",
+      "word": "culminate",
+      "image": 3,
+      "action": "existing_source_appended",
+      "pos": "v.",
+      "meaning": "v.达到顶点；最终导致或以某事告终",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "达到顶点",
+            "最终导致或以某事告终"
+          ],
+          "examples": [
+            {
+              "en": "Their summer tour will culminate at a spectacular concert in London.",
+              "zh": "他们的夏季巡演将在伦敦一场壮观的音乐会上达到高潮。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/culminate",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Months of hard work culminated in success.",
+              "zh": "几个月的辛勤工作最终取得了成功。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/culminate",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "change"
+      ],
+      "original_context": null,
+      "note": "",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/culminate",
+          "checked_at": "2026-09-10",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳，不转录手写中文。"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "invalidate",
+      "word": "invalidate",
+      "image": 3,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.使无效，使作废；削弱或推翻（论据、结论等）",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使无效，使作废",
+            "削弱或推翻（论据、结论等）"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "society"
+      ],
+      "original_context": null,
+      "note": "可用于票据或协议失效，也可用于证据使某结论不能成立。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/invalidate",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "动词释义包括使不再有效，以及削弱或破坏论证效力。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "retract",
+      "word": "retract",
+      "image": 3,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.收回，撤回（言论、承诺等）；缩回，使缩进",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "收回，撤回（言论、承诺等）",
+            "缩回，使缩进"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "action"
+      ],
+      "original_context": null,
+      "note": "retract a statement 为撤回说法；身体部位或机械结构的 retract 为向内缩回。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/retract",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "及物和不及物用法包括拉回、缩回，以及撤销或否认先前的陈述。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "synoptic",
+      "word": "synoptic",
+      "image": 3,
+      "action": "new",
+      "pos": "adj. / n.",
+      "meaning": "adj.概要的，综观全局的；（宗教，常大写）对观福音书的；（气象）反映同一时刻大范围天气状况的\nn.（宗教，常大写）对观福音书中的一部；（宗教，常大写）对观福音书的作者",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "概要的，综观全局的",
+            "（宗教，常大写）对观福音书的",
+            "（气象）反映同一时刻大范围天气状况的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "（宗教，常大写）对观福音书中的一部",
+            "（宗教，常大写）对观福音书的作者"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "reason",
+        "society",
+        "nature"
+      ],
+      "original_context": null,
+      "note": "一般阅读中多表示概览性的；宗教义涉及《马太福音》《马可福音》《路加福音》，属于专门语域。",
+      "normalization_note": "手写宗教名词义有词典依据，保留并标注宗教语域与通常大写形式。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/synoptic",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "形容词包括概览、共同视角的前三部福音书以及同时刻广域气象描述。"
+        },
+        {
+          "publisher": "Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/synoptic",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "已实际读取宗教名词分项：三部对观福音书中的任一部，或其作者；同时核对概要、宗教与气象形容词义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "vortex",
+      "word": "vortex",
+      "image": 3,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.旋涡，涡流；（比喻）使人卷入的漩涡，混乱局势",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "旋涡，涡流",
+            "（比喻）使人卷入的漩涡，混乱局势"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "nature",
+        "conflict"
+      ],
+      "original_context": null,
+      "note": "复数为 vortices 或 vortexes；比喻义强调被卷入难以摆脱的局势。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vortex",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词包括旋转的流体以及类似漩涡的局势或活动。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "overreach",
+      "word": "overreach",
+      "image": 3,
+      "action": "new",
+      "pos": "v. / n.",
+      "meaning": "v.超出能力或权限，做过头；因贪求过多而失败，弄巧成拙；以狡诈手段胜过，欺骗；伸得过远，超出\nn.越权，过度扩张；夸大的主张，过度推断",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "超出能力或权限，做过头",
+            "因贪求过多而失败，弄巧成拙",
+            "以狡诈手段胜过，欺骗",
+            "伸得过远，超出"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "越权，过度扩张",
+            "夸大的主张，过度推断"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "reason",
+        "society"
+      ],
+      "original_context": null,
+      "note": "overreach oneself 常指企图超过自身能力而失败；权力语境指越权，论证语境可指证据不足却作过大的断言。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/overreach",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "动词包括超出范围、企图过多反而失败，以及以诡计胜过；同页标有名词派生。"
+        },
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/overreach?topic=injuring-and-injuries",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "实际读取搜索返回的 Cambridge 词条正文，名词 doing too much 分项包括超越权限的行为及超过合理范围的断言；直接打开页面未成功。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "stump",
+      "word": "stump",
+      "image": 3,
+      "action": "existing_source_appended",
+      "pos": "n. / v.",
+      "meaning": "n.树桩；残余部分\nv.难倒；拖着沉重的步子走；巡回演说",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "树桩",
+            "残余部分"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "难倒",
+            "拖着沉重的步子走",
+            "巡回演说"
+          ],
+          "examples": [
+            {
+              "en": "I'm stumped. I don't know how they got here before us.",
+              "zh": "我被难住了。我不知道他们怎么会比我们先到这里。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/stump_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He stumped off, muttering under his breath.",
+              "zh": "他拖着沉重的步子走开，嘴里低声嘟囔着。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/stump_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "He stumped around the country trying to build up support.",
+              "zh": "他在全国各地巡回演说，试图争取支持。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stump_2",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "nature",
+        "action"
+      ],
+      "original_context": null,
+      "note": "",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/stump",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "fealty",
+      "word": "fealty",
+      "image": 3,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.效忠，忠诚；（封建制度）臣属对领主的忠诚义务",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "效忠，忠诚",
+            "（封建制度）臣属对领主的忠诚义务"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "social",
+        "society"
+      ],
+      "original_context": null,
+      "note": "强调强烈而坚定的忠诚，常有宣誓效忠的意味；封建法律义指臣属对领主的义务。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fealty",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词分别列出封建臣属义务与强烈忠诚。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "stem",
+      "word": "stem",
+      "image": 3,
+      "action": "existing_source_appended",
+      "pos": "n. / v.",
+      "meaning": "n.茎，干；词干\nv.阻止，遏制；起源于",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "茎，干",
+            "词干"
+          ],
+          "examples": [
+            {
+              "en": "There are several leaves on each stem.",
+              "zh": "每根茎上都有几片叶子。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/stem_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "‘Writ’ is the stem of the forms ‘writes’, ‘writing’ and ‘written’.",
+              "zh": "“Writ”是“writes”“writing”和“written”这些词形的词干。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/stem_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "阻止，遏制",
+            "起源于"
+          ],
+          "examples": [
+            {
+              "en": "The cut was bandaged to stem the bleeding.",
+              "zh": "伤口包扎了起来，以止住出血。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/stem_3",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Most people's insecurities stem from something that happened in their childhood.",
+              "zh": "大多数人的不安全感源于童年发生的某些事情。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced American Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/american_english/stem-from",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "nature",
+        "conflict",
+        "reason"
+      ],
+      "original_context": null,
+      "note": "stem something遏制；stem from something源于，方向不同。 语体／色彩：中性。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/stem",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 茎，干；词干；v. 阻止，遏制；起源于"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "suffocate",
+      "word": "suffocate",
+      "image": 3,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.（使）窒息，闷死；使憋闷，使透不过气；压制，扼杀（发展）",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "（使）窒息，闷死",
+            "使憋闷，使透不过气",
+            "压制，扼杀（发展）"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "body",
+        "action",
+        "change"
+      ],
+      "original_context": null,
+      "note": "可指缺乏空气，也可比喻环境或控制阻碍个人、创作等的发展。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/suffocate",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "动词涵盖使无法呼吸、缺乏新鲜空气而难受，以及妨碍发展。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "respire",
+      "word": "respire",
+      "image": 3,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.呼吸；（细胞或组织）进行呼吸作用",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "呼吸",
+            "（细胞或组织）进行呼吸作用"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "body",
+        "nature"
+      ],
+      "original_context": null,
+      "note": "较正式或用于生物学；呼吸作用是动词用法，名词形式为 respiration。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/respire",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "动词包括吸入及呼出空气，以及细胞或组织摄氧并释放二氧化碳的呼吸过程。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "adjunct",
+      "word": "adjunct",
+      "image": 3,
+      "action": "new",
+      "pos": "n. / adj.",
+      "meaning": "n.附属物，辅助事物；助手，辅助人员；（大学）非全职或非正式编制的教师；（语法）附加语，修饰语\nadj.附属的，附加的；（人员或职位）辅助的，临时任职的",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "附属物，辅助事物",
+            "助手，辅助人员",
+            "（大学）非全职或非正式编制的教师",
+            "（语法）附加语，修饰语"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "附属的，附加的",
+            "（人员或职位）辅助的，临时任职的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "social",
+        "society",
+        "language"
+      ],
+      "original_context": null,
+      "note": "adjunct to 表示补充或辅助；adjunct professor 通常为非全职或非正式编制教师，不等于 assistant professor（助理教授）。语法义指非句子核心结构的附加成分。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/adjunct",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词包括非核心附加物、辅助人员、大学外聘教师以及语法附加成分；形容词包括附加、辅助或临时隶属。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "platitudinous",
+      "word": "platitudinous",
+      "image": 3,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.陈词滥调的，老生常谈的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "陈词滥调的，老生常谈的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "arts"
+      ],
+      "original_context": null,
+      "note": "主要批评表达内容空泛陈旧，不能仅按一般的普通、平凡理解。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/platitudinous",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "形容词为充满 platitudes；另读取 platitude 词条核实陈旧、平淡乏味的言辞义。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/platitude",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "已实际读取名词的平淡乏味状态与陈旧空泛言论义，用于确认形容词的语义与色彩。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "untrammeled",
+      "word": "untrammeled",
+      "image": 3,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.不受束缚的，不受限制的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不受束缚的，不受限制的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "society"
+      ],
+      "original_context": null,
+      "note": "美式拼写 untrammeled，英式常拼 untrammelled；可修饰自由，也可修饰贪欲等，因此不固定为褒义。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/untrammeled",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词条列美英拼写变体，释义为不被限制、约束或妨碍。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "eclipse",
+      "word": "eclipse",
+      "image": 3,
+      "action": "new",
+      "pos": "n. / v.",
+      "meaning": "n.（天文）食，日食或月食；黯然失色，衰落\nv.遮蔽，使暗淡；使相形见绌，使失去重要性；超过，胜过",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "（天文）食，日食或月食",
+            "黯然失色，衰落"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "遮蔽，使暗淡",
+            "使相形见绌，使失去重要性",
+            "超过，胜过"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "nature",
+        "change",
+        "quantity"
+      ],
+      "original_context": null,
+      "note": "天文名词指天体被遮蔽或进入阴影；比喻动词可指地位被取代，也可指成绩超过旧纪录。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/eclipse",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词包括天体遮蔽与声望衰落；动词包括遮暗、降低相对重要性和胜过。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "flippant",
+      "word": "flippant",
+      "image": 3,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.轻率无礼的，不够严肃的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "轻率无礼的，不够严肃的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "language",
+        "social"
+      ],
+      "original_context": null,
+      "note": "常形容在应严肃或尊重的场合随口开玩笑的回答；不等于机智幽默。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flippant",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "现代形容词义为缺乏应有尊重或严肃态度；健谈、伶俐义在词条中标为古义，不列入现代核心义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "melodramatic",
+      "word": "melodramatic",
+      "image": 4,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.夸张煽情的，过分戏剧化的；情节剧的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "夸张煽情的，过分戏剧化的",
+            "情节剧的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "arts",
+        "mood",
+        "language"
+      ],
+      "original_context": null,
+      "note": "形容言行时常指情绪表现夸大、不合分寸；指戏剧类型时不必带批评。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/melodramatic",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "条目区分情节剧属性与夸张情绪、煽情表演的特点。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "hard-boiled",
+      "word": "hard-boiled",
+      "image": 4,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.冷酷强硬的，不动感情的；讲求实际的，精明务实的；（蛋）煮老的，全熟的；（侦探小说）冷峻写实的，硬汉派的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "冷酷强硬的，不动感情的",
+            "讲求实际的，精明务实的",
+            "（蛋）煮老的，全熟的",
+            "（侦探小说）冷峻写实的，硬汉派的"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "food",
+        "arts"
+      ],
+      "original_context": null,
+      "note": "人的性格义强调强硬、不感情用事；食物义指蛋白和蛋黄均已凝固。硬汉派是文学类型用法。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hard-boiled",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典列出全熟蛋、不感情用事且强硬、务实，以及硬汉派侦探故事四类义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "appeal",
+      "word": "appeal",
+      "image": 4,
+      "action": "new",
+      "pos": "n. / v.",
+      "meaning": "n.呼吁，恳求；吸引力，感染力；上诉，申诉；募捐呼吁，募捐活动\nv.呼吁，恳求；有吸引力，引起兴趣；上诉；诉诸，求助于（权威等）",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "呼吁，恳求",
+            "吸引力，感染力",
+            "上诉，申诉",
+            "募捐呼吁，募捐活动"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "呼吁，恳求",
+            "有吸引力，引起兴趣",
+            "上诉",
+            "诉诸，求助于（权威等）"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "social",
+        "society"
+      ],
+      "original_context": null,
+      "note": "appeal to 后可接求助对象或受到吸引的人，须依语境区分；上诉是法律义。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/appeal",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "分别核对请求、吸引力、法律上诉、募捐活动，以及向权威求助等名词和动词义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "modicum",
+      "word": "modicum",
+      "image": 4,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.少量，一点点",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "少量，一点点"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "quantity"
+      ],
+      "original_context": null,
+      "note": "常见 a modicum of，常用于耐心、信心、能力等抽象事物。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/modicum",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词释为少量、有限的量；用法说明包括抽象性质或能力。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "fleet",
+      "word": "fleet",
+      "image": 4,
+      "action": "new",
+      "pos": "n. / adj. / v.",
+      "meaning": "n.舰队，船队；（统一管理的）机群，车队\nadj.敏捷的，迅速的；短暂的，转瞬即逝的\nv.飞逝，迅速移动；消逝，渐渐消失；使（时间）迅速流逝",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "舰队，船队",
+            "（统一管理的）机群，车队"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "敏捷的，迅速的",
+            "短暂的，转瞬即逝的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "飞逝，迅速移动",
+            "消逝，渐渐消失",
+            "使（时间）迅速流逝"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "time",
+        "society"
+      ],
+      "original_context": null,
+      "note": "迅速义可作形容词；相应副词是 fleetly，不把照片的 adv. 直接照录。fleeting 有独立的短暂义形容词用法。",
+      "normalization_note": "将手写的迅速义归入 adj.；未把 fleet 误列为 adv.。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fleet",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典明确分为名词、形容词、动词三类，涵盖统一指挥的船机车群、敏捷和短暂、飞逝或消失。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "fleeting",
+      "word": "fleeting",
+      "image": 4,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.短暂的，转瞬即逝的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "短暂的，转瞬即逝的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "time"
+      ],
+      "original_context": null,
+      "note": "独立形容词强调持续时间极短，不仅是 fleet 的现在分词；此处不单独释为飞奔的。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fleeting",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典独立形容词条目表示迅速消逝、短暂，同时另标为 fleet 的现在分词。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "corrode",
+      "word": "corrode",
+      "image": 4,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.腐蚀，侵蚀；逐渐削弱，逐渐破坏",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "腐蚀，侵蚀",
+            "逐渐削弱，逐渐破坏"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "change",
+        "material"
+      ],
+      "original_context": null,
+      "note": "既可指材料受到化学腐蚀，也可指信任或关系被逐渐损害。重点在逐渐侵蚀，不是一次性的破坏。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/corrode",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "动词同时包含材料逐渐被腐蚀，以及引申的逐渐削弱或毁坏；兼有及物、不及物用法。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "momentum",
+      "word": "momentum",
+      "image": 4,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.势头，推动力；（物理）动量",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "势头，推动力",
+            "（物理）动量"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "change",
+        "quantity"
+      ],
+      "original_context": null,
+      "note": "物理义是质量与速度的乘积；不能与能量、力直接混同。比喻义常指事件发展积累起来的势头。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/momentum",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "条目分别定义质量与速度的乘积，以及运动或连续事件积累的推进力量。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "invert",
+      "word": "invert",
+      "image": 4,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.颠倒（位置、次序或关系）；翻转，使倒置，使内外反转；使向内翻转；（数学）求倒数",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "颠倒（位置、次序或关系）",
+            "翻转，使倒置，使内外反转",
+            "使向内翻转",
+            "（数学）求倒数"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "reason",
+        "quantity"
+      ],
+      "original_context": null,
+      "note": "核心是把位置、顺序或朝向反过来；数学语境中的求倒数须与一般翻转区分。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/invert",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "核对位置或次序反转、上下或内外颠倒、向内翻转、求数学倒数四义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "staid",
+      "word": "staid",
+      "image": 4,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.稳重的，严肃拘谨的；古板的，不活泼的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "稳重的，严肃拘谨的",
+            "古板的，不活泼的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character"
+      ],
+      "original_context": null,
+      "note": "强调一贯的沉稳和克制；评价风格时可带过于古板、缺少活力的意味。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/staid",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "条目释为沉静稳重且常拘谨自制；同义辨析强调习惯性的严肃和克制。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "consternation",
+      "word": "consternation",
+      "image": 4,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.惊愕，惊慌失措",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "惊愕，惊慌失措"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "mood"
+      ],
+      "original_context": null,
+      "note": "是令人一时不知如何应对的惊愕或惊惶；不等于单纯的困惑。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/consternation",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典核心是会妨碍行动或使人不知所措的惊愕、惶恐，并特别区别于普通困惑。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "hurtle",
+      "word": "hurtle",
+      "image": 4,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.疾驰，猛冲；猛掷，用力抛出",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "疾驰，猛冲",
+            "猛掷，用力抛出"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action"
+      ],
+      "original_context": null,
+      "note": "不及物义是自身快速猛烈移动；及物义是把物体猛力抛出。注意与 hurdle（障碍；跨越障碍）区分。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hurtle",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典分别列出不及物的快速或猛烈移动，以及及物的投掷，并有 hurtle/hurdle 辨析。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "preliminary",
+      "word": "preliminary",
+      "image": 4,
+      "action": "new",
+      "pos": "adj. / n.",
+      "meaning": "adj.初步的，预备的\nn.预备步骤，准备活动；预赛，初试",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "初步的，预备的"
+          ],
+          "examples": [
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "预备步骤，准备活动",
+            "预赛，初试"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "time",
+        "action"
+      ],
+      "original_context": null,
+      "note": "强调先于正式步骤并为其作准备；初步结果仍可能修订。名词常用复数 preliminaries。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/preliminary",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "形容词表示先行且为后续作准备；名词涵盖预备事物、预赛和初步考试。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "fauna",
+      "word": "fauna",
+      "image": 4,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.（某地区、时期或环境的）动物群",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "（某地区、时期或环境的）动物群"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "nature"
+      ],
+      "original_context": null,
+      "note": "集合性地指某地区或时代的动物，不是单只动物；与 flora（植物群）相对。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fauna",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典界定为动物生命，尤指某地区、时期或特殊环境中有代表性的动物。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "arable",
+      "word": "arable",
+      "image": 4,
+      "action": "new",
+      "pos": "adj. / n.",
+      "meaning": "adj.适合耕种的，用于种植作物的；（英）种植业的\nn.（主英）耕地",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "适合耕种的，用于种植作物的",
+            "（英）种植业的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "（主英）耕地"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "environment",
+        "nature",
+        "economy"
+      ],
+      "original_context": null,
+      "note": "核心区别是适合或用于种植作物；名词耕地及种植业形容词用法主要见于英式英语。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/arable",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典列出可耕或种植作物之地的形容词义，并标明种植业义为英式、耕地名词义主要为英式。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "hard-wringing",
+      "word": "hand-wringing",
+      "image": 4,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.（过度流露的）忧虑，焦灼，内疚不安",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "（过度流露的）忧虑，焦灼，内疚不安"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "mood",
+        "language"
+      ],
+      "original_context": null,
+      "note": "指焦灼或内疚情绪的过度表达，不能简单等同于绝望；构词与 wring one’s hands 有关。",
+      "normalization_note": "照片写形似 hard-wringing；结合手写词义及词典规范词形，归为 hand-wringing。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hand-wringing",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词释为过分强烈地表达忧虑或内疚。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "wring",
+      "word": "wring",
+      "image": 4,
+      "action": "new",
+      "pos": "v. / n.",
+      "meaning": "v.拧，绞，拧干；榨取，强行取得；用力扭转，拧断；（因焦虑或痛苦）绞扭双手；使痛苦，使心如刀绞；扭动，痛苦地挣扎\nn.拧，绞（动作）",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "拧，绞，拧干",
+            "榨取，强行取得",
+            "用力扭转，拧断",
+            "（因焦虑或痛苦）绞扭双手",
+            "使痛苦，使心如刀绞",
+            "扭动，痛苦地挣扎"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "拧，绞（动作）"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "mood"
+      ],
+      "original_context": null,
+      "note": "过去式、过去分词均为 wrung；wring out 常指拧干，wring something from/out of someone 可指逼取。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/wring",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "核对拧干、榨取、用力扭转、绞手、使痛苦及不及物扭动义；另列名词形式。"
+        },
+        {
+          "publisher": "Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/wring",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "英式词条第九义及美式词条明确将名词定义为拧绞的动作或过程。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "wringing",
+      "word": "wringing",
+      "image": 4,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.湿透的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "湿透的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "material"
+      ],
+      "original_context": null,
+      "note": "通常用于 wringing wet，尤其描述衣物湿透；此处有独立形容词义，保留为词条，不仅按 wring 的现在分词处理。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Collins English Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/wringing",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "英式英语独立形容词 wringing 或 wringing wet，含义为极湿、湿透。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner’s Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/wringing-wet",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "wringing wet 独立列作形容词，尤其指衣物非常湿。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "misgiving",
+      "word": "misgiving",
+      "image": 4,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.疑虑，担忧，不安",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "疑虑，担忧，不安"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "mood",
+        "reason"
+      ],
+      "original_context": null,
+      "note": "常用复数 misgivings，尤其针对将发生的事情或计划是否可靠；这里是独立名词，不只是 misgive 的词形变化。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/misgiving",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典列独立名词义为怀疑或疑虑，尤其涉及未来事件。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "misgive",
+      "word": "misgive",
+      "image": 4,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.使疑虑，使担忧；感到疑虑，心生不安",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使疑虑，使担忧",
+            "感到疑虑，心生不安"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "mood",
+        "reason"
+      ],
+      "original_context": null,
+      "note": "过去式 misgave、过去分词 misgiven；动词与名词 misgiving 分开保留。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/misgive",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典分及物的使人生疑或惧怕，以及不及物的感到恐惧或忧虑。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "prepossessing",
+      "word": "prepossessing",
+      "image": 4,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.给人好感的，讨人喜欢的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "给人好感的，讨人喜欢的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "social",
+        "character"
+      ],
+      "original_context": null,
+      "note": "强调带来良好的第一印象，尤可指外貌或举止；与 unprepossessing 相对。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prepossessing",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典当前主要形容词义为带来好感、有吸引力；其说明强调良好的第一印象。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "precipitate",
+      "word": "precipitate",
+      "image": 4,
+      "action": "existing_source_appended",
+      "pos": "v. / adj. / n.",
+      "meaning": "v.促使突然发生；使沉淀；使骤然陷入\nadj.仓促鲁莽的\nn.沉淀物；结果",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "促使突然发生",
+            "使沉淀",
+            "使骤然陷入"
+          ],
+          "examples": [
+            {
+              "en": "His resignation precipitated a leadership crisis.",
+              "zh": "他的辞职突然引发了一场领导层危机。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/precipitate_1",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null,
+            {
+              "en": "The assassination of the president precipitated the country into war.",
+              "zh": "总统遇刺使该国骤然陷入战争。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/precipitate_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "仓促鲁莽的"
+          ],
+          "examples": [
+            {
+              "en": "To force a decision now would be precipitate.",
+              "zh": "现在强行作出决定会过于仓促。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/precipitate_2",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "沉淀物",
+            "结果"
+          ],
+          "examples": [
+            {
+              "en": "A yellow precipitate should form immediately.",
+              "zh": "应该会立即形成黄色沉淀。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/precipitate_3",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "change",
+        "time",
+        "nature"
+      ],
+      "original_context": null,
+      "note": "动词常指骤然引发；形容词常指鲁莽仓促；不能只背一个中文义。",
+      "normalization_note": "本次照片重复出现；沿用既有规范释义、例句及原核验日期。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/precipitate",
+          "checked_at": "2026-10-08",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，按所列词性归纳核心义：v. 促使突然发生；使沉淀；使骤然陷入；adj. 仓促鲁莽的；n. 沉淀物；结果"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "cliché",
+      "word": "cliché",
+      "image": 4,
+      "action": "new",
+      "pos": "n. / adj.",
+      "meaning": "n.陈词滥调，老套的说法或观念；（作品中）陈旧的题材、人物类型或情节；司空见惯的事物\nadj.陈腐的，老套的",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "陈词滥调，老套的说法或观念",
+            "（作品中）陈旧的题材、人物类型或情节",
+            "司空见惯的事物"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "陈腐的，老套的"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "arts"
+      ],
+      "original_context": null,
+      "note": "强调因过度使用而失去新意；cliche 是不带重音符号的变体，当前保留照片中的 cliché。",
+      "normalization_note": "保留手写的重音符号 cliché；cliche 为同词变体，不另建第二条。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cliche",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词覆盖陈旧表达及观念、老套主题人物情境和过于常见的事物；同条目列有形容词形式及无重音变体。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "inconsequential",
+      "word": "inconsequential",
+      "image": 4,
+      "action": "existing_source_appended",
+      "pos": "adj.",
+      "meaning": "adj.不重要的；无关紧要的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不重要的",
+            "无关紧要的"
+          ],
+          "examples": [
+            {
+              "en": "The speech was full of inconsequential details.",
+              "zh": "这场演讲充满了无关紧要的细节。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/inconsequential",
+                "checked_at": "2026-10-16"
+              }
+            },
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason"
+      ],
+      "original_context": null,
+      "note": "手写笔记释义整理，尚未逐词词典核验。",
+      "normalization_note": "本次照片重复出现；沿用既有规范释义、例句及原核验日期。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/inconsequential",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ],
+      "definition_review": "retained_prior_entry"
+    },
+    {
+      "surface": "telltale",
+      "word": "telltale",
+      "image": 4,
+      "action": "new",
+      "pos": "adj. / n.",
+      "meaning": "adj.泄露实情的，显露迹象的\nn.（泄露实情的）迹象；告密者，搬弄是非者；指示器，指示装置",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "泄露实情的，显露迹象的"
+          ],
+          "examples": [
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "（泄露实情的）迹象",
+            "告密者，搬弄是非者",
+            "指示器，指示装置"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "reason",
+        "social"
+      ],
+      "original_context": null,
+      "note": "telltale signs 指透露内情或提供判断依据的迹象，不一定是危险警报；名词告密者与指示装置须分开。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/telltale",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "主词条列迹象、告密者和指示记录装置；形容词释义明确为表明或提供某事证据。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "hazard",
+      "word": "hazard",
+      "image": 4,
+      "action": "new",
+      "pos": "n. / v.",
+      "meaning": "n.危险源，危险因素；风险，危险；偶然，意外；（高尔夫球场）障碍区\nv.冒险提出（猜测、建议等）；使冒风险，拿……冒险",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "危险源，危险因素",
+            "风险，危险",
+            "偶然，意外",
+            "（高尔夫球场）障碍区"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "冒险提出（猜测、建议等）",
+            "使冒风险，拿……冒险"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "conflict",
+        "reason",
+        "action"
+      ],
+      "original_context": null,
+      "note": "名词既可指造成危险的事物，也可指所冒的风险；hazard a guess 是试着作出不确定的猜测，不是已经确定的判断。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hazard",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词涵盖危险来源、风险或偶然事件及球场障碍；动词为冒风险提出或使某物涉险。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "terrific",
+      "word": "terrific",
+      "image": 4,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.极好的，了不起的；极大的，程度惊人的；可怕的，令人惊惧的；糟糕透顶的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "极好的，了不起的",
+            "极大的，程度惊人的",
+            "可怕的，令人惊惧的",
+            "糟糕透顶的"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "quantity",
+        "mood"
+      ],
+      "original_context": null,
+      "note": "褒义极好与程度极大都常见；遇灾害、破坏等语境不能机械按极好解释。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/terrific",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典分别列非常好、非同寻常、引起恐惧或敬畏、极坏四类意思。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "lymphatic",
+      "word": "lymphatic",
+      "image": 4,
+      "action": "new",
+      "pos": "adj. / n.",
+      "meaning": "adj.（医学）淋巴的，淋巴系统的；输送淋巴的；倦怠的，迟钝的\nn.（解剖学）淋巴管",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "（医学）淋巴的，淋巴系统的",
+            "输送淋巴的",
+            "倦怠的，迟钝的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "（解剖学）淋巴管"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "body",
+        "character"
+      ],
+      "original_context": null,
+      "note": "医学义是本义，倦怠、迟钝是词典另收的引申义；不能只保留笔记的迟钝义。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lymphatic",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典形容词含淋巴或淋巴组织相关、输送淋巴及身心缺少活力；名词指输送淋巴的管。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "occlude",
+      "word": "occlude",
+      "image": 4,
+      "action": "new",
+      "pos": "v.",
+      "meaning": "v.堵塞，封闭；遮蔽，掩盖；（化学）吸收或吸附并保留；（牙齿）咬合",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "堵塞，封闭",
+            "遮蔽，掩盖",
+            "（化学）吸收或吸附并保留",
+            "（牙齿）咬合"
+          ],
+          "examples": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "body",
+        "material"
+      ],
+      "original_context": null,
+      "note": "常见核心义是封闭通路或遮住视线；照片中的吸收须限定在物理化学语境，咬合是牙科用法。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/occlude",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典含阻塞或隐蔽、吸收吸附、上下牙接触咬合，并在医学释义说明保留吸入物质。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "tourniquet",
+      "word": "tourniquet",
+      "image": 4,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.（医疗）止血带，止血器",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "（医疗）止血带，止血器"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "body"
+      ],
+      "original_context": null,
+      "note": "词义指通过压迫血管控制出血或血流的器具；这里只记录名词含义。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/tourniquet",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典定义为压迫血管以阻止或减缓出血、血流的器具。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "venous",
+      "word": "venous",
+      "image": 4,
+      "action": "new",
+      "pos": "adj.",
+      "meaning": "adj.（解剖学）静脉的，经静脉的；（地质等）有脉的，含脉的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "（解剖学）静脉的，经静脉的",
+            "（地质等）有脉的，含脉的"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "body",
+        "nature"
+      ],
+      "original_context": null,
+      "note": "主要是静脉相关的专业词；vein 也可指地质中的矿脉，不能在所有语境都译为静脉。",
+      "normalization_note": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/venous",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "条目涵盖与脉有关或富含脉的性质，并以静脉血栓与含脉岩石区分医学、非医学用法。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today"
+    }
+  ],
+  "occurrences": [
+    {
+      "word": "elucidate",
+      "surface": "elucidate",
+      "image": 1
+    },
+    {
+      "word": "elusive",
+      "surface": "elusive",
+      "image": 1
+    },
+    {
+      "word": "rehabilitate",
+      "surface": "rehabilitate",
+      "image": 1
+    },
+    {
+      "word": "episodic",
+      "surface": "episodic",
+      "image": 1
+    },
+    {
+      "word": "phlegmatic",
+      "surface": "phlegmatic",
+      "image": 1
+    },
+    {
+      "word": "retinue",
+      "surface": "retinue",
+      "image": 1
+    },
+    {
+      "word": "brash",
+      "surface": "brash",
+      "image": 1
+    },
+    {
+      "word": "latitude",
+      "surface": "latitude",
+      "image": 2
+    },
+    {
+      "word": "leeway",
+      "surface": "leeway",
+      "image": 2
+    },
+    {
+      "word": "analogy",
+      "surface": "analogy",
+      "image": 2
+    },
+    {
+      "word": "imperceptible",
+      "surface": "imperceptible",
+      "image": 2
+    },
+    {
+      "word": "exhale",
+      "surface": "exhale",
+      "image": 2
+    },
+    {
+      "word": "decay",
+      "surface": "decay",
+      "image": 2
+    },
+    {
+      "word": "observation",
+      "surface": "observation",
+      "image": 2
+    },
+    {
+      "word": "labyrinth",
+      "surface": "labyrinth",
+      "image": 2
+    },
+    {
+      "word": "lurch",
+      "surface": "lurch",
+      "image": 2
+    },
+    {
+      "word": "inveigle",
+      "surface": "inveigle",
+      "image": 2
+    },
+    {
+      "word": "swindle",
+      "surface": "swindle",
+      "image": 2
+    },
+    {
+      "word": "salutary",
+      "surface": "salutary",
+      "image": 2
+    },
+    {
+      "word": "adversarial",
+      "surface": "adversarial",
+      "image": 2
+    },
+    {
+      "word": "overbearing",
+      "surface": "overbearing",
+      "image": 2
+    },
+    {
+      "word": "fragile",
+      "surface": "fragile",
+      "image": 2
+    },
+    {
+      "word": "repeal",
+      "surface": "repeal",
+      "image": 2
+    },
+    {
+      "word": "lukewarm",
+      "surface": "lukewarm",
+      "image": 2
+    },
+    {
+      "word": "virtue",
+      "surface": "virtue",
+      "image": 2
+    },
+    {
+      "word": "venerate",
+      "surface": "venerate",
+      "image": 2
+    },
+    {
+      "word": "sycophantic",
+      "surface": "sycophantic",
+      "image": 2
+    },
+    {
+      "word": "retreat",
+      "surface": "retreat",
+      "image": 2
+    },
+    {
+      "word": "pilfer",
+      "surface": "pilfer",
+      "image": 2
+    },
+    {
+      "word": "pastoral",
+      "surface": "pastoral",
+      "image": 2
+    },
+    {
+      "word": "interdisciplinary",
+      "surface": "interdisciplinary",
+      "image": 2
+    },
+    {
+      "word": "obtuse",
+      "surface": "obtuse",
+      "image": 2
+    },
+    {
+      "word": "glorify",
+      "surface": "glorify",
+      "image": 2
+    },
+    {
+      "word": "trite",
+      "surface": "trite",
+      "image": 2
+    },
+    {
+      "word": "immure",
+      "surface": "immure",
+      "image": 2
+    },
+    {
+      "word": "vigilant",
+      "surface": "vigilant",
+      "image": 2
+    },
+    {
+      "word": "eject",
+      "surface": "eject",
+      "image": 2
+    },
+    {
+      "word": "extraneous",
+      "surface": "extraneous",
+      "image": 2
+    },
+    {
+      "word": "insidious",
+      "surface": "insidious",
+      "image": 2
+    },
+    {
+      "word": "substantiate",
+      "surface": "substantiate",
+      "image": 3
+    },
+    {
+      "word": "unflagging",
+      "surface": "unflagging",
+      "image": 3
+    },
+    {
+      "word": "utilitarian",
+      "surface": "utilitarian",
+      "image": 3
+    },
+    {
+      "word": "unsophisticated",
+      "surface": "unsophisticated",
+      "image": 3
+    },
+    {
+      "word": "fidelity",
+      "surface": "fidelity",
+      "image": 3
+    },
+    {
+      "word": "venal",
+      "surface": "venal",
+      "image": 3
+    },
+    {
+      "word": "feign",
+      "surface": "feign",
+      "image": 3
+    },
+    {
+      "word": "hypocrisy",
+      "surface": "hypocrisy",
+      "image": 3
+    },
+    {
+      "word": "flabbergast",
+      "surface": "flabbergast",
+      "image": 3
+    },
+    {
+      "word": "sound",
+      "surface": "sound",
+      "image": 3
+    },
+    {
+      "word": "scaremonger",
+      "surface": "scaremonger",
+      "image": 3
+    },
+    {
+      "word": "culminate",
+      "surface": "culminate",
+      "image": 3
+    },
+    {
+      "word": "invalidate",
+      "surface": "invalidate",
+      "image": 3
+    },
+    {
+      "word": "retract",
+      "surface": "retract",
+      "image": 3
+    },
+    {
+      "word": "synoptic",
+      "surface": "synoptic",
+      "image": 3
+    },
+    {
+      "word": "vortex",
+      "surface": "vortex",
+      "image": 3
+    },
+    {
+      "word": "overreach",
+      "surface": "overreach",
+      "image": 3
+    },
+    {
+      "word": "stump",
+      "surface": "stump",
+      "image": 3
+    },
+    {
+      "word": "fealty",
+      "surface": "fealty",
+      "image": 3
+    },
+    {
+      "word": "stem",
+      "surface": "stem",
+      "image": 3
+    },
+    {
+      "word": "suffocate",
+      "surface": "suffocate",
+      "image": 3
+    },
+    {
+      "word": "respire",
+      "surface": "respire",
+      "image": 3
+    },
+    {
+      "word": "adjunct",
+      "surface": "adjunct",
+      "image": 3
+    },
+    {
+      "word": "platitudinous",
+      "surface": "platitudinous",
+      "image": 3
+    },
+    {
+      "word": "untrammeled",
+      "surface": "untrammeled",
+      "image": 3
+    },
+    {
+      "word": "eclipse",
+      "surface": "eclipse",
+      "image": 3
+    },
+    {
+      "word": "flippant",
+      "surface": "flippant",
+      "image": 3
+    },
+    {
+      "word": "melodramatic",
+      "surface": "melodramatic",
+      "image": 4
+    },
+    {
+      "word": "hard-boiled",
+      "surface": "hard-boiled",
+      "image": 4
+    },
+    {
+      "word": "appeal",
+      "surface": "appeal",
+      "image": 4
+    },
+    {
+      "word": "modicum",
+      "surface": "modicum",
+      "image": 4
+    },
+    {
+      "word": "fleet",
+      "surface": "fleet",
+      "image": 4
+    },
+    {
+      "word": "fleeting",
+      "surface": "fleeting",
+      "image": 4
+    },
+    {
+      "word": "corrode",
+      "surface": "corrode",
+      "image": 4
+    },
+    {
+      "word": "momentum",
+      "surface": "momentum",
+      "image": 4
+    },
+    {
+      "word": "invert",
+      "surface": "invert",
+      "image": 4
+    },
+    {
+      "word": "staid",
+      "surface": "staid",
+      "image": 4
+    },
+    {
+      "word": "consternation",
+      "surface": "consternation",
+      "image": 4
+    },
+    {
+      "word": "hurtle",
+      "surface": "hurtle",
+      "image": 4
+    },
+    {
+      "word": "preliminary",
+      "surface": "preliminary",
+      "image": 4
+    },
+    {
+      "word": "fauna",
+      "surface": "fauna",
+      "image": 4
+    },
+    {
+      "word": "arable",
+      "surface": "arable",
+      "image": 4
+    },
+    {
+      "word": "hand-wringing",
+      "surface": "hard-wringing",
+      "image": 4
+    },
+    {
+      "word": "wring",
+      "surface": "wring",
+      "image": 4
+    },
+    {
+      "word": "wringing",
+      "surface": "wringing",
+      "image": 4
+    },
+    {
+      "word": "misgiving",
+      "surface": "misgiving",
+      "image": 4
+    },
+    {
+      "word": "misgive",
+      "surface": "misgive",
+      "image": 4
+    },
+    {
+      "word": "prepossessing",
+      "surface": "prepossessing",
+      "image": 4
+    },
+    {
+      "word": "precipitate",
+      "surface": "precipitate",
+      "image": 4
+    },
+    {
+      "word": "cliché",
+      "surface": "cliché",
+      "image": 4
+    },
+    {
+      "word": "inconsequential",
+      "surface": "inconsequential",
+      "image": 4
+    },
+    {
+      "word": "telltale",
+      "surface": "telltale",
+      "image": 4
+    },
+    {
+      "word": "hazard",
+      "surface": "hazard",
+      "image": 4
+    },
+    {
+      "word": "terrific",
+      "surface": "terrific",
+      "image": 4
+    },
+    {
+      "word": "lymphatic",
+      "surface": "lymphatic",
+      "image": 4
+    },
+    {
+      "word": "occlude",
+      "surface": "occlude",
+      "image": 4
+    },
+    {
+      "word": "tourniquet",
+      "surface": "tourniquet",
+      "image": 4
+    },
+    {
+      "word": "venous",
+      "surface": "venous",
+      "image": 4
+    }
+  ],
+  "pending_transcriptions": [
+    {
+      "image": 2,
+      "raw_word": "percepe (?)",
+      "location": "左侧第三行，analogy 下方、observation 上方",
+      "raw_pos": "n.",
+      "raw_meaning": "感觉功能（手写难辨）",
+      "reason": "词尾不能可靠识别，当前不足以确认是 percept、perceive 或 perception；不把候选写成已确认词条。",
+      "candidates": [
+        "percept",
+        "perceive",
+        "perception"
+      ],
+      "status": "spelling_pending"
+    }
+  ],
+  "corrections": [
+    {
+      "surface": "retinue",
+      "word": "retinue",
+      "image": 1,
+      "note": "规范为随行人员群体（集合名词），不是单个随从。"
+    },
+    {
+      "surface": "brash",
+      "word": "brash",
+      "image": 1,
+      "note": "手写“鲁莽、傲慢无礼”的词性应为 adj.，不是 v.；“胃热”不足以准确表示相关医学名词义。"
+    },
+    {
+      "surface": "lurch",
+      "word": "lurch",
+      "image": 2,
+      "note": "手写中的“挫折、惨败”不可作通用义；惨败仅保留有词典依据的牌戏语域，困境用法另在短语说明中交代。"
+    },
+    {
+      "surface": "overbearing",
+      "word": "overbearing",
+      "image": 2,
+      "note": "手写“压倒、击败”是 overbear 的动词义；本条沿用词库中 overbearing 的形容词释义，不把现在分词当作新的基本动词词性。"
+    },
+    {
+      "surface": "feign",
+      "word": "feign",
+      "image": 3,
+      "note": "按词典归为动词；不将手写中不清楚的词性符号另建名词义。"
+    },
+    {
+      "surface": "sound",
+      "word": "sound",
+      "image": 3,
+      "note": "补全手写只列出的声音和健康等释义；分词性整理常用义，不纳入鱼鳔或医疗探针等少见专门义。"
+    },
+    {
+      "surface": "synoptic",
+      "word": "synoptic",
+      "image": 3,
+      "note": "手写宗教名词义有词典依据，保留并标注宗教语域与通常大写形式。"
+    },
+    {
+      "surface": "fleet",
+      "word": "fleet",
+      "image": 4,
+      "note": "将手写的迅速义归入 adj.；未把 fleet 误列为 adv.。"
+    },
+    {
+      "surface": "hard-wringing",
+      "word": "hand-wringing",
+      "image": 4,
+      "note": "照片写形似 hard-wringing；结合手写词义及词典规范词形，归为 hand-wringing。"
+    },
+    {
+      "surface": "precipitate",
+      "word": "precipitate",
+      "image": 4,
+      "note": "本次照片重复出现；沿用既有规范释义、例句及原核验日期。"
+    },
+    {
+      "surface": "cliché",
+      "word": "cliché",
+      "image": 4,
+      "note": "保留手写的重音符号 cliché；cliche 为同词变体，不另建第二条。"
+    },
+    {
+      "surface": "inconsequential",
+      "word": "inconsequential",
+      "image": 4,
+      "note": "本次照片重复出现；沿用既有规范释义、例句及原核验日期。"
+    }
+  ],
+  "definition_notes": [
+    {
+      "word": "elucidate",
+      "note": "侧重通过解释或分析使原本不清楚的内容变得明白。"
+    },
+    {
+      "word": "episodic",
+      "note": "可说明事件发生方式或叙事结构；偶发义不表示按固定周期发生。"
+    },
+    {
+      "word": "phlegmatic",
+      "note": "既可侧重沉着，也可带有反应迟缓、冷淡之意；具体褒贬取决于语境。"
+    },
+    {
+      "word": "retinue",
+      "note": "是随重要人物同行的一群助手或侍从的集合称呼，不是单个仆人。"
+    },
+    {
+      "word": "brash",
+      "note": "形容行为或态度时常含贬义。碎片和医学名词义与常用形容词义须分开理解；water brash 涉及大量唾液反流，常伴胃酸。"
+    },
+    {
+      "word": "latitude",
+      "note": "抽象义侧重获准自由行动或选择的范围，可与 leeway 对照；地理义是纬度，不是经度。"
+    },
+    {
+      "word": "imperceptible",
+      "note": "常形容变化、差别或动作非常细微、缓慢，不能推导为完全不存在。"
+    },
+    {
+      "word": "lurch",
+      "note": "leave somebody in the lurch 表示在他人需要帮助时弃之不顾；“惨败”是词典所列的特定牌戏义，不能把 lurch 泛译为任何挫折。"
+    },
+    {
+      "word": "inveigle",
+      "note": "强调用诱惑、巧言或奉承让人同意，或由此取得好处；不同于直接强迫。"
+    },
+    {
+      "word": "swindle",
+      "note": "通常涉及通过欺诈取得他人的钱财或财产，不泛指所有不真实的话。"
+    },
+    {
+      "word": "salutary",
+      "note": "教训或警告即使令人不快，也可因带来纠正、改善作用而称为 salutary。"
+    },
+    {
+      "word": "repeal",
+      "note": "法律语境强调由有权机构正式废除；不等于某人单纯拒绝遵守法律。"
+    },
+    {
+      "word": "lukewarm",
+      "note": "从温度不高引申为支持、回应或评价缺乏热情，不必表示公开反对。"
+    },
+    {
+      "word": "virtue",
+      "note": "by virtue of 表示由于或凭借，不是“因为美德”；讨论物品或制度时常指优点、益处，而非道德品格。"
+    },
+    {
+      "word": "venerate",
+      "note": "比一般喜欢更强调敬意；宗教语境可指以仪式敬奉圣像、圣物。"
+    },
+    {
+      "word": "sycophantic",
+      "note": "强调逢迎、卑躬屈膝的奉承，不等同于真诚敬重。"
+    },
+    {
+      "word": "retreat",
+      "note": "可指军队撤退，也可指退出公共生活、暂离日常环境进行静修；不能把所有 retreat 都译成战败逃跑。"
+    },
+    {
+      "word": "pilfer",
+      "note": "强调暗中小量偷取，常有反复性；不等于战争中的暴力劫掠。小量并不表示偷的东西一定不值钱。"
+    },
+    {
+      "word": "interdisciplinary",
+      "note": "指跨越两个或更多学术、科学或艺术领域，不能仅凭一项研究很复杂就认定跨学科。"
+    },
+    {
+      "word": "obtuse",
+      "note": "形容人时指不易理解明显的信息，带批评意味；几何钝角大于90度且小于180度。表达晦涩义也有词典依据，须结合所修饰对象判断。"
+    },
+    {
+      "word": "glorify",
+      "note": "既可真诚颂扬，也可含过度美化之意；glorified 用于名词前时常暗示名称好听而本质普通。"
+    },
+    {
+      "word": "trite",
+      "note": "多评价观点、措辞或情节缺乏新意；并不单纯表示年代久远。"
+    },
+    {
+      "word": "immure",
+      "note": "可字面指关在墙内，也可引申为受封闭环境限制、与外界隔绝。"
+    },
+    {
+      "word": "vigilant",
+      "note": "强调持续留意危险、保持戒备，不只是看到某件事。"
+    },
+    {
+      "word": "eject",
+      "note": "共同方向是由内向外排出；人被赶出场所与机械弹出物体须按宾语区分。"
+    },
+    {
+      "word": "insidious",
+      "note": "核心常是危害缓慢累积而不易察觉；不只用于阴险的人，也可描述问题或疾病的发展。"
+    },
+    {
+      "word": "substantiate",
+      "note": "常用于 substantiate a claim / allegation，要求提供支持说法的证据；不是仅重复声称。"
+    },
+    {
+      "word": "unflagging",
+      "note": "常修饰努力、精力或热情，强调持续而不衰减。"
+    },
+    {
+      "word": "unsophisticated",
+      "note": "描述人可指缺乏世故或经验，描述技术、装置可指结构简单；不一概等于愚笨。"
+    },
+    {
+      "word": "fidelity",
+      "note": "常见 fidelity to a person / principle；音像语境的 high fidelity 表示高保真。与 fealty 相比，本词也常强调履行义务与复制的准确性。"
+    },
+    {
+      "word": "venal",
+      "note": "用于官员、行为或制度时常含收受贿赂之意；不要与 venial（可宽恕的）混淆。"
+    },
+    {
+      "word": "feign",
+      "note": "常接情绪、症状或无知等宾语；feign ignorance 指装作不知。"
+    },
+    {
+      "word": "hypocrisy",
+      "note": "强调宣称的道德标准或信念与实际行为不一致，不只是一般的说错话。"
+    },
+    {
+      "word": "flabbergast",
+      "note": "常以 be flabbergasted 表示惊讶得说不出话；本词收录原形。"
+    },
+    {
+      "word": "sound",
+      "note": "GRE 论证语境的 sound 常指论证合理可靠；sound asleep 为酣睡，sound out 常指试探意见。形容词、声音名词和测深动词不可混为一个义项。"
+    },
+    {
+      "word": "scaremonger",
+      "note": "强调制造不必要的恐慌，不是所有传递警报或坏消息的人。"
+    },
+    {
+      "word": "invalidate",
+      "note": "可用于票据或协议失效，也可用于证据使某结论不能成立。"
+    },
+    {
+      "word": "retract",
+      "note": "retract a statement 为撤回说法；身体部位或机械结构的 retract 为向内缩回。"
+    },
+    {
+      "word": "synoptic",
+      "note": "一般阅读中多表示概览性的；宗教义涉及《马太福音》《马可福音》《路加福音》，属于专门语域。"
+    },
+    {
+      "word": "vortex",
+      "note": "复数为 vortices 或 vortexes；比喻义强调被卷入难以摆脱的局势。"
+    },
+    {
+      "word": "overreach",
+      "note": "overreach oneself 常指企图超过自身能力而失败；权力语境指越权，论证语境可指证据不足却作过大的断言。"
+    },
+    {
+      "word": "fealty",
+      "note": "强调强烈而坚定的忠诚，常有宣誓效忠的意味；封建法律义指臣属对领主的义务。"
+    },
+    {
+      "word": "suffocate",
+      "note": "可指缺乏空气，也可比喻环境或控制阻碍个人、创作等的发展。"
+    },
+    {
+      "word": "respire",
+      "note": "较正式或用于生物学；呼吸作用是动词用法，名词形式为 respiration。"
+    },
+    {
+      "word": "adjunct",
+      "note": "adjunct to 表示补充或辅助；adjunct professor 通常为非全职或非正式编制教师，不等于 assistant professor（助理教授）。语法义指非句子核心结构的附加成分。"
+    },
+    {
+      "word": "platitudinous",
+      "note": "主要批评表达内容空泛陈旧，不能仅按一般的普通、平凡理解。"
+    },
+    {
+      "word": "untrammeled",
+      "note": "美式拼写 untrammeled，英式常拼 untrammelled；可修饰自由，也可修饰贪欲等，因此不固定为褒义。"
+    },
+    {
+      "word": "eclipse",
+      "note": "天文名词指天体被遮蔽或进入阴影；比喻动词可指地位被取代，也可指成绩超过旧纪录。"
+    },
+    {
+      "word": "flippant",
+      "note": "常形容在应严肃或尊重的场合随口开玩笑的回答；不等于机智幽默。"
+    },
+    {
+      "word": "melodramatic",
+      "note": "形容言行时常指情绪表现夸大、不合分寸；指戏剧类型时不必带批评。"
+    },
+    {
+      "word": "hard-boiled",
+      "note": "人的性格义强调强硬、不感情用事；食物义指蛋白和蛋黄均已凝固。硬汉派是文学类型用法。"
+    },
+    {
+      "word": "appeal",
+      "note": "appeal to 后可接求助对象或受到吸引的人，须依语境区分；上诉是法律义。"
+    },
+    {
+      "word": "modicum",
+      "note": "常见 a modicum of，常用于耐心、信心、能力等抽象事物。"
+    },
+    {
+      "word": "fleet",
+      "note": "迅速义可作形容词；相应副词是 fleetly，不把照片的 adv. 直接照录。fleeting 有独立的短暂义形容词用法。"
+    },
+    {
+      "word": "fleeting",
+      "note": "独立形容词强调持续时间极短，不仅是 fleet 的现在分词；此处不单独释为飞奔的。"
+    },
+    {
+      "word": "corrode",
+      "note": "既可指材料受到化学腐蚀，也可指信任或关系被逐渐损害。重点在逐渐侵蚀，不是一次性的破坏。"
+    },
+    {
+      "word": "momentum",
+      "note": "物理义是质量与速度的乘积；不能与能量、力直接混同。比喻义常指事件发展积累起来的势头。"
+    },
+    {
+      "word": "invert",
+      "note": "核心是把位置、顺序或朝向反过来；数学语境中的求倒数须与一般翻转区分。"
+    },
+    {
+      "word": "staid",
+      "note": "强调一贯的沉稳和克制；评价风格时可带过于古板、缺少活力的意味。"
+    },
+    {
+      "word": "consternation",
+      "note": "是令人一时不知如何应对的惊愕或惊惶；不等于单纯的困惑。"
+    },
+    {
+      "word": "hurtle",
+      "note": "不及物义是自身快速猛烈移动；及物义是把物体猛力抛出。注意与 hurdle（障碍；跨越障碍）区分。"
+    },
+    {
+      "word": "preliminary",
+      "note": "强调先于正式步骤并为其作准备；初步结果仍可能修订。名词常用复数 preliminaries。"
+    },
+    {
+      "word": "fauna",
+      "note": "集合性地指某地区或时代的动物，不是单只动物；与 flora（植物群）相对。"
+    },
+    {
+      "word": "arable",
+      "note": "核心区别是适合或用于种植作物；名词耕地及种植业形容词用法主要见于英式英语。"
+    },
+    {
+      "word": "hand-wringing",
+      "note": "指焦灼或内疚情绪的过度表达，不能简单等同于绝望；构词与 wring one’s hands 有关。"
+    },
+    {
+      "word": "wring",
+      "note": "过去式、过去分词均为 wrung；wring out 常指拧干，wring something from/out of someone 可指逼取。"
+    },
+    {
+      "word": "wringing",
+      "note": "通常用于 wringing wet，尤其描述衣物湿透；此处有独立形容词义，保留为词条，不仅按 wring 的现在分词处理。"
+    },
+    {
+      "word": "misgiving",
+      "note": "常用复数 misgivings，尤其针对将发生的事情或计划是否可靠；这里是独立名词，不只是 misgive 的词形变化。"
+    },
+    {
+      "word": "misgive",
+      "note": "过去式 misgave、过去分词 misgiven；动词与名词 misgiving 分开保留。"
+    },
+    {
+      "word": "prepossessing",
+      "note": "强调带来良好的第一印象，尤可指外貌或举止；与 unprepossessing 相对。"
+    },
+    {
+      "word": "cliché",
+      "note": "强调因过度使用而失去新意；cliche 是不带重音符号的变体，当前保留照片中的 cliché。"
+    },
+    {
+      "word": "telltale",
+      "note": "telltale signs 指透露内情或提供判断依据的迹象，不一定是危险警报；名词告密者与指示装置须分开。"
+    },
+    {
+      "word": "hazard",
+      "note": "名词既可指造成危险的事物，也可指所冒的风险；hazard a guess 是试着作出不确定的猜测，不是已经确定的判断。"
+    },
+    {
+      "word": "terrific",
+      "note": "褒义极好与程度极大都常见；遇灾害、破坏等语境不能机械按极好解释。"
+    },
+    {
+      "word": "lymphatic",
+      "note": "医学义是本义，倦怠、迟钝是词典另收的引申义；不能只保留笔记的迟钝义。"
+    },
+    {
+      "word": "occlude",
+      "note": "常见核心义是封闭通路或遮住视线；照片中的吸收须限定在物理化学语境，咬合是牙科用法。"
+    },
+    {
+      "word": "tourniquet",
+      "note": "词义指通过压迫血管控制出血或血流的器具；这里只记录名词含义。"
+    },
+    {
+      "word": "venous",
+      "note": "主要是静脉相关的专业词；vein 也可指地质中的矿脉，不能在所有语境都译为静脉。"
+    }
+  ],
+  "existing_updates": [
+    {
+      "word": "elusive",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "rehabilitate",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "leeway",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "analogy",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "exhale",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "decay",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "observation",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "labyrinth",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "adversarial",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "overbearing",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "fragile",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "pastoral",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "extraneous",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "utilitarian",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "culminate",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "stump",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "stem",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "precipitate",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    },
+    {
+      "word": "inconsequential",
+      "action": "source_appended_existing_definition_examples_and_evidence_preserved"
+    }
+  ],
+  "validation": {
+    "desktop_events": 2682,
+    "existing_definitions_examples_notes_learning": "unchanged",
+    "existing_topic_assignments": "unchanged",
+    "phone_scenarios": [
+      {
+        "starting_point": "2026-10-20 backup",
+        "new_words": 78,
+        "existing_words": 19,
+        "preserved_events": 3229,
+        "preserved_pending_curation": 69,
+        "preserved_sessions": 7,
+        "existing_words_and_progress": "unchanged",
+        "repeat_import": "idempotent"
+      },
+      {
+        "starting_point": "2026-10-20 backup plus 2026-10-23 and 2026-10-24 word imports",
+        "new_words": 78,
+        "existing_words": 19,
+        "preserved_events": 3229,
+        "preserved_pending_curation": 69,
+        "preserved_sessions": 7,
+        "existing_words_and_progress": "unchanged",
+        "repeat_import": "idempotent"
+      }
+    ],
+    "original_backup": "unchanged",
+    "real_phone_modified": false
+  },
+  "mobile_import_package": {
+    "path": "platform/mobile/releases/GRE-vocabulary-2026-10-25-new-words.json",
+    "format": "gre-vocabulary-seed",
+    "word_count": 97,
+    "event_count": 0,
+    "legacy_word_count": 0,
+    "relation_group_count": 6,
+    "bytes": 138405,
+    "sha256": "4cdcf7041baf345ffae8649d7118550d4bca25a585bac814f606ca8c8e45e6a2",
+    "mode": "导入新增词",
+    "note": "只新增手机尚不存在的词；已有词的释义、分类和记录不覆盖。不用于完整恢复。待确认词形不包含在本包。"
+  }
+}
