@@ -35,7 +35,7 @@ materials:
     sha256: null
     role: user_vocabulary_notes
     answer_status: not_applicable
-    description: "98个手写条目：确认97词（78新、19已有），1项待确认；不计复习或掌握。"
+    description: "98词全部确认：79新、19已有；percept由用户确认补录，不计复习或掌握。"
     record: vocab/imports/20261025_2245_handwritten_vocab.json
     image_count: 4
     original_storage: user_supplied_chat_attachments_not_committed

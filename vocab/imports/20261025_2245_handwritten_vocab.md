@@ -1,15 +1,16 @@
 # 2026-10-25 手写词汇整理
 
-四页共 98 个手写条目，确认 **97 词**：新增 **78 词**，已有 **19 词**；另有 **1 项字迹待确认**，暂不入库。新增 232 个规范义项、6 组关联辨析。
+四页共 **98 词**：新增 **79 词**，已有 **19 词**；全部词形已确认。新增 234 个规范义项、6 组关联辨析。
 
 已有词仅追加照片来源，原释义、原例句、个人笔记、分类与学习记录保持不变。新增义项的 ETS／Oxford 原例句均留空；收录不计为翻阅、复习或掌握。
 
-## 待确认词形
+## 词形确认
 
-第 2 页左侧第三行，analogy 下方、exhale 左边的英文近似 **percepe**，词尾不能可靠辨认。已询问原词，确认前不进入正式词库或手机导入包。
+用户已明确确认第 2 页 analogy 下方、exhale 左边的词为 **percept**，已补入本批。其余 97 词保持原样；原待确认记录和此次确认依据保存在同名 JSON 及 [补录记录](20261025_2309_percept_confirmation.md) 中。
 
 ## 词形与释义核对
 
+- **percept**：n.知觉印象，感知内容；知觉对象。不是感官功能本身。
 - **retinue**：规范为随行人员群体（集合名词），不是单个随从。
 - **brash**：手写“鲁莽、傲慢无礼”的词性应为 adj.，不是 v.；“胃热”不足以准确表示相关医学名词义。
 - **lurch**：手写中的“挫折、惨败”不可作通用义；惨败仅保留有词典依据的牌戏语域，困境用法另在短语说明中交代。
@@ -48,6 +49,7 @@
 | leeway | 已有，仅加来源 | n.余地；可自由调整的幅度；（船的）风致偏航 | [Merriam-Webster](https://www.merriam-webster.com/dictionary/leeway) |
 | analogy | 已有，仅加来源 | n.类比；相似关系；类推 | [Merriam-Webster](https://www.merriam-webster.com/dictionary/analogy) |
 | imperceptible | 新增 | adj.难以察觉的，细微得几乎感觉不到的 | [Merriam-Webster](https://www.merriam-webster.com/dictionary/imperceptible) |
+| percept | 新增，用户确认 | n.知觉印象，感知内容；知觉对象（被感知的事物或现象） | [Merriam-Webster](https://www.merriam-webster.com/dictionary/percept)；[Collins Dictionary](https://www.collinsdictionary.com/dictionary/english/percept) |
 | exhale | 已有，仅加来源 | v.呼出；散发气体或蒸气 | [Merriam-Webster](https://www.merriam-webster.com/dictionary/exhale) |
 | decay | 已有，仅加来源 | v.腐烂，腐朽；衰退；衰减<br>n.腐烂；衰败；衰减 | [Merriam-Webster](https://www.merriam-webster.com/dictionary/decay) |
 | observation | 已有，仅加来源 | n.观察；观察所得；评论，意见；遵守 | [Merriam-Webster](https://www.merriam-webster.com/dictionary/observation) |
@@ -158,8 +160,9 @@
 
 ## 手机导入与核验
 
-- 导入文件：[GRE-vocabulary-2026-10-25-new-words.json](../../platform/mobile/releases/GRE-vocabulary-2026-10-25-new-words.json)。在手机“设置 → 导入新增词”中选择；这不是完整恢复包。
-- 包含本批97个已确认词和6组关联，不带复习历史；待确认项未加入。已有词自动跳过，实际新增数以手机导入预览为准。
-- 用2026-10-20手机备份的内存副本验证两种情形：原备份直接导入；先导入10月23日及24日词包后再导入。实际核验数字见同名JSON。
-- 两种情形均保留3,229条手机事件、69词待整理标记、全部既有词和7个轮次（其中2个未完成）；重复导入没有重复词或计次。电脑2,682条事件及原始备份字节未变。本次未操作真实手机。
-- 文件SHA-256：4cdcf7041baf345ffae8649d7118550d4bca25a585bac814f606ca8c8e45e6a2。
+- 最新导入文件：[GRE-vocabulary-2026-10-25-new-words-r2.json](../../platform/mobile/releases/GRE-vocabulary-2026-10-25-new-words-r2.json)。在手机“设置 → 导入新增词”中选择；这不是完整恢复包。
+- 本包包含全部98个已确认词、6组关联；percept已补入，不带复习历史。已有词自动跳过。
+- 若已导入之前的97词版本，再导入本包只新增percept；原97词包仍保留，本包为完整修订版。
+- 用2026-10-20手机备份副本验证三种情形：直接导入新增79词；已导入10月23日和24日词包后新增79词；已导入今日97词版本后仅新增1词。实际新增数以手机预览为准。
+- 三种情形均保留3,229条手机事件、69词待整理标记、全部既有词及7个轮次；重复导入无重复词或计次。原始备份字节与电脑2,682条事件未变。本次未操作真实手机。
+- 文件SHA-256：d09772666664305c2d2dd460ed014d1f4e7762ca0e9f8550952e93dcf3f98739。

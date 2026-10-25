@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-25T15:10:17.220Z",
+  "date": "2026-10-25",
+  "time_zone": "Asia/Kuala_Lumpur",
+  "kind": "vocabulary_transcription_confirmation",
+  "material_id": "handwritten_vocab_20261025",
+  "source_record": "vocab/imports/20261025_2245_handwritten_vocab.json",
+  "image": 2,
+  "previous_pending": {
+    "image": 2,
+    "raw_word": "percepe (?)",
+    "location": "左侧第三行，analogy 下方、observation 上方",
+    "raw_pos": "n.",
+    "raw_meaning": "感觉功能（手写难辨）",
+    "reason": "词尾不能可靠识别，当前不足以确认是 percept、perceive 或 perception；不把候选写成已确认词条。",
+    "candidates": [
+      "percept",
+      "perceive",
+      "perception"
+    ],
+    "status": "spelling_pending"
+  },
+  "confirmation": {
+    "confirmed_by": "user",
+    "reply": "percept",
+    "word": "percept"
+  },
+  "action": "add_confirmed_word_and_resolve_pending",
+  "item": {
+    "surface": "percepe (?)",
+    "word": "percept",
+    "image": 2,
+    "action": "new",
+    "pos": "n.",
+    "meaning": "n.知觉印象，感知内容；知觉对象（被感知的事物或现象）",
+    "senses": [
+      {
+        "pos": "n.",
+        "meanings": [
+          "知觉印象，感知内容",
+          "知觉对象（被感知的事物或现象）"
+        ],
+        "examples": [
+          null,
+          null
+        ]
+      }
+    ],
+    "topics": [
+      "reason",
+      "body"
+    ],
+    "original_context": null,
+    "note": "可指通过感官获得的具体印象，也可指被感知的对象或现象；不是感觉能力或感官功能本身。用于知觉、认知相关讨论。",
+    "normalization_note": "第2页模糊词形原记为 percepe (?)；用户明确确认原词为 percept。",
+    "definition_sources": [
+      {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/percept",
+        "checked_at": "2026-10-25",
+        "status": "checked",
+        "evidence": "实际读取名词条目：指通过感官获得的关于对象的印象，即感知内容；不是感官功能本身。"
+      },
+      {
+        "publisher": "Collins Dictionary",
+        "url": "https://www.collinsdictionary.com/dictionary/english/percept",
+        "checked_at": "2026-10-25",
+        "status": "checked",
+        "evidence": "实际读取条目，区分经感官获得的印象或感知产物，以及被感知的对象或现象。"
+      }
+    ],
+    "definition_review": "dictionary_checked_today",
+    "transcription_confirmation": {
+      "method": "user_explicit_reply",
+      "answer": "percept",
+      "record": "vocab/imports/20261025_2309_percept_confirmation.json"
+    }
+  },
+  "counts_before": {
+    "handwritten_occurrences": 98,
+    "transcribed_occurrences": 97,
+    "handwritten_unique": 97,
+    "within_batch_repeats": 0,
+    "handwritten_new": 78,
+    "handwritten_existing": 19,
+    "new_senses": 232,
+    "relation_groups_added": 6,
+    "pending_transcriptions": 1
+  },
+  "counts_after": {
+    "handwritten_occurrences": 98,
+    "transcribed_occurrences": 98,
+    "handwritten_unique": 98,
+    "within_batch_repeats": 0,
+    "handwritten_new": 79,
+    "handwritten_existing": 19,
+    "new_senses": 234,
+    "relation_groups_added": 6,
+    "pending_transcriptions": 0
+  },
+  "example_policy": "未取得可追溯 ETS/Oxford 原例句，保留 null，不自编。",
+  "learning_effect": "仅补充内容，不计翻阅、复习或掌握。",
+  "validation": {
+    "desktop_events": 2682,
+    "existing_definitions_examples_notes_learning": "unchanged",
+    "existing_topic_assignments": "unchanged",
+    "phone_scenarios": [
+      {
+        "starting_point": "2026-10-20 backup",
+        "new_words": 79,
+        "existing_words": 19,
+        "preserved_events": 3229,
+        "preserved_pending_curation": 69,
+        "preserved_sessions": 7,
+        "existing_words_and_progress": "unchanged",
+        "repeat_import": "idempotent"
+      },
+      {
+        "starting_point": "2026-10-20 backup plus 2026-10-23 and 2026-10-24 word imports",
+        "new_words": 79,
+        "existing_words": 19,
+        "preserved_events": 3229,
+        "preserved_pending_curation": 69,
+        "preserved_sessions": 7,
+        "existing_words_and_progress": "unchanged",
+        "repeat_import": "idempotent"
+      },
+      {
+        "starting_point": "2026-10-20 backup plus prior imports and first 97-word package",
+        "new_words": 1,
+        "existing_words": 97,
+        "preserved_events": 3229,
+        "preserved_pending_curation": 69,
+        "preserved_sessions": 7,
+        "existing_words_and_progress": "unchanged",
+        "repeat_import": "idempotent"
+      }
+    ],
+    "original_backup": "unchanged",
+    "real_phone_modified": false
+  },
+  "mobile_import_package": {
+    "path": "platform/mobile/releases/GRE-vocabulary-2026-10-25-new-words-r2.json",
+    "format": "gre-vocabulary-seed",
+    "word_count": 98,
+    "event_count": 0,
+    "legacy_word_count": 0,
+    "relation_group_count": 6,
+    "bytes": 139817,
+    "sha256": "d09772666664305c2d2dd460ed014d1f4e7762ca0e9f8550952e93dcf3f98739",
+    "mode": "导入新增词",
+    "note": "只新增手机尚不存在的词；已有词的释义、分类和记录不覆盖。不用于完整恢复。percept 已由用户确认并补入，全部98词确认完成。"
+  }
+}

@@ -151945,6 +151945,47 @@
       "normalized_at": "2026-10-25",
       "content_type": "word",
       "formatted": "adj.（解剖学）静脉的，经静脉的；（地质等）有脉的，含脉的"
+    },
+    {
+      "word": "percept",
+      "input": {
+        "pos": "n.",
+        "meaning": "n.知觉印象，感知内容；知觉对象（被感知的事物或现象）"
+      },
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "知觉印象，感知内容",
+            "知觉对象（被感知的事物或现象）"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "status": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/percept",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "实际读取名词条目：指通过感官获得的关于对象的印象，即感知内容；不是感官功能本身。"
+        },
+        {
+          "publisher": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/percept",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "实际读取条目，区分经感官获得的印象或感知产物，以及被感知的对象或现象。"
+        }
+      ],
+      "note": "可指通过感官获得的具体印象，也可指被感知的对象或现象；不是感觉能力或感官功能本身。用于知觉、认知相关讨论。",
+      "normalized_at": "2026-10-25",
+      "content_type": "word",
+      "formatted": "n.知觉印象，感知内容；知觉对象（被感知的事物或现象）"
     }
   ]
 }

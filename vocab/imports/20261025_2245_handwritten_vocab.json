@@ -7,14 +7,14 @@
   "source_kind": "user_handwritten_notes",
   "counts": {
     "handwritten_occurrences": 98,
-    "transcribed_occurrences": 97,
-    "handwritten_unique": 97,
+    "transcribed_occurrences": 98,
+    "handwritten_unique": 98,
     "within_batch_repeats": 0,
-    "handwritten_new": 78,
+    "handwritten_new": 79,
     "handwritten_existing": 19,
-    "new_senses": 232,
+    "new_senses": 234,
     "relation_groups_added": 6,
-    "pending_transcriptions": 1
+    "pending_transcriptions": 0
   },
   "images": [
     {
@@ -28,8 +28,8 @@
       "image": 2,
       "filename": "codex-clipboard-9b87ea09-27b2-4a9f-9e58-51a0f3a9e331.jpg",
       "sha256": "0b573ec81c12749171c7950176b4a220b015e99bd1935c2e365914095d6d1e10",
-      "transcribed_count": 32,
-      "pending_count": 1
+      "transcribed_count": 33,
+      "pending_count": 0
     },
     {
       "image": 3,
@@ -112,6 +112,13 @@
       "word": "imperceptible",
       "image": 2,
       "status": "visually_transcribed"
+    },
+    {
+      "surface": "percepe (?)",
+      "word": "percept",
+      "image": 2,
+      "status": "user_confirmed",
+      "confirmation_record": "vocab/imports/20261025_2309_percept_confirmation.json"
     },
     {
       "surface": "exhale",
@@ -630,7 +637,7 @@
       "status": "visually_transcribed"
     }
   ],
-  "definition_policy": "四页逐项转录，97词确认，1项字迹不清隔离待确认。78个新词按实际读取的权威词典整理词性、核心义、语体与分类；未提供完整ETS题目语境，不声称官方语境核验。19个旧词仅追加本批照片来源，保留规范释义、原例句、历史核验日期、笔记、分类及学习证据。新义项未取得可追溯ETS/Oxford原例句，全部留null，不自编；照片未提供完整原句，本批original_context=null。",
+  "definition_policy": "四页逐项转录，98词确认，其中percept由用户明确确认词形。79个新词按实际读取的权威词典整理词性、核心义、语体与分类；未提供完整ETS题目语境，不声称官方语境核验。19个旧词仅追加本批照片来源，保留规范释义、原例句、历史核验日期、笔记、分类及学习证据。新义项未取得可追溯ETS/Oxford原例句，全部留null，不自编；照片未提供完整原句，本批original_context=null。",
   "items": [
     {
       "surface": "elucidate",
@@ -1157,6 +1164,56 @@
         }
       ],
       "definition_review": "dictionary_checked_today"
+    },
+    {
+      "surface": "percepe (?)",
+      "word": "percept",
+      "image": 2,
+      "action": "new",
+      "pos": "n.",
+      "meaning": "n.知觉印象，感知内容；知觉对象（被感知的事物或现象）",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "知觉印象，感知内容",
+            "知觉对象（被感知的事物或现象）"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ],
+      "topics": [
+        "reason",
+        "body"
+      ],
+      "original_context": null,
+      "note": "可指通过感官获得的具体印象，也可指被感知的对象或现象；不是感觉能力或感官功能本身。用于知觉、认知相关讨论。",
+      "normalization_note": "第2页模糊词形原记为 percepe (?)；用户明确确认原词为 percept。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/percept",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "实际读取名词条目：指通过感官获得的关于对象的印象，即感知内容；不是感官功能本身。"
+        },
+        {
+          "publisher": "Collins Dictionary",
+          "url": "https://www.collinsdictionary.com/dictionary/english/percept",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "实际读取条目，区分经感官获得的印象或感知产物，以及被感知的对象或现象。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "transcription_confirmation": {
+        "method": "user_explicit_reply",
+        "answer": "percept",
+        "record": "vocab/imports/20261025_2309_percept_confirmation.json"
+      }
     },
     {
       "surface": "exhale",
@@ -5192,6 +5249,11 @@
       "image": 2
     },
     {
+      "word": "percept",
+      "surface": "percepe (?)",
+      "image": 2
+    },
+    {
       "word": "exhale",
       "surface": "exhale",
       "image": 2
@@ -5622,22 +5684,7 @@
       "image": 4
     }
   ],
-  "pending_transcriptions": [
-    {
-      "image": 2,
-      "raw_word": "percepe (?)",
-      "location": "左侧第三行，analogy 下方、observation 上方",
-      "raw_pos": "n.",
-      "raw_meaning": "感觉功能（手写难辨）",
-      "reason": "词尾不能可靠识别，当前不足以确认是 percept、perceive 或 perception；不把候选写成已确认词条。",
-      "candidates": [
-        "percept",
-        "perceive",
-        "perception"
-      ],
-      "status": "spelling_pending"
-    }
-  ],
+  "pending_transcriptions": [],
   "corrections": [
     {
       "surface": "retinue",
@@ -5710,6 +5757,13 @@
       "word": "inconsequential",
       "image": 4,
       "note": "本次照片重复出现；沿用既有规范释义、例句及原核验日期。"
+    },
+    {
+      "surface": "percepe (?)",
+      "word": "percept",
+      "image": 2,
+      "note": "第2页模糊词形原记为 percepe (?)；用户明确确认原词为 percept。",
+      "confirmation_record": "vocab/imports/20261025_2309_percept_confirmation.json"
     }
   ],
   "definition_notes": [
@@ -6024,6 +6078,10 @@
     {
       "word": "venous",
       "note": "主要是静脉相关的专业词；vein 也可指地质中的矿脉，不能在所有语境都译为静脉。"
+    },
+    {
+      "word": "percept",
+      "note": "可指通过感官获得的具体印象，也可指被感知的对象或现象；不是感觉能力或感官功能本身。用于知觉、认知相关讨论。"
     }
   ],
   "existing_updates": [
@@ -6111,7 +6169,7 @@
     "phone_scenarios": [
       {
         "starting_point": "2026-10-20 backup",
-        "new_words": 78,
+        "new_words": 79,
         "existing_words": 19,
         "preserved_events": 3229,
         "preserved_pending_curation": 69,
@@ -6121,8 +6179,18 @@
       },
       {
         "starting_point": "2026-10-20 backup plus 2026-10-23 and 2026-10-24 word imports",
-        "new_words": 78,
+        "new_words": 79,
         "existing_words": 19,
+        "preserved_events": 3229,
+        "preserved_pending_curation": 69,
+        "preserved_sessions": 7,
+        "existing_words_and_progress": "unchanged",
+        "repeat_import": "idempotent"
+      },
+      {
+        "starting_point": "2026-10-20 backup plus prior imports and first 97-word package",
+        "new_words": 1,
+        "existing_words": 97,
         "preserved_events": 3229,
         "preserved_pending_curation": 69,
         "preserved_sessions": 7,
@@ -6134,15 +6202,81 @@
     "real_phone_modified": false
   },
   "mobile_import_package": {
-    "path": "platform/mobile/releases/GRE-vocabulary-2026-10-25-new-words.json",
+    "path": "platform/mobile/releases/GRE-vocabulary-2026-10-25-new-words-r2.json",
     "format": "gre-vocabulary-seed",
-    "word_count": 97,
+    "word_count": 98,
     "event_count": 0,
     "legacy_word_count": 0,
     "relation_group_count": 6,
-    "bytes": 138405,
-    "sha256": "4cdcf7041baf345ffae8649d7118550d4bca25a585bac814f606ca8c8e45e6a2",
+    "bytes": 139817,
+    "sha256": "d09772666664305c2d2dd460ed014d1f4e7762ca0e9f8550952e93dcf3f98739",
     "mode": "导入新增词",
-    "note": "只新增手机尚不存在的词；已有词的释义、分类和记录不覆盖。不用于完整恢复。待确认词形不包含在本包。"
-  }
+    "note": "只新增手机尚不存在的词；已有词的释义、分类和记录不覆盖。不用于完整恢复。percept 已由用户确认并补入，全部98词确认完成。"
+  },
+  "resolved_transcriptions": [
+    {
+      "image": 2,
+      "raw_word": "percepe (?)",
+      "location": "左侧第三行，analogy 下方、observation 上方",
+      "raw_pos": "n.",
+      "raw_meaning": "感觉功能（手写难辨）",
+      "reason": "词尾不能可靠识别，当前不足以确认是 percept、perceive 或 perception；不把候选写成已确认词条。",
+      "candidates": [
+        "percept",
+        "perceive",
+        "perception"
+      ],
+      "status": "resolved",
+      "confirmed_word": "percept",
+      "confirmed_by": "user",
+      "user_reply": "percept",
+      "resolved_at": "2026-10-25T15:10:17.220Z",
+      "confirmation_record": "vocab/imports/20261025_2309_percept_confirmation.json"
+    }
+  ],
+  "updated_at": "2026-10-25T15:10:17.220Z",
+  "revisions": [
+    {
+      "record": "vocab/imports/20261025_2309_percept_confirmation.json",
+      "recorded_at": "2026-10-25T15:10:17.220Z",
+      "reason": "用户确认第2页待辨词为 percept，新增1词2义项并解除待确认状态。",
+      "previous_counts": {
+        "handwritten_occurrences": 98,
+        "transcribed_occurrences": 97,
+        "handwritten_unique": 97,
+        "within_batch_repeats": 0,
+        "handwritten_new": 78,
+        "handwritten_existing": 19,
+        "new_senses": 232,
+        "relation_groups_added": 6,
+        "pending_transcriptions": 1
+      },
+      "counts": {
+        "handwritten_occurrences": 98,
+        "transcribed_occurrences": 98,
+        "handwritten_unique": 98,
+        "within_batch_repeats": 0,
+        "handwritten_new": 79,
+        "handwritten_existing": 19,
+        "new_senses": 234,
+        "relation_groups_added": 6,
+        "pending_transcriptions": 0
+      }
+    }
+  ],
+  "previous_mobile_import_packages": [
+    {
+      "path": "platform/mobile/releases/GRE-vocabulary-2026-10-25-new-words.json",
+      "format": "gre-vocabulary-seed",
+      "word_count": 97,
+      "event_count": 0,
+      "legacy_word_count": 0,
+      "relation_group_count": 6,
+      "bytes": 138405,
+      "sha256": "4cdcf7041baf345ffae8649d7118550d4bca25a585bac814f606ca8c8e45e6a2",
+      "mode": "导入新增词",
+      "note": "只新增手机尚不存在的词；已有词的释义、分类和记录不覆盖。不用于完整恢复。待确认词形不包含在本包。",
+      "superseded_by_confirmation": "vocab/imports/20261025_2309_percept_confirmation.json"
+    }
+  ]
 }
