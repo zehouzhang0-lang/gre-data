@@ -5,6 +5,7 @@ param(
     [switch]$InstallTools,
     [switch]$AcceptSdkLicense,
     [switch]$SkipSeed,
+    [string]$PracticeBackup,
     [switch]$UseTcpSelectorWorkaround
 )
 
@@ -32,6 +33,11 @@ function Get-VerifiedDownload([string]$Url, [string]$Destination, [string]$Sha25
 }
 
 try {
+    if ($PracticeBackup) {
+        if (-not (Test-Path -LiteralPath $PracticeBackup -PathType Leaf)) { throw 'The practice backup file does not exist.' }
+        # Resolve before changing directory so caller-relative paths keep their meaning.
+        $PracticeBackup = (Resolve-Path -LiteralPath $PracticeBackup).Path
+    }
     Set-Location -LiteralPath $mobileRoot
     $packageVersion = [string](Get-Content -LiteralPath 'package.json' -Raw | ConvertFrom-Json).version
     if ($packageVersion -notmatch '^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$') {
@@ -105,7 +111,9 @@ try {
     }
     & node 'scripts/verify-pronunciation.mjs'
     Assert-Exit 'Verify offline pronunciation coverage and file integrity'
-    & node 'scripts/export-practice.mjs'
+    $practiceExportArgs = @('scripts/export-practice.mjs')
+    if ($PracticeBackup) { $practiceExportArgs += @('--backup', $PracticeBackup) }
+    & node @practiceExportArgs
     Assert-Exit 'Export offline question bank and existing practice history'
     & npm.cmd run build
     Assert-Exit 'Build offline web resources'

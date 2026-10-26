@@ -1,19 +1,12 @@
 import { createPracticeStorage } from './storage.mjs';
 import { loadPracticeBank, validateBank } from './loader.mjs';
+import { readPracticeBackup, practiceHistoryDocument } from './packages.mjs';
 import { BACKUP_FORMAT, MAX_BYTES, PRACTICE_TYPES, clone, canonical, emptyDocument, validateDocument, validatePreferences, mergeRecords, project, questionKey, validateSelection, answerReady, serializedAnswer, gradeAnswer, sha256 } from './model.mjs';
 
 let defaultRepository;
 export function getPracticeRepository() {
   if (!defaultRepository) defaultRepository = openPracticeRepository().catch(error => { defaultRepository = null; throw error; });
   return defaultRepository;
-}
-async function readBackup(json) {
-  if (typeof json !== 'string' || new TextEncoder().encode(json).length > MAX_BYTES) throw Error('请选择不超过 20 MB 的刷题备份');
-  let packet;
-  try { packet = JSON.parse(json); } catch { throw Error('刷题备份不是有效 JSON'); }
-  if (packet?.format !== BACKUP_FORMAT || packet.version !== 1 || packet.checksum?.algorithm !== 'SHA-256') throw Error('请选择刷题备份；词库备份使用原来的入口');
-  if (packet.checksum.value !== await sha256(packet.payload)) throw Error('刷题备份校验失败，当前记录未改动');
-  return validateDocument(packet.payload);
 }
 export async function openPracticeRepository(options = {}) {
   const loaded = options.bank ? { bank: validateBank(options.bank), history: options.history || { events: [], legacy: [] }, loadQuestion: options.loadQuestion } : await loadPracticeBank(options.fetch);
@@ -32,7 +25,7 @@ export async function openPracticeRepository(options = {}) {
     for (const listener of listeners) { try { listener(); } catch { /* A UI listener cannot invalidate a committed transaction. */ } }
   }
   if (!current.seed_revisions.includes(bank.revision)) {
-    const incoming = validateDocument({ ...emptyDocument('bundled-history'), events: history.events, legacy: history.legacy });
+    const incoming = practiceHistoryDocument(history);
     const plan = mergeRecords(current, incoming);
     if (plan.preview.conflicts.length) throw Error('安装包与本机存在同 ID 不同内容的刷题记录，已保留双方并停止合并');
     plan.next.seed_revisions.push(bank.revision);
@@ -130,9 +123,9 @@ export async function openPracticeRepository(options = {}) {
       if (new TextEncoder().encode(result).length > MAX_BYTES) throw Error('刷题备份超过 20 MB 上限，原记录保留');
       return result;
     },
-    async previewImport(json) { const incoming = await readBackup(json); await queue; return mergeRecords(current, incoming).preview; },
+    async previewImport(json) { const incoming = await readPracticeBackup(json); await queue; return mergeRecords(current, incoming).preview; },
     importBackup(json) { return enqueue(async () => {
-      const incoming = await readBackup(json), plan = mergeRecords(current, incoming);
+      const incoming = await readPracticeBackup(json), plan = mergeRecords(current, incoming);
       if (plan.preview.conflicts.length) throw Error(`发现 ${plan.preview.conflicts.length} 条同 ID 不同内容的记录，未导入；双方记录均保留`);
       if (plan.preview.newEvents || plan.preview.newLegacy || plan.preview.newDrafts) await persist(plan.next);
       return clone(plan.preview);

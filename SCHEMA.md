@@ -76,7 +76,7 @@
 
 题库与学习记录分开保存。`platform/mobile/public/practice/` 是忽略的个人安装包资源，由仓库现有题库索引、PDF、参考答案和真实作答派生；不向 Git 提交重复的整库正文或图片。`manifest.json` 使用 `format: gre-practice-bank`、`version: 1`，保留内容 revision、四类 catalog、原题 key、content_id、详情路径、来源 PDF 与索引哈希及逐文件 SHA-256/字节数。详情保留原题输入方式、选项组、原文、来源定位和 `answerKey`；不能安全抽取的区域随包预渲染，数学采用完整原页以保留图表。没有参考答案使用 null，不生成答案或解析。
 
-`history.json` 只携带原有 `attempt` / `attempts_import` 完整事件和旧训练引用。手机首次打开刷题时按原 ID 幂等接入；以后内容包升级仍只合并新增事实，同 ID 不同内容时停止合并并保留本地数据。旧训练引用不制造新的 attempt。原题号和相同内容的完成状态分开；浏览、导航、字体与分屏设置不算作答。
+`history.json` 携带原有 `attempt` / `attempts_import` 完整事件和旧训练引用。0.2.1 起可包含从校验通过的手机备份带入的 `drafts` 和 `draft_heads`；手机提交引用的原始草稿版本必须同时存在且答案一致，不删除 `practice` 快照以绕过校验。旧包缺少这两个字段时按空值兼容。手机首次打开刷题时按原 ID 幂等接入；以后内容包升级仍只合并新增事实，同 ID 不同内容时停止合并并保留本地数据。本机已有草稿指向、偏好和 dataset_id 优先保留。旧训练引用不制造新的 attempt。原题号和相同内容的完成状态分开；浏览、导航、字体与分屏设置不算作答。
 
 Android 使用独立 `PracticeStorage` 插件和 `gre-practice.sqlite`，浏览器使用独立 `gre-practice-mobile` IndexedDB。沿用 SQLite 分块事务保存的可靠性，不改 `gre-vocabulary.sqlite`、词汇 dataset_id、词汇事件、词义版本、备份格式或恢复快照。格式为 `{format:'gre-practice-storage',version:1,dataset_id,seed_revisions,events,legacy,drafts,draft_heads,preferences}`；未知版本或损坏文档拒绝覆盖。
 
@@ -447,6 +447,10 @@ items:
 
 原始完整包保存在本机忽略目录 `.gre-platform/mobile-backups/<sha256>.json`，只读校验后按原字节归档；跨设备共享的审计记录不假装能替代完整备份。curation_requests 的 status 固定 pending，observed_gaps 只描述字段缺失，不代表现有释义、分类或例句已经核验。归档不会修改词义、分类、学习事件、排期、掌握状态或手机数据库。
 
+`platform/mobile/reports/YYYYMMDD_HHMM_practice_backup.json/.md` 保存独立刷题备份核对结果：源文件名、校验和、事件及草稿数量、与仓库的共同/新增/冲突 ID、必要的题号与答案摘要；不复制完整题干或本机绝对路径。核对结果只描述原始事实，不生成新作答、官方分数或能力判断。
+
+`platform/mobile/reports/YYYYMMDD_HHMM_release_<版本下划线>.json` 为 `kind: mobile_release_verification` 的发布证据，保存版本、来源包哈希、合并内容与保留记录计数、隔离升级/测试结果、APK资源哈希和签名比对、未完成项及真机验收状态。生成APK、音频、个人完整种子和原备份仍不作为该报告附件提交；报告不得暗示已在用户真机安装。
+
 ## 手机词汇作业
 
 路径：`vocab/homework/YYYYMMDD_HHMM_来源简述.{md,json,html}`。Markdown 保存任务范围、操作与验证；JSON 保存 `schema_version`、`assignment_id`、含时区的 `generated_at`、`scope`、`counts`、`items`、`instructions`；HTML 为用户请求的可离线使用文本页面。
@@ -562,6 +566,10 @@ evidence_records:
 ### 手机覆盖升级词库（2026-10-15，0.1.3）
 
 手机启动检测 `settings.catalogUpdate.revision`，未应用当前内容版本时校验安装包内词库并合并规范释义与默认主题。释义仅在原始输入指纹相符时更新，不覆写手机不同的释义；既有分类事件继续覆盖默认归属。不会导入电脑学习事件，也不改本机 `dataset_id`、`events`、`baseline.legacyWords`、`quickRound` 或轮次快照。词条隐藏状态不变。
+
+0.2.1 允许追加成员齐全且可见的新关联词组；本机已有 baseline 词组 ID 或任何关系编辑/删除/恢复事件涉及的 ID 不被覆盖或复活。对明确标记补充整理、没有 `vocab_upsert` 历史、原词义和词性均为空的可见词，允许匹配有来源的 dictionary_checked / historical_checked 规范层并把 input 指纹适配为空；不改原词条、备注、事件和计次。拼写待定与重定向不使用此例外，后续用户改写仍使规范层失配而保护用户内容。
+
+个人构建可向 `export-vocabulary.mjs --backup` 显式传入完整手机备份：保持其原始事件、旧基线、轮次和设置，以同一安全升级函数合入桌面内容，形成忽略的首次安装种子。覆盖安装仍以设备现有库为准，不用打包时快照替换设备后来记录。`export-practice.mjs --backup` 独立按 ID 合入刷题事实与草稿；原始备份仅在本机归档。
 
 同一 SQLite 文档事务保存更新结果及可选 `catalogRecovery`（首次词库更新前的完整 current 快照），不替代原有 `recovery`。普通保存继续携带该快照，可从设置单独导出为完整备份。标记与内容同事务保存，失败保留原字节，下次启动重试；已成功的内容版本不重复迁移。备份恢复带旧版本标记时，下次启动重新应用内容更新，但不导入另一端进度。
 

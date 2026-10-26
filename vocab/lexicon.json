@@ -113264,6 +113264,212 @@
       "review_count": 0,
       "correct_streak": 0,
       "last_review": null
+    },
+    {
+      "word": "chimerical",
+      "pos": "adj.",
+      "meaning": "adj.虚构的，不切实际的；沉溺于幻想的；（生物学，通常作 chimeric）嵌合的，由不同遗传来源的细胞或生物材料组成的",
+      "collocation": "",
+      "collocation_source": null,
+      "connotation": "幻想义常带不切实际的评价；生物学义中性",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "platform/events/ff41daf0-4cf9-4493-8187-c9d89be224ac.json",
+          "kind": "platform_capture",
+          "unit": "test30_section2_hard",
+          "question": "5"
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/chimerical",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取形容词三组义：不切实际的幻想；沉溺幻想；通常作chimeric的遗传嵌合义。"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/chimerical",
+      "note": "常指希望或设想脱离现实，并非普通的有创造力。生物学的嵌合义通常使用变体 chimeric。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "diminutive",
+      "pos": "adj. / n.",
+      "meaning": "adj.非常小的，微小的；（语法）表示指小或亲昵等意义的\nn.（语法）指小词或指小词缀；（尤指人名）昵称，简称；小个子；小物件",
+      "collocation": "",
+      "collocation_source": null,
+      "connotation": "大小义通常中性；构词义可表达亲昵、怜爱或轻蔑",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "platform/events/b7244b42-8412-4cbe-afdc-31e4616d3836.json",
+          "kind": "platform_capture",
+          "unit": "test30_section2_hard",
+          "question": "7"
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/diminutive",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取形容词的微小、指小构词义及名词的指小形式、小个体义。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/diminutive_1",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取正式形容词的非常小义及原例句。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/diminutive_2",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取名词的指小词和词缀、简称或昵称义及原例句。"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/diminutive",
+      "note": "形容词的小巧义偏正式。语法中指小形式不仅表示体积小，也可能带亲昵或轻蔑意味；名词还可表示昵称。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "intrepid",
+      "pos": "adj.",
+      "meaning": "adj.勇敢无畏的，不怕危险或困难的",
+      "collocation": "",
+      "collocation_source": null,
+      "connotation": "通常褒义；正式用语，有时带诙谐意味",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "platform/events/f939a3b5-6540-42b4-8642-c29373455e0a.json",
+          "kind": "platform_capture",
+          "unit": "test29_section2_medium",
+          "question": "6"
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/intrepid",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取勇敢、不畏危险或困难义，及formal/often humorous语域和原例句。"
+        }
+      ],
+      "dictionary_url": "https://www.oxfordlearnersdictionaries.com/definition/english/intrepid",
+      "note": "强调面对危险或困难无所畏惧；正式用语，有时用于诙谐表达。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "lynx",
+      "pos": "n.",
+      "meaning": "n.猞猁",
+      "collocation": "",
+      "collocation_source": null,
+      "connotation": "中性，动物名称",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "platform/events/aea2729d-c165-49aa-8bde-63b71001972f.json",
+          "kind": "platform_capture",
+          "unit": "test29_section2_medium",
+          "question": "6"
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lynx",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取猫科野生动物定义及复数lynx/lynxes；页面未提供可采用的完整例句。"
+        }
+      ],
+      "dictionary_url": "https://www.oxfordlearnersdictionaries.com/definition/english/lynx",
+      "note": "猫科野生动物，尾巴很短；复数可用 lynx 或 lynxes。原题摘录未作为权威例句。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
+    },
+    {
+      "word": "minuscule",
+      "pos": "adj. / n.",
+      "meaning": "adj.微小的，极小的；小写的，小字书体的\nn.小写字母；（书写史）由草书演化而来的古代或中世纪小字书体及其字母",
+      "collocation": "",
+      "collocation_source": null,
+      "connotation": "中性；书写史义为专业用语",
+      "related_words": [],
+      "sources": [
+        {
+          "material_id": "text_completion_2000",
+          "record": "platform/events/346bc51b-b2ea-4abc-934c-4816d20b92a8.json",
+          "kind": "platform_capture",
+          "unit": "test30_section2_hard",
+          "question": "7"
+        }
+      ],
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/minuscule",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取形容词的极小、小字书体义及名词的小写字母、古代中世纪小字书体与字母义。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/minuscule",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取极小义和newsroom原例句。"
+        }
+      ],
+      "dictionary_url": "https://www.merriam-webster.com/dictionary/minuscule",
+      "note": "一般用法强调极小。另有小写字母及古代、中世纪小字书体的专业义，不宜把这些义项一概译为微小。",
+      "normalization_note": null,
+      "original_context": null,
+      "review_evidence": [],
+      "learning_status": "encountered_pending_retest",
+      "initial_result": null,
+      "review_count": 0,
+      "correct_streak": 0,
+      "last_review": null
     }
   ],
   "updated_at": "2026-10-16"

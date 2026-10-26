@@ -172,6 +172,63 @@ test('bundled history conflicts stop startup without touching stored bytes', asy
   assert.equal(storage.value, original);
 });
 
+test('mobile bundled history retains submitted draft revisions and current local preferences and active drafts across upgrades', async () => {
+  const f = fixture();
+  f.history.events.push(attempt('desktop-original',f.a,'A/C'));
+  const remoteStorage = memory(), remote = await openPracticeRepository(options(f,remoteStorage,'remote'));
+  await remote.saveDraft(f.b.key,['A']);
+  await remote.saveDraft(f.b.key,['B','E']);
+  const submission = await remote.submit(f.b.key);
+  const remoteDraft = await remote.saveDraft(f.c.key,['19']);
+  await remote.savePreferences({type:'tc',split:70,readingSize:22,activeKey:f.b.key});
+  const remoteData = JSON.parse(remoteStorage.value);
+  const history = {events:remoteData.events,legacy:remoteData.legacy,drafts:remoteData.drafts,draft_heads:remoteData.draft_heads};
+  const storage = memory(), repo = await openPracticeRepository(options(f,storage,'local'));
+  const localDraft = await repo.saveDraft(f.c.key,['18']);
+  await repo.savePreferences({type:'quant',split:35,readingSize:17,activeKey:f.c.key,passagePositions:{fixture:120}});
+  const before = JSON.parse(storage.value), bank = {...f.bank,revision:'bundled-mobile-history'};
+  const upgraded = await openPracticeRepository({...options(f,storage),bank,history});
+  const after = JSON.parse(storage.value), state = await upgraded.getState();
+  assert.deepEqual(after.events,[...before.events,submission]);
+  assert.deepEqual(after.drafts,[...before.drafts,...remoteData.drafts]);
+  assert.deepEqual(after.preferences,before.preferences);
+  assert.equal(after.dataset_id,before.dataset_id);
+  assert.equal(after.draft_heads[f.c.key],localDraft.id);
+  assert.deepEqual((await upgraded.loadQuestion(f.c.key)).draft.answer,['18']);
+  assert.equal((await upgraded.loadQuestion(f.b.key)).history.result,true);
+  assert.equal((await upgraded.loadQuestion(f.b.key)).history.count,1);
+  assert.equal(state.stats.attemptCount,2);
+  const writes = storage.writes;
+  await openPracticeRepository({...options(f,storage),bank,history});
+  assert.equal(storage.writes,writes);
+  const later = await openPracticeRepository({...options(f,storage),bank:{...bank,revision:'same-history-next-release'},history});
+  assert.equal((await later.getState()).stats.attemptCount,2);
+  assert.deepEqual(JSON.parse(storage.value).events,after.events);
+  assert.deepEqual(JSON.parse(storage.value).drafts,after.drafts);
+  assert.deepEqual(JSON.parse(storage.value).preferences,before.preferences);
+  const freshStorage = memory();
+  const fresh = await openPracticeRepository({...options(f,freshStorage,'new-device'),bank,history});
+  assert.equal((await fresh.loadQuestion(f.c.key)).draft.id,remoteDraft.id);
+  assert.equal((await fresh.getState()).stats.attemptCount,2);
+  assert.deepEqual(JSON.parse(freshStorage.value).drafts,remoteData.drafts);
+  assert.deepEqual(JSON.parse(freshStorage.value).preferences,{});
+});
+
+test('bundled mobile submissions missing original draft references or conflicting with local drafts cannot write storage', async () => {
+  const f = fixture(), storage = memory(), repo = await openPracticeRepository(options(f,storage));
+  await repo.saveDraft(f.b.key,['A']);
+  await repo.saveDraft(f.b.key,['B','E']);
+  await repo.submit(f.b.key);
+  const before = storage.value, data = JSON.parse(before), bank = {...f.bank,revision:'invalid-mobile-history'};
+  const history = {events:data.events,legacy:data.legacy,drafts:data.drafts,draft_heads:data.draft_heads};
+  const missing = structuredClone(history); missing.drafts = missing.drafts.slice(0,1);
+  await assert.rejects(openPracticeRepository({...options(f,storage),bank,history:missing}),/原始草稿/);
+  assert.equal(storage.value,before);
+  const conflict = structuredClone(history); conflict.drafts[0].answer=['C'];
+  await assert.rejects(openPracticeRepository({...options(f,storage),bank,history:conflict}),/同 ID/);
+  assert.equal(storage.value,before);
+});
+
 test('recommendation advances after the latest original position and wraps only to uncompleted content', async () => {
   const f = fixture(), storage = memory();
   f.history.events.push(attempt('done', f.duplicate, 'A/C'));

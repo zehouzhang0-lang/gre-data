@@ -3,6 +3,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { loadImage } from '@napi-rs/canvas';
+import { practiceHistoryDocument } from '../src/practice/packages.mjs';
 
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const types = ['se', 'tc', 'rc', 'quant'];
@@ -107,6 +108,7 @@ export async function verifyPractice(output, { manifest, expectedCounts = { se: 
   for (const relative of assetByPath.keys()) if (!references.has(relative)) throw new Error(`清单存在未使用资源：${relative}`);
   const history = files.get(manifest.history);
   if (!Array.isArray(history?.events) || !Array.isArray(history?.legacy)) throw new Error('历史记录格式不符。');
+  const document = practiceHistoryDocument(history);
   const eventIds = new Set();
   let attempts = 0;
   for (const event of history.events) {
@@ -123,7 +125,7 @@ export async function verifyPractice(output, { manifest, expectedCounts = { se: 
   }
   for (const record of history.legacy) if (!record.record || !types.includes(record.type)
     || !Number.isFinite(Date.parse(record.recorded_at)) || 'id' in record) throw new Error('旧训练引用无效或被伪造为新事件。');
-  return { questions, images, bytes, withAnswers, events: eventIds.size, attempts, legacy: history.legacy.length, revision: manifest.revision };
+  return { questions, images, bytes, withAnswers, events: eventIds.size, attempts, legacy: history.legacy.length, drafts: document.drafts.length, revision: manifest.revision };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

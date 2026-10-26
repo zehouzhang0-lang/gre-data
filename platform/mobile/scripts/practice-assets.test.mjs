@@ -94,6 +94,30 @@ test('offline verifier rejects damaged bytes and missing question images, preser
   assert.equal(result.attempts, 1);
   assert.equal(result.legacy, 1);
   assert.equal(result.images, 1);
+  assert.equal(result.drafts, 0); // Old history with no draft fields remains valid.
+  const key = manifest.catalog.quant.questions[0].key;
+  const draft = {id:'mobile-draft-final',session_id:'mobile-session',key,answer:['17'],redo:false,updated_at:'2026-10-26T15:00:00.000Z'};
+  const mobileHistory = {...history,drafts:[{...draft,id:'mobile-draft-earlier',answer:['1']},draft],draft_heads:{},events:[...history.events,{
+    id:'mobile-event',kind:'attempt',recorded_at:'2026-10-26T15:00:01.000Z',payload:{material:'book',unit:'quant',question:'1',type:'quant',answer:'17'},
+    practice:{draft_session_id:draft.session_id,draft_id:draft.id,bank_revision:'source-revision',content_id:manifest.catalog.quant.questions[0].content_id,
+      question_snapshot:{key,mode:'entry'},selected:['17'],answerKey:null,result:null},
+  }]};
+  const rewriteHistory = async value=>{
+    const bytes = Buffer.from(JSON.stringify(value));
+    await fs.writeFile(path.join(directory,'history.json'),bytes);
+    Object.assign(manifest.assets.find(asset=>asset.path==='history.json'),{sha256:hash(bytes),bytes:bytes.length});
+    updateRevision(manifest);
+  };
+  await rewriteHistory(mobileHistory);
+  const mobileResult = await verifyPractice(directory,options);
+  assert.equal(mobileResult.events,2);
+  assert.equal(mobileResult.attempts,2);
+  assert.equal(mobileResult.drafts,2);
+  await rewriteHistory({...mobileHistory,drafts:mobileHistory.drafts.slice(0,1)});
+  await assert.rejects(verifyPractice(directory,options),/原始草稿/);
+  await rewriteHistory({...mobileHistory,draft_heads:{[key]:'missing-draft'}});
+  await assert.rejects(verifyPractice(directory,options),/草稿定位/);
+  await rewriteHistory(mobileHistory);
   await fs.writeFile(path.join(directory, 'se.json'), '{}');
   await assert.rejects(verifyPractice(directory, options), /资源损坏/);
   // A valid image hash alone does not allow broken references in a detail.

@@ -1,17 +1,19 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { createHash } from 'node:crypto';
 import { Store } from '../../server/store.mjs';
 import { legacyWordReviews } from '../../server/spaced-review.mjs';
 import { projectRelations } from '../../server/word-relations.mjs';
 import { VOCAB_EVENT_KINDS, cleanWord, validateData, projectState } from '../src/data/model.mjs';
-import { createPackage, SEED_FORMAT } from '../src/data/packages.mjs';
+import { createPackage, readPackage, BACKUP_FORMAT, SEED_FORMAT } from '../src/data/packages.mjs';
+import { updateCatalog, CATALOG_REVISION } from '../src/data/catalog-update.mjs';
 
 const defaultRoot = fileURLToPath(new URL('../../..', import.meta.url));
 
 // Read the *pre-event* baseline separately. Exporting current vocabulary plus
 // its historical events would replay the same recalls twice.
-export async function exportVocabulary(root = defaultRoot, now = new Date()) {
+export async function exportVocabulary(root = defaultRoot, now = new Date(), { backupPath = null } = {}) {
   const store = new Store(root), baseStore = new Store(root);
   baseStore.events = async () => [];
   const baseJson=baseStore.json.bind(baseStore);
@@ -55,11 +57,29 @@ export async function exportVocabulary(root = defaultRoot, now = new Date()) {
   equal('关系组', groups(live), groups(projected));
   equal('主题状态', live.relations.topics.map(t => [t.id, t.name, t.deleted]), projected.relations.topics.map(t => [t.id, t.name, t.deleted]));
   equal('学习轮次', live.vocabSessions, projected.vocabSessions);
-  return { content: await createPackage(data, SEED_FORMAT, now), report: {
+  let bundled = data, phoneReport = {};
+  if (backupPath) {
+    const bytes = await fs.readFile(backupPath), packet = await readPackage(bytes.toString('utf8'));
+    if (packet.format !== BACKUP_FORMAT) throw Error('个人安装包只接受校验通过的完整手机备份作为学习记录基线');
+    // Existing installations still use their own database. This optional base
+    // supplies the user's latest history only on a fresh installation.
+    bundled = updateCatalog(packet.data, data, CATALOG_REVISION);
+    for (const field of ['dataset_id', 'time_zone', 'events', 'quickRound']) equal(`手机${field}`, bundled[field], packet.data[field]);
+    equal('手机旧复习基线', bundled.baseline.legacyWords, packet.data.baseline.legacyWords);
+    const state = projectState(bundled, now);
+    phoneReport = {
+      phone_source: path.basename(backupPath), phone_sha256: createHash('sha256').update(bytes).digest('hex'),
+      phone_events: bundled.events.length, phone_words_before: projectState(packet.data, now).vocabulary.length,
+      bundled_words: state.vocabulary.length, bundled_visible: state.vocabulary.filter(w => !w.deleted).length,
+      bundled_groups: state.relations.groups.filter(g => !g.deleted).length,
+      catalog_update: bundled.settings.catalogUpdate,
+    };
+  }
+  return { content: await createPackage(bundled, SEED_FORMAT, now), report: {
     words: live.vocabulary.filter(w => !w.deleted).length, allWords: live.vocabulary.length,
     topics: live.relations.topics.filter(t => !t.deleted).length, groups: live.relations.groups.filter(g => !g.deleted).length,
     rawVocabularyEvents: data.events.length, recalls: live.vocabulary.reduce((n, w) => n + w.recalls.length, 0),
-    due: live.spacedReview.summary.word.due, sessions: live.vocabSessions.length, parity: 'passed',
+    due: live.spacedReview.summary.word.due, sessions: live.vocabSessions.length, parity: 'passed', ...phoneReport,
   } };
 }
 
@@ -67,7 +87,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
   const args = process.argv.slice(2);
   const argument = (name, fallback) => args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
   const root = path.resolve(argument('--root', defaultRoot)), output = path.resolve(argument('--out', path.join(defaultRoot, 'platform/mobile/public/vocabulary-seed.json')));
-  const result = await exportVocabulary(root);
+  const result = await exportVocabulary(root, new Date(), { backupPath: argument('--backup', null) });
   await fs.mkdir(path.dirname(output), { recursive: true });
   await fs.writeFile(output, result.content + '\n', 'utf8');
   console.log(JSON.stringify({ ...result.report, bytes: Buffer.byteLength(result.content), output }, null, 2));

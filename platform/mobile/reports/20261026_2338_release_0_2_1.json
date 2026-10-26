@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "kind": "mobile_release_verification",
+  "version": "0.2.1",
+  "version_code": 12,
+  "package_name": "cn.grestudy.vocabulary",
+  "built_at": "2026-10-26T15:59:25.308Z",
+  "source_vocabulary_sha256": "d174449e083ed7d48f7f6b83fe1d1c1699518b457790bb199588416521284a82",
+  "source_practice_sha256": "e2947e38e233d0132cabea8ada17f7c76eff1e69f572c6c2f5821b1149e8bb80",
+  "daily_packages": [
+    {
+      "filename": "GRE-vocabulary-2026-10-23-new-words.json",
+      "sha256": "2d01be510ef60d743d7e3917d4f7fd51b6bb3fcacd29cca7bca537fdb5c75dd6",
+      "words": 92
+    },
+    {
+      "filename": "GRE-vocabulary-2026-10-24-new-words.json",
+      "sha256": "e55b03b36d8a138ac28f63088edf8faf5b4496a75ef8e99e32becdff22e243f2",
+      "words": 139
+    },
+    {
+      "filename": "GRE-vocabulary-2026-10-25-new-words-r2.json",
+      "sha256": "d09772666664305c2d2dd460ed014d1f4e7762ca0e9f8550952e93dcf3f98739",
+      "words": 98
+    },
+    {
+      "filename": "GRE-vocabulary-2026-10-26-new-words.json",
+      "sha256": "06e35c3195a1c45ecc929f8eba7eb4eba33fb6e65f676af7e280a8233774ff9c",
+      "words": 154
+    }
+  ],
+  "daily_unique_words": 387,
+  "new_daily_words_since_phone": 314,
+  "other_desktop_capture_words": [
+    "chimerical",
+    "diminutive",
+    "intrepid",
+    "lynx",
+    "minuscule"
+  ],
+  "vocabulary": {
+    "words": 3121,
+    "visible": 3102,
+    "new_since_phone": 319,
+    "topics": 18,
+    "groups": 279,
+    "senses": 8025,
+    "examples": 3951,
+    "missing_examples": 4074,
+    "raw_events": 3604,
+    "curation_requests": 124,
+    "curation_missing_meaning": 0,
+    "curation_uncategorized": 0,
+    "curation_missing_examples": 240,
+    "curation_with_incomplete_examples": 119,
+    "sessions": 7,
+    "unfinished_sessions": 2,
+    "seed_sha256": "388cad211cace171573e087afeaa6ee40fc0707d53d2598d4b20a14c7aceaacb",
+    "seed_bytes": 5744333,
+    "catalog_update": {
+      "revision": "2026-10-26-weekend-vocabulary-1",
+      "updated": 3029,
+      "preserved": 89,
+      "added": 319
+    }
+  },
+  "pronunciation": {
+    "words": 3121,
+    "dictionary_ipa": 5405,
+    "human": 0,
+    "synthetic": 6242,
+    "pending_ipa": 837
+  },
+  "pronunciation_verification": {
+    "result": "passed",
+    "projected_seed_words": 3121,
+    "old_word_records_equal": 2802,
+    "all_asset_hashes_verified": 6222,
+    "new_ipa_source_exact_matches": 552,
+    "manifest_and_audio_folder_exact_match": true,
+    "manifest_sha256": "336a3bcb440da82b0a0cc6ec6cb40dc6bed647d10364c7210215246c9a6a1717"
+  },
+  "upgrade": {
+    "vocabulary_sha256": "d174449e083ed7d48f7f6b83fe1d1c1699518b457790bb199588416521284a82",
+    "practice_sha256": "e2947e38e233d0132cabea8ada17f7c76eff1e69f572c6c2f5821b1149e8bb80",
+    "catalog_revision": "2026-10-26-weekend-vocabulary-1",
+    "scenarios": [
+      {
+        "daily_imports_before_upgrade": 0,
+        "words_before": 2802,
+        "words_after": 3121,
+        "groups_after": 279,
+        "events": 3604,
+        "curation": 124,
+        "sessions": 7,
+        "unfinished_sessions": 2,
+        "idle_senses": 5,
+        "progress_and_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      },
+      {
+        "daily_imports_before_upgrade": 4,
+        "words_before": 3116,
+        "words_after": 3121,
+        "groups_after": 279,
+        "events": 3604,
+        "curation": 124,
+        "sessions": 7,
+        "unfinished_sessions": 2,
+        "idle_senses": 5,
+        "progress_and_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      }
+    ],
+    "post_export_vocabulary_edit_and_rating": "passed",
+    "failed_upgrade_keeps_original": "passed",
+    "practice_events": 274,
+    "practice_draft_versions": 90,
+    "practice_stats": {
+      "attemptCount": 274,
+      "eventCount": 274,
+      "completedCount": 272,
+      "draftCount": 0,
+      "legacyCount": 17
+    },
+    "practice_reopen_merge_and_post_export_draft": "passed",
+    "fresh_install_history": "passed",
+    "original_backup_bytes_unchanged": true,
+    "real_app_databases_opened": 0
+  },
+  "tests": {
+    "mobile_and_practice_assets": 94,
+    "passed": 94
+  },
+  "real_device_test": "not_run_no_connected_device",
+  "progress_semantics": "自评、浏览和内容导入不升级为掌握证据；既有事件、轮次、草稿、答案及本机后续编辑不覆盖。",
+  "unresolved": "124项整理请求保留。例句未找到可对应ETS/Oxford原句仍留空；profitmonger的权威词典核验仍待补充。alfeasance沿用手机可见状态，不把更新当作删除授权。",
+  "apk_verification": {
+    "apk": "GRE-vocabulary-0.2.1-debug.apk",
+    "bytes": 89632733,
+    "sha256": "d2b613ed69228168d1a78d8109a628d8419ddc619dd82792cc9df11a6b0e5995",
+    "verified_web_files": 10428,
+    "verified_practice_assets": 4166,
+    "practice_revision": "d4d84943558defa8af0e643daa4cf2c135a9f024e82f53c8be78867c410dbc0d",
+    "questions": {
+      "se": 1001,
+      "tc": 1001,
+      "rc": 893,
+      "quant": 847
+    },
+    "vocabulary_seed_sha256": "388cad211cace171573e087afeaa6ee40fc0707d53d2598d4b20a14c7aceaacb"
+  },
+  "apk_pronunciation": {
+    "result": "passed",
+    "apk": "GRE-vocabulary-0.2.1-debug.apk",
+    "bytes": 89632733,
+    "sha256": "d2b613ed69228168d1a78d8109a628d8419ddc619dd82792cc9df11a6b0e5995",
+    "audio_assets": 6222,
+    "words": 3121,
+    "dictionary_ipa": 5405,
+    "human": 0,
+    "synthetic": 6242,
+    "pending_ipa": 837
+  },
+  "signature": {
+    "sha256": "18032e90614e5b1e2d406ccfbb3d731941987c8d154f3cf634b3315bd4e422d0",
+    "matches_version": "0.2.0",
+    "same_package_name": true,
+    "version_code_increased": true
+  }
+}

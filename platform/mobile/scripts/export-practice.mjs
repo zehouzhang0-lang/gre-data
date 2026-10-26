@@ -10,6 +10,7 @@ import { Store, keyOf } from '../../server/store.mjs';
 import { readLegacyQuestions } from '../../server/legacy-review.mjs';
 import { readPracticeSnapshot, questionDetail, repositoryRoot, practiceTypes } from '../preview/practice-data.mjs';
 import { requiresTextAnswer, verifyPractice } from './verify-practice.mjs';
+import { loadPracticeHistoryBackup, mergePracticeHistory } from './practice-history.mjs';
 
 export const practiceSourceFiles = {
   text_completion_2000: 'materials/files/张巍GRE填空机经2000题.pdf',
@@ -59,11 +60,16 @@ async function pruneGeneratedAssets(output, assets) {
   }
 }
 
-export async function exportPractice({ root = repositoryRoot, output = path.join(root, 'platform/mobile/public/practice'), log = console.log } = {}) {
+export async function exportPractice({ root = repositoryRoot, output = path.join(root, 'platform/mobile/public/practice'), backupPath, log = console.log } = {}) {
   const started = Date.now();
-  const [snapshot, events, legacy] = await Promise.all([
-    readPracticeSnapshot(root), new Store(root).events(), readLegacyQuestions(new Store(root)),
+  // Validate and merge before writing any asset, including history.json. A bad
+  // backup or conflict must leave an already published bank byte-for-byte intact.
+  const backup = await loadPracticeHistoryBackup(backupPath);
+  const [events, legacy] = await Promise.all([
+    new Store(root).events(), readLegacyQuestions(new Store(root)),
   ]);
+  const history = mergePracticeHistory({ events: events.filter(e => ['attempt', 'attempts_import'].includes(e.kind)), legacy }, backup);
+  const snapshot = await readPracticeSnapshot(root);
   for (const type of practiceTypes) {
     if (snapshot.catalog[type].questions.length !== expectedCounts[type]) {
       throw new Error(`${type} 题库数量改变：${snapshot.catalog[type].questions.length}；请核对来源后更新预期，不发布残缺题库。`);
@@ -207,7 +213,7 @@ export async function exportPractice({ root = repositoryRoot, output = path.join
     }
     // Preserve whole event payloads, including batch identity. Legacy source
     // references remain references, never synthetic platform attempts.
-    await writeJson('history.json', { events: events.filter(e => ['attempt', 'attempts_import'].includes(e.kind)), legacy });
+    await writeJson('history.json', history);
     const assetList = [...assets.values()].sort((a, b) => a.path.localeCompare(b.path));
     const revision = hash(jsonBytes({ sources, catalog, assets: assetList, renderSettings }));
     const manifest = {
@@ -232,6 +238,15 @@ export async function exportPractice({ root = repositoryRoot, output = path.join
   }
 }
 
+export function parseExportPracticeArgs(args) {
+  const options = {};
+  for (let index = 0; index < args.length; index++) {
+    if (args[index] !== '--backup' || options.backupPath || !args[index + 1]?.trim() || args[index + 1].startsWith('--')) throw Error('用法：export-practice.mjs [--backup <刷题备份路径>]');
+    options.backupPath = args[++index];
+  }
+  return options;
+}
+
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  exportPractice().catch(error => { console.error(error); process.exitCode = 1; });
+  Promise.resolve().then(() => exportPractice(parseExportPracticeArgs(process.argv.slice(2)))).catch(error => { console.error(error); process.exitCode = 1; });
 }

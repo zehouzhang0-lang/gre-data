@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "kind": "mobile_practice_backup_audit",
+  "assessment": "source_records_only",
+  "audited_at": "2026-10-26T15:48:58.822Z",
+  "source": {
+    "filename": "gre-practice-2026-10-26T15-36-32-549Z.json",
+    "sha256": "e2947e38e233d0132cabea8ada17f7c76eff1e69f572c6c2f5821b1149e8bb80",
+    "bytes": 119892,
+    "payload_checksum": "210ea3192c80adec96d06e60ff39adc2a1b7995349677f7606b8cb8a8082fd9c",
+    "checksum_algorithm": "SHA-256",
+    "created_at": "2026-10-26T15:36:32.547Z",
+    "dataset_id": "ca6b5d5f-7f92-4301-a531-0c90031ef992",
+    "local_archive": ".gre-platform/mobile-backups/e2947e38e233d0132cabea8ada17f7c76eff1e69f572c6c2f5821b1149e8bb80.json"
+  },
+  "validation": {
+    "checksum": "passed",
+    "structure": "passed",
+    "parser": "openPracticeRepository.previewImport → readBackup → validateDocument",
+    "same_event_id_conflicts": 0,
+    "source_archive_bytes": "identical"
+  },
+  "semantics": "仅保存手机提交快照及与当前仓库的差量审计，不写入 platform/events、不修改手机数据；结果采用提交时保存的答案键和判定，不重新评分，不推断整体能力或 GRE 量表分。",
+  "counts": {
+    "raw_events": 274,
+    "submitted_attempt_records": 274,
+    "shared_desktop_events": 253,
+    "phone_only_events": 21,
+    "phone_only_attempts": 21,
+    "desktop_only_events": 0,
+    "conflicting_event_ids": 0,
+    "legacy_records": 17,
+    "legacy_matched_bundled": 17,
+    "legacy_new": 0,
+    "legacy_conflicts": 0,
+    "draft_versions": 90,
+    "active_drafts": 0
+  },
+  "phone_only_types": {
+    "tc": 8,
+    "se": 13
+  },
+  "phone_only_saved_results": {
+    "incorrect": 14,
+    "correct": 7
+  },
+  "phone_only_attempts": [
+    {
+      "event_id": "df0403c4-67d9-4587-abad-cd4bed010eb0",
+      "recorded_at": "2026-10-20T16:52:12.614Z",
+      "material": "text_completion_2000",
+      "unit": "test1_section2_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "B",
+      "saved_result": false
+    },
+    {
+      "event_id": "0ba2d876-2d61-463a-a441-95f37605ce28",
+      "recorded_at": "2026-10-20T16:53:22.218Z",
+      "material": "text_completion_2000",
+      "unit": "test2_section2_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "D",
+      "saved_result": true
+    },
+    {
+      "event_id": "6bc47211-74ba-4c69-acea-c9b123601a62",
+      "recorded_at": "2026-10-20T16:57:51.617Z",
+      "material": "text_completion_2000",
+      "unit": "test2_section2_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "A/E",
+      "saved_result": false
+    },
+    {
+      "event_id": "421f8cab-08b1-4399-b7a0-b9ddc1246c3a",
+      "recorded_at": "2026-10-20T17:02:21.325Z",
+      "material": "text_completion_2000",
+      "unit": "test2_section2_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "A/F",
+      "saved_result": false
+    },
+    {
+      "event_id": "5ff2312e-2cd6-4e3c-9045-25302403fb7d",
+      "recorded_at": "2026-10-20T17:04:54.901Z",
+      "material": "text_completion_2000",
+      "unit": "test2_section2_easy",
+      "question": "4",
+      "type": "tc",
+      "answer": "B/F/I",
+      "saved_result": false
+    },
+    {
+      "event_id": "1b1a013e-6823-4933-b016-43f4da792e2f",
+      "recorded_at": "2026-10-20T17:06:30.519Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section1_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "E",
+      "saved_result": false
+    },
+    {
+      "event_id": "f380cbe3-682c-4a11-9779-5d2227d941c9",
+      "recorded_at": "2026-10-20T17:08:26.257Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section1_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "B/F",
+      "saved_result": true
+    },
+    {
+      "event_id": "5cb7ed41-1b6f-45aa-bdc5-5168b753b811",
+      "recorded_at": "2026-10-20T17:12:17.265Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section1_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "B/F/I",
+      "saved_result": false
+    },
+    {
+      "event_id": "5b660cbd-e14d-4868-b293-429ab8807a9c",
+      "recorded_at": "2026-10-20T17:16:09.050Z",
+      "material": "text_completion_2000",
+      "unit": "test32_section2_hard",
+      "question": "5",
+      "type": "se",
+      "answer": "B/F",
+      "saved_result": false
+    },
+    {
+      "event_id": "a981c3e9-f245-4395-8db3-9fba09c388a1",
+      "recorded_at": "2026-10-20T17:19:51.424Z",
+      "material": "text_completion_2000",
+      "unit": "test32_section2_hard",
+      "question": "6",
+      "type": "se",
+      "answer": "A/D",
+      "saved_result": false
+    },
+    {
+      "event_id": "28fff24c-be12-42c9-9b9f-4c1a98812836",
+      "recorded_at": "2026-10-20T17:22:12.829Z",
+      "material": "text_completion_2000",
+      "unit": "test32_section2_hard",
+      "question": "7",
+      "type": "se",
+      "answer": "A/F",
+      "saved_result": true
+    },
+    {
+      "event_id": "fb5d5876-ff9e-4237-af67-86325e87a460",
+      "recorded_at": "2026-10-20T17:26:05.809Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section1_hard",
+      "question": "4",
+      "type": "se",
+      "answer": "C/E",
+      "saved_result": true
+    },
+    {
+      "event_id": "8140290f-d4d7-4465-a6c4-98338ae7eaf5",
+      "recorded_at": "2026-10-20T17:29:17.431Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section1_hard",
+      "question": "5",
+      "type": "se",
+      "answer": "B/D",
+      "saved_result": false
+    },
+    {
+      "event_id": "3d945e37-114e-4262-8201-d86206f21893",
+      "recorded_at": "2026-10-20T17:31:02.142Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section1_hard",
+      "question": "6",
+      "type": "se",
+      "answer": "C/F",
+      "saved_result": true
+    },
+    {
+      "event_id": "3ed86fe2-2ed0-4e0f-8022-393b4f1b040f",
+      "recorded_at": "2026-10-21T11:53:43.312Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section2_medium",
+      "question": "5",
+      "type": "se",
+      "answer": "E/F",
+      "saved_result": false
+    },
+    {
+      "event_id": "9e65d4cd-a70f-4e63-a0be-9b85aff73430",
+      "recorded_at": "2026-10-21T11:56:22.207Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section2_medium",
+      "question": "6",
+      "type": "se",
+      "answer": "B/E",
+      "saved_result": false
+    },
+    {
+      "event_id": "c03d36ae-2c58-4d47-a7c2-3c2e7369c59f",
+      "recorded_at": "2026-10-21T12:20:15.618Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section2_medium",
+      "question": "7",
+      "type": "se",
+      "answer": "A/B",
+      "saved_result": false
+    },
+    {
+      "event_id": "ddc92abc-598e-4c96-af25-a12f8ef79477",
+      "recorded_at": "2026-10-21T12:24:09.775Z",
+      "material": "text_completion_2000",
+      "unit": "test34_section1_hard",
+      "question": "4",
+      "type": "se",
+      "answer": "A/D",
+      "saved_result": false
+    },
+    {
+      "event_id": "0ca14207-a03b-49a6-ba1e-5682faf627b1",
+      "recorded_at": "2026-10-21T12:28:09.690Z",
+      "material": "text_completion_2000",
+      "unit": "test34_section1_hard",
+      "question": "5",
+      "type": "se",
+      "answer": "D/E",
+      "saved_result": true
+    },
+    {
+      "event_id": "e9f9ff04-981a-44d0-a282-9667f441c5ce",
+      "recorded_at": "2026-10-21T12:29:11.882Z",
+      "material": "text_completion_2000",
+      "unit": "test34_section1_hard",
+      "question": "6",
+      "type": "se",
+      "answer": "A/B",
+      "saved_result": false
+    },
+    {
+      "event_id": "1ad33709-a7cd-40d9-902a-7a277a818b95",
+      "recorded_at": "2026-10-21T12:30:59.174Z",
+      "material": "text_completion_2000",
+      "unit": "test34_section1_hard",
+      "question": "7",
+      "type": "se",
+      "answer": "B/C",
+      "saved_result": true
+    }
+  ],
+  "comparison_baseline": "当前 platform/events 的 attempt/attempts_import；legacy 对照当前安装包 history.json。未找到10月20日刷题原始备份，未声称与该备份比较。",
+  "preservation_requirements": [
+    "按原始事件 ID 和提交 session ID 无损去重；同 ID 异内容停止合并。",
+    "保留全部90个历史草稿版本、draft_heads、偏好和每次提交的答案键/结果快照；活动草稿为零不代表可以删除历史草稿。",
+    "本报告只保存21条差量提交的题号、答案和结果；完整原备份仅保留本地归档。"
+  ]
+}

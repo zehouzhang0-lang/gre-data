@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "note": "2026-10-26补充5个桌面既有摘词的14个义项；不增加合并词集或学习事件。仅4条实际读取的Oxford原句，中文自译；其他10义项为null。ETS限定检索未取得可对应的原句，不声称ETS完全没有用例。",
+  "items": [
+    {
+      "word": "chimerical",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "虚构的，不切实际的",
+            "沉溺于幻想的",
+            "（生物学，通常作 chimeric）嵌合的，由不同遗传来源的细胞或生物材料组成的"
+          ],
+          "examples": [
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "diminutive",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "非常小的，微小的",
+            "（语法）表示指小或亲昵等意义的"
+          ],
+          "examples": [
+            {
+              "en": "She was a diminutive figure beside her husband.",
+              "zh": "她站在丈夫身旁显得十分娇小。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner's Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/diminutive_1",
+                "checked_at": "2026-10-26"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "（语法）指小词或指小词缀",
+            "（尤指人名）昵称，简称",
+            "小个子；小物件"
+          ],
+          "examples": [
+            null,
+            {
+              "en": "‘Nick’ is a common diminutive of ‘Nicholas’.",
+              "zh": "Nick 是 Nicholas 常用的昵称。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner's Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/diminutive_2",
+                "checked_at": "2026-10-26"
+              }
+            },
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "intrepid",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "勇敢无畏的，不怕危险或困难的"
+          ],
+          "examples": [
+            {
+              "en": "Traders and missionaries often proved themselves to be intrepid explorers.",
+              "zh": "商人和传教士常常证明自己是勇敢无畏的探险者。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner's Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/intrepid",
+                "checked_at": "2026-10-26"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "lynx",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "猞猁"
+          ],
+          "examples": [
+            null
+          ]
+        }
+      ]
+    },
+    {
+      "word": "minuscule",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "微小的，极小的",
+            "小写的，小字书体的"
+          ],
+          "examples": [
+            {
+              "en": "The newsroom was minuscule, not much more than a cubbyhole.",
+              "zh": "新闻编辑室小得很，几乎只是个小隔间。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner's Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/minuscule",
+                "checked_at": "2026-10-26"
+              }
+            },
+            null
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "小写字母",
+            "（书写史）由草书演化而来的古代或中世纪小字书体及其字母"
+          ],
+          "examples": [
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "date": "2026-10-26",
+    "word_set_before": 3121,
+    "word_set_after": 3121,
+    "existing_captured_words_curated": 5,
+    "new_vocabulary_words": 0,
+    "added_senses": 14,
+    "added_examples": 4,
+    "null_examples": 10,
+    "existing_examples_preserved": 3947,
+    "all_other_definitions_preserved": true,
+    "learning_events_preserved": 2682,
+    "standardized_bytes": 5204075,
+    "max_bytes": 5242880,
+    "validation": {
+      "definition_contract": "passed",
+      "verified_sense_alignment": "passed",
+      "source_page_quotation_limits": "passed",
+      "unit_tests_passed": 6,
+      "whole_repository_no_coach_draft_test": "not applicable: existing profitmonger remains deliberately pending authoritative verification"
+    }
+  },
+  "sources": [
+    {
+      "word": "chimerical",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/chimerical",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取形容词三组义：不切实际的幻想；沉溺幻想；通常作chimeric的遗传嵌合义。"
+        }
+      ],
+      "note": "常指希望或设想脱离现实，并非普通的有创造力。生物学的嵌合义通常使用变体 chimeric。"
+    },
+    {
+      "word": "diminutive",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/diminutive",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取形容词的微小、指小构词义及名词的指小形式、小个体义。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/diminutive_1",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取正式形容词的非常小义及原例句。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/diminutive_2",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取名词的指小词和词缀、简称或昵称义及原例句。"
+        }
+      ],
+      "note": "形容词的小巧义偏正式。语法中指小形式不仅表示体积小，也可能带亲昵或轻蔑意味；名词还可表示昵称。"
+    },
+    {
+      "word": "intrepid",
+      "sources": [
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/intrepid",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取勇敢、不畏危险或困难义，及formal/often humorous语域和原例句。"
+        }
+      ],
+      "note": "强调面对危险或困难无所畏惧；正式用语，有时用于诙谐表达。"
+    },
+    {
+      "word": "lynx",
+      "sources": [
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lynx",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取猫科野生动物定义及复数lynx/lynxes；页面未提供可采用的完整例句。"
+        }
+      ],
+      "note": "猫科野生动物，尾巴很短；复数可用 lynx 或 lynxes。原题摘录未作为权威例句。"
+    },
+    {
+      "word": "minuscule",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/minuscule",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取形容词的极小、小字书体义及名词的小写字母、古代中世纪小字书体与字母义。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner's Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/minuscule",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "实际读取极小义和newsroom原例句。"
+        }
+      ],
+      "note": "一般用法强调极小。另有小写字母及古代、中世纪小字书体的专业义，不宜把这些义项一概译为微小。"
+    }
+  ],
+  "example_search": {
+    "ets_query": "site.ets.org/gre \"chimerical\" OR \"diminutive\" OR \"intrepid\" OR \"lynx\" OR \"minuscule\"",
+    "ets_result": "未取得可对应义项的ETS原句",
+    "oxford_unfilled": [
+      {
+        "word": "chimerical",
+        "reason": "未取得可对应的Oxford原句；MW例句未采用。"
+      },
+      {
+        "word": "lynx",
+        "reason": "Oxford词条只提供定义，没有完整例句。"
+      }
+    ]
+  }
+}

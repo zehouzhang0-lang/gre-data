@@ -119,6 +119,175 @@ test('catalog adds new words once without importing desktop learning or restorin
   assert.equal((await reopened.getState()).vocabulary.filter(w=>w.word==='timely').length,1);
 });
 
+const relation = (id, words, title = id) => ({id,type:'synonym',title,note:'仅测试关系',members:words.map(word=>({word,usage:'测试义项',example:''})),source:'dictionary_checked',sources:[]});
+async function contentUpdate(data, revision = 'weekend-test-1') {
+  const content = await createPackage(data, SEED_FORMAT);
+  return {revision,load:async()=>content};
+}
+
+test('catalog appends complete new relations with new words without importing learning evidence',async()=>{
+  const phone = await setup();
+  await phone.repo.rate(['lucid'],'remembered');
+  const before = JSON.parse(phone.storage.value).current, stateBefore = await phone.repo.getState();
+  const incoming = fixture([{word:'pellucid',meaning:'清澈的',pos:'adj.'}]);
+  incoming.baseline.relations.groups[0].title = '不得覆盖手机已有同编号关系';
+  incoming.baseline.relations.groups.push(relation('clarity',['lucid','pellucid']));
+  const upgraded = await openRepository({storage:phone.storage,now:()=>phone.clock.value,catalogUpdate:await contentUpdate(incoming)});
+  const after = JSON.parse(phone.storage.value).current, state = await upgraded.getState();
+  assert.equal(state.relations.groups.find(g=>g.id==='clarity').members.length,2);
+  assert.equal(state.relations.groups.find(g=>g.id==='clarity').source,'dictionary_checked');
+  assert.deepEqual(after.baseline.relations.groups[0],before.baseline.relations.groups[0]);
+  assert.deepEqual(after.events,before.events);
+  assert.deepEqual(after.baseline.legacyWords,before.baseline.legacyWords);
+  assert.deepEqual(item(state),item(stateBefore));
+  assert.equal(item(state,'pellucid').platform_count,0);
+  assert.equal(item(state,'pellucid').review_count,0);
+});
+
+test('already imported relations, phone relation edits/deletions/restorations survive repeated catalog updates',async()=>{
+  const phone = await setup(), incoming = fixture([{word:'pellucid',meaning:'清澈的',pos:'adj.'}]);
+  incoming.baseline.relations.groups.push(relation('clarity',['lucid','pellucid']));
+  const packet = await createPackage(incoming,SEED_FORMAT);
+  await phone.repo.importVocabulary(packet);
+  await phone.repo.saveEvent('relation_upsert',relation('clarity',['lucid','verve'],'手机修改的标题'));
+  await phone.repo.saveEvent('relation_delete',{id:'clarity'});
+  await phone.repo.saveEvent('relation_upsert',relation('phone-only',['lucid','flair'],'手机自建'));
+  await phone.repo.saveEvent('relation_delete',{id:'phone-only'});
+  await phone.repo.saveEvent('relation_upsert',relation('restored',['lucid','abate'],'手机恢复的关系'));
+  await phone.repo.saveEvent('relation_delete',{id:'restored'});
+  await phone.repo.saveEvent('relation_restore',{id:'restored'});
+  incoming.baseline.relations.groups.push(relation('phone-only',['lucid','pellucid'],'冲突内容'),relation('restored',['lucid','pellucid'],'不得覆盖'));
+  const before = JSON.parse(phone.storage.value).current, stateBefore = await phone.repo.getState();
+  const catalogUpdate = await contentUpdate(incoming);
+  const upgraded = await openRepository({storage:phone.storage,now:()=>phone.clock.value,catalogUpdate});
+  assert.deepEqual((await upgraded.getState()).relations.groups,stateBefore.relations.groups);
+  assert.deepEqual(JSON.parse(phone.storage.value).current.baseline.relations.groups,before.baseline.relations.groups);
+  assert.deepEqual(JSON.parse(phone.storage.value).current.events,before.events);
+  const writes = phone.storage.writes;
+  await openRepository({storage:phone.storage,catalogUpdate:{...catalogUpdate,load:()=>{throw Error('must not load again');}}});
+  assert.equal(phone.storage.writes,writes);
+  const later = await openRepository({storage:phone.storage,catalogUpdate:await contentUpdate(incoming,'weekend-test-2')});
+  assert.deepEqual((await later.getState()).relations.groups,stateBefore.relations.groups);
+  assert.deepEqual(JSON.parse(phone.storage.value).current.events,before.events);
+});
+
+test('catalog skips relation groups whose members are hidden or unavailable instead of creating partial groups',async()=>{
+  const phone = await setup();
+  await phone.repo.saveEvent('vocab_delete',{word:'abate'});
+  const incoming = fixture([{word:'withdrawn',meaning:'撤回的',pos:'adj.',deleted:true}]);
+  incoming.baseline.relations.groups.push(relation('hidden-member',['lucid','abate']),relation('missing-member',['lucid','withdrawn']),relation('safe-group',['lucid','verve']));
+  const upgraded = await openRepository({storage:phone.storage,catalogUpdate:await contentUpdate(incoming)});
+  const state = await upgraded.getState();
+  assert.deepEqual(state.relations.groups.map(g=>g.id),['contrast','safe-group']);
+  assert.equal(word(state,'abate').deleted,true);
+  assert.equal(word(state,'withdrawn'),undefined);
+});
+
+const checkedDefinition = name => ({word:name,input:{pos:'adj.',meaning:'原始词典候选义'},senses:[{pos:'adj.',meanings:['待整理词的核验释义'],examples:[null]}],status:'dictionary_checked',note:'词典核验说明',sources:[{publisher:'Merriam-Webster',url:'https://www.merriam-webster.com/dictionary/idle',checked_at:'2026-10-26'}]});
+
+test('requested untouched blank word gains checked content while preserving raw notes, requests and learning evidence',async()=>{
+  const phone = await setup(fixture([{word:'idle',meaning:'',pos:'',note:'手机原笔记'}]));
+  await phone.repo.requestCuration(['idle']);
+  await phone.repo.rate(['lucid'],'partial');
+  const before = JSON.parse(phone.storage.value).current, stateBefore = await phone.repo.getState();
+  const incoming = fixture([{word:'idle',meaning:'原始词典候选义',pos:'adj.',note:'不可覆盖的桌面笔记'}]);
+  incoming.baseline.definitions.push(checkedDefinition('idle'));
+  const catalogUpdate = await contentUpdate(incoming);
+  const upgraded = await openRepository({storage:phone.storage,now:()=>phone.clock.value,catalogUpdate});
+  const after = JSON.parse(phone.storage.value).current, state = await upgraded.getState();
+  assert.equal(word(state,'idle').meaning,'adj.待整理词的核验释义');
+  assert.deepEqual(word(state,'idle').senses[0].examples,[null]);
+  assert.equal(word(state,'idle').note,'手机原笔记');
+  assert.deepEqual(after.baseline.vocabulary,before.baseline.vocabulary);
+  assert.deepEqual(after.events,before.events);
+  assert.deepEqual(after.baseline.legacyWords,before.baseline.legacyWords);
+  assert.deepEqual(state.curationRequests,stateBefore.curationRequests);
+  assert.deepEqual(item(state),item(stateBefore));
+  assert.equal(item(state,'idle').platform_count,0);
+  assert.deepEqual(after.baseline.definitions.find(d=>d.word==='idle').input,{pos:'',meaning:''});
+  assert.deepEqual(incoming.baseline.definitions[0].input,{pos:'adj.',meaning:'原始词典候选义'});
+  assert.deepEqual((await readPackage(await upgraded.backupCatalogRecovery())).data,before);
+  await upgraded.rate(['idle'],'remembered');
+  const reopened = await openRepository({storage:phone.storage,catalogUpdate});
+  assert.equal(item(await reopened.getState(),'idle').platform_count,1);
+  assert.equal((await readPackage(await reopened.backup())).data.events.length,before.events.length+1);
+  await reopened.saveEvent('vocab_upsert',{word:'idle',meaning:'用户后续修订',pos:'',note:'保留新笔记'});
+  const later = await openRepository({storage:phone.storage,catalogUpdate:await contentUpdate(incoming,'weekend-test-2')});
+  assert.equal(word(await later.getState(),'idle').meaning,'用户后续修订');
+  assert.equal(word(await later.getState(),'idle').note,'保留新笔记');
+});
+
+test('blank-fill exception excludes unrequested, hidden, redirected, partially filled, edited and unchecked words',async()=>{
+  const names = ['unrequested','hidden','redirected','pending','partial','edited','unchecked','unsourced'];
+  const seed = fixture(names.map(word=>({word,meaning:'',pos:word==='partial'?'adj.':'',note:`${word}私人笔记`})));
+  for (const [word,status] of [['redirected','spelling_redirect'],['pending','spelling_pending']]) {
+    seed.baseline.definitions.push({word,input:{pos:'',meaning:''},senses:[],status,sources:[]});
+  }
+  const phone = await setup(seed);
+  await phone.repo.requestCuration(names.filter(n=>n!=='unrequested'));
+  await phone.repo.saveEvent('vocab_delete',{word:'hidden'});
+  await phone.repo.saveEvent('vocab_upsert',{word:'edited',meaning:'用户主动填写',pos:'',note:'用户笔记'});
+  const incoming = fixture(names.map(word=>({word,meaning:'原始词典候选义',pos:'adj.'})));
+  incoming.baseline.definitions = names.map(checkedDefinition);
+  incoming.baseline.definitions.find(d=>d.word==='unchecked').status='coach_draft';
+  incoming.baseline.definitions.find(d=>d.word==='unsourced').sources=[];
+  const before = JSON.parse(phone.storage.value).current, stateBefore = await phone.repo.getState();
+  const upgraded = await openRepository({storage:phone.storage,catalogUpdate:await contentUpdate(incoming)});
+  const state = await upgraded.getState(), after = JSON.parse(phone.storage.value).current;
+  for (const name of names) assert.deepEqual(word(state,name),word(stateBefore,name));
+  assert.deepEqual(after.baseline.definitions,before.baseline.definitions);
+  assert.deepEqual(after.events,before.events);
+  assert.equal(state.settings.catalogUpdate.preserved,names.length);
+});
+
+test('a personal bundle with an adapted blank fingerprint still requires each existing client to request curation',async()=>{
+  const blank = () => fixture([{word:'idle',meaning:'',pos:'',note:'手机空词原笔记'}]);
+  const owner = await setup(blank());
+  await owner.repo.requestCuration(['idle']);
+  const desktop = fixture([{word:'idle',meaning:'原始词典候选义',pos:'adj.'}]);
+  desktop.baseline.definitions.push(checkedDefinition('idle'));
+  await openRepository({storage:owner.storage,catalogUpdate:await contentUpdate(desktop,'owner-content')});
+  // This is the actual shape of a personal release seed: the definition now
+  // matches blank raw input, and the owner's request must not authorize others.
+  const personal = JSON.parse(owner.storage.value).current;
+  const definition = personal.baseline.definitions.find(d=>d.word==='idle');
+  assert.deepEqual(definition.input,{pos:'',meaning:''});
+  const catalogUpdate = await contentUpdate(personal,'personal-content');
+  for (const mode of ['unrequested','requested','edited','hidden','already-defined','new-word']) {
+    const seed = mode==='new-word' ? fixture() : blank();
+    if (mode==='already-defined') seed.baseline.definitions.push(structuredClone(definition));
+    const client = await setup(seed);
+    if (['requested','edited','hidden'].includes(mode)) await client.repo.requestCuration(['idle']);
+    if (mode==='edited') await client.repo.saveEvent('vocab_upsert',{word:'idle',meaning:'用户自己的词义',pos:'',note:'用户改写笔记'});
+    if (mode==='hidden') await client.repo.saveEvent('vocab_delete',{word:'idle'});
+    const before = JSON.parse(client.storage.value).current;
+    const upgraded = await openRepository({storage:client.storage,now:()=>client.clock.value,catalogUpdate});
+    const state = await upgraded.getState(), after = JSON.parse(client.storage.value).current, currentWord = word(state,'idle');
+    assert.deepEqual(after.events,before.events,mode);
+    assert.deepEqual(after.baseline.legacyWords,before.baseline.legacyWords,mode);
+    if (mode==='hidden') assert.equal(item(state,'idle'),undefined);
+    else assert.equal(item(state,'idle').platform_count,0,mode);
+    assert.equal(currentWord.deleted,mode==='hidden',mode);
+    if (['requested','already-defined','new-word'].includes(mode)) {
+      assert.equal(currentWord.meaning,'adj.待整理词的核验释义',mode);
+      assert.deepEqual(after.baseline.definitions.find(d=>d.word==='idle'),definition,mode);
+    } else {
+      assert.equal(currentWord.meaning,mode==='edited'?'用户自己的词义':'',mode);
+      assert.deepEqual(after.baseline.definitions,before.baseline.definitions,mode);
+    }
+    if (mode==='new-word') assert.equal(state.settings.catalogUpdate.added,1);
+    else assert.deepEqual(after.baseline.vocabulary,before.baseline.vocabulary,mode);
+    if (mode==='requested') {
+      await upgraded.rate(['idle'],'remembered');
+      const records = JSON.parse(client.storage.value).current.events;
+      const later = await openRepository({storage:client.storage,now:()=>client.clock.value,catalogUpdate:await contentUpdate(personal,'personal-content-next')});
+      assert.equal(word(await later.getState(),'idle').meaning,'adj.待整理词的核验释义');
+      assert.equal(item(await later.getState(),'idle').platform_count,1);
+      assert.deepEqual(JSON.parse(client.storage.value).current.events,records);
+    }
+  }
+});
+
 test('failed catalog storage or damaged package leaves old bytes intact and upgrade can retry',async()=>{
   const {storage}=await setup(), before=storage.value, catalogUpdate=await catalogOptions();
   storage.fail=true;
