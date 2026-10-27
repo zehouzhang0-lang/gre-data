@@ -18,12 +18,19 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ScheduledExecutorService;
 import javax.net.ssl.HttpsURLConnection;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 /** Protocol helpers: never log bodies, token values, authorization URLs or server messages. */
 final class PlanProtocol {
+    private static final ScheduledExecutorService NETWORK_TIMERS = Executors.newSingleThreadScheduledExecutor(r -> { Thread t = new Thread(r, "gre-plan-deadlines"); t.setDaemon(true); return t; });
+    private static final ExecutorService NETWORK_CLOSERS = Executors.newCachedThreadPool(r -> { Thread t = new Thread(r, "gre-plan-close"); t.setDaemon(true); return t; });
+    static PlanOperation operation(long milliseconds, PlanOperation.Ended ended) { return new PlanOperation(milliseconds, NETWORK_TIMERS, NETWORK_CLOSERS, ended); }
+    static PlanOperation operation(long milliseconds, PlanOperation.Ended ended, Object gate) { return new PlanOperation(milliseconds, NETWORK_TIMERS, NETWORK_CLOSERS, ended, gate); }
     static final String ISSUER = "https://auth.openai.com";
     static final String AUTHORIZE = ISSUER + "/api/accounts/authorize";
     static final String TOKEN = ISSUER + "/api/accounts/oauth/token";
@@ -70,8 +77,16 @@ final class PlanProtocol {
         }
     }
     static JSONObject json(String endpoint, String method, String body, String access) throws Exception {
+        try (PlanOperation operation = operation(35000, null)) { return json(endpoint, method, body, access, operation); }
+    }
+    static JSONObject json(String endpoint, String method, String body, String access, PlanOperation operation) throws Exception {
+        operation.check();
         HttpsURLConnection c = connection(endpoint, method);
+        Runnable disconnect = c::disconnect;
+        operation.attach(disconnect);
         try {
+            c.setConnectTimeout(Math.min(20000, operation.remainingMillis()));
+            c.setReadTimeout(Math.min(45000, operation.remainingMillis()));
             if (access != null) c.setRequestProperty("Authorization", "Bearer " + access);
             if (body != null) {
                 byte[] bytes = body.getBytes(StandardCharsets.UTF_8);
@@ -79,11 +94,14 @@ final class PlanProtocol {
                 c.setFixedLengthStreamingMode(bytes.length);
                 try (java.io.OutputStream out = c.getOutputStream()) { out.write(bytes); }
             }
+            operation.check();
             int status = c.getResponseCode();
+            operation.check();
             if (status < 200 || status >= 300) throw httpFailure(status, read(c.getErrorStream(), 65536));
             String text = read(c.getInputStream(), 1048576);
+            operation.check();
             return text.trim().isEmpty() ? new JSONObject() : new JSONObject(text);
-        } finally { c.disconnect(); }
+        } finally { operation.detach(disconnect); c.disconnect(); }
     }
     static Failure httpFailure(int status, String body) {
         String code = "";
@@ -94,20 +112,24 @@ final class PlanProtocol {
         if (status == 403 || code.equals("access_denied") || code.equals("insufficient_scope")) return new Failure("尚未获得 ChatGPT 订阅推理权限，请检查授权与工作区设置", "PERMISSION");
         if (status >= 500) return new Failure("OpenAI 服务暂时不可用，请稍后重试", "SERVICE");
         if (status >= 300 && status < 400) return new Failure("服务地址发生变化，请更新应用后重试", "ENDPOINT");
-        return new Failure("当前模型或请求格式暂不受支持，请换用可用模型或更新应用", "REQUEST");
+        return new Failure("当前模型或请求格式暂不受支持，请换用可用模型或更新应用", "HTTP_" + status);
     }
     static boolean eligible(JSONObject credential) {
         Set<String> scopes = new HashSet<>(Arrays.asList(credential.optString("scope").split("\\s+")));
         return scopes.contains("chatgpt.tokens.use.direct") && scopes.contains("resource.invoke");
     }
     static JSONObject verifyIdToken(String token, String client, String nonce, String expectedSubject, String access) throws Exception {
+        try (PlanOperation operation = operation(35000, null)) { return verifyIdToken(token, client, nonce, expectedSubject, access, operation); }
+    }
+    static JSONObject verifyIdToken(String token, String client, String nonce, String expectedSubject, String access, PlanOperation operation) throws Exception {
+        operation.check();
         if (token.length() > 65536) throw new Failure("登录身份校验失败，请重新登录", "IDENTITY");
         String[] parts = token.split("\\.", -1);
         if (parts.length != 3) throw new Failure("登录身份校验失败，请重新登录", "IDENTITY");
         JSONObject header = new JSONObject(new String(decode(parts[0]), StandardCharsets.UTF_8));
         JSONObject claims = new JSONObject(new String(decode(parts[1]), StandardCharsets.UTF_8));
         if (!"RS256".equals(header.optString("alg")) || header.optString("kid").isEmpty() || (header.optJSONArray("crit") != null && header.optJSONArray("crit").length() > 0)) throw new Failure("不支持的登录签名", "IDENTITY");
-        JSONArray keys = json(JWKS, "GET", null, null).getJSONArray("keys");
+        JSONArray keys = json(JWKS, "GET", null, null, operation).getJSONArray("keys");
         boolean verified = false;
         for (int i = 0; i < keys.length(); i++) {
             JSONObject key = keys.getJSONObject(i);
@@ -137,6 +159,7 @@ final class PlanProtocol {
             byte[] digest = MessageDigest.getInstance("SHA-256").digest(access.getBytes(StandardCharsets.US_ASCII));
             if (!same(b64(Arrays.copyOf(digest, digest.length / 2)), claims.optString("at_hash"))) throw new Failure("登录令牌校验失败", "IDENTITY");
         }
+        operation.check();
         return claims;
     }
     static byte[] requestBody(JSONObject body) throws Exception {

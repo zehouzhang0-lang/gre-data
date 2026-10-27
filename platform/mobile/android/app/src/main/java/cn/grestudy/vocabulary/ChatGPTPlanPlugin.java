@@ -21,6 +21,7 @@ import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -46,50 +47,81 @@ public class ChatGPTPlanPlugin extends Plugin {
     private final AtomicInteger epoch = new AtomicInteger();
     private final AtomicBoolean signingOut = new AtomicBoolean();
     private final AtomicReference<Attempt> login = new AtomicReference<>();
+    private final AtomicReference<Attempt> latestLogin = new AtomicReference<>();
     private final AtomicReference<Inference> inference = new AtomicReference<>();
     private PlanCredentials credentials;
+    // Public fields only. status() never waits for credential I/O, refresh or a lock.
+    private volatile String accountJson = "{\"available\":true,\"connected\":false,\"eligible\":false,\"message\":\"正在读取设备连接状态\"}";
 
+    private static final class LoginView {
+        final String phase, error, errorCode;
+        final long ended;
+        LoginView(String phase, String error, String errorCode, long ended) { this.phase = phase; this.error = error; this.errorCode = errorCode; this.ended = ended; }
+    }
     private static final class Attempt {
-        final PluginCall call;
+        final String id = UUID.randomUUID().toString();
+        final long started = SystemClock.elapsedRealtime();
+        final Object gate = new Object();
         final int epoch;
-        volatile boolean cancelled;
+        volatile LoginView view = new LoginView("starting", null, null, 0);
+        volatile PlanOperation operation;
         volatile ServerSocket listener;
         volatile Socket client;
-        volatile PlanProtocol.Failure failure;
-        Attempt(PluginCall call, int epoch) { this.call = call; this.epoch = epoch; }
-        void close() {
-            cancelled = true;
-            try { if (client != null) client.close(); } catch (Exception ignored) {}
-            try { if (listener != null) listener.close(); } catch (Exception ignored) {}
-        }
+        Attempt(int epoch) { this.epoch = epoch; }
     }
     private static final class Inference {
         final PluginCall call;
         final int epoch;
         volatile boolean cancelled;
         volatile HttpsURLConnection connection;
+        volatile PlanOperation operation;
         Inference(PluginCall call, int epoch) { this.call = call; this.epoch = epoch; }
-        void close() { cancelled = true; if (connection != null) connection.disconnect(); }
+        void close() { cancelled = true; if (operation != null) operation.cancel(); }
     }
-    @Override public void load() { credentials = new PlanCredentials(getContext()); }
+    @Override public void load() {
+        credentials = new PlanCredentials(getContext());
+        workers.execute(() -> {
+            try { synchronized (credentialLock) { cacheAccount(credentials.read()); } }
+            catch (Exception e) {
+                synchronized (credentialLock) {
+                    // A slow startup read must not hide a newer successful login.
+                    if (!publicStatus().optBoolean("connected")) accountJson = "{\"available\":true,\"connected\":false,\"eligible\":false,\"message\":\"无法读取设备登录状态，请重新尝试登录\"}";
+                }
+            }
+        });
+    }
     private void reject(PluginCall call, Exception error) {
         if (error instanceof PlanProtocol.Failure) call.reject(error.getMessage(), ((PlanProtocol.Failure) error).code);
+        else if (error instanceof PlanOperation.Stopped) call.reject("请求已取消或达到网络时限，请重试", ((PlanOperation.Stopped) error).code);
         else if (error instanceof java.net.SocketTimeoutException) call.reject("网络响应超时，请检查网络后重试", "NETWORK");
         else if (error instanceof java.io.IOException) call.reject("网络连接中断，请检查网络后重试", "NETWORK");
         else call.reject("操作未完成；原有学习数据和连接未被替换，请重试", "NATIVE");
     }
     private JSONObject readCredentials() throws Exception { synchronized (credentialLock) { return credentials.read(); } }
-    private JSObject publicStatus(JSONObject saved) {
+    private void cacheAccount(JSONObject saved) {
         boolean connected = !saved.optString("access_token").isEmpty();
         JSObject result = new JSObject();
         result.put("available", true); result.put("connected", connected);
         result.put("eligible", connected && PlanProtocol.eligible(saved));
         if (!saved.optString("email").isEmpty()) result.put("email", saved.optString("email"));
         if (connected && !PlanProtocol.eligible(saved)) result.put("message", "登录成功，但未授予 ChatGPT 订阅推理权限");
+        accountJson = result.toString();
+    }
+    private JSObject publicStatus() {
+        JSObject result;
+        try { result = new JSObject(accountJson); } catch (Exception ignored) { result = new JSObject(); result.put("available", true); result.put("connected", false); result.put("eligible", false); }
+        Attempt attempt = latestLogin.get();
+        JSObject status = new JSObject();
+        status.put("id", attempt == null ? JSONObject.NULL : attempt.id);
+        LoginView view = attempt == null ? null : attempt.view;
+        status.put("phase", view == null ? "idle" : view.phase);
+        status.put("elapsed_seconds", attempt == null ? 0 : Math.max(0, ((view.ended == 0 ? SystemClock.elapsedRealtime() : view.ended) - attempt.started) / 1000));
+        if (view != null && view.error != null) { status.put("error", view.error); status.put("error_code", view.errorCode); }
+        result.put("login", status);
         return result;
     }
     @PluginMethod public void status(PluginCall call) {
-        workers.execute(() -> { try { call.resolve(publicStatus(readCredentials())); } catch (Exception e) { reject(call, e); } });
+        call.resolve(publicStatus());
     }
     @PluginMethod public void openUsage(PluginCall call) {
         main.post(() -> {
@@ -99,16 +131,58 @@ public class ChatGPTPlanPlugin extends Plugin {
     }
     @PluginMethod public void signIn(PluginCall call) {
         if (signingOut.get()) { call.reject("正在退出账号，请稍后登录", "BUSY"); return; }
-        Attempt attempt = new Attempt(call, epoch.get());
-        if (!login.compareAndSet(null, attempt)) { call.reject("已有登录正在进行，请完成或取消它", "BUSY"); return; }
+        Attempt attempt = new Attempt(epoch.get());
+        if (!login.compareAndSet(null, attempt)) { call.resolve(publicStatus()); return; }
+        latestLogin.set(attempt);
+        beginStage(attempt, "starting", 15000);
+        call.resolve(publicStatus());
         workers.execute(() -> authorize(attempt));
     }
     @PluginMethod public void cancelSignIn(PluginCall call) {
-        Attempt attempt = login.get(); if (attempt != null) attempt.close();
-        call.resolve();
+        Attempt attempt = login.get(); if (attempt != null) cancelAttempt(attempt, "登录已取消，原连接已保留");
+        call.resolve(publicStatus());
+    }
+    private boolean terminal(String phase) {
+        return phase.equals("connected") || phase.equals("failed") || phase.equals("cancelled");
+    }
+    private void endAttempt(Attempt attempt, String phase, String message, String code) {
+        synchronized (attempt.gate) {
+            if (terminal(attempt.view.phase)) return;
+            attempt.view = new LoginView(phase, message, code, SystemClock.elapsedRealtime());
+            login.compareAndSet(attempt, null);
+        }
+    }
+    private void cancelAttempt(Attempt attempt, String message) {
+        synchronized (attempt.gate) {
+            if (terminal(attempt.view.phase)) return;
+            endAttempt(attempt, "cancelled", message, "CANCELLED");
+            if (attempt.operation != null) attempt.operation.cancel();
+        }
+    }
+    private void beginStage(Attempt attempt, String phase, long milliseconds) {
+        synchronized (attempt.gate) {
+            if (terminal(attempt.view.phase) || login.get() != attempt) return;
+            if (phase.equals("awaiting_browser") && !attempt.view.phase.equals("starting")) return;
+            if (phase.equals("exchanging") && !(attempt.view.phase.equals("starting") || attempt.view.phase.equals("awaiting_browser"))) return;
+            if (attempt.operation != null) {
+                try { attempt.operation.renew(milliseconds); }
+                catch (PlanOperation.Stopped ignored) { return; }
+                attempt.view = new LoginView(phase, null, null, 0);
+                return;
+            }
+            attempt.view = new LoginView(phase, null, null, 0);
+            attempt.operation = PlanProtocol.operation(milliseconds, reason -> {
+                String currentPhase = attempt.view.phase;
+                String message = currentPhase.equals("starting") ? "准备本机登录超过15秒，请重试"
+                    : currentPhase.equals("awaiting_browser") ? "等待浏览器回调超过4分钟，请重新授权"
+                    : "交换凭据或校验身份超过60秒，请检查手机网络后重试";
+                endAttempt(attempt, reason.equals("TIMEOUT") ? "failed" : "cancelled", reason.equals("TIMEOUT") ? message : "登录已取消，原连接已保留", reason.equals("TIMEOUT") ? "LOGIN_TIMEOUT" : "CANCELLED");
+            }, attempt.gate);
+        }
     }
     private void check(Attempt attempt) throws Exception {
-        if (attempt.cancelled || signingOut.get() || attempt.epoch != epoch.get()) throw new PlanProtocol.Failure("登录已取消", "CANCELLED");
+        if (terminal(attempt.view.phase) || login.get() != attempt || signingOut.get() || attempt.epoch != epoch.get()) throw new PlanProtocol.Failure("登录已取消", "CANCELLED");
+        if (attempt.operation != null) attempt.operation.check();
     }
     private void authorize(Attempt attempt) {
         try {
@@ -120,6 +194,7 @@ public class ChatGPTPlanPlugin extends Plugin {
             String requestedClient = registration ? "dynamic_agent_client" : previousClient;
             ServerSocket server = new ServerSocket(0, 4, InetAddress.getByName("127.0.0.1"));
             attempt.listener = server; server.setSoTimeout(1000);
+            attempt.operation.attach(() -> { try { server.close(); } catch (Exception ignored) {} });
             check(attempt);
             String redirect = "http://127.0.0.1:" + server.getLocalPort() + "/auth/callback";
             String query = PlanProtocol.form("client_id", requestedClient, "ext_agent_host_id", saved.getString("host_id"),
@@ -134,13 +209,18 @@ public class ChatGPTPlanPlugin extends Plugin {
             final String authorizationUrl = PlanProtocol.AUTHORIZE + "?" + query;
             main.post(() -> {
                 try {
-                    if (attempt.cancelled || attempt.epoch != epoch.get()) return;
+                    check(attempt);
                     getActivity().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(authorizationUrl)).addCategory(Intent.CATEGORY_BROWSABLE));
-                } catch (Exception e) { attempt.failure = new PlanProtocol.Failure("无法打开系统浏览器，请检查手机浏览器设置", "BROWSER"); attempt.close(); }
+                    beginStage(attempt, "awaiting_browser", 240000);
+                } catch (Exception e) {
+                    endAttempt(attempt, "failed", "打开浏览器失败：请检查手机浏览器设置", "BROWSER");
+                    if (attempt.operation != null) attempt.operation.cancel();
+                }
             });
             Map<String, String> callback = awaitCallback(attempt, state, server.getLocalPort());
             check(attempt);
             if (callback.containsKey("error")) throw new PlanProtocol.Failure("未完成 ChatGPT 授权，原连接已保留", "PERMISSION");
+            check(attempt);
             String client = callback.get("client_id");
             if (registration) {
                 if (client == null || client.isEmpty() || client.equals("dynamic_agent_client") || client.length() > 256) throw new PlanProtocol.Failure("注册未返回有效客户端标识，请重新登录", "AUTH");
@@ -154,37 +234,62 @@ public class ChatGPTPlanPlugin extends Plugin {
                 // Retain only the issued registration on invalid_grant. No unverified identity
                 // or new tokens become active until signature/claims validation completes.
                 synchronized (credentialLock) {
-                    check(attempt);
                     JSONObject registrationState = credentials.read();
                     registrationState.put("pending_client_id", client);
-                    credentials.write(registrationState);
+                    attempt.operation.guard(() -> { check(attempt); credentials.write(registrationState); });
                 }
             }
             JSONObject tokens = PlanProtocol.json(PlanProtocol.TOKEN, "POST", PlanProtocol.form("grant_type", "authorization_code", "client_id", client,
-                "code", code, "code_verifier", verifier, "redirect_uri", redirect, "resource", PlanProtocol.RESOURCE), null);
+                "code", code, "code_verifier", verifier, "redirect_uri", redirect, "resource", PlanProtocol.RESOURCE), null, attempt.operation);
             check(attempt);
             String access = tokens.getString("access_token");
+            synchronized (attempt.gate) { check(attempt); attempt.view = new LoginView("verifying", null, null, 0); }
             JSONObject identity = PlanProtocol.verifyIdToken(tokens.getString("id_token"), client, nonce,
-                saved.optString("subject").isEmpty() ? null : saved.optString("subject"), access);
+                saved.optString("subject").isEmpty() ? null : saved.optString("subject"), access, attempt.operation);
             JSONObject next = new JSONObject(saved.toString());
             next.remove("pending_client_id");
             next.put("client_id", client).put("subject", identity.getString("sub")).put("email", identity.optString("email"))
                 .put("nonce", nonce).put("id_token", tokens.getString("id_token"));
             updateTokens(next, tokens, false);
-            synchronized (credentialLock) { check(attempt); credentials.write(next); }
-            attempt.call.resolve(publicStatus(next));
+            synchronized (credentialLock) {
+                attempt.operation.commit(() -> {
+                    check(attempt);
+                    credentials.write(next);
+                    cacheAccount(next);
+                    endAttempt(attempt, "connected", null, null);
+                });
+            }
         } catch (Exception e) {
-            if (attempt.failure != null) reject(attempt.call, attempt.failure);
-            else if (attempt.cancelled || attempt.epoch != epoch.get()) attempt.call.reject("登录已取消，原连接已保留", "CANCELLED");
-            else reject(attempt.call, e);
-        } finally { attempt.close(); login.compareAndSet(attempt, null); }
+            loginFailure(attempt, e);
+        } finally { if (attempt.operation != null) attempt.operation.close(); }
+    }
+    private void loginFailure(Attempt attempt, Exception error) {
+        String phase = attempt.view.phase;
+        if (terminal(phase)) return;
+        String prefix = phase.equals("verifying") ? "校验身份失败" : phase.equals("exchanging") ? "交换凭据失败"
+            : phase.equals("awaiting_browser") ? "浏览器授权未完成" : "准备登录失败";
+        String code = "NATIVE", detail = "请重试；原连接已保留";
+        if (error instanceof PlanProtocol.Failure) {
+            code = ((PlanProtocol.Failure) error).code;
+            detail = code.startsWith("HTTP_") || code.equals("REQUEST") ? "授权服务未接受请求，请重试或更新应用" : error.getMessage();
+        } else if (error instanceof PlanOperation.Stopped) {
+            code = ((PlanOperation.Stopped) error).code;
+            detail = code.equals("TIMEOUT") ? "已达到本阶段网络时限，请检查手机网络" : "登录已取消";
+        } else if (error instanceof java.io.IOException) { code = "NETWORK"; detail = "网络连接失败或超时，请检查手机网络"; }
+        else if (error instanceof java.security.GeneralSecurityException || error instanceof org.json.JSONException) { code = "IDENTITY"; detail = "授权服务返回内容未通过校验，请重试"; }
+        endAttempt(attempt, code.equals("CANCELLED") ? "cancelled" : "failed", prefix + "：" + detail, code);
     }
     private Map<String, String> awaitCallback(Attempt attempt, String expectedState, int port) throws Exception {
-        long deadline = SystemClock.elapsedRealtime() + 240000;
-        while (SystemClock.elapsedRealtime() < deadline) {
+        while (true) {
             check(attempt);
-            try (Socket socket = attempt.listener.accept()) {
+            Runnable closeSocket = null;
+            Socket acceptedSocket = null;
+            try {
+                final Socket socket = attempt.listener.accept();
+                acceptedSocket = socket;
                 attempt.client = socket; socket.setSoTimeout(2000);
+                closeSocket = () -> { try { socket.close(); } catch (Exception ignored) {} };
+                attempt.operation.attach(closeSocket);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), StandardCharsets.US_ASCII));
                 String request = PlanProtocol.line(reader, 16384);
                 String[] start = request == null ? new String[0] : request.split(" ");
@@ -205,17 +310,26 @@ public class ChatGPTPlanPlugin extends Plugin {
                     }
                     valid = valid && PlanProtocol.same(expectedState, params.get("state"));
                 }
-                browserReply(socket, valid);
-                if (valid) return params;
+                if (valid) {
+                    // The validated callback is already received. A browser write/flush
+                    // failure must never put this login back into the accept() loop.
+                    if (!params.containsKey("error")) beginStage(attempt, "exchanging", 60000);
+                    check(attempt);
+                    return PlanCallbackDelivery.accepted(params, () -> browserReply(socket, true, params.containsKey("error")));
+                }
+                browserReply(socket, false, false);
             } catch (SocketTimeoutException ignored) {
                 // Loopback probes and abandoned sockets cannot terminate an unrelated attempt.
             } catch (java.io.IOException | IllegalArgumentException ignored) { check(attempt); }
-            finally { attempt.client = null; }
+            finally {
+                if (closeSocket != null) attempt.operation.detach(closeSocket);
+                if (acceptedSocket != null) try { acceptedSocket.close(); } catch (Exception ignored) {}
+                attempt.client = null;
+            }
         }
-        throw new PlanProtocol.Failure("等待浏览器授权超时，请回到应用重新登录", "AUTH_TIMEOUT");
     }
-    private void browserReply(Socket socket, boolean valid) throws Exception {
-        String page = valid ? "<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width'><title>GRE词库</title><h2>已收到授权回调</h2><p>请返回应用查看身份校验结果。</p><a href='grevocabulary://chatgpt-return'>返回 GRE词库</a>"
+    private void browserReply(Socket socket, boolean valid, boolean denied) throws Exception {
+        String page = valid ? "<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width'><title>GRE词库</title><h2>" + (denied ? "授权未完成" : "已收到授权回调") + "</h2><p>" + (denied ? "本次授权被拒绝或取消。原连接已保留，请手动返回应用查看详情。" : "这还不代表登录成功。请手动返回应用查看凭据交换和身份校验进度。") + "</p><a href='grevocabulary://chatgpt-return'>返回 GRE词库</a>"
             : "<!doctype html><meta charset=utf-8><title>GRE词库</title><p>此回调无效，请使用刚才打开的授权页面。</p>";
         byte[] bytes = page.getBytes(StandardCharsets.UTF_8);
         String headers = "HTTP/1.1 " + (valid ? "200 OK" : "400 Bad Request") + "\r\nContent-Type: text/html; charset=utf-8\r\nCache-Control: no-store\r\nReferrer-Policy: no-referrer\r\nContent-Security-Policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'\r\nConnection: close\r\nContent-Length: " + bytes.length + "\r\n\r\n";
@@ -233,8 +347,10 @@ public class ChatGPTPlanPlugin extends Plugin {
         else if (!refresh) next.put("scope", "");
     }
     // Held across refresh and the atomic replacement: rotating refresh tokens never race.
-    private String accessToken(int expectedEpoch) throws Exception {
+    private String accessToken(int expectedEpoch, PlanOperation operation) throws Exception {
+        operation.check();
         synchronized (credentialLock) {
+            operation.check();
             if (signingOut.get()) throw new PlanProtocol.Failure("正在退出账号", "CANCELLED");
             if (expectedEpoch != epoch.get()) throw new PlanProtocol.Failure("请求已取消", "CANCELLED");
             JSONObject saved = credentials.read();
@@ -242,36 +358,50 @@ public class ChatGPTPlanPlugin extends Plugin {
             if (!PlanProtocol.eligible(saved)) throw new PlanProtocol.Failure("尚未授予 ChatGPT 订阅推理权限", "PERMISSION");
             if (saved.optLong("expires_at") <= System.currentTimeMillis() / 1000 + 60) {
                 if (saved.optString("refresh_token").isEmpty()) throw new PlanProtocol.Failure("登录已过期，请重新登录", "AUTH");
-                JSONObject tokens = PlanProtocol.json(PlanProtocol.TOKEN, "POST", PlanProtocol.form("grant_type", "refresh_token",
-                    "client_id", saved.getString("client_id"), "refresh_token", saved.getString("refresh_token"), "resource", PlanProtocol.RESOURCE), null);
-                JSONObject next = new JSONObject(saved.toString());
-                updateTokens(next, tokens, true);
-                if (tokens.has("id_token")) {
-                    JSONObject identity = PlanProtocol.verifyIdToken(tokens.getString("id_token"), saved.getString("client_id"), null, saved.getString("subject"), tokens.getString("access_token"));
-                    if (identity.has("nonce") && !PlanProtocol.same(saved.optString("nonce"), identity.optString("nonce"))) throw new PlanProtocol.Failure("刷新身份校验失败，请重新登录", "IDENTITY");
-                    next.put("id_token", tokens.getString("id_token"));
+                PlanOperation refresh = PlanProtocol.operation(Math.min(35000, operation.remainingMillis()), null);
+                Runnable cancelRefresh = refresh::cancel;
+                operation.attach(cancelRefresh);
+                try {
+                    JSONObject tokens = PlanProtocol.json(PlanProtocol.TOKEN, "POST", PlanProtocol.form("grant_type", "refresh_token",
+                        "client_id", saved.getString("client_id"), "refresh_token", saved.getString("refresh_token"), "resource", PlanProtocol.RESOURCE), null, refresh);
+                    JSONObject next = new JSONObject(saved.toString());
+                    updateTokens(next, tokens, true);
+                    if (tokens.has("id_token")) {
+                        JSONObject identity = PlanProtocol.verifyIdToken(tokens.getString("id_token"), saved.getString("client_id"), null, saved.getString("subject"), tokens.getString("access_token"), refresh);
+                        if (identity.has("nonce") && !PlanProtocol.same(saved.optString("nonce"), identity.optString("nonce"))) throw new PlanProtocol.Failure("刷新身份校验失败，请重新登录", "IDENTITY");
+                        next.put("id_token", tokens.getString("id_token"));
+                    }
+                    // Sign-out serializes behind this lock and revokes the latest saved token.
+                    operation.guard(() -> refresh.guard(() -> { credentials.write(next); cacheAccount(next); }));
+                    saved = next;
+                } finally {
+                    operation.detach(cancelRefresh);
+                    refresh.close();
                 }
-                // Persist rotation even if the user just cancelled; sign-out clears it afterwards.
-                credentials.write(next); saved = next;
             }
             if (expectedEpoch != epoch.get()) throw new PlanProtocol.Failure("请求已取消", "CANCELLED");
             if (!PlanProtocol.eligible(saved)) throw new PlanProtocol.Failure("订阅推理授权已改变，请重新授权", "PERMISSION");
+            operation.check();
             return saved.getString("access_token");
         }
     }
     @PluginMethod public void models(PluginCall call) {
         int requestEpoch = epoch.get();
+        AtomicBoolean settled = new AtomicBoolean();
+        PlanOperation operation = PlanProtocol.operation(35000, reason -> { if (settled.compareAndSet(false, true)) call.reject("加载模型列表超过35秒，请检查手机网络后重试", "NETWORK_TIMEOUT"); });
         workers.execute(() -> {
             try {
-                JSONObject response = PlanProtocol.json(PlanProtocol.MODELS, "GET", null, accessToken(requestEpoch));
+                JSONObject response = PlanProtocol.json(PlanProtocol.MODELS, "GET", null, accessToken(requestEpoch, operation), operation);
                 JSONArray models = response.getJSONArray("models"), visible = new JSONArray();
                 for (int i = 0; i < models.length(); i++) {
                     JSONObject model = models.getJSONObject(i);
                     if ("list".equals(model.optString("visibility"))) visible.put(new JSONObject().put("slug", model.getString("slug")).put("display_name", model.optString("display_name", model.getString("slug"))));
                 }
                 if (requestEpoch != epoch.get()) throw new PlanProtocol.Failure("账号已退出，请重新登录", "CANCELLED");
-                JSObject result = new JSObject(); result.put("models", visible); call.resolve(result);
-            } catch (Exception e) { reject(call, e); }
+                operation.check();
+                JSObject result = new JSObject(); result.put("models", visible); if (settled.compareAndSet(false, true)) call.resolve(result);
+            } catch (Exception e) { if (settled.compareAndSet(false, true)) reject(call, e); }
+            finally { operation.close(); }
         });
     }
     @PluginMethod public void respond(PluginCall call) {
@@ -281,13 +411,15 @@ public class ChatGPTPlanPlugin extends Plugin {
     }
     private void runResponse(Inference request) {
         ScheduledFuture<?> timeout = deadlines.schedule(request::close, 240, TimeUnit.SECONDS);
+        request.operation = PlanProtocol.operation(240000, null);
         try {
             JSONObject body = request.call.getObject("body");
             if (body == null) throw new PlanProtocol.Failure("解析请求缺失", "REQUEST");
             byte[] encoded = PlanProtocol.requestBody(body);
-            String access = accessToken(request.epoch);
+            String access = accessToken(request.epoch, request.operation);
             if (request.cancelled) throw new PlanProtocol.Failure("解析已取消", "CANCELLED");
             HttpsURLConnection c = PlanProtocol.connection(PlanProtocol.RESPONSES, "POST");
+            request.operation.attach(c::disconnect);
             request.connection = c; c.setDoOutput(true); c.setReadTimeout(60000);
             c.setRequestProperty("Authorization", "Bearer " + access); c.setRequestProperty("Content-Type", "application/json");
             c.setRequestProperty("Accept", "text/event-stream"); c.setFixedLengthStreamingMode(encoded.length);
@@ -324,13 +456,13 @@ public class ChatGPTPlanPlugin extends Plugin {
         } catch (Exception e) {
             if (request.cancelled || request.epoch != epoch.get()) request.call.reject("解析已取消或超时；未保存为合格讲解", "CANCELLED");
             else reject(request.call, e);
-        } finally { timeout.cancel(false); request.close(); inference.compareAndSet(request, null); }
+        } finally { timeout.cancel(false); request.close(); request.operation.close(); inference.compareAndSet(request, null); }
     }
     @PluginMethod public void cancel(PluginCall call) { Inference request = inference.get(); if (request != null) request.close(); call.resolve(); }
     @PluginMethod public void signOut(PluginCall call) {
         if (!signingOut.compareAndSet(false, true)) { call.reject("正在退出账号", "BUSY"); return; }
         epoch.incrementAndGet();
-        Attempt attempt = login.get(); if (attempt != null) attempt.close();
+        Attempt attempt = login.get(); if (attempt != null) cancelAttempt(attempt, "已退出账号，登录已取消");
         Inference request = inference.get(); if (request != null) request.close();
         workers.execute(() -> {
             boolean revoked = false;
@@ -341,6 +473,7 @@ public class ChatGPTPlanPlugin extends Plugin {
                     JSONObject cleared = new JSONObject(saved.toString());
                     for (String field : new String[]{"access_token", "refresh_token", "id_token", "scope", "expires_at", "nonce"}) cleared.remove(field);
                     credentials.write(cleared);
+                    cacheAccount(cleared);
                 }
                 String refresh = saved.optString("refresh_token");
                 if (!refresh.isEmpty()) {
@@ -360,7 +493,7 @@ public class ChatGPTPlanPlugin extends Plugin {
     }
     @Override protected void handleOnDestroy() {
         epoch.incrementAndGet();
-        Attempt attempt = login.get(); if (attempt != null) attempt.close();
+        Attempt attempt = login.get(); if (attempt != null) cancelAttempt(attempt, "应用页面已关闭，请重新发起登录");
         Inference request = inference.get(); if (request != null) request.close();
         workers.shutdown(); deadlines.shutdownNow();
         super.handleOnDestroy();

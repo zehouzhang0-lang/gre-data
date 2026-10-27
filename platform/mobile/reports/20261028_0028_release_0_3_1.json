@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "kind": "mobile_release_verification",
+  "version": "0.3.1",
+  "version_code": 15,
+  "package_name": "cn.grestudy.vocabulary",
+  "built_at": "2026-10-27T16:25:00.788Z",
+  "verified_at": "2026-10-27T16:28:05.564Z",
+  "trigger": {
+    "source": "user real-device report",
+    "version": "0.3.0",
+    "browser_callback_received": true,
+    "returned_app_stuck_waiting": true,
+    "visible_error": false,
+    "account_or_models_visible": false
+  },
+  "fixes": [
+    "detached_native_login_with_nonblocking_public_status",
+    "foreground_reconciliation_and_bounded_bridge_wait",
+    "separate_account_connection_and_model_loading_with_retry",
+    "stage_deadlines_and_cancellation_close_active_network_resources",
+    "terminal_commit_guard_against_late_callbacks_and_writes",
+    "validated_callback_survives_browser_reply_or_socket_close_failure"
+  ],
+  "timeouts_seconds": {
+    "native_preparation": 15,
+    "browser_callback": 240,
+    "exchange_and_verification_shared": 60,
+    "models_native": 35,
+    "models_frontend": 40,
+    "status_bridge": 6
+  },
+  "tests": {
+    "targeted_frontend_and_ai_contract": {
+      "passed": 11,
+      "failed": 0,
+      "command": "node --test platform/mobile/tests/login-flow.test.mjs platform/mobile/tests/ai-review.test.mjs"
+    },
+    "native_offline": {
+      "passed": 6,
+      "failed": 0,
+      "command": "./platform/mobile/scripts/test-native-login.ps1",
+      "real_credentials_read": false,
+      "network_requests": 0
+    },
+    "full_suite_rerun": false,
+    "final_code_review": "passed; no blocking findings",
+    "android_build": "passed",
+    "browser_settings_page": "passed; expected disabled native login in browser and no console errors or warnings"
+  },
+  "apk_verification": {
+    "apk": "GRE-vocabulary-0.3.1-debug.apk",
+    "bytes": 90951337,
+    "sha256": "747f283342fc0df3987509ccf33edf22d6c72dd21cec4c6e3f7be729df6e94e7",
+    "verified_web_files": 10602,
+    "verified_practice_assets": 4166,
+    "practice_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "questions": {
+      "se": 1001,
+      "tc": 1001,
+      "rc": 893,
+      "quant": 847
+    },
+    "vocabulary_seed_sha256": "dfe1358fb407d8000960e66126d46f7922962ce7195a6f9b1360cb127be721f6"
+  },
+  "bundled_data_comparison": {
+    "vocabulary-seed.json": {
+      "identical_to_0_3_0": true,
+      "sha256": "dfe1358fb407d8000960e66126d46f7922962ce7195a6f9b1360cb127be721f6"
+    },
+    "pronunciation.json": {
+      "identical_to_0_3_0": true,
+      "sha256": "72bf44c70bace975394affb60a3a2b2c7bf215d3ad14426dc6da0980360f6200"
+    },
+    "practice/manifest.json": {
+      "same_content_and_revision": true,
+      "changed_metadata_fields": [
+        "created_at"
+      ],
+      "revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503"
+    }
+  },
+  "signature": {
+    "sha256": "18032e90614e5b1e2d406ccfbb3d731941987c8d154f3cf634b3315bd4e422d0",
+    "matches_version": "0.3.0",
+    "same_package_name": true,
+    "old_version_code": 14,
+    "new_version_code": 15
+  },
+  "data_preservation": {
+    "learning_database_schema_unchanged": true,
+    "learning_repositories_unchanged": true,
+    "learning_events_written": 0,
+    "previous_isolated_upgrade_report": "20261027_2256_release_0_3_0.json",
+    "previous_upgrade_tests_not_repeated": true
+  },
+  "real_device_test": "awaiting user installation and retest",
+  "real_account_authorization": "not_performed_by_agent",
+  "real_subscription_inference": "not_verified",
+  "limitations": [
+    "修复的是可确认的等待、状态恢复、取消和回调交付缺陷；尚不能确认用户手机后续网络或账号权限的实际返回。",
+    "未在用户真机安装0.3.1，授权、模型列表和实际解析须用户继续测试。",
+    "进程被系统终止时不持久保存未完成OAuth交易，重开后允许重新授权；既有加密凭据和学习数据保留。"
+  ]
+}
