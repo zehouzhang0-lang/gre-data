@@ -29,6 +29,16 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: handwritten_vocab_20261027
+    title: "2026-10-27 手写词汇（三页）"
+    filename: null
+    sha256: null
+    role: user_vocabulary_notes
+    answer_status: not_applicable
+    description: "106词，87新增、19已有；新增词义按权威词典核对，例句仅收可追溯ETS/Oxford原句。"
+    record: vocab/imports/20261027_1516_handwritten_vocab.json
+    image_count: 3
+    original_storage: user_supplied_chat_attachments_not_committed
   - id: handwritten_vocab_20261026
     title: "2026-10-26 手写词汇（6张照片、5个不同页面）"
     filename: null

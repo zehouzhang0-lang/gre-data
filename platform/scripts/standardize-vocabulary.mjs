@@ -55,6 +55,7 @@ for(const w of snapshot.vocabulary) {
 }
 if(failures.length){console.log(failures.join('\n'));process.exitCode=1;}else{
   items.forEach(validateStandardDefinition);
-  await fs.writeFile('vocab/standardized.json',JSON.stringify({schema_version:1,generated_at:'2026-10-13',scope:'all_effective_vocabulary_including_removed',items},null,2)+'\n');
+  // Keep the generated text below the repository's per-file sync limit.
+  await fs.writeFile('vocab/standardized.json',JSON.stringify({schema_version:1,generated_at:'2026-10-13',scope:'all_effective_vocabulary_including_removed',items},null,1)+'\n');
   console.log(JSON.stringify({total:items.length,status:items.reduce((a,w)=>(a[w.status]=(a[w.status]||0)+1,a),{})}));
 }
