@@ -10,6 +10,7 @@ public class MainActivity extends BridgeActivity {
         registerPlugin(VocabStoragePlugin.class);
         registerPlugin(PracticeStoragePlugin.class);
         registerPlugin(PronunciationPlugin.class);
+        registerPlugin(ChatGPTPlanPlugin.class);
         super.onCreate(savedInstanceState);
         if (getBridge() != null) {
             getBridge().getWebView().setBackgroundColor(Color.WHITE);

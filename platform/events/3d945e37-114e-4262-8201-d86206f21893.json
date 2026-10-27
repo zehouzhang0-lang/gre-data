@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "3d945e37-114e-4262-8201-d86206f21893",
+  "kind": "attempt",
+  "recorded_at": "2026-10-20T17:31:02.142Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test33_section1_hard",
+    "question": "6",
+    "type": "se",
+    "answer": "C/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "ae6b74f4-de3a-45e2-b2fc-b86652fd7269",
+    "draft_id": "bc3ffcd2-f41c-4954-af67-c97d868de0e3",
+    "bank_revision": "588a081aa125761a99c6c37d5b0674c220116fca60725246cb1bd5fc60650536",
+    "content_id": "e95f41c88b72a1adda45e01dda39ca498c162b46617ffd784c760540d4a502a8",
+    "question_snapshot": {
+      "key": "[\"text_completion_2000\",\"test33_section1_hard\",\"6\"]",
+      "mode": "pair",
+      "source": "填空 2000 · Test 33 · Section 1 · hard · 第 6 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          96,
+          97
+        ],
+        "regions": [
+          {
+            "page": 96,
+            "top": 743.243127,
+            "bottom": 782.243127,
+            "left": 48,
+            "right": 550
+          },
+          {
+            "page": 97,
+            "top": 58,
+            "bottom": 141.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      }
+    },
+    "selected": [
+      "C",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "CF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:16058-16095",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

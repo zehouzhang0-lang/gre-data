@@ -4,6 +4,8 @@ import { Sheet } from './Primitives';
 import { useBackAction } from '../useBack';
 import { getPracticeRepository } from '../practice/repository.mjs';
 import { unitKey, unitsFor, answerReady, selectAnswer } from '../practice/model.mjs';
+import { adjacentQuestion, swipeDirection, captureSelection } from '../practice/interaction.mjs';
+import MobileAiReview from './MobileAiReview';
 import '../practice/practice.css';
 
 const types = [
@@ -75,12 +77,14 @@ function Directory({ catalog, currentKey, type, onGo, onClose }) {
   </Sheet>;
 }
 
-export default function Practice({ active, notify }) {
+export default function Practice({ active, notify, vocabularyRepo, refreshVocabulary, onConnection }) {
   const [repo, setRepo] = useState(null), [practiceState, setPracticeState] = useState(null), [error, setError] = useState('');
   const [type, setType] = useState('se'), [activeKey, setActiveKey] = useState(null), [detail, setDetail] = useState(null);
   const [questionError, setQuestionError] = useState(''), [retry, setRetry] = useState(0), [selected, setSelected] = useState([]);
   const [sheet, setSheet] = useState(null), [enlarged, setEnlarged] = useState(null), [activeBlank, setActiveBlank] = useState(0);
   const [busy, setBusy] = useState(false), [saveErrors, setSaveErrors] = useState({});
+  const [capture, setCapture] = useState(null), [capturing, setCapturing] = useState(false), [selecting, setSelecting] = useState(false);
+  const gesture = useRef(null), suppressClickUntil = useRef(0), captureGuard = useRef(false);
   const [split, setSplit] = useState(42), [readingSize, setReadingSize] = useState(17), [readingHeight, setReadingHeight] = useState(600);
   const guard = useRef(false), answerEdits = useRef(new Map()), editSequence = useRef(0), hydrated = useRef(false);
   const scroll = useRef(null), passageScroll = useRef(null), workspace = useRef(null), drag = useRef(null), passagePositions = useRef(new Map());
@@ -137,14 +141,7 @@ export default function Practice({ active, notify }) {
 
   const catalog = practiceState?.catalog || {}, category = types.find(item => item.id === type);
   const questions = catalog[type]?.questions || [], index = questions.findIndex(question => question.key === activeKey), meta = questions[index];
-  const relativeUnfinished = direction => {
-    for (let distance = 1; distance < questions.length; distance++) {
-      const candidate = questions[(index + direction * distance + questions.length) % questions.length];
-      if (!candidate.submitted && !candidate.sameContentDone) return candidate;
-    }
-    return null;
-  };
-  const previousQuestion = relativeUnfinished(-1), nextQuestion = relativeUnfinished(1);
+  const previousQuestion = adjacentQuestion(questions, activeKey, -1), nextQuestion = adjacentQuestion(questions, activeKey, 1);
   const q = detail?.key === activeKey ? detail : null;
   const hasDraft = !!q?.draft || !!practiceState?.drafts?.[activeKey] || answerEdits.current.has(activeKey);
   const historyLocked = !!(q?.history || meta?.sameContentDone) && !hasDraft;
@@ -158,7 +155,8 @@ export default function Practice({ active, notify }) {
   const go = target => {
     if (guard.current) return;
     rememberPassage(); if (target) setType(target.type);
-    setActiveKey(target?.key || null); setSheet(null); setActiveBlank(0);
+    setActiveKey(target?.key || null); setSheet(null); setActiveBlank(0); setCapture(null); setSelecting(false);
+    window.getSelection()?.removeAllRanges();
   };
   useBackAction(() => go(null), active && activeKey !== null, 30);
   useEffect(() => {
@@ -170,6 +168,65 @@ export default function Practice({ active, notify }) {
     const observer = new ResizeObserver(([entry]) => setReadingHeight(entry.contentRect.height));
     observer.observe(workspace.current); return () => observer.disconnect();
   }, [type, q?.key, active]);
+  useEffect(() => {
+    const update = () => {
+      if (!active || sheet || !q) return;
+      const selectedText = captureSelection(window.getSelection(), workspace.current, q);
+      if (selectedText) {
+        gesture.current = null; suppressClickUntil.current = Date.now() + 600;
+        setCapture(selectedText);
+      }
+    };
+    document.addEventListener('selectionchange', update);
+    return () => document.removeEventListener('selectionchange', update);
+  }, [active, sheet, q]);
+  const addCapturedWord = async () => {
+    if (!capture || captureGuard.current) return;
+    captureGuard.current = true; setCapturing(true);
+    try {
+      if (!vocabularyRepo) throw Error('词库尚未载入，请稍后再试');
+      const state = await vocabularyRepo.getState();
+      const existing = state.vocabulary.find(item => item.word === capture.word && !item.deleted);
+      if (existing) notify(`“${capture.word}”已在单词墙，原内容已保留`);
+      else {
+        await vocabularyRepo.saveEvent('vocab_capture', capture);
+        await refreshVocabulary?.();
+        notify(`已加入单词墙：${capture.word}`);
+      }
+      setCapture(null); window.getSelection()?.removeAllRanges();
+    } catch (error) { notify(error.message, true); }
+    finally { captureGuard.current = false; setCapturing(false); }
+  };
+  const gestureHandlers = {
+    onPointerDownCapture: event => {
+      gesture.current = null;
+      if (busy || selecting || sheet || !['se', 'tc', 'rc'].includes(type) || !['touch', 'pen'].includes(event.pointerType)
+        || event.target.closest('input, textarea, select, a, .reading-divider, .math-image-button, .reading-size-controls, .blank-tabs, .question-history, .next-blank')) return;
+      if (event.target.closest('button') && !event.target.closest('.practice-option, .passage-sentence')) return;
+      if (!window.getSelection()?.isCollapsed) return;
+      gesture.current = { id: event.pointerId, x: event.clientX, y: event.clientY, time: Date.now(), pointerType: event.pointerType };
+    },
+    onPointerMoveCapture: event => {
+      const start = gesture.current;
+      if (start?.id !== event.pointerId) return;
+      const dx = Math.abs(event.clientX - start.x), dy = Math.abs(event.clientY - start.y);
+      if (dy > 12 && dy > dx || Date.now() - start.time > 450) start.cancelled = true;
+    },
+    onPointerUpCapture: event => {
+      const start = gesture.current; gesture.current = null;
+      if (start?.id !== event.pointerId) return;
+      const elapsed = Date.now() - start.time;
+      const direction = swipeDirection(start, { x: event.clientX, y: event.clientY, time: Date.now() }, { selection: !window.getSelection()?.isCollapsed, enabled: !busy && !selecting });
+      if (elapsed > 450 || direction) suppressClickUntil.current = Date.now() + 600;
+      if (direction) { const target = direction > 0 ? nextQuestion : previousQuestion; if (target) go(target); }
+    },
+    onPointerCancelCapture: () => { gesture.current = null; suppressClickUntil.current = Date.now() + 600; },
+    onClickCapture: event => {
+      if (selecting || capture || Date.now() < suppressClickUntil.current || !window.getSelection()?.isCollapsed) {
+        if (event.target.closest('.practice-option, .passage-sentence')) { event.preventDefault(); event.stopPropagation(); }
+      }
+    },
+  };
   const availableHeight = Math.max(1, readingHeight - 28), minimumShare = Math.min(45, Math.max(25, 140 / availableHeight * 100)), maximumShare = 100 - minimumShare;
   const actualSplit = Math.max(minimumShare, Math.min(maximumShare, split));
   const changeSplit = value => setSplit(Math.max(minimumShare, Math.min(maximumShare, value)));
@@ -197,7 +254,7 @@ export default function Practice({ active, notify }) {
     selectedRef.current = answer; setSelected(answer);
     persistAnswer(q.key, answer);
   };
-  const choose = value => { if (!locked && q) editAnswer(selectAnswer(q, selectedRef.current, value)); };
+  const choose = value => { if (!locked && q && !selecting && !capture && Date.now() >= suppressClickUntil.current && window.getSelection()?.isCollapsed !== false) editAnswer(selectAnswer(q, selectedRef.current, value)); };
   const redo = async () => {
     if (guard.current || !q) return;
     guard.current = true; setBusy(true);
@@ -234,7 +291,7 @@ export default function Practice({ active, notify }) {
   const options = (letters = q.letters) => <div className="practice-options" role="group" aria-label={instructions}>
     {letters.map(letter => <button key={letter} className={`practice-option ${selected.includes(letter) ? 'chosen' : ''}`} aria-pressed={selected.includes(letter)} aria-disabled={locked} onClick={() => choose(letter)}>
       <span className={`option-letter ${['pair', 'multiple'].includes(q.mode) ? 'square' : ''}`}>{letter}</span>
-      <span>{q.options[q.letters.indexOf(letter)] || (q.mode === 'comparison'
+      <span data-capture-text>{q.options[q.letters.indexOf(letter)] || (q.mode === 'comparison'
         ? ({ A: 'Quantity A is greater.', B: 'Quantity B is greater.', C: 'The two quantities are equal.', D: 'The relationship cannot be determined from the information given.' })[letter]
         : `选项 ${letter}`)}</span>{selected.includes(letter) && <Check size={18} aria-hidden="true"/>}
     </button>)}
@@ -263,7 +320,9 @@ export default function Practice({ active, notify }) {
         {questionError || '正在读取原题…'}{questionError && <button onClick={() => setRetry(value => value + 1)}>重试</button>}
       </main> : <>
         {error && <div className="practice-save-error" role="alert">{error}<button onClick={() => setRetry(value => value + 1)}>重试</button></div>}
-        <div ref={workspace} className={type === 'rc' ? 'reading-workspace' : 'question-workspace'} style={{ '--passage-share': `${actualSplit}fr`, '--question-share': `${100 - actualSplit}fr`, '--reading-size': `${readingSize}px`, '--reading-image-width': `${readingSize / 17 * 100}%` }}>
+        <div className="practice-reading-tools"><span>{type === 'quant' ? '长按正文可选词' : '左右滑动切换相邻题目'}</span><button aria-pressed={selecting} onClick={() => { setSelecting(value => !value); setCapture(null); window.getSelection()?.removeAllRanges(); }}>{selecting ? '结束选词' : '选词'}</button></div>
+        {capture && <div className="practice-capture" role="region" aria-label="确认加入单词墙"><span>{capture.word}</span><button className="primary" disabled={capturing} onPointerDown={event => event.preventDefault()} onClick={addCapturedWord}>{capturing ? '保存中…' : '加入单词墙'}</button><button aria-label="取消选词" disabled={capturing} onClick={() => { setCapture(null); window.getSelection()?.removeAllRanges(); }}>取消</button></div>}
+        <div ref={workspace} {...gestureHandlers} data-swipe-enabled={type !== 'quant' && !selecting} className={type === 'rc' ? 'reading-workspace' : 'question-workspace'} style={{ '--passage-share': `${actualSplit}fr`, '--question-share': `${100 - actualSplit}fr`, '--reading-size': `${readingSize}px`, '--reading-image-width': `${readingSize / 17 * 100}%` }}>
           {type === 'rc' && <><section className="reading-upper" aria-label="原文区域"><div className="reading-panel-header"><span>原文</span><div className="reading-size-controls">
             <button aria-label="缩小阅读字号" disabled={readingSize <= 15} onClick={() => setReadingSize(value => value - 1)}>A−</button>
             <button aria-label="放大阅读字号" disabled={readingSize >= 22} onClick={() => setReadingSize(value => value + 1)}>A＋</button>
@@ -271,8 +330,8 @@ export default function Practice({ active, notify }) {
             <article ref={passageScroll} id="reading-passage" className="practice-passage reading-passage-scroll" tabIndex={0} aria-label="阅读原文" onScroll={rememberPassage}>
               {q.passageImages.length ? <SourceImages images={q.passageImages} onEnlarge={enlarge} onLoad={restorePassage}/>
                 : q.mode === 'sentence' && q.sentences.length ? <p>{q.sentences.map((sentence, i) => <button
-                  className={`passage-sentence ${selected.includes(sentence) ? 'chosen' : ''}`} key={i} aria-pressed={selected.includes(sentence)} aria-disabled={locked} onClick={() => choose(sentence)}>{sentence}{' '}</button>)}</p>
-                  : q.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+                  className={`passage-sentence ${selected.includes(sentence) ? 'chosen' : ''}`} key={i} aria-pressed={selected.includes(sentence)} aria-disabled={locked} onClick={() => choose(sentence)} data-capture-text>{sentence}{' '}</button>)}</p>
+                  : q.paragraphs.map((paragraph, i) => <p key={i} data-capture-text>{paragraph}</p>)}
             </article></section>
             <div className="reading-divider" role="separator" aria-label="拖动调整原文和题目高度" aria-orientation="horizontal"
               aria-controls="reading-passage reading-question" aria-valuemin={Math.round(minimumShare)} aria-valuemax={Math.round(maximumShare)} aria-valuenow={Math.round(actualSplit)}
@@ -283,7 +342,7 @@ export default function Practice({ active, notify }) {
               onKeyDown={event => { if (!['ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) return; event.preventDefault(); changeSplit(event.key === 'Home' ? minimumShare : event.key === 'End' ? maximumShare : actualSplit + (event.key === 'ArrowUp' ? -5 : 5)); }}><span aria-hidden="true"/></div></>}
           <main ref={scroll} className="screen-scroll question-body" id="reading-question" tabIndex={type === 'rc' ? 0 : undefined} aria-label={type === 'rc' ? '题目区域' : undefined}>
             <div className="question-instruction"><span>{instructions}</span>{q.mode === 'pair' && !textAnswer && <span>{selected.length} / 2 已选</span>}</div>
-            {q.images.length ? <SourceImages images={q.images} onEnlarge={enlarge}/> : <p className="practice-prompt">{q.prompt}</p>}
+            {q.images.length ? <SourceImages images={q.images} onEnlarge={enlarge}/> : <p className="practice-prompt" data-capture-text>{q.prompt}</p>}
             {q.mode === 'sentence' ? <p className="sentence-selection">{!sentenceAvailable ? '本题暂以原文图片只读展示，尚无可核实的选句文本。' : selected[0] || '点按上方原文中的句子'}</p>
               : groups.length ? <><div className="blank-tabs" role="group" aria-label="选择填空位置">{groups.map((group, i) => <button key={i} aria-pressed={activeBlank === i} onClick={() => setActiveBlank(i)}>
                 空 {['(i)', '(ii)', '(iii)'][i]}<span>{group.find(letter => selected.includes(letter)) || '待选'}</span></button>)}</div>{options(groups[activeBlank])}
@@ -291,6 +350,7 @@ export default function Practice({ active, notify }) {
                 : !textAnswer && q.mode !== 'entry' && q.letters.length ? options() : <label className="directory-field">{textAnswer ? '按原题填写答案' : q.mode === 'entry' ? '答案' : '按原题填写答案'}
                   <input value={selected[0] || ''} disabled={locked} placeholder={textAnswer ? '例如 B 或 B/D' : q.mode === 'entry' ? '输入数字、分数等' : '例如 A、C'} onChange={event => editAnswer([event.target.value])}/></label>}
             {saveErrors[q.key] && <div className="practice-save-error" role="alert">草稿未保存：{saveErrors[q.key]}<button disabled={busy} onClick={() => persistAnswer(q.key, selectedRef.current)}>重试保存</button></div>}
+            {(q.images.length > 0 || q.passageImages.length > 0) && <p className="practice-image-selection-note">原题图片不能直接选词；仅可长按页面中可选择的英文正文或选项。</p>}
             <p className="practice-source">《{q.source}》</p>
             {meta?.sameContentDone && !q.history && <section className="question-history"><strong>同内容已做</strong><p>这个原题号没有独立提交记录。</p>
               {historyLocked && <button className="text-button" disabled={busy} onClick={redo}>重新作答</button>}</section>}
@@ -301,6 +361,7 @@ export default function Practice({ active, notify }) {
                 {answerKey?.answer ? <p>参考答案{answerKey.answer_source === 'user_provided' ? '（用户提供）' : ''}：{answerKey.answer}</p> : <p>暂无参考答案，仅保存作答。</p>}
                 <button className="text-button" disabled={busy} onClick={redo}>重新作答</button></>}
             </section>}
+            <MobileAiReview key={`${q.key}:${q.history?.event_id || ''}`} question={q} repository={repo} vocabularyRepo={vocabularyRepo} notify={notify} onConnection={onConnection}/>
           </main>
         </div>
         <footer className="practice-controls"><button disabled={busy || !previousQuestion} onClick={() => go(previousQuestion)}>上一题</button>

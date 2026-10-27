@@ -1,8 +1,9 @@
-import { clone, cleanWord, validateData, projectState, prepareEvent, ensureRound, MAX_FILE_BYTES } from './model.mjs';
+import { clone, cleanWord, validateData, projectState, prepareEvent, ensureRound, MAX_FILE_BYTES, uuid } from './model.mjs';
 import { BACKUP_FORMAT, createPackage, readPackage } from './packages.mjs';
 import { createStorage } from './storage.mjs';
 import { dayKey } from '../../../server/spaced-review.mjs';
 import { updateCatalog } from './catalog-update.mjs';
+import { selectReviewWords } from './review-tasks.mjs';
 
 export function emptyData(timeZone = 'Asia/Shanghai') {
   return { schema_version: 1, dataset_id: crypto.randomUUID(), time_zone: timeZone, baseline: { vocabulary: [], legacyWords: [], relations: { topics: [], groups: [] } }, events: [], quickRound: null, settings: {} };
@@ -71,8 +72,87 @@ export async function openRepository(options = {}) {
     if (!next.events.some(e => e.id === event.id)) next.events.push(event);
     return event;
   }
+  const wordNames = words => words.map(w => typeof w === 'string' ? w : w.word);
+  function addReviewRound(next, { words, name, meaning_passes = 2, task_id, day, deadline }) {
+    const session_id = makeId();
+    addEvent(next, 'vocab_session', { session_id, words: wordNames(words), meaning_passes });
+    addEvent(next, 'vocab_review_round', { session_id, name, pinned: false, deleted: false, ...(task_id ? { task_id, day, deadline } : {}) });
+    return session_id;
+  }
+  function generateToday(next) {
+    let state = projectState(next, now());
+    const today = dayKey(now(), next.time_zone), generated = [];
+    for (const task of state.reviewTasks) {
+      if (task.cancelled || task.deadline < today || dayKey(new Date(task.created_at), next.time_zone) > today || state.reviewRounds.some(r => r.task_id === task.id && r.day === today)) continue;
+      const words = selectReviewWords(state, task.filter, task.word_count, task.id);
+      if (!words.length) continue;
+      generated.push(addReviewRound(next, { words, name: dayKey(new Date(task.created_at), next.time_zone) === today ? task.name : `${task.name} · ${today}`, meaning_passes: task.meaning_passes, task_id: task.id, day: today, deadline: task.deadline }));
+      state = projectState(next, now());
+    }
+    return generated;
+  }
   return {
-    async getState() { await queue; return clone(snapshot()); },
+    getState() { return enqueue(async () => {
+      const tasks = current.events.some(e => e.kind === 'vocab_review_task');
+      if (tasks) {
+        const next = clone(current);
+        if (generateToday(next).length) await persist(next);
+      }
+      return clone(snapshot());
+    }); },
+    createReviewRound({ words, name, meaning_passes = 2 }) { return enqueue(async () => {
+      const next = clone(current), session_id = addReviewRound(next, { words, name: name || dayKey(now(), next.time_zone), meaning_passes });
+      await persist(next); return clone(snapshot().reviewRounds.find(r => r.session_id === session_id));
+    }); },
+    createReviewTask({ name, word_count, filter = { scope: 'all', topic: '', group: '' }, deadline, meaning_passes = 2 }) { return enqueue(async () => {
+      const next = clone(current), id = makeId();
+      addEvent(next, 'vocab_review_task', { id, name: name || dayKey(now(), next.time_zone), word_count, filter, deadline, meaning_passes });
+      const generated = generateToday(next);
+      await persist(next);
+      const state = snapshot();
+      return { task: clone(state.reviewTasks.find(t => t.id === id)), round: clone(state.reviewRounds.find(r => generated.includes(r.session_id) && r.task_id === id) || null) };
+    }); },
+    updateReviewTask(id, patch) { return enqueue(async () => {
+      const task = snapshot().reviewTasks.find(t => t.id === id);
+      if (!task || task.cancelled) throw Error('任务不存在或已取消');
+      if (Object.keys(patch).some(key => !['name', 'word_count', 'filter', 'deadline', 'meaning_passes'].includes(key))) throw Error('任务修改字段无效');
+      const next = clone(current);
+      addEvent(next, 'vocab_review_task', { id, name: task.name, word_count: task.word_count, filter: task.filter, deadline: task.deadline, meaning_passes: task.meaning_passes, ...patch });
+      await persist(next); return clone(snapshot().reviewTasks.find(t => t.id === id));
+    }); },
+    cancelReviewTask(id) { return enqueue(async () => {
+      const next = clone(current); addEvent(next, 'vocab_review_task_cancel', { id }); await persist(next);
+    }); },
+    updateReviewRound(sessionId, patch) { return enqueue(async () => {
+      const round = snapshot().reviewRounds.find(r => r.session_id === sessionId);
+      if (!round || round.deleted) throw Error('轮次不存在或已删除');
+      if (Object.keys(patch).some(key => !['name', 'pinned'].includes(key))) throw Error('轮次修改字段无效');
+      const next = clone(current);
+      addEvent(next, 'vocab_review_round', { session_id: sessionId, name: round.name, pinned: round.pinned, deleted: false, ...(round.task_id ? { task_id: round.task_id, day: round.day, deadline: round.deadline } : {}), ...patch });
+      await persist(next); return clone(snapshot().reviewRounds.find(r => r.session_id === sessionId));
+    }); },
+    deleteReviewRound(sessionId) { return enqueue(async () => {
+      const round = snapshot().reviewRounds.find(r => r.session_id === sessionId);
+      if (!round) throw Error('轮次不存在');
+      if (round.deleted) return;
+      const next = clone(current);
+      addEvent(next, 'vocab_review_round', { session_id: sessionId, name: round.name, pinned: round.pinned, deleted: true, ...(round.task_id ? { task_id: round.task_id, day: round.day, deadline: round.deadline } : {}) });
+      await persist(next);
+    }); },
+    createWordGroup({ words, kind, name }) { return enqueue(async () => {
+      const next = clone(current), event = addEvent(next, 'vocab_word_group', { id: makeId(), kind, name, words: wordNames(words) });
+      await persist(next); return clone(event.payload);
+    }); },
+    finishWallRound({ batches = [], expectedRoundId }) { return enqueue(async () => {
+      if (expectedRoundId != null) uuid(expectedRoundId);
+      if (!Array.isArray(batches) || batches.length > 1000) throw Error('翻阅批次无效');
+      const next = clone(current);
+      if ((next.quickRound?.id || null) !== (expectedRoundId ?? null) && batches.some(b => !next.events.some(e => e.id === b.id))) throw Error('本轮已更新，请重新读取后保存未记录内容');
+      for (const batch of batches) { uuid(batch.id); addEvent(next, 'vocab_card_reading', batch.payload, batch.id); }
+      if ((next.quickRound?.id || null) === (expectedRoundId ?? null)) next.quickRound = { day: dayKey(now(), next.time_zone), id: makeId() };
+      if (next.events.length !== current.events.length || next.quickRound?.id !== current.quickRound?.id) await persist(next);
+      return { quickRound: clone(current.quickRound), saved: batches.length };
+    }); },
     // Callers keep the same ID when retrying a failed manual reading save.
     saveEvent(kind, payload, id = makeId()) { return enqueue(async () => { const next = clone(current), event = addEvent(next, kind, payload, id); await persist(next); return clone(event); }); },
     requestCuration(words) { return enqueue(async () => {
@@ -111,7 +191,8 @@ export async function openRepository(options = {}) {
         const incomingTopic = plan.imported.relations.topics.find(t => t.id === topic.id);
         if (incomingTopic?.name === topic.name && !incomingTopic.deleted) topic.words = [...new Set([...topic.words, ...[...added].filter(w => assignments.get(w)?.includes(topic.id))])];
       }
-      next.baseline.relations.groups.push(...plan.groups.map(({ members, id, type, title, note, source, sources }) => ({ id, type, title, note, source, sources: sources || [], members: members.map(({ word, usage, example }) => ({ word, usage, example })) })));
+      next.baseline.relations.groups.push(...plan.groups.filter(g => !g.custom).map(({ members, id, type, title, note, source, sources }) => ({ id, type, title, note, source, sources: sources || [], members: members.map(({ word, usage, example }) => ({ word, usage, example })) })));
+      for (const g of plan.groups.filter(g => g.custom)) addEvent(next, 'vocab_word_group', { id: g.id, kind: 'relation', name: g.title, words: g.members.map(m => m.word) });
       await persist(validateData(next)); return clone(plan.preview);
     }); },
     restore(json) { return enqueue(async () => {

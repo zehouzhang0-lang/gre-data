@@ -19,6 +19,7 @@ export function practiceHistoryDocument(history) {
     ...emptyDocument('bundled-history'), events: history.events, legacy: history.legacy,
     drafts: history.drafts === undefined ? [] : history.drafts,
     draft_heads: history.draft_heads === undefined ? {} : history.draft_heads,
+    ...(history.ai_reviews === undefined ? {} : { ai_reviews: history.ai_reviews }),
   });
   // Keep the release verifier's history constraints at the preflight boundary,
   // before export can replace any already-published asset.

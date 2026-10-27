@@ -1,3 +1,5 @@
+import { validateExplanation } from '../../../shared/ai-explanation.mjs';
+
 export const PRACTICE_TYPES = ['se', 'tc', 'rc', 'quant'];
 export const BACKUP_FORMAT = 'gre-practice-backup';
 export const MAX_BYTES = 20 * 1024 * 1024;
@@ -103,7 +105,7 @@ export function validatePreferences(preferences) {
     || Object.values(preferences.passagePositions).some(value => !Number.isFinite(value) || value < 0 || value > 10000000))) throw Error('阅读位置无效');
   return preferences;
 }
-export function validateDocument(value) {
+export function validateDocument(value, { maxBytes = MAX_BYTES - 8192 } = {}) {
   if (!object(value) || value.format !== 'gre-practice-storage' || value.version !== 1 || !text(value.dataset_id)
     || !Array.isArray(value.events) || !Array.isArray(value.legacy) || !Array.isArray(value.drafts) || !object(value.preferences) || !Array.isArray(value.seed_revisions)) throw Error('刷题记录格式不兼容，原数据已保留');
   validatePreferences(value.preferences);
@@ -120,6 +122,16 @@ export function validateDocument(value) {
         || item.question_snapshot.key !== questionKey(event.payload) || !Array.isArray(item.selected)
         || ![true, false, null].includes(item.result) || (item.answerKey !== null && (!object(item.answerKey) || typeof item.answerKey.answer !== 'string' || !text(item.answerKey.answer_source)))) throw Error('手机作答快照无效或重复提交，原数据已保留');
       submittedSessions.add(item.draft_session_id);
+      const snapshot = item.question_snapshot;
+      if (snapshot.version !== undefined) {
+        if (snapshot.version !== 2 || snapshot.type !== event.payload.type || typeof snapshot.prompt !== 'string'
+          || !['options', 'letters', 'groups', 'paragraphs', 'sentences', 'images', 'passageImages'].every(field => Array.isArray(snapshot[field]))
+          || !['options', 'letters', 'paragraphs', 'sentences'].every(field => snapshot[field].every(value => typeof value === 'string'))
+          || !snapshot.groups.every(group => Array.isArray(group) && group.every(value => typeof value === 'string'))
+          || typeof snapshot.native !== 'boolean') throw Error('题库提交快照格式无效');
+        if (!answerReady(snapshot, item.selected) || serializedAnswer(snapshot, item.selected) !== event.payload.answer
+          || gradeAnswer(event.payload.answer, item.answerKey, snapshot) !== item.result) throw Error('题库提交快照与原始答案或判定不一致');
+      }
     }
   }
   const legacyIds = new Set();
@@ -142,8 +154,31 @@ export function validateDocument(value) {
       || canonical(draft.answer) !== canonical(event.practice.selected)) throw Error('提交与原始草稿快照不一致，原数据已保留');
   }
   if (value.draft_heads !== undefined && (!object(value.draft_heads) || Object.entries(value.draft_heads).some(([key, id]) => !value.drafts.some(draft => draft.id === id && draft.key === key)))) throw Error('刷题草稿定位无效，原数据已保留');
-  if (new TextEncoder().encode(JSON.stringify(value)).length > MAX_BYTES - 8192) throw Error('刷题记录超过 20 MB 备份上限，请先导出备份');
+  if (value.ai_reviews !== undefined) {
+    if (!Array.isArray(value.ai_reviews)) throw Error('AI讲解记录格式无效');
+    const reviewIds = new Set();
+    for (const review of value.ai_reviews) {
+      validateAiReview(review, value.events);
+      if (reviewIds.has(review.id) || ids.has(review.id)) throw Error('AI讲解ID重复');
+      reviewIds.add(review.id);
+    }
+  }
+  if (new TextEncoder().encode(JSON.stringify(value)).length > maxBytes) throw Error('刷题记录超过 20 MB 备份上限，请先导出备份');
   return value;
+}
+export function validateAiReview(review, events) {
+  const attempt = events.find(event => event.id === review?.attempt_id && ['attempt', 'attempts_import'].includes(event.kind));
+  const hasQuestion = attempt && (attempt.kind === 'attempt' ? [attempt.payload] : attempt.payload.items).some(item => questionKey(item) === review.question_key);
+  if (!object(review) || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(review.id)
+    || !date(review.recorded_at) || !hasQuestion
+    || !/^[a-f0-9]{64}$/.test(review.input_hash) || !text(review.model) || review.model.length > 100
+    || review.provisional !== true || !object(review.result) || Date.parse(review.recorded_at) < Date.parse(attempt.recorded_at)) throw Error('AI讲解编号、时间或原作答引用无效');
+  const result = review.result;
+  if (!['summary', 'evidence', 'reasoning_gap', 'next_action'].every(field => typeof result[field] === 'string' && result[field].trim())
+    || !['supported', 'needs_review'].includes(result.assessment) || !Array.isArray(result.technique_ids)
+    || !result.technique_ids.every(id => typeof id === 'string' && id.trim())) throw Error('AI讲解必要字段缺失');
+  validateExplanation(result, attempt.practice?.question_snapshot || {});
+  return review;
 }
 export const legacyId = record => JSON.stringify([record.record, questionKey(record)]);
 export function emptyDocument(id) {
@@ -202,13 +237,13 @@ export function project(document, bank) {
 }
 export function mergeRecords(current, incoming) {
   const next = clone(current), conflicts = [], additions = {};
-  for (const [kind, idOf] of [['events', item => item.id], ['legacy', legacyId], ['drafts', item => item.id]]) {
-    const existing = new Map(next[kind].map(item => [idOf(item), item]));
+  for (const [kind, idOf] of [['events', item => item.id], ['legacy', legacyId], ['drafts', item => item.id], ['ai_reviews', item => item.id]]) {
+    const existing = new Map((next[kind] || []).map(item => [idOf(item), item]));
     additions[kind] = 0;
-    for (const item of incoming[kind]) {
+    for (const item of incoming[kind] || []) {
       const id = idOf(item), old = existing.get(id);
       if (old) { if (canonical(old) !== canonical(item)) conflicts.push({ kind, id }); }
-      else { existing.set(id, item); next[kind].push(clone(item)); additions[kind]++; }
+      else { existing.set(id, item); (next[kind] ||= []).push(clone(item)); additions[kind]++; }
     }
   }
   next.draft_heads = { ...(incoming.draft_heads || {}), ...(current.draft_heads || {}) };
@@ -220,5 +255,5 @@ export function mergeRecords(current, incoming) {
   }
   // Retain every draft revision, but preserve the local active choice on merge.
   // Preferences are device-local and never overwritten by imported settings.
-  return { next, preview: { format: BACKUP_FORMAT, eventCount: incoming.events.length, newEvents: additions.events, draftCount: incoming.drafts.length, newDrafts: additions.drafts, legacyCount: incoming.legacy.length, newLegacy: additions.legacy, conflicts, canMerge: !conflicts.length } };
+  return { next, preview: { format: BACKUP_FORMAT, eventCount: incoming.events.length, newEvents: additions.events, draftCount: incoming.drafts.length, newDrafts: additions.drafts, legacyCount: incoming.legacy.length, newLegacy: additions.legacy, newAiReviews: additions.ai_reviews, conflicts, canMerge: !conflicts.length } };
 }

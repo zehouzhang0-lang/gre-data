@@ -54,10 +54,10 @@ export default function App() {
     : <div className="startup" role="status"><h1>正在打开词库</h1><p>首次打开会将词库保存到手机。</p></div>;
   return <div className="app-shell" data-version={version}>
     <WordWall key={`wall-${version}`} state={state} repo={repo} busy={busy} active={tab === 'wall' && !session} mutate={mutate} notify={notify} onSelectionMode={setSelecting} onStartReview={start}/>
-    <Review key={`review-${version}`} state={state} active={tab === 'review' && !session} onStart={start} onResume={resume} onWall={() => setTab('wall')}/>
+    <Review key={`review-${version}`} state={state} repo={repo} busy={busy} mutate={mutate} active={tab === 'review' && !session} onResume={resume} onWall={() => setTab('wall')}/>
     {(practiceOpened || tab === 'practice') && <PracticeBoundary active={tab === 'practice' && !session}>
       <Suspense fallback={tab === 'practice' && !session ? <section className="screen"><div className="empty" role="status">正在打开刷题…</div></section> : null}>
-        <Practice active={tab === 'practice' && !session} notify={notify}/>
+        <Practice active={tab === 'practice' && !session} notify={notify} vocabularyRepo={repo} refreshVocabulary={refresh} onConnection={() => setTab('settings')}/>
       </Suspense>
     </PracticeBoundary>}
     <Settings key={`settings-${version}`} state={state} repo={repo} active={tab === 'settings' && !session} busy={busy} mutate={mutate} notify={notify} onRestored={restored}/>

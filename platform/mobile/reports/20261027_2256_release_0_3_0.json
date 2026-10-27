@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "kind": "mobile_release_verification",
+  "version": "0.3.0",
+  "version_code": 14,
+  "package_name": "cn.grestudy.vocabulary",
+  "built_at": "2026-10-27T14:53:02.175Z",
+  "verified_at": "2026-10-27T14:56:10.652Z",
+  "source_vocabulary_sha256": "d174449e083ed7d48f7f6b83fe1d1c1699518b457790bb199588416521284a82",
+  "source_practice_sha256": "d29bf46d7ee967e6fdcbc50537e5743be4a065b0509320f8e457441bf2dbdb42",
+  "daily_package": {
+    "filename": "GRE-vocabulary-2026-10-27-new-words.json",
+    "sha256": "fe2d5ea9aa7bcd7b22c550a5afc0f24d9d1a04001e66e7b077806a22a6149f78",
+    "words": 106,
+    "all_senses_and_examples_match": true
+  },
+  "vocabulary": {
+    "words": 3208,
+    "visible": 3189,
+    "new_since_0_2_1": 87,
+    "topics": 18,
+    "groups": 287,
+    "senses": 8285,
+    "examples": 4006,
+    "missing_examples": 4279,
+    "raw_events": 3604,
+    "curation_requests": 124,
+    "sessions": 7,
+    "unfinished_sessions": 2,
+    "seed_sha256": "dfe1358fb407d8000960e66126d46f7922962ce7195a6f9b1360cb127be721f6",
+    "seed_bytes": 5887521,
+    "catalog_update": {
+      "revision": "2026-10-27-handwritten-vocabulary-1",
+      "updated": 3116,
+      "preserved": 89,
+      "added": 406
+    }
+  },
+  "practice": {
+    "raw_events": 297,
+    "submitted_attempt_records": 297,
+    "draft_versions": 186,
+    "active_drafts": 0,
+    "legacy_records": 17,
+    "desktop_projected_attempts": 297,
+    "desktop_total_events": 2726
+  },
+  "practice_import": {
+    "dryRun": false,
+    "backup_sha256": "d29bf46d7ee967e6fdcbc50537e5743be4a065b0509320f8e457441bf2dbdb42",
+    "payload_sha256": "b71b8e474aba87aaa371ef777f6dd925b1efdca7760f17145f65b60c8f81688f",
+    "newEvents": 44,
+    "newAttempts": 44,
+    "duplicateEvents": 253,
+    "newDrafts": 186,
+    "newLegacy": 17,
+    "newAiReviews": 0,
+    "conflicts": [],
+    "manifest": "platform/mobile-imports/imports/b71b8e474aba87aaa371ef777f6dd925b1efdca7760f17145f65b60c8f81688f.json",
+    "gitSynced": false
+  },
+  "pronunciation": {
+    "result": "passed",
+    "apk": "GRE-vocabulary-0.3.0-debug.apk",
+    "bytes": 90939729,
+    "sha256": "dbdc6338fced86c8afe4093257ac934108bf9f460fff2f9e03eeca89bc505fd6",
+    "audio_assets": 6396,
+    "words": 3208,
+    "dictionary_ipa": 5561,
+    "human": 0,
+    "synthetic": 6416,
+    "pending_ipa": 855
+  },
+  "upgrade_from_phone_backup": {
+    "vocabulary_sha256": "d174449e083ed7d48f7f6b83fe1d1c1699518b457790bb199588416521284a82",
+    "practice_sha256": "d29bf46d7ee967e6fdcbc50537e5743be4a065b0509320f8e457441bf2dbdb42",
+    "catalog_revision": "2026-10-27-handwritten-vocabulary-1",
+    "scenarios": [
+      {
+        "daily_imports_before_upgrade": 0,
+        "words_before": 2802,
+        "words_after": 3208,
+        "groups_after": 287,
+        "events": 3604,
+        "curation": 124,
+        "sessions": 7,
+        "unfinished_sessions": 2,
+        "idle_senses": 5,
+        "progress_and_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      },
+      {
+        "daily_imports_before_upgrade": 1,
+        "words_before": 2890,
+        "words_after": 3208,
+        "groups_after": 287,
+        "events": 3604,
+        "curation": 124,
+        "sessions": 7,
+        "unfinished_sessions": 2,
+        "idle_senses": 5,
+        "progress_and_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      }
+    ],
+    "post_export_vocabulary_edit_and_rating": "passed",
+    "failed_upgrade_keeps_original": "passed",
+    "practice_events": 297,
+    "practice_draft_versions": 186,
+    "practice_stats": {
+      "attemptCount": 297,
+      "eventCount": 297,
+      "completedCount": 295,
+      "draftCount": 0,
+      "legacyCount": 17
+    },
+    "practice_reopen_merge_and_post_export_draft": "passed",
+    "fresh_install_history": "passed",
+    "original_backup_bytes_unchanged": true,
+    "real_app_databases_opened": 0
+  },
+  "changes": [
+    "word_wall_28_cards_inline_search_persistent_context_and_swipes",
+    "custom_named_topic_and_relation_groups",
+    "atomic_card_reading_round_finish",
+    "named_review_tasks_daily_idempotency_four_cards_management_and_resume",
+    "adjacent_practice_navigation_and_verbal_swipes",
+    "explicit_selected_text_capture",
+    "full_practice_snapshot_export_import_and_desktop_projection",
+    "native_chatgpt_plan_oauth_and_shared_strict_ai_analysis"
+  ],
+  "tests": {
+    "mobile_core": {
+      "pass": 106,
+      "fail": 0
+    },
+    "mobile_ai_contract": {
+      "pass": 3,
+      "fail": 0
+    },
+    "desktop_ai_contract": {
+      "pass": 3,
+      "fail": 0
+    },
+    "initial_mobile_json_import_error": "fixed with explicit JSON import attribute; affected three-test file rerun passed",
+    "android_build": "passed",
+    "git_diff_check": "passed"
+  },
+  "browser_verification": {
+    "origin": "isolated QA origin; no test facts added to phone or repository",
+    "word_wall_page_search_clear_and_tab_restore": "passed",
+    "selected_group_exact_filter": "passed",
+    "named_selected_round_keeps_wall_position_and_selection": "passed",
+    "today_task_creates_one_round": "passed",
+    "round_cards_status_and_management_controls": "passed",
+    "completed_tc_test3_q2_previous_q1_next_q2": "passed",
+    "browser_ai_connection_boundary": "passed",
+    "console_errors_and_warnings": 0
+  },
+  "apk_verification": {
+    "apk": "GRE-vocabulary-0.3.0-debug.apk",
+    "bytes": 90939729,
+    "sha256": "dbdc6338fced86c8afe4093257ac934108bf9f460fff2f9e03eeca89bc505fd6",
+    "verified_web_files": 10602,
+    "verified_practice_assets": 4166,
+    "practice_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "questions": {
+      "se": 1001,
+      "tc": 1001,
+      "rc": 893,
+      "quant": 847
+    },
+    "vocabulary_seed_sha256": "dfe1358fb407d8000960e66126d46f7922962ce7195a6f9b1360cb127be721f6"
+  },
+  "signature": {
+    "sha256": "18032e90614e5b1e2d406ccfbb3d731941987c8d154f3cf634b3315bd4e422d0",
+    "matches_version": "0.2.2",
+    "same_package_name": true,
+    "version_code_increased": true,
+    "old_version_code": 13,
+    "new_version_code": 14,
+    "new_version_name": "0.3.0"
+  },
+  "ai": {
+    "implemented": true,
+    "provider": "chatgpt_plan",
+    "shared_desktop_explanation_contract": true,
+    "no_paid_api_fallback": true,
+    "credential_storage": "Android Keystore AES-GCM encrypted private no-backup file",
+    "native_compile": "passed",
+    "security_review": "completed with logout race fix",
+    "real_account_oauth": "not_run",
+    "real_subscription_inference": "not_run",
+    "text_and_image_inference": "not_run",
+    "refresh_token_rotation": "not_run_on_real_account"
+  },
+  "real_device_test": "not_run",
+  "limitations": [
+    "未在用户真实手机执行覆盖安装；旧版相同签名、资源及隔离升级已校验。",
+    "手机触控手势已实现并通过方向与冲突判定测试，尚待真机手感验收。",
+    "Android系统浏览器回调、用户账号订阅权限、续期、文本及图片解析尚待首次手机授权验证。",
+    "每天只在应用开启时补建当日轮次，不回填错过日期；颜色表示排期紧迫程度，不是测得的遗忘率。",
+    "原始手机备份及本地种子、APK和音频不随本报告提交；个人内容不得公开分发。"
+  ],
+  "practice_reimport": {
+    "dryRun": true,
+    "backup_sha256": "d29bf46d7ee967e6fdcbc50537e5743be4a065b0509320f8e457441bf2dbdb42",
+    "payload_sha256": "b71b8e474aba87aaa371ef777f6dd925b1efdca7760f17145f65b60c8f81688f",
+    "newEvents": 0,
+    "newAttempts": 0,
+    "duplicateEvents": 297,
+    "newDrafts": 0,
+    "newLegacy": 0,
+    "newAiReviews": 0,
+    "conflicts": [],
+    "manifest": "platform/mobile-imports/imports/b71b8e474aba87aaa371ef777f6dd925b1efdca7760f17145f65b60c8f81688f.json",
+    "gitSynced": false
+  }
+}

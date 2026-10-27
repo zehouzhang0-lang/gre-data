@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "2e746356-184f-442d-9360-29d2b63cde7c",
+  "kind": "attempt",
+  "recorded_at": "2026-10-27T08:30:02.096Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test3_section2_easy",
+    "question": "2",
+    "type": "tc",
+    "answer": "B/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "8964f7f9-3c57-4aef-9bc9-eae7805b96cd",
+    "draft_id": "e5f1341f-f93b-4b8b-a043-dc7c120187cf",
+    "bank_revision": "d4d84943558defa8af0e643daa4cf2c135a9f024e82f53c8be78867c410dbc0d",
+    "content_id": "1abb9ed45e7c0053b4091bb85a50f2e0f6bcb4a704cdca701a0d2600d1452346",
+    "question_snapshot": {
+      "key": "[\"text_completion_2000\",\"test3_section2_easy\",\"2\"]",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 3 · Section 2 · easy · 第 2 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          20
+        ],
+        "regions": [
+          {
+            "page": 20,
+            "top": 423.163102,
+            "bottom": 524.851914,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      }
+    },
+    "selected": [
+      "B",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "BF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:2890-2927",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": true
+  }
+}

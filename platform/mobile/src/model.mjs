@@ -1,11 +1,12 @@
-import { wordRating, ratingLabels, relationshipLabels } from '../../web/src/word-wall-model.mjs';
+import { wordRating, ratingLabels, relationshipLabels as baseRelationshipLabels } from '../../web/src/word-wall-model.mjs';
 
-export { wordRating, ratingLabels, relationshipLabels };
-export const PAGE_SIZE = 60;
-export const emptyFilters = { query: '', topics: [], sources: [], relations: [], ratings: [], letters: [], scope: 'all', sort: 'az' };
+export { wordRating, ratingLabels };
+export const relationshipLabels = { ...baseRelationshipLabels, custom: '自定义关系' };
+export const PAGE_SIZE = 28;
+export const emptyFilters = { query: '', topics: [], sources: [], relations: [], groups: [], ratings: [], letters: [], scope: 'all', sort: 'az' };
 export const defaultDisplay = { columns: 4, height: 52, font: 14.5 };
 export function displaySettings(value = {}) {
-  return { columns: [2, 3, 4].includes(Number(value.columns)) ? Number(value.columns) : 4,
+  return { columns: 4,
     height: Math.max(48, Math.min(100, Number(value.height) || 52)),
     font: Math.max(12, Math.min(22, Number(value.font) || 14.5)) };
 }
@@ -30,11 +31,12 @@ export function buildIndexes(state) {
     for (const key of keys) sources.set(key, { id: key, name: key });
     sourceKeys.set(word.word, keys);
   }
-  return { topics, assignments, schedules, sources: [...sources.values()], sourceKeys };
+  const groups = (state.relations?.groups || []).filter(g => !g.deleted).map(g => ({ id: g.id, name: g.title || g.id }));
+  return { topics, groups, assignments, schedules, sources: [...sources.values()], sourceKeys };
 }
 function hash(text) { let h = 2166136261; for (const c of text) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; }
-export function filterEntries(state, filters, seed = 0) {
-  const indexes = buildIndexes(state), query = filters.query.trim().toLocaleLowerCase();
+export function filterEntries(state, filters, seed = 0, indexes = buildIndexes(state)) {
+  const query = filters.query.trim().toLocaleLowerCase();
   const curation = new Set((state.curationRequests || []).map(item => item.word));
   const words = state.vocabulary.filter(w => {
     if (w.deleted) return false;
@@ -49,9 +51,9 @@ export function filterEntries(state, filters, seed = 0) {
   });
   words.sort((a, b) => filters.sort === 'random' ? hash(`${seed}:${a.word}`) - hash(`${seed}:${b.word}`)
     : filters.sort === 'za' ? b.word.localeCompare(a.word, 'en') : a.word.localeCompare(b.word, 'en'));
-  if (!filters.relations.length) return words.map(w => ({ key: w.word, word: w.word, group: null }));
+  if (!filters.relations.length && !filters.groups?.length) return words.map(w => ({ key: w.word, word: w.word, group: null }));
   const rank = new Map(words.map((w, i) => [w.word, i]));
-  return (state.relations?.groups || []).filter(g => !g.deleted && filters.relations.includes(g.type))
+  return (state.relations?.groups || []).filter(g => !g.deleted && (!filters.relations.length || filters.relations.includes(g.type)) && (!filters.groups?.length || filters.groups.includes(g.id)))
     .map(g => ({ ...g, members: g.members.filter(m => rank.has(m.word)).sort((a, b) => rank.get(a.word) - rank.get(b.word)) }))
     .filter(g => g.members.length).sort((a, b) => rank.get(a.members[0].word) - rank.get(b.members[0].word))
     .flatMap((group, i) => group.members.map(member => ({ key: `${group.id}:${member.word}`, word: member.word, group, groupNumber: i + 1 })));
@@ -64,10 +66,10 @@ export function entrySections(entries) {
   }
   return sections;
 }
-export function filterCount(filters) { return ['topics', 'sources', 'relations', 'ratings', 'letters'].reduce((n, key) => n + filters[key].length, 0) + (filters.scope !== 'all' ? 1 : 0); }
+export function filterCount(filters) { return ['topics', 'sources', 'relations', 'groups', 'ratings', 'letters'].reduce((n, key) => n + (filters[key]?.length || 0), 0) + (filters.scope !== 'all' ? 1 : 0); }
 export function normalizeFilters(value = {}) {
   const next = { ...emptyFilters, ...value };
-  for (const key of ['topics', 'sources', 'relations', 'ratings', 'letters']) next[key] = Array.isArray(value[key]) ? value[key].filter(v => typeof v === 'string') : [];
+  for (const key of ['topics', 'sources', 'relations', 'groups', 'ratings', 'letters']) next[key] = Array.isArray(value[key]) ? value[key].filter(v => typeof v === 'string') : [];
   next.query = typeof next.query === 'string' ? next.query : '';
   next.scope = ['all', 'due', 'new', 'missing', 'curation'].includes(next.scope) ? next.scope : 'all';
   next.sort = ['az', 'za', 'random'].includes(next.sort) ? next.sort : 'az';

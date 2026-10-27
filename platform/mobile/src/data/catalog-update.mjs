@@ -41,7 +41,7 @@ export function updateCatalog(current, incoming, revision) {
   const catalog = projectState(incoming);
   const catalogWords = new Set(catalog.vocabulary.map(w => w.word));
   const topics = new Map(next.baseline.relations.topics.map(t => [t.id,t]));
-  for (const t of catalog.relations.topics.filter(t => !t.deleted)) {
+  for (const t of catalog.relations.topics.filter(t => !t.deleted && !t.custom)) {
     const assigned = catalog.relations.assignments.filter(a => a.topics.includes(t.id) && localWords.has(a.word)).map(a => a.word);
     const existing = topics.get(t.id);
     topics.set(t.id, {id:t.id, name:t.name, words:[...new Set([...(existing?.words || []).filter(w => !catalogWords.has(w)),...assigned])]});
@@ -52,9 +52,10 @@ export function updateCatalog(current, incoming, revision) {
   const groupIds = new Set([
     ...next.baseline.relations.groups.map(g => g.id),
     ...current.events.filter(e => ['relation_upsert', 'relation_delete', 'relation_restore'].includes(e.kind)).map(e => e.payload.id),
+    ...current.events.filter(e => e.kind === 'vocab_word_group').map(e => e.payload.id),
   ]);
   for (const group of catalog.relations.groups) {
-    if (group.deleted || groupIds.has(group.id) || !group.members.every(m => localWords.has(m.word) && !localWords.get(m.word).deleted)) continue;
+    if (group.custom || group.deleted || groupIds.has(group.id) || !group.members.every(m => localWords.has(m.word) && !localWords.get(m.word).deleted)) continue;
     const {id, type, title, note, source, sources, members} = group;
     next.baseline.relations.groups.push(clone({id, type, title, note, source, sources:sources || [], members:members.map(({word, usage, example}) => ({word, usage, example}))}));
     groupIds.add(group.id);

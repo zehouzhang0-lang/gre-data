@@ -50,7 +50,7 @@ export default function PracticeDataSettings({ active, notify }) {
   }
   return <section className="settings-section">
     <h2>刷题记录</h2>
-    <button className="settings-row" disabled={busy} onClick={backup}><Icon name="upload"/><span>导出刷题记录<small>已提交答案与未完成草稿</small></span></button>
+    <button className="settings-row" disabled={busy} onClick={backup}><Icon name="upload"/><span>导出刷题记录<small>作答、草稿与 AI 解析一并保存</small></span></button>
     <button className="settings-row" disabled={busy} onClick={choose}><Icon name="download"/><span>导入刷题记录<small>合并备份，保留已有记录</small></span></button>
     {file && active && <Sheet title="导入刷题记录" onClose={busy ? () => {} : () => setFile(null)} footer={<>
       <button disabled={busy} onClick={() => setFile(null)}>取消</button>
@@ -62,6 +62,7 @@ export default function PracticeDataSettings({ active, notify }) {
         <div><dt>新增记录</dt><dd>{file.preview.newEvents}</dd></div>
         <div><dt>新增草稿记录</dt><dd>{file.preview.newDrafts}</dd></div>
         <div><dt>旧训练引用</dt><dd>{file.preview.newLegacy}</dd></div>
+        <div><dt>新增 AI 解析</dt><dd>{file.preview.newAiReviews ?? 0}</dd></div>
       </dl>
       {!file.preview.canMerge && <p className="warning" role="alert">发现 {file.preview.conflicts.length} 项冲突，本次不会导入。请保留两份备份以便核对。</p>}
     </Sheet>}

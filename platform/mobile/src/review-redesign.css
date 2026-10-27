@@ -1,0 +1,42 @@
+.review-redesign .review-content { padding-top: 12px; }
+.review-overview { padding: 22px; border-radius: 22px; background: #eaf2ee; display: flex; align-items: flex-start; flex-direction: column; gap: 15px; }
+.review-eyebrow { color: #46685a; font-size: 12px; letter-spacing: .08em; }
+.review-overview h2 { margin: 8px 0; font-size: 25px; letter-spacing: -.04em; }
+.review-overview p { margin: 0; color: #617068; font-size: 13px; line-height: 1.65; }
+.review-task-links { display: flex; justify-content: space-between; gap: 10px; margin: 14px 0 25px; }
+.review-task-links button { font-size: 13px; border: 0; background: transparent; color: #476053; padding: 8px 2px; }
+.review-task-links span { background: #eaf2ee; padding: 3px 7px; border-radius: 6px; margin-left: 5px; }
+.review-records-header { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 14px; }
+.review-records-header h2 { margin: 0; font-size: 19px; }
+.review-records-header select { width: auto; padding: 8px 10px; font-size: 13px; }
+.review-round-list { display: grid; gap: 12px; }
+.review-round-card { position: relative; border: 1px solid #dce5de; border-left: 4px solid #86a392; border-radius: 16px; background: #f8fbf8; overflow: hidden; }
+.review-round-card.urgency-urgent { border-color: #ecc7c2; border-left-color: #c75b4d; background: #fff4f1; }
+.review-round-card.urgency-today { border-color: #ead8b9; border-left-color: #c38b3b; background: #fff9ef; }
+.review-round-card.urgency-complete { border-color: #e0e4e1; border-left-color: #a4b0a7; background: #f4f6f4; }
+.review-round-open { border: 0; border-radius: 0; background: transparent; width: 100%; text-align: left; padding: 17px 18px; display: flex; flex-direction: column; gap: 10px; color: #273a30; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.review-round-open:focus-visible { outline: 2px solid #2e6b4f; outline-offset: -3px; }
+.review-round-topline { display: flex; align-items: center; gap: 8px; padding-right: 35px; font-size: 11px; }
+.round-state { padding: 3px 7px; border-radius: 5px; color: #685841; background: #efe7d7; }
+.round-state.done { background: #e1e8e2; color: #53685b; }
+.round-pin { color: #58725e; }
+.review-round-name { font-size: 19px; line-height: 1.4; overflow-wrap: anywhere; padding-right: 20px; }
+.review-round-detail { display: flex; flex-wrap: wrap; gap: 4px 12px; justify-content: space-between; color: #6b756e; font-size: 12px; }
+.review-round-urgency { color: #758479; font-size: 11px; }
+.urgency-urgent .review-round-urgency { color: #a64a3c; }
+.urgency-today .review-round-urgency { color: #996b2e; }
+.review-round-menu { position: absolute; right: 9px; top: 9px; min-width: 36px; min-height: 36px; background: transparent; }
+.review-manage-hint { margin: 15px 0 24px; color: #788178; font-size: 11px; }
+.review-task-form { display: grid; gap: 15px; }
+.review-form-pair { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: 12px; }
+.review-task-form .field { margin: 0; min-width: 0; }
+.review-task-form input,.review-task-form select { min-width: 0; width: 100%; }
+.review-action-list { display: grid; gap: 10px; }
+.review-action-list button { text-align: left; min-height: 48px; }
+.review-task-list { display: grid; gap: 14px; }
+.review-task-list article { padding: 16px; border: 1px solid #e1e7e0; border-radius: 14px; }
+.review-task-list strong { overflow-wrap: anywhere; }
+.review-task-list p,.review-task-list span { font-size: 12px; color: #6a786c; }
+.review-task-list article > div { display: flex; gap: 10px; margin-top: 12px; }
+.review-task-list button { padding: 8px 13px; }
+@media (max-width: 340px) { .review-form-pair { grid-template-columns: 1fr; } .review-overview { padding: 18px; } }

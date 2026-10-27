@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { exportFile, importFile } from '../data/storage.mjs';
 import { Confirm, Icon, Sheet } from './Primitives';
 import PracticeDataSettings from './PracticeDataSettings';
+import ChatGPTSettings from './ChatGPTSettings';
 
 export default function Settings({ state, repo, active, busy, mutate, notify, onRestored }) {
   const [file, setFile] = useState(null), [reading, setReading] = useState(false), [recovery, setRecovery] = useState(false), [lastExport, setLastExport] = useState('');
@@ -45,8 +46,9 @@ export default function Settings({ state, repo, active, busy, mutate, notify, on
       {reading && <p role="status">正在处理文件…</p>}{lastExport && <p className="export-path">{lastExport}</p>}
     </section>
     <PracticeDataSettings active={active} notify={notify}/>
-    <section className="settings-section"><h2>离线使用</h2><p>词库与题目随安装包保存，不需要登录或启动电脑。手机与电脑的进度不会自动同步。</p><p>卸载应用可能移除本地数据。换机或卸载前，请分别导出词汇备份和刷题记录。</p><p className="muted">学习日时区：{state.spacedReview?.time_zone || 'Asia/Shanghai'}</p></section>
-    <section className="settings-section"><h2>操作提示</h2><p>轻触卡片翻面，长按或点“多选”进入选择模式；多选时轻触只选中／取消。绿色边框表示选中，底色表示记忆自评。</p><p>列数、卡片高度和英文字号在词库右上角调整。同轮改标不重复计次；“开始新一轮”才产生新的回忆轮次。</p></section>
+    <ChatGPTSettings active={active} state={state} repo={repo} mutate={mutate} notify={notify}/>
+    <section className="settings-section"><h2>离线使用</h2><p>词库与题目随安装包保存，可离线学习；AI解析需要联网并连接ChatGPT。刷题备份交给电脑Codex后可核对导入并同步GitHub。</p><p>卸载应用可能移除本地数据。换机或卸载前，请分别导出词汇备份和刷题记录。</p><p className="muted">学习日时区：{state.spacedReview?.time_zone || 'Asia/Shanghai'}</p></section>
+    <section className="settings-section"><h2>操作提示</h2><p>轻触卡片翻面，长按或点“多选”进入选择模式；多选时轻触只选中／取消。绿色边框表示选中，底色表示记忆自评。</p><p>单词墙左右滑动翻页；刷题除数学外可左右滑动切题。记录本轮卡片状态后自动进入新一轮。</p></section>
   </main>
     {file && active && <Sheet title={file.mode === 'restore' ? '恢复前确认' : '导入预览'} onClose={busy ? () => {} : () => setFile(null)} footer={<><button disabled={busy} onClick={() => setFile(null)}>取消</button><button disabled={busy} className={file.mode === 'restore' ? 'danger' : 'primary'} onClick={importSelected}>{busy ? '处理中…' : file.mode === 'restore' ? '确认替换并恢复' : '确认导入'}</button></>}>
       <p className="file-name">{file.name}</p><dl className="import-summary"><div><dt>单词</dt><dd>{file.preview.wordCount}</dd></div><div><dt>新词</dt><dd>{file.preview.newWords}</dd></div><div><dt>已有词</dt><dd>{file.preview.existingWords}</dd></div><div><dt>复习事件</dt><dd>{file.preview.eventCount}</dd></div></dl>

@@ -23,3 +23,20 @@ test('failed reading saves keep their payload and ID; new flips survive retry', 
   draft.commit();
   assert.equal(draft.prepare(() => 'remembered'), null);
 });
+
+test('atomic round finish includes flips after a failed save without changing frozen batches', () => {
+  let id = 0;
+  const draft = createCardReadingDraft(() => `batch-${++id}`);
+  draft.record('abate', '2026-10-27T00:00:00.000Z');
+  const failed = draft.prepareAll(() => 'partial');
+  draft.record('abate', '2026-10-27T00:00:02.000Z');
+  draft.record('abet', '2026-10-27T00:00:03.000Z');
+  const retry = draft.prepareAll(() => 'remembered');
+  assert.equal(retry.length, 2);
+  assert.strictEqual(retry[0], failed[0]);
+  assert.equal(retry[1].payload.items[0].count, 1);
+  assert.equal(retry[1].payload.items[1].word, 'abet');
+  assert.deepEqual(draft.prepareAll(() => null), retry);
+  draft.commitAll();
+  assert.deepEqual(draft.prepareAll(() => null), []);
+});

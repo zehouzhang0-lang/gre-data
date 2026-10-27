@@ -153,7 +153,7 @@ test('backup merge is idempotent, preserves active local draft and conflicts fai
   assert.equal(localStorage.value, bytes);
   assert.equal(localStorage.writes, writes);
   const bad = JSON.parse(backup);
-  bad.payload.events[0].payload.answer = 'A/D';
+  bad.payload.events[0].payload.note = 'A different original note';
   bad.checksum.value = await sha256(bad.payload);
   const conflict = await local.previewImport(JSON.stringify(bad));
   assert.equal(conflict.canMerge, false);

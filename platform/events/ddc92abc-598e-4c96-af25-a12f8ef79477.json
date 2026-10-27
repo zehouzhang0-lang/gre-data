@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "ddc92abc-598e-4c96-af25-a12f8ef79477",
+  "kind": "attempt",
+  "recorded_at": "2026-10-21T12:24:09.775Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test34_section1_hard",
+    "question": "4",
+    "type": "se",
+    "answer": "A/D",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "aedb04eb-a7b6-4d72-a84e-2e6eaab170cd",
+    "draft_id": "0e69aa2b-3166-41c3-9164-a4ee6cae4ba3",
+    "bank_revision": "588a081aa125761a99c6c37d5b0674c220116fca60725246cb1bd5fc60650536",
+    "content_id": "1cb4a10c1156db4bdb99dc395fa03cb3fe703ac92f605edbfd97e289983dd460",
+    "question_snapshot": {
+      "key": "[\"text_completion_2000\",\"test34_section1_hard\",\"4\"]",
+      "mode": "pair",
+      "source": "填空 2000 · Test 34 · Section 1 · hard · 第 4 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          99
+        ],
+        "regions": [
+          {
+            "page": 99,
+            "top": 235.78324999999995,
+            "bottom": 368.783097,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      }
+    },
+    "selected": [
+      "D",
+      "A"
+    ],
+    "answerKey": {
+      "answer": "DF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:16502-16539",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}

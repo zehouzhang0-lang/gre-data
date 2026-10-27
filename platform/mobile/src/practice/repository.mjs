@@ -1,7 +1,8 @@
 import { createPracticeStorage } from './storage.mjs';
 import { loadPracticeBank, validateBank } from './loader.mjs';
 import { readPracticeBackup, practiceHistoryDocument } from './packages.mjs';
-import { BACKUP_FORMAT, MAX_BYTES, PRACTICE_TYPES, clone, canonical, emptyDocument, validateDocument, validatePreferences, mergeRecords, project, questionKey, validateSelection, answerReady, serializedAnswer, gradeAnswer, sha256 } from './model.mjs';
+import { validateExplanation } from '../../../shared/ai-explanation.mjs';
+import { BACKUP_FORMAT, MAX_BYTES, PRACTICE_TYPES, clone, canonical, emptyDocument, validateDocument, validateAiReview, validatePreferences, mergeRecords, project, questionKey, validateSelection, answerReady, serializedAnswer, gradeAnswer, sha256 } from './model.mjs';
 
 let defaultRepository;
 export function getPracticeRepository() {
@@ -68,9 +69,23 @@ export async function openPracticeRepository(options = {}) {
         count: projected.counts.get(key) || null, origin: record.origin,
         result: record.practice ? record.practice.result : (record.answer ? gradeAnswer(record.answer, detail.answerKey, detail) : null),
         answerKey: record.practice ? record.practice.answerKey : detail.answerKey || null,
+        practice: record.practice || null,
         source_ref: record.record || null,
       } : null;
-      return clone({ ...detail, history, draft: projected.drafts[key] || null });
+      return clone({ ...detail, history, draft: projected.drafts[key] || null, aiReviews: (current.ai_reviews || []).filter(review => review.question_key === key) });
+    },
+    saveAiReview(record) {
+      const review = clone(record);
+      return enqueue(async () => {
+        validateAiReview(review, current.events);
+        const old = current.ai_reviews?.find(item => item.id === review.id);
+        if (old) { if (canonical(old) !== canonical(review)) throw Error('AI讲解同 ID 不同内容，原记录保留'); return clone(old); }
+        const attempt = current.events.find(event => event.id === review.attempt_id);
+        const question = attempt.practice?.question_snapshot?.version === 2 ? attempt.practice.question_snapshot : await detailFor(review.question_key);
+        validateExplanation(review.result, question);
+        const next = clone(current); (next.ai_reviews ||= []).push(review); await persist(next);
+        return clone(review);
+      });
     },
     saveDraft(key, answer) {
       const selected = clone(answer);
@@ -103,7 +118,10 @@ export async function openPracticeRepository(options = {}) {
         schema_version: 1, id: makeId(), kind: 'attempt', recorded_at: stamp(),
         payload: { material: detail.material, unit: detail.unit, question: String(detail.question), type: detail.type, answer, duration_seconds: null, note: '', ...(detail.mode === 'sentence' ? { answer_format: 'sentence' } : {}) },
         practice: { draft_session_id: draft.session_id, draft_id: draft.id, bank_revision: bank.revision, content_id: detail.content_id,
-          question_snapshot: { key: detail.key, mode: detail.mode, source: detail.source, provenance: detail.provenance || null },
+          question_snapshot: { version: 2, key: detail.key, type: detail.type, mode: detail.mode, source: detail.source, provenance: detail.provenance || null,
+            prompt: detail.prompt || '', options: clone(detail.options || []), letters: clone(detail.letters || []), groups: clone(detail.groups || []),
+            paragraphs: clone(detail.paragraphs || []), sentences: clone(detail.sentences || []), native: !!detail.native,
+            answerInput: detail.answerInput || null, images: clone(detail.images || []), passageImages: clone(detail.passageImages || []) },
           selected: clone(draft.answer), answerKey: clone(detail.answerKey || null), result: gradeAnswer(answer, detail.answerKey, detail) },
       };
       next.events.push(event); delete next.draft_heads?.[key]; await persist(next); return clone(event);
@@ -127,7 +145,7 @@ export async function openPracticeRepository(options = {}) {
     importBackup(json) { return enqueue(async () => {
       const incoming = await readPracticeBackup(json), plan = mergeRecords(current, incoming);
       if (plan.preview.conflicts.length) throw Error(`发现 ${plan.preview.conflicts.length} 条同 ID 不同内容的记录，未导入；双方记录均保留`);
-      if (plan.preview.newEvents || plan.preview.newLegacy || plan.preview.newDrafts) await persist(plan.next);
+      if (plan.preview.newEvents || plan.preview.newLegacy || plan.preview.newDrafts || plan.preview.newAiReviews) await persist(plan.next);
       return clone(plan.preview);
     }); },
     async close() { await queue; storage.close?.(); },

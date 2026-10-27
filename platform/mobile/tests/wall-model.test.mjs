@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { defaultDisplay, displaySettings, emptyFilters, filterEntries, entrySections, normalizeFilters } from '../src/model.mjs';
+import { PAGE_SIZE, defaultDisplay, displaySettings, emptyFilters, filterEntries, entrySections, normalizeFilters } from '../src/model.mjs';
 
 const word = (word, rating, deleted = false) => ({ word, meaning: '示例释义', note: '', deleted, sources: [], recalls: rating ? [{ self_rating: rating }] : [] });
 const state = {
@@ -17,11 +17,20 @@ const state = {
 };
 const entries = filters => filterEntries(state, { ...emptyFilters, ...filters });
 
-test('mobile defaults to four columns and supports two-column comfortable layout', () => {
+test('mobile uses 28 cards in four columns, including restored display preferences', () => {
+  assert.equal(PAGE_SIZE, 28);
   assert.equal(defaultDisplay.columns, 4);
-  assert.equal(displaySettings({ columns: 2 }).columns, 2);
+  assert.equal(displaySettings({ columns: 2 }).columns, 4);
   assert.equal(displaySettings({ columns: 100, height: 2, font: 90 }).columns, 4);
   assert.ok(displaySettings({ height: 2 }).height >= 48);
+});
+
+test('an exact custom group filter returns its selected members only', () => {
+  const custom = { ...state, relations: { ...state.relations, groups: [...state.relations.groups,
+    { id: 'my-group', type: 'custom', title: '我的关系', members: [{ word: 'cryptic' }, { word: 'limpid' }] }] } };
+  const filters = normalizeFilters({ groups: ['my-group'] });
+  assert.deepEqual(filterEntries(custom, filters).map(e => e.word), ['cryptic', 'limpid']);
+  assert.deepEqual(normalizeFilters({ relations: ['custom'] }).relations, ['custom']);
 });
 
 test('OR within filters, AND across dimensions; hidden words never enter wall', () => {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Local WebView assets and the system document picker need no network or storage permission. -->
-    <uses-permission android:name="android.permission.INTERNET" tools:node="remove" />
+    <!-- Only the optional native ChatGPT plan connection uses the network. -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <queries>
         <intent><action android:name="android.intent.action.TTS_SERVICE" /></intent>
@@ -30,6 +30,14 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Return convenience only; OAuth credentials arrive at the native loopback listener. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="grevocabulary" android:host="chatgpt-return" />
             </intent-filter>
 
         </activity>

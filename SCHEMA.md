@@ -603,3 +603,32 @@ evidence_records:
 - 浏览器 `gre-writing:v1:` 保存分会话草稿、待确认开始请求、稳定提交ID与冻结快照，仅本机缓存、不经Git同步；服务端提交和点评才是跨设备事实。不能在多设备/多标签同时编辑同一份未提交稿。
 
 规则核对：2026-10-19；ETS Issue、Analytical Writing overview 与 scoring 官方页面，链接见 `platform/server/writing-topics.mjs`。原创题没有官方题号或虚构 ETS 来源。
+
+## 手机端任务、分组与手势更新（2026-10-27，0.3.0）
+
+用户确认实施手机端大更新。原词汇外层storage_version及data schema_version继续为1，旧事件和轮次快照不改写；新增以下严格校验的词汇事件：
+
+- `vocab_review_task`：`id`为UUID v4，`name`为1–100字，`word_count`为1–50000整数，`filter:{scope:all|due|new,topic:'或主题ID',group:'或关系组ID'}`，`deadline`为有效YYYY-MM-DD，`meaning_passes`为1或2。同任务ID后续事件调整未来配置。
+- `vocab_review_task_cancel`：`{id}`，取消后不再自动生成新轮次，不复活旧任务；已有轮次单独管理。
+- `vocab_review_round`：`{session_id,name,pinned,deleted,task_id?,day?,deadline?}`；布尔字段必需，任务来源三字段须同时存在且不可变。同任务/学习日只能生成一轮，删除标记保留以防重建。删除从用户列表移除轮次，不删除原drill/recall事实。
+- `vocab_word_group`：`{id,kind:topic|relation,name,words}`，名称1–40字，词表1–50000个唯一已有可见词。关系组投影为`type:custom`，表示用户联想，不冒充词典已核验的近义/反义。它不改变既有relation_upsert的类型规则。
+
+复习任务在读取状态时按学习时区幂等创建当日轮次：截止日前只建今日、不回填过去或预建未来；空候选暂不建。session及名称/任务来源同事务落盘。候选取筛选交集，优先已到期，其次该任务中最久未分配、词形顺序，数量不超过word_count。已有session/items/drill/recall保留。轮次先置顶，再按实际排期紧迫程度及日期排列；颜色不宣称测量个人遗忘程度。
+
+`finishWallRound`以稳定批次ID同事务记录翻阅并推进quickRound；重复请求不重复计次或再次换轮，失败保留待写批次。浏览位置、搜索前返回点与筛选采用版本化`gre-wall-view:v2:<dataset_id>`本机偏好，不作为学习证据。
+
+单词墙固定28词分页，左滑下一页、右滑上一页。手机SE/TC/RC前后浏览按原catalog相邻题位，不跳已做题、不首尾环绕；未做推荐仅用于开始入口。Quant不启用左右切题手势。长按、文本选区、纵滚、分隔条拖动不触发切题。长按正文选词再显式确认入墙仍使用vocab_capture。
+
+## 手机刷题原题快照、AI解析与电脑接入（2026-10-27）
+
+新提交可使用`practice.question_snapshot.version:2`，保留`key/type/mode/source/provenance/prompt/options/letters/groups/paragraphs/sentences/native/answerInput/images/passageImages`，图片只保存引用，不含字节。原答案、参考键及判定与原快照核对；旧版快照兼容，不重算或改写原事实。
+
+刷题文档增加可选`ai_reviews`数组。每项为`{id,recorded_at,attempt_id,question_key,input_hash,model,provisional:true,result}`；原UUID/时间守恒，必须引用本库attempt或attempts_import中的对应原题。result沿用电脑端共享`platform/shared/ai-explanation.mjs`的完整翻译和全部选项校验。不合格解析拒绝保存；AI记录不计作答，不覆盖参考答案或原判定。备份、恢复和合并均保留该数组，同ID异内容拒绝。
+
+用户交付刷题备份并要求同步后，运行`platform/mobile/scripts/import-practice-backup.mjs --backup <file> --dry-run`，无冲突后普通导入，再核对平台并运行根sync脚本。原事件完整追加到`platform/events/<原UUID>.json`，不能用重造时间的Store.append。必要引用位于`platform/mobile-imports/{drafts,legacy,ai-reviews,imports}/`，格式见`platform/mobile/PRACTICE-IMPORT.md`；完整包只原字节归档到忽略目录。重复导入幂等、冲突保留双方，原草稿不算完成。桌面attempt投影增加practice/submitted_result/submitted_answer_key；手机AI侧车严格校验后进入reviews，batch引用仅在展示投影映射逐题ID，原文件ID不变。
+
+## 手机ChatGPT计划直连（2026-10-27）
+
+Android `ChatGPTPlan`原生插件使用官方OAuth public-client PKCE、系统浏览器及127.0.0.1临时回调。身份经JWKS签名、issuer/audience/expiry/nonce等校验后，检查实际授予的direct/resource.invoke权限。安装标识、OAuth凭据保存在no-backup原生加密原子文件，密钥由AndroidKeyStore保护，不经JavaScript、学习备份、Git或日志返回。
+
+账号状态、官方模型目录和解析结果通过窄接口返回页面；固定官方HTTPS端点，禁止任意URL代理。Responses请求为store:false/stream:true，只有response.completed且完整讲解校验通过才保存。取消、拒绝、额度、权限与网络错误均保留原作答；不自动回退付费API。开启INTERNET权限仅用于用户主动连接与解析，普通词库/题库继续离线。真实账号授权与推理权限、Android浏览器回调及长期续期必须另行真机核验，不以编译通过冒充成功。

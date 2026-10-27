@@ -5,10 +5,12 @@ import { projectRelations, validateRelation } from '../../../server/word-relatio
 import { applyStandardDefinition, validateStandardDefinition } from '../../../shared/standard-definition.mjs';
 import { cleanCardReadingPayload, projectCardReadings } from './card-reading.mjs';
 import { cleanCurationPayload, projectCurationRequests } from './curation.mjs';
+import { REVIEW_EVENT_KINDS, cleanReviewPayload, projectReviewTasks, projectWordGroups } from './review-tasks.mjs';
 
 export const DATA_VERSION = 1;
 export const MAX_FILE_BYTES = 20 * 1024 * 1024;
 export const VOCAB_EVENT_KINDS = new Set(['vocab_upsert', 'vocab_capture', 'vocab_delete', 'vocab_restore', 'vocab_recall', 'vocab_card_reading', 'vocab_curation_request', 'vocab_quick_review', 'vocab_quick_undo', 'vocab_session', 'vocab_drill', 'topic_upsert', 'topic_delete', 'topic_restore', 'word_topics', 'relation_upsert', 'relation_delete', 'relation_restore']);
+REVIEW_EVENT_KINDS.forEach(kind => VOCAB_EVENT_KINDS.add(kind));
 export const clone = value => structuredClone(value);
 export const normalizeWord = value => text(value, '单词', 120).toLowerCase().replace(/\s+/g, ' ');
 export function text(value, label, max = 10000, optional = false) {
@@ -70,6 +72,7 @@ export function cleanPayload(kind, p) {
   if (!VOCAB_EVENT_KINDS.has(kind) || !p || typeof p !== 'object') throw Error('不是支持的词库记录');
   if (kind === 'vocab_card_reading') return cleanCardReadingPayload(p, normalizeWord, timestamp);
   if (kind === 'vocab_curation_request') return cleanCurationPayload(p, normalizeWord);
+  if (REVIEW_EVENT_KINDS.includes(kind)) return cleanReviewPayload(kind, p, { text, uuid, normalizeWord });
   const relation = validateRelation(kind, p);
   if (relation) return relation;
   if (kind === 'vocab_quick_undo') return { target_id: uuid(p.target_id) };
@@ -142,6 +145,7 @@ export function validateData(value) {
   const definitionMap = new Map(definitions.map(d => [d.word,d]));
   const words = new Map(vocabulary.map(w => [w.word, clone(w)]));
   const sessions = new Map(), drills = [], recalls = [], seen = new Map();
+  const reviewTasks = new Map(), reviewMetadata = new Map(), taskDays = new Map(), customGroups = new Set();
   const topics = new Set(relations.topics.map(t => t.id)), groups = new Set(relations.groups.map(g => g.id));
   const events = unique(array(value.events, '学习记录', 100000).map(e => {
     if (e.schema_version !== 1) throw Error('不支持的事件版本');
@@ -156,6 +160,31 @@ export function validateData(value) {
   }), e => e.id, '学习记录').sort(eventOrder);
   for (const e of events) {
     const p = e.payload;
+    if (e.kind === 'vocab_word_group') {
+      if (customGroups.has(p.id) || topics.has(p.id) || groups.has(p.id) || p.words.some(w => !words.has(w) || words.get(w).deleted)) throw Error('自定义分组编号重复或引用不可用单词');
+      customGroups.add(p.id);
+      (p.kind === 'topic' ? topics : groups).add(p.id);
+    }
+    if (e.kind === 'vocab_review_task') {
+      if (reviewTasks.get(p.id)?.cancelled || p.filter.topic && !topics.has(p.filter.topic) || p.filter.group && !groups.has(p.filter.group) || p.deadline < dayKey(new Date(e.recorded_at), time_zone)) throw Error('复习任务引用无效范围、日期或已取消任务');
+      reviewTasks.set(p.id, p);
+    }
+    if (e.kind === 'vocab_review_task_cancel') {
+      if (!reviewTasks.has(p.id)) throw Error('取消引用未知任务');
+      reviewTasks.set(p.id, { ...reviewTasks.get(p.id), cancelled: true });
+    }
+    if (e.kind === 'vocab_review_round') {
+      const previous = reviewMetadata.get(p.session_id), task = p.task_id && reviewTasks.get(p.task_id);
+      if (!sessions.has(p.session_id)) throw Error('轮次配置引用未知轮次');
+      if (previous && (previous.task_id !== p.task_id || previous.day !== p.day || previous.deadline !== p.deadline || previous.deleted && !p.deleted)) throw Error('不能改变轮次来源或恢复已删除轮次');
+      if (p.task_id) {
+        const key = `${p.task_id}:${p.day}`;
+        if (!task || p.day > p.deadline || taskDays.has(key) && taskDays.get(key) !== p.session_id) throw Error('任务每日轮次重复或来源无效');
+        if (!previous && (task.cancelled || p.deadline !== task.deadline || p.day !== dayKey(new Date(sessions.get(p.session_id).recorded_at), time_zone) || sessions.get(p.session_id).words.length > task.word_count)) throw Error('每日轮次与创建时任务不一致');
+        taskDays.set(key, p.session_id);
+      }
+      reviewMetadata.set(p.session_id, p);
+    }
     if (e.kind === 'vocab_curation_request' && p.words.some(word => !words.has(word) || words.get(word).deleted)) throw Error('补充整理引用未知或已移除的单词');
     if (e.kind === 'vocab_card_reading' && p.items.some(i => !words.has(i.word) || words.get(i.word).deleted || i.viewed_at > e.recorded_at)) throw Error('翻阅记录引用无效单词或未来时间');
     if (e.kind === 'vocab_quick_undo' && seen.get(p.target_id)?.kind !== 'vocab_quick_review') throw Error('撤销指向不存在的标记');
@@ -172,7 +201,7 @@ export function validateData(value) {
     if (['relation_delete', 'relation_restore'].includes(e.kind) && !groups.has(p.id)) throw Error('关系操作引用未知词组');
     if (e.kind === 'vocab_session') {
       if (sessions.has(p.session_id) || p.words.some(w => !words.has(w))) throw Error('轮次编号重复或引用未知单词');
-      sessions.set(p.session_id, p);
+      sessions.set(p.session_id, { ...p, recorded_at: e.recorded_at });
     }
     if (e.kind === 'vocab_drill' || e.kind === 'vocab_recall' && p.mode === 'multistage') {
       const session = sessions.get(p.session_id), item = session?.items.find(w => w.word === p.word);
@@ -214,6 +243,7 @@ export function projectState(data, now = new Date()) {
   for(const definition of data.baseline.definitions || []) { const w=words.get(definition.word); if(w)words.set(w.word,applyStandardDefinition(w,definition)); }
   const vocabulary = [...words.values()].sort((a, b) => a.word.localeCompare(b.word));
   const relations = projectRelations(vocabulary, data.baseline.relations, data.events);
+  const wordGroups = projectWordGroups(data.events, relations, vocabulary);
   const spacedReview = projectReview({ vocabulary, legacyWords: data.baseline.legacyWords, events: data.events, now, timeZone: data.time_zone });
   const vocabDrills = data.events.filter(e => e.kind === 'vocab_drill').map(e => ({ ...e.payload, id: e.id, recorded_at: e.recorded_at }));
   const recalls = data.events.filter(e => e.kind === 'vocab_recall' && e.payload.mode === 'multistage').map(e => ({ ...e.payload, id: e.id, recorded_at: e.recorded_at }));
@@ -222,7 +252,7 @@ export function projectState(data, now = new Date()) {
     return { ...session, ...progress, completed_at: progress.complete ? recalls.filter(r => r.session_id === session.session_id).at(-1)?.recorded_at || null : null };
   }).reverse();
   const undone = new Set(data.events.filter(e => e.kind === 'vocab_quick_undo').map(e => e.payload.target_id));
-  return { vocabulary, relations, spacedReview, vocabSessions, vocabDrills, cardReadings: projectCardReadings(data.events, vocabulary), curationRequests: projectCurationRequests(data.events), events: data.events.map(e => ({ ...e, ...e.payload })).reverse(), quickRound: data.quickRound, undoId: data.events.findLast(e => e.kind === 'vocab_quick_review' && !undone.has(e.id))?.id || null, settings: clone(data.settings), timeZone: data.time_zone, datasetId: data.dataset_id };
+  return { vocabulary, relations, wordGroups, ...projectReviewTasks(data.events, vocabSessions, data.time_zone, now), spacedReview, vocabSessions, vocabDrills, cardReadings: projectCardReadings(data.events, vocabulary), curationRequests: projectCurationRequests(data.events), events: data.events.map(e => ({ ...e, ...e.payload })).reverse(), quickRound: data.quickRound, undoId: data.events.findLast(e => e.kind === 'vocab_quick_review' && !undone.has(e.id))?.id || null, settings: clone(data.settings), timeZone: data.time_zone, datasetId: data.dataset_id };
 }
 export function prepareEvent(data, kind, payload, id, now = new Date()) {
   const p = cleanPayload(kind, payload), prior = data.events.find(e => e.id === id);
@@ -232,6 +262,13 @@ export function prepareEvent(data, kind, payload, id, now = new Date()) {
     return prior;
   }
   const state = projectState(data, now), available = new Map(state.vocabulary.filter(w => !w.deleted).map(w => [w.word, w]));
+  if (REVIEW_EVENT_KINDS.includes(kind)) {
+    // Full replay validates cross-event references and immutable round provenance.
+    const at = Math.max(+new Date(now), data.events.length ? Date.parse(data.events.at(-1).recorded_at) + 1 : 0);
+    const event = { schema_version: 1, id, recorded_at: new Date(at).toISOString(), kind, payload: p };
+    validateData({ ...data, events: [...data.events, event] });
+    return event;
+  }
   if (kind === 'vocab_curation_request' && p.words.some(word => !available.has(word))) throw Error('补充整理引用未知或已移除的单词');
   if (kind === 'vocab_card_reading' && p.items.some(i => !available.has(i.word) || Date.parse(i.viewed_at) > +new Date(now))) throw Error('翻阅记录引用无效单词或未来时间');
   if (kind === 'vocab_quick_review' && p.items.some(i => !available.get(i.word)?.meaning)) throw Error('存在已移除、未知或缺释义的词，本批未保存');

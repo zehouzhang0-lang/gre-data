@@ -11,6 +11,8 @@ import { readLegacyQuestions } from '../../server/legacy-review.mjs';
 import { readPracticeSnapshot, questionDetail, repositoryRoot, practiceTypes } from '../preview/practice-data.mjs';
 import { requiresTextAnswer, verifyPractice } from './verify-practice.mjs';
 import { loadPracticeHistoryBackup, mergePracticeHistory } from './practice-history.mjs';
+import { readImportedPracticeReferences } from './import-practice-backup.mjs';
+import { canonical } from '../src/practice/model.mjs';
 
 export const practiceSourceFiles = {
   text_completion_2000: 'materials/files/张巍GRE填空机经2000题.pdf',
@@ -65,10 +67,17 @@ export async function exportPractice({ root = repositoryRoot, output = path.join
   // Validate and merge before writing any asset, including history.json. A bad
   // backup or conflict must leave an already published bank byte-for-byte intact.
   const backup = await loadPracticeHistoryBackup(backupPath);
-  const [events, legacy] = await Promise.all([
+  const [events, legacy, imported] = await Promise.all([
     new Store(root).events(), readLegacyQuestions(new Store(root)),
+    readImportedPracticeReferences(root),
   ]);
-  const history = mergePracticeHistory({ events: events.filter(e => ['attempt', 'attempts_import'].includes(e.kind)), legacy }, backup);
+  const legacyBySource = new Map();
+  for (const record of [...legacy, ...imported.legacy]) {
+    const key = JSON.stringify([record.record, keyOf(record)]), old = legacyBySource.get(key);
+    if (old && canonical(old) !== canonical(record)) throw Error(`旧训练引用内容冲突，未发布：${key}`);
+    legacyBySource.set(key, record);
+  }
+  const history = mergePracticeHistory({ events: events.filter(e => ['attempt', 'attempts_import'].includes(e.kind)), legacy: [...legacyBySource.values()], drafts: imported.drafts, ai_reviews: imported.ai_reviews }, backup);
   const snapshot = await readPracticeSnapshot(root);
   for (const type of practiceTypes) {
     if (snapshot.catalog[type].questions.length !== expectedCounts[type]) {

@@ -11,6 +11,7 @@ import { WORD_STAGES, meaningChoices, drillResult, roundProgress, roundRating } 
 import { QUICK_RATINGS, withQuickReviews } from "../shared/quick-review.mjs";
 import { applyStandardDefinition, validateStandardDefinition } from "../shared/standard-definition.mjs";
 import { WRITING_KINDS, validateWriting, prepareWritingEvent, projectWriting } from "./writing.mjs";
+import { validateAiReview, canonical, questionKey as mobileQuestionKey } from "../mobile/src/practice/model.mjs";
 
 export const normalizeWord = (value) =>
   value.trim().toLowerCase().replace(/\s+/g, " ");
@@ -491,7 +492,7 @@ export class Store {
           if (q.answer) keys.set(k, { ...q, event_id: e.id });
         }
       } else if (e.kind === "attempt")
-        attempts.push({ ...p, id: e.id, recorded_at: e.recorded_at });
+        attempts.push({ ...p, id: e.id, recorded_at: e.recorded_at, ...(e.practice ? { practice: e.practice, submitted_result: e.practice.result, submitted_answer_key: e.practice.answerKey } : {}) });
       else if (e.kind === "attempts_import")
         p.items.forEach((a, i) =>
           attempts.push({
@@ -501,6 +502,23 @@ export class Store {
           }),
         );
     }
+    // Mobile AI sidecars are original records, not new AI events. Read only this
+    // small collection through the same parsed-file cache as desktop events.
+    const mobileReviews = await Promise.all((await this.list("platform/mobile-imports/ai-reviews"))
+      .filter(file => file.endsWith(".json"))
+      .map(file => this.json(`platform/mobile-imports/ai-reviews/${file}`)));
+    const reviewById = new Map(reviews.map(review => [review.id, review]));
+    for (const review of mobileReviews) {
+      validateAiReview(review, events);
+      const source = events.find(event => event.id === review.attempt_id);
+      const itemIndex = source.kind === "attempts_import" ? source.payload.items.findIndex(item => mobileQuestionKey(item) === review.question_key) : -1;
+      const projected = { ...review, scope: "attempt", provider: "chatgpt_plan", provisional: true,
+        source_attempt_id: review.attempt_id, attempt_id: itemIndex >= 0 ? `${source.id}-${itemIndex}` : source.id };
+      const old = reviewById.get(review.id);
+      if (old && canonical(old) !== canonical(projected)) throw Error(`AI讲解同 ID 不同内容，保留双方：${review.id}`);
+      if (!old) { reviews.push(projected); reviewById.set(review.id, projected); }
+    }
+    reviews.sort((a, b) => a.recorded_at.localeCompare(b.recorded_at) || a.id.localeCompare(b.id));
     const materials = [
       ...(catalog.materials || []).filter(
         (m) => m.repo_path && m.filename?.endsWith(".pdf"),

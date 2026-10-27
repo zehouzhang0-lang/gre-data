@@ -102,3 +102,12 @@
 .practice-save-error { color: #9e4d43; font-size: 12px; margin-top: 16px; }
 .practice-save-error button { margin-left: 8px; }
 .practice-screen .question-history p { overflow-wrap: anywhere; }
+.practice-screen [data-swipe-enabled="true"] { touch-action: pan-y pinch-zoom; }
+.practice-screen [data-capture-text] { user-select: text; -webkit-user-select: text; }
+.practice-reading-tools { display: flex; align-items: center; justify-content: space-between; padding: 3px 16px; gap: 10px; color: var(--muted); font-size: 11px; }
+.practice-reading-tools button { padding: 6px 12px; min-height: 36px; font-size: 12px; }
+.practice-reading-tools button[aria-pressed="true"] { background: #e0f0e9; color: var(--accent); }
+.practice-capture { display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: #edf7f4; border-block: 1px solid var(--line); }
+.practice-capture > span { flex: 1; min-width: 0; overflow-wrap: anywhere; font-family: var(--word-font); }
+.practice-capture button { font-size: 12px; min-height: 40px; padding-inline: 10px; }
+.practice-image-selection-note { color: var(--muted); font-size: 11px; line-height: 1.6; margin-top: 16px; }

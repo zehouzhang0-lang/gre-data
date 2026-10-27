@@ -16,8 +16,8 @@ export function mergePracticeHistory(history, backup = null) {
   }
   // Device preferences, dataset identity and prior installed revisions do not
   // belong in shared content. Raw submissions and all original drafts do.
-  const { events, legacy, drafts, draft_heads } = document;
-  const result = clone({ events, legacy, drafts, draft_heads });
+  const { events, legacy, drafts, draft_heads, ai_reviews } = document;
+  const result = clone({ events, legacy, drafts, draft_heads, ...(ai_reviews === undefined ? {} : { ai_reviews }) });
   practiceHistoryDocument(result);
   return result;
 }
