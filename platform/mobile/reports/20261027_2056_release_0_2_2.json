@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "kind": "mobile_release_verification",
+  "version": "0.2.2",
+  "version_code": 13,
+  "package_name": "cn.grestudy.vocabulary",
+  "built_at": "2026-10-27T13:00:29.404Z",
+  "verified_at": "2026-10-27T13:01:35.464Z",
+  "source_vocabulary_sha256": "d174449e083ed7d48f7f6b83fe1d1c1699518b457790bb199588416521284a82",
+  "source_vocabulary_exported_at": "2026-10-26T15:36:41.625Z",
+  "source_practice_sha256": "d29bf46d7ee967e6fdcbc50537e5743be4a065b0509320f8e457441bf2dbdb42",
+  "source_practice_exported_at": "2026-10-27T12:52:38.358Z",
+  "daily_package": {
+    "filename": "GRE-vocabulary-2026-10-27-new-words.json",
+    "sha256": "fe2d5ea9aa7bcd7b22c550a5afc0f24d9d1a04001e66e7b077806a22a6149f78",
+    "words": 106,
+    "all_senses_and_examples_match": true
+  },
+  "vocabulary": {
+    "words": 3208,
+    "visible": 3189,
+    "new_since_0_2_1": 87,
+    "topics": 18,
+    "groups": 287,
+    "senses": 8285,
+    "examples": 4006,
+    "missing_examples": 4279,
+    "raw_events": 3604,
+    "curation_requests": 124,
+    "sessions": 7,
+    "unfinished_sessions": 2,
+    "seed_sha256": "dfe1358fb407d8000960e66126d46f7922962ce7195a6f9b1360cb127be721f6",
+    "seed_bytes": 5887521,
+    "catalog_update": {
+      "revision": "2026-10-27-handwritten-vocabulary-1",
+      "updated": 3116,
+      "preserved": 89,
+      "added": 406
+    }
+  },
+  "practice": {
+    "raw_events": 297,
+    "submitted_attempt_records": 297,
+    "shared_desktop_events": 253,
+    "phone_only_events": 44,
+    "phone_only_attempts": 44,
+    "desktop_only_events": 0,
+    "conflicting_event_ids": 0,
+    "legacy_records": 17,
+    "legacy_matched_bundled": 17,
+    "legacy_new": 0,
+    "legacy_conflicts": 0,
+    "draft_versions": 186,
+    "active_drafts": 0,
+    "attemptCount": 297,
+    "eventCount": 297,
+    "completedCount": 295,
+    "draftCount": 0,
+    "legacyCount": 17,
+    "new_events_since_0_2_1": 23,
+    "new_draft_versions_since_0_2_1": 96
+  },
+  "pronunciation": {
+    "result": "passed",
+    "apk": "GRE-vocabulary-0.2.2-debug.apk",
+    "bytes": 90899429,
+    "sha256": "fd8561c26bbd17e09e4e6f15f6bc5f2370de34bf10f729a9d178ecf69dbe8801",
+    "audio_assets": 6396,
+    "words": 3208,
+    "dictionary_ipa": 5561,
+    "human": 0,
+    "synthetic": 6416,
+    "pending_ipa": 855
+  },
+  "pronunciation_incremental": {
+    "result": "passed",
+    "seed_sha256": "3acbccef7e9eaadfb85377bfaa4cf45424d51e22191aeba9b9c5e2c9d68203f0",
+    "source_dump": "2026-09-02",
+    "bulk_sha256": "6d40e0067718aeb3321db30297761ca803838390627111a29a5426fee4557faf",
+    "old_words_preserved": 3121,
+    "old_variants_preserved": 6242,
+    "old_assets_preserved": 6222,
+    "old_metadata_exact_match": true,
+    "old_audio_bytes_exact_match": true,
+    "added_words": 87,
+    "added_variants": 174,
+    "new_audio_files": 174,
+    "new_unique_assets": 174,
+    "added_source_ipa": 156,
+    "added_pending_ipa": 18,
+    "pending_ipa": [
+      {
+        "word": "adjuration",
+        "accent": "gb",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "adjuration",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "baneful",
+        "accent": "gb",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "baneful",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "brittle",
+        "accent": "gb",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "brittle",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "demolish",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "dismantle",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "enervate",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "enthrone",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "inconstant",
+        "accent": "gb",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "inconstant",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "involuntary",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "irksome",
+        "accent": "gb",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "irksome",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "omnivorous",
+        "accent": "gb",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "tautology",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      },
+      {
+        "word": "weary",
+        "accent": "us",
+        "reason": "No complete source IPA safely matching this word/POS/accent in cached dump; synthetic audio only."
+      }
+    ],
+    "all_assets_checked": 6396,
+    "all_asset_bytes": 43632828,
+    "coverage": {
+      "words": 3208,
+      "dictionary_ipa": 5561,
+      "human": 0,
+      "synthetic": 6416,
+      "pending_ipa": 855
+    },
+    "manifest_before_sha256": "336a3bcb440da82b0a0cc6ec6cb40dc6bed647d10364c7210215246c9a6a1717",
+    "manifest_after_sha256": "72bf44c70bace975394affb60a3a2b2c7bf215d3ad14426dc6da0980360f6200",
+    "network_requests": 0,
+    "downloads": 0,
+    "cost": 0,
+    "deleted_assets": 0
+  },
+  "upgrade_from_phone_backup": {
+    "vocabulary_sha256": "d174449e083ed7d48f7f6b83fe1d1c1699518b457790bb199588416521284a82",
+    "practice_sha256": "d29bf46d7ee967e6fdcbc50537e5743be4a065b0509320f8e457441bf2dbdb42",
+    "catalog_revision": "2026-10-27-handwritten-vocabulary-1",
+    "scenarios": [
+      {
+        "daily_imports_before_upgrade": 0,
+        "words_before": 2802,
+        "words_after": 3208,
+        "groups_after": 287,
+        "events": 3604,
+        "curation": 124,
+        "sessions": 7,
+        "unfinished_sessions": 2,
+        "idle_senses": 5,
+        "progress_and_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      },
+      {
+        "daily_imports_before_upgrade": 5,
+        "words_before": 3203,
+        "words_after": 3208,
+        "groups_after": 287,
+        "events": 3604,
+        "curation": 124,
+        "sessions": 7,
+        "unfinished_sessions": 2,
+        "idle_senses": 5,
+        "progress_and_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      }
+    ],
+    "post_export_vocabulary_edit_and_rating": "passed",
+    "failed_upgrade_keeps_original": "passed",
+    "practice_events": 297,
+    "practice_draft_versions": 186,
+    "practice_stats": {
+      "attemptCount": 297,
+      "eventCount": 297,
+      "completedCount": 295,
+      "draftCount": 0,
+      "legacyCount": 17
+    },
+    "practice_reopen_merge_and_post_export_draft": "passed",
+    "fresh_install_history": "passed",
+    "original_backup_bytes_unchanged": true,
+    "real_app_databases_opened": 0
+  },
+  "upgrade_from_actual_0_2_1": {
+    "result": "passed",
+    "old_apk_seed_sha256": "388cad211cace171573e087afeaa6ee40fc0707d53d2598d4b20a14c7aceaacb",
+    "new_seed_sha256": "dfe1358fb407d8000960e66126d46f7922962ce7195a6f9b1360cb127be721f6",
+    "daily_pack_sha256": "fe2d5ea9aa7bcd7b22c550a5afc0f24d9d1a04001e66e7b077806a22a6149f78",
+    "catalog_revision": "2026-10-27-handwritten-vocabulary-1",
+    "scenarios": [
+      {
+        "source": "actual 0.2.1 APK seed",
+        "daily_import": false,
+        "post_export_modifications": false,
+        "events": 3604,
+        "words": 3208,
+        "added": 87,
+        "sessions": 7,
+        "unfinished": 2,
+        "progress_personal_data_schedule_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      },
+      {
+        "source": "actual 0.2.1 APK seed",
+        "daily_import": false,
+        "post_export_modifications": true,
+        "events": 3615,
+        "words": 3208,
+        "added": 87,
+        "sessions": 8,
+        "unfinished": 3,
+        "progress_personal_data_schedule_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      },
+      {
+        "source": "actual 0.2.1 APK seed",
+        "daily_import": true,
+        "post_export_modifications": false,
+        "events": 3604,
+        "words": 3208,
+        "added": 0,
+        "sessions": 7,
+        "unfinished": 2,
+        "progress_personal_data_schedule_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      },
+      {
+        "source": "actual 0.2.1 APK seed",
+        "daily_import": true,
+        "post_export_modifications": true,
+        "events": 3616,
+        "words": 3208,
+        "added": 0,
+        "sessions": 8,
+        "unfinished": 3,
+        "progress_personal_data_schedule_recovery_preserved": true,
+        "reopen_and_backup_restore": "passed"
+      }
+    ],
+    "failed_upgrade_and_damaged_package": "old bytes preserved; retry passed",
+    "original_inputs_unchanged": true,
+    "real_app_databases_opened": 0
+  },
+  "practice_history_upgrade": {
+    "schema_version": 1,
+    "kind": "isolated_practice_upgrade_verification",
+    "verified_at": "2026-10-27T12:59:47.706Z",
+    "result": "passed",
+    "old_backup_sha256": "e2947e38e233d0132cabea8ada17f7c76eff1e69f572c6c2f5821b1149e8bb80",
+    "new_backup_sha256": "d29bf46d7ee967e6fdcbc50537e5743be4a065b0509320f8e457441bf2dbdb42",
+    "old_apk_version": "0.2.1",
+    "old_history_matches_10_26_backup": true,
+    "old_bank_revision": "d4d84943558defa8af0e643daa4cf2c135a9f024e82f53c8be78867c410dbc0d",
+    "new_bank_revision": "8e3b36505efc2fe8ee1b11830b599245ffd0bdba9e4dc51b42be890d54e416c3",
+    "scenarios": [
+      {
+        "name": "actual_10_26_phone_to_0_2_2",
+        "old_events": 274,
+        "old_drafts": 90,
+        "added_events": 23,
+        "added_drafts": 96,
+        "final_events": 297,
+        "final_drafts": 186,
+        "all_old_facts_preserved": true,
+        "device_dataset_and_preferences_preserved": true,
+        "reopen_zero_writes": true
+      },
+      {
+        "name": "actual_0_2_1_history_with_local_active_draft",
+        "added_events": 23,
+        "added_drafts": 96,
+        "final_events": 297,
+        "final_drafts": 187,
+        "active_drafts": 1,
+        "incoming_submission_does_not_remove_local_draft": true,
+        "device_dataset_preferences_and_draft_head_preserved": true,
+        "reopen_zero_writes": true
+      },
+      {
+        "name": "post_10_27_export_local_submission_and_active_draft",
+        "final_events": 298,
+        "final_drafts": 188,
+        "active_drafts": 1,
+        "local_submission_snapshot_preserved": true,
+        "local_active_draft_and_preferences_preserved": true,
+        "duplicate_incoming_facts_added": 0,
+        "reopen_zero_writes": true
+      }
+    ],
+    "failed_upgrade_keeps_original_bytes": true,
+    "source_backups_unchanged": true,
+    "real_databases_opened": 0,
+    "simulation_storage": "in-memory only; no simulated attempts persisted as user evidence"
+  },
+  "tests": {
+    "mobile": 86,
+    "practice_assets_and_history": 8,
+    "sense_examples": 4,
+    "pronunciation_build": 6,
+    "all_passed": true
+  },
+  "apk_verification": {
+    "apk": "GRE-vocabulary-0.2.2-debug.apk",
+    "bytes": 90899429,
+    "sha256": "fd8561c26bbd17e09e4e6f15f6bc5f2370de34bf10f729a9d178ecf69dbe8801",
+    "verified_web_files": 10602,
+    "verified_practice_assets": 4166,
+    "practice_revision": "8e3b36505efc2fe8ee1b11830b599245ffd0bdba9e4dc51b42be890d54e416c3",
+    "questions": {
+      "se": 1001,
+      "tc": 1001,
+      "rc": 893,
+      "quant": 847
+    },
+    "vocabulary_seed_sha256": "dfe1358fb407d8000960e66126d46f7922962ce7195a6f9b1360cb127be721f6"
+  },
+  "signature": {
+    "sha256": "18032e90614e5b1e2d406ccfbb3d731941987c8d154f3cf634b3315bd4e422d0",
+    "matches_version": "0.2.1",
+    "same_package_name": true,
+    "version_code_increased": true,
+    "old_version_code": 12,
+    "new_version_code": 13,
+    "new_version_name": "0.2.2",
+    "package_name": "cn.grestudy.vocabulary"
+  },
+  "real_device_test": "not_run",
+  "limitations": [
+    "本次用户仅提供新的刷题备份；词汇隔离验证使用10/26已有完整备份和实际0.2.1 APK。手机当前数据及导出后的学习记录始终优先，种子不会替换已有数据库。",
+    "未在用户真实手机执行覆盖安装；本次为隔离升级、Android构建、原签名与实际APK资源校验。",
+    "124项补充整理请求保持待处理；缺少可靠来源的例句或IPA继续留空。"
+  ]
+}

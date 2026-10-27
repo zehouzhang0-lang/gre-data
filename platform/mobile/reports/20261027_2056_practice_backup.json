@@ -1,0 +1,761 @@
+{
+  "schema_version": 1,
+  "kind": "mobile_practice_backup_audit",
+  "assessment": "source_records_only",
+  "audited_at": "2026-10-27T12:58:14.024Z",
+  "source": {
+    "filename": "gre-practice-2026-10-27T12-52-38-363Z(1).json",
+    "sha256": "d29bf46d7ee967e6fdcbc50537e5743be4a065b0509320f8e457441bf2dbdb42",
+    "bytes": 170243,
+    "payload_checksum": "2df007b8232a0f5a75c36c70b4c51cc75fa9c4e88e0df1b1cd99b5fb2c484580",
+    "checksum_algorithm": "SHA-256",
+    "created_at": "2026-10-27T12:52:38.358Z",
+    "dataset_id": "ca6b5d5f-7f92-4301-a531-0c90031ef992",
+    "local_archive": ".gre-platform/mobile-backups/d29bf46d7ee967e6fdcbc50537e5743be4a065b0509320f8e457441bf2dbdb42.json"
+  },
+  "validation": {
+    "checksum": "passed",
+    "structure": "passed",
+    "parser": "readPracticeBackup → validateDocument",
+    "draft_submission_references": "passed",
+    "same_event_id_conflicts": 0,
+    "source_archive_bytes": "identical",
+    "previous_backup_bytes": "unchanged",
+    "previous_document_merge_conflicts": 0
+  },
+  "semantics": "仅保存手机提交快照及与仓库、前次备份的差量审计，不写入 platform/events，不操作真实数据库；采用提交时保存的答案键和判定，不重新评分，不推断整体能力或 GRE 量表分。",
+  "counts": {
+    "raw_events": 297,
+    "submitted_attempt_records": 297,
+    "shared_desktop_events": 253,
+    "phone_only_events": 44,
+    "phone_only_attempts": 44,
+    "desktop_only_events": 0,
+    "conflicting_event_ids": 0,
+    "legacy_records": 17,
+    "legacy_matched_bundled": 17,
+    "legacy_new": 0,
+    "legacy_conflicts": 0,
+    "draft_versions": 186,
+    "active_drafts": 0
+  },
+  "projection": {
+    "attemptCount": 297,
+    "eventCount": 297,
+    "completedCount": 295,
+    "draftCount": 0,
+    "legacyCount": 17
+  },
+  "phone_only_types": {
+    "tc": 31,
+    "se": 13
+  },
+  "phone_only_saved_results": {
+    "incorrect": 23,
+    "correct": 21
+  },
+  "phone_only_attempts": [
+    {
+      "event_id": "df0403c4-67d9-4587-abad-cd4bed010eb0",
+      "recorded_at": "2026-10-20T16:52:12.614Z",
+      "material": "text_completion_2000",
+      "unit": "test1_section2_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "B",
+      "saved_result": false
+    },
+    {
+      "event_id": "0ba2d876-2d61-463a-a441-95f37605ce28",
+      "recorded_at": "2026-10-20T16:53:22.218Z",
+      "material": "text_completion_2000",
+      "unit": "test2_section2_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "D",
+      "saved_result": true
+    },
+    {
+      "event_id": "6bc47211-74ba-4c69-acea-c9b123601a62",
+      "recorded_at": "2026-10-20T16:57:51.617Z",
+      "material": "text_completion_2000",
+      "unit": "test2_section2_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "A/E",
+      "saved_result": false
+    },
+    {
+      "event_id": "421f8cab-08b1-4399-b7a0-b9ddc1246c3a",
+      "recorded_at": "2026-10-20T17:02:21.325Z",
+      "material": "text_completion_2000",
+      "unit": "test2_section2_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "A/F",
+      "saved_result": false
+    },
+    {
+      "event_id": "5ff2312e-2cd6-4e3c-9045-25302403fb7d",
+      "recorded_at": "2026-10-20T17:04:54.901Z",
+      "material": "text_completion_2000",
+      "unit": "test2_section2_easy",
+      "question": "4",
+      "type": "tc",
+      "answer": "B/F/I",
+      "saved_result": false
+    },
+    {
+      "event_id": "1b1a013e-6823-4933-b016-43f4da792e2f",
+      "recorded_at": "2026-10-20T17:06:30.519Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section1_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "E",
+      "saved_result": false
+    },
+    {
+      "event_id": "f380cbe3-682c-4a11-9779-5d2227d941c9",
+      "recorded_at": "2026-10-20T17:08:26.257Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section1_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "B/F",
+      "saved_result": true
+    },
+    {
+      "event_id": "5cb7ed41-1b6f-45aa-bdc5-5168b753b811",
+      "recorded_at": "2026-10-20T17:12:17.265Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section1_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "B/F/I",
+      "saved_result": false
+    },
+    {
+      "event_id": "5b660cbd-e14d-4868-b293-429ab8807a9c",
+      "recorded_at": "2026-10-20T17:16:09.050Z",
+      "material": "text_completion_2000",
+      "unit": "test32_section2_hard",
+      "question": "5",
+      "type": "se",
+      "answer": "B/F",
+      "saved_result": false
+    },
+    {
+      "event_id": "a981c3e9-f245-4395-8db3-9fba09c388a1",
+      "recorded_at": "2026-10-20T17:19:51.424Z",
+      "material": "text_completion_2000",
+      "unit": "test32_section2_hard",
+      "question": "6",
+      "type": "se",
+      "answer": "A/D",
+      "saved_result": false
+    },
+    {
+      "event_id": "28fff24c-be12-42c9-9b9f-4c1a98812836",
+      "recorded_at": "2026-10-20T17:22:12.829Z",
+      "material": "text_completion_2000",
+      "unit": "test32_section2_hard",
+      "question": "7",
+      "type": "se",
+      "answer": "A/F",
+      "saved_result": true
+    },
+    {
+      "event_id": "fb5d5876-ff9e-4237-af67-86325e87a460",
+      "recorded_at": "2026-10-20T17:26:05.809Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section1_hard",
+      "question": "4",
+      "type": "se",
+      "answer": "C/E",
+      "saved_result": true
+    },
+    {
+      "event_id": "8140290f-d4d7-4465-a6c4-98338ae7eaf5",
+      "recorded_at": "2026-10-20T17:29:17.431Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section1_hard",
+      "question": "5",
+      "type": "se",
+      "answer": "B/D",
+      "saved_result": false
+    },
+    {
+      "event_id": "3d945e37-114e-4262-8201-d86206f21893",
+      "recorded_at": "2026-10-20T17:31:02.142Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section1_hard",
+      "question": "6",
+      "type": "se",
+      "answer": "C/F",
+      "saved_result": true
+    },
+    {
+      "event_id": "3ed86fe2-2ed0-4e0f-8022-393b4f1b040f",
+      "recorded_at": "2026-10-21T11:53:43.312Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section2_medium",
+      "question": "5",
+      "type": "se",
+      "answer": "E/F",
+      "saved_result": false
+    },
+    {
+      "event_id": "9e65d4cd-a70f-4e63-a0be-9b85aff73430",
+      "recorded_at": "2026-10-21T11:56:22.207Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section2_medium",
+      "question": "6",
+      "type": "se",
+      "answer": "B/E",
+      "saved_result": false
+    },
+    {
+      "event_id": "c03d36ae-2c58-4d47-a7c2-3c2e7369c59f",
+      "recorded_at": "2026-10-21T12:20:15.618Z",
+      "material": "text_completion_2000",
+      "unit": "test33_section2_medium",
+      "question": "7",
+      "type": "se",
+      "answer": "A/B",
+      "saved_result": false
+    },
+    {
+      "event_id": "ddc92abc-598e-4c96-af25-a12f8ef79477",
+      "recorded_at": "2026-10-21T12:24:09.775Z",
+      "material": "text_completion_2000",
+      "unit": "test34_section1_hard",
+      "question": "4",
+      "type": "se",
+      "answer": "A/D",
+      "saved_result": false
+    },
+    {
+      "event_id": "0ca14207-a03b-49a6-ba1e-5682faf627b1",
+      "recorded_at": "2026-10-21T12:28:09.690Z",
+      "material": "text_completion_2000",
+      "unit": "test34_section1_hard",
+      "question": "5",
+      "type": "se",
+      "answer": "D/E",
+      "saved_result": true
+    },
+    {
+      "event_id": "e9f9ff04-981a-44d0-a282-9667f441c5ce",
+      "recorded_at": "2026-10-21T12:29:11.882Z",
+      "material": "text_completion_2000",
+      "unit": "test34_section1_hard",
+      "question": "6",
+      "type": "se",
+      "answer": "A/B",
+      "saved_result": false
+    },
+    {
+      "event_id": "1ad33709-a7cd-40d9-902a-7a277a818b95",
+      "recorded_at": "2026-10-21T12:30:59.174Z",
+      "material": "text_completion_2000",
+      "unit": "test34_section1_hard",
+      "question": "7",
+      "type": "se",
+      "answer": "B/C",
+      "saved_result": true
+    },
+    {
+      "event_id": "a13e4b3a-0471-484e-a89e-d1fe1abe30a1",
+      "recorded_at": "2026-10-27T08:25:36.350Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section2_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "C",
+      "saved_result": false
+    },
+    {
+      "event_id": "2e746356-184f-442d-9360-29d2b63cde7c",
+      "recorded_at": "2026-10-27T08:30:02.096Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section2_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "B/F",
+      "saved_result": true
+    },
+    {
+      "event_id": "ae82cba9-3b36-4600-b597-edb90cf2f284",
+      "recorded_at": "2026-10-27T08:33:04.655Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section2_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "C/E/H",
+      "saved_result": true
+    },
+    {
+      "event_id": "812b8fc5-8774-4431-9984-076ce2eedd1d",
+      "recorded_at": "2026-10-27T08:34:40.458Z",
+      "material": "text_completion_2000",
+      "unit": "test3_section2_easy",
+      "question": "4",
+      "type": "tc",
+      "answer": "B/F/G",
+      "saved_result": true
+    },
+    {
+      "event_id": "0011263f-20f7-459b-85fd-ae69cef663fc",
+      "recorded_at": "2026-10-27T08:38:16.281Z",
+      "material": "text_completion_2000",
+      "unit": "test4_section1_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "E",
+      "saved_result": true
+    },
+    {
+      "event_id": "3ec4665f-1406-403a-a5ac-0812b827b8ff",
+      "recorded_at": "2026-10-27T08:42:11.975Z",
+      "material": "text_completion_2000",
+      "unit": "test4_section1_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "C/F",
+      "saved_result": true
+    },
+    {
+      "event_id": "87474447-13a8-4101-8fcf-c4d4e066d45f",
+      "recorded_at": "2026-10-27T08:55:12.351Z",
+      "material": "text_completion_2000",
+      "unit": "test4_section1_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "C/E/H",
+      "saved_result": true
+    },
+    {
+      "event_id": "1c943c3a-4801-44bc-97ae-91ac29165d73",
+      "recorded_at": "2026-10-27T09:04:18.725Z",
+      "material": "text_completion_2000",
+      "unit": "test4_section2_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "C",
+      "saved_result": true
+    },
+    {
+      "event_id": "346e5377-8003-49b7-8c33-fedf45d3385e",
+      "recorded_at": "2026-10-27T09:06:06.513Z",
+      "material": "text_completion_2000",
+      "unit": "test4_section2_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "C",
+      "saved_result": false
+    },
+    {
+      "event_id": "bd3c90ff-8dc3-43e1-8ebf-9b7a42a17caa",
+      "recorded_at": "2026-10-27T09:07:55.589Z",
+      "material": "text_completion_2000",
+      "unit": "test4_section2_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "B/F",
+      "saved_result": false
+    },
+    {
+      "event_id": "9feb6ce0-f53f-4109-83b8-3025b3ae306c",
+      "recorded_at": "2026-10-27T09:13:23.393Z",
+      "material": "text_completion_2000",
+      "unit": "test4_section2_easy",
+      "question": "4",
+      "type": "tc",
+      "answer": "C/E/G",
+      "saved_result": true
+    },
+    {
+      "event_id": "e2d72a54-9208-42f2-9cd8-ebdcde54e9f3",
+      "recorded_at": "2026-10-27T09:23:57.812Z",
+      "material": "text_completion_2000",
+      "unit": "test5_section1_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "C",
+      "saved_result": true
+    },
+    {
+      "event_id": "427d9fc3-a643-412d-8f81-1cf3bd6c7a40",
+      "recorded_at": "2026-10-27T09:35:11.403Z",
+      "material": "text_completion_2000",
+      "unit": "test5_section1_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "C/E",
+      "saved_result": true
+    },
+    {
+      "event_id": "9c67e3d5-55e0-409f-a134-c0a45ddf2412",
+      "recorded_at": "2026-10-27T09:40:11.540Z",
+      "material": "text_completion_2000",
+      "unit": "test5_section1_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "B/F/I",
+      "saved_result": false
+    },
+    {
+      "event_id": "4b6421b3-0a6d-4b42-93eb-aca6c96191ba",
+      "recorded_at": "2026-10-27T09:48:56.735Z",
+      "material": "text_completion_2000",
+      "unit": "test5_section2_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "E",
+      "saved_result": true
+    },
+    {
+      "event_id": "5b4025bf-83cd-43af-bee8-b4b8c11145a1",
+      "recorded_at": "2026-10-27T09:50:03.634Z",
+      "material": "text_completion_2000",
+      "unit": "test5_section2_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "A/F",
+      "saved_result": false
+    },
+    {
+      "event_id": "cf39d543-f83c-4e97-a5eb-4aca4a6c69e3",
+      "recorded_at": "2026-10-27T10:09:50.690Z",
+      "material": "text_completion_2000",
+      "unit": "test5_section2_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "C/E",
+      "saved_result": false
+    },
+    {
+      "event_id": "2398d2ce-2391-4ead-8cc3-c586f52fbf99",
+      "recorded_at": "2026-10-27T10:13:56.339Z",
+      "material": "text_completion_2000",
+      "unit": "test5_section2_easy",
+      "question": "4",
+      "type": "tc",
+      "answer": "C/E/I",
+      "saved_result": true
+    },
+    {
+      "event_id": "2f56861a-bb43-458f-89ac-e4e056081159",
+      "recorded_at": "2026-10-27T10:17:32.649Z",
+      "material": "text_completion_2000",
+      "unit": "test6_section1_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "D",
+      "saved_result": true
+    },
+    {
+      "event_id": "3da5457d-5858-4562-8c7e-f1ffbfa82b14",
+      "recorded_at": "2026-10-27T10:21:39.603Z",
+      "material": "text_completion_2000",
+      "unit": "test6_section1_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "C/D",
+      "saved_result": false
+    },
+    {
+      "event_id": "46b39383-f620-4f8d-8396-98ca859e5ace",
+      "recorded_at": "2026-10-27T10:33:59.120Z",
+      "material": "text_completion_2000",
+      "unit": "test6_section1_easy",
+      "question": "3",
+      "type": "tc",
+      "answer": "A/D/G",
+      "saved_result": false
+    },
+    {
+      "event_id": "11643271-7308-436a-bb0a-93db009e7854",
+      "recorded_at": "2026-10-27T10:36:09.161Z",
+      "material": "text_completion_2000",
+      "unit": "test6_section2_easy",
+      "question": "1",
+      "type": "tc",
+      "answer": "E",
+      "saved_result": true
+    },
+    {
+      "event_id": "29fea43c-f9e7-4bcf-8072-3170b9b39d43",
+      "recorded_at": "2026-10-27T10:37:46.372Z",
+      "material": "text_completion_2000",
+      "unit": "test6_section2_easy",
+      "question": "2",
+      "type": "tc",
+      "answer": "A/E",
+      "saved_result": false
+    }
+  ],
+  "comparison_with_previous": {
+    "filename": "gre-practice-2026-10-26T15-36-32-549Z.json",
+    "sha256": "e2947e38e233d0132cabea8ada17f7c76eff1e69f572c6c2f5821b1149e8bb80",
+    "created_at": "2026-10-26T15:36:32.547Z",
+    "same_dataset": true,
+    "events_preserved": 274,
+    "new_events": 23,
+    "missing_events": 0,
+    "event_conflicts": 0,
+    "drafts_preserved": 90,
+    "new_draft_versions": 96,
+    "missing_drafts": 0,
+    "draft_conflicts": 0,
+    "legacy_preserved": 17,
+    "new_legacy": 0,
+    "missing_legacy": 0,
+    "new_attempt_types": {
+      "tc": 23
+    },
+    "new_saved_results": {
+      "incorrect": 9,
+      "correct": 14
+    },
+    "new_attempts": [
+      {
+        "event_id": "a13e4b3a-0471-484e-a89e-d1fe1abe30a1",
+        "recorded_at": "2026-10-27T08:25:36.350Z",
+        "material": "text_completion_2000",
+        "unit": "test3_section2_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "saved_result": false
+      },
+      {
+        "event_id": "2e746356-184f-442d-9360-29d2b63cde7c",
+        "recorded_at": "2026-10-27T08:30:02.096Z",
+        "material": "text_completion_2000",
+        "unit": "test3_section2_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "B/F",
+        "saved_result": true
+      },
+      {
+        "event_id": "ae82cba9-3b36-4600-b597-edb90cf2f284",
+        "recorded_at": "2026-10-27T08:33:04.655Z",
+        "material": "text_completion_2000",
+        "unit": "test3_section2_easy",
+        "question": "3",
+        "type": "tc",
+        "answer": "C/E/H",
+        "saved_result": true
+      },
+      {
+        "event_id": "812b8fc5-8774-4431-9984-076ce2eedd1d",
+        "recorded_at": "2026-10-27T08:34:40.458Z",
+        "material": "text_completion_2000",
+        "unit": "test3_section2_easy",
+        "question": "4",
+        "type": "tc",
+        "answer": "B/F/G",
+        "saved_result": true
+      },
+      {
+        "event_id": "0011263f-20f7-459b-85fd-ae69cef663fc",
+        "recorded_at": "2026-10-27T08:38:16.281Z",
+        "material": "text_completion_2000",
+        "unit": "test4_section1_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "E",
+        "saved_result": true
+      },
+      {
+        "event_id": "3ec4665f-1406-403a-a5ac-0812b827b8ff",
+        "recorded_at": "2026-10-27T08:42:11.975Z",
+        "material": "text_completion_2000",
+        "unit": "test4_section1_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "C/F",
+        "saved_result": true
+      },
+      {
+        "event_id": "87474447-13a8-4101-8fcf-c4d4e066d45f",
+        "recorded_at": "2026-10-27T08:55:12.351Z",
+        "material": "text_completion_2000",
+        "unit": "test4_section1_easy",
+        "question": "3",
+        "type": "tc",
+        "answer": "C/E/H",
+        "saved_result": true
+      },
+      {
+        "event_id": "1c943c3a-4801-44bc-97ae-91ac29165d73",
+        "recorded_at": "2026-10-27T09:04:18.725Z",
+        "material": "text_completion_2000",
+        "unit": "test4_section2_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "saved_result": true
+      },
+      {
+        "event_id": "346e5377-8003-49b7-8c33-fedf45d3385e",
+        "recorded_at": "2026-10-27T09:06:06.513Z",
+        "material": "text_completion_2000",
+        "unit": "test4_section2_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "C",
+        "saved_result": false
+      },
+      {
+        "event_id": "bd3c90ff-8dc3-43e1-8ebf-9b7a42a17caa",
+        "recorded_at": "2026-10-27T09:07:55.589Z",
+        "material": "text_completion_2000",
+        "unit": "test4_section2_easy",
+        "question": "3",
+        "type": "tc",
+        "answer": "B/F",
+        "saved_result": false
+      },
+      {
+        "event_id": "9feb6ce0-f53f-4109-83b8-3025b3ae306c",
+        "recorded_at": "2026-10-27T09:13:23.393Z",
+        "material": "text_completion_2000",
+        "unit": "test4_section2_easy",
+        "question": "4",
+        "type": "tc",
+        "answer": "C/E/G",
+        "saved_result": true
+      },
+      {
+        "event_id": "e2d72a54-9208-42f2-9cd8-ebdcde54e9f3",
+        "recorded_at": "2026-10-27T09:23:57.812Z",
+        "material": "text_completion_2000",
+        "unit": "test5_section1_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "C",
+        "saved_result": true
+      },
+      {
+        "event_id": "427d9fc3-a643-412d-8f81-1cf3bd6c7a40",
+        "recorded_at": "2026-10-27T09:35:11.403Z",
+        "material": "text_completion_2000",
+        "unit": "test5_section1_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "C/E",
+        "saved_result": true
+      },
+      {
+        "event_id": "9c67e3d5-55e0-409f-a134-c0a45ddf2412",
+        "recorded_at": "2026-10-27T09:40:11.540Z",
+        "material": "text_completion_2000",
+        "unit": "test5_section1_easy",
+        "question": "3",
+        "type": "tc",
+        "answer": "B/F/I",
+        "saved_result": false
+      },
+      {
+        "event_id": "4b6421b3-0a6d-4b42-93eb-aca6c96191ba",
+        "recorded_at": "2026-10-27T09:48:56.735Z",
+        "material": "text_completion_2000",
+        "unit": "test5_section2_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "E",
+        "saved_result": true
+      },
+      {
+        "event_id": "5b4025bf-83cd-43af-bee8-b4b8c11145a1",
+        "recorded_at": "2026-10-27T09:50:03.634Z",
+        "material": "text_completion_2000",
+        "unit": "test5_section2_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "A/F",
+        "saved_result": false
+      },
+      {
+        "event_id": "cf39d543-f83c-4e97-a5eb-4aca4a6c69e3",
+        "recorded_at": "2026-10-27T10:09:50.690Z",
+        "material": "text_completion_2000",
+        "unit": "test5_section2_easy",
+        "question": "3",
+        "type": "tc",
+        "answer": "C/E",
+        "saved_result": false
+      },
+      {
+        "event_id": "2398d2ce-2391-4ead-8cc3-c586f52fbf99",
+        "recorded_at": "2026-10-27T10:13:56.339Z",
+        "material": "text_completion_2000",
+        "unit": "test5_section2_easy",
+        "question": "4",
+        "type": "tc",
+        "answer": "C/E/I",
+        "saved_result": true
+      },
+      {
+        "event_id": "2f56861a-bb43-458f-89ac-e4e056081159",
+        "recorded_at": "2026-10-27T10:17:32.649Z",
+        "material": "text_completion_2000",
+        "unit": "test6_section1_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "D",
+        "saved_result": true
+      },
+      {
+        "event_id": "3da5457d-5858-4562-8c7e-f1ffbfa82b14",
+        "recorded_at": "2026-10-27T10:21:39.603Z",
+        "material": "text_completion_2000",
+        "unit": "test6_section1_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "C/D",
+        "saved_result": false
+      },
+      {
+        "event_id": "46b39383-f620-4f8d-8396-98ca859e5ace",
+        "recorded_at": "2026-10-27T10:33:59.120Z",
+        "material": "text_completion_2000",
+        "unit": "test6_section1_easy",
+        "question": "3",
+        "type": "tc",
+        "answer": "A/D/G",
+        "saved_result": false
+      },
+      {
+        "event_id": "11643271-7308-436a-bb0a-93db009e7854",
+        "recorded_at": "2026-10-27T10:36:09.161Z",
+        "material": "text_completion_2000",
+        "unit": "test6_section2_easy",
+        "question": "1",
+        "type": "tc",
+        "answer": "E",
+        "saved_result": true
+      },
+      {
+        "event_id": "29fea43c-f9e7-4bcf-8072-3170b9b39d43",
+        "recorded_at": "2026-10-27T10:37:46.372Z",
+        "material": "text_completion_2000",
+        "unit": "test6_section2_easy",
+        "question": "2",
+        "type": "tc",
+        "answer": "A/E",
+        "saved_result": false
+      }
+    ]
+  },
+  "comparison_baseline": "当前 platform/events 的 attempt/attempts_import；10/26 完整刷题备份；legacy 对照当前题库 history.json。时间戳比较按同一 UTC 瞬间归一化，原文件时间格式保持不动。",
+  "preservation_requirements": [
+    "保留全部 186 个草稿版本及提交引用，按原事件/草稿 ID 幂等合并；同 ID 异内容停止。",
+    "已有设备的 dataset_id、活动草稿指向、偏好与安装包导出后的新增事实优先保留。",
+    "原始完整备份仅存本机归档；本报告不是恢复包，不自动创建训练事件或掌握证据。"
+  ]
+}
