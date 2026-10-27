@@ -32,9 +32,11 @@
 - 完整原始备份继续仅本机归档；Git保存符合规范的原始作答事实、必要引用及核对记录，不自动提交整份个人手机存储快照。
 - 本次仅记录未来同步要求，不把本次讨论视为已执行真实手机历史导入。
 
-## PR-04 讨论手机App的AI解析，优先评估沿用CLI
+## PR-04 讨论手机App独立AI解析及现有订阅接入
 
 用户问题：手机App能否像电脑端一样利用CLI提供AI解析？此项是可行性讨论，尚未确定最终接入方案。
+
+用户后续明确约束：手机需要独立使用，电脑关机也能解析；希望使用现有ChatGPT订阅。继续先讨论，不开始修改。电脑在线的CLI桥接不作为当前优先方向。
 
 ### 已核对的当前实现
 
@@ -58,3 +60,23 @@
 - [Codex app-server协议及远程监听限制](https://learn.chatgpt.com/docs/app-server)
 - [自定义客户端使用ChatGPT计划](https://developers.openai.com/siwc/token-sharing-open-source)
 - [ChatGPT计划接入的预览限制](https://developers.openai.com/siwc/token-sharing-open-source/preview-limitations)
+
+### 手机直连与订阅使用的进一步核对
+
+- 官方说明符合条件的Plus/Pro用户可以授权本地个人项目或开源应用使用ChatGPT计划，无需单独API key；所选账户/工作区及本应用的实际权限仍需完成授权与一次推理请求确认，当前未登录验证。
+- 身份登录和订阅推理授权是两回事。必须获得 `chatgpt.tokens.use.direct` 等必要权限，不能仅因登录成功就显示解析可用。
+- 拟议架构（工程推断，未实现）：手机React页面 → Capacitor Android原生桥接层 → OpenAI官方OAuth/Responses接口。原生层负责系统浏览器登录、本机回调、受保护凭据、续期和HTTPS/流式请求，页面只接收登录状态与解析结果；不需要电脑参与或在APK内运行CLI。
+- 预计登录流程：保存安装标识 → 启动本机回调监听 → 系统浏览器登录与授权 → 动态注册并保存返回的client ID → PKCE code交换、身份和权限校验 → 手机直接发起解析请求。
+- 当前官方登录流程要求 `http://127.0.0.1:<端口>/...` 回调；Android适配时需验证浏览器能否回调、应用切后台后监听是否存活，不能擅自替换成未经该流程支持的自定义scheme。
+- 官方示例为Electron桌面应用；本次未找到可据以宣称现成可用的官方Android SDK或已验证Android示例，这不等于禁止Android。当前APK尚无这条授权或推理链路。
+- 请求走官方 `POST https://api.openai.com/v1/responses`，使用该应用授权得到的OAuth访问令牌，`store:false`、`stream:true`；模型来自该账户的可用列表。不是复制桌面CLI的登录文件，也不调用未公开的ChatGPT后台接口。
+- 访问/刷新令牌保存在原生受保护存储，不进入网页存储、词汇/刷题备份、Git或日志；需要支持刷新轮换、退出和撤销授权。
+- 额度按ChatGPT计划及应用限制计算，不是额外无限额度；官方当前说明Plus的五小时额度跨此类应用共享，不能承诺特定次数或Pro无限。额度不足时提示，不自动切换收费API。
+- 后续若决定验证，先隔离验证手机授权回调、订阅推理、token刷新、文本/图片解析和流式回传，再整合正式App；当前没有执行任何验证登录、模型调用或代码修改。
+
+补充官方来源（核对日期同上）：
+
+- [使用现有Plus/Pro订阅的官方入门说明](https://developers.openai.com/siwc/quickstart)
+- [本地个人项目及Electron示例](https://developers.openai.com/cookbook/articles/sign-in-with-chatgpt)
+- [账户保护、刷新与额度](https://developers.openai.com/siwc/token-sharing-open-source/profiles-and-sessions)
+- [手机可直接采用的官方推理请求协议](https://developers.openai.com/siwc/token-sharing-open-source/models-and-inference)
