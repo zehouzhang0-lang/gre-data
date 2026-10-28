@@ -46,7 +46,7 @@ export function createLoginFlow({ api, onChange = () => {}, onConnectionChanged 
   function applyStatus(status) {
     if (!status || typeof status.connected !== 'boolean' || typeof status.eligible !== 'boolean' || typeof status.available !== 'boolean') throw Error('设备返回的连接状态不完整，请重新检查。');
     const incoming = status.login && LOGIN_PHASES.has(status.login.phase) ? status.login : { id: null, phase: status.connected ? 'connected' : 'idle', elapsed_seconds: 0 };
-    if (incoming.id && ignoredLoginIds.has(incoming.id) && incoming.phase !== 'cancelled') return;
+    if (incoming.id && ignoredLoginIds.has(incoming.id) && incoming.phase !== 'cancelled') return false;
     const previousKey = connectionKey(state.connection), nextKey = connectionKey(status);
     const login = startPending && incoming.phase === 'idle' && state.login.phase === 'starting' ? state.login : incoming;
     emit({ connection: status, login, statusError: '', loginError: login.phase === 'failed' ? login.error || '登录未完成，请重试。' : login.phase === 'idle' ? state.loginError : '', pollingPaused: false });
@@ -58,6 +58,7 @@ export function createLoginFlow({ api, onChange = () => {}, onConnectionChanged 
       const key = `${nextKey}|${login.phase === 'connected' ? login.id || '' : ''}`;
       if (modelAttempt !== key) void loadModels(key);
     }
+    return true;
   }
   async function loadModels(key) {
     if (!state.connection?.connected || !state.connection?.eligible || disposed) return;
@@ -74,14 +75,16 @@ export function createLoginFlow({ api, onChange = () => {}, onConnectionChanged 
     }
   }
   async function refresh() {
-    if (disposed) return;
+    if (disposed) return false;
     if (statusFlight?.epoch === epoch) return statusFlight.promise;
     const token = epoch, sequence = ++statusSequence;
     emit({ statusBusy: true });
     const promise = call('connectionStatus', '读取连接状态超时。原有连接信息保留，可以重新检查。').then(status => {
-      if (!disposed && token === epoch && sequence === statusSequence) applyStatus(status);
+      if (!disposed && token === epoch && sequence === statusSequence) return applyStatus(status);
+      return false;
     }).catch(error => {
       if (!disposed && token === epoch && sequence === statusSequence) emit({ statusError: error.message || '读取连接状态失败。' });
+      return false;
     }).finally(() => {
       if (!disposed && token === epoch && sequence === statusSequence) { statusFlight = null; emit({ statusBusy: false }); }
     });

@@ -1,8 +1,18 @@
 # GRE 词库 · Android
 
+## 0.3.2 · 官方 SDK 默认授权兼容与连接诊断（2026-10-28）
+
+当前版本 **0.3.2 / versionCode 16**：[GRE-vocabulary-0.3.2-debug.apk](releases/GRE-vocabulary-0.3.2-debug.apk)，90,954,601 字节；SHA-256：`ca18e214fe4e9ffb204b2ea1d3dfd1dc83ab051e12dad8ac8dfe409ca07a222e`。Android构建、实际APK资源与原签名比对通过，沿用原数据格式覆盖安装。
+
+针对更换浏览器后 OpenAI 授权确认页仍持续转圈的反馈，本版采用官方 DevKit 的默认授权参数：保留本机稳定 host ID，但不在请求中发送默认关闭的 `ext_agent_host_id`。OpenAI 文档将其列为必需，而官方 SDK 配置注明仅在兼容部署中启用；此次按已发布 SDK 默认行为做兼容性验证，尚未证实这就是用户手机问题的根因。PKCE、state、nonce、签名、账户绑定及范围校验保留。
+
+设置页提供版本和“复制连接诊断”，只导出阶段、等待时间、本机监听状态、回调请求计数及拒绝原因枚举，便于核实卡在授权页还是已返回手机。诊断不包含账号、授权链接、授权码、令牌或设备 host ID。真实登录与订阅解析仍待真机测试。
+
+12项JS定向检查、3项原生离线检查和一次代码审查通过。前端实际点击已确认诊断复制成功；词库及音频清单与0.3.1相同，题库内容只更新导出时间。仍转圈时的操作见[手机登录与诊断](CHATGPT-LOGIN.md)。官方SDK依据：[默认关闭的配置](https://github.com/openai/sign-in-with-chatgpt-devkit/blob/0a36fefeb913055c8c7a1a29b63d82b96b2e841a/packages/local/src/types.ts#L63)、[条件发送参数](https://github.com/openai/sign-in-with-chatgpt-devkit/blob/0a36fefeb913055c8c7a1a29b63d82b96b2e841a/packages/local/src/oauth.ts#L280)。
+
 ## 0.3.1 · 授权回调后的等待修复（2026-10-28）
 
-当前版本 **0.3.1 / versionCode 15**：[GRE-vocabulary-0.3.1-debug.apk](releases/GRE-vocabulary-0.3.1-debug.apk)，90,951,337 字节；SHA-256：`747f283342fc0df3987509ccf33edf22d6c72dd21cec4c6e3f7be729df6e94e7`。构建、实际包内资源与原签名比对均通过，可直接覆盖安装。
+0.3.1 / versionCode 15：[GRE-vocabulary-0.3.1-debug.apk](releases/GRE-vocabulary-0.3.1-debug.apk)，90,951,337 字节；SHA-256：`747f283342fc0df3987509ccf33edf22d6c72dd21cec4c6e3f7be729df6e94e7`。构建、实际包内资源与原签名比对均通过，可直接覆盖安装。
 
 本次修复针对 0.3.0 真机反馈：浏览器已显示“已收到授权回调”，切回 APP 后一直显示“请在浏览器完成授权…”，没有账号、模型或报错。
 

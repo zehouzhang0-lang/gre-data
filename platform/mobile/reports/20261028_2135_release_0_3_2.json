@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "kind": "mobile_release_verification",
+  "version": "0.3.2",
+  "version_code": 16,
+  "package_name": "cn.grestudy.vocabulary",
+  "built_at": "2026-10-28T13:31:37.031Z",
+  "verified_at": "2026-10-28T13:35:29.945Z",
+  "trigger": {
+    "source": "user real-device feedback",
+    "symptom": "OpenAI consent page allow button keeps spinning, including after browser-change advice",
+    "callback_status_not_yet_confirmed": true
+  },
+  "compatibility_change": {
+    "parameter": "ext_agent_host_id",
+    "old_behavior": "always included",
+    "new_behavior": "omitted to match official SDK default",
+    "stable_local_host_id_preserved": true,
+    "pkce_state_nonce_identity_and_scope_validation_preserved": true,
+    "official_sdk_revision": "0a36fefeb913055c8c7a1a29b63d82b96b2e841a",
+    "official_sdk_commit_date": "2026-10-07T16:37:23Z",
+    "sdk_source": "https://github.com/openai/sign-in-with-chatgpt-devkit/blob/0a36fefeb913055c8c7a1a29b63d82b96b2e841a/packages/local/src/oauth.ts",
+    "sdk_config_source": "https://github.com/openai/sign-in-with-chatgpt-devkit/blob/0a36fefeb913055c8c7a1a29b63d82b96b2e841a/packages/local/src/types.ts",
+    "documentation": "https://developers.openai.com/siwc/token-sharing-open-source/sign-in",
+    "document_sdk_discrepancy": "Prose says required; SDK defaults sendHostId to false and permits only compatible authorization deployments.",
+    "root_cause_confirmed": false
+  },
+  "diagnostics": {
+    "format": "gre-chatgpt-connection-diagnostic",
+    "version": 1,
+    "fields": [
+      "app_version",
+      "phase",
+      "elapsed_seconds",
+      "listener_open",
+      "callback_requests_seen",
+      "valid_callback_received",
+      "last_callback_rejection"
+    ],
+    "credentials_accounts_urls_and_ids_excluded": true,
+    "live_vs_last_known_explicit": true,
+    "copy_failure_manual_text_fallback": true,
+    "callback_counts_include_all_loopback_request_lines": true,
+    "valid_callback_does_not_imply_login_success": true
+  },
+  "tests": {
+    "targeted_js": {
+      "passed": 12,
+      "failed": 0,
+      "command": "node --test platform/mobile/tests/connection-diagnostics.test.mjs platform/mobile/tests/login-flow.test.mjs platform/mobile/tests/ai-review.test.mjs"
+    },
+    "native_support_offline": {
+      "passed": 3,
+      "failed": 0,
+      "command": "./platform/mobile/scripts/test-native-login-support.ps1",
+      "real_credentials_read": false,
+      "network_requests": 0
+    },
+    "full_suite_rerun": false,
+    "final_code_review": "passed; no blocking findings",
+    "android_build": "passed",
+    "browser": {
+      "settings_and_expected_native_login_boundary": "passed",
+      "copy_diagnostic_button_feedback": "passed: copied",
+      "console_errors_and_warnings": 0
+    }
+  },
+  "apk_verification": {
+    "apk": "GRE-vocabulary-0.3.2-debug.apk",
+    "bytes": 90954601,
+    "sha256": "ca18e214fe4e9ffb204b2ea1d3dfd1dc83ab051e12dad8ac8dfe409ca07a222e",
+    "verified_web_files": 10602,
+    "verified_practice_assets": 4166,
+    "practice_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "questions": {
+      "se": 1001,
+      "tc": 1001,
+      "rc": 893,
+      "quant": 847
+    },
+    "vocabulary_seed_sha256": "dfe1358fb407d8000960e66126d46f7922962ce7195a6f9b1360cb127be721f6"
+  },
+  "bundled_data_comparison": {
+    "vocabulary-seed.json": {
+      "identical_to_0_3_1": true,
+      "sha256": "dfe1358fb407d8000960e66126d46f7922962ce7195a6f9b1360cb127be721f6"
+    },
+    "pronunciation.json": {
+      "identical_to_0_3_1": true,
+      "sha256": "72bf44c70bace975394affb60a3a2b2c7bf215d3ad14426dc6da0980360f6200"
+    },
+    "practice/manifest.json": {
+      "same_content_and_revision": true,
+      "changed_metadata_fields": [
+        "created_at"
+      ],
+      "revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503"
+    }
+  },
+  "signature": {
+    "sha256": "18032e90614e5b1e2d406ccfbb3d731941987c8d154f3cf634b3315bd4e422d0",
+    "matches_previous_versions": true,
+    "same_package_name": true,
+    "old_version_code": 15,
+    "new_version_code": 16
+  },
+  "data_preservation": {
+    "learning_database_schema_unchanged": true,
+    "learning_repositories_unchanged": true,
+    "learning_events_written": 0,
+    "previous_isolated_upgrade_report": "20261027_2256_release_0_3_0.json"
+  },
+  "real_device_test": "awaiting user installation and diagnostic capture",
+  "real_account_authorization": "not_performed_by_agent",
+  "real_subscription_inference": "not_verified",
+  "limitations": [
+    "采用官方SDK默认参数是兼容性验证，尚未证实它导致或能消除本手机授权页转圈。",
+    "官方当前文档与SDK在host参数默认行为上不一致，不能用源码核对或构建通过代替实际授权验证。",
+    "若仍卡住，需要用户在未取消登录前复制净化诊断；该诊断不包含托管网页的服务端网络返回，仍可能需要进一步定位。"
+  ]
+}

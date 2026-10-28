@@ -17,9 +17,7 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
-import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ExecutorService;
@@ -37,7 +35,6 @@ import org.json.JSONObject;
 /** Public-client OAuth + Responses SSE. There is deliberately no arbitrary URL/token bridge. */
 @CapacitorPlugin(name = "ChatGPTPlan")
 public class ChatGPTPlanPlugin extends Plugin {
-    private static final String SCOPES = "openid profile email offline_access resource.invoke chatgpt.tokens.use.direct";
     private static final String USAGE = "https://chatgpt.com/settings/usage";
     private final ExecutorService workers = Executors.newCachedThreadPool();
     private final ScheduledExecutorService deadlines = Executors.newSingleThreadScheduledExecutor();
@@ -50,6 +47,7 @@ public class ChatGPTPlanPlugin extends Plugin {
     private final AtomicReference<Attempt> latestLogin = new AtomicReference<>();
     private final AtomicReference<Inference> inference = new AtomicReference<>();
     private PlanCredentials credentials;
+    private volatile String appVersion = "unknown";
     // Public fields only. status() never waits for credential I/O, refresh or a lock.
     private volatile String accountJson = "{\"available\":true,\"connected\":false,\"eligible\":false,\"message\":\"正在读取设备连接状态\"}";
 
@@ -63,6 +61,7 @@ public class ChatGPTPlanPlugin extends Plugin {
         final long started = SystemClock.elapsedRealtime();
         final Object gate = new Object();
         final int epoch;
+        final PlanLoginSupport.Diagnostics diagnostics = new PlanLoginSupport.Diagnostics();
         volatile LoginView view = new LoginView("starting", null, null, 0);
         volatile PlanOperation operation;
         volatile ServerSocket listener;
@@ -79,6 +78,11 @@ public class ChatGPTPlanPlugin extends Plugin {
         void close() { cancelled = true; if (operation != null) operation.cancel(); }
     }
     @Override public void load() {
+        try {
+            String installedVersion = getContext().getPackageManager().getPackageInfo(getContext().getPackageName(), 0).versionName;
+            appVersion = installedVersion == null ? "unknown" : installedVersion;
+        }
+        catch (Exception ignored) { appVersion = "unknown"; }
         credentials = new PlanCredentials(getContext());
         workers.execute(() -> {
             try { synchronized (credentialLock) { cacheAccount(credentials.read()); } }
@@ -114,10 +118,19 @@ public class ChatGPTPlanPlugin extends Plugin {
         JSObject status = new JSObject();
         status.put("id", attempt == null ? JSONObject.NULL : attempt.id);
         LoginView view = attempt == null ? null : attempt.view;
-        status.put("phase", view == null ? "idle" : view.phase);
-        status.put("elapsed_seconds", attempt == null ? 0 : Math.max(0, ((view.ended == 0 ? SystemClock.elapsedRealtime() : view.ended) - attempt.started) / 1000));
+        String phase = view == null ? "idle" : view.phase;
+        long elapsed = attempt == null ? 0 : Math.max(0, ((view.ended == 0 ? SystemClock.elapsedRealtime() : view.ended) - attempt.started) / 1000);
+        status.put("phase", phase);
+        status.put("elapsed_seconds", elapsed);
         if (view != null && view.error != null) { status.put("error", view.error); status.put("error_code", view.errorCode); }
         result.put("login", status);
+        result.put("authorization_mode", PlanLoginSupport.MODE);
+        ServerSocket listener = attempt == null ? null : attempt.listener;
+        JSObject diagnostic = new JSObject();
+        PlanLoginSupport.Diagnostics counters = attempt == null ? new PlanLoginSupport.Diagnostics() : attempt.diagnostics;
+        counters.snapshot(appVersion, phase, elapsed, listener != null && !listener.isClosed())
+            .forEach((key, value) -> diagnostic.put(key, value));
+        result.put("diagnostics", diagnostic);
         return result;
     }
     @PluginMethod public void status(PluginCall call) {
@@ -197,15 +210,8 @@ public class ChatGPTPlanPlugin extends Plugin {
             attempt.operation.attach(() -> { try { server.close(); } catch (Exception ignored) {} });
             check(attempt);
             String redirect = "http://127.0.0.1:" + server.getLocalPort() + "/auth/callback";
-            String query = PlanProtocol.form("client_id", requestedClient, "ext_agent_host_id", saved.getString("host_id"),
-                "response_type", "code", "redirect_uri", redirect, "scope", SCOPES, "resource", PlanProtocol.RESOURCE,
-                "state", state, "nonce", nonce, "code_challenge_method", "S256", "code_challenge", PlanProtocol.challenge(verifier));
-            if (registration) query += "&" + PlanProtocol.form("agent_name_hint", "GRE词库");
-            else {
-                // The optional ID-token hint is omitted so Android/browser URL diagnostics
-                // cannot contain a credential. The registered client and email suffice.
-                if (!saved.optString("email").isEmpty()) query += "&" + PlanProtocol.form("login_hint", saved.getString("email"));
-            }
+            String query = PlanLoginSupport.authorizationQuery(requestedClient, redirect, state, nonce,
+                PlanProtocol.challenge(verifier), registration, saved.optString("email"));
             final String authorizationUrl = PlanProtocol.AUTHORIZE + "?" + query;
             main.post(() -> {
                 try {
@@ -292,35 +298,33 @@ public class ChatGPTPlanPlugin extends Plugin {
                 attempt.operation.attach(closeSocket);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), StandardCharsets.US_ASCII));
                 String request = PlanProtocol.line(reader, 16384);
-                String[] start = request == null ? new String[0] : request.split(" ");
+                if (request != null) attempt.diagnostics.requestRead();
                 String host = ""; int bytes = request == null ? 0 : request.length();
                 for (String line; (line = PlanProtocol.line(reader, 16384)) != null && !line.isEmpty();) {
                     bytes += line.length(); if (bytes > 24576) throw new java.io.IOException();
                     if (line.regionMatches(true, 0, "Host:", 0, 5)) host = line.substring(5).trim();
                 }
-                Map<String, String> params = new HashMap<>();
-                boolean valid = start.length == 3 && "GET".equals(start[0]) && ("127.0.0.1:" + port).equals(host);
-                if (valid) {
-                    int question = start[1].indexOf('?');
-                    valid = question > 0 && "/auth/callback".equals(start[1].substring(0, question));
-                    if (valid) for (String pair : start[1].substring(question + 1).split("&")) {
-                        String[] pieces = pair.split("=", 2);
-                        String key = URLDecoder.decode(pieces[0], "UTF-8"), value = URLDecoder.decode(pieces.length > 1 ? pieces[1] : "", "UTF-8");
-                        if (params.put(key, value) != null) valid = false;
-                    }
-                    valid = valid && PlanProtocol.same(expectedState, params.get("state"));
-                }
-                if (valid) {
+                PlanLoginSupport.Callback parsed = PlanLoginSupport.parseCallback(request, host, "127.0.0.1:" + port, expectedState);
+                Map<String, String> params = parsed.params;
+                if (parsed.valid()) {
+                    attempt.diagnostics.accepted();
                     // The validated callback is already received. A browser write/flush
                     // failure must never put this login back into the accept() loop.
                     if (!params.containsKey("error")) beginStage(attempt, "exchanging", 60000);
                     check(attempt);
                     return PlanCallbackDelivery.accepted(params, () -> browserReply(socket, true, params.containsKey("error")));
                 }
-                browserReply(socket, false, false);
+                attempt.diagnostics.rejected(parsed.rejection);
+                // Feedback delivery must not overwrite the actual rejection classification.
+                try { browserReply(socket, false, false); } catch (Exception ignored) {}
             } catch (SocketTimeoutException ignored) {
+                if (acceptedSocket != null) attempt.diagnostics.rejected(PlanLoginSupport.Rejection.TIMEOUT);
                 // Loopback probes and abandoned sockets cannot terminate an unrelated attempt.
-            } catch (java.io.IOException | IllegalArgumentException ignored) { check(attempt); }
+            } catch (java.io.IOException | IllegalArgumentException ignored) {
+                if (acceptedSocket != null && !terminal(attempt.view.phase)) attempt.diagnostics.rejected(
+                    ignored instanceof IllegalArgumentException ? PlanLoginSupport.Rejection.MALFORMED : PlanLoginSupport.Rejection.IO);
+                check(attempt);
+            }
             finally {
                 if (closeSocket != null) attempt.operation.detach(closeSocket);
                 if (acceptedSocket != null) try { acceptedSocket.close(); } catch (Exception ignored) {}

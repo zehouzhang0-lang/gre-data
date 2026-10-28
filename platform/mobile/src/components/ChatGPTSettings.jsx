@@ -1,12 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { connectionStatus, signIn, signOut, listModels, cancelSignIn, openUsage } from '../ai/client.mjs';
-import { ACTIVE_LOGIN_PHASES, createLoginFlow, initialLoginState, loginPhaseText } from '../ai/login-flow.mjs';
+import { ACTIVE_LOGIN_PHASES, boundedCall, createLoginFlow, initialLoginState, loginPhaseText } from '../ai/login-flow.mjs';
+import { connectionDiagnostic, serializeConnectionDiagnostic } from '../ai/diagnostics.mjs';
 import '../ai/ai.css';
 
 const api = { connectionStatus, signIn, signOut, listModels, cancelSignIn };
 export default function ChatGPTSettings({ active, state, repo, mutate, notify }) {
   const [view, setView] = useState(initialLoginState), [usageError, setUsageError] = useState('');
+  const [copyingDiagnostic, setCopyingDiagnostic] = useState(false), [diagnosticText, setDiagnosticText] = useState('');
+  const copyGuard = useRef(false);
   const flow = useRef(null), latest = useRef({ active, notify });
   latest.current = { active, notify };
   useEffect(() => {
@@ -33,6 +36,7 @@ export default function ChatGPTSettings({ active, state, repo, mutate, notify })
   }, []);
   useEffect(() => { flow.current?.setActive(active && !document.hidden); }, [active]);
   const { connection, login, models, modelsBusy, modelsError, actionBusy, statusBusy, statusError, loginError, pollingPaused } = view;
+  const diagnostic = connectionDiagnostic(connection).diagnostics;
   const loginActive = ACTIVE_LOGIN_PHASES.has(login.phase), waiting = loginActive && !pollingPaused;
   const selected = models.some(m => m.slug === state.settings.aiModel) ? state.settings.aiModel : models[0]?.slug || '';
   const connect = () => { setUsageError(''); flow.current?.start(); };
@@ -40,6 +44,28 @@ export default function ChatGPTSettings({ active, state, repo, mutate, notify })
     setUsageError('');
     const result = await flow.current?.disconnect();
     if (result !== null && result !== undefined) notify(result.revoked === false ? '已在此设备退出；可在 ChatGPT 设置中检查并撤销应用授权。' : '已退出 ChatGPT。');
+  };
+  const copyDiagnostic = async () => {
+    const controller = flow.current;
+    if (!controller || copyGuard.current) return;
+    copyGuard.current = true; setCopyingDiagnostic(true); setDiagnosticText('');
+    try {
+      const fresh = await controller.refresh();
+      if (flow.current !== controller) return;
+      const current = controller.getState();
+      const text = serializeConnectionDiagnostic(current.connection, { fresh: fresh === true });
+      const freshness = fresh === true ? '' : current.connection ? '（上次已知状态，刷新未成功）' : '（尚未取得设备状态）';
+      try {
+        if (!navigator.clipboard?.writeText) throw Error('clipboard unavailable');
+        await boundedCall(() => navigator.clipboard.writeText(text), 5000, 'clipboard timeout');
+        if (flow.current === controller) notify(`已复制连接诊断${freshness}。`);
+      } catch {
+        if (flow.current === controller) {
+          setDiagnosticText(text);
+          notify(`未能自动复制，请选中下方诊断文本手动复制${freshness}。`);
+        }
+      }
+    } finally { copyGuard.current = false; if (flow.current === controller) setCopyingDiagnostic(false); }
   };
   return <section className="settings-section chatgpt-settings"><h2>AI 题目解析</h2>
     <p className="muted">使用你授权的 ChatGPT 计划；解析时手机联网即可，电脑可以关机。</p>
@@ -57,6 +83,9 @@ export default function ChatGPTSettings({ active, state, repo, mutate, notify })
     {loginActive && <div className="ai-account-actions"><button className="text-button" onClick={() => flow.current?.cancel()}>取消登录</button>{pollingPaused && connection?.connected && <button onClick={connect}>重新登录</button>}</div>}
     {(statusError || loginError || usageError) && <div className="ai-status-errors" role="alert">{loginError && <p className="ai-error">{loginError}</p>}{statusError && <p className="ai-error">{statusError}</p>}{usageError && <p className="ai-error">{usageError}</p>}</div>}
     {connection?.available !== false && <button className="text-button ai-refresh-status" disabled={statusBusy || actionBusy} onClick={() => flow.current?.wake()}>{statusBusy ? '正在检查连接…' : '重新检查状态'}</button>}
+    <p className="muted"><small>应用版本：{diagnostic.app_version || (connection?.available === false ? '网页预览' : '待读取')} · 当前阶段：{connection?.available === false ? '网页预览不提供连接' : diagnostic.phase === 'idle' ? '尚未开始登录' : loginPhaseText[diagnostic.phase] || '待读取'}{statusError ? '（上次已知状态）' : ''}</small></p>
+    <button disabled={copyingDiagnostic || actionBusy} onClick={copyDiagnostic}>{copyingDiagnostic ? '正在读取诊断…' : '复制连接诊断'}</button>
+    {diagnosticText && <label className="field">连接诊断（点选后手动复制）<textarea aria-label="连接诊断文本" readOnly value={diagnosticText} rows={12} onFocus={e => e.currentTarget.select()} style={{ width: '100%', fontFamily: 'monospace', fontSize: '12px', userSelect: 'text', WebkitUserSelect: 'text' }}/></label>}
     <small className="muted ai-connection-note">此入口使用计划额度，不会自动转用收费 API。登录凭据不进入学习备份。</small>
   </section>;
 }
