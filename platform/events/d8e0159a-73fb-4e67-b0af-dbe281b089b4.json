@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "d8e0159a-73fb-4e67-b0af-dbe281b089b4",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T12:11:27.684Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test9_section1_easy",
+    "question": "3",
+    "type": "tc",
+    "answer": "C/D/H",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "278fe385-2529-4aac-9380-892d338ce237",
+    "draft_id": "de1d0f7b-0aee-4d70-9a9c-5021d3906e7f",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "870e2213d43c232976f1dcf3976a6435d9f83e4a2bb1f0f69b35ae19fb2da34d",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test9_section1_easy\",\"3\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 9 · Section 1 · easy · 第 3 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          34
+        ],
+        "regions": [
+          {
+            "page": 34,
+            "top": 405.70311,
+            "bottom": 559.391984,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Although Thaler employs an innovative mode of analysis, his study offers yet another examination of quite (i)_____ ground—namely, the culture ideology of Norwegian-American preservationist writers in the early twentieth century. The history, literature, and changing internal dynamics of the Norwegian subculture in America constitute a particularly well-studied area. Anyone familiar with the authoritative work of scholars in the field will (ii)_____ little in Thaler’s study that is (iii)_____.",
+      "options": [
+        "unfamiliar",
+        "well-worked",
+        "fruitful",
+        "find",
+        "understand",
+        "reveal",
+        "accurate",
+        "new",
+        "recognizable"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ],
+        [
+          "G",
+          "H",
+          "I"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "C",
+      "H",
+      "D"
+    ],
+    "answerKey": {
+      "answer": "BDH",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5406-5443",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": false
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "2891c55e-fcc2-44c4-bbdb-1b0501b5884f",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T03:50:46.936Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test6_section2_easy",
+    "question": "3",
+    "type": "tc",
+    "answer": "A/F/H",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "76dfc53a-b93b-4b3d-8c74-7a37ee88bbae",
+    "draft_id": "a94e5316-c540-4d8e-a322-049f2acdd479",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "eb8ad6d9527ab336fb83b8b2bf65212f074b361300b7d3511d7a9c4bafdda489",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test6_section2_easy\",\"3\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 6 · Section 2 · easy · 第 3 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          28
+        ],
+        "regions": [
+          {
+            "page": 28,
+            "top": 172.70323199999996,
+            "bottom": 287.39176999999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "When the Agriculture Department (i)_____ its dietary guidelines, it laid down a challenge: Eat better, smarter, and healthier or else. The “or else” included a long list of (ii)_____ that (iii)_____ the developed world, from heart disease and osteoporosis to diabetes.",
+      "options": [
+        "make public",
+        "debunked",
+        "refused to consider",
+        "intangibles",
+        "misconceptions",
+        "maladies",
+        "assuage",
+        "plague",
+        "ignore"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ],
+        [
+          "G",
+          "H",
+          "I"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "H",
+      "F",
+      "A"
+    ],
+    "answerKey": {
+      "answer": "AFH",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:4222-4259",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": true
+  }
+}

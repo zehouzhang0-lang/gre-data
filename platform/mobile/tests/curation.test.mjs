@@ -93,3 +93,34 @@ test('curation scope is explicit, intersects other filters and remains compatibl
   assert.deepEqual(filterEntries(state, { ...emptyFilters, scope: 'curation', query: 'blank' }).map(item => item.word), ['blank']);
   assert.equal(projectState(fixture(), now()).curationRequests.length, 0);
 });
+
+test('only a reviewed matching definition resolves its original requests; later requests and personal edits stay pending', async () => {
+ const {repo}=await setup();await repo.requestCuration(['blank']);
+ const raw=(await readPackage(await repo.backup())).data;
+ const request=raw.events.find(e=>e.kind==='vocab_curation_request');
+ const example={en:'A blank page lay on the desk.',zh:'桌上放着一张空白纸。',kind:'coach_original',review_status:'coach_authored',source:{publisher:'GRE AI教练（自拟）',created_at:'2026-10-29'}};
+ const definition={word:'blank',input:{pos:'adj.',meaning:'空白的'},senses:[{pos:'adj.',meanings:['空白的'],examples:[example]}],status:'dictionary_checked',sources:[{publisher:'Cambridge Dictionary',url:'https://dictionary.cambridge.org/dictionary/english/blank',checked_at:'2026-10-29'}],curation:{status:'completed',scope:'definition_examples',reviewed_at:'2026-10-29',record:'vocab/curation-resolutions.json',request_ids:[request.id]}};
+ const incoming=fixture();incoming.baseline.definitions=[definition];
+ const upgraded=updateCatalog(raw,incoming,'explicit-curation');
+ assert.deepEqual(upgraded.events,raw.events);
+ assert.deepEqual(projectState(upgraded,now()).curationRequests,[]);
+ assert.equal(projectState(upgraded,now()).vocabulary.find(w=>w.word==='blank').meaning,'adj.空白的');
+ const later=structuredClone(upgraded);later.events.push({...request,id:crypto.randomUUID(),recorded_at:'2026-10-18T01:00:00.000Z'});
+ assert.equal(projectState(validateData(later),now()).curationRequests.length,1);
+ const edited=structuredClone(upgraded);edited.events.push({schema_version:1,id:crypto.randomUUID(),recorded_at:'2026-10-18T02:00:00.000Z',kind:'vocab_upsert',payload:{word:'blank',meaning:'我的个人解释',pos:''}});
+ assert.equal(projectState(validateData(edited),now()).curationRequests.length,1);
+ const roundtrip=(await readPackage(await (await import('../src/data/packages.mjs')).createPackage(upgraded))).data;
+ assert.deepEqual(roundtrip.baseline.definitions,upgraded.baseline.definitions);
+ const damaged=structuredClone(upgraded);damaged.baseline.definitions[0].senses[0].examples=[null];assert.throws(()=>validateData(damaged));
+});
+
+test('an established definition on a raw blank capture receives only matching sense examples without a new request',()=>{
+ const current=fixture();const base={word:'blank',input:{pos:'',meaning:''},senses:[{pos:'adj.',meanings:['空白的'],examples:[null]}],status:'dictionary_checked',sources:[{publisher:'Cambridge Dictionary',url:'https://dictionary.cambridge.org/dictionary/english/blank',checked_at:'2026-10-13'}]};
+ current.baseline.definitions=[base];
+ const incoming=fixture();const example={en:'She opened a blank notebook.',zh:'她打开了一本空白笔记本。',kind:'coach_original',review_status:'coach_authored',source:{publisher:'GRE AI教练（自拟）',created_at:'2026-10-29'}};
+ incoming.baseline.definitions=[{...base,senses:[{...base.senses[0],examples:[example]}]}];
+ const next=updateCatalog(current,incoming,'matching-only');assert.equal(projectState(next,now()).vocabulary.find(w=>w.word==='blank').senses[0].examples[0].kind,'coach_original');assert.deepEqual(next.events,current.events);
+ incoming.baseline.definitions[0].senses[0].meanings=['新解释'];const rejected=updateCatalog(current,incoming,'different-sense');assert.deepEqual(rejected.baseline.definitions,validateData(current).baseline.definitions);
+ const redirect=fixture();redirect.baseline.definitions=[{word:'blank',input:{pos:'',meaning:''},senses:[],status:'spelling_redirect',note:'测试中的截断词形，仅说明其归属，不更改事件。',sources:[]}];
+ const explained=updateCatalog(current,redirect,'redirect');assert.equal(projectState(explained,now()).vocabulary.find(w=>w.word==='blank').definition_status,'spelling_redirect');assert.deepEqual(explained.events,current.events);assert.equal(projectState(explained,now()).vocabulary.find(w=>w.word==='blank').deleted,false);
+});

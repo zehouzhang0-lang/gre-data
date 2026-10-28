@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "fe81ffb8-bdf3-4737-b847-fc69b871e982",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T12:47:40.539Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test10_section1_medium",
+    "question": "3",
+    "type": "tc",
+    "answer": "A/D/G",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "fcbe7d8b-93f4-4913-953f-aef9288ec254",
+    "draft_id": "c5473eb5-a2c4-4b00-8933-798aeae6b893",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "f1d6a8234c4efb40adf2fae6024ac869911e29eb82477e95d09f5b1923fa2dc6",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test10_section1_medium\",\"3\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 10 · Section 1 · medium · 第 3 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          37
+        ],
+        "regions": [
+          {
+            "page": 37,
+            "top": 63.163070999999945,
+            "bottom": 216.85179199999993,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Laws protecting intellectual property are intended to stimulate creativity, yet some forms of creative work have never enjoyed legal protection—a situation that ought to be of great interest. If we see certain forms of creative endeavor (i)_____ as a result of uncontrolled copying, we might decide to (ii)_____ intellectual property law. Conversely, if unprotected creative work (iii)_____ in the absence of legal rules against copying, we would do well to know how such flourishing is sustained.",
+      "options": [
+        "languishing",
+        "proliferating",
+        "diversifying",
+        "jettison",
+        "extend",
+        "relax",
+        "declines in originality",
+        "manages to thrive",
+        "openly invites imitation"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ],
+        [
+          "G",
+          "H",
+          "I"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "D",
+      "A",
+      "G"
+    ],
+    "answerKey": {
+      "answer": "AEH",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5849-5886",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": false
+  }
+}

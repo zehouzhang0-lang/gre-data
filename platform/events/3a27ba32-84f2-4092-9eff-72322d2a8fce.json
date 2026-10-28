@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "3a27ba32-84f2-4092-9eff-72322d2a8fce",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T12:22:28.771Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test9_section2_medium",
+    "question": "4",
+    "type": "tc",
+    "answer": "B/E/G",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "753f5acc-1ea9-4331-941c-6cd5d3d21519",
+    "draft_id": "e4429e6f-0ae7-463e-bc32-8ffb7eaccdb3",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "bb1ab7c41dcdb317ece59933ad546665a699e2a5293220b0e8f544932f6d7bd0",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test9_section2_medium\",\"4\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 9 · Section 2 · medium · 第 4 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          35,
+          36
+        ],
+        "regions": [
+          {
+            "page": 35,
+            "top": 723.243104,
+            "bottom": 775.243127,
+            "left": 48,
+            "right": 550
+          },
+          {
+            "page": 36,
+            "top": 58,
+            "bottom": 138.85179199999993,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Publisher, publicist, and broadcasters love anniversaries, those occasions when historical events become (i)_____ in (ii)_____ culture of celebration. On such occasions patriotic sentiment and national pride are wrapped in the panoply of history to manufacture a mythical past that is serviceable for public (iii)_____.",
+      "options": [
+        "elusive moments",
+        "marketable artifacts",
+        "raging controversies",
+        "an authentic",
+        "a commercial",
+        "an elitist",
+        "consumption",
+        "scrutiny",
+        "censure"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ],
+        [
+          "G",
+          "H",
+          "I"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "B",
+      "E",
+      "G"
+    ],
+    "answerKey": {
+      "answer": "BEG",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5554-5591",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": true
+  }
+}

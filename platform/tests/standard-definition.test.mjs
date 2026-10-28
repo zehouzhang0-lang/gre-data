@@ -28,6 +28,6 @@ test('whole repository vocabulary has complete structured definitions and catego
  const state=await new Store(fileURLToPath(new URL('../..',import.meta.url))).state();
  const active=state.vocabulary.filter(w=>!w.deleted);
  assert(active.length>2000);
- for(const w of active){assert(w.senses?.length,w.word);assert(w.meaning.trim(),w.word);assert.notEqual(w.definition_status,'coach_draft',w.word);assert.notEqual(w.definition_status,'changed',w.word);}
+ for(const w of active){assert(w.senses?.length,w.word);assert(w.meaning.trim(),w.word);assert.notEqual(w.definition_status,'changed',w.word);assert(w.senses.some(s=>s.examples?.some(Boolean)),`缺少中英例句：${w.word}`);}
  assert.equal(state.relations.assignments.filter(a=>!a.topics.length).length,0);
 });

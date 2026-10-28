@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "d5d3342e-9057-4ce0-ac7e-17870e3991e5",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T06:39:27.517Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test7_section2_easy",
+    "question": "3",
+    "type": "tc",
+    "answer": "B/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "29bc28f0-867c-4e0e-a844-c1768bb6acf9",
+    "draft_id": "9921c065-a465-4044-8729-b1e74181d7fa",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "180fecbdceb996f49ef401eb1de48a345f098d029f9d9b6e558f0f9d3a52f5c5",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test7_section2_easy\",\"3\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 7 · Section 2 · easy · 第 3 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          30
+        ],
+        "regions": [
+          {
+            "page": 30,
+            "top": 572.163102,
+            "bottom": 673.851899,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "She was never (i)_____; she was nothing if not discreet, so she (ii)_____ for the present to declare her passion.",
+      "options": [
+        "precipitate",
+        "tactful",
+        "thoughtful",
+        "pretended",
+        "decided",
+        "forbore"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "B",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "AF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:4666-4703",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": false
+  }
+}

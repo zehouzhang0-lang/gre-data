@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "1e870fb3-4a6c-4354-ba2e-938ae61c9664",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T12:07:12.522Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test9_section1_easy",
+    "question": "2",
+    "type": "tc",
+    "answer": "C/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "833993ff-6124-4ffd-8a37-728aebc1d10b",
+    "draft_id": "b5aa3c55-1cf6-4226-b87e-88b2ff12b44d",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "98330b345bba2315c082af8d3e945b2735aa8f4f1bb4d70f781962770c16a69e",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test9_section1_easy\",\"2\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 9 · Section 1 · easy · 第 2 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          34
+        ],
+        "regions": [
+          {
+            "page": 34,
+            "top": 280.16307099999995,
+            "bottom": 397.85191399999997,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Despite the abundance and importance of maize, its biological origin has been a long-running mystery. The bright yellow, mouth-watering treat does not grow in the wild anywhere on the planet, so its (i)_____ is not at all (ii)_____.",
+      "options": [
+        "utility",
+        "popularity",
+        "ancestry",
+        "helpful",
+        "important",
+        "obvious"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "C",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "CF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5406-5443",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": true
+  }
+}

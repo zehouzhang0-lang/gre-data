@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "14a2aab9-2e33-46ab-a59f-70f8b3118118",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T12:05:45.059Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test9_section1_easy",
+    "question": "1",
+    "type": "tc",
+    "answer": "B",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "f7d34412-14dc-4fe1-a832-57a41599ed75",
+    "draft_id": "a96f8470-54c8-45f6-81ac-61cc2ba40e45",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "86d824c59f92765c1a96cf92dc81e99e5ed0125ef516821c90811e406cbae28c",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test9_section1_easy\",\"1\"]",
+      "type": "tc",
+      "mode": "single",
+      "source": "填空 2000 · Test 9 · Section 1 · easy · 第 1 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          34
+        ],
+        "regions": [
+          {
+            "page": 34,
+            "top": 163.16307099999995,
+            "bottom": 280.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "The identity of hominid remains found in a cave in the Altai Mountains was _____ until Paabo and his colleagues ended the speculation by showing that DNA sequences indicated the bones belonged to Neanderthals.",
+      "options": [
+        "extraneous",
+        "conjectural",
+        "improbable",
+        "demonstrable",
+        "consistent"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "B"
+    ],
+    "answerKey": {
+      "answer": "B",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5406-5443",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": true
+  }
+}

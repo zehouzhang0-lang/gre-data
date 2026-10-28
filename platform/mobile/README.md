@@ -1,8 +1,18 @@
 # GRE 词库 · Android
 
+## 0.3.3 · 词库整理与最新进度接续（2026-10-29）
+
+当前版本 **0.3.3 / versionCode 17**：[安装APK](releases/GRE-vocabulary-0.3.3-debug.apk)，91,847,233 字节；SHA-256：`fbad7d87eba8059396c855786317be9d254a04ae1002bf1f99b658b988efddac`。原签名与实际APK资源比对通过，真实备份升级保留3974条词汇事件、10轮原始复习及6个分组；未完成断点仍为 animate / spelling。详见[核验报告](reports/20261029_0036_release_0_3_3.json)。
+
+处理10月28日两页手写词51个（39新增、12已有）及题中摘词11个；原本完全没有例句的1000词补入逐词编写的中英例句。保留已有权威引文，自拟句显示“教练自拟（非词典引文）”。释义核验状态与例句作者分别保存；罕用词不伪造权威核验。
+
+本版沿用应用ID与原签名覆盖安装，已安装手机优先使用自己的本地数据库，只合并内容更新；安装包内的个人初始记录采用本次上传的完整备份。原事件、个人修改、分组、轮次快照及删除状态保留。明确审核的待整理请求按原请求ID完成，新请求或个人改义仍待整理。操作与核验结果见本版release报告。
+
+电脑接收完整手机词汇备份时，可先以`--dry-run`预览，再运行`node platform/mobile/scripts/import-vocabulary-backup.mjs --backup <完整词汇备份JSON>`；额外`--archive <完整备份JSON>`只归档。脚本保留原事件ID，不重写同ID文件或运行Git；同ID冲突整批停止。全包保存在本机忽略目录，追踪清单与原事件随后通过仓库同步。
+
 ## 0.3.2 · 官方 SDK 默认授权兼容与连接诊断（2026-10-28）
 
-当前版本 **0.3.2 / versionCode 16**：[GRE-vocabulary-0.3.2-debug.apk](releases/GRE-vocabulary-0.3.2-debug.apk)，90,954,601 字节；SHA-256：`ca18e214fe4e9ffb204b2ea1d3dfd1dc83ab051e12dad8ac8dfe409ca07a222e`。Android构建、实际APK资源与原签名比对通过，沿用原数据格式覆盖安装。
+历史版本 **0.3.2 / versionCode 16**：[GRE-vocabulary-0.3.2-debug.apk](releases/GRE-vocabulary-0.3.2-debug.apk)，90,954,601 字节；SHA-256：`ca18e214fe4e9ffb204b2ea1d3dfd1dc83ab051e12dad8ac8dfe409ca07a222e`。Android构建、实际APK资源与原签名比对通过，沿用原数据格式覆盖安装。
 
 针对更换浏览器后 OpenAI 授权确认页仍持续转圈的反馈，本版采用官方 DevKit 的默认授权参数：保留本机稳定 host ID，但不在请求中发送默认关闭的 `ext_agent_host_id`。OpenAI 文档将其列为必需，而官方 SDK 配置注明仅在兼容部署中启用；此次按已发布 SDK 默认行为做兼容性验证，尚未证实这就是用户手机问题的根因。PKCE、state、nonce、签名、账户绑定及范围校验保留。
 

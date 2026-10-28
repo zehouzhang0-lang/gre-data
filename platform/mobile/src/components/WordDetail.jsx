@@ -6,15 +6,16 @@ import { highlightExample } from '../example-highlight.mjs';
 import Pronunciation, { PronunciationSources } from './Pronunciation';
 import { loadPronunciations } from '../pronunciation.mjs';
 
-function hasExample(example) { return example?.en && example?.zh && example.kind === 'quotation'; }
+function hasExample(example) { return example?.en && example?.zh && ['quotation','coach_original'].includes(example.kind); }
 
 function SenseExample({ example, meaning, pos, headword }) {
-  const sourceLabel = `《${example.source?.publisher || '词典'}》`;
+  const original=example.kind === 'coach_original';
+  const sourceLabel = original ? `教练自拟（非词典引文） · ${example.source.created_at}` : `《${example.source?.publisher || '词典'}》`;
   return <div className="sense-example">
     <p className="sense-example-en" lang="en">{highlightExample(example.en, headword, pos).map((part,index) => part.highlight ? <strong className="example-keyword" key={index}>{part.text}</strong> : part.text)}</p>
     <p className="sense-example-zh" lang="zh-Hans">{example.zh}</p>
     <small className="sense-example-meaning">{pos} · {meaning}</small>
-    <small className="sense-example-source">{/^https?:\/\//.test(example.source?.url || '') ? <a href={example.source.url} target="_blank" rel="noreferrer">{sourceLabel}</a> : sourceLabel}{example.source?.locator && ` · ${example.source.locator}`}</small>
+    <small className="sense-example-source">{!original && /^https?:\/\//.test(example.source?.url || '') ? <a href={example.source.url} target="_blank" rel="noreferrer">{sourceLabel}</a> : sourceLabel}{example.source?.locator && ` · ${example.source.locator}`}</small>
   </div>;
 }
 
@@ -47,7 +48,7 @@ export default function WordDetail({ word, state, busy, onSave, onRate, onClose 
       <fieldset className="filter-section"><legend>按刚才的回忆标记</legend><div className="detail-ratings">{Object.entries(ratingLabels).map(([id, label]) => <button disabled={busy || !word.meaning?.trim()} key={id} className={`rating-${id}`} onClick={() => onRate(id, [word.word])}>{label}</button>)}</div></fieldset>
       <section className="detail-section detail-secondary" aria-label="词条说明与记录">
       {state.curationRequests?.some(item => item.word === word.word) && <small>待补充整理</small>}
-      {(word.definition_status || word.note) && <details className="definition-notes"><summary>词义说明</summary>{word.definition_status && <small>{definitionStatusLabels[word.definition_status]}</small>}{word.note && <p>{word.note}</p>}</details>}
+      {(word.definition_status || word.note || word.standard_definition?.note) && <details className="definition-notes" open={word.definition_status==='spelling_redirect'}><summary>词义说明</summary>{word.definition_status && <small>{definitionStatusLabels[word.definition_status]}</small>}{word.standard_definition?.note && <p>{word.standard_definition.note}</p>}{word.note && word.note!==word.standard_definition?.note && <p>{word.note}</p>}</details>}
       <div className="detail-meta"><span>{ratingLabels[wordRating(word)] || '未标记'}</span><span>{schedule?.review_count ?? word.review_count ?? 0} 次复习</span></div>
       <div className="detail-meta" aria-label="翻阅记录"><span>翻阅 {reading?.view_count || 0} 次</span>{reading?.last_viewed_at && <time dateTime={reading.last_viewed_at}>最近翻阅 {new Date(reading.last_viewed_at).toLocaleString('zh-CN', { timeZone: state.timeZone, month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</time>}</div>
       <button className="wide-button" onClick={() => setEditing(true)}>编辑词条</button>

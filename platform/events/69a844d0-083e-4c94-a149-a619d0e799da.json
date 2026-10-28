@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "69a844d0-083e-4c94-a149-a619d0e799da",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T12:31:21.186Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test10_section1_medium",
+    "question": "2",
+    "type": "tc",
+    "answer": "B/D",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "7880979b-94d6-4830-ac3e-9306538661c9",
+    "draft_id": "58dccbcf-471b-4b36-8774-a295b14713cd",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "4585bc3a0dd06bf1a5f88f7611993aeef9755f42091c7423bad13758841fcbb4",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test10_section1_medium\",\"2\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 10 · Section 1 · medium · 第 2 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          36
+        ],
+        "regions": [
+          {
+            "page": 36,
+            "top": 668.703095,
+            "bottom": 770.39193,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "It would be (i)_____ not to (ii)_____ these tabloid journalists for thriving in hard times: they deserve credit for doing well in a profession in financial straits.",
+      "options": [
+        "apropos",
+        "churlish",
+        "cagey",
+        "admire",
+        "envy",
+        "emulate"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "D",
+      "B"
+    ],
+    "answerKey": {
+      "answer": "BD",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5849-5886",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": true
+  }
+}

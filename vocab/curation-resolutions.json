@@ -1,0 +1,2730 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-29",
+  "source_backup_sha256": "7cf16cf166190fd15d3afb52924c4fb0e279800c33d1f3c4cb33a629a88674fe",
+  "policy": "明确审核现有规范释义与例句并处理原请求ID，保留个人输入、分类与全部原事件。不把整理当作回忆或掌握。无原请求的11个题中摘词另行明确补齐。释义核验状态独立保留，历史核验不冒充本日重新查词典。",
+  "items": [
+    {
+      "word": "aggrandize",
+      "input": {
+        "pos": "v.",
+        "meaning": "扩大，增强；提高权势、财富或声望；夸大，吹捧"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "76f7d1b5-8caa-4205-921f-130041974e81"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "chafing dish",
+      "input": {
+        "pos": "n.",
+        "meaning": "餐桌上用于加热或保温食物的器皿；暖锅"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "76f7d1b5-8caa-4205-921f-130041974e81"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "idle",
+      "input": {
+        "pos": "adj.; v.",
+        "meaning": "adj. 闲置的、无事可做的；无实际用途的；懒散的；v. 闲逛、虚度；使机器空转"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "76f7d1b5-8caa-4205-921f-130041974e81"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "heinous",
+      "input": {
+        "pos": "adj.",
+        "meaning": "极恶的；令人发指的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "bfcd8691-8969-4a79-9123-b8f1c3ca9364"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "felony",
+      "input": {
+        "pos": "n.",
+        "meaning": "重罪"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a4d792ab-51bd-4635-b889-1637b793ea50"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "factionalism",
+      "input": {
+        "pos": "n.",
+        "meaning": "派系主义；党派纷争"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "2f068d02-6df9-453f-8e9b-9266ee1adcf6"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "impassion",
+      "input": {
+        "pos": "v.",
+        "meaning": "使充满激情，激起强烈感情"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "3bbd05fd-58bb-4e27-85a7-5ec8a8f44385"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "apropos",
+      "input": {
+        "pos": "adj.; prep.; adv.",
+        "meaning": "adj. 切题而适时的；prep. 关于；adv. 适时地，顺便说"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "138ec9fd-72a7-495e-a9e0-516fa42b9a33"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "recalcitrant",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "adj. 顽抗权威的；不服管束的；难处理、难治的；n. 不服从者"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "b4839758-c534-4c09-9a9d-3fa86c378c31"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "felicitous",
+      "input": {
+        "pos": "adj.",
+        "meaning": "（措辞、选择）贴切得当的；令人愉快的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "99d517aa-0605-4748-a5cb-152e1e24e96a"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "camaraderie",
+      "input": {
+        "pos": "n.",
+        "meaning": "情谊；友情"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "dbbb738b-40f3-4e37-ad16-acc866288b18"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "apotheosis",
+      "input": {
+        "pos": "n.",
+        "meaning": "典范、极致；最高点；神化、奉为神明"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "0d631e75-0369-4a03-ace4-2103d7d1970c"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "illiberal",
+      "input": {
+        "pos": "adj.",
+        "meaning": "不宽容的；狭隘的；吝啬的；限制自由的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "80e9f666-2db5-4796-9dc1-c63b5266154e"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "disenchant",
+      "input": {
+        "pos": "v.",
+        "meaning": "使不再抱幻想；使醒悟或失望"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "8f01f0d6-789e-4145-8988-c0d2b9439610"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "amidst",
+      "input": {
+        "pos": "prep.",
+        "meaning": "在……中间；在……期间；伴随着……"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "8dea839b-fe9a-4a8e-bceb-bb895e42cf91"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "seamy",
+      "input": {
+        "pos": "adj.",
+        "meaning": "丑恶的，肮脏龌龊的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "1da50117-23bd-458e-a726-a4f0dc368c43"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "aphorism",
+      "input": {
+        "pos": "n.",
+        "meaning": "格言，警句；简练的道理或原则陈述"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "ed86f2d8-08b7-4fdf-8e3e-e09f3b96a7a5"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "fallibility",
+      "input": {
+        "pos": "n.",
+        "meaning": "可能犯错的性质，易错性"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "884588bd-8192-4e44-9828-cdc292d3f414"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "abominate",
+      "input": {
+        "pos": "v.",
+        "meaning": "深恶痛绝；极其憎恶"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "27dfb9b3-25fe-46fb-98cf-20d11dee163a"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "elate",
+      "input": {
+        "pos": "v.; adj.",
+        "meaning": "v. 使欢欣鼓舞，使得意；adj. 欢欣鼓舞的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "d68d02a8-6b5f-4259-8af0-d87706eef621"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "halcyon",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "adj. 宁静幸福的；繁荣的；n. 传说中的翠鸟；翠鸟"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "35db3843-744d-4456-a94f-636a0fafc924"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "coagulation",
+      "input": {
+        "pos": "n.",
+        "meaning": "凝结；凝固；凝血"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "6561b722-70e8-4ef0-9fb7-2c9f99a7e30b"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "cobra",
+      "input": {
+        "pos": "n.",
+        "meaning": "眼镜蛇"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a00fc66d-6ffd-486a-a03f-7ff284c7ec3f"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "incrustation",
+      "input": {
+        "pos": "n.",
+        "meaning": "结壳；表面形成的硬层或沉积物"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "075641a1-bbc3-4317-a593-5b4f609ede7f"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "encomiums",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "7bb2d69e-a599-4fa1-8cbb-787902d743b8"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "wherewithal",
+      "input": {
+        "pos": "n.",
+        "meaning": "所需的手段、资源，尤指钱财"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "0d6db6ab-c6f1-408c-a3b7-ac3553fcd005"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "pedantic",
+      "input": {
+        "pos": "adj.",
+        "meaning": "拘泥细节或规则的；卖弄学问、迂腐的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "4be0b8fb-aa09-4637-ac95-dc865cc057fe"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "bountiful",
+      "input": {
+        "pos": "adj.",
+        "meaning": "丰盛充足的；慷慨的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "577e8fa9-7951-4465-8914-2e2a87165835"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "disorganize",
+      "input": {
+        "pos": "v.",
+        "meaning": "扰乱；破坏组织或秩序"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "92dccf7f-10c3-4fc7-b9d6-6344cda9fa2c"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "corporeal",
+      "input": {
+        "pos": "adj.",
+        "meaning": "身体的，肉体的；物质的，有形的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "3d93748f-0f60-4179-a140-7788beb5d52c"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "peddler",
+      "input": {
+        "pos": "n.",
+        "meaning": "流动小贩；兜售或传播某种东西的人"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "3a9a3a7e-98af-4bab-b1a1-12260ef29316"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "traject",
+      "input": {
+        "pos": "v.",
+        "meaning": "传送，传递"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "46616ba4-2068-44cd-9b99-103993b19413"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "befuddle",
+      "input": {
+        "pos": "v.",
+        "meaning": "使迷惑，使糊涂"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "9a25dae8-f3e7-4cf9-aec1-d8030da28354"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "sanguinity",
+      "input": {
+        "pos": "n.",
+        "meaning": "乐观、充满希望的状态"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "9a25dae8-f3e7-4cf9-aec1-d8030da28354"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "dermatosis",
+      "input": {
+        "pos": "n.",
+        "meaning": "皮肤病"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "273bc4e8-df48-4148-b059-6f794de9bea1"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "persona",
+      "input": {
+        "pos": "n.",
+        "meaning": "对外展示的形象、人格面貌；作品中的叙述角色或人物"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "070d2850-9700-4dcc-99a7-140fa552e308"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "valorize",
+      "input": {
+        "pos": "v.",
+        "meaning": "赋予价值；肯定或抬高价值；维持或提高价格"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "070d2850-9700-4dcc-99a7-140fa552e308"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "lens",
+      "input": {
+        "pos": "n.",
+        "meaning": "透镜、镜片"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "af810501-0f25-40b4-a373-4960217a4131"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "caprice",
+      "input": {
+        "pos": "n.",
+        "meaning": "一时兴起；任性；反复无常的变化"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "91b7b10e-aa5f-4eed-b279-4de70a7f0743"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "carnivorous",
+      "input": {
+        "pos": "adj.",
+        "meaning": "食肉的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "ba6c6293-90ec-42a7-8e02-a49f46b40163"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "blacksmith",
+      "input": {
+        "pos": "n.",
+        "meaning": "铁匠"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "64288200-3ce6-481a-9406-1c97cba4988d"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "confederacy",
+      "input": {
+        "pos": "n.",
+        "meaning": "邦联；联盟；为某种目的结成的集团"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a1f624e2-06d2-42cd-8a74-0a03e58e1fc7"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "quiescent",
+      "input": {
+        "pos": "adj.",
+        "meaning": "静止的；暂不活跃的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "b4bab164-9ca5-4664-a839-b8c9cced4dd7"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "eloquent",
+      "input": {
+        "pos": "adj.",
+        "meaning": "雄辩的，表达流畅有力的；生动传神的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "91541f7a-9f36-4416-a886-e7fe1976daf9"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "dainty",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "adj. 小巧精美的；讲究、挑剔的；可口的；n. 精美食物"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "3d540684-911e-402a-84e4-41a07ec276f5"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "gawky",
+      "input": {
+        "pos": "adj.",
+        "meaning": "笨拙的；动作不协调的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "9d312bf8-e4c6-450c-8f0d-587149686184"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "risible",
+      "input": {
+        "pos": "adj.",
+        "meaning": "可笑的；滑稽的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "558420f9-0ae9-44bc-9c6e-aadecb313e07"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "nonentity",
+      "input": {
+        "pos": "n.",
+        "meaning": "无足轻重的人或事；不存在的东西；不存在"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "2b762a82-c2e6-416f-92bc-ffea8e81cab1"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "marital",
+      "input": {
+        "pos": "adj.",
+        "meaning": "婚姻的，夫妻关系的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "9dac715f-4821-42ef-b683-e3a463e22182"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "cataclysm",
+      "input": {
+        "pos": "n.",
+        "meaning": "大灾难；剧烈巨变；大洪水"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "bf6bf8c0-b78a-4ec9-b5f1-0fa7420a06cb"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "bugle",
+      "input": {
+        "pos": "n./v.",
+        "meaning": "军号；吹号"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "3e0d0a55-b289-4cf3-8473-99761b6e9df8"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "parse",
+      "input": {
+        "pos": "v.; n.",
+        "meaning": "v. 作语法分析；仔细剖析；n. 分析结果或一次分析"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "29ecbc1f-400e-422c-8cc7-e1861d5bc259"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "towering",
+      "input": {
+        "pos": "adj.",
+        "meaning": "高耸的；卓越的；程度极强的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "bb3832e6-389e-458c-8584-b0bdc4f76b53"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "chary",
+      "input": {
+        "pos": "adj.",
+        "meaning": "谨慎的；戒备的；不轻易给予、接受或耗费的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "c8a71857-998a-4541-90f1-972e4f528ff2"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "amorphous",
+      "input": {
+        "pos": "adj.",
+        "meaning": "无定形的；结构不明确的；非晶质的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "47c25aa7-d03b-4677-9aba-9bffff95871d"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "predilect",
+      "input": {
+        "pos": "adj.",
+        "meaning": "偏爱的，特别喜爱的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "8967b7f6-28d7-4f14-bce0-dbf8b0439c27"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "malleable",
+      "input": {
+        "pos": "adj.",
+        "meaning": "可锻造、可塑的；易受影响或改变的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a7036e87-2438-4136-a82b-d079d8b4a780"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "arboreal",
+      "input": {
+        "pos": "adj.",
+        "meaning": "树木的，像树的；树栖的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "3d8f00f8-d2f7-4538-ae37-100ec2d0a434"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "factionalist",
+      "input": {
+        "pos": "n.",
+        "meaning": "派系主义者；搞派系活动的人"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "b3ad696a-720a-479b-8582-2f8573028cb8"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "fuzzy",
+      "input": {
+        "pos": "adj.",
+        "meaning": "毛茸茸的；模糊不清的；使人感到温暖愉快的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "20fd1221-fe75-4fa0-870c-c6aa7ca81616"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "lofty",
+      "input": {
+        "pos": "adj.",
+        "meaning": "高耸的；高尚、崇高的；高傲的；高深难及的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "84c40161-78e4-4628-8c3b-cc4dd0cc9ccb"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "advent",
+      "input": {
+        "pos": "n.",
+        "meaning": "到来；出现"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "714309d2-0e34-4e5e-a7cd-a37627dfb63d"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "incivility",
+      "input": {
+        "pos": "n.",
+        "meaning": "无礼，粗鲁；失礼的言行"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a3e9415a-71c4-4f9c-97b4-9367c573f11d"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "avian",
+      "input": {
+        "pos": "adj.",
+        "meaning": "鸟类的，与鸟有关的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "e7cfb550-de76-4d1b-a803-43991f557f0d"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "callow",
+      "input": {
+        "pos": "adj.",
+        "meaning": "年轻而缺乏经验的，幼稚的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "f1d7564d-e70a-4f76-8508-6fc8c4d34f5a"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "self-deprecate",
+      "input": {
+        "pos": "v.",
+        "meaning": "贬低自己，自嘲"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "d94dad1f-0a02-43e1-9b23-27a9791df677"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "gargantuan",
+      "input": {
+        "pos": "adj.",
+        "meaning": "庞大的，巨大的；程度惊人的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "15ef7e74-4e33-43ec-a0ba-b6ca634e7886"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "austere",
+      "input": {
+        "pos": "adj.",
+        "meaning": "严峻冷淡的；严格禁欲的；简朴无装饰的；艰苦的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "543c200a-9864-4e2f-a65a-1fcf181346bb"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "forebear",
+      "input": {
+        "pos": "n.",
+        "meaning": "祖先，先辈；先驱"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "4b8d38d0-ac82-4a31-b17a-e3bc2efa6d7d"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "preconceive",
+      "input": {
+        "pos": "v.",
+        "meaning": "预先形成（意见）；先入为主地设想"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "73761d07-acde-48d1-8bce-7afafdd60feb"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "primate",
+      "input": {
+        "pos": "n.",
+        "meaning": "灵长类动物；首席主教"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "0d961ec4-e2f6-4822-9e19-42b86eee94b1"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "histrionic",
+      "input": {
+        "pos": "adj.",
+        "meaning": "矫揉造作、情绪夸张的；表演或戏剧的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "db439cd3-5e2b-43c5-ba85-f5b581168283"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "intensification",
+      "input": {
+        "pos": "n.",
+        "meaning": "加强、加剧"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "7210ba72-3938-415c-b2b7-73e878f7fc95"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "cast-iron",
+      "input": {
+        "pos": "adj.",
+        "meaning": "铸铁制的；坚固的；坚定不移的；（尤英）可靠、无懈可击的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "e72c7130-ebde-4b58-a681-22a836679cad"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "pharmaceutical",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "adj. 药物的，制药的；n. 药品"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "b0840d6a-a850-49a3-b167-5e0c987aef5e"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "blandish",
+      "input": {
+        "pos": "v.",
+        "meaning": "用奉承哄劝；谄媚"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "720dc552-c4e5-4f31-98cc-ff781f2bcbb8"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "shoddy",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "粗制滥造的；劣质的；不光彩的；n.劣质制品"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "d319751a-cf23-47ff-b6fd-57d4de5072c7"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "repertoire",
+      "input": {
+        "pos": "n.",
+        "meaning": "可使用的一套技能、行为或表达；保留曲目"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "f21b03b7-4ad2-4207-9303-0c7449d5a105"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "emperor",
+      "input": {
+        "pos": "n.",
+        "meaning": "皇帝，帝国的最高男性君主"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "5291330d-ca42-4b80-bdb8-47822784b729"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "provocateur",
+      "input": {
+        "pos": "n.",
+        "meaning": "挑衅者；煽动者"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "4eec644e-4544-41c5-b1eb-a2aca0fb551e"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "reclusion",
+      "input": {
+        "pos": "n.",
+        "meaning": "隐居；隔绝状态"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "7ab93fa8-062e-4cd5-bfcb-856fb0d00b79"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "tyro",
+      "input": {
+        "pos": "n.",
+        "meaning": "新手，初学者"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "684b86ef-4626-4491-9e40-662e4f12bf91"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "inoculate",
+      "input": {
+        "pos": "v.",
+        "meaning": "给接种；接种微生物；使获得防御能力；灌输"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "28fbd127-a89b-4cfe-825c-c9a5fc1fb94e"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "soothsayer",
+      "input": {
+        "pos": "n.",
+        "meaning": "预言者；占卜者"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a219a342-f488-42b5-9c84-926446564ecb"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "inadvertent",
+      "input": {
+        "pos": "adj.",
+        "meaning": "无意的；疏忽造成的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "57632be7-40ab-460a-b5ef-455364390aa8"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "banal",
+      "input": {
+        "pos": "adj.",
+        "meaning": "陈腐乏味的；缺乏新意的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "058f8ab2-f26c-4f43-935b-c0bf53f713a8"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "bromide",
+      "input": {
+        "pos": "n.",
+        "meaning": "陈词滥调；乏味的人；溴化物"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "acfad0e9-fc51-495a-8bcb-149734364473"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "inaccessibility",
+      "input": {
+        "pos": "n.",
+        "meaning": "难以到达；无法获得"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "deb7859a-2ca9-4234-82ff-8f0564ed020b"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "portend",
+      "input": {
+        "pos": "v.",
+        "meaning": "预示；预兆"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "eb0117a4-12b8-42a5-8cc9-85647e06e58b"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "sapless",
+      "input": {
+        "pos": "adj.",
+        "meaning": "缺少汁液的；无生气、无力的；乏味的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "792df37c-81b9-4a0a-b98c-3b792e0b98aa"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "oration",
+      "input": {
+        "pos": "n.",
+        "meaning": "正式演说；庄严的演讲"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "f1bc98df-44e8-4c79-abf2-e64ca584b64c"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "savvy",
+      "input": {
+        "pos": "n./adj./v.",
+        "meaning": "实际知识或理解力；精明的；懂得"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "fd0e41df-f752-4638-bbeb-51acd4cc7ce0"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "enchanting",
+      "input": {
+        "pos": "adj.",
+        "meaning": "迷人的，令人陶醉的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "ed3c4559-4220-4cc4-b2b3-5a64dc80df7f"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "miscellany",
+      "input": {
+        "pos": "n.",
+        "meaning": "杂集；多种东西的混合"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "930a67a9-c4b6-4fff-802c-add74594a6c4"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "trailblazer",
+      "input": {
+        "pos": "n.",
+        "meaning": "开拓者、先驱；开辟或标示道路的人"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "11d74fdc-f364-4a63-91f5-bcbd109ef622"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "psoriasis",
+      "input": {
+        "pos": "",
+        "meaning": "银屑病"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a7ddfac3-cc12-4d9f-bc57-0e5698c72c59"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "modish",
+      "input": {
+        "pos": "adj.",
+        "meaning": "时髦的；流行的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "e262293a-53bc-4c0c-9636-dbe47eeac784"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "sagacious",
+      "input": {
+        "pos": "adj.",
+        "meaning": "睿智的；有远见和敏锐判断力的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "9d9f7192-c308-477e-ba3e-168b3cbf3fe5"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "sporadic",
+      "input": {
+        "pos": "adj.",
+        "meaning": "零星发生的；间歇而不规律的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "407c33cf-35db-4790-a640-01a375eb5249"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "onerous",
+      "input": {
+        "pos": "adj.",
+        "meaning": "繁重的；造成负担的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "c72a612a-5bee-4791-a808-c056136ee210"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "theatrical",
+      "input": {
+        "pos": "adj.",
+        "meaning": "戏剧的；夸张做作的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "bfc73615-5289-4b6d-9d7f-d0a0bc8c490b"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "demeanor",
+      "input": {
+        "pos": "n.",
+        "meaning": "举止，仪态；外在行为表现"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "1b8419f4-e225-46b1-a70a-cb88c1feb315"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "rancid",
+      "input": {
+        "pos": "adj.",
+        "meaning": "酸败的、哈喇的；令人厌恶的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "36ff9f93-8abf-4162-bc56-2f670111f8ab"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "inflammatory",
+      "input": {
+        "pos": "adj.",
+        "meaning": "煽动性的，容易激怒人的；炎症性的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "c918ff38-c969-4913-b820-5e1f69933907"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "frivolous",
+      "input": {
+        "pos": "adj.",
+        "meaning": "无关紧要的；不严肃、轻浮的；缺乏正当依据的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "0eb45d5f-9681-4a67-bc37-19b3d4c32c2b"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "textual",
+      "input": {
+        "pos": "adj.",
+        "meaning": "文本的，正文的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "6a4d8aeb-e279-4b9c-8779-38d85462b6af"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "stale",
+      "input": {
+        "pos": "adj.; v.; n.",
+        "meaning": "adj. 不新鲜的；陈腐乏味的；失去活力的；v. 使变陈旧；n. 牲畜尿液（少见）"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "639fbb6f-0ccc-4d4d-84a8-1d37c1c55bf6"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "recondite",
+      "input": {
+        "pos": "adj.",
+        "meaning": "深奥难懂的；少有人知的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "fe5e1582-029c-4d0b-a912-773eac1a6896"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "hibernate",
+      "input": {
+        "pos": "v.",
+        "meaning": "冬眠；处于休眠、不活动状态"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "dbd10553-d110-46a6-a129-f1adcb292146"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "suscept",
+      "input": {
+        "pos": "n.",
+        "meaning": "可被寄生或正在被寄生的生物；寄生宿主"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "81e146f4-6c0f-4af8-a63b-b4119085f8ab"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "genealogy",
+      "input": {
+        "pos": "n.",
+        "meaning": "家谱；血统；谱系研究；起源发展史"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "e97438d7-c991-4b09-9cf2-1c3d956ac4df"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "resuscitate",
+      "input": {
+        "pos": "v.",
+        "meaning": "使苏醒、复苏；使重新活跃"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "070c600a-6688-41a2-bd4f-e8aa1fda1a5b"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "hoax",
+      "input": {
+        "pos": "n.; v.",
+        "meaning": "n. 骗局，恶作剧；v. 欺骗，使信以为真"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "f2e3c6cb-398b-42f1-b85e-f3d2377a670a"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "sloth",
+      "input": {
+        "pos": "n.",
+        "meaning": "懒惰，怠惰；树懒"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "2fdee2de-5515-45e9-b957-d60ea3ff334a"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "lilac",
+      "input": {
+        "pos": "n.; adj.",
+        "meaning": "n. 丁香花或丁香属灌木；淡紫色；adj. 淡紫色的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a3589bea-900e-4e11-85b9-f51da57aaed5"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "divan",
+      "input": {
+        "pos": "n.",
+        "meaning": "长沙发、沙发床；议事会或议事厅；波斯、阿拉伯诗集"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "b7d8f2ff-e440-4493-973d-b19344d89627"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "disgruntle",
+      "input": {
+        "pos": "v.",
+        "meaning": "使不满，使恼怒"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "dc435cec-5639-4a76-86f0-6ce6d203f688"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "cheerless",
+      "input": {
+        "pos": "adj.",
+        "meaning": "阴郁的；无欢乐的；令人提不起精神的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "63ab229e-862d-44d4-a15f-22c24e7d4218"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "tease apart",
+      "input": {
+        "pos": "phr.v.",
+        "meaning": "仔细拆分、辨析、区分"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "5dc86449-6b2c-497f-a7a2-31f42c425c52"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "effluvium",
+      "input": {
+        "pos": "n.",
+        "meaning": "难闻的气味；散发出的气体或排出物"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "739af81a-b1a6-4e3e-b45c-2e301fa772e7"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "asunder",
+      "input": {
+        "pos": "adv.; adj.",
+        "meaning": "分离地（的）；成为碎片地（的）"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "62f4290b-d3cf-408a-8d37-442d2575c888"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "pregnable",
+      "input": {
+        "pos": "adj.",
+        "meaning": "可攻破的；易受攻击的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "52455ff2-828a-44e4-90cd-fd49958d9894"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "long-winded",
+      "input": {
+        "pos": "adj.",
+        "meaning": "冗长啰唆的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "27bf7fd1-9977-4ac9-9b32-fe1b5610bc19"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "vitriol",
+      "input": {
+        "pos": "n.",
+        "meaning": "尖刻恶毒的言辞或批评；（旧称）某些金属硫酸盐、浓硫酸"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "792e1ca8-a763-479e-8d4d-0cf900b5510d"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "endow",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.捐资设立，捐赠以长期资助；赋予（才能、品质等）"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "51ca8e75-5edc-4672-8833-d42173c8fe62"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "trot",
+      "input": {
+        "pos": "v. / n.",
+        "meaning": "v.小跑，慢跑；快步走，赶忙；使（马等）小跑\nn.小跑，慢跑；骑马散步；（the trots）腹泻"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "2d7740bb-d689-42f2-8ffb-47602de9acc0"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "jury",
+      "input": {
+        "pos": "n. / v. / adj.",
+        "meaning": "n.陪审团；评审委员会；（比喻）作出判断的人或事物\nv.为展览评审、遴选作品\nadj.临时应急的，临时拼凑的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "4d425c74-e495-48f1-8c08-11a6654a8b7b"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "posit",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.假定，设定为前提；提出作为解释或主张；安置，固定"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "f63e0529-817d-4cc9-b840-3f06ffdfd6ee"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "scaremonger",
+      "input": {
+        "pos": "n.",
+        "meaning": "n.散布恐慌者，危言耸听者"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "b85d2a6b-722a-4270-8204-415f60bc1e59"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "monolithic",
+      "input": {
+        "pos": "adj.",
+        "meaning": "庞大而单一的；整体一致的（常指僵化）；整块材料制成的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "be59ec25-c22e-4745-9ed1-271de99567d0"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "hypocrisy",
+      "input": {
+        "pos": "n.",
+        "meaning": "n.伪善，虚伪；伪善的行为"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "ecd247da-51b0-49dd-9a05-c81489952b74"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "derogatory",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.贬低的，轻蔑的；有损声誉或地位的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "fb7f1373-6f3b-442a-a763-326fcf8d7a1c"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "derivative",
+      "input": {
+        "pos": "adj. / n.",
+        "meaning": "adj.模仿他人的，缺乏独创性的；派生的，源自其他事物的\nn.派生物，衍生物；派生词；（数学）导数；金融衍生工具"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "5f459e3d-2684-4c78-a0a5-b6793be8b743"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "contiguous",
+      "input": {
+        "pos": "adj.",
+        "meaning": "相邻接壤的；连续相接的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "d0a721ee-e314-4455-925b-0513c3700767"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "tendentious",
+      "input": {
+        "pos": "adj.",
+        "meaning": "带有强烈偏向的；为某种立场服务的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "28484652-5a02-422f-99b8-af6a7e7f6b3e"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "impetuous",
+      "input": {
+        "pos": "adj.",
+        "meaning": "冲动急躁的；猛烈的，急速的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "5da0b202-fc42-42ff-9921-e6e51adfa70f"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "circumvent",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.设法绕过，规避（困难、限制等）；绕行，绕过；（较旧用法）包围，围困"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a71475a8-50ff-4d27-b4b9-fbb2ca7275a5"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "freewheeling",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.自由随意的，不受规矩拘束的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "89b41fef-85e5-4692-aaca-326f79d48c2e"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "agitate",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.使焦虑不安，使激动；煽动，鼓动（公众支持或反对某事）；激烈讨论，引起公众讨论；搅动，摇动"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a3bd5d4b-0c87-4f00-bb69-55e0577380ad"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "dilapidate",
+      "input": {
+        "pos": "v.",
+        "meaning": "使破败；衰败；因疏于照料而损坏"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "7e0b9dd1-fa99-4f90-9dc5-9baa52a286aa"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "dilatory",
+      "input": {
+        "pos": "adj.",
+        "meaning": "拖延的，迟缓的；意在造成延误的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "0bec3cfa-f4ca-4806-9a9b-bb5a9ef07b5a"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "sycophantic",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.谄媚的，阿谀奉承的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "8cca9839-1027-49de-b827-25ab9bc7144c"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "confluence",
+      "input": {
+        "pos": "n.",
+        "meaning": "河流汇合处；汇聚，融合"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "29ddfd92-4679-41f6-9b77-ce794e3d6d43"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "mogul",
+      "input": {
+        "pos": "n.",
+        "meaning": "n.大亨，行业巨头；（滑雪道上的）雪丘"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "7611df02-1249-4667-99e7-4ba640c6def7"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "lurch",
+      "input": {
+        "pos": "v. / n.",
+        "meaning": "v.突然摇晃或倾斜；踉跄而行，蹒跚移动\nn.突然的晃动或倾斜；（克里比奇牌戏等）悬殊比分的惨败"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "d0485bb5-dfa2-4393-bdae-112a2426f924"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "startling",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.令人震惊的，令人吃惊的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "c668fe69-c7f1-44e9-a892-a6280c10d0b7"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "euphony",
+      "input": {
+        "pos": "n.",
+        "meaning": "悦耳的声音；语音和谐"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "078983b3-3aea-4adb-b8f4-94ece2f63f6d"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "importunate",
+      "input": {
+        "pos": "adj.",
+        "meaning": "纠缠不休地要求的；强求的；令人厌烦的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "782452c9-187e-47cc-b951-66ea62364316"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "stickler",
+      "input": {
+        "pos": "n.",
+        "meaning": "严格坚持细节或规则的人；难题"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a012deed-ef2f-4f6c-b973-fc46d4079e9c"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "terrific",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.极好的，了不起的；极大的，程度惊人的；可怕的，令人惊惧的；糟糕透顶的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "ad5b227d-2048-4de9-8174-621184c7110d"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "consternation",
+      "input": {
+        "pos": "n.",
+        "meaning": "n.惊愕，惊慌失措"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "55c68d15-cb0c-4e60-88be-b4141bdda0bb"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "startle",
+      "input": {
+        "pos": "v. / n.",
+        "meaning": "v.使吃一惊，使惊吓；因吃惊而突然一动\nn.突然的惊吓，惊跳"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "7209aa7f-8092-409d-b107-019816e585e0"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "macabre",
+      "input": {
+        "pos": "adj.",
+        "meaning": "可怖、阴森的；涉及死亡或恐怖事物的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "8dcd2891-ef95-415a-8215-91555ec678f1"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "skittish",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.容易受惊的，紧张不安的；活泼难以安定的；反复无常的，不稳定的；过分谨慎的，疑虑重重的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "3f51d880-26c4-4238-a4ef-506dac455fd0"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "bizarre",
+      "input": {
+        "pos": "adj.",
+        "meaning": "古怪的；异乎寻常的；离奇的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "2800b0f5-98a9-4da4-9148-6a5db7bcb21c"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "preternatural",
+      "input": {
+        "pos": "adj.",
+        "meaning": "超出通常或自然范围的；异常的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "a57a4f47-949a-4154-801a-02d36cb39f3e"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "flabbergast",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.使大吃一惊，使目瞪口呆"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "5090cd23-b8e3-4e60-aaa1-42b725a46bb6"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "aghast",
+      "input": {
+        "pos": "adj.",
+        "meaning": "惊骇的，震惊不安的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "fe060b62-1550-4524-a2ce-5e7bd8d3d2f7"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "egregious",
+      "input": {
+        "pos": "adj.",
+        "meaning": "极其明显且恶劣的；惊人的（坏处）"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "d7fe4cc6-8a72-4aed-af98-c50c78f73b14"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "retaliatory",
+      "input": {
+        "pos": "adj.",
+        "meaning": "报复性的；反击性的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "c712ae17-e419-49ee-b48b-6ec50e260b06"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "brackish",
+      "input": {
+        "pos": "adj.",
+        "meaning": "微咸的；咸淡混合的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "21e12094-e766-4ac5-a1b6-bd380422f24a"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "fractiousness",
+      "input": {
+        "pos": "n.",
+        "meaning": "易怒好争吵的性情；难以管束"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "0adf4b70-d07d-4fb7-9aba-72e9464f23b4"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "beguile",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.欺骗，诱骗；使着迷，吸引；愉快地消磨（时间），排遣（烦闷）"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "cc6f2d69-aad8-406a-813f-659970097aad"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "feint",
+      "input": {
+        "pos": "n.; v.",
+        "meaning": "佯攻；假动作；v.做假动作以迷惑"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "80d0317e-8eb4-4a38-8d73-2d9db19aea62"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "fraudulence",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "7d1da472-ab80-408a-ba7b-ec1b8765dd41"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "impostor",
+      "input": {
+        "pos": "n.",
+        "meaning": "冒名顶替者；骗子"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "8f155356-5b89-49ba-92ba-84e231f2fe22"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "inveigle",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.诱骗，哄劝；靠花言巧语或奉承取得"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "8a16ed16-fe5a-428d-9b44-6d8fdee63076"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "skulduggery",
+      "input": {
+        "pos": "n.",
+        "meaning": "阴谋诡计；欺骗勾当"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "3663e394-5aca-41d1-ae77-b6727992de21"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "swindle",
+      "input": {
+        "pos": "v. / n.",
+        "meaning": "v.诈骗，骗取（钱财）\nn.骗局，诈骗行为"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "69eec08d-19b7-48d8-b5fb-c44891b1c068"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "trickster",
+      "input": {
+        "pos": "n.",
+        "meaning": "骗子，耍诡计者；戏法表演者；神话中的诡计角色"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "f42fb665-0a58-4a83-b919-f197283b87d4"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "recur",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.再发生，重现；再次浮现在脑海中；（recur to）回想，重提；（recur to）求助于，诉诸"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "4f21d0b0-e033-4cf1-9b0d-b8799b998226"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "elucidate",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.阐明，解释清楚"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "2907a034-7f93-4244-8717-4cea19da57e6"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "prescient",
+      "input": {
+        "pos": "adj.",
+        "meaning": "有先见之明的、预见准确的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "33b778cb-8753-496d-8a76-5f2b73dff01b"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "chronic",
+      "input": {
+        "pos": "adj.",
+        "meaning": "（病）慢性的；长期的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "d95ca203-20fa-4792-8875-d8cd4ce48302"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "unmistakable",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.明确无误的，显而易见的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "c87e5a63-d9de-45c9-b339-3d9b05d09a30"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "coruscate",
+      "input": {
+        "pos": "v.",
+        "meaning": "闪耀，闪烁；（技巧或风格）显得灿烂出众"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "58654787-55df-41c7-a6fb-73c43ab5364e"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "telltale",
+      "input": {
+        "pos": "adj. / n.",
+        "meaning": "adj.泄露实情的，显露迹象的\nn.（泄露实情的）迹象；告密者，搬弄是非者；指示器，指示装置"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "bda15ab6-5467-48ff-8b2b-d1f38dff3870"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "invigorate",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.使精神振奋，使充满活力；使活跃，振兴"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "c2648990-239d-48b5-ad73-4271ea140635"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "kinetic",
+      "input": {
+        "pos": "adj.",
+        "meaning": "运动的，动能的；活跃有力的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "744908e4-20eb-45f8-a9c7-e633cebc5f32"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "staid",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.稳重的，严肃拘谨的；古板的，不活泼的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "50fc9df2-4ffd-4f47-b39d-594d8eb6c748"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "clandestine",
+      "input": {
+        "pos": "adj.",
+        "meaning": "秘密的，暗中进行的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "5b689437-2c3a-4884-bf33-a1c853394703"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "megalomania",
+      "input": {
+        "pos": "n.",
+        "meaning": "自大狂，妄自尊大；对权力、宏伟事业的过度迷恋"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "1cf757bd-dc49-4790-a61c-5d6266a5f188"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "blithe",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.快乐的，无忧无虑的；漫不经心的，欠考虑的"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "f96d04a0-e51c-482e-8934-e3009bd61ef7"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "undo",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.撤销，使失效，消除……的影响；解开，松开；毁掉，击垮"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "8819f1e9-c138-41fa-be46-82a239ce89ab"
+      ],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "palliate",
+      "input": {
+        "pos": "v.",
+        "meaning": "缓解症状而不根治；减轻；掩饰、为过错开脱"
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [
+        "fa33eede-ffd7-40ef-8002-14f4ea568236"
+      ],
+      "definition_review": "historical_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "maladies",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "inherently",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "plagiarism",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "pretense",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "desertion",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "culmination",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "animadversion",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "surreptitious",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "authoritarians",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "straits",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "jettison",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-10-29",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    }
+  ]
+}

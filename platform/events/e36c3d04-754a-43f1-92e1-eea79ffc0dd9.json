@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "e36c3d04-754a-43f1-92e1-eea79ffc0dd9",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T12:16:19.003Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test9_section2_medium",
+    "question": "2",
+    "type": "tc",
+    "answer": "C/D",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "bfdb6ee8-f604-4a66-93b1-a58f07500588",
+    "draft_id": "b2994a8b-a509-469b-9595-88fd79221cb5",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "ec28f85d4ef2d36200f632d8222d68c329e6a83a5dd4a71b12df19063ff0127c",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test9_section2_medium\",\"2\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 9 · Section 2 · medium · 第 2 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          35
+        ],
+        "regions": [
+          {
+            "page": 35,
+            "top": 491.163102,
+            "bottom": 592.851914,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "The description of Green’s scholarship as (i)_____ is grossly misleading: while her research on interstellar particles is not especially novel, the conclusions she draws from her data are (ii)_____.",
+      "options": [
+        "esoteric",
+        "tendentious",
+        "derivative",
+        "remarkably pioneering",
+        "dubiously supported",
+        "strangely comforting"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "C",
+      "D"
+    ],
+    "answerKey": {
+      "answer": "CD",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5554-5591",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": true
+  }
+}

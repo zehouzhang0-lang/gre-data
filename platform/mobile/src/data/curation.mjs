@@ -6,10 +6,11 @@ export function cleanCurationPayload(payload, normalizeWord) {
   return { words };
 }
 
-export function projectCurationRequests(events) {
+export function projectCurationRequests(events, vocabulary = []) {
+  const completed = new Map(vocabulary.filter(w=>w.definition_status!=='changed' && w.standard_definition?.curation?.status==='completed' && w.senses?.some(s=>s.examples?.some(Boolean))).map(w=>[w.word,new Set(w.standard_definition.curation.request_ids)]));
   const requests = new Map();
   for (const event of events) if (event.kind === 'vocab_curation_request') {
-    for (const word of event.payload.words) if (!requests.has(word)) requests.set(word, { word, requested_at: event.recorded_at });
+    for (const word of event.payload.words) if (!completed.get(word)?.has(event.id) && !requests.has(word)) requests.set(word, { word, requested_at: event.recorded_at });
   }
   return [...requests.values()];
 }

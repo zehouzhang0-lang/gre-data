@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "4ca058af-4210-457e-8be3-a044b0c504e3",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T12:19:39.090Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test9_section2_medium",
+    "question": "3",
+    "type": "tc",
+    "answer": "A/E",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "deb50651-d539-40c2-9829-c9b578789e8c",
+    "draft_id": "979c792a-74cf-448b-aec0-d0f26a223323",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "a54df2b7c30ff24b8757fc04ada0029cbad6102ee8443025b358d814c6194dfa",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test9_section2_medium\",\"3\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 9 · Section 2 · medium · 第 3 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          35
+        ],
+        "regions": [
+          {
+            "page": 35,
+            "top": 600.703095,
+            "bottom": 715.391938,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "People frequently attempt to relieve their workplace frustrations via surreptitious comments around the water cooler but would be better able to resolve their resentment if they were less (i)_____ about their problem and imitated a more (ii)_____ dialogue.",
+      "options": [
+        "vexatious",
+        "clandestine",
+        "opportunistic",
+        "equitable",
+        "sincere",
+        "open"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "A",
+      "E"
+    ],
+    "answerKey": {
+      "answer": "BF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5554-5591",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": false
+  }
+}

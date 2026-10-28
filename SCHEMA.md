@@ -55,7 +55,7 @@
 
 手机事件 `vocab_curation_request` 的 payload 仅含 `words`：1–50000 个规范化后不重复、当时存在且未隐藏的词；允许没有释义。一次选择整批校验并事务保存，未知/隐藏词导致整批失败。该事件表示所选词需要整理分类并补齐词义、例句等内容，不是 AI 执行结果或学习证据。仓库方法在事务队列内去除已经标记的词；全部已标记则不写入。不增加翻阅或复习次数、不改变自评、排期、开轮快照、词义和分类。
 
-只读投影 `curationRequests` 为 `{word, requested_at}` 数组，保留第一次请求时间；不重复写为基线。后续手动编辑、词库更新不自动视为整理完成，隐藏词的请求仍保留在历史中。现有完整备份和恢复包含原始事件；“导入新增词”仍不导入对方操作历史。旧数据库无需迁移。词墙允许无释义词参与单选、多选、本页和跨页全选；所选词含空释义时不能进行批量记忆标记或开复习轮次。现有词库范围增加 `curation`（待补充整理），与其余筛选条件取交集；详情的词条说明与记录区域显示该状态。本期不增加联网、AI 调用、执行队列或独立导出入口。
+只读投影 `curationRequests` 为 `{word, requested_at}` 数组，保留第一次尚未处理请求时间；不重复写为基线。普通词库更新不自动视为完成。2026-10-29起，明确审核的 `vocab/curation-resolutions.json` 可记录 `{word,input:{pos,meaning},reviewed_at,request_ids}`；生成时只有输入指纹匹配且至少有一条完整中英例句，规范释义才携带 `curation:{status:'completed',scope:'definition_examples',reviewed_at,record:'vocab/curation-resolutions.json',request_ids}`。投影只移除该有效释义明确处理过的原请求ID；新请求、个人修改导致指纹失配仍待整理。原请求事件和隐藏词历史始终保留，完成不计学习证据。无请求ID的明确审核可补齐未编辑的题中空释义词，但不得覆盖隐藏词、个人编辑或拼写待定词。现有完整备份和恢复包含原始事件；“导入新增词”仍不导入对方操作历史。旧数据库无需迁移。词墙允许无释义词参与单选、多选、本页和跨页全选；所选词含空释义时不能进行批量记忆标记或开复习轮次。词库范围 `curation`（待补充整理）与其余条件取交集。
 
 - Android 的 `VocabStorage` 原生插件以 SQLite 事务保存一份版本化文档；浏览器开发验收使用 IndexedDB 事务。学习数据不放 `localStorage`，不向真实 `platform/events/` 写手机测试记录。
 - 本地外层格式为 `{storage_version: 1, current, recovery}`。`recovery` 为最近一次完整恢复前的 `current`，只有一层，绝不递归包含其他恢复快照。恢复时新数据和恢复前快照在同一事务落盘；失败不更新内存状态和页面投影。撤回恢复交换两份独立数据。
@@ -447,6 +447,8 @@ items:
 
 原始完整包保存在本机忽略目录 `.gre-platform/mobile-backups/<sha256>.json`，只读校验后按原字节归档；跨设备共享的审计记录不假装能替代完整备份。curation_requests 的 status 固定 pending，observed_gaps 只描述字段缺失，不代表现有释义、分类或例句已经核验。归档不会修改词义、分类、学习事件、排期、掌握状态或手机数据库。
 
+2026-10-29增加明确导入脚本 `platform/mobile/scripts/import-vocabulary-backup.mjs`。`platform/mobile-imports/vocabulary/<backup_sha256>.json` 格式为 `gre-vocabulary-import / version:1`，记录原包和payload哈希、dataset_id、time_zone、event_ids、session_ids、基线哈希、quickRound、settings及本机归档路径。只追加尚不存在的原事件JSON；已有ID须全字段相同（recorded_at只允许同一瞬间的不同时区表示），相同ID冲突则整批停止。原文件不重写，不产生新学习时间、ID、作答或轮次快照，桌面独有记录保留。先完整校验union因果关系，再以排他写入原子文件发布；中断后可重跑。完整手机基线仍留在本机原包中，安装包使用该原包做内容更新以保持其学习基线；不得拿桌面当前投影当新的手机学习基线。
+
 `platform/mobile/reports/YYYYMMDD_HHMM_practice_backup.json/.md` 保存独立刷题备份核对结果：源文件名、校验和、事件及草稿数量、与仓库的共同/新增/冲突 ID、必要的题号与答案摘要；不复制完整题干或本机绝对路径。核对结果只描述原始事实，不生成新作答、官方分数或能力判断。
 
 `platform/mobile/reports/YYYYMMDD_HHMM_release_<版本下划线>.json` 为 `kind: mobile_release_verification` 的发布证据，保存版本、来源包哈希、合并内容与保留记录计数、隔离升级/测试结果、APK资源哈希和签名比对、未完成项及真机验收状态。生成APK、音频、个人完整种子和原备份仍不作为该报告附件提交；报告不得暗示已在用户真机安装。
@@ -575,9 +577,11 @@ evidence_records:
 
 ### 逐义项原例句（2026-10-16，0.1.4）
 
-用户要求只采用可追溯 ETS／Oxford 原例句，未取得可靠原句的保留待补充。按 ETS 官方语境优先、Oxford 具体义项辅助核对；不声称某词典是 ETS 指定词典，也不把自编句子标为官方例句。
+2026-10-29内容升级兼容：原摘词输入为空，但手机已有有效规范义项且与新内容词性/完整义项数组完全一致时，可直接补同义项例句，无需重新请求整理；个人编辑、隐藏与拼写待确认保护仍生效。确认的拼写重定向可仅补说明，不隐藏原词、不改原事件；它不计有效词例句覆盖。空释义补齐后只改变可练习的ready派生状态，不改变回忆、复习次数、阶段或到期日期。
 
-`vocab/examples/verified-*.json` 保存 `{schema_version:1,items:[{word,senses:[{pos,meanings,examples}]}]}`。`meanings` 与规范词库原数组精确一致，`examples` 同长度，每项为 `null` 或 `{en,zh,kind:'quotation',review_status:'source_checked',source:{publisher,url,checked_at,locator?}}`。英文为短原句，中文为自译；来源是实际读取的具体页面。可选 locator 保存 PDF 页码、文章或点评栏目；PDF URL 可加 #page，但摘录限额仍按整份 PDF 计算，ETS 旧 /content/dam/ets-org/pdfs/ 与 /pdfs/ 路径合并计数。缺原句、仅有搭配短语、词性/义项不确定或摘录额度不足的保留 null，不补写原创。英文按规范化来源页合计最多25词，重复展示也计入。
+2026-10-16初版仅采用可追溯 ETS／Oxford 原例句。2026-10-28用户更新要求：全库未整理词至少有例句，无合适权威原句时允许教练自拟。2026-10-29起同时支持下列两类，保留已有权威引文。ETS完整题目语境优先；不声称某词典是 ETS 指定词典。
+
+`vocab/examples/verified-*.json` 保存 `{schema_version:1,items:[{word,senses:[{pos,meanings,examples}]}]}`。`meanings` 与规范词库原数组精确一致，`examples` 同长度。原句为 `{en,zh,kind:'quotation',review_status:'source_checked',source:{publisher,url,checked_at,locator?}}`；来源须实际读取、限 ETS／Oxford／Merriam-Webster／Cambridge，中文为自译。自拟为 `{en,zh,kind:'coach_original',review_status:'coach_authored',source:{publisher:'GRE AI教练（自拟）',created_at:'YYYY-MM-DD',record?:'vocab/examples/verified-*.json'}}`，不得带词典URL或冒充原句。每句对应具体词性与义项，其他义项可保留null；当前目标为每个可见有效词至少一条完整中英例句，不宣称每义项全覆盖。可选 locator 保存 PDF 页码、文章或点评栏目；PDF URL 可加 #page，但摘录限额仍按整份 PDF 计算，ETS 旧 /content/dam/ets-org/pdfs/ 与 /pdfs/ 路径合并计数。引文按规范化来源页合计最多25词，自拟不计引文额度。补充文件仅在词性与完整义项数组相同时填null；既有非空句冲突时报错，禁止静默覆写。
 
 规范生成脚本按词形、词性和完整义项数组匹配例句；原义项改动时不沿用索引错配例句。手机校验、升级、持久化和备份均保留可选 examples，兼容此前无 examples 的数据。展示用无编号段落，每个义项下跟原例句、中文及来源链接；缺失处写“例句待补充”。仅阅读例句不产生学习事件。
 

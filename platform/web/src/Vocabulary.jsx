@@ -10,12 +10,12 @@ const PAGE_SIZE = 18;
 const topicKey = id => `topic:${id}`;
 
 function SenseExample({ example }) {
-  if (!example?.en || !example?.zh || example.kind !== 'quotation') return <small className="dictionary-example-pending">例句待补充</small>;
+  if (!example?.en || !example?.zh || !['quotation', 'coach_original'].includes(example.kind)) return <small className="dictionary-example-pending">例句待补充</small>;
   const sourceLabel = `原例句来源：${example.source?.publisher || '词典'}`;
   return <div className="dictionary-example">
     <p className="dictionary-example-en" lang="en">{example.en}</p>
     <p className="dictionary-example-zh" lang="zh-Hans">{example.zh}</p>
-    <small className="dictionary-example-source">{/^https?:\/\//.test(example.source?.url || '') ? <a href={example.source.url} target="_blank" rel="noreferrer">{sourceLabel}</a> : sourceLabel}{example.source?.locator && ` · ${example.source.locator}`}</small>
+    <small className="dictionary-example-source">{example.kind === 'coach_original' ? `教练自拟（非词典引文） · ${example.source?.created_at || ''}` : <>{/^https?:\/\//.test(example.source?.url || '') ? <a href={example.source.url} target="_blank" rel="noreferrer">{sourceLabel}</a> : sourceLabel}{example.source?.locator && ` · ${example.source.locator}`}</>}</small>
   </div>;
 }
 

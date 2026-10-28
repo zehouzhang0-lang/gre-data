@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "3ef482fd-94e8-4a08-b463-e9a9c21af24d",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T03:57:58.998Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test7_section1_easy",
+    "question": "1",
+    "type": "tc",
+    "answer": "B",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "fd81988c-ddc9-4434-b685-96ff844d40ee",
+    "draft_id": "0d9d6095-9457-40cd-9700-e98ad8c044a2",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "7fbc377079d097a328a62d60e6d59c8700ac26f78bc7dfc041a134bd7e2080ca",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test7_section1_easy\",\"1\"]",
+      "type": "tc",
+      "mode": "single",
+      "source": "填空 2000 · Test 7 · Section 1 · easy · 第 1 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          29
+        ],
+        "regions": [
+          {
+            "page": 29,
+            "top": 119.16307099999995,
+            "bottom": 223.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "He was so ____ during the filming of the movie that crew members nicknamed his “The Angriest Man in the World”",
+      "options": [
+        "loquacious",
+        "irascible",
+        "perfidious",
+        "sanguine",
+        "voracious"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "B"
+    ],
+    "answerKey": {
+      "answer": "B",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:4518-4555",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": true
+  }
+}

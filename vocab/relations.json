@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-27",
+  "updated_at": "2026-10-29",
   "topics": [
     {
       "id": "mood",
@@ -184,7 +184,14 @@
         "ardent",
         "alacrity",
         "resignation",
-        "fanatic"
+        "fanatic",
+        "contagious",
+        "trauma",
+        "stun",
+        "stunning",
+        "wilt",
+        "qualm",
+        "paralyze"
       ]
     },
     {
@@ -480,7 +487,15 @@
         "brittle",
         "ardent",
         "discreet",
-        "fanatic"
+        "fanatic",
+        "demanding",
+        "bombastic",
+        "unfaltering",
+        "no-nonsense",
+        "candid",
+        "pretense",
+        "surreptitious",
+        "authoritarians"
       ]
     },
     {
@@ -651,7 +666,10 @@
         "luminary",
         "cackle",
         "discreet",
-        "interlope"
+        "interlope",
+        "indebted",
+        "pretense",
+        "desertion"
       ]
     },
     {
@@ -824,7 +842,12 @@
         "flagrant",
         "beleaguer",
         "besiege",
-        "competing"
+        "competing",
+        "vandal",
+        "upend",
+        "harry",
+        "foe",
+        "desertion"
       ]
     },
     {
@@ -1123,7 +1146,21 @@
         "pathological",
         "placebo",
         "competing",
-        "constitute"
+        "constitute",
+        "oblivious",
+        "heed",
+        "seminal",
+        "yardstick",
+        "preconception",
+        "unbalanced",
+        "quintessential",
+        "codify",
+        "pervious",
+        "qualm",
+        "axiomatic",
+        "panorama",
+        "inherently",
+        "animadversion"
       ]
     },
     {
@@ -1390,7 +1427,13 @@
         "specious",
         "implore",
         "cackle",
-        "brevity"
+        "brevity",
+        "bombastic",
+        "hedge",
+        "candid",
+        "promulgate",
+        "plagiarism",
+        "animadversion"
       ]
     },
     {
@@ -1542,7 +1585,15 @@
         "allay",
         "extirpate",
         "thrive",
-        "dismantle"
+        "dismantle",
+        "acme",
+        "seminal",
+        "fitful",
+        "upend",
+        "mount",
+        "reactivate",
+        "culmination",
+        "jettison"
       ]
     },
     {
@@ -1653,7 +1704,9 @@
         "reckon",
         "remnant",
         "slew",
-        "coterminous"
+        "coterminous",
+        "acme",
+        "whit"
       ]
     },
     {
@@ -1757,7 +1810,10 @@
         "coterminous",
         "terminus",
         "predate",
-        "brevity"
+        "brevity",
+        "unfaltering",
+        "fitful",
+        "culmination"
       ]
     },
     {
@@ -1843,7 +1899,10 @@
         "seep",
         "coterminous",
         "terminus",
-        "turbid"
+        "turbid",
+        "mount",
+        "panorama",
+        "straits"
       ]
     },
     {
@@ -1954,7 +2013,11 @@
         "thrive",
         "luminary",
         "cackle",
-        "mantle"
+        "mantle",
+        "niche",
+        "seminal",
+        "hedge",
+        "wilt"
       ]
     },
     {
@@ -2070,7 +2133,14 @@
         "pathological",
         "placebo",
         "prescribe",
-        "mantle"
+        "mantle",
+        "contagious",
+        "trauma",
+        "stun",
+        "unbalanced",
+        "paralyze",
+        "obesity",
+        "maladies"
       ]
     },
     {
@@ -2211,7 +2281,13 @@
         "turbid",
         "brittle",
         "ardent",
-        "mantle"
+        "mantle",
+        "yardstick",
+        "unbalanced",
+        "mount",
+        "panel",
+        "pervious",
+        "inherently"
       ]
     },
     {
@@ -2404,7 +2480,15 @@
         "dismantle",
         "resignation",
         "constitute",
-        "fanatic"
+        "fanatic",
+        "niche",
+        "vandal",
+        "codify",
+        "panel",
+        "foe",
+        "promulgate",
+        "maladies",
+        "authoritarians"
       ]
     },
     {
@@ -2490,7 +2574,12 @@
         "reckon",
         "thrive",
         "interlope",
-        "competing"
+        "competing",
+        "niche",
+        "vendor",
+        "hedge",
+        "indebted",
+        "straits"
       ]
     },
     {
@@ -2599,7 +2688,11 @@
         "ethereal",
         "omnibus",
         "consonant",
-        "luminary"
+        "luminary",
+        "stunning",
+        "candid",
+        "panorama",
+        "plagiarism"
       ]
     },
     {
@@ -2853,7 +2946,17 @@
         "alacrity",
         "resignation",
         "interlope",
-        "constitute"
+        "constitute",
+        "heed",
+        "demanding",
+        "no-nonsense",
+        "upend",
+        "mount",
+        "harry",
+        "reactivate",
+        "paralyze",
+        "surreptitious",
+        "jettison"
       ]
     },
     {
@@ -13214,6 +13317,118 @@
           "checked_at": "2026-09-10",
           "status": "checked",
           "note": "中文核心义依据词典归纳，不转录手写中文。"
+        }
+      ]
+    },
+    {
+      "id": "curated-20261028-permeability",
+      "type": "antonym",
+      "title": "可渗透与不受影响",
+      "note": "pervious指可渗透；impervious指不可渗透或不受影响。只比较对应义项，不据此自动判定SE整句等价。",
+      "members": [
+        {
+          "word": "pervious",
+          "usage": "可渗透的",
+          "example": ""
+        },
+        {
+          "word": "impervious",
+          "usage": "不能渗透的；不受影响的",
+          "example": ""
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pervious",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impervious",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "词典分别列不能穿透、不受损害以及不受影响或扰动。"
+        }
+      ]
+    },
+    {
+      "id": "curated-20261028-demanding",
+      "type": "synonym",
+      "title": "要求严格",
+      "note": "demanding强调任务费力或要求高；exacting强调标准严格或要求苛刻；不是所有语境都能互换。",
+      "members": [
+        {
+          "word": "demanding",
+          "usage": "费力的；要求高的",
+          "example": ""
+        },
+        {
+          "word": "exacting",
+          "usage": "严格的；苛求的",
+          "example": ""
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/demanding",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exacting",
+          "checked_at": "2026-09-10",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳，不转录手写中文。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exact",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取动词词条：强制或迫切要求并取得；该义说明exacting的分词来源，不新增exacting动词义。"
+        }
+      ]
+    },
+    {
+      "id": "curated-20261028-inflated-style",
+      "type": "synonym",
+      "title": "浮夸表达与自大态度",
+      "note": "bombastic强调语言夸大、华而不实；pompous强调自命不凡的庄重，既可形容人也可形容言辞。",
+      "members": [
+        {
+          "word": "bombastic",
+          "usage": "言辞浮夸的",
+          "example": ""
+        },
+        {
+          "word": "pompous",
+          "usage": "自大的；装腔作势的",
+          "example": ""
+        }
+      ],
+      "source": "dictionary_checked",
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bombastic",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        },
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pompous",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已读取词条正文；首项释义短摘录：too serious and full of importance :；词性与中文核心义结合正文归纳，少见义另列补充来源。"
         }
       ]
     }

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "4190a34d-6cac-43a9-aa02-8db57bd90cb7",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T13:05:24.267Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test10_section2_easy",
+    "question": "1",
+    "type": "tc",
+    "answer": "A",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "5c3d5387-5de8-45d6-8062-6ff7ef72cf39",
+    "draft_id": "8df93e60-0fd2-4dce-a9dc-40080399535a",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "49f786556a4da3bc424c9bb02642e7ad01827d4b8639c9c2f67ba86c5068dbb2",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test10_section2_easy\",\"1\"]",
+      "type": "tc",
+      "mode": "single",
+      "source": "填空 2000 · Test 10 · Section 2 · easy · 第 1 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          38
+        ],
+        "regions": [
+          {
+            "page": 38,
+            "top": 58,
+            "bottom": 154.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "The students’ _____ natures were in sharp contrast to the imperturbable dispositions of their teacher.",
+      "options": [
+        "volatile",
+        "duplicitous",
+        "apathetic",
+        "cunning",
+        "blithe"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "A"
+    ],
+    "answerKey": {
+      "answer": "A",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5997-6034",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": true
+  }
+}

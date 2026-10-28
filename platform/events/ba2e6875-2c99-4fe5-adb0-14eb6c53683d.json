@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "ba2e6875-2c99-4fe5-adb0-14eb6c53683d",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T06:35:59.199Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test7_section2_easy",
+    "question": "2",
+    "type": "tc",
+    "answer": "A",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "940fbf21-a8da-4b45-88db-7550ad1d4562",
+    "draft_id": "bacd885b-16b8-4401-8cf2-945cfda0a3a8",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "9b67cf5d0f8e506415cd444ec75f05f45b649832df1e77a88dfcbd564be12e33",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test7_section2_easy\",\"2\"]",
+      "type": "tc",
+      "mode": "single",
+      "source": "填空 2000 · Test 7 · Section 2 · easy · 第 2 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          30
+        ],
+        "regions": [
+          {
+            "page": 30,
+            "top": 455.163102,
+            "bottom": 572.163102,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Nylenna’s study showed that errors in scientific manuscripts submitted for publication often escape reviewers’ notice, results that were not _____: when Godlee conducted a study of the same phenomenon, her findings were similar.",
+      "options": [
+        "credible",
+        "unwelcome",
+        "anomalous",
+        "quantifiable",
+        "consequential"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "A"
+    ],
+    "answerKey": {
+      "answer": "C",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:4666-4703",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": false
+  }
+}

@@ -1,0 +1,541 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-29",
+  "items": [
+    {
+      "word": "maladies",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "疾病（malady的复数）",
+            "社会、制度等的弊病，严重问题"
+          ],
+          "examples": [
+            {
+              "en": "The clinic treats common maladies that rarely require hospital care.",
+              "zh": "这家诊所治疗通常不需要住院的常见疾病。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            },
+            {
+              "en": "The essay examines the social maladies behind rising distrust.",
+              "zh": "这篇文章探讨了信任下降背后的社会弊病。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "body",
+        "society"
+      ],
+      "note": "保留题中复数词形；原题摘录仅为词本身，不能据此判定原题采用疾病义还是比喻义。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/malady",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "inherently",
+      "senses": [
+        {
+          "pos": "adv.",
+          "meanings": [
+            "本质上，内在地，作为固有属性地"
+          ],
+          "examples": [
+            {
+              "en": "A complex explanation is not inherently more convincing than a simple one.",
+              "zh": "复杂的解释本身并不比简单的解释更有说服力。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "material",
+        "reason"
+      ],
+      "note": "副词，修饰性质判断；inherently implausible 表示本身就不可信，原摘录不足以重建整句。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/inherently",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "plagiarism",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "剽窃，抄袭，把他人的思想或作品冒充为自己的行为"
+          ],
+          "examples": [
+            {
+              "en": "Copying an argument without crediting its author can constitute plagiarism.",
+              "zh": "抄用论证却不注明作者可能构成剽窃。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "arts"
+      ],
+      "note": "通常不可数；区分 plagiarism（行为）与 plagiarist（剽窃者）。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/plagiarism",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "pretense",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "假装，伪装，虚假的表现"
+          ],
+          "examples": [
+            {
+              "en": "She abandoned the pretense of agreement and openly challenged the proposal.",
+              "zh": "她不再装作赞同，而是公开质疑这项提议。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "character",
+        "social"
+      ],
+      "note": "美式拼写；英式为 pretence。make no pretense of doing 表示不装作做某事。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/pretense",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "desertion",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "擅离军队，当逃兵",
+            "在负有责任时抛弃、遗弃他人"
+          ],
+          "examples": [
+            {
+              "en": "The commander worried that unpaid wages would lead to desertion.",
+              "zh": "指挥官担心拖欠军饷会导致士兵逃离军队。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            },
+            {
+              "en": "His desertion of the family left the children without support.",
+              "zh": "他抛弃家庭，使孩子们失去了供养。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "conflict",
+        "social"
+      ],
+      "note": "desertion 是 desert（抛弃、擅离）的名词；与 desert（沙漠）的重音和含义不同。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/desertion",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "culmination",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "长期发展或一连串事件的最终结果，顶点，高潮"
+          ],
+          "examples": [
+            {
+              "en": "The exhibition was the culmination of three years of research into local history.",
+              "zh": "这次展览是三年地方史研究的最终成果。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "change",
+        "time"
+      ],
+      "note": "常用 the culmination of；强调发展到最终阶段，不等于随便一个结尾。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/culmination",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "animadversion",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "批评性、通常带责备意味的评论",
+            "非难，负面的批评"
+          ],
+          "examples": [
+            {
+              "en": "Her animadversion on the report focused on its unsupported assumptions.",
+              "zh": "她对报告的批评集中在那些缺乏依据的假设上。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            },
+            {
+              "en": "The proposal drew sharp animadversion from rival scholars.",
+              "zh": "这项提议引来了其他学者的尖锐非难。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "language",
+        "reason"
+      ],
+      "note": "正式语体；评论义常与 on 连用，通常含负面评价。",
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/animadversion",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "surreptitious",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "秘密进行的，偷偷的，避免他人察觉的"
+          ],
+          "examples": [
+            {
+              "en": "He took a surreptitious photograph of the document while the clerk was away.",
+              "zh": "趁办事员离开时，他偷偷给文件拍了一张照片。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "character"
+      ],
+      "note": "修饰行动、眼神、记录等；核心是避免被发现，不能一律译成非法的。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/surreptitious",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "authoritarians",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "要求绝对服从、不给他人行动自由的人，专制主义者（authoritarian的复数）"
+          ],
+          "examples": [
+            {
+              "en": "The committee included authoritarians who treated every disagreement as disobedience.",
+              "zh": "委员会中有些专制者把任何异议都视为不服从。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "society",
+        "character"
+      ],
+      "note": "保留题中复数名词，不能把authoritarians标成形容词；单数authoritarian也可作形容词。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/authoritarian",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "straits",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "困境，窘迫境地（尤指财务困难，复数用法）",
+            "海峡（strait的复数）"
+          ],
+          "examples": [
+            {
+              "en": "After losing its main donor, the museum found itself in serious financial straits.",
+              "zh": "失去主要捐助者后，博物馆陷入了严重的财务困境。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            },
+            {
+              "en": "Strong currents make these narrow straits difficult to navigate.",
+              "zh": "强劲的水流使这些狭窄海峡难以航行。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "economy",
+        "environment"
+      ],
+      "note": "原摘录为 financial straits，采用困境义；不是 straight（直的）。海峡义另据strait词条。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/strait",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    },
+    {
+      "word": "jettison",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "从船或飞机上投弃货物等以减轻重量",
+            "放弃不再需要的想法、计划或事物"
+          ],
+          "examples": [
+            {
+              "en": "The crew had to jettison heavy equipment to keep the damaged vessel afloat.",
+              "zh": "船员不得不投弃重型设备，以使受损的船保持漂浮。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            },
+            {
+              "en": "The researchers refused to jettison a useful theory merely because it was old.",
+              "zh": "研究者们不愿仅仅因为一套理论年代久远就抛弃它。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-captures.json"
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        "action",
+        "change"
+      ],
+      "note": "及物动词；字面义强调减载，比喻义为舍弃或放弃。",
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/jettison",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "本次实际读取权威词典释义；英文例句及中文译文为教练自拟。"
+        }
+      ],
+      "status": "dictionary_checked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      }
+    }
+  ],
+  "source_backup_sha256": "7cf16cf166190fd15d3afb52924c4fb0e279800c33d1f3c4cb33a629a88674fe",
+  "policy": "保留摘词原词形、原事件和来源；只补充释义与例句，不创建学习证据。"
+}

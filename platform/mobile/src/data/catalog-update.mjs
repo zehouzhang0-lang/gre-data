@@ -1,7 +1,7 @@
 import { cleanWord, clone, projectState, validateData } from './model.mjs';
 import { applyStandardDefinition } from '../../../shared/standard-definition.mjs';
 
-export const CATALOG_REVISION = '2026-10-27-handwritten-vocabulary-1';
+export const CATALOG_REVISION = '2026-10-29-vocabulary-examples-1';
 
 // Only content is merged. Never import desktop events, review baselines or rounds.
 export function updateCatalog(current, incoming, revision) {
@@ -24,12 +24,21 @@ export function updateCatalog(current, incoming, revision) {
   let updated = 0, preserved = 0;
   for (const d of incoming.baseline.definitions || []) {
     const local = localWords.get(d.word);
-    if (!local || !d.senses.length) continue;
+    if (!local) continue;
+    if (!d.senses.length) {
+      // Retain a visible historical capture while identifying its confirmed
+      // truncated spelling; never manufacture a meaning or hide its event.
+      if(d.status==='spelling_redirect' && !local.deleted && !edited.has(d.word) && d.input.meaning===local.meaning && d.input.pos===local.pos){definitions.set(d.word,clone(d));updated++;}
+      continue;
+    }
     let definition = d;
     if (existingWords.has(d.word) && !local.meaning && !local.pos) {
       // Check every existing blank before fingerprint matching: a personal
       // bundle may already carry an adapted empty input from another phone.
-      const canFill = !local.deleted && requested.has(d.word) && !edited.has(d.word)
+      const existing=definitions.get(d.word);
+      const sameEstablishedSenses=existing?.senses.length && applyStandardDefinition(local,existing).definition_status!=='changed'
+        && JSON.stringify(existing.senses.map(({pos,meanings})=>({pos,meanings})))===JSON.stringify(d.senses.map(({pos,meanings})=>({pos,meanings})));
+      const canFill = !local.deleted && (requested.has(d.word) || d.curation?.status === 'completed' || sameEstablishedSenses) && !edited.has(d.word)
         && ['dictionary_checked', 'historical_checked'].includes(d.status) && d.sources?.length
         && !['spelling_pending', 'spelling_redirect'].includes(definitions.get(d.word)?.status);
       if (!canFill) { preserved++; continue; }

@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "kind": "mobile_release_verification",
+  "version": "0.3.3",
+  "version_code": 17,
+  "package_name": "cn.grestudy.vocabulary",
+  "verified_at": "2026-10-28T16:37:30.609Z",
+  "time_zone": "Asia/Kuala_Lumpur",
+  "apk": {
+    "filename": "GRE-vocabulary-0.3.3-debug.apk",
+    "bytes": 91847233,
+    "sha256": "fbad7d87eba8059396c855786317be9d254a04ae1002bf1f99b658b988efddac",
+    "verified_web_files": 10702,
+    "verified_practice_assets": 4166,
+    "practice_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "questions": {
+      "se": 1001,
+      "tc": 1001,
+      "rc": 893,
+      "quant": 847
+    },
+    "vocabulary_seed_sha256": "28f3553d13b6fd9315903c1518e12111e735723dd941ea2fc9831cea05ade6fa",
+    "package_name": "cn.grestudy.vocabulary",
+    "version_name": "0.3.3",
+    "version_code": 17,
+    "signing_certificate_sha256": "18032e90614e5b1e2d406ccfbb3d731941987c8d154f3cf634b3315bd4e422d0",
+    "same_signer_as_previous": true
+  },
+  "content": {
+    "handwritten_words": 51,
+    "handwritten_new": 39,
+    "handwritten_existing": 12,
+    "captured_words_curated": 11,
+    "previously_no_example_words": 1000,
+    "pending_requests_reviewed": 185,
+    "pending_requests_remaining": 0,
+    "definition_refinements": [
+      "idle",
+      "camaraderie"
+    ],
+    "usage_notes": [
+      "megalomania",
+      "self-deprecate"
+    ],
+    "handwritten_record": "vocab/imports/20261028_2356_handwritten_vocab.json",
+    "curation_record": "vocab/imports/20261029_0028_curation_review.json",
+    "examples": {
+      "date": "2026-10-29",
+      "words": 3255,
+      "senses": 8385,
+      "words_with_examples": 3247,
+      "examples": 5120,
+      "quotations": 4048,
+      "coach_original": 1072,
+      "pending": 3265,
+      "source_pages": 2725,
+      "publishers": {
+        "ETS": 38,
+        "Oxford": 3972,
+        "Merriam-Webster": 37,
+        "Cambridge": 1
+      },
+      "source_policy": "Preserve verified source quotations. User-authorized coach-authored bilingual examples fill gaps and are explicitly labelled; a word-level example does not imply every sense has an example.",
+      "words_without_examples": 8
+    },
+    "visible_valid_words_with_examples": 3238,
+    "visible_historical_redirects": [
+      "alfeasance -> malfeasance"
+    ],
+    "authority_limitations": [
+      "profitmonger retains coach_draft; Wiktionary is supplementary, not priority authority."
+    ],
+    "sense_coverage_limit": "At least one bilingual example for each valid visible word; other senses may still have null examples."
+  },
+  "continuity": {
+    "schema_version": 1,
+    "checked_at": "2026-10-28T16:33:27.251Z",
+    "result": "passed",
+    "raw_events_preserved": 3974,
+    "all_raw_sessions_preserved": 10,
+    "visible_rounds_preserved": [
+      {
+        "name": "2026-10-28",
+        "session_id": "8c872cff-ed7d-498f-964a-f8abf8b93172",
+        "words": 9,
+        "complete": false
+      },
+      {
+        "name": "2026-10-28",
+        "session_id": "37404fc1-ecec-444d-b26b-dd56749fb30d",
+        "words": 13,
+        "complete": true
+      }
+    ],
+    "deleted_rounds_not_resurrected": 8,
+    "groups_preserved": 6,
+    "visible_words": 3239,
+    "new_words": 39,
+    "missing_word_examples": 0,
+    "remaining_curation_requests": 0,
+    "schedules_and_word_snapshots_preserved": true,
+    "failed_save_leaves_original_bytes": true,
+    "second_start_no_repeat_update": true,
+    "visible_valid_words": 3238,
+    "visible_historical_redirects": [
+      "alfeasance -> malfeasance"
+    ],
+    "newly_ready_captures": 11,
+    "readiness_only_no_schedule_counter_change": true,
+    "manual_classifications_preserved": true,
+    "default_topic_refinement": [
+      "camaraderie"
+    ]
+  },
+  "phone_to_desktop_import": {
+    "verified_at": "2026-10-28T16:24:02.413Z",
+    "original_vocabulary_events_preserved": 3974,
+    "original_practice_events_preserved": 324,
+    "raw_event_file_hashes_unchanged_after_repeat": 4534,
+    "idempotent_vocabulary": true,
+    "idempotent_practice": true,
+    "sessions": 10,
+    "rounds": 10,
+    "visible_rounds": 2,
+    "visible_pending": [
+      {
+        "session_id": "8c872cff-ed7d-498f-964a-f8abf8b93172",
+        "next": {
+          "stage": "spelling",
+          "word": "animate",
+          "remaining": 8
+        },
+        "drill_count": 34,
+        "completed_words": [
+          "spunk"
+        ]
+      }
+    ],
+    "reviewTasks": 2,
+    "wordGroups": 6,
+    "cardReadings": 485,
+    "readingCount": 808,
+    "pendingCuration": 185,
+    "assertion": "raw identity, session checkpoints, deleted rounds, task/group metadata, card readings, per-word recalls and API payload parity passed",
+    "new_vocabulary_events": 1781,
+    "new_practice_attempts": 27,
+    "new_draft_versions": 109,
+    "original_backups_kept_as_bytes_in_ignored_directory": true
+  },
+  "pronunciation": {
+    "result": "passed",
+    "seed_sha256": "6a8193fa99a5c026850294aa27d39ab91adb4937082d4eb9442959e280c88570",
+    "source_dump": "2026-09-02",
+    "bulk_sha256": "6d40e0067718aeb3321db30297761ca803838390627111a29a5426fee4557faf",
+    "old_words_preserved": 3208,
+    "old_variants_preserved": 6416,
+    "old_assets_preserved": 6396,
+    "old_metadata_exact_match": true,
+    "old_audio_bytes_exact_match": true,
+    "added_words": 50,
+    "added_variants": 100,
+    "new_audio_files": 100,
+    "new_unique_assets": 100,
+    "added_source_ipa": 79,
+    "added_pending_ipa": 21,
+    "all_assets_checked": 6496,
+    "all_asset_bytes": 44309136,
+    "coverage": {
+      "words": 3258,
+      "dictionary_ipa": 5640,
+      "human": 0,
+      "synthetic": 6516,
+      "pending_ipa": 876
+    },
+    "manifest_before_sha256": "72bf44c70bace975394affb60a3a2b2c7bf215d3ad14426dc6da0980360f6200",
+    "manifest_after_sha256": "970bc7fb375bb954afa6998c4c3b6b28e7e9d767237659c40c62e97f2ff721fe",
+    "network_requests": 0,
+    "downloads": 0,
+    "cost": 0,
+    "deleted_assets": 0
+  },
+  "validation": {
+    "targeted_tests": 56,
+    "all_passed": true,
+    "real_backup_upgrade": "passed",
+    "failed_storage_rollback": "passed",
+    "repeat_start_no_duplicate_update": "passed",
+    "desktop_mobile_export_parity": "passed",
+    "apk_matches_validated_web_build": "passed",
+    "browser_example": "befuddle: English, Chinese, meaning and explicit coach-authored label visibly present",
+    "browser_origin": "http://127.0.0.1:4183/",
+    "screenshot": "gre-033-authored-example.png",
+    "real_android_install_test": "not performed on user phone"
+  },
+  "preservation_policy": "Existing installs retain their own current database, including post-upload progress. Only safe content updates merge. Original IDs, timestamps, answers, personal fields, classifications and round snapshots remain. Confirmed spelling redirect explains an old truncated capture without deleting or hiding its original event."
+}

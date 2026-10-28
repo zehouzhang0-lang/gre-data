@@ -1,0 +1,4305 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-28T16:09:59.222Z",
+  "date": "2026-10-28",
+  "time_zone": "Asia/Kuala_Lumpur",
+  "material_id": "handwritten_vocab_20261028",
+  "source_kind": "user_handwritten_notes",
+  "counts": {
+    "attachment_count": 2,
+    "unique_page_count": 2,
+    "handwritten_occurrences": 51,
+    "handwritten_unique": 51,
+    "handwritten_new": 39,
+    "handwritten_existing": 12,
+    "authoritative_new_words": 39,
+    "total_senses": 116,
+    "new_senses": 85,
+    "examples": 116,
+    "quotations": 57,
+    "coach_original": 59,
+    "pending_new_examples": 0,
+    "pending_word_transcriptions": 0
+  },
+  "images": [
+    {
+      "image": 1,
+      "filename": "codex-clipboard-7dc85b08-bd15-4c9b-8776-86bcb131e75b.jpg",
+      "sha256": "d7418a5737130db70f5b8e2d04338c4d2af47913852edf2a61552d87f623a229",
+      "transcribed_count": 22
+    },
+    {
+      "image": 2,
+      "filename": "codex-clipboard-d3594eff-c45e-4bef-80ec-9427319e4096.jpg",
+      "sha256": "8873dd454e71e77d1cb134d96be04f5f34038310737af7dea86921949a9b36b5",
+      "transcribed_count": 29
+    }
+  ],
+  "definition_policy": "照片批次日期为2026-10-28；实际查证和原创编写跨日于2026-10-29完成。39个新增词逐词核对实际读取的Merriam-Webster正文；niche/contagious/seminal另核Oxford，unbalanced公允义核Cambridge。12个已有词保留原规范义项及已存权威例句，补齐空缺。无原题上下文，original_context均为null。手写中文按可辨部分保留，难辨字不猜补。原例句与自拟句按kind严格区分；自拟例句获本轮用户授权，不冒充ETS或词典引文。仅收录与整理，不新增学习完成、复习或掌握事件。",
+  "items": [
+    {
+      "surface": "niche",
+      "word": "niche",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "n.〔首个修饰语字迹难辨〕的工作；壁龛；商业性定位。adj.小众特定的（商品）。",
+      "transcription_notes": [
+        "首行“的工作”前的手写修饰语不能逐字可靠辨认；规范义据词典单独确定。"
+      ],
+      "pos": "n. / adj.",
+      "meaning": "n.适合自身特点的职位、活动或领域；壁龛，墙上的凹处；利基市场，针对特定需求的市场领域；生态位，物种生存的环境条件及其生态角色\nadj.小众的，面向特定群体的",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "适合自身特点的职位、活动或领域",
+            "壁龛，墙上的凹处",
+            "利基市场，针对特定需求的市场领域",
+            "生态位，物种生存的环境条件及其生态角色"
+          ],
+          "examples": [
+            {
+              "en": "She finally found her niche as a teacher.",
+              "zh": "她终于找到了适合自己的教师岗位。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/niche",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "A small statue stood in a niche beside the doorway.",
+              "zh": "门口旁的壁龛里立着一尊小雕像。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The publisher found a profitable niche in books for amateur botanists.",
+              "zh": "这家出版社在面向业余植物学家的图书中找到了有利可图的细分市场。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "Two species may compete when they occupy the same ecological niche.",
+              "zh": "两个物种占据同一生态位时，可能会发生竞争。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "小众的，面向特定群体的"
+          ],
+          "examples": [
+            {
+              "en": "We see niche products as one of our strengths.",
+              "zh": "我们把面向特定群体的产品视为自身优势之一。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/niche_2",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "find a niche; a niche market; an ecological niche",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "role",
+        "habitat"
+      ],
+      "topics": [
+        "economy",
+        "nature",
+        "society"
+      ],
+      "note": "职位义强调适合自身；市场义强调特定需求，不能把所有 niche 都译为小众。没有原句，所列为常见用法。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/niche",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner’s Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/niche_2",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "Oxford独立形容词词条明确指只吸引人口中一小部分的产品、服务或兴趣。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "trumpet",
+      "word": "trumpet",
+      "image": 1,
+      "action": "existing",
+      "handwritten_text": "n.小号，喇叭。v.鼓吹，宣扬。",
+      "transcription_notes": [],
+      "pos": "n. / v.",
+      "meaning": "n.小号，喇叭\nv.吹号；高声宣扬；发出号鸣般的声音",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "小号，喇叭"
+          ],
+          "examples": [
+            {
+              "en": "The musician lifted the trumpet and played a clear note.",
+              "zh": "乐手举起小号，吹出一个清亮的音。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "吹号",
+            "高声宣扬",
+            "发出号鸣般的声音"
+          ],
+          "examples": [
+            {
+              "en": "The herald trumpeted before announcing the procession.",
+              "zh": "传令官先吹号，随后宣布游行开始。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "Their marriage was trumpeted as the wedding of the year.",
+              "zh": "他们的婚礼被大肆宣扬为年度婚礼。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/trumpet_2",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The elephant trumpeted when the herd approached the river.",
+              "zh": "象群走近河流时，那头象发出了喇叭般的鸣叫。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "trumpet an achievement; play the trumpet",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "language",
+        "arts",
+        "nature"
+      ],
+      "note": "宣扬义强调高调、广泛宣传；作为名词常指铜管乐器小号。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trumpet",
+          "checked_at": "2026-10-08",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，按所列词性归纳核心义：n. 小号，喇叭；v. 吹号；高声宣扬；发出号鸣般的声音"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "historical_checked",
+        "input": {
+          "pos": "n.; v.",
+          "meaning": "n. 小号，喇叭；v. 吹号；高声宣扬；发出号鸣般的声音"
+        },
+        "source_record": [
+          {
+            "material_id": "handwritten_vocab_20261008",
+            "record": "vocab/imports/20261008_2101_handwritten_vocab.json",
+            "kind": "user_handwritten_notes",
+            "image": 1,
+            "origin_word": null
+          }
+        ]
+      }
+    },
+    {
+      "surface": "contagious",
+      "word": "contagious",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "adj.传染的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.（疾病）可通过接触传播的，传染性的；（人）患有可传染疾病的，具有传染性的；（情绪、行为）有感染力的，容易影响别人的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "（疾病）可通过接触传播的，传染性的",
+            "（人）患有可传染疾病的，具有传染性的",
+            "（情绪、行为）有感染力的，容易影响别人的"
+          ],
+          "examples": [
+            {
+              "en": "Scarlet fever is highly contagious.",
+              "zh": "猩红热的传染性很强。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/contagious",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The nurse asked whether the patient was still contagious.",
+              "zh": "护士询问这位病人是否仍具有传染性。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "His enthusiasm was contagious (= spread quickly to other people).",
+              "zh": "他的热情很有感染力（很快影响了其他人）。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/contagious",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a contagious disease; contagious laughter",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "body",
+        "mood"
+      ],
+      "note": "疾病传播义和情绪感染义分开；contagious不只是有病。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/contagious",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner’s Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/contagious",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "Oxford区分传染病、具有传染性的人，并列情绪感染的比喻用法。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "vendor",
+      "word": "vendor",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "n.小贩。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.卖方，销售商，摊贩",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "卖方，销售商，摊贩"
+          ],
+          "examples": [
+            {
+              "en": "we're thinking of making a deal with that other software vendor",
+              "zh": "我们正考虑与另一家软件供应商达成交易。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/vendor",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a street vendor; a software vendor",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "seller",
+        "supplier"
+      ],
+      "topics": [
+        "economy"
+      ],
+      "note": "不只指街边小贩，也可指软件或商品的销售公司。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vendor",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "vandal",
+      "word": "vandal",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "n.歹徒。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.故意破坏他人或公共财物的人",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "故意破坏他人或公共财物的人"
+          ],
+          "examples": [
+            {
+              "en": "Vandals defaced the school's walls.",
+              "zh": "破坏者涂污了学校的墙壁。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/vandal",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "vandals damage property; vandalism",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [
+        "vandalism"
+      ],
+      "topics": [
+        "society",
+        "conflict"
+      ],
+      "note": "比手写“歹徒”具体，核心是破坏财物；不能泛指任何罪犯。大写Vandal的历史族名义不列入本批常用义。",
+      "normalization_note": "将宽泛的“歹徒”收窄为破坏财物者。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vandal",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "oblivious",
+      "word": "oblivious",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "adj.不在意的；遗忘的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.未意识到的，浑然不觉的；忘却的，未记在心上的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "未意识到的，浑然不觉的",
+            "忘却的，未记在心上的"
+          ],
+          "examples": [
+            {
+              "en": "She kept dancing, oblivious to everyone around her.",
+              "zh": "她继续跳舞，对周围所有人浑然不觉。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/oblivious",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "Oblivious of his promise, he left without calling her.",
+              "zh": "他忘了自己的承诺，没有给她打电话就离开了。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "oblivious to danger; oblivious of a promise",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "reason"
+      ],
+      "note": "oblivious通常是没有觉察或忘记，不必是明知却不在乎；一般觉察义可接to/of，忘却义常接of。",
+      "normalization_note": "手写“不在意”不能自动理解成有意识地漠视。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/oblivious",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "acme",
+      "word": "acme",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "n.顶点；极点；最高点。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.顶峰，最高水平，鼎盛阶段",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "顶峰，最高水平，鼎盛阶段"
+          ],
+          "examples": [
+            {
+              "en": "The prize marked the acme of her scientific career.",
+              "zh": "这项奖标志着她科学生涯的巅峰。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "the acme of achievement; the acme of perfection",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "apex",
+        "zenith"
+      ],
+      "topics": [
+        "quantity",
+        "change"
+      ],
+      "note": "通常指发展或成就的最高点，也可赞某物是某品质的极致；不要与acne（痤疮）混淆。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/acme",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "heed",
+      "word": "heed",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "v.（〔括注难辨〕）注意，留心。n.注意，留心。",
+      "transcription_notes": [
+        "heed上方括号中的短注字迹难辨，不据此增添词义。"
+      ],
+      "pos": "v. / n.",
+      "meaning": "v.留意，听从（警告、建议等）\nn.注意，留心",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "留意，听从（警告、建议等）"
+          ],
+          "examples": [
+            {
+              "en": "She failed to heed the warnings.",
+              "zh": "她没有听从那些警告。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/heed",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "注意，留心"
+          ],
+          "examples": [
+            {
+              "en": "It's important that you pay heed to/take heed of the warnings.",
+              "zh": "重视／留意这些警告很重要。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/heed",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "heed a warning; pay heed to; take heed of",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "action",
+        "reason"
+      ],
+      "note": "动词直接接宾语；名词常在pay heed to或take heed of中出现。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/heed",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "demanding",
+      "word": "demanding",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "adj.苛刻的，费力的。v.强烈要求。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.要求严格的，苛求的；费时费力的，要求很高的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "要求严格的，苛求的",
+            "费时费力的，要求很高的"
+          ],
+          "examples": [
+            {
+              "en": "Their boss was really demanding, often expecting them to work long into the night.",
+              "zh": "他们的老板要求很苛刻，经常希望他们工作到深夜。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/demanding",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "Factory work can be physically demanding.",
+              "zh": "工厂工作可能很耗体力。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/demanding",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a demanding supervisor; a demanding task",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "demand",
+        "exacting"
+      ],
+      "topics": [
+        "character",
+        "action"
+      ],
+      "note": "人作主语或修饰人时侧重苛求；修饰任务时侧重需要很多努力。笔记动词“强烈要求”属于demand的现在分词用法。",
+      "normalization_note": "保留demanding独立形容词；动词分词说明关联demand，不误另列为新的动词词元。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/demanding",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "exacting",
+      "word": "exacting",
+      "image": 1,
+      "action": "existing",
+      "handwritten_text": "adj.严格的。v.逼取。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.要求严格的；费力的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "要求严格的",
+            "费力的"
+          ],
+          "examples": [
+            {
+              "en": "He was an exacting man to work for.",
+              "zh": "在他手下工作要求很严格。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/exacting",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "Restoring the damaged manuscript was exacting work.",
+              "zh": "修复这份损坏的手稿是一项费力而要求严格的工作。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "exacting standards; exact a penalty",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "demanding",
+        "exact"
+      ],
+      "topics": [
+        "character",
+        "action"
+      ],
+      "note": "exacting形容词为要求严格、费力；动词“逼取”是exact的分词，用法如exact a penalty。不得把两种词元混写。",
+      "normalization_note": "手写动词义转为exact词元说明；exacting的已有两项形容词义保留。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exacting",
+          "checked_at": "2026-09-10",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳，不转录手写中文。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/exact",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取动词词条：强制或迫切要求并取得；该义说明exacting的分词来源，不新增exacting动词义。"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "historical_checked",
+        "input": {
+          "pos": "adj.",
+          "meaning": "要求严格的；费力的"
+        },
+        "source_record": [
+          {
+            "material_id": "youdao_handwritten_20260910",
+            "record": "vocab/imports/20260910_1739_youdao_handwritten.json",
+            "image": 4,
+            "kind": "wordlist_and_dictionary_example_mixed",
+            "origin_word": null
+          }
+        ]
+      }
+    },
+    {
+      "surface": "whit",
+      "word": "whit",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "n.一点点，一些；些微。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.一点点，极少量",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "一点点，极少量"
+          ],
+          "examples": [
+            {
+              "en": "I care not a whit about what other people think.",
+              "zh": "我一点也不在乎别人怎么想。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/whit",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "not a whit; not one whit",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "quantity"
+      ],
+      "note": "常用于否定表达not a whit，表示一点也不；不是普通可自由计数的“一些”。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/whit",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "affinity",
+      "word": "affinity",
+      "image": 1,
+      "action": "existing",
+      "handwritten_text": "n.喜好，喜爱；共同之处；紧密联系；亲和力。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.喜爱；密切关系；相似性；亲和力",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "喜爱",
+            "密切关系",
+            "相似性",
+            "亲和力"
+          ],
+          "examples": [
+            {
+              "en": "Humans have a special affinity for dolphins.",
+              "zh": "人类对海豚有一种特殊的喜爱。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/affinity",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "There is a close affinity between Italian and Spanish.",
+              "zh": "意大利语和西班牙语之间有密切的关系。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/affinity",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "There is a close affinity between Italian and Spanish.",
+              "zh": "意大利语和西班牙语非常相似。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/affinity",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "This dye has a strong affinity for wool fibers.",
+              "zh": "这种染料与羊毛纤维有很强的亲和性。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "an affinity for music; an affinity between two traditions",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "social",
+        "reason",
+        "nature"
+      ],
+      "note": "喜爱／吸引义常接for；相似或关联常说between；化学亲和力不是一般个人喜好。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/affinity",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文并对照中文核心义；屈折形式按词元解释，罕见义保留用法限定。"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "dictionary_checked",
+        "input": {
+          "pos": "",
+          "meaning": ""
+        },
+        "source_record": []
+      }
+    },
+    {
+      "surface": "trauma",
+      "word": "trauma",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "n.创伤。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.外伤，身体创伤；精神创伤，严重的情绪冲击",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "外伤，身体创伤",
+            "精神创伤，严重的情绪冲击"
+          ],
+          "examples": [
+            {
+              "en": "The accident victim sustained multiple traumas.",
+              "zh": "这名事故伤者身体多处受伤。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/trauma",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "She never fully recovered from the trauma of her experiences.",
+              "zh": "她始终未能从那些经历造成的精神创伤中完全恢复。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/trauma",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "head trauma; emotional trauma",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "body",
+        "mood"
+      ],
+      "note": "区分身体损伤和心理创伤；不是所有不开心的经历都等同于临床诊断。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trauma",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "stun",
+      "word": "stun",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "v.使震惊。",
+      "transcription_notes": [],
+      "pos": "v.",
+      "meaning": "v.使震惊，使惊呆；使昏迷，使眩晕",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使震惊，使惊呆",
+            "使昏迷，使眩晕"
+          ],
+          "examples": [
+            {
+              "en": "The angry criticism stunned them.",
+              "zh": "那些愤怒的批评使他们惊呆了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/stun",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The impact stunned him for several seconds.",
+              "zh": "撞击使他眩晕了好几秒。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "be stunned by the news; stun an opponent",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "stunning",
+        "paralyze"
+      ],
+      "topics": [
+        "mood",
+        "body"
+      ],
+      "note": "惊讶义与物理打击造成的眩晕义分开；stunning作独立形容词另列。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/stun",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "stunning",
+      "word": "stunning",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "adj.极好的；令人震惊的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.极美的，出色得令人赞叹的；令人震惊的，令人难以置信的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "极美的，出色得令人赞叹的",
+            "令人震惊的，令人难以置信的"
+          ],
+          "examples": [
+            {
+              "en": "Our room had a stunning view of the lake.",
+              "zh": "从我们房间可以看到美得令人赞叹的湖景。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/stunning",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "Researchers have made a stunning discovery.",
+              "zh": "研究人员做出了一项惊人的发现。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/stunning",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a stunning view; a stunning defeat",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "stun"
+      ],
+      "topics": [
+        "arts",
+        "mood"
+      ],
+      "note": "赞叹义常带褒义；stunning defeat可指令人震惊的失败，不能一概译为极好的。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/stunning",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "seminal",
+      "word": "seminal",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "adj.创造力的，创意的；种子的；精液的，生殖的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.开创性的，对后续发展有重大影响的；（专门用语）种子的，由种子产生的；（解剖学）精液的，含精液的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "开创性的，对后续发展有重大影响的",
+            "（专门用语）种子的，由种子产生的",
+            "（解剖学）精液的，含精液的"
+          ],
+          "examples": [
+            {
+              "en": "His book on social policy proved to be seminal.",
+              "zh": "他关于社会政策的著作后来被证明具有开创性的影响。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/seminal",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The botanist compared seminal roots with roots that developed later.",
+              "zh": "这位植物学家将种子产生的根与后来长出的根作了比较。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The laboratory analyzed a sample of seminal fluid.",
+              "zh": "实验室分析了一份精液样本。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a seminal study; seminal roots; seminal fluid",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "change",
+        "reason",
+        "nature"
+      ],
+      "note": "学术语境最重要的是开创并影响后来发展，范围比一般creative更具体；生物学义须看所修饰的名词。",
+      "normalization_note": "把笼统“有创造力”校准为开创性和后续影响；种子、精液两义分别限定语境。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/seminal",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner’s Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/seminal",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "Oxford列强烈影响后续发展的核心义，以及精液的专门义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "pompus [划去] → pompous",
+      "word": "pompous",
+      "image": 1,
+      "action": "existing",
+      "handwritten_text": "〔先写pompus并划去〕pompous adj.自大的；华而不实的；爱炫耀的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.浮夸的；自命不凡的；铺张炫耀的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "浮夸的",
+            "自命不凡的",
+            "铺张炫耀的"
+          ],
+          "examples": [
+            {
+              "en": "His speech sounded very pompous and self-congratulatory.",
+              "zh": "他的讲话听起来十分浮夸，而且充满了自我赞许。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pompous",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "His speech sounded very pompous and self-congratulatory.",
+              "zh": "他的讲话听起来十分自负，充满自我夸耀。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pompous",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The modest occasion did not call for such pompous ceremony.",
+              "zh": "这样一个朴素的场合不需要如此铺张炫耀的仪式。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a pompous speech; a pompous official",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "bombastic"
+      ],
+      "topics": [
+        "character",
+        "language"
+      ],
+      "note": "形容人可指自命不凡，形容言语或仪式可指浮夸炫耀。与bombastic在空洞夸张的文风上相交，不把所有义项等同。",
+      "normalization_note": "采用照片后写且未划掉的pompous；划掉的pompus不另计一个词。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/pompous",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已读取词条正文；首项释义短摘录：too serious and full of importance :；词性与中文核心义结合正文归纳，少见义另列补充来源。"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "historical_checked",
+        "input": {
+          "pos": "adj.",
+          "meaning": "浮夸的；自命不凡的；铺张炫耀的"
+        },
+        "source_record": [
+          {
+            "material_id": "handwritten_vocab_20261006",
+            "record": "vocab/imports/20261006_2301_handwritten_vocab.json",
+            "kind": "user_handwritten_notes",
+            "image": 13,
+            "origin_word": null
+          }
+        ]
+      }
+    },
+    {
+      "surface": "profess",
+      "word": "profess",
+      "image": 1,
+      "action": "existing",
+      "handwritten_text": "v.公开宣称。",
+      "transcription_notes": [],
+      "pos": "v.",
+      "meaning": "v.公开宣称，表明信仰；自称，声称",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "公开宣称，表明信仰",
+            "自称，声称"
+          ],
+          "examples": [
+            {
+              "en": "She still professes her innocence.",
+              "zh": "她仍公开宣称自己无罪。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/profess",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "I don't profess to be an expert in this subject.",
+              "zh": "我并不自称是这门学科的专家。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/profess",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "profess innocence; profess to know",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "language",
+        "reason"
+      ],
+      "note": "可公开宣称信仰或立场，也可声称自己具有知识；不蕴含声称为真。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/profess",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/profess",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：公开宣称，表明信仰；自称，声称"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "historical_checked",
+        "input": {
+          "pos": "v.",
+          "meaning": "公开宣称，表明信仰；自称，声称"
+        },
+        "source_record": [
+          {
+            "material_id": "text_completion_2000",
+            "record": "vocab/imports/20260915_2228_captured_vocab.json",
+            "kind": "platform_vocab_capture",
+            "origin_word": "professed",
+            "event_ids": [
+              "c67bced1-ef25-491e-9fe8-716f9e6ae9d8"
+            ]
+          },
+          {
+            "material_id": "handwritten_vocab_20260923",
+            "record": "vocab/imports/20260923_1754_handwritten_vocab.json",
+            "kind": "user_handwritten_notes",
+            "image": 3,
+            "origin_word": null
+          }
+        ]
+      }
+    },
+    {
+      "surface": "bombastic",
+      "word": "bombastic",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "adj.浮夸的；言过其实的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.（言辞、文风）浮夸空洞的，夸大其词的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "（言辞、文风）浮夸空洞的，夸大其词的"
+          ],
+          "examples": [
+            {
+              "en": "The reviewer rejected the essay for its bombastic language and thin evidence.",
+              "zh": "审稿人因文章措辞浮夸而证据薄弱，否定了它。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "bombastic rhetoric; bombastic prose",
+      "collocation_source": "coach_composed",
+      "connotation": "贬义",
+      "related_words": [
+        "pompous"
+      ],
+      "topics": [
+        "language",
+        "character"
+      ],
+      "note": "核心是用夸张华丽的语言制造重要感，常暗示内容空洞；不是单纯声音大。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bombastic",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "yardstick",
+      "word": "yardstick",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "n.码尺；衡量标准。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.码尺，一码长的量尺；衡量或评价的标准",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "码尺，一码长的量尺",
+            "衡量或评价的标准"
+          ],
+          "examples": [
+            {
+              "en": "She laid a yardstick along the edge of the table.",
+              "zh": "她沿着桌边放了一把码尺。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "Profit is not the only yardstick of a company’s success.",
+              "zh": "利润不是衡量一家公司是否成功的唯一标准。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a yardstick for success; measured against a yardstick",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "criterion",
+        "benchmark"
+      ],
+      "topics": [
+        "material",
+        "reason"
+      ],
+      "note": "实物义是一英码的尺；比喻义是用于比较、评价的标准。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/yardstick",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "unfaltering",
+      "word": "unfaltering",
+      "image": 1,
+      "action": "new",
+      "handwritten_text": "adj.坚定的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.坚定不移的，不动摇或衰弱的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "坚定不移的，不动摇或衰弱的"
+          ],
+          "examples": [
+            {
+              "en": "Her unfaltering support continued even when the project faced criticism.",
+              "zh": "即使项目受到批评，她仍给予坚定不移的支持。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "unfaltering support; unfaltering loyalty",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "steadfast",
+        "fitful"
+      ],
+      "topics": [
+        "character",
+        "time"
+      ],
+      "note": "强调持续不动摇；与fitful的断续不稳可形成对照，但对象须相合。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unfaltering",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "unassailable",
+      "word": "unassailable",
+      "image": 1,
+      "action": "existing",
+      "handwritten_text": "adj.攻不破的；无懈可击的；不容置疑的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.无懈可击的；无法攻破的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "无懈可击的",
+            "无法攻破的"
+          ],
+          "examples": [
+            {
+              "en": "She replied with what she thought was unassailable logic.",
+              "zh": "她用自认为无懈可击的逻辑作了回答。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/unassailable",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The party now has an unassailable lead.",
+              "zh": "该党现在拥有不可撼动的领先优势。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/unassailable",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "unassailable logic; an unassailable lead",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "reason",
+        "conflict"
+      ],
+      "note": "可指论证难以反驳，也可指防御或优势难以攻破；不是impervious的不受影响义的全义同义词。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/unassailable",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "dictionary_checked",
+        "input": {
+          "pos": "",
+          "meaning": ""
+        },
+        "source_record": []
+      }
+    },
+    {
+      "surface": "preconception",
+      "word": "preconception",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "n.先入之见；偏见。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.先入之见，预先形成的看法或偏见",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "先入之见，预先形成的看法或偏见"
+          ],
+          "examples": [
+            {
+              "en": "I came to the lecture without any preconceptions.",
+              "zh": "我来听这场讲座时没有带任何先入之见。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/preconception",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "challenge a preconception; preconceptions about a group",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "reason"
+      ],
+      "note": "在充分了解前已有的观念；可能形成偏见，但词本身不等于经证据验证的结论。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/preconception",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "fitful",
+      "word": "fitful",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "adj.阵阵的；断断续续的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.断断续续的，时有时无而不规律的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "断断续续的，时有时无而不规律的"
+          ],
+          "examples": [
+            {
+              "en": "He had a few fitful hours of sleep.",
+              "zh": "他断断续续地睡了几个小时。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/fitful",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "fitful sleep; fitful progress",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "intermittent",
+        "unfaltering"
+      ],
+      "topics": [
+        "time",
+        "change"
+      ],
+      "note": "强调时断时续和不稳定，不是有规律的周期性。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fitful",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "unbalanced",
+      "word": "unbalanced",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "adj.〔精神状态相关释义，部分字迹难辨〕；不公正的。",
+      "transcription_notes": [
+        "首项中文部分字迹不能逐字可靠辨认；不把规范译义冒充原写。"
+      ],
+      "pos": "adj.",
+      "meaning": "adj.不平衡的，不均衡的；片面的，不公允的；（非医学技术用语）精神失常的，情绪极不稳定的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不平衡的，不均衡的",
+            "片面的，不公允的",
+            "（非医学技术用语）精神失常的，情绪极不稳定的"
+          ],
+          "examples": [
+            {
+              "en": "He's been eating an unbalanced diet.",
+              "zh": "他一直吃得营养不均衡。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/unbalanced",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "He gave an unbalanced view of the situation.",
+              "zh": "他对局势的描述有失偏颇。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Cambridge Dictionary",
+                "url": "https://dictionary.cambridge.org/us/dictionary/english/unbalanced",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "In the novel, the narrator grows increasingly unbalanced and unreliable.",
+              "zh": "在这部小说中，叙述者的精神状态越来越不稳定，也越来越不可信。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "an unbalanced diet; an unbalanced account of events",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "material",
+        "reason",
+        "body"
+      ],
+      "note": "物理或组成比例不均衡与报道不公允分开；描述人的旧式用法不是专业医学诊断。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unbalanced",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        },
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/unbalanced",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取Cambridge检索返回的词条正文，明确列不公允、不平等和片面报道义。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "no-nonsense",
+      "word": "no-nonsense",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "adj.严肃的；高效干练的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.严肃务实的，干脆利落的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "严肃务实的，干脆利落的"
+          ],
+          "examples": [
+            {
+              "en": "Her no-nonsense reply set out exactly what the team needed to do.",
+              "zh": "她干脆务实的答复明确说明了团队需要做什么。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a no-nonsense approach; a no-nonsense manager",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "character",
+        "action"
+      ],
+      "note": "强调不容废话、直接办事；不是字面“没有意义”。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/no-nonsense",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "upend",
+      "word": "upend",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "v.颠倒。",
+      "transcription_notes": [],
+      "pos": "v.",
+      "meaning": "v.使倒置，使翻倒；颠覆，彻底打乱；击败，战胜",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使倒置，使翻倒",
+            "颠覆，彻底打乱",
+            "击败，战胜"
+          ],
+          "examples": [
+            {
+              "en": "He upended the bicycle to fix its flat tire.",
+              "zh": "他把自行车倒置过来，修理瘪掉的轮胎。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/upend",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The discovery upended the researchers’ assumptions about the site.",
+              "zh": "这项发现彻底推翻了研究人员对该遗址的原有假设。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The unseeded player upended the defending champion.",
+              "zh": "这位非种子选手击败了卫冕冠军。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "upend a table; upend an assumption",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "change",
+        "conflict",
+        "action"
+      ],
+      "note": "实物可翻倒；观点或秩序可被颠覆；比赛语境还可指战胜。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/upend",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "hedge",
+      "word": "hedge",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "v.回避。n.防备手段；树篱。",
+      "transcription_notes": [],
+      "pos": "n. / v.",
+      "meaning": "n.树篱，绿篱；防范损失的手段，风险对冲\nv.回避明确表态，含糊其辞；用树篱围住；采取对冲措施以防损失",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "树篱，绿篱",
+            "防范损失的手段，风险对冲"
+          ],
+          "examples": [
+            {
+              "en": "A dense hedge separates the garden from the road.",
+              "zh": "一道浓密的树篱将花园与道路隔开。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The company used a long-term contract as a hedge against price increases.",
+              "zh": "这家公司把长期合同作为防范涨价的手段。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "回避明确表态，含糊其辞",
+            "用树篱围住",
+            "采取对冲措施以防损失"
+          ],
+          "examples": [
+            {
+              "en": "She hedged when she was asked to support the campaign.",
+              "zh": "当被要求支持这项活动时，她没有明确表态。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/hedge",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The garden is hedged by flowering shrubs.",
+              "zh": "花园被开花的灌木篱围着。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/hedge",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The firm hedged against currency fluctuations.",
+              "zh": "这家公司采取对冲措施，防范汇率波动造成的损失。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "hedge on an issue; hedge against a loss; a hedge around a garden",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "economy",
+        "language",
+        "nature"
+      ],
+      "note": "回避义常指不愿承诺；金融义侧重降低风险，不等于保证获利。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hedge",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "mount",
+      "word": "mount",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "v.增加。",
+      "transcription_notes": [],
+      "pos": "v. / n.",
+      "meaning": "v.增加，上升；登上，爬上，骑上；安装，固定在支架或底座上；组织，发起，开展（活动或行动）\nn.山，山峰（常用于山名前）；底座，支架，装裱衬板",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "增加，上升",
+            "登上，爬上，骑上",
+            "安装，固定在支架或底座上",
+            "组织，发起，开展（活动或行动）"
+          ],
+          "examples": [
+            {
+              "en": "Their troubles have continued to mount.",
+              "zh": "他们的麻烦一直在增加。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/mount",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "She mounted her bicycle and rode away.",
+              "zh": "她骑上自行车离开了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/mount",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The birdhouse was mounted on a pole.",
+              "zh": "那个鸟屋安装在一根杆子上。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/mount",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The community mounted a campaign to save the library.",
+              "zh": "社区发起了一场挽救图书馆的行动。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "山，山峰（常用于山名前）",
+            "底座，支架，装裱衬板"
+          ],
+          "examples": [
+            {
+              "en": "Clouds hid the summit of Mount Fuji.",
+              "zh": "云遮住了富士山的山顶。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The camera came with a sturdy wall mount.",
+              "zh": "这台相机配有一个牢固的壁挂支架。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "mounting pressure; mount a campaign; mount a camera",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "change",
+        "action",
+        "material",
+        "environment"
+      ],
+      "note": "增加义通常不及物；mount a campaign是开展行动，不能译为增加运动。名词山名常大写Mount。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mount",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "quintessential",
+      "word": "quintessential",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "adj.典型的；卓越的；精髓性的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.最典型的，集中体现某类事物本质的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "最典型的，集中体现某类事物本质的"
+          ],
+          "examples": [
+            {
+              "en": "The village square is the quintessential meeting place for local residents.",
+              "zh": "村广场是当地居民最典型的聚会场所。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "the quintessential example; quintessentially urban",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "reason"
+      ],
+      "note": "强调最能代表某类特征，不必意味着质量最高；“卓越”只有在典型地体现优良特质时才可能适用。",
+      "normalization_note": "校正手写“卓越的”过宽：核心是典型、本质特征的集中体现。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/quintessential",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "harry",
+      "word": "harry",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "v.不断地骚扰；折磨。",
+      "transcription_notes": [],
+      "pos": "v.",
+      "meaning": "v.不断骚扰，烦扰，催逼；反复袭击，侵扰，劫掠",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "不断骚扰，烦扰，催逼",
+            "反复袭击，侵扰，劫掠"
+          ],
+          "examples": [
+            {
+              "en": "Reporters harried the director with questions as she left the meeting.",
+              "zh": "主任离开会场时，记者们不断用问题纠缠她。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "Small raiding parties harried the retreating army.",
+              "zh": "小股袭击部队不断侵扰撤退中的军队。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "harry someone with questions; harry retreating troops",
+      "collocation_source": "coach_composed",
+      "connotation": "通常贬义或描述负面遭遇",
+      "related_words": [
+        "torment",
+        "harass"
+      ],
+      "topics": [
+        "conflict",
+        "action"
+      ],
+      "note": "强调反复侵扰或逼迫；与torment的折磨义相交，但harry常突出持续纠缠、追逼。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/harry",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "torment",
+      "word": "torment",
+      "image": 2,
+      "action": "existing",
+      "handwritten_text": "n.折磨；痛苦。v.使痛苦；折磨。",
+      "transcription_notes": [],
+      "pos": "n. / v.",
+      "meaning": "n.极度痛苦，折磨\nv.使痛苦，反复折磨或烦扰",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "极度痛苦，折磨"
+          ],
+          "examples": [
+            {
+              "en": "She suffered years of mental torment after her son's death.",
+              "zh": "儿子去世后，她遭受了多年的精神折磨。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/torment_1",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "使痛苦，反复折磨或烦扰"
+          ],
+          "examples": [
+            {
+              "en": "He was tormented by feelings of insecurity.",
+              "zh": "缺乏安全感的情绪不断折磨着他。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/torment_2",
+                "checked_at": "2026-10-16"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "mental torment; be tormented by doubt",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "harry"
+      ],
+      "topics": [
+        "mood",
+        "conflict"
+      ],
+      "note": "名词指极度痛苦；动词可指身体或心理折磨，也可指反复烦扰。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/torment",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 极度痛苦，折磨；v. 使痛苦，反复折磨或烦扰"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "historical_checked",
+        "input": {
+          "pos": "n.; v.",
+          "meaning": "n. 极度痛苦，折磨；v. 使痛苦，反复折磨或烦扰"
+        },
+        "source_record": [
+          {
+            "material_id": "handwritten_vocab_20260923",
+            "record": "vocab/imports/20260923_1754_handwritten_vocab.json",
+            "kind": "user_handwritten_notes",
+            "image": 4,
+            "origin_word": null
+          }
+        ]
+      }
+    },
+    {
+      "surface": "codify",
+      "word": "codify",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "vt.编纂；系统整理。",
+      "transcription_notes": [],
+      "pos": "v.",
+      "meaning": "v.把法律或规则编成法典、成文制度；系统整理，按体系编排",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "把法律或规则编成法典、成文制度",
+            "系统整理，按体系编排"
+          ],
+          "examples": [
+            {
+              "en": "The convention codified the rules of war.",
+              "zh": "这项公约将战争规则编成了成文制度。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/codify",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The handbook codifies methods that experienced editors once passed on orally.",
+              "zh": "这本手册系统整理了资深编辑过去靠口头传授的方法。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "codify laws; codify a practice",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "society",
+        "reason"
+      ],
+      "note": "核心是把分散规则或知识整理成明确体系，不只是复制文字，也不等于写计算机代码。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/codify",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "panel",
+      "word": "panel",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "n.面板；专家组。v.用板镶〔末字难辨〕。",
+      "transcription_notes": [
+        "手写动词“用板镶…”末字难辨，规范义由词典确定。"
+      ],
+      "pos": "n. / v.",
+      "meaning": "n.专家小组，评审团，讨论小组；板，嵌板，板状构件；控制面板，仪表板\nv.用镶板覆盖或装饰",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "专家小组，评审团，讨论小组",
+            "板，嵌板，板状构件",
+            "控制面板，仪表板"
+          ],
+          "examples": [
+            {
+              "en": "The panel agreed to accept questions following the discussion.",
+              "zh": "讨论小组同意在讨论后接受提问。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/panel",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The carpenter replaced the damaged wooden panel.",
+              "zh": "木匠更换了损坏的木板。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "A red light appeared on the control panel.",
+              "zh": "控制面板上亮起了一盏红灯。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "用镶板覆盖或装饰"
+          ],
+          "examples": [
+            {
+              "en": "We paneled the living room with oak.",
+              "zh": "我们用橡木板装饰了客厅。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/panel",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a panel of experts; a control panel; panel a room",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "society",
+        "material"
+      ],
+      "note": "小组义由人构成；面板义为物；动词可见paneled（美）或panelled（英）。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/panel",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "impervious",
+      "word": "impervious",
+      "image": 2,
+      "action": "existing",
+      "handwritten_text": "adj.不受影响的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.不能渗透的，不透水的；能抵御损害的；不受影响的，无动于衷的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不能渗透的，不透水的",
+            "能抵御损害的",
+            "不受影响的，无动于衷的"
+          ],
+          "examples": [
+            {
+              "en": "The coating is impervious to water.",
+              "zh": "这种涂层不透水。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The protective shell is impervious to ordinary scratches.",
+              "zh": "这个保护壳能够抵御一般的刮擦损伤。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "He seemed impervious to criticism and repeated the same mistake.",
+              "zh": "他似乎不受批评影响，又犯了同样的错误。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "impervious to water; impervious to criticism",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "pervious"
+      ],
+      "topics": [
+        "material",
+        "character"
+      ],
+      "note": "to后说明抵御的对象；材料不渗透和人不受劝说分别理解。与pervious比较的是可否透过／影响。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impervious",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "词典分别列不能穿透、不受损害以及不受影响或扰动。"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "dictionary_checked",
+        "input": {
+          "pos": "adj.",
+          "meaning": "adj.不能渗透的，不透水的；能抵御损害的；不受影响的，无动于衷的"
+        },
+        "source_record": [
+          {
+            "material_id": "handwritten_vocab_20261026",
+            "record": "vocab/imports/20261026_2309_handwritten_vocab.json",
+            "kind": "user_handwritten_notes",
+            "image": 3,
+            "origin_word": null
+          }
+        ]
+      }
+    },
+    {
+      "surface": "pervious",
+      "word": "pervious",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "adj.可渗透的；能被通过的；透水的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.可渗透的，可透水的；可受影响的，能接受（道理等）的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "可渗透的，可透水的",
+            "可受影响的，能接受（道理等）的"
+          ],
+          "examples": [
+            {
+              "en": "the new road has a pervious surface that will cut down on the amount of water that collects on it during heavy rains",
+              "zh": "这条新路的路面能透水，可减少暴雨时路面积水。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/pervious",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "Unlike his earlier self, he was now pervious to reason.",
+              "zh": "与从前不同，他现在能听进道理了。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "pervious soil; pervious to reason",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "impervious",
+        "previous"
+      ],
+      "topics": [
+        "material",
+        "reason"
+      ],
+      "note": "通常与to连用；与impervious的渗透／接受影响义相对。不是previous（先前的）。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pervious",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "wilt",
+      "word": "wilt",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "v.枯萎；凋谢。n.枯萎病。",
+      "transcription_notes": [],
+      "pos": "v. / n.",
+      "meaning": "v.（使）枯萎，萎蔫；衰弱，失去精神或信心\nn.萎蔫，枯萎；萎蔫病",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "（使）枯萎，萎蔫",
+            "衰弱，失去精神或信心"
+          ],
+          "examples": [
+            {
+              "en": "The hot weather wilted the plants.",
+              "zh": "炎热的天气使植物枯萎了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/wilt",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "He wilted under the pressure.",
+              "zh": "他在压力下萎靡了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/wilt",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "萎蔫，枯萎；萎蔫病"
+          ],
+          "examples": [
+            {
+              "en": "The gardener inspected the tomatoes for signs of wilt.",
+              "zh": "园丁检查番茄是否出现萎蔫症状。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "plants wilt; wilt under pressure; tomato wilt",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "nature",
+        "mood"
+      ],
+      "note": "植物义指失去挺立状态；比喻人时指精力或信心受挫，不一定是死亡。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/wilt",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "re activate",
+      "word": "reactivate",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "vt.使重新激活；使恢复活力。",
+      "transcription_notes": [],
+      "pos": "v.",
+      "meaning": "v.（使）重新启用，重新激活，恢复活动",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "（使）重新启用，重新激活，恢复活动"
+          ],
+          "examples": [
+            {
+              "en": "The team reactivated the monitoring system after the repairs.",
+              "zh": "维修后，团队重新启用了监测系统。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "reactivate an account; reactivate a system",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "activate"
+      ],
+      "topics": [
+        "action",
+        "change"
+      ],
+      "note": "表示原来停止或休眠的事物再次活动，不是第一次activate。",
+      "normalization_note": "将手写分开的re activate规范为词典单词reactivate。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/reactivate",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "qualm",
+      "word": "qualm",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "n.疑虑；不安；一阵不安。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.顾虑，疑虑，内心不安（尤指是否合宜或合乎道德）",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "顾虑，疑虑，内心不安（尤指是否合宜或合乎道德）"
+          ],
+          "examples": [
+            {
+              "en": "She had qualms about accepting money from a company she was investigating.",
+              "zh": "接受一家正被自己调查的公司的钱，这让她心有顾虑。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "have qualms about doing; without qualms",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "mood",
+        "reason"
+      ],
+      "note": "常用复数qualms；尤其涉及良心、合宜性，也可泛指骤生的不安。此次未扩入较少用的身体恶心义。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/qualm",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "candid",
+      "word": "candid",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "adj.真诚的；〔有划改字迹，难辨〕；坦率的；公正的。",
+      "transcription_notes": [
+        "真诚的之后有划改，无法可靠逐字重建；只保留清晰部分，不猜补。"
+      ],
+      "pos": "adj.",
+      "meaning": "adj.坦率的，真诚直言的；公正无偏的，不怀恶意的；（照片、录像）自然抓拍的，非摆拍的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "坦率的，真诚直言的",
+            "公正无偏的，不怀恶意的",
+            "（照片、录像）自然抓拍的，非摆拍的"
+          ],
+          "examples": [
+            {
+              "en": "She was very candid about her past.",
+              "zh": "她对自己的过去非常坦诚。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/candid",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "A candid assessment should acknowledge both the strengths and the weaknesses.",
+              "zh": "公允的评价应同时承认长处和短处。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The album includes candid photographs of the actors between scenes.",
+              "zh": "相册中收录了演员们在拍摄间隙的自然抓拍照片。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "be candid about a mistake; candid photography",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "frank"
+      ],
+      "topics": [
+        "character",
+        "language",
+        "arts"
+      ],
+      "note": "坦率不等于必然无礼；摄影义指未安排姿态的自然拍摄。公正义与说实话义有交集但不完全相同。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/candid",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "indebted",
+      "word": "indebted",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "v.使负债；使受恩惠。adj.感激的；蒙恩的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.感激的，受惠而欠人情的；负债的，欠钱的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "感激的，受惠而欠人情的",
+            "负债的，欠钱的"
+          ],
+          "examples": [
+            {
+              "en": "I'm indebted to you for your help.",
+              "zh": "我很感激你的帮助。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/indebted",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The heavily indebted firm sold a factory to repay its loans.",
+              "zh": "这家负债累累的公司卖掉一座工厂来偿还贷款。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "be indebted to someone for help; a heavily indebted company",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "social",
+        "economy"
+      ],
+      "note": "现用词条为形容词；感谢义常接to某人、for某帮助；负债义指欠钱。",
+      "normalization_note": "手写动词标记不作为indebted的独立动词义；按词典形容词条整理。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/indebted",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "paralyze[d?]",
+      "word": "paralyze",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "〔词尾有涂改，似paralyzed〕vt.使麻痹；使瘫痪。",
+      "transcription_notes": [
+        "末尾d是否保留不可完全确定；paralyze/paralyzed均同一词元，故词元确定，不将不清字尾计为另一词。"
+      ],
+      "pos": "v.",
+      "meaning": "v.使麻痹，使身体失去活动能力；使不能运转，使陷入瘫痪；使惊呆，使因恐惧等而无法行动",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使麻痹，使身体失去活动能力",
+            "使不能运转，使陷入瘫痪",
+            "使惊呆，使因恐惧等而无法行动"
+          ],
+          "examples": [
+            {
+              "en": "The snake's venom paralyzed the mouse.",
+              "zh": "蛇毒使老鼠瘫痪了。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/paralyze",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "A strike would paralyze the industry.",
+              "zh": "罢工会使该行业陷入瘫痪。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/paralyze",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "Fear of making a mistake paralyzed him during the interview.",
+              "zh": "对犯错的恐惧让他在面试时不知如何行动。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "paralyze a limb; paralyze transport; be paralyzed by fear",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "stun"
+      ],
+      "topics": [
+        "body",
+        "action",
+        "mood"
+      ],
+      "note": "身体瘫痪、机构停摆和心理上无法行动是不同语境；paralyzed为过去式／过去分词。",
+      "normalization_note": "照片词尾有涂改，可能为paralyzed；明确可辨词干及vt释义统一归到词元paralyze，不另造词。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/paralyze",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "foe",
+      "word": "foe",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "n.敌人；对头。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.敌人，对手；某事物的反对者",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "敌人，对手",
+            "某事物的反对者"
+          ],
+          "examples": [
+            {
+              "en": "Her ability was acknowledged by friend and foe alike.",
+              "zh": "她的能力得到了朋友和对手的一致认可。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/foe",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "Many considered him a foe of democracy.",
+              "zh": "许多人认为他是民主的反对者。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/foe",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "friend and foe; a foe of censorship",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "conflict",
+        "society"
+      ],
+      "note": "较enemy更偏书面；foe of某事物可指立场上的反对者。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/foe",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "prosaic",
+      "word": "prosaic",
+      "image": 2,
+      "action": "existing",
+      "handwritten_text": "adj.平凡乏味的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.平淡乏味的；缺乏想象力的；散文的；日常普通的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "平淡乏味的",
+            "缺乏想象力的",
+            "散文的",
+            "日常普通的"
+          ],
+          "examples": [
+            {
+              "en": "The report’s prosaic style made an exciting discovery sound dull.",
+              "zh": "报告平淡乏味的文风把一项激动人心的发现写得索然无味。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "Her prosaic solution copied the old plan without any new ideas.",
+              "zh": "她的方案缺乏想象力，只照搬旧计划，没有新点子。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The critic compared the work’s poetic and prosaic passages.",
+              "zh": "评论家比较了这部作品中的诗体段落与散文段落。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "After the celebration, they returned to the prosaic task of cleaning the room.",
+              "zh": "庆祝结束后，他们回到了打扫房间这项日常工作上。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "prosaic language; a prosaic explanation",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "arts",
+        "language"
+      ],
+      "note": "日常阅读常指平常、乏味或缺想象力；散文体义保留已有词库但标明文学语境，不等同于所有散文都乏味。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/prosaic",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "平淡乏味的；缺乏想象力的；散文的；日常普通的"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "historical_checked",
+        "input": {
+          "pos": "adj.",
+          "meaning": "平淡乏味的；缺乏想象力的；散文的；日常普通的"
+        },
+        "source_record": [
+          {
+            "material_id": "vocab_dictionary_cleanup_20260916",
+            "record": "vocab/imports/20260916_0139_dictionary_supplement.json",
+            "kind": "dictionary_curation",
+            "origin_word": null
+          }
+        ]
+      }
+    },
+    {
+      "surface": "axiomatic",
+      "word": "axiomatic",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "adj.公理的；不言自明的。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.不言自明的，被普遍视为当然的；公理的，基于公理体系的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不言自明的，被普遍视为当然的",
+            "公理的，基于公理体系的"
+          ],
+          "examples": [
+            {
+              "en": "It was once considered axiomatic that the existing system could not change.",
+              "zh": "人们一度把现行制度不可能改变视为不言自明。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The course begins with an axiomatic approach to geometry.",
+              "zh": "这门课从几何学的公理化方法讲起。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "it is axiomatic that; an axiomatic system",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "reason"
+      ],
+      "note": "日常论证中的不言自明并不保证命题实际正确；数学语境指采用公理体系。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/axiomatic",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "obesity",
+      "word": "obesity",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "n.肥胖。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.肥胖，体内脂肪过度积累的状态",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "肥胖，体内脂肪过度积累的状态"
+          ],
+          "examples": [
+            {
+              "en": "The study examined public attitudes toward obesity.",
+              "zh": "这项研究考察了公众对肥胖的态度。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "childhood obesity; obesity research",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "obese"
+      ],
+      "topics": [
+        "body"
+      ],
+      "note": "名词；形容词为obese。本条只整理词义，不用于对个人作健康诊断。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/obesity",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "promulgate",
+      "word": "promulgate",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "v.宣扬；颁布。",
+      "transcription_notes": [],
+      "pos": "v.",
+      "meaning": "v.公开宣扬，传播（思想、信条等）；正式公布，颁布（法律或规则）",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "公开宣扬，传播（思想、信条等）",
+            "正式公布，颁布（法律或规则）"
+          ],
+          "examples": [
+            {
+              "en": "The journal helped promulgate the new theory among researchers.",
+              "zh": "这本期刊帮助在研究人员中传播了这一新理论。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The law was promulgated in February 1993.",
+              "zh": "该法律于1993年2月正式颁布。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/promulgate",
+                "checked_at": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "promulgate a doctrine; promulgate regulations",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "disseminate",
+        "profess"
+      ],
+      "topics": [
+        "language",
+        "society"
+      ],
+      "note": "思想可宣扬，法规可颁布；相较disseminate的一般广泛传播，promulgate常强调公开宣布或正式发布。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/promulgate",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    },
+    {
+      "surface": "disseminate",
+      "word": "disseminate",
+      "image": 2,
+      "action": "existing",
+      "handwritten_text": "v.散播；传播（消息）〔下方括注难辨〕。",
+      "transcription_notes": [
+        "下方括号内短注字迹难辨，不擅自补成新的义项。"
+      ],
+      "pos": "v.",
+      "meaning": "v.广泛传播、散布；使分散",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "广泛传播、散布",
+            "使分散"
+          ],
+          "examples": [
+            {
+              "en": "Their findings have been widely disseminated.",
+              "zh": "他们的研究结果已被广泛传播。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/disseminate",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The device disseminates fine particles throughout the chamber.",
+              "zh": "这个装置将细小颗粒分散到整个腔室。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "disseminate information; disseminate findings",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [
+        "promulgate"
+      ],
+      "topics": [
+        "language",
+        "action"
+      ],
+      "note": "常用于知识、消息或研究结果的广泛传播；与promulgate比较时不一定包含正式颁布。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disseminate",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，中文核心义归纳：广泛传播、散布；使分散"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "historical_checked",
+        "input": {
+          "pos": "v.",
+          "meaning": "广泛传播、散布；使分散"
+        },
+        "source_record": [
+          {
+            "material_id": "handwritten_vocab_20261013",
+            "record": "vocab/imports/20261013_0015_handwritten_vocab.json",
+            "kind": "user_handwritten_notes",
+            "image": 3,
+            "origin_word": null
+          }
+        ]
+      }
+    },
+    {
+      "surface": "intransigent",
+      "word": "intransigent",
+      "image": 2,
+      "action": "existing",
+      "handwritten_text": "adj.不妥协的。n.不让步的〔原写词性如此〕。",
+      "transcription_notes": [],
+      "pos": "adj.",
+      "meaning": "adj.不肯妥协的、顽固的",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不肯妥协的、顽固的"
+          ],
+          "examples": [
+            {
+              "en": "The two sides remained intransigent, and the talks ended without agreement.",
+              "zh": "双方仍不肯妥协，谈判最终未达成协议。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "an intransigent position; remain intransigent",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "character",
+        "conflict"
+      ],
+      "note": "重点是不愿改变立场或妥协；可用于人、立场或态度。手写名词行释义仍为“的”，本批沿用已核验形容词。",
+      "normalization_note": "手写n.行没有清楚的名词释义；沿用既有已核验adj.，不据手写词性机械增加名词。",
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/intransigent",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "dictionary_checked",
+        "input": {
+          "pos": "adj.",
+          "meaning": "不肯妥协的、顽固的"
+        },
+        "source_record": []
+      }
+    },
+    {
+      "surface": "conundrum",
+      "word": "conundrum",
+      "image": 2,
+      "action": "existing",
+      "handwritten_text": "n.令人迷惑的难题；谜语。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.难题；谜语",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "难题",
+            "谜语"
+          ],
+          "examples": [
+            {
+              "en": "The role of clouds is one of the big conundrums of climatology.",
+              "zh": "云的作用是气候学中的重大难题之一。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Oxford Advanced Learner’s Dictionary",
+                "url": "https://www.oxfordlearnersdictionaries.com/definition/english/conundrum",
+                "checked_at": "2026-10-16"
+              }
+            },
+            {
+              "en": "The puzzle book opens with a conundrum whose answer depends on a pun.",
+              "zh": "这本谜题书开篇是一道答案依靠双关语的谜语。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "solve a conundrum; a moral conundrum",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "reason"
+      ],
+      "note": "既可指难以解决的问题，也可指谜语；不能因碰到谜语义便把所有问题都理解成文字游戏。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/conundrum",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：难题；谜语"
+        }
+      ],
+      "definition_review": "historical_checked",
+      "baseline": {
+        "status": "historical_checked",
+        "input": {
+          "pos": "n.",
+          "meaning": "难题；谜语"
+        },
+        "source_record": [
+          {
+            "material_id": "handwritten_vocab_20261006",
+            "record": "vocab/imports/20261006_2301_handwritten_vocab.json",
+            "kind": "user_handwritten_notes",
+            "image": 2,
+            "origin_word": null
+          },
+          {
+            "material_id": "handwritten_vocab_20261024",
+            "record": "vocab/imports/20261024_1708_handwritten_vocab.json",
+            "kind": "user_handwritten_notes",
+            "image": 2,
+            "origin_word": null
+          }
+        ]
+      }
+    },
+    {
+      "surface": "panorama",
+      "word": "panorama",
+      "image": 2,
+      "action": "new",
+      "handwritten_text": "n.全景；全貌；概览；综述。",
+      "transcription_notes": [],
+      "pos": "n.",
+      "meaning": "n.全景，开阔而完整的景象；全景画，全景照片；全面概述，综述",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "全景，开阔而完整的景象",
+            "全景画，全景照片",
+            "全面概述，综述"
+          ],
+          "examples": [
+            {
+              "en": "we admired the breathtaking panorama from the top of the mountain",
+              "zh": "我们在山顶欣赏了令人叹为观止的全景。",
+              "kind": "quotation",
+              "review_status": "source_checked",
+              "source": {
+                "publisher": "Merriam-Webster",
+                "url": "https://www.merriam-webster.com/dictionary/panorama",
+                "checked_at": "2026-10-29"
+              }
+            },
+            {
+              "en": "The exhibition included a panorama of the old harbor.",
+              "zh": "展览中有一幅旧港口的全景画。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            },
+            {
+              "en": "The book offers a panorama of scientific debate in the nineteenth century.",
+              "zh": "这本书全面概述了十九世纪的科学论争。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-10-29",
+                "record": "vocab/examples/verified-20261028-handwritten.json"
+              }
+            }
+          ]
+        }
+      ],
+      "collocation": "a panorama of the valley; a panorama of history",
+      "collocation_source": "coach_composed",
+      "connotation": "中性；具体褒贬视语境",
+      "related_words": [],
+      "topics": [
+        "environment",
+        "arts",
+        "reason"
+      ],
+      "note": "空间上的全貌可延伸为对历史或某主题的全面呈现；不等同于任意简短摘要。",
+      "normalization_note": null,
+      "original_context": null,
+      "definition_sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/panorama",
+          "checked_at": "2026-10-29",
+          "status": "checked",
+          "evidence": "实际读取词条正文，核对本条所列词性和核心义；中文为教练归纳，不把手写义项当作词典结论。"
+        }
+      ],
+      "definition_review": "dictionary_checked_today",
+      "baseline": null
+    }
+  ],
+  "occurrences": [
+    {
+      "word": "niche",
+      "surface": "niche",
+      "image": 1,
+      "handwritten_text": "n.〔首个修饰语字迹难辨〕的工作；壁龛；商业性定位。adj.小众特定的（商品）。",
+      "transcription_notes": [
+        "首行“的工作”前的手写修饰语不能逐字可靠辨认；规范义据词典单独确定。"
+      ]
+    },
+    {
+      "word": "trumpet",
+      "surface": "trumpet",
+      "image": 1,
+      "handwritten_text": "n.小号，喇叭。v.鼓吹，宣扬。",
+      "transcription_notes": []
+    },
+    {
+      "word": "contagious",
+      "surface": "contagious",
+      "image": 1,
+      "handwritten_text": "adj.传染的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "vendor",
+      "surface": "vendor",
+      "image": 1,
+      "handwritten_text": "n.小贩。",
+      "transcription_notes": []
+    },
+    {
+      "word": "vandal",
+      "surface": "vandal",
+      "image": 1,
+      "handwritten_text": "n.歹徒。",
+      "transcription_notes": []
+    },
+    {
+      "word": "oblivious",
+      "surface": "oblivious",
+      "image": 1,
+      "handwritten_text": "adj.不在意的；遗忘的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "acme",
+      "surface": "acme",
+      "image": 1,
+      "handwritten_text": "n.顶点；极点；最高点。",
+      "transcription_notes": []
+    },
+    {
+      "word": "heed",
+      "surface": "heed",
+      "image": 1,
+      "handwritten_text": "v.（〔括注难辨〕）注意，留心。n.注意，留心。",
+      "transcription_notes": [
+        "heed上方括号中的短注字迹难辨，不据此增添词义。"
+      ]
+    },
+    {
+      "word": "demanding",
+      "surface": "demanding",
+      "image": 1,
+      "handwritten_text": "adj.苛刻的，费力的。v.强烈要求。",
+      "transcription_notes": []
+    },
+    {
+      "word": "exacting",
+      "surface": "exacting",
+      "image": 1,
+      "handwritten_text": "adj.严格的。v.逼取。",
+      "transcription_notes": []
+    },
+    {
+      "word": "whit",
+      "surface": "whit",
+      "image": 1,
+      "handwritten_text": "n.一点点，一些；些微。",
+      "transcription_notes": []
+    },
+    {
+      "word": "affinity",
+      "surface": "affinity",
+      "image": 1,
+      "handwritten_text": "n.喜好，喜爱；共同之处；紧密联系；亲和力。",
+      "transcription_notes": []
+    },
+    {
+      "word": "trauma",
+      "surface": "trauma",
+      "image": 1,
+      "handwritten_text": "n.创伤。",
+      "transcription_notes": []
+    },
+    {
+      "word": "stun",
+      "surface": "stun",
+      "image": 1,
+      "handwritten_text": "v.使震惊。",
+      "transcription_notes": []
+    },
+    {
+      "word": "stunning",
+      "surface": "stunning",
+      "image": 1,
+      "handwritten_text": "adj.极好的；令人震惊的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "seminal",
+      "surface": "seminal",
+      "image": 1,
+      "handwritten_text": "adj.创造力的，创意的；种子的；精液的，生殖的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "pompous",
+      "surface": "pompus [划去] → pompous",
+      "image": 1,
+      "handwritten_text": "〔先写pompus并划去〕pompous adj.自大的；华而不实的；爱炫耀的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "profess",
+      "surface": "profess",
+      "image": 1,
+      "handwritten_text": "v.公开宣称。",
+      "transcription_notes": []
+    },
+    {
+      "word": "bombastic",
+      "surface": "bombastic",
+      "image": 1,
+      "handwritten_text": "adj.浮夸的；言过其实的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "yardstick",
+      "surface": "yardstick",
+      "image": 1,
+      "handwritten_text": "n.码尺；衡量标准。",
+      "transcription_notes": []
+    },
+    {
+      "word": "unfaltering",
+      "surface": "unfaltering",
+      "image": 1,
+      "handwritten_text": "adj.坚定的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "unassailable",
+      "surface": "unassailable",
+      "image": 1,
+      "handwritten_text": "adj.攻不破的；无懈可击的；不容置疑的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "preconception",
+      "surface": "preconception",
+      "image": 2,
+      "handwritten_text": "n.先入之见；偏见。",
+      "transcription_notes": []
+    },
+    {
+      "word": "fitful",
+      "surface": "fitful",
+      "image": 2,
+      "handwritten_text": "adj.阵阵的；断断续续的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "unbalanced",
+      "surface": "unbalanced",
+      "image": 2,
+      "handwritten_text": "adj.〔精神状态相关释义，部分字迹难辨〕；不公正的。",
+      "transcription_notes": [
+        "首项中文部分字迹不能逐字可靠辨认；不把规范译义冒充原写。"
+      ]
+    },
+    {
+      "word": "no-nonsense",
+      "surface": "no-nonsense",
+      "image": 2,
+      "handwritten_text": "adj.严肃的；高效干练的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "upend",
+      "surface": "upend",
+      "image": 2,
+      "handwritten_text": "v.颠倒。",
+      "transcription_notes": []
+    },
+    {
+      "word": "hedge",
+      "surface": "hedge",
+      "image": 2,
+      "handwritten_text": "v.回避。n.防备手段；树篱。",
+      "transcription_notes": []
+    },
+    {
+      "word": "mount",
+      "surface": "mount",
+      "image": 2,
+      "handwritten_text": "v.增加。",
+      "transcription_notes": []
+    },
+    {
+      "word": "quintessential",
+      "surface": "quintessential",
+      "image": 2,
+      "handwritten_text": "adj.典型的；卓越的；精髓性的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "harry",
+      "surface": "harry",
+      "image": 2,
+      "handwritten_text": "v.不断地骚扰；折磨。",
+      "transcription_notes": []
+    },
+    {
+      "word": "torment",
+      "surface": "torment",
+      "image": 2,
+      "handwritten_text": "n.折磨；痛苦。v.使痛苦；折磨。",
+      "transcription_notes": []
+    },
+    {
+      "word": "codify",
+      "surface": "codify",
+      "image": 2,
+      "handwritten_text": "vt.编纂；系统整理。",
+      "transcription_notes": []
+    },
+    {
+      "word": "panel",
+      "surface": "panel",
+      "image": 2,
+      "handwritten_text": "n.面板；专家组。v.用板镶〔末字难辨〕。",
+      "transcription_notes": [
+        "手写动词“用板镶…”末字难辨，规范义由词典确定。"
+      ]
+    },
+    {
+      "word": "impervious",
+      "surface": "impervious",
+      "image": 2,
+      "handwritten_text": "adj.不受影响的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "pervious",
+      "surface": "pervious",
+      "image": 2,
+      "handwritten_text": "adj.可渗透的；能被通过的；透水的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "wilt",
+      "surface": "wilt",
+      "image": 2,
+      "handwritten_text": "v.枯萎；凋谢。n.枯萎病。",
+      "transcription_notes": []
+    },
+    {
+      "word": "reactivate",
+      "surface": "re activate",
+      "image": 2,
+      "handwritten_text": "vt.使重新激活；使恢复活力。",
+      "transcription_notes": []
+    },
+    {
+      "word": "qualm",
+      "surface": "qualm",
+      "image": 2,
+      "handwritten_text": "n.疑虑；不安；一阵不安。",
+      "transcription_notes": []
+    },
+    {
+      "word": "candid",
+      "surface": "candid",
+      "image": 2,
+      "handwritten_text": "adj.真诚的；〔有划改字迹，难辨〕；坦率的；公正的。",
+      "transcription_notes": [
+        "真诚的之后有划改，无法可靠逐字重建；只保留清晰部分，不猜补。"
+      ]
+    },
+    {
+      "word": "indebted",
+      "surface": "indebted",
+      "image": 2,
+      "handwritten_text": "v.使负债；使受恩惠。adj.感激的；蒙恩的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "paralyze",
+      "surface": "paralyze[d?]",
+      "image": 2,
+      "handwritten_text": "〔词尾有涂改，似paralyzed〕vt.使麻痹；使瘫痪。",
+      "transcription_notes": [
+        "末尾d是否保留不可完全确定；paralyze/paralyzed均同一词元，故词元确定，不将不清字尾计为另一词。"
+      ]
+    },
+    {
+      "word": "foe",
+      "surface": "foe",
+      "image": 2,
+      "handwritten_text": "n.敌人；对头。",
+      "transcription_notes": []
+    },
+    {
+      "word": "prosaic",
+      "surface": "prosaic",
+      "image": 2,
+      "handwritten_text": "adj.平凡乏味的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "axiomatic",
+      "surface": "axiomatic",
+      "image": 2,
+      "handwritten_text": "adj.公理的；不言自明的。",
+      "transcription_notes": []
+    },
+    {
+      "word": "obesity",
+      "surface": "obesity",
+      "image": 2,
+      "handwritten_text": "n.肥胖。",
+      "transcription_notes": []
+    },
+    {
+      "word": "promulgate",
+      "surface": "promulgate",
+      "image": 2,
+      "handwritten_text": "v.宣扬；颁布。",
+      "transcription_notes": []
+    },
+    {
+      "word": "disseminate",
+      "surface": "disseminate",
+      "image": 2,
+      "handwritten_text": "v.散播；传播（消息）〔下方括注难辨〕。",
+      "transcription_notes": [
+        "下方括号内短注字迹难辨，不擅自补成新的义项。"
+      ]
+    },
+    {
+      "word": "intransigent",
+      "surface": "intransigent",
+      "image": 2,
+      "handwritten_text": "adj.不妥协的。n.不让步的〔原写词性如此〕。",
+      "transcription_notes": []
+    },
+    {
+      "word": "conundrum",
+      "surface": "conundrum",
+      "image": 2,
+      "handwritten_text": "n.令人迷惑的难题；谜语。",
+      "transcription_notes": []
+    },
+    {
+      "word": "panorama",
+      "surface": "panorama",
+      "image": 2,
+      "handwritten_text": "n.全景；全貌；概览；综述。",
+      "transcription_notes": []
+    }
+  ],
+  "pending_transcriptions": [],
+  "transcription_uncertainties": [
+    {
+      "word": "niche",
+      "image": 1,
+      "notes": [
+        "首行“的工作”前的手写修饰语不能逐字可靠辨认；规范义据词典单独确定。"
+      ]
+    },
+    {
+      "word": "heed",
+      "image": 1,
+      "notes": [
+        "heed上方括号中的短注字迹难辨，不据此增添词义。"
+      ]
+    },
+    {
+      "word": "unbalanced",
+      "image": 2,
+      "notes": [
+        "首项中文部分字迹不能逐字可靠辨认；不把规范译义冒充原写。"
+      ]
+    },
+    {
+      "word": "panel",
+      "image": 2,
+      "notes": [
+        "手写动词“用板镶…”末字难辨，规范义由词典确定。"
+      ]
+    },
+    {
+      "word": "candid",
+      "image": 2,
+      "notes": [
+        "真诚的之后有划改，无法可靠逐字重建；只保留清晰部分，不猜补。"
+      ]
+    },
+    {
+      "word": "paralyze",
+      "image": 2,
+      "notes": [
+        "末尾d是否保留不可完全确定；paralyze/paralyzed均同一词元，故词元确定，不将不清字尾计为另一词。"
+      ]
+    },
+    {
+      "word": "disseminate",
+      "image": 2,
+      "notes": [
+        "下方括号内短注字迹难辨，不擅自补成新的义项。"
+      ]
+    }
+  ],
+  "integration_notes": [
+    "此目录为独立候选，不是已导入平台的学习记录。",
+    "examples-candidate.json含51词完整最终候选；主线须先移除其他verified文件中同词的例句记录后再写统一文件，或按word合并到原文件，避免脚本拒绝重复词。",
+    "12个旧词senses.meanings逐字沿用当前规范层；已有非空引文原样保留。新义项不用于覆写手机用户自改文本。",
+    "下方分类为建议；关系由主线统一审核，不自动制造SE等价结论。"
+  ],
+  "relation_groups_added": [
+    "curated-20261028-permeability",
+    "curated-20261028-demanding",
+    "curated-20261028-inflated-style"
+  ]
+}

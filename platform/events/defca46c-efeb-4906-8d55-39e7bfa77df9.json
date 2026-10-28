@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "defca46c-efeb-4906-8d55-39e7bfa77df9",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T11:36:01.458Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test8_section2_easy",
+    "question": "1",
+    "type": "tc",
+    "answer": "E",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "5ad49e02-b8b9-46be-9b4a-0de51a9824be",
+    "draft_id": "4677a9c6-12d6-4507-a3a8-915f93e3f11b",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "c1231a64ffdac6baaa3dfcce687ee0684c145afc9914c6661b3be200e360e22f",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test8_section2_easy\",\"1\"]",
+      "type": "tc",
+      "mode": "single",
+      "source": "填空 2000 · Test 8 · Section 2 · easy · 第 1 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          32
+        ],
+        "regions": [
+          {
+            "page": 32,
+            "top": 675.703095,
+            "bottom": 766.703126,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "This is neither praise nor criticism, neither a compliment nor _____, just an observation.",
+      "options": [
+        "an exposition",
+        "an elucidation",
+        "an animadversion",
+        "a culmination",
+        "a divination"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "E"
+    ],
+    "answerKey": {
+      "answer": "C",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5110-5147",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": false
+  }
+}

@@ -5,9 +5,14 @@ export function formatDefinition(senses) {
 }
 export function validateSenseExample(e) {
   if (e == null) return null;
-  if (!e || e.kind !== 'quotation' || e.review_status !== 'source_checked' || typeof e.en !== 'string' || !e.en.trim() || e.en.length > 1000 || typeof e.zh !== 'string' || !e.zh.trim() || e.zh.length > 1000) throw Error('例句必须是已核对原句及中文译文');
+  if (!e || typeof e.en !== 'string' || !e.en.trim() || e.en.length > 1000 || typeof e.zh !== 'string' || !e.zh.trim() || e.zh.length > 1000) throw Error('例句须包含完整英文和中文译文');
+  if (e.kind === 'coach_original') {
+    if (e.review_status !== 'coach_authored' || !e.source || e.source.publisher !== 'GRE AI教练（自拟）' || !/^\d{4}-\d{2}-\d{2}$/.test(e.source.created_at || '') || e.source.url !== undefined || (e.source.record !== undefined && !/^vocab\/examples\/[A-Za-z0-9._-]+\.json$/.test(e.source.record))) throw Error('自拟例句须明确标注作者与日期，不得伪造词典链接');
+    return {en:e.en.trim(),zh:e.zh.trim(),kind:'coach_original',review_status:'coach_authored',source:{publisher:'GRE AI教练（自拟）',created_at:e.source.created_at,...(e.source.record?{record:e.source.record}:{})}};
+  }
+  if (e.kind !== 'quotation' || e.review_status !== 'source_checked') throw Error('原例句必须经过来源核对');
   let url; try { url = new URL(e.source?.url); } catch { throw Error('例句来源缺失'); }
-  if (url.protocol !== 'https:' || !['ets.org','oxfordlearnersdictionaries.com','oxfordreference.com','oed.com'].some(domain=>url.hostname===domain||url.hostname.endsWith('.'+domain)) || typeof e.source.publisher !== 'string' || !e.source.publisher.trim()) throw Error('例句须来自 ETS 或 Oxford 可追溯页面');
+  if (url.protocol !== 'https:' || !['ets.org','oxfordlearnersdictionaries.com','oxfordreference.com','oed.com','merriam-webster.com','dictionary.cambridge.org'].some(domain=>url.hostname===domain||url.hostname.endsWith('.'+domain)) || typeof e.source.publisher !== 'string' || !e.source.publisher.trim()) throw Error('原例句须来自已支持的权威词典或 ETS 可追溯页面');
   return {en:e.en.trim(),zh:e.zh.trim(),kind:'quotation',review_status:'source_checked',source:{publisher:e.source.publisher.slice(0,150),url:url.href,...(e.source.checked_at?{checked_at:String(e.source.checked_at).slice(0,10)}:{}),...(typeof e.source.locator==='string'&&e.source.locator.trim()?{locator:e.source.locator.trim().slice(0,500)}:{})}};
 }
 export function validateStandardDefinition(d) {
@@ -19,7 +24,13 @@ export function validateStandardDefinition(d) {
     if(s.examples !== undefined && (!Array.isArray(s.examples)||s.examples.length!==s.meanings.length)) throw Error('例句必须逐义项对应');
     return {pos:s.pos,meanings:[...s.meanings],...(s.examples===undefined?{}:{examples:s.examples.map(validateSenseExample)})};
   });
-  return {word:d.word,input:{pos:d.input.pos,meaning:d.input.meaning},senses,status:d.status,note:typeof d.note==='string'?d.note.slice(0,3000):'',sources:(Array.isArray(d.sources)?d.sources:[]).slice(0,20).filter(s=>/^https?:\/\//.test(s.url)).map(s=>({publisher:String(s.publisher||'词典').slice(0,100),url:s.url.slice(0,2000),checked_at:String(s.checked_at||'').slice(0,30)}))};
+  let curation;
+  if (d.curation !== undefined) {
+    const c=d.curation;
+    if (!c || c.status!=='completed' || c.scope!=='definition_examples' || !/^\d{4}-\d{2}-\d{2}$/.test(c.reviewed_at||'') || c.record!=='vocab/curation-resolutions.json' || !Array.isArray(c.request_ids) || c.request_ids.length>10000 || new Set(c.request_ids).size!==c.request_ids.length || c.request_ids.some(id=>typeof id!=='string'||!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id)) || !senses.some(s=>s.examples?.some(Boolean))) throw Error('整理完成须有明确审核记录、原请求编号和例句');
+    curation={status:c.status,scope:c.scope,reviewed_at:c.reviewed_at,record:c.record,request_ids:[...c.request_ids]};
+  }
+  return {word:d.word,input:{pos:d.input.pos,meaning:d.input.meaning},senses,status:d.status,note:typeof d.note==='string'?d.note.slice(0,3000):'',sources:(Array.isArray(d.sources)?d.sources:[]).slice(0,20).filter(s=>/^https?:\/\//.test(s.url)).map(s=>({publisher:String(s.publisher||'词典').slice(0,100),url:s.url.slice(0,2000),checked_at:String(s.checked_at||'').slice(0,30)})),...(curation?{curation}:{})};
 }
 export function applyStandardDefinition(word, definition = word.standard_definition) {
   if (!definition) return word;

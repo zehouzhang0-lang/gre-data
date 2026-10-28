@@ -252,7 +252,7 @@ export function projectState(data, now = new Date()) {
     return { ...session, ...progress, completed_at: progress.complete ? recalls.filter(r => r.session_id === session.session_id).at(-1)?.recorded_at || null : null };
   }).reverse();
   const undone = new Set(data.events.filter(e => e.kind === 'vocab_quick_undo').map(e => e.payload.target_id));
-  return { vocabulary, relations, wordGroups, ...projectReviewTasks(data.events, vocabSessions, data.time_zone, now), spacedReview, vocabSessions, vocabDrills, cardReadings: projectCardReadings(data.events, vocabulary), curationRequests: projectCurationRequests(data.events), events: data.events.map(e => ({ ...e, ...e.payload })).reverse(), quickRound: data.quickRound, undoId: data.events.findLast(e => e.kind === 'vocab_quick_review' && !undone.has(e.id))?.id || null, settings: clone(data.settings), timeZone: data.time_zone, datasetId: data.dataset_id };
+  return { vocabulary, relations, wordGroups, ...projectReviewTasks(data.events, vocabSessions, data.time_zone, now), spacedReview, vocabSessions, vocabDrills, cardReadings: projectCardReadings(data.events, vocabulary), curationRequests: projectCurationRequests(data.events, vocabulary), events: data.events.map(e => ({ ...e, ...e.payload })).reverse(), quickRound: data.quickRound, undoId: data.events.findLast(e => e.kind === 'vocab_quick_review' && !undone.has(e.id))?.id || null, settings: clone(data.settings), timeZone: data.time_zone, datasetId: data.dataset_id };
 }
 export function prepareEvent(data, kind, payload, id, now = new Date()) {
   const p = cleanPayload(kind, payload), prior = data.events.find(e => e.id === id);

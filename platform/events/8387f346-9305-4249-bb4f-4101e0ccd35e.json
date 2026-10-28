@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "8387f346-9305-4249-bb4f-4101e0ccd35e",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T12:24:50.225Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test10_section1_medium",
+    "question": "1",
+    "type": "tc",
+    "answer": "B",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "12c8b4cf-f668-4913-8428-5a935764c941",
+    "draft_id": "aad4c397-25cc-4855-be6d-6fd95471516b",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "4c824b0fe3cf6666aa631fc6cb14454e93ac0306b0ab4f5d07124194c39894c0",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test10_section1_medium\",\"1\"]",
+      "type": "tc",
+      "mode": "single",
+      "source": "填空 2000 · Test 10 · Section 1 · medium · 第 1 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          36
+        ],
+        "regions": [
+          {
+            "page": 36,
+            "top": 564.7031099999999,
+            "bottom": 668.703095,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Because people expect theater directors to be authoritarians, many were surprised that Clark was so _____.",
+      "options": [
+        "histrionic",
+        "megalomaniacal",
+        "egalitarian",
+        "indolent",
+        "charismatic"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "B"
+    ],
+    "answerKey": {
+      "answer": "C",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:5849-5886",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": false
+  }
+}

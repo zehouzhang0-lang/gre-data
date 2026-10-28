@@ -12,6 +12,9 @@ import { QUICK_RATINGS, withQuickReviews } from "../shared/quick-review.mjs";
 import { applyStandardDefinition, validateStandardDefinition } from "../shared/standard-definition.mjs";
 import { WRITING_KINDS, validateWriting, prepareWritingEvent, projectWriting } from "./writing.mjs";
 import { validateAiReview, canonical, questionKey as mobileQuestionKey } from "../mobile/src/practice/model.mjs";
+import { projectCardReadings } from "../mobile/src/data/card-reading.mjs";
+import { projectCurationRequests } from "../mobile/src/data/curation.mjs";
+import { projectWordGroups, projectReviewTasks } from "../mobile/src/data/review-tasks.mjs";
 
 export const normalizeWord = (value) =>
   value.trim().toLowerCase().replace(/\s+/g, " ");
@@ -254,11 +257,13 @@ export class Store {
     const files = (await this.list("platform/events")).filter((f) =>
       f.endsWith(".json"),
     );
-    return (
-      await Promise.all(files.map((f) => this.json(`platform/events/${f}`)))
-    ).sort(
+    // Exports read several projections concurrently. Keep the number of open
+    // files bounded as phone histories grow to thousands of atomic events.
+    const events=[];
+    for(let i=0;i<files.length;i+=64)events.push(...await Promise.all(files.slice(i,i+64).map(f=>this.json(`platform/events/${f}`))));
+    return events.sort(
       (a, b) =>
-        a.recorded_at.localeCompare(b.recorded_at) || a.id.localeCompare(b.id),
+        Date.parse(a.recorded_at)-Date.parse(b.recorded_at) || a.id.localeCompare(b.id),
     );
   }
   async append(kind, payload, id = randomUUID()) {
@@ -559,21 +564,29 @@ export class Store {
       if (word) words.set(word.word, applyStandardDefinition(word, definition));
     }
     const relationSeed = await this.json("vocab/relations.json", { topics: [], groups: [] });
-    const relations = projectRelations([...words.values()], relationSeed, events);
+    const vocabulary = [...words.values()].sort((a, b) => a.word.localeCompare(b.word));
+    const relations = projectRelations(vocabulary, relationSeed, events);
+    const wordGroups = projectWordGroups(events, relations, vocabulary);
+    const projectedSessions = vocabSessions.map(session=>{
+      const progress=roundProgress(session,vocabDrills,sessionRecalls);
+      return {...session,...progress,completed_at:progress.complete?sessionRecalls.filter(r=>r.session_id===session.session_id).at(-1)?.recorded_at||null:null};
+    }).reverse();
+    // These are read-only projections of original mobile events. Reading the
+    // desktop state must never generate daily rounds or resurrect deleted ones.
+    const reviewTasks = projectReviewTasks(events, projectedSessions, profile.timezone || 'Asia/Shanghai', now);
     const legacyQuestions = await readLegacyQuestions(this);
     const spacedReview = projectReview({ vocabulary:[...words.values()], legacyWords:legacyWordReviews({homework,lexicon,difficult,mastered}), legacyQuestions, events, grade, now, timeZone:profile.timezone || 'Asia/Shanghai' });
     return {
       writing: projectWriting(events, profile.target?.analytical_writing),
-      vocabSessions: vocabSessions.map(session=>{
-        const progress=roundProgress(session,vocabDrills,sessionRecalls);
-        return {...session,...progress,completed_at:progress.complete?sessionRecalls.filter(r=>r.session_id===session.session_id).at(-1)?.recorded_at||null:null};
-      }).reverse(),
+      vocabSessions: projectedSessions,
       vocabDrills: vocabDrills,
+      ...reviewTasks,
+      wordGroups,
+      cardReadings: projectCardReadings(events, vocabulary),
+      curationRequests: projectCurationRequests(events, vocabulary),
       spacedReview,
       relations,
-      vocabulary: [...words.values()].sort((a, b) =>
-        a.word.localeCompare(b.word),
-      ),
+      vocabulary,
       questions: [...questions.values()],
       keys: Object.fromEntries(keys),
       reviews: reviews.reverse(),
@@ -594,6 +607,7 @@ export class Store {
           id: e.id,
           kind: e.kind,
           recorded_at: e.recorded_at,
+          payload: e.payload,
           word: e.payload.word,
           count: e.payload.items?.length,
           session_id:e.payload.session_id,

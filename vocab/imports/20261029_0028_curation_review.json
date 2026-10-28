@@ -1,0 +1,6146 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-29",
+  "source_backup_created_at": "2026-10-28T15:51:42.466Z",
+  "scope": "185 distinct explicit curation requests in latest verified phone backup",
+  "method": "逐词人工审读现有规范词性、义项、旧来源证据及已有配句。仅 dictionary_reopened 明列的10词本次重新读取词典页面，其余沿用既有核验，绝不将人工复审改记成185词本次词典核验。",
+  "counts": {
+    "words": 185,
+    "retain": 181,
+    "refine": 2,
+    "note": 2,
+    "existing_example_words_reviewed": 21,
+    "dictionary_pages_reopened": 10
+  },
+  "existing_example_reviews": [
+    {
+      "word": "idle",
+      "review_note": "四条句子分别支持闲置、徒劳、虚度时间及发动机空转；最后一条应由不及物空转义说明。"
+    },
+    {
+      "word": "recalcitrant",
+      "review_note": "大臣抗命与学生不服管教两句都符合对应形容词义，中文未误作一般难度。"
+    },
+    {
+      "word": "persona",
+      "review_note": "公众形象与家庭男人形象的对照准确展示对外人格。"
+    },
+    {
+      "word": "lens",
+      "review_note": "lenses in 的语境隐含隐形眼镜，中文补出这一信息合理；仍属镜片义。"
+    },
+    {
+      "word": "eloquent",
+      "review_note": "眼神传神正好展示非语言的第二义，没有误放到演讲能力义。"
+    },
+    {
+      "word": "fuzzy",
+      "review_note": "头部绒毛与照片失焦两句分属第一、第二义，未拿来证明温暖愉快义。"
+    },
+    {
+      "word": "austere",
+      "review_note": "父亲冷峻和衣着朴素分别匹配第一、第三义；两句没有误被当作禁欲证据。"
+    },
+    {
+      "word": "banal",
+      "review_note": "套话鼓励与乏味问题均完整，陈腐和缺乏新意是同一语义领域。"
+    },
+    {
+      "word": "bromide",
+      "review_note": "让人好受的套话可产生解决问题的错觉，准确对应陈词滥调，不涉化学义。"
+    },
+    {
+      "word": "savvy",
+      "review_note": "懂门道为名词，懂财务为形容词；词性及两条中文正确。"
+    },
+    {
+      "word": "demeanor",
+      "review_note": "两例均为外显举止；英式 demeanour 是有效拼写变体。"
+    },
+    {
+      "word": "rancid",
+      "review_note": "厨房传来的气味对准酸败义；中文补明油脂并未改变句义。"
+    },
+    {
+      "word": "frivolous",
+      "review_note": "道歉中的 being frivolous 表示刚才不严肃，对准第二义正确。"
+    },
+    {
+      "word": "stale",
+      "review_note": "面包、婚姻、工作倦怠分别展示第一至第三形容词义；均未误配到名词旧义。"
+    },
+    {
+      "word": "resuscitate",
+      "review_note": "失败的复苏尝试仍展示动词复苏义，译文没有把失败写成成功。"
+    },
+    {
+      "word": "hoax",
+      "review_note": "名词假求助与动词派人冒充的骗局清楚区分；长动词例句仍在既有25词预算。"
+    },
+    {
+      "word": "long-winded",
+      "review_note": "冗长乏味的文章与核心贬义一致。"
+    },
+    {
+      "word": "contiguous",
+      "review_note": "国家接壤准确展示直接相邻，而非泛泛邻近。"
+    },
+    {
+      "word": "dilatory",
+      "review_note": "政府处理问题拖拉展示行动迟缓，未强行断言蓄意延误。"
+    },
+    {
+      "word": "aghast",
+      "review_note": "looked at him aghast 中 aghast 描述人物状态，词性和译文正确。"
+    },
+    {
+      "word": "trickster",
+      "review_note": "使用偷来的无效支票展示诈骗者，中文没有误解成魔术师。"
+    }
+  ],
+  "items": [
+    {
+      "word": "aggrandize",
+      "outcome": "retain",
+      "review_note": "扩大权势与吹捧两个方向均保留；不是所有中性数量增加都适合用它。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "扩大，增强；提高权势、财富或声望；夸大，吹捧"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "扩大，增强",
+            "提高权势、财富或声望",
+            "夸大，吹捧"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/aggrandize",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：扩大，增强；提高权势、财富或声望；夸大，吹捧"
+        }
+      ]
+    },
+    {
+      "word": "chafing dish",
+      "outcome": "retain",
+      "review_note": "器皿名词且整条为短语；加热保温与暖锅相符，不拆成摩擦义。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "餐桌上用于加热或保温食物的器皿；暖锅"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "餐桌上用于加热或保温食物的器皿",
+            "暖锅"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/chafing%20dish",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "word": "idle",
+      "outcome": "refine",
+      "review_note": "形容词三项成立；发动机动词应明确不及物空转，现有使机器空转过窄，原路边汽车例句正是前者。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.; v.",
+        "meaning": "adj. 闲置的、无事可做的；无实际用途的；懒散的；v. 闲逛、虚度；使机器空转"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "闲置的、无事可做的",
+            "无实际用途的",
+            "懒散的"
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "闲逛、虚度",
+            "使机器空转"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/idle",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，中文核心义归纳：adj. 闲置的、无事可做的；无实际用途的；懒散的；v. 闲逛、虚度；使机器空转"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/idle_2",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      },
+      "existing_example_review": "四条句子分别支持闲置、徒劳、虚度时间及发动机空转；最后一条应由不及物空转义说明。"
+    },
+    {
+      "word": "heinous",
+      "outcome": "retain",
+      "review_note": "极恶程度与令人发指对应，宜修饰严重恶行而非普通坏天气。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "极恶的；令人发指的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "极恶的",
+            "令人发指的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/heinous",
+          "checked_at": "2026-10-08",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，按所列词性归纳核心义：极恶的；令人发指的"
+        }
+      ]
+    },
+    {
+      "word": "felony",
+      "outcome": "retain",
+      "review_note": "法律名词重罪成立；不将某地的刑期门槛伪装成全球统一定义。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "重罪"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "重罪"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/felony",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "重罪"
+        }
+      ]
+    },
+    {
+      "word": "factionalism",
+      "outcome": "retain",
+      "review_note": "名词指派系主义或内部派系纷争，不能当作一个具体派系的人。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "派系主义；党派纷争"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "派系主义",
+            "党派纷争"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/factionalism",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "派系主义；党派纷争"
+        }
+      ]
+    },
+    {
+      "word": "impassion",
+      "outcome": "retain",
+      "review_note": "及物动词激起强烈感情成立；与 impassioned 的形容词用途区分。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "使充满激情，激起强烈感情"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使充满激情，激起强烈感情"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impassion",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使充满激情，激起强烈感情"
+        }
+      ]
+    },
+    {
+      "word": "apropos",
+      "outcome": "retain",
+      "review_note": "形容词贴切适时、介词关于、副词顺便说均能成立；搭配须分别处理。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.; prep.; adv.",
+        "meaning": "adj. 切题而适时的；prep. 关于；adv. 适时地，顺便说"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "切题而适时的"
+          ]
+        },
+        {
+          "pos": "prep.",
+          "meanings": [
+            "关于"
+          ]
+        },
+        {
+          "pos": "adv.",
+          "meanings": [
+            "适时地，顺便说"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/apropos",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "adj. 切题而适时的；prep. 关于；adv. 适时地，顺便说"
+        }
+      ]
+    },
+    {
+      "word": "recalcitrant",
+      "outcome": "retain",
+      "review_note": "顽抗与不服管束的两个现成原句吻合；难治的扩展义不误推为道德败坏。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "adj. 顽抗权威的；不服管束的；难处理、难治的；n. 不服从者"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "顽抗权威的",
+            "不服管束的",
+            "难处理、难治的"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "不服从者"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/recalcitrant",
+          "checked_at": "2026-10-08",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，按所列词性归纳核心义：adj. 顽抗权威的；不服管束的；难处理、难治的；n. 不服从者"
+        }
+      ],
+      "existing_example_review": "大臣抗命与学生不服管教两句都符合对应形容词义，中文未误作一般难度。"
+    },
+    {
+      "word": "felicitous",
+      "outcome": "retain",
+      "review_note": "重点是表达或选择恰到好处，令人愉快的扩展义成立，不直接等同 fortunate。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "（措辞、选择）贴切得当的；令人愉快的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "（措辞、选择）贴切得当的",
+            "令人愉快的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/felicitous",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；（措辞、选择）贴切得当的；令人愉快的"
+        }
+      ]
+    },
+    {
+      "word": "camaraderie",
+      "outcome": "refine",
+      "review_note": "情谊与友情过泛且重复；应明确群体成员因共同相处而形成的熟悉、融洽和友好。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "情谊；友情"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "情谊",
+            "友情"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/camaraderie",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.merriam-webster.com/dictionary/camaraderie",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      }
+    },
+    {
+      "word": "apotheosis",
+      "outcome": "retain",
+      "review_note": "典范极致与神化均为名词义；不把一切赞扬称为神化。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "典范、极致；最高点；神化、奉为神明"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "典范、极致",
+            "最高点",
+            "神化、奉为神明"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/apotheosis",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "已读取词条；核心义归纳：典范、极致；最高点；神化、奉为神明"
+        }
+      ]
+    },
+    {
+      "word": "illiberal",
+      "outcome": "retain",
+      "review_note": "狭隘不宽容、吝啬、限制自由分别成立；不只指政治党派标签。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "不宽容的；狭隘的；吝啬的；限制自由的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不宽容的",
+            "狭隘的",
+            "吝啬的",
+            "限制自由的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/illiberal",
+          "checked_at": "2026-09-10",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳，不转录手写中文。"
+        }
+      ]
+    },
+    {
+      "word": "disenchant",
+      "outcome": "retain",
+      "review_note": "使失去幻想可伴随醒悟或失望；不是字面的施展魔法。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "使不再抱幻想；使醒悟或失望"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使不再抱幻想",
+            "使醒悟或失望"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disenchant",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使不再抱幻想；使醒悟或失望"
+        }
+      ]
+    },
+    {
+      "word": "amidst",
+      "outcome": "retain",
+      "review_note": "介词空间、期间和伴随情境可理解；后接名词短语，不当副词使用。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "prep.",
+        "meaning": "在……中间；在……期间；伴随着……"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "prep.",
+          "meanings": [
+            "在……中间",
+            "在……期间",
+            "伴随着……"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/amidst",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：在……中间；在……期间；伴随着……"
+        }
+      ]
+    },
+    {
+      "word": "seamy",
+      "outcome": "retain",
+      "review_note": "丑恶龌龊强调社会或生活的阴暗面，不能按 seam 误解成普通缝纫。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "丑恶的，肮脏龌龊的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "丑恶的，肮脏龌龊的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/seamy",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；丑恶的，肮脏龌龊的"
+        }
+      ]
+    },
+    {
+      "word": "aphorism",
+      "outcome": "retain",
+      "review_note": "简练概括原则的警句义成立；不保证内容本身真实或深刻。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "格言，警句；简练的道理或原则陈述"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "格言，警句",
+            "简练的道理或原则陈述"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/aphorism",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：格言，警句；简练的道理或原则陈述"
+        }
+      ]
+    },
+    {
+      "word": "fallibility",
+      "outcome": "retain",
+      "review_note": "名词表达可能犯错的性质，不是每次都错或必定失败。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "可能犯错的性质，易错性"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "可能犯错的性质，易错性"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fallibility",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：可能犯错的性质，易错性"
+        }
+      ]
+    },
+    {
+      "word": "abominate",
+      "outcome": "retain",
+      "review_note": "两个中文表达同为强烈憎恶，语义可靠；不必机械扩成两种不相关含义。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "深恶痛绝；极其憎恶"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "深恶痛绝",
+            "极其憎恶"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/abominate",
+          "checked_at": "2026-10-08",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，按所列词性归纳核心义：深恶痛绝；极其憎恶"
+        }
+      ]
+    },
+    {
+      "word": "elate",
+      "outcome": "retain",
+      "review_note": "动词使欢欣成立，较少见的形容词 elate 有既有词典依据，常用形式是 elated。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.; adj.",
+        "meaning": "v. 使欢欣鼓舞，使得意；adj. 欢欣鼓舞的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使欢欣鼓舞，使得意"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "欢欣鼓舞的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/elate",
+          "checked_at": "2026-10-08",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，按所列词性归纳核心义：v. 使欢欣鼓舞，使得意；adj. 欢欣鼓舞的"
+        }
+      ]
+    },
+    {
+      "word": "halcyon",
+      "outcome": "retain",
+      "review_note": "宁静幸福、繁荣与翠鸟名词分组正确；形容词常用于理想化的过去时光。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "adj. 宁静幸福的；繁荣的；n. 传说中的翠鸟；翠鸟"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "宁静幸福的",
+            "繁荣的"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "传说中的翠鸟",
+            "翠鸟"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/halcyon",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已读取词条正文；首项释义短摘录：a very happy or successful period in the past:；词性与中文核心义结合正文归纳，少见义另列补充来源。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/halcyon",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "核对形容词宁静、幸福繁荣及名词传说中的翠鸟或翠鸟。"
+        }
+      ]
+    },
+    {
+      "word": "coagulation",
+      "outcome": "retain",
+      "review_note": "凝结凝固为过程，凝血为特定语境；是名词而非执行动作的动词。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "凝结；凝固；凝血"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "凝结",
+            "凝固",
+            "凝血"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/coagulation",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "word": "cobra",
+      "outcome": "retain",
+      "review_note": "眼镜蛇为准确核心义，不引申成所有毒蛇。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "眼镜蛇"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "眼镜蛇"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cobra",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "眼镜蛇"
+        }
+      ]
+    },
+    {
+      "word": "incrustation",
+      "outcome": "retain",
+      "review_note": "结壳过程与形成的硬层均合理；不是殻内的全部物质。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "结壳；表面形成的硬层或沉积物"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "结壳",
+            "表面形成的硬层或沉积物"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/incrustation",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：结壳；表面形成的硬层或沉积物"
+        }
+      ]
+    },
+    {
+      "word": "encomiums",
+      "outcome": "retain",
+      "review_note": "保留原复数词形及对 encomium 的说明，不因词元合并而改变用户学习记录。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "赞词",
+            "颂扬（encomium 的复数）"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/encomium",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "wherewithal",
+      "outcome": "retain",
+      "review_note": "所需手段资源特别是钱财准确，必须结合完成某事的能力理解。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "所需的手段、资源，尤指钱财"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "所需的手段、资源，尤指钱财"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/wherewithal",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：所需的手段、资源，尤指钱财"
+        }
+      ]
+    },
+    {
+      "word": "pedantic",
+      "outcome": "retain",
+      "review_note": "拘泥细节与卖弄学问有负面评价，不把认真或学识丰富一概判作迂腐。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "拘泥细节或规则的；卖弄学问、迂腐的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "拘泥细节或规则的",
+            "卖弄学问、迂腐的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pedantic",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：拘泥细节或规则的；卖弄学问、迂腐的"
+        }
+      ]
+    },
+    {
+      "word": "bountiful",
+      "outcome": "retain",
+      "review_note": "丰富充足与慷慨双向成立，可分别描述收成和施与者。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "丰盛充足的；慷慨的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "丰盛充足的",
+            "慷慨的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bountiful",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：丰盛充足的；慷慨的"
+        }
+      ]
+    },
+    {
+      "word": "disorganize",
+      "outcome": "retain",
+      "review_note": "扰乱已有组织或秩序的及物动词成立，不表示主动组织活动。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "扰乱；破坏组织或秩序"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "扰乱",
+            "破坏组织或秩序"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disorganize",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文并对照中文核心义；屈折形式按词元解释，罕见义保留用法限定。"
+        }
+      ]
+    },
+    {
+      "word": "corporeal",
+      "outcome": "retain",
+      "review_note": "肉体的与物质有形的相关但不同；不与 corporate 公司的一词混淆。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "身体的，肉体的；物质的，有形的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "身体的，肉体的",
+            "物质的，有形的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/corporeal",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：身体的，肉体的；物质的，有形的"
+        }
+      ]
+    },
+    {
+      "word": "peddler",
+      "outcome": "retain",
+      "review_note": "流动小贩及传播兜售者成立；后者褒贬依兜售的对象确定。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "流动小贩；兜售或传播某种东西的人"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "流动小贩",
+            "兜售或传播某种东西的人"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/peddler",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "流动小贩；兜售或传播某种东西的人"
+        }
+      ]
+    },
+    {
+      "word": "traject",
+      "outcome": "retain",
+      "review_note": "本次重读 MW 确认及物动词 transmit；词形有效但少见，不强改为 trajectory。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "传送，传递"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "传送，传递"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/traject",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：传送，传递"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.merriam-webster.com/dictionary/traject",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      }
+    },
+    {
+      "word": "befuddle",
+      "outcome": "retain",
+      "review_note": "使迷惑糊涂为核心，结果是认知不清而非专指酒醉。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "使迷惑，使糊涂"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使迷惑，使糊涂"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/befuddle",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：使迷惑，使糊涂"
+        }
+      ]
+    },
+    {
+      "word": "sanguinity",
+      "outcome": "retain",
+      "review_note": "源自 sanguine 的乐观状态名词成立；不能按血液词根机械解释为血统。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "乐观、充满希望的状态"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "乐观、充满希望的状态"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sanguine",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文并对照中文核心义；屈折形式按词元解释，罕见义保留用法限定。"
+        }
+      ]
+    },
+    {
+      "word": "dermatosis",
+      "outcome": "retain",
+      "review_note": "皮肤病为通类名词，不等同于某一种具体皮疹或病因。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "皮肤病"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "皮肤病"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/dermatosis",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "persona",
+      "outcome": "retain",
+      "review_note": "公众形象和叙述角色分组成立；原例句清楚对比公众形象与私下家庭形象。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "对外展示的形象、人格面貌；作品中的叙述角色或人物"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "对外展示的形象、人格面貌",
+            "作品中的叙述角色或人物"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/persona",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：对外展示的形象、人格面貌；作品中的叙述角色或人物"
+        }
+      ],
+      "existing_example_review": "公众形象与家庭男人形象的对照准确展示对外人格。"
+    },
+    {
+      "word": "valorize",
+      "outcome": "retain",
+      "review_note": "赋予肯定价值与价格维持是不同场景；不是勇敢的 valor 的直接同义替换。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "赋予价值；肯定或抬高价值；维持或提高价格"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "赋予价值",
+            "肯定或抬高价值",
+            "维持或提高价格"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/valorize",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "赋值或提高、维持价值与价格。"
+        }
+      ]
+    },
+    {
+      "word": "lens",
+      "outcome": "retain",
+      "review_note": "透镜镜片义成立；原句 lenses in 是隐形眼镜语境，中文补出隐形信息合理。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "透镜、镜片"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "透镜、镜片"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/lens",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ],
+      "existing_example_review": "lenses in 的语境隐含隐形眼镜，中文补出这一信息合理；仍属镜片义。"
+    },
+    {
+      "word": "caprice",
+      "outcome": "retain",
+      "review_note": "心血来潮与任性变化成立；强调变化缺少稳定理由，不是正式长期计划。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "一时兴起；任性；反复无常的变化"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "一时兴起",
+            "任性",
+            "反复无常的变化"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/caprice",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：一时兴起；任性；反复无常的变化"
+        }
+      ]
+    },
+    {
+      "word": "carnivorous",
+      "outcome": "retain",
+      "review_note": "食肉的准确，词性为形容词，不当作食肉动物的名词。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "食肉的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "食肉的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/carnivorous",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "blacksmith",
+      "outcome": "retain",
+      "review_note": "铁匠是职业名词；不能只译为所有工匠或珠宝匠。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "铁匠"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "铁匠"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blacksmith",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "已读取词条；核心义归纳：铁匠"
+        }
+      ]
+    },
+    {
+      "word": "confederacy",
+      "outcome": "retain",
+      "review_note": "邦联与联盟/目的性集团成立，不把所有联盟都专指美国历史南方邦联。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "邦联；联盟；为某种目的结成的集团"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "邦联",
+            "联盟",
+            "为某种目的结成的集团"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/confederacy",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "本次实际读取词典释义并归纳；核对常用核心义与词性。邦联；联盟；为某种目的结成的集团"
+        }
+      ]
+    },
+    {
+      "word": "quiescent",
+      "outcome": "retain",
+      "review_note": "静止或暂不活跃成立，不能据此推断永远死亡或不可能恢复。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "静止的；暂不活跃的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "静止的",
+            "暂不活跃的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/quiescent",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：静止的；暂不活跃的"
+        }
+      ]
+    },
+    {
+      "word": "eloquent",
+      "outcome": "retain",
+      "review_note": "语言表达有力与非语言的传神两义成立；眼神原例句配在第二义准确。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "雄辩的，表达流畅有力的；生动传神的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "雄辩的，表达流畅有力的",
+            "生动传神的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/eloquent",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "雄辩的，表达流畅有力的；生动传神的"
+        }
+      ],
+      "existing_example_review": "眼神传神正好展示非语言的第二义，没有误放到演讲能力义。"
+    },
+    {
+      "word": "dainty",
+      "outcome": "retain",
+      "review_note": "小巧精美、挑剔和可口的形容词用法均保留；精美食物是名词用法。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "adj. 小巧精美的；讲究、挑剔的；可口的；n. 精美食物"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "小巧精美的",
+            "讲究、挑剔的",
+            "可口的"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "精美食物"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dainty",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "adj. 小巧精致的；挑剔的；n. 精美食物"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dainty",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 小巧精美的；讲究、挑剔的；可口的；n. 精美食物"
+        }
+      ]
+    },
+    {
+      "word": "gawky",
+      "outcome": "retain",
+      "review_note": "身体动作笨拙不协调是核心，不把它泛化成智力低下。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "笨拙的；动作不协调的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "笨拙的",
+            "动作不协调的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/gawky",
+          "checked_at": "2026-09-10",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳，不转录手写中文。"
+        }
+      ]
+    },
+    {
+      "word": "risible",
+      "outcome": "retain",
+      "review_note": "可笑荒唐适合现有核心义；不把所有让人微笑的美好事物也称为荒唐。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "可笑的；滑稽的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "可笑的，荒唐的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/risible",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "nonentity",
+      "outcome": "retain",
+      "review_note": "无足轻重的人物与不存在的事物均为名词义，不能译作体积小的人。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "无足轻重的人或事；不存在的东西；不存在"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "无足轻重的人或事",
+            "不存在的东西",
+            "不存在"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/nonentity",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无足轻重的人或事；不存在的东西；不存在"
+        }
+      ]
+    },
+    {
+      "word": "marital",
+      "outcome": "retain",
+      "review_note": "婚姻夫妻关系准确；特别与 martial 军事的形近词区分。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "婚姻的，夫妻关系的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "婚姻的，夫妻关系的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/marital",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：婚姻的，夫妻关系的"
+        }
+      ]
+    },
+    {
+      "word": "cataclysm",
+      "outcome": "retain",
+      "review_note": "巨大灾难或剧变为核心，大洪水为字面历史义；不等同于日常小麻烦。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "大灾难；剧烈巨变；大洪水"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "大灾难",
+            "剧烈巨变",
+            "大洪水"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cataclysm",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：大灾难；剧烈巨变；大洪水"
+        }
+      ]
+    },
+    {
+      "word": "bugle",
+      "outcome": "retain",
+      "review_note": "军号与吹号分词性正确，不只凭拼写联想到 bug。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n./v.",
+        "meaning": "军号；吹号"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "军号"
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "吹号"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bugle",
+          "checked_at": "2026-09-10",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳，不转录手写中文。"
+        }
+      ]
+    },
+    {
+      "word": "parse",
+      "outcome": "retain",
+      "review_note": "语法分析和拆解细究为动词；一次分析结果作名词有既有依据。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.; n.",
+        "meaning": "v. 作语法分析；仔细剖析；n. 分析结果或一次分析"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "作语法分析",
+            "仔细剖析"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "分析结果或一次分析"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/parse",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：v. 作语法分析；仔细剖析；n. 分析结果或一次分析"
+        }
+      ]
+    },
+    {
+      "word": "towering",
+      "outcome": "retain",
+      "review_note": "物理高度、卓越程度及强烈情绪可分语境，不能把 towering rage 译成卓越的愤怒。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "高耸的；卓越的；程度极强的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "高耸的",
+            "卓越的",
+            "程度极强的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/towering",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：高耸的；卓越的；程度极强的"
+        }
+      ]
+    },
+    {
+      "word": "chary",
+      "outcome": "retain",
+      "review_note": "谨慎戒备以及不轻易付出成立，常用 chary of；不等于慈善的 charitable。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "谨慎的；戒备的；不轻易给予、接受或耗费的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "谨慎的",
+            "戒备的",
+            "不轻易给予、接受或耗费的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/chary",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "词典列对风险谨慎戒备，以及不轻易给予、接受或花费的含义。"
+        }
+      ]
+    },
+    {
+      "word": "amorphous",
+      "outcome": "retain",
+      "review_note": "无固定外形、结构模糊及非晶质分义准确，非晶质须限材料科学。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "无定形的；结构不明确的；非晶质的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "无定形的",
+            "结构不明确的",
+            "非晶质的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/amorphous",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "今日实际读取词典正文，按词性归纳核心义；中文不是词典原文转录：无定形的；结构不明确的；非晶质的"
+        }
+      ]
+    },
+    {
+      "word": "predilect",
+      "outcome": "retain",
+      "review_note": "本次 MW 明确收录形容词 preferred/chosen；保留偏爱义，不错改为 predilection。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "偏爱的，特别喜爱的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "偏爱的，特别喜爱的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/predilect",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：偏爱的，特别喜爱的"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.merriam-webster.com/dictionary/predilect",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      }
+    },
+    {
+      "word": "malleable",
+      "outcome": "retain",
+      "review_note": "可锻造与易受影响的引申义成立；后者不是绝对褒义或绝对贬义。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "可锻造、可塑的；易受影响或改变的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "可锻造、可塑的",
+            "易受影响或改变的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/malleable",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：可锻造、可塑的；易受影响或改变的"
+        }
+      ]
+    },
+    {
+      "word": "arboreal",
+      "outcome": "retain",
+      "review_note": "树木相关与树栖两个语境成立；生活在树上比生活在森林更具体。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "树木的，像树的；树栖的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "树木的，像树的",
+            "树栖的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/arboreal",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "树木的，像树的；树栖的"
+        }
+      ]
+    },
+    {
+      "word": "factionalist",
+      "outcome": "retain",
+      "review_note": "指派系主义者这个人；与 factionalism 现象名词区分。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "派系主义者；搞派系活动的人"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "派系主义者",
+            "搞派系活动的人"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/factionalist",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "派系主义者；搞派系活动的人"
+        }
+      ]
+    },
+    {
+      "word": "fuzzy",
+      "outcome": "retain",
+      "review_note": "绒毛、模糊与温暖愉快三义可保留；婴儿头发和失焦照片两例分别准确。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "毛茸茸的；模糊不清的；使人感到温暖愉快的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "毛茸茸的",
+            "模糊不清的",
+            "使人感到温暖愉快的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fuzzy",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "已读取词条；核心义归纳：毛茸茸的；模糊不清的；使人感到温暖愉快的"
+        }
+      ],
+      "existing_example_review": "头部绒毛与照片失焦两句分属第一、第二义，未拿来证明温暖愉快义。"
+    },
+    {
+      "word": "lofty",
+      "outcome": "retain",
+      "review_note": "高耸、崇高、高傲与难企及可随对象区分；不是始终正面评价。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "高耸的；高尚、崇高的；高傲的；高深难及的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "高耸的",
+            "高尚、崇高的",
+            "高傲的",
+            "高深难及的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lofty",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "已读取词条；核心义归纳：高耸的；高尚、崇高的；高傲的；高深难及的"
+        }
+      ]
+    },
+    {
+      "word": "advent",
+      "outcome": "retain",
+      "review_note": "某事到来出现成立，常见 advent of；不把普通名词自动理解成宗教节期。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "到来；出现"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "到来",
+            "出现"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/advent",
+          "checked_at": "2026-09-08",
+          "status": "checked",
+          "note": "中文核心义由教练依据词典归纳；不是手写中文的转录。"
+        }
+      ]
+    },
+    {
+      "word": "incivility",
+      "outcome": "retain",
+      "review_note": "无礼状态及具体失礼言行可成立；不是没有文明或某族群落后。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "无礼，粗鲁；失礼的言行"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "无礼，粗鲁",
+            "失礼的言行"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/incivility",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无礼，粗鲁；失礼的言行"
+        }
+      ]
+    },
+    {
+      "word": "avian",
+      "outcome": "retain",
+      "review_note": "鸟类相关的形容词准确；不把它当鸟类个体名词。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "鸟类的，与鸟有关的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "鸟类的，与鸟有关的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/avian",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "鸟类的，与鸟有关的"
+        }
+      ]
+    },
+    {
+      "word": "callow",
+      "outcome": "retain",
+      "review_note": "年轻且缺乏经验是重点，不是年龄小就一定幼稚。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "年轻而缺乏经验的，幼稚的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "年轻而缺乏经验的，幼稚的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/callow",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "年轻而缺乏经验的，幼稚的"
+        }
+      ]
+    },
+    {
+      "word": "self-deprecate",
+      "outcome": "note",
+      "review_note": "自嘲动词表达可理解，但既有链接查的是 deprecate 和 self-deprecating，应说明来源覆盖相关形式而非专门词条。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "贬低自己，自嘲"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "贬低自己，自嘲"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/deprecate",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "只核对基础动词贬低义，未核对到完整self-deprecate独立词条。",
+          "scope": "related_form"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/self-deprecating",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "只核对常见形容词自我贬低、自谦义；不作为完整动词条目已核验的证据。",
+          "scope": "related_form"
+        },
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/self-deprecating",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "scope": "related_form",
+          "evidence": "已读取self-deprecating形容词条目：使自己、自己的能力或成就显得较不重要；仅词族核验，不是self-deprecate独立动词条目核验。"
+        }
+      ]
+    },
+    {
+      "word": "gargantuan",
+      "outcome": "retain",
+      "review_note": "巨大到惊人是核心，适用体积或任务规模，不要求真实巨人。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "庞大的，巨大的；程度惊人的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "庞大的，巨大的",
+            "程度惊人的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/gargantuan",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：庞大的，巨大的；程度惊人的"
+        }
+      ]
+    },
+    {
+      "word": "austere",
+      "outcome": "retain",
+      "review_note": "冷峻人格与朴素衣着两原句配义准确；禁欲和艰苦为另两语境。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "严峻冷淡的；严格禁欲的；简朴无装饰的；艰苦的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "严峻冷淡的",
+            "严格禁欲的",
+            "简朴无装饰的",
+            "艰苦的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/austere",
+          "checked_at": "2026-09-10",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳，不转录手写中文。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/austere",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：严峻冷淡的；严格禁欲的；简朴无装饰的；艰苦的"
+        }
+      ],
+      "existing_example_review": "父亲冷峻和衣着朴素分别匹配第一、第三义；两句没有误被当作禁欲证据。"
+    },
+    {
+      "word": "forebear",
+      "outcome": "retain",
+      "review_note": "祖先先辈及前驱可保留；不要把名词 forebear 与克制的动词 forbear 混为一项。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "祖先，先辈；先驱"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "祖先，先辈",
+            "先驱"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/forebear",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：祖先，先辈；先驱"
+        },
+        {
+          "publisher": "American Heritage",
+          "url": "https://www.ahdictionary.com/word/search.html?q=forbear",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "官方搜索摘要核对易混动词forbear：克制，忍住。"
+        }
+      ]
+    },
+    {
+      "word": "preconceive",
+      "outcome": "retain",
+      "review_note": "在取得充分信息之前预先形成想法的动词成立，不等同于任何预测。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "预先形成（意见）；先入为主地设想"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "预先形成（意见）",
+            "先入为主地设想"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/preconceive",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文，核对核心义、词性或补充义项；中文为归纳：预先形成（意见）；先入为主地设想"
+        }
+      ]
+    },
+    {
+      "word": "primate",
+      "outcome": "retain",
+      "review_note": "灵长类动物与首席主教是两个不同语义领域，不能用一条例句证明二者。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "灵长类动物；首席主教"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "灵长类动物",
+            "首席主教"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/primate",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：灵长类动物；首席主教"
+        }
+      ]
+    },
+    {
+      "word": "histrionic",
+      "outcome": "retain",
+      "review_note": "情绪表演过度常含贬义，戏剧表演本身可为中性；分义合理。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "矫揉造作、情绪夸张的；表演或戏剧的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "矫揉造作、情绪夸张的",
+            "表演或戏剧的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/histrionic",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：矫揉造作、情绪夸张的；表演或戏剧的"
+        }
+      ]
+    },
+    {
+      "word": "intensification",
+      "outcome": "retain",
+      "review_note": "程度增强加剧的过程名词准确，褒贬由增强的对象决定。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "加强、加剧"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "加强、加剧"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/intensification",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "cast-iron",
+      "outcome": "retain",
+      "review_note": "字面铸铁制与坚固坚定无懈可击的比喻义成立；不把保证理解成真的铁。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "铸铁制的；坚固的；坚定不移的；（尤英）可靠、无懈可击的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "铸铁制的",
+            "坚固的",
+            "坚定不移的",
+            "（尤英）可靠、无懈可击的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cast-iron",
+          "checked_at": "2026-10-08",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，按所列词性归纳核心义：铸铁制的；坚固的；坚定不移的；（尤英）可靠、无懈可击的"
+        }
+      ]
+    },
+    {
+      "word": "pharmaceutical",
+      "outcome": "retain",
+      "review_note": "药物制药形容词与药品名词分组正确，名词常以复数出现。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "adj. 药物的，制药的；n. 药品"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "药物的，制药的"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "药品"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pharmaceutical",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：adj. 药物的，制药的；n. 药品"
+        }
+      ]
+    },
+    {
+      "word": "blandish",
+      "outcome": "retain",
+      "review_note": "用奉承哄劝或谄媚成立，不把温和的 bland 直接作为本词动作义。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "用奉承哄劝；谄媚"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "用奉承哄劝",
+            "谄媚"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blandish",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "用奉承哄劝；谄媚"
+        }
+      ]
+    },
+    {
+      "word": "shoddy",
+      "outcome": "retain",
+      "review_note": "本次 MW 支持劣质制品名词和粗制滥造、不光彩等形容词；再生毛料为未收录的扩展义，现有项不错误。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.; n.",
+        "meaning": "粗制滥造的；劣质的；不光彩的；n.劣质制品"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "粗制滥造的",
+            "劣质的",
+            "不光彩的"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "劣质制品"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/shoddy",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "粗制滥造的；劣质的；不光彩的；n.劣质制品"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.merriam-webster.com/dictionary/shoddy",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      }
+    },
+    {
+      "word": "repertoire",
+      "outcome": "retain",
+      "review_note": "熟悉可表演的一套曲目与可调用的技能行为集合成立，不能泛指任何杂物集合。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "可使用的一套技能、行为或表达；保留曲目"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "可使用的一套技能、行为或表达",
+            "保留曲目"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/repertoire",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "emperor",
+      "outcome": "retain",
+      "review_note": "皇帝为帝国君主名词，不把一切国家领导者译为皇帝。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "皇帝，帝国的最高男性君主"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "皇帝，帝国的最高男性君主"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/emperor",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：皇帝，帝国的最高男性君主"
+        }
+      ]
+    },
+    {
+      "word": "provocateur",
+      "outcome": "retain",
+      "review_note": "挑衅或煽动者成立；完整 agent provocateur 可有诱使违法以便抓捕的特定义，不能硬套所有语境。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "挑衅者；煽动者"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "挑衅者",
+            "煽动者"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/provocateur",
+          "checked_at": "2026-09-08",
+          "status": "checked",
+          "note": "中文核心义由教练依据词典归纳；不是手写中文的转录。"
+        }
+      ]
+    },
+    {
+      "word": "reclusion",
+      "outcome": "retain",
+      "review_note": "隐居隔绝为状态名词，人物名词是 recluse。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "隐居；隔绝状态"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "隐居",
+            "隔绝状态"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/reclusion",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；隐居；隔绝状态"
+        }
+      ]
+    },
+    {
+      "word": "tyro",
+      "outcome": "retain",
+      "review_note": "初学者新手成立，经验不足不能直接推成永久无能。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "新手，初学者"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "新手，初学者"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/tyro",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：新手，初学者"
+        }
+      ]
+    },
+    {
+      "word": "inoculate",
+      "outcome": "retain",
+      "review_note": "接种及引申灌输成立；接种微生物可涉及培养基，不把每个对象当人类疫苗。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "给接种；接种微生物；使获得防御能力；灌输"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "给接种",
+            "接种微生物",
+            "使获得防御能力",
+            "灌输"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inoculate",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：给接种；接种微生物；使获得防御能力；灌输"
+        }
+      ]
+    },
+    {
+      "word": "soothsayer",
+      "outcome": "retain",
+      "review_note": "以占卜或神秘方式预言者成立，不泛指所有科学预测者。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "预言者；占卜者"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "预言者",
+            "占卜者"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/soothsayer",
+          "checked_at": "2026-09-08",
+          "status": "checked",
+          "note": "中文核心义由教练依据词典归纳；不是手写中文的转录。"
+        }
+      ]
+    },
+    {
+      "word": "inadvertent",
+      "outcome": "retain",
+      "review_note": "无意或疏忽造成的准确，不与蓄意隐瞒混淆。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "无意的；疏忽造成的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "无意的",
+            "疏忽造成的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inadvertent",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "并非故意，常因疏忽发生。"
+        }
+      ]
+    },
+    {
+      "word": "banal",
+      "outcome": "retain",
+      "review_note": "陈腐缺乏新意成立，两条原句分别描述套话和乏味问题，译义一致。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "陈腐乏味的；缺乏新意的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "陈腐乏味的",
+            "缺乏新意的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/banal",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "note": "中文核心义按词典释义与已保存题目语境归纳。"
+        }
+      ],
+      "existing_example_review": "套话鼓励与乏味问题均完整，陈腐和缺乏新意是同一语义领域。"
+    },
+    {
+      "word": "bromide",
+      "outcome": "retain",
+      "review_note": "套话、乏味者和溴化物分义成立；已有 feel-good 原句用于套话准确。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "陈词滥调；乏味的人；溴化物"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "陈词滥调",
+            "乏味的人",
+            "溴化物"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bromide",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：陈词滥调；乏味的人；溴化物"
+        }
+      ],
+      "existing_example_review": "让人好受的套话可产生解决问题的错觉，准确对应陈词滥调，不涉化学义。"
+    },
+    {
+      "word": "inaccessibility",
+      "outcome": "retain",
+      "review_note": "难以进入到达或获得的状态成立，不当作他人的敌意。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "难以到达；无法获得"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "难以到达",
+            "无法获得"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/inaccessibility",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "portend",
+      "outcome": "retain",
+      "review_note": "预示尤其不祥发展是动词含义；现有预兆按动词理解，不另造名词词性。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "预示；预兆"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "预示",
+            "预兆"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/portend",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "作为征兆预告将发生之事。"
+        }
+      ]
+    },
+    {
+      "word": "sapless",
+      "outcome": "retain",
+      "review_note": "无汁液与无生气乏味的比喻义均成立，不等于完全没有知识。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "缺少汁液的；无生气、无力的；乏味的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "缺少汁液的",
+            "无生气、无力的",
+            "乏味的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sapless",
+          "checked_at": "2026-10-08",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，按所列词性归纳核心义：缺少汁液的；无生气、无力的；乏味的"
+        }
+      ]
+    },
+    {
+      "word": "oration",
+      "outcome": "retain",
+      "review_note": "正式庄严演讲的名词成立，不与日常随口交谈完全等同。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "正式演说；庄严的演讲"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "正式演说",
+            "庄严的演讲"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/oration",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已读取词条正文；首项释义短摘录：a formal public speech about a serious subject；词性与中文核心义结合正文归纳，少见义另列补充来源。"
+        }
+      ]
+    },
+    {
+      "word": "savvy",
+      "outcome": "retain",
+      "review_note": "实际门道名词、精明形容词与懂得动词分组成立；两条现成原句位置正确。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n./adj./v.",
+        "meaning": "实际知识或理解力；精明的；懂得"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "实际知识或理解力"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "精明的"
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "懂得"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/savvy",
+          "checked_at": "2026-09-08",
+          "status": "checked",
+          "note": "中文核心义由教练依据词典归纳；不是手写中文的转录。"
+        }
+      ],
+      "existing_example_review": "懂门道为名词，懂财务为形容词；词性及两条中文正确。"
+    },
+    {
+      "word": "enchanting",
+      "outcome": "retain",
+      "review_note": "迷人令人陶醉作为形容词成立，不强行当作施法中的现在分词解释。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "迷人的，令人陶醉的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "迷人的，令人陶醉的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/enchanting",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：迷人的，令人陶醉的"
+        }
+      ]
+    },
+    {
+      "word": "miscellany",
+      "outcome": "retain",
+      "review_note": "杂集或多种物件集合成立，可为书面作品集合，不是随机错误。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "杂集；多种东西的混合"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "杂集",
+            "多种东西的混合"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/miscellany",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "杂集；多种东西的混合"
+        }
+      ]
+    },
+    {
+      "word": "trailblazer",
+      "outcome": "retain",
+      "review_note": "真正开路者与为后人开创方法的先驱成立，不等于任何排第一的人。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "开拓者、先驱；开辟或标示道路的人"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "开拓者、先驱",
+            "开辟或标示道路的人"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trailblazer",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "已读取词条；核心义归纳：开拓者、先驱；开辟或标示道路的人"
+        }
+      ]
+    },
+    {
+      "word": "psoriasis",
+      "outcome": "retain",
+      "review_note": "银屑病为专有疾病名词；不在词汇记录中凭外观诊断疾病。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "",
+        "meaning": "银屑病"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "银屑病"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/psoriasis",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "modish",
+      "outcome": "retain",
+      "review_note": "符合流行时尚成立，不保证质量高或永久不过时。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "时髦的；流行的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "时髦的",
+            "流行的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/modish",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：时髦的；流行的"
+        }
+      ]
+    },
+    {
+      "word": "sagacious",
+      "outcome": "retain",
+      "review_note": "敏锐判断与睿智成立；先见之明须理解为判断力，不强加超自然预知。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "睿智的；有远见和敏锐判断力的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "睿智的",
+            "有远见和敏锐判断力的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sagacious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "word": "sporadic",
+      "outcome": "retain",
+      "review_note": "零星且不规律出现准确，不等于固定周期重复。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "零星发生的；间歇而不规律的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "零星发生的",
+            "间歇而不规律的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/sporadic",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "本次实际读取词典释义并归纳；核对常用核心义与词性。零星发生的；间歇而不规律的"
+        }
+      ]
+    },
+    {
+      "word": "onerous",
+      "outcome": "retain",
+      "review_note": "造成负担的繁重任务或要求成立，不是光荣 honorable。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "繁重的；造成负担的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "繁重的",
+            "造成负担的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/onerous",
+          "checked_at": "2026-09-10",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳，不转录手写中文。"
+        }
+      ]
+    },
+    {
+      "word": "theatrical",
+      "outcome": "retain",
+      "review_note": "戏剧本身与夸张做作分义成立，褒贬需看被修饰对象。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "戏剧的；夸张做作的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "戏剧的",
+            "夸张做作的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/theatrical",
+          "checked_at": "2026-09-08",
+          "status": "checked",
+          "note": "中文核心义由教练依据词典归纳；不是手写中文的转录。"
+        }
+      ]
+    },
+    {
+      "word": "demeanor",
+      "outcome": "retain",
+      "review_note": "外显举止仪态成立；原句英式 demeanour 与美式词头 demeanor 是拼写变体而非错词。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "举止，仪态；外在行为表现"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "举止，仪态",
+            "外在行为表现"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/demeanor",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；举止，仪态；外在行为表现"
+        }
+      ],
+      "existing_example_review": "两例均为外显举止；英式 demeanour 是有效拼写变体。"
+    },
+    {
+      "word": "rancid",
+      "outcome": "retain",
+      "review_note": "油脂酸败及令人厌恶的引申义成立；厨房气味原句配在酸败义准确。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "酸败的、哈喇的；令人厌恶的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "酸败的、哈喇的",
+            "令人厌恶的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/rancid",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "酸败的、哈喇的；令人厌恶的"
+        }
+      ],
+      "existing_example_review": "厨房传来的气味对准酸败义；中文补明油脂并未改变句义。"
+    },
+    {
+      "word": "inflammatory",
+      "outcome": "retain",
+      "review_note": "煽动激怒与炎症相关分别成立，不把医学炎症比喻强加到每场争论。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "煽动性的，容易激怒人的；炎症性的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "煽动性的，容易激怒人的",
+            "炎症性的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inflammatory",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：煽动性的，容易激怒人的；炎症性的"
+        }
+      ]
+    },
+    {
+      "word": "frivolous",
+      "outcome": "retain",
+      "review_note": "轻浮不严肃与缺乏依据可分语境；道歉原句只支撑不严肃义，现有映射正确。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "无关紧要的；不严肃、轻浮的；缺乏正当依据的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "无关紧要的",
+            "不严肃、轻浮的",
+            "缺乏正当依据的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/frivolous",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：无关紧要的；不严肃、轻浮的；缺乏正当依据的"
+        }
+      ],
+      "existing_example_review": "道歉中的 being frivolous 表示刚才不严肃，对准第二义正确。"
+    },
+    {
+      "word": "textual",
+      "outcome": "retain",
+      "review_note": "文本正文相关准确；不等于质地的 textured。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "文本的，正文的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "文本的，正文的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Oxford Advanced Learner’s Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/textual",
+          "checked_at": "2026-10-16",
+          "status": "checked",
+          "evidence": "本次已读取该词条并核对adj.核心义；中文为人工归纳，不是原文转录。"
+        }
+      ]
+    },
+    {
+      "word": "stale",
+      "outcome": "retain",
+      "review_note": "不新鲜、乏味、失去活力三原句逐项相符；少见牲畜尿液义有旧来源，不能用食物例句说明。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.; v.; n.",
+        "meaning": "adj. 不新鲜的；陈腐乏味的；失去活力的；v. 使变陈旧；n. 牲畜尿液（少见）"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不新鲜的",
+            "陈腐乏味的",
+            "失去活力的"
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "使变陈旧"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "牲畜尿液（少见）"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/stale",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：adj. 不新鲜的；陈腐乏味的；失去活力的；v. 使变陈旧；n. 牲畜尿液（少见）"
+        }
+      ],
+      "existing_example_review": "面包、婚姻、工作倦怠分别展示第一至第三形容词义；均未误配到名词旧义。"
+    },
+    {
+      "word": "recondite",
+      "outcome": "retain",
+      "review_note": "深奥和少为人知成立，既可因知识专业冷僻也可因难懂，不只表示故意隐瞒。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "深奥难懂的；少有人知的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "深奥难懂的",
+            "少有人知的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/recondite",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；深奥难懂的；少有人知的"
+        }
+      ]
+    },
+    {
+      "word": "hibernate",
+      "outcome": "retain",
+      "review_note": "冬眠与暂不活动的比喻义成立，不是死亡。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "冬眠；处于休眠、不活动状态"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "冬眠",
+            "处于休眠、不活动状态"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hibernate",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：冬眠；处于休眠、不活动状态"
+        }
+      ]
+    },
+    {
+      "word": "suscept",
+      "outcome": "retain",
+      "review_note": "本次 MW 确认被寄生或可被寄生的生物名词；不是 susceptible 截断误拼。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "可被寄生或正在被寄生的生物；寄生宿主"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "可被寄生或正在被寄生的生物",
+            "寄生宿主"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/suscept",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；可被寄生或正在被寄生的生物；寄生宿主"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.merriam-webster.com/dictionary/suscept",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      }
+    },
+    {
+      "word": "genealogy",
+      "outcome": "retain",
+      "review_note": "家谱血统、谱系研究及起源发展史成立，词性均是名词。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "家谱；血统；谱系研究；起源发展史"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "家谱",
+            "血统",
+            "谱系研究",
+            "起源发展史"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/genealogy",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：家谱；血统；谱系研究；起源发展史"
+        }
+      ]
+    },
+    {
+      "word": "resuscitate",
+      "outcome": "retain",
+      "review_note": "复苏和使事业等重新活跃成立；已有抢救未成功原句仍能展示复苏这一尝试。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "使苏醒、复苏；使重新活跃"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使苏醒、复苏",
+            "使重新活跃"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/resuscitate",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：使苏醒、复苏；使重新活跃"
+        }
+      ],
+      "existing_example_review": "失败的复苏尝试仍展示动词复苏义，译文没有把失败写成成功。"
+    },
+    {
+      "word": "hoax",
+      "outcome": "retain",
+      "review_note": "骗局恶作剧名词和欺骗动词准确；两条现成句分别说明假警报与冒名的骗局。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.; v.",
+        "meaning": "n. 骗局，恶作剧；v. 欺骗，使信以为真"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "骗局，恶作剧"
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "欺骗，使信以为真"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hoax",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：n. 骗局，恶作剧；v. 欺骗，使信以为真"
+        }
+      ],
+      "existing_example_review": "名词假求助与动词派人冒充的骗局清楚区分；长动词例句仍在既有25词预算。"
+    },
+    {
+      "word": "sloth",
+      "outcome": "retain",
+      "review_note": "懒惰与树懒是并存名词义，不能以动物名推断道德属性。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "懒惰，怠惰；树懒"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "懒惰，怠惰",
+            "树懒"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/sloth",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已读取词条正文；首项释义短摘录：unwillingness to work or make any effort :；词性与中文核心义结合正文归纳，少见义另列补充来源。"
+        }
+      ]
+    },
+    {
+      "word": "lilac",
+      "outcome": "retain",
+      "review_note": "丁香属花灌木与淡紫色成立；与作为香料的 clove 丁香不混同。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.; adj.",
+        "meaning": "n. 丁香花或丁香属灌木；淡紫色；adj. 淡紫色的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "丁香花或丁香属灌木",
+            "淡紫色"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "淡紫色的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/lilac",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "本次实际读取词典释义并归纳；核对常用核心义与词性。n. 丁香花或丁香属灌木；淡紫色；adj. 淡紫色的"
+        }
+      ]
+    },
+    {
+      "word": "divan",
+      "outcome": "retain",
+      "review_note": "长榻沙发、议事会及东方诗集是不同名词义，已有范围可以保留。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "长沙发、沙发床；议事会或议事厅；波斯、阿拉伯诗集"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "长沙发、沙发床",
+            "议事会或议事厅",
+            "波斯、阿拉伯诗集"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/divan",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；长沙发、沙发床；议事会或议事厅；波斯、阿拉伯诗集"
+        }
+      ]
+    },
+    {
+      "word": "disgruntle",
+      "outcome": "retain",
+      "review_note": "使不满恼怒的动词成立，常见表述是 disgruntled，但不需要改掉合法词元。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "使不满，使恼怒"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使不满，使恼怒"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/disgruntle",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "使不满，使恼怒"
+        }
+      ]
+    },
+    {
+      "word": "cheerless",
+      "outcome": "retain",
+      "review_note": "缺少欢乐或令人沮丧的形容词成立，不一定表示孤单或没有人。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "阴郁的；无欢乐的；令人提不起精神的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "阴郁的",
+            "无欢乐的",
+            "令人提不起精神的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/cheerless",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：阴郁的；无欢乐的；令人提不起精神的"
+        }
+      ]
+    },
+    {
+      "word": "tease apart",
+      "outcome": "retain",
+      "review_note": "谨慎拆分或区分交织因素的短语动词成立，不按嘲弄义逐字拼接。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "phr.v.",
+        "meaning": "仔细拆分、辨析、区分"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v. phr.",
+          "meanings": [
+            "仔细拆分、辨析、区分"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/tease-apart",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "effluvium",
+      "outcome": "retain",
+      "review_note": "难闻气味和散发物成立；可作单数物质名词，复数有 effluvia。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "难闻的气味；散发出的气体或排出物"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "难闻的气味",
+            "散发出的气体或排出物"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/effluvium",
+          "checked_at": "2026-09-08",
+          "status": "checked",
+          "note": "中文核心义由教练依据词典归纳；不是手写中文的转录。"
+        }
+      ]
+    },
+    {
+      "word": "asunder",
+      "outcome": "retain",
+      "review_note": "本次 MW 同列副词与形容词；两者均可保留，不擅自删除形容词分组。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adv.; adj.",
+        "meaning": "分离地（的）；成为碎片地（的）"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adv.",
+          "meanings": [
+            "分离地",
+            "成为碎片地"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "分开的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/asunder",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "Merriam-Webster 明列副词或形容词，释义为成为几部分或彼此分离。"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.merriam-webster.com/dictionary/asunder",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      }
+    },
+    {
+      "word": "pregnable",
+      "outcome": "retain",
+      "review_note": "可被攻破与易受攻击成立；不是 pregnant 的漏字。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "可攻破的；易受攻击的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "可攻破的",
+            "易受攻击的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/pregnable",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；可攻破的；易受攻击的"
+        }
+      ]
+    },
+    {
+      "word": "long-winded",
+      "outcome": "retain",
+      "review_note": "冗长啰唆准确；现成 essay 原句与中文相符，含负面评价。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "冗长啰唆的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "冗长啰唆的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/long-winded",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "已实际读取词典正文，按所列词性和定义归纳：冗长啰唆的"
+        }
+      ],
+      "existing_example_review": "冗长乏味的文章与核心贬义一致。"
+    },
+    {
+      "word": "vitriol",
+      "outcome": "retain",
+      "review_note": "恶毒言辞与硫酸盐/硫酸旧称分开正确，GRE抽象文本优先考虑言辞义。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "尖刻恶毒的言辞或批评；（旧称）某些金属硫酸盐、浓硫酸"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "尖刻恶毒的言辞或批评",
+            "（旧称）某些金属硫酸盐、浓硫酸"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/vitriol",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "今日实际读取词典正文，按词性归纳核心义；中文不是词典原文转录：尖刻恶毒的言辞或批评；（旧称）某些金属硫酸盐、浓硫酸"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/oil%20of%20vitriol",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "主词条的化学义回指 oil of vitriol；已读取其释义为浓硫酸。"
+        }
+      ]
+    },
+    {
+      "word": "endow",
+      "outcome": "retain",
+      "review_note": "持续捐资与赋予性质分别成立，常见 endow with，不是单纯付一次普通消费款。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.捐资设立，捐赠以长期资助；赋予（才能、品质等）"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "捐资设立，捐赠以长期资助",
+            "赋予（才能、品质等）"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/endow",
+          "checked_at": "2026-10-23",
+          "status": "checked",
+          "evidence": "已读取及物动词条目，核对长期捐资支持与赋予才能品质。"
+        }
+      ]
+    },
+    {
+      "word": "trot",
+      "outcome": "retain",
+      "review_note": "马或人的小跑及催促快步均成立；the trots 的复数俗义与普通小跑分开。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v. / n.",
+        "meaning": "v.小跑，慢跑；快步走，赶忙；使（马等）小跑\nn.小跑，慢跑；骑马散步；（the trots）腹泻"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "小跑，慢跑",
+            "快步走，赶忙",
+            "使（马等）小跑"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "小跑，慢跑",
+            "骑马散步",
+            "（the trots）腹泻"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trot",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "正文分列马和人的小跑、赶忙、使小跑及骑马活动；名词复数 trots 指腹泻。"
+        }
+      ]
+    },
+    {
+      "word": "jury",
+      "outcome": "retain",
+      "review_note": "陪审团与评审组为核心；动词评审和临时应急形容词有既有来源，不泛化为陪审团的。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n. / v. / adj.",
+        "meaning": "n.陪审团；评审委员会；（比喻）作出判断的人或事物\nv.为展览评审、遴选作品\nadj.临时应急的，临时拼凑的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "陪审团",
+            "评审委员会",
+            "（比喻）作出判断的人或事物"
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "为展览评审、遴选作品"
+          ]
+        },
+        {
+          "pos": "adj.",
+          "meanings": [
+            "临时应急的，临时拼凑的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/jury",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "正文列陪审团、评审委员会及决定者；动词限定为遴选展览作品、主要用分词；形容词为应急拼凑。"
+        }
+      ]
+    },
+    {
+      "word": "posit",
+      "outcome": "retain",
+      "review_note": "提出假设作为前提准确，不意味着观点已被证明；安置义为较少见扩展。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.假定，设定为前提；提出作为解释或主张；安置，固定"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "假定，设定为前提",
+            "提出作为解释或主张",
+            "安置，固定"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/posit",
+          "checked_at": "2026-10-23",
+          "status": "dictionary_checked",
+          "evidence": "及物动词三义为固定安置、假设或断言存在、提出解释。"
+        }
+      ]
+    },
+    {
+      "word": "scaremonger",
+      "outcome": "retain",
+      "review_note": "制造不必要恐慌的人准确；不能把真实风险预警一概视为危言耸听。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "n.散布恐慌者，危言耸听者"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "散布恐慌者，危言耸听者"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/scaremonger",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词指制造不必要警惧的人。"
+        }
+      ]
+    },
+    {
+      "word": "monolithic",
+      "outcome": "retain",
+      "review_note": "巨大的单一整体、统一僵化与整石材料均可成立，不只等同 very large。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "庞大而单一的；整体一致的（常指僵化）；整块材料制成的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "庞大而单一的",
+            "整体一致的（常指僵化）",
+            "整块材料制成的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/monolithic",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "今日已读取词典正文；中文为核心义归纳：庞大而单一的；整体一致的（常指僵化）；整块材料制成的"
+        }
+      ]
+    },
+    {
+      "word": "hypocrisy",
+      "outcome": "retain",
+      "review_note": "自称的道德或信念与行为不一致准确，不是任何普通错误都叫伪善。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "n.伪善，虚伪；伪善的行为"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "伪善，虚伪",
+            "伪善的行为"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/hypocrisy",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "名词包括声称具有未真正具备的信念或美德，以及具体伪善行为。"
+        }
+      ]
+    },
+    {
+      "word": "derogatory",
+      "outcome": "retain",
+      "review_note": "带贬损评价与有损地位声誉成立；不能只指听者不喜欢的话。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.贬低的，轻蔑的；有损声誉或地位的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "贬低的，轻蔑的",
+            "有损声誉或地位的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/derogatory",
+          "checked_at": "2026-10-23",
+          "status": "dictionary_checked",
+          "evidence": "分别列出表达低评价和削弱品格或地位两义。"
+        }
+      ]
+    },
+    {
+      "word": "derivative",
+      "outcome": "retain",
+      "review_note": "模仿缺原创的评价义与中性派生义并存；数学金融等名词须按领域理解。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj. / n.",
+        "meaning": "adj.模仿他人的，缺乏独创性的；派生的，源自其他事物的\nn.派生物，衍生物；派生词；（数学）导数；金融衍生工具"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "模仿他人的，缺乏独创性的",
+            "派生的，源自其他事物的"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "派生物，衍生物",
+            "派生词",
+            "（数学）导数",
+            "金融衍生工具"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/derivative",
+          "checked_at": "2026-10-23",
+          "status": "checked",
+          "evidence": "已读取名词和形容词条目，区分缺乏独创性与中性派生关系；名词含派生物、派生词、导数及金融工具。"
+        }
+      ]
+    },
+    {
+      "word": "contiguous",
+      "outcome": "retain",
+      "review_note": "直接相邻接壤或连续相接准确；已有国家原句配义无误，不等同远处相似。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "相邻接壤的；连续相接的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "相邻接壤的",
+            "连续相接的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/contiguous",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；相邻接壤的；连续相接的"
+        }
+      ],
+      "existing_example_review": "国家接壤准确展示直接相邻，而非泛泛邻近。"
+    },
+    {
+      "word": "tendentious",
+      "outcome": "retain",
+      "review_note": "为特定立场服务的偏向性成立，重点在有意或明显的偏见，不是普通有主题。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "带有强烈偏向的；为某种立场服务的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "带有强烈偏向的",
+            "为某种立场服务的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/tendentious",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "本次实际读取词典释义并归纳；核对常用核心义与词性。带有强烈偏向的；为某种立场服务的"
+        }
+      ]
+    },
+    {
+      "word": "impetuous",
+      "outcome": "retain",
+      "review_note": "行为冲动与猛烈急速分义成立，不能把迅速行动一概理解成深思熟虑。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "冲动急躁的；猛烈的，急速的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "冲动急躁的",
+            "猛烈的，急速的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impetuous",
+          "checked_at": "2026-10-08",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，按所列词性归纳核心义：冲动急躁的；猛烈的，急速的"
+        }
+      ]
+    },
+    {
+      "word": "circumvent",
+      "outcome": "retain",
+      "review_note": "巧妙规避与物理绕行成立；旧包围义有来源，现代限制语境不能机械套用旧义。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.设法绕过，规避（困难、限制等）；绕行，绕过；（较旧用法）包围，围困"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "设法绕过，规避（困难、限制等）",
+            "绕行，绕过",
+            "（较旧用法）包围，围困"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/circumvent",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "核对巧妙绕开、绕行和围住三个义项；词源说明区分早期围捕义与现代规避义。"
+        }
+      ]
+    },
+    {
+      "word": "freewheeling",
+      "outcome": "retain",
+      "review_note": "自由不受规矩拘束成立，可描述讨论，不必带鲁莽或非法之意。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.自由随意的，不受规矩拘束的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "自由随意的，不受规矩拘束的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/freewheeling",
+          "checked_at": "2026-10-23",
+          "status": "checked",
+          "evidence": "已读取形容词条目，含不受拘束、不受正式规则或程序限制等义。"
+        }
+      ]
+    },
+    {
+      "word": "agitate",
+      "outcome": "retain",
+      "review_note": "使焦虑、公共鼓动、讨论与物理搅动均成立；宾语和 for/against 决定方向。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.使焦虑不安，使激动；煽动，鼓动（公众支持或反对某事）；激烈讨论，引起公众讨论；搅动，摇动"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使焦虑不安，使激动",
+            "煽动，鼓动（公众支持或反对某事）",
+            "激烈讨论，引起公众讨论",
+            "搅动，摇动"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/agitate",
+          "checked_at": "2026-10-24",
+          "status": "checked",
+          "evidence": "核对情绪扰动、公众讨论和动员，以及快速或剧烈搅动义。"
+        }
+      ]
+    },
+    {
+      "word": "dilapidate",
+      "outcome": "retain",
+      "review_note": "使破败或衰败的动词成立，常见派生是 dilapidated，不改成另一个词。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "使破败；衰败；因疏于照料而损坏"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使破败",
+            "衰败",
+            "因疏于照料而损坏"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dilapidate",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "核对使破败或衰败的动词义；挥霍义明确标为archaic。"
+        }
+      ]
+    },
+    {
+      "word": "dilatory",
+      "outcome": "retain",
+      "review_note": "行动迟缓与有意拖延均成立；政府处理问题原句对应第一项准确。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "拖延的，迟缓的；意在造成延误的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "拖延的，迟缓的",
+            "意在造成延误的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/dilatory",
+          "checked_at": "2026-09-18",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：拖延的，迟缓的；意在造成延误的"
+        }
+      ],
+      "existing_example_review": "政府处理问题拖拉展示行动迟缓，未强行断言蓄意延误。"
+    },
+    {
+      "word": "sycophantic",
+      "outcome": "retain",
+      "review_note": "为讨好而阿谀奉承准确，通常贬义，不是任何赞美或礼貌。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.谄媚的，阿谀奉承的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "谄媚的，阿谀奉承的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/sycophantic",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "形容词指具有谄媚者特征，即逢迎和卑躬屈膝。"
+        }
+      ]
+    },
+    {
+      "word": "confluence",
+      "outcome": "retain",
+      "review_note": "河流汇合处与抽象因素汇聚成立，注意名词而非动词。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "河流汇合处；汇聚，融合"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "河流汇合处",
+            "汇聚，融合"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/confluence",
+          "checked_at": "2026-10-10",
+          "status": "checked",
+          "evidence": "已读取词典正文；中文为核心义归纳，不是原文转录：河流汇合处；汇聚，融合"
+        }
+      ]
+    },
+    {
+      "word": "mogul",
+      "outcome": "retain",
+      "review_note": "行业大亨与滑雪雪丘是同形异源义，分开保留而不牵强联系。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "n.大亨，行业巨头；（滑雪道上的）雪丘"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "大亨，行业巨头",
+            "（滑雪道上的）雪丘"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/mogul",
+          "checked_at": "2026-10-24",
+          "status": "dictionary_checked",
+          "evidence": "常用人物义为大人物或商业巨头；另一个独立同形词条指滑雪道上的凸起。"
+        }
+      ]
+    },
+    {
+      "word": "lurch",
+      "outcome": "retain",
+      "review_note": "摇晃踉跄和晃动名词准确；牌戏惨败是专门义，不能泛化成所有失败。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v. / n.",
+        "meaning": "v.突然摇晃或倾斜；踉跄而行，蹒跚移动\nn.突然的晃动或倾斜；（克里比奇牌戏等）悬殊比分的惨败"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "突然摇晃或倾斜",
+            "踉跄而行，蹒跚移动"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "突然的晃动或倾斜",
+            "（克里比奇牌戏等）悬殊比分的惨败"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/lurch",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "核对动词突然摇晃、踉跄移动及对应名词；另一个名词词条的惨败义有牌戏语域限制。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/in%20the%20lurch",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "短语表示处于脆弱而无人援助的处境，核对 leave somebody in the lurch 的说明。"
+        }
+      ]
+    },
+    {
+      "word": "startling",
+      "outcome": "retain",
+      "review_note": "令人吃惊的形容词成立，与感到惊讶的 startled 区别清楚。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.令人震惊的，令人吃惊的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "令人震惊的，令人吃惊的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/startling",
+          "checked_at": "2026-10-23",
+          "status": "checked",
+          "evidence": "已读取独立形容词条目，同时明确为 startle 的现在分词形式。"
+        }
+      ]
+    },
+    {
+      "word": "euphony",
+      "outcome": "retain",
+      "review_note": "声音悦耳和语音组合和谐成立，不是表达内容一定高尚。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "悦耳的声音；语音和谐"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "悦耳的声音",
+            "语音和谐"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/euphony",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：悦耳的声音；语音和谐"
+        }
+      ]
+    },
+    {
+      "word": "importunate",
+      "outcome": "retain",
+      "review_note": "持续强求而让人烦恼是核心，不与 important 重要的混淆。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "纠缠不休地要求的；强求的；令人厌烦的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "纠缠不休地要求的",
+            "强求的",
+            "令人厌烦的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/importunate",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "本次已读取词典正文，中文核心义归纳：纠缠不休地要求的；强求的；令人厌烦的"
+        }
+      ]
+    },
+    {
+      "word": "stickler",
+      "outcome": "retain",
+      "review_note": "本次 MW 同时支持拘守精确规则的人与难题义，第二义不因少见而删除。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "严格坚持细节或规则的人；难题"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "严格坚持细节或规则的人",
+            "难题"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/stickler",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：严格坚持细节或规则的人；难题"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.merriam-webster.com/dictionary/stickler",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      }
+    },
+    {
+      "word": "terrific",
+      "outcome": "retain",
+      "review_note": "本次 MW 明列极好、非凡、可怕及很糟四向，原糟糕义有依据，不能误删。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.极好的，了不起的；极大的，程度惊人的；可怕的，令人惊惧的；糟糕透顶的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "极好的，了不起的",
+            "极大的，程度惊人的",
+            "可怕的，令人惊惧的",
+            "糟糕透顶的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/terrific",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典分别列非常好、非同寻常、引起恐惧或敬畏、极坏四类意思。"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.merriam-webster.com/dictionary/terrific",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      }
+    },
+    {
+      "word": "consternation",
+      "outcome": "retain",
+      "review_note": "惊愕并带惊慌无措准确，不等于中性的好奇或认知疑问。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "n.惊愕，惊慌失措"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "惊愕，惊慌失措"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/consternation",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "词典核心是会妨碍行动或使人不知所措的惊愕、惶恐，并特别区别于普通困惑。"
+        }
+      ]
+    },
+    {
+      "word": "startle",
+      "outcome": "retain",
+      "review_note": "突然使惊跳或本人惊跳成立；名词一次惊吓有既有依据。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v. / n.",
+        "meaning": "v.使吃一惊，使惊吓；因吃惊而突然一动\nn.突然的惊吓，惊跳"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使吃一惊，使惊吓",
+            "因吃惊而突然一动"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "突然的惊吓，惊跳"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/startle",
+          "checked_at": "2026-10-23",
+          "status": "checked",
+          "evidence": "已读取动词及名词条目；有突然使惊吓、惊跳和轻度突然惊吓。"
+        }
+      ]
+    },
+    {
+      "word": "macabre",
+      "outcome": "retain",
+      "review_note": "死亡恐怖带来的阴森可怖是核心，不是所有罕见或新奇现象。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "可怖、阴森的；涉及死亡或恐怖事物的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "可怖、阴森的",
+            "涉及死亡或恐怖事物的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/macabre",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "已读取词条；核心义归纳：可怖、阴森的；涉及死亡或恐怖事物的"
+        }
+      ]
+    },
+    {
+      "word": "skittish",
+      "outcome": "retain",
+      "review_note": "易惊、难安定、不稳定及疑虑重重的形容词方向成立，金融语境多是避险焦虑。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.容易受惊的，紧张不安的；活泼难以安定的；反复无常的，不稳定的；过分谨慎的，疑虑重重的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "容易受惊的，紧张不安的",
+            "活泼难以安定的",
+            "反复无常的，不稳定的",
+            "过分谨慎的，疑虑重重的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/skittish",
+          "checked_at": "2026-10-23",
+          "status": "checked",
+          "evidence": "已读取形容词条目，包含易惊、活泼、多变及过度谨慎。"
+        }
+      ]
+    },
+    {
+      "word": "bizarre",
+      "outcome": "retain",
+      "review_note": "离奇怪异的程度比一般 unusual 强，但不必涉及超自然。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "古怪的；异乎寻常的；离奇的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "古怪的",
+            "异乎寻常的",
+            "离奇的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/bizarre",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "核对明显超出寻常、风格古怪或包含强烈不协调的形容词义。"
+        }
+      ]
+    },
+    {
+      "word": "preternatural",
+      "outcome": "retain",
+      "review_note": "超出平常自然程度或能力成立；异常一词需理解为超常，不泛化成任何小偏差。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "超出通常或自然范围的；异常的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "超出通常或自然范围的",
+            "异常的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/preternatural",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "本次实际读取词典释义并归纳；核对常用核心义与词性。超出通常或自然范围的；异常的"
+        }
+      ]
+    },
+    {
+      "word": "flabbergast",
+      "outcome": "retain",
+      "review_note": "使震惊得不知所措为及物动词成立，be flabbergasted 为人的状态表达。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.使大吃一惊，使目瞪口呆"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使大吃一惊，使目瞪口呆"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/flabbergast",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "及物动词表示以惊讶、震惊或惊奇压倒对方。"
+        }
+      ]
+    },
+    {
+      "word": "aghast",
+      "outcome": "retain",
+      "review_note": "惊骇震惊不安准确；原例句作主语状态的形容词补语，不是副词遗漏。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "惊骇的，震惊不安的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "惊骇的，震惊不安的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/aghast",
+          "checked_at": "2026-09-21",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：惊骇的，震惊不安的"
+        }
+      ],
+      "existing_example_review": "looked at him aghast 中 aghast 描述人物状态，词性和译文正确。"
+    },
+    {
+      "word": "egregious",
+      "outcome": "retain",
+      "review_note": "现代常用义显眼且恶劣成立，不能因历史杰出义将恶行赞美化。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "极其明显且恶劣的；惊人的（坏处）"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "极其明显且恶劣的",
+            "惊人的（坏处）"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/egregious",
+          "checked_at": "2026-09-30",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：极其明显且恶劣的；惊人的（坏处）"
+        }
+      ]
+    },
+    {
+      "word": "retaliatory",
+      "outcome": "retain",
+      "review_note": "作为报复或反击的性质成立，须有先前挑衅行为这一关系。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "报复性的；反击性的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "报复性的",
+            "反击性的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/retaliatory",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "报复性的；反击性的"
+        }
+      ]
+    },
+    {
+      "word": "brackish",
+      "outcome": "retain",
+      "review_note": "水微咸或咸淡混合准确，不是所有不洁的水都叫 brackish。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "微咸的；咸淡混合的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "微咸的",
+            "咸淡混合的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/brackish",
+          "checked_at": "2026-10-06",
+          "status": "checked",
+          "evidence": "本次实际读取词典释义并归纳；核对常用核心义与词性。微咸的；咸淡混合的"
+        }
+      ]
+    },
+    {
+      "word": "fractiousness",
+      "outcome": "retain",
+      "review_note": "难管束易争吵的性质名词成立，不把它误分成若干数学分数。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "易怒好争吵的性情；难以管束"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "易怒好争吵的性情",
+            "难以管束"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fractiousness",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/fractious",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        }
+      ]
+    },
+    {
+      "word": "beguile",
+      "outcome": "retain",
+      "review_note": "诱骗、使着迷和消磨时间均成立，不把无害吸引与欺骗自动等同。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.欺骗，诱骗；使着迷，吸引；愉快地消磨（时间），排遣（烦闷）"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "欺骗，诱骗",
+            "使着迷，吸引",
+            "愉快地消磨（时间），排遣（烦闷）"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/beguile",
+          "checked_at": "2026-10-24",
+          "status": "dictionary_checked",
+          "evidence": "动词包含欺骗或诱导、使人感兴趣，以及以愉快活动消磨时间或排遣烦闷；词源说明确认现代迷人义不必含恶意。"
+        }
+      ]
+    },
+    {
+      "word": "feint",
+      "outcome": "retain",
+      "review_note": "假动作或佯攻以及做假动作动词均成立，区别 faint 微弱或昏厥。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.; v.",
+        "meaning": "佯攻；假动作；v.做假动作以迷惑"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "佯攻",
+            "假动作"
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "做假动作以迷惑"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/feint",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "佯攻；假动作；v.做假动作以迷惑"
+        }
+      ]
+    },
+    {
+      "word": "fraudulence",
+      "outcome": "retain",
+      "review_note": "欺诈性质或行为名词成立，不是指某个骗子本人。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "欺诈",
+            "欺骗性"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/fraudulence",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "impostor",
+      "outcome": "retain",
+      "review_note": "冒充身份骗取信任的人为核心；泛译骗子时仍保留冒名意味。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "冒名顶替者；骗子"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "冒名顶替者",
+            "骗子"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/impostor",
+          "checked_at": "2026-09-10",
+          "status": "checked",
+          "note": "中文核心义依据词典归纳，不转录手写中文。"
+        }
+      ]
+    },
+    {
+      "word": "inveigle",
+      "outcome": "retain",
+      "review_note": "巧言奉承诱使或取得的动作成立，与直接威胁强迫区分。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.诱骗，哄劝；靠花言巧语或奉承取得"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "诱骗，哄劝",
+            "靠花言巧语或奉承取得"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/inveigle",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "及物动词分为以诡计或诱惑说服，以及巧言取得某物两类。"
+        }
+      ]
+    },
+    {
+      "word": "skulduggery",
+      "outcome": "retain",
+      "review_note": "暗中不诚实的阴谋勾当成立，skull双l为另一常见拼写变体而非必须纠正。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "阴谋诡计；欺骗勾当"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "阴谋诡计",
+            "欺骗勾当"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/skulduggery",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "秘密的不诚实手段或欺骗。"
+        }
+      ]
+    },
+    {
+      "word": "swindle",
+      "outcome": "retain",
+      "review_note": "骗取钱财及骗局名词分组正确，不涵盖一切无害虚构。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v. / n.",
+        "meaning": "v.诈骗，骗取（钱财）\nn.骗局，诈骗行为"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "诈骗，骗取（钱财）"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "骗局，诈骗行为"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/swindle",
+          "checked_at": "2026-10-25",
+          "status": "dictionary_checked",
+          "evidence": "动词指通过欺诈取得钱财或剥夺他人财产；名词指诈骗行为或骗局。"
+        }
+      ]
+    },
+    {
+      "word": "trickster",
+      "outcome": "retain",
+      "review_note": "骗子、戏法者和神话诡计角色分义合理；无效支票原句只证明骗子义，现有映射正确。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "骗子，耍诡计者；戏法表演者；神话中的诡计角色"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "骗子，耍诡计者",
+            "戏法表演者",
+            "神话中的诡计角色"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/trickster",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：骗子，耍诡计者；戏法表演者；神话中的诡计角色"
+        }
+      ],
+      "existing_example_review": "使用偷来的无效支票展示诈骗者，中文没有误解成魔术师。"
+    },
+    {
+      "word": "recur",
+      "outcome": "retain",
+      "review_note": "再发生、回想及 recur to 的重提求助义成立，不能强制解释成固定周期。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.再发生，重现；再次浮现在脑海中；（recur to）回想，重提；（recur to）求助于，诉诸"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "再发生，重现",
+            "再次浮现在脑海中",
+            "（recur to）回想，重提",
+            "（recur to）求助于，诉诸"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/recur",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "核对再次发生、重新想到、在思考谈话中回到某事以及诉诸等不及物用法。"
+        }
+      ]
+    },
+    {
+      "word": "elucidate",
+      "outcome": "retain",
+      "review_note": "使内容清楚的及物或不及物解释动作成立，不等于证明任何解释正确。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.阐明，解释清楚"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "阐明，解释清楚"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/elucidate",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "核对通过解释或分析使内容清楚的动词义。"
+        }
+      ]
+    },
+    {
+      "word": "prescient",
+      "outcome": "retain",
+      "review_note": "先见之明准确，不要求神秘预言能力；应由后来事实证明其预见。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "有先见之明的、预见准确的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "有先见之明的、预见准确的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/prescient",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "chronic",
+      "outcome": "retain",
+      "review_note": "慢性疾病和长期持续的非医学义成立，不等于严重或无可救药。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "（病）慢性的；长期的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "（病）慢性的",
+            "长期的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Cambridge Dictionary",
+          "url": "https://dictionary.cambridge.org/dictionary/english/chronic",
+          "checked_at": "2026-10-13",
+          "status": "checked",
+          "evidence": "已读取词典正文，人工对照所列词性与中文核心义；屈折词形参见词元词条。"
+        }
+      ]
+    },
+    {
+      "word": "unmistakable",
+      "outcome": "retain",
+      "review_note": "清楚到不会认错的性质成立，不是某个人永不犯错。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.明确无误的，显而易见的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "明确无误的，显而易见的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/unmistakable",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "正文释义为不可能被误认或误解，清楚明确。"
+        }
+      ]
+    },
+    {
+      "word": "coruscate",
+      "outcome": "retain",
+      "review_note": "闪耀以及技巧风格出众的比喻义成立，不与腐蚀等形近词混淆。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "闪耀，闪烁；（技巧或风格）显得灿烂出众"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "闪耀，闪烁",
+            "（技巧或风格）显得灿烂出众"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/coruscate",
+          "checked_at": "2026-09-16",
+          "status": "checked",
+          "evidence": "闪耀，闪烁；（技巧或风格）显得灿烂出众"
+        }
+      ]
+    },
+    {
+      "word": "telltale",
+      "outcome": "retain",
+      "review_note": "泄露事实的形容词、迹象、告密者与指示器名词分义成立，不一定指危险预警。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj. / n.",
+        "meaning": "adj.泄露实情的，显露迹象的\nn.（泄露实情的）迹象；告密者，搬弄是非者；指示器，指示装置"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "泄露实情的，显露迹象的"
+          ]
+        },
+        {
+          "pos": "n.",
+          "meanings": [
+            "（泄露实情的）迹象",
+            "告密者，搬弄是非者",
+            "指示器，指示装置"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/telltale",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "主词条列迹象、告密者和指示记录装置；形容词释义明确为表明或提供某事证据。"
+        }
+      ]
+    },
+    {
+      "word": "invigorate",
+      "outcome": "retain",
+      "review_note": "使人精力恢复或使事业振兴成立，方向与 enervate 使衰弱相反。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.使精神振奋，使充满活力；使活跃，振兴"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "使精神振奋，使充满活力",
+            "使活跃，振兴"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/invigorate",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "正文释义为赋予生命力和能量、激励；词典自列用法涉及人和经济。"
+        }
+      ]
+    },
+    {
+      "word": "kinetic",
+      "outcome": "retain",
+      "review_note": "运动动能相关与活跃的引申义成立，物理语境不是静能或势能。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "运动的，动能的；活跃有力的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "运动的，动能的",
+            "活跃有力的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/kinetic",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：运动的，动能的；活跃有力的"
+        }
+      ]
+    },
+    {
+      "word": "staid",
+      "outcome": "retain",
+      "review_note": "沉稳拘谨与略显古板均可成立，不能因严肃就直接推为悲伤。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.稳重的，严肃拘谨的；古板的，不活泼的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "稳重的，严肃拘谨的",
+            "古板的，不活泼的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/staid",
+          "checked_at": "2026-10-25",
+          "status": "checked",
+          "evidence": "条目释为沉静稳重且常拘谨自制；同义辨析强调习惯性的严肃和克制。"
+        }
+      ]
+    },
+    {
+      "word": "clandestine",
+      "outcome": "retain",
+      "review_note": "隐蔽暗中进行成立，常有避免发现的动机；不自动等于所有隐私内容都违法。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "秘密的，暗中进行的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "秘密的，暗中进行的"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/clandestine",
+          "checked_at": "2026-09-15",
+          "status": "checked",
+          "note": "中文核心义据词典归纳；语境备注为教练结合摘词来源所作说明，搭配为教学自拟。"
+        },
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/clandestine",
+          "checked_at": "2026-09-17",
+          "status": "checked",
+          "evidence": "已读取词典条目并按义项归纳中文；秘密的，暗中进行的"
+        }
+      ]
+    },
+    {
+      "word": "megalomania",
+      "outcome": "note",
+      "review_note": "名词指狂妄心理或夸大妄想这一状态；应注明人物用 megalomaniac，避免将自大狂读成人名词。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "n.",
+        "meaning": "自大狂，妄自尊大；对权力、宏伟事业的过度迷恋"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "自大狂，妄自尊大",
+            "对权力、宏伟事业的过度迷恋"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/megalomania",
+          "checked_at": "2026-09-27",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：自大狂，妄自尊大；对权力、宏伟事业的过度迷恋"
+        }
+      ],
+      "dictionary_reopened": {
+        "url": "https://www.merriam-webster.com/dictionary/megalomania",
+        "checked_at": "2026-10-29",
+        "method": "web_tool_page_read"
+      }
+    },
+    {
+      "word": "blithe",
+      "outcome": "retain",
+      "review_note": "快活无忧与漫不经心双向成立，依是否忽视风险或责任判断褒贬。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "adj.",
+        "meaning": "adj.快乐的，无忧无虑的；漫不经心的，欠考虑的"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "快乐的，无忧无虑的",
+            "漫不经心的，欠考虑的"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/blithe",
+          "checked_at": "2026-10-26",
+          "status": "checked",
+          "evidence": "本次实际读取词典正文，按所列词性与义项归纳中文：adj.快乐的，无忧无虑的；漫不经心的，欠考虑的"
+        }
+      ]
+    },
+    {
+      "word": "undo",
+      "outcome": "retain",
+      "review_note": "撤销影响、解开与毁坏是不同宾语方向，均合理，过去式 undid 与分词 undone 区分。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "v.撤销，使失效，消除……的影响；解开，松开；毁掉，击垮"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "撤销，使失效，消除……的影响",
+            "解开，松开",
+            "毁掉，击垮"
+          ]
+        }
+      ],
+      "prior_status": "dictionary_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/undo",
+          "checked_at": "2026-10-23",
+          "status": "dictionary_checked",
+          "evidence": "词条包含打开扣结、使无效或逆转，以及毁掉境遇/名誉/希望、扰乱平静。"
+        }
+      ]
+    },
+    {
+      "word": "palliate",
+      "outcome": "retain",
+      "review_note": "减轻而非根治与掩饰过错两路成立，不自动说明解决了根本问题。",
+      "reviewed_at": "2026-10-29",
+      "review_kind": "coach_semantic_review",
+      "input": {
+        "pos": "v.",
+        "meaning": "缓解症状而不根治；减轻；掩饰、为过错开脱"
+      },
+      "reviewed_senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "缓解症状而不根治",
+            "减轻",
+            "掩饰、为过错开脱"
+          ]
+        }
+      ],
+      "prior_status": "historical_checked",
+      "definition_evidence": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/palliate",
+          "checked_at": "2026-09-23",
+          "status": "checked",
+          "evidence": "已读取词典条目并归纳核心义：缓解症状而不根治；减轻；掩饰、为过错开脱"
+        }
+      ]
+    }
+  ],
+  "applied_refinements": [
+    {
+      "word": "idle",
+      "priority": "correction",
+      "input": {
+        "pos": "adj.; v.",
+        "meaning": "adj. 闲置的、无事可做的；无实际用途的；懒散的；v. 闲逛、虚度；使机器空转"
+      },
+      "previous_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "闲置的、无事可做的",
+            "无实际用途的",
+            "懒散的"
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "闲逛、虚度",
+            "使机器空转"
+          ]
+        }
+      ],
+      "recommended_senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "闲置的、无事可做的",
+            "无实际用途的",
+            "懒散的"
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "闲逛、虚度",
+            "（发动机等）空转；使空转"
+          ]
+        }
+      ],
+      "note": "idle 的发动机义既可不及物表示自身空转，也可及物表示使发动机空转；现有中文只写使机器空转漏掉前者。本次实际重读 Oxford idle_2 与 Merriam-Webster idling 两页确认。现有汽车原句仍语义匹配，可在同词性同索引下显式重新绑定。",
+      "source": {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/idling",
+        "checked_at": "2026-10-29",
+        "status": "dictionary_checked",
+        "evidence": "动词部分分别列出发动机低功率运转的不及物义，以及使发动机空转的及物义。"
+      },
+      "example_rebind": {
+        "pos": "v.",
+        "indices": "unchanged",
+        "reason": "只收紧同一发动机义，原句语义吻合，不按未知索引自动挪用。"
+      },
+      "sources": [
+        {
+          "publisher": "Merriam-Webster",
+          "url": "https://www.merriam-webster.com/dictionary/idling",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "动词部分分别列出发动机低功率运转的不及物义，以及使发动机空转的及物义。"
+        },
+        {
+          "publisher": "Oxford Advanced Learner’s Dictionary",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/idle_2",
+          "checked_at": "2026-10-29",
+          "status": "dictionary_checked",
+          "evidence": "发动机义标为不及物，车辆不动时发动机低速运转。"
+        }
+      ]
+    },
+    {
+      "word": "camaraderie",
+      "priority": "precision",
+      "input": {
+        "pos": "n.",
+        "meaning": "情谊；友情"
+      },
+      "previous_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "情谊",
+            "友情"
+          ]
+        }
+      ],
+      "recommended_senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "伙伴情谊，团体成员间的友好、熟悉与融洽"
+          ]
+        }
+      ],
+      "note": "不是任意人与人之间的抽象友情，常强调同一群体因相处、共同活动或经历形成的友好关系。原两个中文是近义表达，合并为一个清楚义项。",
+      "source": {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/camaraderie",
+        "checked_at": "2026-10-29",
+        "status": "dictionary_checked",
+        "evidence": "词典强调一个群体内部的友好、善意及熟悉感。"
+      },
+      "example_rebind": {
+        "pos": "n.",
+        "old_indices": [
+          0,
+          1
+        ],
+        "new_index": 0,
+        "reason": "若本次原创批次已经给旧义项配句，人工确认其群体友谊语境后移到唯一精炼义项。"
+      }
+    },
+    {
+      "word": "megalomania",
+      "priority": "note",
+      "input": {
+        "pos": "n.",
+        "meaning": "自大狂，妄自尊大；对权力、宏伟事业的过度迷恋"
+      },
+      "recommended_note": "名词表示狂妄心理、对宏伟事业的过度迷恋或夸大自身能力的妄想状态，不是表示人物的名词；人物用 megalomaniac。",
+      "source": {
+        "publisher": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/megalomania",
+        "checked_at": "2026-10-29",
+        "status": "dictionary_checked",
+        "evidence": "词条名词定义为宏大行为迷恋或夸大自我力量的妄想状态；其派生 megalomaniac 可作人物名词。"
+      }
+    },
+    {
+      "word": "self-deprecate",
+      "priority": "source_scope_note",
+      "input": {
+        "pos": "v.",
+        "meaning": "贬低自己，自嘲"
+      },
+      "recommended_note": "此处保留自我贬低、自嘲的动词表达。既有优先词典链接主要支持 deprecate 与 self-deprecating；本次未取得 self-deprecate 的专门优先词典词条，不把相关形式来源冒充该词专门条目。常见用法为 self-deprecating humor/remark。",
+      "status_policy": "保留既有历史状态，不增加本次整词 dictionary_checked 声称；来源覆盖相关形式的范围在note明示。"
+    }
+  ],
+  "rare_word_note": {
+    "word": "profitmonger",
+    "input": {
+      "pos": "n.",
+      "meaning": "n.（待权威核验）唯利是图的人、企业或行业"
+    },
+    "status": "coach_draft",
+    "action": "retain_status_and_raw_input",
+    "recommended_note": "本次实际读取 Wiktionary 词条，确认 profitmonger 为 profit monger 的变体，义为唯利是图的人、企业或职业群体。它是公开协作词典的辅助证据；本次仍未取得 ETS、Merriam-Webster、Oxford 或 Cambridge 的专门条目，不升级优先权威核验状态。",
+    "supplementary_sources": [
+      {
+        "publisher": "Wiktionary（公开协作词典，辅助来源）",
+        "url": "https://en.wiktionary.org/wiki/profitmonger",
+        "checked_at": "2026-10-29",
+        "status": "supplementary_checked",
+        "evidence": "页面列为 profit monger 的名词变体。"
+      },
+      {
+        "publisher": "Wiktionary（公开协作词典，辅助来源）",
+        "url": "https://en.wiktionary.org/wiki/profit_monger",
+        "checked_at": "2026-10-29",
+        "status": "supplementary_checked",
+        "evidence": "页面说明贪婪逐利的人、企业或职业；不冒充优先权威词典。"
+      }
+    ],
+    "reason": "全库唯一coach_draft，不属于185请求；为清零状态而伪造权威核验不合格。已有候选核心义未发现反证，可补原创例句但保留来源等级。"
+  },
+  "regeneration_note": "将diminutive已审核的“小个子；小物件”合并义项显式写入definition-edits，保留既有释义、例句和来源；gloat手机仅保存了同一规范格式，保留其历史核验与个人笔记。"
+}

@@ -1,14 +1,19 @@
 {
-  "date": "2026-10-27",
-  "words": 3205,
-  "senses": 8285,
-  "words_with_examples": 2197,
-  "examples": 4006,
-  "pending": 4279,
-  "source_pages": 2695,
+  "date": "2026-10-29",
+  "words": 3255,
+  "senses": 8385,
+  "words_with_examples": 3247,
+  "examples": 5120,
+  "quotations": 4048,
+  "coach_original": 1072,
+  "pending": 3265,
+  "source_pages": 2725,
   "publishers": {
     "ETS": 38,
-    "Oxford": 3968
+    "Oxford": 3972,
+    "Merriam-Webster": 37,
+    "Cambridge": 1
   },
-  "source_policy": "ETS original sentences take priority when the part of speech and specific meaning match; Oxford original examples supplement them. No authored examples; unmatched or unavailable sentences remain null."
+  "source_policy": "Preserve verified source quotations. User-authorized coach-authored bilingual examples fill gaps and are explicitly labelled; a word-level example does not imply every sense has an example.",
+  "words_without_examples": 8
 }

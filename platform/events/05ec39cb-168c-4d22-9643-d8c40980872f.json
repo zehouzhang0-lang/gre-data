@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "05ec39cb-168c-4d22-9643-d8c40980872f",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T11:28:00.983Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test8_section1_easy",
+    "question": "3",
+    "type": "tc",
+    "answer": "C/D/G",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "b8b723b9-cf72-4702-8559-6bca66b0bd5f",
+    "draft_id": "8d3bf0b1-bbd0-4e5a-a807-9a1f216de6d0",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "bf83f1ec0d083c6a086f3270451babf936ec1040ccd531227cf10ec643862854",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test8_section1_easy\",\"3\"]",
+      "type": "tc",
+      "mode": "blanks",
+      "source": "填空 2000 · Test 8 · Section 1 · easy · 第 3 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          31,
+          32
+        ],
+        "regions": [
+          {
+            "page": 31,
+            "top": 748.513108,
+            "bottom": 782.89,
+            "left": 48,
+            "right": 550
+          },
+          {
+            "page": 32,
+            "top": 58,
+            "bottom": 151.85179199999993,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "In a view of 17 studies from 2008, Trudeau and Shephard concluded that reserving up to an hour a day for (i)_____ in school curricula does not (ii)_____ academic achievement. In fact, they noted that more exercise often (iii)_____ school performance, despite the time it took away from reading, writing, and arithmetic.",
+      "options": [
+        "physical activity",
+        "leisure time",
+        "open study",
+        "contribute to",
+        "detract from",
+        "correlate with",
+        "diminished",
+        "augmented",
+        "counteracted"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "groups": [
+        [
+          "A",
+          "B",
+          "C"
+        ],
+        [
+          "D",
+          "E",
+          "F"
+        ],
+        [
+          "G",
+          "H",
+          "I"
+        ]
+      ],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "D",
+      "G",
+      "C"
+    ],
+    "answerKey": {
+      "answer": "AEH",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:4962-4999",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": false
+  }
+}

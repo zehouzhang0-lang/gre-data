@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "1f6646fe-82de-4732-a374-2d35459a62c2",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T08:02:36.661Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test8_section1_easy",
+    "question": "1",
+    "type": "tc",
+    "answer": "C",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "6dc019c6-47d2-4413-b25b-93e5f16c88b3",
+    "draft_id": "feb2f755-8b51-4de3-9d46-09e654decf3b",
+    "bank_revision": "57a3bef7e203f6308a6ffcb50f1892b9c618f5e61b8e5e7dd5cbdc7b23ef6503",
+    "content_id": "91341acf21d26e84ffb9e995407cc0d969986d6fee42d340f63be9614e8b4b69",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test8_section1_easy\",\"1\"]",
+      "type": "tc",
+      "mode": "single",
+      "source": "填空 2000 · Test 8 · Section 1 · easy · 第 1 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          31
+        ],
+        "regions": [
+          {
+            "page": 31,
+            "top": 534.973099,
+            "bottom": 638.973176,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "The title of her final and unfinished film, Escape, was _____: indeed while shooting it, she was preoccupied with thoughts of desertion.",
+      "options": [
+        "quixotic",
+        "apt",
+        "misleading",
+        "inconsequential",
+        "uncharacteristic"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "C"
+    ],
+    "answerKey": {
+      "answer": "B",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:4962-4999",
+      "answer_format": null,
+      "event_id": "f3129b91-b0a8-4b28-b8c0-85317952e3a3"
+    },
+    "result": false
+  }
+}
