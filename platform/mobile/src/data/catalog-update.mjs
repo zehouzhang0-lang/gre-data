@@ -1,7 +1,7 @@
 import { cleanWord, clone, projectState, validateData } from './model.mjs';
 import { applyStandardDefinition } from '../../../shared/standard-definition.mjs';
 
-export const CATALOG_REVISION = '2026-11-03-handwritten-vocabulary-1';
+export const CATALOG_REVISION = '2026-11-03-phone-progress-1';
 
 // Only content is merged. Never import desktop events, review baselines or rounds.
 export function updateCatalog(current, incoming, revision) {

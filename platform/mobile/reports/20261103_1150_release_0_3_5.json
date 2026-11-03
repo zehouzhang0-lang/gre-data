@@ -1,0 +1,1062 @@
+{
+  "schema_version": 1,
+  "kind": "mobile_release_verification",
+  "version": "0.3.5",
+  "version_code": 19,
+  "package_name": "cn.grestudy.vocabulary",
+  "verified_at": "2026-11-03T03:53:02.894Z",
+  "time_zone": "Asia/Kuala_Lumpur",
+  "apk": {
+    "bytes": 93052749,
+    "sha256": "e584d0191d533eefaf8665f8bc593c4d798309ce5770c9ec3d20514cf7ed683e",
+    "verified_web_files": 10842,
+    "verified_practice_assets": 4166,
+    "practice_revision": "5160e73f55cbcf428b5f4b39fae2281212e5702372683195d6d2e574649d54f6",
+    "questions": {
+      "se": 1001,
+      "tc": 1001,
+      "rc": 893,
+      "quant": 847
+    },
+    "vocabulary_seed_sha256": "faecb9b5304d5a760252bbca3cf204f2eb9c2d1f803354598e843be0365a9db9",
+    "filename": "GRE-vocabulary-0.3.5-debug.apk",
+    "package_name": "cn.grestudy.vocabulary",
+    "version_name": "0.3.5",
+    "version_code": 19,
+    "signing_certificate_sha256": "18032e90614e5b1e2d406ccfbb3d731941987c8d154f3cf634b3315bd4e422d0",
+    "same_signer_as_previous": true
+  },
+  "source": {
+    "filename": "gre-vocabulary-2026-11-02T16-20-33-466Z(1).json",
+    "created_at": "2026-11-02T16:20:33.260Z",
+    "bytes": 7090347,
+    "sha256": "653fc75eaa9d4858354cc70f34ed2b60b4d89210eb97dffc438015cf1d1215f3",
+    "payload_checksum": "394437353c58a7df978d75230418247475e78bf64cc39805a718ad45cdff0e17",
+    "dataset_id": "ca04dc64-6f59-46db-9f3a-83ae42eb8de9",
+    "time_zone": "Asia/Shanghai",
+    "last_event_at": "2026-11-02T16:15:09.942Z"
+  },
+  "content": {
+    "captured_words_reviewed": 23,
+    "new_catalog_words": 22,
+    "overlap_with_same_day_handwriting": 1,
+    "bilingual_examples_added": 49,
+    "handwritten_batch_included": "vocab/imports/20261103_0021_handwritten_vocab.json",
+    "current_capture_record": "vocab/imports/20261103_1150_current_mobile_captures.json",
+    "coverage": {
+      "date": "2026-11-03",
+      "words": 3325,
+      "senses": 8561,
+      "words_with_examples": 3325,
+      "examples": 5320,
+      "quotations": 4099,
+      "coach_original": 1221,
+      "pending": 3241,
+      "source_pages": 2769,
+      "publishers": {
+        "ETS": 38,
+        "Oxford": 4006,
+        "Merriam-Webster": 54,
+        "Cambridge": 1
+      },
+      "source_policy": "Preserve verified source quotations. User-authorized coach-authored bilingual examples fill gaps and are explicitly labelled; a word-level example does not imply every sense has an example.",
+      "words_without_examples": 0
+    },
+    "authority_pending": [
+      "profitmonger"
+    ],
+    "no_blank_non_redirect_words": true,
+    "scope": "All known repository vocabulary plus this supplied complete backup. Later phone edits or requests are preserved and are not automatically marked reviewed."
+  },
+  "phone_to_desktop_import": {
+    "manifest": "platform/mobile-imports/vocabulary/653fc75eaa9d4858354cc70f34ed2b60b4d89210eb97dffc438015cf1d1215f3.json",
+    "archive": ".gre-platform/mobile-backups/653fc75eaa9d4858354cc70f34ed2b60b4d89210eb97dffc438015cf1d1215f3.json",
+    "source_sha256": "653fc75eaa9d4858354cc70f34ed2b60b4d89210eb97dffc438015cf1d1215f3",
+    "archive_byte_identical": true,
+    "original_file_unchanged": true,
+    "original_ids_order_preserved": true,
+    "new_events_full_field_identical": 1436,
+    "prior_events_full_field_identical": 3851,
+    "prior_events_time_representation_only": 123,
+    "all_phone_events_verified": 5410,
+    "complete_session_count": 9,
+    "visible_unfinished_rounds": [
+      {
+        "session_id": "85e8a462-6234-4bb4-b414-0549fbdf7252",
+        "name": "im生疏",
+        "recorded_at": "2026-10-29T16:00:46.979Z",
+        "words": [
+          "imminent",
+          "impart",
+          "impede",
+          "imperative",
+          "impetuous",
+          "implausible",
+          "impolitic",
+          "impostor",
+          "impound",
+          "imprecision",
+          "impudent",
+          "imbue",
+          "imitative",
+          "immaterial",
+          "immense",
+          "immolate",
+          "immortal",
+          "immure",
+          "impassive",
+          "impeach",
+          "impecunious",
+          "impend",
+          "imperceptible",
+          "imperial",
+          "impertinent",
+          "impervious",
+          "implore",
+          "impugn",
+          "impunity",
+          "impute",
+          "inimical"
+        ],
+        "completed_words": [],
+        "next": {
+          "stage": "cloze",
+          "word": "immolate",
+          "remaining": 21
+        },
+        "drills": 84,
+        "task_id": "ec6ae974-1a73-457d-9cbb-da00ea19a437",
+        "pinned": false,
+        "deadline": "2026-10-30"
+      }
+    ],
+    "current_projection": {
+      "words": 3281,
+      "visible": 3262,
+      "hidden": 19,
+      "newly_captured": 23,
+      "new_capture_words": 23,
+      "captured_blank": 23,
+      "current_explicit_curation_requests": 0,
+      "new_curation_request_events": 0,
+      "new_personal_edits": 0,
+      "custom_groups": 18,
+      "review_tasks": 8,
+      "all_rounds": 20,
+      "visible_rounds": 5,
+      "visible_unfinished_rounds": 1
+    },
+    "conflicts": 0,
+    "new_vocabulary_events": 1436,
+    "duplicate_events": 3974,
+    "new_event_kinds": {
+      "vocab_capture": 23,
+      "vocab_card_reading": 4,
+      "vocab_drill": 408,
+      "vocab_quick_review": 884,
+      "vocab_quick_undo": 2,
+      "vocab_recall": 65,
+      "vocab_review_round": 22,
+      "vocab_review_task": 6,
+      "vocab_session": 10,
+      "vocab_word_group": 12
+    },
+    "all_previous_files_preserved": true,
+    "new_practice_attempts_this_backup": 0
+  },
+  "continuity": {
+    "schema_version": 1,
+    "result": "passed",
+    "checked_at": "2026-11-03T03:51:45.078Z",
+    "catalog_revision": "2026-11-03-phone-progress-1",
+    "source": {
+      "filename": "653fc75eaa9d4858354cc70f34ed2b60b4d89210eb97dffc438015cf1d1215f3.json",
+      "bytes": 7090347,
+      "sha256": "653fc75eaa9d4858354cc70f34ed2b60b4d89210eb97dffc438015cf1d1215f3",
+      "payload_checksum": "394437353c58a7df978d75230418247475e78bf64cc39805a718ad45cdff0e17",
+      "format": "gre-vocabulary-backup",
+      "created_at": "2026-11-02T16:20:33.260Z",
+      "dataset_id": "ca04dc64-6f59-46db-9f3a-83ae42eb8de9"
+    },
+    "seed": {
+      "filename": "vocabulary-seed.json",
+      "bytes": 7267252,
+      "sha256": "faecb9b5304d5a760252bbca3cf204f2eb9c2d1f803354598e843be0365a9db9",
+      "payload_checksum": "2b890575971a933ac5a25481da79922adfe51f218744227bc3324c2666ba3863",
+      "format": "gre-vocabulary-seed",
+      "created_at": "2026-11-03T03:51:07.922Z",
+      "dataset_id": "ca04dc64-6f59-46db-9f3a-83ae42eb8de9"
+    },
+    "baseline_kind": "device-export",
+    "authoritative_at_source_export": true,
+    "source_exported_at": "2026-11-02T16:20:33.260Z",
+    "last_learning_event_at": "2026-11-02T16:15:09.942Z",
+    "backup": {
+      "filename": "gre-vocabulary-updated-20261103.json",
+      "format": "gre-vocabulary-backup",
+      "version": 1,
+      "created_at": "2026-11-03T03:51:44.344Z",
+      "bytes": 7267254,
+      "sha256": "c08deddf6f2a69607c8b866ef655951e38bee1bdf84483d58faf89d566988d13",
+      "payload_checksum": "2b890575971a933ac5a25481da79922adfe51f218744227bc3324c2666ba3863"
+    },
+    "dataset_id": "ca04dc64-6f59-46db-9f3a-83ae42eb8de9",
+    "time_zone": "Asia/Shanghai",
+    "quick_round": {
+      "day": "2026-11-03",
+      "id": "02b7e44c-24ec-4c89-b470-c313a7a9eb28"
+    },
+    "raw_events_preserved": 5410,
+    "raw_events_sha256": "a9fd293fcb892f13a967e018e15d9a2e91b4acfdbdfab7804d253f6667f3b76e",
+    "original_legacy_words": 387,
+    "legacy_words_sha256": "cc75f3ceb193713a75e1e5be7f8b1cbb91c6dd45102a947546aa2e7527d39391",
+    "original_raw_words_preserved": 3153,
+    "old_words": 3281,
+    "total_words": 3328,
+    "visible_words": 3309,
+    "new_words": 47,
+    "new_words_list": [
+      "adjectival",
+      "advance",
+      "barley",
+      "cache",
+      "cathedral",
+      "celiac",
+      "coastal",
+      "colloquialism",
+      "compact",
+      "comport",
+      "deflect",
+      "diffident",
+      "eligible",
+      "epitome",
+      "etiolated",
+      "euphemism",
+      "exemplar",
+      "glaciation",
+      "gluten",
+      "hidebound",
+      "inadequate",
+      "inquiry",
+      "intemperate",
+      "lush",
+      "meager",
+      "nadir",
+      "oracular",
+      "original",
+      "passé",
+      "personable",
+      "pillory",
+      "prognosis",
+      "punctual",
+      "punctuate",
+      "reclaim",
+      "resolve",
+      "rigor",
+      "rye",
+      "sardonic",
+      "short-lived",
+      "soft-pedal",
+      "tactile",
+      "temperate",
+      "totemic",
+      "truncate",
+      "unctuous",
+      "wastrel"
+    ],
+    "new_word_learning_records": 0,
+    "handwritten_total": 64,
+    "handwritten_new": 47,
+    "handwritten_existing": 17,
+    "hidden_preserved": 19,
+    "hidden_examples_added": [
+      "attenuates",
+      "belies",
+      "dieticians",
+      "dwindling",
+      "eroded",
+      "guppies",
+      "legislators",
+      "numerals"
+    ],
+    "original_schedules_preserved": 3262,
+    "newly_ready": [
+      {
+        "word": "beatified",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "cleric",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "consort",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "deficiency",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "deified",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "disparateness",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "egotistical",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "estranged",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "evoked",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "footnote",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "generosity",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "glut",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "incompatibility",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "instability",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "intractability",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "malign",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "mayoral",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "nefariousness",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "noteworthy",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "precociousness",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "protean",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "tactless",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      },
+      {
+        "word": "venture",
+        "approved_by": "reviewed-words.json",
+        "request_ids": []
+      }
+    ],
+    "definition_edits_preserved": 1,
+    "personal_settings_preserved": true,
+    "card_reading_words": 778,
+    "raw_sessions_preserved": 20,
+    "raw_drills_preserved": 599,
+    "visible_rounds_preserved": [
+      {
+        "session_id": "7966aa44-e344-4c29-8615-ac1d5d6a1155",
+        "name": "ten开头",
+        "words": 9,
+        "complete": true,
+        "completed_words": [
+          "tendentious",
+          "tender",
+          "tenet",
+          "tentative",
+          "tenebrous",
+          "tentacle",
+          "tenuous",
+          "tenure",
+          "tenacity"
+        ],
+        "next": null,
+        "drills": 41,
+        "items_sha256": "10bc8e0bc80b4db57234deb8464faab883637a3842ce7b2b41fa8fb6d0abf32e"
+      },
+      {
+        "session_id": "85e8a462-6234-4bb4-b414-0549fbdf7252",
+        "name": "im生疏",
+        "words": 31,
+        "complete": false,
+        "completed_words": [],
+        "next": {
+          "stage": "cloze",
+          "word": "immolate",
+          "remaining": 21
+        },
+        "drills": 84,
+        "items_sha256": "01e5e9016136dc482fe7e9ff07cefe710bcd086a17fce136faa112baf24596dc"
+      },
+      {
+        "session_id": "b42b06c4-1430-468e-ac0d-5afcdbccb85a",
+        "name": "cate结尾",
+        "words": 26,
+        "complete": true,
+        "completed_words": [
+          "abdicate",
+          "altercate",
+          "bifurcate",
+          "eradicate",
+          "intoxicate",
+          "intricate",
+          "self-deprecate",
+          "confiscate",
+          "delicate",
+          "deprecate",
+          "duplicate",
+          "extricate",
+          "inculpate",
+          "medicate",
+          "meditate",
+          "obfuscate",
+          "placate",
+          "predicate",
+          "reciprocate",
+          "suffocate",
+          "vindicate",
+          "adjudicate",
+          "coruscate",
+          "implicate",
+          "prevaricate",
+          "supplicate"
+        ],
+        "next": null,
+        "drills": 129,
+        "items_sha256": "85796381acf27113f5ebcc7c6e34a98b8764a1d098eac05d1ebeb1f1cb0f42e6"
+      },
+      {
+        "session_id": "8f236b06-17e8-4e55-b3ce-6a41488c24d1",
+        "name": "ab开头",
+        "words": 28,
+        "complete": true,
+        "completed_words": [
+          "abash",
+          "abate",
+          "abbreviate",
+          "abdominal",
+          "aberration",
+          "abet",
+          "abiding",
+          "ablaze",
+          "abolish",
+          "abound",
+          "abrade",
+          "abreast",
+          "aback",
+          "abase",
+          "abhor",
+          "abject",
+          "abnegation",
+          "abridge",
+          "abrupt",
+          "abruptly",
+          "absorbing",
+          "abstemious",
+          "abstinence",
+          "abstract",
+          "abdicate",
+          "abominate",
+          "abrogate",
+          "absolution"
+        ],
+        "next": null,
+        "drills": 123,
+        "items_sha256": "a9e840ce957d93fdbc987e44915c6a585283090dd7559fb8147b2067f7a6fcfc"
+      },
+      {
+        "session_id": "37404fc1-ecec-444d-b26b-dd56749fb30d",
+        "name": "吃惊",
+        "words": 13,
+        "complete": true,
+        "completed_words": [
+          "aback",
+          "stupefy",
+          "agog",
+          "astounding",
+          "consternation",
+          "petrify",
+          "skittish",
+          "staggering",
+          "stupefaction",
+          "startle",
+          "startling",
+          "aghast",
+          "flabbergast"
+        ],
+        "next": null,
+        "drills": 69,
+        "items_sha256": "c9fe892329ff780aa0f400418dbf9e96cd4ad352c2e58d4e5dc00ea501970589"
+      }
+    ],
+    "deleted_rounds_preserved": 15,
+    "deleted_round_snapshots": [
+      {
+        "session_id": "f76ae57e-8cef-4c31-97db-f7f84bc55b1d",
+        "words": 28,
+        "completed_words": [],
+        "next": {
+          "stage": "meaning_1",
+          "word": "aback",
+          "remaining": 28
+        },
+        "drills": 0,
+        "items_sha256": "5d1b74f29f7249441fdc41c50c21c0d1793ef6100c870a24d4c1013db7fd4e32"
+      },
+      {
+        "session_id": "8bdb3d16-fb9f-4b35-adea-23009fc48e0f",
+        "words": 26,
+        "completed_words": [],
+        "next": {
+          "stage": "meaning_1",
+          "word": "abdicate",
+          "remaining": 26
+        },
+        "drills": 0,
+        "items_sha256": "78bdc295b1a83c5e883cb026754120633d55ab99b1c8d4e1b9928ebbd9dcce60"
+      },
+      {
+        "session_id": "7263585c-1b56-4fcf-aa14-998f75348ec3",
+        "words": 28,
+        "completed_words": [],
+        "next": {
+          "stage": "meaning_1",
+          "word": "abject",
+          "remaining": 21
+        },
+        "drills": 7,
+        "items_sha256": "155341d4e4a8fbc3ec3612352a28388646b7e8f7647a37102f0db5ffa96205f2"
+      },
+      {
+        "session_id": "4dd3b156-e4f1-4b42-b427-5d6a12755449",
+        "words": 56,
+        "completed_words": [],
+        "next": {
+          "stage": "meaning_1",
+          "word": "importunate",
+          "remaining": 38
+        },
+        "drills": 18,
+        "items_sha256": "83ee773c8910831bee1514973d7d03557880110e41cf95cc6d32d8e97b511519"
+      },
+      {
+        "session_id": "2bf23dd0-008d-416d-ba8a-c7383c62834c",
+        "words": 20,
+        "completed_words": [],
+        "next": {
+          "stage": "meaning_1",
+          "word": "abash",
+          "remaining": 20
+        },
+        "drills": 0,
+        "items_sha256": "cc023b63be47b45e335d6d3f5d970d1afab1a8da3672036880800f7034c8c290"
+      },
+      {
+        "session_id": "e9b07358-97c2-4ceb-a64b-4c3f2219e52d",
+        "words": 13,
+        "completed_words": [],
+        "next": {
+          "stage": "meaning_1",
+          "word": "astounding",
+          "remaining": 11
+        },
+        "drills": 2,
+        "items_sha256": "f985d19f23138fbbe73de2c5165e22ce9816eb4a6f04e886379d3d9d37428301"
+      },
+      {
+        "session_id": "8c872cff-ed7d-498f-964a-f8abf8b93172",
+        "words": 9,
+        "completed_words": [
+          "spunk",
+          "animate",
+          "vitality"
+        ],
+        "next": {
+          "stage": "spelling",
+          "word": "vivacious",
+          "remaining": 6
+        },
+        "drills": 38,
+        "items_sha256": "8b3c7a956e35b013a3d2337b50d8063f5468bdb0edd1b52613e777d3c7dc0d3a"
+      },
+      {
+        "session_id": "e84a231a-3a93-4c25-b5d3-fef20b975e49",
+        "words": 10,
+        "completed_words": [],
+        "next": {
+          "stage": "meaning_1",
+          "word": "abject",
+          "remaining": 10
+        },
+        "drills": 0,
+        "items_sha256": "9e1bb916c7f6c5bdae5d7e1ee72d24f94bdc6e9a2461d463aebbed4640ee9f52"
+      },
+      {
+        "session_id": "bf987f55-6c7a-44cb-984b-c3ef3e427563",
+        "words": 1,
+        "completed_words": [
+          "fluctuate"
+        ],
+        "next": null,
+        "drills": 4,
+        "items_sha256": "1298111a15f1696a0b942ed18289beccd0302ca7fb15cf83754e3fef4b4229eb"
+      },
+      {
+        "session_id": "f19150ee-456d-49b9-b828-46edbe4ba520",
+        "words": 1,
+        "completed_words": [
+          "eyesore"
+        ],
+        "next": null,
+        "drills": 4,
+        "items_sha256": "681ea7e0e91ca4eec34de908aec5a669da877dee120d9233b2559b2df9744092"
+      },
+      {
+        "session_id": "79b1e63b-84c0-4da8-b1eb-1092f9c1de0d",
+        "words": 20,
+        "completed_words": [],
+        "next": {
+          "stage": "meaning_1",
+          "word": "disgorge",
+          "remaining": 9
+        },
+        "drills": 11,
+        "items_sha256": "f97cb824928710434538f3cecb711659807a9c4d635b4b9983cbcc643d6a1960"
+      },
+      {
+        "session_id": "022c90e8-c35c-41c7-8e7e-e9d80f85b4e2",
+        "words": 1,
+        "completed_words": [
+          "abet"
+        ],
+        "next": null,
+        "drills": 4,
+        "items_sha256": "f0a2314f203fcf42f05eb92a789fe38fab00cb81c055dbdf3317991999f551a7"
+      },
+      {
+        "session_id": "b82c8916-9e34-4801-be71-0d718eeff28e",
+        "words": 1,
+        "completed_words": [
+          "gallant"
+        ],
+        "next": null,
+        "drills": 6,
+        "items_sha256": "629100bbda6bdb617cf1543480e718a3d7c5bea63a7b93a890b97151c793982d"
+      },
+      {
+        "session_id": "85f169d9-6e95-4b52-af90-1aa4da0d6461",
+        "words": 20,
+        "completed_words": [],
+        "next": {
+          "stage": "meaning_1",
+          "word": "accountable",
+          "remaining": 9
+        },
+        "drills": 14,
+        "items_sha256": "1896adf7884d3140ac2caac660ee8ef7e2ca3cb240fd4524cc0a8779f72fa55f"
+      },
+      {
+        "session_id": "c9e17484-d030-4ae1-9527-50a0adf299c6",
+        "words": 10,
+        "completed_words": [
+          "disorganization",
+          "feeble",
+          "purposefulness",
+          "rear",
+          "rebel",
+          "receptive",
+          "recession",
+          "provocateur",
+          "purveyor",
+          "ramshackle"
+        ],
+        "next": null,
+        "drills": 45,
+        "items_sha256": "408bc473e80ffa261062c5dfcc565bbe54bea00b6171c74cff676b77c46bab8f"
+      }
+    ],
+    "review_tasks_preserved": 8,
+    "personal_word_groups_preserved": 18,
+    "original_relation_groups_preserved": 297,
+    "new_relation_groups": [
+      "curated-20261103-punct",
+      "curated-20261103-moderation",
+      "curated-20261103-example",
+      "curated-20261103-extremes"
+    ],
+    "manual_classifications_preserved": 1450,
+    "automatic_topic_changes": [
+      {
+        "word": "beatified",
+        "from": [],
+        "to": [
+          "mood",
+          "society",
+          "arts"
+        ]
+      },
+      {
+        "word": "cleric",
+        "from": [],
+        "to": [
+          "society"
+        ]
+      },
+      {
+        "word": "consort",
+        "from": [],
+        "to": [
+          "social",
+          "society",
+          "arts"
+        ]
+      },
+      {
+        "word": "deficiency",
+        "from": [],
+        "to": [
+          "reason",
+          "quantity",
+          "body"
+        ]
+      },
+      {
+        "word": "deified",
+        "from": [],
+        "to": [
+          "social",
+          "society"
+        ]
+      },
+      {
+        "word": "disparateness",
+        "from": [],
+        "to": [
+          "material"
+        ]
+      },
+      {
+        "word": "egotistical",
+        "from": [],
+        "to": [
+          "character"
+        ]
+      },
+      {
+        "word": "estranged",
+        "from": [],
+        "to": [
+          "mood",
+          "social",
+          "quantity"
+        ]
+      },
+      {
+        "word": "evoked",
+        "from": [],
+        "to": [
+          "mood",
+          "language",
+          "arts"
+        ]
+      },
+      {
+        "word": "footnote",
+        "from": [],
+        "to": [
+          "reason",
+          "language",
+          "quantity",
+          "material"
+        ]
+      },
+      {
+        "word": "generosity",
+        "from": [],
+        "to": [
+          "character",
+          "social",
+          "change",
+          "quantity",
+          "material",
+          "economy"
+        ]
+      },
+      {
+        "word": "glut",
+        "from": [],
+        "to": [
+          "quantity",
+          "economy"
+        ]
+      },
+      {
+        "word": "incompatibility",
+        "from": [],
+        "to": [
+          "social",
+          "conflict",
+          "material"
+        ]
+      },
+      {
+        "word": "instability",
+        "from": [],
+        "to": [
+          "mood",
+          "change",
+          "material"
+        ]
+      },
+      {
+        "word": "intractability",
+        "from": [],
+        "to": [
+          "character",
+          "conflict",
+          "change",
+          "body"
+        ]
+      },
+      {
+        "word": "malign",
+        "from": [],
+        "to": [
+          "character",
+          "conflict",
+          "reason",
+          "language"
+        ]
+      },
+      {
+        "word": "mayoral",
+        "from": [],
+        "to": [
+          "society"
+        ]
+      },
+      {
+        "word": "nefariousness",
+        "from": [],
+        "to": [
+          "character"
+        ]
+      },
+      {
+        "word": "noteworthy",
+        "from": [],
+        "to": [
+          "reason"
+        ]
+      },
+      {
+        "word": "precociousness",
+        "from": [],
+        "to": [
+          "character",
+          "change",
+          "quantity",
+          "time",
+          "nature"
+        ]
+      },
+      {
+        "word": "protean",
+        "from": [],
+        "to": [
+          "character",
+          "change"
+        ]
+      },
+      {
+        "word": "tactless",
+        "from": [],
+        "to": [
+          "character",
+          "social",
+          "quantity"
+        ]
+      },
+      {
+        "word": "venture",
+        "from": [],
+        "to": [
+          "economy",
+          "action"
+        ]
+      }
+    ],
+    "remaining_curation_requests": 0,
+    "resolved_requested_words": 185,
+    "schedules_and_word_snapshots_preserved": true,
+    "original_files_unchanged": true,
+    "rollback_on_write_failure": "passed",
+    "installed_upgrade_matches_personal_seed": true,
+    "actual_fresh_install": "passed",
+    "fresh_install_quick_round": "preserved",
+    "second_start_no_repeat_update": true,
+    "complete_backup_and_restore": "passed"
+  },
+  "pronunciation": {
+    "result": "passed",
+    "source_dump": "2026-09-02",
+    "bulk_sha256": "6d40e0067718aeb3321db30297761ca803838390627111a29a5426fee4557faf",
+    "seed_sha256": "faecb9b5304d5a760252bbca3cf204f2eb9c2d1f803354598e843be0365a9db9",
+    "old_words_preserved": 3306,
+    "old_variants_preserved": 6612,
+    "old_assets_preserved": 6592,
+    "old_metadata_exact_match": true,
+    "old_audio_bytes_exact_match": true,
+    "added_words": 22,
+    "added_variants": 44,
+    "new_unique_assets": 44,
+    "added_source_ipa": 26,
+    "added_pending_ipa": 18,
+    "pending_ipa": [
+      {
+        "word": "beatified",
+        "accent": "gb"
+      },
+      {
+        "word": "beatified",
+        "accent": "us"
+      },
+      {
+        "word": "deified",
+        "accent": "gb"
+      },
+      {
+        "word": "deified",
+        "accent": "us"
+      },
+      {
+        "word": "disparateness",
+        "accent": "gb"
+      },
+      {
+        "word": "disparateness",
+        "accent": "us"
+      },
+      {
+        "word": "egotistical",
+        "accent": "gb"
+      },
+      {
+        "word": "estranged",
+        "accent": "gb"
+      },
+      {
+        "word": "estranged",
+        "accent": "us"
+      },
+      {
+        "word": "evoked",
+        "accent": "gb"
+      },
+      {
+        "word": "evoked",
+        "accent": "us"
+      },
+      {
+        "word": "intractability",
+        "accent": "gb"
+      },
+      {
+        "word": "intractability",
+        "accent": "us"
+      },
+      {
+        "word": "nefariousness",
+        "accent": "gb"
+      },
+      {
+        "word": "nefariousness",
+        "accent": "us"
+      },
+      {
+        "word": "precociousness",
+        "accent": "gb"
+      },
+      {
+        "word": "precociousness",
+        "accent": "us"
+      },
+      {
+        "word": "tactless",
+        "accent": "gb"
+      }
+    ],
+    "coverage": {
+      "words": 3328,
+      "dictionary_ipa": 5754,
+      "human": 0,
+      "synthetic": 6656,
+      "pending_ipa": 902
+    },
+    "all_assets_checked": 6636,
+    "all_asset_bytes": 45283068,
+    "manifest_before_sha256": "df2f0c949f45c6329ac8e9fcc864cd591a8b7e515512d3f6396aff77a1fe5dca",
+    "manifest_after_sha256": "3d3d8d93c3c82683551690d852b9546c1ee07c44fa4bc4b2709728896d386621",
+    "network_requests": 0,
+    "downloads": 0,
+    "deleted_assets": 0
+  },
+  "validation": {
+    "definition_and_examples_audit": "passed",
+    "personal_seed_export_parity": "passed",
+    "real_supplied_backup_upgrade": "passed",
+    "source_function_tests_unchanged_from_034": 17,
+    "actual_apk_resources_and_signature": "passed",
+    "real_android_install": "not yet tested on user phone"
+  },
+  "preservation_policy": "Existing installed phone databases take precedence. Only content merges. Raw IDs, timestamps, recalls, user edits, hidden states, manual classifications, 20 round snapshots, task configurations and drill positions remain unchanged. Fresh installation baseline now uses this actual latest supplied 5410-event backup. Deleted historical rounds remain deleted. Do not restore over newer progress unnecessarily."
+}

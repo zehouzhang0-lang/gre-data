@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-29",
-  "source_backup_sha256": "7cf16cf166190fd15d3afb52924c4fb0e279800c33d1f3c4cb33a629a88674fe",
-  "policy": "明确审核现有规范释义与例句并处理原请求ID，保留个人输入、分类与全部原事件。不把整理当作回忆或掌握。无原请求的11个题中摘词另行明确补齐。释义核验状态独立保留，历史核验不冒充本日重新查词典。",
+  "reviewed_at": "2026-11-03",
+  "source_backup_sha256": "653fc75eaa9d4858354cc70f34ed2b60b4d89210eb97dffc438015cf1d1215f3",
+  "policy": "累计保留所有已审核词及原请求ID。本轮明确审核最新完整备份中的23个空释义摘词；22个新词保留原词形，consort沿用同日手写整理。保留全部原始输入、个人修改、分类和学习事件；整理不是掌握证据。",
   "items": [
     {
       "word": "aggrandize",
@@ -2725,6 +2725,305 @@
       "definition_review": "dictionary_checked",
       "example_review": "sense_aligned_bilingual",
       "topic_review": "retain_user_assignments_and_checked_catalog_topics"
+    },
+    {
+      "word": "venture",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "egotistical",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "precociousness",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "nefariousness",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "consort",
+      "input": {
+        "pos": "v. / n.",
+        "meaning": "v.（常指与受非议的人）交往，厮混；相合，与……相协调\nn.（尤指君主的）配偶；同伴，伙伴；合奏或合唱团体"
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "disparateness",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "incompatibility",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "intractability",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "instability",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "estranged",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "mayoral",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "protean",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "glut",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "deficiency",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "noteworthy",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "generosity",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "beatified",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "cleric",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "deified",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "evoked",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "footnote",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "malign",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
+    },
+    {
+      "word": "tactless",
+      "input": {
+        "pos": "",
+        "meaning": ""
+      },
+      "reviewed_at": "2026-11-03",
+      "request_ids": [],
+      "definition_review": "dictionary_checked",
+      "example_review": "sense_aligned_bilingual",
+      "topic_review": "retain_user_assignments_and_checked_catalog_topics",
+      "record": "vocab/imports/20261103_1150_current_mobile_captures.json"
     }
   ]
 }

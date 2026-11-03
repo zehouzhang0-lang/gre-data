@@ -1,0 +1,893 @@
+{
+  "schema_version": 1,
+  "note": "22个新词按手机原摘词词形整理，各义项附中英句；原始摘词事件不改写。consort沿用同日手写词记录。",
+  "items": [
+    {
+      "word": "venture",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "带有风险的事业、项目或尝试，尤指商业项目"
+          ],
+          "examples": [
+            {
+              "en": "The partners sold their first harvest at a loss, but their mushroom farm eventually became a profitable venture.",
+              "zh": "合伙人把首批蘑菇亏本卖出，但他们经营的蘑菇农场最终成了赚钱的事业。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "冒险前往，冒险涉足",
+            "试探着说，冒昧提出（看法、问题或建议）",
+            "拿（金钱等）冒险，把……押在有风险的事上"
+          ],
+          "examples": [
+            {
+              "en": "Few climbers venture beyond the ridge once the afternoon fog settles in.",
+              "zh": "午后浓雾一旦笼罩山岭，就很少有登山者冒险越过山脊。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "Only one student dared to venture a different explanation.",
+              "zh": "只有一名学生敢于试探着提出另一种解释。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The partners refused to venture their savings on an untested invention.",
+              "zh": "合伙人不肯把积蓄押在一项未经检验的发明上。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "egotistical",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "自视过高的，以自我为中心的"
+          ],
+          "examples": [
+            {
+              "en": "The speaker sounded egotistical when she claimed sole credit for her team’s discovery.",
+              "zh": "演讲者把团队的发现全归功于自己，听起来自视甚高。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "precociousness",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "早慧，年纪很轻就显出的才智或成熟举止",
+            "（生物的）早熟，发育或成熟早于通常时间"
+          ],
+          "examples": [
+            {
+              "en": "Her precociousness was evident at eight, when she could explain why an argument was flawed.",
+              "zh": "她八岁就能解释一段论证错在哪里，那时已经显出早慧。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The grower valued the precociousness of the new pear trees, which bore fruit in their second year.",
+              "zh": "种植者看重这批新品种梨树的早熟特性，它们第二年就结了果。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "nefariousness",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "（行为、意图等的）邪恶、卑劣性质"
+          ],
+          "examples": [
+            {
+              "en": "The nefariousness of the scheme lay in its deliberate targeting of disaster victims.",
+              "zh": "这场骗局的卑劣之处，在于它蓄意针对灾民。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "disparateness",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "性质或特征的迥异，组成成分之间的显著差异"
+          ],
+          "examples": [
+            {
+              "en": "The disparateness of the two samples was clear from their textures, one smooth as clay and the other gritty with sand.",
+              "zh": "两份样本的质地差异很明显，一份像黏土般细滑，另一份含沙，摸起来粗糙。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "incompatibility",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "（人、习惯或需求之间的）不合，难以和谐共存",
+            "（主张、目标或要求之间的）不相容，不能同时成立或实现",
+            "（设备、材料等的）不兼容，不能配合使用或混合"
+          ],
+          "examples": [
+            {
+              "en": "Their friendship survived the incompatibility of their living habits, but sharing a flat proved impossible.",
+              "zh": "尽管生活习惯不合，两人依旧是朋友，只是无法再合住。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The reviewer pointed out the incompatibility between a promise of anonymity and a rule requiring signatures.",
+              "zh": "审查者指出，承诺匿名与要求签名的规定相互矛盾。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "A technician traced the failed update to an incompatibility between the new software and the old sensor.",
+              "zh": "技术人员发现，更新失败是因为新软件与旧传感器不兼容。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "intractability",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "（问题、争端的）棘手，难以处理或解决",
+            "（人的）难以管束或说服，倔强不驯",
+            "（病痛的）顽固，难以缓解或治疗",
+            "（材料的）难以加工或塑形"
+          ],
+          "examples": [
+            {
+              "en": "Three failed rounds of talks revealed the intractability of the boundary dispute.",
+              "zh": "三轮谈判均告失败，可见这场边界争端有多么棘手。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The mediator blamed the delay on the intractability of a delegate who refused every compromise.",
+              "zh": "调解人把延误归因于一名代表的顽固，那名代表拒绝了一切折中方案。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The essay describes the intractability of the pain that persisted long after the injury healed.",
+              "zh": "文章写到，伤口早已愈合，疼痛却仍然顽固难消。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The sculptor chose softer stone after struggling with the intractability of the granite.",
+              "zh": "雕刻家费尽周折仍难以在花岗岩上刻出所需形状，便改用了较软的石材。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "instability",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "（局势、系统等的）不稳定，易波动或失去原有状态",
+            "（结构、物体的）不稳固，容易摇晃、倾倒或失去平衡",
+            "情绪或心理状态的不稳定，容易剧烈波动"
+          ],
+          "examples": [
+            {
+              "en": "Frequent reversals in tax policy created instability for firms planning long-term investments.",
+              "zh": "税收政策频繁反复，使计划长期投资的企业面临不稳定的局面。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "A loose rear leg explained the instability of the wooden stool.",
+              "zh": "那张木凳之所以摇晃，是因为后面的一条腿松了。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "Her diary records a period of emotional instability in which sudden anger repeatedly gave way to tears.",
+              "zh": "她的日记记录了一段情绪不稳的时期，那时她常常刚动怒就又掉起眼泪来。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "estranged",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "（昔日亲近的人）疏远的，关系失和或断了来往的",
+            "（夫妻或伴侣）因感情不和而分居的",
+            "与某事脱节的，缺乏联系的（引申义）"
+          ],
+          "examples": [
+            {
+              "en": "The estranged brothers finally spoke at their aunt’s funeral after years of silence.",
+              "zh": "这对疏远多年的兄弟终于在姨妈的葬礼上开口交谈。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The novelist thanked her estranged husband, who had moved out the previous spring.",
+              "zh": "小说家向与她分居的丈夫致谢，他在上一年春天已搬出去住。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "After years away, the composer felt estranged from the musical traditions of his hometown.",
+              "zh": "离乡多年后，这位作曲家觉得自己与家乡的音乐传统有些隔膜。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "使疏远，使失和（estrange 的过去式、过去分词）"
+          ],
+          "examples": [
+            {
+              "en": "The repeated insults estranged him from friends who had stood by him for years.",
+              "zh": "他屡次出言侮辱，渐渐疏远了那些支持他多年的朋友。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "mayoral",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "市长的，与市长职位、职责或选举有关的"
+          ],
+          "examples": [
+            {
+              "en": "Housing costs dominated the mayoral debate before the city went to the polls.",
+              "zh": "全市投票前，住房成本成了市长候选人辩论的主要议题。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "protean",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "多变的，能呈现多种形态的",
+            "（人、才能或角色）多才多艺的，多面的"
+          ],
+          "examples": [
+            {
+              "en": "The novel gives memory a protean shape, turning the same event into a different story with each retelling.",
+              "zh": "小说把记忆写得形态多变，同一件事每重述一次，就成了一个不同的故事。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The protean musician could conduct a choir, arrange music for brass, and improvise at the piano.",
+              "zh": "这位音乐家才艺多样，既能指挥合唱团、为铜管乐器编曲，也能即兴弹奏钢琴。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "glut",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "过量；供过于求的数量；过剩"
+          ],
+          "examples": [
+            {
+              "en": "A glut of identical textbooks left publishers with unsold stock.",
+              "zh": "大量雷同教材供过于求，出版社因此积压了卖不出去的库存。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "使市场充斥过量商品；过度供应",
+            "使吃得过饱；过量进食"
+          ],
+          "examples": [
+            {
+              "en": "Factories that glut the market with cheap copies may discourage original design.",
+              "zh": "用廉价仿制品过度充斥市场的工厂，可能会抑制原创设计。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "Guests who glut themselves on snacks may have little appetite for dinner.",
+              "zh": "零食吃得过饱的客人，到了晚餐时可能就没什么胃口。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "deficiency",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "不足；短缺；缺少必需成分（也指营养等物质的缺乏）",
+            "缺点；缺陷；未达要求之处"
+          ],
+          "examples": [
+            {
+              "en": "A deficiency of trained staff delayed the project.",
+              "zh": "受过训练的员工不足，延误了这个项目。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The review exposed a serious deficiency in the study's design.",
+              "zh": "这次审查揭示了该研究设计中的一个严重缺陷。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "noteworthy",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "值得注意的；引人注目的；显著的"
+          ],
+          "examples": [
+            {
+              "en": "The essay is noteworthy for the precision of its arguments.",
+              "zh": "这篇文章因论证严谨而值得注意。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "generosity",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "慷慨；乐于给予；宽厚（给予财物、时间、帮助或宽容的品质，也可指慷慨之举）",
+            "充足；丰盛；充裕（较少见的扩展义）"
+          ],
+          "examples": [
+            {
+              "en": "Her generosity with her time allowed every student to receive feedback.",
+              "zh": "她毫不吝惜自己的时间，使每个学生都得到了反馈。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The critic admired the generosity of detail in the mural.",
+              "zh": "这位评论家赞赏那幅壁画中细节的丰富。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "beatified",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "（beatify的过去式、过去分词）宣福；宣布某位死者进入天国、准其享有“真福”称号及有限公开宗教敬礼（天主教用语）",
+            "（beatify的过去式、过去分词，少见或文学用法）使极为幸福"
+          ],
+          "examples": [
+            {
+              "en": "The ceremony honored a priest who had been beatified decades earlier.",
+              "zh": "这场仪式向一位数十年前已获宣福的神父致敬。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "In the poet's description, the reunion beatified the lonely traveler.",
+              "zh": "在诗人的描写中，重逢让那位孤独的旅人感到无比幸福。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "cleric",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "神职人员；教士（宗教教职体系中的成员）"
+          ],
+          "examples": [
+            {
+              "en": "A local cleric offered shelter to families displaced by the storm.",
+              "zh": "一名当地神职人员为因风暴而流离失所的家庭提供了住处。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "deified",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "（deify的过去式、过去分词）使成为神；奉为神；当作神来崇拜",
+            "（deify的过去式、过去分词，比喻）神化；把某人或某物尊崇到至高无上的程度"
+          ],
+          "examples": [
+            {
+              "en": "In the legend, the victorious ruler was deified after his death.",
+              "zh": "在这个传说中，那位获胜的统治者在死后被奉为神。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "Some admirers deified the inventor and refused to acknowledge any of her mistakes.",
+              "zh": "一些崇拜者把这位发明家神化，不肯承认她犯过任何错误。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "evoked",
+      "senses": [
+        {
+          "pos": "v.",
+          "meanings": [
+            "（evoke的过去式、过去分词）唤起记忆、联想或意象；使人想起",
+            "（evoke的过去式、过去分词）引起、激起情绪或反应",
+            "（evoke的过去式、过去分词）通过想象或艺术表现生动重现"
+          ],
+          "examples": [
+            {
+              "en": "The faded photograph evoked memories of the village where she grew up.",
+              "zh": "那张褪色的照片唤起了她对成长村庄的回忆。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The survivor's testimony evoked sympathy from the audience.",
+              "zh": "幸存者的证词引起了听众的同情。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "Through a few precise images, the poem evoked the stillness of a winter morning.",
+              "zh": "这首诗通过几个准确的意象，生动重现了冬日清晨的寂静。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "footnote",
+      "senses": [
+        {
+          "pos": "n.",
+          "meanings": [
+            "脚注；通常置于页面正文下方的引证、解释或评论性注释",
+            "（比喻）次要人物、事件或内容；无足轻重的插曲"
+          ],
+          "examples": [
+            {
+              "en": "A footnote explains why the author rejected the earlier translation.",
+              "zh": "一条脚注解释了作者为何没有采用早先的译文。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The failed expedition became a footnote to the history of polar exploration.",
+              "zh": "那次失败的远征成了极地探险史上一个不起眼的插曲。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "给……加脚注；用脚注作注释"
+          ],
+          "examples": [
+            {
+              "en": "Please footnote each claim that depends on an unpublished source.",
+              "zh": "凡是依赖未发表资料的论断，请逐一加上脚注。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "malign",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "恶意的；怀有或显露强烈敌意的",
+            "有害的；邪恶的；造成不良影响的"
+          ],
+          "examples": [
+            {
+              "en": "The forged letter revealed a malign attempt to destroy her reputation.",
+              "zh": "那封伪造的信暴露了一次企图毁掉她名誉的恶意行动。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            },
+            {
+              "en": "The report examined the malign influence of corruption on public trust.",
+              "zh": "报告考察了腐败对公众信任造成的有害影响。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        },
+        {
+          "pos": "v.",
+          "meanings": [
+            "诋毁；中伤；以有害、误导或失实的言论贬损他人"
+          ],
+          "examples": [
+            {
+              "en": "Critics can challenge an argument without trying to malign its author.",
+              "zh": "批评者可以质疑一个论证，而不必试图中伤其作者。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "word": "tactless",
+      "senses": [
+        {
+          "pos": "adj.",
+          "meanings": [
+            "不得体的；说话做事缺乏分寸、不顾及他人感受的"
+          ],
+          "examples": [
+            {
+              "en": "It was tactless to criticize the meal while the host was still serving it.",
+              "zh": "主人还在上菜时就批评饭菜，这样做很不得体。",
+              "kind": "coach_original",
+              "review_status": "coach_authored",
+              "source": {
+                "publisher": "GRE AI教练（自拟）",
+                "created_at": "2026-11-03",
+                "record": "vocab/examples/verified-20261103-current-captures.json"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
