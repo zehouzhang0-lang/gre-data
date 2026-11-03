@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "5d7f5433-75bb-4cf2-aab0-cd0e65997d05",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T17:39:20.102Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test35_section1_medium",
+    "question": "6",
+    "type": "se",
+    "answer": "A/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "7fa2648b-0009-4687-a8fe-a15e7e66bb2a",
+    "draft_id": "88d5a732-a2a2-4ce7-84e6-378260d0df36",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "72cb9c0e05cbf24f0c4ebc2a12c9abec2d161238dbc5a6530eb299ac36a68ba6",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test35_section1_medium\",\"6\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 35 · Section 1 · medium · 第 6 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          102
+        ],
+        "regions": [
+          {
+            "page": 102,
+            "top": 193.16307099999995,
+            "bottom": 297.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "To keep the museum’s admission lines moving, security inspections are considerably _____.",
+      "options": [
+        "thorough",
+        "annoying",
+        "cursory",
+        "casual",
+        "irritating",
+        "methodical"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "A",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "CD",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:16946-16983",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}

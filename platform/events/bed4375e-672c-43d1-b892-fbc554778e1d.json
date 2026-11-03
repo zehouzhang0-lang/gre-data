@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "bed4375e-672c-43d1-b892-fbc554778e1d",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T17:36:42.690Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test35_section1_medium",
+    "question": "5",
+    "type": "se",
+    "answer": "A/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "6ec23a51-c223-4466-b2c0-725d0d68e615",
+    "draft_id": "83360f79-cf45-439f-90f8-4110cfd85b24",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "2fa0877ceea0ead2159dc39039b9fcde28e70e404967db65c515b54424e61525",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test35_section1_medium\",\"5\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 35 · Section 1 · medium · 第 5 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          102
+        ],
+        "regions": [
+          {
+            "page": 102,
+            "top": 63.163070999999945,
+            "bottom": 193.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "The 1840s were _____ time for young women beginning to study science, particularly astronomy, in 1847 Maria Mitchell discovered the Nantucket comet, the first of several important astronomical discoveries of the era.",
+      "options": [
+        "a favorable",
+        "an awkward",
+        "a perilous",
+        "a hazardous",
+        "an improbable",
+        "an auspicious"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "F",
+      "A"
+    ],
+    "answerKey": {
+      "answer": "AF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:16946-16983",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

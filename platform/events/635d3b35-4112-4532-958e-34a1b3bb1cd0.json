@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "635d3b35-4112-4532-958e-34a1b3bb1cd0",
+  "kind": "attempt",
+  "recorded_at": "2026-11-01T16:35:28.382Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test38_section2_hard",
+    "question": "5",
+    "type": "se",
+    "answer": "C/D",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "d4c3ecf3-95cf-40ee-93f5-d1a2f2790b3f",
+    "draft_id": "837f40c4-1683-43d5-b62f-f9d53e331d20",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "c2c05fcdcb3d3fadf2230ec46396ecec98202b265beefdada8e2047669403987",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test38_section2_hard\",\"5\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 38 · Section 2 · hard · 第 5 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          110,
+          111
+        ],
+        "regions": [
+          {
+            "page": 110,
+            "top": 731.783127,
+            "bottom": 782.89,
+            "left": 48,
+            "right": 550
+          },
+          {
+            "page": 111,
+            "top": 58,
+            "bottom": 128.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "In her career as an editor, she pruned and shaped many a writer’s _____ prose into crisp lucidity.",
+      "options": [
+        "wayward",
+        "transparent",
+        "errant",
+        "urbane",
+        "elegant",
+        "incisive"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "C",
+      "D"
+    ],
+    "answerKey": {
+      "answer": "AC",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:18426-18463",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "3026f7a6-4722-46a6-a2bb-73ae87f5ff7f",
+  "kind": "attempt",
+  "recorded_at": "2026-10-29T16:37:24.802Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test36_section1_medium",
+    "question": "6",
+    "type": "se",
+    "answer": "A/C",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "96be9564-20f1-4cee-a1c3-05496f9f727a",
+    "draft_id": "1bf2365b-149c-4687-a15a-b15a504882cc",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "05ac44c82e2f53aeca423c9f3f70c02571fc670cdcb88f048f24d0b477ff9cf8",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test36_section1_medium\",\"6\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 36 · Section 1 · medium · 第 6 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          104
+        ],
+        "regions": [
+          {
+            "page": 104,
+            "top": 584.243134,
+            "bottom": 714.243134,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "One big challenge with placebo responses is that they are _____: people given the same inert pill or potion may show wildly different reactions, and the effects vary widely according to each person’s illness.",
+      "options": [
+        "capricious",
+        "illusory",
+        "unpredictable",
+        "chimerical",
+        "marginal",
+        "ephemeral"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "A",
+      "C"
+    ],
+    "answerKey": {
+      "answer": "AC",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17390-17427",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

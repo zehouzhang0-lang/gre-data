@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "77241d6f-2911-430b-9790-f65d2cbeddc4",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T17:23:55.938Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test34_section2_medium",
+    "question": "7",
+    "type": "se",
+    "answer": "E/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "9235ba93-d802-4aca-bd26-54a0fbcc728a",
+    "draft_id": "18fb6231-0cc3-4702-b90a-fd9758c00dc4",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "cc0c1196bddabe99c9d8673345e11620911eeb806104a8028637fb117cddac4a",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test34_section2_medium\",\"7\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 34 · Section 2 · medium · 第 7 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          101
+        ],
+        "regions": [
+          {
+            "page": 101,
+            "top": 76.16307099999995,
+            "bottom": 193.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Because experience had convinced her that Hector was both self-seeking and avaricious, she rejected the possibility that the motivation behind his donation had been wholly _____.",
+      "options": [
+        "redundant",
+        "frivolous",
+        "egotistical",
+        "ephemeral",
+        "altruistic",
+        "benevolent"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "E",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "EF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:16650-16687",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

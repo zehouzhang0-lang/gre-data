@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "4672514f-0d0b-4c49-96d0-bf05dd7dc3b2",
+  "kind": "attempt",
+  "recorded_at": "2026-11-01T16:04:33.581Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test37_section1_easy",
+    "question": "7",
+    "type": "se",
+    "answer": "B/E",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "bf026634-3872-4090-8c0d-1fe9f51c8ade",
+    "draft_id": "6be039af-916b-4749-980f-f929de037730",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "786e4ef992c4e2e5686064faa2b7f7765bd15a9f04078fc65979869f6446275c",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test37_section1_easy\",\"7\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 37 · Section 1 · easy · 第 7 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          107
+        ],
+        "regions": [
+          {
+            "page": 107,
+            "top": 443.163102,
+            "bottom": 560.163102,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Although in the mid-1970s nuclear power seemed poised for a still greater role in energy supply, in fact the _____ of its prestige had already begun.",
+      "options": [
+        "evaluation",
+        "waning",
+        "defense",
+        "undermining",
+        "ebbing",
+        "vindication"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "B",
+      "E"
+    ],
+    "answerKey": {
+      "answer": "BE",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17834-17871",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

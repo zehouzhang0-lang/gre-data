@@ -1,7 +1,7 @@
 import { cleanWord, clone, projectState, validateData } from './model.mjs';
 import { applyStandardDefinition } from '../../../shared/standard-definition.mjs';
 
-export const CATALOG_REVISION = '2026-10-29-vocabulary-examples-1';
+export const CATALOG_REVISION = '2026-11-03-handwritten-vocabulary-1';
 
 // Only content is merged. Never import desktop events, review baselines or rounds.
 export function updateCatalog(current, incoming, revision) {
@@ -38,7 +38,9 @@ export function updateCatalog(current, incoming, revision) {
       const existing=definitions.get(d.word);
       const sameEstablishedSenses=existing?.senses.length && applyStandardDefinition(local,existing).definition_status!=='changed'
         && JSON.stringify(existing.senses.map(({pos,meanings})=>({pos,meanings})))===JSON.stringify(d.senses.map(({pos,meanings})=>({pos,meanings})));
-      const canFill = !local.deleted && (requested.has(d.word) || d.curation?.status === 'completed' || sameEstablishedSenses) && !edited.has(d.word)
+      // A hidden word with an established matching definition may receive its
+      // missing examples too. Its hidden flag and raw input remain untouched.
+      const canFill = (!local.deleted || sameEstablishedSenses) && (requested.has(d.word) || d.curation?.status === 'completed' || sameEstablishedSenses) && !edited.has(d.word)
         && ['dictionary_checked', 'historical_checked'].includes(d.status) && d.sources?.length
         && !['spelling_pending', 'spelling_redirect'].includes(definitions.get(d.word)?.status);
       if (!canFill) { preserved++; continue; }

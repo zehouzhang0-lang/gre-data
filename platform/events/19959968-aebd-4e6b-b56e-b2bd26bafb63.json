@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "19959968-aebd-4e6b-b56e-b2bd26bafb63",
+  "kind": "attempt",
+  "recorded_at": "2026-10-29T16:48:21.776Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test36_section2_medium",
+    "question": "7",
+    "type": "se",
+    "answer": "C/D",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "abf1ad42-3b22-4bbb-bfa1-9e890d3de250",
+    "draft_id": "a740e89f-c8c0-4fae-9b43-7875b7359923",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "010aa6420369ea957f53b4c307a5c479a5c2135d30a01fdd491aad0cf82002a3",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test36_section2_medium\",\"7\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 36 · Section 2 · medium · 第 7 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          106
+        ],
+        "regions": [
+          {
+            "page": 106,
+            "top": 193.16307099999995,
+            "bottom": 323.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "In his heyday, Sonny Bono’s role in public was _____: he was an accomplished lyricist, a mayoral success story, delegate from Palm Springs, and the husband of an internationally acclaimed vocalist.",
+      "options": [
+        "protean",
+        "versatile",
+        "pedestrian",
+        "prominent",
+        "circumscribed",
+        "illustrious"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "D",
+      "C"
+    ],
+    "answerKey": {
+      "answer": "AB",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17538-17575",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}

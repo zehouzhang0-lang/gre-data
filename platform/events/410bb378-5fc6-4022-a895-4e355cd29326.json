@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "410bb378-5fc6-4022-a895-4e355cd29326",
+  "kind": "attempt",
+  "recorded_at": "2026-10-28T17:21:38.573Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test34_section2_medium",
+    "question": "6",
+    "type": "se",
+    "answer": "C/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "a943f417-8526-4955-9b91-75eb1d544850",
+    "draft_id": "f2eec60b-f21b-4c3c-8485-04de37e4d7db",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "8cfda547a316ce0420439898d8e8300b4d07e4084c6eb840f390261a377477bc",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test34_section2_medium\",\"6\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 34 · Section 2 · medium · 第 6 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          100,
+          101
+        ],
+        "regions": [
+          {
+            "page": 100,
+            "top": 671.243134,
+            "bottom": 778.243127,
+            "left": 48,
+            "right": 550
+          },
+          {
+            "page": 101,
+            "top": 58,
+            "bottom": 76.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "The medical researchers replied to the charge that their proposed new treatment was _____ by demonstrating that it in fact observed standard medical practices.",
+      "options": [
+        "deleterious",
+        "untested",
+        "unorthodox",
+        "expensive",
+        "intricate",
+        "unconventional"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "C",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "CF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:16650-16687",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "47213667-9608-4050-9651-449b8024c0ab",
+  "kind": "attempt",
+  "recorded_at": "2026-11-01T06:51:19.092Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test37_section1_easy",
+    "question": "6",
+    "type": "se",
+    "answer": "B/D",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "083dd516-0a84-48fa-8a54-a26f46cd4e8a",
+    "draft_id": "e2e00c9d-ddf9-468e-9508-b5ceedd87ac8",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "a13a17b84599d4a34148d705f15f4c024c1ffd9455f8564edaf607da1ef03b41",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test37_section1_easy\",\"6\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 37 · Section 1 · easy · 第 6 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          107
+        ],
+        "regions": [
+          {
+            "page": 107,
+            "top": 326.163102,
+            "bottom": 443.163102,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "As a critic, Nelson is noteworthy for her _____: rather than presenting fully formed pronouncements, she is willing to let us watch as she works out her ideas.",
+      "options": [
+        "generosity",
+        "humility",
+        "integrity",
+        "modesty",
+        "eloquence",
+        "rhetoric"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "D",
+      "B"
+    ],
+    "answerKey": {
+      "answer": "BD",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17834-17871",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

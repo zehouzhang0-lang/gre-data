@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "e916d520-1a72-46da-918c-8e86ddc3ee55",
+  "kind": "attempt",
+  "recorded_at": "2026-10-29T16:40:57.229Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test36_section2_medium",
+    "question": "5",
+    "type": "se",
+    "answer": "A/E",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "01363719-8f93-459f-90ad-6873b080d85c",
+    "draft_id": "21bc2542-668e-4937-8f32-4c6537d81502",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "a1a5483a373cdba9e5082fa2a87e4b3e67547accacef435f6ac519f782ecd099",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test36_section2_medium\",\"5\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 36 · Section 2 · medium · 第 5 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          105,
+          106
+        ],
+        "regions": [
+          {
+            "page": 105,
+            "top": 679.783097,
+            "bottom": 782.89,
+            "left": 48,
+            "right": 550
+          },
+          {
+            "page": 106,
+            "top": 58,
+            "bottom": 76.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "He was one of the most powerful chess players over and one of the most _____; at the height of his fame he all but dropped out of chess, entering into a self-imposed exile.",
+      "options": [
+        "perplexing",
+        "creative",
+        "troubled",
+        "infuriating",
+        "enigmatic",
+        "imaginative"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "A",
+      "E"
+    ],
+    "answerKey": {
+      "answer": "AE",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17538-17575",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

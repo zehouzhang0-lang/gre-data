@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "2d049175-057d-4e22-b8ed-9e3c39d0637a",
+  "kind": "attempt",
+  "recorded_at": "2026-11-01T16:17:26.997Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test37_section2_medium",
+    "question": "6",
+    "type": "se",
+    "answer": "D/E",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "39709089-bf0a-4cfc-9c77-6587ecc97568",
+    "draft_id": "e33fcce6-dfc6-49d6-b20a-6971a0d7a89b",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "e3c7bb2c7e5ea94b6de6be57b560da1c643eb8268e142bf25db67bcb0226d997",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test37_section2_medium\",\"6\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 37 · Section 2 · medium · 第 6 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          108
+        ],
+        "regions": [
+          {
+            "page": 108,
+            "top": 454.243088,
+            "bottom": 571.243088,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Beatified by the Catholic Church in 1765, Italian cleric Ludovico Sabbatini is _____ each year on the day of his death, June 1.",
+      "options": [
+        "pledged",
+        "evoked",
+        "deified",
+        "venerated",
+        "honored",
+        "christened"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "D",
+      "E"
+    ],
+    "answerKey": {
+      "answer": "DE",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17982-18019",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

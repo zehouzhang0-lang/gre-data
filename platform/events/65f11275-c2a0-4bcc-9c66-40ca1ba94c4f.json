@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "65f11275-c2a0-4bcc-9c66-40ca1ba94c4f",
+  "kind": "attempt",
+  "recorded_at": "2026-11-01T16:33:47.313Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test38_section1_medium",
+    "question": "7",
+    "type": "se",
+    "answer": "D/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "70f6911c-f725-4367-8606-ba7cd3609241",
+    "draft_id": "e0831c90-e9fa-4b05-b0a7-52cd4d30042c",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "da3610a6f443c3403f6ba96b0f6ced3f0cdf3c418712936ebd9864fd6c212fd7",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test38_section1_medium\",\"7\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 38 · Section 1 · medium · 第 7 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          110
+        ],
+        "regions": [
+          {
+            "page": 110,
+            "top": 63.163070999999945,
+            "bottom": 196.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "It is not unusual for American eduction leaders to hold up another nation as a model for school reform: in the mid-nineteenth century, such figures _____ the professionalism and structure of the Prussian school system.",
+      "options": [
+        "envied",
+        "imitated",
+        "hailed",
+        "augmented",
+        "acclaimed",
+        "enhanced"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "D",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "CE",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:18278-18315",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}

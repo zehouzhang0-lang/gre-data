@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "eed06b64-d476-42da-9684-a4c191fbae14",
+  "kind": "attempt",
+  "recorded_at": "2026-10-29T16:38:34.609Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test36_section1_medium",
+    "question": "7",
+    "type": "se",
+    "answer": "A/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "29642d8a-6907-4dcf-ad7e-98685ea3803f",
+    "draft_id": "3b020dd1-8eb3-466f-b249-4194c8a5563f",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "5f65363cf479cd40d930b5ce3b65dafc776587fd650d1601748b6eb587b57119",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test36_section1_medium\",\"7\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 36 · Section 1 · medium · 第 7 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          104,
+          105
+        ],
+        "regions": [
+          {
+            "page": 104,
+            "top": 714.243104,
+            "bottom": 782.243127,
+            "left": 48,
+            "right": 550
+          },
+          {
+            "page": 105,
+            "top": 58,
+            "bottom": 115.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "The _____ of biographies of antebellum capitalists is particularly striking in contrast with the abundance of life stories of industrialists in later eras.",
+      "options": [
+        "brevity",
+        "banality",
+        "utility",
+        "paucity",
+        "triteness",
+        "dearth"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "F",
+      "A"
+    ],
+    "answerKey": {
+      "answer": "DF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17390-17427",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}

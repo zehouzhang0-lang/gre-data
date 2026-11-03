@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "ccb1d4a1-5a45-421b-9d05-e5930bf9a0b1",
+  "kind": "attempt",
+  "recorded_at": "2026-11-01T16:21:08.745Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test38_section1_medium",
+    "question": "4",
+    "type": "se",
+    "answer": "C/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "2343e207-35a1-42f3-b754-4cc31d308bc5",
+    "draft_id": "0d0fa6bc-a384-45e3-ab74-bffe598e92c4",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "24ebb602c6f87ff0ecffea69af0b5ca0a090f384e01cf669e1870834ad0765ec",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test38_section1_medium\",\"4\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 38 · Section 1 · medium · 第 4 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          109
+        ],
+        "regions": [
+          {
+            "page": 109,
+            "top": 415.243088,
+            "bottom": 545.243088,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "The research informing Gregory’s book on vegetarianism in Victorian England appears to be _____, with a great deal of revealing detail on display and more than a third of the text taken up with footnotes.",
+      "options": [
+        "uneven",
+        "excessive",
+        "exhaustive",
+        "mixed",
+        "inconsistent",
+        "comprehensive"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "C",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "CF",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:18278-18315",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "af9c3791-1568-4167-9009-f94d0d3a3e12",
+  "kind": "attempt",
+  "recorded_at": "2026-11-01T16:19:42.080Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test37_section2_medium",
+    "question": "7",
+    "type": "se",
+    "answer": "C/D",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "81713e38-2a88-430a-8eb6-b96c521882ed",
+    "draft_id": "d4b34ca7-8529-42bd-89de-4c8e94fc26a8",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "4cd3672d3ff2117bd7d682f74b892da9d820368b24856a6c4bd36351df7bf407",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test37_section2_medium\",\"7\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 37 · Section 2 · medium · 第 7 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          108
+        ],
+        "regions": [
+          {
+            "page": 108,
+            "top": 571.243134,
+            "bottom": 688.243134,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "What they see in Jimenez is the one candidate capable of decisive leadership, in stark contrast to Diaz, whose team in office has been marred by _____.",
+      "options": [
+        "defensiveness",
+        "corruption",
+        "irresolution",
+        "vacillation",
+        "belligerence",
+        "pugnacity"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "D",
+      "C"
+    ],
+    "answerKey": {
+      "answer": "CD",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17982-18019",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": true
+  }
+}

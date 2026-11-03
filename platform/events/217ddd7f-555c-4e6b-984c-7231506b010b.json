@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "217ddd7f-555c-4e6b-984c-7231506b010b",
+  "kind": "attempt",
+  "recorded_at": "2026-10-29T16:43:14.864Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test36_section2_medium",
+    "question": "6",
+    "type": "se",
+    "answer": "A/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "61e7a472-90a6-4952-a4f5-6936409c8903",
+    "draft_id": "cc59ce36-2c9a-474d-ab05-535f5f4991bc",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "89865902c347a318e40b91c2e49e76521900d60ed73052a1d9802a07755703ee",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test36_section2_medium\",\"6\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 36 · Section 2 · medium · 第 6 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          106
+        ],
+        "regions": [
+          {
+            "page": 106,
+            "top": 76.16307099999995,
+            "bottom": 193.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "A small degree of _____ is always desirable in a published diary. A sense of authenticity is seldom worth the diarist’s questionable grammar or careless phrasing.",
+      "options": [
+        "characterization",
+        "emendation",
+        "documentation",
+        "revision",
+        "substantiation",
+        "individualization"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "F",
+      "A"
+    ],
+    "answerKey": {
+      "answer": "BD",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17538-17575",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}

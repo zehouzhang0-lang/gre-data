@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "06ece542-bde7-4801-8c85-9f4a078a6836",
+  "kind": "attempt",
+  "recorded_at": "2026-10-29T16:15:18.156Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test35_section2_medium",
+    "question": "6",
+    "type": "se",
+    "answer": "A/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "3e7d8105-3ebf-4c27-8e4a-a6cc4f5d461d",
+    "draft_id": "0a2efae6-3c7c-4ecd-b09b-3108fbe6d8bb",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "ecc2de1db9c18ff438e51f0ef69a4b75b0d50f76cdaa13d680e4443ef22e00bc",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test35_section2_medium\",\"6\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 35 · Section 2 · medium · 第 6 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          103
+        ],
+        "regions": [
+          {
+            "page": 103,
+            "top": 414.243088,
+            "bottom": 531.243088,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "It is surprising to see such a child that is at his sixteenth manifest a great measure of _____, for he delivers too cogent, brilliant a speech among adults.",
+      "options": [
+        "maturity",
+        "precociousness",
+        "convolution",
+        "nefariousness",
+        "naïveté",
+        "ingenuousness"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "A",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "AB",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17094-17131",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}

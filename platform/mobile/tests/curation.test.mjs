@@ -124,3 +124,14 @@ test('an established definition on a raw blank capture receives only matching se
  const redirect=fixture();redirect.baseline.definitions=[{word:'blank',input:{pos:'',meaning:''},senses:[],status:'spelling_redirect',note:'测试中的截断词形，仅说明其归属，不更改事件。',sources:[]}];
  const explained=updateCatalog(current,redirect,'redirect');assert.equal(projectState(explained,now()).vocabulary.find(w=>w.word==='blank').definition_status,'spelling_redirect');assert.deepEqual(explained.events,current.events);assert.equal(projectState(explained,now()).vocabulary.find(w=>w.word==='blank').deleted,false);
 });
+
+test('matching established hidden captures receive examples without being restored or changing their meaning',()=>{
+ const current=fixture();current.baseline.vocabulary.find(w=>w.word==='blank').deleted=true;
+ const definition={word:'blank',input:{pos:'',meaning:''},senses:[{pos:'adj.',meanings:['空白的'],examples:[null]}],status:'dictionary_checked',sources:[{publisher:'Cambridge Dictionary',url:'https://dictionary.cambridge.org/dictionary/english/blank',checked_at:'2026-10-13'}]};
+ current.baseline.definitions=[definition];
+ const incoming=fixture(),example={en:'She turned to a blank page.',zh:'她翻到一张空白页。',kind:'coach_original',review_status:'coach_authored',source:{publisher:'GRE AI教练（自拟）',created_at:'2026-11-03'}};
+ incoming.baseline.definitions=[{...definition,senses:[{...definition.senses[0],examples:[example]}]}];
+ const updated=updateCatalog(current,incoming,'hidden-example-supplement'),word=projectState(updated,now()).vocabulary.find(w=>w.word==='blank');
+ assert.equal(word.deleted,true);assert.equal(word.senses[0].examples[0].en,example.en);assert.deepEqual(updated.events,current.events);assert.deepEqual(updated.baseline.legacyWords,current.baseline.legacyWords);
+ incoming.baseline.definitions[0].senses[0].meanings=['不匹配的新释义'];const rejected=updateCatalog(current,incoming,'hidden-different-meaning');assert.deepEqual(rejected.baseline.definitions,validateData(current).baseline.definitions);
+});

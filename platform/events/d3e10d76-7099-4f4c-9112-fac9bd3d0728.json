@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "d3e10d76-7099-4f4c-9112-fac9bd3d0728",
+  "kind": "attempt",
+  "recorded_at": "2026-10-29T16:21:41.519Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test36_section1_medium",
+    "question": "4",
+    "type": "se",
+    "answer": "B/C",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "76f42e4a-8a28-4b79-8aeb-2dd4baf8bcc2",
+    "draft_id": "f5946740-1bf9-4ed3-b42f-eeebf874259c",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "6f0432b85c7d58acc476f4e831b2bc9af2285dd6c47eb64ca0ed215bbf94e042",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test36_section1_medium\",\"4\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 36 · Section 1 · medium · 第 4 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          104
+        ],
+        "regions": [
+          {
+            "page": 104,
+            "top": 337.243088,
+            "bottom": 467.243088,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "The juxtaposition of fertile alluvial soils originating in the Andes with the infertile inland soils of central Amazon Basin is one example of _____ of the soil conditions that can be found in the tropics.",
+      "options": [
+        "intractability",
+        "heterogeneity",
+        "incompatibility",
+        "disparateness",
+        "instability",
+        "fragility"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "B",
+      "C"
+    ],
+    "answerKey": {
+      "answer": "BD",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17390-17427",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}

@@ -29,6 +29,16 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: handwritten_vocab_20261103
+    title: "2026-11-03 手写词汇（两页）"
+    filename: null
+    sha256: null
+    role: user_vocabulary_notes
+    answer_status: not_applicable
+    description: "64词，48新增、16复现；权威释义、双语例句与词形用法辨析。"
+    record: vocab/imports/20261103_0021_handwritten_vocab.json
+    image_count: 2
+    original_storage: user_supplied_chat_attachments_not_committed
   - id: handwritten_vocab_20261028
     title: "2026-10-28 手写词汇（两页）"
     filename: null

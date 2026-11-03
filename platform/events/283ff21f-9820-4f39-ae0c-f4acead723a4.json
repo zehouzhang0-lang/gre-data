@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "283ff21f-9820-4f39-ae0c-f4acead723a4",
+  "kind": "attempt",
+  "recorded_at": "2026-10-29T16:54:12.371Z",
+  "payload": {
+    "material": "text_completion_2000",
+    "unit": "test37_section1_easy",
+    "question": "4",
+    "type": "se",
+    "answer": "E/F",
+    "duration_seconds": null,
+    "note": ""
+  },
+  "practice": {
+    "draft_session_id": "7387f7fd-1cae-40c0-9afa-65d56a70cc22",
+    "draft_id": "9b1ad5ac-e73d-4503-a3b1-3c677cf9bb78",
+    "bank_revision": "9afa36d86f2f1b02e5c02d0908212ffabede9ffdd860849ceb1903521b67d728",
+    "content_id": "3fbef854321b87649fb36ee9ab91f116652a857a1da0e5a90bfe98c3dbb852ee",
+    "question_snapshot": {
+      "version": 2,
+      "key": "[\"text_completion_2000\",\"test37_section1_easy\",\"4\"]",
+      "type": "se",
+      "mode": "pair",
+      "source": "填空 2000 · Test 37 · Section 1 · easy · 第 4 题",
+      "provenance": {
+        "material": "text_completion_2000",
+        "source_sha256": "08af079fff905e997673c6b6037ca9a56d0bc7634cf7b83039ac2d9b9909fb23",
+        "pdf_pages": [
+          107
+        ],
+        "regions": [
+          {
+            "page": 107,
+            "top": 76.16307099999995,
+            "bottom": 209.16307099999995,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        "passage_regions": []
+      },
+      "prompt": "Criticized for decades of overproduction in their signature line of derivative goods, Rectangle Record has satiated the market with a _____ of repackaged old CDs, which interferes with its ability to innovate and produce new albums.",
+      "options": [
+        "dearth",
+        "glut",
+        "deficiency",
+        "surfeit",
+        "abundance",
+        "profusion"
+      ],
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "groups": [],
+      "paragraphs": [],
+      "sentences": [],
+      "native": true,
+      "answerInput": null,
+      "images": [],
+      "passageImages": []
+    },
+    "selected": [
+      "E",
+      "F"
+    ],
+    "answerKey": {
+      "answer": "BD",
+      "answer_source": "user_provided",
+      "source_ref": "wechat_tc_20260912:17834-17871",
+      "answer_format": null,
+      "event_id": "c9602f7d-331f-481e-83a6-88aa0d04646b"
+    },
+    "result": false
+  }
+}
