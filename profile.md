@@ -32,6 +32,8 @@ application_direction: null
 
 # 用户档案
 
+2026-11-21 考试住宿确认：用户提供 Trip.com 订单确认截图，已预订 Dorsett Hartamas Kuala Lumpur，2026年12月16日入住、12月17日退房；地址为 D-G-8, Plaza Damas, No. 63, Jalan Sri Hartamas 1, Sri Hartamas, 50480 Kuala Lumpur, Malaysia。该住宿用于12月17日GRE考试前一晚；订单号、PIN、付款信息和联系邮箱未写入仓库。详见 planning/20261121_2247_exam_hotel_booking.md。
+
 2026-11-21 正式考期确认：用户提供ETS预约详情截图，GRE General Test（Computer Test）状态为Scheduled；考试时间为2026年12月17日14:15，考点为Kuala Lumpur APCU-8851。该日期替代此前未预约的11月候选日期，后续训练按此日期倒计时。预约编号等账号隐私信息不写入仓库。详见 planning/20261121_2227_exam_booking_confirmed.md。
 
 2026-10-21 候选日期补充：用户提出11月26日（当天无课）是否可考；ETS公开查询显示APCU-8851当天08:00、10:15、12:00、14:15四个时段可选。这里只记录优先候选，不擅自将询问视为正式改期或报名；exam_date暂保留原计划，待用户确认。详见 planning/20261021_1323_nov26_candidate.md。
