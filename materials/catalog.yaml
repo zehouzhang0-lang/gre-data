@@ -29,6 +29,14 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: coach_issue_exercises
+    title: 平台六道Issue原创教学题
+    filename: null
+    role: analytical_writing_practice
+    answer_status: not_applicable
+    record: platform/server/writing-topics.mjs
+    source_kind: coach_original
+    topic_count: 6
   - id: handwritten_vocab_20261103
     title: "2026-11-03 手写词汇（两页）"
     filename: null

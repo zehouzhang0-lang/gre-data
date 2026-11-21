@@ -1,0 +1,66 @@
+schema_version: 1
+date: '2026-11-23'
+timezone: Asia/Kuala_Lumpur
+strategy_id: gre-dec17-sprint-20261121-v1
+source_day: 3
+generated_at: '2026-11-21T23:22:43+08:00'
+revision: 1
+status: planned
+budget_min: 60
+tasks:
+- id: 2026-11-23-01-short_diagnostic
+  order: 1
+  key: short_diagnostic
+  title: 六题
+  duration_min: 18
+  material_id: text_completion_2000
+  material_status: available
+  target: 短诊断与补齐基线复盘
+  action: 打开已备first-6-questions.md，10分钟独立答题，到时冻结，再用8分钟补写当时理由。不提前查词或看讲解。
+  output: 6题原答、开始时刻/累计秒数、信心、生词和当时理由
+  success: 只描述本次TC/SE；与完整自组清单不重叠；不能由6题估分。
+  evidence_required:
+  - 6题原答、开始时刻/累计秒数、信心、生词和当时理由
+  range: TC Test10 S2 easy Q2–4；SE Test41 S1 medium Q6、Test43 S1 medium Q5、Test44 S1 medium Q5。
+- id: 2026-11-23-02-diagnostic_review
+  order: 2
+  key: diagnostic_review
+  title: 复盘
+  duration_min: 22
+  material_id: null
+  material_status: submitted_work_required
+  target: 短诊断与补齐基线复盘
+  action: 先冻结原答/时长，区分词义、逻辑、读题、计算、知识和时间问题；逐题完整讲解。Quant待独立推导，不机械猜键；AW看五维并选2–3优先问题。
+  output: 待核/已核分开的错因表、未答/猜题数、下次检验任务
+  success: 每错题回答证据、偏离、分类、动作四问；不知道用户推理则标待询，不替用户编原因。
+  evidence_required:
+  - 待核/已核分开的错因表、未答/猜题数、下次检验任务
+- id: 2026-11-23-03-vocab_review
+  order: 3
+  key: vocab_review
+  title: 词汇
+  duration_min: 15
+  material_id: core3000_random_2026
+  material_status: available
+  target: 短诊断与补齐基线复盘
+  action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+  output: 实际词数、首次原答、错误词和来源/事件ID
+  success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+  evidence_required:
+  - 实际词数、首次原答、错误词和来源/事件ID
+- id: 2026-11-23-04-break
+  order: 4
+  key: break
+  title: 休息
+  duration_min: 5
+  material_id: null
+  material_status: not_applicable
+  target: 短诊断与补齐基线复盘
+  action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+  output: 实际休息时长
+  success: 休息已包含在当日总预算内；不计题量或掌握证据。
+  evidence_required:
+  - 实际休息时长
+notes:
+- 尚未开始，不生成完成事件。
+- 全天预算含休息；材料与原答的核验条件见主计划。

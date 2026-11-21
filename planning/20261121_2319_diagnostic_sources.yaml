@@ -1,0 +1,579 @@
+schema_version: 1
+created_at: '2026-11-21T23:22:43+08:00'
+status: prepared_not_started
+source_record: planning/20261121_2313_sprint_handoff.md
+score_kind: raw_only
+adaptive: false
+sections:
+- section: aw
+  duration_min: 30
+  material_id: coach_issue_exercises
+  topic_id: coach_issue_feedback_01
+  source_kind: coach_original
+- section: verbal_1
+  duration_min: 18
+  items:
+  - material: text_completion_2000
+    unit: test11_section1_medium
+    question: '1'
+    type: tc
+    mode: single
+    content_id: 2266598c7fbf5cea9fe5bc41aa8882381384e9dd88a3fa73182d9e0b1c2a83aa
+    pdf_file_pages:
+    - 39
+    answer_source: user_provided
+    reference_event_id: f3129b91-b0a8-4b28-b8c0-85317952e3a3
+  - material: text_completion_2000
+    unit: test11_section1_medium
+    question: '2'
+    type: tc
+    mode: blanks
+    content_id: da1bb49e5ee2d28e3f0fe55ed0ad45643b60f3c00a1d8184ee9cf695370baf38
+    pdf_file_pages:
+    - 39
+    answer_source: user_provided
+    reference_event_id: f3129b91-b0a8-4b28-b8c0-85317952e3a3
+  - material: text_completion_2000
+    unit: test11_section1_medium
+    question: '3'
+    type: tc
+    mode: blanks
+    content_id: 47fcfe3ddded1c942f0e07a049e4795e5d3e15bd1db6d25ae54d70b7965d38a2
+    pdf_file_pages:
+    - 39
+    answer_source: user_provided
+    reference_event_id: f3129b91-b0a8-4b28-b8c0-85317952e3a3
+  - material: text_completion_2000
+    unit: test41_section1_medium
+    question: '4'
+    type: se
+    mode: pair
+    content_id: 43bad119e1149d2fb71bf7ac3312796f7923285474eb47e99ed0adb78ff3a798
+    pdf_file_pages:
+    - 117
+    answer_source: user_provided
+    reference_event_id: c9602f7d-331f-481e-83a6-88aa0d04646b
+  - material: text_completion_2000
+    unit: test41_section1_medium
+    question: '7'
+    type: se
+    mode: pair
+    content_id: b8797ab41245f4b63e1a2e90cba26214db9ff3d10211e29f7d10e850b868eff6
+    pdf_file_pages:
+    - 117
+    - 118
+    answer_source: user_provided
+    reference_event_id: c9602f7d-331f-481e-83a6-88aa0d04646b
+  - material: text_completion_2000
+    unit: test41_section2_medium
+    question: '5'
+    type: se
+    mode: pair
+    content_id: 62a5448ce594bfd77640ba1a35297f248f0d9376620befda0d124702c8c91760
+    pdf_file_pages:
+    - 118
+    - 119
+    answer_source: user_provided
+    reference_event_id: c9602f7d-331f-481e-83a6-88aa0d04646b
+  - material: reading_440
+    unit: passage5
+    question: '1'
+    type: rc
+    mode: single
+    content_id: db2c82ee955d8e1f8f3758933cf34032e7ccb6889a75824d0a08ada8bbcd8273
+    pdf_file_pages:
+    - 25
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage5
+    question: '2'
+    type: rc
+    mode: single
+    content_id: b68e3c931349ea417c7ab531ec70fc34f82aff79143064fa7a70fdad3d506ca8
+    pdf_file_pages:
+    - 25
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage5
+    question: '3'
+    type: rc
+    mode: single
+    content_id: 8408b1f83153d6e6c2bc880229d7bfa5412cd46dd6429b1a153f681805c79035
+    pdf_file_pages:
+    - 25
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage6
+    question: '1'
+    type: rc
+    mode: multiple
+    content_id: c7dc17897eff53dd904c3933f81961246b490d80e57778626070267e7134b7cd
+    pdf_file_pages:
+    - 26
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage6
+    question: '2'
+    type: rc
+    mode: single
+    content_id: 23170249d58583f977c43b61e03ce61fbeb7449f3f60a638e959547fafe255ed
+    pdf_file_pages:
+    - 26
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage8
+    question: '1'
+    type: rc
+    mode: single
+    content_id: bc84d84f17b84c0424796429cd4af5965080f1946adfc4250470b4f25d33e210
+    pdf_file_pages:
+    - 28
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+- section: quantitative_1
+  duration_min: 21
+  items:
+  - material: quant_900
+    unit: section1_easy
+    question: '9'
+    type: quant
+    mode: comparison
+    content_id: d2f5e2973d8b7fe4a18d08aa2a020d1f25d536ce056ae414836d5bf6632e6e54
+    pdf_file_pages:
+    - 6
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '11'
+    type: quant
+    mode: entry
+    content_id: 822fab65387caa5ccad139404bf5eb640a537a0ac30a46734372fac5875d410f
+    pdf_file_pages:
+    - 6
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '12'
+    type: quant
+    mode: comparison
+    content_id: 32668e7fd318ffdc8415cb055e265b53ad0d5b4d6a02643c57f52da8f463ff8f
+    pdf_file_pages:
+    - 6
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '13'
+    type: quant
+    mode: comparison
+    content_id: 960ed9abfc5202719005e88820080224827d05480bb68b01e9b1e67654b0c135
+    pdf_file_pages:
+    - 6
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '14'
+    type: quant
+    mode: comparison
+    content_id: e2de889fef8fd8e2309befb658ee35ac4e76ad4ef8e0f898c17ee9c125157b7f
+    pdf_file_pages:
+    - 6
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '15'
+    type: quant
+    mode: single
+    content_id: 647e8ebccfc45c38f87c8ef31c29383aee222440742d4b0812b92457969f3e92
+    pdf_file_pages:
+    - 7
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '16'
+    type: quant
+    mode: single
+    content_id: 276b397bb9fb54fb63cbf4b77e09e6e08c2c5d2ad6636dbd4749e04cb667697c
+    pdf_file_pages:
+    - 7
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '17'
+    type: quant
+    mode: single
+    content_id: ae0abf134b4b14f32ef940442234f71ecf9c6099f306c1fb7ef0894a1b53f90a
+    pdf_file_pages:
+    - 7
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '18'
+    type: quant
+    mode: single
+    content_id: be587694a614fa57493c6cc28b32defbee5663aae616913cbcf34328a40daf4b
+    pdf_file_pages:
+    - 7
+    - 8
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '19'
+    type: quant
+    mode: single
+    content_id: 32594c3cfcffc8e04b19f24205162cdbf472103e6030bea79e21380ba9ac9994
+    pdf_file_pages:
+    - 8
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section1_easy
+    question: '20'
+    type: quant
+    mode: comparison
+    content_id: 61cca4937a2e3bab20c741fb0297c501ad3ecaab366bb90a0ee4accdb3bb5c02
+    pdf_file_pages:
+    - 8
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section2_easy
+    question: '22'
+    type: quant
+    mode: single
+    content_id: ef63146132a71f6512533b773f5000eec071991649e0526bd0b7d9529d8604a4
+    pdf_file_pages:
+    - 9
+    answer_source: unavailable
+    reference_event_id: null
+- section: verbal_2
+  duration_min: 23
+  items:
+  - material: text_completion_2000
+    unit: test11_section2_easy
+    question: '1'
+    type: tc
+    mode: single
+    content_id: 77e5f6427ada00cfe1ee793f802a2463fb447ada1da518e9d2067638e96bcfbb
+    pdf_file_pages:
+    - 40
+    answer_source: user_provided
+    reference_event_id: f3129b91-b0a8-4b28-b8c0-85317952e3a3
+  - material: text_completion_2000
+    unit: test11_section2_easy
+    question: '2'
+    type: tc
+    mode: blanks
+    content_id: 357d96bd7c311c8cb98f51e43ab9b2351b767d0844dd68a8cede47e4a8ab366b
+    pdf_file_pages:
+    - 40
+    answer_source: user_provided
+    reference_event_id: f3129b91-b0a8-4b28-b8c0-85317952e3a3
+  - material: text_completion_2000
+    unit: test11_section2_easy
+    question: '3'
+    type: tc
+    mode: blanks
+    content_id: 90dcd13c38f496641422a6295ba11fd6f04eaab177fd2ab3923683afb663a3c3
+    pdf_file_pages:
+    - 40
+    answer_source: user_provided
+    reference_event_id: f3129b91-b0a8-4b28-b8c0-85317952e3a3
+  - material: text_completion_2000
+    unit: test41_section2_medium
+    question: '7'
+    type: se
+    mode: pair
+    content_id: aecb3e1cc0679fd017f9917e3e8f8df95a0e332bdc6141c7ddc492a4f69fe773
+    pdf_file_pages:
+    - 119
+    answer_source: user_provided
+    reference_event_id: c9602f7d-331f-481e-83a6-88aa0d04646b
+  - material: text_completion_2000
+    unit: test43_section1_medium
+    question: '4'
+    type: se
+    mode: pair
+    content_id: 3b0f33f4f10c9cb19d4b088b820b89547dc699d94db84df71712ea84e92825de
+    pdf_file_pages:
+    - 122
+    answer_source: user_provided
+    reference_event_id: c9602f7d-331f-481e-83a6-88aa0d04646b
+  - material: text_completion_2000
+    unit: test43_section1_medium
+    question: '6'
+    type: se
+    mode: pair
+    content_id: 7787a20ccb6b05bf1b4b4378df0693a889f5bf5b8b63ffe8eefa0c7553246c52
+    pdf_file_pages:
+    - 122
+    - 123
+    answer_source: user_provided
+    reference_event_id: c9602f7d-331f-481e-83a6-88aa0d04646b
+  - material: text_completion_2000
+    unit: test44_section1_medium
+    question: '4'
+    type: se
+    mode: pair
+    content_id: 45149f6422feaa5d853b234dce4439852c614e64fbfd8d1e86226b469a189466
+    pdf_file_pages:
+    - 125
+    answer_source: user_provided
+    reference_event_id: a0cc7400-69dd-4407-b2d4-68345107760c
+  - material: reading_440
+    unit: passage7
+    question: '1'
+    type: rc
+    mode: single
+    content_id: 2b2303b1d0f4126ae91090e6da61893d001c49ab8a25e8ae9c9d5b68a34d2a91
+    pdf_file_pages:
+    - 27
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage7
+    question: '2'
+    type: rc
+    mode: single
+    content_id: 194dca95b233371eecaa64be58c1166063d2f45d95e1b0d6a97b47055ca6fd0f
+    pdf_file_pages:
+    - 27
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage7
+    question: '3'
+    type: rc
+    mode: single
+    content_id: 5135e25f45d9ae6664d7c2f94219c05e7a53a60d041a42253548257b335a4277
+    pdf_file_pages:
+    - 27
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage7
+    question: '4'
+    type: rc
+    mode: single
+    content_id: 98bbc549d1f9d3d1c45eda7b458e6ea405f6c61cb446328fe495025b82489368
+    pdf_file_pages:
+    - 27
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage10
+    question: '1'
+    type: rc
+    mode: single
+    content_id: 8237a06089c7f34eb06e047a551391efaba723739c295a4906d8289e1e946b8a
+    pdf_file_pages:
+    - 29
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage12
+    question: '1'
+    type: rc
+    mode: single
+    content_id: b223a53b015f05bb1c54a26a70a9ced0b20ceb6b4f105e4f32106bfbbbfcb350
+    pdf_file_pages:
+    - 30
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage13
+    question: '1'
+    type: rc
+    mode: multiple
+    content_id: b0c3bf3327e0e614be34f7d53ed1a60cd5ef1a4d8239df9b44cb8959fb39a0af
+    pdf_file_pages:
+    - 31
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+  - material: reading_440
+    unit: passage13
+    question: '2'
+    type: rc
+    mode: multiple
+    content_id: 4f6272564f55fdcf5c71318a72ec952c7b429a9155c63b2ca03996bf1543df44
+    pdf_file_pages:
+    - 31
+    answer_source: user_provided
+    reference_event_id: c8983ce6-6139-4f9d-80cd-aadbf6edaa31
+- section: quantitative_2
+  duration_min: 26
+  items:
+  - material: quant_900
+    unit: section4_medium
+    question: '1'
+    type: quant
+    mode: comparison
+    content_id: 083bd7f98de27654e0269df6f55e756c2b64427d61bd46eb258d379d6774edd7
+    pdf_file_pages:
+    - 17
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '2'
+    type: quant
+    mode: comparison
+    content_id: 83c730396b877bb64d882eaa65914d54e5d4cc8166a5f8e2b2114c50141f4b13
+    pdf_file_pages:
+    - 17
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '3'
+    type: quant
+    mode: comparison
+    content_id: e09f32628b724110bc8a195c7f43df2401e26d81536b945ba0d6a8dae41a6d12
+    pdf_file_pages:
+    - 17
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '4'
+    type: quant
+    mode: single
+    content_id: 0c0b5f7b86f96ec52028c9ddd8f5144c719577281e6427ede85fa784d31a4821
+    pdf_file_pages:
+    - 17
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '5'
+    type: quant
+    mode: single
+    content_id: 2ca1310bbb0ca44bd9845232efc17d0095ce9ba7d93c4d63e6e7b0d1c4ff176a
+    pdf_file_pages:
+    - 17
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '6'
+    type: quant
+    mode: entry
+    content_id: b6ef8800f7d0495b372ea5a542c33f39b7eefc9044a85d9e400ac2159b9c5b83
+    pdf_file_pages:
+    - 18
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '7'
+    type: quant
+    mode: single
+    content_id: d342e472b5f687052294aabb33c4627d941f1b4092f016468d0cbf55269602c2
+    pdf_file_pages:
+    - 18
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '8'
+    type: quant
+    mode: single
+    content_id: 21d315af9b49745360b37acdf334c0abfd9f8a81c6ae767c3bdea641a02d7957
+    pdf_file_pages:
+    - 18
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '9'
+    type: quant
+    mode: single
+    content_id: ca11f56dab40031113fc9c815a0a3ee011af93b7eb9ae2fb6abc7f2da8cc4595
+    pdf_file_pages:
+    - 18
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '10'
+    type: quant
+    mode: comparison
+    content_id: b24ff5c153831d056d792e471a29cced59d2de1c82bdd3916be32b8ba51257dd
+    pdf_file_pages:
+    - 18
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '11'
+    type: quant
+    mode: comparison
+    content_id: 1751b79715d54908cd7c2791eacd65f08518d2b2aedfee07b1d5282c539d0ecb
+    pdf_file_pages:
+    - 18
+    - 19
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '12'
+    type: quant
+    mode: comparison
+    content_id: 86ee3646f656d29a156b93f32c0f9d9eeb513be6028abe893a824a990a348c83
+    pdf_file_pages:
+    - 19
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '13'
+    type: quant
+    mode: comparison
+    content_id: 7058ed3702748c2bb62c10db1dfe711585191ee81c3ff51a32a5e763d1010bbc
+    pdf_file_pages:
+    - 19
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '14'
+    type: quant
+    mode: single
+    content_id: 79bc126c4e4c5914229547b50b1e2209c5451130123f0e6f2f2c60f1fb30ea00
+    pdf_file_pages:
+    - 19
+    answer_source: unavailable
+    reference_event_id: null
+  - material: quant_900
+    unit: section4_medium
+    question: '15'
+    type: quant
+    mode: single
+    content_id: 72380f9c5aec5dfa307e951ef9533640e493c64c1a5e7c2c25fa2c2dbe3ecd21
+    pdf_file_pages:
+    - 19
+    - 20
+    answer_source: unavailable
+    reference_event_id: null
+notes:
+- No equating or validated scaled-score conversion
+- Book difficulty labels are not ETS adaptive levels
+- Quant full source pages available; no answer keys and no scoring until independent derivation
+- Quant images cannot be reliably content-hashed, so deduplication uses source key only; learner must flag recognized
+  duplicates
+- Not a substitute for POWERPREP scoring
+local_packet: .gre-platform/sprint-20261122/fallback-118min-instructions.md
+short_packet: .gre-platform/sprint-20261122/first-6-questions.md

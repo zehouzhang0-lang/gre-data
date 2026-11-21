@@ -1,0 +1,85 @@
+schema_version: 1
+date: '2026-11-22'
+timezone: Asia/Kuala_Lumpur
+strategy_id: gre-dec17-sprint-20261121-v1
+source_day: 2
+generated_at: '2026-11-21T23:22:43+08:00'
+revision: 1
+status: planned
+budget_min: 240
+tasks:
+- id: 2026-11-22-01-full_mock_setup
+  order: 1
+  key: full_mock_setup
+  title: 准备
+  duration_min: 10
+  material_id: null
+  material_status: not_applicable
+  target: 完整基线
+  action: 检查ETS账户能否进入未做过的PP2；核对计时器、空白草稿和输入法。10分钟仍不可用就用已备自组清单，不消耗训练块排障。
+  output: 访问结果、所选卷和重复题暴露声明
+  success: 正式开始前材料可打开；计时从用户实际开始算，未开始不填时间。
+  evidence_required:
+  - 访问结果、所选卷和重复题暴露声明
+- id: 2026-11-22-02-full_mock
+  order: 2
+  key: full_mock
+  title: 全程
+  duration_min: 118
+  material_id: quant_900
+  material_status: available_with_conditional_official_upgrade
+  target: 完整基线
+  action: 优先首次未做PP2（账户确认可用才执行）；否则现有PDF自组AW30→V12题18→Q12题21→V15题23→Q15题26分钟。不中途查词、看解答或停表；到时冻结原答。
+  output: 54题原答、逐节实际用时/未答/重复题、完整Issue原稿及辅助使用情况
+  success: 完成五节并如实保留超时；自组卷raw_only，Quant未推导前正确数null，AW评分provisional。
+  evidence_required:
+  - 54题原答、逐节实际用时/未答/重复题、完整Issue原稿及辅助使用情况
+  material_ids:
+  - text_completion_2000
+  - reading_440
+  - quant_900
+  - coach_issue_exercises
+  official_option_url: https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html
+  range: 首轮见planning/20261121_2319_diagnostic_sources.yaml；后续模拟按相同规格提前选未做内容，不能复用首轮冒充新卷。
+- id: 2026-11-22-03-break
+  order: 3
+  key: break
+  title: 休息
+  duration_min: 20
+  material_id: null
+  material_status: not_applicable
+  target: 完整基线
+  action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+  output: 实际休息时长
+  success: 休息已包含在当日总预算内；不计题量或掌握证据。
+  evidence_required:
+  - 实际休息时长
+- id: 2026-11-22-04-diagnostic_review
+  order: 4
+  key: diagnostic_review
+  title: 复盘
+  duration_min: 72
+  material_id: null
+  material_status: submitted_work_required
+  target: 完整基线
+  action: 先冻结原答/时长，区分词义、逻辑、读题、计算、知识和时间问题；逐题完整讲解。Quant待独立推导，不机械猜键；AW看五维并选2–3优先问题。
+  output: 待核/已核分开的错因表、未答/猜题数、下次检验任务
+  success: 每错题回答证据、偏离、分类、动作四问；不知道用户推理则标待询，不替用户编原因。
+  evidence_required:
+  - 待核/已核分开的错因表、未答/猜题数、下次检验任务
+- id: 2026-11-22-05-vocab_review
+  order: 5
+  key: vocab_review
+  title: 词汇
+  duration_min: 20
+  material_id: core3000_random_2026
+  material_status: available
+  target: 完整基线
+  action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+  output: 实际词数、首次原答、错误词和来源/事件ID
+  success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+  evidence_required:
+  - 实际词数、首次原答、错误词和来源/事件ID
+notes:
+- 尚未开始，不生成完成事件。
+- 全天预算含休息；材料与原答的核验条件见主计划。

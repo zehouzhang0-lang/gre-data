@@ -1,0 +1,1878 @@
+schema_version: 1
+id: gre-dec17-sprint-20261121-v1
+revision: 1
+status: active_provisional_allocation
+generated_at: '2026-11-21T23:22:43+08:00'
+timezone: Asia/Kuala_Lumpur
+starts_on: '2026-11-21'
+ends_on: '2026-12-17'
+exam_at: '2026-12-17T14:15:00+08:00'
+target:
+  combined_vq_min: 320
+  verbal_min: 150
+  quantitative_aspiration: 170
+  analytical_writing: 3.5
+baseline:
+  verbal: null
+  quantitative: null
+  analytical_writing: null
+  self_report: bibiji仅做Verbal，自估135+；日期/卷名/报告/计时和重复情况未知
+weekly_required_min: 1080
+weekly_optional_max_min: 360
+required_total_min_before_exam: 3455
+guide_file: planning/20261121_2319_sprint_plan.md
+execution_rules:
+- 此为用户明确要求的可调整执行框架；基线未齐，不声称目标达成概率或既有水平。
+- 计时从实际开始算；截止冻结原答；题位与内容去重，已见题不得作提分证据。
+- 固定预算内完整复盘优先，数量是上限；未完成讲解先消化，不能为题量漏项。
+- 普通周18小时含休息；额外6小时为四/六/日各0–120分钟选做，不形成欠账。
+- 12/7–13降至16小时，12/14–16共95分钟；出行、入住、考试本身另计。
+- 下次开练前根据新证据冻结题目范围；修改已生成每日快照须revision与保留旧任务。
+- 无任务自动完成。完成后追加planning/events且引用真实提交；原始平台事件不重复计数。
+days:
+- day: 1
+  date: '2026-11-21'
+  phase: foundation
+  focus: 深夜准备，不补排过去时段
+  budget_min: 0
+  optional_max_min: 10
+  tasks: []
+- day: 2
+  date: '2026-11-22'
+  phase: foundation
+  focus: 完整基线
+  budget_min: 240
+  optional_max_min: 120
+  tasks:
+  - id: 2026-11-22-01-full_mock_setup
+    order: 1
+    key: full_mock_setup
+    title: 准备
+    duration_min: 10
+    material_id: null
+    material_status: not_applicable
+    target: 完整基线
+    action: 检查ETS账户能否进入未做过的PP2；核对计时器、空白草稿和输入法。10分钟仍不可用就用已备自组清单，不消耗训练块排障。
+    output: 访问结果、所选卷和重复题暴露声明
+    success: 正式开始前材料可打开；计时从用户实际开始算，未开始不填时间。
+    evidence_required:
+    - 访问结果、所选卷和重复题暴露声明
+  - id: 2026-11-22-02-full_mock
+    order: 2
+    key: full_mock
+    title: 全程
+    duration_min: 118
+    material_id: quant_900
+    material_status: available_with_conditional_official_upgrade
+    target: 完整基线
+    action: 优先首次未做PP2（账户确认可用才执行）；否则现有PDF自组AW30→V12题18→Q12题21→V15题23→Q15题26分钟。不中途查词、看解答或停表；到时冻结原答。
+    output: 54题原答、逐节实际用时/未答/重复题、完整Issue原稿及辅助使用情况
+    success: 完成五节并如实保留超时；自组卷raw_only，Quant未推导前正确数null，AW评分provisional。
+    evidence_required:
+    - 54题原答、逐节实际用时/未答/重复题、完整Issue原稿及辅助使用情况
+    material_ids:
+    - text_completion_2000
+    - reading_440
+    - quant_900
+    - coach_issue_exercises
+    official_option_url: https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html
+    range: 首轮见planning/20261121_2319_diagnostic_sources.yaml；后续模拟按相同规格提前选未做内容，不能复用首轮冒充新卷。
+  - id: 2026-11-22-03-break
+    order: 3
+    key: break
+    title: 休息
+    duration_min: 20
+    material_id: null
+    material_status: not_applicable
+    target: 完整基线
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+  - id: 2026-11-22-04-diagnostic_review
+    order: 4
+    key: diagnostic_review
+    title: 复盘
+    duration_min: 72
+    material_id: null
+    material_status: submitted_work_required
+    target: 完整基线
+    action: 先冻结原答/时长，区分词义、逻辑、读题、计算、知识和时间问题；逐题完整讲解。Quant待独立推导，不机械猜键；AW看五维并选2–3优先问题。
+    output: 待核/已核分开的错因表、未答/猜题数、下次检验任务
+    success: 每错题回答证据、偏离、分类、动作四问；不知道用户推理则标待询，不替用户编原因。
+    evidence_required:
+    - 待核/已核分开的错因表、未答/猜题数、下次检验任务
+  - id: 2026-11-22-05-vocab_review
+    order: 5
+    key: vocab_review
+    title: 词汇
+    duration_min: 20
+    material_id: core3000_random_2026
+    material_status: available
+    target: 完整基线
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+- day: 3
+  date: '2026-11-23'
+  phase: foundation
+  focus: 短诊断与补齐基线复盘
+  budget_min: 60
+  optional_max_min: 0
+  tasks:
+  - id: 2026-11-23-01-short_diagnostic
+    order: 1
+    key: short_diagnostic
+    title: 六题
+    duration_min: 18
+    material_id: text_completion_2000
+    material_status: available
+    target: 短诊断与补齐基线复盘
+    action: 打开已备first-6-questions.md，10分钟独立答题，到时冻结，再用8分钟补写当时理由。不提前查词或看讲解。
+    output: 6题原答、开始时刻/累计秒数、信心、生词和当时理由
+    success: 只描述本次TC/SE；与完整自组清单不重叠；不能由6题估分。
+    evidence_required:
+    - 6题原答、开始时刻/累计秒数、信心、生词和当时理由
+    range: TC Test10 S2 easy Q2–4；SE Test41 S1 medium Q6、Test43 S1 medium Q5、Test44 S1 medium Q5。
+  - id: 2026-11-23-02-diagnostic_review
+    order: 2
+    key: diagnostic_review
+    title: 复盘
+    duration_min: 22
+    material_id: null
+    material_status: submitted_work_required
+    target: 短诊断与补齐基线复盘
+    action: 先冻结原答/时长，区分词义、逻辑、读题、计算、知识和时间问题；逐题完整讲解。Quant待独立推导，不机械猜键；AW看五维并选2–3优先问题。
+    output: 待核/已核分开的错因表、未答/猜题数、下次检验任务
+    success: 每错题回答证据、偏离、分类、动作四问；不知道用户推理则标待询，不替用户编原因。
+    evidence_required:
+    - 待核/已核分开的错因表、未答/猜题数、下次检验任务
+  - id: 2026-11-23-03-vocab_review
+    order: 3
+    key: vocab_review
+    title: 词汇
+    duration_min: 15
+    material_id: core3000_random_2026
+    material_status: available
+    target: 短诊断与补齐基线复盘
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-11-23-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: 短诊断与补齐基线复盘
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 4
+  date: '2026-11-24'
+  phase: foundation
+  focus: Quant约束与边界
+  budget_min: 60
+  optional_max_min: 0
+  tasks:
+  - id: 2026-11-24-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 10
+    material_id: core3000_random_2026
+    material_status: available
+    target: Quant约束与边界
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-11-24-02-quantitative
+    order: 2
+    key: quantitative
+    title: Quant
+    duration_min: 35
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: Quant约束与边界
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-24-03-analytical_writing
+    order: 3
+    key: analytical_writing
+    title: AW短练
+    duration_min: 10
+    material_id: coach_issue_exercises
+    material_status: available
+    target: Quant约束与边界
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-11-24-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: Quant约束与边界
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 5
+  date: '2026-11-25'
+  phase: foundation
+  focus: RC证据与范围
+  budget_min: 60
+  optional_max_min: 0
+  tasks:
+  - id: 2026-11-25-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 10
+    material_id: core3000_random_2026
+    material_status: available
+    target: RC证据与范围
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-11-25-02-reading
+    order: 2
+    key: reading
+    title: 阅读
+    duration_min: 35
+    material_id: reading_440
+    material_status: available
+    target: RC证据与范围
+    action: 35分钟块取1篇及2–3题，45分钟以上取2篇及4–6题，约前三分之一时间作答；余时用证据句解释答案范围、作者态度和干扰项。
+    output: 原答/用时、段落功能、证据定位及完整选项讲解
+    success: 每个答案可回指文章；不把常识当文本推断，不把选项possibly升级为必然。
+    evidence_required:
+    - 原答/用时、段落功能、证据定位及完整选项讲解
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-25-03-analytical_writing
+    order: 3
+    key: analytical_writing
+    title: AW短练
+    duration_min: 10
+    material_id: coach_issue_exercises
+    material_status: available
+    target: RC证据与范围
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-11-25-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: RC证据与范围
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 6
+  date: '2026-11-26'
+  phase: volume
+  focus: TC/SE逻辑与Quant四领域
+  budget_min: 240
+  optional_max_min: 120
+  tasks:
+  - id: 2026-11-26-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 25
+    material_id: core3000_random_2026
+    material_status: available
+    target: TC/SE逻辑与Quant四领域
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-11-26-02-verbal_application
+    order: 2
+    key: verbal_application
+    title: TCSE
+    duration_min: 55
+    material_id: text_completion_2000
+    material_status: available
+    target: TC/SE逻辑与Quant四领域
+    action: 先预测再选项；6题用10分钟，剩余时间完整复盘。35分钟块最多4题，45分钟以上最多6题；不为刷量省略选项。多空整题及SE双选共同核验。
+    output: 原答、累计用时、句内证据、逐题完整讲解、错因四问
+    success: 每道已讲解题有完整中文题干和全部选项核心义/语境义/翻译/取舍依据；SE说明整体等价。未讲完转后续复盘。
+    evidence_required:
+    - 原答、累计用时、句内证据、逐题完整讲解、错因四问
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-26-03-quantitative
+    order: 3
+    key: quantitative
+    title: Quant
+    duration_min: 55
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: TC/SE逻辑与Quant四领域
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-26-04-analytical_writing
+    order: 4
+    key: analytical_writing
+    title: AW全文
+    duration_min: 50
+    material_id: coach_issue_exercises
+    material_status: available
+    target: TC/SE逻辑与Quant四领域
+    action: 30分钟独立写未做Issue，余时自查并按五维批改，优先修复2–3个问题。初始可用5分钟提纲+22分钟成文+3分钟校订，按实测调整。
+    output: 完整原稿、实际时长、前次问题迁移检查与局部修订
+    success: 回应完整任务，有明确且有限定的立场、理由和具体例子及解释，完成并校订；AI分数始终provisional。
+    evidence_required:
+    - 完整原稿、实际时长、前次问题迁移检查与局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-11-26-05-error_retest
+    order: 5
+    key: error_retest
+    title: 复测
+    duration_min: 35
+    material_id: null
+    material_status: existing_or_new_records
+    target: TC/SE逻辑与Quant四领域
+    action: 从已核验错因选3–6题，遮住旧答案先重答；解释关键证据，再用同类未见题检验迁移。优先次日、约3天与约7天的间隔复测，实际队列以事件为准。
+    output: 原答、用时、同类错因是否再现、technique_ids和证据引用
+    success: 旧题记忆与未见题迁移分开；可靠技巧须至少3次且跨2天计时成功；失败保留并可降级。
+    evidence_required:
+    - 原答、用时、同类错因是否再现、technique_ids和证据引用
+  - id: 2026-11-26-06-break
+    order: 6
+    key: break
+    title: 休息
+    duration_min: 20
+    material_id: null
+    material_status: not_applicable
+    target: TC/SE逻辑与Quant四领域
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 7
+  date: '2026-11-27'
+  phase: volume
+  focus: 错因迁移
+  budget_min: 180
+  optional_max_min: 0
+  tasks:
+  - id: 2026-11-27-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 20
+    material_id: core3000_random_2026
+    material_status: available
+    target: 错因迁移
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-11-27-02-verbal_mixed
+    order: 2
+    key: verbal_mixed
+    title: V混合
+    duration_min: 45
+    material_id: text_completion_2000
+    material_status: available
+    target: 错因迁移
+    action: 从TC/SE与reading_440各取未做题，35分钟块最多4题，55分钟块最多8题（约14分钟答题），45–50分钟块最多6题；先完成积压的完整逐项讲解，再做新题。
+    output: 题型分开的原答/用时/证据/错因、未讲完题目队列
+    success: 计时原答和事后更正分开；每个已复盘选项均有解释，不由本组正确率估分。
+    evidence_required:
+    - 题型分开的原答/用时/证据/错因、未讲完题目队列
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-27-03-quantitative
+    order: 3
+    key: quantitative
+    title: Quant
+    duration_min: 45
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: 错因迁移
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-27-04-analytical_writing
+    order: 4
+    key: analytical_writing
+    title: AW短练
+    duration_min: 30
+    material_id: coach_issue_exercises
+    material_status: available
+    target: 错因迁移
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-11-27-05-error_retest
+    order: 5
+    key: error_retest
+    title: 复测
+    duration_min: 25
+    material_id: null
+    material_status: existing_or_new_records
+    target: 错因迁移
+    action: 从已核验错因选3–6题，遮住旧答案先重答；解释关键证据，再用同类未见题检验迁移。优先次日、约3天与约7天的间隔复测，实际队列以事件为准。
+    output: 原答、用时、同类错因是否再现、technique_ids和证据引用
+    success: 旧题记忆与未见题迁移分开；可靠技巧须至少3次且跨2天计时成功；失败保留并可降级。
+    evidence_required:
+    - 原答、用时、同类错因是否再现、technique_ids和证据引用
+  - id: 2026-11-27-06-break
+    order: 6
+    key: break
+    title: 休息
+    duration_min: 15
+    material_id: null
+    material_status: not_applicable
+    target: 错因迁移
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 8
+  date: '2026-11-28'
+  phase: volume
+  focus: RC/Quant限时应用
+  budget_min: 240
+  optional_max_min: 120
+  tasks:
+  - id: 2026-11-28-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 25
+    material_id: core3000_random_2026
+    material_status: available
+    target: RC/Quant限时应用
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-11-28-02-reading
+    order: 2
+    key: reading
+    title: 阅读
+    duration_min: 55
+    material_id: reading_440
+    material_status: available
+    target: RC/Quant限时应用
+    action: 35分钟块取1篇及2–3题，45分钟以上取2篇及4–6题，约前三分之一时间作答；余时用证据句解释答案范围、作者态度和干扰项。
+    output: 原答/用时、段落功能、证据定位及完整选项讲解
+    success: 每个答案可回指文章；不把常识当文本推断，不把选项possibly升级为必然。
+    evidence_required:
+    - 原答/用时、段落功能、证据定位及完整选项讲解
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-28-03-quantitative
+    order: 3
+    key: quantitative
+    title: Quant
+    duration_min: 60
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: RC/Quant限时应用
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-28-04-analytical_writing
+    order: 4
+    key: analytical_writing
+    title: AW短练
+    duration_min: 40
+    material_id: coach_issue_exercises
+    material_status: available
+    target: RC/Quant限时应用
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-11-28-05-error_retest
+    order: 5
+    key: error_retest
+    title: 复测
+    duration_min: 40
+    material_id: null
+    material_status: existing_or_new_records
+    target: RC/Quant限时应用
+    action: 从已核验错因选3–6题，遮住旧答案先重答；解释关键证据，再用同类未见题检验迁移。优先次日、约3天与约7天的间隔复测，实际队列以事件为准。
+    output: 原答、用时、同类错因是否再现、technique_ids和证据引用
+    success: 旧题记忆与未见题迁移分开；可靠技巧须至少3次且跨2天计时成功；失败保留并可降级。
+    evidence_required:
+    - 原答、用时、同类错因是否再现、technique_ids和证据引用
+  - id: 2026-11-28-06-break
+    order: 6
+    key: break
+    title: 休息
+    duration_min: 20
+    material_id: null
+    material_status: not_applicable
+    target: RC/Quant限时应用
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 9
+  date: '2026-11-29'
+  phase: volume
+  focus: 第一次周期复核
+  budget_min: 240
+  optional_max_min: 120
+  tasks:
+  - id: 2026-11-29-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 20
+    material_id: core3000_random_2026
+    material_status: available
+    target: 第一次周期复核
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-11-29-02-verbal_mixed
+    order: 2
+    key: verbal_mixed
+    title: V混合
+    duration_min: 50
+    material_id: text_completion_2000
+    material_status: available
+    target: 第一次周期复核
+    action: 从TC/SE与reading_440各取未做题，35分钟块最多4题，55分钟块最多8题（约14分钟答题），45–50分钟块最多6题；先完成积压的完整逐项讲解，再做新题。
+    output: 题型分开的原答/用时/证据/错因、未讲完题目队列
+    success: 计时原答和事后更正分开；每个已复盘选项均有解释，不由本组正确率估分。
+    evidence_required:
+    - 题型分开的原答/用时/证据/错因、未讲完题目队列
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-29-03-quantitative
+    order: 3
+    key: quantitative
+    title: Quant
+    duration_min: 50
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: 第一次周期复核
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-29-04-analytical_writing
+    order: 4
+    key: analytical_writing
+    title: AW短练
+    duration_min: 40
+    material_id: coach_issue_exercises
+    material_status: available
+    target: 第一次周期复核
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-11-29-05-weekly_review
+    order: 5
+    key: weekly_review
+    title: 周复核
+    duration_min: 60
+    material_id: null
+    material_status: submitted_work_required
+    target: 第一次周期复核
+    action: 对比相近难度的未见计时样本：未答数、耗时、核验错因、跨日复测及AW旧问题。只调整未来一周60–120分钟；无新量表报告不声称提分。
+    output: 本周证据摘要、下周最多两项调整及原因
+    success: 每次调整有记录引用；Q冲170仍需验证；总分目标不由自组raw推断。
+    evidence_required:
+    - 本周证据摘要、下周最多两项调整及原因
+  - id: 2026-11-29-06-break
+    order: 6
+    key: break
+    title: 休息
+    duration_min: 20
+    material_id: null
+    material_status: not_applicable
+    target: 第一次周期复核
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 10
+  date: '2026-11-30'
+  phase: volume
+  focus: TC/SE第二次计时证据
+  budget_min: 60
+  optional_max_min: 0
+  tasks:
+  - id: 2026-11-30-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 15
+    material_id: core3000_random_2026
+    material_status: available
+    target: TC/SE第二次计时证据
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-11-30-02-verbal_application
+    order: 2
+    key: verbal_application
+    title: TCSE
+    duration_min: 35
+    material_id: text_completion_2000
+    material_status: available
+    target: TC/SE第二次计时证据
+    action: 先预测再选项；6题用10分钟，剩余时间完整复盘。35分钟块最多4题，45分钟以上最多6题；不为刷量省略选项。多空整题及SE双选共同核验。
+    output: 原答、累计用时、句内证据、逐题完整讲解、错因四问
+    success: 每道已讲解题有完整中文题干和全部选项核心义/语境义/翻译/取舍依据；SE说明整体等价。未讲完转后续复盘。
+    evidence_required:
+    - 原答、累计用时、句内证据、逐题完整讲解、错因四问
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-11-30-03-evidence_log
+    order: 3
+    key: evidence_log
+    title: 记录
+    duration_min: 5
+    material_id: null
+    material_status: submitted_work_required
+    target: TC/SE第二次计时证据
+    action: 保存实际原答、时长、题目定位和错因，引用平台事件ID避免双计。完成状态追加planning/events。
+    output: 原子训练记录及关联事件
+    success: 未开始/未提交不记完成；缺用时为null；不自动改profile.current。
+    evidence_required:
+    - 原子训练记录及关联事件
+  - id: 2026-11-30-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: TC/SE第二次计时证据
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 11
+  date: '2026-12-01'
+  phase: volume
+  focus: Quant防失分复测
+  budget_min: 60
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-01-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 10
+    material_id: core3000_random_2026
+    material_status: available
+    target: Quant防失分复测
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-01-02-quantitative
+    order: 2
+    key: quantitative
+    title: Quant
+    duration_min: 35
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: Quant防失分复测
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-01-03-analytical_writing
+    order: 3
+    key: analytical_writing
+    title: AW短练
+    duration_min: 10
+    material_id: coach_issue_exercises
+    material_status: available
+    target: Quant防失分复测
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-01-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: Quant防失分复测
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 12
+  date: '2026-12-02'
+  phase: volume
+  focus: RC最小推断
+  budget_min: 60
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-02-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 10
+    material_id: core3000_random_2026
+    material_status: available
+    target: RC最小推断
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-02-02-reading
+    order: 2
+    key: reading
+    title: 阅读
+    duration_min: 35
+    material_id: reading_440
+    material_status: available
+    target: RC最小推断
+    action: 35分钟块取1篇及2–3题，45分钟以上取2篇及4–6题，约前三分之一时间作答；余时用证据句解释答案范围、作者态度和干扰项。
+    output: 原答/用时、段落功能、证据定位及完整选项讲解
+    success: 每个答案可回指文章；不把常识当文本推断，不把选项possibly升级为必然。
+    evidence_required:
+    - 原答/用时、段落功能、证据定位及完整选项讲解
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-02-03-analytical_writing
+    order: 3
+    key: analytical_writing
+    title: AW短练
+    duration_min: 10
+    material_id: coach_issue_exercises
+    material_status: available
+    target: RC最小推断
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-02-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: RC最小推断
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 13
+  date: '2026-12-03'
+  phase: volume
+  focus: 综合应用与Issue全文
+  budget_min: 240
+  optional_max_min: 120
+  tasks:
+  - id: 2026-12-03-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 25
+    material_id: core3000_random_2026
+    material_status: available
+    target: 综合应用与Issue全文
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-03-02-verbal_mixed
+    order: 2
+    key: verbal_mixed
+    title: V混合
+    duration_min: 55
+    material_id: text_completion_2000
+    material_status: available
+    target: 综合应用与Issue全文
+    action: 从TC/SE与reading_440各取未做题，35分钟块最多4题，55分钟块最多8题（约14分钟答题），45–50分钟块最多6题；先完成积压的完整逐项讲解，再做新题。
+    output: 题型分开的原答/用时/证据/错因、未讲完题目队列
+    success: 计时原答和事后更正分开；每个已复盘选项均有解释，不由本组正确率估分。
+    evidence_required:
+    - 题型分开的原答/用时/证据/错因、未讲完题目队列
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-03-03-quantitative
+    order: 3
+    key: quantitative
+    title: Quant
+    duration_min: 55
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: 综合应用与Issue全文
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-03-04-analytical_writing
+    order: 4
+    key: analytical_writing
+    title: AW全文
+    duration_min: 50
+    material_id: coach_issue_exercises
+    material_status: available
+    target: 综合应用与Issue全文
+    action: 30分钟独立写未做Issue，余时自查并按五维批改，优先修复2–3个问题。初始可用5分钟提纲+22分钟成文+3分钟校订，按实测调整。
+    output: 完整原稿、实际时长、前次问题迁移检查与局部修订
+    success: 回应完整任务，有明确且有限定的立场、理由和具体例子及解释，完成并校订；AI分数始终provisional。
+    evidence_required:
+    - 完整原稿、实际时长、前次问题迁移检查与局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-03-05-error_retest
+    order: 5
+    key: error_retest
+    title: 复测
+    duration_min: 35
+    material_id: null
+    material_status: existing_or_new_records
+    target: 综合应用与Issue全文
+    action: 从已核验错因选3–6题，遮住旧答案先重答；解释关键证据，再用同类未见题检验迁移。优先次日、约3天与约7天的间隔复测，实际队列以事件为准。
+    output: 原答、用时、同类错因是否再现、technique_ids和证据引用
+    success: 旧题记忆与未见题迁移分开；可靠技巧须至少3次且跨2天计时成功；失败保留并可降级。
+    evidence_required:
+    - 原答、用时、同类错因是否再现、technique_ids和证据引用
+  - id: 2026-12-03-06-break
+    order: 6
+    key: break
+    title: 休息
+    duration_min: 20
+    material_id: null
+    material_status: not_applicable
+    target: 综合应用与Issue全文
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 14
+  date: '2026-12-04'
+  phase: volume
+  focus: 两遍节奏验证
+  budget_min: 180
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-04-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 20
+    material_id: core3000_random_2026
+    material_status: available
+    target: 两遍节奏验证
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-04-02-verbal_mixed
+    order: 2
+    key: verbal_mixed
+    title: V混合
+    duration_min: 45
+    material_id: text_completion_2000
+    material_status: available
+    target: 两遍节奏验证
+    action: 从TC/SE与reading_440各取未做题，35分钟块最多4题，55分钟块最多8题（约14分钟答题），45–50分钟块最多6题；先完成积压的完整逐项讲解，再做新题。
+    output: 题型分开的原答/用时/证据/错因、未讲完题目队列
+    success: 计时原答和事后更正分开；每个已复盘选项均有解释，不由本组正确率估分。
+    evidence_required:
+    - 题型分开的原答/用时/证据/错因、未讲完题目队列
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-04-03-quantitative
+    order: 3
+    key: quantitative
+    title: Quant
+    duration_min: 45
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: 两遍节奏验证
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-04-04-analytical_writing
+    order: 4
+    key: analytical_writing
+    title: AW短练
+    duration_min: 30
+    material_id: coach_issue_exercises
+    material_status: available
+    target: 两遍节奏验证
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-04-05-error_retest
+    order: 5
+    key: error_retest
+    title: 复测
+    duration_min: 25
+    material_id: null
+    material_status: existing_or_new_records
+    target: 两遍节奏验证
+    action: 从已核验错因选3–6题，遮住旧答案先重答；解释关键证据，再用同类未见题检验迁移。优先次日、约3天与约7天的间隔复测，实际队列以事件为准。
+    output: 原答、用时、同类错因是否再现、technique_ids和证据引用
+    success: 旧题记忆与未见题迁移分开；可靠技巧须至少3次且跨2天计时成功；失败保留并可降级。
+    evidence_required:
+    - 原答、用时、同类错因是否再现、technique_ids和证据引用
+  - id: 2026-12-04-06-break
+    order: 6
+    key: break
+    title: 休息
+    duration_min: 15
+    material_id: null
+    material_status: not_applicable
+    target: 两遍节奏验证
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 15
+  date: '2026-12-05'
+  phase: volume
+  focus: 模拟前补洞
+  budget_min: 240
+  optional_max_min: 120
+  tasks:
+  - id: 2026-12-05-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 25
+    material_id: core3000_random_2026
+    material_status: available
+    target: 模拟前补洞
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-05-02-reading
+    order: 2
+    key: reading
+    title: 阅读
+    duration_min: 55
+    material_id: reading_440
+    material_status: available
+    target: 模拟前补洞
+    action: 35分钟块取1篇及2–3题，45分钟以上取2篇及4–6题，约前三分之一时间作答；余时用证据句解释答案范围、作者态度和干扰项。
+    output: 原答/用时、段落功能、证据定位及完整选项讲解
+    success: 每个答案可回指文章；不把常识当文本推断，不把选项possibly升级为必然。
+    evidence_required:
+    - 原答/用时、段落功能、证据定位及完整选项讲解
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-05-03-quantitative
+    order: 3
+    key: quantitative
+    title: Quant
+    duration_min: 60
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: 模拟前补洞
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-05-04-analytical_writing
+    order: 4
+    key: analytical_writing
+    title: AW短练
+    duration_min: 40
+    material_id: coach_issue_exercises
+    material_status: available
+    target: 模拟前补洞
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-05-05-error_retest
+    order: 5
+    key: error_retest
+    title: 复测
+    duration_min: 40
+    material_id: null
+    material_status: existing_or_new_records
+    target: 模拟前补洞
+    action: 从已核验错因选3–6题，遮住旧答案先重答；解释关键证据，再用同类未见题检验迁移。优先次日、约3天与约7天的间隔复测，实际队列以事件为准。
+    output: 原答、用时、同类错因是否再现、technique_ids和证据引用
+    success: 旧题记忆与未见题迁移分开；可靠技巧须至少3次且跨2天计时成功；失败保留并可降级。
+    evidence_required:
+    - 原答、用时、同类错因是否再现、technique_ids和证据引用
+  - id: 2026-12-05-06-break
+    order: 6
+    key: break
+    title: 休息
+    duration_min: 20
+    material_id: null
+    material_status: not_applicable
+    target: 模拟前补洞
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 16
+  date: '2026-12-06'
+  phase: simulation
+  focus: 第二次全程与周期复核
+  budget_min: 240
+  optional_max_min: 120
+  tasks:
+  - id: 2026-12-06-01-full_mock_setup
+    order: 1
+    key: full_mock_setup
+    title: 准备
+    duration_min: 10
+    material_id: null
+    material_status: not_applicable
+    target: 第二次全程与周期复核
+    action: 检查ETS账户能否进入未做过的PP2；核对计时器、空白草稿和输入法。10分钟仍不可用就用已备自组清单，不消耗训练块排障。
+    output: 访问结果、所选卷和重复题暴露声明
+    success: 正式开始前材料可打开；计时从用户实际开始算，未开始不填时间。
+    evidence_required:
+    - 访问结果、所选卷和重复题暴露声明
+  - id: 2026-12-06-02-full_mock
+    order: 2
+    key: full_mock
+    title: 全程
+    duration_min: 118
+    material_id: quant_900
+    material_status: available_with_conditional_official_upgrade
+    target: 第二次全程与周期复核
+    action: 若PP2尚未使用且已确认可用，用首次PP2；否则以已拥有PDF另组未做题。现有PDF自组AW30→V12题18→Q12题21→V15题23→Q15题26分钟。不中途查词、看解答或停表；到时冻结原答。
+    output: 54题原答、逐节实际用时/未答/重复题、完整Issue原稿及辅助使用情况
+    success: 完成五节并如实保留超时；自组卷raw_only，Quant未推导前正确数null，AW评分provisional。
+    evidence_required:
+    - 54题原答、逐节实际用时/未答/重复题、完整Issue原稿及辅助使用情况
+    material_ids:
+    - text_completion_2000
+    - reading_440
+    - quant_900
+    - coach_issue_exercises
+    official_option_url: https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html
+    range: 首轮见planning/20261121_2319_diagnostic_sources.yaml；后续模拟按相同规格提前选未做内容，不能复用首轮冒充新卷。
+  - id: 2026-12-06-03-break
+    order: 3
+    key: break
+    title: 休息
+    duration_min: 20
+    material_id: null
+    material_status: not_applicable
+    target: 第二次全程与周期复核
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+  - id: 2026-12-06-04-diagnostic_review
+    order: 4
+    key: diagnostic_review
+    title: 复盘
+    duration_min: 42
+    material_id: null
+    material_status: submitted_work_required
+    target: 第二次全程与周期复核
+    action: 先冻结原答/时长，区分词义、逻辑、读题、计算、知识和时间问题；逐题完整讲解。Quant待独立推导，不机械猜键；AW看五维并选2–3优先问题。
+    output: 待核/已核分开的错因表、未答/猜题数、下次检验任务
+    success: 每错题回答证据、偏离、分类、动作四问；不知道用户推理则标待询，不替用户编原因。
+    evidence_required:
+    - 待核/已核分开的错因表、未答/猜题数、下次检验任务
+  - id: 2026-12-06-05-weekly_review
+    order: 5
+    key: weekly_review
+    title: 周复核
+    duration_min: 30
+    material_id: null
+    material_status: submitted_work_required
+    target: 第二次全程与周期复核
+    action: 对比相近难度的未见计时样本：未答数、耗时、核验错因、跨日复测及AW旧问题。只调整未来一周60–120分钟；无新量表报告不声称提分。
+    output: 本周证据摘要、下周最多两项调整及原因
+    success: 每次调整有记录引用；Q冲170仍需验证；总分目标不由自组raw推断。
+    evidence_required:
+    - 本周证据摘要、下周最多两项调整及原因
+  - id: 2026-12-06-06-vocab_review
+    order: 6
+    key: vocab_review
+    title: 词汇
+    duration_min: 20
+    material_id: core3000_random_2026
+    material_status: available
+    target: 第二次全程与周期复核
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+- day: 17
+  date: '2026-12-07'
+  phase: high_frequency
+  focus: 复盘剩余题
+  budget_min: 60
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-07-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 15
+    material_id: core3000_random_2026
+    material_status: available
+    target: 复盘剩余题
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-07-02-diagnostic_review
+    order: 2
+    key: diagnostic_review
+    title: 复盘
+    duration_min: 35
+    material_id: null
+    material_status: submitted_work_required
+    target: 复盘剩余题
+    action: 先冻结原答/时长，区分词义、逻辑、读题、计算、知识和时间问题；逐题完整讲解。Quant待独立推导，不机械猜键；AW看五维并选2–3优先问题。
+    output: 待核/已核分开的错因表、未答/猜题数、下次检验任务
+    success: 每错题回答证据、偏离、分类、动作四问；不知道用户推理则标待询，不替用户编原因。
+    evidence_required:
+    - 待核/已核分开的错因表、未答/猜题数、下次检验任务
+  - id: 2026-12-07-03-evidence_log
+    order: 3
+    key: evidence_log
+    title: 记录
+    duration_min: 5
+    material_id: null
+    material_status: submitted_work_required
+    target: 复盘剩余题
+    action: 保存实际原答、时长、题目定位和错因，引用平台事件ID避免双计。完成状态追加planning/events。
+    output: 原子训练记录及关联事件
+    success: 未开始/未提交不记完成；缺用时为null；不自动改profile.current。
+    evidence_required:
+    - 原子训练记录及关联事件
+  - id: 2026-12-07-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: 复盘剩余题
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 18
+  date: '2026-12-08'
+  phase: high_frequency
+  focus: Quant边界/单位/所求检查
+  budget_min: 60
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-08-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 10
+    material_id: core3000_random_2026
+    material_status: available
+    target: Quant边界/单位/所求检查
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-08-02-quantitative
+    order: 2
+    key: quantitative
+    title: Quant
+    duration_min: 35
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: Quant边界/单位/所求检查
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-08-03-analytical_writing
+    order: 3
+    key: analytical_writing
+    title: AW短练
+    duration_min: 10
+    material_id: coach_issue_exercises
+    material_status: available
+    target: Quant边界/单位/所求检查
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-08-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: Quant边界/单位/所求检查
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 19
+  date: '2026-12-09'
+  phase: high_frequency
+  focus: Verbal证据和跳题策略
+  budget_min: 60
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-09-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 10
+    material_id: core3000_random_2026
+    material_status: available
+    target: Verbal证据和跳题策略
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-09-02-verbal_mixed
+    order: 2
+    key: verbal_mixed
+    title: V混合
+    duration_min: 35
+    material_id: text_completion_2000
+    material_status: available
+    target: Verbal证据和跳题策略
+    action: 从TC/SE与reading_440各取未做题，35分钟块最多4题，55分钟块最多8题（约14分钟答题），45–50分钟块最多6题；先完成积压的完整逐项讲解，再做新题。
+    output: 题型分开的原答/用时/证据/错因、未讲完题目队列
+    success: 计时原答和事后更正分开；每个已复盘选项均有解释，不由本组正确率估分。
+    evidence_required:
+    - 题型分开的原答/用时/证据/错因、未讲完题目队列
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-09-03-analytical_writing
+    order: 3
+    key: analytical_writing
+    title: AW短练
+    duration_min: 10
+    material_id: coach_issue_exercises
+    material_status: available
+    target: Verbal证据和跳题策略
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-09-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: Verbal证据和跳题策略
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 20
+  date: '2026-12-10'
+  phase: simulation
+  focus: 最后全程排练
+  budget_min: 240
+  optional_max_min: 120
+  tasks:
+  - id: 2026-12-10-01-full_mock_setup
+    order: 1
+    key: full_mock_setup
+    title: 准备
+    duration_min: 10
+    material_id: null
+    material_status: not_applicable
+    target: 最后全程排练
+    action: 检查ETS账户能否进入未做过的PP2；核对计时器、空白草稿和输入法。10分钟仍不可用就用已备自组清单，不消耗训练块排障。
+    output: 访问结果、所选卷和重复题暴露声明
+    success: 正式开始前材料可打开；计时从用户实际开始算，未开始不填时间。
+    evidence_required:
+    - 访问结果、所选卷和重复题暴露声明
+  - id: 2026-12-10-02-full_mock
+    order: 2
+    key: full_mock
+    title: 全程
+    duration_min: 118
+    material_id: quant_900
+    material_status: available_with_conditional_official_upgrade
+    target: 最后全程排练
+    action: 若PP2尚未使用且已确认可用，用首次PP2；否则以已拥有PDF另组未做题。现有PDF自组AW30→V12题18→Q12题21→V15题23→Q15题26分钟。不中途查词、看解答或停表；到时冻结原答。
+    output: 54题原答、逐节实际用时/未答/重复题、完整Issue原稿及辅助使用情况
+    success: 完成五节并如实保留超时；自组卷raw_only，Quant未推导前正确数null，AW评分provisional。
+    evidence_required:
+    - 54题原答、逐节实际用时/未答/重复题、完整Issue原稿及辅助使用情况
+    material_ids:
+    - text_completion_2000
+    - reading_440
+    - quant_900
+    - coach_issue_exercises
+    official_option_url: https://www.ets.org/gre/test-takers/general-test/prepare/powerprep.html
+    range: 首轮见planning/20261121_2319_diagnostic_sources.yaml；后续模拟按相同规格提前选未做内容，不能复用首轮冒充新卷。
+  - id: 2026-12-10-03-break
+    order: 3
+    key: break
+    title: 休息
+    duration_min: 20
+    material_id: null
+    material_status: not_applicable
+    target: 最后全程排练
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+  - id: 2026-12-10-04-diagnostic_review
+    order: 4
+    key: diagnostic_review
+    title: 复盘
+    duration_min: 72
+    material_id: null
+    material_status: submitted_work_required
+    target: 最后全程排练
+    action: 先冻结原答/时长，区分词义、逻辑、读题、计算、知识和时间问题；逐题完整讲解。Quant待独立推导，不机械猜键；AW看五维并选2–3优先问题。
+    output: 待核/已核分开的错因表、未答/猜题数、下次检验任务
+    success: 每错题回答证据、偏离、分类、动作四问；不知道用户推理则标待询，不替用户编原因。
+    evidence_required:
+    - 待核/已核分开的错因表、未答/猜题数、下次检验任务
+  - id: 2026-12-10-05-vocab_review
+    order: 5
+    key: vocab_review
+    title: 词汇
+    duration_min: 20
+    material_id: core3000_random_2026
+    material_status: available
+    target: 最后全程排练
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+- day: 21
+  date: '2026-12-11'
+  phase: high_frequency
+  focus: 只修最可重复的失分
+  budget_min: 180
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-11-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 20
+    material_id: core3000_random_2026
+    material_status: available
+    target: 只修最可重复的失分
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-11-02-verbal_mixed
+    order: 2
+    key: verbal_mixed
+    title: V混合
+    duration_min: 35
+    material_id: text_completion_2000
+    material_status: available
+    target: 只修最可重复的失分
+    action: 从TC/SE与reading_440各取未做题，35分钟块最多4题，55分钟块最多8题（约14分钟答题），45–50分钟块最多6题；先完成积压的完整逐项讲解，再做新题。
+    output: 题型分开的原答/用时/证据/错因、未讲完题目队列
+    success: 计时原答和事后更正分开；每个已复盘选项均有解释，不由本组正确率估分。
+    evidence_required:
+    - 题型分开的原答/用时/证据/错因、未讲完题目队列
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-11-03-quantitative
+    order: 3
+    key: quantitative
+    title: Quant
+    duration_min: 35
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: 只修最可重复的失分
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-11-04-analytical_writing
+    order: 4
+    key: analytical_writing
+    title: AW短练
+    duration_min: 30
+    material_id: coach_issue_exercises
+    material_status: available
+    target: 只修最可重复的失分
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-11-05-error_retest
+    order: 5
+    key: error_retest
+    title: 复测
+    duration_min: 45
+    material_id: null
+    material_status: existing_or_new_records
+    target: 只修最可重复的失分
+    action: 从已核验错因选3–6题，遮住旧答案先重答；解释关键证据，再用同类未见题检验迁移。优先次日、约3天与约7天的间隔复测，实际队列以事件为准。
+    output: 原答、用时、同类错因是否再现、technique_ids和证据引用
+    success: 旧题记忆与未见题迁移分开；可靠技巧须至少3次且跨2天计时成功；失败保留并可降级。
+    evidence_required:
+    - 原答、用时、同类错因是否再现、technique_ids和证据引用
+  - id: 2026-12-11-06-break
+    order: 6
+    key: break
+    title: 休息
+    duration_min: 15
+    material_id: null
+    material_status: not_applicable
+    target: 只修最可重复的失分
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 22
+  date: '2026-12-12'
+  phase: high_frequency
+  focus: 封闭漏洞与出行核验
+  budget_min: 240
+  optional_max_min: 120
+  tasks:
+  - id: 2026-12-12-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 20
+    material_id: core3000_random_2026
+    material_status: available
+    target: 封闭漏洞与出行核验
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-12-02-verbal_mixed
+    order: 2
+    key: verbal_mixed
+    title: V混合
+    duration_min: 45
+    material_id: text_completion_2000
+    material_status: available
+    target: 封闭漏洞与出行核验
+    action: 从TC/SE与reading_440各取未做题，35分钟块最多4题，55分钟块最多8题（约14分钟答题），45–50分钟块最多6题；先完成积压的完整逐项讲解，再做新题。
+    output: 题型分开的原答/用时/证据/错因、未讲完题目队列
+    success: 计时原答和事后更正分开；每个已复盘选项均有解释，不由本组正确率估分。
+    evidence_required:
+    - 题型分开的原答/用时/证据/错因、未讲完题目队列
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-12-03-quantitative
+    order: 3
+    key: quantitative
+    title: Quant
+    duration_min: 45
+    material_id: quant_900
+    material_status: available_answer_external_not_present
+    target: 封闭漏洞与出行核验
+    action: 35分钟块6题/约11分钟作答；45–60分钟块8–12题/14–21分钟作答，余时核原页独立推导。轮换算术、代数、几何、数据分析，覆盖QC、单选、多选、填数、DI。
+    output: 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    success: 无标准键标coach_solved须有完整推导；不能核验仍null。QC检验合法边界，D给两个反例；每次写有效检查动作。
+    evidence_required:
+    - 条件/范围/单位/所求、原答、草稿、用时与核验推导
+    range: 先完成已派诊断未讲完题；新题按本次错因选相近难度且未做的最小题号，开练前冻结题目清单，按content_id去重。Quant图像题另由用户标重复。
+  - id: 2026-12-12-04-analytical_writing
+    order: 4
+    key: analytical_writing
+    title: AW短练
+    duration_min: 30
+    material_id: coach_issue_exercises
+    material_status: available
+    target: 封闭漏洞与出行核验
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-12-05-error_retest
+    order: 5
+    key: error_retest
+    title: 复测
+    duration_min: 55
+    material_id: null
+    material_status: existing_or_new_records
+    target: 封闭漏洞与出行核验
+    action: 从已核验错因选3–6题，遮住旧答案先重答；解释关键证据，再用同类未见题检验迁移。优先次日、约3天与约7天的间隔复测，实际队列以事件为准。
+    output: 原答、用时、同类错因是否再现、technique_ids和证据引用
+    success: 旧题记忆与未见题迁移分开；可靠技巧须至少3次且跨2天计时成功；失败保留并可降级。
+    evidence_required:
+    - 原答、用时、同类错因是否再现、technique_ids和证据引用
+  - id: 2026-12-12-06-exam_logistics
+    order: 6
+    key: exam_logistics
+    title: 手续
+    duration_min: 25
+    material_id: null
+    material_status: user_booking_confirmed
+    target: 封闭漏洞与出行核验
+    action: 核对ETS预约的准确地址、姓名和适用证件；确认住宿、到场路线、交通缓冲与备选交通。仅记录检查结果，隐私号码不入库。12/16只查随身物品和行程。
+    output: 已确认/待解决事项清单及离店时间计算
+    success: 12/17计划13:15–13:30到场；证件按国籍+Malaysia规则核对；交通和入住时间另留，不塞进学习分钟。
+    evidence_required:
+    - 已确认/待解决事项清单及离店时间计算
+  - id: 2026-12-12-07-break
+    order: 7
+    key: break
+    title: 休息
+    duration_min: 20
+    material_id: null
+    material_status: not_applicable
+    target: 封闭漏洞与出行核验
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 23
+  date: '2026-12-13'
+  phase: high_frequency
+  focus: 减量与最后复核
+  budget_min: 120
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-13-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 15
+    material_id: core3000_random_2026
+    material_status: available
+    target: 减量与最后复核
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-13-02-error_retest
+    order: 2
+    key: error_retest
+    title: 复测
+    duration_min: 35
+    material_id: null
+    material_status: existing_or_new_records
+    target: 减量与最后复核
+    action: 从已核验错因选3–6题，遮住旧答案先重答；解释关键证据，再用同类未见题检验迁移。优先次日、约3天与约7天的间隔复测，实际队列以事件为准。
+    output: 原答、用时、同类错因是否再现、technique_ids和证据引用
+    success: 旧题记忆与未见题迁移分开；可靠技巧须至少3次且跨2天计时成功；失败保留并可降级。
+    evidence_required:
+    - 原答、用时、同类错因是否再现、technique_ids和证据引用
+  - id: 2026-12-13-03-analytical_writing
+    order: 3
+    key: analytical_writing
+    title: AW短练
+    duration_min: 15
+    material_id: coach_issue_exercises
+    material_status: available
+    target: 减量与最后复核
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-13-04-weekly_review
+    order: 4
+    key: weekly_review
+    title: 周复核
+    duration_min: 30
+    material_id: null
+    material_status: submitted_work_required
+    target: 减量与最后复核
+    action: 根据最后排练和复测证据，锁定12/14–16的95分钟减量任务、证件与出行清单；不再调整未来一周配比，不额外加量。
+    output: 最终熟题/错因清单与尚待解决的出行事项
+    success: 只保留已确认有效的动作；没有新证据不改能力结论；剩余学习预算不超过95分钟。
+    evidence_required:
+    - 最终熟题/错因清单与尚待解决的出行事项
+  - id: 2026-12-13-05-exam_logistics
+    order: 5
+    key: exam_logistics
+    title: 手续
+    duration_min: 15
+    material_id: null
+    material_status: user_booking_confirmed
+    target: 减量与最后复核
+    action: 核对ETS预约的准确地址、姓名和适用证件；确认住宿、到场路线、交通缓冲与备选交通。仅记录检查结果，隐私号码不入库。12/16只查随身物品和行程。
+    output: 已确认/待解决事项清单及离店时间计算
+    success: 12/17计划13:15–13:30到场；证件按国籍+Malaysia规则核对；交通和入住时间另留，不塞进学习分钟。
+    evidence_required:
+    - 已确认/待解决事项清单及离店时间计算
+  - id: 2026-12-13-06-break
+    order: 6
+    key: break
+    title: 休息
+    duration_min: 10
+    material_id: null
+    material_status: not_applicable
+    target: 减量与最后复核
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 24
+  date: '2026-12-14'
+  phase: high_frequency
+  focus: 熟题与论证骨架
+  budget_min: 45
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-14-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 10
+    material_id: core3000_random_2026
+    material_status: available
+    target: 熟题与论证骨架
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-14-02-error_retest
+    order: 2
+    key: error_retest
+    title: 复测
+    duration_min: 20
+    material_id: null
+    material_status: existing_or_new_records
+    target: 熟题与论证骨架
+    action: 只查看1–2道熟题的关键证据与曾犯错误，遮住答案复述正确路径，检查条件/单位/逻辑；不派未见题，不做长篇重写。
+    output: 1–2道熟题的关键证据及个人检查清单
+    success: 在本块分钟内完成轻量检查；不因回忆熟题正确声称新题能力或提分。
+    evidence_required:
+    - 1–2道熟题的关键证据及个人检查清单
+  - id: 2026-12-14-03-analytical_writing
+    order: 3
+    key: analytical_writing
+    title: AW短练
+    duration_min: 10
+    material_id: coach_issue_exercises
+    material_status: available
+    target: 熟题与论证骨架
+    action: 10分钟写立场和两条推理；15–20分钟写一段claim→reason→example→implication；30–40分钟含提纲、主体段和反方边界修订。已写题优先修前次2–3项问题。
+    output: 独立提纲或主体段、针对性局部修订
+    success: 论点回应任务，例子解释为什么支持；短练不打全文分，不背整篇范文。
+    evidence_required:
+    - 独立提纲或主体段、针对性局部修订
+    range: 使用platform/server/writing-topics.mjs中6道coach_original；全文依次用未做题，短练可修订已写题并标revision。
+  - id: 2026-12-14-04-break
+    order: 4
+    key: break
+    title: 休息
+    duration_min: 5
+    material_id: null
+    material_status: not_applicable
+    target: 熟题与论证骨架
+    action: 训练块之间离屏、喝水、活动；正式118分钟测验内部不安排休息。
+    output: 实际休息时长
+    success: 休息已包含在当日总预算内；不计题量或掌握证据。
+    evidence_required:
+    - 实际休息时长
+- day: 25
+  date: '2026-12-15'
+  phase: high_frequency
+  focus: 轻量回忆与行前确认
+  budget_min: 30
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-15-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 10
+    material_id: core3000_random_2026
+    material_status: available
+    target: 轻量回忆与行前确认
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-15-02-error_retest
+    order: 2
+    key: error_retest
+    title: 复测
+    duration_min: 10
+    material_id: null
+    material_status: existing_or_new_records
+    target: 轻量回忆与行前确认
+    action: 只查看1–2道熟题的关键证据与曾犯错误，遮住答案复述正确路径，检查条件/单位/逻辑；不派未见题，不做长篇重写。
+    output: 1–2道熟题的关键证据及个人检查清单
+    success: 在本块分钟内完成轻量检查；不因回忆熟题正确声称新题能力或提分。
+    evidence_required:
+    - 1–2道熟题的关键证据及个人检查清单
+  - id: 2026-12-15-03-exam_logistics
+    order: 3
+    key: exam_logistics
+    title: 手续
+    duration_min: 10
+    material_id: null
+    material_status: user_booking_confirmed
+    target: 轻量回忆与行前确认
+    action: 核对ETS预约的准确地址、姓名和适用证件；确认住宿、到场路线、交通缓冲与备选交通。仅记录检查结果，隐私号码不入库。12/16只查随身物品和行程。
+    output: 已确认/待解决事项清单及离店时间计算
+    success: 12/17计划13:15–13:30到场；证件按国籍+Malaysia规则核对；交通和入住时间另留，不塞进学习分钟。
+    evidence_required:
+    - 已确认/待解决事项清单及离店时间计算
+- day: 26
+  date: '2026-12-16'
+  phase: high_frequency
+  focus: 出行入住日
+  budget_min: 20
+  optional_max_min: 0
+  tasks:
+  - id: 2026-12-16-01-vocab_review
+    order: 1
+    key: vocab_review
+    title: 词汇
+    duration_min: 5
+    material_id: core3000_random_2026
+    material_status: available
+    target: 出行入住日
+    action: 在既有词库中先做本轮错题词及到期词主动回忆，遮释义说核心义/词性，再回到原句判断语境义。首周新词每天最多10–15个且只在预算内；考前减量只复习。
+    output: 实际词数、首次原答、错误词和来源/事件ID
+    success: 全部受测词保留首次结果；次日再测失败词，抄写或翻面不算掌握。
+    evidence_required:
+    - 实际词数、首次原答、错误词和来源/事件ID
+  - id: 2026-12-16-02-exam_logistics
+    order: 2
+    key: exam_logistics
+    title: 手续
+    duration_min: 15
+    material_id: null
+    material_status: user_booking_confirmed
+    target: 出行入住日
+    action: 核对ETS预约的准确地址、姓名和适用证件；确认住宿、到场路线、交通缓冲与备选交通。仅记录检查结果，隐私号码不入库。12/16只查随身物品和行程。
+    output: 已确认/待解决事项清单及离店时间计算
+    success: 12/17计划13:15–13:30到场；证件按国籍+Malaysia规则核对；交通和入住时间另留，不塞进学习分钟。
+    evidence_required:
+    - 已确认/待解决事项清单及离店时间计算
+- day: 27
+  date: '2026-12-17'
+  phase: simulation
+  focus: 正式考试
+  budget_min: 0
+  optional_max_min: 0
+  tasks: []
+  logistics:
+    predeparture_check_min: 10
+    arrival_target: 13:15–13:30
+    latest_arrival_by_current_ets_rule: '13:45'
+    exam_start: '14:15'
+    exam_expected_min: 118
+    travel_time: 待按预约准确地址及当天交通核验，另计

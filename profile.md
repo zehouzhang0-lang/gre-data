@@ -2,14 +2,14 @@
 schema_version: 1
 created_at: "2026-09-02"
 updated_at: "2026-11-21"
-timezone: Asia/Shanghai
+timezone: Asia/Kuala_Lumpur
 exam: gre_general
 exam_date: "2026-12-17"
 exam_date_note: "2026-11-21 用户提供ETS预约详情截图，确认GRE General Test（Computer Test）已预约成功：2026-12-17 14:15，Kuala Lumpur APCU-8851，状态Scheduled。未保存预约编号等账号隐私信息。"
 target:
   combined_vq: 320
-  verbal: null
-  quantitative: null
+  verbal: 150
+  quantitative: 170
   analytical_writing: 3.5
 current:
   verbal: null
@@ -31,6 +31,8 @@ application_direction: null
 ---
 
 # 用户档案
+
+2026-11-21 本对话补充：用户明确目标“320+，数学尽量拿满，Verbal 150+，写作3.5”。target.verbal=150记录下限，target.quantitative=170记录冲刺目标，combined_vq=320记录最低数值门槛；不是当前分数或保证。用户同时澄清bibiji只做过Verbal，自估“大概135+水平”；无日期、卷名、原报告、严格计时/重复题信息，不能记成精确量表分。Quant与AW基线未知，POWERPREP 2账户尚未检查。current与baseline_source仍为null。执行框架见planning/20261121_2319_sprint_plan.md，正式训练从11月22日起，按新证据调整。
 
 2026-11-21 冲刺基线补充：用户确认未做过 ETS POWERPREP，但曾在 https://bibiji.site/ 进行模考，自述“成绩现在很一般”。模考日期、卷名、V/Q/AW分数、是否完整且严格计时、是否做过重复题均尚未提供；这是第三方模考经历自报，不能把主观评价转成量表分，也不能继续表述为从未模考。current 与 baseline_source 保持 null，待具体记录核验。用户要求在新对话开展全面正式的冲刺规划与备考准备，并将自行寻找小红书25天备考经验作为待核候选。交接证据见 planning/20261121_2313_sprint_handoff.md。
 
