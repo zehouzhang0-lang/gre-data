@@ -32,6 +32,8 @@ application_direction: null
 
 # 用户档案
 
+2026-11-21 冲刺基线补充：用户确认未做过 ETS POWERPREP，但曾在 https://bibiji.site/ 进行模考，自述“成绩现在很一般”。模考日期、卷名、V/Q/AW分数、是否完整且严格计时、是否做过重复题均尚未提供；这是第三方模考经历自报，不能把主观评价转成量表分，也不能继续表述为从未模考。current 与 baseline_source 保持 null，待具体记录核验。用户要求在新对话开展全面正式的冲刺规划与备考准备，并将自行寻找小红书25天备考经验作为待核候选。交接证据见 planning/20261121_2313_sprint_handoff.md。
+
 2026-11-21 考试住宿确认：用户提供 Trip.com 订单确认截图，已预订 Dorsett Hartamas Kuala Lumpur，2026年12月16日入住、12月17日退房；地址为 D-G-8, Plaza Damas, No. 63, Jalan Sri Hartamas 1, Sri Hartamas, 50480 Kuala Lumpur, Malaysia。该住宿用于12月17日GRE考试前一晚；订单号、PIN、付款信息和联系邮箱未写入仓库。详见 planning/20261121_2247_exam_hotel_booking.md。
 
 2026-11-21 正式考期确认：用户提供ETS预约详情截图，GRE General Test（Computer Test）状态为Scheduled；考试时间为2026年12月17日14:15，考点为Kuala Lumpur APCU-8851。该日期替代此前未预约的11月候选日期，后续训练按此日期倒计时。预约编号等账号隐私信息不写入仓库。详见 planning/20261121_2227_exam_booking_confirmed.md。
