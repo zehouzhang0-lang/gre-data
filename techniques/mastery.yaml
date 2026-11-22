@@ -1,5 +1,5 @@
 schema_version: 1
-updated_at: "2026-11-22"
+updated_at: "2026-11-23"
 states: [unknown, learned, applied, reliable]
 items:
   - id: v_tc_logic_map
@@ -80,3 +80,7 @@ items:
         record: analytical-writing/submissions/20261122_2339_issue.md
         result: mixed
         note: "即时未计时小检查、规则可见：用户答indentify problems，can后选择原形且these后用复数，两项结构符合规则；identify多写n。区分形式正确与拼写待纠正，未证明独立自检或稳定迁移，状态保持unknown。"
+      - date: "2026-11-23"
+        record: analytical-writing/submissions/20261123_0101_issue.md
+        result: failure
+        note: "同一逐句引导练习跨日续写，非独立计时：在showing/providing提示后仍答provide with only mandatory steps，平行形式和provide him with搭配待修正；mandatory另作词义校准。不推断时间压力，状态保持unknown，待用户完整回写再检验。"
