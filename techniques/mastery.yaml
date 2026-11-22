@@ -59,7 +59,14 @@ items:
   - {id: q_error_checklist, area: quantitative, status: unknown, evidence: []}
   - {id: q_pacing_two_pass, area: quantitative, status: unknown, evidence: []}
   - {id: aw_issue_position, area: analytical_writing, status: unknown, evidence: []}
-  - {id: aw_paragraph_reasoning, area: analytical_writing, status: unknown, evidence: []}
+  - id: aw_paragraph_reasoning
+    area: analytical_writing
+    status: unknown
+    evidence:
+      - date: "2026-11-22"
+        record: analytical-writing/submissions/20261122_2351_issue.md
+        result: mixed
+        note: "引导后提供中文编程家教例子，包含困难、完整答案与必要提示的比较、学生推导求证和自报理解结果；是否修改原错误记录及具体学习结果仍待核，教练建议补限定。尚无完整英文论证链或独立计时证据，状态保持unknown。"
   - {id: aw_counterargument, area: analytical_writing, status: unknown, evidence: []}
   - id: aw_timed_revision
     area: analytical_writing
