@@ -40,3 +40,23 @@ test('atomic round finish includes flips after a failed save without changing fr
   draft.commitAll();
   assert.deepEqual(draft.prepareAll(() => null), []);
 });
+
+test('wall reading checkpoints preserve failed batches and reconcile a committed write on reopen', () => {
+  const draft = createCardReadingDraft(() => 'first-batch');
+  draft.record('abate', '2026-10-27T00:00:00.000Z');
+  const frozen = draft.prepareAll(() => 'partial');
+  draft.record('abate', '2026-10-27T00:00:01.000Z');
+
+  const checkpoint = JSON.parse(JSON.stringify(draft.snapshot()));
+  const reopened = createCardReadingDraft(() => 'second-batch', checkpoint);
+  reopened.commitSaved(new Set());
+  assert.deepEqual(reopened.snapshot(), checkpoint);
+  reopened.commitSaved(new Set([frozen[0].id]));
+  assert.equal(reopened.hasPending(), true);
+  assert.deepEqual(reopened.prepareAll(() => null), [{
+    id: 'second-batch',
+    payload: { items: [{ word: 'abate', count: 1, viewed_at: '2026-10-27T00:00:01.000Z', impression: null }] },
+  }]);
+  reopened.commitAll();
+  assert.equal(reopened.hasPending(), false);
+});

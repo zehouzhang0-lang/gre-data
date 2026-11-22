@@ -1,0 +1,239 @@
+{
+  "ranAt": "2026-11-22T09:58:47.596Z",
+  "node": "v24.14.0",
+  "platform": "win32 x64",
+  "typed": [
+    "p",
+    "pe",
+    "per",
+    "pers",
+    "persi",
+    "清",
+    "清晰",
+    "a",
+    "ab",
+    "tra",
+    "trac",
+    "x",
+    "xq"
+  ],
+  "note": "ms per call; search function only; synthetic library",
+  "sizes": [
+    {
+      "words": 2000,
+      "perKeystroke": {
+        "az": {
+          "original": {
+            "median": 0.778,
+            "p95": 1.13
+          },
+          "fast": {
+            "median": 0.114,
+            "p95": 0.134
+          },
+          "timesFaster": 6.8
+        },
+        "random": {
+          "original": {
+            "median": 0.855,
+            "p95": 2.9
+          },
+          "fast": {
+            "median": 0.121,
+            "p95": 0.18
+          },
+          "timesFaster": 7.1
+        },
+        "withRatingFilter": {
+          "original": {
+            "median": 0.766,
+            "p95": 1.046
+          },
+          "fast": {
+            "median": 0.131,
+            "p95": 0.26
+          },
+          "timesFaster": 5.8
+        }
+      },
+      "indexes": {
+        "original": {
+          "median": 1.781,
+          "p95": 2.432
+        },
+        "fast": {
+          "median": 1.186,
+          "p95": 1.922
+        },
+        "timesFaster": 1.5
+      },
+      "firstSearchAfterChange": {
+        "sameWords": 0.647,
+        "wordAdded": 2.212,
+        "original": 1.033
+      }
+    },
+    {
+      "words": 5000,
+      "perKeystroke": {
+        "az": {
+          "original": {
+            "median": 1.993,
+            "p95": 3.018
+          },
+          "fast": {
+            "median": 0.361,
+            "p95": 0.569
+          },
+          "timesFaster": 5.5
+        },
+        "random": {
+          "original": {
+            "median": 2.198,
+            "p95": 8.203
+          },
+          "fast": {
+            "median": 0.353,
+            "p95": 0.487
+          },
+          "timesFaster": 6.2
+        },
+        "withRatingFilter": {
+          "original": {
+            "median": 1.958,
+            "p95": 2.44
+          },
+          "fast": {
+            "median": 0.362,
+            "p95": 0.591
+          },
+          "timesFaster": 5.4
+        }
+      },
+      "indexes": {
+        "original": {
+          "median": 4.327,
+          "p95": 5.14
+        },
+        "fast": {
+          "median": 3.259,
+          "p95": 4.287
+        },
+        "timesFaster": 1.3
+      },
+      "firstSearchAfterChange": {
+        "sameWords": 0.799,
+        "wordAdded": 4.596,
+        "original": 3.135
+      }
+    },
+    {
+      "words": 10000,
+      "perKeystroke": {
+        "az": {
+          "original": {
+            "median": 4.001,
+            "p95": 6.428
+          },
+          "fast": {
+            "median": 0.859,
+            "p95": 1.14
+          },
+          "timesFaster": 4.7
+        },
+        "random": {
+          "original": {
+            "median": 6.176,
+            "p95": 17.909
+          },
+          "fast": {
+            "median": 1.605,
+            "p95": 2.399
+          },
+          "timesFaster": 3.8
+        },
+        "withRatingFilter": {
+          "original": {
+            "median": 6.657,
+            "p95": 8.934
+          },
+          "fast": {
+            "median": 1.615,
+            "p95": 2.913
+          },
+          "timesFaster": 4.1
+        }
+      },
+      "indexes": {
+        "original": {
+          "median": 17.754,
+          "p95": 25.149
+        },
+        "fast": {
+          "median": 10.74,
+          "p95": 13.449
+        },
+        "timesFaster": 1.7
+      },
+      "firstSearchAfterChange": {
+        "sameWords": 2.565,
+        "wordAdded": 15.71,
+        "original": 6.862
+      }
+    },
+    {
+      "words": 20000,
+      "perKeystroke": {
+        "az": {
+          "original": {
+            "median": 16.643,
+            "p95": 25.316
+          },
+          "fast": {
+            "median": 3.648,
+            "p95": 5.775
+          },
+          "timesFaster": 4.6
+        },
+        "random": {
+          "original": {
+            "median": 18.328,
+            "p95": 71.929
+          },
+          "fast": {
+            "median": 3.925,
+            "p95": 6.344
+          },
+          "timesFaster": 4.7
+        },
+        "withRatingFilter": {
+          "original": {
+            "median": 16.655,
+            "p95": 21.6
+          },
+          "fast": {
+            "median": 3.858,
+            "p95": 7.264
+          },
+          "timesFaster": 4.3
+        }
+      },
+      "indexes": {
+        "original": {
+          "median": 38.307,
+          "p95": 89.068
+        },
+        "fast": {
+          "median": 26.983,
+          "p95": 32.345
+        },
+        "timesFaster": 1.4
+      },
+      "firstSearchAfterChange": {
+        "sameWords": 6.458,
+        "wordAdded": 36.589,
+        "original": 18.462
+      }
+    }
+  ]
+}

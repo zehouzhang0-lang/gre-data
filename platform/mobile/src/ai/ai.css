@@ -1,2 +1,150 @@
-.ai-account-actions,.ai-review-actions{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.chatgpt-connect{width:100%;min-height:46px}.chatgpt-connection{display:flex;flex-direction:column;gap:6px}.chatgpt-connection span,.ai-review-heading small{font-size:12px;color:var(--primary,#117f75)}.ai-model-label{display:grid;gap:8px;font-size:13px}.ai-model-label select{width:100%;min-height:42px}.ai-error{color:#a23835;font-size:13px;overflow-wrap:anywhere}.mobile-ai-review{margin:24px 0 8px;padding:18px 0;border-top:1px solid var(--line,#dae3df);user-select:text;-webkit-user-select:text}.ai-review-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}.ai-review-heading h2{margin:0;font-size:18px}.ai-review-result p{white-space:pre-wrap;line-height:1.75;overflow-wrap:anywhere}.ai-review-result h3{font-size:14px;margin:20px 0 7px}.ai-provisional{display:inline-block;background:#edf4f1;color:#557069;font-size:11px;border-radius:6px;padding:4px 8px;margin-top:15px}.ai-option{padding-bottom:10px;border-bottom:1px solid var(--line,#e1e7e4)}.ai-option h3{color:var(--primary,#117f75);font-size:16px}
-.ai-login-progress{display:flex;flex-direction:column;gap:5px;margin:12px 0;padding:12px 14px;border-radius:10px;background:#edf4f1;color:#416458;font-size:13px;line-height:1.6}.ai-login-progress small{font-size:11px;color:#6b7c74}.ai-login-progress.phase-failed{background:#fff2ee;color:#a23835}.ai-login-progress.phase-cancelled{background:#f0f2f0;color:#69756f}.ai-model-status{margin:12px 0}.ai-model-status button{margin-top:4px}.ai-connection-note{display:block;line-height:1.7;margin-top:12px}.ai-refresh-status{margin:4px 0 8px}.ai-status-errors p{margin:8px 0}
+.ai-account-actions,
+.ai-review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--c-space);
+  margin-block: calc(var(--c-space) * 2);
+}
+
+.chatgpt-connect {
+  width: 100%;
+  min-height: 46px;
+}
+
+.chatgpt-connection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--c-space);
+}
+
+.chatgpt-connection span {
+  color: var(--c-muted);
+  font-size: 12px;
+}
+
+.ai-model-label {
+  display: grid;
+  gap: var(--c-space);
+  font-size: 13px;
+}
+
+.ai-model-label select {
+  width: 100%;
+  min-height: 44px;
+}
+
+.ai-error {
+  padding-inline-start: var(--c-space);
+  border-inline-start: 2px solid var(--c-faint);
+  color: var(--c-ink);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.mobile-ai-review {
+  margin-block: calc(var(--c-space) * 3) var(--c-space);
+  padding-block: calc(var(--c-space) * 2);
+  border-top: 1px solid var(--c-line);
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.mobile-ai-review .ai-review-actions {
+  align-items: center;
+  margin-block: 0 var(--c-space);
+}
+
+.mobile-ai-review .ai-review-run {
+  min-height: 44px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--c-ink);
+  background: var(--c-tile);
+  font-size: 14px;
+}
+
+.mobile-ai-review .text-button {
+  color: var(--c-muted);
+  font-weight: 400;
+}
+
+.mobile-ai-review .ai-review-problem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--c-space);
+  margin: 0;
+  color: var(--c-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.mobile-ai-review .ai-review-problem .text-button {
+  min-height: 44px;
+  padding-inline: 0;
+  color: var(--c-ink);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.mobile-ai-review .ai-error p {
+  margin: 0;
+}
+
+.ai-review-result p {
+  white-space: pre-wrap;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.ai-review-result h3 {
+  margin-block: calc(var(--c-space) * 2.5) var(--c-space);
+  font-size: 14px;
+}
+
+.ai-provisional {
+  display: block;
+  margin-top: var(--c-space);
+  color: var(--c-muted);
+  font-size: 12px;
+}
+
+.ai-option {
+  padding-bottom: var(--c-space);
+  border-bottom: 1px solid var(--c-line);
+}
+
+.ai-option h3 {
+  color: var(--c-ink);
+  font-size: 16px;
+}
+
+.ai-login-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-block: calc(var(--c-space) * 1.5);
+  padding: calc(var(--c-space) * 1.5);
+  border-radius: var(--c-radius);
+  color: var(--c-ink);
+  background: var(--c-tile);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ai-login-progress small {
+  color: var(--c-muted);
+  font-size: 11px;
+}
+
+.ai-login-progress.phase-failed {
+  border-inline-start: 2px solid var(--c-faint);
+}
+
+.ai-model-status { margin-block: calc(var(--c-space) * 1.5); }
+.ai-model-status button { margin-top: 4px; }
+.ai-connection-note { display: block; line-height: 1.7; margin-top: calc(var(--c-space) * 1.5); }
+.ai-refresh-status { margin-block: 4px var(--c-space); }
+.ai-status-errors p { margin-block: var(--c-space); }

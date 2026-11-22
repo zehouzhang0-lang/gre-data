@@ -42,11 +42,11 @@ export default function MobileAiReview({ question, repository, vocabularyRepo, n
   };
   const cancel=async()=>{operation.current++;await stopReview().catch(()=>{});setBusy(false);setError('本次解析已停止，原作答保留。');};
   if(!attemptId)return null;
-  return <section className="mobile-ai-review" aria-label="AI题目解析">
-    <div className="ai-review-heading"><h2>AI 解析</h2>{connection?.eligible && <small>使用 ChatGPT 计划</small>}</div>
-    {connection && !connection.eligible && <p className="muted">{connection.message || '先在设置中连接 ChatGPT，即可独立解析本题。'}</p>}
-    <div className="ai-review-actions"><button className="primary" disabled={busy || connection?.available===false} onClick={run}>{busy ? '正在解析…' : result ? '重新解析本题' : '解析本题'}</button>{busy && <button onClick={cancel}>停止</button>}{connection?.available!==false && !connection?.eligible && <button onClick={onConnection}>连接 ChatGPT</button>}</div>
-    {error && <div role="alert" className="ai-error"><p>{error}</p>{/额度|limit/i.test(error) && <button onClick={()=>openUsage().catch(e=>setError(e.message))}>管理额度</button>}</div>}
+  const problem = connection && !connection.eligible ? connection.message || '还没有连接 ChatGPT' : '';
+  return <section className="mobile-ai-review" aria-label="AI 解析">
+    <div className="ai-review-actions"><button className="ai-review-run" disabled={busy || connection?.available===false} onClick={run}>{busy ? '解析中…' : result ? '重新解析' : '解析'}</button>{busy && <button className="text-button" onClick={cancel}>停止</button>}</div>
+    {problem && <p className="ai-review-problem"><span>{problem}</span><button className="text-button" onClick={onConnection}>去设置</button></p>}
+    {error && error !== problem && <div role="alert" className="ai-error"><p>{error}</p>{/额度|limit/i.test(error) && <button className="text-button" onClick={()=>openUsage().catch(e=>setError(e.message))}>管理额度</button>}</div>}
     {result && <div className="ai-review-result"><span className="ai-provisional">AI 暂定讲解</span><h3>完整题干翻译</h3><p>{result.question_translation}</p>
       {result.option_explanations.map(option=><article key={option.label} className="ai-option"><h3>{option.label}</h3><p><strong>含义：</strong>{option.meaning}</p><p><strong>翻译：</strong>{option.translation}</p><p><strong>依据：</strong>{option.reasoning}</p></article>)}
       <h3>推理与证据</h3><p>{result.summary}</p><p>{result.evidence}</p><p>{result.reasoning_gap}</p><h3>下次怎么做</h3><p>{result.next_action}</p>

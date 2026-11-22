@@ -1,0 +1,2327 @@
+{
+  "startedAt": "2026-11-22T06:57:49.326Z",
+  "target": "http://127.0.0.1:4188/",
+  "isolation": "New headless Chrome browser and fresh Playwright contexts; no real browser or personal storage accessed.",
+  "fallback": "Parent attempted built-in browser; Browser is not available. Using Playwright Chrome.",
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "build": "Vite development",
+    "data": "168 synthetic words, no personal library",
+    "cpuThrottle": "none",
+    "browser": "158.0.8127.36"
+  },
+  "checks": [
+    {
+      "name": "initial 28 of 168, four columns and seven rows",
+      "status": "pass",
+      "elapsedMs": 11,
+      "evidence": {
+        "total": 168,
+        "pages": 6,
+        "geometry": {
+          "columns": 4,
+          "rows": 7,
+          "count": 28
+        }
+      }
+    },
+    {
+      "name": "search clear returns page three with same IDs",
+      "status": "pass",
+      "elapsedMs": 277,
+      "evidence": {
+        "page": 3,
+        "ids": [
+          "demo-57",
+          "demo-58",
+          "demo-59",
+          "demo-60",
+          "demo-61",
+          "demo-62",
+          "demo-63",
+          "demo-64",
+          "demo-65",
+          "demo-66",
+          "demo-67",
+          "demo-68",
+          "demo-69",
+          "demo-70",
+          "demo-71",
+          "demo-72",
+          "demo-73",
+          "demo-74",
+          "demo-75",
+          "demo-76",
+          "demo-77",
+          "demo-78",
+          "demo-79",
+          "demo-80",
+          "demo-81",
+          "demo-82",
+          "demo-83",
+          "demo-84"
+        ]
+      }
+    },
+    {
+      "name": "filter, sort and page survive search clear",
+      "status": "pass",
+      "elapsedMs": 177,
+      "evidence": {
+        "filter": "clear",
+        "sort": "az",
+        "page": 2
+      }
+    },
+    {
+      "name": "Fresh moves exact batch three pages, no duplicate or loss, undo restores",
+      "status": "pass",
+      "elapsedMs": 342,
+      "evidence": {
+        "movedBatch": [
+          "demo-1",
+          "demo-2",
+          "demo-3",
+          "demo-4",
+          "demo-5",
+          "demo-6",
+          "demo-7",
+          "demo-8",
+          "demo-9",
+          "demo-10",
+          "demo-11",
+          "demo-12",
+          "demo-13",
+          "demo-14",
+          "demo-15",
+          "demo-16",
+          "demo-17",
+          "demo-18",
+          "demo-19",
+          "demo-20",
+          "demo-21",
+          "demo-22",
+          "demo-23",
+          "demo-24",
+          "demo-25",
+          "demo-26",
+          "demo-27",
+          "demo-28"
+        ],
+        "destinationPage": 4,
+        "total": 168
+      }
+    },
+    {
+      "name": "Fresh disabled on last page",
+      "status": "pass",
+      "elapsedMs": 178,
+      "evidence": {
+        "page": 6
+      }
+    },
+    {
+      "name": "click flips; mouse long press selects without flipping",
+      "status": "pass",
+      "elapsedMs": 861,
+      "evidence": {
+        "selected": [
+          "demo-1"
+        ],
+        "flips": []
+      }
+    },
+    {
+      "name": "CDP touch long press selects without ghost click",
+      "status": "pass",
+      "elapsedMs": 619,
+      "evidence": {
+        "selected": [
+          "demo-1"
+        ],
+        "flips": []
+      }
+    },
+    {
+      "name": "CDP one-finger left/right pages without flip or selection",
+      "status": "pass",
+      "elapsedMs": 804,
+      "evidence": {
+        "leftPage": 2,
+        "rightPage": 1
+      }
+    },
+    {
+      "name": "CDP two-finger upward Fresh fires once without flip or selection",
+      "status": "pass",
+      "elapsedMs": 403,
+      "evidence": {
+        "page": 1,
+        "selected": [],
+        "flips": []
+      }
+    },
+    {
+      "name": "reduced motion preference suppresses grid animation",
+      "status": "pass",
+      "elapsedMs": 165,
+      "evidence": {
+        "systemAnimations": 0,
+        "manualAnimations": 0
+      }
+    },
+    {
+      "name": "review 7 to 8 persists across tab switch and reload",
+      "status": "pass",
+      "elapsedMs": 1237,
+      "evidence": {
+        "progress": 8,
+        "saved": true,
+        "sessionText": "8 / 20 词已练"
+      }
+    },
+    {
+      "name": "practice draft remains when navigating away and back",
+      "status": "pass",
+      "elapsedMs": 200,
+      "evidence": {
+        "selected": "B\nconfusing",
+        "savedText": "本题草稿已保存"
+      }
+    },
+    {
+      "name": "360px mobile no horizontal overflow and 4x7",
+      "status": "pass",
+      "elapsedMs": 814,
+      "evidence": {
+        "viewport": 360,
+        "document": 360,
+        "phone": 360,
+        "main": 360,
+        "mainScroll": 360,
+        "columns": 4,
+        "rows": 7
+      }
+    },
+    {
+      "name": "390px mobile no horizontal overflow and 4x7",
+      "status": "pass",
+      "elapsedMs": 840,
+      "evidence": {
+        "viewport": 390,
+        "document": 390,
+        "phone": 390,
+        "main": 390,
+        "mainScroll": 390,
+        "columns": 4,
+        "rows": 7
+      }
+    },
+    {
+      "name": "clear screenshots wall/search/review",
+      "status": "pass",
+      "elapsedMs": 476,
+      "evidence": {
+        "theme": "clear"
+      }
+    },
+    {
+      "name": "paper screenshots wall/search/review",
+      "status": "pass",
+      "elapsedMs": 485,
+      "evidence": {
+        "theme": "paper"
+      }
+    },
+    {
+      "name": "clear twenty samples per search/clear/next/previous/Fresh/undo",
+      "status": "pass",
+      "elapsedMs": 9669,
+      "evidence": {
+        "search": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.35,
+            "p95Ms": 9.9,
+            "minMs": 7.4,
+            "maxMs": 10.2
+          },
+          "paintProxy": {
+            "medianMs": 12,
+            "p95Ms": 13.4,
+            "minMs": 10.2,
+            "maxMs": 20.6
+          }
+        },
+        "clear": {
+          "n": 20,
+          "commit": {
+            "medianMs": 9.1,
+            "p95Ms": 10,
+            "minMs": 7.8,
+            "maxMs": 10.1
+          },
+          "paintProxy": {
+            "medianMs": 13.2,
+            "p95Ms": 17.4,
+            "minMs": 11.2,
+            "maxMs": 19.3
+          }
+        },
+        "next": {
+          "n": 20,
+          "commit": {
+            "medianMs": 7.9,
+            "p95Ms": 9.7,
+            "minMs": 7,
+            "maxMs": 10.5
+          },
+          "paintProxy": {
+            "medianMs": 11.25,
+            "p95Ms": 14,
+            "minMs": 9.8,
+            "maxMs": 14
+          }
+        },
+        "previous": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.1,
+            "p95Ms": 9.1,
+            "minMs": 7.3,
+            "maxMs": 9.3
+          },
+          "paintProxy": {
+            "medianMs": 11.95,
+            "p95Ms": 16.7,
+            "minMs": 10.7,
+            "maxMs": 17.3
+          }
+        },
+        "fresh": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.3,
+            "p95Ms": 9.6,
+            "minMs": 7.4,
+            "maxMs": 10.2
+          },
+          "paintProxy": {
+            "medianMs": 12.55,
+            "p95Ms": 17.4,
+            "minMs": 10.6,
+            "maxMs": 17.4
+          }
+        },
+        "undo": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.5,
+            "p95Ms": 9.3,
+            "minMs": 7.5,
+            "maxMs": 10.5
+          },
+          "paintProxy": {
+            "medianMs": 11.7,
+            "p95Ms": 13.7,
+            "minMs": 10.6,
+            "maxMs": 14.2
+          }
+        }
+      }
+    },
+    {
+      "name": "paper twenty samples per search/clear/next/previous/Fresh/undo",
+      "status": "pass",
+      "elapsedMs": 9415,
+      "evidence": {
+        "search": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.4,
+            "p95Ms": 9.4,
+            "minMs": 7.2,
+            "maxMs": 9.5
+          },
+          "paintProxy": {
+            "medianMs": 12.3,
+            "p95Ms": 14.2,
+            "minMs": 9.9,
+            "maxMs": 16.7
+          }
+        },
+        "clear": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.3,
+            "p95Ms": 9.4,
+            "minMs": 7.1,
+            "maxMs": 9.6
+          },
+          "paintProxy": {
+            "medianMs": 12.45,
+            "p95Ms": 18.1,
+            "minMs": 10.5,
+            "maxMs": 18.3
+          }
+        },
+        "next": {
+          "n": 20,
+          "commit": {
+            "medianMs": 7.8,
+            "p95Ms": 9.4,
+            "minMs": 7.1,
+            "maxMs": 9.4
+          },
+          "paintProxy": {
+            "medianMs": 11.15,
+            "p95Ms": 13.1,
+            "minMs": 10.1,
+            "maxMs": 13.2
+          }
+        },
+        "previous": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.1,
+            "p95Ms": 9.8,
+            "minMs": 6.8,
+            "maxMs": 9.9
+          },
+          "paintProxy": {
+            "medianMs": 11.35,
+            "p95Ms": 17.7,
+            "minMs": 10.3,
+            "maxMs": 17.9
+          }
+        },
+        "fresh": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.55,
+            "p95Ms": 10.9,
+            "minMs": 6.8,
+            "maxMs": 11.3
+          },
+          "paintProxy": {
+            "medianMs": 12.6,
+            "p95Ms": 15.2,
+            "minMs": 10.6,
+            "maxMs": 18.3
+          }
+        },
+        "undo": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.25,
+            "p95Ms": 9.9,
+            "minMs": 7.2,
+            "maxMs": 11.3
+          },
+          "paintProxy": {
+            "medianMs": 11.55,
+            "p95Ms": 14.4,
+            "minMs": 10.5,
+            "maxMs": 14.5
+          }
+        }
+      }
+    },
+    {
+      "name": "Fresh page three then search edits restore original filter/sort/page/IDs, with and without reload",
+      "status": "pass",
+      "elapsedMs": 1189,
+      "evidence": [
+        {
+          "reload": false,
+          "before": {
+            "filter": "all",
+            "sort": "demo",
+            "page": 3,
+            "ids": [
+              "demo-85",
+              "demo-86",
+              "demo-87",
+              "demo-88",
+              "demo-89",
+              "demo-90",
+              "demo-91",
+              "demo-92",
+              "demo-93",
+              "demo-94",
+              "demo-95",
+              "demo-96",
+              "demo-97",
+              "demo-98",
+              "demo-99",
+              "demo-100",
+              "demo-101",
+              "demo-102",
+              "demo-103",
+              "demo-104",
+              "demo-105",
+              "demo-106",
+              "demo-107",
+              "demo-108",
+              "demo-109",
+              "demo-110",
+              "demo-111",
+              "demo-112"
+            ]
+          },
+          "searching": {
+            "filter": "clear",
+            "sort": "az"
+          },
+          "after": {
+            "filter": "all",
+            "sort": "demo",
+            "page": 3,
+            "ids": [
+              "demo-85",
+              "demo-86",
+              "demo-87",
+              "demo-88",
+              "demo-89",
+              "demo-90",
+              "demo-91",
+              "demo-92",
+              "demo-93",
+              "demo-94",
+              "demo-95",
+              "demo-96",
+              "demo-97",
+              "demo-98",
+              "demo-99",
+              "demo-100",
+              "demo-101",
+              "demo-102",
+              "demo-103",
+              "demo-104",
+              "demo-105",
+              "demo-106",
+              "demo-107",
+              "demo-108",
+              "demo-109",
+              "demo-110",
+              "demo-111",
+              "demo-112"
+            ]
+          }
+        },
+        {
+          "reload": true,
+          "before": {
+            "filter": "all",
+            "sort": "demo",
+            "page": 3,
+            "ids": [
+              "demo-85",
+              "demo-86",
+              "demo-87",
+              "demo-88",
+              "demo-89",
+              "demo-90",
+              "demo-91",
+              "demo-92",
+              "demo-93",
+              "demo-94",
+              "demo-95",
+              "demo-96",
+              "demo-97",
+              "demo-98",
+              "demo-99",
+              "demo-100",
+              "demo-101",
+              "demo-102",
+              "demo-103",
+              "demo-104",
+              "demo-105",
+              "demo-106",
+              "demo-107",
+              "demo-108",
+              "demo-109",
+              "demo-110",
+              "demo-111",
+              "demo-112"
+            ]
+          },
+          "searching": {
+            "filter": "clear",
+            "sort": "az"
+          },
+          "after": {
+            "filter": "all",
+            "sort": "demo",
+            "page": 3,
+            "ids": [
+              "demo-85",
+              "demo-86",
+              "demo-87",
+              "demo-88",
+              "demo-89",
+              "demo-90",
+              "demo-91",
+              "demo-92",
+              "demo-93",
+              "demo-94",
+              "demo-95",
+              "demo-96",
+              "demo-97",
+              "demo-98",
+              "demo-99",
+              "demo-100",
+              "demo-101",
+              "demo-102",
+              "demo-103",
+              "demo-104",
+              "demo-105",
+              "demo-106",
+              "demo-107",
+              "demo-108",
+              "demo-109",
+              "demo-110",
+              "demo-111",
+              "demo-112"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "favicon resource loads without HTTP or console errors after fix",
+      "status": "pass",
+      "elapsedMs": 0,
+      "evidence": {
+        "httpErrors": [],
+        "consoleErrors": []
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "clear-wall-initial",
+      "path": "screenshots/clear-wall-initial.png"
+    },
+    {
+      "name": "mobile-360-wall",
+      "path": "screenshots/mobile-360-wall.png"
+    },
+    {
+      "name": "mobile-390-wall",
+      "path": "screenshots/mobile-390-wall.png"
+    },
+    {
+      "name": "clear-wall",
+      "path": "screenshots/clear-wall.png"
+    },
+    {
+      "name": "clear-search",
+      "path": "screenshots/clear-search.png"
+    },
+    {
+      "name": "clear-review",
+      "path": "screenshots/clear-review.png"
+    },
+    {
+      "name": "paper-wall",
+      "path": "screenshots/paper-wall.png"
+    },
+    {
+      "name": "paper-search",
+      "path": "screenshots/paper-search.png"
+    },
+    {
+      "name": "paper-review",
+      "path": "screenshots/paper-review.png"
+    },
+    {
+      "name": "clear-wall-latest",
+      "path": "screenshots/clear-wall-latest.png"
+    },
+    {
+      "name": "clear-review-latest",
+      "path": "screenshots/clear-review-latest.png"
+    },
+    {
+      "name": "paper-wall-latest",
+      "path": "screenshots/paper-wall-latest.png"
+    },
+    {
+      "name": "paper-review-latest",
+      "path": "screenshots/paper-review-latest.png"
+    }
+  ],
+  "performance": {
+    "clear": {
+      "environment": "warm Vite development, 1440x1050 desktop Chrome viewport, 390px phone canvas, 168 synthetic words; no throttle",
+      "samples": [
+        {
+          "action": "search",
+          "commitMs": 9.5,
+          "paintProxyMs": 12.5,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.900000000372529,
+          "paintProxyMs": 12.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 8,
+          "paintProxyMs": 11.199999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.100000001490116,
+          "paintProxyMs": 11.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.300000000745058,
+          "paintProxyMs": 17.40000000037253,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 9.299999998882413,
+          "paintProxyMs": 12.5,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.799999998882413,
+          "paintProxyMs": 13.399999998509884,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.199999999254942,
+          "paintProxyMs": 13.400000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.300000000745058,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.399999998509884,
+          "paintProxyMs": 16.699999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.800000000745058,
+          "paintProxyMs": 12.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 11.199999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 9.100000001490116,
+          "paintProxyMs": 12,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.800000000745058,
+          "paintProxyMs": 13.199999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.800000000745058,
+          "paintProxyMs": 11,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 9.099999999627471,
+          "paintProxyMs": 17.300000000745058,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.5,
+          "paintProxyMs": 14.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.599999999627471,
+          "paintProxyMs": 11.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 9.399999998509884,
+          "paintProxyMs": 12.299999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 10,
+          "paintProxyMs": 13.600000001490116,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.700000001117587,
+          "paintProxyMs": 11,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 11.799999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.699999999254942,
+          "paintProxyMs": 17.300000000745058,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 9.199999999254942,
+          "paintProxyMs": 12.299999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.299999998882413,
+          "paintProxyMs": 13,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.199999999254942,
+          "paintProxyMs": 11.699999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.899999998509884,
+          "paintProxyMs": 11.899999998509884,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.699999999254942,
+          "paintProxyMs": 12.400000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.299999998882413,
+          "paintProxyMs": 11.400000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.099999999627471,
+          "paintProxyMs": 11.5,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 10,
+          "paintProxyMs": 14,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.5,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.899999998509884,
+          "paintProxyMs": 12.099999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.800000000745058,
+          "paintProxyMs": 11.400000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.799999998882413,
+          "paintProxyMs": 12.900000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.199999999254942,
+          "paintProxyMs": 12.199999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.599999999627471,
+          "paintProxyMs": 13.200000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 11.600000001490116,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.800000000745058,
+          "paintProxyMs": 11.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.300000000745058,
+          "paintProxyMs": 11.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.599999999627471,
+          "paintProxyMs": 11.800000000745058,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 9.199999999254942,
+          "paintProxyMs": 13,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.5,
+          "paintProxyMs": 12.300000000745058,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 10.5,
+          "paintProxyMs": 14,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 10.699999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 11.400000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.800000000745058,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 9.899999998509884,
+          "paintProxyMs": 20.59999999962747,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.599999999627471,
+          "paintProxyMs": 17.40000000037253,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 11.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.099999999627471,
+          "paintProxyMs": 11.299999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 9.599999999627471,
+          "paintProxyMs": 13.699999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 11.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 10.199999999254942,
+          "paintProxyMs": 13.400000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 10.100000001490116,
+          "paintProxyMs": 14.200000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.399999998509884,
+          "paintProxyMs": 10.399999998509884,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.800000000745058,
+          "paintProxyMs": 12,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 11.200000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.800000000745058,
+          "paintProxyMs": 13.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.100000001490116,
+          "paintProxyMs": 12,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.099999999627471,
+          "paintProxyMs": 13.200000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.5,
+          "paintProxyMs": 13,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.299999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.800000000745058,
+          "paintProxyMs": 11.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.5,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 7.399999998509884,
+          "paintProxyMs": 10.199999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.700000001117587,
+          "paintProxyMs": 12.400000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.899999998509884,
+          "paintProxyMs": 14,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.099999999627471,
+          "paintProxyMs": 15.699999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.300000000745058,
+          "paintProxyMs": 16.600000001490116,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.800000000745058,
+          "paintProxyMs": 11.400000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.199999999254942,
+          "paintProxyMs": 11.199999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 11.5,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7,
+          "paintProxyMs": 9.799999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 9.299999998882413,
+          "paintProxyMs": 12.699999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 17.200000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 9,
+          "paintProxyMs": 12.5,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.699999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.100000001490116,
+          "paintProxyMs": 13.200000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 11.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 11,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.399999998509884,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.5,
+          "paintProxyMs": 10.799999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8,
+          "paintProxyMs": 11.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 7.800000000745058,
+          "paintProxyMs": 11.200000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 9.699999999254942,
+          "paintProxyMs": 12.899999998509884,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.199999999254942,
+          "paintProxyMs": 11.300000000745058,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.5,
+          "paintProxyMs": 12.099999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.799999998882413,
+          "paintProxyMs": 10.799999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 7.700000001117587,
+          "paintProxyMs": 10.900000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9,
+          "paintProxyMs": 19.299999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.799999998882413,
+          "paintProxyMs": 11.199999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8,
+          "paintProxyMs": 13,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.400000000372529,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.700000001117587,
+          "paintProxyMs": 11.5,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 7.800000000745058,
+          "paintProxyMs": 10.800000000745058,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.300000000745058,
+          "paintProxyMs": 11.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.799999998882413,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.600000001490116,
+          "paintProxyMs": 16.100000001490116,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.800000000745058,
+          "paintProxyMs": 11.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 10.5,
+          "paintProxyMs": 14.199999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.800000000745058,
+          "paintProxyMs": 12,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 12.099999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 11,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.399999998509884,
+          "paintProxyMs": 12.199999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 10.199999999254942,
+          "paintProxyMs": 13.5,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.900000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 12.200000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.5,
+          "paintProxyMs": 12.799999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.899999998509884,
+          "paintProxyMs": 10.699999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 13.400000000372529,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 17.40000000037253,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "clear"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.200000001117587,
+          "paintProxyMs": 11.300000000745058,
+          "theme": "clear"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.5,
+          "paintProxyMs": 13.5,
+          "theme": "clear"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.799999998882413,
+          "paintProxyMs": 11.799999998882413,
+          "theme": "clear"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.300000000745058,
+          "paintProxyMs": 10.700000001117587,
+          "theme": "clear"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 16.699999999254942,
+          "theme": "clear"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 11.699999999254942,
+          "theme": "clear"
+        }
+      ],
+      "summary": {
+        "search": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.35,
+            "p95Ms": 9.9,
+            "minMs": 7.4,
+            "maxMs": 10.2
+          },
+          "paintProxy": {
+            "medianMs": 12,
+            "p95Ms": 13.4,
+            "minMs": 10.2,
+            "maxMs": 20.6
+          }
+        },
+        "clear": {
+          "n": 20,
+          "commit": {
+            "medianMs": 9.1,
+            "p95Ms": 10,
+            "minMs": 7.8,
+            "maxMs": 10.1
+          },
+          "paintProxy": {
+            "medianMs": 13.2,
+            "p95Ms": 17.4,
+            "minMs": 11.2,
+            "maxMs": 19.3
+          }
+        },
+        "next": {
+          "n": 20,
+          "commit": {
+            "medianMs": 7.9,
+            "p95Ms": 9.7,
+            "minMs": 7,
+            "maxMs": 10.5
+          },
+          "paintProxy": {
+            "medianMs": 11.25,
+            "p95Ms": 14,
+            "minMs": 9.8,
+            "maxMs": 14
+          }
+        },
+        "previous": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.1,
+            "p95Ms": 9.1,
+            "minMs": 7.3,
+            "maxMs": 9.3
+          },
+          "paintProxy": {
+            "medianMs": 11.95,
+            "p95Ms": 16.7,
+            "minMs": 10.7,
+            "maxMs": 17.3
+          }
+        },
+        "fresh": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.3,
+            "p95Ms": 9.6,
+            "minMs": 7.4,
+            "maxMs": 10.2
+          },
+          "paintProxy": {
+            "medianMs": 12.55,
+            "p95Ms": 17.4,
+            "minMs": 10.6,
+            "maxMs": 17.4
+          }
+        },
+        "undo": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.5,
+            "p95Ms": 9.3,
+            "minMs": 7.5,
+            "maxMs": 10.5
+          },
+          "paintProxy": {
+            "medianMs": 11.7,
+            "p95Ms": 13.7,
+            "minMs": 10.6,
+            "maxMs": 14.2
+          }
+        }
+      }
+    },
+    "paper": {
+      "environment": "warm Vite development, 1440x1050 desktop Chrome viewport, 390px phone canvas, 168 synthetic words; no throttle",
+      "samples": [
+        {
+          "action": "search",
+          "commitMs": 7.299999998882413,
+          "paintProxyMs": 9.899999998509884,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 7.700000001117587,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.300000000745058,
+          "paintProxyMs": 11.200000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.100000001490116,
+          "paintProxyMs": 11.800000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.599999999627471,
+          "paintProxyMs": 12.199999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.200000001117587,
+          "paintProxyMs": 13.900000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 9.300000000745058,
+          "paintProxyMs": 12.599999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.599999999627471,
+          "paintProxyMs": 18.09999999962747,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.100000001490116,
+          "paintProxyMs": 10.200000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.600000001490116,
+          "paintProxyMs": 10.400000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.299999998882413,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 9,
+          "paintProxyMs": 12.399999998509884,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 7.5,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.799999998882413,
+          "paintProxyMs": 12.5,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 9.400000000372529,
+          "paintProxyMs": 12.700000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.900000000372529,
+          "paintProxyMs": 12.5,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 10.200000001117587,
+          "paintProxyMs": 14,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.799999998882413,
+          "paintProxyMs": 11.199999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 9.5,
+          "paintProxyMs": 12.800000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 11.800000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.200000001117587,
+          "paintProxyMs": 10.099999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 6.799999998882413,
+          "paintProxyMs": 14.5,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 10.900000000372529,
+          "paintProxyMs": 14.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 11.300000000745058,
+          "paintProxyMs": 14.400000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 9.400000000372529,
+          "paintProxyMs": 12.900000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.900000000372529,
+          "paintProxyMs": 17,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.200000001117587,
+          "paintProxyMs": 10.100000001490116,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.099999999627471,
+          "paintProxyMs": 11.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.600000001490116,
+          "paintProxyMs": 11.200000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.5,
+          "paintProxyMs": 14.5,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 7.900000000372529,
+          "paintProxyMs": 16.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 10.900000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.099999999627471,
+          "paintProxyMs": 11.299999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.199999999254942,
+          "paintProxyMs": 11.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.100000001490116,
+          "paintProxyMs": 11.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 9.099999999627471,
+          "paintProxyMs": 12.5,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.900000000372529,
+          "paintProxyMs": 12.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.199999999254942,
+          "paintProxyMs": 12.399999998509884,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.599999999627471,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.900000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 9.299999998882413,
+          "paintProxyMs": 12.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.199999999254942,
+          "paintProxyMs": 10.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 7.799999998882413,
+          "paintProxyMs": 10.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.400000000372529,
+          "paintProxyMs": 12.700000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.200000001117587,
+          "paintProxyMs": 11.700000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.599999999627471,
+          "paintProxyMs": 11.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.300000000745058,
+          "paintProxyMs": 11.700000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.599999999627471,
+          "paintProxyMs": 11.799999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.099999999627471,
+          "paintProxyMs": 12.5,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.199999999254942,
+          "paintProxyMs": 18.299999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.599999999627471,
+          "paintProxyMs": 10.800000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.599999999627471,
+          "paintProxyMs": 10.799999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 9.100000001490116,
+          "paintProxyMs": 12.5,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.099999999627471,
+          "paintProxyMs": 11.900000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 11.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.300000000745058,
+          "paintProxyMs": 13.200000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 9.199999999254942,
+          "paintProxyMs": 12.400000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.900000000372529,
+          "paintProxyMs": 17.90000000037253,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 9.699999999254942,
+          "paintProxyMs": 12.799999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 10.5,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 9.200000001117587,
+          "paintProxyMs": 13.700000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 7.899999998509884,
+          "paintProxyMs": 11.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.5,
+          "paintProxyMs": 10.5,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.300000000745058,
+          "paintProxyMs": 10.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 9.800000000745058,
+          "paintProxyMs": 13.199999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 9.899999998509884,
+          "paintProxyMs": 13.299999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 11.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.299999998882413,
+          "paintProxyMs": 12.299999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.599999999627471,
+          "paintProxyMs": 10.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8,
+          "paintProxyMs": 11.199999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 9.599999999627471,
+          "paintProxyMs": 18.299999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.299999998882413,
+          "paintProxyMs": 11.099999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 9.300000000745058,
+          "paintProxyMs": 14.200000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 9.299999998882413,
+          "paintProxyMs": 12.799999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 9.400000000372529,
+          "paintProxyMs": 13.099999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 9.800000000745058,
+          "paintProxyMs": 13.400000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.400000000372529,
+          "paintProxyMs": 10.599999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.599999999627471,
+          "paintProxyMs": 11,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.799999998882413,
+          "paintProxyMs": 13,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.700000001117587,
+          "paintProxyMs": 12.800000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.799999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.799999998882413,
+          "paintProxyMs": 12.299999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 11.300000000745058,
+          "paintProxyMs": 15.200000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 10.900000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.300000000745058,
+          "paintProxyMs": 11.400000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 12.199999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.099999999627471,
+          "paintProxyMs": 11.400000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 8.199999999254942,
+          "paintProxyMs": 11.399999998509884,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.799999998882413,
+          "paintProxyMs": 11.099999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.100000001490116,
+          "paintProxyMs": 11.200000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.699999999254942,
+          "paintProxyMs": 12.299999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 7.599999999627471,
+          "paintProxyMs": 11,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 8,
+          "paintProxyMs": 11.100000001490116,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.600000001490116,
+          "paintProxyMs": 10.700000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.599999999627471,
+          "paintProxyMs": 10.899999998509884,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.299999998882413,
+          "paintProxyMs": 11.399999998509884,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.800000000745058,
+          "paintProxyMs": 12.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 11.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.400000000372529,
+          "paintProxyMs": 13.200000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 9.900000000372529,
+          "paintProxyMs": 17.700000001117587,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 6.799999998882413,
+          "paintProxyMs": 14.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.5,
+          "paintProxyMs": 11.599999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 8.100000001490116,
+          "paintProxyMs": 12.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 7.400000000372529,
+          "paintProxyMs": 10.5,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.599999999627471,
+          "paintProxyMs": 10.5,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.400000000372529,
+          "paintProxyMs": 10.800000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 8.5,
+          "paintProxyMs": 12,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 9.199999999254942,
+          "paintProxyMs": 12.899999998509884,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 7.199999999254942,
+          "paintProxyMs": 10,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 7.5,
+          "paintProxyMs": 15.299999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 8.400000000372529,
+          "paintProxyMs": 11.300000000745058,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.800000000745058,
+          "paintProxyMs": 10.699999999254942,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 10,
+          "paintProxyMs": 14.599999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8,
+          "paintProxyMs": 11,
+          "theme": "paper"
+        },
+        {
+          "action": "search",
+          "commitMs": 7.200000001117587,
+          "paintProxyMs": 10.100000001490116,
+          "theme": "paper"
+        },
+        {
+          "action": "clear",
+          "commitMs": 7.099999999627471,
+          "paintProxyMs": 15.099999999627471,
+          "theme": "paper"
+        },
+        {
+          "action": "next",
+          "commitMs": 7.100000001490116,
+          "paintProxyMs": 10.400000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "previous",
+          "commitMs": 7.699999999254942,
+          "paintProxyMs": 10.799999998882413,
+          "theme": "paper"
+        },
+        {
+          "action": "fresh",
+          "commitMs": 7.599999999627471,
+          "paintProxyMs": 12.900000000372529,
+          "theme": "paper"
+        },
+        {
+          "action": "undo",
+          "commitMs": 8.200000001117587,
+          "paintProxyMs": 11.5,
+          "theme": "paper"
+        }
+      ],
+      "summary": {
+        "search": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.4,
+            "p95Ms": 9.4,
+            "minMs": 7.2,
+            "maxMs": 9.5
+          },
+          "paintProxy": {
+            "medianMs": 12.3,
+            "p95Ms": 14.2,
+            "minMs": 9.9,
+            "maxMs": 16.7
+          }
+        },
+        "clear": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.3,
+            "p95Ms": 9.4,
+            "minMs": 7.1,
+            "maxMs": 9.6
+          },
+          "paintProxy": {
+            "medianMs": 12.45,
+            "p95Ms": 18.1,
+            "minMs": 10.5,
+            "maxMs": 18.3
+          }
+        },
+        "next": {
+          "n": 20,
+          "commit": {
+            "medianMs": 7.8,
+            "p95Ms": 9.4,
+            "minMs": 7.1,
+            "maxMs": 9.4
+          },
+          "paintProxy": {
+            "medianMs": 11.15,
+            "p95Ms": 13.1,
+            "minMs": 10.1,
+            "maxMs": 13.2
+          }
+        },
+        "previous": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.1,
+            "p95Ms": 9.8,
+            "minMs": 6.8,
+            "maxMs": 9.9
+          },
+          "paintProxy": {
+            "medianMs": 11.35,
+            "p95Ms": 17.7,
+            "minMs": 10.3,
+            "maxMs": 17.9
+          }
+        },
+        "fresh": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.55,
+            "p95Ms": 10.9,
+            "minMs": 6.8,
+            "maxMs": 11.3
+          },
+          "paintProxy": {
+            "medianMs": 12.6,
+            "p95Ms": 15.2,
+            "minMs": 10.6,
+            "maxMs": 18.3
+          }
+        },
+        "undo": {
+          "n": 20,
+          "commit": {
+            "medianMs": 8.25,
+            "p95Ms": 9.9,
+            "minMs": 7.2,
+            "maxMs": 11.3
+          },
+          "paintProxy": {
+            "medianMs": 11.55,
+            "p95Ms": 14.4,
+            "minMs": 10.5,
+            "maxMs": 14.5
+          }
+        }
+      }
+    }
+  },
+  "errors": [
+    {
+      "type": "console",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "limitations": [
+    "Desktop Chrome CDP touch emulation is not physical Android WebView or finger ergonomics verification.",
+    "commitMs measures prototype handler to React layout effect; paintProxyMs is a double-requestAnimationFrame proxy, not actual display presentation.",
+    "No comparable production baseline; these results cannot support a production speedup claim.",
+    "IME composition, TalkBack, physical keyboard occlusion, safe area and Android lifecycle remain device checks."
+  ],
+  "completedAt": "2026-11-22T06:59:49.646Z",
+  "summary": {
+    "passed": 20,
+    "failed": 0
+  },
+  "resourceDiagnostic": [
+    {
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:4188/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "focusedFollowup": {
+    "startedAt": "2026-11-22T06:59:45.710Z",
+    "reason": "Search-origin restore fix; only this regression is rerun. Previous performance samples retained and not remeasured.",
+    "performanceNote": "Existing 20-sample measurements predate the searchOrigin edge-case fix; not remeasured.",
+    "resourceFailures": []
+  }
+}

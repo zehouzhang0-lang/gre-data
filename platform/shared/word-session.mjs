@@ -43,10 +43,28 @@ export function drillResult(item,payload) {
   const answer=normalizeSpelling(payload.answer),full=normalizeSpelling(item.word);
   return answer===full || payload.stage==='cloze'&&answer===normalizeSpelling(clozeFor(item.word).missing)?'correct':'incorrect';
 }
+// Rounds created with order:'spaced' use one queue instead of stage-by-stage passes: a correct answer sends the
+// word to the back for its next stage, a miss brings the same card back after SPACED_GAP other cards.
+// Rounds without the field keep the original order, so every earlier record still replays unchanged.
+export const SPACED_GAP = 3;
+function spacedProgress(session,relevant,stages) {
+  const queue=[...session.words],at=new Map(session.words.map(word=>[word,0]));
+  let passed=0;
+  for(const drill of relevant) {
+    const word=queue[0];
+    if(word===undefined)break;
+    if(drill.word!==word||drill.stage!==stages[at.get(word)])continue;
+    queue.shift();
+    if(drill.result==='correct') {passed++;at.set(word,at.get(word)+1);if(at.get(word)<stages.length)queue.push(word);}
+    else queue.splice(Math.min(SPACED_GAP,queue.length),0,word);
+  }
+  return {passed,next:queue.length?{stage:stages[at.get(queue[0])],word:queue[0],remaining:queue.length}:null};
+}
 export function roundProgress(session,drills=[],recalls=[]) {
   const relevant=drills.filter(d=>d.session_id===session.session_id),stages=stagesFor(session),completed=new Set(recalls.filter(r=>r.session_id===session.session_id&&r.mode==='multistage'&&session.words.includes(r.word)).map(r=>r.word));
   let next=null,passed=0;
-  for(const stage of stages) {
+  if(session.order==='spaced')({next,passed}=spacedProgress(session,relevant,stages));
+  else for(const stage of stages) {
     const queue=[...session.words],seen=new Set();
     for(const drill of relevant.filter(d=>d.stage===stage)) {
       if(seen.has(drill.word))continue;

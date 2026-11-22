@@ -73,9 +73,9 @@ export async function openRepository(options = {}) {
     return event;
   }
   const wordNames = words => words.map(w => typeof w === 'string' ? w : w.word);
-  function addReviewRound(next, { words, name, meaning_passes = 2, task_id, day, deadline }) {
+  function addReviewRound(next, { words, name, meaning_passes = 2, order, task_id, day, deadline }) {
     const session_id = makeId();
-    addEvent(next, 'vocab_session', { session_id, words: wordNames(words), meaning_passes });
+    addEvent(next, 'vocab_session', { session_id, words: wordNames(words), meaning_passes, ...(order ? { order } : {}) });
     addEvent(next, 'vocab_review_round', { session_id, name, pinned: false, deleted: false, ...(task_id ? { task_id, day, deadline } : {}) });
     return session_id;
   }
@@ -86,7 +86,7 @@ export async function openRepository(options = {}) {
       if (task.cancelled || task.deadline < today || dayKey(new Date(task.created_at), next.time_zone) > today || state.reviewRounds.some(r => r.task_id === task.id && r.day === today)) continue;
       const words = selectReviewWords(state, task.filter, task.word_count, task.id);
       if (!words.length) continue;
-      generated.push(addReviewRound(next, { words, name: dayKey(new Date(task.created_at), next.time_zone) === today ? task.name : `${task.name} · ${today}`, meaning_passes: task.meaning_passes, task_id: task.id, day: today, deadline: task.deadline }));
+      generated.push(addReviewRound(next, { words, name: dayKey(new Date(task.created_at), next.time_zone) === today ? task.name : `${task.name} · ${today}`, meaning_passes: task.meaning_passes, order: 'spaced', task_id: task.id, day: today, deadline: task.deadline }));
       state = projectState(next, now());
     }
     return generated;
@@ -100,8 +100,8 @@ export async function openRepository(options = {}) {
       }
       return clone(snapshot());
     }); },
-    createReviewRound({ words, name, meaning_passes = 2 }) { return enqueue(async () => {
-      const next = clone(current), session_id = addReviewRound(next, { words, name: name || dayKey(now(), next.time_zone), meaning_passes });
+    createReviewRound({ words, name, meaning_passes = 2, order }) { return enqueue(async () => {
+      const next = clone(current), session_id = addReviewRound(next, { words, name: name || dayKey(now(), next.time_zone), meaning_passes, order });
       await persist(next); return clone(snapshot().reviewRounds.find(r => r.session_id === session_id));
     }); },
     createReviewTask({ name, word_count, filter = { scope: 'all', topic: '', group: '' }, deadline, meaning_passes = 2 }) { return enqueue(async () => {

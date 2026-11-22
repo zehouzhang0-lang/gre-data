@@ -1,0 +1,844 @@
+{
+  "startedAt": "2026-11-22T11:37:48.160Z",
+  "target": "http://127.0.0.1:4188/c.html",
+  "isolation": "New headless Chrome, fresh Playwright context; no real browser profile or personal storage.",
+  "environment": {
+    "platform": "win32",
+    "node": "v24.14.0",
+    "build": "Vite development",
+    "data": "168 synthetic words, plus 28 hand-written stress entries",
+    "viewport": "390x844 @2x, touch",
+    "cpuThrottle": "none",
+    "browser": "158.0.8127.36"
+  },
+  "checks": [
+    {
+      "name": "home is the wall: 28 tiles in 4 columns and 7 rows, no Fresh button, no overflow",
+      "status": "pass",
+      "evidence": {
+        "tiles": 28,
+        "columns": 4,
+        "rows": 7,
+        "tile": "87.8x88.3",
+        "wallShareOfViewport": 0.768,
+        "freshButtonOnHome": false,
+        "neighbourPagesVisibleAtRest": "inset(-3px 6px)",
+        "horizontalOverflow": false,
+        "verticalScroll": 0,
+        "scrolledWhenPushed": [
+          0,
+          0
+        ],
+        "wordFont": "Source Serif 4"
+      }
+    },
+    {
+      "name": "no word overflows its tile on any of the six pages (390)",
+      "status": "pass",
+      "evidence": [
+        {
+          "sizes": {
+            "15px": 28
+          },
+          "overflow": 0,
+          "wrapped": 0
+        },
+        {
+          "sizes": {
+            "15px": 27,
+            "14px": 1
+          },
+          "overflow": 0,
+          "wrapped": 0
+        },
+        {
+          "sizes": {
+            "15px": 26,
+            "12px": 2
+          },
+          "overflow": 0,
+          "wrapped": 0
+        },
+        {
+          "sizes": {
+            "15px": 26,
+            "14px": 1,
+            "13px": 1
+          },
+          "overflow": 0,
+          "wrapped": 0
+        },
+        {
+          "sizes": {
+            "15px": 27,
+            "14px": 1
+          },
+          "overflow": 0,
+          "wrapped": 0
+        },
+        {
+          "sizes": {
+            "15px": 27,
+            "12px": 1
+          },
+          "overflow": 0,
+          "wrapped": 0
+        }
+      ]
+    },
+    {
+      "name": "tap turns a tile over",
+      "status": "pass",
+      "evidence": {
+        "flipped": 6
+      }
+    },
+    {
+      "name": "A/B and C reach identical states over the same eleven steps",
+      "status": "pass",
+      "evidence": {
+        "steps": [
+          "start",
+          "page3",
+          "fresh",
+          "search",
+          "searchPage2",
+          "searchFiltered",
+          "searchFresh",
+          "cleared",
+          "filterClear",
+          "filteredFresh",
+          "backToAll"
+        ],
+        "compared": [
+          "index",
+          "pages",
+          "total",
+          "ids",
+          "order",
+          "filter",
+          "sort",
+          "query",
+          "reviews"
+        ],
+        "differences": []
+      }
+    },
+    {
+      "name": "undo of a Fresh restores the page, and is still offered after a search round trip",
+      "status": "pass",
+      "evidence": {
+        "offeredAfterSearchRoundTrip": true,
+        "restored": true
+      }
+    },
+    {
+      "name": "search does not filter on unfinished IME composition text (simulated)",
+      "status": "pass",
+      "evidence": {
+        "during": {
+          "query": "",
+          "tiles": 28,
+          "emptyState": false,
+          "fieldShows": "qing'xi"
+        },
+        "after": {
+          "query": "清晰",
+          "tiles": 2
+        }
+      }
+    },
+    {
+      "name": "the wall follows the finger: adjacent pages meet with the tile gap, a drag past a fifth of a page lands on the next, a short one springs back",
+      "status": "pass",
+      "evidence": {
+        "followedPx": 120,
+        "gapBetweenPagesPx": 5,
+        "landed": 1,
+        "afterShortDrag": 1,
+        "back": 0,
+        "atEdge": 0,
+        "flips": 0
+      }
+    },
+    {
+      "name": "press and hold, slide onto a mark, let go: the word is marked without entering multi-select, saved, and can be undone",
+      "status": "pass",
+      "evidence": {
+        "strip": {
+          "options": [
+            "forgot",
+            "partial",
+            "clear",
+            "group",
+            "detail"
+          ],
+          "insidePhone": true
+        },
+        "hover": {
+          "active": "clear",
+          "label": "记得很清楚"
+        },
+        "countsBefore": {
+          "forgot": 28,
+          "partial": 42,
+          "clear": 56,
+          "none": 42
+        },
+        "countsAfter": {
+          "forgot": 27,
+          "partial": 42,
+          "clear": 57,
+          "none": 42
+        },
+        "stored": "{\"demo-3\":\"clear\"}",
+        "slot": "撤销标记",
+        "undoneByTwoFingersDown": true
+      }
+    },
+    {
+      "name": "two fingers up runs Fresh once, two fingers down undoes it; hold and let go starts multi-select; none of them turns a tile",
+      "status": "pass",
+      "evidence": {
+        "freshOnce": true,
+        "undone": true,
+        "holdSelected": 1,
+        "rateBar": true,
+        "nav": false,
+        "rateBarHeight": 52
+      }
+    },
+    {
+      "name": "multi-select: the grid does not move, marks replace the tabs, marking the selection saves and leaves multi-select",
+      "status": "pass",
+      "evidence": {
+        "gridShift": 0,
+        "sheetRows": [
+          "fresh 本页",
+          "记录本轮卡片状态",
+          "补充整理",
+          "选全部结果",
+          "清空选择",
+          "查看所选词详情",
+          "为当前多选单词分组",
+          "为当前选中单词设置复习轮",
+          "背诵筛选词",
+          "撤销上次标记"
+        ],
+        "marked": 3,
+        "leftMultiSelect": true
+      }
+    },
+    {
+      "name": "vertical wall: pages are stacked, a drag up lands on the next page, a drag down returns",
+      "status": "pass",
+      "evidence": {
+        "gapBetweenPagesPx": 5,
+        "afterDragUp": 1,
+        "afterDragDown": 0,
+        "afterSidewaysDrag": 0,
+        "afterWheel": {
+          "screenScrolled": [
+            0,
+            0
+          ],
+          "wallMoved": 0,
+          "pageNow": 2
+        }
+      }
+    },
+    {
+      "name": "filled tiles: the original three colours are an option, and the legend follows",
+      "status": "pass",
+      "evidence": {
+        "clear": "rgb(207, 232, 216)",
+        "partial": "rgb(247, 230, 181)",
+        "forgot": "rgb(241, 209, 201)",
+        "none": "rgb(242, 242, 240)",
+        "pipsOnFronts": 0,
+        "legendSwatches": 4
+      }
+    },
+    {
+      "name": "long words and long meanings: nothing overflows, long words break after a vowel with a hyphen",
+      "status": "pass",
+      "evidence": {
+        "smallestWordPx": 12,
+        "brokenWords": [
+          "incontro- / vertible",
+          "pusil- / lanimous",
+          "perspi- / cacious",
+          "magna- / nimous",
+          "circum- / locution",
+          "disin- / genuous",
+          "grandi- / loquent",
+          "quintes- / sential",
+          "inconse- / quential",
+          "verisi- / militude",
+          "irrecon- / cilable"
+        ],
+        "mostMeaningLines": 4
+      }
+    },
+    {
+      "name": "motion: a page turn glides from where the eye was, Fresh deals rows in, reduced motion removes both",
+      "status": "pass",
+      "evidence": {
+        "next": [
+          {
+            "ms": 387,
+            "from": "translate3d(calc(-100% + 366px), 0px, 0px)",
+            "to": "translate3d(calc(-100% - 5px), 0px, 0px)"
+          }
+        ],
+        "fresh": {
+          "tiles": 28,
+          "firstRowDelay": 0,
+          "lastRowDelay": 120,
+          "each": 240
+        },
+        "flip": {
+          "facesBefore": 1,
+          "ms": [
+            280
+          ],
+          "faces": 2,
+          "facesAfter": 1,
+          "showsBack": true
+        },
+        "reduced": {
+          "trackAnimations": 0,
+          "flipAnimations": 0,
+          "showsBack": true
+        }
+      }
+    },
+    {
+      "name": "review: a failed write shows no progress; retry after recovery advances and saves",
+      "status": "pass",
+      "evidence": {
+        "before": {
+          "count": "7/20",
+          "bar": "35%",
+          "word": "placid",
+          "error": null,
+          "stored": "7,0,4,0"
+        },
+        "failed": {
+          "count": "7/20",
+          "bar": "35%",
+          "word": "placid",
+          "error": "这一词没有保存，进度没有前进。 重试",
+          "stored": "7,0,4,0"
+        },
+        "retried": {
+          "count": "8/20",
+          "bar": "40%",
+          "word": "nimble",
+          "error": null,
+          "stored": "8,0,4,0"
+        }
+      }
+    },
+    {
+      "name": "marking refuses to show a mark it could not save",
+      "status": "pass",
+      "evidence": {
+        "marksAfterFailedWrite": {},
+        "notice": "没有保存，标记没有改变"
+      }
+    },
+    {
+      "name": "review position survives leaving the tab and reloading",
+      "status": "pass",
+      "evidence": {
+        "afterTab": "8,0,4,0",
+        "afterReload": "8,0,4,0"
+      }
+    },
+    {
+      "name": "closure: after the last round due today the app says today is done and stops pushing the next round",
+      "status": "pass",
+      "evidence": {
+        "before": {
+          "headline": "今天还有 1 轮",
+          "dueDot": true,
+          "primary": "solid"
+        },
+        "finish": {
+          "title": "今天的复习做完了",
+          "offersNextRound": false
+        },
+        "after": {
+          "headline": "今天的复习做完了",
+          "dueDot": false,
+          "primary": "quiet"
+        }
+      }
+    },
+    {
+      "name": "sound: nothing clips, forward actions are about equally loud on a phone speaker, the climb never repeats a step and never gets louder or shriller",
+      "status": "pass",
+      "evidence": {
+        "sounds": 21,
+        "loudestPeakDb": -4,
+        "forwardLoudnessSpreadDb": 1.6,
+        "forwardLoudnessDb": [
+          -16.2,
+          -14.6
+        ],
+        "climbSteps": 12,
+        "climbLoudnessSpreadDb": 0,
+        "brightestShareAbove3kHz": 0.27
+      }
+    },
+    {
+      "name": "click to double-rAF proxy, 20 samples per action, A and C measured the same way",
+      "status": "pass",
+      "evidence": {
+        "method": "performance.now() before the click to the second requestAnimationFrame after it; warm; 20 samples per action; median and nearest-rank P95",
+        "a": {
+          "next": {
+            "n": 20,
+            "median": 15.6,
+            "p95": 17.8
+          },
+          "prev": {
+            "n": 20,
+            "median": 15.55,
+            "p95": 19.1
+          },
+          "search": {
+            "n": 20,
+            "median": 16.75,
+            "p95": 18.8
+          },
+          "clear": {
+            "n": 20,
+            "median": 16.1,
+            "p95": 18.1
+          }
+        },
+        "c": {
+          "next": {
+            "n": 20,
+            "median": 13.65,
+            "p95": 17.6
+          },
+          "prev": {
+            "n": 20,
+            "median": 17.65,
+            "p95": 19.1
+          },
+          "search": {
+            "n": 20,
+            "median": 11.55,
+            "p95": 13
+          },
+          "clear": {
+            "n": 20,
+            "median": 17,
+            "p95": 20.4
+          }
+        }
+      }
+    },
+    {
+      "name": "360 wide: four columns, no horizontal overflow, no word overflow on any page",
+      "status": "pass",
+      "evidence": [
+        {
+          "tile": "80.3x73.4",
+          "columns": 4,
+          "overflow": 0,
+          "smallest": 13,
+          "broken": 0,
+          "horizontalOverflow": false
+        },
+        {
+          "tile": "80.3x73.4",
+          "columns": 4,
+          "overflow": 0,
+          "smallest": 12,
+          "broken": 0,
+          "horizontalOverflow": false
+        },
+        {
+          "tile": "80.3x73.4",
+          "columns": 4,
+          "overflow": 0,
+          "smallest": 14,
+          "broken": 2,
+          "horizontalOverflow": false
+        },
+        {
+          "tile": "80.3x73.4",
+          "columns": 4,
+          "overflow": 0,
+          "smallest": 12,
+          "broken": 0,
+          "horizontalOverflow": false
+        },
+        {
+          "tile": "80.3x73.4",
+          "columns": 4,
+          "overflow": 0,
+          "smallest": 12,
+          "broken": 0,
+          "horizontalOverflow": false
+        },
+        {
+          "tile": "80.3x73.4",
+          "columns": 4,
+          "overflow": 0,
+          "smallest": 13,
+          "broken": 1,
+          "horizontalOverflow": false
+        }
+      ]
+    },
+    {
+      "name": "no console errors or page errors during the run",
+      "status": "pass",
+      "evidence": {
+        "errors": 0
+      }
+    }
+  ],
+  "screenshots": [
+    "screenshots/c-wall.png",
+    "screenshots/c-wall-flipped.png",
+    "screenshots/c-search-filter.png",
+    "screenshots/c-drag.png",
+    "screenshots/c-hold-strip.png",
+    "screenshots/c-after-mark.png",
+    "screenshots/c-multi.png",
+    "screenshots/c-sheet.png",
+    "screenshots/c-vertical-drag.png",
+    "screenshots/c-fill.png",
+    "screenshots/c-stress-front.png",
+    "screenshots/c-stress-back.png",
+    "screenshots/c-review.png",
+    "screenshots/c-session-unsaved.png",
+    "screenshots/c-session.png",
+    "screenshots/c-finish.png",
+    "screenshots/c-practice.png",
+    "screenshots/c-settings.png",
+    "screenshots/c-dark-wall.png",
+    "screenshots/c-360-wall.png"
+  ],
+  "performance": {
+    "method": "performance.now() before the click to the second requestAnimationFrame after it; warm; 20 samples per action; median and nearest-rank P95",
+    "a": {
+      "next": {
+        "n": 20,
+        "median": 15.6,
+        "p95": 17.8
+      },
+      "prev": {
+        "n": 20,
+        "median": 15.55,
+        "p95": 19.1
+      },
+      "search": {
+        "n": 20,
+        "median": 16.75,
+        "p95": 18.8
+      },
+      "clear": {
+        "n": 20,
+        "median": 16.1,
+        "p95": 18.1
+      }
+    },
+    "c": {
+      "next": {
+        "n": 20,
+        "median": 13.65,
+        "p95": 17.6
+      },
+      "prev": {
+        "n": 20,
+        "median": 17.65,
+        "p95": 19.1
+      },
+      "search": {
+        "n": 20,
+        "median": 11.55,
+        "p95": 13
+      },
+      "clear": {
+        "n": 20,
+        "median": 17,
+        "p95": 20.4
+      }
+    }
+  },
+  "sound": [
+    {
+      "name": "flip",
+      "peakDb": -4.2,
+      "durationMs": 260,
+      "attackMs": 1.5,
+      "above3kHz": 0.056,
+      "loudDb": -19.3,
+      "phoneLoudDb": -16.2,
+      "phonePeakDb": -1.4,
+      "label": "翻面",
+      "forward": true
+    },
+    {
+      "name": "flipBack",
+      "peakDb": -4.8,
+      "durationMs": 258,
+      "attackMs": 1.9,
+      "above3kHz": 0.032,
+      "loudDb": -17.5,
+      "phoneLoudDb": -14.6,
+      "phonePeakDb": -2.6,
+      "label": "翻回",
+      "forward": true
+    },
+    {
+      "name": "select",
+      "peakDb": -4,
+      "durationMs": 283,
+      "attackMs": 1.7,
+      "above3kHz": 0.1,
+      "loudDb": -17.7,
+      "phoneLoudDb": -15.2,
+      "phonePeakDb": -1.8,
+      "label": "选中",
+      "forward": true
+    },
+    {
+      "name": "deselect",
+      "peakDb": -4.1,
+      "durationMs": 299,
+      "attackMs": 1.6,
+      "above3kHz": 0.072,
+      "loudDb": -17.6,
+      "phoneLoudDb": -14.8,
+      "phonePeakDb": -2.1,
+      "label": "取消选中",
+      "forward": true
+    },
+    {
+      "name": "pageNext",
+      "peakDb": -10.9,
+      "durationMs": 651,
+      "attackMs": 3,
+      "above3kHz": 0.033,
+      "loudDb": -19,
+      "phoneLoudDb": -16.2,
+      "phonePeakDb": -8.2,
+      "label": "词墙 下一页",
+      "forward": true
+    },
+    {
+      "name": "pagePrev",
+      "peakDb": -10.4,
+      "durationMs": 712,
+      "attackMs": 2.2,
+      "above3kHz": 0.038,
+      "loudDb": -18.3,
+      "phoneLoudDb": -16.2,
+      "phonePeakDb": -7.9,
+      "label": "词墙 上一页",
+      "forward": true
+    },
+    {
+      "name": "fresh",
+      "peakDb": -9.3,
+      "durationMs": 806,
+      "attackMs": 46.2,
+      "above3kHz": 0.04,
+      "loudDb": -18.8,
+      "phoneLoudDb": -16.2,
+      "phonePeakDb": -6.7,
+      "label": "fresh",
+      "forward": true
+    },
+    {
+      "name": "undo",
+      "peakDb": -8.4,
+      "durationMs": 944,
+      "attackMs": 50.8,
+      "above3kHz": 0.021,
+      "loudDb": -16.8,
+      "phoneLoudDb": -16.2,
+      "phonePeakDb": -7.8,
+      "label": "撤销",
+      "forward": true
+    },
+    {
+      "name": "holdOpen",
+      "peakDb": -4.7,
+      "durationMs": 321,
+      "attackMs": 1.5,
+      "above3kHz": 0.029,
+      "loudDb": -16.5,
+      "phoneLoudDb": -14.9,
+      "phonePeakDb": -2.8,
+      "label": "按住",
+      "forward": true
+    },
+    {
+      "name": "holdHover",
+      "peakDb": -5.6,
+      "durationMs": 247,
+      "attackMs": 1.3,
+      "above3kHz": 0.127,
+      "loudDb": -23.6,
+      "phoneLoudDb": -21.1,
+      "phonePeakDb": -2.9,
+      "label": "滑过选项",
+      "forward": false
+    },
+    {
+      "name": "markForgot",
+      "peakDb": -9.5,
+      "durationMs": 364,
+      "attackMs": 3.5,
+      "above3kHz": 0.032,
+      "loudDb": -18.1,
+      "phoneLoudDb": -14.9,
+      "phonePeakDb": -5.9,
+      "label": "标记 完全忘记",
+      "forward": true
+    },
+    {
+      "name": "markPartial",
+      "peakDb": -9.3,
+      "durationMs": 448,
+      "attackMs": 3.5,
+      "above3kHz": 0.045,
+      "loudDb": -18.2,
+      "phoneLoudDb": -15.1,
+      "phonePeakDb": -6.1,
+      "label": "标记 有一点印象",
+      "forward": true
+    },
+    {
+      "name": "markClear",
+      "peakDb": -8.5,
+      "durationMs": 505,
+      "attackMs": 4.1,
+      "above3kHz": 0.073,
+      "loudDb": -17.6,
+      "phoneLoudDb": -15,
+      "phonePeakDb": -6.4,
+      "label": "标记 记得很清楚",
+      "forward": true
+    },
+    {
+      "name": "pageDone",
+      "peakDb": -7.7,
+      "durationMs": 686,
+      "attackMs": 104,
+      "above3kHz": 0.064,
+      "loudDb": -17.4,
+      "phoneLoudDb": -15,
+      "phonePeakDb": -4.8,
+      "label": "本页标完",
+      "forward": true
+    },
+    {
+      "name": "saved",
+      "peakDb": -8.1,
+      "durationMs": 415,
+      "attackMs": 3.5,
+      "above3kHz": 0.037,
+      "loudDb": -17.1,
+      "phoneLoudDb": -15.1,
+      "phonePeakDb": -5.8,
+      "label": "复习 已保存",
+      "forward": true
+    },
+    {
+      "name": "complete",
+      "peakDb": -5.8,
+      "durationMs": 1097,
+      "attackMs": 107.1,
+      "above3kHz": 0.053,
+      "loudDb": -15.2,
+      "phoneLoudDb": -12.9,
+      "phonePeakDb": -3.7,
+      "label": "一轮完成",
+      "forward": true
+    },
+    {
+      "name": "questionNext",
+      "peakDb": -6.3,
+      "durationMs": 94,
+      "attackMs": 18.8,
+      "above3kHz": 0.133,
+      "loudDb": -25,
+      "phoneLoudDb": -22.3,
+      "phonePeakDb": -2.5,
+      "label": "刷题 下一题",
+      "forward": true
+    },
+    {
+      "name": "questionPrev",
+      "peakDb": -5.6,
+      "durationMs": 90,
+      "attackMs": 19.3,
+      "above3kHz": 0.27,
+      "loudDb": -25.4,
+      "phoneLoudDb": -22.1,
+      "phonePeakDb": -2.1,
+      "label": "刷题 上一题",
+      "forward": true
+    },
+    {
+      "name": "again",
+      "peakDb": -11.9,
+      "durationMs": 407,
+      "attackMs": 2.9,
+      "above3kHz": 0.015,
+      "loudDb": -20.2,
+      "phoneLoudDb": -21,
+      "phonePeakDb": -12.6,
+      "label": "再想想",
+      "forward": false
+    },
+    {
+      "name": "edge",
+      "peakDb": -5.1,
+      "durationMs": 273,
+      "attackMs": 1.4,
+      "above3kHz": 0.023,
+      "loudDb": -19.4,
+      "phoneLoudDb": -19.8,
+      "phonePeakDb": -5.6,
+      "label": "到头",
+      "forward": false
+    },
+    {
+      "name": "error",
+      "peakDb": -7.2,
+      "durationMs": 603,
+      "attackMs": 3.8,
+      "above3kHz": 0.011,
+      "loudDb": -15.5,
+      "phoneLoudDb": -19,
+      "phonePeakDb": -9.8,
+      "label": "没保存",
+      "forward": false
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Desktop Chrome with CDP touch emulation is not an Android WebView and not a finger. Hold time, drag distance and flick speed all need tuning on a phone.",
+    "paintProxyMs is click to double requestAnimationFrame, measured the same way for A and C. It is not display time and says nothing about Android.",
+    "IME composition is simulated with synthetic composition events, not a real input method.",
+    "Sounds are rendered offline and measured (level, loudness through a phone-speaker model, length, attack, brightness). Nobody has listened to them in this run; whether they sound natural is a judgement for ears.",
+    "The phone-speaker model is two high-pass filters and a presence peak. It is a stand-in, not a measurement of any phone."
+  ],
+  "finishedAt": "2026-11-22T11:40:04.906Z",
+  "summary": {
+    "pass": 22,
+    "fail": 0
+  }
+}

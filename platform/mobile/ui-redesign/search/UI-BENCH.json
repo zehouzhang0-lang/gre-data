@@ -1,0 +1,160 @@
+{
+  "ranAt": "2026-11-22T09:54:58.537Z",
+  "browser": "158.0.8127.36",
+  "build": "Vite development (React in development mode)",
+  "viewport": "390x844 @2x",
+  "note": "ms; synthetic library; desktop CPU",
+  "rows": [
+    {
+      "words": 2000,
+      "original": {
+        "blocked": {
+          "median": 9.8,
+          "p95": 12.3
+        },
+        "settled": {
+          "median": 9.8,
+          "p95": 12.4
+        },
+        "tilesRebuilt": {
+          "median": 28
+        },
+        "whenNarrowing": {
+          "tilesStillWanted": 11,
+          "tilesRebuilt": 28
+        },
+        "fastTyping": {
+          "blockedTotal": 44.1,
+          "worstKey": 13.7,
+          "boxKeptText": true
+        },
+        "inputAfterFastTyping": "persi"
+      },
+      "candidate": {
+        "blocked": {
+          "median": 0.5,
+          "p95": 0.8
+        },
+        "settled": {
+          "median": 9.1,
+          "p95": 11.9
+        },
+        "tilesRebuilt": {
+          "median": 24
+        },
+        "whenNarrowing": {
+          "tilesStillWanted": 11,
+          "tilesRebuilt": 2
+        },
+        "fastTyping": {
+          "blockedTotal": 2.4,
+          "worstKey": 0.5,
+          "boxKeptText": true
+        },
+        "inputAfterFastTyping": "persi"
+      },
+      "sameResults": true
+    },
+    {
+      "words": 5000,
+      "original": {
+        "blocked": {
+          "median": 11.4,
+          "p95": 14.5
+        },
+        "settled": {
+          "median": 11.4,
+          "p95": 14.5
+        },
+        "tilesRebuilt": {
+          "median": 28
+        },
+        "whenNarrowing": {
+          "tilesStillWanted": 12,
+          "tilesRebuilt": 28
+        },
+        "fastTyping": {
+          "blockedTotal": 55.4,
+          "worstKey": 13.4,
+          "boxKeptText": true
+        },
+        "inputAfterFastTyping": "persi"
+      },
+      "candidate": {
+        "blocked": {
+          "median": 0.5,
+          "p95": 0.8
+        },
+        "settled": {
+          "median": 10.1,
+          "p95": 14.8
+        },
+        "tilesRebuilt": {
+          "median": 24
+        },
+        "whenNarrowing": {
+          "tilesStillWanted": 12,
+          "tilesRebuilt": 9
+        },
+        "fastTyping": {
+          "blockedTotal": 2.8,
+          "worstKey": 0.8,
+          "boxKeptText": true
+        },
+        "inputAfterFastTyping": "persi"
+      },
+      "sameResults": true
+    },
+    {
+      "words": 10000,
+      "original": {
+        "blocked": {
+          "median": 15,
+          "p95": 20.8
+        },
+        "settled": {
+          "median": 15,
+          "p95": 20.9
+        },
+        "tilesRebuilt": {
+          "median": 28
+        },
+        "whenNarrowing": {
+          "tilesStillWanted": 7,
+          "tilesRebuilt": 28
+        },
+        "fastTyping": {
+          "blockedTotal": 70.6,
+          "worstKey": 17.5,
+          "boxKeptText": true
+        },
+        "inputAfterFastTyping": "persi"
+      },
+      "candidate": {
+        "blocked": {
+          "median": 0.5,
+          "p95": 0.7
+        },
+        "settled": {
+          "median": 10.8,
+          "p95": 15.3
+        },
+        "tilesRebuilt": {
+          "median": 26
+        },
+        "whenNarrowing": {
+          "tilesStillWanted": 7,
+          "tilesRebuilt": 13
+        },
+        "fastTyping": {
+          "blockedTotal": 2.9,
+          "worstKey": 0.8,
+          "boxKeptText": true
+        },
+        "inputAfterFastTyping": "persi"
+      },
+      "sameResults": true
+    }
+  ],
+  "problems": []
+}

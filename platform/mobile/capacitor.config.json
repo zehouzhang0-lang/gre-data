@@ -17,6 +17,6 @@
     "backgroundColor": "#ffffff"
   },
   "plugins": {
-    "SystemBars": { "style": "LIGHT", "insetsHandling": "css", "initialViewportFitValueHint": "cover" }
+    "SystemBars": { "style": "DEFAULT", "insetsHandling": "css", "initialViewportFitValueHint": "cover" }
   }
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { exportFile, importFile } from '../data/storage.mjs';
-import { Icon, Sheet } from './Primitives';
+import { Sheet } from './Primitives';
 
 // The two repositories intentionally have different formats and databases.
 // Opening the practice repository here shares the same writer as the practice tab.
@@ -19,7 +19,7 @@ export default function PracticeDataSettings({ active, notify }) {
       const content = await repo.backup();
       const name = `gre-practice-${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
       const result = await exportFile(name, content);
-      notify(result?.downloadRequested ? '刷题记录下载已发起，请在下载记录中确认。' : '刷题记录已导出。');
+      notify(result?.downloadRequested ? '刷题记录下载已发起，请查看下载记录。' : '刷题记录已导出。');
     } catch (error) {
       if (error.code !== 'CANCELLED') notify(`导出失败：${error.message}`, true);
     } finally { setBusy(false); }
@@ -48,10 +48,9 @@ export default function PracticeDataSettings({ active, notify }) {
     } catch (error) { notify(error.message, true); }
     finally { setBusy(false); }
   }
-  return <section className="settings-section">
-    <h2>刷题记录</h2>
-    <button className="settings-row" disabled={busy} onClick={backup}><Icon name="upload"/><span>导出刷题记录<small>作答、草稿与 AI 解析一并保存</small></span></button>
-    <button className="settings-row" disabled={busy} onClick={choose}><Icon name="download"/><span>导入刷题记录<small>合并备份，保留已有记录</small></span></button>
+  return <>
+    <button type="button" className="settings-line settings-action" disabled={busy} onClick={backup}>导出刷题记录</button>
+    <button type="button" className="settings-line settings-action" disabled={busy} onClick={choose}>导入刷题记录</button>
     {file && active && <Sheet title="导入刷题记录" onClose={busy ? () => {} : () => setFile(null)} footer={<>
       <button disabled={busy} onClick={() => setFile(null)}>取消</button>
       <button className="primary" disabled={busy || !file.preview.canMerge} onClick={merge}>{busy ? '处理中…' : '确认合并'}</button>
@@ -66,5 +65,5 @@ export default function PracticeDataSettings({ active, notify }) {
       </dl>
       {!file.preview.canMerge && <p className="warning" role="alert">发现 {file.preview.conflicts.length} 项冲突，本次不会导入。请保留两份备份以便核对。</p>}
     </Sheet>}
-  </section>;
+  </>;
 }

@@ -1,0 +1,32 @@
+.wall-track-viewport {
+  --wall-track-gap: 5px;
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 0;
+  overflow: clip;
+  touch-action: pan-y pinch-zoom;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.wall-track-viewport[data-axis="y"] { touch-action: pan-x pinch-zoom; }
+.wall-track-viewport[data-paging="off"] { touch-action: pan-y pinch-zoom; }
+/* The dedicated viewport arbitrates scrolling for both axes. */
+.wall-track-viewport .tile-face { touch-action: auto; }
+.wall-track-line,
+.wall-track-pane { position: absolute; inset: 0; min-width: 0; min-height: 0; }
+.wall-track-line { inset-inline: var(--wall-track-gutter, 0px); }
+.wall-track-viewport[data-phase="idle"] { clip-path: inset(0 var(--wall-track-gutter, 0px)); }
+.wall-track-viewport:is([data-phase="dragging"], [data-phase="settling"]) .wall-track-line { will-change: transform; }
+.wall-track-pane:not([data-current]) { pointer-events: none; }
+.wall-track-pane[data-side="before"] { transform: translateX(calc(-100% - var(--wall-track-gap))); }
+.wall-track-pane[data-side="after"] { transform: translateX(calc(100% + var(--wall-track-gap))); }
+[data-axis="y"] .wall-track-pane[data-side="before"] { transform: translateY(calc(-100% - var(--wall-track-gap))); }
+[data-axis="y"] .wall-track-pane[data-side="after"] { transform: translateY(calc(100% + var(--wall-track-gap))); }
+
+/* An older WebView cannot safely keep neighbours mounted if it lacks clip. */
+@supports not (overflow: clip) {
+  .wall-track-viewport { overflow: hidden; }
+  .wall-track-line { transform: none !important; }
+  .wall-track-pane:not([data-current]) { display: none; }
+}

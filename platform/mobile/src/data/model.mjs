@@ -87,7 +87,9 @@ export function cleanPayload(kind, p) {
   if (kind === 'vocab_session') {
     const words = unique(array(p.words, '本轮单词').map(normalizeWord), w => w, '本轮单词');
     if (!words.length || ![1, 2].includes(p.meaning_passes)) throw Error('每轮至少 1 词，认义 1 或 2 遍');
-    return { session_id: uuid(p.session_id), words, meaning_passes: p.meaning_passes };
+    // `order` is optional so every existing round keeps its exact payload; only 'spaced' is accepted.
+    if (p.order !== undefined && p.order !== 'spaced') throw Error('轮次顺序无效');
+    return { session_id: uuid(p.session_id), words, meaning_passes: p.meaning_passes, ...(p.order ? { order: 'spaced' } : {}) };
   }
   if (kind === 'vocab_drill') {
     if (!WORD_STAGES.includes(p.stage) || !['correct', 'incorrect', 'revealed'].includes(p.result) || !['choice', 'typing', 'self_check'].includes(p.response_mode)) throw Error('练习步骤无效');

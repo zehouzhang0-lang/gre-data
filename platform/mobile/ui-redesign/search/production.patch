@@ -1,0 +1,47 @@
+--- a/platform/mobile/src/components/WordWall.jsx
++++ b/platform/mobile/src/components/WordWall.jsx
+@@ -1,3 +1,4 @@
+-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+-import { buildIndexes, emptyFilters, entrySections, filterCount, filterEntries, ratingLabels, relationshipLabels, wordRating } from '../model.mjs';
++import { startTransition, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
++import { emptyFilters, entrySections, filterCount, ratingLabels, relationshipLabels, wordRating } from '../model.mjs';
++import { buildIndexes, filterEntries } from '../wall-search.mjs';
+ import { loadWallView, postponeWallPage, searchWall, wallFreshSwipe, wallPages, wallSwipe, wallViewKey } from '../wall-navigation.mjs';
+@@ -11,2 +12,25 @@
+ 
++// The search box keeps its own text, so a keystroke shows at once. The wall is asked to
++// catch up as a transition: React may drop a half-finished result when the next key
++// arrives, so fast typing never waits for results nobody will see. While an input method
++// is still composing (pinyin letters), nothing is searched at all.
++function WallSearchInput({ value, onChange }) {
++  const [draft, setDraft] = useState(value);
++  const composing = useRef(false), sent = useRef([]);
++  // The wall's query arrives a moment after it was typed. If it is one this box sent, it
++  // is only an echo and the box already shows newer text; anything else (the clear
++  // button, a restored view) is a change from outside and replaces what the box shows.
++  useEffect(() => {
++    const echo = sent.current.lastIndexOf(value);
++    if (echo >= 0) { sent.current.splice(0, echo + 1); return; }
++    sent.current = [];
++    if (!composing.current) setDraft(value);
++  }, [value]);
++  const search = text => { sent.current.push(text); startTransition(() => onChange(text)); };
++  return <input aria-label="搜索词库" type="search" autoCapitalize="none" autoComplete="off" placeholder="搜索单词" value={draft}
++    onCompositionStart={() => { composing.current = true; }}
++    onCompositionEnd={e => { composing.current = false; setDraft(e.currentTarget.value); search(e.currentTarget.value); }}
++    onChange={e => { setDraft(e.target.value); if (!composing.current && !e.nativeEvent.isComposing) search(e.target.value); }}/>;
++}
++
+ export default function WordWall({ state, repo, busy, active, mutate, notify, onSelectionMode, onStartReview }) {
+@@ -234,3 +258,3 @@
+     </header>
+-    {!selecting && <div className="wall-toolbar" role="group" aria-label="词库搜索与筛选"><div className="wall-inline-search"><Icon name="search" size={18}/><input aria-label="搜索词库" type="search" autoCapitalize="none" autoComplete="off" placeholder="搜索单词" value={filters.query} onChange={e => changeQuery(e.target.value)}/>{filters.query && <button className="icon-button" aria-label="清空搜索" onClick={() => changeQuery('')}><Icon name="close" size={16}/></button>}</div><button aria-label="筛选" onClick={() => setSheet('filter')}><Icon name="filter"/>筛选{filterCount(filters) ? <span className="filter-count">{filterCount(filters)}</span> : null}</button><button onClick={() => setSheet('sort')}><Icon name="sort"/>排序</button></div>}
++    {!selecting && <div className="wall-toolbar" role="group" aria-label="词库搜索与筛选"><div className="wall-inline-search"><Icon name="search" size={18}/><WallSearchInput value={filters.query} onChange={changeQuery}/>{filters.query && <button className="icon-button" aria-label="清空搜索" onClick={() => changeQuery('')}><Icon name="close" size={16}/></button>}</div><button aria-label="筛选" onClick={() => setSheet('filter')}><Icon name="filter"/>筛选{filterCount(filters) ? <span className="filter-count">{filterCount(filters)}</span> : null}</button><button onClick={() => setSheet('sort')}><Icon name="sort"/>排序</button></div>}
+     {selecting && <div className="selection-tools"><button disabled={busy || !pageWords.length} onClick={selectPage}>选中本页 <small>{pageWords.length} 词</small></button><button disabled={busy || !unique.length} onClick={selectAll}>选全部结果 <small>{unique.length} 词</small></button></div>}
+@@ -244,4 +268,4 @@
+       onClickCapture={e => { if (suppressClick.current && e.detail > 0) { e.preventDefault(); e.stopPropagation(); } }}>
+-      <div className="wall-page" key={`${currentPage}:${filters.query}:${visible[0]?.key || ''}`}>
+-      {sections.map(section => <section className="wall-section" key={section.entries[0].key}>
++      <div className="wall-page" key={`${currentPage}:${filters.query ? 'search' : visible[0]?.key || ''}`}>
++      {sections.map(section => <section className="wall-section" key={section.id}>
+         {section.group && <button className="group-heading" onClick={() => setGroup(section.group)}>词组 {String(section.number).padStart(2, '0')}<span>{relationshipLabels[section.group.type]}</span></button>}

@@ -1,0 +1,15 @@
+.wall-gesture-help {
+  margin: 6px 0 12px;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.wall-gesture-help li + li { margin-top: 6px; }
+.wall-filter-more > summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding-block: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}

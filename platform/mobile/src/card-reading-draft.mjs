@@ -1,7 +1,7 @@
 // Keep a failed save's ID and payload stable so retrying cannot count it twice.
-export function createCardReadingDraft(makeId = () => crypto.randomUUID()) {
-  const pending = new Map();
-  const batches = [];
+export function createCardReadingDraft(makeId = () => crypto.randomUUID(), saved) {
+  const pending = new Map((saved?.pending || []).map(item => [item.word, item]));
+  const batches = [...(saved?.batches || [])];
   function freezeRemaining(getImpression, isAvailable) {
     const frozenCounts = new Map();
     for (const batch of batches) for (const item of batch.payload.items) frozenCounts.set(item.word, (frozenCounts.get(item.word) || 0) + item.count);
@@ -10,6 +10,8 @@ export function createCardReadingDraft(makeId = () => crypto.randomUUID()) {
     if (items.length) batches.push({ id: makeId(), payload: { items } });
   }
   const draft = {
+    hasPending() { return pending.size > 0; },
+    snapshot() { return { pending: [...pending.values()], batches: [...batches] }; },
     record(word, viewedAt) {
       const previous = pending.get(word);
       pending.set(word, { word, count: (previous?.count || 0) + 1, viewed_at: viewedAt });
@@ -33,6 +35,7 @@ export function createCardReadingDraft(makeId = () => crypto.randomUUID()) {
       }
     },
     commitAll() { while (batches.length) draft.commit(); },
+    commitSaved(eventIds) { while (batches.length && eventIds.has(batches[0].id)) draft.commit(); },
   };
   return draft;
 }
