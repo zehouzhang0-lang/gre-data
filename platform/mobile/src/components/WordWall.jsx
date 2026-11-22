@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { buildIndexes, emptyFilters, entrySections, filterCount, filterEntries, PAGE_SIZE, ratingLabels, relationshipLabels, wordRating } from '../model.mjs';
-import { loadWallView, searchWall, wallSwipe, wallViewKey } from '../wall-navigation.mjs';
+import { buildIndexes, emptyFilters, entrySections, filterCount, filterEntries, ratingLabels, relationshipLabels, wordRating } from '../model.mjs';
+import { loadWallView, postponeWallPage, searchWall, wallFreshSwipe, wallPages, wallSwipe, wallViewKey } from '../wall-navigation.mjs';
 import { createCardReadingDraft } from '../card-reading-draft.mjs';
 import { useBackAction } from '../useBack';
 import { Confirm, Empty, Icon, Pager, Sheet } from './Primitives';
@@ -11,12 +11,14 @@ import '../wordwall-redesign.css';
 
 export default function WordWall({ state, repo, busy, active, mutate, notify, onSelectionMode, onStartReview }) {
   const [view, setView] = useState(() => loadWallView(globalThis.localStorage, state.datasetId, state.settings));
-  const { filters, display, page, seed } = view;
+  const { filters, display, page, seed, freshPages } = view;
+  const [lastFresh, setLastFresh] = useState(null);
   const [selected, setSelected] = useState(new Set()), [flipped, setFlipped] = useState(new Set());
   const [selecting, setSelecting] = useState(false), [sheet, setSheet] = useState(null), [confirm, setConfirm] = useState(null);
   const [detail, setDetail] = useState(null), [group, setGroup] = useState(null);
   const [draftName, setDraftName] = useState(''), [groupKind, setGroupKind] = useState('topic');
   const scroll = useRef(null), viewRef = useRef(view), settingsTimer = useRef(null), gesture = useRef(null), suppressClick = useRef(false), savingReadings = useRef(false);
+  const multiTouchGeneration = useRef(0);
   const lastView = useRef(view);
   if (lastView.current !== view) { viewRef.current = view; lastView.current = view; }
   const readingDraft = useRef(null);
@@ -32,8 +34,11 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
   const ready = useMemo(() => unique.filter(word => live.get(word)?.meaning?.trim()), [unique, live]);
   const selectedWords = useMemo(() => [...selected].filter(word => live.has(word)), [selected, live]);
   const selectedReady = selectedWords.length > 0 && selectedWords.every(word => live.get(word)?.meaning?.trim());
-  const pages = Math.max(1, Math.ceil(present.length / PAGE_SIZE)), currentPage = Math.min(page, pages - 1);
-  const visible = useMemo(() => present.slice(currentPage * PAGE_SIZE, (currentPage + 1) * PAGE_SIZE), [present, currentPage]);
+  const cardPages = useMemo(() => wallPages(present, freshPages), [present, freshPages]);
+  const pages = Math.max(1, cardPages.length), currentPage = Math.min(page, pages - 1);
+  const visible = useMemo(() => cardPages[currentPage] || [], [cardPages, currentPage]);
+  const canFresh = active && !busy && !selecting && !sheet && !detail && !group && !confirm && currentPage < pages - 1;
+  const canUndoFresh = lastFresh && freshPages === lastFresh.after;
   const pageWords = useMemo(() => [...new Set(visible.map(entry => entry.word))], [visible]);
   const sections = useMemo(() => entrySections(visible), [visible]);
   useEffect(() => { onSelectionMode(selecting && active); return () => onSelectionMode(false); }, [selecting, active, onSelectionMode]);
@@ -49,7 +54,7 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
     document.addEventListener('visibilitychange', flush);
     return () => { saveView(); window.removeEventListener('pagehide', flush); document.removeEventListener('visibilitychange', flush); };
   }, [saveView]);
-  useLayoutEffect(() => { if (active && scroll.current) scroll.current.scrollTop = viewRef.current.scrollTop; }, [active, filters, page, entries]);
+  useLayoutEffect(() => { if (active && scroll.current) scroll.current.scrollTop = viewRef.current.scrollTop; }, [active, filters, page, entries, freshPages]);
   const cancelSelection = useCallback(() => { setSelecting(false); setSelected(new Set()); }, []);
   useBackAction(cancelSelection, active && selecting, 60);
   const flip = useCallback(word => {
@@ -67,7 +72,7 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
   }, []);
   function changeFilter(next, nextSeed = seed) {
     const apply = () => {
-      setView(previous => ({ ...previous, filters: next, seed: nextSeed, page: 0, scrollTop: 0 }));
+      setView(previous => ({ ...previous, filters: next, seed: nextSeed, page: 0, scrollTop: 0, freshPages: null }));
       setSelected(new Set()); setSheet(null);
     };
     setSheet(null);
@@ -82,9 +87,87 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
   function changeQuery(query) {
     setView(previous => searchWall(previous, query, scroll.current?.scrollTop || 0));
   }
+  const freshPage = useCallback(() => {
+    if (!canFresh) return;
+    const postponed = postponeWallPage(cardPages, currentPage);
+    if (!postponed) return;
+    setLastFresh({ before: freshPages, after: postponed.freshPages, page: currentPage, scrollTop: scroll.current?.scrollTop || 0 });
+    setView(previous => ({ ...previous, freshPages: postponed.freshPages, page: currentPage, scrollTop: 0 }));
+    notify(`已把本页后移 ${postponed.distance} 页`);
+  }, [canFresh, cardPages, currentPage, freshPages, notify]);
+  function undoFreshPage() {
+    if (!canUndoFresh || busy) return;
+    setView(previous => ({ ...previous, freshPages: lastFresh.before, page: lastFresh.page, scrollTop: lastFresh.scrollTop }));
+    setLastFresh(null);
+    notify('已恢复上一次 fresh 前的浏览顺序');
+  }
+  useLayoutEffect(() => {
+    const element = scroll.current;
+    if (!element || !canFresh) return;
+    let first = null;
+    let candidate = null;
+    const point = touch => ({ id: touch.identifier, x: touch.clientX, y: touch.clientY });
+    const onWall = touch => touch.target instanceof Element && element.contains(touch.target) &&
+      touch.target.closest('.wall-page') && !touch.target.closest('button:not(.tile-face),input,select,textarea,a');
+    function start(event) {
+      const touches = Array.from(event.touches);
+      const now = performance.now();
+      if (touches.length === 1) {
+        first = onWall(touches[0]) ? { ...point(touches[0]), time: now } : null;
+        return;
+      }
+      candidate = null;
+      const startingTouch = touches.find(touch => touch.identifier === first?.id);
+      const startedTogether = !first && event.changedTouches.length === 2;
+      const joinedFirst = first && startingTouch && now - first.time <= 180 &&
+        Math.hypot(startingTouch.clientX - first.x, startingTouch.clientY - first.y) <= 12;
+      if (touches.length === 2 && (startedTogether || joinedFirst) && touches.every(onWall) && event.cancelable) {
+        // Consume the second touch before the WebView starts native vertical scrolling.
+        event.preventDefault();
+        gesture.current = null;
+        suppressClick.current = true;
+        multiTouchGeneration.current++;
+        candidate = { points: touches.map(point), time: now };
+      }
+      first = null;
+    }
+    function move(event) {
+      if (!candidate) return;
+      if (event.touches.length !== 2 || !event.cancelable) { candidate = null; return; }
+      event.preventDefault();
+    }
+    function end(event) {
+      if (!candidate) { first = null; return; }
+      const start = candidate;
+      candidate = null;
+      if (event.cancelable) event.preventDefault();
+      const endPoints = Array.from(event.touches).concat(Array.from(event.changedTouches)).map(point);
+      if (!window.getSelection()?.toString() && wallFreshSwipe(start.points, endPoints, performance.now() - start.time)) freshPage();
+    }
+    function cancel() { first = null; candidate = null; }
+    const options = { capture: true, passive: false };
+    element.addEventListener('touchstart', start, options);
+    element.addEventListener('touchmove', move, options);
+    element.addEventListener('touchend', end, options);
+    element.addEventListener('touchcancel', cancel, options);
+    return () => {
+      element.removeEventListener('touchstart', start, options);
+      element.removeEventListener('touchmove', move, options);
+      element.removeEventListener('touchend', end, options);
+      element.removeEventListener('touchcancel', cancel, options);
+    };
+  }, [canFresh, freshPage]);
   function swipeDown(event) {
+    if (event.isPrimary === false) {
+      if (event.pointerType === 'touch') {
+        gesture.current = null;
+        suppressClick.current = true;
+        multiTouchGeneration.current++;
+      }
+      return;
+    }
     suppressClick.current = false;
-    if (event.isPrimary === false || selecting || busy || sheet || event.target.closest('button:not(.tile-face),input,select,textarea,a')) { gesture.current = null; return; }
+    if (selecting || busy || sheet || event.target.closest('button:not(.tile-face),input,select,textarea,a')) { gesture.current = null; return; }
     gesture.current = { id: event.pointerId, x: event.clientX, y: event.clientY, time: performance.now(), pointerType: event.pointerType };
   }
   function swipeMove(event) {
@@ -151,14 +234,18 @@ export default function WordWall({ state, repo, busy, active, mutate, notify, on
     </header>
     {!selecting && <div className="wall-toolbar" role="group" aria-label="词库搜索与筛选"><div className="wall-inline-search"><Icon name="search" size={18}/><input aria-label="搜索词库" type="search" autoCapitalize="none" autoComplete="off" placeholder="搜索单词" value={filters.query} onChange={e => changeQuery(e.target.value)}/>{filters.query && <button className="icon-button" aria-label="清空搜索" onClick={() => changeQuery('')}><Icon name="close" size={16}/></button>}</div><button aria-label="筛选" onClick={() => setSheet('filter')}><Icon name="filter"/>筛选{filterCount(filters) ? <span className="filter-count">{filterCount(filters)}</span> : null}</button><button onClick={() => setSheet('sort')}><Icon name="sort"/>排序</button></div>}
     {selecting && <div className="selection-tools"><button disabled={busy || !pageWords.length} onClick={selectPage}>选中本页 <small>{pageWords.length} 词</small></button><button disabled={busy || !unique.length} onClick={selectAll}>选全部结果 <small>{unique.length} 词</small></button></div>}
-    <div className="wall-context"><span>{context}{filters.query ? ` · “${filters.query}”` : ''}{filterCount(filters) ? ` · ${filterCount(filters)} 项筛选` : ''}</span>{!selecting && <button className="icon-button" aria-label="词库更多操作" onClick={() => setSheet('more')}><Icon name="more" size={18}/></button>}</div>
+    <div className="wall-context"><span>{context}{filters.query ? ` · “${filters.query}”` : ''}{filterCount(filters) ? ` · ${filterCount(filters)} 项筛选` : ''}</span>{!selecting && <div className="wall-context-actions">
+      <button className="wall-fresh-button" disabled={!canFresh} title={currentPage >= pages - 1 ? '当前是最后一页' : '双指向上滑也可将本页后移最多 3 页'} onClick={freshPage}><Icon name="refresh" size={15}/>fresh 本页</button>
+      {canUndoFresh && <button className="wall-fresh-undo" disabled={busy} aria-label="撤销 fresh 本页" onClick={undoFreshPage}>撤销</button>}
+      <button className="icon-button" aria-label="词库更多操作" onClick={() => setSheet('more')}><Icon name="more" size={18}/></button>
+    </div>}</div>
     <main ref={scroll} className="screen-scroll wall-scroll" data-testid="word-wall-scroll" onScroll={e => { if (active) { viewRef.current = { ...viewRef.current, scrollTop: e.currentTarget.scrollTop }; queueViewSave(); } }}
       onPointerDownCapture={swipeDown} onPointerMoveCapture={swipeMove} onPointerUpCapture={swipeEnd} onPointerCancel={() => { gesture.current = null; suppressClick.current = true; }}
-      onClickCapture={e => { if (suppressClick.current) { suppressClick.current = false; e.preventDefault(); e.stopPropagation(); } }}>
-      <div className="wall-page" key={`${currentPage}:${filters.query}`}>
-      {sections.map(section => <section className="wall-section" key={section.id}>
+      onClickCapture={e => { if (suppressClick.current && e.detail > 0) { e.preventDefault(); e.stopPropagation(); } }}>
+      <div className="wall-page" key={`${currentPage}:${filters.query}:${visible[0]?.key || ''}`}>
+      {sections.map(section => <section className="wall-section" key={section.entries[0].key}>
         {section.group && <button className="group-heading" onClick={() => setGroup(section.group)}>词组 {String(section.number).padStart(2, '0')}<span>{relationshipLabels[section.group.type]}</span></button>}
-        <div className="word-grid">{section.entries.map(entry => <WordTile key={entry.key} entry={entry} word={live.get(entry.word)} selected={selected.has(entry.word)} flipped={flipped.has(entry.word)} selecting={selecting} busy={busy} onFlip={flip} onSelect={select} onLongPress={longPress} onDetail={setDetail}/>)}</div>
+        <div className="word-grid">{section.entries.map(entry => <WordTile key={entry.key} entry={entry} word={live.get(entry.word)} selected={selected.has(entry.word)} flipped={flipped.has(entry.word)} selecting={selecting} busy={busy} multiTouchGeneration={multiTouchGeneration} onFlip={flip} onSelect={select} onLongPress={longPress} onDetail={setDetail}/>)}</div>
       </section>)}
       </div>
       {!visible.length && <Empty><p>减少筛选条件，或导入你的词库。</p><button onClick={() => changeFilter({ ...emptyFilters })}>清除筛选</button></Empty>}

@@ -625,6 +625,8 @@ evidence_records:
 
 单词墙固定28词分页，左滑下一页、右滑上一页。手机SE/TC/RC前后浏览按原catalog相邻题位，不跳已做题、不首尾环绕；未做推荐仅用于开始入口。Quant不启用左右切题手势。长按、文本选区、纵滚、分隔条拖动不触发切题。长按正文选词再显式确认入墙仍使用vocab_capture。
 
+2026-11-22：单词墙「fresh 本页」将当前整页后移最多3个位置，保留原页码并显示后续卡片。末页无可后移的卡片时停用。浏览偏好可选保存当前筛选、排序及查询对应的 `freshPages` 卡片键分页，写入原有 `gre-wall-view:v2:<dataset_id>`。清空行内搜索恢复搜索前的顺序和位置。手动更换筛选或排序重新建立浏览顺序。fresh 和撤销仅修改浏览偏好，学习事件及备份格式沿用原规则。
+
 ## 手机刷题原题快照、AI解析与电脑接入（2026-10-27）
 
 新提交可使用`practice.question_snapshot.version:2`，保留`key/type/mode/source/provenance/prompt/options/letters/groups/paragraphs/sentences/native/answerInput/images/passageImages`，图片只保存引用，不含字节。原答案、参考键及判定与原快照核对；旧版快照兼容，不重算或改写原事实。

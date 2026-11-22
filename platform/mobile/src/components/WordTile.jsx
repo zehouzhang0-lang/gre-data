@@ -2,16 +2,21 @@ import { memo, useEffect, useRef } from 'react';
 import { wordRating, ratingLabels } from '../model.mjs';
 import { Icon } from './Primitives';
 
-export default memo(function WordTile({ entry, word, selected, flipped, selecting, busy, onFlip, onSelect, onLongPress, onDetail }) {
+export default memo(function WordTile({ entry, word, selected, flipped, selecting, busy, multiTouchGeneration, onFlip, onSelect, onLongPress, onDetail }) {
   const gesture = useRef(null), timer = useRef(null), suppress = useRef(false);
   const stop = () => { clearTimeout(timer.current); timer.current = null; };
   useEffect(() => () => clearTimeout(timer.current), []);
   const rating = wordRating(word);
   function down(event) {
-    if (event.button !== 0 || busy) return;
+    if (event.button !== 0 || event.isPrimary === false || busy) return;
     suppress.current = false;
     gesture.current = { x: event.clientX, y: event.clientY };
-    timer.current = setTimeout(() => { suppress.current = true; onLongPress(word.word); }, 450);
+    const generation = multiTouchGeneration.current;
+    timer.current = setTimeout(() => {
+      if (generation !== multiTouchGeneration.current) return;
+      suppress.current = true;
+      onLongPress(word.word);
+    }, 450);
   }
   function move(event) {
     if (!gesture.current) return;
