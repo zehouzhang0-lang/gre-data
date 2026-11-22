@@ -1,24 +1,26 @@
 schema_version: 1
-id: gre-dec17-sprint-20261121-v1
-status: active_provisional_allocation
+id: gre-dec17-sprint-20261122-v2
+status: active_skill_practice
 timezone: Asia/Kuala_Lumpur
 week_starts_on: monday
-exam_date: '2026-12-17'
-exam_at: '2026-12-17T14:15:00+08:00'
-weekly_budget_min: 1080
-weekly_optional_max_min: 360
+exam_date: 2026-12-17
+exam_at: 2026-12-17T14:15:00+08:00
+weekly_budget_min: 900
+weekly_optional_max_min: 0
 target_scores:
   combined_vq: 320
   verbal: 150
   quantitative: 170
   analytical_writing: 3.5
-starts_on: '2026-11-21'
-ends_on: '2026-12-17'
-plan_file: planning/sprint-20261121-v1.yaml
-current_planning_record: planning/20261121_2319_sprint_plan.md
+starts_on: 2026-11-22
+ends_on: 2026-12-17
+plan_file: planning/sprint-20261122-v2.yaml
+current_planning_record: planning/20261122_library_sprint_plan.md
 current_day_snapshot: planning/days/2026-11-22.yaml
-previous_strategy_file: planning/20261121_2322_strategy_history.yaml
+previous_strategy_file: planning/20261122_strategy_v1_history.yaml
 baseline_status: partial_user_estimate_only
 notes:
-- 目标320+；V150为下限、Q170为冲刺目标，均非当前能力。
-- 旧10月快照及旧计划保留为历史，不追补旧配额。
+  - 每日3小时为根据帖子的本轮试排；档案保留已确认的长期可用时段。
+  - PP2和其它诊断本轮暂缓，见旧策略与当日快照保留项。
+  - 以SE等价词和阅读句间逻辑为主要Verbal练习，Quant及Issue各有固定训练块。
+daily_cap_min: 180
