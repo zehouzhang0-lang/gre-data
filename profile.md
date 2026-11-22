@@ -1,7 +1,7 @@
 ---
 schema_version: 1
 created_at: "2026-09-02"
-updated_at: "2026-11-21"
+updated_at: "2026-11-22"
 timezone: Asia/Kuala_Lumpur
 exam: gre_general
 exam_date: "2026-12-17"
@@ -31,6 +31,8 @@ application_direction: null
 ---
 
 # 用户档案
+
+2026-11-22 新对话确认：用户有连续约2小时完成诊断，ETS POWERPREP 2可用且未做。今天按既有冲刺计划选择首次PP2；这是材料可用性与时间条件自报，不是已开始或已完成。实际开始时间、报告及Issue原稿尚待提交，current与baseline_source不变。准备记录见planning/20261122_1238_pp2_preparation.md。
 
 2026-11-21 本对话补充：用户明确目标“320+，数学尽量拿满，Verbal 150+，写作3.5”。target.verbal=150记录下限，target.quantitative=170记录冲刺目标，combined_vq=320记录最低数值门槛；不是当前分数或保证。用户同时澄清bibiji只做过Verbal，自估“大概135+水平”；无日期、卷名、原报告、严格计时/重复题信息，不能记成精确量表分。Quant与AW基线未知，POWERPREP 2账户尚未检查。current与baseline_source仍为null。执行框架见planning/20261121_2319_sprint_plan.md，正式训练从11月22日起，按新证据调整。
 
