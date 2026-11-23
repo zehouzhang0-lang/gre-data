@@ -127,3 +127,7 @@ items:
         record: analytical-writing/submissions/20261124_0025_issue.md
         result: mixed
         note: "新背景句有提示补写：may后develop原形及features复数正确；existing software system的中心词system为可数单数，前面漏限定词，建议补an。此前framework出现过同类问题；不推断未理解规则或时间压力，非独立计时，状态保持unknown。"
+      - date: "2026-11-24"
+        record: analytical-writing/submissions/20261124_0030_issue.md
+        result: success
+        note: "有句框、词汇及原形提示后答test those new features thoroughly：does not后test原形、those与features复数及副词位置正确。按要求只补条件部分，不判残句；仅本次辅助目标达成，非独立计时或自检证据，状态保持unknown。"
