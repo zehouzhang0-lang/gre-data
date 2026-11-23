@@ -1,5 +1,5 @@
 schema_version: 1
-updated_at: "2026-11-23"
+updated_at: "2026-11-24"
 states: [unknown, learned, applied, reliable]
 items:
   - id: v_tc_logic_map
@@ -107,3 +107,7 @@ items:
         record: analytical-writing/submissions/20261123_2350_issue.md
         result: mixed
         note: "理由句补写在to后原形提示下正确用establish and apply并列；单数framework前漏an。apply可保留，implement仅为语义与搭配优化。尚无用户修订或自主自检，未计时，状态保持unknown。"
+      - date: "2026-11-24"
+        record: analytical-writing/submissions/20261124_0008_issue.md
+        result: mixed
+        note: "同一未计时指导练习跨日接续：自行选出faster than表达速度差，但接入句框can后缺动词，government forming需整理比较主谓结构。只补片段符合教练要求，不记执行失败；修订待用户完整整合，无独立计时或自检证据，状态保持unknown。"
