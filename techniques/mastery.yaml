@@ -58,7 +58,14 @@ items:
   - {id: q_estimate_verify, area: quantitative, status: unknown, evidence: []}
   - {id: q_error_checklist, area: quantitative, status: unknown, evidence: []}
   - {id: q_pacing_two_pass, area: quantitative, status: unknown, evidence: []}
-  - {id: aw_issue_position, area: analytical_writing, status: unknown, evidence: []}
+  - id: aw_issue_position
+    area: analytical_writing
+    status: unknown
+    evidence:
+      - date: "2026-11-23"
+        record: analytical-writing/submissions/20261123_2334_issue.md
+        result: mixed
+        note: "在中文框架提示后提出科研应受有效监管及监管更新可能滞后的理由；尚未明确对总体少设限的赞同程度。监管必要性不自动等于反对few, if any。待用户澄清范围，未计时、无本题英文或独立复述证据，状态保持unknown。"
   - id: aw_paragraph_reasoning
     area: analytical_writing
     status: unknown
