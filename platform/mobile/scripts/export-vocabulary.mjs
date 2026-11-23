@@ -47,6 +47,9 @@ export async function exportVocabulary(root = defaultRoot, now = new Date(), { b
   }
   const words = state => state.vocabulary.map(w => [w.word, w.meaning, w.pos, w.note, !!w.deleted, w.recalls]);
   equal('词条、释义与原始回忆', words(live), words(projected));
+  const searchCaptures = state => state.vocabulary.flatMap(w => (w.captures || [])
+    .filter(capture => capture.source.type === 'search').map(capture => [w.word, capture]));
+  equal('搜索加入来源', searchCaptures(live), searchCaptures(projected));
   const senses = state => state.vocabulary.map(w => [w.word, w.senses || []]);
   equal('逐义释义与来源例句', senses(live), senses(projected));
   const schedule = state => state.spacedReview.items.filter(i => i.kind === 'word');

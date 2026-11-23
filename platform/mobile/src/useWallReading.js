@@ -30,7 +30,7 @@ function hasRoundRatings(state) {
   return !!id && state.events?.some(event => event.kind === 'vocab_quick_review' && (event.payload?.session_id || event.session_id) === id);
 }
 
-export function useWallReading({ state, repo, busy, mutate, onSaved }) {
+export function useWallReading({ state, repo, busy, mutate, wallWrites, onSaved }) {
   const key = 'gre-wall-readings:v1:' + state.datasetId;
   const journalRef = useRef(null);
   if (!journalRef.current) journalRef.current = loadJournal(key);
@@ -48,14 +48,14 @@ export function useWallReading({ state, repo, busy, mutate, onSaved }) {
     const ratings = hasRoundRatings(current.state);
     const previousDay = (journal.day && journal.day < today) || (ratings && current.state.quickRound.day < today);
     if (!background && !journal.retry && !previousDay) return;
-    if (!journal.draft.hasPending() && !ratings && !journal.retry) return;
+    if (!journal.draft.hasPending() && !ratings && !journal.retry && !wallWrites.pending) return;
 
     writing.current = true;
     journal.retry = true;
     saveJournal(key, journal);
     let finished = false;
     try {
-      const success = await current.mutate(async () => {
+      const success = await wallWrites.enqueue(() => current.mutate(async () => {
         const savedState = await current.repo.getState();
         // A process can be suspended after the repository committed and before the
         // journal was cleared. Acknowledge those frozen batches before trying again.
@@ -70,7 +70,7 @@ export function useWallReading({ state, repo, busy, mutate, onSaved }) {
         await current.repo.finishWallRound({ batches, expectedRoundId: savedState.quickRound?.id });
         journal.draft.commitAll();
         finished = true;
-      }, undefined, { quiet: true });
+      }, undefined, { quiet: true }));
       if (!success) return;
       journal.retry = false;
       if (!journal.draft.hasPending()) journal.day = null;
@@ -79,7 +79,7 @@ export function useWallReading({ state, repo, busy, mutate, onSaved }) {
     } finally {
       writing.current = false;
     }
-  }, [journal, key]);
+  }, [journal, key, wallWrites]);
 
   useEffect(() => { void flush(); }, [busy, flush]);
   useEffect(() => {

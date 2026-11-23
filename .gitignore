@@ -40,6 +40,7 @@ private/
 *.mp3
 *.m4a
 *.wav
+!platform/mobile/android/app/src/main/res/raw/ui_*.wav
 *.aac
 *.flac
 *.ogg

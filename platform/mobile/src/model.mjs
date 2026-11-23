@@ -19,6 +19,9 @@ export function sourceLabel(source) {
   if (/homework/i.test(raw)) return `${prefix}历史词汇训练`;
   return source.material_id || raw.split(/[\\/]/).at(-1)?.replace(/\.(json|md|yaml)$/i, '') || '历史词库';
 }
+export function captureSourceLabel(source) {
+  return source?.type === 'search' ? '搜索加入' : '题中摘词';
+}
 export function buildIndexes(state) {
   const topics = (state.relations?.topics || []).filter(t => !t.deleted);
   const assignments = new Map((state.relations?.assignments || []).map(a => [a.word, a]));
@@ -26,7 +29,7 @@ export function buildIndexes(state) {
   const sources = new Map(), sourceKeys = new Map();
   for (const word of state.vocabulary) {
     const keys = new Set((word.sources || []).map(sourceLabel));
-    if (word.captures?.length) keys.add('题中摘词');
+    for (const capture of word.captures || []) keys.add(captureSourceLabel(capture.source));
     if (!keys.size) keys.add('其他既有词库');
     for (const key of keys) sources.set(key, { id: key, name: key });
     sourceKeys.set(word.word, keys);

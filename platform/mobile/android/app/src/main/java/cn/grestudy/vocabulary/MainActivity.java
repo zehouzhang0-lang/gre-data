@@ -9,6 +9,7 @@ public class MainActivity extends BridgeActivity {
         registerPlugin(VocabStoragePlugin.class);
         registerPlugin(PracticeStoragePlugin.class);
         registerPlugin(PronunciationPlugin.class);
+        registerPlugin(LowLatencySoundPlugin.class);
         registerPlugin(ChatGPTPlanPlugin.class);
         registerPlugin(AppAppearancePlugin.class);
         super.onCreate(savedInstanceState);

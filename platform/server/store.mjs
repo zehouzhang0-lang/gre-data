@@ -93,6 +93,7 @@ export function validate(kind, p) {
     return {session_id:uuid(p.session_id),word:normalizeWord(text(p.word,"单词",120)),stage:p.stage,answer:text(p.answer,"本次回答",3000,true),result:p.result,response_mode:p.response_mode};
   }
   if (kind === "vocab_capture") {
+    if (p.source?.type === 'search') return {word:capturedWord(p.word),source:{type:'search'},context:text(p.context,"摘词语境",240,true)};
     if (!p.source || !types.has(p.source.type)) throw new Error("摘词缺少题目来源");
     return {word:capturedWord(p.word),source:{...location(p.source),type:p.source.type},context:text(p.context,"摘词语境",240,true)};
   }
@@ -463,9 +464,13 @@ export class Store {
       if(e.kind==='vocab_drill')vocabDrills.push({...p,id:e.id,recorded_at:e.recorded_at});
       if (e.kind === "ai_review") reviews.push({ ...p, id: e.id, recorded_at: e.recorded_at });
       if (e.kind === "vocab_capture") {
-        const old=words.get(p.word) || {word:p.word,meaning:"",pos:"",note:"",status:"未检验",recalls:[],collocation:"",dictionary_url:"",definition_source:"题中摘词，待补释义"};
+        const search = p.source.type === 'search';
+        const old=words.get(p.word) || {word:p.word,meaning:"",pos:"",note:"",status:"未检验",recalls:[],collocation:"",dictionary_url:"",definition_source:search ? "手动加入，待补释义" : "题中摘词，待补释义"};
         const captures=[...(old.captures || [])];
-        if (!captures.some(c => keyOf(c.source)===keyOf(p.source) && c.context===p.context)) captures.push({source:p.source,context:p.context,recorded_at:e.recorded_at});
+        if (!captures.some(c => c.context === p.context && (search || c.source.type === 'search'
+          ? c.source.type === p.source.type : keyOf(c.source) === keyOf(p.source)))) {
+          captures.push({source:p.source,context:p.context,recorded_at:e.recorded_at});
+        }
         words.set(p.word,{...old,deleted:false,captures});
       } else if (e.kind === "vocab_upsert") {
         const old = words.get(p.word) || {

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { startTransition, useCallback, useEffect, useRef, useState } from 'react';
 import { openRepository } from './data/repository.mjs';
 import { CATALOG_REVISION } from './data/catalog-update.mjs';
 
@@ -19,10 +19,13 @@ export function watchStartup(operation, { onSlow, onReady, onError, setTimer = s
 export default function useRepository() {
   const repository = useRef(null), alive = useRef(true), initialization = useRef(null), ready = useRef(false);
   const [state, setState] = useState(null), [error, setError] = useState(''), [slow, setSlow] = useState(false);
-  const refresh = useCallback(async () => {
+  const refresh = useCallback(async ({ transition = false } = {}) => {
     if (!repository.current) return null;
     const next = await repository.current.getState();
-    if (alive.current) setState(next);
+    if (alive.current) {
+      if (transition) startTransition(() => setState(next));
+      else setState(next);
+    }
     return next;
   }, []);
   useEffect(() => {

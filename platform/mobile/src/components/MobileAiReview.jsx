@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { connectionStatus, listModels, requestReview, stopReview, openUsage } from '../ai/client.mjs';
 import { buildReviewRequest, parseReview, reviewIdentity } from '../ai/review.mjs';
+import { play } from '../sound.mjs';
 import '../ai/ai.css';
 
 function submittedQuestion(question) {
@@ -23,6 +24,7 @@ export default function MobileAiReview({ question, repository, vocabularyRepo, n
   const result=(saved?.attempt_id===attemptId ? saved : stored)?.result;
   const run=async()=>{
     if(busy || !attemptId)return;
+    play('submit');
     const seq=++operation.current;setBusy(true);setError('');
     try {
       const status=await connectionStatus();setConnection(status);
@@ -36,15 +38,15 @@ export default function MobileAiReview({ question, repository, vocabularyRepo, n
       const analysis=parseReview(response.text,current);
       const record={id:crypto.randomUUID(),recorded_at:new Date().toISOString(),attempt_id:attemptId,question_key:question.key,input_hash:inputHash,model:response.model || model,provisional:true,result:analysis};
       await repository.saveAiReview(record);
-      if(mounted.current && operation.current===seq){setSaved(record);notify('AI 解析已保存。');}
-    }catch(e){if(mounted.current && operation.current===seq)setError(e.message);}
+      if(mounted.current && operation.current===seq){play('answerSaved');setSaved(record);notify('AI 解析已保存。');}
+    }catch(e){if(mounted.current && operation.current===seq){play('error');setError(e.message);}}
     finally{if(mounted.current && operation.current===seq)setBusy(false);}
   };
   const cancel=async()=>{operation.current++;await stopReview().catch(()=>{});setBusy(false);setError('本次解析已停止，原作答保留。');};
   if(!attemptId)return null;
   const problem = connection && !connection.eligible ? connection.message || '还没有连接 ChatGPT' : '';
   return <section className="mobile-ai-review" aria-label="AI 解析">
-    <div className="ai-review-actions"><button className="ai-review-run" disabled={busy || connection?.available===false} onClick={run}>{busy ? '解析中…' : result ? '重新解析' : '解析'}</button>{busy && <button className="text-button" onClick={cancel}>停止</button>}</div>
+    <div className="ai-review-actions"><button className="ai-review-run" disabled={busy || connection?.available===false} data-sound="none" onClick={run}>{busy ? '解析中…' : result ? '重新解析' : '解析'}</button>{busy && <button className="text-button" onClick={cancel}>停止</button>}</div>
     {problem && <p className="ai-review-problem"><span>{problem}</span><button className="text-button" onClick={onConnection}>去设置</button></p>}
     {error && error !== problem && <div role="alert" className="ai-error"><p>{error}</p>{/额度|limit/i.test(error) && <button className="text-button" onClick={()=>openUsage().catch(e=>setError(e.message))}>管理额度</button>}</div>}
     {result && <div className="ai-review-result"><span className="ai-provisional">AI 暂定讲解</span><h3>完整题干翻译</h3><p>{result.question_translation}</p>

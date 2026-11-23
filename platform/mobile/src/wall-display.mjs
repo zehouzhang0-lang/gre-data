@@ -8,9 +8,11 @@ export const wallAppearanceDefaults = Object.freeze({
   theme: 'system',
   haptics: false,
   sound: true,
+  audioEngine: 'native',
   pageTone: DEFAULT_PAGE_TONE,
   font: null,
   hinted: false,
+  addMode: 'direct',
 });
 
 export function normalizeWallAppearance(value) {
@@ -24,9 +26,11 @@ export function normalizeWallAppearance(value) {
     theme: theme === 'dark' || theme === 'light' ? theme : 'system',
     haptics: value?.haptics === true,
     sound: value?.sound !== false,
+    audioEngine: value?.audioEngine === 'web' ? 'web' : 'native',
     pageTone: typeof value?.pageTone === 'string' && Object.prototype.hasOwnProperty.call(PAGE_TONES, value.pageTone) ? value.pageTone : DEFAULT_PAGE_TONE,
     font: Number.isFinite(font) && font >= 12 && font <= 22 ? font : null,
     hinted: value?.hinted === true,
+    addMode: value?.addMode === 'meaning' ? 'meaning' : 'direct',
   };
 }
 

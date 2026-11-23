@@ -22,7 +22,7 @@
 // What the caches depend on: the app replacing state.vocabulary and the word objects in
 // it when something changes, rather than editing them in place. WordWall.jsx already
 // relies on exactly that (its useMemo calls are keyed on state.vocabulary).
-import { wordRating, sourceLabel } from './model.mjs';
+import { wordRating, sourceLabel, captureSourceLabel } from './model.mjs';
 
 const collator = new Intl.Collator('en'); // what localeCompare(…, 'en') uses, built once
 function hash(text) { let h = 2166136261; for (const c of text) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; }
@@ -127,7 +127,7 @@ export function createWallSearch() {
     const sources = new Map(), sourceKeys = new Map();
     for (const word of state.vocabulary) {
       const keys = new Set((word.sources || []).map(labelOf));
-      if (word.captures?.length) keys.add('题中摘词');
+      for (const capture of word.captures || []) keys.add(captureSourceLabel(capture.source));
       if (!keys.size) keys.add('其他既有词库');
       for (const key of keys) sources.set(key, { id: key, name: key });
       sourceKeys.set(word.word, keys);

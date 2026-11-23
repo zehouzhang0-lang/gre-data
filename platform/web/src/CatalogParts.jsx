@@ -33,6 +33,11 @@ export function materialLabel(material, materials = []) {
   return (match?.title || match?.filename || material || "未记录教材").replace(/\.pdf$/i, "");
 }
 
+export function captureSourceLabel(source, materials = []) {
+  if (source.type === 'search') return '搜索加入';
+  return `${materialLabel(source.material, materials)} · ${source.unit} · 第 ${source.question} 题`;
+}
+
 export function sourceLabel(source, materials = []) {
   const matched = materials.find(item => item.id === source.material_id);
   if (matched) return materialLabel(source.material_id, materials);

@@ -3,10 +3,9 @@ import { wordRating, ratingLabels } from '../model.mjs';
 import { Icon } from './Primitives';
 import '../word-tile-c.css';
 
-const wordFamily = '"Source Serif 4", "Noto Serif SC", Georgia, serif';
 const wordWidths = new Map();
 const fontListeners = new Set();
-let canvasContext;
+let measureNode;
 let fontRequested = false, fontVersion = 0;
 let resizeObserver;
 let motionQuery;
@@ -55,12 +54,19 @@ function observeTile(node, update) {
 function measuredWidth(text, size) {
   const key = `${size}:${text}`;
   if (wordWidths.has(key)) return wordWidths.get(key);
-  canvasContext ??= globalThis.document?.createElement('canvas').getContext('2d');
-  let width = text.length * size * .55;
-  if (canvasContext) {
-    canvasContext.font = `500 ${size}px ${wordFamily}`;
-    width = canvasContext.measureText(text).width;
+  if (!measureNode) {
+    const measureBox = document.createElement('div');
+    measureBox.className = 'candidate-wall wall-tile-measure';
+    measureBox.setAttribute('aria-hidden', 'true');
+    measureNode = document.createElement('span');
+    measureNode.className = 'tile-word';
+    measureNode.lang = 'en';
+    measureBox.append(measureNode);
+    document.body.append(measureBox);
   }
+  measureNode.style.fontSize = `${size}px`;
+  measureNode.textContent = text;
+  const width = measureNode.getBoundingClientRect().width;
   if (wordWidths.size >= 2048) wordWidths.delete(wordWidths.keys().next().value);
   wordWidths.set(key, width);
   return width;
@@ -69,10 +75,13 @@ function measuredWidth(text, size) {
 const vowel = letter => /[aeiouy]/i.test(letter || '');
 function wrapWord(text) {
   const middle = Math.round(text.length / 2);
+  const canBreak = i => i > 1 && i < text.length - 1
+    && /[\p{L}\p{N}].*[\p{L}\p{N}]/u.test(text.slice(0, i))
+    && /[\p{L}\p{N}].*[\p{L}\p{N}]/u.test(text.slice(i));
   const closest = (distance, matches) => {
     for (let offset = 0; offset <= distance; offset++) {
       for (const i of [middle - offset, middle + offset]) {
-        if (i > 1 && i < text.length - 1 && matches(i)) return i;
+        if (canBreak(i) && matches(i)) return i;
       }
     }
     return 0;
@@ -81,8 +90,8 @@ function wrapWord(text) {
   if (boundary) return `${text.slice(0, boundary).trimEnd()}\n${text.slice(boundary).trimStart()}`;
   const consonants = closest(2, i => vowel(text[i - 2]) && !vowel(text[i - 1]) && !vowel(text[i]) && vowel(text[i + 1]));
   const afterVowel = closest(middle, i => vowel(text[i - 1]) && !vowel(text[i]) && vowel(text[i + 1]));
-  const at = consonants || afterVowel || middle;
-  return `${text.slice(0, at)}-\n${text.slice(at)}`;
+  const at = consonants || afterVowel || closest(middle, () => true);
+  return at ? `${text.slice(0, at)}-\n${text.slice(at)}` : text;
 }
 
 function fitWord(text, width, maxFont) {
@@ -93,8 +102,10 @@ function fitWord(text, width, maxFont) {
   const fit = sizes.find(size => measuredWidth(text, size) <= available);
   if (fit) return { text, size: fit };
   const broken = wrapWord(text);
-  const lines = broken.split('\n');
-  return { text: broken, size: sizes.find(size => lines.every(line => measuredWidth(line, size) <= available)) ?? 11.5 };
+  const wrappedFit = sizes.find(size => measuredWidth(broken, size) <= available);
+  if (wrappedFit) return { text: broken, size: wrappedFit };
+  // Scale the intact lines if neither the word nor a balanced split fits at 12px.
+  return { text: broken, size: 12, scale: available / measuredWidth(broken, 12) };
 }
 
 function fitMeaning(text, width, height, hasPos, hasDetail) {
@@ -127,19 +138,20 @@ export function WallMark({ rating, swatch = false }) {
 }
 
 export default memo(function WordTile({
-  entry, word, selected, flipped, selecting, busy, multiTouchGeneration,
+  entry, word, rating = wordRating(word), selected, flipped, selecting, multiTouchGeneration,
   onFlip, onSelect, onDetail, maxFont = 15, look = 'pip',
   managedGestures = false, preview = false, held = false,
 }) {
   const article = useRef(null), inner = useRef(null), front = useRef(null);
   const gesture = useRef(null), timer = useRef(null), suppress = useRef(false);
-  const rating = wordRating(word), lastRating = useRef(rating);
+  const lastRating = useRef(rating);
   const rated = rating !== 'unrated';
   const fillBack = look === 'fill' && rated;
   const [box, setBox] = useState({ width: 88, height: 88 });
+  const [wordFit, setWordFit] = useState(null);
   const [resting, setResting] = useState(flipped);
   const statusId = useId();
-  useSyncExternalStore(subscribeFont, fontSnapshot, initialFont);
+  const fontRevision = useSyncExternalStore(subscribeFont, fontSnapshot, initialFont);
   const still = useSyncExternalStore(subscribeMotion, reducedMotion, noServerMotion);
   const turning = !preview && !still && resting !== flipped;
   const showDetail = flipped && !selecting;
@@ -154,6 +166,10 @@ export default memo(function WordTile({
     update(rect.width, rect.height);
     return observeTile(node, update);
   }, []);
+
+  useLayoutEffect(() => {
+    setWordFit(fitWord(word.word, box.width, maxFont));
+  }, [word.word, box.width, maxFont, fontRevision]);
 
   useLayoutEffect(() => {
     if (!turning || !inner.current.animate) {
@@ -183,11 +199,14 @@ export default memo(function WordTile({
   }, [look, preview, rating, still]);
 
   const stop = () => { clearTimeout(timer.current); timer.current = null; };
+  const release = () => { stop(); article.current?.removeAttribute('data-pressed'); };
   useLayoutEffect(() => () => clearTimeout(timer.current), []);
   function down(event) {
-    if (managedGestures || event.button !== 0 || event.isPrimary === false || busy || selecting) return;
+    if (managedGestures || event.button !== 0 || event.isPrimary === false) return;
+    article.current?.setAttribute('data-pressed', '');
     suppress.current = false;
     gesture.current = { x: event.clientX, y: event.clientY };
+    if (selecting) return;
     const generation = multiTouchGeneration?.current;
     timer.current = setTimeout(() => {
       if (generation !== multiTouchGeneration?.current) return;
@@ -197,12 +216,12 @@ export default memo(function WordTile({
   function move(event) {
     if (!gesture.current) return;
     if (Math.hypot(event.clientX - gesture.current.x, event.clientY - gesture.current.y) > 8) {
-      stop();
+      release();
       suppress.current = true;
     }
   }
   function cancel() {
-    stop();
+    release();
     suppress.current = true;
     gesture.current = null;
   }
@@ -214,26 +233,26 @@ export default memo(function WordTile({
       event.preventDefault();
       return;
     }
-    if (preview || busy) return;
+    if (preview) return;
     if (selecting) onSelect(word.word);
     else onFlip(word.word);
   }
 
-  const english = (turning || !flipped) && fitWord(word.word, box.width, maxFont);
+  const english = (turning || !flipped) && (wordFit ?? { text: word.word, size: maxFont });
   const chinese = (turning || flipped) && fitMeaning(word.meaning, box.width, box.height, !!word.pos, showDetail);
   const localPress = managedGestures || preview ? {} : {
-    onPointerDown: down, onPointerMove: move, onPointerUp: stop,
-    onPointerCancel: cancel, onPointerLeave: stop,
+    onPointerDown: down, onPointerMove: move, onPointerUp: release,
+    onPointerCancel: cancel, onPointerLeave: release,
   };
   return <article ref={article} className={`word-tile rated-${rating}${selected ? ' selected' : ''}${flipped ? ' flipped' : ''}${turning ? ' turning' : ''}${held ? ' held' : ''}`} data-word={word.word} data-group={entry.group?.id || ''}>
-    <button type="button" className="tile-face" disabled={!preview && busy} tabIndex={preview ? -1 : undefined}
+    <button type="button" className="tile-face" tabIndex={preview ? -1 : undefined}
       aria-label={`${word.word} · ${selecting ? '选择' : flipped ? '翻回英文' : '翻看释义'}`}
       aria-describedby={preview ? undefined : statusId} aria-pressed={selecting ? selected : flipped}
       {...localPress} onContextMenu={e => e.preventDefault()} onClick={preview ? undefined : click}>
       <span className="wall-tile-inner" ref={inner}>
         {english && <span ref={front} className="wall-tile-side wall-tile-front" aria-hidden={flipped || undefined}>
           {look === 'pip' && rated && <WallMark rating={rating}/>}
-          <span lang="en" className="tile-word" style={{ fontSize: english.size }}>{english.text}</span>
+          <span lang="en" className="tile-word" style={{ fontSize: english.size, transform: english.scale ? `scale(${english.scale})` : undefined }}>{english.text}</span>
         </span>}
         {chinese && <span className={`wall-tile-side wall-tile-back${fillBack ? ' wall-tile-fill' : ''}`} data-rating={fillBack ? rating : undefined} aria-hidden={!flipped || undefined}>
           {look === 'pip' && rated && <WallMark rating={rating}/>}
@@ -243,7 +262,7 @@ export default memo(function WordTile({
           </span>
         </span>}
       </span>
-      {selected && <span className="wall-tile-check" aria-hidden="true">✓</span>}
+      <span className="wall-tile-check" hidden={!selected} aria-hidden="true">✓</span>
     </button>
     {!preview && <span id={statusId} className="sr-only">记忆状态：{ratingLabels[rating] || '未标记'}</span>}
     {showDetail && <button type="button" className={`tile-detail${fillBack ? ' on-filled-face' : ''}`} tabIndex={preview ? -1 : undefined} aria-label={`查看 ${word.word} 完整释义`} onClick={preview ? undefined : () => onDetail(word.word)}><Icon name="more" size={16}/></button>}

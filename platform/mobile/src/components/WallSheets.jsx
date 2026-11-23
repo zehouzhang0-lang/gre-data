@@ -43,7 +43,8 @@ export function WallFontField({ value, onChange, disabled = false }) {
 export function WallGestureHelp({ axis = 'x' }) {
   return <ul className="wall-gesture-help">
     <li>轻触卡片翻面。普通词墙{axis === 'y' ? '上下' : '左右'}拖动翻页，按关系分组时左右滑动翻页。</li>
-    <li>在普通词墙按住词卡，滑到对应的颜色标记上松开，也可滑到「分组」或「详情」。要同时标记多个词，先点「多选」，再按住其中一张已选词卡滑到颜色标记。</li>
+    <li>长按词卡，滑到标记、分组或详情后松开。继续拖出长按条和词卡所在区域，就能框选本页的词。</li>
+    <li>多选时轻点增减单词。长按未选词卡拖动可追加，长按已选词卡拖动可移除。按关系分组时可用「⋯ → 多选」。</li>
     <li>双指上滑 Fresh 本页，双指下滑撤销上一次可撤销的标记或 Fresh。也可以用「词库操作」里的按钮。</li>
   </ul>;
 }

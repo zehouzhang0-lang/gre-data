@@ -12,7 +12,7 @@
 用户授权在本仓库建设可迭代本地平台；平台源码、锁文件、启动脚本、skill与学习数据一起同步。`platform/events/<uuid>.json` 为追加式原子记录，包含 `schema_version: 1`、`id`、ISO UTC `recorded_at`、`kind`、`payload`。事件按时间再按ID重放；同ID同内容重试不重复创建，不同内容拒绝。
 
 - `vocab_upsert`：word、meaning、pos、note。词形小写且合并连续空格；短语完整保存。释义标记用户编辑待核验。
-- `vocab_capture`：word、source（material/unit/question/type）、context（最多240字）。来自用户主动选词并右键收录；允许先无释义入库。统一大小写、边界标点、弯引号和连字符，不自动推断词元；最多5词短语、120字符。初次创建meaning/pos/note为空，状态未检验，附题目来源与短语境；既有词仅补充来源并恢复显示，不覆写词义、笔记、回忆、自评或掌握状态。同词同题同语境的captures去重；收录不计作答或复习，不自动进入有释义的翻卡队列。补释义仍用vocab_upsert，主题归属仍用word_topics。浏览器发现已存在的有效词时只提示，不追加重复操作。
+- `vocab_capture`：word、source、context（最多240字）。题中摘词的 source 保留 material/unit/question/type（tc、se、rc、quant）；词墙搜索直接加入使用 `source: {type: 'search'}` 和空 context，source 仅保留 type。统一大小写、边界标点、弯引号和连字符，不自动推断词元；最多5词短语、120字符。允许先无释义入库。初次创建 meaning/pos/note 为空，状态未检验，搜索加入的初始 `definition_source` 为「手动加入，待补释义」。既有词仅补充来源并恢复显示，不覆写词义、笔记、回忆、自评或掌握状态。同词同题同语境的 captures 去重，搜索加入按同词同语境去重。收录不计作答或复习，不自动进入有释义的翻卡队列。补释义仍用 vocab_upsert，主题归属仍用 word_topics。浏览器发现已存在的有效词时只提示，不追加重复操作。
 - `vocab_delete` / `vocab_restore`：word。仅控制平台展示，不删除旧词库与历史。
 - `vocab_recall`：旧模式保留word、answer原文、self_rating（remembered/partial/forgotten）、mode（recall/flashcard）、assessment=self_reported。新mode=multistage带session_id，只有本词各阶段均通过才结算，self_rating由服务端根据各阶段首次结果推导；同session_id+word只结算一次。跳过不记完成；不自动更新difficult/mastered、旧作业覆盖数或技巧等级。教练核对后须另写原子记录并注明事件ID，防止重复计数。
 - `vocab_quick_review`（2026-10-10 单词墙）：session_id 为 UUID；items 为 1–5000 个不重复的已有、有释义且未移除的词，各含 word 和 self_rating（remembered/partial/forgotten），assessment 固定 self_reported。一批一个原子事件，校验任意词失败则整批不保存。同一轮同一词的后续标记修正有效结果，不增加次数，保留该词本轮首次有效标记的时间；原始事件不改写。投影为 mode=quick_grid 的回忆，不实际补写 vocab_recall 文件。

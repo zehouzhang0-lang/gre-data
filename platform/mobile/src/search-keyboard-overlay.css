@@ -1,0 +1,20 @@
+html[data-search-keyboard-frozen],
+html[data-search-keyboard-frozen] body {
+  overflow: clip;
+  overscroll-behavior: none;
+}
+.search-keyboard-inset-probe {
+  position: absolute;
+  visibility: hidden;
+  padding-block: var(--safe-top) var(--safe-bottom);
+  pointer-events: none;
+}
+.candidate-wall .wall-inline-search:focus-within {
+  border-color: var(--c-ink);
+}
+.candidate-wall .wall-inline-search input:focus {
+  outline: none;
+}
+.candidate-wall .wall-scroll > .empty {
+  padding-block: 10px 16px;
+}

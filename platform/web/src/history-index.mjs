@@ -6,8 +6,12 @@ export const eventLabels = {
   word_topics: "调整单词分类", relation_upsert: "编辑词汇关系", relation_delete: "移除词汇关系", relation_restore: "恢复词汇关系",
   ai_review: "AI 讲解与复盘", vocab_recall: "词汇回忆", vocab_session: "开始复习轮次", vocab_drill: "轮内词汇练习",
   vocab_upsert: "编辑生词", vocab_capture: "题中摘词", vocab_delete: "移除生词", vocab_restore: "恢复生词",
+  'vocab_capture:search': '搜索加入',
   questions_import: "导入题目", keys_import: "导入答案与解析", attempts_import: "上传作答", attempt: "答题", material_upload: "上传 PDF",
 };
+export function eventType(event) {
+  return event.kind === 'vocab_capture' && event.payload?.source?.type === 'search' ? 'vocab_capture:search' : event.kind;
+}
 export const learningEventKinds = new Set(["attempt", "attempts_import", "vocab_recall", "vocab_drill", "vocab_session", "vocab_quick_review", "vocab_quick_undo", "writing_session", "writing_submission"]);
 export function attemptLabel(result) { return result === true ? "答案一致" : result === false ? "答案不一致" : "待核对"; }
 export function recallLabel(recall) {

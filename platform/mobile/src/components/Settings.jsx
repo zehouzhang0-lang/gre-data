@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 import { exportFile, importFile } from '../data/storage.mjs';
 import { wallAppearanceDefaults } from '../wall-display.mjs';
-import { PAGE_TONES, configureSound, play } from '../sound.mjs';
+import { PAGE_TONES, configureSound, copySoundDiagnostic, play, soundDiagnostics } from '../sound.mjs';
 import { useBackAction } from '../useBack';
 import { Confirm, Icon, Sheet } from './Primitives';
 import { WallFontField, WallGestureHelp } from './WallSheets';
@@ -26,10 +26,11 @@ export default function Settings({ state, repo, active, busy, mutate, notify, on
   wallAppearance = wallAppearanceDefaults, onWallAppearanceChange, wallFont, onWallFontChange }) {
   const [file, setFile] = useState(null), [reading, setReading] = useState(false);
   const [recovery, setRecovery] = useState(null), [subpage, setSubpage] = useState(null);
+  const [audioDiagnostic, setAudioDiagnostic] = useState('');
   const title = useRef(null), scroller = useRef(null), returnTo = useRef(null);
   const catalogUpdate = state.settings.catalogUpdate;
   const hasRecoveryTools = state.hasCatalogRecovery || state.hasRecovery;
-  const closeSubpage = () => setSubpage(null);
+  const closeSubpage = () => { play('leave'); setSubpage(null); };
   useBackAction(closeSubpage, active && !!subpage, 40);
   useLayoutEffect(() => {
     if (!active) return;
@@ -51,8 +52,25 @@ export default function Settings({ state, repo, active, busy, mutate, notify, on
     const pageTone = event.target.value;
     if (pageTone === wallAppearance.pageTone) return;
     onWallAppearanceChange({ pageTone });
-    configureSound({ pageTone, sound: wallAppearance.sound });
+    configureSound({ pageTone, sound: wallAppearance.sound, engine: wallAppearance.audioEngine });
     play('pageNext', 3);
+  }
+  function changeSound(sound, engine = wallAppearance.audioEngine) {
+    configureSound({ sound, pageTone: wallAppearance.pageTone, engine });
+    onWallAppearanceChange({ sound, audioEngine: engine });
+    if (sound) play('tap');
+  }
+  async function copyAudioDiagnostic() {
+    const { engine, sampleRate, baseLatency, outputLatency, sounds } = soundDiagnostics();
+    const value = JSON.stringify({ engine, sampleRate, baseLatency, outputLatency, sounds }, null, 2);
+    try {
+      await copySoundDiagnostic(value);
+      setAudioDiagnostic('');
+      notify('已复制音效诊断');
+    } catch {
+      setAudioDiagnostic(value);
+      notify('可选中下方的音效诊断手动复制');
+    }
   }
   async function choose(mode) {
     if (reading || busy) return;
@@ -82,9 +100,9 @@ export default function Settings({ state, repo, active, busy, mutate, notify, on
     const success = await mutate(() => current.mode === 'restore' ? repo.restore(current.content) : repo.importVocabulary(current.content), current.mode === 'restore' ? '完整备份已恢复' : '词库已合并，原有进度保留');
     if (success) { setFile(null); onRestored(); }
   }
-  return <section className="screen settings-screen" hidden={!active} aria-label="设置与备份">
+  return <section className="screen settings-screen" data-ui-sounds="" hidden={!active} aria-label="设置与备份">
     <header className="screen-header settings-header">
-      {subpage && <button type="button" className="icon-button" aria-label="返回设置" onClick={closeSubpage}><Icon name="back"/></button>}
+      {subpage && <button type="button" className="icon-button" data-sound="none" aria-label="返回设置" onClick={closeSubpage}><Icon name="back"/></button>}
       <h1 ref={title} tabIndex={-1}>{subpageTitles[subpage] || '设置'}</h1>
     </header>
     <main ref={scroller} className="screen-scroll settings-content">
@@ -97,13 +115,17 @@ export default function Settings({ state, repo, active, busy, mutate, notify, on
           </div>
         </div>)}
         {onWallFontChange && <WallFontField value={wallFont ?? wallAppearance.font ?? 15} onChange={onWallFontChange}/>}
-        <SettingsToggle label="音效" checked={wallAppearance.sound} onChange={sound => onWallAppearanceChange({ sound })}/>
+        <SettingsToggle label="音效" checked={wallAppearance.sound} onChange={sound => changeSound(sound)}/>
         <label className="settings-line">翻页音色<select className="settings-select" value={wallAppearance.pageTone} onChange={changePageTone}>
           {Object.entries(PAGE_TONES).map(([id, tone]) => <option key={id} value={id}>{tone.label}</option>)}
         </select></label>
-        <SettingsToggle label="触感" checked={wallAppearance.haptics} onChange={haptics => onWallAppearanceChange({ haptics })}/>
+        <SettingsToggle label="触感" checked={wallAppearance.haptics} onChange={haptics => { play('tap'); onWallAppearanceChange({ haptics }); }}/>
       </section>}
       <section className="settings-group" hidden={!!subpage}><h2>数据与备份</h2>
+        {onWallAppearanceChange && <label className="settings-line">搜索加词<select className="settings-select" value={wallAppearance.addMode}
+          onChange={event => { play('tap'); onWallAppearanceChange({ addMode: event.target.value }); }}>
+          <option value="direct">直接加入</option><option value="meaning">先填释义</option>
+        </select></label>}
         <button type="button" className="settings-line settings-action" disabled={reading || busy} onClick={() => backup()}>导出词汇备份</button>
         <button type="button" className="settings-line settings-action" disabled={reading || busy} onClick={() => choose('restore')}>恢复词汇备份</button>
         <button type="button" className="settings-line settings-action" disabled={reading || busy} onClick={() => choose('import')}>导入词库</button>
@@ -116,6 +138,18 @@ export default function Settings({ state, repo, active, busy, mutate, notify, on
       <section className="settings-group" hidden={!!subpage}><h2>帮助</h2>
         <button type="button" className="settings-line settings-action settings-link" onClick={event => openSubpage('gestures', event)}>手势<Icon name="back" size={16}/></button>
         <button type="button" className="settings-line settings-action settings-link" onClick={event => openSubpage('data', event)}>离线使用与数据说明<Icon name="back" size={16}/></button>
+        {onWallAppearanceChange && <>
+          <div className="settings-line settings-audio-engine">
+            <label htmlFor="audio-engine">音效引擎</label>
+            <select id="audio-engine" className="settings-select" value={wallAppearance.audioEngine}
+              onChange={event => { setAudioDiagnostic(''); changeSound(wallAppearance.sound, event.target.value); }}>
+              <option value="native">低延迟</option><option value="web">网页</option>
+            </select>
+            <button type="button" className="text-button" onClick={copyAudioDiagnostic}>复制诊断</button>
+          </div>
+          {audioDiagnostic && <textarea className="settings-audio-diagnostic" readOnly rows={6} aria-label="音效诊断" value={audioDiagnostic}
+            onFocus={event => event.currentTarget.select()}/>}
+        </>}
         <div className="settings-line"><span>学习日时区</span><span className="settings-value">{state.spacedReview?.time_zone || state.timeZone || 'Asia/Shanghai'}</span></div>
       </section>
       {subpage === 'gestures' && <div className="settings-help">

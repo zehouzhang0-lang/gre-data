@@ -1,9 +1,13 @@
 import { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
+import { Capacitor } from '@capacitor/core';
+import { startInteraction } from '../interaction-performance.mjs';
 import '../wall-track.css';
 
 // Candidate C's starting values. Confirm the gesture thresholds on Android hardware.
-const HOLD_MS = 400;
+const HOLD_MS = 180;
+const HOLD_SLOP = 6;
+const TAP_RELEASE_MS = 260;
 const TOUCH_SLOP = 10;
 const MOUSE_SLOP = 6;
 const PAGE_GAP = 5;
@@ -15,6 +19,7 @@ const mousePoint = event => ({ x: event.clientX, y: event.clientY });
 const distance = (a, b) => Math.hypot(b.x - a.x, b.y - a.y);
 const along = (point, axis) => axis === 'y' ? point.y : point.x;
 const across = (point, axis) => axis === 'y' ? point.x : point.y;
+const holding = mode => mode === 'hold' || mode === 'marquee';
 
 function twoFingerDirection(start, end) {
   const moves = start.map(a => {
@@ -33,7 +38,7 @@ function twoFingerDirection(start, end) {
 export default forwardRef(function WallTrack({
   pages, page, axis = 'x', active, enabled, paging = true, motionKey,
   renderPage, onPageChange, onFresh, onUndo, onHoldStart, onHoldMove,
-  onHoldEnd, onHoldCancel, onEdge,
+  onHoldEnd, onHoldCancel, onHoldTap, onEdge,
 }, ref) {
   const viewport = useRef(null), line = useRef(null);
   const motion = useRef({ offset: 0, animation: null, pending: null });
@@ -43,7 +48,7 @@ export default forwardRef(function WallTrack({
   const reduced = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const latest = useRef(null);
   latest.current = { pages, page, axis, active, enabled, paging, warmed, onPageChange, onFresh, onUndo,
-    onHoldStart, onHoldMove, onHoldEnd, onHoldCancel, onEdge };
+    onHoldStart, onHoldMove, onHoldEnd, onHoldCancel, onHoldTap, onEdge };
 
   function transform(offset) {
     return latest.current.axis === 'y' ? `translate3d(0, ${offset}px, 0)` : `translate3d(${offset}px, 0, 0)`;
@@ -86,7 +91,7 @@ export default forwardRef(function WallTrack({
   }
   function turn(direction, offset = visibleOffset()) {
     const options = latest.current;
-    if (!options.active || !options.paging || !direction || gesture.current?.mode === 'hold') return false;
+    if (!options.active || !options.paging || !direction || holding(gesture.current?.mode)) return false;
     const next = options.page + direction;
     if (next < 0 || next >= options.pages.length) {
       options.onEdge?.(direction);
@@ -96,17 +101,29 @@ export default forwardRef(function WallTrack({
     options.onPageChange(next);
     return true;
   }
-  useImperativeHandle(ref, () => ({ turn: direction => turn(direction), root: viewport.current }));
+  useImperativeHandle(ref, () => ({
+    turn: direction => turn(direction),
+    root: viewport.current,
+    cancelHold() {
+      if (!holding(gesture.current?.mode)) return false;
+      cancelGesture();
+      return true;
+    },
+  }));
 
   function stopHoldTimer() {
     clearTimeout(holdTimer.current);
     holdTimer.current = null;
   }
+  function releasePress(current) {
+    current?.tile?.removeAttribute('data-pressed');
+  }
   function cancelGesture() {
     stopHoldTimer();
     const current = gesture.current;
     gesture.current = null;
-    if (current?.mode === 'hold') latest.current.onHoldCancel?.();
+    releasePress(current);
+    if (holding(current?.mode)) latest.current.onHoldCancel?.();
     if (current?.mode === 'pan') settle(motion.current.offset);
   }
 
@@ -144,29 +161,45 @@ export default forwardRef(function WallTrack({
     function startSingle(kind, start, target, pointerId) {
       suppressClick.current = false;
       if (!enabled() || !actionable(target)) return;
-      const initial = { kind, pointerId, start, time: performance.now(), mode: null };
-      gesture.current = initial;
       const tile = target.closest?.('.tile-face')?.closest('[data-current] .word-tile[data-word]');
+      const initial = { kind, pointerId, start, time: performance.now(), mode: null, tile, moved: 0 };
+      gesture.current = initial;
+      tile?.setAttribute('data-pressed', '');
       if (tile && latest.current.onHoldStart) {
         holdTimer.current = setTimeout(() => {
-          if (gesture.current !== initial || !enabled() || !tile.isConnected) return;
+          if (gesture.current !== initial || initial.moved > HOLD_SLOP || !enabled() || !tile.isConnected) return;
+          releasePress(initial);
+          if (motion.current.animation) settle(0);
+          const measure = startInteraction('hold');
           initial.mode = 'hold';
+          const accepted = flushSync(() => latest.current.onHoldStart(tile.dataset.word, tile.getBoundingClientRect(), measure, initial.start));
+          if (accepted === false) {
+            initial.mode = null;
+            tile.setAttribute('data-pressed', '');
+            return;
+          }
+          if (accepted === 'marquee') initial.mode = 'marquee';
           suppressClick.current = true;
-          latest.current.onHoldStart(tile.dataset.word, tile.getBoundingClientRect());
+          measure?.('dom');
+          startInteraction('hold', initial.time)?.('from-down');
         }, HOLD_MS);
       }
     }
     function moveSingle(current, now, event) {
-      if (current.mode === 'hold') {
+      current.moved = Math.max(current.moved, distance(current.start, now));
+      if (holding(current.mode)) {
         if (event.cancelable) event.preventDefault();
-        latest.current.onHoldMove?.(now.x, now.y);
+        if (latest.current.onHoldMove?.(now.x, now.y)) current.mode = 'marquee';
         return;
       }
       const options = latest.current;
       const delta = { x: now.x - current.start.x, y: now.y - current.start.y };
       const primary = along(delta, options.axis), perpendicular = across(delta, options.axis);
-      if (current.mode === null && distance(current.start, now) > (current.kind === 'touch' ? TOUCH_SLOP : MOUSE_SLOP)) {
+      if (current.moved > HOLD_SLOP) {
+        releasePress(current);
         stopHoldTimer();
+      }
+      if (current.mode === null && current.moved > (current.kind === 'touch' ? TOUCH_SLOP : MOUSE_SLOP)) {
         suppressClick.current = true;
         current.mode = options.paging && Math.abs(primary) > Math.abs(perpendicular) * 1.2 ? 'pan' : 'other';
         if (current.mode === 'pan') {
@@ -192,9 +225,17 @@ export default forwardRef(function WallTrack({
     function endSingle(current, now, event) {
       stopHoldTimer();
       gesture.current = null;
-      if (current.mode === 'hold') {
+      releasePress(current);
+      if (holding(current.mode)) {
         if (event.cancelable) event.preventDefault();
-        latest.current.onHoldEnd?.(now.x, now.y);
+        const shortTap = performance.now() - current.time < TAP_RELEASE_MS &&
+          Math.max(current.moved, distance(current.start, now)) <= HOLD_SLOP;
+        if (shortTap) {
+          latest.current.onHoldCancel?.();
+          latest.current.onHoldTap?.(current.tile.dataset.word);
+        } else if (current.mode === 'marquee' || latest.current.onHoldMove?.(now.x, now.y)) {
+          flushSync(() => latest.current.onHoldEnd?.(now.x, now.y));
+        } else latest.current.onHoldEnd?.(now.x, now.y);
         return;
       }
       if (current.mode !== 'pan') return;
@@ -282,7 +323,33 @@ export default forwardRef(function WallTrack({
     function contextMenu(event) {
       if (event.target.closest?.('.tile-face')) event.preventDefault();
     }
+    function extraTouch(event) {
+      if (event.touches.length < 2 || !holding(gesture.current?.mode)) return;
+      if (event.cancelable) event.preventDefault();
+      event.stopPropagation();
+      cancelGesture();
+    }
+    function blockScroll(event) {
+      if (gesture.current?.mode === 'marquee' && event.cancelable) event.preventDefault();
+    }
+    function blockScrollKey(event) {
+      if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'PageUp', 'PageDown', 'Home', 'End', ' '].includes(event.key)) blockScroll(event);
+    }
+    function visibility() {
+      if (document.hidden) cancelGesture();
+    }
+    let disposed = false, nativeListener;
+    if (Capacitor.isNativePlatform()) {
+      import('@capacitor/app').then(async ({ App }) => {
+        const listener = await App.addListener('appStateChange', ({ isActive }) => {
+          if (!isActive) cancelGesture();
+        });
+        if (disposed) void listener.remove();
+        else nativeListener = listener;
+      }).catch(() => { /* The WebView also reports visibility changes. */ });
+    }
     const touchOptions = { passive: false };
+    const captureOptions = { capture: true, passive: false };
     element.addEventListener('touchstart', touchStart, touchOptions);
     element.addEventListener('touchmove', touchMove, touchOptions);
     element.addEventListener('touchend', touchEnd, touchOptions);
@@ -293,10 +360,16 @@ export default forwardRef(function WallTrack({
     window.addEventListener('pointerup', pointerUp);
     window.addEventListener('pointercancel', pointerCancel);
     window.addEventListener('blur', cancelGesture);
+    window.addEventListener('pagehide', cancelGesture);
+    document.addEventListener('touchstart', extraTouch, captureOptions);
+    document.addEventListener('wheel', blockScroll, captureOptions);
+    document.addEventListener('keydown', blockScrollKey, true);
+    document.addEventListener('visibilitychange', visibility);
     return () => {
-      stopHoldTimer();
+      disposed = true;
+      void nativeListener?.remove();
+      cancelGesture();
       stopAnimation();
-      gesture.current = null;
       element.removeEventListener('touchstart', touchStart);
       element.removeEventListener('touchmove', touchMove);
       element.removeEventListener('touchend', touchEnd);
@@ -307,6 +380,11 @@ export default forwardRef(function WallTrack({
       window.removeEventListener('pointerup', pointerUp);
       window.removeEventListener('pointercancel', pointerCancel);
       window.removeEventListener('blur', cancelGesture);
+      window.removeEventListener('pagehide', cancelGesture);
+      document.removeEventListener('touchstart', extraTouch, captureOptions);
+      document.removeEventListener('wheel', blockScroll, captureOptions);
+      document.removeEventListener('keydown', blockScrollKey, true);
+      document.removeEventListener('visibilitychange', visibility);
     };
   }, []);
 

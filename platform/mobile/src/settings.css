@@ -121,3 +121,6 @@
 .settings-help p + p { margin-top: 14px; }
 .settings-progress { margin: 10px 0 0; color: var(--c-muted); font-size: 13px; }
 .settings-sheet-list { border-top: 1px solid var(--c-line); }
+.settings-audio-engine label { flex: 1; }
+.settings-audio-engine .text-button { flex: 0 0 auto; }
+.settings-audio-diagnostic { margin: 4px 0 10px; font: 12px/1.4 monospace; }

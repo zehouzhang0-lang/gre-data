@@ -46,8 +46,9 @@ export async function importVocabularyBackup({ root, backupPath, dryRun = false,
   if (source.packet.format !== BACKUP_FORMAT) throw Error('词汇导入必须使用完整词汇备份');
   const { data } = await readPackage(source.bytes.toString('utf8'));
   const original = source.packet.payload, checked = new Map(data.events.map(event => [event.id,event]));
-  // validateData canonicalizes timestamps but must not silently discard a field
-  // from an original event. Publish the source object, never its cleaned copy.
+  // Search captures arrive as source: { type: 'search' }, with no question fields.
+  // Preserve their raw evidence, as with all other events. Reject packets that
+  // depend on the sanitizer to discard fields, even if their checksum matches.
   for (const event of original.events) if (eventIdentity(event) !== eventIdentity(checked.get(event.id))) throw Error(`原事件含不兼容字段，未导入：${event.id}`);
   const payloadHash = hash(canonical(original)), local = path.join(root,'.gre-platform'), lockPath = path.join(local,'vocabulary-import.lock');
   let lock;

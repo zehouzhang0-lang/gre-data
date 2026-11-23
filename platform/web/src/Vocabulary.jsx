@@ -1,7 +1,7 @@
 import { useDeferredValue, useMemo, useState } from "react";
 import { Header, Icon, Field, Modal, Empty } from "./components";
 import { save } from "./api";
-import { CatalogSearch, CatalogPager, CollectionCard, materialLabel, sourceLabel } from "./CatalogParts";
+import { CatalogSearch, CatalogPager, CollectionCard, captureSourceLabel, materialLabel, sourceLabel } from "./CatalogParts";
 import WordWall from './WordWall';
 import { readPreference, writePreference } from './word-wall-model.mjs';
 import { definitionStatusLabels, partOfSpeechLabels, matchesDefinitionFilters } from '../../shared/standard-definition.mjs';
@@ -28,9 +28,13 @@ function buildIndexes(state) {
   const add = (keys, id, name) => { keys.add(id); if (!sources.has(id)) sources.set(id, { id, name }); };
   for (const word of state.vocabulary) {
     const keys = new Set();
-    if (word.captures?.length) {
-      add(keys, "captured", "全部题中摘词");
-      for (const capture of word.captures) add(keys, `capture:${capture.source.material}`, materialLabel(capture.source.material, state.materials));
+    for (const { source } of word.captures || []) {
+      if (source.type === 'search') {
+        add(keys, 'search-capture', captureSourceLabel(source));
+      } else {
+        add(keys, "captured", "全部题中摘词");
+        add(keys, `capture:${source.material}`, materialLabel(source.material, state.materials));
+      }
     }
     for (const source of word.sources || []) {
       const label = sourceLabel(source, state.materials);
@@ -148,7 +152,9 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
         const names = topicNames(indexes.assignment.get(word.word)?.topics || []);
         return <article className="catalog-word" key={word.word}>
           <div><button className="word-link" onClick={() => openDetail(word)}>{word.word}</button><span className={`catalog-word-status ${schedule?.due_today ? "due" : ""}`}>{word.deleted ? "已移除" : schedule?.due_today ? "到期复习" : `${schedule?.review_count || 0} 次复习`}</span></div>
-          <p>{word.pos ? `${word.pos} ` : ""}{word.meaning || "待补释义 · 点击单词查看原题"}</p>
+          <p>{word.pos ? `${word.pos} ` : ""}{word.meaning || (word.captures?.some(capture => capture.source.type === "search")
+            && !word.captures.some(capture => capture.source.type !== "search")
+            ? "待补释义 · 搜索加入" : "待补释义 · 点击单词查看原题")}</p>
           <div className="catalog-word-meta"><span>{names.join(" · ") || "待分类"}</span><div className="catalog-inline-actions">{word.deleted ? <button className="text-button" disabled={busy} onClick={() => mutate("vocab_restore", { word: word.word })}>恢复</button> : <><button className="text-button" onClick={() => { setError(""); setEdit({ ...word, existing: true }); }}>编辑</button><button className="text-button muted" disabled={busy} onClick={() => mutate("vocab_delete", { word: word.word })}>移除</button></>}</div></div>
         </article>;
       })}</div>
@@ -179,7 +185,7 @@ export default function Vocabulary({ state, refresh, notify, startRecall, openRe
         return <label key={topic.id}><input type="checkbox" checked={selected.includes(topic.id)} onChange={e => setTopicDraft(e.target.checked ? [...selected, topic.id] : selected.filter(id => id !== topic.id))} />{topic.name}</label>;
       })}</div><button disabled={busy || !topicDraft} onClick={async () => { if (await mutate("word_topics", { word: detail.word, topics: topicDraft, automatic: false })) setTopicDraft(null); }}>保存分类</button></details>}
       <button onClick={() => { setDetailWord(null); openRelations(detail.word); }}>查看近义、反义与形近词</button>
-      {!!detail.captures?.length && <details className="capture-sources"><summary>摘词来源 · {detail.captures.length} 处</summary>{detail.captures.map((capture, i) => <div key={i}><small>{materialLabel(capture.source.material, state.materials)} · {capture.source.unit} · 第 {capture.source.question} 题</small><p>{capture.context}</p></div>)}</details>}
+      {!!detail.captures?.length && <details className="capture-sources"><summary>{detail.captures.some(capture => capture.source.type === 'search') ? '加入来源' : '摘词来源'} · {detail.captures.length} 处</summary>{detail.captures.map((capture, i) => <div key={i}><small>{captureSourceLabel(capture.source, state.materials)}</small>{capture.context && <p>{capture.context}</p>}</div>)}</details>}
       {!!detail.sources?.length && <details className="capture-sources"><summary>收录来源</summary>{[...new Set(detail.sources.map(source => sourceLabel(source, state.materials)))].map(source => <p key={source}>{source}</p>)}</details>}
       <small>{detail.definition_source}</small>{detail.feedback && <p>历史批改：{detail.feedback}</p>}
       {detail.dictionary_url && /^https:\/\//.test(detail.dictionary_url) && <p><a href={detail.dictionary_url} target="_blank" rel="noreferrer">查看词典 ↗</a></p>}

@@ -1,8 +1,22 @@
 # GRE 词库 · Android
 
+## 0.3.9 · 词墙与音效更新（2026-11-23）
+
+当前源码版本为 **0.3.9 / versionCode 23**。0.3.8 修复搜索键盘导致的词墙位移，支持从搜索添加单词，并让标记反馈先于保存显示。0.3.9 增加长按拖动框选、刷题音效和 Android SoundPool 播放，设置中可切换网页引擎并复制音效诊断。需求与回归项见 [设备反馈](ui-redesign/DEVICE-FEEDBACK-20261123.md)。
+
+Android 和网页回退共用 `android/app/src/main/res/raw/ui_*.wav` 中的 86 段音效。普通构建直接使用这些资源。从仓库根目录运行以下命令可用 Chrome 和工作区的 Playwright 重新生成音效。
+
+```sh
+node platform/mobile/scripts/render-interface-sounds.mjs
+```
+
+## 搜索加入的备份兼容性
+
+包含「搜索加入」记录的词库备份需要 0.3.8 或更新的手机 App 和支持此来源的电脑端。0.3.7 及更早的手机版本和未更新的电脑端无法恢复或导入这些备份，请先升级。
+
 ## 0.3.6 · fresh 本页（2026-11-22）
 
-当前版本 **0.3.6 / versionCode 20**。93,054,581 字节，SHA-256 为 `21a26ce56a7ee1dea92deea5123c1c04d709a19bd1e285cfd3c8959b7e7ea941`。[安装 APK](releases/GRE-vocabulary-0.3.6-debug.apk)
+历史版本 **0.3.6 / versionCode 20**。93,054,581 字节，SHA-256 为 `21a26ce56a7ee1dea92deea5123c1c04d709a19bd1e285cfd3c8959b7e7ea941`。[本机安装 APK](releases/GRE-vocabulary-0.3.6-debug.apk)
 
 在单词墙点「fresh 本页」，或在卡片区同时双指上滑，当前整页会在当前浏览顺序里后移最多 3 页。页码留在原处，下一批卡片补上来。接近末尾时按剩余页数后移，最后一页停用。旁边的「撤销」可恢复最近一次 fresh 前的位置和顺序。清空行内搜索会返回原来的浏览位置和顺序，改筛选或排序会重新排页。
 

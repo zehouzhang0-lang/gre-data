@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Sheet } from './Primitives';
-import { ratingLabels, wordRating, sourceLabel } from '../model.mjs';
+import { ratingLabels, wordRating, sourceLabel, captureSourceLabel } from '../model.mjs';
 import { definitionStatusLabels, partOfSpeechLabels } from '../../../shared/standard-definition.mjs';
 import { highlightExample } from '../example-highlight.mjs';
 import Pronunciation, { PronunciationSources } from './Pronunciation';
@@ -26,14 +26,14 @@ function SenseExample({ example, meaning, pos, headword, showMeaning = false, sh
   </div>;
 }
 
-export default function WordDetail({ word, state, busy, onSave, onRate, onClose }) {
+export default function WordDetail({ word, state, busy, onSave, onRate, onClose, initialEditing = false }) {
   const [pronunciation, setPronunciation] = useState(null), [pronunciationLoading, setPronunciationLoading] = useState(true);
   useEffect(() => {
     let live = true; setPronunciation(null); setPronunciationLoading(true);
     loadPronunciations().then(words => { if (live) setPronunciation(Object.hasOwn(words, word.word) ? words[word.word] : null); }).catch(() => {}).finally(() => { if (live) setPronunciationLoading(false); });
     return () => { live = false; };
   }, [word.word]);
-  const [editing, setEditing] = useState(false), [draft, setDraft] = useState({ pos: word.pos || '', meaning: word.meaning || '', note: word.note || '' });
+  const [editing, setEditing] = useState(initialEditing), [draft, setDraft] = useState({ pos: word.pos || '', meaning: word.meaning || '', note: word.note || '' });
   const editButton = useRef(null);
   function finishEditing() {
     setEditing(false);
@@ -92,8 +92,9 @@ export default function WordDetail({ word, state, busy, onSave, onRate, onClose 
         </section>
         <section className="detail-section">
           <h3>收录来源</h3>
-          {word.sources?.length ? [...new Set(word.sources.map(sourceLabel))].map(text => <p key={text}>{text}</p>) : <p className="muted">未记录来源</p>}
-          {word.captures?.map((capture, i) => <p key={i}>{capture.source?.material} · {capture.source?.unit} · {capture.context}</p>)}
+          {[...new Set((word.sources || []).map(sourceLabel))].map(text => <p key={text}>{text}</p>)}
+          {word.captures?.map((capture, i) => <p key={i}>{capture.source?.type === 'search' ? captureSourceLabel(capture.source) : <>{capture.source?.material} · {capture.source?.unit} · {capture.context}</>}</p>)}
+          {!word.sources?.length && !word.captures?.length && <p className="muted">未记录来源</p>}
           {firstExample && <p className="sense-example-credits">
             首条例句：{firstExample !== mainSense && `${firstExample.pos} ${firstExample.meaning} · `}
             <ExampleSource example={firstExample.example}/>

@@ -21,14 +21,14 @@ const paths = {
   download: <><path d="M12 3v13m-5-5 5 5 5-5M4 15v6h16v-6"/></>,
 };
 export function Icon({ name, size = 20 }) { return <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">{paths[name] || paths.more}</svg>; }
-export function Sheet({ title, onClose, children, footer, headerActions, className = '' }) {
+export function Sheet({ title, onClose, children, footer, headerActions, className = '', closeSound }) {
   const id = useId(), ref = useRef(null), noticeSlot = useRef(null);
   const registerNoticeSlot = useContext(SheetNoticeContext);
   useLayoutEffect(() => registerNoticeSlot?.(noticeSlot.current), [registerNoticeSlot]);
   useBackAction(onClose, true, 100);
   useEffect(() => {
     const previous = document.activeElement;
-    ref.current?.focus();
+    (ref.current?.querySelector('[data-sheet-autofocus]') || ref.current)?.focus();
     const trap = event => {
       if (event.key !== 'Tab') return;
       const nodes = [...ref.current.querySelectorAll('button:not(:disabled),input:not(:disabled),textarea:not(:disabled),select:not(:disabled),a[href],summary,[tabindex="0"]')]
@@ -41,7 +41,7 @@ export function Sheet({ title, onClose, children, footer, headerActions, classNa
     const node = ref.current;
     return () => { node?.removeEventListener('keydown', trap); previous?.focus?.({ preventScroll: true }); };
   }, []);
-  const closeButton = <button aria-label="关闭" className="icon-button" onClick={onClose}><Icon name="close"/></button>;
+  const closeButton = <button aria-label="关闭" className="icon-button" data-sound={closeSound} onClick={onClose}><Icon name="close"/></button>;
   return <div className="sheet-backdrop" onClick={e => { if (e.target === e.currentTarget) onClose(); }}><section ref={ref} tabIndex={-1} role="dialog" aria-modal="true" aria-labelledby={id} className={`sheet ${className}`}>
     <header className="sheet-header">
       <h2 id={id}>{title}</h2>
@@ -58,6 +58,6 @@ export function Confirm({ title, children, action = '确认', onConfirm, onClose
 export function Empty({ title = '没有匹配的单词', children }) { return <div className="empty"><h2>{title}</h2>{children}</div>; }
 export function BottomNav({ tab, onChange, practicePreview = false, practice = false, compact = false }) {
   const items = [['wall', 'book', '词库'], ['review', 'history', '背词'], ...(practice || practicePreview ? [['practice', 'practice', '刷题']] : []), ['settings', 'settings', '设置']];
-  return <nav className={`bottom-nav${compact ? ' candidate-nav' : ''}`} style={{ gridTemplateColumns: `repeat(${items.length}, 1fr)` }} aria-label="主要导航">{items.map(([id, icon, text]) => <button key={id} aria-current={tab === id ? 'page' : undefined} className={tab === id ? 'active' : ''} onClick={() => onChange(id)}>{!compact && <Icon name={icon} size={25}/>}<span>{text}</span></button>)}</nav>;
+  return <nav className={`bottom-nav${compact ? ' candidate-nav' : ''}`} data-ui-sounds="" style={{ gridTemplateColumns: `repeat(${items.length}, 1fr)` }} aria-label="主要导航">{items.map(([id, icon, text]) => <button key={id} data-sound={tab === id ? 'none' : id === 'wall' ? 'leave' : 'enter'} aria-current={tab === id ? 'page' : undefined} className={tab === id ? 'active' : ''} onClick={() => onChange(id)}>{!compact && <Icon name={icon} size={25}/>}<span>{text}</span></button>)}</nav>;
 }
 export function Pager({ page, pages, onChange, count }) { return <nav className="pager" aria-label="单词分页"><button disabled={page === 0} onClick={() => onChange(page - 1)}>上一页</button><span>{page + 1} / {pages}<small>{count} 张卡片</small></span><button disabled={page >= pages - 1} onClick={() => onChange(page + 1)}>下一页</button></nav>; }

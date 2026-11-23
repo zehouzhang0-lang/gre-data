@@ -10,19 +10,30 @@ import Settings from './components/Settings';
 import WordSession from './components/WordSession';
 import { loadWallView } from './wall-navigation.mjs';
 import { loadWallAppearance, normalizeWallAppearance, saveWallAppearance } from './wall-display.mjs';
-import { configureSound, unlockSound } from './sound.mjs';
+import { configureSound, play, unlockSound } from './sound.mjs';
 import { loadQueue, nextBatch, saveQueue } from './review-queue.mjs';
+import { useSearchKeyboardOverlay } from './useSearchKeyboardOverlay';
 import './wall-display.css';
 
 const Practice = lazy(() => import('./components/Practice'));
 const darkPreference = '(prefers-color-scheme: dark)';
 const AppAppearance = registerPlugin('AppAppearance');
+
+function playControlSound(event) {
+  unlockSound();
+  const control = event.target.closest?.('button, [role="button"], summary');
+  if (!control?.closest('[data-ui-sounds]') || control.matches(':disabled, [aria-disabled="true"]')
+    || control.closest('[inert], [hidden]')) return;
+  const sound = control.dataset.sound || 'tap';
+  if (sound !== 'none') play(sound);
+}
+
 class PracticeBoundary extends Component {
   state = { error: null };
   static getDerivedStateFromError(error) { return { error }; }
   render() {
     if (!this.state.error) return this.props.children;
-    return <section className="screen" hidden={!this.props.active}><div className="empty">
+    return <section className="screen" data-ui-sounds="" hidden={!this.props.active}><div className="empty">
       <h2>刷题页面暂时无法打开</h2><p role="alert">{this.state.error.message}</p>
       <button onClick={() => location.reload()}>重新打开</button>
     </div></section>;
@@ -38,15 +49,16 @@ export default function App() {
   const [practiceOpened, setPracticeOpened] = useState(false);
   const [wallAppearance, setWallAppearance] = useState(loadWallAppearance);
   const guard = useRef(false), toastTimer = useRef(null);
+  useSearchKeyboardOverlay();
   useBackBridge();
   useBackAction(() => setTab('wall'), tab !== 'wall' && !session, 20);
   const registerNoticeSlot = useCallback(slot => {
     setNoticeSlots(slots => [...slots, slot]);
     return () => setNoticeSlots(slots => slots.filter(open => open !== slot));
   }, []);
-  const notify = useCallback((message, isError = false) => {
-    clearTimeout(toastTimer.current); setToast({ message, isError });
-    if (!isError) toastTimer.current = setTimeout(() => setToast(null), 4500);
+  const notify = useCallback((message, isError = false, actions = []) => {
+    clearTimeout(toastTimer.current); setToast({ message, isError, actions });
+    if (!isError) toastTimer.current = setTimeout(() => setToast(null), actions.length ? 8500 : 4500);
   }, []);
   useEffect(() => () => clearTimeout(toastTimer.current), []);
   useEffect(() => { if (tab === 'practice') setPracticeOpened(true); }, [tab]);
@@ -76,8 +88,8 @@ export default function App() {
       preference?.removeEventListener('change', applyTheme);
     };
   }, [theme]);
-  const { sound, pageTone } = wallAppearance;
-  useLayoutEffect(() => { configureSound({ sound, pageTone }); }, [sound, pageTone]);
+  const { sound, pageTone, audioEngine } = wallAppearance;
+  useLayoutEffect(() => { configureSound({ sound, pageTone, engine: audioEngine }); }, [sound, pageTone, audioEngine]);
   const updateWallAppearance = useCallback(patch => setWallAppearance(previous => normalizeWallAppearance({ ...previous, ...patch })), []);
   const mutate = useCallback(async (operation, message, { quiet = false } = {}) => {
     if (guard.current) return false;
@@ -112,13 +124,14 @@ export default function App() {
     : <div className="startup" role="status"><h1>正在打开词库</h1><p>首次打开会将词库保存到手机。</p></div>;
   const notice = toast && <div className={`toast ${toast.isError ? 'error-toast' : ''}`}>
     <span role={toast.isError ? 'alert' : 'status'}>{toast.message}</span>
+    {toast.actions.map(({ label, run }) => <button key={label} type="button" onClick={() => { setToast(null); void run(); }}>{label}</button>)}
     <button className="toast-close" aria-label="关闭提示" onClick={() => setToast(null)}><Icon name="close" size={16}/></button>
   </div>;
   const noticeSlot = noticeSlots.at(-1);
   const wallFont = wallAppearance.font ?? (tab === 'settings' ? loadWallView(globalThis.localStorage, state.datasetId, state.settings).display.font : undefined);
   return <SheetNoticeContext.Provider value={registerNoticeSlot}><div className="app-shell" data-version={version}
-    onPointerDownCapture={unlockSound} onPointerUpCapture={unlockSound} onClickCapture={unlockSound}>
-    <WordWall key={`wall-${version}`} state={state} repo={repo} busy={busy} active={tab === 'wall' && !session} mutate={mutate} notify={notify} onStartWords={startWords} appearance={wallAppearance}
+    onPointerDownCapture={unlockSound} onPointerUpCapture={unlockSound} onClickCapture={playControlSound}>
+    <WordWall key={`wall-${version}`} state={state} repo={repo} busy={busy} active={tab === 'wall' && !session} mutate={mutate} refresh={refresh} notify={notify} onStartWords={startWords} appearance={wallAppearance}
       onHintSeen={() => updateWallAppearance({ hinted: true })}/>
     <Review key={`review-${version}`} state={state} repo={repo} busy={busy} mutate={mutate} active={tab === 'review' && !session} onResume={resume} onWall={() => setTab('wall')} queue={queue} onContinueQueue={() => startBatch(queue)} onDropQueue={() => keepQueue(null)}/>
     {(practiceOpened || tab === 'practice') && <PracticeBoundary active={tab === 'practice' && !session}>

@@ -45,10 +45,12 @@
 }
 .candidate-wall .word-tile .tile-face:disabled { opacity: 1; }
 .candidate-wall .word-tile .tile-face:focus-visible { outline-color: var(--c-ink, #000); }
-.candidate-wall .word-tile .tile-face:active:not(:disabled) { transform: scale(.96); }
+.candidate-wall .word-tile[data-pressed] .tile-face { transform: scale(.96); transition: none; }
 .candidate-wall .word-tile.held .tile-face { transform: none; }
 .candidate-wall .word-tile.selected .tile-face,
+.candidate-wall .word-tile[data-marquee-selected] .tile-face,
 .candidate-wall .word-tile.held .tile-face { box-shadow: 0 0 0 2px var(--c-ink, #000); }
+.candidate-wall .word-tile[data-marquee-unselected] .tile-face { box-shadow: none; }
 .candidate-wall .wall-tile-inner,
 .candidate-wall .wall-tile-side { position: absolute; inset: 0; border-radius: inherit; }
 .candidate-wall .wall-tile-inner { pointer-events: none; }
@@ -67,6 +69,7 @@
 }
 .candidate-wall .wall-tile-back.wall-tile-fill { color: var(--c-ink, #000); }
 .candidate-wall .word-tile.selected .wall-tile-back:not(.wall-tile-fill) { box-shadow: inset 0 0 0 1px var(--c-canvas, #fff); }
+.candidate-wall .word-tile[data-marquee-unselected] .wall-tile-back:not(.wall-tile-fill) { box-shadow: none; }
 .candidate-wall .word-tile.turning .tile-face { perspective: 600px; }
 .candidate-wall .word-tile.turning .wall-tile-inner { transform-style: preserve-3d; }
 .candidate-wall .word-tile.turning .wall-tile-side { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
@@ -84,7 +87,21 @@
   font-weight: 500;
   font-optical-sizing: auto;
   line-height: 1.13;
+  width: max-content;
+  max-width: none;
+  white-space: pre;
+  overflow-wrap: normal;
 }
+.wall-tile-measure {
+  position: fixed;
+  visibility: hidden;
+  inset: 0 auto auto 0;
+  width: 0;
+  height: 0;
+  contain: strict;
+  pointer-events: none;
+}
+.wall-tile-measure .tile-word { display: block; }
 .candidate-wall .wall-tile-translation { display: grid; justify-items: center; min-width: 0; }
 .candidate-wall .wall-tile-pos { font-size: 10px; line-height: 1.3; opacity: .82; }
 .candidate-wall .tile-meaning {
@@ -108,6 +125,9 @@
   border: 1px solid var(--c-canvas, #fff);
   font-size: 11px;
 }
+.candidate-wall .wall-tile-check[hidden],
+.candidate-wall .word-tile[data-marquee-unselected] .wall-tile-check { display: none; }
+.candidate-wall .word-tile[data-marquee-selected] .wall-tile-check[hidden] { display: grid; }
 .candidate-wall .tile-detail {
   right: 2px;
   bottom: 2px;
@@ -120,5 +140,5 @@
 
 @media (prefers-reduced-motion: reduce) {
   .candidate-wall .word-tile .tile-face { transition: none; }
-  .candidate-wall .word-tile .tile-face:active:not(:disabled) { transform: none; }
+  .candidate-wall .word-tile[data-pressed] .tile-face { transform: none; filter: brightness(.92); }
 }

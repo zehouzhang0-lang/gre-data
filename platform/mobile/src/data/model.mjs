@@ -3,6 +3,7 @@ import { WORD_STAGES, meaningChoices, drillResult, roundProgress, roundRating } 
 import { projectReview, dayKey } from '../../../server/spaced-review.mjs';
 import { projectRelations, validateRelation } from '../../../server/word-relations.mjs';
 import { applyStandardDefinition, validateStandardDefinition } from '../../../shared/standard-definition.mjs';
+import { capturedWord } from '../../../shared/capture-word.mjs';
 import { cleanCardReadingPayload, projectCardReadings } from './card-reading.mjs';
 import { cleanCurationPayload, projectCurationRequests } from './curation.mjs';
 import { REVIEW_EVENT_KINDS, cleanReviewPayload, projectReviewTasks, projectWordGroups } from './review-tasks.mjs';
@@ -95,6 +96,9 @@ export function cleanPayload(kind, p) {
     if (!WORD_STAGES.includes(p.stage) || !['correct', 'incorrect', 'revealed'].includes(p.result) || !['choice', 'typing', 'self_check'].includes(p.response_mode)) throw Error('练习步骤无效');
     return { session_id: uuid(p.session_id), word: normalizeWord(p.word), stage: p.stage, answer: text(p.answer, '回答', 3000, true), result: p.result, response_mode: p.response_mode };
   }
+  if (kind === 'vocab_capture' && p.source?.type === 'search') {
+    return { word: capturedWord(p.word), source: { type: 'search' }, context: text(p.context, '摘词语境', 240, true) };
+  }
   const word = normalizeWord(p.word);
   if (kind === 'vocab_upsert') return { word, meaning: text(p.meaning, '释义', 3000), pos: text(p.pos, '词性', 80, true), note: text(p.note, '备注', 3000, true) };
   if (kind === 'vocab_capture') {
@@ -120,7 +124,7 @@ function applyWordEvent(words, event) {
   const p = event.payload;
   if (event.kind === 'vocab_upsert') words.set(p.word, { ...(words.get(p.word) || cleanWord({ word: p.word })), ...p, deleted: false, definition_source: '用户编辑，待词典核验' });
   if (event.kind === 'vocab_capture') {
-    const w = words.get(p.word) || cleanWord({ word: p.word, definition_source: '题中摘词，待补释义' });
+    const w = words.get(p.word) || cleanWord({ word: p.word, definition_source: p.source.type === 'search' ? '手动加入，待补释义' : '题中摘词，待补释义' });
     const captures = [...(w.captures || [])];
     if (!captures.some(c => JSON.stringify(c.source) === JSON.stringify(p.source) && c.context === p.context)) captures.push({ source: p.source, context: p.context, recorded_at: event.recorded_at });
     words.set(p.word, { ...w, deleted: false, captures });
