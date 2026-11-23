@@ -1,7 +1,7 @@
 ---
 schema_version: 1
 created_at: "2026-09-02"
-updated_at: "2026-11-22"
+updated_at: "2026-11-23"
 timezone: Asia/Kuala_Lumpur
 exam: gre_general
 exam_date: "2026-12-17"
@@ -31,6 +31,8 @@ application_direction: null
 ---
 
 # 用户档案
+
+2026-11-23 写作选题：用户要求改练截图中的“政府对科研应很少甚至不设限制”一题，沿用逐句引导。上一题保留为未完成练习；已有局部原答不能作为独立全文基线。新题尚未提交作答，当前分数不变。题目接续见 planning/20261123_2322_aw_research_restrictions.md。
 
 2026-11-22 写作专项补充：用户自报很长时间未接触英语写作，希望先了解AW基本制式与要求，并由教练一句一句带写。本轮先用不计时逐句指导恢复表达，后续逐步过渡到独立练习；指导稿与独立全文分开记录。尚无本人原稿，不据此判断当前分数。接续记录见 planning/20261122_2318_aw_guided_onboarding.md。
 
