@@ -74,6 +74,10 @@ items:
         record: analytical-writing/submissions/20261123_2347_issue.md
         result: mixed
         note: "沿用句框明确表达英文反对立场；后半句seldom混淆频率与限制数量，few, if any的准确转述待修订。未计时、有词汇提示，未形成完整有边界的主张，状态保持unknown。"
+      - date: "2026-11-24"
+        record: analytical-writing/submissions/20261124_2332_issue.md
+        result: mixed
+        note: "完整辅助稿主张基本限制必要，但尚不足以反驳few, if any允许少量限制的推荐；不把原有中文反对立场擅改为同意。范围与具体边界待用户展开，自报28分钟且期间查词，不作独立计时证据，保持unknown。"
   - id: aw_paragraph_reasoning
     area: analytical_writing
     status: unknown
@@ -86,6 +90,10 @@ items:
         record: analytical-writing/submissions/20261124_0021_issue.md
         result: mixed
         note: "风险提问后提供企业AI改造→忽视安全→漏洞可能被利用→损失的中文链条。尚未明确研发/部署阶段、具体限制及其作用；单一安全要求不自动反驳few, if any。改为假设开发场景是教练建议，非用户已核实经历。无英文段落或计时证据，状态保持unknown。"
+      - date: "2026-11-24"
+        record: analytical-writing/submissions/20261124_2332_issue.md
+        result: mixed
+        note: "此前指导且期间查词的完整稿，自报约28分钟。英文软件案例保留测试不足、漏洞、损失链条，但政府措施及作用未展开；第三段从垄断跳到scientific creatures和counter-charge，含义与连接不清。只证明本次辅助稿表现，未证实独立计时，保持unknown。"
   - {id: aw_counterargument, area: analytical_writing, status: unknown, evidence: []}
   - id: aw_timed_revision
     area: analytical_writing
@@ -139,3 +147,7 @@ items:
         record: analytical-writing/submissions/20261124_0054_issue.md
         result: mixed
         note: "回答更新间隔的受益主体与活动时自行尝试英文片段，able to studied中的不定式应改study；proper可保留，develop是按先前制定监管机制原意的语义建议。片段符合补写任务，不另判残句。尚无用户修订、自检或独立计时证据，状态保持unknown。"
+      - date: "2026-11-24"
+        record: analytical-writing/submissions/20261124_2332_issue.md
+        result: mixed
+        note: "完整查词稿仍有restrictions ... is、will led及名词位置lost等错误；用户自报拼写困难，不代表错误均为拼写。自报约28分钟，无暂停/最后校订过程证据，不推断时间管理失败。下一步无查词短句检验基本结构，状态保持unknown。"
