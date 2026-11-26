@@ -29,6 +29,15 @@ plan_source:
   sha256: 5F8FD78468585898C88637370609671522D3D3388ACD7769F36E8FD7F8F0958C
   tracked_in_git: true
 materials:
+  - id: user_issue_praise_correction_20261126
+    title: 表扬积极行为与忽略消极行为
+    filename: null
+    role: analytical_writing_practice
+    answer_status: not_applicable
+    record: analytical-writing/submissions/20261126_1608_issue.md
+    source_kind: user_provided
+    topic_count: 1
+    description: "用户提供BIBIJI题目、平台2分反馈和思路截图及本人粘贴稿；只保存必要文字与核验摘要，不提交原图，不把第三方评分当ETS成绩。"
   - id: user_issue_research_restrictions_20261123
     title: 政府对科学研究与开发的限制
     filename: null
