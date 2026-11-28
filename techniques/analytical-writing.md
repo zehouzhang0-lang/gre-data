@@ -34,6 +34,14 @@
 
 示例用来演示句式。按原题保留比较标准、量词、影响方向、程度及适用范围。影响句里 N 为复数时用 *have*。性质句里的 *as* 后可接形容词或名词短语。
 
+### 按同意程度写引言第二句
+
+下面三个句式都用“政府应为所有学生承担大学学费”示范，便于看清立场的区别。括号内替换成本题内容，第三句接两个主体理由。
+
+- 完全同意。*Even taking [一个顾虑] into account, I fully agree that [题目主张].* 例句：Even taking the cost to taxpayers into account, I fully agree that governments should cover tuition for all college and university students.
+- 部分同意。*I agree with this view when [成立条件], but I would hesitate to extend it to [其他情形或人群].* 例句：I agree with this view when tuition would otherwise prevent students from attending college, but I would hesitate to extend it to students whose families can comfortably afford to pay.
+- 不同意。*While I recognize [对方关注的问题或目标], I disagree with the conclusion that [题目主张].* 例句：While I recognize the importance of widening access to higher education, I disagree with the conclusion that governments should pay every student’s tuition.
+
 ## `aw_paragraph_reasoning` — 段落推理链
 
 每个主体段至少包含 claim → reason → concrete example → implication，并解释例子为何支持主张。
