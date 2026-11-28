@@ -22,6 +22,18 @@
 
 政策题可以用 *Under the proposed policy, … would …* 说明政策如何运作，再用题目给出的范围展开。*Although I recognize the appeal of …, I am not persuaded that …* 先给出赞成者看重的好处，再点明自己反对的具体做法。*My reservations stem partly from … and partly from …* 在同一句中预告两条反对理由；两个 *from* 后面各接一个名词短语。
 
+### 按五种 N/M 关系写引言第一句
+
+| 关系 | 可替换的英文句式 | 复述示例 |
+|---|---|---|
+| ① 比较 N 与 M | The argument is that [N] [比较谓语] than [M] [原题范围或补语]. | The argument is that beginners are more likely than experts to make important contributions in any field of inquiry. |
+| ② N 影响 M | According to this view, [N] has a [影响方向和程度] effect on [M]. | According to this view, competition for high grades has a serious negative effect on the quality of learning at every level of education. |
+| ③ N 应对 M 做某事 | Advocates of this approach argue that [N] should [针对 M 的动作]. | Advocates of this approach argue that governments should provide all students with tuition-free higher education. |
+| ④ N 应该做某事 | It has been suggested that [N] should [动作]. | It has been suggested that leaders should make their decision-making process more transparent. |
+| ⑤ N 是 M | This view characterizes [N] as [M]. | This view characterizes many important discoveries and creations as accidental, typically arising in the search for an answer to a different question. |
+
+示例用来演示句式。按原题保留比较标准、量词、影响方向、程度及适用范围。影响句里 N 为复数时用 *have*。性质句里的 *as* 后可接形容词或名词短语。
+
 ## `aw_paragraph_reasoning` — 段落推理链
 
 每个主体段至少包含 claim → reason → concrete example → implication，并解释例子为何支持主张。
