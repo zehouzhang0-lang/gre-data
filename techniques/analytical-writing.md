@@ -8,6 +8,14 @@
 
 成功标准：引言末句能独立说明主张、主要理由和必要限定。
 
+### 三句开头（2026-11-28）
+
+用户希望按复述观点、明确表态、预告两个理由来写引言。第一句可用 **Some argue that + 题目观点**，保留题干的主体、动作和范围。第二句可用 **I agree/disagree with this view**，政策题可把 *view* 换成 *proposal*。若立场有条件，把条件加在这句。第三句按两个主体段的实际内容来写。若两条理由都是某种做法带来的后果，可用 **主语 + could + 动词短语 A + and + 动词短语 B**。三句合起来让读者看清立场与论证方向。
+
+以普遍免学费题为例，以下为教练示范：
+
+> Some argue that governments should make higher education free for all students. I disagree with this proposal. It could delay some students’ entry into the workforce and leave less money for other public services.
+
 ## `aw_paragraph_reasoning` — 段落推理链
 
 每个主体段至少包含 claim → reason → concrete example → implication，并解释例子为何支持主张。
