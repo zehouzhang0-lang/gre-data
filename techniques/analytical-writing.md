@@ -16,6 +16,12 @@
 
 > Some argue that governments should make higher education free for all students. I disagree with this proposal. It could delay some students’ entry into the workforce and leave less money for other public services.
 
+用户随后明确偏好更正式、篇幅更充分的三句引言，以增加写作字数。以下教练示范用 84 词保留原稿的就业与财政两条理由。
+
+> Under the proposed policy, governments would cover the full cost of college and university tuition for all students, regardless of their financial circumstances. Although I recognize the appeal of making higher education more accessible, I am not persuaded that waiving tuition for every student is the most effective way to achieve that goal. My reservations stem partly from the risk that some students would postpone entering the workforce and partly from the pressure such a policy could place on funding for other public services.
+
+政策题可以用 *Under the proposed policy, … would …* 说明政策如何运作，再用题目给出的范围展开。*Although I recognize the appeal of …, I am not persuaded that …* 先给出赞成者看重的好处，再点明自己反对的具体做法。*My reservations stem partly from … and partly from …* 在同一句中预告两条反对理由；两个 *from* 后面各接一个名词短语。
+
 ## `aw_paragraph_reasoning` — 段落推理链
 
 每个主体段至少包含 claim → reason → concrete example → implication，并解释例子为何支持主张。
